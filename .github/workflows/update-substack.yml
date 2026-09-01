@@ -48,3 +48,11 @@ jobs:
           with open("substack.json", "w", encoding="utf-8") as f:
               json.dump(posts[:6], f, ensure_ascii=False, indent=2)
               f.write("\n")
+
+      - name: Commit updated article list
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add substack.json
+          git diff --cached --quiet || git commit -m "Update Dose Matters articles"
+          git push
