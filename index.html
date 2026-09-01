@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Absolute Effect — Oncology Evidence Atlas</title>
+<style>
+:root{--ink:#102033;--muted:#65758a;--bg:#f4f7fa;--card:#fff;--line:#dfe6ed;--accent:#0b7285;--accent2:#164e63;--benefit:#138a61;--harm:#c2414b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+header{background:#0b1928;color:white;position:sticky;top:0;z-index:20}.nav{max-width:1240px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;letter-spacing:-.035em}.brand i{color:#6fd4c1;font-style:normal}.nav button{background:none;border:0;color:#d9e5ed;margin-left:16px;cursor:pointer;font-weight:650}
+.hero{background:linear-gradient(135deg,#0b1928,#164e63);color:white;padding:70px 22px}.hero-inner{max-width:1240px;margin:auto}.eyebrow{color:#6fd4c1;font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(48px,8vw,86px);line-height:.94;letter-spacing:-.065em;margin:12px 0 18px}.hero h2{font-weight:500;max-width:720px;margin:0;color:#e0edf2}.hero p{max-width:760px;color:#c7d7e1;font-size:17px}.btn{display:inline-block;background:#6fd4c1;color:#09202a;border:0;border-radius:10px;padding:12px 18px;font-weight:850;cursor:pointer;text-decoration:none}
+main{max-width:1240px;margin:auto;padding:40px 22px}.section-title{font-size:29px;letter-spacing:-.035em;margin:0 0 5px}.section-sub{color:var(--muted);margin:0 0 22px}.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.filters label{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.08em}.filters select,.editor input,.editor textarea{display:block;width:100%;margin-top:5px;border:1px solid var(--line);background:white;border-radius:9px;padding:11px;color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:21px;box-shadow:0 5px 20px rgba(16,32,51,.045)}.entry{margin-top:20px}.entryhead{display:flex;justify-content:space-between;gap:20px}.badge{display:inline-block;border-radius:99px;background:#e6f5f2;color:#08685f;font-size:11px;font-weight:850;padding:5px 9px}.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:11px;padding:14px}.num{font-size:27px;font-weight:900;letter-spacing:-.04em}.stat small{display:block;color:var(--muted)}
+.columns{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}.people{display:grid;grid-template-columns:repeat(20,1fr);gap:4px}.person{aspect-ratio:1;border-radius:50%;background:#dce3ea}.person.b{background:var(--benefit)}.person.h{background:var(--harm)}
+.callout{background:#edf7f7;border-left:4px solid var(--accent);padding:13px 15px;border-radius:7px;margin-top:14px}.references ol{padding-left:20px;color:var(--muted)}a{color:var(--accent2)}
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.about{display:grid;grid-template-columns:220px 1fr;gap:15px}.avatar{background:#0b1928;color:#6fd4c1;border-radius:16px;display:grid;place-items:center;font-size:48px;font-weight:900;min-height:180px}
+.panel{display:none}.panel.open{display:block}.editor{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.editor .full{grid-column:1/-1}.editor label{font-size:12px;font-weight:800;color:var(--muted)}.editor textarea{min-height:90px;resize:vertical}.toolbar{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}.danger{background:#fff1f2;color:#9f1d2a}.success{background:#e9f7f1;color:#086b4d}
+footer{background:#0b1928;color:#c8d5df;padding:30px 22px;margin-top:40px}footer div{max-width:1240px;margin:auto}
+@media(max-width:800px){.filters,.stats,.columns,.method,.about,.editor{grid-template-columns:1fr}.entryhead{flex-direction:column}.people{grid-template-columns:repeat(10,1fr)}.about .avatar{min-height:120px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">THE ABSOLUTE <i>EFFECT</i></div><div><button onclick="scrollToId('explore')">Explore</button><button onclick="scrollToId('method')">Method</button><button onclick="scrollToId('about')">About</button><button onclick="toggleEditor()">Customize</button></div></div></header>
+
+<section class="hero"><div class="hero-inner">
+<div class="eyebrow">Oncology evidence atlas</div><h1 id="heroTitle">The Absolute Effect</h1>
+<h2 id="heroTag">From relative effects to real patients.</h2>
+<p id="heroIntro">A clinician-facing atlas that translates clinical-trial results into absolute benefit, harm, NNT/NNH and patient-level visualizations.</p>
+<a class="btn" href="#explore">Explore the evidence ↓</a>
+</div></section>
+
+<main>
+<section id="explore"><h2 class="section-title">Explore the evidence</h2><p class="section-sub">Tumour site → discipline → clinical setting. New evidence entries can be added without changing the site design.</p>
+<div class="filters">
+<div><label>TUMOUR SITE</label><select id="siteFilter"></select></div>
+<div><label>DISCIPLINE</label><select id="disciplineFilter"></select></div>
+<div><label>SETTING</label><select id="settingFilter"></select></div>
+</div>
+<div id="entryContainer"></div>
+</section>
+
+<section id="method" style="margin-top:48px"><h2 class="section-title">The framework</h2><p class="section-sub">Every evidence entry should answer the same clinical question.</p>
+<div class="method"><div class="card"><h3>01 · Relative effect</h3><p class="muted">HR, RR, OR or another relative measure, exactly as reported.</p></div><div class="card"><h3>02 · Absolute effect</h3><p class="muted">Absolute difference at a defined time point or clinically meaningful unit.</p></div><div class="card"><h3>03 · Patients</h3><p class="muted">What does this mean if we treat 100 people? NNT/NNH when appropriate.</p></div></div>
+<div class="card" style="margin-top:14px"><strong>Statistical guardrail:</strong> an HR is not itself an absolute risk reduction. Survival differences and NNT must be tied to a time horizon and baseline risk; where appropriate, the database can later support RMST and other absolute measures.</div>
+</section>
+
+<section id="about" style="margin-top:48px"><h2 class="section-title">About</h2><div class="about"><div class="avatar">AE</div><div class="card"><h3 id="authorName">Dr Marcopolo</h3><p id="authorRole" class="muted">Clinical Oncology · Evidence-based oncology</p><p id="authorBio">The Absolute Effect is a clinician-facing evidence atlas designed to move beyond statistical significance and relative measures toward quantities that are easier to interpret at the bedside.</p></div></div></section>
+
+<section id="customize" class="panel" style="margin-top:48px"><h2 class="section-title">Customize this prototype</h2><p class="section-sub">This first version stores your changes in the browser using localStorage. Later we can replace this with a secure database/admin login.</p>
+<div class="card editor">
+<label>Site title<input id="eTitle"></label><label>Tagline<input id="eTag"></label>
+<label class="full">Intro<textarea id="eIntro"></textarea></label>
+<label>Author name<input id="eAuthor"></label><label>Author role<input id="eRole"></label>
+<label class="full">Author bio<textarea id="eBio"></textarea></label>
+<div class="full toolbar"><button class="btn success" onclick="saveSettings()">Save customization</button><button class="btn danger" onclick="resetSettings()">Reset</button></div>
+</div>
+<h3 style="margin-top:25px">Evidence database</h3><div class="card"><p class="muted">Currently there is <strong>1 evidence entry</strong>. The data model is deliberately editable so we can add trials one at a time later.</p><div class="toolbar"><button class="btn" onclick="downloadData()">Export evidence JSON</button><button class="btn" onclick="document.getElementById('jsonFile').click()">Import evidence JSON</button><input id="jsonFile" type="file" accept=".json" style="display:none" onchange="importData(event)"></div></div>
+</section>
+</main>
+<footer><div><strong>The Absolute Effect</strong><br>Quantifying benefit, harm and uncertainty in oncology.</div></footer>
+
+<script>
+const defaultSettings={title:"The Absolute Effect",tag:"From relative effects to real patients.",intro:"A clinician-facing atlas that translates clinical-trial results into absolute benefit, harm, NNT/NNH and patient-level visualizations.",author:"Dr Marcopolo",role:"Clinical Oncology · Evidence-based oncology",bio:"The Absolute Effect is a clinician-facing evidence atlas designed to move beyond statistical significance and relative measures toward quantities that are easier to interpret at the bedside."};
+
+const defaultEvidence=[{
+ id:"keynote054-rfs-3y",
+ site:"Melanoma",discipline:"Medical Oncology",setting:"Adjuvant",
+ treatment:"Adjuvant pembrolizumab vs placebo",
+ population:"Resected high-risk stage III cutaneous melanoma",
+ endpoint:"Recurrence-free survival",
+ horizon:"3 years",
+ interventionRate:63.7,controlRate:44.1,absoluteBenefit:19.6,nnt:"5.1",
+ relativeLabel:"HR",relativeEffect:"0.56",ci:"95% CI 0.47–0.68",
+ n:1019,interventionN:514,controlN:505,
+ benefitText:"≈20 additional patients are recurrence-free at 3 years per 100 treated.",
+ harmLabel:"Grade 3–5 treatment-related adverse events",
+ harmIntervention:14.7,harmControl:3.4,harmIncrease:11.3,nnH:"8.8",
+ trial:"EORTC 1325-MG/KEYNOTE-054",
+ refs:[
+ "Eggermont AMM, et al. J Clin Oncol. 2021;39:393–403. DOI 10.1200/JCO.20.02110.",
+ "Eggermont AMM, et al. N Engl J Med. 2018;378:1789–1801."
+ ],
+ urls:["https://pubmed.ncbi.nlm.nih.gov/32946353/","https://pubmed.ncbi.nlm.nih.gov/29658430/"]
+}];
+
+function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"null")||defaultSettings}
+function getEvidence(){return JSON.parse(localStorage.getItem("ae_evidence")||"null")||defaultEvidence}
+function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
+function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
+function renderFilters(){fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=renderEntry)}
+function renderEntry(){
+ const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
+ const e=getEvidence().find(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
+ if(!e){document.getElementById("entryContainer").innerHTML='<div class="card entry">No evidence entry matches these filters yet.</div>';return}
+ let people="";for(let i=0;i<100;i++)people+=`<span class="person ${i<Math.round(e.absoluteBenefit)?'b':''}"></span>`;
+ let harmPeople="";for(let i=0;i<100;i++)harmPeople+=`<span class="person ${i<Math.round(e.harmIncrease||0)?'h':''}"></span>`;
+ document.getElementById("entryContainer").innerHTML=`
+ <article class="card entry"><div class="entryhead"><div><span class="badge">${e.setting.toUpperCase()}</span><h2>${e.treatment}</h2><div class="muted">${e.population} · ${e.endpoint} · ${e.horizon}</div></div><span class="badge">${e.trial}</span></div>
+ <div class="stats"><div class="stat"><div class="num">${e.relativeLabel} ${e.relativeEffect}</div><small>${e.ci}</small></div><div class="stat"><div class="num">+${e.absoluteBenefit}%</div><small>Absolute benefit</small></div><div class="stat"><div class="num">NNT ${e.nnt}</div><small>At ${e.horizon}</small></div><div class="stat"><div class="num">${e.interventionRate}%</div><small>${e.horizon} outcome with treatment</small></div></div>
+ <div class="columns"><div class="card"><strong>If we treat 100 patients…</strong><div class="people" style="margin:14px 0">${people}</div><p><strong>${e.benefitText}</strong></p><p class="muted">${e.interventionRate}% vs ${e.controlRate}% → absolute difference ${e.absoluteBenefit} percentage points.</p></div>
+ <div class="card"><strong>Harm</strong><p>${e.harmLabel||"Not entered yet"}</p><div class="people" style="margin:14px 0">${harmPeople}</div><p><strong>${e.harmIncrease?`+${e.harmIncrease}% absolute increase · NNH ${e.nnH}`:"Add toxicity data when available."}</strong></p><p class="muted">${e.harmIncrease?`${e.harmIntervention}% vs ${e.harmControl}%`: "Benefit and harm should be interpreted together."}</p></div></div>
+ <div class="callout"><strong>Clinical interpretation:</strong> The relative effect is ${e.relativeLabel} ${e.relativeEffect}; the patient-level effect at ${e.horizon} is an absolute difference of ${e.absoluteBenefit} percentage points.</div>
+ <div class="references"><h3>Evidence</h3><ol>${e.refs.map((r,i)=>`<li>${r} ${e.urls?.[i]?`<a href="${e.urls[i]}" target="_blank">PubMed</a>`:""}</li>`).join("")}</ol><p class="muted">Sample size: ${e.n} randomized (${e.interventionN} treatment, ${e.controlN} comparator).</p></div></article>`;
+}
+function applySettings(){const s=getSettings();heroTitle.textContent=s.title;heroTag.textContent=s.tag;heroIntro.textContent=s.intro;authorName.textContent=s.author;authorRole.textContent=s.role;authorBio.textContent=s.bio;document.title=s.title+" — Oncology Evidence Atlas"}
+function populateEditor(){const s=getSettings();eTitle.value=s.title;eTag.value=s.tag;eIntro.value=s.intro;eAuthor.value=s.author;eRole.value=s.role;eBio.value=s.bio}
+function saveSettings(){localStorage.setItem("ae_settings",JSON.stringify({title:eTitle.value,tag:eTag.value,intro:eIntro.value,author:eAuthor.value,role:eRole.value,bio:eBio.value}));applySettings();alert("Customization saved in this browser.")}
+function resetSettings(){localStorage.removeItem("ae_settings");applySettings();populateEditor()}
+function toggleEditor(){const p=document.getElementById("customize");p.classList.toggle("open");if(p.classList.contains("open")){populateEditor();p.scrollIntoView({behavior:"smooth"})}}
+function downloadData(){const blob=new Blob([JSON.stringify(getEvidence(),null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="the-absolute-effect-evidence.json";a.click()}
+function importData(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d))throw Error();localStorage.setItem("ae_evidence",JSON.stringify(d));renderFilters();renderEntry();alert("Evidence imported.")}catch{alert("Invalid evidence JSON.")}};r.readAsText(f)}
+function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+applySettings();renderFilters();renderEntry();
+</script>
+</body></html>

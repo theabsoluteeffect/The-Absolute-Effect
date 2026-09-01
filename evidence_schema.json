@@ -1,0 +1,27 @@
+{
+  "description": "Evidence record schema for The Absolute Effect. Add one object per treatment/outcome.",
+  "fields": {
+    "site": "Tumour site",
+    "discipline": "Medical Oncology | Radiation Oncology | Surgical Oncology",
+    "setting": "Adjuvant | Neoadjuvant | Definitive | Palliative | Metastatic",
+    "treatment": "Treatment comparison",
+    "population": "Trial population",
+    "endpoint": "Outcome",
+    "horizon": "Time point",
+    "relativeLabel": "HR/RR/OR/etc",
+    "relativeEffect": "Reported relative effect",
+    "ci": "Confidence interval",
+    "interventionRate": "Outcome rate with treatment",
+    "controlRate": "Outcome rate with comparator",
+    "absoluteBenefit": "Intervention rate - comparator rate",
+    "nnt": "NNT at specified horizon",
+    "harmLabel": "Toxicity/harm outcome",
+    "harmIntervention": "Harm rate treatment",
+    "harmControl": "Harm rate comparator",
+    "harmIncrease": "Absolute harm increase",
+    "nnH": "NNH",
+    "trial": "Trial name",
+    "refs": "Reference strings",
+    "urls": "Reference URLs"
+  }
+}
