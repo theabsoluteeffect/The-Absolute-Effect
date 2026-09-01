@@ -99,6 +99,25 @@ const defaultEvidence=[{
  "Fisher B, et al. N Engl J Med. 1995;333:1456–1461. Twelve-year follow-up."
  ],
  urls:["https://pubmed.ncbi.nlm.nih.gov/12393820/","https://www.nejm.org/doi/full/10.1056/NEJM199511303332203"]
+},{
+ id:"ebctcg-nact-vs-act",
+ site:"Breast Cancer",discipline:"Medical Oncology",setting:"Neoadjuvant",
+ treatment:"Neoadjuvant chemotherapy vs the same chemotherapy given adjuvantly",
+ population:"Women with early breast cancer enrolled in 10 randomized trials of preoperative vs postoperative chemotherapy",
+ endpoint:"Local recurrence, distant recurrence, breast-cancer mortality, overall mortality and breast-conserving surgery",
+ horizon:"15 years",
+ interventionRate:79.6,controlRate:75.5,absoluteBenefit:-4.1,nnt:"Not applicable",
+ relativeLabel:"RR",relativeEffect:"1.05",ci:"95% CI 0.94–1.17",
+ n:4756,interventionN:2375,controlN:2381,
+ benefitText:"At 15 years, distant recurrence was 38.2% with neoadjuvant chemotherapy vs 38.0% with adjuvant chemotherapy, breast-cancer mortality was 34.4% vs 33.7%, and all-cause mortality was 40.9% vs 41.2%. NACT increased breast-conserving surgery from 49% to 65% (+16 percentage points).",
+ harmLabel:"15-year local recurrence",
+ harmIntervention:21.4,harmControl:15.9,harmIncrease:5.5,nnH:"18.2",
+ trial:"EBCTCG individual-patient meta-analysis",
+ refs:[
+ "Spring LM, et al. Lancet Oncol. 2018;19:27–39. Long-term outcomes for neoadjuvant versus adjuvant chemotherapy in early breast cancer.",
+ "Early Breast Cancer Trialists' Collaborative Group (EBCTCG). Individual patient data meta-analysis of neoadjuvant versus adjuvant chemotherapy."
+ ],
+ urls:["https://pubmed.ncbi.nlm.nih.gov/29242041/","https://pmc.ncbi.nlm.nih.gov/articles/PMC5757427/"]
 }];
 
 function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"null")||defaultSettings}
