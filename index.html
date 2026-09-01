@@ -80,6 +80,25 @@ const defaultEvidence=[{
  "Eggermont AMM, et al. N Engl J Med. 2018;378:1789–1801."
  ],
  urls:["https://pubmed.ncbi.nlm.nih.gov/32946353/","https://pubmed.ncbi.nlm.nih.gov/29658430/"]
+},{
+ id:"nsabp-b06-bcs-mrm-rt",
+ site:"Breast Cancer",discipline:"Surgical Oncology",setting:"Definitive",
+ treatment:"Modified radical mastectomy vs breast-conserving surgery alone vs BCS + whole-breast RT",
+ population:"Stage I–II invasive breast cancer, tumour ≤4 cm; NSABP B-06",
+ endpoint:"Overall survival, disease-free survival, distant disease-free survival and ipsilateral breast tumour recurrence",
+ horizon:"20 years",
+ interventionRate:85.7,controlRate:60.8,absoluteBenefit:24.9,nnt:"4.0",
+ relativeLabel:"Local recurrence RR",relativeEffect:"≈0.36",ci:"20-y IBTR 14.3% vs 39.2%; P<0.001",
+ n:1851,interventionN:567,controlN:570,
+ benefitText:"BCS + RT vs BCS alone: ipsilateral breast tumour recurrence 14.3% vs 39.2% at 20 years — 24.9 fewer recurrences per 100 women (NNT ≈4). Overall survival, disease-free survival and distant disease-free survival were not significantly different among mastectomy, BCS alone and BCS + RT. The 12-year analysis likewise found no significant OS/DFS/distant-DFS difference; IBTR was 10% with BCS + RT vs 35% with BCS alone.",
+ harmLabel:"Omission of RT after BCS — excess ipsilateral recurrence; RT-related acute skin/breast toxicity is not quantified in B-06",
+ harmIntervention:14.3,harmControl:39.2,harmIncrease:24.9,nnH:"4.0",
+ trial:"NSABP B-06",
+ refs:[
+ "Fisher B, et al. N Engl J Med. 2002;347:1233–1241. Twenty-year follow-up.",
+ "Fisher B, et al. N Engl J Med. 1995;333:1456–1461. Twelve-year follow-up."
+ ],
+ urls:["https://pubmed.ncbi.nlm.nih.gov/12393820/","https://www.nejm.org/doi/full/10.1056/NEJM199511303332203"]
 }];
 
 function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"null")||defaultSettings}
