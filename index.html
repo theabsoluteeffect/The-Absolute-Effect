@@ -62,24 +62,24 @@ footer{background:#171717;color:#ddd;padding:30px 22px;margin-top:40px}footer di
 const defaultSettings={title:"The Absolute Effect",tag:"From relative effects to real patients.",intro:"A clinician-facing atlas that translates clinical-trial results into absolute benefit, harm, NNT/NNH and patient-level visualizations.",author:"Dr Rishi P Nair",role:"Clinical Oncology · Evidence-based oncology",bio:"The Absolute Effect is a clinician-facing evidence atlas designed to move beyond statistical significance and relative measures toward quantities that are easier to interpret at the bedside."};
 
 const defaultEvidence=[{
- id:"keynote054-rfs-3y",
- site:"Melanoma",discipline:"Medical Oncology",setting:"Adjuvant",
- treatment:"Adjuvant pembrolizumab vs placebo",
- population:"Resected high-risk stage III cutaneous melanoma",
- endpoint:"Recurrence-free survival",
- horizon:"3 years",
- interventionRate:63.7,controlRate:44.1,absoluteBenefit:19.6,nnt:"5.1",
- relativeLabel:"HR",relativeEffect:"0.56",ci:"95% CI 0.47–0.68",
- n:1019,interventionN:514,controlN:505,
- benefitText:"≈20 additional patients are recurrence-free at 3 years per 100 treated.",
- harmLabel:"Grade 3–5 treatment-related adverse events",
- harmIntervention:14.7,harmControl:3.4,harmIncrease:11.3,nnH:"8.8",
- trial:"EORTC 1325-MG/KEYNOTE-054",
+ id:"ebctcg-nact-vs-act",
+ site:"Breast Cancer",discipline:"Medical Oncology",setting:"Neoadjuvant",
+ treatment:"Neoadjuvant chemotherapy vs the same chemotherapy given adjuvantly",
+ population:"Women with early breast cancer enrolled in 10 randomized trials of preoperative vs postoperative chemotherapy",
+ endpoint:"Local recurrence, distant recurrence, breast-cancer mortality, overall mortality and breast-conserving surgery",
+ horizon:"15 years",
+ interventionRate:79.6,controlRate:75.5,absoluteBenefit:-4.1,nnt:"Not applicable",
+ relativeLabel:"RR",relativeEffect:"1.05",ci:"95% CI 0.94–1.17",
+ n:4756,interventionN:2375,controlN:2381,
+ benefitText:"At 15 years, distant recurrence was 38.2% with neoadjuvant chemotherapy vs 38.0% with adjuvant chemotherapy, breast-cancer mortality was 34.4% vs 33.7%, and all-cause mortality was 40.9% vs 41.2%. NACT increased breast-conserving surgery from 49% to 65% (+16 percentage points).",
+ harmLabel:"15-year local recurrence",
+ harmIntervention:21.4,harmControl:15.9,harmIncrease:5.5,nnH:"18.2",
+ trial:"EBCTCG individual-patient meta-analysis",
  refs:[
- "Eggermont AMM, et al. J Clin Oncol. 2021;39:393–403. DOI 10.1200/JCO.20.02110.",
- "Eggermont AMM, et al. N Engl J Med. 2018;378:1789–1801."
+ "Spring LM, et al. Lancet Oncol. 2018;19:27–39. Long-term outcomes for neoadjuvant versus adjuvant chemotherapy in early breast cancer.",
+ "Early Breast Cancer Trialists' Collaborative Group (EBCTCG). Individual patient data meta-analysis of neoadjuvant versus adjuvant chemotherapy."
  ],
- urls:["https://pubmed.ncbi.nlm.nih.gov/32946353/","https://pubmed.ncbi.nlm.nih.gov/29658430/"]
+ urls:["https://pubmed.ncbi.nlm.nih.gov/29242041/","https://pmc.ncbi.nlm.nih.gov/articles/PMC5757427/"]
 },{
  id:"nsabp-b06-bcs-mrm-rt",
  site:"Breast Cancer",discipline:"Surgical Oncology",setting:"Definitive",
@@ -100,28 +100,33 @@ const defaultEvidence=[{
  ],
  urls:["https://pubmed.ncbi.nlm.nih.gov/12393820/","https://www.nejm.org/doi/full/10.1056/NEJM199511303332203"]
 },{
- id:"ebctcg-nact-vs-act",
- site:"Breast Cancer",discipline:"Medical Oncology",setting:"Neoadjuvant",
- treatment:"Neoadjuvant chemotherapy vs the same chemotherapy given adjuvantly",
- population:"Women with early breast cancer enrolled in 10 randomized trials of preoperative vs postoperative chemotherapy",
- endpoint:"Local recurrence, distant recurrence, breast-cancer mortality, overall mortality and breast-conserving surgery",
- horizon:"15 years",
- interventionRate:79.6,controlRate:75.5,absoluteBenefit:-4.1,nnt:"Not applicable",
- relativeLabel:"RR",relativeEffect:"1.05",ci:"95% CI 0.94–1.17",
- n:4756,interventionN:2375,controlN:2381,
- benefitText:"At 15 years, distant recurrence was 38.2% with neoadjuvant chemotherapy vs 38.0% with adjuvant chemotherapy, breast-cancer mortality was 34.4% vs 33.7%, and all-cause mortality was 40.9% vs 41.2%. NACT increased breast-conserving surgery from 49% to 65% (+16 percentage points).",
- harmLabel:"15-year local recurrence",
- harmIntervention:21.4,harmControl:15.9,harmIncrease:5.5,nnH:"18.2",
- trial:"EBCTCG individual-patient meta-analysis",
+ id:"keynote054-rfs-3y",
+ site:"Melanoma",discipline:"Medical Oncology",setting:"Adjuvant",
+ treatment:"Adjuvant pembrolizumab vs placebo",
+ population:"Resected high-risk stage III cutaneous melanoma",
+ endpoint:"Recurrence-free survival",
+ horizon:"3 years",
+ interventionRate:63.7,controlRate:44.1,absoluteBenefit:19.6,nnt:"5.1",
+ relativeLabel:"HR",relativeEffect:"0.56",ci:"95% CI 0.47–0.68",
+ n:1019,interventionN:514,controlN:505,
+ benefitText:"≈20 additional patients are recurrence-free at 3 years per 100 treated.",
+ harmLabel:"Grade 3–5 treatment-related adverse events",
+ harmIntervention:14.7,harmControl:3.4,harmIncrease:11.3,nnH:"8.8",
+ trial:"EORTC 1325-MG/KEYNOTE-054",
  refs:[
- "Spring LM, et al. Lancet Oncol. 2018;19:27–39. Long-term outcomes for neoadjuvant versus adjuvant chemotherapy in early breast cancer.",
- "Early Breast Cancer Trialists' Collaborative Group (EBCTCG). Individual patient data meta-analysis of neoadjuvant versus adjuvant chemotherapy."
+ "Eggermont AMM, et al. J Clin Oncol. 2021;39:393–403. DOI 10.1200/JCO.20.02110.",
+ "Eggermont AMM, et al. N Engl J Med. 2018;378:1789–1801."
  ],
- urls:["https://pubmed.ncbi.nlm.nih.gov/29242041/","https://pmc.ncbi.nlm.nih.gov/articles/PMC5757427/"]
+ urls:["https://pubmed.ncbi.nlm.nih.gov/32946353/","https://pubmed.ncbi.nlm.nih.gov/29658430/"]
 }];
 
 function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"null")||defaultSettings}
-function getEvidence(){return JSON.parse(localStorage.getItem("ae_evidence")||"null")||defaultEvidence}
+function getEvidence(){
+ const stored=JSON.parse(localStorage.getItem("ae_evidence")||"null");
+ if(!stored) return defaultEvidence;
+ const order=new Map(defaultEvidence.map((e,i)=>[e.id,i]));
+ return [...stored].sort((a,b)=>(order.get(a.id)??9999)-(order.get(b.id)??9999));
+}
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
 function renderFilters(){fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=renderEntry)}
