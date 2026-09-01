@@ -1,0 +1,50 @@
+name: Update Dose Matters articles
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-substack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Substack RSS and build article list
+        shell: python
+        run: |
+          import json, re, urllib.request, xml.etree.ElementTree as ET
+          from html import unescape
+
+          url = "https://dosematters.substack.com/feed"
+          req = urllib.request.Request(url, headers={"User-Agent": "The-Absolute-Effect/1.0"})
+          with urllib.request.urlopen(req, timeout=30) as response:
+              xml = response.read()
+
+          root = ET.fromstring(xml)
+          posts = []
+          for item in root.findall(".//item")[:6]:
+              def txt(tag):
+                  x = item.find(tag)
+                  return (x.text or "").strip() if x is not None else ""
+              title = unescape(txt("title"))
+              link = txt("link")
+              date = txt("pubDate")
+              desc = txt("description")
+              desc = re.sub(r"<[^>]+>", " ", unescape(desc))
+              desc = re.sub(r"\s+", " ", desc).strip()
+              if len(desc) > 220:
+                  desc = desc[:217].rsplit(" ", 1)[0] + "…"
+              if title and link:
+                  posts.append({"title": title, "link": link, "date": date, "excerpt": desc})
+
+          if not posts:
+              raise SystemExit("No Substack posts found")
+
+          with open("substack.json", "w", encoding="utf-8") as f:
+              json.dump(posts[:6], f, ensure_ascii=False, indent=2)
+              f.write("\n")
