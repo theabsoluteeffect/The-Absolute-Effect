@@ -320,10 +320,10 @@ function renderEntry(){
  <div class="stats"><div class="stat"><div class="num">${e.relativeLabel} ${e.relativeEffect}</div><small>${e.ci}</small></div><div class="stat"><div class="num">+${e.absoluteBenefit}%</div><small>Absolute benefit</small></div><div class="stat"><div class="num">NNT ${e.nnt}</div><small>At ${e.horizon}</small></div><div class="stat"><div class="num">${e.interventionRate}%</div><small>${e.horizon} outcome with treatment</small></div></div>
  <div class="columns">
  <div class="card">
-   <div class="viz-title">${e.trial.includes("EBCTCG") ? "Outcome comparison" : "Outcome comparison"}</div>
+   <div class="viz-title">${e.id==="ebctcg-nact-vs-act" ? "Outcome comparison" : "Outcome comparison"}</div>
    <div class="legend"><span><i class="dot treat"></i> Treatment</span><span><i class="dot comp"></i> Comparator</span></div>
-   <p class="explain">${e.trial.includes("EBCTCG") ? 'These are <strong>event rates</strong>, so lower is better. At 15 years: distant recurrence <strong>38.2% vs 38.0%</strong>; breast-cancer mortality <strong>34.4% vs 33.7%</strong>; all-cause mortality <strong>40.9% vs 41.2%</strong>. There was no meaningful survival advantage for either sequence.' : `At ${e.horizon}, the primary outcome was <strong>${e.endpoint}</strong>. The bars compare the treatment and comparator directly.`}</p>
-   ${e.trial.includes("EBCTCG") ? `
+   <p class="explain">${e.id==="ebctcg-nact-vs-act" ? 'These are <strong>event rates</strong>, so lower is better. At 15 years: distant recurrence <strong>38.2% vs 38.0%</strong>; breast-cancer mortality <strong>34.4% vs 33.7%</strong>; all-cause mortality <strong>40.9% vs 41.2%</strong>. There was no meaningful survival advantage for either sequence.' : `At ${e.horizon}, the primary outcome was <strong>${e.endpoint}</strong>. The bars compare the treatment and comparator directly.`}</p>
+   ${e.id==="ebctcg-nact-vs-act" ? `
    <div class="viz-title" style="margin-top:12px">Distant recurrence</div>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:38.2%"></i></div><strong>38.2%</strong></div>
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:38%"></i></div><strong>38.0%</strong></div>
@@ -332,7 +332,7 @@ function renderEntry(){
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:33.7%"></i></div><strong>33.7%</strong></div>` : `
    <div class="barrow"><span>${e.treatment.split(" vs ")[0]||"Treatment"}</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,e.interventionRate))}%"></i></div><strong>${e.interventionRate}%</strong></div>
    <div class="barrow"><span>Comparator</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,e.controlRate))}%"></i></div><strong>${e.controlRate}%</strong></div>`}</div>
- ${e.trial.includes("EBCTCG") ? `<div class="card">
+ ${e.id==="ebctcg-nact-vs-act" ? `<div class="card">
    <div class="viz-title">Breast-conserving surgery</div>
    <div class="legend"><span><i class="dot treat"></i> NACT</span><span><i class="dot comp"></i> Adjuvant</span></div>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:65%"></i></div><strong>65%</strong></div>
@@ -342,7 +342,7 @@ function renderEntry(){
    <div class="viz-title">Absolute effect</div>
    <p class="explain"><strong>${e.absoluteBenefit >= 0 ? "Benefit" : "Difference"}:</strong> ${Math.abs(e.absoluteBenefit)} percentage points absolute difference at ${e.horizon}.</p>
  </div>`}</div>
- ${e.trial.includes("EBCTCG") ? `<div class="card" style="margin-top:14px">
+ ${e.id==="ebctcg-nact-vs-act" ? `<div class="card" style="margin-top:14px">
    <strong>Harm: local recurrence</strong>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:21.4%"></i></div><strong>21.4%</strong></div>
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:15.9%"></i></div><strong>15.9%</strong></div>
