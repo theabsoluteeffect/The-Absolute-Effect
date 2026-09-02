@@ -306,31 +306,31 @@ function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
 function renderFilters(){fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=renderEntry)}
 function renderEntryCard(e){
-function renderEntry(){
+function renderEntryCard(ev){
  const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
  const e=getEvidence().find(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
  if(!e){document.getElementById("entryContainer").innerHTML='<div class="card entry">No evidence entry matches these filters yet.</div>';return}
- let people="";for(let i=0;i<100;i++)people+=`<span class="person ${i<Math.round(e.absoluteBenefit)?'b':''}"></span>`;
- let harmPeople="";for(let i=0;i<100;i++)harmPeople+=`<span class="person ${i<Math.round(e.harmIncrease||0)?'h':''}"></span>`;
+ let people="";for(let i=0;i<100;i++)people+=`<span class="person ${i<Math.round(ev.absoluteBenefit)?'b':''}"></span>`;
+ let harmPeople="";for(let i=0;i<100;i++)harmPeople+=`<span class="person ${i<Math.round(ev.harmIncrease||0)?'h':''}"></span>`;
 
 return `
- <article class="card entry"><div class="entryhead"><div><span class="badge">${e.setting.toUpperCase()}</span><h2>${e.treatment}</h2><div class="muted">${e.population} · ${e.endpoint} · ${e.horizon}</div></div><span class="badge">${e.trial}</span></div>
- <div class="stats"><div class="stat"><div class="num">${e.relativeLabel} ${e.relativeEffect}</div><small>${e.ci}</small></div><div class="stat"><div class="num">+${e.absoluteBenefit}%</div><small>Absolute benefit</small></div><div class="stat"><div class="num">NNT ${e.nnt}</div><small>At ${e.horizon}</small></div><div class="stat"><div class="num">${e.interventionRate}%</div><small>${e.horizon} outcome with treatment</small></div></div>
+ <article class="card entry"><div class="entryhead"><div><span class="badge">${ev.setting.toUpperCase()}</span><h2>${ev.treatment}</h2><div class="muted">${ev.population} · ${ev.endpoint} · ${ev.horizon}</div></div><span class="badge">${ev.trial}</span></div>
+ <div class="stats"><div class="stat"><div class="num">${ev.relativeLabel} ${ev.relativeEffect}</div><small>${ev.ci}</small></div><div class="stat"><div class="num">+${ev.absoluteBenefit}%</div><small>Absolute benefit</small></div><div class="stat"><div class="num">NNT ${ev.nnt}</div><small>At ${ev.horizon}</small></div><div class="stat"><div class="num">${ev.interventionRate}%</div><small>${ev.horizon} outcome with treatment</small></div></div>
  <div class="columns">
  <div class="card">
-   <div class="viz-title">${e.id==="ebctcg-nact-vs-act" ? "Outcome comparison" : "Outcome comparison"}</div>
+   <div class="viz-title">${ev.id==="ebctcg-nact-vs-act" ? "Outcome comparison" : "Outcome comparison"}</div>
    <div class="legend"><span><i class="dot treat"></i> Treatment</span><span><i class="dot comp"></i> Comparator</span></div>
-   <p class="explain">${e.id==="ebctcg-nact-vs-act" ? 'These are <strong>event rates</strong>, so lower is better. At 15 years: distant recurrence <strong>38.2% vs 38.0%</strong>; breast-cancer mortality <strong>34.4% vs 33.7%</strong>; all-cause mortality <strong>40.9% vs 41.2%</strong>. There was no meaningful survival advantage for either sequence.' : `At ${e.horizon}, the primary outcome was <strong>${e.endpoint}</strong>. The bars compare the treatment and comparator directly.`}</p>
-   ${e.id==="ebctcg-nact-vs-act" ? `
+   <p class="explain">${ev.id==="ebctcg-nact-vs-act" ? 'These are <strong>event rates</strong>, so lower is better. At 15 years: distant recurrence <strong>38.2% vs 38.0%</strong>; breast-cancer mortality <strong>34.4% vs 33.7%</strong>; all-cause mortality <strong>40.9% vs 41.2%</strong>. There was no meaningful survival advantage for either sequence.' : `At ${ev.horizon}, the primary outcome was <strong>${ev.endpoint}</strong>. The bars compare the treatment and comparator directly.`}</p>
+   ${ev.id==="ebctcg-nact-vs-act" ? `
    <div class="viz-title" style="margin-top:12px">Distant recurrence</div>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:38.2%"></i></div><strong>38.2%</strong></div>
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:38%"></i></div><strong>38.0%</strong></div>
    <div class="viz-title" style="margin-top:12px">Breast-cancer mortality</div>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:34.4%"></i></div><strong>34.4%</strong></div>
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:33.7%"></i></div><strong>33.7%</strong></div>` : `
-   <div class="barrow"><span>${e.treatment.split(" vs ")[0]||"Treatment"}</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,e.interventionRate))}%"></i></div><strong>${e.interventionRate}%</strong></div>
-   <div class="barrow"><span>Comparator</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,e.controlRate))}%"></i></div><strong>${e.controlRate}%</strong></div>`}</div>
- ${e.id==="ebctcg-nact-vs-act" ? `<div class="card">
+   <div class="barrow"><span>${ev.treatment.split(" vs ")[0]||"Treatment"}</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,ev.interventionRate))}%"></i></div><strong>${ev.interventionRate}%</strong></div>
+   <div class="barrow"><span>Comparator</span><div class="bar"><i style="width:${Math.max(0,Math.min(100,ev.controlRate))}%"></i></div><strong>${ev.controlRate}%</strong></div>`}</div>
+ ${ev.id==="ebctcg-nact-vs-act" ? `<div class="card">
    <div class="viz-title">Breast-conserving surgery</div>
    <div class="legend"><span><i class="dot treat"></i> NACT</span><span><i class="dot comp"></i> Adjuvant</span></div>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:65%"></i></div><strong>65%</strong></div>
@@ -338,15 +338,15 @@ return `
    <p class="explain"><strong>Benefit of NACT:</strong> BCS increased by <strong>16 percentage points</strong> — about 16 additional women per 100. Approximate NNT for one additional woman to undergo BCS ≈ <strong>6</strong>.</p>
  </div>` : `<div class="card">
    <div class="viz-title">Absolute effect</div>
-   <p class="explain"><strong>${e.absoluteBenefit >= 0 ? "Benefit" : "Difference"}:</strong> ${Math.abs(e.absoluteBenefit)} percentage points absolute difference at ${e.horizon}.</p>
+   <p class="explain"><strong>${ev.absoluteBenefit >= 0 ? "Benefit" : "Difference"}:</strong> ${Math.abs(ev.absoluteBenefit)} percentage points absolute difference at ${ev.horizon}.</p>
  </div>`}</div>
- ${e.id==="ebctcg-nact-vs-act" ? `<div class="card" style="margin-top:14px">
+ ${ev.id==="ebctcg-nact-vs-act" ? `<div class="card" style="margin-top:14px">
    <strong>Harm: local recurrence</strong>
    <div class="barrow"><span>NACT</span><div class="bar"><i style="width:21.4%"></i></div><strong>21.4%</strong></div>
    <div class="barrow"><span>Adjuvant</span><div class="bar"><i style="width:15.9%"></i></div><strong>15.9%</strong></div>
    <p class="explain"><strong>NNH = 18.</strong> NACT had about <strong>5.5 additional local recurrences per 100 women</strong> at 15 years (21.4% − 15.9%). Therefore, for every ~18 women receiving chemotherapy before surgery rather than after surgery, there was approximately <strong>1 additional local recurrence</strong> in these historical trials. This NNH describes the <em>sequencing strategy</em>; it is not an NNH for chemotherapy toxicity.</p>
  </div>
- <div class="callout"><strong>Clinical interpretation:</strong> NACT did <strong>not improve long-term survival</strong> compared with the same chemotherapy given after surgery. Its principal benefit was surgical: BCS increased from 49% to 65%. The historical trade-off was a 5.5% absolute increase in local recurrence.</div>` : `<div class="callout"><strong>Clinical interpretation:</strong> ${e.benefitText}</div>`} <div class="references"><h3>Evidence</h3><ol>${e.refs.map((r,i)=>`<li>${r} ${e.urls?.[i]?`<a href="${e.urls[i]}" target="_blank">PubMed</a>`:""}</li>`).join("")}</ol><p class="muted">Sample size: ${e.n} randomized (${e.interventionN} treatment, ${e.controlN} comparator).</p></div></article>`;
+ <div class="callout"><strong>Clinical interpretation:</strong> NACT did <strong>not improve long-term survival</strong> compared with the same chemotherapy given after surgery. Its principal benefit was surgical: BCS increased from 49% to 65%. The historical trade-off was a 5.5% absolute increase in local recurrence.</div>` : `<div class="callout"><strong>Clinical interpretation:</strong> ${ev.benefitText}</div>`} <div class="references"><h3>Evidence</h3><ol>${ev.refs.map((r,i)=>`<li>${r} ${ev.urls?.[i]?`<a href="${ev.urls[i]}" target="_blank">PubMed</a>`:""}</li>`).join("")}</ol><p class="muted">Sample size: ${ev.n} randomized (${ev.interventionN} treatment, ${ev.controlN} comparator).</p></div></article>`;
 }
 }
 function renderEntry(){
