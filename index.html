@@ -295,16 +295,12 @@ function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"n
 function getEvidence(){
  const stored=JSON.parse(localStorage.getItem("ae_evidence")||"null");
  if(!Array.isArray(stored)) return defaultEvidence;
- const builtIn=new Map(defaultEvidence.map(e=>[e.id,e]));
- const custom=[];
- for(const x of stored){
-   if(!x||!x.id) continue;
-   if(builtIn.has(x.id)){
-     const base=builtIn.get(x.id);
-     builtIn.set(x.id,{...base,...x,site:base.site,discipline:base.discipline,setting:base.setting,trial:base.trial});
-   }else custom.push(x);
- }
- return [...defaultEvidence.map(e=>builtIn.get(e.id)),...custom];
+ // Built-in trials are authoritative. Never merge browser-stored trial data
+ // back into them, because an old/customized record can carry outcome values
+ // from another trial and cause cross-trial contamination.
+ const builtInIds=new Set(defaultEvidence.map(e=>e.id));
+ const custom=stored.filter(x=>x&&x.id&&!builtInIds.has(x.id));
+ return [...defaultEvidence,...custom];
 }
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
