@@ -305,13 +305,15 @@ function getEvidence(){
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
 function renderFilters(){fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=renderEntry)}
+function renderEntryCard(e){
 function renderEntry(){
  const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
  const e=getEvidence().find(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
  if(!e){document.getElementById("entryContainer").innerHTML='<div class="card entry">No evidence entry matches these filters yet.</div>';return}
  let people="";for(let i=0;i<100;i++)people+=`<span class="person ${i<Math.round(e.absoluteBenefit)?'b':''}"></span>`;
  let harmPeople="";for(let i=0;i<100;i++)harmPeople+=`<span class="person ${i<Math.round(e.harmIncrease||0)?'h':''}"></span>`;
- document.getElementById("entryContainer").innerHTML=`
+
+return `
  <article class="card entry"><div class="entryhead"><div><span class="badge">${e.setting.toUpperCase()}</span><h2>${e.treatment}</h2><div class="muted">${e.population} · ${e.endpoint} · ${e.horizon}</div></div><span class="badge">${e.trial}</span></div>
  <div class="stats"><div class="stat"><div class="num">${e.relativeLabel} ${e.relativeEffect}</div><small>${e.ci}</small></div><div class="stat"><div class="num">+${e.absoluteBenefit}%</div><small>Absolute benefit</small></div><div class="stat"><div class="num">NNT ${e.nnt}</div><small>At ${e.horizon}</small></div><div class="stat"><div class="num">${e.interventionRate}%</div><small>${e.horizon} outcome with treatment</small></div></div>
  <div class="columns">
@@ -345,6 +347,13 @@ function renderEntry(){
    <p class="explain"><strong>NNH = 18.</strong> NACT had about <strong>5.5 additional local recurrences per 100 women</strong> at 15 years (21.4% − 15.9%). Therefore, for every ~18 women receiving chemotherapy before surgery rather than after surgery, there was approximately <strong>1 additional local recurrence</strong> in these historical trials. This NNH describes the <em>sequencing strategy</em>; it is not an NNH for chemotherapy toxicity.</p>
  </div>
  <div class="callout"><strong>Clinical interpretation:</strong> NACT did <strong>not improve long-term survival</strong> compared with the same chemotherapy given after surgery. Its principal benefit was surgical: BCS increased from 49% to 65%. The historical trade-off was a 5.5% absolute increase in local recurrence.</div>` : `<div class="callout"><strong>Clinical interpretation:</strong> ${e.benefitText}</div>`} <div class="references"><h3>Evidence</h3><ol>${e.refs.map((r,i)=>`<li>${r} ${e.urls?.[i]?`<a href="${e.urls[i]}" target="_blank">PubMed</a>`:""}</li>`).join("")}</ol><p class="muted">Sample size: ${e.n} randomized (${e.interventionN} treatment, ${e.controlN} comparator).</p></div></article>`;
+}
+}
+function renderEntry(){
+ const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
+ const matches=getEvidence().filter(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
+ if(!matches.length){document.getElementById("entryContainer").innerHTML='<div class="card entry">No evidence entry matches these filters yet.</div>';return}
+ document.getElementById("entryContainer").innerHTML=matches.map(renderEntryCard).join("");
 }
 async function loadSubstack(){
  const box=document.getElementById("substackPosts");
