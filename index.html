@@ -294,9 +294,17 @@ const defaultEvidence=[{
 function getSettings(){return JSON.parse(localStorage.getItem("ae_settings")||"null")||defaultSettings}
 function getEvidence(){
  const stored=JSON.parse(localStorage.getItem("ae_evidence")||"null");
- if(!stored) return defaultEvidence;
- const order=new Map(defaultEvidence.map((e,i)=>[e.id,i]));
- return [...stored].sort((a,b)=>(order.get(a.id)??9999)-(order.get(b.id)??9999));
+ if(!Array.isArray(stored)) return defaultEvidence;
+ const builtIn=new Map(defaultEvidence.map(e=>[e.id,e]));
+ const custom=[];
+ for(const x of stored){
+   if(!x||!x.id) continue;
+   if(builtIn.has(x.id)){
+     const base=builtIn.get(x.id);
+     builtIn.set(x.id,{...base,...x,site:base.site,discipline:base.discipline,setting:base.setting,trial:base.trial});
+   }else custom.push(x);
+ }
+ return [...defaultEvidence.map(e=>builtIn.get(e.id)),...custom];
 }
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
