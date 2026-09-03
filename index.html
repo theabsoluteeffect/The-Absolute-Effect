@@ -485,7 +485,7 @@ const questionLabels={
  "nsabp-b39":"Partial breast vs whole breast RT",
  "keynote054-rfs-3y":"Pembrolizumab vs placebo"
 };
-function questionFor(e){return questionLabels[e.id]||e.trial}
+function questionFor(e){const q=questionLabels[e.id]; return q ? `${q} (${e.trial})` : e.trial}
 function matchingEvidence(){
  const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
  return getEvidence().filter(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
