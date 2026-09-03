@@ -468,7 +468,7 @@ function getEvidence(){
  return [...defaultEvidence.map(e=>builtIn.get(e.id)),...custom];
 }
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
-function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
+function unique(key,arr=getEvidence()){return [...new Set(arr.map(e=>e[key]).filter(Boolean))]}
 const questionLabels={
  "ebctcg-nact-vs-act":"NACT vs adjuvant chemotherapy",
  "nsabp-b06-bcs-mrm-rt":"MRM vs BCS ± RT",
