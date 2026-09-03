@@ -14,16 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch Substack RSS and build article list
+      - name: Fetch Substack RSS
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 5 --retry-all-errors --connect-timeout 20 --max-time 60 \
+            -A "Mozilla/5.0 (compatible; The-Absolute-Effect/1.0; +https://github.com/theabsoluteeffect/The-Absolute-Effect)" \
+            -H "Accept: application/rss+xml, application/xml, text/xml, */*" \
+            "https://dosematters.substack.com/feed" -o substack-feed.xml
+          test -s substack-feed.xml
+
+      - name: Build article list
         shell: python
         run: |
-          import json, re, urllib.request, xml.etree.ElementTree as ET
+          import json, re, xml.etree.ElementTree as ET
           from html import unescape
 
-          url = "https://dosematters.substack.com/feed"
-          req = urllib.request.Request(url, headers={"User-Agent": "The-Absolute-Effect/1.0"})
-          with urllib.request.urlopen(req, timeout=30) as response:
-              xml = response.read()
+          with open("substack-feed.xml", "rb") as f:
+              xml = f.read()
 
           root = ET.fromstring(xml)
           posts = []
