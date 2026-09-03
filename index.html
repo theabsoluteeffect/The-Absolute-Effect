@@ -39,6 +39,7 @@ footer{background:#171717;color:#ddd;padding:30px 22px;margin-top:40px}footer di
 <div><label>TUMOUR SITE</label><select id="siteFilter"></select></div>
 <div><label>DISCIPLINE</label><select id="disciplineFilter"></select></div>
 <div><label>SETTING</label><select id="settingFilter"></select></div>
+<div id="questionWrap" style="display:none"><label>CLINICAL QUESTION</label><select id="questionFilter"></select></div>
 </div>
 <div id="entryContainer"></div>
 </section>
@@ -308,10 +309,46 @@ function getEvidence(){
 }
 function fillSelect(id,items){document.getElementById(id).innerHTML=items.map(x=>`<option>${x}</option>`).join("")}
 function unique(key){return [...new Set(getEvidence().map(e=>e[key]))]}
-function renderFilters(){fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=renderEntry)}
-function renderEntry(){
+const questionLabels={
+ "ebctcg-nact-vs-act":"NACT vs adjuvant chemotherapy",
+ "nsabp-b06-bcs-mrm-rt":"MRM vs BCS ± RT",
+ "ebctcg-bcs-rt":"BCS + RT vs BCS alone",
+ "eortc-22881-boost":"RT boost vs no boost",
+ "ontario-425-16":"Hypofractionation vs conventional fractionation",
+ "start-a":"Hypofractionation vs conventional fractionation",
+ "start-b":"Hypofractionation vs conventional fractionation",
+ "fast":"Ultra-hypofractionation vs conventional fractionation",
+ "fast-forward":"5-fraction vs conventional fractionation",
+ "calgb-9343":"Tamoxifen vs tamoxifen + RT",
+ "prime-ii":"Endocrine therapy alone vs endocrine therapy + RT",
+ "import-low":"Partial breast vs whole breast RT",
+ "nsabp-b39":"Partial breast vs whole breast RT",
+ "keynote054-rfs-3y":"Pembrolizumab vs placebo"
+};
+function questionFor(e){return questionLabels[e.id]||e.trial}
+function matchingEvidence(){
  const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
- const e=getEvidence().find(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
+ return getEvidence().filter(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
+}
+function renderQuestionFilter(){
+ const matches=matchingEvidence(), wrap=document.getElementById("questionWrap"), sel=document.getElementById("questionFilter");
+ const groups=[...new Map(matches.map(e=>[questionFor(e),e])).entries()];
+ wrap.style.display=groups.length>1?"block":"none";
+ if(!groups.length){sel.innerHTML="";return}
+ const current=sel.value;
+ fillSelect("questionFilter",groups.map(x=>x[0]));
+ if(groups.some(x=>x[0]===current)) sel.value=current;
+ sel.onchange=renderEntry;
+}
+function renderFilters(){
+ fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);
+ ["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=()=>{renderQuestionFilter();renderEntry()});
+ renderQuestionFilter();
+}
+function renderEntry(){
+ const matches=matchingEvidence(); renderQuestionFilter();
+ const q=document.getElementById("questionFilter").value;
+ const e=matches.find(x=>questionFor(x)===q)||matches[0];
  if(!e){document.getElementById("entryContainer").innerHTML='<div class="card entry">No evidence entry matches these filters yet.</div>';return}
  let people="";for(let i=0;i<100;i++)people+=`<span class="person ${i<Math.round(e.absoluteBenefit)?'b':''}"></span>`;
  let harmPeople="";for(let i=0;i<100;i++)harmPeople+=`<span class="person ${i<Math.round(e.harmIncrease||0)?'h':''}"></span>`;
