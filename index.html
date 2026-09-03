@@ -501,8 +501,22 @@ function renderQuestionFilter(){
  sel.onchange=renderEntry;
 }
 function renderFilters(){
- fillSelect("siteFilter",["All",...unique("site")]);fillSelect("disciplineFilter",["All",...unique("discipline")]);fillSelect("settingFilter",["All",...unique("setting")]);
- ["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=()=>{renderQuestionFilter();renderEntry()});
+ const ev=getEvidence();
+ const siteEl=document.getElementById("siteFilter"), dEl=document.getElementById("disciplineFilter"), gEl=document.getElementById("settingFilter");
+ const site=siteEl.value||"All", oldD=dEl.value||"All", oldG=gEl.value||"All";
+ fillSelect("siteFilter",["All",...unique("site")]);
+ const siteEv=ev.filter(x=>site==="All"||x.site===site);
+ const disciplines=["All",...unique("discipline",siteEv)];
+ fillSelect("disciplineFilter",disciplines);
+ const d=disciplines.includes(oldD)?oldD:"All"; dEl.value=d;
+ const dEv=siteEv.filter(x=>d==="All"||x.discipline===d);
+ const settings=["All",...unique("setting",dEv)];
+ fillSelect("settingFilter",settings);
+ gEl.value=settings.includes(oldG)?oldG:"All";
+ ["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=()=>{
+   if(id!=="settingFilter") renderFilters();
+   renderQuestionFilter();renderEntry();
+ });
  renderQuestionFilter();
 }
 function renderEntry(){
