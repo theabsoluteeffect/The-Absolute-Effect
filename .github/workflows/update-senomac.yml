@@ -37,8 +37,12 @@ jobs:
             block=block.replace(a,b)
           h=h[:i]+block+h[j:]
           p.write_text(h,encoding='utf-8')
+          m=h.find('<script>')
+          n=h.find('</script>',m)
+          if m<0 or n<0: raise SystemExit('script block not found')
+          Path('/tmp/atlas.js').write_text(h[m+8:n],encoding='utf-8')
           PY
-          node --check <(sed -n '/<script>/,/<\/script>/p' index.html | sed '1d;$d')
+          node --check /tmp/atlas.js
       - name: Commit
         run: |
           git config user.name 'github-actions[bot]'
