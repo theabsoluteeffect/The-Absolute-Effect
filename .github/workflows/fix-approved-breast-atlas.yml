@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Repair and validate atlas
         run: |
           python - <<'PY'
@@ -34,7 +33,6 @@ jobs:
           Path('/tmp/atlas.js').write_text(m.group(1),encoding='utf-8')
           PY
           node --check /tmp/atlas.js
-
       - name: Commit repair
         run: |
           git config user.name 'github-actions[bot]'
