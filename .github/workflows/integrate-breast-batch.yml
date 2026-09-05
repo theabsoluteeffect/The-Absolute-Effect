@@ -32,8 +32,6 @@ jobs:
           html_path = Path('index.html')
           html = html_path.read_text(encoding='utf-8')
 
-          # Site renderer schema. The batch remains the source record; these fields
-          # make the approved studies compatible with the existing atlas renderer.
           ui_rates = {
             'acosog-z0011': (86.3, 83.6, 2.7),
             'senomac': (89.7, 88.7, 1.0),
@@ -54,7 +52,6 @@ jobs:
               rel = e.get('relativeEffect', '')
               m = re.match(r'([A-Za-z]+)', rel)
               rel_label = m.group(1) if m else 'Effect'
-              ci = rel
               return {
                 'id': rid,
                 'site': e['site'],
@@ -70,7 +67,7 @@ jobs:
                 'nnt': e.get('nnt', 'Not applicable'),
                 'relativeLabel': rel_label,
                 'relativeEffect': rel,
-                'ci': ci,
+                'ci': rel,
                 'n': 0,
                 'interventionN': 0,
                 'controlN': 0,
@@ -93,7 +90,6 @@ jobs:
               raise SystemExit('Could not locate defaultEvidence closing marker')
           if new_entries:
               payload = json.dumps(new_entries, ensure_ascii=False, indent=2)
-              # JSON is valid JavaScript inside the existing array.
               html = html.replace(marker, ",\n" + payload[1:-1] + marker, 1)
 
           q_marker = "\n};\nfunction questionFor(e)"
@@ -101,10 +97,8 @@ jobs:
               raise SystemExit('Could not locate questionLabels closing marker')
           labels_to_add = []
           for e in batch:
-              label = e['clinicalQuestion']
-              key = e['id']
-              if f'"{key}":' not in html:
-                  labels_to_add.append((key, label))
+              if f'"{e["id"]}":' not in html:
+                  labels_to_add.append((e['id'], e['clinicalQuestion']))
           if labels_to_add:
               additions = ''.join(f'\n "{k}":{json.dumps(v, ensure_ascii=False)},' for k,v in labels_to_add)
               html = html.replace(q_marker, additions + q_marker, 1)
@@ -124,16 +118,12 @@ jobs:
           ids = ['acosog-z0011','senomac','amaros','nsabp-b51','aphinity','monarche','natalee','olympia','keynote522','hbe-her2-trastuzumab-1y']
           for rid in ids:
               assert rid in html, f'Missing {rid}'
+          m = re.search(r'<script>(.*?)</script>', html, re.S)
+          assert m, 'Main script not found'
+          Path('/tmp/atlas.js').write_text(m.group(1), encoding='utf-8')
           print('Atlas integration validation passed')
           PY
-          node --check <(python - <<'PY'
-          from pathlib import Path
-          import re
-          h=Path('index.html').read_text(encoding='utf-8')
-          m=re.search(r'<script>(.*?)</script>',h,re.S)
-          print(m.group(1))
-          PY
-          )
+          node --check /tmp/atlas.js
 
       - name: Commit integrated atlas
         run: |
