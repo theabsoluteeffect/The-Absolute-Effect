@@ -17,47 +17,56 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch Substack RSS
+      - name: Fetch Substack archive
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --location --retry 5 --retry-all-errors --connect-timeout 20 --max-time 60 \
+          url="https://dosematters.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=6"
+          curl --fail --silent --show-error --location --retry 5 --retry-all-errors --connect-timeout 20 --max-time 60 \
             -A "Mozilla/5.0 (compatible; The-Absolute-Effect/1.0; +https://github.com/theabsoluteeffect/The-Absolute-Effect)" \
-            -H "Accept: application/rss+xml, application/xml, text/xml, */*" \
-            "https://dosematters.substack.com/feed" -o substack-feed.xml
-          test -s substack-feed.xml
+            -H "Accept: application/json" \
+            -H "Referer: https://dosematters.substack.com/" \
+            "$url" -o substack-archive.json
+          test -s substack-archive.json
+          python - <<'PY'
+          import json
+          with open("substack-archive.json", encoding="utf-8") as f:
+              data=json.load(f)
+          if not isinstance(data,list) or not data:
+              raise SystemExit("Substack archive returned no posts")
+          print(f"Fetched {len(data)} posts")
+          PY
 
       - name: Build article list
         shell: python
         run: |
-          import json, re, xml.etree.ElementTree as ET
+          import json, re
           from html import unescape
+          from urllib.parse import urljoin
 
-          with open("substack-feed.xml", "rb") as f:
-              xml = f.read()
+          with open("substack-archive.json", encoding="utf-8") as f:
+              items=json.load(f)
 
-          root = ET.fromstring(xml)
-          posts = []
-          for item in root.findall(".//item")[:6]:
-              def txt(tag):
-                  x = item.find(tag)
-                  return (x.text or "").strip() if x is not None else ""
-              title = unescape(txt("title"))
-              link = txt("link")
-              date = txt("pubDate")
-              desc = txt("description")
-              desc = re.sub(r"<[^>]+>", " ", unescape(desc))
-              desc = re.sub(r"\s+", " ", desc).strip()
-              if len(desc) > 220:
-                  desc = desc[:217].rsplit(" ", 1)[0] + "…"
+          posts=[]
+          for item in items[:6]:
+              title=unescape(str(item.get("title") or item.get("name") or "")).strip()
+              link=(item.get("canonical_url") or item.get("canonicalUrl") or item.get("url") or "").strip()
+              if link and link.startswith("/"):
+                  link=urljoin("https://dosematters.substack.com",link)
+              date=(item.get("post_date") or item.get("postDate") or item.get("published_at") or item.get("publishedAt") or item.get("date") or "")
+              desc=(item.get("description") or item.get("subtitle") or item.get("excerpt") or "")
+              desc=re.sub(r"<[^>]+>"," ",unescape(str(desc)))
+              desc=re.sub(r"\s+"," ",desc).strip()
+              if len(desc)>220:
+                  desc=desc[:217].rsplit(" ",1)[0]+"…"
               if title and link:
-                  posts.append({"title": title, "link": link, "date": date, "excerpt": desc})
+                  posts.append({"title":title,"link":link,"date":date,"excerpt":desc})
 
           if not posts:
-              raise SystemExit("No Substack posts found")
+              raise SystemExit("No usable Substack posts found")
 
-          with open("substack.json", "w", encoding="utf-8") as f:
-              json.dump(posts[:6], f, ensure_ascii=False, indent=2)
+          with open("substack.json","w",encoding="utf-8") as f:
+              json.dump(posts[:6],f,ensure_ascii=False,indent=2)
               f.write("\n")
 
       - name: Commit updated article list
