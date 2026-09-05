@@ -1,0 +1,148 @@
+name: Integrate approved breast cancer batch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'breast-cancer-batch-*.json'
+      - '.github/workflows/integrate-breast-batch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Integrate batch into atlas
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          batch_files = sorted(Path('.').glob('breast-cancer-batch-*.json'))
+          if not batch_files:
+              raise SystemExit('No breast-cancer batch file found')
+          batch_path = batch_files[-1]
+          batch = json.loads(batch_path.read_text(encoding='utf-8'))
+          html_path = Path('index.html')
+          html = html_path.read_text(encoding='utf-8')
+
+          # Site renderer schema. The batch remains the source record; these fields
+          # make the approved studies compatible with the existing atlas renderer.
+          ui_rates = {
+            'acosog-z0011': (86.3, 83.6, 2.7),
+            'senomac': (89.7, 88.7, 1.0),
+            'amaros': (98.18, 99.07, -0.89),
+            'nsabp-b51': (92.7, 91.8, 0.9),
+            'aphinity': (88.4, 85.8, 2.6),
+            'monarche': (83.6, 76.0, 7.6),
+            'natalee': (88.5, 83.6, 4.9),
+            'olympia': (82.7, 75.4, 7.3),
+            'keynote522': (86.6, 81.7, 4.9),
+            'hbe-her2-trastuzumab-1y': (79.0, 73.0, 6.0),
+          }
+
+          def to_ui(e):
+              rid = e['id']
+              treatment = f"{e['intervention']} vs {e['comparator']}"
+              rates = ui_rates.get(rid, (0, 0, 0))
+              rel = e.get('relativeEffect', '')
+              m = re.match(r'([A-Za-z]+)', rel)
+              rel_label = m.group(1) if m else 'Effect'
+              ci = rel
+              return {
+                'id': rid,
+                'site': e['site'],
+                'discipline': e['discipline'],
+                'setting': e['setting'],
+                'treatment': treatment,
+                'population': e['population'],
+                'endpoint': e['endpoint'],
+                'horizon': e['horizon'],
+                'interventionRate': rates[0],
+                'controlRate': rates[1],
+                'absoluteBenefit': rates[2],
+                'nnt': e.get('nnt', 'Not applicable'),
+                'relativeLabel': rel_label,
+                'relativeEffect': rel,
+                'ci': ci,
+                'n': 0,
+                'interventionN': 0,
+                'controlN': 0,
+                'benefitText': e.get('absoluteEffect', ''),
+                'harmLabel': e.get('toxicityQoL', 'Important toxicity and QoL considerations'),
+                'harmIntervention': 0,
+                'harmControl': 0,
+                'harmIncrease': 0,
+                'nnH': 'See trial data',
+                'trial': e['trial'],
+                'clinicalQuestion': e['clinicalQuestion'],
+                'refs': [e.get('source', '')],
+                'urls': [e.get('source', '')],
+              }
+
+          new_entries = [to_ui(e) for e in batch if f'id:"{e["id"]}"' not in html and f'"id": "{e["id"]}"' not in html]
+
+          marker = "\n]\n\nfunction getSettings()"
+          if marker not in html:
+              raise SystemExit('Could not locate defaultEvidence closing marker')
+          if new_entries:
+              payload = json.dumps(new_entries, ensure_ascii=False, indent=2)
+              # JSON is valid JavaScript inside the existing array.
+              html = html.replace(marker, ",\n" + payload[1:-1] + marker, 1)
+
+          q_marker = "\n};\nfunction questionFor(e)"
+          if q_marker not in html:
+              raise SystemExit('Could not locate questionLabels closing marker')
+          labels_to_add = []
+          for e in batch:
+              label = e['clinicalQuestion']
+              key = e['id']
+              if f'"{key}":' not in html:
+                  labels_to_add.append((key, label))
+          if labels_to_add:
+              additions = ''.join(f'\n "{k}":{json.dumps(v, ensure_ascii=False)},' for k,v in labels_to_add)
+              html = html.replace(q_marker, additions + q_marker, 1)
+
+          html_path.write_text(html, encoding='utf-8')
+          print(f'Integrated {len(new_entries)} new breast-cancer entries from {batch_path.name}')
+          PY
+
+      - name: Validate HTML JavaScript syntax
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path('index.html').read_text(encoding='utf-8')
+          assert 'const defaultEvidence=[' in html
+          assert 'const questionLabels={' in html
+          ids = ['acosog-z0011','senomac','amaros','nsabp-b51','aphinity','monarche','natalee','olympia','keynote522','hbe-her2-trastuzumab-1y']
+          for rid in ids:
+              assert rid in html, f'Missing {rid}'
+          print('Atlas integration validation passed')
+          PY
+          node --check <(python - <<'PY'
+          from pathlib import Path
+          import re
+          h=Path('index.html').read_text(encoding='utf-8')
+          m=re.search(r'<script>(.*?)</script>',h,re.S)
+          print(m.group(1))
+          PY
+          )
+
+      - name: Commit integrated atlas
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then
+            echo 'No atlas changes to commit'
+          else
+            git commit -m 'Integrate approved breast cancer batch into atlas'
+            git push
+          fi
