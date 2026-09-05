@@ -1,0 +1,43 @@
+name: Validate and repair approved breast atlas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-approved-breast-atlas.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Repair and validate atlas
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html')
+          h=p.read_text(encoding='utf-8')
+          h=h.replace('"katherine":"Does adjuvant T-DM1 improve outcomes over trastuzumab for residual HER2-positive disease after neoadjuvant therapy?"\n "acosog-z0011"', '"katherine":"Does adjuvant T-DM1 improve outcomes over trastuzumab for residual HER2-positive disease after neoadjuvant therapy?",\n "acosog-z0011"')
+          h=h.replace('"relativeLabel": "Approximately",\n    "relativeEffect": "Approximately HR 0.68"', '"relativeLabel": "HR",\n    "relativeEffect": "Approximately HR 0.68"')
+          h=h.replace('"relativeLabel": "Approximately",\n    "relativeEffect": "Approximately HR 0.76 for DFS in long-term analyses"', '"relativeLabel": "HR",\n    "relativeEffect": "Approximately HR 0.76 for DFS in long-term analyses"')
+          p.write_text(h,encoding='utf-8')
+          ids=['acosog-z0011','senomac','amaros','nsabp-b51','aphinity','monarche','natalee','olympia','keynote522','hbe-her2-trastuzumab-1y']
+          for rid in ids: assert rid in h, rid
+          m=re.search(r'<script>(.*?)</script>',h,re.S)
+          assert m
+          Path('/tmp/atlas.js').write_text(m.group(1),encoding='utf-8')
+          PY
+          node --check /tmp/atlas.js
+
+      - name: Commit repair
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then echo 'No repair needed'; else git commit -m 'Repair approved breast atlas syntax'; git push; fi
