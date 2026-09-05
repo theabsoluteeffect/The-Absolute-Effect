@@ -1,6 +1,9 @@
 name: Update Dose Matters articles
 
 on:
+  push:
+    paths:
+      - ".github/workflows/update-substack.yml"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
