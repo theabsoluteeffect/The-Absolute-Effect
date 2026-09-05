@@ -1,0 +1,97 @@
+name: Integrate approved breast cancer batch v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'breast-cancer-batch-*.json'
+      - '.github/workflows/integrate-breast-batch-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Integrate approved studies
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          batches = sorted(Path('.').glob('breast-cancer-batch-*.json'))
+          if not batches:
+              raise SystemExit('No breast-cancer batch found')
+          batch_path = batches[-1]
+          batch = json.loads(batch_path.read_text(encoding='utf-8'))
+          p = Path('index.html')
+          html = p.read_text(encoding='utf-8')
+
+          rates = {
+            'acosog-z0011': (86.3,83.6,2.7), 'senomac': (89.7,88.7,1.0),
+            'amaros': (98.18,99.07,-0.89), 'nsabp-b51': (92.7,91.8,0.9),
+            'aphinity': (88.4,85.8,2.6), 'monarche': (83.6,76.0,7.6),
+            'natalee': (88.5,83.6,4.9), 'olympia': (82.7,75.4,7.3),
+            'keynote522': (86.6,81.7,4.9), 'hbe-her2-trastuzumab-1y': (79.0,73.0,6.0)
+          }
+
+          def ui(e):
+              r = rates[e['id']]
+              m = re.match(r'([A-Za-z]+)', e.get('relativeEffect',''))
+              return {
+                'id':e['id'],'site':e['site'],'discipline':e['discipline'],'setting':e['setting'],
+                'treatment':f"{e['intervention']} vs {e['comparator']}",'population':e['population'],
+                'endpoint':e['endpoint'],'horizon':e['horizon'],'interventionRate':r[0],
+                'controlRate':r[1],'absoluteBenefit':r[2],'nnt':e.get('nnt','Not applicable'),
+                'relativeLabel':m.group(1) if m else 'Effect','relativeEffect':e.get('relativeEffect',''),
+                'ci':e.get('relativeEffect',''),'n':0,'interventionN':0,'controlN':0,
+                'benefitText':e.get('absoluteEffect',''),'harmLabel':e.get('toxicityQoL',''),
+                'harmIntervention':0,'harmControl':0,'harmIncrease':0,'nnH':'See trial data',
+                'trial':e['trial'],'clinicalQuestion':e['clinicalQuestion'],
+                'refs':[e.get('source','')],'urls':[e.get('source','')]
+              }
+
+          new = [ui(e) for e in batch if e['id'] not in html]
+          marker = "\n]\n\nfunction getSettings()"
+          if marker not in html:
+              raise SystemExit('defaultEvidence marker not found')
+          if new:
+              payload = json.dumps(new,ensure_ascii=False,indent=2)
+              html = html.replace(marker, ",\n"+payload[1:-1]+marker, 1)
+
+          qmarker = "\n};\nfunction questionFor(e)"
+          if qmarker not in html:
+              raise SystemExit('questionLabels marker not found')
+          labels=[]
+          for e in batch:
+              if f'"{e["id"]}":' not in html:
+                  labels.append((e['id'],e['clinicalQuestion']))
+          if labels:
+              additions=','.join('\n '+json.dumps(k)+':'+json.dumps(v,ensure_ascii=False) for k,v in labels)
+              html=html.replace(qmarker,additions+qmarker,1)
+
+          p.write_text(html,encoding='utf-8')
+          # Structural validation of every approved record and question label.
+          for e in batch:
+              assert e['id'] in html
+              assert e['clinicalQuestion'] in html
+              assert e['trial'] in html
+          print(f'Prepared {len(new)} new approved studies for the atlas')
+          PY
+
+      - name: Commit atlas integration
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then
+            echo 'No atlas changes to commit'
+          else
+            git commit -m 'Integrate approved breast cancer batch into atlas'
+            git push
+          fi
