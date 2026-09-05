@@ -1,9 +1,6 @@
 name: Update Dose Matters articles
 
 on:
-  push:
-    paths:
-      - ".github/workflows/update-substack.yml"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -17,62 +14,124 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch Substack archive
+      - name: Fetch Substack feed
         shell: bash
         run: |
           set -euo pipefail
-          url="https://dosematters.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=6"
-          curl --fail --silent --show-error --location --retry 5 --retry-all-errors --connect-timeout 20 --max-time 60 \
-            -A "Mozilla/5.0 (compatible; The-Absolute-Effect/1.0; +https://github.com/theabsoluteeffect/The-Absolute-Effect)" \
-            -H "Accept: application/json" \
-            -H "Referer: https://dosematters.substack.com/" \
-            "$url" -o substack-archive.json
-          test -s substack-archive.json
-          python - <<'PY'
-          import json
-          with open("substack-archive.json", encoding="utf-8") as f:
-              data=json.load(f)
-          if not isinstance(data,list) or not data:
-              raise SystemExit("Substack archive returned no posts")
-          print(f"Fetched {len(data)} posts")
-          PY
+          rm -f substack-source.json substack-feed.xml
 
-      - name: Build article list
+          # Substack can return 403 to GitHub Actions IPs. Use public RSS
+          # retrieval fallbacks instead of repeatedly retrying the same request.
+          if curl --fail --silent --show-error --location --retry 2 --retry-all-errors --connect-timeout 15 --max-time 45 \
+            -A "Mozilla/5.0" \
+            "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fdosematters.substack.com%2Ffeed" \
+            -o substack-source.json; then
+            python - <<'PY'
+          import json
+          with open("substack-source.json", encoding="utf-8") as f:
+              data=json.load(f)
+          if data.get("status") != "ok" or not data.get("items"):
+              raise SystemExit("rss2json returned no usable posts")
+          print(f"Fetched {len(data['items'])} posts via RSS2JSON")
+          PY
+          else
+            rm -f substack-source.json
+          fi
+
+          if [ ! -s substack-source.json ]; then
+            if curl --fail --silent --show-error --location --retry 2 --retry-all-errors --connect-timeout 15 --max-time 45 \
+              -A "Mozilla/5.0" \
+              "https://r.jina.ai/http://dosematters.substack.com/feed" \
+              -o substack-feed.xml; then
+              test -s substack-feed.xml
+              python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse("substack-feed.xml")
+          print("Fetched Substack RSS via Jina")
+          PY
+            else
+              rm -f substack-feed.xml
+            fi
+          fi
+
+          if [ ! -s substack-source.json ] && [ ! -s substack-feed.xml ]; then
+            curl --fail --silent --show-error --location --retry 2 --retry-all-errors --connect-timeout 15 --max-time 45 \
+              -A "Mozilla/5.0" \
+              -H "Accept: application/rss+xml, application/xml, text/xml" \
+              "https://dosematters.substack.com/feed" \
+              -o substack-feed.xml
+            test -s substack-feed.xml
+            python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse("substack-feed.xml")
+          print("Fetched Substack RSS directly")
+          PY
+          fi
+
+      - name: Parse latest 6 articles
         shell: python
         run: |
-          import json, re
+          import json, os, re
+          import xml.etree.ElementTree as ET
           from html import unescape
           from urllib.parse import urljoin
 
-          with open("substack-archive.json", encoding="utf-8") as f:
-              items=json.load(f)
+          def clean(value):
+              value = unescape(str(value or ""))
+              value = re.sub(r"<[^>]+>", " ", value)
+              return re.sub(r"\s+", " ", value).strip()
 
-          posts=[]
-          for item in items[:6]:
-              title=unescape(str(item.get("title") or item.get("name") or "")).strip()
-              link=(item.get("canonical_url") or item.get("canonicalUrl") or item.get("url") or "").strip()
-              if link and link.startswith("/"):
-                  link=urljoin("https://dosematters.substack.com",link)
-              date=(item.get("post_date") or item.get("postDate") or item.get("published_at") or item.get("publishedAt") or item.get("date") or "")
-              desc=(item.get("description") or item.get("subtitle") or item.get("excerpt") or "")
-              desc=re.sub(r"<[^>]+>"," ",unescape(str(desc)))
-              desc=re.sub(r"\s+"," ",desc).strip()
-              if len(desc)>220:
-                  desc=desc[:217].rsplit(" ",1)[0]+"…"
-              if title and link:
-                  posts.append({"title":title,"link":link,"date":date,"excerpt":desc})
+          posts = []
+          if os.path.exists("substack-source.json"):
+              with open("substack-source.json", encoding="utf-8") as f:
+                  data = json.load(f)
+              for item in data.get("items", [])[:6]:
+                  posts.append({
+                      "title": clean(item.get("title")),
+                      "link": str(item.get("link") or item.get("url") or "").strip(),
+                      "date": item.get("pubDate") or item.get("published") or item.get("date") or "",
+                      "excerpt": clean(item.get("description") or item.get("content") or item.get("summary")),
+                  })
+          else:
+              root = ET.parse("substack-feed.xml").getroot()
+              for item in root.findall(".//item")[:6]:
+                  def text(name):
+                      node = item.find(name)
+                      return node.text if node is not None else ""
+                  posts.append({
+                      "title": clean(text("title")),
+                      "link": clean(text("link")),
+                      "date": clean(text("pubDate")),
+                      "excerpt": clean(text("description")),
+                  })
 
-          if not posts:
+          valid = []
+          for post in posts:
+              if post["link"].startswith("/"):
+                  post["link"] = urljoin("https://dosematters.substack.com", post["link"])
+              if post["title"] and post["link"].startswith("https://dosematters.substack.com/"):
+                  if len(post["excerpt"]) > 220:
+                      post["excerpt"] = post["excerpt"][:217].rsplit(" ", 1)[0] + "…"
+                  valid.append(post)
+
+          if not valid:
               raise SystemExit("No usable Substack posts found")
 
-          with open("substack.json","w",encoding="utf-8") as f:
-              json.dump(posts[:6],f,ensure_ascii=False,indent=2)
+          with open("substack.json", "w", encoding="utf-8") as f:
+              json.dump(valid[:6], f, ensure_ascii=False, indent=2)
               f.write("\n")
+          print(f"Prepared {len(valid[:6])} articles")
 
       - name: Commit updated article list
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add substack.json
-          git diff --cached --quiet || git commit -m "Update Dose Matters articles"
-          git push
+          if git diff --cached --quiet; then
+            echo "No article changes"
+          else
+            git commit -m "Update Dose Matters articles"
+            git push
+          fi
