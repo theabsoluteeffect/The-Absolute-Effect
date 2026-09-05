@@ -47,17 +47,15 @@ jobs:
 
           def to_ui(e):
               rid = e['id']
-              treatment = f"{e['intervention']} vs {e['comparator']}"
               rates = ui_rates.get(rid, (0, 0, 0))
               rel = e.get('relativeEffect', '')
               m = re.match(r'([A-Za-z]+)', rel)
-              rel_label = m.group(1) if m else 'Effect'
               return {
                 'id': rid,
                 'site': e['site'],
                 'discipline': e['discipline'],
                 'setting': e['setting'],
-                'treatment': treatment,
+                'treatment': f"{e['intervention']} vs {e['comparator']}",
                 'population': e['population'],
                 'endpoint': e['endpoint'],
                 'horizon': e['horizon'],
@@ -65,7 +63,7 @@ jobs:
                 'controlRate': rates[1],
                 'absoluteBenefit': rates[2],
                 'nnt': e.get('nnt', 'Not applicable'),
-                'relativeLabel': rel_label,
+                'relativeLabel': m.group(1) if m else 'Effect',
                 'relativeEffect': rel,
                 'ci': rel,
                 'n': 0,
@@ -100,7 +98,7 @@ jobs:
               if f'"{e["id"]}":' not in html:
                   labels_to_add.append((e['id'], e['clinicalQuestion']))
           if labels_to_add:
-              additions = ''.join(f'\n "{k}":{json.dumps(v, ensure_ascii=False)},' for k,v in labels_to_add)
+              additions = ','.join(f'\n "{k}":{json.dumps(v, ensure_ascii=False)}' for k,v in labels_to_add)
               html = html.replace(q_marker, additions + q_marker, 1)
 
           html_path.write_text(html, encoding='utf-8')
