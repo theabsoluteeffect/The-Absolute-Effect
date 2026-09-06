@@ -36,38 +36,25 @@ jobs:
           previous = json.loads(previous_path.read_text(encoding='utf-8')) if previous_path.exists() else {}
           current = json.loads(current_path.read_text(encoding='utf-8')) if current_path.exists() else {}
 
-          # Once today's Trial of the Day is replaced, automatically promote the
-          # previous day's trial into the permanent evidence archive.
           if previous.get('id') and previous.get('id') != current.get('id') and not any(x.get('id') == previous.get('id') for x in archive):
               archive.append(previous)
               archive_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
               latest_daily.append({
-                  'id': previous['id'],
-                  'site': previous.get('site',''),
-                  'discipline': previous.get('discipline','Medical Oncology'),
-                  'setting': previous.get('setting',''),
-                  'treatment': previous.get('title', previous.get('trial','')),
-                  'population': previous.get('population',''),
-                  'endpoint': 'Trial of the Day summary',
-                  'horizon': 'Publication analysis',
-                  'interventionRate': 0,
-                  'controlRate': 0,
-                  'absoluteBenefit': 0,
-                  'nnt': 'See archived Trial of the Day analysis',
-                  'relativeLabel': 'See publication',
-                  'relativeEffect': '',
-                  'ci': '',
-                  'n': 0, 'interventionN': 0, 'controlN': 0,
+                  'id': previous['id'], 'site': previous.get('site',''),
+                  'discipline': previous.get('discipline','Medical Oncology'), 'setting': previous.get('setting',''),
+                  'treatment': previous.get('title', previous.get('trial','')), 'population': previous.get('population',''),
+                  'endpoint': 'Trial of the Day summary', 'horizon': 'Publication analysis',
+                  'interventionRate': 0, 'controlRate': 0, 'absoluteBenefit': 0,
+                  'nnt': 'See archived Trial of the Day analysis', 'relativeLabel': 'See publication',
+                  'relativeEffect': '', 'ci': '', 'n': 0, 'interventionN': 0, 'controlN': 0,
                   'benefitText': previous.get('summary','') + ' Critical review: ' + previous.get('criticalReview',''),
                   'harmLabel': 'Trial-specific toxicity', 'harmIntervention': 0, 'harmControl': 0, 'harmIncrease': 0,
-                  'nnH': 'See archived Trial of the Day analysis',
-                  'trial': previous.get('trial',''),
-                  'clinicalQuestion': previous.get('summary',''),
-                  'refs': [previous.get('url','')], 'urls': [previous.get('url','')]
+                  'nnH': 'See archived Trial of the Day analysis', 'trial': previous.get('trial',''),
+                  'clinicalQuestion': previous.get('summary',''), 'refs': [previous.get('url','')], 'urls': [previous.get('url','')]
               })
 
-          # De-duplicate IDs and preserve all existing entries.
-          existing_ids = set(re.findall(r'id:["\']([^"\']+)["\']', index))
+          # Match both the existing JS style id:"x" and JSON-style "id":"x".
+          existing_ids = set(re.findall(r'(?:id|["\']id["\'])\s*:\s*["\']([^"\']+)["\']', index))
           new_entries = []
           for entry in latest_daily:
               if entry.get('id') and entry['id'] not in existing_ids:
@@ -78,12 +65,9 @@ jobs:
               marker = '\n]\n\nfunction getSettings'
               if marker not in index:
                   raise SystemExit('defaultEvidence closing marker not found')
-              js = ''
-              for e in new_entries:
-                  js += ',\n' + json.dumps(e, ensure_ascii=False, indent=2)
+              js = ''.join(',\n' + json.dumps(e, ensure_ascii=False, indent=2) for e in new_entries)
               index = index.replace(marker, js + '\n]\n\nfunction getSettings', 1)
 
-          # Replace the visible Trial of the Day card with the current JSON state.
           def trial_html(t):
               return f'''<!-- TRIAL_OF_THE_DAY_START -->
 <section id="trial-of-the-day" class="trial-day">
@@ -99,17 +83,13 @@ jobs:
 </section>
 <!-- TRIAL_OF_THE_DAY_END -->'''
 
-          start = '<!-- TRIAL_OF_THE_DAY_START -->'
-          end = '<!-- TRIAL_OF_THE_DAY_END -->'
-          if start in index and end in index:
-              a = index.index(start)
-              b = index.index(end) + len(end)
-              index = index[:a] + trial_html(current) + index[b:]
-          else:
+          start, end = '<!-- TRIAL_OF_THE_DAY_START -->', '<!-- TRIAL_OF_THE_DAY_END -->'
+          if start not in index or end not in index:
               raise SystemExit('Trial of the Day markers not found')
+          a, b = index.index(start), index.index(end) + len(end)
+          index = index[:a] + trial_html(current) + index[b:]
 
-          index_path = pathlib.Path('index.html')
-          index_path.write_text(index, encoding='utf-8')
+          pathlib.Path('index.html').write_text(index, encoding='utf-8')
           previous_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
       - name: Validate HTML and commit
@@ -118,7 +98,6 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import re
           text=Path('index.html').read_text(encoding='utf-8')
           assert text.count('TRIAL_OF_THE_DAY_START') == 1
           assert text.count('TRIAL_OF_THE_DAY_END') == 1
