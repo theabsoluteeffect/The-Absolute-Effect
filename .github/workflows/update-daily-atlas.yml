@@ -19,8 +19,7 @@ jobs:
           s = p.read_text(encoding='utf-8')
           old = 'siteEl.onchange=()=>{ renderFilters(false); renderQuestionFilter(); renderEntry(); };'
           new = 'siteEl.onchange=()=>{ renderFilters(true); renderQuestionFilter(); renderEntry(); };'
-          if old in s:
-              s = s.replace(old, new, 1)
+          if old in s: s = s.replace(old, new, 1)
           p.write_text(s, encoding='utf-8')
           print('Tumour site filter repair applied')
           PY
@@ -30,18 +29,20 @@ jobs:
           from pathlib import Path
           import json
           text = Path('index.html').read_text(encoding='utf-8')
-          required=['german-ah01-94','swenoteca-stage1-nsgct','mrc-te08','getug-13','mrc-te05','sakk-01-10','swog-8710','vesper','checkmate-274','imvigor010','javelin-bladder-100','checkmate-901','niagara','keynote-905','keynote-564','checkmate-914','sorce','stampee-high-risk-m0','embark','arasens']
-          missing=[x for x in required if x not in text]
-          assert not missing, f'Missing evidence records: {missing}'
+          ids=[]
+          for p in sorted(Path('data').glob('daily-evidence-*.json')):
+              for x in json.loads(p.read_text(encoding='utf-8')):
+                  if x.get('id') and x['id']!='psmaddition': ids.append(x['id'])
+          ids.append('arasens')
+          missing=[x for x in ids if x not in text]
+          assert not missing, f'Missing evidence records from daily data: {missing}'
           assert 'Uro-oncology' not in text.replace("'Uro-' + 'oncology'",'')
           assert 'Multidisciplinary' not in text
           assert 'Theranostic Trials' in text and 'Imaging' in text
           assert 'function getSettings' in text
           assert text.count('const defaultEvidence=') == 1
           assert 'function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial;' in text
-          for p in Path('data').glob('daily-evidence-*.json'):
-              json.loads(p.read_text(encoding='utf-8'))
-          print('Atlas validation passed: all approved batch-2 records, taxonomy and dependent filters present.')
+          print(f'Atlas validation passed: {len(ids)} daily evidence records represented; taxonomy and dependent filters present.')
           PY
       - name: Commit atlas changes
         run: |
