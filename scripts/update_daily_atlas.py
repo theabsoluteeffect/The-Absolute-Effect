@@ -16,7 +16,6 @@ archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.e
 previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {}
 current = json.loads(current_path.read_text(encoding="utf-8")) if current_path.exists() else {}
 
-# Once Trial of the Day changes, archive the previous day permanently.
 if previous.get("id") and previous.get("id") != current.get("id") and not any(x.get("id") == previous.get("id") for x in archive):
     archive.append(previous)
     archive_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -51,8 +50,6 @@ if previous.get("id") and previous.get("id") != current.get("id") and not any(x.
         "urls": [previous.get("url", "")],
     })
 
-# Add only new evidence records. The setting value is carried through unchanged,
-# including Imaging, Biomarker, Pathology and Theranostic Trials.
 new_entries = []
 for entry in latest_daily:
     trial_id = entry.get("id", "")
@@ -69,8 +66,7 @@ if new_entries:
     additions = "".join(",\n" + json.dumps(entry, ensure_ascii=False, indent=2) for entry in new_entries)
     index = index.replace(marker, additions + "\n]\n\nfunction getSettings", 1)
 
-# Repair the filter logic on every integration so the tumour-site/subsite selection
-# remains stable while dependent discipline and setting lists are rebuilt.
+# Keep the original filter repair for future integrations.
 old_filter_block = '''function renderFilters(){
  const ev=getEvidence();
  const siteEl=document.getElementById("siteFilter"), dEl=document.getElementById("disciplineFilter"), gEl=document.getElementById("settingFilter");
@@ -117,6 +113,74 @@ new_filter_block = '''function renderFilters(preserve=true){
 }'''
 if old_filter_block in index:
     index = index.replace(old_filter_block, new_filter_block, 1)
+
+# Definitive selector implementation. This is appended on every daily integration so
+# later evidence updates cannot reintroduce the old self-resetting selector behaviour.
+filter_override = '''
+<style id="atlas-filter-fix-style">
+#siteFilter,#disciplineFilter,#settingFilter,#questionFilter{cursor:pointer;pointer-events:auto;opacity:1}
+</style>
+<script id="atlas-filter-fix">
+(function(){
+ function boot(){
+   const siteEl=document.getElementById("siteFilter");
+   const dEl=document.getElementById("disciplineFilter");
+   const gEl=document.getElementById("settingFilter");
+   const qEl=document.getElementById("questionFilter");
+   const qWrap=document.getElementById("questionWrap");
+   if(!siteEl||!dEl||!gEl) return;
+   const ev=typeof getEvidence==="function" ? getEvidence() : [];
+   const vals=(key,arr)=>["All",...Array.from(new Set(arr.map(x=>x[key]).filter(Boolean))).sort()];
+   const fill=(el,items,selected)=>{
+     el.innerHTML=items.map(v=>`<option value="${String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\\"/g,"&quot;")}">${String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</option>`).join("");
+     el.value=items.includes(selected)?selected:"All";
+   };
+   function refresh(resetDownstream){
+     const site=siteEl.value||"All";
+     const siteEv=ev.filter(x=>site==="All"||x.site===site);
+     const dWanted=resetDownstream?"All":(dEl.value||"All");
+     const ds=vals("discipline",siteEv);
+     fill(dEl,ds,ds.includes(dWanted)?dWanted:"All");
+     const d=dEl.value;
+     const dEv=siteEv.filter(x=>d==="All"||x.discipline===d);
+     const gWanted=resetDownstream?"All":(gEl.value||"All");
+     const gs=vals("setting",dEv);
+     fill(gEl,gs,gs.includes(gWanted)?gWanted:"All");
+     const g=gEl.value;
+     const qEv=dEv.filter(x=>g==="All"||x.setting===g);
+     if(qEl){
+       const questions=Array.from(new Set(qEv.map(x=>x.clinicalQuestion||x.questionLabels||x.trial).filter(Boolean))).sort();
+       if(questions.length){
+         qWrap.style.display="block";
+         const oldQ=resetDownstream?"All":(qEl.value||"All");
+         fill(qEl,["All",...questions],questions.includes(oldQ)?oldQ:"All");
+       }else{
+         qWrap.style.display="none";
+         qEl.innerHTML="<option value=\"All\">All</option>";
+         qEl.value="All";
+       }
+     }
+     if(typeof renderEntry==="function") renderEntry();
+   }
+   siteEl.onchange=function(){ refresh(true); };
+   dEl.onchange=function(){ refresh(true); };
+   gEl.onchange=function(){ refresh(true); };
+   if(qEl) qEl.onchange=function(){ if(typeof renderEntry==="function") renderEntry(); };
+   fill(siteEl,vals("site",ev),siteEl.value||"All");
+   refresh(false);
+ }
+ if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot); else boot();
+})();
+</script>
+'''
+# Remove any earlier copy of the definitive override, then add exactly one before body end.
+while 'id="atlas-filter-fix"' in index:
+    s=index.find('<style id="atlas-filter-fix-style">')
+    e=index.find('</script>', index.find('<script id="atlas-filter-fix">'))
+    if s<0 or e<0: break
+    e += len('</script>')
+    index=index[:s]+index[e:]
+index = index.replace("</body>", filter_override + "</body>", 1)
 
 start = "<!-- TRIAL_OF_THE_DAY_START -->"
 end = "<!-- TRIAL_OF_THE_DAY_END -->"
