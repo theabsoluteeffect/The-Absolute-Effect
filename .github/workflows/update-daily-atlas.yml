@@ -22,51 +22,54 @@ jobs:
       - name: Inject daily evidence and rotate Trial of the Day
         shell: python
         run: |
-          import json, re, pathlib
+          import json
+          from pathlib import Path
           from html import escape
 
-          index = pathlib.Path('index.html').read_text(encoding='utf-8')
-          daily_files = sorted(pathlib.Path('data').glob('daily-evidence-*.json'))
-          latest_daily = json.loads(daily_files[-1].read_text(encoding='utf-8')) if daily_files else []
+          index_path = Path("index.html")
+          index = index_path.read_text(encoding="utf-8")
+          daily_files = sorted(Path("data").glob("daily-evidence-*.json"))
+          latest_daily = json.loads(daily_files[-1].read_text(encoding="utf-8")) if daily_files else []
 
-          archive_path = pathlib.Path('data/trial-archive.json')
-          previous_path = pathlib.Path('data/previous-trial-of-the-day.json')
-          current_path = pathlib.Path('data/trial-of-the-day.json')
-          archive = json.loads(archive_path.read_text(encoding='utf-8')) if archive_path.exists() else []
-          previous = json.loads(previous_path.read_text(encoding='utf-8')) if previous_path.exists() else {}
-          current = json.loads(current_path.read_text(encoding='utf-8')) if current_path.exists() else {}
+          archive_path = Path("data/trial-archive.json")
+          previous_path = Path("data/previous-trial-of-the-day.json")
+          current_path = Path("data/trial-of-the-day.json")
+          archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.exists() else []
+          previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {}
+          current = json.loads(current_path.read_text(encoding="utf-8")) if current_path.exists() else {}
 
-          if previous.get('id') and previous.get('id') != current.get('id') and not any(x.get('id') == previous.get('id') for x in archive):
+          if previous.get("id") and previous.get("id") != current.get("id") and not any(x.get("id") == previous.get("id") for x in archive):
               archive.append(previous)
-              archive_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+              archive_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
               latest_daily.append({
-                  'id': previous['id'], 'site': previous.get('site',''),
-                  'discipline': previous.get('discipline','Medical Oncology'), 'setting': previous.get('setting',''),
-                  'treatment': previous.get('title', previous.get('trial','')), 'population': previous.get('population',''),
-                  'endpoint': 'Trial of the Day summary', 'horizon': 'Publication analysis',
-                  'interventionRate': 0, 'controlRate': 0, 'absoluteBenefit': 0,
-                  'nnt': 'See archived Trial of the Day analysis', 'relativeLabel': 'See publication',
-                  'relativeEffect': '', 'ci': '', 'n': 0, 'interventionN': 0, 'controlN': 0,
-                  'benefitText': previous.get('summary','') + ' Critical review: ' + previous.get('criticalReview',''),
-                  'harmLabel': 'Trial-specific toxicity', 'harmIntervention': 0, 'harmControl': 0, 'harmIncrease': 0,
-                  'nnH': 'See archived Trial of the Day analysis', 'trial': previous.get('trial',''),
-                  'clinicalQuestion': previous.get('summary',''), 'refs': [previous.get('url','')], 'urls': [previous.get('url','')]
+                  "id": previous["id"], "site": previous.get("site", ""),
+                  "discipline": previous.get("discipline", "Medical Oncology"), "setting": previous.get("setting", ""),
+                  "treatment": previous.get("title", previous.get("trial", "")), "population": previous.get("population", ""),
+                  "endpoint": "Trial of the Day summary", "horizon": "Publication analysis",
+                  "interventionRate": 0, "controlRate": 0, "absoluteBenefit": 0,
+                  "nnt": "See archived Trial of the Day analysis", "relativeLabel": "See publication",
+                  "relativeEffect": "", "ci": "", "n": 0, "interventionN": 0, "controlN": 0,
+                  "benefitText": previous.get("summary", "") + " Critical review: " + previous.get("criticalReview", ""),
+                  "harmLabel": "Trial-specific toxicity", "harmIntervention": 0, "harmControl": 0, "harmIncrease": 0,
+                  "nnH": "See archived Trial of the Day analysis", "trial": previous.get("trial", ""),
+                  "clinicalQuestion": previous.get("summary", ""), "refs": [previous.get("url", "")], "urls": [previous.get("url", "")]
               })
 
-          # Match both the existing JS style id:"x" and JSON-style "id":"x".
-          existing_ids = set(re.findall(r'(?:id|["\']id["\'])\s*:\s*["\']([^"\']+)["\']', index))
           new_entries = []
           for entry in latest_daily:
-              if entry.get('id') and entry['id'] not in existing_ids:
-                  new_entries.append(entry)
-                  existing_ids.add(entry['id'])
+              trial_id = entry.get("id", "")
+              if not trial_id:
+                  continue
+              if ('"id":"' + trial_id + '"') in index or ('id:"' + trial_id + '"') in index:
+                  continue
+              new_entries.append(entry)
 
           if new_entries:
-              marker = '\n]\n\nfunction getSettings'
+              marker = "\n]\n\nfunction getSettings"
               if marker not in index:
-                  raise SystemExit('defaultEvidence closing marker not found')
-              js = ''.join(',\n' + json.dumps(e, ensure_ascii=False, indent=2) for e in new_entries)
-              index = index.replace(marker, js + '\n]\n\nfunction getSettings', 1)
+                  raise SystemExit("defaultEvidence closing marker not found")
+              additions = "".join(",\n" + json.dumps(entry, ensure_ascii=False, indent=2) for entry in new_entries)
+              index = index.replace(marker, additions + "\n]\n\nfunction getSettings", 1)
 
           def trial_html(t):
               return f'''<!-- TRIAL_OF_THE_DAY_START -->
@@ -83,27 +86,32 @@ jobs:
 </section>
 <!-- TRIAL_OF_THE_DAY_END -->'''
 
-          start, end = '<!-- TRIAL_OF_THE_DAY_START -->', '<!-- TRIAL_OF_THE_DAY_END -->'
+          start = "<!-- TRIAL_OF_THE_DAY_START -->"
+          end = "<!-- TRIAL_OF_THE_DAY_END -->"
           if start not in index or end not in index:
-              raise SystemExit('Trial of the Day markers not found')
-          a, b = index.index(start), index.index(end) + len(end)
+              raise SystemExit("Trial of the Day markers not found")
+          a = index.index(start)
+          b = index.index(end) + len(end)
           index = index[:a] + trial_html(current) + index[b:]
 
-          pathlib.Path('index.html').write_text(index, encoding='utf-8')
-          previous_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          index_path.write_text(index, encoding="utf-8")
+          previous_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-      - name: Validate HTML and commit
+      - name: Validate and commit
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          text=Path('index.html').read_text(encoding='utf-8')
-          assert text.count('TRIAL_OF_THE_DAY_START') == 1
-          assert text.count('TRIAL_OF_THE_DAY_END') == 1
-          assert 'function getSettings' in text
-          assert text.count('const defaultEvidence=') == 1
-          print('Atlas validation passed')
+          import json
+          text = Path("index.html").read_text(encoding="utf-8")
+          assert text.count("TRIAL_OF_THE_DAY_START") == 1
+          assert text.count("TRIAL_OF_THE_DAY_END") == 1
+          assert "function getSettings" in text
+          assert text.count("const defaultEvidence=") == 1
+          for p in Path("data").glob("daily-evidence-*.json"):
+              json.loads(p.read_text(encoding="utf-8"))
+          print("Atlas validation passed")
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
