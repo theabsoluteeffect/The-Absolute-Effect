@@ -1,0 +1,61 @@
+name: Fix ProtecT discipline taxonomy
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-protect-discipline.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix discipline and filter mapping
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          if '"discipline":"Uro-oncology"' in s:
+              s = s.replace('"discipline":"Uro-oncology"', '"discipline":"Medical Oncology"', 1)
+          marker = '</body>'
+          fix = r'''<script id="protect-discipline-fix">
+          (function(){
+            const originalGetEvidence = window.getEvidence;
+            if(typeof originalGetEvidence !== 'function') return;
+            window.getEvidence = function(){
+              const base = originalGetEvidence();
+              const out = [];
+              base.forEach(function(x){
+                if(x.id === 'protect-15y'){
+                  ['Medical Oncology','Radiation Oncology','Surgical Oncology'].forEach(function(d){
+                    out.push(Object.assign({}, x, {discipline:d}));
+                  });
+                } else if(x.discipline !== 'Uro-oncology') {
+                  out.push(x);
+                }
+              });
+              return out;
+            };
+            if(typeof window.renderFilters === 'function') window.renderFilters(false);
+            if(typeof window.renderQuestionFilter === 'function') window.renderQuestionFilter();
+            if(typeof window.renderEntry === 'function') window.renderEntry();
+          })();
+          </script>
+          '''
+          if 'id="protect-discipline-fix"' not in s:
+              s = s.replace(marker, fix + marker, 1)
+          if 'Uro-oncology' in s:
+              raise SystemExit('Uro-oncology still present in index.html')
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html .github/workflows/fix-protect-discipline.yml
+          git commit -m 'Fix ProtecT discipline taxonomy' || echo 'No changes to commit'
+          git push
