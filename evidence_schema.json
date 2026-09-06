@@ -3,7 +3,7 @@
   "fields": {
     "site": "Tumour site",
     "discipline": "Medical Oncology | Radiation Oncology | Surgical Oncology",
-    "setting": "Adjuvant | Neoadjuvant | Definitive | Palliative | Metastatic",
+    "setting": "Adjuvant | Neoadjuvant | Definitive | Palliative | Metastatic | Imaging | Biomarker | Pathology | Theranostic Trials",
     "treatment": "Treatment comparison",
     "population": "Trial population",
     "endpoint": "Outcome",
@@ -14,14 +14,20 @@
     "interventionRate": "Outcome rate with treatment",
     "controlRate": "Outcome rate with comparator",
     "absoluteBenefit": "Intervention rate - comparator rate",
-    "nnt": "NNT at specified horizon",
-    "harmLabel": "Toxicity/harm outcome",
+    "nnt": "NNT at specified horizon and explicitly named endpoint",
+    "harmLabel": "Trial-specific principal toxicity/harm endpoint used for NNH",
     "harmIntervention": "Harm rate treatment",
     "harmControl": "Harm rate comparator",
     "harmIncrease": "Absolute harm increase",
-    "nnH": "NNH",
+    "nnH": "NNH at specified horizon and explicitly named toxicity endpoint; use not quantifiable when appropriate",
     "trial": "Trial name",
     "refs": "Reference strings",
     "urls": "Reference URLs"
+  },
+  "special_settings": {
+    "Imaging": "Trials primarily evaluating imaging strategies, imaging-based detection, surveillance or response assessment",
+    "Biomarker": "Trials primarily evaluating biomarkers, molecular signatures or predictive/prognostic markers",
+    "Pathology": "Trials primarily evaluating pathology, histologic classification or pathology-based diagnosis/stratification",
+    "Theranostic Trials": "Trials combining a diagnostic/targeting strategy with a linked therapeutic intervention"
   }
 }
