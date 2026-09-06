@@ -69,6 +69,55 @@ if new_entries:
     additions = "".join(",\n" + json.dumps(entry, ensure_ascii=False, indent=2) for entry in new_entries)
     index = index.replace(marker, additions + "\n]\n\nfunction getSettings", 1)
 
+# Repair the filter logic on every integration so the tumour-site/subsite selection
+# remains stable while dependent discipline and setting lists are rebuilt.
+old_filter_block = '''function renderFilters(){
+ const ev=getEvidence();
+ const siteEl=document.getElementById("siteFilter"), dEl=document.getElementById("disciplineFilter"), gEl=document.getElementById("settingFilter");
+ const site=siteEl.value||"All", oldD=dEl.value||"All", oldG=gEl.value||"All";
+ fillSelect("siteFilter",["All",...unique("site")]);
+ const siteEv=ev.filter(x=>site==="All"||x.site===site);
+ const disciplines=["All",...unique("discipline",siteEv)];
+ fillSelect("disciplineFilter",disciplines);
+ const d=disciplines.includes(oldD)?oldD:"All"; dEl.value=d;
+ const dEv=siteEv.filter(x=>d==="All"||x.discipline===d);
+ const settings=["All",...unique("setting",dEv)];
+ fillSelect("settingFilter",settings);
+ gEl.value=settings.includes(oldG)?oldG:"All";
+ ["siteFilter","disciplineFilter","settingFilter"].forEach(id=>document.getElementById(id).onchange=()=>{
+   if(id!=="settingFilter") renderFilters();
+   renderQuestionFilter();renderEntry();
+ });
+ renderQuestionFilter();
+}'''
+new_filter_block = '''function renderFilters(preserve=true){
+ const ev=getEvidence();
+ const siteEl=document.getElementById("siteFilter"), dEl=document.getElementById("disciplineFilter"), gEl=document.getElementById("settingFilter");
+ const site=preserve && siteEl.value ? siteEl.value : "All";
+ const oldD=preserve && dEl.value ? dEl.value : "All";
+ const oldG=preserve && gEl.value ? gEl.value : "All";
+ const sites=["All",...unique("site",ev)];
+ fillSelect("siteFilter",sites);
+ const selectedSite=sites.includes(site)?site:"All";
+ siteEl.value=selectedSite;
+ const siteEv=ev.filter(x=>selectedSite==="All"||x.site===selectedSite);
+ const disciplines=["All",...unique("discipline",siteEv)];
+ fillSelect("disciplineFilter",disciplines);
+ const selectedD=disciplines.includes(oldD)?oldD:"All";
+ dEl.value=selectedD;
+ const dEv=siteEv.filter(x=>selectedD==="All"||x.discipline===selectedD);
+ const settings=["All",...unique("setting",dEv)];
+ fillSelect("settingFilter",settings);
+ const selectedG=settings.includes(oldG)?oldG:"All";
+ gEl.value=selectedG;
+ siteEl.onchange=()=>{ renderFilters(false); renderQuestionFilter(); renderEntry(); };
+ dEl.onchange=()=>{ renderFilters(true); renderQuestionFilter(); renderEntry(); };
+ gEl.onchange=()=>{ renderQuestionFilter(); renderEntry(); };
+ renderQuestionFilter();
+}'''
+if old_filter_block in index:
+    index = index.replace(old_filter_block, new_filter_block, 1)
+
 start = "<!-- TRIAL_OF_THE_DAY_START -->"
 end = "<!-- TRIAL_OF_THE_DAY_END -->"
 if start not in index or end not in index:
