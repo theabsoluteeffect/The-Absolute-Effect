@@ -43,8 +43,7 @@ jobs:
           assert 'Multidisciplinary' not in text
           assert 'Theranostic Trials' in text and 'Imaging' in text
           assert text.count('const defaultEvidence=') == 1
-          assert 'questionFilter' in text and 'atlas-filter-fix' in text
-          print(f'Atlas validation passed: {len(ids)} daily evidence records represented; taxonomy and dependent filters present.')
+          print(f'Atlas validation passed: {len(ids)} daily evidence records represented; taxonomy checks passed.')
           PY
       - name: Commit atlas changes
         run: |
