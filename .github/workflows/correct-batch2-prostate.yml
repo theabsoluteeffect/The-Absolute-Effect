@@ -1,0 +1,58 @@
+name: Correct batch 2 prostate trial entry
+
+on:
+  push:
+    paths:
+      - 'data/daily-evidence-2026-09-06-batch2.json'
+  workflow_dispatch:
+
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace provisional PSMAddition entry with ARASENS
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          marker='\n]\n\nfunction getSettings'
+          if marker not in s:
+              raise SystemExit('defaultEvidence marker not found')
+          start=s.find('{\n    "id": "psmaddition"')
+          if start < 0:
+              start=s.find('{\n        "id": "psmaddition"')
+          if start < 0:
+              raise SystemExit('psmaddition entry not found')
+          end=s.find('\n    }',start)
+          if end < 0:
+              end=s.find('\n        }',start)
+          if end < 0:
+              raise SystemExit('psmaddition entry end not found')
+          end += len('\n    }') if s[end:end+6]=='\n    }' else len('\n        }')
+          if end < len(s) and s[end:end+1]==',':
+              end += 1
+          s=s[:start]+s[end:]
+          ar={
+            "id":"arasens","site":"Prostate Cancer","discipline":"Medical Oncology","setting":"Metastatic Hormone-Sensitive",
+            "treatment":"ADT + docetaxel + darolutamide vs ADT + docetaxel + placebo","population":"1,306 men with metastatic hormone-sensitive prostate cancer","endpoint":"4-year overall survival","horizon":"4 years","interventionRate":62.7,"controlRate":50.4,"absoluteBenefit":12.3,"nnt":"9",
+            "relativeLabel":"HR","relativeEffect":"0.68","ci":"95% CI 0.57–0.80; P<.001","n":1306,"interventionN":651,"controlN":654,
+            "benefitText":"Four-year OS was 62.7% with darolutamide plus ADT and docetaxel versus 50.4% with ADT and docetaxel, an absolute benefit of 12.3 percentage points (NNT 9). The benefit was accompanied by improvements in several secondary endpoints. NNT is based on 4-year overall survival.",
+            "harmLabel":"Grade 3–5 adverse events","harmIntervention":66.1,"harmControl":63.5,"harmIncrease":2.6,"nnH":"Not applicable; grade 3–5 toxicity was similar between groups and the main additional burden was treatment duration rather than a large excess in severe toxicity",
+            "trial":"ARASENS","clinicalQuestion":"In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT and docetaxel improve survival?","refs":["Smith MR, et al. N Engl J Med. 2022;386:1132–1142."],"urls":["https://pubmed.ncbi.nlm.nih.gov/35179323/"]
+          }
+          additions=',\n'+json.dumps(ar,ensure_ascii=False,indent=2)
+          s=s.replace(marker,additions+marker,1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit correction
+        run: |
+          git config user.name 'theabsoluteeffect'
+          git config user.email 'actions@github.com'
+          git add index.html
+          git commit -m 'Correct batch 2 prostate evidence entry' || exit 0
+          git push
