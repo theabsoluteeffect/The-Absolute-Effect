@@ -39,3 +39,5 @@
 
 ## Important
 Before public deployment, each entry should undergo source verification, endpoint/time-horizon checking, calculation review and toxicity/QoL review.
+
+<!-- Cloudflare Pages deployment check: 2026-09-06 -->
