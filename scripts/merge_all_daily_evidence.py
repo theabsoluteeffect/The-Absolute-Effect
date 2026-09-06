@@ -1,47 +1,22 @@
 import json, re
 from pathlib import Path
-
 ROOT=Path(__file__).resolve().parents[1]
-index_path=ROOT/'index.html'
-data_dir=ROOT/'data'
-s=index_path.read_text(encoding='utf-8')
-
-# Merge every daily evidence file, not only the lexicographically latest file.
-entries=[]
-seen=set()
+index_path=ROOT/'index.html'; data_dir=ROOT/'data'; s=index_path.read_text(encoding='utf-8')
+entries=[]; seen=set()
 for f in sorted(data_dir.glob('daily-evidence-*.json')):
     for x in json.loads(f.read_text(encoding='utf-8')):
-        if x.get('id') and x['id'] not in seen:
-            entries.append(x); seen.add(x['id'])
-
-# Correct the provisional batch-2 prostate theranostic placeholder.
+        if x.get('id') and x['id'] not in seen: entries.append(x); seen.add(x['id'])
 entries=[x for x in entries if x.get('id')!='psmaddition']
-entries.append({
-'id':'arasens','site':'Prostate Cancer','discipline':'Medical Oncology','setting':'Metastatic Hormone-Sensitive',
-'treatment':'Darolutamide + ADT + docetaxel vs placebo + ADT + docetaxel','population':'1,306 men with metastatic hormone-sensitive prostate cancer','endpoint':'Overall survival','horizon':'4 years','interventionRate':62.7,'controlRate':50.4,'absoluteBenefit':12.3,'nnt':'9','relativeLabel':'HR','relativeEffect':'0.68','ci':'95% CI 0.57–0.80; P<.001','n':1306,'interventionN':651,'controlN':654,
-'benefitText':'Four-year overall survival was 62.7% with darolutamide + ADT + docetaxel vs 50.4% with ADT + docetaxel, an absolute improvement of 12.3 percentage points (NNT 9). NNT is based on 4-year overall survival.',
-'harmLabel':'Grade 3–5 adverse events','harmIntervention':66.1,'harmControl':63.5,'harmIncrease':2.6,'nnH':'Not quantifiable from this endpoint; grade 3–5 toxicity was similar between groups and discontinuation due to adverse events was 13.5% vs 10.5%.','trial':'ARASENS','clinicalQuestion':'In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT + docetaxel improve survival?','refs':['Smith MR, et al. N Engl J Med. 2022;386:1132–1142.'],'urls':['https://pubmed.ncbi.nlm.nih.gov/35179367/']})
-
+entries.append({'id':'arasens','site':'Prostate Cancer','discipline':'Medical Oncology','setting':'Metastatic Hormone-Sensitive','treatment':'Darolutamide + ADT + docetaxel vs placebo + ADT + docetaxel','population':'1,306 men with metastatic hormone-sensitive prostate cancer','endpoint':'Overall survival','horizon':'4 years','interventionRate':62.7,'controlRate':50.4,'absoluteBenefit':12.3,'nnt':'9','relativeLabel':'HR','relativeEffect':'0.68','ci':'95% CI 0.57–0.80; P<.001','n':1306,'interventionN':651,'controlN':654,'benefitText':'Four-year overall survival was 62.7% with darolutamide + ADT + docetaxel vs 50.4% with ADT + docetaxel, an absolute improvement of 12.3 percentage points (NNT 9). NNT is based on 4-year overall survival.','harmLabel':'Grade 3–5 adverse events','harmIntervention':66.1,'harmControl':63.5,'harmIncrease':2.6,'nnH':'Not quantifiable from this endpoint; grade 3–5 toxicity was similar between groups and discontinuation due to adverse events was 13.5% vs 10.5%.','trial':'ARASENS','clinicalQuestion':'In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT + docetaxel improve survival?','refs':['Smith MR, et al. N Engl J Med. 2022;386:1132–1142.'],'urls':['https://pubmed.ncbi.nlm.nih.gov/35179367/']})
 for x in entries:
     if x.get('id')=='swენoteca-stage1-nsgct': x['id']='swenoteca-stage1-nsgct'
-    if x.get('id')=='vesper':
-        x.update({'interventionRate':64,'controlRate':56,'absoluteBenefit':8,'nnt':'13','relativeEffect':'0.79','ci':'95% CI 0.59–1.05 for overall perioperative OS','benefitText':'At 5 years, overall survival was 64% with dose-dense MVAC vs 56% with gemcitabine-cisplatin in the overall perioperative population, an absolute difference of 8 percentage points. The OS HR was 0.79 (95% CI 0.59–1.05), so the overall OS comparison did not demonstrate a statistically significant difference. In the neoadjuvant subgroup, 5-year OS was 66% vs 57%, HR 0.71. NNT 13 is descriptive and should not be interpreted as proof of superiority because the CI crosses 1.'})
-
-start=s.index('const defaultEvidence=')
-a=s.index('[',start)
-marker='\n]\n\nfunction getSettings'
-b=s.index(marker,a)+2
-current=json.loads(s[a:b])
+    if x.get('id')=='vesper': x.update({'interventionRate':64,'controlRate':56,'absoluteBenefit':8,'nnt':'13','relativeEffect':'0.79','ci':'95% CI 0.59–1.05 for overall perioperative OS','benefitText':'At 5 years, overall survival was 64% with dose-dense MVAC vs 56% with gemcitabine-cisplatin in the overall perioperative population, an absolute difference of 8 percentage points. The OS HR was 0.79 (95% CI 0.59–1.05), so the overall OS comparison did not demonstrate a statistically significant difference. In the neoadjuvant subgroup, 5-year OS was 66% vs 57%, HR 0.71. NNT 13 is descriptive and should not be interpreted as proof of superiority because the CI crosses 1.'})
+start=s.index('const defaultEvidence='); a=s.index('[',start); marker='\n]\n\nfunction getSettings'; b=s.index(marker,a)+2
+raw=s[a:b]; raw=re.sub(r'([\{,]\s*)([A-Za-z_][A-Za-z0-9_-]*)(\s*:)',r'\1"\2"\3',raw); current=json.loads(raw)
 byid={x.get('id'):x for x in current if x.get('id')}
 for x in entries: byid[x['id']]=x
 s=s[:a]+json.dumps(list(byid.values()),ensure_ascii=False,indent=2)+s[b:]
-
-# Enforce the agreed clinical-question display format.
-s=s.replace('function questionFor(e){const q=questionLabels[e.id]; return q ? `${q} (${e.trial})` : e.trial}', 'function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial; return e.trial ? `${q} [${e.trial}]` : q}')
-
-# Replace the old definitive filter override with a rules-compliant dependent selector.
+s=s.replace('function questionFor(e){const q=questionLabels[e.id]; return q ? `${q} (${e.trial})` : e.trial}','function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial; return e.trial ? `${q} [${e.trial}]` : q}')
 s=re.sub(r'\n<style id="atlas-filter-fix-style">.*?</script>\n','\n',s,flags=re.S)
 override='''\n<style id="atlas-filter-fix-style">#siteFilter,#disciplineFilter,#settingFilter,#questionFilter{cursor:pointer;pointer-events:auto;opacity:1}</style>\n<script id="atlas-filter-fix">\n(function(){function boot(){const S=document.getElementById("siteFilter"),D=document.getElementById("disciplineFilter"),G=document.getElementById("settingFilter"),Q=document.getElementById("questionFilter"),W=document.getElementById("questionWrap");if(!S||!D||!G)return;const E=()=>typeof getEvidence==="function"?getEvidence():[];const esc=x=>String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");const vals=(k,a)=>["All",...Array.from(new Set(a.map(x=>x[k]).filter(Boolean))).sort()];const fill=(el,a,v)=>{el.innerHTML=a.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");el.value=a.includes(v)?v:"All"};function refresh(rs,rd,rg){const all=E(),site=S.value||"All",siteE=all.filter(x=>site==="All"||x.site===site),ds=vals("discipline",siteE);fill(D,ds,rd?"All":D.value);const d=D.value,dE=siteE.filter(x=>d==="All"||x.discipline===d),gs=vals("setting",dE);fill(G,gs,rg?"All":G.value);const g=G.value,qE=dE.filter(x=>g==="All"||x.setting===g);const qs=qE.map(x=>({v:questionFor(x),t:questionFor(x)}));if(Q){if(qs.length){W.style.display="block";Q.innerHTML='<option value="All">All</option>'+qs.map(o=>`<option value="${esc(o.v)}">${esc(o.t)}</option>`).join("");if(rs)Q.value="All"}else{W.style.display="none";Q.innerHTML='<option value="All">All</option>';Q.value="All"}}if(typeof renderEntry==="function")renderEntry()}S.onchange=()=>refresh(true,true,true);D.onchange=()=>refresh(false,true,true);G.onchange=()=>refresh(false,false,true);if(Q)Q.onchange=()=>renderEntry();refresh(false,false,false)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot()})();\n</script>\n'''
-s=s.replace('</body>',override+'</body>',1)
-index_path.write_text(s,encoding='utf-8')
-print('Merged',len(entries),'daily evidence records and repaired dependent filters.')
+s=s.replace('</body>',override+'</body>',1); index_path.write_text(s,encoding='utf-8'); print('Merged',len(entries),'daily evidence records and repaired dependent filters.')
