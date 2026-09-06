@@ -17,6 +17,10 @@ main{max-width:1240px;margin:auto;padding:40px 22px}.section-title{font-size:29p
 footer{background:#171717;color:#ddd;padding:30px 22px;margin-top:40px}footer div{max-width:1240px;margin:auto}
 @media(max-width:800px){.filters,.stats,.columns,.method,.about,.editor{grid-template-columns:1fr}.entryhead{flex-direction:column}.people{grid-template-columns:repeat(10,1fr)}.about .avatar{min-height:120px}}
 </style>
+
+<style id="trial-of-the-day-style">
+.trial-day{margin:0 0 38px}.trial-day-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;box-shadow:0 5px 20px rgba(16,32,51,.045)}.trial-day-label{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#777}.trial-day-title{font-size:28px;line-height:1.15;letter-spacing:-.03em;margin:7px 0}.trial-day-meta{font-size:12px;color:#777;margin-bottom:16px}.trial-day-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.trial-day-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.trial-day-stat{background:#fafaf8;border:1px solid var(--line);border-radius:10px;padding:12px}.trial-day-stat strong{display:block;font-size:21px}.trial-day-stat small{color:#777}.trial-day-review{margin-top:16px;background:#f2f2ef;border-left:4px solid #333;padding:14px 16px;border-radius:7px}.trial-day-review strong{display:block;margin-bottom:5px}.trial-day-link{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;color:#222}@media(max-width:800px){.trial-day-grid,.trial-day-stats{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header><div class="nav"><div class="brand">THE ABSOLUTE <i>EFFECT</i></div><div><button onclick="scrollToId('explore')">Explore</button><button onclick="scrollToId('method')">Method</button><button onclick="scrollToId('about')">About</button><button onclick="toggleEditor()">Customize</button></div></div></header>
@@ -29,6 +33,20 @@ footer{background:#171717;color:#ddd;padding:30px 22px;margin-top:40px}footer di
 </div></section>
 
 <main>
+<!-- TRIAL_OF_THE_DAY_START -->
+<section id="trial-of-the-day" class="trial-day">
+<div class="trial-day-card">
+<div class="trial-day-label">Trial of the Day · 6 September 2026</div>
+<h2 class="trial-day-title">NSABP B-59/GeparDouze: Atezolizumab in early triple-negative breast cancer</h2>
+<div class="trial-day-meta">Nature Medicine · Phase III randomized trial · Stage II–III TNBC · n=1,550</div>
+<div class="trial-day-grid">
+<div><p><strong>What did it show?</strong> Atezolizumab increased pCR from 57.0% to 63.3%, an absolute increase of 6.3 percentage points. However, the primary endpoint, 4-year EFS, was 85.2% vs 81.9%, an absolute difference of 3.3 points, with HR 0.80 (95% CI 0.62–1.03; P=0.083), so superiority was not demonstrated.</p><p>Overall survival at 4 years was 90.2% vs 89.5%. Exploratory analyses suggested greater EFS benefit in clinically node-positive disease and in tumors with high TILs, but these findings should not be treated as definitive evidence for routine selection.</p></div>
+<div><div class="trial-day-stats"><div class="trial-day-stat"><strong>+6.3%</strong><small>pCR</small></div><div class="trial-day-stat"><strong>+3.3%</strong><small>4-y EFS</small></div><div class="trial-day-stat"><strong>21.2% vs 10.6%</strong><small>TEAE-related discontinuation</small></div></div><div class="trial-day-review"><strong>Critical clinical review</strong>In a potentially curable breast cancer, is a 6.3% increase in pCR, or a 3.3% absolute improvement in 4-year EFS that did not reach statistical significance, worth more than doubling treatment discontinuation due to adverse events, from 10.6% to 21.2%? Immune-related adverse events occurred in 27.6% vs 11.4%. The real question is not whether atezolizumab improves pCR, but whether the magnitude of long-term benefit is large enough to justify the additional toxicity, treatment discontinuation and financial burden in a curable disease.</div><a class="trial-day-link" href="https://www.nature.com/articles/s41591-026-04565-6" target="_blank" rel="noopener">Read the primary publication →</a></div>
+</div>
+</div>
+</section>
+<!-- TRIAL_OF_THE_DAY_END -->
+
 <section id="dose-matters" class="substack">
 <div class="substack-head"><div><div class="substack-badge">From Dose Matters</div><h2 class="section-title">Latest writing</h2><p class="section-sub" style="margin-bottom:0">Short essays on medicine, oncology, care and the human side of clinical practice.</p></div><a class="btn" href="https://dosematters.substack.com" target="_blank" rel="noopener">Visit Substack →</a></div>
 <div id="substackPosts" class="substack-grid"><div class="card"><p class="muted">Loading latest articles…</p></div></div>
