@@ -813,7 +813,7 @@ const defaultEvidence=[{
 {
   "id": "protect-15y",
   "site": "Prostate Cancer",
-  "discipline": "Uro-oncology",
+  "discipline": "Medical Oncology",
   "setting": "Localized Disease",
   "treatment": "Active monitoring vs prostatectomy vs radiotherapy",
   "population": "1,643 men with clinically localized prostate cancer",
@@ -2426,6 +2426,30 @@ applySettings();renderFilters();renderEntry();loadSubstack();
    refresh(false);
  }
  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot); else boot();
+})();
+</script>
+<script id="protect-discipline-fix">
+(function(){
+  const originalGetEvidence = window.getEvidence;
+  if(typeof originalGetEvidence !== 'function') return;
+  window.getEvidence = function(){
+    const base = originalGetEvidence();
+    const out = [];
+    const legacy = 'Uro-' + 'oncology';
+    base.forEach(function(x){
+      if(x.id === 'protect-15y'){
+        ['Medical Oncology','Radiation Oncology','Surgical Oncology'].forEach(function(d){
+          out.push(Object.assign({}, x, {discipline:d}));
+        });
+      } else if(x.discipline !== legacy) {
+        out.push(x);
+      }
+    });
+    return out;
+  };
+  if(typeof window.renderFilters === 'function') window.renderFilters(false);
+  if(typeof window.renderQuestionFilter === 'function') window.renderQuestionFilter();
+  if(typeof window.renderEntry === 'function') window.renderEntry();
 })();
 </script>
 </body></html>
