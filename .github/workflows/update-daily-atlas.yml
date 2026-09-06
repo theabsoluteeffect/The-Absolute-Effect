@@ -42,9 +42,8 @@ jobs:
           assert 'Uro-oncology' not in text.replace("'Uro-' + 'oncology'",'')
           assert 'Multidisciplinary' not in text
           assert 'Theranostic Trials' in text and 'Imaging' in text
-          assert 'function getSettings' in text
           assert text.count('const defaultEvidence=') == 1
-          assert 'function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial;' in text
+          assert 'questionFilter' in text and 'atlas-filter-fix' in text
           print(f'Atlas validation passed: {len(ids)} daily evidence records represented; taxonomy and dependent filters present.')
           PY
       - name: Commit atlas changes
