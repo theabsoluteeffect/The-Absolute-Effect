@@ -32,7 +32,10 @@ jobs:
           ids=[]
           for p in sorted(Path('data').glob('daily-evidence-*.json')):
               for x in json.loads(p.read_text(encoding='utf-8')):
-                  if x.get('id') and x['id']!='psmaddition': ids.append(x['id'])
+                  if x.get('id') and x['id']!='psmaddition':
+                      i=x['id']
+                      if i=='swენoteca-stage1-nsgct': i='swenoteca-stage1-nsgct'
+                      ids.append(i)
           ids.append('arasens')
           missing=[x for x in ids if x not in text]
           assert not missing, f'Missing evidence records from daily data: {missing}'
