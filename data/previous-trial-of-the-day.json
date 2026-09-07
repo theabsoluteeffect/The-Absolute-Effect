@@ -1,14 +1,14 @@
 {
   "date": "2026-09-07",
-  "id": "rtog-9601",
-  "trial": "NRG/RTOG 9601",
-  "title": "Salvage radiotherapy with or without long-term antiandrogen therapy after prostatectomy",
-  "journal": "International Journal of Radiation Oncology, Biology, Physics",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/40752653/",
+  "id": "proteus",
+  "trial": "PROTEUS",
+  "title": "Perioperative apalutamide in high-risk localized prostate cancer",
+  "journal": "New England Journal of Medicine",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42223077/",
   "site": "Prostate Cancer",
-  "discipline": "Radiation Oncology",
-  "setting": "Salvage Therapy",
-  "population": "760 eligible men after prostatectomy with pT3N0 or pT2N0 with positive margins and PSA 0.2–4.0 ng/mL",
-  "summary": "At a median follow-up of 18.9 years, 18-year overall survival was 53% with salvage prostate-bed RT plus 24 months of bicalutamide versus 43% with RT plus placebo, an absolute improvement of 9.8 percentage points (HR 0.82, 95% CI 0.67–1.00). The 18-year incidence of metastatic prostate cancer was 22% vs 31%, an absolute reduction of 9 points.",
-  "criticalReview": "This is unusually mature evidence for the salvage setting: adding 24 months of bicalutamide to prostate-bed RT produced a clinically meaningful 9.8-point improvement in 18-year overall survival and a 9-point reduction in metastatic disease. The trade-off is substantial androgen-related toxicity, particularly gynecomastia, which occurred in 69.7% versus 10.9% in the original report. The key contemporary question is therefore not whether long-term hormonal intensification works, but which patients still need prolonged therapy in the era of early salvage RT, PSMA imaging and shorter-duration ADT strategies."
+  "discipline": "Medical Oncology",
+  "setting": "Perioperative Therapy",
+  "population": "2109 men with newly diagnosed high-risk localized or locally advanced prostate cancer undergoing radical prostatectomy with pelvic lymph-node dissection",
+  "summary": "At median follow-up of 61.7 months, perioperative ADT plus apalutamide increased 5-year metastasis-free survival from 73.5% to 78.2%, an absolute improvement of 4.7 percentage points (HR 0.80, 95% CI 0.67–0.96; P=.02). Pathological complete response or minimal residual disease was 8.9% vs 1.0% (OR 10.17, 95% CI 5.27–19.64).",
+  "criticalReview": "PROTEUS provides randomized phase III evidence that six cycles of perioperative apalutamide added to ADT before and after prostatectomy improves metastasis-free survival in high-risk localized or locally advanced prostate cancer. The absolute 5-year metastasis-free survival gain was 4.7 percentage points, while grade 3–4 adverse events increased from 31.0% to 39.6%. The key clinical question is whether this modest absolute metastasis-free survival gain justifies substantially greater treatment intensity and toxicity for all patients meeting the high-risk definition."
 }
