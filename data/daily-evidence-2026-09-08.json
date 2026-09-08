@@ -1,0 +1,33 @@
+[
+  {
+    "id":"nrg-rtog-9601",
+    "site":"Prostate Cancer",
+    "discipline":"Radiation Oncology",
+    "setting":"Salvage Radiotherapy",
+    "treatment":"Salvage prostate-bed RT + 24 months bicalutamide vs salvage prostate-bed RT + placebo",
+    "population":"760 eligible men after radical prostatectomy with pT3N0 disease or pT2N0 with positive margins and PSA 0.2–4.0 ng/mL",
+    "endpoint":"Overall survival",
+    "horizon":"18 years",
+    "interventionRate":52.9,
+    "controlRate":43.1,
+    "absoluteBenefit":9.8,
+    "nnt":"11",
+    "relativeLabel":"HR",
+    "relativeEffect":"0.82",
+    "ci":"95% CI 0.67–1.00; one-sided P=.025",
+    "n":760,
+    "interventionN":384,
+    "controlN":376,
+    "benefitText":"At 18 years, overall survival was 52.9% with salvage RT plus 24 months of bicalutamide versus 43.1% with salvage RT plus placebo, an absolute improvement of 9.8 percentage points (adjusted HR 0.82, 95% CI 0.67–1.00; one-sided P=.025). The 18-year incidence of prostate-cancer death was 18% vs 28% and metastatic prostate cancer was 22% vs 31%. NNT 11 is based on the 18-year overall-survival difference.",
+    "harmLabel":"Gynecomastia",
+    "harmIntervention":69.7,
+    "harmControl":10.9,
+    "harmIncrease":58.8,
+    "nnH":"2",
+    "harmText":"Gynecomastia occurred in 69.7% with bicalutamide versus 10.9% with placebo, an absolute excess of 58.8 percentage points (NNH 2). This is the toxicity endpoint used for NNH. Late radiation-related bladder, bowel and hematologic toxicity was similar between groups; grade 3–4 bladder toxicity was 7.0% vs 6.7% and bowel toxicity 2.7% vs 1.6% in the original report.",
+    "trial":"NRG/RTOG 9601",
+    "clinicalQuestion":"In men with biochemical recurrence after radical prostatectomy receiving salvage prostate-bed radiotherapy, does adding 24 months of antiandrogen therapy improve long-term survival and reduce metastases?",
+    "refs":["Shipley WU, et al. N Engl J Med. 2017;376:417–428.","NRG/RTOG 9601 long-term follow-up. Int J Radiat Oncol Biol Phys. 2025."],
+    "urls":["https://www.nejm.org/doi/full/10.1056/NEJMoa1607529","https://pubmed.ncbi.nlm.nih.gov/40752653/"]
+  }
+]
