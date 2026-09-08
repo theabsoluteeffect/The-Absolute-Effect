@@ -2322,7 +2322,7 @@ const questionLabels={
  "keynote522":"Does adding pembrolizumab to neoadjuvant chemotherapy followed by adjuvant pembrolizumab improve survival in early triple-negative breast cancer?",
  "hbe-her2-trastuzumab-1y":"Does one year of adjuvant trastuzumab improve long-term survival in HER2-positive early breast cancer?"
 };
-function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial; return e.trial ? `${q} [${e.trial}]` : q}
+function questionFor(e){const q=e.id==="nrg-rtog-9601" ? e.clinicalQuestion : (questionLabels[e.id]||e.clinicalQuestion||e.trial); return e.trial ? `${q} [${e.trial}]` : q}
 function matchingEvidence(){
  const s=document.getElementById("siteFilter").value,d=document.getElementById("disciplineFilter").value,g=document.getElementById("settingFilter").value;
  return getEvidence().filter(x=>(s==="All"||x.site===s)&&(d==="All"||x.discipline===d)&&(g==="All"||x.setting===g));
@@ -2455,6 +2455,9 @@ applySettings();renderFilters();renderEntry();loadSubstack();
   if(typeof window.renderEntry === 'function') window.renderEntry();
 })();
 </script>
+
+
+
 
 
 
