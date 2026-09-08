@@ -2501,6 +2501,9 @@ applySettings();renderFilters();renderEntry();loadSubstack();
 
 
 
+
+
+
 <style id="atlas-filter-fix-style">#siteFilter,#disciplineFilter,#settingFilter,#questionFilter{cursor:pointer;pointer-events:auto;opacity:1}</style>
 <script id="atlas-filter-fix">
 (function(){function boot(){const S=document.getElementById("siteFilter"),D=document.getElementById("disciplineFilter"),G=document.getElementById("settingFilter"),Q=document.getElementById("questionFilter"),W=document.getElementById("questionWrap");if(!S||!D||!G)return;const E=()=>typeof getEvidence==="function"?getEvidence():[];const esc=x=>String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");const vals=(k,a)=>["All",...Array.from(new Set(a.map(x=>x[k]).filter(Boolean))).sort()];const fill=(el,a,v)=>{el.innerHTML=a.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");el.value=a.includes(v)?v:"All"};function refresh(rs,rd,rg){const all=E(),site=S.value||"All",siteE=all.filter(x=>site==="All"||x.site===site),ds=vals("discipline",siteE);fill(D,ds,rd?"All":D.value);const d=D.value,dE=siteE.filter(x=>d==="All"||x.discipline===d),gs=vals("setting",dE);fill(G,gs,rg?"All":G.value);const g=G.value,qE=dE.filter(x=>g==="All"||x.setting===g);const qs=qE.map(x=>({v:questionFor(x),t:questionFor(x)}));if(Q){if(qs.length){W.style.display="block";Q.innerHTML='<option value="All">All</option>'+qs.map(o=>`<option value="${esc(o.v)}">${esc(o.t)}</option>`).join("");if(rs)Q.value="All"}else{W.style.display="none";Q.innerHTML='<option value="All">All</option>';Q.value="All"}}if(typeof renderEntry==="function")renderEntry()}S.onchange=()=>refresh(true,true,true);D.onchange=()=>refresh(false,true,true);G.onchange=()=>refresh(false,false,true);if(Q)Q.onchange=()=>renderEntry();refresh(false,false,false)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot()})();
