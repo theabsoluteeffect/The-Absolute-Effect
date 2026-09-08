@@ -6,7 +6,9 @@ entries=[]; seen=set()
 for f in sorted(data_dir.glob('daily-evidence-*.json')):
     for x in json.loads(f.read_text(encoding='utf-8')):
         if x.get('id') and x['id'] not in seen: entries.append(x); seen.add(x['id'])
-entries=[x for x in entries if x.get('id')!='psmaddition']
+# Exclude provisional/obsolete aliases. RTOG 9601 had an earlier malformed duplicate;
+# the complete nrg-rtog-9601 record is the canonical entry.
+entries=[x for x in entries if x.get('id') not in {'psmaddition','rtog-9601'}]
 entries.append({'id':'arasens','site':'Prostate Cancer','discipline':'Medical Oncology','setting':'Metastatic Hormone-Sensitive','treatment':'Darolutamide + ADT + docetaxel vs placebo + ADT + docetaxel','population':'1,306 men with metastatic hormone-sensitive prostate cancer','endpoint':'Overall survival','horizon':'4 years','interventionRate':62.7,'controlRate':50.4,'absoluteBenefit':12.3,'nnt':'9','relativeLabel':'HR','relativeEffect':'0.68','ci':'95% CI 0.57–0.80; P<.001','n':1306,'interventionN':651,'controlN':654,'benefitText':'Four-year overall survival was 62.7% with darolutamide + ADT + docetaxel vs 50.4% with ADT + docetaxel, an absolute improvement of 12.3 percentage points (NNT 9). NNT is based on 4-year overall survival.','harmLabel':'Grade 3–5 adverse events','harmIntervention':66.1,'harmControl':63.5,'harmIncrease':2.6,'nnH':'Not quantifiable from this endpoint; grade 3–5 toxicity was similar between groups and discontinuation due to adverse events was 13.5% vs 10.5%.','trial':'ARASENS','clinicalQuestion':'In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT + docetaxel improve survival?','refs':['Smith MR, et al. N Engl J Med. 2022;386:1132–1142.'],'urls':['https://pubmed.ncbi.nlm.nih.gov/35179367/']})
 for x in entries:
     if x.get('id')=='swენoteca-stage1-nsgct': x['id']='swenoteca-stage1-nsgct'
