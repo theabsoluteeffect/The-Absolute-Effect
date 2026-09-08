@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-07",
-  "id": "proteus",
-  "trial": "PROTEUS",
-  "title": "Perioperative apalutamide in high-risk localized prostate cancer",
-  "journal": "New England Journal of Medicine",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42223077/",
-  "site": "Prostate Cancer",
+  "date": "2026-09-08",
+  "id": "penile-adjuvant-5fu-vs-paclitaxel-platinum",
+  "trial": "Randomized trial of adjuvant 5-FU-platinum vs paclitaxel-platinum for high-risk penile cancer",
+  "title": "Adjuvant paclitaxel-platinum versus 5-FU-platinum in high-risk penile cancer",
+  "journal": "Journal of the National Cancer Institute",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42636270/",
+  "site": "Penile Cancer",
   "discipline": "Medical Oncology",
-  "setting": "Perioperative Therapy",
-  "population": "2109 men with newly diagnosed high-risk localized or locally advanced prostate cancer undergoing radical prostatectomy with pelvic lymph-node dissection",
-  "summary": "At median follow-up of 61.7 months, perioperative ADT plus apalutamide increased 5-year metastasis-free survival from 73.5% to 78.2%, an absolute improvement of 4.7 percentage points (HR 0.80, 95% CI 0.67–0.96; P=.02). Pathological complete response or minimal residual disease was 8.9% vs 1.0% (OR 10.17, 95% CI 5.27–19.64).",
-  "criticalReview": "PROTEUS provides randomized phase III evidence that six cycles of perioperative apalutamide added to ADT before and after prostatectomy improves metastasis-free survival in high-risk localized or locally advanced prostate cancer. The absolute 5-year metastasis-free survival gain was 4.7 percentage points, while grade 3–4 adverse events increased from 31.0% to 39.6%. The key clinical question is whether this modest absolute metastasis-free survival gain justifies substantially greater treatment intensity and toxicity for all patients meeting the high-risk definition."
+  "setting": "Adjuvant Therapy",
+  "population": "49 men with resected node-positive penile squamous cell carcinoma and at least one high-risk feature",
+  "summary": "At median follow-up of 69 months, median DFS was 12.4 versus 19.6 months (HR 1.16, 95% CI 0.55–2.45; P=.686) and median OS was 21.3 versus 36.7 months (HR 1.13, 95% CI 0.52–2.44; P=.754) for 5-FU-platinum versus paclitaxel-platinum. Grade ≥3 toxicity was 77.3% versus 40.9%, grade ≥3 hematologic toxicity 54.5% versus 4.5%, and hospitalization for toxicity 45.5% versus 9.1%.",
+  "criticalReview": "This is the first randomized comparison of adjuvant chemotherapy regimens in high-risk node-positive penile cancer. The study was stopped early and was underpowered for definitive efficacy comparisons, so the nonsignificant DFS and OS differences should not be interpreted as proof of equivalence. The clinically important signal is tolerability: paclitaxel-platinum substantially reduced severe toxicity, hematologic toxicity and hospitalization while improving treatment completion. The trial therefore provides an important treatment-burden signal but does not establish superiority for survival outcomes."
 }
