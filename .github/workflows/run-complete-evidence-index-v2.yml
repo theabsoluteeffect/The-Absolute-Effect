@@ -1,0 +1,64 @@
+name: Run complete evidence index v2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/run-complete-evidence-index-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build verified evidence index
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/theabsoluteeffect/The-Absolute-Effect/main/data/daily-evidence-2026-09-06.json -o /tmp/e1.json
+          curl -fsSL https://raw.githubusercontent.com/theabsoluteeffect/The-Absolute-Effect/main/data/daily-evidence-2026-09-06-batch2.json -o /tmp/e2.json
+          node <<'NODE'
+          const fs=require('fs'), vm=require('vm');
+          let html=fs.readFileSync('index.html','utf8');
+          const m=html.match(/const trials=(\[.*?\]);\nconst DISCIPLINES/s);
+          if(!m) throw new Error('Could not locate trials array');
+          const existing=vm.runInNewContext('('+m[1]+')');
+          const byTrial=new Map(existing.map(x=>[x.trial.toLowerCase(),x]));
+          const dedicated={
+            'javelin bladder 100':'javelin-bladder-100','sorce':'sorce','assure':'assure','everest':'everest',
+            'eortc 30986':'eortc-30986','mrc/eortc bep vs ceb':'mrc-eortc-bep-vs-ceb','getug-afu 16':'getug-afu-16',
+            'nsabp b-18':'nsabp-b18','nsabp b-27':'nsabp-b27',
+            'randomized trial of adjuvant 5-fu-platinum vs paclitaxel-platinum':'penile-adjuvant-5fu-vs-paclitaxel'
+          };
+          const records=[...JSON.parse(fs.readFileSync('/tmp/e1.json')), ...JSON.parse(fs.readFileSync('/tmp/e2.json'))];
+          const seen=new Set(), full=[];
+          for(const x of records){const k=String(x.id||x.trial||'').trim().toLowerCase();if(k&&!seen.has(k)){seen.add(k);full.push(x);}}
+          const merged=[...existing];
+          const keys=new Set(merged.map(x=>[x.site,x.discipline,x.setting,x.trial].map(v=>v.toLowerCase()).join('|')));
+          const viewer={};
+          for(const x0 of full){
+            const x={...x0};
+            if(String(x.discipline).toLowerCase()==='uro-oncology') x.discipline='Surgical Oncology';
+            const trial=String(x.trial||'').trim(), site=String(x.site||'').trim(), disc=String(x.discipline||'').trim(), setting=String(x.setting||'').trim();
+            const key=[site,disc,setting,trial].map(v=>v.toLowerCase()).join('|');
+            const vid=String(x.id||trial.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''));
+            viewer[vid]=x;
+            const path=dedicated[trial.toLowerCase()] || (byTrial.get(trial.toLowerCase())||{}).path;
+            if(!keys.has(key)){merged.push({site,discipline:disc,setting,trial,question:x.clinicalQuestion||'',path:path||('__evidence__/'+vid)});keys.add(key);}
+          }
+          html=html.slice(0,m.index+m[0].indexOf(m[1]))+JSON.stringify(merged)+html.slice(m.index+m[0].indexOf(m[1])+m[1].length);
+          if(!html.includes('function hrefFor(t)')) html=html.replace('function render(){const matches=matching();',"function hrefFor(t){return t.path&&t.path.startsWith('__evidence__/')?'evidence.html?id='+encodeURIComponent(t.path.slice('__evidence__/'.length)):'trial-pages/'+t.path+'/'}\nfunction render(){const matches=matching();");
+          html=html.replace(/href=\\"trial-pages\/\$\{t\.path\}\\"/g,'href=\\"${hrefFor(t)}\\"');
+          fs.writeFileSync('index.html',html);
+          const data=JSON.stringify(viewer).replace(/</g,'\\u003c');
+          const page='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Evidence Entry | The Absolute Effect</title><style>body{margin:0;font-family:system-ui,sans-serif;background:#f7f7f5;color:#171717;line-height:1.55}main{max-width:900px;margin:auto;padding:36px 20px}.card{background:#fff;border:1px solid #e3e3df;border-radius:16px;padding:24px;margin:18px 0}.eyebrow,.label{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#666}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.effect{font-size:30px;font-weight:800}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><main><a href="./">← Back to The Absolute Effect</a><div id="app"></div><script>const DATA='+data+';const id=new URLSearchParams(location.search).get("id"),x=DATA[id],app=document.getElementById("app");if(!x){app.innerHTML="<div class=card><h1>Evidence entry not found</h1></div>"}else{app.innerHTML=`<p class="eyebrow">${x.site} · ${x.discipline} · ${x.setting}</p><h1>${x.trial}</h1><p>${x.clinicalQuestion||""}</p><div class="card"><h2>What was studied?</h2><p><b>Population:</b> ${x.population||"Not reported"}</p><p><b>Treatment:</b> ${x.treatment||"Not reported"}</p><p><b>Endpoint:</b> ${x.endpoint||"Not reported"}</p><p><b>Horizon:</b> ${x.horizon||"Not reported"}</p></div><div class="card"><h2>Absolute Effect</h2><div class="grid"><div><div class="label">Absolute benefit</div><div class="effect">${x.absoluteBenefit!==undefined?x.absoluteBenefit:"Not reported"}</div></div><div><div class="label">NNT</div><div class="effect">${x.nnt||"Not applicable"}</div></div></div><p>${x.benefitText||""}</p></div><div class="card"><h2>Relative Effect</h2><p><b>${x.relativeLabel||"Effect"}:</b> ${x.relativeEffect||"Not reported"}</p><p><b>Statistics:</b> ${x.ci||"Not reported"}</p></div><div class="card"><h2>Harm</h2><p><b>${x.harmLabel||"Treatment-related harm"}:</b> ${x.harmIncrease!==undefined?x.harmIncrease+" percentage points":"Not reported"}</p><p><b>NNH:</b> ${x.nnH||"Not applicable"}</p></div><div class="card"><h2>References</h2><ul>${(x.refs||[]).map(r=>"<li>"+r+"</li>").join("")}</ul><p>${(x.urls||[]).map(u=>"<a href=\\""+u+"\\" target=\\"_blank\\">Primary publication / source →</a>").join("<br>")}</p></div>`}</script></main></body></html>';
+          fs.writeFileSync('evidence.html',page);
+          NODE
+      - name: Commit and clean up repair workflows
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html evidence.html
+          git rm .github/workflows/run-complete-evidence-index-v2.yml .github/workflows/run-complete-evidence-index.yml .github/workflows/repair-complete-evidence-index.yml || true
+          git commit -m 'Integrate all indexed evidence into atlas dropdown' || exit 0
+          git push
