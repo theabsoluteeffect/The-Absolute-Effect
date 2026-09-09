@@ -1,26 +1,110 @@
-import json, re
+import json
+import re
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
-index_path=ROOT/'index.html'; data_dir=ROOT/'data'; s=index_path.read_text(encoding='utf-8')
-entries=[]; seen=set()
-for f in sorted(data_dir.glob('daily-evidence-*.json')):
-    for x in json.loads(f.read_text(encoding='utf-8')):
-        if x.get('id') and x['id'] not in seen: entries.append(x); seen.add(x['id'])
-# Exclude provisional/obsolete aliases. RTOG 9601 had an earlier malformed duplicate;
-# the complete nrg-rtog-9601 record is the canonical entry.
-entries=[x for x in entries if x.get('id') not in {'psmaddition','rtog-9601'}]
-entries.append({'id':'arasens','site':'Prostate Cancer','discipline':'Medical Oncology','setting':'Metastatic Hormone-Sensitive','treatment':'Darolutamide + ADT + docetaxel vs placebo + ADT + docetaxel','population':'1,306 men with metastatic hormone-sensitive prostate cancer','endpoint':'Overall survival','horizon':'4 years','interventionRate':62.7,'controlRate':50.4,'absoluteBenefit':12.3,'nnt':'9','relativeLabel':'HR','relativeEffect':'0.68','ci':'95% CI 0.57–0.80; P<.001','n':1306,'interventionN':651,'controlN':654,'benefitText':'Four-year overall survival was 62.7% with darolutamide + ADT + docetaxel vs 50.4% with ADT + docetaxel, an absolute improvement of 12.3 percentage points (NNT 9). NNT is based on 4-year overall survival.','harmLabel':'Grade 3–5 adverse events','harmIntervention':66.1,'harmControl':63.5,'harmIncrease':2.6,'nnH':'Not quantifiable from this endpoint; grade 3–5 toxicity was similar between groups and discontinuation due to adverse events was 13.5% vs 10.5%.','trial':'ARASENS','clinicalQuestion':'In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT + docetaxel improve survival?','refs':['Smith MR, et al. N Engl J Med. 2022;386:1132–1142.'],'urls':['https://pubmed.ncbi.nlm.nih.gov/35179367/']})
+
+ROOT = Path(__file__).resolve().parents[1]
+INDEX = ROOT / "index.html"
+DATA = ROOT / "data"
+
+html = INDEX.read_text(encoding="utf-8")
+
+entries = []
+seen = set()
+for path in sorted(DATA.glob("daily-evidence-*.json")):
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise SystemExit(f"Could not parse {path}: {exc}")
+    for row in rows:
+        rid = row.get("id")
+        if rid and rid not in seen:
+            entries.append(row)
+            seen.add(rid)
+
+# Remove provisional/obsolete aliases.
+entries = [x for x in entries if x.get("id") not in {"psmaddition", "rtog-9601"}]
+
+# Canonical corrections retained from the atlas rules.
 for x in entries:
-    if x.get('id')=='swენoteca-stage1-nsgct': x['id']='swenoteca-stage1-nsgct'
-    if x.get('id')=='protect-15y': x['discipline']='Medical Oncology'
-    if x.get('id')=='vesper': x.update({'interventionRate':64,'controlRate':56,'absoluteBenefit':8,'nnt':'13','relativeEffect':'0.79','ci':'95% CI 0.59–1.05 for overall perioperative OS','benefitText':'At 5 years, overall survival was 64% with dose-dense MVAC vs 56% with gemcitabine-cisplatin in the overall perioperative population, an absolute difference of 8 percentage points. The OS HR was 0.79 (95% CI 0.59–1.05), so the overall OS comparison did not demonstrate a statistically significant difference. In the neoadjuvant subgroup, 5-year OS was 66% vs 57%, HR 0.71. NNT 13 is descriptive and should not be interpreted as proof of superiority because the CI crosses 1.'})
-start=s.index('const defaultEvidence='); a=s.index('[',start); marker='\n]\n\nfunction getSettings'; b=s.index(marker,a)+2
-raw=s[a:b]; raw=re.sub(r'([\{,]\s*)([A-Za-z_][A-Za-z0-9_-]*)(\s*:)',r'\1"\2"\3',raw); current=json.loads(raw)
-byid={x.get('id'):x for x in current if x.get('id')}
-for x in entries: byid[x['id']]=x
-s=s[:a]+json.dumps(list(byid.values()),ensure_ascii=False,indent=2)+s[b:]
-# Always prefer the canonical clinicalQuestion for RTOG 9601 so a stale questionLabels entry cannot override it.
-s=s.replace('function questionFor(e){const q=questionLabels[e.id]||e.clinicalQuestion||e.trial; return e.trial ? `${q} [${e.trial}]` : q}','function questionFor(e){const q=e.id==="nrg-rtog-9601" ? e.clinicalQuestion : (questionLabels[e.id]||e.clinicalQuestion||e.trial); return e.trial ? `${q} [${e.trial}]` : q}')
-s=re.sub(r'\n<style id="atlas-filter-fix-style">.*?</script>\n','\n',s,flags=re.S)
-override='''\n<style id="atlas-filter-fix-style">#siteFilter,#disciplineFilter,#settingFilter,#questionFilter{cursor:pointer;pointer-events:auto;opacity:1}</style>\n<script id="atlas-filter-fix">\n(function(){function boot(){const S=document.getElementById("siteFilter"),D=document.getElementById("disciplineFilter"),G=document.getElementById("settingFilter"),Q=document.getElementById("questionFilter"),W=document.getElementById("questionWrap");if(!S||!D||!G)return;const E=()=>typeof getEvidence==="function"?getEvidence():[];const esc=x=>String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");const vals=(k,a)=>["All",...Array.from(new Set(a.map(x=>x[k]).filter(Boolean))).sort()];const fill=(el,a,v)=>{el.innerHTML=a.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");el.value=a.includes(v)?v:"All"};function refresh(rs,rd,rg){const all=E(),site=S.value||"All",siteE=all.filter(x=>site==="All"||x.site===site),ds=vals("discipline",siteE);fill(D,ds,rd?"All":D.value);const d=D.value,dE=siteE.filter(x=>d==="All"||x.discipline===d),gs=vals("setting",dE);fill(G,gs,rg?"All":G.value);const g=G.value,qE=dE.filter(x=>g==="All"||x.setting===g);const qs=qE.map(x=>({v:questionFor(x),t:questionFor(x)}));if(Q){if(qs.length){W.style.display="block";Q.innerHTML='<option value="All">All</option>'+qs.map(o=>`<option value="${esc(o.v)}">${esc(o.t)}</option>`).join("");if(rs)Q.value="All"}else{W.style.display="none";Q.innerHTML='<option value="All">All</option>';Q.value="All"}}if(typeof renderEntry==="function")renderEntry()}S.onchange=()=>refresh(true,true,true);D.onchange=()=>refresh(false,true,true);G.onchange=()=>refresh(false,false,true);if(Q)Q.onchange=()=>renderEntry();refresh(false,false,false)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot()})();\n</script>\n'''
-s=s.replace('</body>',override+'</body>',1); index_path.write_text(s,encoding='utf-8'); print('Merged',len(entries),'daily evidence records and repaired dependent filters.')
+    if x.get("id") == "swენoteca-stage1-nsgct":
+        x["id"] = "swenoteca-stage1-nsgct"
+    if x.get("id") == "protect-15y":
+        x["discipline"] = "Medical Oncology"
+    if x.get("id") == "vesper":
+        x.update({
+            "interventionRate": 64,
+            "controlRate": 56,
+            "absoluteBenefit": 8,
+            "nnt": "13",
+            "relativeEffect": "0.79",
+            "ci": "95% CI 0.59–1.05 for overall perioperative OS",
+            "benefitText": "At 5 years, overall survival was 64% with dose-dense MVAC vs 56% with gemcitabine-cisplatin in the overall perioperative population, an absolute difference of 8 percentage points. The OS HR was 0.79 (95% CI 0.59–1.05), so the overall OS comparison did not demonstrate a statistically significant difference. In the neoadjuvant subgroup, 5-year OS was 66% vs 57%, HR 0.71. NNT 13 is descriptive and should not be interpreted as proof of superiority because the CI crosses 1."
+        })
+
+# Canonical ARASENS entry.
+if not any(x.get("id") == "arasens" for x in entries):
+    entries.append({
+        "id": "arasens",
+        "site": "Prostate Cancer",
+        "discipline": "Medical Oncology",
+        "setting": "Metastatic Hormone-Sensitive",
+        "treatment": "Darolutamide + ADT + docetaxel vs placebo + ADT + docetaxel",
+        "population": "1,306 men with metastatic hormone-sensitive prostate cancer",
+        "endpoint": "Overall survival",
+        "horizon": "4 years",
+        "interventionRate": 62.7,
+        "controlRate": 50.4,
+        "absoluteBenefit": 12.3,
+        "nnt": "9",
+        "relativeLabel": "HR",
+        "relativeEffect": "0.68",
+        "ci": "95% CI 0.57–0.80; P<.001",
+        "n": 1306,
+        "interventionN": 651,
+        "controlN": 654,
+        "benefitText": "Four-year overall survival was 62.7% with darolutamide + ADT + docetaxel vs 50.4% with ADT + docetaxel, an absolute improvement of 12.3 percentage points (NNT 9). NNT is based on 4-year overall survival.",
+        "harmLabel": "Grade 3–5 adverse events",
+        "harmIntervention": 66.1,
+        "harmControl": 63.5,
+        "harmIncrease": 2.6,
+        "nnH": "Not quantifiable from this endpoint; grade 3–5 toxicity was similar between groups and discontinuation due to adverse events was 13.5% vs 10.5%.",
+        "trial": "ARASENS",
+        "clinicalQuestion": "In metastatic hormone-sensitive prostate cancer, does adding darolutamide to ADT + docetaxel improve survival?",
+        "refs": ["Smith MR, et al. N Engl J Med. 2022;386:1132–1142."],
+        "urls": ["https://pubmed.ncbi.nlm.nih.gov/35179367/"]
+    })
+
+# The current homepage uses a lightweight `const trials=[...]` navigation index,
+# not the old `defaultEvidence` array. Preserve existing page paths while rebuilding
+# the navigation list from the complete daily evidence corpus.
+match = re.search(r"const trials=\[.*?\];(?=const )", html, flags=re.S)
+if not match:
+    raise SystemExit("Current const trials navigation block not found")
+
+old_trials = json.loads(match.group(0)[len("const trials="): -1])
+paths = {x.get("trial"): x.get("path") for x in old_trials if x.get("trial") and x.get("path")}
+paths_by_id = {}
+for x in old_trials:
+    if x.get("trial") and x.get("path"):
+        paths_by_id[x.get("trial")] = x.get("path")
+
+navigation = []
+for x in entries:
+    rid = x.get("id")
+    trial = x.get("trial") or x.get("name") or rid
+    if not rid or not trial:
+        continue
+    path = paths_by_id.get(trial) or f"__evidence__/{rid}"
+    navigation.append({
+        "site": x.get("site", ""),
+        "discipline": x.get("discipline", ""),
+        "setting": x.get("setting", ""),
+        "trial": trial,
+        "question": x.get("clinicalQuestion") or x.get("question") or trial,
+        "path": path
+    })
+
+replacement = "const trials=" + json.dumps(navigation, ensure_ascii=False, separators=(",", ":")) + ";"
+html = html[:match.start()] + replacement + html[match.end():]
+INDEX.write_text(html, encoding="utf-8")
+print(f"Atlas navigation rebuilt from {len(navigation)} unique evidence records.")
