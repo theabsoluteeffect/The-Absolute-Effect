@@ -1,0 +1,34 @@
+[
+  {
+    "id":"swog-nrg-s1914",
+    "site":"Non-Small Cell Lung Cancer",
+    "discipline":"Radiation Oncology / Medical Oncology",
+    "setting":"Early-Stage Inoperable NSCLC · SBRT + Immunotherapy",
+    "trial":"SWOG/NRG S1914",
+    "clinicalQuestion":"In high-risk, early-stage medically inoperable or surgery-declining NSCLC, does induction, concurrent and adjuvant atezolizumab added to SBRT improve overall survival compared with SBRT alone?",
+    "population":"402 eligible patients with T1–T3N0M0 NSCLC ≤7 cm, medically inoperable or declining surgery, with at least one prespecified high-risk feature",
+    "intervention":"Atezolizumab 1200 mg IV every 3 weeks for up to 8 cycles, beginning before SBRT, continued during SBRT and afterward",
+    "comparator":"SBRT alone, 3–8 fractions, BED10 ≥100 Gy",
+    "endpoint":"Overall survival",
+    "horizon":"2 years; median follow-up 24.8 months",
+    "benefitText":"2-year OS: 82% vs 82% (absolute difference 0 percentage points); 2-year PFS was not improved",
+    "absoluteBenefit":0,
+    "nnt":"Not appropriately calculable",
+    "harmText":"Grade ≥3 adverse events: 12% vs 3% (absolute increase 9 percentage points); two grade 5 respiratory events occurred with atezolizumab",
+    "nnh":"≈12 for one additional grade ≥3 adverse event, using the 9-point absolute increase; this is an approximate burden metric, not a conventional time-to-event NNH",
+    "relativeLabel":"Overall survival HR",
+    "relativeEffect":"1.04",
+    "ci":"95% CI 0.69–1.58; one-sided P=0.58",
+    "statistics":"140 PFS events and 92 deaths were available at the updated analysis. The trial closed early for futility. PFS HR was 1.35 (95% CI 0.89–2.06) in the initial interim analysis. Regional and distant failure rates were similar, while local failures were numerically higher with atezolizumab.",
+    "clinicalInterpretation":"S1914 is a negative phase III trial: adding atezolizumab to SBRT did not improve survival and increased clinically important toxicity. The result should not be interpreted as evidence that checkpoint inhibition can never work after ablative radiation; rather, it argues that the biological and clinical conditions that make consolidation immunotherapy effective after definitive chemoradiotherapy are not reproduced simply by adding an ICI to SBRT in early-stage NSCLC. SBRT already provides very high local control, leaving a smaller systemic-risk target; the typical S1914 population is older and medically frail; many patients may have limited residual micrometastatic burden after definitive local therapy; and the immune consequences of ablative SBRT differ substantially from those of prolonged thoracic chemoradiotherapy. Importantly, S1914 used atezolizumab before, during and after SBRT, so this cannot be dismissed as a failure of giving immunotherapy too late. In contrast, PACIFIC and ADRIATIC select patients who have demonstrated disease control after intensive chemoradiotherapy and then expose them to prolonged systemic immune pressure against a disease with a much higher baseline risk of occult dissemination. The most plausible explanation is therefore not that PD-L1 blockade stops working after radiation, but that the therapeutic context matters: disease burden, systemic relapse risk, immune priming from chemotherapy, antigen release and inflammatory signalling, patient selection, and the balance between local control and residual systemic disease are fundamentally different. The signal also highlights the importance of molecular selection: early-stage NSCLC is biologically heterogeneous, and oncogenic-driver populations such as EGFR-mutant disease may derive little benefit from ICI. Future SBRT-immunotherapy trials should therefore focus on biologically high-risk patients and test whether a specific sequencing, biomarker-defined population or systemic-risk threshold identifies a subgroup with meaningful absolute benefit.",
+    "refs":[
+      "The Lancet. Induction and consolidation atezolizumab with stereotactic body radiation therapy versus radiation alone in high-risk, early-stage non-small-cell lung cancer (SWOG/NRG S1914). Published online 6 September 2026. DOI: 10.1016/S0140-6736(26)01655-7.",
+      "ASCO Meeting Abstract: SWOG/NRG S1914 randomized phase III trial of induction/consolidation atezolizumab + SBRT versus SBRT alone in high-risk, early-stage NSCLC.",
+      "NEJM 2018; Overall Survival with Durvalumab after Chemoradiotherapy in Stage III NSCLC (PACIFIC).",
+      "NEJM 2024; Durvalumab after Chemoradiotherapy in Limited-Stage Small-Cell Lung Cancer (ADRIATIC)."
+    ],
+    "urls":["https://www.sciencedirect.com/science/article/pii/S0140673626016557"],
+    "reviewTitle":"Why did atezolizumab fail after SBRT when consolidation immunotherapy works after definitive CRT?",
+    "review":"The apparent contradiction is more superficial than biological. PACIFIC and ADRIATIC are not simply 'radiation followed by immunotherapy' trials. They are trials in patients with a substantial baseline risk of occult systemic disease, after chemotherapy-containing definitive treatment, who have survived the initial treatment without progression. Chemotherapy contributes lymphocyte depletion and recovery, immunogenic cell death, antigen release and inflammatory signalling; chemoradiotherapy also treats a larger regional tumour/lymph-node field and exposes a much greater burden of tumour-associated antigen. SBRT, by contrast, is an extremely focal treatment whose dominant effect is durable local ablation. Once local control is already around 90%+, the incremental value of systemic immunotherapy depends almost entirely on how much clinically relevant micrometastatic disease remains. If that residual systemic burden is relatively small in many early-stage patients, the absolute opportunity for an OS gain is correspondingly small. S1914 also enrolled a predominantly elderly, medically inoperable population, in whom competing mortality and treatment intolerance dilute the achievable survival benefit. Crucially, the trial deliberately gave atezolizumab before, during and after SBRT, so the negative result cannot be explained simply by initiating ICI too late. The more defensible interpretation is that SBRT does not reproduce the immunological context of definitive CRT closely enough for the PACIFIC/ADRIATIC paradigm to be assumed. There may still be a responsive subgroup, but S1914 gives no justification for routine ICI with SBRT. This is consistent with the broader lesson from PACIFIC-2: even in stage III NSCLC, moving immunotherapy earlier and giving it concurrently with CRT did not improve outcomes; sequencing and treatment context matter."
+  }
+]
