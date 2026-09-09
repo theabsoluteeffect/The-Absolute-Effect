@@ -15,20 +15,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Insert Trial of the Day
+      - name: Replace Trial of the Day
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text()
-          marker='<!-- TRIAL_OF_THE_DAY_START -->'
-          if marker in s:
-              print('Trial of the Day already present; nothing to do.')
-              raise SystemExit(0)
-          css='''\n<style id="trial-of-the-day-style">\n.trial-day{margin:0 0 38px}.trial-day-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;box-shadow:0 5px 20px rgba(16,32,51,.045)}.trial-day-label{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#777}.trial-day-title{font-size:28px;line-height:1.15;letter-spacing:-.03em;margin:7px 0}.trial-day-meta{font-size:12px;color:#777;margin-bottom:16px}.trial-day-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.trial-day-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.trial-day-stat{background:#fafaf8;border:1px solid var(--line);border-radius:10px;padding:12px}.trial-day-stat strong{display:block;font-size:21px}.trial-day-stat small{color:#777}.trial-day-review{margin-top:16px;background:#f2f2ef;border-left:4px solid #333;padding:14px 16px;border-radius:7px}.trial-day-review strong{display:block;margin-bottom:5px}.trial-day-link{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;color:#222}@media(max-width:800px){.trial-day-grid,.trial-day-stats{grid-template-columns:1fr}}\n</style>\n'''
-          s=s.replace('</head>',css+'</head>',1)
-          html='''<!-- TRIAL_OF_THE_DAY_START -->\n<section id="trial-of-the-day" class="trial-day">\n<div class="trial-day-card">\n<div class="trial-day-label">Trial of the Day · 6 September 2026</div>\n<h2 class="trial-day-title">NSABP B-59/GeparDouze: Atezolizumab in early triple-negative breast cancer</h2>\n<div class="trial-day-meta">Nature Medicine · Phase III randomized trial · Stage II–III TNBC · n=1,550</div>\n<div class="trial-day-grid">\n<div><p><strong>What did it show?</strong> Atezolizumab increased pCR from 57.0% to 63.3%, an absolute increase of 6.3 percentage points. However, the primary endpoint, 4-year EFS, was 85.2% vs 81.9%, an absolute difference of 3.3 points, with HR 0.80 (95% CI 0.62–1.03; P=0.083), so superiority was not demonstrated.</p><p>Overall survival at 4 years was 90.2% vs 89.5%. Exploratory analyses suggested greater EFS benefit in clinically node-positive disease and in tumors with high TILs, but these findings should not be treated as definitive evidence for routine selection.</p></div>\n<div><div class="trial-day-stats"><div class="trial-day-stat"><strong>+6.3%</strong><small>pCR</small></div><div class="trial-day-stat"><strong>+3.3%</strong><small>4-y EFS</small></div><div class="trial-day-stat"><strong>21.2% vs 10.6%</strong><small>TEAE-related discontinuation</small></div></div><div class="trial-day-review"><strong>Critical clinical review</strong>In a potentially curable breast cancer, is a 6.3% increase in pCR, or a 3.3% absolute improvement in 4-year EFS that did not reach statistical significance, worth more than doubling treatment discontinuation due to adverse events, from 10.6% to 21.2%? Immune-related adverse events occurred in 27.6% vs 11.4%. The real question is not whether atezolizumab improves pCR, but whether the magnitude of long-term benefit is large enough to justify the additional toxicity, treatment discontinuation and financial burden in a curable disease.</div><a class="trial-day-link" href="https://www.nature.com/articles/s41591-026-04565-6" target="_blank" rel="noopener">Read the primary publication →</a></div>\n</div>\n</div>\n</section>\n<!-- TRIAL_OF_THE_DAY_END -->\n'''
-          s=s.replace('<main>', '<main>\n'+html,1)
+          css='''
+<style id="trial-of-the-day-style">
+.trial-day{margin:0 0 38px}.trial-day-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;box-shadow:0 5px 20px rgba(16,32,51,.045)}.trial-day-label{font-size:11px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#777}.trial-day-title{font-size:28px;line-height:1.15;letter-spacing:-.03em;margin:7px 0}.trial-day-meta{font-size:12px;color:#777;margin-bottom:16px}.trial-day-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.trial-day-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.trial-day-stat{background:#fafaf8;border:1px solid var(--line);border-radius:10px;padding:12px}.trial-day-stat strong{display:block;font-size:21px}.trial-day-stat small{color:#777}.trial-day-review{margin-top:16px;background:#f2f2ef;border-left:4px solid #333;padding:14px 16px;border-radius:7px}.trial-day-review strong{display:block;margin-bottom:5px}.trial-day-link{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;color:#222}@media(max-width:800px){.trial-day-grid,.trial-day-stats{grid-template-columns:1fr}}
+</style>
+'''
+          if 'id="trial-of-the-day-style"' not in s:
+              s=s.replace('</head>',css+'</head>',1)
+          html='''<!-- TRIAL_OF_THE_DAY_START -->
+<section id="trial-of-the-day" class="trial-day">
+<div class="trial-day-card">
+<div class="trial-day-label">Trial of the Day · 9 September 2026</div>
+<h2 class="trial-day-title">RTOG 0534 SPPORT: Pelvic nodal radiotherapy + short-term ADT after prostatectomy</h2>
+<div class="trial-day-meta">Lancet · Phase III randomized trial · Post-prostatectomy PSA persistence or biochemical recurrence · n=1,716</div>
+<div class="trial-day-grid">
+<div><p><strong>What did it show?</strong> At 5 years, freedom from progression was 87.4% with prostate-bed RT + short-term ADT + pelvic nodal RT versus 70.9% with prostate-bed RT alone — an absolute improvement of 16.5 percentage points (NNT 7). Adding ADT without pelvic nodal RT produced an intermediate 81.3% rate.</p><p>The benefit came with greater acute toxicity: grade 2+ adverse events were 44.6% with pelvic nodal RT + ADT versus 19.7% with prostate-bed RT alone. The reported hazard ratio for the three-component treatment versus prostate-bed RT alone was 0.50 (97.5% CI 0.39–0.64).</p></div>
+<div><div class="trial-day-stats"><div class="trial-day-stat"><strong>87.4% vs 70.9%</strong><small>5-y freedom from progression</small></div><div class="trial-day-stat"><strong>+16.5%</strong><small>absolute benefit · NNT 7</small></div><div class="trial-day-stat"><strong>44.6% vs 19.7%</strong><small>acute grade 2+ toxicity</small></div></div><div class="trial-day-review"><strong>Critical clinical review</strong>The clinically important result is not simply that intensification improved progression control. It is that the incremental benefit must be weighed against a roughly 25-percentage-point increase in acute grade 2+ toxicity. SPPORT therefore provides a useful patient-level framework for discussing whether broader pelvic treatment and short-term ADT are worth the additional treatment burden.</div><a class="trial-day-link" href="evidence.html?id=rtog-0534-spport">Open the full evidence entry →</a><br><a class="trial-day-link" href="https://pubmed.ncbi.nlm.nih.gov/35569466/" target="_blank" rel="noopener">Read the primary publication →</a></div>
+</div>
+</div>
+</section>
+<!-- TRIAL_OF_THE_DAY_END -->
+'''
+          pattern=r'<!-- TRIAL_OF_THE_DAY_START -->.*?<!-- TRIAL_OF_THE_DAY_END -->'
+          if re.search(pattern,s,re.S):
+              s=re.sub(pattern,html,s,count=1,flags=re.S)
+          else:
+              old=r'<section class="trial-day">.*?</section>'
+              if re.search(old,s,re.S):
+                  s=re.sub(old,html,s,count=1,flags=re.S)
+              else:
+                  s=s.replace('<main>','<main>\n'+html,1)
           p.write_text(s)
           PY
       - name: Commit
@@ -36,5 +59,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html
-          git diff --cached --quiet || git commit -m 'Add Trial of the Day section'
+          git diff --cached --quiet || git commit -m 'Update Trial of the Day to SPPORT'
           git push
