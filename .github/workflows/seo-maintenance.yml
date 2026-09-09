@@ -1,0 +1,89 @@
+name: SEO Maintenance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/seo-maintenance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-seo-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build crawlable trial pages and sitemap
+        shell: python
+        run: |
+          from pathlib import Path
+          import html, json, re
+          BASE='https://theabsoluteeffect.pages.dev'
+          root=Path('.')
+          records=[]; seen=set()
+          for path in sorted((root/'data').glob('daily-evidence-*.json')):
+              data=json.loads(path.read_text(encoding='utf-8'))
+              if not isinstance(data,list): continue
+              for item in data:
+                  if not isinstance(item,dict) or not item.get('id'): continue
+                  rid=str(item['id'])
+                  if rid in seen: continue
+                  seen.add(rid); records.append(item)
+          def esc(v): return html.escape(str(v or ''),quote=True)
+          def txt(v): return str(v or '').strip()
+          def title(item): return txt(item.get('trial')) or txt(item.get('id'))
+          def desc(item):
+              return (f"{title(item)}: {txt(item.get('site'))} oncology trial evidence, absolute treatment effect, NNT/NNH and clinical interpretation. {txt(item.get('setting'))}. {txt(item.get('clinicalQuestion'))}")[:300]
+          css='''body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#171717;background:#f7f7f5;margin:0}.wrap{max-width:900px;margin:auto;padding:32px 20px 70px}.crumb{font-size:14px;margin-bottom:28px}.card{background:#fff;border:1px solid #e3e3df;border-radius:16px;padding:24px;margin:18px 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#666}.muted{color:#666}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.label{font-size:12px;font-weight:800;color:#666;text-transform:uppercase;letter-spacing:.06em}a{color:#222}@media(max-width:700px){.grid{grid-template-columns:1fr}}'''
+          for item in records:
+              rid=re.sub(r'[^a-z0-9_-]+','-',str(item['id']).lower()).strip('-')
+              out=root/'trial-pages'/rid/'index.html'; out.parent.mkdir(parents=True,exist_ok=True)
+              t=title(item); site=txt(item.get('site')); setting=txt(item.get('setting')); disc=txt(item.get('discipline'))
+              q=txt(item.get('clinicalQuestion')); pop=txt(item.get('population')); treatment=txt(item.get('treatment') or item.get('intervention'))
+              comp=txt(item.get('comparator')); endpoint=txt(item.get('endpoint')); horizon=txt(item.get('horizon')); benefit=txt(item.get('benefitText'))
+              nnt=txt(item.get('nnt')) or 'Not applicable / not defensible from the reported data'; harm=txt(item.get('harmLabel')); nnh=txt(item.get('nnH')) or 'Not quantifiable from the reported data'
+              rel=txt(item.get('relativeEffect')); rell=txt(item.get('relativeLabel')); ci=txt(item.get('ci')); takeaway=txt(item.get('takeaway'))
+              refs=item.get('refs') or []; urls=item.get('urls') or []
+              schema={'@context':'https://schema.org','@type':'MedicalWebPage','name':t,'url':f'{BASE}/trial-pages/{rid}/','description':desc(item),'isPartOf':{'@type':'WebSite','name':'The Absolute Effect','url':BASE},'about':{'@type':'MedicalCondition','name':site},'breadcrumb':{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'The Absolute Effect','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'Evidence','item':BASE+'/evidence/'},{'@type':'ListItem','position':3,'name':t,'item':f'{BASE}/trial-pages/{rid}/'}]}}
+              compblock=f'<div><div class="label">Comparator</div><div>{esc(comp)}</div></div>' if comp else ''
+              relblock=f'<section class="card"><div class="eyebrow">Relative effect</div><p><strong>{esc(rell)}</strong>{": "+esc(rel) if rel else ""}</p>{f"<p class=muted>{esc(ci)}</p>" if ci else ""}</section>' if rel or ci else ''
+              refhtml=''.join(f'<li>{esc(r)}</li>' for r in refs); urlhtml=''.join(f'<li><a href="{esc(u)}" rel="noopener">Primary publication / source</a></li>' for u in urls)
+              page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(t)} | The Absolute Effect</title><meta name="description" content="{esc(desc(item))}"><meta name="robots" content="index,follow"><link rel="canonical" href="{BASE}/trial-pages/{rid}/"><meta property="og:title" content="{esc(t)} | The Absolute Effect"><meta property="og:description" content="{esc(desc(item))}"><meta property="og:url" content="{BASE}/trial-pages/{rid}/"><meta property="og:type" content="article"><script type="application/ld+json">{json.dumps(schema,ensure_ascii=False,separators=(',',':'))}</script><style>{css}</style></head><body><main class="wrap"><div class="crumb"><a href="{BASE}/">The Absolute Effect</a> / <a href="{BASE}/evidence/">Evidence</a> / {esc(t)}</div><div class="eyebrow">{esc(site)} · {esc(disc)} · {esc(setting)}</div><h1>{esc(t)}</h1><section class="card"><div class="eyebrow">Clinical question</div><h2>{esc(q)}</h2></section><section class="card"><div class="eyebrow">Trial context</div><div class="grid"><div><div class="label">Population</div><div>{esc(pop)}</div></div><div><div class="label">Intervention</div><div>{esc(treatment)}</div></div>{compblock}<div><div class="label">Key endpoint</div><div>{esc(endpoint)}</div></div><div><div class="label">Time horizon / follow-up</div><div>{esc(horizon)}</div></div></div></section><section class="card"><div class="eyebrow">Absolute Effect</div><h2>What changes for patients?</h2><p>{esc(benefit)}</p><p><strong>NNT:</strong> {esc(nnt)}</p></section><section class="card"><div class="eyebrow">Treatment burden / harm</div><p><strong>{esc(harm)}</strong></p><p><strong>NNH:</strong> {esc(nnh)}</p></section>{relblock}<section class="card"><div class="eyebrow">Clinical interpretation</div><p>{esc(takeaway) if takeaway else 'Interpret the absolute difference together with the endpoint, time horizon, relative effect and limitations of the study design.'}</p></section><section class="card"><div class="eyebrow">Primary publication</div><ul>{refhtml}{urlhtml}</ul></section><p><a href="{BASE}/">← Return to The Absolute Effect</a></p></main></body></html>'''
+              out.write_text(page,encoding='utf-8')
+          urls=[BASE+'/',BASE+'/evidence/']+[f"{BASE}/trial-pages/{re.sub(r'[^a-z0-9_-]+','-',str(i['id']).lower()).strip('-')}/" for i in records]
+          urls=sorted(set(urls))
+          xml=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']+[f'  <url><loc>{u}</loc></url>' for u in urls]+['</urlset>']
+          (root/'sitemap.xml').write_text('\n'.join(xml)+'\n',encoding='utf-8')
+          (root/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'/sitemap.xml\n',encoding='utf-8')
+          for filename in ['index.html','evidence/index.html']:
+              p=root/filename; s=p.read_text(encoding='utf-8')
+              s=s.replace('https://theabsoluteeffect.github.io/The-Absolute-Effect/','https://theabsoluteeffect.pages.dev/')
+              s=s.replace('https://theabsoluteeffect.github.io/The-Absolute-Effect/evidence/','https://theabsoluteeffect.pages.dev/evidence/')
+              s=s.replace('https://theabsoluteeffect.github.io/The-Absolute-Effect','https://theabsoluteeffect.pages.dev')
+              p.write_text(s,encoding='utf-8')
+          p=root/'index.html'; s=p.read_text(encoding='utf-8')
+          if 'property="og:title"' not in s:
+              tags='''<meta property="og:title" content="The Absolute Effect | Oncology Evidence Atlas"><meta property="og:description" content="Clinician-facing oncology evidence atlas translating clinical-trial results into absolute benefit, harm, NNT, NNH and patient-level interpretation."><meta property="og:url" content="https://theabsoluteeffect.pages.dev/"><meta property="og:type" content="website"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Absolute Effect","url":"https://theabsoluteeffect.pages.dev/","description":"Clinician-facing oncology evidence atlas translating clinical-trial results into absolute benefit, harm, NNT, NNH and patient-level interpretation.","publisher":{"@type":"Person","name":"Dr Rishi P Nair"}}</script>'''
+              if '</head>' not in s: raise SystemExit('Homepage head marker missing')
+              s=s.replace('</head>',tags+'</head>',1); p.write_text(s,encoding='utf-8')
+          print(f'Generated {len(records)} crawlable trial pages and sitemap.')
+      - name: Validate SEO files
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          ET.parse('sitemap.xml')
+          assert 'https://theabsoluteeffect.pages.dev/sitemap.xml' in Path('robots.txt').read_text(encoding='utf-8')
+          index=Path('index.html').read_text(encoding='utf-8')
+          assert 'theabsoluteeffect.github.io' not in index
+          print('SEO validation passed.')
+      - name: Commit SEO changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html evidence/index.html robots.txt sitemap.xml trial-pages
+          if git diff --cached --quiet; then echo 'No SEO changes'; else git commit -m 'Fix SEO canonicals, crawlable trial pages and sitemap'; git push; fi
