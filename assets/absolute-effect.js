@@ -1,14 +1,8 @@
-/* The Absolute Effect — shared trial visual language. */
+/* Shared Absolute Effect component. Every dot = one patient. */
 (function(){
-  function pct(v){ return typeof v==='number' ? (Math.round(v*10)/10)+'%' : '—'; }
-  function effectCard(title, benefit, nnt, harm, nnh){
-    const b=typeof benefit==='number' ? benefit : null, h=typeof harm==='number' ? harm : null;
-    const el=document.createElement('section'); el.className='ae-effect';
-    el.innerHTML='<div class="ae-head"><div><div class="ae-kicker">Absolute Effect</div><h2>'+title+'</h2></div></div>'+
-      '<div class="ae-grid"><div class="ae-panel ae-benefit"><div class="ae-label">Benefit</div><div class="ae-number">'+(b===null?'Not quantifiable':(Math.abs(b)+' percentage points'))+'</div><div class="ae-copy">'+(nnt&&nnt!=='Not applicable; non-inferiority trial'?'NNT '+nnt:'NNT not appropriately calculable')+'</div></div>'+
-      '<div class="ae-panel ae-harm"><div class="ae-label">Harm</div><div class="ae-number">'+(h===null?'Not quantifiable':(Math.abs(h)+' percentage points'))+'</div><div class="ae-copy">'+(nnh&&nnh!=='Not quantifiable from the primary endpoint'?'NNH '+nnh:'NNH not appropriately calculable')+'</div></div></div>'+
-      '<div class="ae-100"><div class="ae-label">100-patient view</div><div class="ae-dots">'+Array.from({length:100},(_,i)=>'<span class="ae-dot '+(b!==null&&i<Math.round(Math.abs(b))?'benefit ':'')+(h!==null&&i>=Math.round(Math.abs(b||0))&&i<Math.round(Math.abs(b||0))+Math.round(Math.abs(h))?'harm':'')+'"></span>').join('')+'</div><p>Each dot represents one patient. Benefit and harm are shown separately from the reported endpoint and time horizon.</p></div>';
-    return el;
-  }
-  window.AbsoluteEffect={effectCard:effectCard,pct:pct};
+  const css='.ae-effect{font-family:system-ui,sans-serif;background:#fff;border:1px solid #e3e3df;border-radius:16px;padding:22px;margin:18px 0}.ae-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.ae-panel{border:1px solid #ddd;border-radius:12px;padding:16px}.ae-label,.ae-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#666}.ae-number{font-size:30px;font-weight:850;margin:5px 0}.ae-dots{display:grid;grid-template-columns:repeat(20,1fr);gap:4px;margin-top:10px}.ae-dot{aspect-ratio:1;border-radius:50%;background:#ddd}.ae-dot.benefit{background:#171717}.ae-dot.harm{background:#777}.ae-note{color:#666;font-size:13px}@media(max-width:700px){.ae-grid{grid-template-columns:1fr}.ae-dots{grid-template-columns:repeat(10,1fr)}}';
+  const s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
+  function render(el){const b=parseFloat(el.dataset.benefit),h=parseFloat(el.dataset.harm),nnt=el.dataset.nnt||'Not applicable',nnh=el.dataset.nnh||'Not applicable';let dots='';for(let i=0;i<100;i++){let cls='ae-dot';if(Number.isFinite(b)&&i<Math.round(Math.abs(b)))cls+=' benefit';else if(Number.isFinite(h)&&i>=Math.round(Math.abs(b||0))&&i<Math.round(Math.abs(b||0))+Math.round(Math.abs(h)))cls+=' harm';dots+='<span class="'+cls+'"></span>';}el.className='ae-effect';el.innerHTML='<div class="ae-kicker">ABSOLUTE EFFECT</div><div class="ae-grid"><div class="ae-panel"><div class="ae-label">Absolute benefit</div><div class="ae-number">'+(Number.isFinite(b)?Math.abs(b)+' percentage points':'Not quantifiable')+'</div><div>NNT: '+nnt+'</div></div><div class="ae-panel"><div class="ae-label">Additional harm</div><div class="ae-number">'+(Number.isFinite(h)?Math.abs(h)+' percentage points':'Not quantifiable')+'</div><div>NNH: '+nnh+'</div></div></div><div style="margin-top:18px"><div class="ae-label">100-patient view</div><div class="ae-dots">'+dots+'</div><p class="ae-note">Each dot represents one patient. Dark dots = benefit; grey dots = additional harm. The remaining dots represent patients without the displayed event.</p></div>'}
+  document.addEventListener('DOMContentLoaded',()=>document.querySelectorAll('[data-absolute-effect]').forEach(render));
+  window.AbsoluteEffect={render:render};
 })();
