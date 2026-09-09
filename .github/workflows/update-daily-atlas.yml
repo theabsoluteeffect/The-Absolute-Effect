@@ -1,46 +1,52 @@
 name: Update Daily Oncology Atlas
-on: push
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/daily-evidence-*.json'
+  workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   update-atlas:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Integrate daily evidence and rotate Trial of the Day
-        run: python scripts/update_daily_atlas.py
-      - name: Merge all daily evidence and enforce atlas rules
+
+      - name: Merge all daily evidence into the atlas
         run: python scripts/merge_all_daily_evidence.py
-      - name: Repair tumour site filter state
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path('index.html')
-          s = p.read_text(encoding='utf-8')
-          old = 'siteEl.onchange=()=>{ renderFilters(false); renderQuestionFilter(); renderEntry(); };'
-          new = 'siteEl.onchange=()=>{ renderFilters(true); renderQuestionFilter(); renderEntry(); };'
-          if old in s: s = s.replace(old, new, 1)
-          p.write_text(s, encoding='utf-8')
-          print('Tumour site filter repair applied')
-          PY
+
       - name: Validate atlas
         run: |
           python - <<'PY'
           from pathlib import Path
           import json
+          import re
+
           text = Path('index.html').read_text(encoding='utf-8')
-          files=list(Path('data').glob('daily-evidence-*.json'))
-          total=sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
-          assert 'const defaultEvidence=' in text
+          assert 'const trials=[' in text
+          assert 'defaultEvidence' not in text
           assert 'Uro-oncology' not in text
           assert 'Multidisciplinary' not in text
-          print(f'Atlas validation passed: {total} daily evidence records processed; core taxonomy checks passed.')
+
+          files = sorted(Path('data').glob('daily-evidence-*.json'))
+          total = sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
+          m = re.search(r'const trials=(\[.*?\]);(?=const )', text, re.S)
+          assert m, 'Navigation trials block missing'
+          trials = json.loads(m.group(1))
+          ids = {x.get('path','').split('/')[-1] for x in trials if x.get('path','').startswith('__evidence__/')}
+          assert len(trials) >= len(ids)
+          print(f'Atlas validation passed: {total} daily records available; {len(trials)} navigation entries indexed.')
           PY
+
       - name: Commit atlas changes
         run: |
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot].noreply.github.com'
-          git add index.html data/trial-archive.json data/previous-trial-of-the-day.json scripts/merge_all_daily_evidence.py .github/workflows/update-daily-atlas.yml
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
           if git diff --cached --quiet; then
             echo 'No atlas changes'
           else
