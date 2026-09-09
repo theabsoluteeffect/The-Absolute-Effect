@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 from html import escape
 
@@ -185,7 +186,12 @@ index = index.replace("</body>", filter_override + "</body>", 1)
 start = "<!-- TRIAL_OF_THE_DAY_START -->"
 end = "<!-- TRIAL_OF_THE_DAY_END -->"
 if start not in index or end not in index:
-    raise SystemExit("Trial of the Day markers not found")
+    legacy = re.search(r'<section class="trial-day">.*?</section>', index, re.S)
+    if legacy:
+        legacy_html = legacy.group(0)
+        index = index[:legacy.start()] + start + legacy_html + end + index[legacy.end():]
+    else:
+        raise SystemExit("Trial of the Day markers not found")
 
 def trial_html(t):
     return f'''<!-- TRIAL_OF_THE_DAY_START -->
