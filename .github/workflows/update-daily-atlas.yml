@@ -42,13 +42,16 @@ jobs:
           print(f'Atlas validation passed: {total} daily records available; {len(trials)} navigation entries indexed.')
           PY
 
-      - name: Commit atlas changes
+      - name: Update sitemap and robots
+        run: python scripts/update_sitemap.py
+
+      - name: Commit atlas and SEO changes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html
+          git add index.html sitemap.xml robots.txt
           if git diff --cached --quiet; then
-            echo 'No atlas changes'
+            echo 'No atlas or SEO changes'
           else
             git commit -m 'Update daily oncology evidence atlas'
             git push
