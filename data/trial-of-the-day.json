@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-08",
-  "id": "penile-adjuvant-5fu-vs-paclitaxel-platinum",
-  "trial": "Randomized trial of adjuvant 5-FU-platinum vs paclitaxel-platinum for high-risk penile cancer",
-  "title": "Adjuvant paclitaxel-platinum versus 5-FU-platinum in high-risk penile cancer",
-  "journal": "Journal of the National Cancer Institute",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42636270/",
-  "site": "Penile Cancer",
-  "discipline": "Medical Oncology",
-  "setting": "Adjuvant Therapy",
-  "population": "49 men with resected node-positive penile squamous cell carcinoma and at least one high-risk feature",
-  "summary": "At median follow-up of 69 months, median DFS was 12.4 versus 19.6 months (HR 1.16, 95% CI 0.55–2.45; P=.686) and median OS was 21.3 versus 36.7 months (HR 1.13, 95% CI 0.52–2.44; P=.754) for 5-FU-platinum versus paclitaxel-platinum. Grade ≥3 toxicity was 77.3% versus 40.9%, grade ≥3 hematologic toxicity 54.5% versus 4.5%, and hospitalization for toxicity 45.5% versus 9.1%.",
-  "criticalReview": "This is the first randomized comparison of adjuvant chemotherapy regimens in high-risk node-positive penile cancer. The study was stopped early and was underpowered for definitive efficacy comparisons, so the nonsignificant DFS and OS differences should not be interpreted as proof of equivalence. The clinically important signal is tolerability: paclitaxel-platinum substantially reduced severe toxicity, hematologic toxicity and hospitalization while improving treatment completion. The trial therefore provides an important treatment-burden signal but does not establish superiority for survival outcomes."
+  "date": "2026-09-09",
+  "id": "swog-nrg-s1914",
+  "trial": "SWOG/NRG S1914",
+  "title": "Atezolizumab plus SBRT versus SBRT alone in high-risk early-stage NSCLC",
+  "journal": "The Lancet",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0140673626016557",
+  "site": "Non-Small Cell Lung Cancer",
+  "discipline": "Radiation Oncology / Medical Oncology",
+  "setting": "Early-Stage Inoperable NSCLC · SBRT + Immunotherapy",
+  "population": "402 eligible patients with T1–T3N0M0 NSCLC ≤7 cm, medically inoperable or declining surgery, with at least one prespecified high-risk feature",
+  "summary": "At median follow-up of 24.8 months, overall survival was not improved with atezolizumab plus SBRT: HR 1.04 (95% CI 0.69–1.58; one-sided P=.58), with 2-year OS 82% in both groups. Grade ≥3 adverse events were 12% versus 3%, an absolute increase of 9 percentage points, and two grade 5 respiratory events occurred with atezolizumab. The trial closed early for futility.",
+  "criticalReview": "S1914 is a negative phase III trial and directly challenges the assumption that the PACIFIC/ADRIATIC consolidation paradigm can simply be transplanted onto SBRT. SBRT already achieves very high local control, so the incremental opportunity for systemic therapy depends on the amount of clinically meaningful micrometastatic disease remaining after local ablation. The S1914 population was also predominantly elderly and medically inoperable, with greater competing mortality and treatment vulnerability than the fitter populations enrolled in PACIFIC and ADRIATIC. Importantly, S1914 gave atezolizumab before, during and after SBRT, so the result cannot be explained simply by starting immunotherapy too late. The more plausible explanation is that SBRT does not recreate the immunological and systemic-disease context of definitive chemoradiotherapy: chemotherapy contributes immunogenic cell death, antigen release and inflammatory signalling, while definitive CRT treats a larger regional tumour burden and identifies a population that has demonstrated disease control after intensive treatment. PACIFIC and ADRIATIC therefore select patients with a higher residual systemic-risk state in whom prolonged checkpoint blockade has a larger absolute opportunity to prevent relapse. S1914 should not be read as evidence that radiation-immunotherapy synergy is biologically impossible; rather, it shows that routine atezolizumab with SBRT does not improve survival and adds meaningful toxicity. Biomarker selection, driver-mutation exclusion, residual systemic-risk enrichment and optimal sequencing remain important questions for future SBRT-immunotherapy trials."
 }
