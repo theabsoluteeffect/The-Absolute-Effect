@@ -71,11 +71,16 @@ if not any(x.get("id") == "arasens" for x in entries):
         "urls": ["https://pubmed.ncbi.nlm.nih.gov/35179367/"]
     })
 
-match = re.search(r"const trials=(\[.*?\]);", html, flags=re.S)
-if not match:
+marker = "const trials="
+start = html.find(marker)
+if start == -1:
     raise SystemExit("Current const trials navigation block not found")
-
-old_trials = json.loads(match.group(1))
+arr_start = start + len(marker)
+try:
+    old_trials, rel_end = json.JSONDecoder().raw_decode(html[arr_start:])
+except Exception as exc:
+    raise SystemExit(f"Could not parse const trials navigation block: {exc}")
+arr_end = arr_start + rel_end
 paths_by_id = {x.get("trial"): x.get("path") for x in old_trials if x.get("trial") and x.get("path")}
 
 navigation = []
@@ -96,6 +101,6 @@ for x in entries:
     })
 
 replacement = "const trials=" + json.dumps(navigation, ensure_ascii=False, separators=(",", ":")) + ";"
-html = html[:match.start()] + replacement + html[match.end():]
+html = html[:start] + replacement + html[arr_end:]
 INDEX.write_text(html, encoding="utf-8")
 print(f"Atlas navigation rebuilt from {len(navigation)} unique evidence records.")
