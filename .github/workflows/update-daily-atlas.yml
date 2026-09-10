@@ -8,6 +8,7 @@ on:
       - 'scripts/merge_all_daily_evidence.py'
       - 'scripts/update_sitemap.py'
       - 'index.html'
+      - 'trial-pages/**'
   workflow_dispatch:
 
 permissions:
