@@ -60,7 +60,6 @@ for path in sorted(ROOT.glob("*/index.html")):
     else:
         head = head.replace("</head>", canonical + "</head>", 1)
 
-    # Remove a previously generated block so repeated builds remain deterministic.
     head = re.sub(r'<script type="application/ld\+json" data-seo="trial">.*?</script>', "", head, flags=re.I | re.S)
 
     schema = {
@@ -69,23 +68,13 @@ for path in sorted(ROOT.glob("*/index.html")):
         "name": title,
         "url": url,
         "description": description,
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "The Absolute Effect",
-            "url": BASE + "/"
-        },
-        "about": {
-            "@type": "MedicalStudy",
-            "name": title
-        },
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "The Absolute Effect", "item": BASE + "/"},
-                {"@type": "ListItem", "position": 2, "name": "Evidence", "item": BASE + "/evidence/"},
-                {"@type": "ListItem", "position": 3, "name": title, "item": url}
-            ]
-        }
+        "isPartOf": {"@type": "WebSite", "name": "The Absolute Effect", "url": BASE + "/"},
+        "about": {"@type": "MedicalStudy", "name": title},
+        "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "The Absolute Effect", "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Evidence", "item": BASE + "/evidence/"},
+            {"@type": "ListItem", "position": 3, "name": title, "item": url}
+        ]}
     }
     ld = '<script type="application/ld+json" data-seo="trial">' + json.dumps(schema, ensure_ascii=False, separators=(",", ":")) + "</script>"
     head += ld
@@ -95,3 +84,4 @@ for path in sorted(ROOT.glob("*/index.html")):
     updated += 1
 
 print(f"Updated SEO metadata and structured data for {updated} trial pages.")
+# Deterministic rebuild: repeated runs produce identical output.
