@@ -1,0 +1,27 @@
+[
+  {
+    "rank": 1,
+    "site": "Neuro-Oncology",
+    "discipline": "Radiation / Medical Oncology",
+    "setting": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma",
+    "trial": "CATNON (EORTC 26053-22033)",
+    "clinicalQuestion": "In newly diagnosed 1p/19q non-codeleted grade 3 astrocytoma, does temozolomide given after radiotherapy improve survival, and does concurrent temozolomide add benefit?",
+    "population": "751 adults with newly diagnosed 1p/19q non-codeleted anaplastic/grade 3 glioma; final molecular analysis identified 444 IDH-mutant and 216 IDH-wild-type tumours",
+    "intervention": "Radiotherapy followed by 12 cycles of adjuvant temozolomide, with or without concurrent temozolomide",
+    "comparator": "Radiotherapy without adjuvant temozolomide",
+    "endpoint": "Overall survival",
+    "horizon": "Median follow-up 10.9 years",
+    "benefit": "In IDH-mutant tumours, adjuvant temozolomide improved overall survival: HR 0.54 (95% CI 0.42–0.69; P<0.0001). Median OS was 12.5 years with adjuvant TMZ versus substantially shorter survival without adjuvant TMZ; the final analysis supports RT followed by 12 cycles of adjuvant TMZ as standard therapy.",
+    "nnt": "NNT: not quantifiable for the primary endpoint (overall survival). The clinically meaningful absolute effect is better expressed by the 6.5-year difference in median OS reported for the adjuvant-TMZ group versus the corresponding non-adjuvant strategy.",
+    "harm": "The final CATNON analysis does not provide a single fixed-time toxicity endpoint suitable for a defensible NNH as the principal harm measure; treatment burden and temozolomide-related toxicity should therefore be reported directly rather than manufacturing an NNH.",
+    "nnh": "NNH: not quantifiable",
+    "relativeEffect": "OS HR 0.54 (95% CI 0.42–0.69) for adjuvant TMZ in IDH-mutant tumours; concurrent TMZ did not significantly improve OS (HR 0.81, 95% CI 0.63–1.04; P=.09).",
+    "statistics": "Final analysis: median follow-up 10.9 years; 499 OS events. Adjuvant TMZ HR 0.647 overall and HR 0.54 in IDH-mutant tumours; concurrent TMZ HR 0.906 overall and HR 0.81 in IDH-mutant tumours.",
+    "takeaway": "The big takeaway is not simply that temozolomide works, but that the survival benefit is driven by the adjuvant phase. In IDH-mutant, 1p/19q non-codeleted grade 3 astrocytoma, radiotherapy followed by 12 cycles of adjuvant TMZ substantially prolongs survival, whereas adding concurrent TMZ during radiotherapy does not provide a demonstrated additional OS benefit.",
+    "refs": [
+      "CATNON final molecular/clinical analysis, EORTC 26053-22033, Neuro-Oncology 2025/2026 final analysis.",
+      "ASCO-SNO guideline rapid recommendation update: RT with adjuvant temozolomide for IDH-mutant, 1p/19q non-codeleted CNS WHO grade 3 astrocytoma."
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41706722/"
+  }
+]
