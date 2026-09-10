@@ -7,6 +7,7 @@ on:
       - 'data/daily-evidence-*.json'
       - 'scripts/merge_all_daily_evidence.py'
       - 'scripts/update_sitemap.py'
+      - 'scripts/update_trial_page_seo.py'
       - 'index.html'
       - 'trial-pages/**'
   workflow_dispatch:
@@ -22,6 +23,9 @@ jobs:
 
       - name: Merge all daily evidence into the atlas
         run: python scripts/merge_all_daily_evidence.py
+
+      - name: Update SEO metadata and structured data on trial pages
+        run: python scripts/update_trial_page_seo.py
 
       - name: Validate atlas
         run: |
@@ -42,7 +46,14 @@ jobs:
           assert m, 'Navigation trials block missing'
           trials = json.loads(m.group(1))
           assert trials, 'Navigation index is empty'
-          print(f'Atlas validation passed: {total} daily records available; {len(trials)} navigation entries indexed.')
+          pages = list(Path('trial-pages').glob('*/index.html'))
+          assert pages, 'No trial pages found'
+          for page in pages:
+              page_text = page.read_text(encoding='utf-8')
+              assert 'name="description"' in page_text, f'Missing description: {page}'
+              assert 'rel="canonical"' in page_text, f'Missing canonical: {page}'
+              assert 'data-seo="trial"' in page_text, f'Missing trial structured data: {page}'
+          print(f'Atlas validation passed: {total} daily records; {len(trials)} navigation entries; {len(pages)} SEO-ready trial pages.')
           PY
 
       - name: Update sitemap and robots
@@ -52,10 +63,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html sitemap.xml robots.txt
+          git add index.html sitemap.xml robots.txt trial-pages scripts/update_trial_page_seo.py
           if git diff --cached --quiet; then
             echo 'No atlas or SEO changes'
           else
-            git commit -m 'Update daily oncology evidence atlas'
+            git commit -m 'Update daily oncology evidence atlas and SEO'
             git push
           fi
