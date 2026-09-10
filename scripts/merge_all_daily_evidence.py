@@ -71,8 +71,6 @@ if not any(x.get("id") == "arasens" for x in entries):
         "urls": ["https://pubmed.ncbi.nlm.nih.gov/35179367/"]
     })
 
-# Parse the homepage's single-line navigation block robustly. The previous parser
-# incorrectly required another `const` declaration immediately after this block.
 match = re.search(r"const trials=(\[.*?\]);", html, flags=re.S)
 if not match:
     raise SystemExit("Current const trials navigation block not found")
@@ -86,7 +84,8 @@ for x in entries:
     trial = x.get("trial") or x.get("name") or rid
     if not rid or not trial:
         continue
-    path = paths_by_id.get(trial) or f"__evidence__/{rid}"
+    dedicated = ROOT / "trial-pages" / rid / "index.html"
+    path = f"trial-pages/{rid}/" if dedicated.exists() else (paths_by_id.get(trial) or f"__evidence__/{rid}")
     navigation.append({
         "site": x.get("site", ""),
         "discipline": x.get("discipline", ""),
