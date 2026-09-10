@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-09",
-  "id": "swog-nrg-s1914",
-  "trial": "SWOG/NRG S1914",
-  "title": "Atezolizumab plus SBRT versus SBRT alone in high-risk early-stage NSCLC",
-  "journal": "The Lancet",
-  "url": "https://www.sciencedirect.com/science/article/pii/S0140673626016557",
-  "site": "Non-Small Cell Lung Cancer",
-  "discipline": "Radiation Oncology / Medical Oncology",
-  "setting": "Early-Stage Inoperable NSCLC · SBRT + Immunotherapy",
-  "population": "402 eligible patients with T1–T3N0M0 NSCLC ≤7 cm, medically inoperable or declining surgery, with at least one prespecified high-risk feature",
-  "summary": "At median follow-up of 24.8 months, overall survival was not improved with atezolizumab plus SBRT: HR 1.04 (95% CI 0.69–1.58; one-sided P=.58), with 2-year OS 82% in both groups. Grade ≥3 adverse events were 12% versus 3%, an absolute increase of 9 percentage points, and two grade 5 respiratory events occurred with atezolizumab. The trial closed early for futility.",
-  "criticalReview": "S1914 is a negative phase III trial and directly challenges the assumption that the PACIFIC/ADRIATIC consolidation paradigm can simply be transplanted onto SBRT. SBRT already achieves very high local control, so the incremental opportunity for systemic therapy depends on the amount of clinically meaningful micrometastatic disease remaining after local ablation. The S1914 population was also predominantly elderly and medically inoperable, with greater competing mortality and treatment vulnerability than the fitter populations enrolled in PACIFIC and ADRIATIC. Importantly, S1914 gave atezolizumab before, during and after SBRT, so the result cannot be explained simply by starting immunotherapy too late. The more plausible explanation is that SBRT does not recreate the immunological and systemic-disease context of definitive chemoradiotherapy: chemotherapy contributes immunogenic cell death, antigen release and inflammatory signalling, while definitive CRT treats a larger regional tumour burden and identifies a population that has demonstrated disease control after intensive treatment. PACIFIC and ADRIATIC therefore select patients with a higher residual systemic-risk state in whom prolonged checkpoint blockade has a larger absolute opportunity to prevent relapse. S1914 should not be read as evidence that radiation-immunotherapy synergy is biologically impossible; rather, it shows that routine atezolizumab with SBRT does not improve survival and adds meaningful toxicity. Biomarker selection, driver-mutation exclusion, residual systemic-risk enrichment and optimal sequencing remain important questions for future SBRT-immunotherapy trials."
+  "date": "2026-09-10",
+  "id": "catnon",
+  "trial": "CATNON (EORTC 26053-22033)",
+  "title": "Adjuvant temozolomide after radiotherapy in IDH-mutant grade 3 astrocytoma",
+  "journal": "Neuro-Oncology",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/41706722/",
+  "site": "Neuro-Oncology",
+  "discipline": "Radiation / Medical Oncology",
+  "setting": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma",
+  "population": "751 adults with newly diagnosed 1p/19q non-codeleted grade 3 glioma; final molecular analysis identified 444 IDH-mutant tumours",
+  "summary": "The final CATNON analysis after 10.9 years of median follow-up confirms that the major survival benefit comes from adjuvant temozolomide after radiotherapy in IDH-mutant tumours. Adjuvant TMZ improved OS with HR 0.54 (95% CI 0.42–0.69; P<0.0001), with median OS 12.5 years in the adjuvant-TMZ group. Concurrent TMZ did not significantly improve OS in IDH-mutant tumours (HR 0.81, 95% CI 0.63–1.04; P=.09).",
+  "criticalReview": "CATNON is a particularly important Absolute Effect trial because it separates the effect of concurrent from adjuvant temozolomide. The clinically important message is not simply that TMZ works, but that the survival benefit is driven by the post-radiotherapy adjuvant phase. NNT is not quantifiable for the primary endpoint because the mature overall-survival result is a time-to-event outcome best expressed through the hazard ratio and median survival; importantly, this does not mean the absolute effect is small. In IDH-mutant grade 3 astrocytoma, radiotherapy followed by 12 cycles of adjuvant TMZ is the evidence-based sequence, while concurrent TMZ has not demonstrated an additional OS benefit."
 }
