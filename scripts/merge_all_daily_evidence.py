@@ -21,10 +21,8 @@ for path in sorted(DATA.glob("daily-evidence-*.json")):
             entries.append(row)
             seen.add(rid)
 
-# Remove provisional/obsolete aliases.
 entries = [x for x in entries if x.get("id") not in {"psmaddition", "rtog-9601"}]
 
-# Canonical corrections retained from the atlas rules.
 for x in entries:
     if x.get("id") == "swენoteca-stage1-nsgct":
         x["id"] = "swenoteca-stage1-nsgct"
@@ -41,7 +39,6 @@ for x in entries:
             "benefitText": "At 5 years, overall survival was 64% with dose-dense MVAC vs 56% with gemcitabine-cisplatin in the overall perioperative population, an absolute difference of 8 percentage points. The OS HR was 0.79 (95% CI 0.59–1.05), so the overall OS comparison did not demonstrate a statistically significant difference. In the neoadjuvant subgroup, 5-year OS was 66% vs 57%, HR 0.71. NNT 13 is descriptive and should not be interpreted as proof of superiority because the CI crosses 1."
         })
 
-# Canonical ARASENS entry.
 if not any(x.get("id") == "arasens" for x in entries):
     entries.append({
         "id": "arasens",
@@ -74,19 +71,14 @@ if not any(x.get("id") == "arasens" for x in entries):
         "urls": ["https://pubmed.ncbi.nlm.nih.gov/35179367/"]
     })
 
-# The current homepage uses a lightweight `const trials=[...]` navigation index,
-# not the old `defaultEvidence` array. Preserve existing page paths while rebuilding
-# the navigation list from the complete daily evidence corpus.
-match = re.search(r"const trials=\[.*?\];(?=const )", html, flags=re.S)
+# Parse the homepage's single-line navigation block robustly. The previous parser
+# incorrectly required another `const` declaration immediately after this block.
+match = re.search(r"const trials=(\[.*?\]);", html, flags=re.S)
 if not match:
     raise SystemExit("Current const trials navigation block not found")
 
-old_trials = json.loads(match.group(0)[len("const trials="): -1])
-paths = {x.get("trial"): x.get("path") for x in old_trials if x.get("trial") and x.get("path")}
-paths_by_id = {}
-for x in old_trials:
-    if x.get("trial") and x.get("path"):
-        paths_by_id[x.get("trial")] = x.get("path")
+old_trials = json.loads(match.group(1))
+paths_by_id = {x.get("trial"): x.get("path") for x in old_trials if x.get("trial") and x.get("path")}
 
 navigation = []
 for x in entries:
