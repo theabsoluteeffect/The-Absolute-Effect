@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'data/daily-evidence-*.json'
+      - 'scripts/merge_all_daily_evidence.py'
+      - 'scripts/update_sitemap.py'
+      - 'index.html'
   workflow_dispatch:
 
 permissions:
@@ -34,11 +37,10 @@ jobs:
 
           files = sorted(Path('data').glob('daily-evidence-*.json'))
           total = sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
-          m = re.search(r'const trials=(\[.*?\]);(?=const )', text, re.S)
+          m = re.search(r'const trials=(\[.*?\]);', text, re.S)
           assert m, 'Navigation trials block missing'
           trials = json.loads(m.group(1))
-          ids = {x.get('path','').split('/')[-1] for x in trials if x.get('path','').startswith('__evidence__/')}
-          assert len(trials) >= len(ids)
+          assert trials, 'Navigation index is empty'
           print(f'Atlas validation passed: {total} daily records available; {len(trials)} navigation entries indexed.')
           PY
 
