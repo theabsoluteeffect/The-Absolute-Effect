@@ -10,6 +10,7 @@ on:
       - 'scripts/update_trial_page_seo.py'
       - 'index.html'
       - 'trial-pages/**'
+      - 'evidence.html'
   workflow_dispatch:
 
 permissions:
@@ -23,6 +24,29 @@ jobs:
 
       - name: Merge all daily evidence into the atlas
         run: python scripts/merge_all_daily_evidence.py
+
+      - name: Repair atlas taxonomy and evidence sources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+
+          # GBM is a disease entity within Neuro-Oncology, not a separate tumour-site level.
+          p = Path('index.html')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace('"site":"Glioblastoma"', '"site":"Neuro-Oncology"')
+          text = text.replace('"site": "Glioblastoma"', '"site": "Neuro-Oncology"')
+          p.write_text(text, encoding='utf-8')
+
+          # Keep the generic evidence viewer synchronized with every daily evidence file.
+          e = Path('evidence.html')
+          et = e.read_text(encoding='utf-8')
+          sources = [f'data/{x.name}' for x in sorted(Path('data').glob('daily-evidence-*.json')) if x.name != 'daily-evidence-2026-09-10-seo-trigger.json']
+          source_js = 'const SOURCES=' + json.dumps(sources, ensure_ascii=False, separators=(',', ':')) + ';'
+          et = re.sub(r'const SOURCES=\[.*?\];', source_js, et, count=1, flags=re.S)
+          e.write_text(et, encoding='utf-8')
+          print(f'Normalized GBM into Neuro-Oncology and synchronized {len(sources)} evidence sources.')
+          PY
 
       - name: Update SEO metadata and structured data on trial pages
         run: python scripts/update_trial_page_seo.py
@@ -39,6 +63,8 @@ jobs:
           assert 'defaultEvidence' not in text
           assert 'Uro-oncology' not in text
           assert 'Multidisciplinary' not in text
+          assert '"site":"Glioblastoma"' not in text
+          assert '"site": "Glioblastoma"' not in text
 
           files = sorted(Path('data').glob('daily-evidence-*.json'))
           total = sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
@@ -46,6 +72,15 @@ jobs:
           assert m, 'Navigation trials block missing'
           trials = json.loads(m.group(1))
           assert trials, 'Navigation index is empty'
+
+          evidence = Path('evidence.html').read_text(encoding='utf-8')
+          sm = re.search(r'const SOURCES=(\[.*?\]);', evidence, re.S)
+          assert sm, 'Evidence source list missing'
+          sources = json.loads(sm.group(1))
+          for f in files:
+              if f.name != 'daily-evidence-2026-09-10-seo-trigger.json':
+                  assert f'data/{f.name}' in sources, f'Missing evidence source: {f.name}'
+
           pages = list(Path('trial-pages').glob('*/index.html'))
           assert pages, 'No trial pages found'
           for page in pages:
@@ -63,7 +98,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html sitemap.xml robots.txt trial-pages scripts/update_trial_page_seo.py
+          git add index.html evidence.html sitemap.xml robots.txt trial-pages scripts/update_trial_page_seo.py
           if git diff --cached --quiet; then
             echo 'No atlas or SEO changes'
           else
