@@ -13,10 +13,10 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 61,
+    "permanent_trial_pages": 62,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 65,
+    "total_unique_trials": 66,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -24,7 +24,7 @@
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-09-13",
-    "new_trials_added_today": ["NSABP B-06","NSABP B-20","SPCG-4","SPCG-7/SFUO-3","EORTC 22911","RADICALS-RT","SWOG 8507","EORTC 30962","COMPARZ","CheckMate 214"],
+    "new_trials_added_today": ["NSABP B-06","NSABP B-20","SPCG-4","SPCG-7/SFUO-3","EORTC 22911","RADICALS-RT","SWOG 8507","EORTC 30962","COMPARZ","CheckMate 214","TALENTOP"],
     "known_duplicate_aliases_collapsed": ["EORTC 30941 / MRC TE20","MRC TE19 / EORTC 30982","SWOG 8710 / INT-0080","FLOT4 / FLOT4-AIO","PRODIGE 24 / CCTG PA.6","CATNON / EORTC 26053-22033","VESPER / GETUG-AFU V05 / COGB 0402","NSABP B-59 / GeparDouze","RTOG 9601 / NRG RTOG 9601"],
     "not_counted_as_new_when_already_present": ["CATNON","SWOG/NRG S1914","Adjuvant paclitaxel-platinum versus 5-FU-platinum penile trial"],
     "user_confirmed_uploaded_but_not_found_as_standalone_trial_page": ["PIVOT prostate cancer trial"]
@@ -88,6 +88,7 @@
     {"id":"swog-8507","trial":"SWOG 8507","site":"Bladder Cancer","source":"trial-pages/swog-8507"},
     {"id":"swog-8710","trial":"SWOG 8710 / INT-0080","site":"Bladder Cancer","source":"trial-pages/swog-8710","aliases":["SWOG 8710","INT-0080"]},
     {"id":"swog-nrg-s1914","trial":"SWOG/NRG S1914","site":"Non-Small Cell Lung Cancer","source":"trial-pages/swog-nrg-s1914"},
+    {"id":"talentop","trial":"TALENTOP","site":"Hepatocellular Carcinoma","source":"trial-pages/talentop","aliases":["NCT04649489","Liver resection after atezolizumab and bevacizumab versus maintenance therapy"]},
     {"id":"vesper","trial":"VESPER (GETUG-AFU V05 / COGB 0402)","site":"Bladder Cancer","source":"trial-pages/vesper","aliases":["VESPER","GETUG-AFU V05","COGB 0402"]},
     {"id":"nsabp-b59-gepardouze","trial":"NSABP B-59/GeparDouze","site":"Breast Cancer","source":"data/trial-archive.json","aliases":["NSABP B-59","GeparDouze"],"status":"archived-trial-of-the-day"},
     {"id":"rtog-9601","trial":"NRG/RTOG 9601","site":"Prostate Cancer","source":"data/trial-archive.json","aliases":["RTOG 9601"],"status":"archived-trial-of-the-day"},
