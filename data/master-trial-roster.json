@@ -9,28 +9,51 @@
     "A trial-page entry counts as uploaded evidence.",
     "A unique Trial-of-the-Day archived in data/trial-archive.json counts even if no permanent trial page exists.",
     "Daily proposal files are not added merely because a trial was proposed; they must correspond to an uploaded trial page or archived Trial-of-the-Day to enter this roster.",
-    "Before future selection, this roster must be checked together with current Trial-of-the-Day and archive data."
+    "Before future selection, this roster must be checked together with current Trial-of-the-Day and archive data.",
+    "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 51,
+    "permanent_trial_pages": 61,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 54,
+    "total_unique_trials": 64,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
+    "daily_batch_uploaded": "2026-09-13",
+    "new_trials_added_today": [
+      "NSABP B-06",
+      "NSABP B-20",
+      "SPCG-4",
+      "SPCG-7/SFUO-3",
+      "EORTC 22911",
+      "RADICALS-RT",
+      "SWOG 8507",
+      "EORTC 30962",
+      "COMPARZ",
+      "CheckMate 214"
+    ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
       "MRC TE19 / EORTC 30982",
-      "SWOG 8710 / INT-0080"
+      "SWOG 8710 / INT-0080",
+      "FLOT4 / FLOT4-AIO",
+      "PRODIGE 24 / CCTG PA.6",
+      "CATNON / EORTC 26053-22033",
+      "VESPER / GETUG-AFU V05 / COGB 0402",
+      "NSABP B-59 / GeparDouze",
+      "RTOG 9601 / NRG RTOG 9601"
     ],
     "not_counted_as_new_when_already_present": [
       "CATNON",
       "SWOG/NRG S1914",
       "Adjuvant paclitaxel-platinum versus 5-FU-platinum penile trial"
+    ],
+    "user_confirmed_uploaded_but_not_found_as_standalone_trial_page": [
+      "PIVOT prostate cancer trial"
     ]
   },
   "trials": [
@@ -46,8 +69,10 @@
     {"id":"checkmate-914","trial":"CheckMate 914","site":"Renal Cell Carcinoma","source":"trial-pages/checkmate-914"},
     {"id":"cross","trial":"CROSS","site":"Esophageal Cancer","source":"trial-pages/cross"},
     {"id":"dbcg-82b","trial":"DBCG 82b","site":"Breast Cancer","source":"trial-pages/dbcg-82b"},
+    {"id":"eortc-22911","trial":"EORTC 22911","site":"Prostate Cancer","source":"trial-pages/eortc-22911"},
     {"id":"eortc-30904","trial":"EORTC 30904","site":"Renal Cell Carcinoma","source":"trial-pages/eortc-30904"},
     {"id":"eortc-30941-te20","trial":"EORTC 30941 / MRC TE20","site":"Germ Cell Tumours","source":"trial-pages/eortc-30941-te20","aliases":["EORTC 30941","MRC TE20"]},
+    {"id":"eortc-30962","trial":"EORTC 30962","site":"Bladder Cancer","source":"trial-pages/eortc-30962"},
     {"id":"eortc-30986","trial":"EORTC 30986","site":"Bladder Cancer","source":"trial-pages/eortc-30986"},
     {"id":"eortc-30992","trial":"EORTC 30992","site":"Penile Cancer","source":"trial-pages/eortc-30992"},
     {"id":"eortc-30994","trial":"EORTC 30994","site":"Bladder Cancer","source":"trial-pages/eortc-30994"},
@@ -66,7 +91,9 @@
     {"id":"mrc-te08","trial":"MRC TE08","site":"Germ Cell Tumours","source":"trial-pages/mrc-te08"},
     {"id":"mrc-te19","trial":"MRC TE19 / EORTC 30982","site":"Germ Cell Tumours","source":"trial-pages/mrc-te19","aliases":["MRC TE19","EORTC 30982"]},
     {"id":"nsabp-b04","trial":"NSABP B-04","site":"Breast Cancer","source":"trial-pages/nsabp-b04"},
+    {"id":"nsabp-b06","trial":"NSABP B-06","site":"Breast Cancer","source":"trial-pages/nsabp-b06"},
     {"id":"nsabp-b18","trial":"NSABP B-18","site":"Breast Cancer","source":"trial-pages/nsabp-b18"},
+    {"id":"nsabp-b20","trial":"NSABP B-20","site":"Breast Cancer","source":"trial-pages/nsabp-b20"},
     {"id":"nsabp-b27","trial":"NSABP B-27","site":"Breast Cancer","source":"trial-pages/nsabp-b27"},
     {"id":"pacific","trial":"PACIFIC","site":"Non-Small Cell Lung Cancer","source":"trial-pages/pacific"},
     {"id":"penile-adjuvant-5fu-vs-paclitaxel","trial":"Randomized trial of adjuvant 5-FU-platinum vs paclitaxel-platinum for high-risk penile cancer","site":"Penile Cancer","source":"trial-pages/penile-adjuvant-5fu-vs-paclitaxel","aliases":["Adjuvant paclitaxel-platinum vs 5-FU-platinum"]},
@@ -76,17 +103,22 @@
     {"id":"prodige-24","trial":"PRODIGE 24 / CCTG PA.6","site":"Pancreatic Cancer","source":"trial-pages/prodige-24","aliases":["PRODIGE 24","CCTG PA.6"]},
     {"id":"protect-15y","trial":"ProtecT","site":"Prostate Cancer","source":"trial-pages/protect-15y"},
     {"id":"rapido","trial":"RAPIDO","site":"Rectal Cancer","source":"trial-pages/rapido"},
+    {"id":"radicals-rt","trial":"RADICALS-RT","site":"Prostate Cancer","source":"trial-pages/radicals-rt"},
     {"id":"rtog-0534-spport","trial":"RTOG 0534 SPPORT","site":"Prostate Cancer","source":"trial-pages/rtog-0534-spport"},
     {"id":"s-trac","trial":"S-TRAC","site":"Renal Cell Carcinoma","source":"trial-pages/s-trac"},
     {"id":"sakk-01-10","trial":"SAKK 01/10","site":"Germ Cell Tumours","source":"trial-pages/sakk-01-10"},
     {"id":"sorce","trial":"SORCE","site":"Renal Cell Carcinoma","source":"trial-pages/sorce"},
+    {"id":"spcg-4","trial":"SPCG-4","site":"Prostate Cancer","source":"trial-pages/spcg-4"},
+    {"id":"spcg-7-sfuo-3","trial":"SPCG-7/SFUO-3","site":"Prostate Cancer","source":"trial-pages/spcg-7-sfuo-3"},
     {"id":"stupp","trial":"EORTC-NCIC Stupp trial","site":"Neuro-Oncology","source":"trial-pages/stupp","aliases":["Stupp trial"]},
     {"id":"sw-oteca-stage1-nsgct","trial":"SWENOTECA stage I NSGCT programme","site":"Germ Cell Tumours","source":"trial-pages/sw-oteca-stage1-nsgct","aliases":["SWENOTECA stage I NSGCT"]},
+    {"id":"swog-8507","trial":"SWOG 8507","site":"Bladder Cancer","source":"trial-pages/swog-8507"},
     {"id":"swog-8710","trial":"SWOG 8710 / INT-0080","site":"Bladder Cancer","source":"trial-pages/swog-8710","aliases":["SWOG 8710","INT-0080"]},
     {"id":"swog-nrg-s1914","trial":"SWOG/NRG S1914","site":"Non-Small Cell Lung Cancer","source":"trial-pages/swog-nrg-s1914"},
     {"id":"vesper","trial":"VESPER (GETUG-AFU V05 / COGB 0402)","site":"Bladder Cancer","source":"trial-pages/vesper","aliases":["VESPER","GETUG-AFU V05","COGB 0402"]},
     {"id":"nsabp-b59-gepardouze","trial":"NSABP B-59/GeparDouze","site":"Breast Cancer","source":"data/trial-archive.json","aliases":["NSABP B-59","GeparDouze"],"status":"archived-trial-of-the-day"},
     {"id":"rtog-9601","trial":"NRG/RTOG 9601","site":"Prostate Cancer","source":"data/trial-archive.json","aliases":["RTOG 9601"],"status":"archived-trial-of-the-day"},
-    {"id":"proteus","trial":"PROTEUS","site":"Prostate Cancer","source":"data/trial-archive.json","status":"archived-trial-of-the-day"}
+    {"id":"proteus","trial":"PROTEUS","site":"Prostate Cancer","source":"data/trial-archive.json","status":"archived-trial-of-the-day"},
+    {"id":"pivot","trial":"PIVOT","site":"Prostate Cancer","source":"user-confirmed website upload","aliases":["Prostate Cancer Intervention Versus Observation Trial","NCT00007644"],"status":"uploaded-site-evidence"}
   ]
 }
