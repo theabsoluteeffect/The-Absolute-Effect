@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-10",
-  "id": "catnon",
-  "trial": "CATNON (EORTC 26053-22033)",
-  "title": "Adjuvant temozolomide after radiotherapy in IDH-mutant grade 3 astrocytoma",
-  "journal": "Neuro-Oncology",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/41706722/",
-  "site": "Neuro-Oncology",
-  "discipline": "Radiation / Medical Oncology",
-  "setting": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma",
-  "population": "751 adults with newly diagnosed 1p/19q non-codeleted grade 3 glioma; final molecular analysis identified 444 IDH-mutant tumours",
-  "summary": "The final CATNON analysis after 10.9 years of median follow-up confirms that the major survival benefit comes from adjuvant temozolomide after radiotherapy in IDH-mutant tumours. Adjuvant TMZ improved OS with HR 0.54 (95% CI 0.42–0.69; P<0.0001), with median OS 12.5 years in the adjuvant-TMZ group. Concurrent TMZ did not significantly improve OS in IDH-mutant tumours (HR 0.81, 95% CI 0.63–1.04; P=.09).",
-  "criticalReview": "CATNON is a particularly important Absolute Effect trial because it separates the effect of concurrent from adjuvant temozolomide. The clinically important message is not simply that TMZ works, but that the survival benefit is driven by the post-radiotherapy adjuvant phase. NNT is not quantifiable for the primary endpoint because the mature overall-survival result is a time-to-event outcome best expressed through the hazard ratio and median survival; importantly, this does not mean the absolute effect is small. In IDH-mutant grade 3 astrocytoma, radiotherapy followed by 12 cycles of adjuvant TMZ is the evidence-based sequence, while concurrent TMZ has not demonstrated an additional OS benefit."
+  "date": "2026-09-13",
+  "id": "talentop",
+  "trial": "TALENTOP",
+  "title": "Liver resection after atezolizumab and bevacizumab versus maintenance therapy for locally advanced hepatocellular carcinoma",
+  "journal": "The Lancet",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42624156/",
+  "site": "Hepatocellular Carcinoma",
+  "discipline": "Surgical",
+  "setting": "Locally Advanced / Conversion Therapy",
+  "population": "201 randomized patients with treatment-naive HCC, macrovascular invasion, no extrahepatic spread, and disease control after induction atezolizumab plus bevacizumab; 489 patients entered induction",
+  "summary": "After induction atezolizumab plus bevacizumab, liver resection followed by systemic therapy prolonged median time to treatment failure from 11.8 to 20.4 months (HR 0.60, 95% CI 0.39–0.91; P=.015). Treatment failure occurred in 37% versus 59%, an absolute reduction of 22 percentage points. Grade 3–4 treatment-related adverse events occurred in 39% versus 21%; two treatment-related deaths occurred in the surgery group. Overall survival remains immature.",
+  "criticalReview": "TALENTOP is best viewed as a conversion-surgery trial rather than evidence for routine resection in unselected advanced HCC. Only patients with no extrahepatic spread, preserved liver function, disease control after induction therapy, and anatomy considered suitable for resection reached randomization. The 22-point absolute reduction in treatment failure is clinically substantial, but it came with greater severe toxicity and operative risk, while an OS benefit has not yet been demonstrated. The key clinical message is that response to systemic therapy may create a surgical opportunity in a carefully selected population, but multidisciplinary reassessment and longer survival follow-up remain essential."
 }
