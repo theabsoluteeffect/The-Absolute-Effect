@@ -16,7 +16,7 @@
     "permanent_trial_pages": 61,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 64,
+    "total_unique_trials": 65,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -24,37 +24,10 @@
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-09-13",
-    "new_trials_added_today": [
-      "NSABP B-06",
-      "NSABP B-20",
-      "SPCG-4",
-      "SPCG-7/SFUO-3",
-      "EORTC 22911",
-      "RADICALS-RT",
-      "SWOG 8507",
-      "EORTC 30962",
-      "COMPARZ",
-      "CheckMate 214"
-    ],
-    "known_duplicate_aliases_collapsed": [
-      "EORTC 30941 / MRC TE20",
-      "MRC TE19 / EORTC 30982",
-      "SWOG 8710 / INT-0080",
-      "FLOT4 / FLOT4-AIO",
-      "PRODIGE 24 / CCTG PA.6",
-      "CATNON / EORTC 26053-22033",
-      "VESPER / GETUG-AFU V05 / COGB 0402",
-      "NSABP B-59 / GeparDouze",
-      "RTOG 9601 / NRG RTOG 9601"
-    ],
-    "not_counted_as_new_when_already_present": [
-      "CATNON",
-      "SWOG/NRG S1914",
-      "Adjuvant paclitaxel-platinum versus 5-FU-platinum penile trial"
-    ],
-    "user_confirmed_uploaded_but_not_found_as_standalone_trial_page": [
-      "PIVOT prostate cancer trial"
-    ]
+    "new_trials_added_today": ["NSABP B-06","NSABP B-20","SPCG-4","SPCG-7/SFUO-3","EORTC 22911","RADICALS-RT","SWOG 8507","EORTC 30962","COMPARZ","CheckMate 214"],
+    "known_duplicate_aliases_collapsed": ["EORTC 30941 / MRC TE20","MRC TE19 / EORTC 30982","SWOG 8710 / INT-0080","FLOT4 / FLOT4-AIO","PRODIGE 24 / CCTG PA.6","CATNON / EORTC 26053-22033","VESPER / GETUG-AFU V05 / COGB 0402","NSABP B-59 / GeparDouze","RTOG 9601 / NRG RTOG 9601"],
+    "not_counted_as_new_when_already_present": ["CATNON","SWOG/NRG S1914","Adjuvant paclitaxel-platinum versus 5-FU-platinum penile trial"],
+    "user_confirmed_uploaded_but_not_found_as_standalone_trial_page": ["PIVOT prostate cancer trial"]
   },
   "trials": [
     {"id":"assure","trial":"ASSURE","site":"Renal Cell Carcinoma","source":"trial-pages/assure"},
