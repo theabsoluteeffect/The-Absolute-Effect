@@ -16,7 +16,7 @@
     "permanent_trial_pages": 77,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 77,
+    "total_unique_trials": 82,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -65,7 +65,8 @@
       "DBCG 77B",
       "DBCG 77C",
       "DBCG 82C"
-    ]
+    ],
+    "homepage_roster_reconciliation_checked": true
   },
   "trials": [
     {
@@ -612,6 +613,36 @@
       "trial": "DBCG 82C",
       "site": "Breast Cancer",
       "source": "trial-pages/dbcg-82c"
+    },
+    {
+      "id": "sw-oteca-clinical-stage1",
+      "trial": "SWENOTECA clinical stage I NSGCT management programme",
+      "site": "Germ Cell Tumours",
+      "source": "evidence/sw-oteca-stage1-nsgct"
+    },
+    {
+      "id": "swog-8710-homepage",
+      "trial": "SWOG 8710",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/swog-8710"
+    },
+    {
+      "id": "nazzani-dsnb",
+      "trial": "Nazzani et al. cN0 penile cancer DSNB cohort",
+      "site": "Penile Cancer",
+      "source": "trial-pages/penile-dsnb-cno"
+    },
+    {
+      "id": "prodige-24-pa6-homepage",
+      "trial": "PRODIGE 24/PA6",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/prodige-24"
+    },
+    {
+      "id": "arasens-homepage",
+      "trial": "ARASENS",
+      "site": "Prostate Cancer",
+      "source": "evidence/arasens"
     }
   ]
 }
