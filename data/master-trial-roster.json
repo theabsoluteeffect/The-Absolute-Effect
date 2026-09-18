@@ -13,10 +13,10 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 72,
+    "permanent_trial_pages": 77,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 76,
+    "total_unique_trials": 77,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -54,6 +54,17 @@
     ],
     "user_confirmed_uploaded_but_not_found_as_standalone_trial_page": [
       "PIVOT prostate cancer trial"
+    ],
+    "full_dropdown_reconciliation_checked": true,
+    "last_full_reconciliation": "2026-09-18",
+    "missing_pages_added": [
+      "NSABP B-59/GeparDouze",
+      "NRG/RTOG 9601",
+      "PROTEUS",
+      "PIVOT",
+      "DBCG 77B",
+      "DBCG 77C",
+      "DBCG 82C"
     ]
   },
   "trials": [
@@ -465,40 +476,25 @@
       "id": "nsabp-b59-gepardouze",
       "trial": "NSABP B-59/GeparDouze",
       "site": "Breast Cancer",
-      "source": "data/trial-archive.json",
-      "aliases": [
-        "NSABP B-59",
-        "GeparDouze"
-      ],
-      "status": "archived-trial-of-the-day"
+      "source": "trial-pages/nsabp-b59-gepardouze"
     },
     {
       "id": "rtog-9601",
       "trial": "NRG/RTOG 9601",
       "site": "Prostate Cancer",
-      "source": "data/trial-archive.json",
-      "aliases": [
-        "RTOG 9601"
-      ],
-      "status": "archived-trial-of-the-day"
+      "source": "trial-pages/rtog-9601"
     },
     {
       "id": "proteus",
       "trial": "PROTEUS",
       "site": "Prostate Cancer",
-      "source": "data/trial-archive.json",
-      "status": "archived-trial-of-the-day"
+      "source": "trial-pages/proteus"
     },
     {
       "id": "pivot",
       "trial": "PIVOT",
       "site": "Prostate Cancer",
-      "source": "user-confirmed website upload",
-      "aliases": [
-        "Prostate Cancer Intervention Versus Observation Trial",
-        "NCT00007644"
-      ],
-      "status": "uploaded-site-evidence"
+      "source": "trial-pages/pivot"
     },
     {
       "id": "nsabp-b17",
@@ -598,6 +594,24 @@
         "Surveillance for stage I nonseminoma testicular cancer",
         "Daugaard et al. 2014"
       ]
+    },
+    {
+      "id": "dbcg-77b",
+      "trial": "DBCG 77B",
+      "site": "Breast Cancer",
+      "source": "trial-pages/dbcg-77b"
+    },
+    {
+      "id": "dbcg-77c",
+      "trial": "DBCG 77C",
+      "site": "Breast Cancer",
+      "source": "trial-pages/dbcg-77c"
+    },
+    {
+      "id": "dbcg-82c",
+      "trial": "DBCG 82C",
+      "site": "Breast Cancer",
+      "source": "trial-pages/dbcg-82c"
     }
   ]
 }
