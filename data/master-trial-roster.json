@@ -13,7 +13,7 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 77,
+    "permanent_trial_pages": 82,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
     "total_unique_trials": 82,
@@ -64,9 +64,21 @@
       "PIVOT",
       "DBCG 77B",
       "DBCG 77C",
-      "DBCG 82C"
+      "DBCG 82C",
+      "ARASENS",
+      "SWENOTECA clinical stage I NSGCT management programme"
     ],
-    "homepage_roster_reconciliation_checked": true
+    "homepage_roster_reconciliation_checked": true,
+    "incomplete_trial_pages_completed": [
+      "NSABP B-06",
+      "NSABP B-20",
+      "EORTC 22911",
+      "EORTC 30962",
+      "RADICALS-RT",
+      "SPCG-4",
+      "SPCG-7/SFUO-3",
+      "SWOG 8507"
+    ]
   },
   "trials": [
     {
@@ -618,7 +630,7 @@
       "id": "sw-oteca-clinical-stage1",
       "trial": "SWENOTECA clinical stage I NSGCT management programme",
       "site": "Germ Cell Tumours",
-      "source": "evidence/sw-oteca-stage1-nsgct"
+      "source": "trial-pages/sw-oteca-clinical-stage1"
     },
     {
       "id": "swog-8710-homepage",
@@ -642,7 +654,7 @@
       "id": "arasens-homepage",
       "trial": "ARASENS",
       "site": "Prostate Cancer",
-      "source": "evidence/arasens"
+      "source": "trial-pages/arasens"
     }
   ]
 }
