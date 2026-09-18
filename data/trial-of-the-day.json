@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-13",
-  "id": "talentop",
-  "trial": "TALENTOP",
-  "title": "Liver resection after atezolizumab and bevacizumab versus maintenance therapy for locally advanced hepatocellular carcinoma",
-  "journal": "The Lancet",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42624156/",
-  "site": "Hepatocellular Carcinoma",
-  "discipline": "Surgical",
-  "setting": "Locally Advanced / Conversion Therapy",
-  "population": "201 randomized patients with treatment-naive HCC, macrovascular invasion, no extrahepatic spread, and disease control after induction atezolizumab plus bevacizumab; 489 patients entered induction",
-  "summary": "After induction atezolizumab plus bevacizumab, liver resection followed by systemic therapy prolonged median time to treatment failure from 11.8 to 20.4 months (HR 0.60, 95% CI 0.39–0.91; P=.015). Treatment failure occurred in 37% versus 59%, an absolute reduction of 22 percentage points. Grade 3–4 treatment-related adverse events occurred in 39% versus 21%; two treatment-related deaths occurred in the surgery group. Overall survival remains immature.",
-  "criticalReview": "TALENTOP is best viewed as a conversion-surgery trial rather than evidence for routine resection in unselected advanced HCC. Only patients with no extrahepatic spread, preserved liver function, disease control after induction therapy, and anatomy considered suitable for resection reached randomization. The 22-point absolute reduction in treatment failure is clinically substantial, but it came with greater severe toxicity and operative risk, while an OS benefit has not yet been demonstrated. The key clinical message is that response to systemic therapy may create a surgical opportunity in a carefully selected population, but multidisciplinary reassessment and longer survival follow-up remain essential."
+  "date": "2026-09-18",
+  "id": "nsabp-b17",
+  "trial": "NSABP B-17",
+  "title": "Whole-breast radiotherapy after lumpectomy for DCIS",
+  "journal": "Journal of Clinical Oncology",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/9469327/",
+  "site": "Breast Cancer",
+  "discipline": "Radiation",
+  "setting": "DCIS · Breast-Conserving Surgery",
+  "population": "818 women with localized DCIS and histologically tumor-free margins",
+  "summary": "Adding 50 Gy whole-breast radiotherapy after lumpectomy reduced 8-year invasive ipsilateral breast recurrence from 13.4% to 3.9%, an absolute reduction of 9.5 percentage points. Five-year event-free survival was 84.4% versus 73.8%.",
+  "criticalReview": "B-17 established the local-control benefit of radiotherapy after lumpectomy for DCIS. The absolute benefit is substantial for recurrence but did not translate into a demonstrable overall-survival advantage because breast-cancer deaths were uncommon. NNT is approximately 11 based on 5-year event-free survival; a single trial-specific NNH is not reliably quantifiable."
 }
