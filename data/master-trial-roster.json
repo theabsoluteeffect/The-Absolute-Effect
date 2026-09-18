@@ -13,10 +13,10 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 82,
+    "permanent_trial_pages": 84,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 82,
+    "total_unique_trials": 84,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -78,6 +78,10 @@
       "SPCG-4",
       "SPCG-7/SFUO-3",
       "SWOG 8507"
+    ],
+    "orphan_pages_reconciled": [
+      "CheckMate 214",
+      "COMPARZ"
     ]
   },
   "trials": [
@@ -655,6 +659,18 @@
       "trial": "ARASENS",
       "site": "Prostate Cancer",
       "source": "trial-pages/arasens"
+    },
+    {
+      "id": "checkmate-214",
+      "trial": "CheckMate 214",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/checkmate-214"
+    },
+    {
+      "id": "comparz",
+      "trial": "COMPARZ",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/comparz"
     }
   ]
 }
