@@ -54,5 +54,19 @@
     "population": "402 eligible patients with T1–T3N0M0 NSCLC ≤7 cm, medically inoperable or declining surgery, with at least one prespecified high-risk feature",
     "summary": "At median follow-up of 24.8 months, overall survival was not improved with atezolizumab plus SBRT: HR 1.04 (95% CI 0.69–1.58; one-sided P=.58), with 2-year OS 82% in both groups. Grade ≥3 adverse events were 12% versus 3%, an absolute increase of 9 percentage points, and two grade 5 respiratory events occurred with atezolizumab. The trial closed early for futility.",
     "criticalReview": "S1914 is a negative phase III trial and directly challenges the assumption that the PACIFIC/ADRIATIC consolidation paradigm can simply be transplanted onto SBRT. SBRT already achieves very high local control, so the incremental opportunity for systemic therapy depends on the amount of clinically meaningful micrometastatic disease remaining after local ablation. The S1914 population was also predominantly elderly and medically inoperable, with greater competing mortality and treatment vulnerability than the fitter populations enrolled in PACIFIC and ADRIATIC. Importantly, S1914 gave atezolizumab before, during and after SBRT, so the result cannot be explained simply by starting immunotherapy too late. The more plausible explanation is that SBRT does not recreate the immunological and systemic-disease context of definitive chemoradiotherapy: chemotherapy contributes immunogenic cell death, antigen release and inflammatory signalling, while definitive CRT treats a larger regional tumour burden and identifies a population that has demonstrated disease control after intensive treatment. PACIFIC and ADRIATIC therefore select patients with a higher residual systemic-risk state in whom prolonged checkpoint blockade has a larger absolute opportunity to prevent relapse. S1914 should not be read as evidence that radiation-immunotherapy synergy is biologically impossible; rather, it shows that routine atezolizumab with SBRT does not improve survival and adds meaningful toxicity. Biomarker selection, driver-mutation exclusion, residual systemic-risk enrichment and optimal sequencing remain important questions for future SBRT-immunotherapy trials."
+  },
+  {
+    "date": "2026-09-19",
+    "id": "matterhorn",
+    "trial": "MATTERHORN",
+    "title": "Perioperative durvalumab plus FLOT for resectable gastric and gastro-oesophageal junction adenocarcinoma",
+    "journal": "The Lancet",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42716074/",
+    "site": "Gastric Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Perioperative Immunotherapy",
+    "population": "948 adults with previously untreated, resectable stage II–IVa gastric or GEJ adenocarcinoma",
+    "summary": "At 36 months, overall survival was 68.6% with durvalumab plus FLOT versus 61.9% with placebo plus FLOT, an absolute improvement of 6.7 percentage points (HR 0.78, 95% CI 0.63–0.96; P=.021). Two-year EFS was 67.4% versus 58.5%, an absolute improvement of 8.9 points (HR 0.71, 95% CI 0.58–0.86; P<.001).",
+    "criticalReview": "MATTERHORN provides randomized phase III evidence that adding perioperative durvalumab to FLOT improves both EFS and OS. The absolute OS gain at 3 years is 6.7 percentage points, while the pCR gain is 12 points. The trade-off is additional immunotherapy and immune-related toxicity within an already intensive perioperative regimen. The trial was not designed to isolate the contribution of each treatment phase."
   }
 ]
