@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 1,
-  "last_quality_check": "2026-09-18",
+  "last_quality_check": "2026-09-20",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -13,28 +13,27 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 86,
+    "permanent_trial_pages": 95,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 86,
+    "total_unique_trials": 95,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-18",
+    "daily_batch_uploaded": "2026-09-20",
     "new_trials_added_today": [
-      "NSABP B-17",
-      "NSABP B-24",
-      "RTOG 9408",
-      "MRC RT01",
-      "SWOG 9346",
-      "AVOREN",
-      "PISCES",
-      "IMvigor211",
-      "CheckMate 275",
-      "Daugaard stage-I NSGCT surveillance cohort"
+      "EORTC 22863",
+      "RTOG 92-02",
+      "EORTC 22961",
+      "RTOG 85-31",
+      "KEYNOTE-426",
+      "CheckMate 9ER",
+      "EV-302 / KEYNOTE-A39",
+      "KEYNOTE-045",
+      "Sunitinib vs Interferon Alfa"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -684,6 +683,60 @@
       "trial": "MRC TE18 / EORTC 30942",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te18"
+    },
+    {
+      "id": "eortc-22863",
+      "trial": "EORTC 22863",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/eortc-22863"
+    },
+    {
+      "id": "rtog-92-02",
+      "trial": "RTOG 92-02",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/rtog-92-02"
+    },
+    {
+      "id": "eortc-22961",
+      "trial": "EORTC 22961",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/eortc-22961"
+    },
+    {
+      "id": "rtog-85-31",
+      "trial": "RTOG 85-31",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/rtog-85-31"
+    },
+    {
+      "id": "keynote-426",
+      "trial": "KEYNOTE-426",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/keynote-426"
+    },
+    {
+      "id": "checkmate-9er",
+      "trial": "CheckMate 9ER",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/checkmate-9er"
+    },
+    {
+      "id": "ev-302",
+      "trial": "EV-302 / KEYNOTE-A39",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/ev-302"
+    },
+    {
+      "id": "keynote-045",
+      "trial": "KEYNOTE-045",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/keynote-045"
+    },
+    {
+      "id": "sunitinib-ifn",
+      "trial": "Sunitinib vs Interferon Alfa",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/sunitinib-ifn"
     }
   ]
 }
