@@ -68,5 +68,19 @@
     "population": "948 adults with previously untreated, resectable stage II–IVa gastric or GEJ adenocarcinoma",
     "summary": "At 36 months, overall survival was 68.6% with durvalumab plus FLOT versus 61.9% with placebo plus FLOT, an absolute improvement of 6.7 percentage points (HR 0.78, 95% CI 0.63–0.96; P=.021). Two-year EFS was 67.4% versus 58.5%, an absolute improvement of 8.9 points (HR 0.71, 95% CI 0.58–0.86; P<.001).",
     "criticalReview": "MATTERHORN provides randomized phase III evidence that adding perioperative durvalumab to FLOT improves both EFS and OS. The absolute OS gain at 3 years is 6.7 percentage points, while the pCR gain is 12 points. The trade-off is additional immunotherapy and immune-related toxicity within an already intensive perioperative regimen. The trial was not designed to isolate the contribution of each treatment phase."
+  },
+  {
+    "date": "2026-09-20",
+    "id": "taishan-302",
+    "trial": "TAISHAN-302",
+    "title": "Tambotatug pelitecan versus topotecan in relapsed small-cell lung cancer",
+    "journal": "New England Journal of Medicine",
+    "url": "https://www.nejm.org/doi/10.1056/NEJMoa2610229",
+    "site": "Small-Cell Lung Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Relapsed SCLC",
+    "population": "451 patients with relapsed SCLC after one prior platinum-based regimen",
+    "summary": "Tambotatug pelitecan improved median overall survival to 13.3 months versus 9.4 months with topotecan (HR 0.46, 95% CI 0.35–0.62; P<.001) and median PFS to 7.4 versus 2.8 months (HR 0.29, 95% CI 0.23–0.37; P<.001). Objective response rate was 59.1% versus 9.7%, an absolute increase of 49.4 percentage points.",
+    "criticalReview": "TAISHAN-302 is a randomized phase III trial showing a large improvement in OS, PFS and response with the B7-H3-directed ADC tambotatug pelitecan compared with topotecan after platinum therapy. The magnitude of response and PFS improvement is substantial, but interpretation should consider the Chinese study population, the open-label design and the maturity of the interim OS analysis. Tam-Peli is a targeted cytotoxic ADC: the antibody binds B7-H3, the complex is internalized, and a camptothecin-derived topoisomerase-I inhibitor payload is released. This produces replication-associated DNA damage and apoptosis; payload release in the tumour microenvironment can also support a bystander effect."
   }
 ]
