@@ -13,10 +13,10 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 95,
+    "permanent_trial_pages": 96,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 95,
+    "total_unique_trials": 96,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -737,6 +737,12 @@
       "trial": "Sunitinib vs Interferon Alfa",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/sunitinib-ifn"
+    },
+    {
+      "id": "taishan-302",
+      "trial": "TAISHAN-302",
+      "site": "Small-Cell Lung Cancer",
+      "source": "trial-pages/taishan-302"
     }
   ]
 }
