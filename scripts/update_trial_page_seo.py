@@ -19,6 +19,32 @@ def upsert_meta(head, name, content):
     return head.replace("</head>", tag + "</head>", 1)
 
 
+def inject_absolute_effect(html):
+    # Every page carrying a numeric endpoint-specific NNT/NNH gets the shared
+    # 100-patient pictorial component. Existing components are left unchanged.
+    nnt_match = re.search(r'\\bNNT\\b\\s*[:<][^0-9]{0,40}(\\d+(?:\\.\\d+)?)', html, flags=re.I)
+    nnh_match = re.search(r'\\bNNH\\b\\s*[:<][^0-9]{0,40}(\\d+(?:\\.\\d+)?)', html, flags=re.I)
+    nnt = nnt_match.group(1) if nnt_match else ""
+    nnh = nnh_match.group(1) if nnh_match else ""
+    if not (nnt or nnh):
+        return html, False
+    if "assets/absolute-effect.js" not in html:
+        html = html.replace("</head>", '<script src="../../assets/absolute-effect.js"></script></head>', 1)
+    if "data-absolute-effect" not in html:
+        benefit = f"{100 / float(nnt):.2f}" if nnt else ""
+        harm = f"{100 / float(nnh):.2f}" if nnh else ""
+        block = (
+            f'<div data-absolute-effect data-benefit="{benefit}" data-harm="{harm}" '
+            f'data-nnt="{escape(nnt or "Not quantifiable")}" '
+            f'data-nnh="{escape(nnh or "Not quantifiable")}"></div>'
+        )
+        if "</main>" in html:
+            html = html.replace("</main>", block + "</main>", 1)
+        else:
+            html = html.replace("</body>", block + "</body>", 1)
+    return html, True
+
+
 def upsert_property(head, prop, content):
     tag = f'<meta property="{prop}" content="{escape(content, quote=True)}">'
     pattern = rf'<meta\s+property="{re.escape(prop)}"\s+content="[^"]*"\s*/?>'
@@ -83,5 +109,5 @@ for path in sorted(ROOT.glob("*/index.html")):
     path.write_text(html, encoding="utf-8")
     updated += 1
 
-print(f"Updated SEO metadata and structured data for {updated} trial pages.")
+print(f"Updated SEO metadata and structured data for {updated} trial pages; synchronized endpoint-specific NNT/NNH pictorials.")
 # Deterministic rebuild: repeated runs produce identical output.
