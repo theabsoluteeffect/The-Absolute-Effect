@@ -1,0 +1,320 @@
+[
+  {
+    "id": "nsabp-b13",
+    "site": "Breast Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Adjuvant · ER-negative Node-negative",
+    "treatment": "Sequential methotrexate/fluorouracil + leucovorin vs surgery alone",
+    "population": "760 women with ER-negative, node-negative breast cancer",
+    "endpoint": "8-year disease-free survival",
+    "horizon": "8 years",
+    "interventionRate": 74,
+    "controlRate": 59,
+    "absoluteBenefit": 15,
+    "nnt": "7",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.59 for long-term RFS",
+    "ci": "95% CI 0.44–0.78",
+    "benefitText": "Eight-year DFS was 74% vs 59%, an absolute improvement of 15 percentage points.",
+    "harmLabel": "Grade ≥3 toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "No single dominant fixed-time toxicity endpoint supports a defensible NNH.",
+    "clinicalInterpretation": "B-13 established substantial benefit from adjuvant chemotherapy in ER-negative node-negative disease.",
+    "trial": "NSABP B-13",
+    "clinicalQuestion": "Does adjuvant methotrexate/fluorouracil improve outcomes over surgery alone?",
+    "refs": [
+      "Fisher B, et al. J Clin Oncol. 1996;14:1982–1992."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/8683228/"
+    ]
+  },
+  {
+    "id": "nsabp-b14",
+    "site": "Breast Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Adjuvant Endocrine Therapy",
+    "treatment": "Tamoxifen vs placebo",
+    "population": "About 2,844 women with ER-positive, node-negative breast cancer",
+    "endpoint": "5-year disease-free survival",
+    "horizon": "5 years",
+    "interventionRate": 82,
+    "controlRate": 72,
+    "absoluteBenefit": 10,
+    "nnt": "10",
+    "relativeLabel": "RRR",
+    "relativeEffect": "36% reduction in treatment failure",
+    "ci": "Updated trial report",
+    "benefitText": "Five-year DFS was 82% vs 72%, an absolute improvement of 10 percentage points.",
+    "harmLabel": "Treatment toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "No single dominant fixed-time harm endpoint supports an NNH.",
+    "clinicalInterpretation": "B-14 was foundational randomized evidence for adjuvant tamoxifen in ER-positive node-negative breast cancer.",
+    "trial": "NSABP B-14",
+    "clinicalQuestion": "Does five years of tamoxifen improve outcomes compared with placebo?",
+    "refs": [
+      "NSABP updated findings."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/1627417/"
+    ]
+  },
+  {
+    "id": "nsabp-b19",
+    "site": "Breast Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Adjuvant · ER-negative Node-negative",
+    "treatment": "CMF vs sequential methotrexate/fluorouracil",
+    "population": "1,095 women with ER-negative, node-negative breast cancer",
+    "endpoint": "5-year disease-free survival",
+    "horizon": "5 years",
+    "interventionRate": 82,
+    "controlRate": 73,
+    "absoluteBenefit": 9,
+    "nnt": "12",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.59 for long-term RFS",
+    "ci": "95% CI 0.45–0.77 in long-term analysis",
+    "benefitText": "Five-year DFS was 82% vs 73%, an absolute improvement of 9 percentage points.",
+    "harmLabel": "Grade ≥3 toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "CMF had more grade ≥3 toxicity, but a single fixed-time dominant endpoint was not suitable for NNH.",
+    "clinicalInterpretation": "Adding cyclophosphamide produced a clear DFS gain, especially in younger women.",
+    "trial": "NSABP B-19",
+    "clinicalQuestion": "Does adding cyclophosphamide to MF improve outcomes?",
+    "refs": [
+      "Fisher B, et al. J Clin Oncol. 1996;14:1982–1992."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/8683228/"
+    ]
+  },
+  {
+    "id": "atlas",
+    "site": "Breast Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Extended Adjuvant Endocrine Therapy",
+    "treatment": "Tamoxifen 10 years vs 5 years",
+    "population": "6,846 women with ER-positive early breast cancer for efficacy analyses",
+    "endpoint": "Breast cancer recurrence during years 5–14",
+    "horizon": "Years 5–14",
+    "interventionRate": 21.4,
+    "controlRate": 25.1,
+    "absoluteBenefit": 3.7,
+    "nnt": "27",
+    "relativeLabel": "Rate ratio",
+    "relativeEffect": "0.75 after year 10 for recurrence",
+    "ci": "95% CI 0.62–0.90 after year 10",
+    "benefitText": "Recurrence during years 5–14 was 21.4% vs 25.1%; breast-cancer mortality was 12.2% vs 15.0%.",
+    "harmLabel": "Endometrial cancer",
+    "harmIntervention": 3.1,
+    "harmControl": 1.6,
+    "harmIncrease": 1.5,
+    "nnH": "67",
+    "harmText": "Endometrial cancer increased by 1.5 percentage points during years 5–14.",
+    "clinicalInterpretation": "Continuing tamoxifen to 10 years produced modest absolute reductions in recurrence and breast-cancer mortality, with a measurable endometrial-cancer trade-off.",
+    "trial": "ATLAS",
+    "clinicalQuestion": "Does continuing tamoxifen to 10 years improve outcomes after 5 years of therapy?",
+    "refs": [
+      "Davies C, et al. Lancet. 2013;381:805–816."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/23219286/"
+    ]
+  },
+  {
+    "id": "soft",
+    "site": "Breast Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Premenopausal HR-positive",
+    "treatment": "Tamoxifen + ovarian suppression vs tamoxifen alone",
+    "population": "Premenopausal women randomized in SOFT",
+    "endpoint": "8-year disease-free survival",
+    "horizon": "8 years",
+    "interventionRate": 83.2,
+    "controlRate": 78.9,
+    "absoluteBenefit": 4.3,
+    "nnt": "24",
+    "relativeLabel": "Absolute difference",
+    "relativeEffect": "+4.3 percentage points",
+    "ci": "P=.009",
+    "benefitText": "Eight-year DFS was 83.2% vs 78.9%. Exemestane + ovarian suppression reached 85.9%.",
+    "harmLabel": "Grade ≥3 adverse events",
+    "harmIntervention": 31,
+    "harmControl": 24.6,
+    "harmIncrease": 6.4,
+    "nnH": "16",
+    "harmText": "Grade ≥3 adverse events increased by 6.4 percentage points with tamoxifen + ovarian suppression.",
+    "clinicalInterpretation": "Ovarian suppression adds an absolute disease-control benefit, with greater benefit from exemestane plus ovarian suppression in higher-risk patients.",
+    "trial": "SOFT",
+    "clinicalQuestion": "Does ovarian suppression added to endocrine therapy improve outcomes in premenopausal breast cancer?",
+    "refs": [
+      "Francis PA, et al. N Engl J Med. 2018;378:436–446."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/29863451/"
+    ]
+  },
+  {
+    "id": "mrc-te10",
+    "site": "Germ Cell Tumours",
+    "discipline": "Radiation Oncology",
+    "setting": "Stage I Seminoma",
+    "treatment": "Para-aortic RT vs dog-leg RT",
+    "population": "478 men with stage I seminoma",
+    "endpoint": "5-year relapse-free survival",
+    "horizon": "5 years",
+    "interventionRate": 96.1,
+    "controlRate": 96.2,
+    "absoluteBenefit": -0.1,
+    "nnt": "Not applicable",
+    "relativeLabel": "HR",
+    "relativeEffect": "1.15 for relapse",
+    "ci": "90% CI 0.54–2.44",
+    "benefitText": "Five-year relapse-free survival was 96.1% vs 96.2%; relapse rates were very low in both groups.",
+    "harmLabel": "Field-related toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Para-aortic-only treatment reduced acute toxicity and gonadal toxicity.",
+    "clinicalInterpretation": "Field reduction maintained very high overall disease control while reducing treatment morbidity.",
+    "trial": "MRC TE10",
+    "clinicalQuestion": "Can para-aortic-only RT replace dog-leg RT in stage I seminoma?",
+    "refs": [
+      "Fossa SD, et al. J Clin Oncol. 1999;17:1146.",
+      "Mead GM, et al. JNCI. 2011;103:241–249."
+    ],
+    "urls": [
+      "https://doi.org/10.1200/JCO.1999.17.4.1146",
+      "https://pubmed.ncbi.nlm.nih.gov/21212385/"
+    ]
+  },
+  {
+    "id": "eortc-30983",
+    "site": "Germ Cell Tumours",
+    "discipline": "Medical Oncology",
+    "setting": "Intermediate Prognosis",
+    "treatment": "T-BEP vs BEP",
+    "population": "337 randomized patients with intermediate-prognosis germ-cell cancer",
+    "endpoint": "3-year progression-free survival",
+    "horizon": "3 years",
+    "interventionRate": 79.4,
+    "controlRate": 71.1,
+    "absoluteBenefit": 8.3,
+    "nnt": "13",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.73",
+    "ci": "95% CI 0.47–1.13; P=.153",
+    "benefitText": "Three-year PFS was 79.4% vs 71.1% in the ITT analysis. The primary analysis did not reach statistical significance.",
+    "harmLabel": "Treatment burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "No single dominant fixed-time toxicity endpoint supports a defensible NNH.",
+    "clinicalInterpretation": "The trial was under-accrued; the eligible-patient analysis showed a larger PFS signal, but the primary ITT analysis remains the key result.",
+    "trial": "EORTC 30983",
+    "clinicalQuestion": "Does adding paclitaxel to BEP improve PFS in intermediate-prognosis germ-cell cancer?",
+    "refs": [
+      "de Wit R, et al. J Clin Oncol. 2012;30:792–799."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/22271474/"
+    ]
+  },
+  {
+    "id": "surtime",
+    "site": "Renal Cell Carcinoma",
+    "discipline": "Surgical Oncology",
+    "setting": "Synchronous Metastatic RCC",
+    "treatment": "Deferred vs immediate cytoreductive nephrectomy with sunitinib",
+    "population": "99 patients with metastatic clear-cell RCC",
+    "endpoint": "28-week progression-free rate",
+    "horizon": "28 weeks",
+    "interventionRate": 43,
+    "controlRate": 42,
+    "absoluteBenefit": 1,
+    "nnt": "Not quantifiable",
+    "relativeLabel": "PFR",
+    "relativeEffect": "+1 percentage point",
+    "ci": "P=.61",
+    "benefitText": "28-week PFR was 43% vs 42%. The study was underpowered after poor accrual.",
+    "harmLabel": "Surgery burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "No fixed-time randomized harm endpoint supports NNH.",
+    "clinicalInterpretation": "Initial systemic therapy can select patients for surgery and avoid nephrectomy in those with early progression.",
+    "trial": "SURTIME",
+    "clinicalQuestion": "Should sunitinib precede cytoreductive nephrectomy in synchronous metastatic RCC?",
+    "refs": [
+      "Bex A, et al. JAMA Oncol. 2019."
+    ],
+    "urls": [
+      "https://jamanetwork.com/journals/jamaoncology/fullarticle/2718007"
+    ]
+  },
+  {
+    "id": "immotion151",
+    "site": "Renal Cell Carcinoma",
+    "discipline": "Medical Oncology",
+    "setting": "First-line Metastatic RCC",
+    "treatment": "Atezolizumab + bevacizumab vs sunitinib",
+    "population": "915 previously untreated patients with metastatic RCC; 362 PD-L1 positive",
+    "endpoint": "12-month PFS in PD-L1-positive disease",
+    "horizon": "12 months",
+    "interventionRate": 49,
+    "controlRate": 38,
+    "absoluteBenefit": 11,
+    "nnt": "10",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.74 for PFS",
+    "ci": "95% CI 0.57–0.96; P=.0217",
+    "benefitText": "Twelve-month PFS was 49% vs 38% in PD-L1-positive disease.",
+    "harmLabel": "Grade 3–4 treatment-related adverse events",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable as a harm because the combination had fewer events",
+    "harmText": "Grade 3–4 treatment-related adverse events were 40% vs 54% in the primary analysis.",
+    "clinicalInterpretation": "The trial met its PD-L1-positive PFS endpoint but did not demonstrate an OS benefit in final analyses.",
+    "trial": "IMmotion151",
+    "clinicalQuestion": "Does atezolizumab plus bevacizumab improve outcomes versus sunitinib in first-line metastatic RCC?",
+    "refs": [
+      "Rini BI, et al. Lancet. 2019;393:2404–2415."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/31079938/"
+    ]
+  },
+  {
+    "id": "bart",
+    "site": "Bladder Cancer",
+    "discipline": "Radiation Oncology",
+    "setting": "High-risk MIBC after cystectomy",
+    "treatment": "Adjuvant RT vs observation",
+    "population": "153 patients with high-risk nonmetastatic urothelial MIBC after radical cystectomy and chemotherapy",
+    "endpoint": "2-year locoregional control",
+    "horizon": "2 years",
+    "interventionRate": 91.2,
+    "controlRate": 76.4,
+    "absoluteBenefit": 14.8,
+    "nnt": "7",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.27",
+    "ci": "95% CI 0.10–0.71; P=.004",
+    "benefitText": "Two-year locoregional control was 91.2% vs 76.4%, an absolute improvement of 14.8 points.",
+    "harmLabel": "Late grade ≥3 toxicity",
+    "harmIntervention": 8.5,
+    "harmControl": 10.5,
+    "harmIncrease": -2,
+    "nnH": "Not applicable",
+    "harmText": "Late grade ≥3 toxicity was 8.5% with RT vs 10.5% with observation.",
+    "clinicalInterpretation": "BART provides randomized phase III evidence for substantial reduction in pelvic relapse with postoperative RT without increased severe late toxicity.",
+    "trial": "BART",
+    "clinicalQuestion": "Does adjuvant pelvic RT reduce locoregional relapse after cystectomy and chemotherapy in high-risk MIBC?",
+    "refs": [
+      "BART clinical outcomes, IJROBP 2025."
+    ],
+    "urls": [
+      "https://www.redjournal.org/article/S0360-3016%2825%2901612-8/fulltext"
+    ]
+  }
+]
