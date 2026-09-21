@@ -107,6 +107,7 @@ for path in sorted(ROOT.glob("*/index.html")):
     head += ld
 
     html = html[:head_match.start(1)] + head + html[head_match.end(1):]
+    html, _ = inject_absolute_effect(html)
     path.write_text(html, encoding="utf-8")
     updated += 1
 
