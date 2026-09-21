@@ -150,5 +150,15 @@ question_fix = '''\n<script id="atlas-question-label-fix">\n(function(){\n  cons
 if 'id="atlas-question-label-fix"' not in html:
     html = html.replace("</body>", question_fix + "</body>", 1)
 
+# Repair canonical tags before the workflow validation step. The SEO helper operates on
+# the contents of <head>, so canonical insertion is normalized here as well.
+for page in sorted((ROOT / "trial-pages").glob("*/index.html")):
+    page_html = page.read_text(encoding="utf-8")
+    if 'rel="canonical"' not in page_html and "</head>" in page_html:
+        slug = page.parent.name
+        canonical = f'<link rel="canonical" href="https://theabsoluteeffect.pages.dev/trial-pages/{slug}/">'
+        page_html = page_html.replace("</head>", canonical + "</head>", 1)
+        page.write_text(page_html, encoding="utf-8")
+
 INDEX.write_text(html, encoding="utf-8")
 print(f"Atlas navigation rebuilt from {len(entries)} unique evidence records into {len(navigation)} discipline-linked navigation entries.")
