@@ -22,8 +22,8 @@ def upsert_meta(head, name, content):
 def inject_absolute_effect(html):
     # Every page carrying a numeric endpoint-specific NNT/NNH gets the shared
     # 100-patient pictorial component. Existing components are left unchanged.
-    nnt_match = re.search(r'\\bNNT\\b\\s*[:<][^0-9]{0,40}(\\d+(?:\\.\\d+)?)', html, flags=re.I)
-    nnh_match = re.search(r'\\bNNH\\b\\s*[:<][^0-9]{0,40}(\\d+(?:\\.\\d+)?)', html, flags=re.I)
+    nnt_match = re.search(r'\bNNT\b\s*[:<][^0-9]{0,40}(\d+(?:\.\d+)?)', html, flags=re.I)
+    nnh_match = re.search(r'\bNNH\b\s*[:<][^0-9]{0,40}(\d+(?:\.\d+)?)', html, flags=re.I)
     nnt = nnt_match.group(1) if nnt_match else ""
     nnh = nnh_match.group(1) if nnh_match else ""
     if not (nnt or nnh):
