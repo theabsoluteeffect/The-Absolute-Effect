@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 1,
-  "last_quality_check": "2026-09-20",
+  "last_quality_check": "2026-09-21",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -13,27 +13,28 @@
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
   ],
   "audit": {
-    "permanent_trial_pages": 96,
+    "permanent_trial_pages": 106,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 96,
+    "total_unique_trials": 106,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-20",
+    "daily_batch_uploaded": "2026-09-21",
     "new_trials_added_today": [
-      "EORTC 22863",
-      "RTOG 92-02",
-      "EORTC 22961",
-      "RTOG 85-31",
-      "KEYNOTE-426",
-      "CheckMate 9ER",
-      "EV-302 / KEYNOTE-A39",
-      "KEYNOTE-045",
-      "Sunitinib vs Interferon Alfa"
+      "NSABP B-13",
+      "NSABP B-14",
+      "NSABP B-19",
+      "ATLAS",
+      "SOFT",
+      "MRC TE10",
+      "EORTC 30983",
+      "SURTIME",
+      "IMmotion151",
+      "BART"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -82,7 +83,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-20"
+    "last_quality_check": "2026-09-21"
   },
   "trials": [
     {
@@ -743,6 +744,66 @@
       "trial": "TAISHAN-302",
       "site": "Small-Cell Lung Cancer",
       "source": "trial-pages/taishan-302"
+    },
+    {
+      "id": "nsabp-b13",
+      "trial": "NSABP B-13",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b13"
+    },
+    {
+      "id": "nsabp-b14",
+      "trial": "NSABP B-14",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b14"
+    },
+    {
+      "id": "nsabp-b19",
+      "trial": "NSABP B-19",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b19"
+    },
+    {
+      "id": "atlas",
+      "trial": "ATLAS",
+      "site": "Breast Cancer",
+      "source": "trial-pages/atlas"
+    },
+    {
+      "id": "soft",
+      "trial": "SOFT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/soft"
+    },
+    {
+      "id": "mrc-te10",
+      "trial": "MRC TE10",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/mrc-te10"
+    },
+    {
+      "id": "eortc-30983",
+      "trial": "EORTC 30983",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/eortc-30983"
+    },
+    {
+      "id": "surtime",
+      "trial": "SURTIME",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/surtime"
+    },
+    {
+      "id": "immotion151",
+      "trial": "IMmotion151",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/immotion151"
+    },
+    {
+      "id": "bart",
+      "trial": "BART",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/bart"
     }
   ]
 }
