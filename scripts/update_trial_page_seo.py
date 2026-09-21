@@ -16,7 +16,7 @@ def upsert_meta(head, name, content):
     pattern = rf'<meta\s+name="{re.escape(name)}"\s+content="[^"]*"\s*/?>'
     if re.search(pattern, head, flags=re.I):
         return re.sub(pattern, tag, head, count=1, flags=re.I)
-    return head.replace("</head>", tag + "</head>", 1)
+    return head + tag
 
 
 def inject_absolute_effect(html):
