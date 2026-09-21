@@ -50,7 +50,7 @@ def upsert_property(head, prop, content):
     pattern = rf'<meta\s+property="{re.escape(prop)}"\s+content="[^"]*"\s*/?>'
     if re.search(pattern, head, flags=re.I):
         return re.sub(pattern, tag, head, count=1, flags=re.I)
-    return head.replace("</head>", tag + "</head>", 1)
+    return head + tag
 
 
 updated = 0
