@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 1,
-  "last_quality_check": "2026-09-21",
+  "last_quality_check": "2026-09-22",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -10,31 +10,32 @@
     "A unique Trial-of-the-Day archived in data/trial-archive.json counts even if no permanent trial page exists.",
     "Daily proposal files are not added merely because a trial was proposed; they must correspond to an uploaded trial page or archived Trial-of-the-Day to enter this roster.",
     "Before future selection, this roster must be checked together with current Trial-of-the-Day and archive data.",
-    "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection."
+    "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection.",
+    "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
   ],
   "audit": {
-    "permanent_trial_pages": 106,
+    "permanent_trial_pages": 116,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 106,
+    "total_unique_trials": 116,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-21",
+    "daily_batch_uploaded": "2026-09-22",
     "new_trials_added_today": [
-      "NSABP B-13",
-      "NSABP B-14",
-      "NSABP B-19",
-      "ATLAS",
-      "SOFT",
-      "MRC TE10",
-      "EORTC 30983",
-      "SURTIME",
-      "IMmotion151",
-      "BART"
+      "NSABP B-21",
+      "TROG 03.04 RADAR",
+      "NRG/RTOG 0521",
+      "GETUG-AFU 17",
+      "CheckMate 025",
+      "AXIS",
+      "Pagliaro TIP",
+      "CUETO 98013",
+      "TRISST / MRC TE24",
+      "MRC TE23"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -56,7 +57,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-09-20",
+    "last_full_reconciliation": "2026-09-22",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -804,6 +805,66 @@
       "trial": "BART",
       "site": "Bladder Cancer",
       "source": "trial-pages/bart"
+    },
+    {
+      "id": "nsabp-b21",
+      "trial": "NSABP B-21",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b21"
+    },
+    {
+      "id": "trog-03-04-radar",
+      "trial": "TROG 03.04 RADAR",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/trog-03-04-radar"
+    },
+    {
+      "id": "rtog-0521",
+      "trial": "NRG/RTOG 0521",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/rtog-0521"
+    },
+    {
+      "id": "getug-afu-17",
+      "trial": "GETUG-AFU 17",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/getug-afu-17"
+    },
+    {
+      "id": "checkmate-025",
+      "trial": "CheckMate 025",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/checkmate-025"
+    },
+    {
+      "id": "axis",
+      "trial": "AXIS",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/axis"
+    },
+    {
+      "id": "pagliaro-tip",
+      "trial": "Pagliaro TIP",
+      "site": "Penile Cancer",
+      "source": "trial-pages/pagliaro-tip"
+    },
+    {
+      "id": "cueto-98013",
+      "trial": "CUETO 98013",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/cueto-98013"
+    },
+    {
+      "id": "trisst",
+      "trial": "TRISST / MRC TE24",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/trisst"
+    },
+    {
+      "id": "mrc-te23",
+      "trial": "MRC TE23",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/mrc-te23"
     }
   ]
 }
