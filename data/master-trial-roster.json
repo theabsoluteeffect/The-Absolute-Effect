@@ -14,10 +14,10 @@
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
   ],
   "audit": {
-    "permanent_trial_pages": 116,
+    "permanent_trial_pages": 115,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 116,
+    "total_unique_trials": 115,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -84,7 +84,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-21"
+    "last_quality_check": "2026-09-22"
   },
   "trials": [
     {
@@ -639,24 +639,6 @@
       "source": "trial-pages/sw-oteca-clinical-stage1"
     },
     {
-      "id": "swog-8710-homepage",
-      "trial": "SWOG 8710",
-      "site": "Bladder Cancer",
-      "source": "trial-pages/swog-8710"
-    },
-    {
-      "id": "nazzani-dsnb",
-      "trial": "Nazzani et al. cN0 penile cancer DSNB cohort",
-      "site": "Penile Cancer",
-      "source": "trial-pages/penile-dsnb-cno"
-    },
-    {
-      "id": "prodige-24-pa6-homepage",
-      "trial": "PRODIGE 24/PA6",
-      "site": "Pancreatic Cancer",
-      "source": "trial-pages/prodige-24"
-    },
-    {
       "id": "arasens-homepage",
       "trial": "ARASENS",
       "site": "Prostate Cancer",
@@ -865,6 +847,18 @@
       "trial": "MRC TE23",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te23"
+    },
+    {
+      "id": "acosog-z0011",
+      "trial": "ACOSOG Z0011",
+      "site": "Breast Cancer",
+      "source": "trial-pages/acosog-z0011"
+    },
+    {
+      "id": "nsabp-b32",
+      "trial": "NSABP B-32",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b32"
     }
   ]
 }
