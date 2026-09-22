@@ -1,0 +1,312 @@
+[
+  {
+    "id": "nsabp-b21",
+    "site": "Breast Cancer",
+    "discipline": "Radiation",
+    "setting": "RT Omission / Small Node-negative Tumours",
+    "treatment": "Tamoxifen vs breast RT vs breast RT + tamoxifen",
+    "population": "1,009 women with node-negative invasive breast cancer ≤1 cm after lumpectomy",
+    "endpoint": "8-year ipsilateral breast tumour recurrence",
+    "horizon": "8 years",
+    "interventionRate": 2.8,
+    "controlRate": 16.5,
+    "absoluteBenefit": 13.7,
+    "nnt": "8",
+    "relativeLabel": "IBTR",
+    "relativeEffect": "RT+tamoxifen vs tamoxifen: large reduction in IBTR",
+    "ci": "8-year cumulative incidence",
+    "benefitText": "IBTR was 2.8% with RT + tamoxifen versus 16.5% with tamoxifen alone.",
+    "harmLabel": "Treatment burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "No single dominant fixed-time toxicity endpoint supports a defensible NNH.",
+    "clinicalInterpretation": "Tamoxifen did not substitute for breast RT; combined therapy gave the lowest local recurrence.",
+    "trial": "NSABP B-21",
+    "clinicalQuestion": "After lumpectomy for node-negative invasive breast cancer ≤1 cm, can tamoxifen substitute for breast RT?",
+    "refs": [
+      "NSABP B-21 trial report and NSABP review"
+    ],
+    "urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC1069061/"
+    ]
+  },
+  {
+    "id": "trog-03-04-radar",
+    "site": "Prostate Cancer",
+    "discipline": "Radiation",
+    "setting": "Locally Advanced / ADT Duration",
+    "treatment": "18 months ADT + RT vs 6 months ADT + RT",
+    "population": "1,071 men with locally advanced prostate cancer",
+    "endpoint": "10-year prostate-cancer-specific mortality",
+    "horizon": "10 years",
+    "interventionRate": 9.7,
+    "controlRate": 13.3,
+    "absoluteBenefit": 3.7,
+    "nnt": "27",
+    "relativeLabel": "sHR",
+    "relativeEffect": "0.70",
+    "ci": "95% CI 0.50–0.98; P=.035",
+    "benefitText": "Ten-year adjusted prostate-cancer-specific mortality was 9.7% vs 13.3%.",
+    "harmLabel": "Serious treatment burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "The main trade-off is longer ADT exposure; a single fixed-time severe-toxicity endpoint was not appropriate for NNH.",
+    "clinicalInterpretation": "Extending ADT from 6 to 18 months produced a modest absolute reduction in prostate-cancer-specific mortality.",
+    "trial": "TROG 03.04 RADAR",
+    "clinicalQuestion": "Does extending ADT from 6 to 18 months improve long-term outcomes with RT?",
+    "refs": [
+      "Denham JW, et al. Lancet Oncol. 2019;20:267–281."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/30579763/"
+    ]
+  },
+  {
+    "id": "rtog-0521",
+    "site": "Prostate Cancer",
+    "discipline": "Medical",
+    "setting": "High-risk Localized Disease / Systemic Intensification",
+    "treatment": "ADT + RT + docetaxel vs ADT + RT",
+    "population": "563 eligible patients; high-risk localized prostate cancer",
+    "endpoint": "10-year overall survival",
+    "horizon": "10 years",
+    "interventionRate": 69,
+    "controlRate": 64,
+    "absoluteBenefit": 5,
+    "nnt": "Descriptive ≈20; not robust",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.89",
+    "ci": "90% CI 0.70–1.14; P=.22",
+    "benefitText": "Ten-year OS was 69% vs 64%, but the long-term analysis did not show a statistically significant difference.",
+    "harmLabel": "Grade 5 toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Two grade 5 events occurred in the docetaxel arm and none in control in the long-term report.",
+    "clinicalInterpretation": "The initial docetaxel signal did not translate into a definitive long-term survival benefit.",
+    "trial": "NRG/RTOG 0521",
+    "clinicalQuestion": "Does adding adjuvant docetaxel to ADT + RT improve survival?",
+    "refs": [
+      "Long-term NRG/RTOG 0521 report"
+    ],
+    "urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10662642/"
+    ]
+  },
+  {
+    "id": "getug-afu-17",
+    "site": "Prostate Cancer",
+    "discipline": "Radiation",
+    "setting": "Post-prostatectomy / Adjuvant vs Early Salvage",
+    "treatment": "Adjuvant RT + 6 months triptorelin vs early salvage RT + 6 months triptorelin",
+    "population": "424 men with adverse pathology and positive margins after prostatectomy",
+    "endpoint": "5-year event-free survival",
+    "horizon": "5 years",
+    "interventionRate": 92,
+    "controlRate": 90,
+    "absoluteBenefit": 2,
+    "nnt": "50; underpowered",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.81",
+    "ci": "95% CI 0.48–1.36; P=.42",
+    "benefitText": "Five-year EFS was 92% vs 90%; the trial was underpowered because of unexpectedly low event rates.",
+    "harmLabel": "Late grade ≥2 GU toxicity",
+    "harmIncrease": 37,
+    "nnH": "3",
+    "harmText": "Late grade ≥2 GU toxicity was 59% vs 22%, an absolute increase of 37 points.",
+    "clinicalInterpretation": "Routine adjuvant RT did not improve EFS over early salvage in this modern strategy and caused more late toxicity.",
+    "trial": "GETUG-AFU 17",
+    "clinicalQuestion": "Is immediate adjuvant RT superior to early salvage RT after prostatectomy?",
+    "refs": [
+      "Tilki D, et al. Lancet Oncol. 2020;21:1341–1352."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/33002438/"
+    ]
+  },
+  {
+    "id": "checkmate-025",
+    "site": "Renal Cell Carcinoma",
+    "discipline": "Medical",
+    "setting": "Previously Treated Metastatic RCC",
+    "treatment": "Nivolumab vs everolimus",
+    "population": "821 patients with previously treated advanced clear-cell RCC",
+    "endpoint": "Overall survival",
+    "horizon": "Median follow-up analysis",
+    "interventionRate": null,
+    "controlRate": null,
+    "absoluteBenefit": null,
+    "nnt": "Not defensible from median OS",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.73",
+    "ci": "98.5% CI 0.57–0.93; P=.002",
+    "benefitText": "Median OS was 25.0 vs 19.6 months; ORR was 25% vs 5% (+20 points, NNT≈5 for response).",
+    "harmLabel": "Grade 3–4 treatment-related adverse events",
+    "harmIncrease": -18,
+    "nnH": "Not applicable as harm reduction",
+    "harmText": "Grade 3–4 treatment-related AEs were 19% vs 37%.",
+    "clinicalInterpretation": "Nivolumab improved OS despite little difference in median PFS.",
+    "trial": "CheckMate 025",
+    "clinicalQuestion": "Does nivolumab improve survival versus everolimus?",
+    "refs": [
+      "Motzer RJ, et al. N Engl J Med. 2015;373:1803–1813."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/26406148/"
+    ]
+  },
+  {
+    "id": "axis",
+    "site": "Renal Cell Carcinoma",
+    "discipline": "Medical",
+    "setting": "Previously Treated Metastatic RCC",
+    "treatment": "Axitinib vs sorafenib",
+    "population": "723 patients with metastatic RCC after prior systemic therapy",
+    "endpoint": "Progression-free survival",
+    "horizon": "Median PFS",
+    "interventionRate": null,
+    "controlRate": null,
+    "absoluteBenefit": null,
+    "nnt": "10 for objective response",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.665",
+    "ci": "95% CI 0.544–0.812; P<.0001",
+    "benefitText": "Median PFS was 6.7 vs 4.7 months; ORR was 19.4% vs 9.4%, +10 points.",
+    "harmLabel": "Toxicity-related discontinuation",
+    "harmIncrease": -4,
+    "nnH": "Not applicable as harm reduction",
+    "harmText": "Discontinuation for toxicity was 4% vs 8%.",
+    "clinicalInterpretation": "Axitinib improved PFS and response over sorafenib without a demonstrated OS advantage.",
+    "trial": "AXIS",
+    "clinicalQuestion": "Does axitinib improve disease control versus sorafenib?",
+    "refs": [
+      "Rini BI, et al. Lancet. 2011;378:1931–1939."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/22056247/"
+    ]
+  },
+  {
+    "id": "pagliaro-tip",
+    "site": "Penile Cancer",
+    "discipline": "Medical",
+    "setting": "Bulky Regional Disease / Neoadjuvant",
+    "treatment": "Neoadjuvant paclitaxel + ifosfamide + cisplatin followed by surgery",
+    "population": "30 men with cN2–cN3 penile SCC without distant metastases",
+    "endpoint": "Objective response",
+    "horizon": "After neoadjuvant therapy",
+    "interventionRate": 50,
+    "controlRate": null,
+    "absoluteBenefit": null,
+    "nnt": "Not applicable",
+    "relativeLabel": "Single-arm",
+    "relativeEffect": "No comparator",
+    "ci": "Phase II",
+    "benefitText": "15/30 (50%) had objective response; 22/30 underwent surgery; 3/30 achieved pathologic complete response.",
+    "harmLabel": "Grade 3–4 toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Grade 3–4 anemia, neutropenia, febrile neutropenia and neuropathy were each reported in <5%.",
+    "clinicalInterpretation": "TIP provided a clinically meaningful response benchmark for bulky regional penile cancer, but causal treatment effects cannot be estimated.",
+    "trial": "Pagliaro TIP",
+    "clinicalQuestion": "Can neoadjuvant TIP enable consolidative surgery in bulky regional penile cancer?",
+    "refs": [
+      "Pagliaro LC, et al. J Clin Oncol. 2010;28:3851–3857."
+    ],
+    "urls": [
+      "https://ascopubs.org/doi/abs/10.1200/JCO.2010.29.5477"
+    ]
+  },
+  {
+    "id": "cueto-98013",
+    "site": "Bladder Cancer",
+    "discipline": "Medical",
+    "setting": "High-risk NMIBC / BCG Maintenance",
+    "treatment": "6-week BCG induction vs induction + one BCG instillation every 3 months for 3 years",
+    "population": "397 patients with high-risk NMIBC",
+    "endpoint": "5-year disease relapse",
+    "horizon": "5 years",
+    "interventionRate": 38.5,
+    "controlRate": 33.5,
+    "absoluteBenefit": -5,
+    "nnt": "Not applicable",
+    "relativeLabel": "HR",
+    "relativeEffect": "0.83 for disease-free interval",
+    "ci": "95% CI 0.61–1.13; P=.20",
+    "benefitText": "Five-year relapse was 38.5% with maintenance versus 33.5% with induction alone.",
+    "harmLabel": "Treatment discontinuation for toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "20 patients stopped maintenance for toxicity versus 5 in the induction-only group.",
+    "clinicalInterpretation": "This three-monthly maintenance schedule did not reduce recurrence or progression compared with induction alone.",
+    "trial": "CUETO 98013",
+    "clinicalQuestion": "Does three-monthly BCG maintenance for 3 years improve outcomes after induction?",
+    "refs": [
+      "Martínez-Piñeiro L, et al. Eur Urol. 2015;68:256–262."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/25794457/"
+    ]
+  },
+  {
+    "id": "trisst",
+    "site": "Germ Cell Tumours",
+    "discipline": "Imaging",
+    "setting": "Stage I Seminoma / Surveillance",
+    "treatment": "MRI vs CT; 3 scans vs 7 scans",
+    "population": "Stage I seminoma after orchiectomy managed with surveillance",
+    "endpoint": "6-year stage ≥IIC relapse",
+    "horizon": "6 years",
+    "interventionRate": 0.6,
+    "controlRate": 2.6,
+    "absoluteBenefit": 2,
+    "nnt": "50 for MRI vs CT; descriptive",
+    "relativeLabel": "Absolute difference",
+    "relativeEffect": "MRI vs CT −1.9 percentage points",
+    "ci": "90% CI −3.5 to −0.3",
+    "benefitText": "Stage ≥IIC relapse was 0.6% with MRI vs 2.6% with CT. Three scans produced 2.8% vs 0.3% with seven scans, a +2.5-point increase that remained within the 5.7-point noninferiority margin.",
+    "harmLabel": "Advanced relapse with reduced imaging",
+    "harmIncrease": 2.5,
+    "nnH": "40",
+    "harmText": "Three scans increased stage ≥IIC relapse by 2.5 percentage points versus seven scans at 6 years.",
+    "clinicalInterpretation": "MRI was noninferior to CT, and a reduced three-scan schedule stayed within the prespecified advanced-relapse margin.",
+    "trial": "TRISST / MRC TE24",
+    "clinicalQuestion": "Can MRI replace CT and surveillance be reduced from seven to three scans?",
+    "refs": [
+      "Joffe JK, et al. J Clin Oncol. 2022."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/35298280/"
+    ]
+  },
+  {
+    "id": "mrc-te23",
+    "site": "Germ Cell Tumours",
+    "discipline": "Medical",
+    "setting": "Poor-prognosis Metastatic Disease",
+    "treatment": "CBOP/BEP vs standard BEP",
+    "population": "89 patients with poor-prognosis metastatic germ-cell tumours",
+    "endpoint": "Favourable response rate",
+    "horizon": "End of induction treatment",
+    "interventionRate": 74.4,
+    "controlRate": 60.9,
+    "absoluteBenefit": 13.5,
+    "nnt": "8 for favourable response",
+    "relativeLabel": "Absolute difference",
+    "relativeEffect": "+13.5 percentage points",
+    "ci": "90% CI for CBOP/BEP 61.2–84.9",
+    "benefitText": "Favourable response was 74.4% vs 60.9%, an absolute increase of 13.5 points.",
+    "harmLabel": "Grade ≥3 toxicity",
+    "harmIncrease": 33,
+    "nnH": "3",
+    "harmText": "Grade ≥3 toxicity was 96% vs 63%, an absolute increase of 33 points.",
+    "clinicalInterpretation": "Intensification improved response but produced major toxicity and was not powered as a definitive phase III survival comparison.",
+    "trial": "MRC TE23",
+    "clinicalQuestion": "Does intensified CBOP/BEP improve favourable response in poor-prognosis GCT?",
+    "refs": [
+      "Huddart RA, et al. Eur Urol. 2015;67:534–543."
+    ],
+    "urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4410298/"
+    ]
+  }
+]
