@@ -8,19 +8,45 @@
 const DISCIPLINES=Object.freeze(['Surgical','Medical','Radiation','Biomarker','Imaging']);
 const s=document.getElementById('siteFilter'),d=document.getElementById('disciplineFilter'),g=document.getElementById('settingFilter'),q=document.getElementById('questionFilter'),c=document.getElementById('entryContainer');
 const norm=x=>({['Medical Oncology']:'Medical',['Radiation Oncology']:'Radiation',['Surgical Oncology']:'Surgical'}[x]||x);
-trials.forEach(t=>t.discipline=norm(t.discipline));
+const byId=new Map(trials.map(t=>[t.id,t]));
 function resetSelect(el,placeholder,disabled){el.innerHTML='';el.append(new Option(placeholder,''));el.disabled=disabled}
 function fillSelect(el,placeholder,values,disabled){el.innerHTML='';el.append(new Option(placeholder,''));[...new Set(values.filter(Boolean))].sort().forEach(v=>el.append(new Option(v,v)));el.disabled=disabled;el.value=''}
 function scrollToId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
 function matching(){return trials.filter(t=>(!s.value||t.site===s.value)&&(!d.value||norm(t.discipline)===d.value)&&(!g.value||t.setting===g.value))}
 function hrefFor(t){if(!t.path)return '#';if(/^https?:\\/\\//.test(t.path))return t.path;if(t.path.startsWith('__evidence__/'))return 'evidence.html?id='+encodeURIComponent(t.path.slice('__evidence__/'.length));return t.path.replace(/^\\//,'').replace(/\\/$/,'')+'/'}
-function render(){const matches=matching();const list=q.value?matches.filter(t=>t.question===q.value):matches;if(!s.value){c.innerHTML='<p class="muted">Select a tumour site to begin.</p>';return}if(!d.value){c.innerHTML='<p class="muted">Select a discipline to continue.</p>';return}if(!g.value){c.innerHTML=matches.length?'<p class="muted">Select a setting to continue.</p>':'<p class="muted">No evidence entries are currently indexed for this discipline at this tumour site.</p>';return}if(!q.value){c.innerHTML=matches.map(t=>`<article class="card entry"><p class="tag">${t.site} · ${norm(t.discipline)} · ${t.setting}</p><h3><a href="${hrefFor(t)}">${t.trial}</a></h3><p>${t.question}</p><a href="${hrefFor(t)}">View trial analysis →</a></article>`).join('')||'<p class="muted">No evidence entries are currently indexed for this setting.</p>';return}c.innerHTML=list.map(t=>`<article class="card entry"><p class="tag">${t.site} · ${norm(t.discipline)} · ${t.setting}</p><h3><a href="${hrefFor(t)}">${t.trial}</a></h3><p>${t.question}</p><a href="${hrefFor(t)}">View trial analysis →</a></article>`).join('')||'<p class="muted">No evidence entry matches this clinical question.</p>'}
-function siteChanged(){resetSelect(d,'Select discipline',false);resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);c.innerHTML='<p class="muted">Select a discipline to continue.</p>';fillSelect(d,'Select discipline',DISCIPLINES,false)}
-function disciplineChanged(){resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);const values=trials.filter(t=>t.site===s.value&&norm(t.discipline)===d.value).map(t=>t.setting);fillSelect(g,values.length?'Select setting':'No settings currently indexed',values,false);render()}
-function settingChanged(){resetSelect(q,'Select clinical question',true);const values=trials.filter(t=>t.site===s.value&&norm(t.discipline)===d.value&&t.setting===g.value).map(t=>t.question);fillSelect(q,values.length?'Select clinical question':'No clinical questions indexed',values,!values.length);render()}
+function render(){const matches=matching();const list=q.value?matches.filter(t=>t.question===q.value):matches;if(!s.value){c.innerHTML='<p class="muted">Select a tumour site to begin.</p>';return}if(!d.value){c.innerHTML='<p class="muted">Select a discipline to continue.</p>';return}if(!g.value){c.innerHTML=matches.length?'<p class="muted">Select a setting to continue.</p>':'<p class="muted">No evidence entries are currently indexed for this discipline at this tumour site.</p>';return}c.innerHTML=list.map(t=>`<article class="card entry"><p class="tag">${t.site} · ${norm(t.discipline)} · ${t.setting}</p><h3><a href="${hrefFor(t)}">${t.trial}</a></h3><p>${t.question}</p><a href="${hrefFor(t)}">View trial analysis →</a></article>`).join('')||'<p class="muted">No evidence entry matches this filter.</p>'}
+function siteChanged(){resetSelect(d,'Select discipline',true);resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);c.innerHTML='<p class="muted">Select a discipline to continue.</p>';const vals=trials.filter(t=>t.site===s.value).map(t=>norm(t.discipline));fillSelect(d,'Select discipline',vals,!vals.length)}
+function disciplineChanged(){resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);const vals=trials.filter(t=>t.site===s.value&&norm(t.discipline)===d.value).map(t=>t.setting);fillSelect(g,'Select setting',vals,!vals.length);render()}
+function settingChanged(){resetSelect(q,'Select clinical question',true);const vals=trials.filter(t=>t.site===s.value&&norm(t.discipline)===d.value&&t.setting===g.value).map(t=>t.question);fillSelect(q,'Select clinical question',vals,!vals.length);render()}
 function questionChanged(){render()}
 s.addEventListener('change',siteChanged);d.addEventListener('change',disciplineChanged);g.addEventListener('change',settingChanged);q.addEventListener('change',questionChanged);
-fillSelect(s,'Select tumour site',trials.map(t=>t.site),false);resetSelect(d,'Select discipline',true);resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);</script>
+async function loadCompleteRoster(){
+  try{
+    const roster=await fetch('data/master-trial-roster.json',{cache:'no-store'}).then(r=>r.json());
+    const additions=await Promise.all(roster.trials.map(async r=>{
+      const id=r.id;
+      if(byId.has(id)) return byId.get(id);
+      const path=r.source.replace(/^\\//,'').replace(/\\/$/,'')+'/index.html';
+      try{
+        const raw=await fetch(path,{cache:'no-store'}).then(x=>x.text());
+        const doc=new DOMParser().parseFromString(raw,'text/html');
+        const crumb=doc.querySelector('body p')?.textContent||'';
+        const parts=crumb.split('/').map(x=>x.trim()).filter(Boolean);
+        const site=r.site;
+        const discipline=norm(parts[2]||'Medical');
+        const question=[...doc.querySelectorAll('h2')].find(x=>/clinical question/i.test(x.textContent||''))?.nextElementSibling?.textContent?.trim()||r.trial;
+        const trial=doc.querySelector('h1')?.textContent?.trim()||r.trial;
+        return {id,site,discipline,setting:'Evidence',trial,question,path};
+      }catch(e){return {id,site:r.site,discipline:'Medical',setting:'Evidence',trial:r.trial,question:r.trial,path};}
+    }));
+    const merged=new Map();
+    [...trials,...additions].forEach(t=>merged.set(t.id+'|'+t.path,t));
+    trials.length=0; merged.forEach(t=>{t.discipline=norm(t.discipline);trials.push(t)});
+  }catch(e){}
+  fillSelect(s,'Select tumour site',trials.map(t=>t.site),false);
+  resetSelect(d,'Select discipline',true);resetSelect(g,'Select setting',true);resetSelect(q,'Select clinical question',true);
+}
+loadCompleteRoster();</script>
 <script id="atlas-question-label-fix">
 (function(){
   const fix=()=>{
