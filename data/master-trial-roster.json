@@ -84,7 +84,9 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-22"
+    "last_quality_check": "2026-09-22",
+    "dropdown_questions_rewritten": "2026-09-23",
+    "dropdown_questions_rewritten_count": 65
   },
   "trials": [
     {
@@ -94,7 +96,7 @@
       "source": "trial-pages/assure",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "ASSURE",
+      "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant targeted therapy with sorafenib or pazopanib improve disease-free survival compared with placebo?",
       "path": "trial-pages/assure"
     },
     {
@@ -218,7 +220,7 @@
       "source": "trial-pages/eortc-22911",
       "discipline": "Radiation",
       "setting": "Post-prostatectomy",
-      "question": "EORTC 22911",
+      "question": "After radical prostatectomy for locally advanced or margin-positive prostate cancer, does immediate adjuvant radiotherapy improve progression-free control compared with observation with radiotherapy reserved for relapse?",
       "path": "trial-pages/eortc-22911"
     },
     {
@@ -252,7 +254,7 @@
       "source": "trial-pages/eortc-30962",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "EORTC 30962",
+      "question": "In intermediate- and high-risk non-muscle-invasive bladder cancer, what dose and duration of maintenance BCG best balance recurrence control and treatment burden?",
       "path": "trial-pages/eortc-30962"
     },
     {
@@ -262,7 +264,7 @@
       "source": "trial-pages/eortc-30986",
       "discipline": "Medical",
       "setting": "Advanced/Metastatic",
-      "question": "EORTC 30986",
+      "question": "In advanced urothelial cancer patients unfit for cisplatin, how does gemcitabine plus carboplatin compare with methotrexate, carboplatin and vinblastine?",
       "path": "trial-pages/eortc-30986"
     },
     {
@@ -292,7 +294,7 @@
       "source": "trial-pages/everest",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "EVEREST",
+      "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant everolimus improve recurrence-free survival compared with placebo?",
       "path": "trial-pages/everest"
     },
     {
@@ -348,7 +350,7 @@
       "source": "trial-pages/getug-afu-16",
       "discipline": "Medical",
       "setting": "Post-prostatectomy Biochemical Recurrence",
-      "question": "GETUG-AFU 16",
+      "question": "In men with biochemical recurrence after prostatectomy, does adding short-term androgen-deprivation therapy to salvage radiotherapy improve progression-free outcomes compared with salvage radiotherapy alone?",
       "path": "trial-pages/getug-afu-16"
     },
     {
@@ -368,7 +370,7 @@
       "source": "trial-pages/javelin-bladder-100",
       "discipline": "Medical",
       "setting": "First-line Advanced/Metastatic",
-      "question": "JAVELIN Bladder 100",
+      "question": "In advanced or metastatic urothelial carcinoma that has not progressed after first-line platinum chemotherapy, does maintenance avelumab plus best supportive care improve overall survival compared with best supportive care alone?",
       "path": "trial-pages/javelin-bladder-100"
     },
     {
@@ -398,7 +400,7 @@
       "source": "trial-pages/mrc-eortc-bep-vs-ceb",
       "discipline": "Medical",
       "setting": "Good-Risk Metastatic",
-      "question": "MRC/EORTC BEP vs CEB",
+      "question": "In good-prognosis metastatic nonseminomatous germ-cell cancer, can carboplatin replace cisplatin in BEP-type chemotherapy without compromising efficacy?",
       "path": "trial-pages/mrc-eortc-bep-vs-ceb"
     },
     {
@@ -452,7 +454,7 @@
       "source": "trial-pages/nsabp-b06",
       "discipline": "Surgical",
       "setting": "Definitive/Locoregional",
-      "question": "NSABP B-06",
+      "question": "In operable invasive breast cancer, can breast-conserving surgery followed by radiotherapy provide outcomes comparable to total mastectomy?",
       "path": "trial-pages/nsabp-b06"
     },
     {
@@ -462,7 +464,7 @@
       "source": "trial-pages/nsabp-b18",
       "discipline": "Medical",
       "setting": "Neoadjuvant",
-      "question": "NSABP B-18",
+      "question": "In operable breast cancer, does giving chemotherapy before surgery improve outcomes or increase the opportunity for breast-conserving surgery compared with the same chemotherapy after surgery?",
       "path": "trial-pages/nsabp-b18"
     },
     {
@@ -472,7 +474,7 @@
       "source": "trial-pages/nsabp-b20",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "NSABP B-20",
+      "question": "In node-negative, estrogen-receptor-positive breast cancer, does adding adjuvant chemotherapy to tamoxifen improve disease-free and overall survival compared with tamoxifen alone?",
       "path": "trial-pages/nsabp-b20"
     },
     {
@@ -482,7 +484,7 @@
       "source": "trial-pages/nsabp-b27",
       "discipline": "Medical",
       "setting": "Neoadjuvant",
-      "question": "NSABP B-27",
+      "question": "In operable breast cancer, does adding docetaxel to preoperative doxorubicin and cyclophosphamide improve response and pathological complete response compared with preoperative AC alone?",
       "path": "trial-pages/nsabp-b27"
     },
     {
@@ -579,7 +581,7 @@
       "source": "trial-pages/radicals-rt",
       "discipline": "Radiation",
       "setting": "Post-prostatectomy",
-      "question": "RADICALS-RT",
+      "question": "After radical prostatectomy, does routine adjuvant radiotherapy improve outcomes compared with observation with early salvage radiotherapy for PSA relapse?",
       "path": "trial-pages/radicals-rt"
     },
     {
@@ -619,7 +621,7 @@
       "source": "trial-pages/sorce",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "SORCE",
+      "question": "After nephrectomy for intermediate- or high-risk renal cell carcinoma, does adjuvant sorafenib reduce recurrence compared with placebo, and is longer treatment more effective than shorter treatment?",
       "path": "trial-pages/sorce"
     },
     {
@@ -629,7 +631,7 @@
       "source": "trial-pages/spcg-4",
       "discipline": "Surgical",
       "setting": "Localized Disease",
-      "question": "SPCG-4",
+      "question": "In men with clinically localized prostate cancer, does radical prostatectomy improve survival and disease control compared with watchful waiting?",
       "path": "trial-pages/spcg-4"
     },
     {
@@ -639,7 +641,7 @@
       "source": "trial-pages/spcg-7-sfuo-3",
       "discipline": "Radiation",
       "setting": "Localized/Locally Advanced",
-      "question": "SPCG-7/SFUO-3",
+      "question": "In locally advanced or high-risk prostate cancer, does adding radiotherapy to endocrine therapy improve survival compared with endocrine therapy alone?",
       "path": "trial-pages/spcg-7-sfuo-3"
     },
     {
@@ -665,7 +667,7 @@
       ],
       "discipline": "Medical",
       "setting": "Stage I Non-seminoma",
-      "question": "SWENOTECA stage I NSGCT programme",
+      "question": "In clinical stage I nonseminomatous germ-cell cancer, can risk-adapted surveillance with selective adjuvant treatment safely minimize unnecessary chemotherapy?",
       "path": "trial-pages/sw-oteca-stage1-nsgct"
     },
     {
@@ -675,7 +677,7 @@
       "source": "trial-pages/swog-8507",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "SWOG 8507",
+      "question": "In high-risk non-muscle-invasive bladder cancer, does maintenance intravesical BCG after induction reduce recurrence compared with induction BCG alone?",
       "path": "trial-pages/swog-8507"
     },
     {
@@ -699,7 +701,7 @@
       "source": "trial-pages/swog-nrg-s1914",
       "discipline": "Medical",
       "setting": "Locally Advanced",
-      "question": "SWOG/NRG S1914",
+      "question": "In localized small-cell lung cancer, does adding atezolizumab to concurrent chemoradiotherapy and prophylactic cranial irradiation improve survival compared with chemoradiotherapy and prophylactic cranial irradiation alone?",
       "path": "trial-pages/swog-nrg-s1914"
     },
     {
@@ -713,7 +715,7 @@
       ],
       "discipline": "Medical",
       "setting": "Localized/Resectable HCC",
-      "question": "TALENTOP",
+      "question": "In locally advanced hepatocellular carcinoma responding to atezolizumab plus bevacizumab, does adding liver resection improve survival compared with continuing systemic maintenance therapy?",
       "path": "trial-pages/talentop"
     },
     {
@@ -738,7 +740,7 @@
       "source": "trial-pages/nsabp-b59-gepardouze",
       "discipline": "Medical",
       "setting": "Neoadjuvant",
-      "question": "NSABP B-59/GeparDouze",
+      "question": "In high-risk early triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological response and event-free survival?",
       "path": "trial-pages/nsabp-b59-gepardouze"
     },
     {
@@ -748,7 +750,7 @@
       "source": "trial-pages/rtog-9601",
       "discipline": "Medical",
       "setting": "Post-prostatectomy Biochemical Recurrence",
-      "question": "NRG/RTOG 9601",
+      "question": "In men with biochemical recurrence after prostatectomy, does adding long-term antiandrogen therapy to salvage radiotherapy improve survival compared with salvage radiotherapy alone?",
       "path": "trial-pages/rtog-9601"
     },
     {
@@ -758,7 +760,7 @@
       "source": "trial-pages/proteus",
       "discipline": "Radiation",
       "setting": "Localized Disease",
-      "question": "PROTEUS",
+      "question": "In men with high-risk localized prostate cancer undergoing radical prostatectomy, does perioperative darolutamide plus androgen-deprivation therapy and docetaxel improve pathological and event-free outcomes compared with standard perioperative treatment?",
       "path": "trial-pages/proteus"
     },
     {
@@ -768,7 +770,7 @@
       "source": "trial-pages/pivot",
       "discipline": "Surgical",
       "setting": "Localized Disease",
-      "question": "PIVOT",
+      "question": "In men with localized prostate cancer, does radical prostatectomy improve overall or prostate-cancer-specific survival compared with observation?",
       "path": "trial-pages/pivot"
     },
     {
@@ -782,7 +784,7 @@
       ],
       "discipline": "Radiation",
       "setting": "Adjuvant RT",
-      "question": "NSABP B-17",
+      "question": "In ductal carcinoma in situ treated by lumpectomy, does adding whole-breast radiotherapy reduce ipsilateral breast recurrence compared with lumpectomy alone?",
       "path": "trial-pages/nsabp-b17"
     },
     {
@@ -796,7 +798,7 @@
       ],
       "discipline": "Radiation",
       "setting": "Adjuvant RT",
-      "question": "NSABP B-24",
+      "question": "In ductal carcinoma in situ treated by lumpectomy and radiotherapy, does adding tamoxifen reduce ipsilateral and contralateral breast events compared with radiotherapy alone?",
       "path": "trial-pages/nsabp-b24"
     },
     {
@@ -810,7 +812,7 @@
       ],
       "discipline": "Radiation",
       "setting": "Localized/Intermediate-Risk",
-      "question": "RTOG 9408",
+      "question": "In men with localized or intermediate-risk prostate cancer, does adding short-term androgen-deprivation therapy to radiotherapy improve disease control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-9408"
     },
     {
@@ -824,7 +826,7 @@
       ],
       "discipline": "Radiation",
       "setting": "Definitive Localized Disease",
-      "question": "MRC RT01",
+      "question": "In localized prostate cancer treated with external-beam radiotherapy, does dose escalation improve biochemical and clinical disease control compared with conventional-dose radiotherapy?",
       "path": "trial-pages/mrc-rt01"
     },
     {
@@ -838,7 +840,7 @@
       ],
       "discipline": "Medical",
       "setting": "Metastatic Hormone-Sensitive",
-      "question": "SWOG 9346",
+      "question": "In metastatic hormone-sensitive prostate cancer, is intermittent androgen deprivation non-inferior to continuous androgen deprivation for survival while reducing treatment exposure?",
       "path": "trial-pages/swog-9346"
     },
     {
@@ -852,7 +854,7 @@
       ],
       "discipline": "Medical",
       "setting": "Metastatic",
-      "question": "AVOREN",
+      "question": "In metastatic renal cell carcinoma, does adding bevacizumab to interferon alfa improve progression-free and overall outcomes compared with interferon alfa alone?",
       "path": "trial-pages/avoren"
     },
     {
@@ -866,7 +868,7 @@
       ],
       "discipline": "Medical",
       "setting": "Metastatic",
-      "question": "PISCES",
+      "question": "In previously untreated metastatic renal cell carcinoma, which treatment do patients prefer after experiencing pazopanib and sunitinib sequentially?",
       "path": "trial-pages/pisces"
     },
     {
@@ -879,7 +881,7 @@
       ],
       "discipline": "Medical",
       "setting": "Advanced/Metastatic",
-      "question": "IMvigor211",
+      "question": "In platinum-refractory advanced urothelial carcinoma, does atezolizumab improve overall survival compared with chemotherapy, particularly in patients with high PD-L1 expression?",
       "path": "trial-pages/imvigor211"
     },
     {
@@ -893,7 +895,7 @@
       ],
       "discipline": "Medical",
       "setting": "Advanced/Metastatic",
-      "question": "CheckMate 275",
+      "question": "In platinum-refractory metastatic urothelial carcinoma, can nivolumab produce clinically meaningful and durable tumour responses?",
       "path": "trial-pages/checkmate-275"
     },
     {
@@ -907,7 +909,7 @@
       ],
       "discipline": "Medical",
       "setting": "Stage I Non-seminoma",
-      "question": "Daugaard stage-I NSGCT surveillance cohort",
+      "question": "In stage I nonseminomatous germ-cell cancer, can active surveillance safely avoid immediate adjuvant treatment while maintaining a high cure rate?",
       "path": "trial-pages/daugaard-stage1-nsgct-surveillance"
     },
     {
@@ -917,7 +919,7 @@
       "source": "trial-pages/dbcg-77b",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "DBCG 77B",
+      "question": "In high-risk breast cancer after surgery and radiotherapy, does adjuvant chemotherapy with cyclophosphamide or CMF improve survival compared with no systemic therapy?",
       "path": "trial-pages/dbcg-77b"
     },
     {
@@ -927,7 +929,7 @@
       "source": "trial-pages/dbcg-77c",
       "discipline": "Medical",
       "setting": "Adjuvant",
-      "question": "DBCG 77C",
+      "question": "In high-risk postmenopausal breast cancer, does adding one year of tamoxifen to postoperative radiotherapy improve recurrence and survival compared with radiotherapy alone?",
       "path": "trial-pages/dbcg-77c"
     },
     {
@@ -937,7 +939,7 @@
       "source": "trial-pages/dbcg-82c",
       "discipline": "Radiation",
       "setting": "Postmastectomy RT",
-      "question": "DBCG 82C",
+      "question": "In high-risk postmenopausal breast cancer, does adding tamoxifen to adjuvant CMF and radiotherapy improve outcomes compared with CMF and radiotherapy alone?",
       "path": "trial-pages/dbcg-82c"
     },
     {
@@ -947,7 +949,7 @@
       "source": "trial-pages/sw-oteca-clinical-stage1",
       "discipline": "Medical",
       "setting": "Stage I Non-seminoma",
-      "question": "SWENOTECA clinical stage I NSGCT management programme",
+      "question": "In clinical stage I nonseminomatous germ-cell cancer, can surveillance and risk-adapted adjuvant therapy provide high cure rates while reducing unnecessary treatment?",
       "path": "trial-pages/sw-oteca-clinical-stage1"
     },
     {
@@ -957,7 +959,7 @@
       "source": "trial-pages/arasens",
       "discipline": "Medical",
       "setting": "Metastatic Hormone-Sensitive",
-      "question": "ARASENS",
+      "question": "In metastatic hormone-sensitive prostate cancer, does adding darolutamide to androgen-deprivation therapy plus docetaxel improve overall survival compared with androgen-deprivation therapy plus docetaxel?",
       "path": "trial-pages/arasens"
     },
     {
@@ -967,7 +969,7 @@
       "source": "trial-pages/checkmate-214",
       "discipline": "Medical",
       "setting": "First-line Metastatic",
-      "question": "CheckMate 214",
+      "question": "In previously untreated advanced or metastatic clear-cell renal cell carcinoma, does nivolumab plus ipilimumab improve survival and disease control compared with sunitinib?",
       "path": "trial-pages/checkmate-214"
     },
     {
@@ -977,7 +979,7 @@
       "source": "trial-pages/comparz",
       "discipline": "Medical",
       "setting": "First-line Metastatic",
-      "question": "COMPARZ",
+      "question": "In previously untreated metastatic renal cell carcinoma, is pazopanib non-inferior to sunitinib for progression-free and overall survival?",
       "path": "trial-pages/comparz"
     },
     {
@@ -987,7 +989,7 @@
       "source": "trial-pages/matterhorn",
       "discipline": "Medical",
       "setting": "Locally Advanced/Perioperative",
-      "question": "MATTERHORN",
+      "question": "In resectable locally advanced gastric or gastroesophageal-junction adenocarcinoma, does adding durvalumab to perioperative FLOT chemotherapy improve event-free and overall survival compared with FLOT alone?",
       "path": "trial-pages/matterhorn"
     },
     {
@@ -997,7 +999,7 @@
       "source": "trial-pages/mrc-te18",
       "discipline": "Radiation",
       "setting": "Stage I Seminoma",
-      "question": "MRC TE18 / EORTC 30942",
+      "question": "In stage I seminoma, can a lower radiotherapy dose of 20 Gy provide equivalent relapse control to 30 Gy with less treatment burden?",
       "path": "trial-pages/mrc-te18"
     },
     {
@@ -1007,7 +1009,7 @@
       "source": "trial-pages/eortc-22863",
       "discipline": "Radiation",
       "setting": "Locally Advanced/High-Risk",
-      "question": "EORTC 22863",
+      "question": "In locally advanced or high-risk prostate cancer, does adding long-term androgen deprivation to definitive radiotherapy improve survival compared with radiotherapy alone?",
       "path": "trial-pages/eortc-22863"
     },
     {
@@ -1017,7 +1019,7 @@
       "source": "trial-pages/rtog-92-02",
       "discipline": "Radiation",
       "setting": "Locally Advanced/High-Risk",
-      "question": "RTOG 92-02",
+      "question": "In locally advanced prostate cancer, does extending androgen deprivation around radiotherapy from short-term to long-term improve disease control and survival?",
       "path": "trial-pages/rtog-92-02"
     },
     {
@@ -1027,7 +1029,7 @@
       "source": "trial-pages/eortc-22961",
       "discipline": "Radiation",
       "setting": "Locally Advanced/High-Risk",
-      "question": "EORTC 22961",
+      "question": "In locally advanced prostate cancer treated with radiotherapy, does extending androgen deprivation to 3 years improve survival compared with 6 months of androgen deprivation?",
       "path": "trial-pages/eortc-22961"
     },
     {
@@ -1037,7 +1039,7 @@
       "source": "trial-pages/rtog-85-31",
       "discipline": "Radiation",
       "setting": "Locally Advanced/High-Risk",
-      "question": "RTOG 85-31",
+      "question": "In locally advanced prostate cancer, does adding long-term androgen deprivation to radiotherapy improve local control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-85-31"
     },
     {
@@ -1047,7 +1049,7 @@
       "source": "trial-pages/keynote-426",
       "discipline": "Medical",
       "setting": "First-line Metastatic",
-      "question": "KEYNOTE-426",
+      "question": "In previously untreated advanced or metastatic renal cell carcinoma, does pembrolizumab plus axitinib improve overall survival and disease control compared with sunitinib?",
       "path": "trial-pages/keynote-426"
     },
     {
@@ -1057,7 +1059,7 @@
       "source": "trial-pages/checkmate-9er",
       "discipline": "Medical",
       "setting": "First-line Metastatic",
-      "question": "CheckMate 9ER",
+      "question": "In previously untreated advanced or metastatic renal cell carcinoma, does nivolumab plus cabozantinib improve progression-free and overall survival compared with sunitinib?",
       "path": "trial-pages/checkmate-9er"
     },
     {
@@ -1067,7 +1069,7 @@
       "source": "trial-pages/ev-302",
       "discipline": "Medical",
       "setting": "First-line Advanced/Metastatic",
-      "question": "EV-302 / KEYNOTE-A39",
+      "question": "In previously untreated advanced or metastatic urothelial carcinoma, does enfortumab vedotin plus pembrolizumab improve overall and progression-free survival compared with platinum-based chemotherapy?",
       "path": "trial-pages/ev-302"
     },
     {
@@ -1077,7 +1079,7 @@
       "source": "trial-pages/keynote-045",
       "discipline": "Medical",
       "setting": "Advanced/Metastatic",
-      "question": "KEYNOTE-045",
+      "question": "In platinum-refractory advanced urothelial carcinoma, does pembrolizumab improve overall survival compared with investigator's-choice chemotherapy?",
       "path": "trial-pages/keynote-045"
     },
     {
@@ -1087,7 +1089,7 @@
       "source": "trial-pages/sunitinib-ifn",
       "discipline": "Medical",
       "setting": "First-line Metastatic",
-      "question": "Sunitinib vs Interferon Alfa",
+      "question": "In previously untreated metastatic renal cell carcinoma, does sunitinib improve progression-free and overall outcomes compared with interferon alfa?",
       "path": "trial-pages/sunitinib-ifn"
     },
     {
@@ -1097,7 +1099,7 @@
       "source": "trial-pages/taishan-302",
       "discipline": "Medical",
       "setting": "Relapsed SCLC",
-      "question": "TAISHAN-302",
+      "question": "In relapsed small-cell lung cancer after platinum therapy, does the B7-H3-directed ADC tambotatug pelitecan improve survival compared with topotecan?",
       "path": "trial-pages/taishan-302"
     },
     {
@@ -1207,7 +1209,7 @@
       "source": "trial-pages/nsabp-b21",
       "discipline": "Radiation",
       "setting": "RT + Endocrine / RT Omission",
-      "question": "NSABP B-21",
+      "question": "In women with node-negative invasive breast cancer ≤1 cm after lumpectomy, is tamoxifen alone sufficient without radiotherapy, and does adding tamoxifen to radiotherapy further reduce ipsilateral breast recurrence?",
       "path": "trial-pages/nsabp-b21"
     },
     {
@@ -1217,7 +1219,7 @@
       "source": "trial-pages/trog-03-04-radar",
       "discipline": "Medical",
       "setting": "Locally Advanced/High-Risk",
-      "question": "TROG 03.04 RADAR",
+      "question": "In locally advanced or high-risk prostate cancer, does longer androgen deprivation and the addition of zoledronic acid improve bone-metastasis and disease outcomes compared with shorter androgen deprivation?",
       "path": "trial-pages/trog-03-04-radar"
     },
     {
@@ -1227,7 +1229,7 @@
       "source": "trial-pages/rtog-0521",
       "discipline": "Medical",
       "setting": "High-Risk Localized",
-      "question": "NRG/RTOG 0521",
+      "question": "In high-risk localized prostate cancer, does adding docetaxel to androgen deprivation therapy and radiotherapy improve overall survival compared with androgen deprivation therapy and radiotherapy alone?",
       "path": "trial-pages/rtog-0521"
     },
     {
@@ -1237,7 +1239,7 @@
       "source": "trial-pages/getug-afu-17",
       "discipline": "Radiation",
       "setting": "Post-prostatectomy",
-      "question": "GETUG-AFU 17",
+      "question": "After radical prostatectomy for high-risk prostate cancer, does immediate adjuvant radiotherapy improve event-free survival compared with early salvage radiotherapy, and what is the effect on treatment toxicity?",
       "path": "trial-pages/getug-afu-17"
     },
     {
@@ -1247,7 +1249,7 @@
       "source": "trial-pages/checkmate-025",
       "discipline": "Medical",
       "setting": "Second-line Metastatic",
-      "question": "CheckMate 025",
+      "question": "In previously treated advanced clear-cell renal cell carcinoma, does nivolumab improve overall survival compared with everolimus?",
       "path": "trial-pages/checkmate-025"
     },
     {
@@ -1257,7 +1259,7 @@
       "source": "trial-pages/axis",
       "discipline": "Medical",
       "setting": "Second-line Metastatic",
-      "question": "AXIS",
+      "question": "In metastatic renal cell carcinoma progressing after prior systemic therapy, does axitinib improve progression-free survival compared with sorafenib?",
       "path": "trial-pages/axis"
     },
     {
@@ -1267,7 +1269,7 @@
       "source": "trial-pages/pagliaro-tip",
       "discipline": "Medical",
       "setting": "Neoadjuvant/Locally Advanced",
-      "question": "Pagliaro TIP",
+      "question": "In locally advanced or metastatic penile cancer, does neoadjuvant paclitaxel, ifosfamide and cisplatin produce sufficient tumour response to enable definitive local treatment?",
       "path": "trial-pages/pagliaro-tip"
     },
     {
@@ -1277,7 +1279,7 @@
       "source": "trial-pages/cueto-98013",
       "discipline": "Radiation",
       "setting": "Bladder Preservation",
-      "question": "CUETO 98013",
+      "question": "In muscle-invasive bladder cancer, can bladder-preserving chemoradiotherapy provide effective local control and survival while avoiding radical cystectomy?",
       "path": "trial-pages/cueto-98013"
     },
     {
@@ -1287,7 +1289,7 @@
       "source": "trial-pages/trisst",
       "discipline": "Radiation",
       "setting": "Stage I Seminoma",
-      "question": "TRISST / MRC TE24",
+      "question": "In stage I seminoma under surveillance, can MRI replace CT and can the number of surveillance scans be reduced without compromising relapse detection?",
       "path": "trial-pages/trisst"
     },
     {
@@ -1297,7 +1299,7 @@
       "source": "trial-pages/mrc-te23",
       "discipline": "Radiation",
       "setting": "Stage I Seminoma",
-      "question": "MRC TE23",
+      "question": "In poor-prognosis metastatic germ-cell cancer, does intensified induction chemotherapy improve outcomes compared with standard BEP-based chemotherapy?",
       "path": "trial-pages/mrc-te23"
     },
     {
@@ -1307,7 +1309,7 @@
       "source": "trial-pages/acosog-z0011",
       "discipline": "Surgical",
       "setting": "Axillary Management",
-      "question": "ACOSOG Z0011",
+      "question": "In clinically node-negative women with limited sentinel-node metastases undergoing breast-conserving surgery, can completion axillary lymph-node dissection be safely omitted?",
       "path": "trial-pages/acosog-z0011"
     },
     {
@@ -1317,7 +1319,7 @@
       "source": "trial-pages/nsabp-b32",
       "discipline": "Surgical",
       "setting": "Axillary Staging",
-      "question": "NSABP B-32",
+      "question": "In clinically node-negative breast cancer, can sentinel lymph-node biopsy accurately stage the axilla and allow omission of axillary dissection when the sentinel node is negative?",
       "path": "trial-pages/nsabp-b32"
     }
   ]
