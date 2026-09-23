@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 1,
-  "last_quality_check": "2026-09-22",
+  "version": 2,
+  "last_quality_check": "2026-09-23",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -57,7 +57,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-09-22",
+    "last_full_reconciliation": "2026-09-23",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -97,31 +97,51 @@
       "id": "ba06-30894",
       "trial": "BA06 30894",
       "site": "Bladder Cancer",
-      "source": "trial-pages/ba06-30894"
+      "source": "trial-pages/ba06-30894",
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant",
+      "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before definitive local treatment of muscle-invasive bladder cancer?",
+      "path": "trial-pages/ba06-30894/"
     },
     {
       "id": "bc2001",
       "trial": "BC2001",
       "site": "Bladder Cancer",
-      "source": "trial-pages/bc2001"
+      "source": "trial-pages/bc2001",
+      "discipline": "Radiation Oncology",
+      "setting": "Bladder Preservation",
+      "question": "For bladder-preserving RT, does concurrent chemotherapy improve locoregional control?",
+      "path": "trial-pages/bc2001/"
     },
     {
       "id": "calgb-140503",
       "trial": "CALGB/Alliance 140503",
       "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/calgb-140503"
+      "source": "trial-pages/calgb-140503",
+      "discipline": "Surgical Oncology",
+      "setting": "Stage I Localized Disease",
+      "question": "In peripheral stage IA NSCLC ≤2 cm, can sublobar resection replace lobectomy without compromising cancer control?",
+      "path": "trial-pages/calgb-140503/"
     },
     {
       "id": "calgb-9343",
       "trial": "CALGB 9343",
       "site": "Breast Cancer",
-      "source": "trial-pages/calgb-9343"
+      "source": "trial-pages/calgb-9343",
+      "discipline": "Radiation Oncology",
+      "setting": "RT Omission",
+      "question": "In women ≥70 with T1N0 ER-positive breast cancer after lumpectomy and endocrine therapy, can RT be omitted?",
+      "path": "trial-pages/calgb-9343/"
     },
     {
       "id": "carmena",
       "trial": "CARMENA",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/carmena"
+      "source": "trial-pages/carmena",
+      "discipline": "Surgical Oncology",
+      "setting": "Metastatic Disease",
+      "question": "In intermediate/poor-risk metastatic RCC, is upfront cytoreductive nephrectomy necessary before systemic therapy?",
+      "path": "trial-pages/carmena/"
     },
     {
       "id": "catnon",
@@ -131,37 +151,61 @@
       "aliases": [
         "CATNON",
         "EORTC 26053-22033"
-      ]
+      ],
+      "discipline": "Radiation Oncology",
+      "setting": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma",
+      "question": "In newly diagnosed IDH-mutant, 1p/19q non-codeleted grade 3 astrocytoma, does adjuvant temozolomide improve survival, and does concurrent temozolomide add benefit?",
+      "path": "trial-pages/catnon/"
     },
     {
       "id": "chaarted",
       "trial": "CHAARTED",
       "site": "Prostate Cancer",
-      "source": "trial-pages/chaarted"
+      "source": "trial-pages/chaarted",
+      "discipline": "Medical Oncology",
+      "setting": "Metastatic Hormone-Sensitive",
+      "question": "In metastatic hormone-sensitive prostate cancer, does adding docetaxel to ADT improve survival?",
+      "path": "trial-pages/chaarted/"
     },
     {
       "id": "checkmate-274",
       "trial": "CheckMate 274",
       "site": "Bladder Cancer",
-      "source": "trial-pages/checkmate-274"
+      "source": "trial-pages/checkmate-274",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does adjuvant nivolumab reduce recurrence after radical surgery for high-risk muscle-invasive urothelial carcinoma?",
+      "path": "trial-pages/checkmate-274/"
     },
     {
       "id": "checkmate-914",
       "trial": "CheckMate 914",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/checkmate-914"
+      "source": "trial-pages/checkmate-914",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does adjuvant nivolumab plus ipilimumab improve disease-free survival after nephrectomy for high-risk RCC?",
+      "path": "trial-pages/checkmate-914/"
     },
     {
       "id": "cross",
       "trial": "CROSS",
       "site": "Esophageal Cancer",
-      "source": "trial-pages/cross"
+      "source": "trial-pages/cross",
+      "discipline": "Radiation Oncology",
+      "setting": "Locally Advanced Resectable Disease",
+      "question": "In resectable locally advanced esophageal or GEJ cancer, does neoadjuvant chemoradiotherapy followed by surgery improve survival over surgery alone?",
+      "path": "trial-pages/cross/"
     },
     {
       "id": "dbcg-82b",
       "trial": "DBCG 82b",
       "site": "Breast Cancer",
-      "source": "trial-pages/dbcg-82b"
+      "source": "trial-pages/dbcg-82b",
+      "discipline": "Radiation Oncology",
+      "setting": "Locoregional Disease",
+      "question": "Does postmastectomy radiotherapy improve outcomes in high-risk premenopausal stage II/III breast cancer?",
+      "path": "trial-pages/dbcg-82b/"
     },
     {
       "id": "eortc-22911",
@@ -173,7 +217,11 @@
       "id": "eortc-30904",
       "trial": "EORTC 30904",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/eortc-30904"
+      "source": "trial-pages/eortc-30904",
+      "discipline": "Surgical Oncology",
+      "setting": "Localized Disease",
+      "question": "For small localized RCC, can nephron-sparing surgery preserve renal function without compromising cancer outcomes?",
+      "path": "trial-pages/eortc-30904/"
     },
     {
       "id": "eortc-30941-te20",
@@ -183,7 +231,11 @@
       "aliases": [
         "EORTC 30941",
         "MRC TE20"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Good-Risk Metastatic Germ Cell Cancer",
+      "question": "Can three cycles of BEP provide equivalent disease control to four cycles in good-prognosis metastatic germ-cell cancer while reducing treatment burden?",
+      "path": "trial-pages/eortc-30941-te20/"
     },
     {
       "id": "eortc-30962",
@@ -201,13 +253,21 @@
       "id": "eortc-30992",
       "trial": "EORTC 30992",
       "site": "Penile Cancer",
-      "source": "trial-pages/eortc-30992"
+      "source": "trial-pages/eortc-30992",
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant/Locally Advanced",
+      "question": "Can irinotecan plus cisplatin produce clinically meaningful responses in locally advanced or metastatic penile cancer?",
+      "path": "trial-pages/eortc-30992/"
     },
     {
       "id": "eortc-30994",
       "trial": "EORTC 30994",
       "site": "Bladder Cancer",
-      "source": "trial-pages/eortc-30994"
+      "source": "trial-pages/eortc-30994",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does immediate adjuvant chemotherapy improve outcomes compared with deferred chemotherapy after radical cystectomy?",
+      "path": "trial-pages/eortc-30994/"
     },
     {
       "id": "everest",
@@ -219,7 +279,11 @@
       "id": "fastrack-ii",
       "trial": "FASTRACK II",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/fastrack-ii"
+      "source": "trial-pages/fastrack-ii",
+      "discipline": "Radiation Oncology",
+      "setting": "Localized Primary RCC",
+      "question": "Can stereotactic ablative body radiotherapy provide effective definitive local control for primary RCC in patients unsuitable for surgery?",
+      "path": "trial-pages/fastrack-ii/"
     },
     {
       "id": "flot4",
@@ -228,7 +292,11 @@
       "source": "trial-pages/flot4",
       "aliases": [
         "FLOT4"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Locally Advanced Resectable Disease · Perioperative",
+      "question": "In resectable gastric or GEJ adenocarcinoma, does perioperative FLOT improve survival compared with older ECF/ECX chemotherapy?",
+      "path": "trial-pages/flot4/"
     },
     {
       "id": "german-ah01-94",
@@ -237,13 +305,21 @@
       "source": "trial-pages/german-ah01-94",
       "aliases": [
         "German AH 01/94"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Stage I Non-seminoma",
+      "question": "In stage I non-seminoma, does one cycle of BEP provide better disease control than RPLND?",
+      "path": "trial-pages/german-ah01-94/"
     },
     {
       "id": "getug-13",
       "trial": "GETUG-13",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/getug-13"
+      "source": "trial-pages/getug-13",
+      "discipline": "Medical Oncology",
+      "setting": "Risk-adapted Treatment",
+      "question": "Can early tumour-marker decline identify poor-prognosis GCT patients who benefit from intensified chemotherapy?",
+      "path": "trial-pages/getug-13/"
     },
     {
       "id": "getug-afu-16",
@@ -255,7 +331,11 @@
       "id": "imvigor010",
       "trial": "IMvigor010",
       "site": "Bladder Cancer",
-      "source": "trial-pages/imvigor010"
+      "source": "trial-pages/imvigor010",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does adjuvant atezolizumab improve outcomes after surgery for high-risk muscle-invasive urothelial carcinoma?",
+      "path": "trial-pages/imvigor010/"
     },
     {
       "id": "javelin-bladder-100",
@@ -267,13 +347,21 @@
       "id": "keynote-564",
       "trial": "KEYNOTE-564",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/keynote-564"
+      "source": "trial-pages/keynote-564",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
+      "path": "trial-pages/keynote-564/"
     },
     {
       "id": "mosaic",
       "trial": "MOSAIC",
       "site": "Colon Cancer",
-      "source": "trial-pages/mosaic"
+      "source": "trial-pages/mosaic",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant · Stage III / High-Risk Stage II",
+      "question": "In resected stage II/III colon cancer, does adding oxaliplatin to fluoropyrimidine improve disease control and survival?",
+      "path": "trial-pages/mosaic/"
     },
     {
       "id": "mrc-eortc-bep-vs-ceb",
@@ -285,13 +373,21 @@
       "id": "mrc-te05",
       "trial": "MRC TE05",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-te05"
+      "source": "trial-pages/mrc-te05",
+      "discipline": "Medical Oncology",
+      "setting": "Stage I Non-seminoma",
+      "question": "Can short-course BEP substantially reduce relapse in high-risk stage I non-seminoma?",
+      "path": "trial-pages/mrc-te05/"
     },
     {
       "id": "mrc-te08",
       "trial": "MRC TE08",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-te08"
+      "source": "trial-pages/mrc-te08",
+      "discipline": "Medical Oncology",
+      "setting": "Imaging",
+      "question": "Can CT imaging be safely reduced during surveillance of stage I non-seminoma?",
+      "path": "trial-pages/mrc-te08/"
     },
     {
       "id": "mrc-te19",
@@ -301,13 +397,21 @@
       "aliases": [
         "MRC TE19",
         "EORTC 30982"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Stage I Seminoma",
+      "question": "In stage I seminoma, can single-dose carboplatin replace adjuvant radiotherapy?",
+      "path": "trial-pages/mrc-te19/"
     },
     {
       "id": "nsabp-b04",
       "trial": "NSABP B-04",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b04"
+      "source": "trial-pages/nsabp-b04",
+      "discipline": "Surgical Oncology",
+      "setting": "Locoregional Disease",
+      "question": "Does radical mastectomy improve long-term survival compared with less extensive breast and axillary surgery in operable breast cancer?",
+      "path": "trial-pages/nsabp-b04/"
     },
     {
       "id": "nsabp-b06",
@@ -337,7 +441,11 @@
       "id": "pacific",
       "trial": "PACIFIC",
       "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/pacific"
+      "source": "trial-pages/pacific",
+      "discipline": "Medical Oncology",
+      "setting": "Stage III Locally Advanced · Consolidation",
+      "question": "After definitive concurrent chemoradiotherapy for unresectable stage III NSCLC, does consolidation durvalumab improve survival?",
+      "path": "trial-pages/pacific/"
     },
     {
       "id": "penile-adjuvant-5fu-vs-paclitaxel",
@@ -350,43 +458,67 @@
     },
     {
       "id": "penile-dsnb-cno",
-      "trial": "cN0 penile cancer DSNB cohort",
+      "trial": "Nazzani et al. cN0 penile cancer DSNB cohort",
       "site": "Penile Cancer",
-      "source": "trial-pages/penile-dsnb-cno"
+      "source": "trial-pages/penile-dsnb-cno",
+      "discipline": "Surgical Oncology",
+      "setting": "Nodal Staging",
+      "question": "In cN0 penile cancer, can DSNB guide selective treatment of occult nodal disease while reducing morbidity?",
+      "path": "trial-pages/penile-dsnb-cno/"
     },
     {
       "id": "preopanc-1",
       "trial": "PREOPANC-1",
       "site": "Pancreatic Cancer",
-      "source": "trial-pages/preopanc-1"
+      "source": "trial-pages/preopanc-1",
+      "discipline": "Radiation Oncology",
+      "setting": "Neoadjuvant · Resectable/Borderline Resectable",
+      "question": "In resectable or borderline-resectable pancreatic cancer, does neoadjuvant chemoradiotherapy improve survival compared with immediate surgery?",
+      "path": "trial-pages/preopanc-1/"
     },
     {
       "id": "prime-ii",
       "trial": "PRIME II",
       "site": "Breast Cancer",
-      "source": "trial-pages/prime-ii"
+      "source": "trial-pages/prime-ii",
+      "discipline": "Radiation Oncology",
+      "setting": "RT Omission",
+      "question": "In older women with low-risk HR-positive node-negative breast cancer, what is the absolute benefit of adjuvant breast RT?",
+      "path": "trial-pages/prime-ii/"
     },
     {
       "id": "prodige-24",
-      "trial": "PRODIGE 24 / CCTG PA.6",
+      "trial": "PRODIGE 24/PA6",
       "site": "Pancreatic Cancer",
       "source": "trial-pages/prodige-24",
       "aliases": [
         "PRODIGE 24",
         "CCTG PA.6"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant · Resected Disease",
+      "question": "After pancreatic resection, does modified FOLFIRINOX improve survival compared with gemcitabine?",
+      "path": "trial-pages/prodige-24/"
     },
     {
       "id": "protect-15y",
       "trial": "ProtecT",
       "site": "Prostate Cancer",
-      "source": "trial-pages/protect-15y"
+      "source": "trial-pages/protect-15y",
+      "discipline": "Surgical Oncology",
+      "setting": "Localized Disease",
+      "question": "For localized prostate cancer, what are the long-term trade-offs between monitoring, surgery and radiotherapy?",
+      "path": "trial-pages/protect-15y/"
     },
     {
       "id": "rapido",
       "trial": "RAPIDO",
       "site": "Rectal Cancer",
-      "source": "trial-pages/rapido"
+      "source": "trial-pages/rapido",
+      "discipline": "Radiation Oncology",
+      "setting": "Locally Advanced Disease · Total Neoadjuvant Therapy",
+      "question": "In high-risk locally advanced rectal cancer, can short-course RT followed by systemic chemotherapy reduce treatment failure compared with conventional chemoradiotherapy?",
+      "path": "trial-pages/rapido/"
     },
     {
       "id": "radicals-rt",
@@ -398,19 +530,31 @@
       "id": "rtog-0534-spport",
       "trial": "RTOG 0534 SPPORT",
       "site": "Prostate Cancer",
-      "source": "trial-pages/rtog-0534-spport"
+      "source": "trial-pages/rtog-0534-spport",
+      "discipline": "Radiation Oncology",
+      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "question": "Does adding short-term ADT and pelvic nodal RT improve freedom from progression after prostatectomy salvage RT?",
+      "path": "trial-pages/rtog-0534-spport/"
     },
     {
       "id": "s-trac",
       "trial": "S-TRAC",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/s-trac"
+      "source": "trial-pages/s-trac",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "Does adjuvant sunitinib improve disease-free survival after nephrectomy in high-risk clear-cell RCC?",
+      "path": "trial-pages/s-trac/"
     },
     {
       "id": "sakk-01-10",
       "trial": "SAKK 01/10",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/sakk-01-10"
+      "source": "trial-pages/sakk-01-10",
+      "discipline": "Radiation Oncology",
+      "setting": "Stage II Seminoma",
+      "question": "Can stage IIA/IIB seminoma be treated with markedly de-escalated carboplatin plus involved-node RT?",
+      "path": "trial-pages/sakk-01-10/"
     },
     {
       "id": "sorce",
@@ -437,7 +581,11 @@
       "source": "trial-pages/stupp",
       "aliases": [
         "Stupp trial"
-      ]
+      ],
+      "discipline": "Radiation Oncology",
+      "setting": "Adjuvant Therapy · Newly Diagnosed",
+      "question": "Does adding concurrent and adjuvant temozolomide to postoperative radiotherapy improve survival in newly diagnosed glioblastoma?",
+      "path": "trial-pages/stupp/"
     },
     {
       "id": "sw-oteca-stage1-nsgct",
@@ -456,13 +604,17 @@
     },
     {
       "id": "swog-8710",
-      "trial": "SWOG 8710 / INT-0080",
+      "trial": "SWOG 8710",
       "site": "Bladder Cancer",
       "source": "trial-pages/swog-8710",
       "aliases": [
         "SWOG 8710",
         "INT-0080"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant",
+      "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before cystectomy in muscle-invasive bladder cancer?",
+      "path": "trial-pages/swog-8710/"
     },
     {
       "id": "swog-nrg-s1914",
@@ -489,7 +641,11 @@
         "VESPER",
         "GETUG-AFU V05",
         "COGB 0402"
-      ]
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant",
+      "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
+      "path": "trial-pages/vesper/"
     },
     {
       "id": "nsabp-b59-gepardouze",
@@ -732,61 +888,101 @@
       "id": "nsabp-b13",
       "trial": "NSABP B-13",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b13"
+      "source": "trial-pages/nsabp-b13",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant · ER-negative Node-negative",
+      "question": "Does adjuvant methotrexate/fluorouracil improve outcomes over surgery alone?",
+      "path": "trial-pages/nsabp-b13/"
     },
     {
       "id": "nsabp-b14",
       "trial": "NSABP B-14",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b14"
+      "source": "trial-pages/nsabp-b14",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant Endocrine Therapy",
+      "question": "Does five years of tamoxifen improve outcomes compared with placebo?",
+      "path": "trial-pages/nsabp-b14/"
     },
     {
       "id": "nsabp-b19",
       "trial": "NSABP B-19",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b19"
+      "source": "trial-pages/nsabp-b19",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant · ER-negative Node-negative",
+      "question": "Does adding cyclophosphamide to MF improve outcomes?",
+      "path": "trial-pages/nsabp-b19/"
     },
     {
       "id": "atlas",
       "trial": "ATLAS",
       "site": "Breast Cancer",
-      "source": "trial-pages/atlas"
+      "source": "trial-pages/atlas",
+      "discipline": "Medical Oncology",
+      "setting": "Extended Adjuvant Endocrine Therapy",
+      "question": "Does continuing tamoxifen to 10 years improve outcomes after 5 years of therapy?",
+      "path": "trial-pages/atlas/"
     },
     {
       "id": "soft",
       "trial": "SOFT",
       "site": "Breast Cancer",
-      "source": "trial-pages/soft"
+      "source": "trial-pages/soft",
+      "discipline": "Medical Oncology",
+      "setting": "Premenopausal HR-positive",
+      "question": "Does ovarian suppression added to endocrine therapy improve outcomes in premenopausal breast cancer?",
+      "path": "trial-pages/soft/"
     },
     {
       "id": "mrc-te10",
       "trial": "MRC TE10",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-te10"
+      "source": "trial-pages/mrc-te10",
+      "discipline": "Radiation Oncology",
+      "setting": "Stage I Seminoma",
+      "question": "Can para-aortic-only RT replace dog-leg RT in stage I seminoma?",
+      "path": "trial-pages/mrc-te10/"
     },
     {
       "id": "eortc-30983",
       "trial": "EORTC 30983",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/eortc-30983"
+      "source": "trial-pages/eortc-30983",
+      "discipline": "Medical Oncology",
+      "setting": "Intermediate Prognosis",
+      "question": "Does adding paclitaxel to BEP improve PFS in intermediate-prognosis germ-cell cancer?",
+      "path": "trial-pages/eortc-30983/"
     },
     {
       "id": "surtime",
       "trial": "SURTIME",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/surtime"
+      "source": "trial-pages/surtime",
+      "discipline": "Surgical Oncology",
+      "setting": "Synchronous Metastatic RCC",
+      "question": "Should sunitinib precede cytoreductive nephrectomy in synchronous metastatic RCC?",
+      "path": "trial-pages/surtime/"
     },
     {
       "id": "immotion151",
       "trial": "IMmotion151",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/immotion151"
+      "source": "trial-pages/immotion151",
+      "discipline": "Medical Oncology",
+      "setting": "First-line Metastatic RCC",
+      "question": "Does atezolizumab plus bevacizumab improve outcomes versus sunitinib in first-line metastatic RCC?",
+      "path": "trial-pages/immotion151/"
     },
     {
       "id": "bart",
       "trial": "BART",
       "site": "Bladder Cancer",
-      "source": "trial-pages/bart"
+      "source": "trial-pages/bart",
+      "discipline": "Radiation Oncology",
+      "setting": "High-risk MIBC after cystectomy",
+      "question": "Does adjuvant pelvic RT reduce locoregional relapse after cystectomy and chemotherapy in high-risk MIBC?",
+      "path": "trial-pages/bart/"
     },
     {
       "id": "nsabp-b21",
