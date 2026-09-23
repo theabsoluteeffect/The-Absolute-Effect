@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 2,
+  "version": 3,
   "last_quality_check": "2026-09-23",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -91,7 +91,11 @@
       "id": "assure",
       "trial": "ASSURE",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/assure"
+      "source": "trial-pages/assure",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "ASSURE",
+      "path": "trial-pages/assure"
     },
     {
       "id": "ba06-30894",
@@ -211,7 +215,11 @@
       "id": "eortc-22911",
       "trial": "EORTC 22911",
       "site": "Prostate Cancer",
-      "source": "trial-pages/eortc-22911"
+      "source": "trial-pages/eortc-22911",
+      "discipline": "Radiation",
+      "setting": "Post-prostatectomy",
+      "question": "EORTC 22911",
+      "path": "trial-pages/eortc-22911"
     },
     {
       "id": "eortc-30904",
@@ -241,13 +249,21 @@
       "id": "eortc-30962",
       "trial": "EORTC 30962",
       "site": "Bladder Cancer",
-      "source": "trial-pages/eortc-30962"
+      "source": "trial-pages/eortc-30962",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "EORTC 30962",
+      "path": "trial-pages/eortc-30962"
     },
     {
       "id": "eortc-30986",
       "trial": "EORTC 30986",
       "site": "Bladder Cancer",
-      "source": "trial-pages/eortc-30986"
+      "source": "trial-pages/eortc-30986",
+      "discipline": "Medical",
+      "setting": "Advanced/Metastatic",
+      "question": "EORTC 30986",
+      "path": "trial-pages/eortc-30986"
     },
     {
       "id": "eortc-30992",
@@ -273,7 +289,11 @@
       "id": "everest",
       "trial": "EVEREST",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/everest"
+      "source": "trial-pages/everest",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "EVEREST",
+      "path": "trial-pages/everest"
     },
     {
       "id": "fastrack-ii",
@@ -325,7 +345,11 @@
       "id": "getug-afu-16",
       "trial": "GETUG-AFU 16",
       "site": "Prostate Cancer",
-      "source": "trial-pages/getug-afu-16"
+      "source": "trial-pages/getug-afu-16",
+      "discipline": "Medical",
+      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "question": "GETUG-AFU 16",
+      "path": "trial-pages/getug-afu-16"
     },
     {
       "id": "imvigor010",
@@ -341,7 +365,11 @@
       "id": "javelin-bladder-100",
       "trial": "JAVELIN Bladder 100",
       "site": "Bladder Cancer",
-      "source": "trial-pages/javelin-bladder-100"
+      "source": "trial-pages/javelin-bladder-100",
+      "discipline": "Medical",
+      "setting": "First-line Advanced/Metastatic",
+      "question": "JAVELIN Bladder 100",
+      "path": "trial-pages/javelin-bladder-100"
     },
     {
       "id": "keynote-564",
@@ -367,7 +395,11 @@
       "id": "mrc-eortc-bep-vs-ceb",
       "trial": "MRC/EORTC BEP vs CEB",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-eortc-bep-vs-ceb"
+      "source": "trial-pages/mrc-eortc-bep-vs-ceb",
+      "discipline": "Medical",
+      "setting": "Good-Risk Metastatic",
+      "question": "MRC/EORTC BEP vs CEB",
+      "path": "trial-pages/mrc-eortc-bep-vs-ceb"
     },
     {
       "id": "mrc-te05",
@@ -417,25 +449,41 @@
       "id": "nsabp-b06",
       "trial": "NSABP B-06",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b06"
+      "source": "trial-pages/nsabp-b06",
+      "discipline": "Surgical",
+      "setting": "Definitive/Locoregional",
+      "question": "NSABP B-06",
+      "path": "trial-pages/nsabp-b06"
     },
     {
       "id": "nsabp-b18",
       "trial": "NSABP B-18",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b18"
+      "source": "trial-pages/nsabp-b18",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant",
+      "question": "NSABP B-18",
+      "path": "trial-pages/nsabp-b18"
     },
     {
       "id": "nsabp-b20",
       "trial": "NSABP B-20",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b20"
+      "source": "trial-pages/nsabp-b20",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "NSABP B-20",
+      "path": "trial-pages/nsabp-b20"
     },
     {
       "id": "nsabp-b27",
       "trial": "NSABP B-27",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b27"
+      "source": "trial-pages/nsabp-b27",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant",
+      "question": "NSABP B-27",
+      "path": "trial-pages/nsabp-b27"
     },
     {
       "id": "pacific",
@@ -454,7 +502,11 @@
       "source": "trial-pages/penile-adjuvant-5fu-vs-paclitaxel",
       "aliases": [
         "Adjuvant paclitaxel-platinum vs 5-FU-platinum"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "Randomized trial of adjuvant 5-FU-platinum vs paclitaxel-platinum for high-risk penile cancer",
+      "path": "trial-pages/penile-adjuvant-5fu-vs-paclitaxel"
     },
     {
       "id": "penile-dsnb-cno",
@@ -524,7 +576,11 @@
       "id": "radicals-rt",
       "trial": "RADICALS-RT",
       "site": "Prostate Cancer",
-      "source": "trial-pages/radicals-rt"
+      "source": "trial-pages/radicals-rt",
+      "discipline": "Radiation",
+      "setting": "Post-prostatectomy",
+      "question": "RADICALS-RT",
+      "path": "trial-pages/radicals-rt"
     },
     {
       "id": "rtog-0534-spport",
@@ -560,19 +616,31 @@
       "id": "sorce",
       "trial": "SORCE",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/sorce"
+      "source": "trial-pages/sorce",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "SORCE",
+      "path": "trial-pages/sorce"
     },
     {
       "id": "spcg-4",
       "trial": "SPCG-4",
       "site": "Prostate Cancer",
-      "source": "trial-pages/spcg-4"
+      "source": "trial-pages/spcg-4",
+      "discipline": "Surgical",
+      "setting": "Localized Disease",
+      "question": "SPCG-4",
+      "path": "trial-pages/spcg-4"
     },
     {
       "id": "spcg-7-sfuo-3",
       "trial": "SPCG-7/SFUO-3",
       "site": "Prostate Cancer",
-      "source": "trial-pages/spcg-7-sfuo-3"
+      "source": "trial-pages/spcg-7-sfuo-3",
+      "discipline": "Radiation",
+      "setting": "Localized/Locally Advanced",
+      "question": "SPCG-7/SFUO-3",
+      "path": "trial-pages/spcg-7-sfuo-3"
     },
     {
       "id": "stupp",
@@ -594,13 +662,21 @@
       "source": "trial-pages/sw-oteca-stage1-nsgct",
       "aliases": [
         "SWENOTECA stage I NSGCT"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Stage I Non-seminoma",
+      "question": "SWENOTECA stage I NSGCT programme",
+      "path": "trial-pages/sw-oteca-stage1-nsgct"
     },
     {
       "id": "swog-8507",
       "trial": "SWOG 8507",
       "site": "Bladder Cancer",
-      "source": "trial-pages/swog-8507"
+      "source": "trial-pages/swog-8507",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "SWOG 8507",
+      "path": "trial-pages/swog-8507"
     },
     {
       "id": "swog-8710",
@@ -620,7 +696,11 @@
       "id": "swog-nrg-s1914",
       "trial": "SWOG/NRG S1914",
       "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/swog-nrg-s1914"
+      "source": "trial-pages/swog-nrg-s1914",
+      "discipline": "Medical",
+      "setting": "Locally Advanced",
+      "question": "SWOG/NRG S1914",
+      "path": "trial-pages/swog-nrg-s1914"
     },
     {
       "id": "talentop",
@@ -630,7 +710,11 @@
       "aliases": [
         "NCT04649489",
         "Liver resection after atezolizumab and bevacizumab versus maintenance therapy"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Localized/Resectable HCC",
+      "question": "TALENTOP",
+      "path": "trial-pages/talentop"
     },
     {
       "id": "vesper",
@@ -651,25 +735,41 @@
       "id": "nsabp-b59-gepardouze",
       "trial": "NSABP B-59/GeparDouze",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b59-gepardouze"
+      "source": "trial-pages/nsabp-b59-gepardouze",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant",
+      "question": "NSABP B-59/GeparDouze",
+      "path": "trial-pages/nsabp-b59-gepardouze"
     },
     {
       "id": "rtog-9601",
       "trial": "NRG/RTOG 9601",
       "site": "Prostate Cancer",
-      "source": "trial-pages/rtog-9601"
+      "source": "trial-pages/rtog-9601",
+      "discipline": "Medical",
+      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "question": "NRG/RTOG 9601",
+      "path": "trial-pages/rtog-9601"
     },
     {
       "id": "proteus",
       "trial": "PROTEUS",
       "site": "Prostate Cancer",
-      "source": "trial-pages/proteus"
+      "source": "trial-pages/proteus",
+      "discipline": "Radiation",
+      "setting": "Localized Disease",
+      "question": "PROTEUS",
+      "path": "trial-pages/proteus"
     },
     {
       "id": "pivot",
       "trial": "PIVOT",
       "site": "Prostate Cancer",
-      "source": "trial-pages/pivot"
+      "source": "trial-pages/pivot",
+      "discipline": "Surgical",
+      "setting": "Localized Disease",
+      "question": "PIVOT",
+      "path": "trial-pages/pivot"
     },
     {
       "id": "nsabp-b17",
@@ -679,7 +779,11 @@
       "aliases": [
         "NSABP Protocol B-17",
         "B-17"
-      ]
+      ],
+      "discipline": "Radiation",
+      "setting": "Adjuvant RT",
+      "question": "NSABP B-17",
+      "path": "trial-pages/nsabp-b17"
     },
     {
       "id": "nsabp-b24",
@@ -689,7 +793,11 @@
       "aliases": [
         "NSABP Protocol B-24",
         "B-24"
-      ]
+      ],
+      "discipline": "Radiation",
+      "setting": "Adjuvant RT",
+      "question": "NSABP B-24",
+      "path": "trial-pages/nsabp-b24"
     },
     {
       "id": "rtog-9408",
@@ -699,7 +807,11 @@
       "aliases": [
         "NRG/RTOG 9408",
         "RTOG 94-08"
-      ]
+      ],
+      "discipline": "Radiation",
+      "setting": "Localized/Intermediate-Risk",
+      "question": "RTOG 9408",
+      "path": "trial-pages/rtog-9408"
     },
     {
       "id": "mrc-rt01",
@@ -709,7 +821,11 @@
       "aliases": [
         "ISRCTN47772397",
         "MRC RT01 dose-escalation trial"
-      ]
+      ],
+      "discipline": "Radiation",
+      "setting": "Definitive Localized Disease",
+      "question": "MRC RT01",
+      "path": "trial-pages/mrc-rt01"
     },
     {
       "id": "swog-9346",
@@ -719,7 +835,11 @@
       "aliases": [
         "INT-0162",
         "SWOG/INT-0162"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Metastatic Hormone-Sensitive",
+      "question": "SWOG 9346",
+      "path": "trial-pages/swog-9346"
     },
     {
       "id": "avoren",
@@ -729,7 +849,11 @@
       "aliases": [
         "BO17705E",
         "AVOREN trial"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Metastatic",
+      "question": "AVOREN",
+      "path": "trial-pages/avoren"
     },
     {
       "id": "pisces",
@@ -739,7 +863,11 @@
       "aliases": [
         "NCT01064310",
         "pazopanib versus sunitinib preference trial"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Metastatic",
+      "question": "PISCES",
+      "path": "trial-pages/pisces"
     },
     {
       "id": "imvigor211",
@@ -748,7 +876,11 @@
       "source": "trial-pages/imvigor211",
       "aliases": [
         "NCT02302807"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced/Metastatic",
+      "question": "IMvigor211",
+      "path": "trial-pages/imvigor211"
     },
     {
       "id": "checkmate-275",
@@ -758,7 +890,11 @@
       "aliases": [
         "NCT02387996",
         "nivolumab platinum-refractory urothelial carcinoma"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced/Metastatic",
+      "question": "CheckMate 275",
+      "path": "trial-pages/checkmate-275"
     },
     {
       "id": "daugaard-stage1-nsgct-surveillance",
@@ -768,121 +904,201 @@
       "aliases": [
         "Surveillance for stage I nonseminoma testicular cancer",
         "Daugaard et al. 2014"
-      ]
+      ],
+      "discipline": "Medical",
+      "setting": "Stage I Non-seminoma",
+      "question": "Daugaard stage-I NSGCT surveillance cohort",
+      "path": "trial-pages/daugaard-stage1-nsgct-surveillance"
     },
     {
       "id": "dbcg-77b",
       "trial": "DBCG 77B",
       "site": "Breast Cancer",
-      "source": "trial-pages/dbcg-77b"
+      "source": "trial-pages/dbcg-77b",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "DBCG 77B",
+      "path": "trial-pages/dbcg-77b"
     },
     {
       "id": "dbcg-77c",
       "trial": "DBCG 77C",
       "site": "Breast Cancer",
-      "source": "trial-pages/dbcg-77c"
+      "source": "trial-pages/dbcg-77c",
+      "discipline": "Medical",
+      "setting": "Adjuvant",
+      "question": "DBCG 77C",
+      "path": "trial-pages/dbcg-77c"
     },
     {
       "id": "dbcg-82c",
       "trial": "DBCG 82C",
       "site": "Breast Cancer",
-      "source": "trial-pages/dbcg-82c"
+      "source": "trial-pages/dbcg-82c",
+      "discipline": "Radiation",
+      "setting": "Postmastectomy RT",
+      "question": "DBCG 82C",
+      "path": "trial-pages/dbcg-82c"
     },
     {
       "id": "sw-oteca-clinical-stage1",
       "trial": "SWENOTECA clinical stage I NSGCT management programme",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/sw-oteca-clinical-stage1"
+      "source": "trial-pages/sw-oteca-clinical-stage1",
+      "discipline": "Medical",
+      "setting": "Stage I Non-seminoma",
+      "question": "SWENOTECA clinical stage I NSGCT management programme",
+      "path": "trial-pages/sw-oteca-clinical-stage1"
     },
     {
       "id": "arasens-homepage",
       "trial": "ARASENS",
       "site": "Prostate Cancer",
-      "source": "trial-pages/arasens"
+      "source": "trial-pages/arasens",
+      "discipline": "Medical",
+      "setting": "Metastatic Hormone-Sensitive",
+      "question": "ARASENS",
+      "path": "trial-pages/arasens"
     },
     {
       "id": "checkmate-214",
       "trial": "CheckMate 214",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/checkmate-214"
+      "source": "trial-pages/checkmate-214",
+      "discipline": "Medical",
+      "setting": "First-line Metastatic",
+      "question": "CheckMate 214",
+      "path": "trial-pages/checkmate-214"
     },
     {
       "id": "comparz",
       "trial": "COMPARZ",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/comparz"
+      "source": "trial-pages/comparz",
+      "discipline": "Medical",
+      "setting": "First-line Metastatic",
+      "question": "COMPARZ",
+      "path": "trial-pages/comparz"
     },
     {
       "id": "matterhorn",
       "trial": "MATTERHORN",
       "site": "Gastric Cancer",
-      "source": "trial-pages/matterhorn"
+      "source": "trial-pages/matterhorn",
+      "discipline": "Medical",
+      "setting": "Locally Advanced/Perioperative",
+      "question": "MATTERHORN",
+      "path": "trial-pages/matterhorn"
     },
     {
       "id": "mrc-te18",
       "trial": "MRC TE18 / EORTC 30942",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-te18"
+      "source": "trial-pages/mrc-te18",
+      "discipline": "Radiation",
+      "setting": "Stage I Seminoma",
+      "question": "MRC TE18 / EORTC 30942",
+      "path": "trial-pages/mrc-te18"
     },
     {
       "id": "eortc-22863",
       "trial": "EORTC 22863",
       "site": "Prostate Cancer",
-      "source": "trial-pages/eortc-22863"
+      "source": "trial-pages/eortc-22863",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced/High-Risk",
+      "question": "EORTC 22863",
+      "path": "trial-pages/eortc-22863"
     },
     {
       "id": "rtog-92-02",
       "trial": "RTOG 92-02",
       "site": "Prostate Cancer",
-      "source": "trial-pages/rtog-92-02"
+      "source": "trial-pages/rtog-92-02",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced/High-Risk",
+      "question": "RTOG 92-02",
+      "path": "trial-pages/rtog-92-02"
     },
     {
       "id": "eortc-22961",
       "trial": "EORTC 22961",
       "site": "Prostate Cancer",
-      "source": "trial-pages/eortc-22961"
+      "source": "trial-pages/eortc-22961",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced/High-Risk",
+      "question": "EORTC 22961",
+      "path": "trial-pages/eortc-22961"
     },
     {
       "id": "rtog-85-31",
       "trial": "RTOG 85-31",
       "site": "Prostate Cancer",
-      "source": "trial-pages/rtog-85-31"
+      "source": "trial-pages/rtog-85-31",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced/High-Risk",
+      "question": "RTOG 85-31",
+      "path": "trial-pages/rtog-85-31"
     },
     {
       "id": "keynote-426",
       "trial": "KEYNOTE-426",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/keynote-426"
+      "source": "trial-pages/keynote-426",
+      "discipline": "Medical",
+      "setting": "First-line Metastatic",
+      "question": "KEYNOTE-426",
+      "path": "trial-pages/keynote-426"
     },
     {
       "id": "checkmate-9er",
       "trial": "CheckMate 9ER",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/checkmate-9er"
+      "source": "trial-pages/checkmate-9er",
+      "discipline": "Medical",
+      "setting": "First-line Metastatic",
+      "question": "CheckMate 9ER",
+      "path": "trial-pages/checkmate-9er"
     },
     {
       "id": "ev-302",
       "trial": "EV-302 / KEYNOTE-A39",
       "site": "Bladder Cancer",
-      "source": "trial-pages/ev-302"
+      "source": "trial-pages/ev-302",
+      "discipline": "Medical",
+      "setting": "First-line Advanced/Metastatic",
+      "question": "EV-302 / KEYNOTE-A39",
+      "path": "trial-pages/ev-302"
     },
     {
       "id": "keynote-045",
       "trial": "KEYNOTE-045",
       "site": "Bladder Cancer",
-      "source": "trial-pages/keynote-045"
+      "source": "trial-pages/keynote-045",
+      "discipline": "Medical",
+      "setting": "Advanced/Metastatic",
+      "question": "KEYNOTE-045",
+      "path": "trial-pages/keynote-045"
     },
     {
       "id": "sunitinib-ifn",
       "trial": "Sunitinib vs Interferon Alfa",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/sunitinib-ifn"
+      "source": "trial-pages/sunitinib-ifn",
+      "discipline": "Medical",
+      "setting": "First-line Metastatic",
+      "question": "Sunitinib vs Interferon Alfa",
+      "path": "trial-pages/sunitinib-ifn"
     },
     {
       "id": "taishan-302",
       "trial": "TAISHAN-302",
       "site": "Small-Cell Lung Cancer",
-      "source": "trial-pages/taishan-302"
+      "source": "trial-pages/taishan-302",
+      "discipline": "Medical",
+      "setting": "Relapsed SCLC",
+      "question": "TAISHAN-302",
+      "path": "trial-pages/taishan-302"
     },
     {
       "id": "nsabp-b13",
@@ -988,73 +1204,121 @@
       "id": "nsabp-b21",
       "trial": "NSABP B-21",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b21"
+      "source": "trial-pages/nsabp-b21",
+      "discipline": "Radiation",
+      "setting": "RT + Endocrine / RT Omission",
+      "question": "NSABP B-21",
+      "path": "trial-pages/nsabp-b21"
     },
     {
       "id": "trog-03-04-radar",
       "trial": "TROG 03.04 RADAR",
       "site": "Prostate Cancer",
-      "source": "trial-pages/trog-03-04-radar"
+      "source": "trial-pages/trog-03-04-radar",
+      "discipline": "Medical",
+      "setting": "Locally Advanced/High-Risk",
+      "question": "TROG 03.04 RADAR",
+      "path": "trial-pages/trog-03-04-radar"
     },
     {
       "id": "rtog-0521",
       "trial": "NRG/RTOG 0521",
       "site": "Prostate Cancer",
-      "source": "trial-pages/rtog-0521"
+      "source": "trial-pages/rtog-0521",
+      "discipline": "Medical",
+      "setting": "High-Risk Localized",
+      "question": "NRG/RTOG 0521",
+      "path": "trial-pages/rtog-0521"
     },
     {
       "id": "getug-afu-17",
       "trial": "GETUG-AFU 17",
       "site": "Prostate Cancer",
-      "source": "trial-pages/getug-afu-17"
+      "source": "trial-pages/getug-afu-17",
+      "discipline": "Radiation",
+      "setting": "Post-prostatectomy",
+      "question": "GETUG-AFU 17",
+      "path": "trial-pages/getug-afu-17"
     },
     {
       "id": "checkmate-025",
       "trial": "CheckMate 025",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/checkmate-025"
+      "source": "trial-pages/checkmate-025",
+      "discipline": "Medical",
+      "setting": "Second-line Metastatic",
+      "question": "CheckMate 025",
+      "path": "trial-pages/checkmate-025"
     },
     {
       "id": "axis",
       "trial": "AXIS",
       "site": "Renal Cell Carcinoma",
-      "source": "trial-pages/axis"
+      "source": "trial-pages/axis",
+      "discipline": "Medical",
+      "setting": "Second-line Metastatic",
+      "question": "AXIS",
+      "path": "trial-pages/axis"
     },
     {
       "id": "pagliaro-tip",
       "trial": "Pagliaro TIP",
       "site": "Penile Cancer",
-      "source": "trial-pages/pagliaro-tip"
+      "source": "trial-pages/pagliaro-tip",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant/Locally Advanced",
+      "question": "Pagliaro TIP",
+      "path": "trial-pages/pagliaro-tip"
     },
     {
       "id": "cueto-98013",
       "trial": "CUETO 98013",
       "site": "Bladder Cancer",
-      "source": "trial-pages/cueto-98013"
+      "source": "trial-pages/cueto-98013",
+      "discipline": "Radiation",
+      "setting": "Bladder Preservation",
+      "question": "CUETO 98013",
+      "path": "trial-pages/cueto-98013"
     },
     {
       "id": "trisst",
       "trial": "TRISST / MRC TE24",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/trisst"
+      "source": "trial-pages/trisst",
+      "discipline": "Radiation",
+      "setting": "Stage I Seminoma",
+      "question": "TRISST / MRC TE24",
+      "path": "trial-pages/trisst"
     },
     {
       "id": "mrc-te23",
       "trial": "MRC TE23",
       "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-te23"
+      "source": "trial-pages/mrc-te23",
+      "discipline": "Radiation",
+      "setting": "Stage I Seminoma",
+      "question": "MRC TE23",
+      "path": "trial-pages/mrc-te23"
     },
     {
       "id": "acosog-z0011",
       "trial": "ACOSOG Z0011",
       "site": "Breast Cancer",
-      "source": "trial-pages/acosog-z0011"
+      "source": "trial-pages/acosog-z0011",
+      "discipline": "Surgical",
+      "setting": "Axillary Management",
+      "question": "ACOSOG Z0011",
+      "path": "trial-pages/acosog-z0011"
     },
     {
       "id": "nsabp-b32",
       "trial": "NSABP B-32",
       "site": "Breast Cancer",
-      "source": "trial-pages/nsabp-b32"
+      "source": "trial-pages/nsabp-b32",
+      "discipline": "Surgical",
+      "setting": "Axillary Staging",
+      "question": "NSABP B-32",
+      "path": "trial-pages/nsabp-b32"
     }
   ]
 }
