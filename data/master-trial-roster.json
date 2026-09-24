@@ -14,28 +14,28 @@
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
   ],
   "audit": {
-    "permanent_trial_pages": 115,
+    "permanent_trial_pages": 125,
     "unique_archive_additions": 3,
-    "unique_trial_of_day_records_already_in_trial_pages": 3,
-    "total_unique_trials": 115,
+    "unique_trial_of_day_records_already_in_trial_pages": 4,
+    "total_unique_trials": 125,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-22",
+    "daily_batch_uploaded": "2026-09-24",
     "new_trials_added_today": [
-      "NSABP B-21",
-      "TROG 03.04 RADAR",
-      "NRG/RTOG 0521",
-      "GETUG-AFU 17",
-      "CheckMate 025",
-      "AXIS",
-      "Pagliaro TIP",
-      "CUETO 98013",
-      "TRISST / MRC TE24",
-      "MRC TE23"
+      "APHINITY",
+      "CREATE-X",
+      "STAMPEDE – abiraterone comparison",
+      "PEACE-1",
+      "CLEAR",
+      "JAVELIN Renal 101",
+      "CABOSUN",
+      "NIAGARA",
+      "AMBASSADOR / Alliance A031501",
+      "DANUBE"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -57,7 +57,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-09-23",
+    "last_full_reconciliation": "2026-09-24",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -84,9 +84,14 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-22",
+    "last_quality_check": "2026-09-24",
     "dropdown_questions_rewritten": "2026-09-23",
-    "dropdown_questions_rewritten_count": 66
+    "dropdown_questions_rewritten_count": 66,
+    "current_trial_of_the_day": {
+      "date": "2026-09-24",
+      "id": "niagara",
+      "trial": "NIAGARA"
+    }
   },
   "trials": [
     {
@@ -1321,6 +1326,147 @@
       "setting": "Axillary Staging",
       "question": "In clinically node-negative breast cancer, can sentinel lymph-node biopsy accurately stage the axilla and allow omission of axillary dissection when the sentinel node is negative?",
       "path": "trial-pages/nsabp-b32"
+    },
+    {
+      "id": "aphinity",
+      "trial": "APHINITY",
+      "site": "Breast Cancer",
+      "source": "trial-pages/aphinity",
+      "aliases": [
+        "BIG 4-11",
+        "NCT01358877"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant HER2-positive",
+      "question": "In early HER2-positive breast cancer receiving adjuvant chemotherapy and trastuzumab, does adding pertuzumab improve invasive disease-free survival and overall survival?",
+      "path": "trial-pages/aphinity"
+    },
+    {
+      "id": "create-x",
+      "trial": "CREATE-X",
+      "site": "Breast Cancer",
+      "source": "trial-pages/create-x",
+      "aliases": [
+        "Capecitabine for Residual Cancer as Adjuvant Therapy",
+        "UMIN000000843"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Post-neoadjuvant residual disease",
+      "question": "In HER2-negative breast cancer with residual invasive disease after neoadjuvant chemotherapy, does adjuvant capecitabine improve disease-free and overall survival?",
+      "path": "trial-pages/create-x"
+    },
+    {
+      "id": "stamped-abiraterone",
+      "trial": "STAMPEDE – abiraterone comparison",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/stamped-abiraterone",
+      "aliases": [
+        "STAMPEDE abiraterone",
+        "STAMPEDE NCT00268476",
+        "abiraterone acetate plus prednisolone"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Metastatic Hormone-Sensitive",
+      "question": "In metastatic hormone-sensitive prostate cancer starting long-term ADT, does adding abiraterone acetate plus prednisolone improve survival?",
+      "path": "trial-pages/stamped-abiraterone"
+    },
+    {
+      "id": "peace-1",
+      "trial": "PEACE-1",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/peace-1",
+      "aliases": [
+        "NCT01957436"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "De novo Metastatic Hormone-Sensitive",
+      "question": "In de novo metastatic castration-sensitive prostate cancer, does adding abiraterone/prednisone to ADT plus docetaxel improve survival?",
+      "path": "trial-pages/peace-1"
+    },
+    {
+      "id": "clear",
+      "trial": "CLEAR",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/clear",
+      "aliases": [
+        "Study 307",
+        "NCT02811861"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "First-line Metastatic",
+      "question": "In untreated advanced clear-cell RCC, does lenvatinib plus pembrolizumab improve outcomes compared with sunitinib?",
+      "path": "trial-pages/clear"
+    },
+    {
+      "id": "javelin-renal-101",
+      "trial": "JAVELIN Renal 101",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/javelin-renal-101",
+      "aliases": [
+        "NCT02684006",
+        "avelumab + axitinib"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "First-line Metastatic",
+      "question": "In untreated advanced RCC, does avelumab plus axitinib improve disease control compared with sunitinib?",
+      "path": "trial-pages/javelin-renal-101"
+    },
+    {
+      "id": "cabosun",
+      "trial": "CABOSUN",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/cabosun",
+      "aliases": [
+        "Alliance A031203",
+        "NCT01835158"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "First-line Metastatic · Intermediate/Poor Risk",
+      "question": "In previously untreated intermediate- or poor-risk metastatic RCC, does cabozantinib improve disease control compared with sunitinib?",
+      "path": "trial-pages/cabosun"
+    },
+    {
+      "id": "niagara",
+      "trial": "NIAGARA",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/niagara",
+      "aliases": [
+        "NCT03732677",
+        "perioperative durvalumab"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant/Adjuvant MIBC",
+      "question": "In cisplatin-eligible muscle-invasive bladder cancer, does perioperative durvalumab added to neoadjuvant gemcitabine-cisplatin improve event-free and overall survival?",
+      "path": "trial-pages/niagara"
+    },
+    {
+      "id": "ambassador",
+      "trial": "AMBASSADOR / Alliance A031501",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/ambassador",
+      "aliases": [
+        "AMBASSADOR",
+        "Alliance A031501",
+        "NCT03244384"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "After radical surgery for high-risk muscle-invasive urothelial carcinoma, does one year of adjuvant pembrolizumab improve disease-free survival compared with observation?",
+      "path": "trial-pages/ambassador"
+    },
+    {
+      "id": "danube",
+      "trial": "DANUBE",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/danube",
+      "aliases": [
+        "NCT02516241",
+        "durvalumab ± tremelimumab"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "First-line Advanced/Metastatic",
+      "question": "In previously untreated unresectable locally advanced or metastatic urothelial carcinoma, does durvalumab alone or durvalumab plus tremelimumab improve overall survival over platinum chemotherapy?",
+      "path": "trial-pages/danube"
     }
   ]
 }
