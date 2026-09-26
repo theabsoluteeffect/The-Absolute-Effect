@@ -14,28 +14,28 @@
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
   ],
   "audit": {
-    "permanent_trial_pages": 125,
+    "permanent_trial_pages": 135,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 125,
+    "total_unique_trials": 135,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-24",
+    "daily_batch_uploaded": "2026-09-26",
     "new_trials_added_today": [
-      "APHINITY",
-      "CREATE-X",
-      "STAMPEDE – abiraterone comparison",
-      "PEACE-1",
-      "CLEAR",
-      "JAVELIN Renal 101",
-      "CABOSUN",
-      "NIAGARA",
-      "AMBASSADOR / Alliance A031501",
-      "DANUBE"
+      "HERA / BIG 1-01",
+      "NSABP B-31 / NCCTG N9831",
+      "TAILORx",
+      "CHHiP",
+      "PROFIT",
+      "EORTC 30911",
+      "SWOG S0337",
+      "TIVO-3",
+      "DISSRM Registry",
+      "MRC/EORTC TE13 BOP/VIP-B"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -57,7 +57,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-09-24",
+    "last_full_reconciliation": "2026-09-26",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -84,7 +84,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-24",
+    "last_quality_check": "2026-09-26",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -92,8 +92,8 @@
       "id": "niagara",
       "trial": "NIAGARA"
     },
-    "absolute_effect_renderer_reconciled": "2026-09-24",
-    "absolute_effect_pages_checked": 125,
+    "absolute_effect_renderer_reconciled": "2026-09-26",
+    "absolute_effect_pages_checked": 135,
     "absolute_effect_rule": "Absolute Effect is displayed only when a numeric NNT or NNH is defensibly quantified; otherwise the component is hidden."
   },
   "trials": [
@@ -1470,6 +1470,106 @@
       "setting": "First-line Advanced/Metastatic",
       "question": "In previously untreated unresectable locally advanced or metastatic urothelial carcinoma, does durvalumab alone or durvalumab plus tremelimumab improve overall survival over platinum chemotherapy?",
       "path": "trial-pages/danube"
+    },
+    {
+      "id": "hera-big-1-01",
+      "trial": "HERA / BIG 1-01",
+      "site": "Breast Cancer",
+      "source": "trial-pages/hera-big-1-01",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant HER2-positive",
+      "question": "Does 1 year of adjuvant trastuzumab improve long-term outcomes after chemotherapy?",
+      "path": "trial-pages/hera-big-1-01/"
+    },
+    {
+      "id": "nsabp-b31-n9831",
+      "trial": "NSABP B-31 / NCCTG N9831",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b31-n9831",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant HER2-positive",
+      "question": "Does adding trastuzumab to AC→paclitaxel improve DFS and OS?",
+      "path": "trial-pages/nsabp-b31-n9831/"
+    },
+    {
+      "id": "tailorx",
+      "trial": "TAILORx",
+      "site": "Breast Cancer",
+      "source": "trial-pages/tailorx",
+      "discipline": "Biomarker",
+      "setting": "Adjuvant HR-positive/HER2-negative Node-negative",
+      "question": "Can the 21-gene recurrence score identify patients who can omit adjuvant chemotherapy?",
+      "path": "trial-pages/tailorx/"
+    },
+    {
+      "id": "chhip",
+      "trial": "CHHiP",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/chhip",
+      "discipline": "Radiation",
+      "setting": "Localized",
+      "question": "Can 60 Gy in 20 fractions replace 74 Gy in 37 fractions?",
+      "path": "trial-pages/chhip/"
+    },
+    {
+      "id": "profit",
+      "trial": "PROFIT",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/profit",
+      "discipline": "Radiation",
+      "setting": "Intermediate-risk Localized",
+      "question": "Can 60 Gy in 20 fractions replace 78 Gy in 39 fractions?",
+      "path": "trial-pages/profit/"
+    },
+    {
+      "id": "eortc-30911",
+      "trial": "EORTC 30911",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/eortc-30911",
+      "discipline": "Medical Oncology",
+      "setting": "Intermediate/High-risk NMIBC",
+      "question": "Does intravesical BCG improve recurrence and survival outcomes versus epirubicin?",
+      "path": "trial-pages/eortc-30911/"
+    },
+    {
+      "id": "swog-s0337",
+      "trial": "SWOG S0337",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/swog-s0337",
+      "discipline": "Medical Oncology",
+      "setting": "Low-grade NMIBC · Post-TURBT",
+      "question": "Does immediate single-dose intravesical gemcitabine reduce recurrence?",
+      "path": "trial-pages/swog-s0337/"
+    },
+    {
+      "id": "tivo-3",
+      "trial": "TIVO-3",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/tivo-3",
+      "discipline": "Medical Oncology",
+      "setting": "Relapsed/Refractory Metastatic",
+      "question": "Does tivozanib improve PFS versus sorafenib after multiple prior therapies?",
+      "path": "trial-pages/tivo-3/"
+    },
+    {
+      "id": "dissrm",
+      "trial": "DISSRM Registry",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/dissrm",
+      "discipline": "Surgical Oncology",
+      "setting": "Localized Small Renal Mass",
+      "question": "Can active surveillance safely defer intervention for small renal masses?",
+      "path": "trial-pages/dissrm/"
+    },
+    {
+      "id": "mrc-eortc-te13",
+      "trial": "MRC/EORTC TE13 BOP/VIP-B",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/mrc-eortc-te13",
+      "discipline": "Medical Oncology",
+      "setting": "Poor-prognosis Metastatic",
+      "question": "Does intensified induction/sequential chemotherapy improve outcomes over standard BEP/EP?",
+      "path": "trial-pages/mrc-eortc-te13/"
     }
   ]
 }
