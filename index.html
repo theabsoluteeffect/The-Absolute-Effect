@@ -28,8 +28,8 @@
     }
     function siteChanged(){resetSelect(d,'Select discipline');resetSelect(g,'Select setting');resetSelect(q,'Select clinical question');const vals=normalizedTrials.filter(t=>t.site===s.value).map(t=>t.discipline);fillSelect(d,'Select discipline',vals,!vals.length);c.innerHTML='<p class="muted">Select a discipline to continue.</p>'}
     function disciplineChanged(){resetSelect(g,'Select setting');resetSelect(q,'Select clinical question');const vals=normalizedTrials.filter(t=>t.site===s.value&&t.discipline===d.value).map(t=>t.setting);fillSelect(g,'Select setting',vals,!vals.length);render()}
-    function settingChanged(){resetSelect(q,'Select clinical question');const vals=normalizedTrials.filter(t=>t.site===s.value&&t.discipline===d.value&&t.setting===g.value).map(t=>t.question);fillSelect(q,'Select clinical question',vals,!vals.length);render()}
-    function questionChanged(){render()}
+    function settingChanged(){resetSelect(q,'Select clinical question');const vals=normalizedTrials.filter(t=>t.site===s.value&&t.discipline===d.value&&t.setting===g.value);q.innerHTML='';q.append(new Option('Select clinical question',''));vals.sort((a,b)=>(a.question||'').localeCompare(b.question||'')).forEach(t=>q.append(new Option((t.question||'')+' ['+t.trial+']',t.id)));q.disabled=!vals.length;render()}
+    function questionChanged(){const target=normalizedTrials.find(t=>t.id===q.value);if(target){window.location.href=hrefFor(target);return}render()}
     s.addEventListener('change',siteChanged);d.addEventListener('change',disciplineChanged);g.addEventListener('change',settingChanged);q.addEventListener('change',questionChanged);
     fillSelect(s,'Select tumour site',normalizedTrials.map(t=>t.site),false);resetSelect(d,'Select discipline');resetSelect(g,'Select setting');resetSelect(q,'Select clinical question');
     window.__atlasRosterStatus={count:trials.length,unique:new Set(trials.map(t=>t.id)).size,source:'data/master-trial-roster.json'};
