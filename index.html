@@ -17,7 +17,7 @@
     const seen=new Set();
     const trials=(roster.trials||[]).filter(t=>{if(!t.id||seen.has(t.id))return false;seen.add(t.id);return true;}).map(t=>({...t,discipline:norm(t.discipline||'Medical'),path:(t.path||t.source||('#'))+(t.path||t.source?'': '')}));
     const normalizedTrials=trials;
-    function hrefFor(t){return t.path||'#'}
+    function hrefFor(t){const p=(t.path||t.source||'').replace(/^\.\//,'').replace(/\/$/,'');return p?(p.endsWith('.html')?p:p+'/index.html'):'#'}
     function matching(){return normalizedTrials.filter(t=>(!s.value||t.site===s.value)&&(!d.value||t.discipline===d.value)&&(!g.value||t.setting===g.value))}
     function render(){
       const matches=matching(),list=q.value?matches.filter(t=>t.question===q.value):matches;
