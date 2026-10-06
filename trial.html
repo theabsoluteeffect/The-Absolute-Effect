@@ -9,8 +9,15 @@
   const roster=await fetch('data/master-trial-roster.json',{cache:'no-store'}).then(r=>r.json());
   const t=(roster.trials||[]).find(x=>x.id===id);
   if(!t)throw Error('Trial not found');
-  const path=clean(t.path||t.source||'');
-  const html=await fetch(path,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Trial page request failed: '+r.status);return r.text()});
+  const rawPath=clean(t.path||t.source||'');
+  const path='/' + (rawPath ? rawPath + (rawPath.endsWith('.html') ? '' : '/index.html') : '');
+  if(path==='/') throw Error('Trial source path missing');
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),10000);
+  let html;
+  try { html=await fetch(path,{cache:'no-store',signal:controller.signal}).then(r=>{if(!r.ok)throw Error('Trial page request failed: '+r.status);return r.text()}); }
+  catch(err){ throw Error(err.name==='AbortError'?'Trial page request timed out':err.message); }
+  finally { clearTimeout(timeout); }
   const doc=new DOMParser().parseFromString(html,'text/html');
   const title=(doc.querySelector('h1')?.textContent||t.trial||id).trim();
   const ps=[...doc.querySelectorAll('p')];
