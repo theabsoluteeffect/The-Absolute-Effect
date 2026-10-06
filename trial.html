@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Absolute Effect — Trial</title><link rel="stylesheet" href="assets/trial-page-template.css"></head><body><main class="ae-template-root"><a class="ae-back" href="/">← Back to The Absolute Effect</a><section class="ae-hero"><div class="ae-eyebrow">Oncology evidence atlas</div><h1 id="title">Loading trial…</h1><p class="ae-question" id="question"></p></section><div id="content"></div></main><script>
+(async function(){
+ const id=new URLSearchParams(location.search).get('id');
+ const clean=x=>String(x||'').replace(/^\.\//,'').replace(/^\/+/,'').replace(/\/$/,'');
+ const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const dots=v=>{let h='';const n=Math.max(0,Math.min(100,Math.round(v)));for(let i=0;i<100;i++)h+='<span class="ae-patient '+(i<n?'on':'')+'"></span>';return h};
+ try{
+  if(!id)throw Error('Missing trial id');
+  const roster=await fetch('data/master-trial-roster.json',{cache:'no-store'}).then(r=>r.json());
+  const t=(roster.trials||[]).find(x=>x.id===id);
+  if(!t)throw Error('Trial not found');
+  const path=clean(t.path||t.source||'');
+  const html=await fetch(path,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Trial page request failed: '+r.status);return r.text()});
+  const doc=new DOMParser().parseFromString(html,'text/html');
+  const title=(doc.querySelector('h1')?.textContent||t.trial||id).trim();
+  const ps=[...doc.querySelectorAll('p')];
+  const q=(ps.find(x=>/Clinical question:/i.test(x.textContent))?.textContent||t.question||'').replace(/^.*?Clinical question:\s*/i,'').trim();
+  document.title=title+' — The Absolute Effect';document.getElementById('title').textContent=title;document.getElementById('question').textContent=q;
+  const main=document.createElement('div');
+  const glance=document.createElement('section');glance.className='ae-grid';
+  const design=(ps.find(x=>/Design:/i.test(x.textContent))?.textContent||'').replace(/^.*?Design:\s*/i,'');
+  const n=(design.match(/(?:;|\b)([\d,]+)\s+(?:men|women|patients|participants|subjects)/i)||[])[1]||'—';
+  glance.innerHTML='<div class="ae-stat"><div class="ae-label">Tumour site</div><div class="ae-value">'+esc(t.site||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Discipline</div><div class="ae-value">'+esc(t.discipline||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Clinical setting</div><div class="ae-value">'+esc(t.setting||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Population</div><div class="ae-value">'+esc(n)+'</div></div>';
+  main.appendChild(glance);
+  const all=doc.body.innerText||'';
+  const bm=all.match(/(?:Absolute (?:benefit|difference)|difference)\s*(?:≈|=|of|:)\s*([+-]?\d+(?:\.\d+)?)\s*(?:percentage points|%)/i);
+  const nm=all.match(/NNT\s*(?:≈|=|:)\s*(\d+(?:\.\d+)?)/i);
+  const hm=all.match(/NNH\s*(?:≈|=|:)\s*(\d+(?:\.\d+)?)/i);
+  if(bm||nm||hm){
+   const sec=document.createElement('section');sec.className='ae-card';
+   sec.innerHTML='<div class="ae-eyebrow">Absolute effect · patient view</div><h2>What changes for 100 patients?</h2>';
+   if(bm){const v=Math.abs(Number(bm[1]));sec.innerHTML+='<div class="ae-metric"><div class="ae-label">Absolute effect</div><div class="ae-number">'+v+' percentage points</div><div class="ae-patients">'+dots(v)+'</div><p class="ae-note">'+v+' of 100 patients represent the observed absolute difference at the endpoint/time horizon stated in the evidence.</p></div>'}
+   if(nm){const v=Number(nm[1]);sec.innerHTML+='<div class="ae-metric" style="margin-top:14px"><div class="ae-label">NNT</div><div class="ae-number">'+v+'</div><p>Approximately 1 additional benefit for every '+v+' patients treated, tied to the endpoint/time horizon reported.</p><div class="ae-nnt">'+Array.from({length:Math.min(v,100)},()=>'<span></span>').join('')+'</div></div>'}
+   if(hm){const v=Number(hm[1]);sec.innerHTML+='<div class="ae-metric" style="margin-top:14px"><div class="ae-label">NNH</div><div class="ae-number">'+v+'</div><p>Approximately 1 additional harm for every '+v+' patients treated, tied to the endpoint/time horizon reported.</p></div>'}
+   main.appendChild(sec)
+  }
+  const evidence=document.createElement('section');evidence.className='ae-card ae-section';
+  [...doc.body.children].forEach(el=>{if(['H1','SCRIPT'].includes(el.tagName))return;evidence.appendChild(el.cloneNode(true))});
+  main.appendChild(evidence);
+  document.getElementById('content').replaceWith(main);
+ }catch(e){document.getElementById('title').textContent='Trial page unavailable';document.getElementById('question').textContent=e.message}
+})();</script></body></html>
