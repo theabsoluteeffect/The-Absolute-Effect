@@ -19,7 +19,7 @@
       if(res.ok){const live=await res.json();if(Array.isArray(live.trials)&&live.trials.length){trials=live.trials.filter(t=>t.id&&!seen.has(t.id)).map(t=>({...t,discipline:norm(t.discipline||'Medical'),path:(t.path||t.source||('#'))}));}}
     }catch(_e){/* embedded roster remains available */}
     const normalizedTrials=trials;
-    function hrefFor(t){return t&&t.id?'/trial-pages/'+encodeURIComponent(t.id)+'.html':'#'}
+    function hrefFor(t){if(!t)return '#';const raw=String(t.path||t.source||'').replace(/^\.\//,'').replace(/^\/+/,'').replace(/\/$/,'');return raw?'/'+raw+'/index.html':'#'}
     function matching(){return normalizedTrials.filter(t=>(!s.value||t.site===s.value)&&(!d.value||t.discipline===d.value)&&(!g.value||t.setting===g.value))}
     function render(){
       const matches=matching(),list=q.value?matches.filter(t=>t.question===q.value):matches;
