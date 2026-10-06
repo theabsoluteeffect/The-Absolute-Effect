@@ -23,6 +23,13 @@
   glance.innerHTML='<div class="ae-stat"><div class="ae-label">Tumour site</div><div class="ae-value">'+esc(t.site||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Discipline</div><div class="ae-value">'+esc(t.discipline||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Clinical setting</div><div class="ae-value">'+esc(t.setting||'—')+'</div></div><div class="ae-stat"><div class="ae-label">Population</div><div class="ae-value">'+esc(n)+'</div></div>';
   main.appendChild(glance);
   const all=doc.body.innerText||'';
+  const doseMatches=[...all.matchAll(/(\\d+(?:\\.\\d+)?)\\s*Gy\\s*\\/\\s*(\\d+)\\s*(?:fx|fractions)/gi)];
+  if(doseMatches.length>=2){
+   const arms=[...new Map(doseMatches.map(m=>[m[0],{dose:m[1],fx:Number(m[2])}])).values()].slice(0,2);
+   const armSec=document.createElement('section');armSec.className='ae-card';
+   armSec.innerHTML='<div class="ae-eyebrow">Treatment comparison</div><h2>Radiotherapy schedules</h2><div class="ae-arm-grid">'+arms.map((a,i)=>'<div class="ae-arm"><div class="ae-label">Schedule '+(i+1)+'</div><div class="ae-number">'+a.dose+' Gy</div><p><strong>'+a.fx+' fractions</strong></p><div class="ae-fractions">'+Array.from({length:Math.min(a.fx,40)},()=>'<span class="ae-fraction"></span>').join('')+'</div><p class="ae-note">'+a.fx+' treatment fractions represented pictorially; schedules above 40 fractions are capped visually.</p></div>').join('')+'</div>';
+   main.appendChild(armSec);
+  }
   const bm=all.match(/(?:Absolute (?:benefit|difference)|difference)\s*(?:≈|=|of|:)\s*([+-]?\d+(?:\.\d+)?)\s*(?:percentage points|%)/i);
   const nm=all.match(/NNT\s*(?:≈|=|:)\s*(\d+(?:\.\d+)?)/i);
   const hm=all.match(/NNH\s*(?:≈|=|:)\s*(\d+(?:\.\d+)?)/i);
