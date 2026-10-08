@@ -14,28 +14,28 @@
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
   ],
   "audit": {
-    "permanent_trial_pages": 135,
+    "permanent_trial_pages": 145,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 135,
+    "total_unique_trials": 145,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-09-26",
+    "daily_batch_uploaded": "2026-10-08",
     "new_trials_added_today": [
-      "HERA / BIG 1-01",
-      "NSABP B-31 / NCCTG N9831",
-      "TAILORx",
-      "CHHiP",
-      "PROFIT",
-      "EORTC 30911",
-      "SWOG S0337",
-      "TIVO-3",
-      "DISSRM Registry",
-      "MRC/EORTC TE13 BOP/VIP-B"
+      "RTOG 0617",
+      "MRC CR07 / NCIC-CTG C016",
+      "Dutch TME Trial",
+      "PRODIGE 4/ACCORD 11",
+      "ABC-02",
+      "SHARP",
+      "EORTC 26951 / RTOG 9402",
+      "IDEA Collaboration",
+      "ESPAC-4",
+      "MRC OE02"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -57,7 +57,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-09-26",
+    "last_full_reconciliation": "2026-10-08",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -84,7 +84,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-09-26",
+    "last_quality_check": "2026-10-08",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -93,7 +93,7 @@
       "trial": "NIAGARA"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
-    "absolute_effect_pages_checked": 135,
+    "absolute_effect_pages_checked": 145,
     "absolute_effect_rule": "Absolute Effect is displayed only when a numeric NNT or NNH is defensibly quantified; otherwise the component is hidden."
   },
   "trials": [
@@ -1570,6 +1570,106 @@
       "setting": "Poor-prognosis Metastatic",
       "question": "Does intensified induction/sequential chemotherapy improve outcomes over standard BEP/EP?",
       "path": "trial-pages/mrc-eortc-te13/"
+    },
+    {
+      "id": "rtog-0617",
+      "trial": "RTOG 0617",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/rtog-0617/",
+      "discipline": "Radiation",
+      "setting": "Stage III · Definitive Chemoradiation",
+      "question": "In unresectable stage IIIA/IIIB NSCLC, does escalating definitive thoracic RT from 60 Gy to 74 Gy improve survival when given with concurrent chemotherapy?",
+      "path": "trial-pages/rtog-0617/"
+    },
+    {
+      "id": "mrc-cr07",
+      "trial": "MRC CR07 / NCIC-CTG C016",
+      "site": "Rectal Cancer",
+      "source": "trial-pages/mrc-cr07/",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced · Preoperative RT",
+      "question": "In operable rectal cancer, does routine short-course preoperative radiotherapy improve local control and disease-free survival compared with selective postoperative chemoradiotherapy?",
+      "path": "trial-pages/mrc-cr07/"
+    },
+    {
+      "id": "dutch-tme",
+      "trial": "Dutch TME Trial",
+      "site": "Rectal Cancer",
+      "source": "trial-pages/dutch-tme/",
+      "discipline": "Surgical",
+      "setting": "Locally Advanced · Total Mesorectal Excision",
+      "question": "When high-quality total mesorectal excision is performed, does adding short-course preoperative radiotherapy reduce local recurrence?",
+      "path": "trial-pages/dutch-tme/"
+    },
+    {
+      "id": "prodige-4",
+      "trial": "PRODIGE 4/ACCORD 11",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/prodige-4/",
+      "discipline": "Medical",
+      "setting": "Metastatic · First-line",
+      "question": "In fit patients with metastatic pancreatic adenocarcinoma, does first-line FOLFIRINOX improve survival compared with gemcitabine alone?",
+      "path": "trial-pages/prodige-4/"
+    },
+    {
+      "id": "abc-02",
+      "trial": "ABC-02",
+      "site": "Biliary Tract Cancer",
+      "source": "trial-pages/abc-02/",
+      "discipline": "Medical",
+      "setting": "Advanced/Metastatic · First-line",
+      "question": "In advanced biliary tract cancer, does cisplatin plus gemcitabine improve survival compared with gemcitabine alone?",
+      "path": "trial-pages/abc-02/"
+    },
+    {
+      "id": "sharp",
+      "trial": "SHARP",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/sharp/",
+      "discipline": "Medical",
+      "setting": "Advanced/Unresectable · First-line",
+      "question": "In advanced hepatocellular carcinoma unsuitable for or progressing after locoregional therapy, does sorafenib improve survival compared with placebo?",
+      "path": "trial-pages/sharp/"
+    },
+    {
+      "id": "eortc-26951-rtog-9402",
+      "trial": "EORTC 26951 / RTOG 9402",
+      "site": "Neuro-Oncology",
+      "source": "trial-pages/eortc-26951-rtog-9402/",
+      "discipline": "Medical",
+      "setting": "Grade 3 Oligodendroglial Tumour · Adjuvant",
+      "question": "In newly diagnosed anaplastic oligodendroglial tumours, does adding PCV chemotherapy to radiotherapy improve long-term survival, particularly in 1p/19q-codeleted disease?",
+      "path": "trial-pages/eortc-26951-rtog-9402/"
+    },
+    {
+      "id": "idea",
+      "trial": "IDEA Collaboration",
+      "site": "Colon Cancer",
+      "source": "trial-pages/idea/",
+      "discipline": "Medical",
+      "setting": "Stage III · Adjuvant Duration",
+      "question": "In stage III colon cancer, can adjuvant oxaliplatin-based chemotherapy safely be shortened from 6 months to 3 months without unacceptable loss of disease control?",
+      "path": "trial-pages/idea/"
+    },
+    {
+      "id": "espac-4",
+      "trial": "ESPAC-4",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/espac-4/",
+      "discipline": "Medical",
+      "setting": "Resected · Adjuvant",
+      "question": "After resection of pancreatic ductal adenocarcinoma, does adjuvant gemcitabine plus capecitabine improve survival compared with gemcitabine alone?",
+      "path": "trial-pages/espac-4/"
+    },
+    {
+      "id": "mrc-oe02",
+      "trial": "MRC OE02",
+      "site": "Esophageal Cancer",
+      "source": "trial-pages/mrc-oe02/",
+      "discipline": "Medical",
+      "setting": "Locally Advanced Resectable · Neoadjuvant",
+      "question": "In operable esophageal cancer, does two-cycle neoadjuvant cisplatin/5-FU improve survival compared with surgery alone?",
+      "path": "trial-pages/mrc-oe02/"
     }
   ]
 }
