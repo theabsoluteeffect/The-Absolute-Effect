@@ -5,3 +5,6 @@
 /robots.txt
   Content-Type: text/plain
   Cache-Control: public, max-age=300
+
+/assets/*.js
+  Cache-Control: no-cache, must-revalidate
