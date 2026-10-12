@@ -27,6 +27,22 @@ function enhance(){
    if(NNH!==null)sec.innerHTML+='<div class="ae-metric" style="margin-top:14px"><div class="ae-label">NNH</div><div class="ae-number">'+NNH+'</div><p>Approximately 1 additional harm occurs for every '+NNH+' patients treated, at the endpoint/time horizon reported on this page.</p></div>';
    root.appendChild(sec);
  }
+ // New rule: if neither NNT nor NNH is defensibly quantifiable, visualize a reported endpoint instead.
+ if(NNT===null&&NNH===null&&!document.querySelector('[data-outcome-visual]')){
+   const visualText=(oldMain||body).innerText||text;
+   const median=visualText.match(/(?:median\\s+(?:overall\\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\\n]{0,180}?([0-9]+(?:\\.[0-9]+)?)\\s*(?:months?\\s*)?(?:vs\\.?|versus)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(months?|mos?)/i);
+   const hr=visualText.match(/\\bHR\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:\\(?\\s*95%\\s*CI\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:[-–—,]|to)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*\\)?)?/i);
+   if(median){
+     const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
+     const a=Number(median[1]),b=Number(median[2]),max=Math.max(a,b);
+     v.innerHTML='<div class="ae-eyebrow">Reported outcome · visual comparison</div><h2>Median survival</h2><p class="ae-note">Reported medians; this is not a fixed-time absolute risk estimate.</p><div class="ae-outcome-row"><strong>Intervention</strong><div class="ae-outcome-track"><div class="ae-outcome-fill treatment" style="width:'+(a/max*100)+'%"></div></div><b>'+a+' months</b></div><div class="ae-outcome-row"><strong>Comparator</strong><div class="ae-outcome-track"><div class="ae-outcome-fill" style="width:'+(b/max*100)+'%"></div></div><b>'+b+' months</b></div><p class="ae-note">Difference between reported medians: '+Math.abs(a-b).toFixed(1)+' months. Do not derive NNT from median survival.</p>';
+     root.appendChild(v);
+   } else if(hr){
+     const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
+     v.innerHTML='<div class="ae-eyebrow">Reported outcome · relative effect</div><h2>Hazard ratio</h2><p class="ae-number">HR '+hr[1]+'</p><p class="ae-note">'+(hr[2]?'95% CI '+hr[2]+'–'+hr[3]:'Confidence interval not identified in page text')+'</p><p class="ae-note">Relative-effect visualization only; this does not substitute for absolute survival rates or generate an NNT.</p>';
+     root.appendChild(v);
+   }
+ }
  const source=oldMain||body;
  const content=document.createElement('section');content.className='ae-card ae-section';
  [...source.children].forEach(el=>{if(el.tagName==='H1')return;if(el.tagName==='SCRIPT')return;content.appendChild(el.cloneNode(true));});
