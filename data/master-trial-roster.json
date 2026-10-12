@@ -11,7 +11,8 @@
     "Daily proposal files are not added merely because a trial was proposed; they must correspond to an uploaded trial page or archived Trial-of-the-Day to enter this roster.",
     "Before future selection, this roster must be checked together with current Trial-of-the-Day and archive data.",
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection.",
-    "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate."
+    "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate.",
+    "Every trial page must remain visually informative when neither NNT nor NNH can be defensibly calculated: show a chart/pictogram of the strongest reported outcome (e.g. survival, response, progression, toxicity, or relative effect) using source-reported values only; label endpoint and time horizon; never derive NNT from median survival."
   ],
   "audit": {
     "permanent_trial_pages": 145,
@@ -94,7 +95,9 @@
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
-    "absolute_effect_rule": "Absolute Effect is displayed only when a numeric NNT or NNH is defensibly quantified; otherwise the component is hidden."
+    "absolute_effect_rule": "Absolute Effect is displayed only when a numeric NNT or NNH is defensibly quantified; otherwise the component is hidden.",
+    "outcome_visualization_rule": "When no defensible numeric NNT/NNH is available, visualize the strongest reported outcome using source-reported values; never invent rates or derive NNT from median survival.",
+    "outcome_visualization_rule_updated": "2026-10-12"
   },
   "trials": [
     {
