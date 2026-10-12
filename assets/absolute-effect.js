@@ -17,7 +17,7 @@
   function render(el){
     const hasNnt=/^\\s*\\d+(?:\\.\\d+)?\\s*$/.test(String(el.dataset.nnt||''));
     const hasNnh=/^\\s*\\d+(?:\\.\\d+)?\\s*$/.test(String(el.dataset.nnh||''));
-    if(!hasNnt&&!hasNnh){const section=el.closest('section.card')||el.parentElement; if(section) section.style.display='none'; return;}
+    if(!hasNnt&&!hasNnh){if(!el.textContent.trim()&&el.children.length===0)el.hidden=true;return;}
     const pageText=(el.parentElement?.textContent||'')+' '+(el.closest('main')?.textContent||'');
     const b=finite(el.dataset.benefit),h=finite(el.dataset.harm),harmRaw=Number(el.dataset.harm),harmPositive=Number.isFinite(harmRaw)&&harmRaw>0,nnt=el.dataset.nnt||'Not applicable',nnh=el.dataset.nnh||'Not applicable';
     const nntEndpoint=el.dataset.nntEndpoint||endpointFrom(el.dataset.benefit,pageText,'NNT')||'';
