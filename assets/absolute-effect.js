@@ -15,8 +15,8 @@
     return '';
   }
   function render(el){
-    const hasNnt=/^\\s*\\d+(?:\\.\\d+)?\\s*$/.test(String(el.dataset.nnt||''));
-    const hasNnh=/^\\s*\\d+(?:\\.\\d+)?\\s*$/.test(String(el.dataset.nnh||''));
+    const hasNnt=/^\s*\d+(?:\.\d+)?\s*$/.test(String(el.dataset.nnt||''));
+    const hasNnh=/^\s*\d+(?:\.\d+)?\s*$/.test(String(el.dataset.nnh||''));
     if(!hasNnt&&!hasNnh){if(!el.textContent.trim()&&el.children.length===0)el.hidden=true;return;}
     const pageText=(el.parentElement?.textContent||'')+' '+(el.closest('main')?.textContent||'');
     const b=finite(el.dataset.benefit),h=finite(el.dataset.harm),harmRaw=Number(el.dataset.harm),harmPositive=Number.isFinite(harmRaw)&&harmRaw>0,nnt=el.dataset.nnt||'Not applicable',nnh=el.dataset.nnh||'Not applicable';
