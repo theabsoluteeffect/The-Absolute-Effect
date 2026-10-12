@@ -101,8 +101,20 @@
     "outcome_visualization_rule_updated": "2026-10-12",
     "outcome_visualization_implementation": "Shared renderer automatically detects reported median survival comparisons, named endpoint percentage pairs, or hazard ratios when neither NNT nor NNH is quantified; trial template includes the same fallback for future pages.",
     "last_freshness_audit_started": "2026-10-12",
-    "freshness_audit_scope": "MRC TE19 updated as the first identified example; remaining permanent trial pages still require systematic source and guideline freshness review.",
-    "freshness_audit_completed": false
+    "freshness_audit_scope": "Clinical freshness review remains incomplete. Structural content screen completed for all 145 roster index pages on 2026-10-12; 280 HTML routes across 168 unique blobs exist and duplicate routes/live deployment remain to be verified.",
+    "freshness_audit_completed": false,
+    "last_structural_content_screening": "2026-10-12",
+    "structural_content_screening_scope": "All 145 master-roster trial-page index.html files were individually retrieved and screened for source-link presence, explicit current-practice/guideline context, generic boilerplate clinical interpretation, placeholder tokens, and visible publication years. Repository inventory also contains 280 trial-page HTML files across 168 unique HTML blobs.",
+    "structural_content_screening_findings": {
+      "roster_paths_resolving": 145,
+      "roster_paths_total": 145,
+      "trial_html_files_total": 280,
+      "unique_trial_html_blobs": 168,
+      "placeholder_tokens_found_in_roster_index_pages": 0,
+      "widespread_gap": "Most roster index pages lack a clearly labelled, dated current-practice/guideline context section. Many still contain generic interpretation language; some pages lack an obvious primary-source URL using the screened common domains. Old publication years are not by themselves evidence of staleness.",
+      "interpretation": "This was a source-code/content heuristic screen, not a completed clinical evidence review. Each trial still requires checking latest follow-up, practice-changing trials, meta-analyses, and current guideline recommendations. Live Cloudflare deployment and every duplicate HTML route have not been verified.",
+      "status": "STRUCTURAL SCREEN COMPLETE; CLINICAL FRESHNESS AUDIT INCOMPLETE"
+    }
   },
   "trials": [
     {
