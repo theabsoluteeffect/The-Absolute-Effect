@@ -95,9 +95,10 @@
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
-    "absolute_effect_rule": "Absolute Effect is displayed only when a numeric NNT or NNH is defensibly quantified; otherwise the component is hidden.",
+    "absolute_effect_rule": "Show the absolute-effect pictogram when NNT or NNH is defensibly quantified. If neither is quantifiable, show a source-grounded graphical/pictorial view of the strongest reported outcome (survival, response, progression, toxicity, or relative effect); never infer NNT from median survival.",
     "outcome_visualization_rule": "When no defensible numeric NNT/NNH is available, visualize the strongest reported outcome using source-reported values; never invent rates or derive NNT from median survival.",
-    "outcome_visualization_rule_updated": "2026-10-12"
+    "outcome_visualization_rule_updated": "2026-10-12",
+    "outcome_visualization_implementation": "Shared renderer automatically detects reported median survival comparisons, named endpoint percentage pairs, or hazard ratios when neither NNT nor NNH is quantified; trial template includes the same fallback for future pages."
   },
   "trials": [
     {
