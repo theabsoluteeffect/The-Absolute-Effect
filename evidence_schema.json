@@ -22,12 +22,19 @@
     "nnH": "NNH at specified horizon and explicitly named toxicity endpoint; use not quantifiable when appropriate",
     "trial": "Trial name",
     "refs": "Reference strings",
-    "urls": "Reference URLs"
+    "urls": "Reference URLs",
+    "outcomeVisualization": "Required when NNT and NNH are not defensibly quantifiable: chart the strongest reported endpoint with source-reported group values, endpoint label, and time horizon; do not invent data.",
+    "visualizationValues": "Source-reported treatment and comparator outcome values with units, group labels, endpoint, and time horizon."
   },
   "special_settings": {
     "Imaging": "Trials primarily evaluating imaging strategies, imaging-based detection, surveillance or response assessment",
     "Biomarker": "Trials primarily evaluating biomarkers, molecular signatures or predictive/prognostic markers",
     "Pathology": "Trials primarily evaluating pathology, histologic classification or pathology-based diagnosis/stratification",
     "Theranostic Trials": "Trials combining a diagnostic/targeting strategy with a linked therapeutic intervention"
-  }
+  },
+  "rules": [
+    "If NNT or NNH is defensibly quantifiable, show the absolute-effect patient pictogram with endpoint and time horizon.",
+    "If neither NNT nor NNH is defensibly quantifiable, show a graphical/pictorial visualization of the strongest reported survival, response, progression, toxicity, or relative-effect outcome using source-reported values only.",
+    "Never derive NNT from a median survival difference or fabricate missing rates; clearly label relative effects and non-fixed-time endpoints."
+  ]
 }
