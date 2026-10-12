@@ -54,6 +54,12 @@
       const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=label.trim();el.dataset.treatment=med[1];el.dataset.control=med[2];el.dataset.unit='months';el.dataset.horizon='Reported median outcome';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
     }
+    // If a named endpoint has paired reported percentages, visualize those rates directly.
+    const rates=text.match(/((?:[0-9]+[- ]year\\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\\s*[≥>=]?\\s*[0-4]\\s+toxicity|late toxicity|treatment-related mortality))[^.\\n]{0,100}?([0-9]+(?:\\.[0-9]+)?)%\\s*(?:vs\\.?|versus)\\s*([0-9]+(?:\\.[0-9]+)?)%/i);
+    if(rates){
+      const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=rates[1];el.dataset.treatment=rates[2];el.dataset.control=rates[3];el.dataset.unit='%';el.dataset.horizon='Reported endpoint rate';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
+      host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
+    }
     // If a trial has a reported hazard ratio and confidence interval, display an effect-size plot.
     const hr=text.match(/\bHR\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:\(?\s*95%\s*CI\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:[-–—,]|to)\s*([0-9]+(?:\.[0-9]+)?)\s*\)?)?/i);
     if(hr){
