@@ -12,7 +12,8 @@
     "Before future selection, this roster must be checked together with current Trial-of-the-Day and archive data.",
     "After an approved daily batch is uploaded, the roster is updated the same day before subsequent daily selection.",
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate.",
-    "Every trial page must remain visually informative when neither NNT nor NNH can be defensibly calculated: show a chart/pictogram of the strongest reported outcome (e.g. survival, response, progression, toxicity, or relative effect) using source-reported values only; label endpoint and time horizon; never derive NNT from median survival."
+    "Every trial page must remain visually informative when neither NNT nor NNH can be defensibly calculated: show a chart/pictogram of the strongest reported outcome (e.g. survival, response, progression, toxicity, or relative effect) using source-reported values only; label endpoint and time horizon; never derive NNT from median survival.",
+    "Every permanent trial page must distinguish historical trial results from current practice context. Audit for later follow-up publications, meta-analyses, guideline changes, and whether the intervention remains standard; display a dated current-practice context and linked sources. Do not overwrite original trial results with newer recommendations."
   ],
   "audit": {
     "permanent_trial_pages": 145,
@@ -98,7 +99,10 @@
     "absolute_effect_rule": "Show the absolute-effect pictogram when NNT or NNH is defensibly quantified. If neither is quantifiable, show a source-grounded graphical/pictorial view of the strongest reported outcome (survival, response, progression, toxicity, or relative effect); never infer NNT from median survival.",
     "outcome_visualization_rule": "When no defensible numeric NNT/NNH is available, visualize the strongest reported outcome using source-reported values; never invent rates or derive NNT from median survival.",
     "outcome_visualization_rule_updated": "2026-10-12",
-    "outcome_visualization_implementation": "Shared renderer automatically detects reported median survival comparisons, named endpoint percentage pairs, or hazard ratios when neither NNT nor NNH is quantified; trial template includes the same fallback for future pages."
+    "outcome_visualization_implementation": "Shared renderer automatically detects reported median survival comparisons, named endpoint percentage pairs, or hazard ratios when neither NNT nor NNH is quantified; trial template includes the same fallback for future pages.",
+    "last_freshness_audit_started": "2026-10-12",
+    "freshness_audit_scope": "MRC TE19 updated as the first identified example; remaining permanent trial pages still require systematic source and guideline freshness review.",
+    "freshness_audit_completed": false
   },
   "trials": [
     {
