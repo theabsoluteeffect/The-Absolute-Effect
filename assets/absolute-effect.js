@@ -47,11 +47,11 @@
     const quantifiedNnt=/^\s*\d+(?:\.\d+)?\s*$/.test(nnt),quantifiedNnh=/^\s*\d+(?:\.\d+)?\s*$/.test(nnh);
     if(quantifiedNnt||quantifiedNnh)return;
     // Prefer explicitly stated median survival comparisons; never infer fixed-time risks from medians.
-    const med=text.match(/(?:median\s+(?:overall\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\n]{0,180}?([0-9]+(?:\.[0-9]+)?)\s*(months?|mos?)[^\n.]{0,80}?(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)\s*(months?|mos?)/i);
+    const med=text.match(/(?:median\s+(?:overall\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\n]{0,180}?([0-9]+(?:\.[0-9]+)?)\s*(?:months?\s*)?(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)\s*(months?|mos?)/i);
     if(med){
       const before=text.slice(Math.max(0,med.index-40),med.index+80);
       const label=(before.match(/median\s+([^:;,.]{2,65})/i)||[])[1]||'Median survival';
-      const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=label.trim();el.dataset.treatment=med[1];el.dataset.control=med[3];el.dataset.unit='months';el.dataset.horizon='Reported median outcome';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
+      const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=label.trim();el.dataset.treatment=med[1];el.dataset.control=med[2];el.dataset.unit='months';el.dataset.horizon='Reported median outcome';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
     }
     // If a trial has a reported hazard ratio and confidence interval, display an effect-size plot.
