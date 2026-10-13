@@ -1911,15 +1911,16 @@
       "outcome_visual_review_status": "pending_automated_and_source_review"
     },
     {
-      "id": "stamped-arm-h",
+      "id": "stampede-arm-h",
       "trial": "STAMPEDE Arm H",
       "site": "Prostate Cancer",
       "discipline": "Radiation Oncology",
       "setting": "De novo metastatic HSPC · Prostate RT",
       "question": "Does prostate RT improve outcomes in newly diagnosed metastatic prostate cancer, especially low-burden disease?",
-      "path": "trial-pages/stamped-arm-h/",
+      "path": "trial-pages/stampede-arm-h/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "source": "trial-pages/stampede-arm-h/"
     },
     {
       "id": "stomp",
