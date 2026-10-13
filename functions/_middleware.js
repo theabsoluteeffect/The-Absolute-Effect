@@ -28,7 +28,7 @@ export async function onRequest(context) {
     .on("head", { element(element) {
       element.append("<style>" + CSS + "</style>", { html: true });
     }})
-    .on("main", { element(element) {
+    .on("body", { element(element) {
       element.prepend(NOTE, { html: true });
     }})
     .transform(response);
