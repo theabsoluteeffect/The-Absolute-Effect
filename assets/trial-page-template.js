@@ -18,6 +18,7 @@ function enhance(){
  let design=(bodyParas.find(x=>/Design:/i.test(x))||'').replace(/^Design:\s*/i,'');
  const n=(design.match(/(?:;|\b)([\d,]+)\s+(?:men|women|patients|participants|subjects)/i)||[])[1]||'—';
  glance.innerHTML='<div class="ae-stat"><div class="ae-label">Population</div><div class="ae-value">'+esc(n)+'</div></div><div class="ae-stat"><div class="ae-label">Evidence</div><div class="ae-value">Randomized comparative evidence</div></div><div class="ae-stat"><div class="ae-label">Primary metric</div><div class="ae-value">'+(benefit!==null?benefit+' percentage-point absolute difference':'See endpoint results')+'</div></div><div class="ae-stat"><div class="ae-label">Patient measure</div><div class="ae-value">'+(NNT?'NNT '+NNT:(NNH?'NNH '+NNH:'Not quantifiable'))+'</div></div>';
+ const currency=document.createElement('aside');currency.className='ae-card ae-clinical-currency';currency.setAttribute('role','note');currency.innerHTML='<div class="ae-eyebrow">Clinical currency</div><p>This page summarizes evidence from a specific trial or study. Before applying it to current care, check subsequent follow-up, newer practice-changing studies and current disease-specific guidelines. Keep this context separate from the original randomized results.</p>';root.appendChild(currency);
  root.appendChild(glance);
  if(benefit!==null||NNT!==null||NNH!==null){
    const sec=document.createElement('section');sec.className='ae-card';
