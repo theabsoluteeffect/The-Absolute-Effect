@@ -42,6 +42,10 @@ function enhance(){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
      v.innerHTML='<div class="ae-eyebrow">Reported outcome · relative effect</div><h2>Hazard ratio</h2><p class="ae-number">HR '+hr[1]+'</p><p class="ae-note">'+(hr[2]?'95% CI '+hr[2]+'–'+hr[3]:'Confidence interval not identified in page text')+'</p><p class="ae-note">Relative-effect visualization only; this does not substitute for absolute survival rates or generate an NNT.</p>';
      root.appendChild(v);
+   } else {
+     const v=document.createElement('section');v.className='ae-card ae-outcome-visual ae-outcome-review';v.setAttribute('role','note');
+     v.innerHTML='<div class="ae-eyebrow">Outcome visualization check</div><h2>Manual review required</h2><p class="ae-note">No supported numeric endpoint was detected automatically. Review the primary source and add a source-reported outcome chart, a defensible NNT/NNH pictogram, or a note explaining why no numeric visualization is appropriate.</p>';
+     root.appendChild(v);
    }
  }
  const source=oldMain||body;
