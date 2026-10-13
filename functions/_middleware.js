@@ -10,7 +10,7 @@ const NOTE = `
 </aside>`;
 
 const CSS = `
-.ae-freshness-note{box-sizing:border-box;margin:18px 0 24px;padding:15px 18px;border:1px solid #d8d8d2;border-left:4px solid #686861;border-radius:10px;background:#f3f3ef;color:#292923;font:14px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ae-freshness-note{box-sizing:border-box;width:calc(100% - 40px);max-width:900px;margin:18px auto 24px;padding:15px 18px;border:1px solid #d8d8d2;border-left:4px solid #686861;border-radius:10px;background:#f3f3ef;color:#292923;font:14px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .ae-freshness-note strong{display:block;margin-bottom:4px;font-size:12px;letter-spacing:.07em;text-transform:uppercase}
 .ae-freshness-note p{margin:0}
 `;
