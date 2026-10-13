@@ -70,6 +70,10 @@
       el.innerHTML+='<div class="ae-hr-track"><div class="ae-hr-null" style="left:'+scale(1)+'%"></div><div class="ae-hr-ci" style="left:'+left+'%;width:'+Math.max(1,right-left)+'%"></div><div class="ae-hr-point" style="left:'+scale(value)+'%"></div></div><div class="ae-hr-axis"><span>0.25</span><span>HR 1.0 = no difference</span><span>2.0</span></div><div class="ae-outcome-difference"><div class="ae-outcome-stat"><strong>HR '+hr[1]+'</strong><span>'+(lo!==null?'95% CI '+hr[2]+'–'+hr[3]:'Confidence interval not found in page text')+'</span></div></div><p class="ae-outcome-footnote">This visual summarizes the reported relative effect only. It does not substitute for absolute survival rates or generate an NNT.</p>';
       host.insertAdjacentElement('afterend',el);return;
     }
+    // Do not let an abstract-only page silently appear complete when no supported endpoint was detected.
+    const review=document.createElement('section');review.className='ae-outcome-chart ae-outcome-review';review.dataset.outcomeReview='manual';review.setAttribute('role','note');
+    review.innerHTML='<h3>Outcome visual needs manual verification</h3><p class="ae-outcome-subtitle">No supported numeric endpoint was detected automatically. Review the primary source and add a source-reported outcome chart, a defensible NNT/NNH pictogram, or a note explaining why no numeric visualization is appropriate.</p>';
+    host.insertAdjacentElement('afterend',review);
   }
   function init(){document.querySelectorAll('[data-absolute-effect]').forEach(el=>render(el));document.querySelectorAll('[data-outcome-visual]').forEach(el=>renderOutcome(el));renderAutoOutcome();}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
