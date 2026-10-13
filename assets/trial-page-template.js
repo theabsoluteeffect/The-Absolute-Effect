@@ -32,11 +32,17 @@ function enhance(){
  if(NNT===null&&NNH===null&&!document.querySelector('[data-outcome-visual]')){
    const visualText=(oldMain||body).innerText||text;
    const median=visualText.match(/(?:median\\s+(?:overall\\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\\n]{0,180}?([0-9]+(?:\\.[0-9]+)?)\\s*(?:months?\\s*)?(?:vs\\.?|versus)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(months?|mos?)/i);
+   const rates=visualText.match(/((?:overall survival|OS|progression-free survival|PFS|disease-free survival|DFS|objective response rate|pCR))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%\s*(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)%/i);
    const hr=visualText.match(/\\bHR\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:\\(?\\s*95%\\s*CI\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:[-–—,]|to)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*\\)?)?/i);
    if(median){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
      const a=Number(median[1]),b=Number(median[2]),max=Math.max(a,b);
      v.innerHTML='<div class="ae-eyebrow">Reported outcome · visual comparison</div><h2>Median survival</h2><p class="ae-note">Reported medians; this is not a fixed-time absolute risk estimate.</p><div class="ae-outcome-row"><strong>Intervention</strong><div class="ae-outcome-track"><div class="ae-outcome-fill treatment" style="width:'+(a/max*100)+'%"></div></div><b>'+a+' months</b></div><div class="ae-outcome-row"><strong>Comparator</strong><div class="ae-outcome-track"><div class="ae-outcome-fill" style="width:'+(b/max*100)+'%"></div></div><b>'+b+' months</b></div><p class="ae-note">Difference between reported medians: '+Math.abs(a-b).toFixed(1)+' months. Do not derive NNT from median survival.</p>';
+     root.appendChild(v);
+   } else if(rates){
+     const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
+     const a=Number(rates[2]),b=Number(rates[3]),max=Math.max(a,b);
+     v.innerHTML='<div class="ae-eyebrow">Reported outcome · absolute rates</div><h2>'+esc(rates[1])+'</h2><p class="ae-note">Source-reported percentages; not converted into an NNT.</p><div class="ae-outcome-row"><strong>Intervention</strong><div class="ae-outcome-track"><div class="ae-outcome-fill treatment" style="width:'+(a/max*100)+'%"></div></div><b>'+a+'%</b></div><div class="ae-outcome-row"><strong>Comparator</strong><div class="ae-outcome-track"><div class="ae-outcome-fill" style="width:'+(b/max*100)+'%"></div></div><b>'+b+'%</b></div><p class="ae-note">Absolute difference between reported rates: '+Math.abs(a-b).toFixed(1)+' percentage points. Confirm endpoint and time horizon against the primary source.</p>';
      root.appendChild(v);
    } else if(hr){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
