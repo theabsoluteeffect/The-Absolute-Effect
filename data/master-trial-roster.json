@@ -14,7 +14,8 @@
     "Daily selection must avoid not only duplicate trials/studies but also consecutive trials that answer essentially the same clinical question; selection should maximize distinct clinical questions unless replication/evolution is deliberate.",
     "Every trial page must remain visually informative when neither NNT nor NNH can be defensibly calculated: show a chart/pictogram of the strongest reported outcome (e.g. survival, response, progression, toxicity, or relative effect) using source-reported values only; label endpoint and time horizon; never derive NNT from median survival.",
     "Every permanent trial page must distinguish historical trial results from current practice context. Audit for later follow-up publications, meta-analyses, guideline changes, and whether the intervention remains standard; display a dated current-practice context and linked sources. Do not overwrite original trial results with newer recommendations.",
-    "Do not mark a trial clinically current based only on its original publication date or presence of a source link. A freshness review must check subsequent follow-up, later practice-changing trials/meta-analyses, current disease-specific guideline recommendations, and whether the intervention remains standard; record dated sources and review status."
+    "Do not mark a trial clinically current based only on its original publication date or presence of a source link. A freshness review must check subsequent follow-up, later practice-changing trials/meta-analyses, current disease-specific guideline recommendations, and whether the intervention remains standard; record dated sources and review status.",
+    "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
     "permanent_trial_pages": 145,
@@ -120,7 +121,11 @@
     "clinical_freshness_audit_completed": false,
     "clinical_freshness_audit_status": "IN PROGRESS — all 145 roster trials explicitly marked pending; no trial is represented as individually clinically verified.",
     "clinical_currency_guard_added": "2026-10-13",
-    "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes."
+    "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes.",
+    "outcome_visual_qa_rule_updated": "2026-10-13",
+    "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
+    "outcome_visual_page_by_page_audit_completed": false,
+    "outcome_visual_page_by_page_audit_status": "Automated audit added; trial-by-trial source-level review and any resulting bespoke visual fixes remain to be completed from the generated audit report."
   },
   "trials": [
     {
