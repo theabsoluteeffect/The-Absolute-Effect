@@ -150,7 +150,7 @@
     "prostate_oligometastatic_batch_note": "Added source-linked trial pages for the requested prostate RT/MDT list. PEACE-1 already existed and was expanded with its prostate-radiotherapy comparison rather than duplicated. OLIGOPELVIS and TRAP are single-arm studies, not randomized ENRT-vs-INRT or MDT-vs-systemic-therapy comparisons.",
     "targeted_stale_page_check": {
       "date": "2026-10-14",
-      "status": "Targeted content and source check completed for 12 new batch pages; existing RCC pages updated with dated practice context; browser-render and live deployment checks pending.",
+      "status": "Targeted source/context check completed for 12 newly added pages; four existing RCC pages received dated practice context; Trial-of-the-Day current/previous/archive records reconciled. Browser-render and live deployment checks pending.",
       "clinical_freshness_audit_completed": false,
       "scope": [
         "ev-303",
@@ -175,7 +175,11 @@
       "date": "2026-09-20",
       "id": "taishan-302",
       "trial": "TAISHAN-302"
-    }
+    },
+    "trial_of_day_records_reconciled_on": "2026-10-14",
+    "trial_of_day_current_id": "ev-303",
+    "trial_of_day_previous_id": "niagara",
+    "trial_of_day_archive_reconciled": true
   },
   "trials": [
     {
