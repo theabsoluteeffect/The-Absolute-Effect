@@ -1121,6 +1121,22 @@
       "outcome_visual_review_status": "pending_automated_and_source_review"
     },
     {
+      "id": "keynote-052",
+      "trial": "KEYNOTE-052",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/keynote-052/",
+      "aliases": [
+        "KEYNOTE-052",
+        "NCT02335424"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Cisplatin-ineligible advanced UC",
+      "question": "What durable activity does first-line pembrolizumab monotherapy provide for cisplatin-ineligible advanced urothelial carcinoma?",
+      "path": "trial-pages/keynote-052/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+    },
+    {
       "id": "keynote-057",
       "trial": "KEYNOTE-057",
       "site": "Bladder Cancer",
