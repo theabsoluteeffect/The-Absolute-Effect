@@ -29,11 +29,12 @@ function enhance(){
    root.appendChild(sec);
  }
  // New rule: if neither NNT nor NNH is defensibly quantifiable, visualize a reported endpoint instead.
- if(NNT===null&&NNH===null&&!document.querySelector('[data-outcome-visual]')){
+  if(NNT===null&&NNH===null&&!document.querySelector('[data-outcome-visual], [data-outcome-single], [data-outcome-static]')){
    const visualText=(oldMain||body).innerText||text;
    const median=visualText.match(/(?:median\s+(?:overall\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\n]{0,180}?([0-9]+(?:\.[0-9]+)?)\s*(?:months?\s*)?(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)\s*(months?|mos?)/i);
    const rates=visualText.match(/((?:overall survival|OS|progression-free survival|PFS|disease-free survival|DFS|objective response rate|pCR))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%\s*(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)%/i);
    const hr=visualText.match(/\bHR\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:\(?\s*95%\s*CI\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:[-–—,]|to)\s*([0-9]+(?:\.[0-9]+)?)\s*\)?)?/i);
+    const single=visualText.match(/((?:[0-9]+[- ]year\s+)?(?:objective response(?: rate)?|overall response rate|\bORR\b|local control|overall survival|\bOS\b|progression[- ]free survival|\bPFS\b|disease[- ]free survival|\bDFS\b|pCR|patient preference|relapse(?: rate)?|recurrence(?: rate)?|event-free survival|\bEFS\b|survival))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%/i);
    if(median){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
      const a=Number(median[1]),b=Number(median[2]),max=Math.max(a,b);
@@ -44,7 +45,15 @@ function enhance(){
      const a=Number(rates[2]),b=Number(rates[3]),max=Math.max(a,b);
      v.innerHTML='<div class="ae-eyebrow">Reported outcome · absolute rates</div><h2>'+esc(rates[1])+'</h2><p class="ae-note">Source-reported percentages; not converted into an NNT.</p><div class="ae-outcome-row"><strong>Intervention</strong><div class="ae-outcome-track"><div class="ae-outcome-fill treatment" style="width:'+(a/max*100)+'%"></div></div><b>'+a+'%</b></div><div class="ae-outcome-row"><strong>Comparator</strong><div class="ae-outcome-track"><div class="ae-outcome-fill" style="width:'+(b/max*100)+'%"></div></div><b>'+b+'%</b></div><p class="ae-note">Absolute difference between reported rates: '+Math.abs(a-b).toFixed(1)+' percentage points. Confirm endpoint and time horizon against the primary source.</p>';
      root.appendChild(v);
-   } else if(hr){
+    } else if(single){
+      const value=Number(single[2]);
+      if(value>=0&&value<=100){
+        const dots=Array.from({length:100},(_,i)=>'<span style="display:block;aspect-ratio:1;border-radius:50%;background:'+(i<Math.round(value)?'#171717':'#deded8')+'"></span>').join('');
+        const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
+        v.innerHTML='<div class="ae-eyebrow">Reported single-group outcome</div><h2>'+esc(single[1])+'</h2><p class="ae-number">'+value+'%</p><div style="display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;max-width:380px;margin-top:14px" role="img" aria-label="'+value+' of 100 represented patients">'+dots+'</div><p class="ae-note">Each dot represents one patient out of 100. This is a source-reported single-group rate, not a comparative treatment effect; no NNT is inferred.</p>';
+        root.appendChild(v);
+      }
+    } else if(hr){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
      v.innerHTML='<div class="ae-eyebrow">Reported outcome · relative effect</div><h2>Hazard ratio</h2><p class="ae-number">HR '+hr[1]+'</p><p class="ae-note">'+(hr[2]?'95% CI '+hr[2]+'–'+hr[3]:'Confidence interval not identified in page text')+'</p><p class="ae-note">Relative-effect visualization only; this does not substitute for absolute survival rates or generate an NNT.</p>';
      root.appendChild(v);
