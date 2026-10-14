@@ -38,6 +38,16 @@
       '<div class="ae-outcome-difference"><div class="ae-outcome-stat"><strong>'+(treatment>control?'+':'−')+diff.toFixed(1)+' '+unit+'</strong><span>Absolute difference between reported values</span></div><div class="ae-outcome-stat"><strong>'+(el.dataset.hr?'HR '+el.dataset.hr:'Not supplied')+'</strong><span>'+(el.dataset.ci?'95% CI '+el.dataset.ci:'Relative effect')+'</span></div></div>'+
       '<p class="ae-outcome-footnote">Bars share a zero baseline and are scaled to the larger reported value. '+(better?'Higher':'Lower')+' values are not automatically equivalent to a patient-level absolute risk reduction. This comparison of reported outcomes does not itself yield an NNT.</p>';
   }
+  function renderSingleOutcome(el){
+    const value=Number(el.dataset.value);
+    if(!Number.isFinite(value)||value<0||value>100)return;
+    const label=String(el.dataset.outcomeLabel||'Reported outcome').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    const group=String(el.dataset.groupLabel||'Study population').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    const horizon=String(el.dataset.horizon||'Reported endpoint').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    const n=Math.round(value),dots=Array.from({length:100},(_,i)=>'<span style="display:block;aspect-ratio:1;border-radius:50%;background:'+(i<n?'#171717':'#deded8')+'"></span>').join('');
+    el.className='ae-outcome-chart ae-single-outcome';
+    el.innerHTML='<h3>'+label+'</h3><p class="ae-outcome-subtitle">'+horizon+' · single-arm / single-group result</p><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><strong style="font-size:30px">'+value+'%</strong><span>'+group+'</span></div><div style="display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;max-width:380px;margin-top:14px" role="img" aria-label="'+value+' of 100 represented patients">'+dots+'</div><p class="ae-outcome-footnote">Each dot represents one patient out of 100. This is a reported single-group rate, not a comparative treatment effect; no NNT is inferred.</p>';
+  }
   function renderAutoOutcome(){
     if(document.querySelector('[data-outcome-visual]'))return;
     const host=document.querySelector('[data-absolute-effect]')||document.querySelector('main')||document.body;
@@ -55,7 +65,7 @@
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
     }
     // If a named endpoint has paired reported percentages, visualize those rates directly.
-    const rates=text.match(/((?:[0-9]+[- ]year\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\s*[≥>=]?\s*[0-4]\s+toxicity|late toxicity|treatment-related mortality))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%\s*(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)%/i);
+    const rates=text.match(/((?:[0-9]+[- ]year\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|patient preference|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\s*[≥>=]?\s*[0-4]\s+toxicity|late toxicity|treatment-related mortality|relapse(?: rate)?|local control))[^.\n]{0,120}?([0-9]+(?:\.[0-9]+)?)%[^.\n]{0,50}?(?:vs\.?|versus)[^.\n]{0,50}?([0-9]+(?:\.[0-9]+)?)%/i);
     if(rates){
       const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=rates[1];el.dataset.treatment=rates[2];el.dataset.control=rates[3];el.dataset.unit='%';el.dataset.horizon='Reported endpoint rate';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
@@ -69,6 +79,21 @@
       const left=lo!==null?scale(lo):scale(value),right=hi!==null?scale(hi):scale(value);
       el.innerHTML+='<div class="ae-hr-track"><div class="ae-hr-null" style="left:'+scale(1)+'%"></div><div class="ae-hr-ci" style="left:'+left+'%;width:'+Math.max(1,right-left)+'%"></div><div class="ae-hr-point" style="left:'+scale(value)+'%"></div></div><div class="ae-hr-axis"><span>0.25</span><span>HR 1.0 = no difference</span><span>2.0</span></div><div class="ae-outcome-difference"><div class="ae-outcome-stat"><strong>HR '+hr[1]+'</strong><span>'+(lo!==null?'95% CI '+hr[2]+'–'+hr[3]:'Confidence interval not found in page text')+'</span></div></div><p class="ae-outcome-footnote">This visual summarizes the reported relative effect only. It does not substitute for absolute survival rates or generate an NNT.</p>';
       host.insertAdjacentElement('afterend',el);return;
+    }
+    // Single-arm or cohort studies still deserve a source-reported visual; never invent a control group.
+    const singleRate=text.match(/((?:[0-9]+[- ]year\s+)?(?:objective response rate|overall response rate|ORR|local control|overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|pathological complete response|pathologic complete response|pCR|patient preference|relapse rate|relapse|recurrence rate|recurrence|event-free survival|EFS))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%/i);
+    if(singleRate){
+      const value=Number(singleRate[2]);
+      if(value>=0&&value<=100){
+        const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=singleRate[1];el.dataset.value=String(value);el.dataset.groupLabel='Reported study group';el.dataset.horizon='Source-reported percentage';
+        host.insertAdjacentElement('afterend',el);renderSingleOutcome(el);return;
+      }
+    }
+    const eventCount=text.match(/(\d+)\s+(?:relapses|recurrences|events|responses)\s+(?:among|of)\s+(\d+)\s+(?:eligible\s+)?(?:patients|participants)?/i);
+    if(eventCount&&Number(eventCount[2])>0){
+      const value=Number((Number(eventCount[1])/Number(eventCount[2])*100).toFixed(1));
+      const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel='Reported event proportion';el.dataset.value=String(value);el.dataset.groupLabel=eventCount[1]+' of '+eventCount[2]+' reported events';el.dataset.horizon='Source-reported count; percentage calculated from numerator / denominator';
+      host.insertAdjacentElement('afterend',el);renderSingleOutcome(el);return;
     }
     // Do not let an abstract-only page silently appear complete when no supported endpoint was detected.
     const review=document.createElement('section');review.className='ae-outcome-chart ae-outcome-review';review.dataset.outcomeReview='manual';review.setAttribute('role','note');
