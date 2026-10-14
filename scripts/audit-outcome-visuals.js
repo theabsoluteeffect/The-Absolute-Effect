@@ -35,7 +35,7 @@ function inspect(file) {
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const hasRenderer = /assets\/absolute-effect\.js/.test(html);
   const hasDatedContext = /current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText);
-  const hasPrimarySource = /href=[\"'][^\"']*(?:pubmed\.ncbi\.nlm\.nih\.gov|doi\.org|clinicaltrials\.gov|nejm\.org|thelancet\.com|ascopubs\.org|nature\.com|pmc\.ncbi\.nlm\.nih\.gov)/i.test(html);
+  const hasPrimarySource = /(?:pubmed\.ncbi\.nlm\.nih\.gov|doi\.org|clinicaltrials\.gov|nejm\.org|thelancet\.com|ascopubs\.org|nature\.com|pmc\.ncbi\.nlm\.nih\.gov)/i.test(html);
   const genericInterpretation = /interpret the absolute difference together with the endpoint|patient-level value of an intervention depends on absolute event risk|historical trials may use older staging/i.test(visibleText);
   const shortPage = html.length < 3500;
   const hasExplicitVisual = /data-outcome-visual|data-outcome-single|data-outcome-static|ae-outcome-chart|ae-hr-track/.test(html);
@@ -86,7 +86,11 @@ const report = {
     all_html_manual_review: allPages.filter(x => x.status === 'manual_review').length,
     all_html_renderer_missing: allPages.filter(x => x.status === 'renderer_missing').length
   },
-  roster_pages: rosterPages,
+    roster_pages: rosterPages,
+    roster_pages_missing_dated_context: rosterPages.filter(x => !x.hasDatedContext).map(x => ({id:x.id,trial:x.trial,path:x.path})),
+    roster_pages_missing_primary_source: rosterPages.filter(x => !x.hasPrimarySource).map(x => ({id:x.id,trial:x.trial,path:x.path})),
+    roster_pages_generic_interpretation: rosterPages.filter(x => x.genericInterpretation).map(x => ({id:x.id,trial:x.trial,path:x.path})),
+    roster_short_pages: rosterPages.filter(x => x.shortPage).map(x => ({id:x.id,trial:x.trial,path:x.path})),
   unrostered_or_duplicate_canonical_html_pages: allPages.filter(p => !rosterPages.some(r => r.path === p.path))
 };
 const out = path.join(root, 'data/outcome-visual-audit.json');
