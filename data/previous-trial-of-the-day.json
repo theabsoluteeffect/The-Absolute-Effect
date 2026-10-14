@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-18",
-  "id": "nsabp-b17",
-  "trial": "NSABP B-17",
-  "title": "Whole-breast radiotherapy after lumpectomy for DCIS",
-  "journal": "Journal of Clinical Oncology",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/9469327/",
-  "site": "Breast Cancer",
-  "discipline": "Radiation",
-  "setting": "DCIS · Breast-Conserving Surgery",
-  "population": "818 women with localized DCIS and histologically tumor-free margins",
-  "summary": "Adding 50 Gy whole-breast radiotherapy after lumpectomy reduced 8-year invasive ipsilateral breast recurrence from 13.4% to 3.9%, an absolute reduction of 9.5 percentage points.",
-  "criticalReview": "NSABP B-17 established the local-control benefit of whole-breast radiotherapy after lumpectomy for DCIS. Because B-17 is already a permanent trial page in the master roster, it does not need to be added again as a new trial or archive-only entry."
+  "date": "2026-09-20",
+  "id": "taishan-302",
+  "trial": "TAISHAN-302",
+  "title": "Tambotatug pelitecan versus topotecan in relapsed small-cell lung cancer",
+  "journal": "New England Journal of Medicine",
+  "url": "https://www.nejm.org/doi/10.1056/NEJMoa2610229",
+  "site": "Small-Cell Lung Cancer",
+  "discipline": "Medical Oncology",
+  "setting": "Relapsed SCLC",
+  "population": "451 patients with relapsed SCLC after one prior platinum-based regimen",
+  "summary": "Tambotatug pelitecan improved median overall survival to 13.3 months versus 9.4 months with topotecan (HR 0.46, 95% CI 0.35–0.62; P<.001) and median PFS to 7.4 versus 2.8 months (HR 0.29, 95% CI 0.23–0.37; P<.001). Objective response rate was 59.1% versus 9.7%, an absolute increase of 49.4 percentage points.",
+  "criticalReview": "TAISHAN-302 is a randomized phase III trial showing a large improvement in OS, PFS and response with the B7-H3-directed ADC tambotatug pelitecan compared with topotecan after platinum therapy. The magnitude of response and PFS improvement is substantial, but interpretation should consider the Chinese study population, the open-label design and the maturity of the interim OS analysis. Tam-Peli is a targeted cytotoxic ADC: the antibody binds B7-H3, the complex is internalized, and a camptothecin-derived topoisomerase-I inhibitor payload is released. This produces replication-associated DNA damage and apoptosis; payload release in the tumour microenvironment can also support a bystander effect."
 }
