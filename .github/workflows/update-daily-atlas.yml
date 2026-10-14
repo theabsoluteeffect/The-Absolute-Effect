@@ -59,7 +59,8 @@ jobs:
           import re
 
           text = Path('index.html').read_text(encoding='utf-8')
-          assert 'const trials=[' in text
+          assert "fetch('/data/master-trial-roster.json'" in text, 'Homepage must load the master roster dynamically'
+          assert 'let trials=[];' in text
           assert 'defaultEvidence' not in text
           assert 'Uro-oncology' not in text
           assert 'Multidisciplinary' not in text
@@ -68,10 +69,10 @@ jobs:
 
           files = sorted(Path('data').glob('daily-evidence-*.json'))
           total = sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
-          m = re.search(r'const trials=(\[.*?\]);', text, re.S)
-          assert m, 'Navigation trials block missing'
-          trials = json.loads(m.group(1))
-          assert trials, 'Navigation index is empty'
+          roster = json.loads(Path('data/master-trial-roster.json').read_text(encoding='utf-8'))
+          trials = roster.get('trials', [])
+          assert trials, 'Master trial roster is empty'
+          assert len({x.get('id') for x in trials}) == len(trials), 'Duplicate trial IDs in master roster'
 
           evidence = Path('evidence.html').read_text(encoding='utf-8')
           sm = re.search(r'const SOURCES=(\[.*?\]);', evidence, re.S)
@@ -88,7 +89,7 @@ jobs:
               assert 'name="description"' in page_text, f'Missing description: {page}'
               assert 'rel="canonical"' in page_text, f'Missing canonical: {page}'
               assert 'data-seo="trial"' in page_text, f'Missing trial structured data: {page}'
-          print(f'Atlas validation passed: {total} daily records; {len(trials)} navigation entries; {len(pages)} SEO-ready trial pages.')
+          print(f'Atlas validation passed: {total} daily records; {len(trials)} unique master-roster trials; {len(pages)} SEO-ready trial pages.')
           PY
 
       - name: Update sitemap and robots
