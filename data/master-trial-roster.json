@@ -18,10 +18,10 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 170,
+    "permanent_trial_pages": 173,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 170,
+    "total_unique_trials": 173,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -41,7 +41,10 @@
       "SWOG S1605",
       "KEYNOTE-361",
       "COSMIC-313",
-      "LITESPARK-012"
+      "LITESPARK-012",
+      "METEOR",
+      "CONTACT-03",
+      "TiNivo-2"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -121,15 +124,15 @@
     },
     "clinical_freshness_audit_started": "2026-10-13",
     "clinical_freshness_audit_completed": false,
-    "clinical_freshness_audit_status": "IN PROGRESS — dated current-practice context added to the current batches and four RCC comparator pages; full roster clinical review remains incomplete.",
+    "clinical_freshness_audit_status": "IN PROGRESS — targeted prior-agent/current-practice context added to this RCC set; full roster clinical review remains incomplete.",
     "clinical_currency_guard_added": "2026-10-13",
     "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes.",
     "outcome_visual_qa_rule_updated": "2026-10-13",
     "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
     "outcome_visual_page_by_page_audit_completed": false,
-    "outcome_visual_page_by_page_audit_status": "Outcome visuals/content updated for the 12-trial batch; browser-rendered visual QA remains pending.",
+    "outcome_visual_page_by_page_audit_status": "Source-linked outcomes and prior-agent comparisons added for the RCC set; browser-rendered visual QA remains pending.",
     "outcome_visual_review_started": "2026-10-13",
-    "outcome_visual_review_total": 170,
+    "outcome_visual_review_total": 173,
     "outcome_visual_review_status": "Shared renderer/template safeguards and automated audit are committed. Every roster entry is explicitly marked pending until the generated page-level audit is reviewed and each page's actual visual is confirmed.",
     "prostate_oligometastatic_batch_added": "2026-10-13",
     "prostate_oligometastatic_batch_trials": [
@@ -150,7 +153,7 @@
     "prostate_oligometastatic_batch_note": "Added source-linked trial pages for the requested prostate RT/MDT list. PEACE-1 already existed and was expanded with its prostate-radiotherapy comparison rather than duplicated. OLIGOPELVIS and TRAP are single-arm studies, not randomized ENRT-vs-INRT or MDT-vs-systemic-therapy comparisons.",
     "targeted_stale_page_check": {
       "date": "2026-10-14",
-      "status": "Targeted source/context check completed for 12 newly added pages; four existing RCC pages received dated practice context; Trial-of-the-Day current/previous/archive records reconciled. Browser-render and live deployment checks pending.",
+      "status": "Targeted prior-agent efficacy review added to AXIS and TIVO-3; new METEOR, CONTACT-03 and TiNivo-2 pages registered. Full clinical freshness and browser-rendered QA remain pending.",
       "clinical_freshness_audit_completed": false,
       "scope": [
         "ev-303",
@@ -168,7 +171,12 @@
         "checkmate-214",
         "keynote-426",
         "checkmate-9er",
-        "clear"
+        "clear",
+        "axis",
+        "tivo-3",
+        "meteor",
+        "contact-03",
+        "tinivo-2"
       ]
     },
     "previous_trial_of_the_day": {
@@ -562,6 +570,23 @@
       "path": "trial-pages/comparz",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "contact-03",
+      "trial": "CONTACT-03",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/contact-03/",
+      "aliases": [
+        "CONTACT-03",
+        "NCT04338269",
+        "atezolizumab cabozantinib after ICI"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Advanced RCC progressing on or after prior ICI",
+      "question": "After progression on an immune checkpoint inhibitor, does adding atezolizumab to cabozantinib improve outcomes over cabozantinib alone?",
+      "path": "trial-pages/contact-03/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "primary endpoint results and toxicity comparison included; browser render review pending"
     },
     {
       "id": "cosmic-313",
@@ -1298,6 +1323,24 @@
       "path": "trial-pages/matterhorn",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "meteor",
+      "trial": "METEOR",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/meteor/",
+      "aliases": [
+        "METEOR",
+        "NCT01865747",
+        "cabozantinib versus everolimus",
+        "post-VEGFR TKI RCC"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Previously treated advanced RCC after VEGFR-targeted therapy",
+      "question": "After prior VEGFR-targeted therapy, does cabozantinib improve outcomes versus everolimus, including after prior sunitinib or pazopanib?",
+      "path": "trial-pages/meteor/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "prior-agent subgroup outcomes in comparative table; browser render review pending"
     },
     {
       "id": "mosaic",
@@ -2306,6 +2349,23 @@
       "path": "trial-pages/talentop",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "tinivo-2",
+      "trial": "TiNivo-2",
+      "site": "Renal Cell Carcinoma",
+      "source": "trial-pages/tinivo-2/",
+      "aliases": [
+        "TiNivo-2",
+        "NCT04987203",
+        "tivozanib plus nivolumab after ICI"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Advanced RCC after prior ICI",
+      "question": "After prior ICI exposure, does adding nivolumab to tivozanib improve outcomes versus tivozanib alone?",
+      "path": "trial-pages/tinivo-2/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "primary endpoint results and prior-ICI subgroup included; browser render review pending"
     },
     {
       "id": "tivo-3",
