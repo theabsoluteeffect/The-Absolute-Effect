@@ -35,7 +35,7 @@ function inspect(file) {
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const hasRenderer = /assets\/absolute-effect\.js/.test(html);
   const hasDatedContext = /current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText);
-  const hasPrimarySource = /href=[\"'][^\"']*(?:pubmed\\.ncbi\\.nlm\\.nih\\.gov|doi\\.org|clinicaltrials\\.gov|nejm\\.org|thelancet\\.com|ascopubs\\.org|nature\\.com|pmc\\.ncbi\\.nlm\\.nih\\.gov)/i.test(html);
+  const hasPrimarySource = /href=[\"'][^\"']*(?:pubmed\.ncbi\.nlm\.nih\.gov|doi\.org|clinicaltrials\.gov|nejm\.org|thelancet\.com|ascopubs\.org|nature\.com|pmc\.ncbi\.nlm\.nih\.gov)/i.test(html);
   const genericInterpretation = /interpret the absolute difference together with the endpoint|patient-level value of an intervention depends on absolute event risk|historical trials may use older staging/i.test(visibleText);
   const shortPage = html.length < 3500;
   const hasExplicitVisual = /data-outcome-visual|data-outcome-single|data-outcome-static|ae-outcome-chart|ae-hr-track/.test(html);
