@@ -82,5 +82,19 @@
     "population": "451 patients with relapsed SCLC after one prior platinum-based regimen",
     "summary": "Tambotatug pelitecan improved median overall survival to 13.3 months versus 9.4 months with topotecan (HR 0.46, 95% CI 0.35–0.62; P<.001) and median PFS to 7.4 versus 2.8 months (HR 0.29, 95% CI 0.23–0.37; P<.001). Objective response rate was 59.1% versus 9.7%, an absolute increase of 49.4 percentage points.",
     "criticalReview": "TAISHAN-302 is a randomized phase III trial showing a large improvement in OS, PFS and response with the B7-H3-directed ADC tambotatug pelitecan compared with topotecan after platinum therapy. The magnitude of response and PFS improvement is substantial, but interpretation should consider the Chinese study population, the open-label design and the maturity of the interim OS analysis. Tam-Peli is a targeted cytotoxic ADC: the antibody binds B7-H3, the complex is internalized, and a camptothecin-derived topoisomerase-I inhibitor payload is released. This produces replication-associated DNA damage and apoptosis; payload release in the tumour microenvironment can also support a bystander effect."
+  },
+  {
+    "date": "2026-09-24",
+    "id": "niagara",
+    "trial": "NIAGARA",
+    "title": "Perioperative durvalumab with neoadjuvant chemotherapy in operable muscle-invasive bladder cancer",
+    "journal": "New England Journal of Medicine",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39481303/",
+    "site": "Bladder Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Neoadjuvant/Adjuvant MIBC",
+    "population": "1063 cisplatin-eligible patients with operable muscle-invasive bladder cancer",
+    "summary": "Perioperative durvalumab with neoadjuvant gemcitabine-cisplatin followed by cystectomy and adjuvant durvalumab improved 24-month event-free survival from 59.8% to 67.8% and overall survival from 75.2% to 82.2%.",
+    "criticalReview": "NIAGARA is a phase III perioperative immunotherapy trial with dual primary efficacy endpoints and a key controlled OS endpoint. The absolute effects are an 8-point improvement in 24-month EFS (NNT 13) and a 7-point improvement in 24-month OS (NNT 15). Grade 3–4 treatment-related adverse events were similar between groups (40.6% vs 40.9%)."
   }
 ]
