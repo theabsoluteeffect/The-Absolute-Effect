@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 3,
-  "last_quality_check": "2026-09-24",
+  "last_quality_check": "2026-10-14",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -2155,6 +2155,23 @@
       "path": "trial-pages/vesper/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "ev-303",
+      "trial": "EV-303 / KEYNOTE-905",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/ev-303/",
+      "aliases": [
+        "EV-303",
+        "KEYNOTE-905",
+        "NCT03924895"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Perioperative cisplatin-ineligible MIBC",
+      "question": "For cisplatin-ineligible or cisplatin-declining patients with operable MIBC, does perioperative enfortumab vedotin plus pembrolizumab improve outcomes over immediate cystectomy?",
+      "path": "trial-pages/ev-303/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
     }
   ]
 }
