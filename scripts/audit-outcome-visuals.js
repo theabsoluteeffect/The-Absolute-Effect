@@ -30,14 +30,15 @@ const redirectSources = new Set(redirectText.split(String.fromCharCode(10)).map(
 const legacyRedirectsMissing = legacyFlatFiles.map(file => '/' + path.relative(root, file).replaceAll(path.sep, '/')).filter(from => !redirectSources.has(from));
 function inspect(file) {
   const html = fs.readFileSync(file, 'utf8');
+  const visibleText = html.replace(/<script[\\s\\S]*?<\\/script>/gi, ' ').replace(/<style[\\s\\S]*?<\\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;|&#160;/gi, ' ').replace(/&gt;/gi, '>').replace(/&lt;/gi, '<').replace(/&amp;/gi, '&').replace(/\\s+/g, ' ');
   const numericNnt = /data-nnt=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const hasRenderer = /assets\/absolute-effect\.js/.test(html);
   const hasExplicitVisual = /data-outcome-visual|ae-outcome-chart|ae-hr-track/.test(html);
-  const pairedPercent = /\d+(?:\.\d+)?\s*%\s*(?:vs\.?|versus)\s*\d+(?:\.\d+)?\s*%/i.test(html);
-  const medianPair = /median.{0,180}?\d+(?:\.\d+)?\s*(?:months?|mos? years?|years?).{0,40}?(?:vs\.?|versus)\s*\d+(?:\.\d+)?/i.test(html);
-  const hrWithCI = /\bHR\s*[:=]?\s*\d+(?:\.\d+)?\s*\(?\s*95\s*%\s*CI\s*[:=]?\s*\d+(?:\.\d+)?\s*(?:[-–—]|to)\s*\d+(?:\.\d+)?/i.test(html);
-  const numericEndpointCandidate = pairedPercent || medianPair || hrWithCI;
+  const pairedPercent = /\d+(?:\.\d+)?\s*%[^.]{0,80}?(?:vs\.?|versus)[^.]{0,60}?\d+(?:\.\d+)?\s*%/i.test(visibleText);
+  const medianPair = /median.{0,180}?\d+(?:\.\d+)?\s*(?:months?|mos? years?|years?)?[^.]{0,50}?(?:vs\.?|versus)[^.]{0,40}?\d+(?:\.\d+)?\s*(?:months?|years?)?/i.test(visibleText);
+  const hrWithCI = /\bHR\s*[:=]?\s*\d+(?:\.\d+)?[^.]{0,100}?95\s*%\s*CI\s*[:=]?\s*\d+(?:\.\d+)?\s*(?:[-–—]|to)\s*\d+(?:\.\d+)?/i.test(visibleText);
+  const singleRate = /(?:objective response(?: rate)?|\\bORR\\b|local control|overall survival|\\bOS\\b|progression[- ]free survival|\\bPFS\\b|disease[- ]free survival|\\bDFS\\b|patient preference|relapse(?: rate)?|recurrence(?: rate)?|event-free survival|\\bEFS\\b|pCR|pathological complete response|survival)[^.]{0,100}?\\d+(?:\\.\\d+)?\\s*%/i.test(visibleText);\n  const eventCount = /\\d+\\s+(?:relapses|recurrences|events|responses)\\s+(?:among|of)\\s+\\d+/i.test(visibleText);\n  const numericEndpointCandidate = pairedPercent || medianPair || hrWithCI || singleRate || eventCount;
   let status = 'manual_review';
   if (!hasRenderer) status = 'renderer_missing';
   else if (numericNnt || numericNnh) status = 'absolute_effect_markup';
