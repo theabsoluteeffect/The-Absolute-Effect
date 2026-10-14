@@ -1153,6 +1153,22 @@
       "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
     },
     {
+      "id": "keynote-361",
+      "trial": "KEYNOTE-361",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/keynote-361/",
+      "aliases": [
+        "KEYNOTE-361",
+        "NCT02853305"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "First-line advanced/metastatic UC",
+      "question": "In untreated advanced urothelial carcinoma, did adding pembrolizumab to platinum-based chemotherapy improve PFS or OS versus chemotherapy alone?",
+      "path": "trial-pages/keynote-361/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+    },
+    {
       "id": "keynote-426",
       "trial": "KEYNOTE-426",
       "site": "Renal Cell Carcinoma",
@@ -2138,6 +2154,22 @@
       "path": "trial-pages/swog-s0337/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "swog-s1605",
+      "trial": "SWOG S1605",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/swog-s1605/",
+      "aliases": [
+        "SWOG S1605",
+        "NCT02844816"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "BCG-unresponsive high-risk NMIBC",
+      "question": "Does systemic atezolizumab provide sufficient durable response in BCG-unresponsive high-risk NMIBC to support bladder preservation?",
+      "path": "trial-pages/swog-s1605/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
     },
     {
       "id": "swog-nrg-s1914",
