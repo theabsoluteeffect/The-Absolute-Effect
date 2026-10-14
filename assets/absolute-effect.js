@@ -49,7 +49,7 @@
     el.innerHTML='<h3>'+label+'</h3><p class="ae-outcome-subtitle">'+horizon+' · single-arm / single-group result</p><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><strong style="font-size:30px">'+value+'%</strong><span>'+group+'</span></div><div style="display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;max-width:380px;margin-top:14px" role="img" aria-label="'+value+' of 100 represented patients">'+dots+'</div><p class="ae-outcome-footnote">Each dot represents one patient out of 100. This is a reported single-group rate, not a comparative treatment effect; no NNT is inferred.</p>';
   }
   function renderAutoOutcome(){
-    if(document.querySelector('[data-outcome-visual]'))return;
+    if(document.querySelector('[data-outcome-visual], [data-outcome-single], [data-outcome-static]'))return;
     const host=document.querySelector('[data-absolute-effect]')||document.querySelector('main')||document.body;
     if(!host)return;
     const text=(document.querySelector('main')||document.body).innerText||'';
@@ -100,7 +100,7 @@
     review.innerHTML='<h3>Outcome visual needs manual verification</h3><p class="ae-outcome-subtitle">No supported numeric endpoint was detected automatically. Review the primary source and add a source-reported outcome chart, a defensible NNT/NNH pictogram, or a note explaining why no numeric visualization is appropriate.</p>';
     host.insertAdjacentElement('afterend',review);
   }
-  function init(){document.querySelectorAll('[data-absolute-effect]').forEach(el=>render(el));document.querySelectorAll('[data-outcome-visual]').forEach(el=>renderOutcome(el));renderAutoOutcome();}
+  function init(){document.querySelectorAll('[data-absolute-effect]').forEach(el=>render(el));document.querySelectorAll('[data-outcome-visual]').forEach(el=>renderOutcome(el));document.querySelectorAll('[data-outcome-single]').forEach(el=>renderSingleOutcome(el));renderAutoOutcome();}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
   window.AbsoluteEffect={render:render,renderOutcome:renderOutcome,init:init};
 })();
