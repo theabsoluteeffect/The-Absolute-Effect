@@ -21,6 +21,13 @@ function walk(dir) {
   }
 }
 walk(trialRoot);
+// Flat trial-pages/*.html files are legacy duplicate URLs; _redirects sends them
+// to canonical directory pages. Audit canonical index pages separately.
+const canonicalHtmlFiles = htmlFiles.filter(file => /[\\/]index\\.html$/i.test(file));
+const legacyFlatFiles = htmlFiles.filter(file => /[\\/]trial-pages[\\/][^\\/]+\\.html$/i.test(file));
+const redirectText = fs.existsSync(path.join(root, '_redirects')) ? fs.readFileSync(path.join(root, '_redirects'), 'utf8') : '';
+const redirectSources = new Set(redirectText.split(/\\r?\\n/).map(line => line.trim().split(/\\s+/)[0]).filter(Boolean));
+const legacyRedirectsMissing = legacyFlatFiles.map(file => '/' + path.relative(root, file).replaceAll(path.sep, '/')).filter(from => !redirectSources.has(from));
 function inspect(file) {
   const html = fs.readFileSync(file, 'utf8');
   const numericNnt = /data-nnt=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
@@ -50,14 +57,16 @@ for (const t of (roster.trials || [])) {
   if (!fs.existsSync(full)) missingRosterPages.push({ id: t.id, trial: t.trial, path: rel });
   else rosterPages.push({ id: t.id, trial: t.trial, ...inspect(full) });
 }
-const allPages = htmlFiles.map(inspect);
+const allPages = canonicalHtmlFiles.map(inspect);
 const report = {
   generated_at: new Date().toISOString(),
   rule: 'NNT/NNH pictogram when defensible; otherwise visualize a source-reported outcome or flag for manual review. Never infer NNT from median survival.',
   roster_count: (roster.trials || []).length,
   roster_pages_found: rosterPages.length,
   roster_pages_missing: missingRosterPages,
-  all_trial_html_pages: allPages.length,
+  all_canonical_trial_html_pages: allPages.length,
+  legacy_flat_html_routes: legacyFlatFiles.length,
+  legacy_redirects_missing: legacyRedirectsMissing,
   counts: {
     roster_absolute_effect_markup: rosterPages.filter(x => x.status === 'absolute_effect_markup').length,
     roster_outcome_visual_candidate: rosterPages.filter(x => x.status === 'outcome_visual_candidate').length,
@@ -67,9 +76,9 @@ const report = {
     all_html_renderer_missing: allPages.filter(x => x.status === 'renderer_missing').length
   },
   roster_pages: rosterPages,
-  unrostered_or_duplicate_html_pages: allPages.filter(p => !rosterPages.some(r => r.path === p.path))
+  unrostered_or_duplicate_canonical_html_pages: allPages.filter(p => !rosterPages.some(r => r.path === p.path))
 };
 const out = path.join(root, 'data/outcome-visual-audit.json');
 fs.writeFileSync(out, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ output: 'data/outcome-visual-audit.json', ...report.counts, roster_pages_found: report.roster_pages_found, roster_pages_missing: missingRosterPages.length, all_trial_html_pages: allPages.length }, null, 2));
-if (missingRosterPages.length || report.counts.roster_renderer_missing) process.exitCode = 1;
+if (missingRosterPages.length || report.counts.roster_renderer_missing || legacyRedirectsMissing.length) process.exitCode = 1;
