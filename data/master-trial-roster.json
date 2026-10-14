@@ -124,16 +124,16 @@
     },
     "clinical_freshness_audit_started": "2026-10-13",
     "clinical_freshness_audit_completed": false,
-    "clinical_freshness_audit_status": "IN PROGRESS — targeted prior-agent/current-practice context added to this RCC set; full roster clinical review remains incomplete.",
+    "clinical_freshness_audit_status": "IN PROGRESS — targeted dated context and source-linked outcomes updated for the 16 previously flagged manual-review pages and selected concise pages; full source-by-source review of all 173 trials remains incomplete.",
     "clinical_currency_guard_added": "2026-10-13",
     "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes.",
     "outcome_visual_qa_rule_updated": "2026-10-13",
     "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
     "outcome_visual_page_by_page_audit_completed": false,
-    "outcome_visual_page_by_page_audit_status": "Source-linked outcomes and prior-agent comparisons added for the RCC set; browser-rendered visual QA remains pending.",
+    "outcome_visual_page_by_page_audit_status": "Static audit PASS on 14 October 2026: 173/173 canonical pages found, 0 missing renderer hooks, 0 automated manual-review flags, 135/135 legacy flat routes redirected. Browser-rendered verification remains pending; heuristic detection does not certify the source data or clinical appropriateness of each visual.",
     "outcome_visual_review_started": "2026-10-13",
     "outcome_visual_review_total": 173,
-    "outcome_visual_review_status": "Shared renderer/template safeguards and automated audit are committed. Every roster entry is explicitly marked pending until the generated page-level audit is reviewed and each page's actual visual is confirmed.",
+    "outcome_visual_review_status": "Automated structural audit passes; source-level clinical verification and browser-rendered visual QA remain pending for all roster entries.",
     "prostate_oligometastatic_batch_added": "2026-10-13",
     "prostate_oligometastatic_batch_trials": [
       "HORRAD",
@@ -153,7 +153,7 @@
     "prostate_oligometastatic_batch_note": "Added source-linked trial pages for the requested prostate RT/MDT list. PEACE-1 already existed and was expanded with its prostate-radiotherapy comparison rather than duplicated. OLIGOPELVIS and TRAP are single-arm studies, not randomized ENRT-vs-INRT or MDT-vs-systemic-therapy comparisons.",
     "targeted_stale_page_check": {
       "date": "2026-10-14",
-      "status": "Targeted prior-agent efficacy review added to AXIS and TIVO-3; new METEOR, CONTACT-03 and TiNivo-2 pages registered. Full clinical freshness and browser-rendered QA remain pending.",
+      "status": "Restored shared renderer on all 21 previously flagged canonical pages; outcome visual detection now supports single-arm results and qualitative non-numeric endpoint status. Added source-grounded visual/context updates to the 16 pages previously flagged for manual outcome review, plus targeted context/visual fixes on five concise legacy pages. Added forced 301 redirects for 135 flat legacy trial URLs to canonical directory pages. Static audit passes; browser-rendered QA and comprehensive clinical freshness review remain pending.",
       "clinical_freshness_audit_completed": false,
       "scope": [
         "ev-303",
@@ -176,8 +176,31 @@
         "tivo-3",
         "meteor",
         "contact-03",
-        "tinivo-2"
-      ]
+        "tinivo-2",
+        "carmena",
+        "checkmate-275",
+        "daugaard-stage1-nsgct-surveillance",
+        "dbcg-77b",
+        "eortc-30904",
+        "eortc-30992",
+        "fastrack-ii",
+        "imvigor010",
+        "mrc-te05",
+        "rtog-9601",
+        "pagliaro-tip",
+        "pisces",
+        "pivot",
+        "sakk-01-10",
+        "sw-oteca-stage1-nsgct",
+        "swog-9346",
+        "getug-afu-17",
+        "taishan-302",
+        "mrc-te23",
+        "checkmate-025",
+        "trisst"
+      ],
+      "legacy_flat_routes_redirected": 135,
+      "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
       "date": "2026-09-20",
@@ -187,7 +210,24 @@
     "trial_of_day_records_reconciled_on": "2026-10-14",
     "trial_of_day_current_id": "ev-303",
     "trial_of_day_previous_id": "niagara",
-    "trial_of_day_archive_reconciled": true
+    "trial_of_day_archive_reconciled": true,
+    "automated_outcome_audit": {
+      "date": "2026-10-14",
+      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/38505458254",
+      "status": "PASS",
+      "canonical_roster_pages": 173,
+      "canonical_pages_found": 173,
+      "missing_roster_pages": 0,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "outcome_visual_candidates": 80,
+      "absolute_effect_markup_pages": 93,
+      "legacy_flat_routes": 135,
+      "legacy_flat_routes_redirected": 135,
+      "note": "Static heuristic confirms canonical route coverage and visual/renderer hooks. It does not prove clinical values are correct or that visuals render in a browser."
+    },
+    "legacy_flat_route_redirects_added_on": "2026-10-14",
+    "legacy_flat_route_redirect_count": 135
   },
   "trials": [
     {
