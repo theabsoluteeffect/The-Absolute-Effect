@@ -31,9 +31,9 @@ function enhance(){
  // New rule: if neither NNT nor NNH is defensibly quantifiable, visualize a reported endpoint instead.
  if(NNT===null&&NNH===null&&!document.querySelector('[data-outcome-visual]')){
    const visualText=(oldMain||body).innerText||text;
-   const median=visualText.match(/(?:median\\s+(?:overall\\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\\n]{0,180}?([0-9]+(?:\\.[0-9]+)?)\\s*(?:months?\\s*)?(?:vs\\.?|versus)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(months?|mos?)/i);
+   const median=visualText.match(/(?:median\s+(?:overall\s+survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS))[^.\n]{0,180}?([0-9]+(?:\.[0-9]+)?)\s*(?:months?\s*)?(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)\s*(months?|mos?)/i);
    const rates=visualText.match(/((?:overall survival|OS|progression-free survival|PFS|disease-free survival|DFS|objective response rate|pCR))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%\s*(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)%/i);
-   const hr=visualText.match(/\\bHR\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:\\(?\\s*95%\\s*CI\\s*[:=]?\\s*([0-9]+(?:\\.[0-9]+)?)\\s*(?:[-–—,]|to)\\s*([0-9]+(?:\\.[0-9]+)?)\\s*\\)?)?/i);
+   const hr=visualText.match(/\bHR\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:\(?\s*95%\s*CI\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\s*(?:[-–—,]|to)\s*([0-9]+(?:\.[0-9]+)?)\s*\)?)?/i);
    if(median){
      const v=document.createElement('section');v.className='ae-card ae-outcome-visual';
      const a=Number(median[1]),b=Number(median[2]),max=Math.max(a,b);
