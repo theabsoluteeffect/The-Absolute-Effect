@@ -34,6 +34,10 @@ function inspect(file) {
   const numericNnt = /data-nnt=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const hasRenderer = /assets\/absolute-effect\.js/.test(html);
+  const hasDatedContext = /current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText);
+  const hasPrimarySource = /href=[\"'][^\"']*(?:pubmed\\.ncbi\\.nlm\\.nih\\.gov|doi\\.org|clinicaltrials\\.gov|nejm\\.org|thelancet\\.com|ascopubs\\.org|nature\\.com|pmc\\.ncbi\\.nlm\\.nih\\.gov)/i.test(html);
+  const genericInterpretation = /interpret the absolute difference together with the endpoint|patient-level value of an intervention depends on absolute event risk|historical trials may use older staging/i.test(visibleText);
+  const shortPage = html.length < 3500;
   const hasExplicitVisual = /data-outcome-visual|data-outcome-single|data-outcome-static|ae-outcome-chart|ae-hr-track/.test(html);
   const pairedPercent = /\d+(?:\.\d+)?\s*%[^.]{0,80}?(?:vs\.?|versus)[^.]{0,60}?\d+(?:\.\d+)?\s*%/i.test(visibleText);
   const medianPair = /median.{0,180}?\d+(?:\.\d+)?\s*(?:months?|mos? years?|years?)?[^.]{0,50}?(?:vs\.?|versus)[^.]{0,40}?\d+(?:\.\d+)?\s*(?:months?|years?)?/i.test(visibleText);
@@ -47,7 +51,7 @@ function inspect(file) {
   else if (hasExplicitVisual || numericEndpointCandidate) status = 'outcome_visual_candidate';
   return {
     path: path.relative(root, file).replaceAll(path.sep, '/'),
-    hasRenderer, numericNnt, numericNnh, hasExplicitVisual,
+    hasRenderer, hasDatedContext, hasPrimarySource, genericInterpretation, shortPage, numericNnt, numericNnh, hasExplicitVisual,
     pairedPercent, medianPair, hrWithCI, singleRate, eventCount, status
   };
 }
@@ -75,6 +79,10 @@ const report = {
     roster_outcome_visual_candidate: rosterPages.filter(x => x.status === 'outcome_visual_candidate').length,
     roster_manual_review: rosterPages.filter(x => x.status === 'manual_review').length,
     roster_renderer_missing: rosterPages.filter(x => x.status === 'renderer_missing').length,
+    roster_missing_dated_context: rosterPages.filter(x => !x.hasDatedContext).length,
+    roster_missing_primary_source: rosterPages.filter(x => !x.hasPrimarySource).length,
+    roster_generic_interpretation: rosterPages.filter(x => x.genericInterpretation).length,
+    roster_short_pages: rosterPages.filter(x => x.shortPage).length,
     all_html_manual_review: allPages.filter(x => x.status === 'manual_review').length,
     all_html_renderer_missing: allPages.filter(x => x.status === 'renderer_missing').length
   },
