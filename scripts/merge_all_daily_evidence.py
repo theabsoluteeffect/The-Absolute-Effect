@@ -100,4 +100,4 @@ for page in sorted((ROOT / "trial-pages").glob("*/index.html")):
         page.write_text(page_html, encoding="utf-8")
 
 INDEX.write_text(html, encoding="utf-8")
-print(f"Atlas navigation rebuilt from {len(entries)} unique evidence records into {len(navigation)} discipline-linked navigation entries.")
+print(f"Checked {len(entries)} unique daily evidence records; homepage uses the master roster dynamically.")
