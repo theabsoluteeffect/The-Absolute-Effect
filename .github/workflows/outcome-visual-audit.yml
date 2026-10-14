@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Check shared renderer JavaScript syntax
+        run: node --check assets/absolute-effect.js && node --check assets/trial-page-template.js
       - name: Audit all roster and trial HTML pages
         run: node scripts/audit-outcome-visuals.js
       - name: Upload visual audit report
