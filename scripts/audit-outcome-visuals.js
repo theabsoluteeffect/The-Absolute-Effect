@@ -39,6 +39,8 @@ function inspect(file) {
   const medianPair = /median.{0,180}?\d+(?:\.\d+)?\s*(?:months?|mos? years?|years?)?[^.]{0,50}?(?:vs\.?|versus)[^.]{0,40}?\d+(?:\.\d+)?\s*(?:months?|years?)?/i.test(visibleText);
   const hrWithCI = /\bHR\s*[:=]?\s*\d+(?:\.\d+)?[^.]{0,100}?95\s*%\s*CI\s*[:=]?\s*\d+(?:\.\d+)?\s*(?:[-–—]|to)\s*\d+(?:\.\d+)?/i.test(visibleText);
   const singleRate = /(?:objective response(?: rate)?|\bORR\b|local control|overall survival|\bOS\b|progression[- ]free survival|\bPFS\b|disease[- ]free survival|\bDFS\b|patient preference|relapse(?: rate)?|recurrence(?: rate)?|event-free survival|\bEFS\b|pCR|pathological complete response|survival)[^.]{0,100}?\d+(?:\.\d+)?\s*%/i.test(visibleText);
+  const eventCount = /\d+\s+(?:relapses|recurrences|events|responses)\s+(?:among|of)\s+\d+/i.test(visibleText);
+  const numericEndpointCandidate = pairedPercent || medianPair || hrWithCI || singleRate || eventCount;
   let status = 'manual_review';
   if (!hasRenderer) status = 'renderer_missing';
   else if (numericNnt || numericNnh) status = 'absolute_effect_markup';
@@ -46,7 +48,7 @@ function inspect(file) {
   return {
     path: path.relative(root, file).replaceAll(path.sep, '/'),
     hasRenderer, numericNnt, numericNnh, hasExplicitVisual,
-    pairedPercent, medianPair, hrWithCI, status
+    pairedPercent, medianPair, hrWithCI, singleRate, eventCount, status
   };
 }
 const rosterPages = [];
