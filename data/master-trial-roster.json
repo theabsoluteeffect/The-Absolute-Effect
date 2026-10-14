@@ -1066,6 +1066,22 @@
       "outcome_visual_review_status": "pending_automated_and_source_review"
     },
     {
+      "id": "imvigor011",
+      "trial": "IMvigor011",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/imvigor011/",
+      "aliases": [
+        "IMvigor011",
+        "NCT04660344"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "ctDNA-guided adjuvant MIBC",
+      "question": "After cystectomy for MIBC, does serial ctDNA testing identify patients who benefit from adjuvant atezolizumab?",
+      "path": "trial-pages/imvigor011/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+    },
+    {
       "id": "imvigor211",
       "trial": "IMvigor211",
       "site": "Bladder Cancer",
