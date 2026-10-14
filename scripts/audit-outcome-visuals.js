@@ -26,7 +26,7 @@ walk(trialRoot);
 const canonicalHtmlFiles = htmlFiles.filter(file => file.endsWith(path.sep + 'index.html'));
 const legacyFlatFiles = htmlFiles.filter(file => path.dirname(file) === trialRoot && file.endsWith('.html'));
 const redirectText = fs.existsSync(path.join(root, '_redirects')) ? fs.readFileSync(path.join(root, '_redirects'), 'utf8') : '';
-const redirectSources = new Set(redirectText.split(String.fromCharCode(10)).map(line => line.trim().split(/\\s+/)[0]).filter(Boolean));
+const redirectSources = new Set(redirectText.split(String.fromCharCode(10)).map(line => line.trim().split(' ')[0]).filter(Boolean));
 const legacyRedirectsMissing = legacyFlatFiles.map(file => '/' + path.relative(root, file).replaceAll(path.sep, '/')).filter(from => !redirectSources.has(from));
 function inspect(file) {
   const html = fs.readFileSync(file, 'utf8');
