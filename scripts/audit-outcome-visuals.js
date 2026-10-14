@@ -23,10 +23,10 @@ function walk(dir) {
 walk(trialRoot);
 // Flat trial-pages/*.html files are legacy duplicate URLs; _redirects sends them
 // to canonical directory pages. Audit canonical index pages separately.
-const canonicalHtmlFiles = htmlFiles.filter(file => /[\\/]index\\.html$/i.test(file));
-const legacyFlatFiles = htmlFiles.filter(file => /[\\/]trial-pages[\\/][^\\/]+\\.html$/i.test(file));
+const canonicalHtmlFiles = htmlFiles.filter(file => file.endsWith(path.sep + 'index.html'));
+const legacyFlatFiles = htmlFiles.filter(file => path.dirname(file) === trialRoot && file.endsWith('.html'));
 const redirectText = fs.existsSync(path.join(root, '_redirects')) ? fs.readFileSync(path.join(root, '_redirects'), 'utf8') : '';
-const redirectSources = new Set(redirectText.split(/\\r?\\n/).map(line => line.trim().split(/\\s+/)[0]).filter(Boolean));
+const redirectSources = new Set(redirectText.split(String.fromCharCode(10)).map(line => line.trim().split(/\\s+/)[0]).filter(Boolean));
 const legacyRedirectsMissing = legacyFlatFiles.map(file => '/' + path.relative(root, file).replaceAll(path.sep, '/')).filter(from => !redirectSources.has(from));
 function inspect(file) {
   const html = fs.readFileSync(file, 'utf8');
