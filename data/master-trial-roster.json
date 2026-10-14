@@ -18,28 +18,28 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 145,
+    "permanent_trial_pages": 168,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 145,
+    "total_unique_trials": 168,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-08",
+    "daily_batch_uploaded": "2026-10-14",
     "new_trials_added_today": [
-      "RTOG 0617",
-      "MRC CR07 / NCIC-CTG C016",
-      "Dutch TME Trial",
-      "PRODIGE 4/ACCORD 11",
-      "ABC-02",
-      "SHARP",
-      "EORTC 26951 / RTOG 9402",
-      "IDEA Collaboration",
-      "ESPAC-4",
-      "MRC OE02"
+      "EV-303 / KEYNOTE-905",
+      "EV-304 / KEYNOTE-B15",
+      "POTOMAC",
+      "IMvigor011",
+      "CheckMate 901",
+      "KEYNOTE-057",
+      "KEYNOTE-052",
+      "TROPHY-U-01",
+      "SWOG S1605",
+      "KEYNOTE-361"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -61,7 +61,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-08",
+    "last_full_reconciliation": "2026-10-14",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -88,7 +88,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-13",
+    "last_quality_check": "2026-10-14",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -119,15 +119,15 @@
     },
     "clinical_freshness_audit_started": "2026-10-13",
     "clinical_freshness_audit_completed": false,
-    "clinical_freshness_audit_status": "IN PROGRESS — all 145 roster trials explicitly marked pending; no trial is represented as individually clinically verified.",
+    "clinical_freshness_audit_status": "IN PROGRESS — targeted context added to the new batch; full roster clinical review remains incomplete.",
     "clinical_currency_guard_added": "2026-10-13",
     "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes.",
     "outcome_visual_qa_rule_updated": "2026-10-13",
     "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
     "outcome_visual_page_by_page_audit_completed": false,
-    "outcome_visual_page_by_page_audit_status": "Automated audit added; trial-by-trial source-level review and any resulting bespoke visual fixes remain to be completed from the generated audit report.",
+    "outcome_visual_page_by_page_audit_status": "New batch has outcome charts in HTML; automated and browser-rendered visual QA remains pending.",
     "outcome_visual_review_started": "2026-10-13",
-    "outcome_visual_review_total": 145,
+    "outcome_visual_review_total": 168,
     "outcome_visual_review_status": "Shared renderer/template safeguards and automated audit are committed. Every roster entry is explicitly marked pending until the generated page-level audit is reviewed and each page's actual visual is confirmed.",
     "prostate_oligometastatic_batch_added": "2026-10-13",
     "prostate_oligometastatic_batch_trials": [
@@ -145,7 +145,24 @@
       "RAVENS",
       "LUNAR"
     ],
-    "prostate_oligometastatic_batch_note": "Added source-linked trial pages for the requested prostate RT/MDT list. PEACE-1 already existed and was expanded with its prostate-radiotherapy comparison rather than duplicated. OLIGOPELVIS and TRAP are single-arm studies, not randomized ENRT-vs-INRT or MDT-vs-systemic-therapy comparisons."
+    "prostate_oligometastatic_batch_note": "Added source-linked trial pages for the requested prostate RT/MDT list. PEACE-1 already existed and was expanded with its prostate-radiotherapy comparison rather than duplicated. OLIGOPELVIS and TRAP are single-arm studies, not randomized ENRT-vs-INRT or MDT-vs-systemic-therapy comparisons.",
+    "targeted_stale_page_check": {
+      "date": "2026-10-14",
+      "status": "Targeted content/source check recorded for the 10 new pages; browser-render and live deployment checks pending.",
+      "clinical_freshness_audit_completed": false,
+      "scope": [
+        "ev-303",
+        "ev-304",
+        "potomac",
+        "imvigor011",
+        "checkmate-901",
+        "keynote-057",
+        "keynote-052",
+        "trophy-u-01",
+        "swog-s1605",
+        "keynote-361"
+      ]
+    }
   },
   "trials": [
     {
