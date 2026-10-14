@@ -65,7 +65,7 @@
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
     }
     // If a named endpoint has paired reported percentages, visualize those rates directly.
-    const rates=text.match(/((?:[0-9]+[- ]year\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|patient preference|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\s*[≥>=]?\s*[0-4]\s+toxicity|late toxicity|treatment-related mortality|relapse(?: rate)?|local control))[^.\n]{0,120}?([0-9]+(?:\.[0-9]+)?)%[^.\n]{0,50}?(?:vs\.?|versus)[^.\n]{0,50}?([0-9]+(?:\.[0-9]+)?)%/i);
+    const rates=text.match(/((?:[0-9]+[- ]year\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|objective response|patient preference|survival|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\s*[≥>=]?\s*[0-4]\s+toxicity|late toxicity|treatment-related mortality|relapse(?: rate)?|local control))[^.\n]{0,120}?([0-9]+(?:\.[0-9]+)?)%[^.\n]{0,50}?(?:vs\.?|versus)[^.\n]{0,50}?([0-9]+(?:\.[0-9]+)?)%/i);
     if(rates){
       const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=rates[1];el.dataset.treatment=rates[2];el.dataset.control=rates[3];el.dataset.unit='%';el.dataset.horizon='Reported endpoint rate';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
@@ -81,7 +81,7 @@
       host.insertAdjacentElement('afterend',el);return;
     }
     // Single-arm or cohort studies still deserve a source-reported visual; never invent a control group.
-    const singleRate=text.match(/((?:[0-9]+[- ]year\s+)?(?:objective response rate|overall response rate|ORR|local control|overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|pathological complete response|pathologic complete response|pCR|patient preference|relapse rate|relapse|recurrence rate|recurrence|event-free survival|EFS))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%/i);
+    const singleRate=text.match(/((?:[0-9]+[- ]year\s+)?(?:objective response rate|overall response rate|objective response|ORR|local control|survival|overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|pathological complete response|pathologic complete response|pCR|patient preference|relapse rate|relapse|recurrence rate|recurrence|event-free survival|EFS))[^.\n]{0,100}?([0-9]+(?:\.[0-9]+)?)%/i);
     if(singleRate){
       const value=Number(singleRate[2]);
       if(value>=0&&value<=100){
