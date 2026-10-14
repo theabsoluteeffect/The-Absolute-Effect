@@ -78,71 +78,10 @@ if not any(x.get("id") == "arasens" for x in entries):
         "urls": ["https://pubmed.ncbi.nlm.nih.gov/35179367/"]
     })
 
-marker = "const trials="
-start = html.find(marker)
-if start == -1:
-    raise SystemExit("Current const trials navigation block not found")
-arr_start = start + len(marker)
-try:
-    old_trials, rel_end = json.JSONDecoder().raw_decode(html[arr_start:])
-except Exception as exc:
-    raise SystemExit(f"Could not parse const trials navigation block: {exc}")
-arr_end = arr_start + rel_end
-paths_by_id = {x.get("trial"): x.get("path") for x in old_trials if x.get("trial") and x.get("path")}
-
-navigation = []
-for x in entries:
-    rid = x.get("id")
-    trial = x.get("trial") or x.get("name") or rid
-    if not rid or not trial:
-        continue
-    dedicated = ROOT / "trial-pages" / rid / "index.html"
-    path = f"trial-pages/{rid}/" if dedicated.exists() else (paths_by_id.get(trial) or f"__evidence__/{rid}")
-
-    site = x.get("site", "")
-    # GBM is a disease/subsite within Neuro-Oncology, never a separate tumour site.
-    if site in {"Glioblastoma", "GBM"}:
-        site = "Neuro-Oncology"
-
-    raw_discipline = x.get("discipline", "")
-    if raw_discipline == "Radiation / Medical Oncology":
-        disciplines = ["Medical Oncology", "Radiation Oncology"]
-    elif raw_discipline == "Medical / Radiation Oncology":
-        disciplines = ["Medical Oncology", "Radiation Oncology"]
-    elif raw_discipline == "Radiation / Surgical Oncology":
-        disciplines = ["Radiation Oncology", "Surgical Oncology"]
-    elif raw_discipline == "Medical / Surgical Oncology":
-        disciplines = ["Medical Oncology", "Surgical Oncology"]
-    elif raw_discipline == "Medical / Radiation / Surgical Oncology":
-        disciplines = ["Medical Oncology", "Radiation Oncology", "Surgical Oncology"]
-    else:
-        disciplines = [raw_discipline]
-
-    for discipline in disciplines:
-        if discipline not in {"Medical Oncology", "Radiation Oncology", "Surgical Oncology"}:
-            continue
-        navigation.append({
-            "id": rid,
-            "site": site,
-            "discipline": discipline,
-            "setting": x.get("setting", ""),
-            "trial": trial,
-            "question": x.get("clinicalQuestion") or x.get("question") or trial,
-            "path": path
-        })
-
-# ProtecT is genuinely cross-modality. Keep one underlying evidence record but
-# expose it through each discipline filter without creating three evidence cards.
-protect = next((x for x in navigation if x["id"] == "protect-15y"), None)
-if protect:
-    navigation = [x for x in navigation if x["id"] != "protect-15y"]
-    for discipline in ["Medical Oncology", "Radiation Oncology", "Surgical Oncology"]:
-        p = dict(protect)
-        p["discipline"] = discipline
-        navigation.append(p)
-
-replacement = "const trials=" + json.dumps(navigation, ensure_ascii=False, separators=(",", ":")) + ";"
-html = html[:start] + replacement + html[arr_end:]
+# The homepage now loads the master roster at runtime. Do not rebuild an obsolete
+# embedded "const trials=[...]" block from daily-evidence files.
+if "fetch('/data/master-trial-roster.json'" not in html and 'fetch("/data/master-trial-roster.json"' not in html:
+    raise SystemExit("Homepage is not using the expected dynamic master-roster loader")
 
 # Ensure the displayed clinical question comes from the evidence object for the
 # RTOG 9601 entry and cannot be overridden by a stale legacy questionLabels map.
