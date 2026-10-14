@@ -1121,6 +1121,22 @@
       "outcome_visual_review_status": "pending_automated_and_source_review"
     },
     {
+      "id": "keynote-057",
+      "trial": "KEYNOTE-057",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/keynote-057/",
+      "aliases": [
+        "KEYNOTE-057",
+        "NCT02625961"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "BCG-unresponsive high-risk NMIBC",
+      "question": "For selected patients with BCG-unresponsive CIS who decline or are ineligible for cystectomy, can pembrolizumab provide bladder-preserving disease control?",
+      "path": "trial-pages/keynote-057/",
+      "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+    },
+    {
       "id": "keynote-426",
       "trial": "KEYNOTE-426",
       "site": "Renal Cell Carcinoma",
