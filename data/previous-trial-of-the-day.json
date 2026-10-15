@@ -6,9 +6,26 @@
   "journal": "New England Journal of Medicine",
   "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2511674",
   "site": "Bladder Cancer",
-  "discipline": "Medical Oncology",
+  "discipline": "Medical",
   "setting": "Perioperative cisplatin-ineligible MIBC",
   "population": "344 patients with operable MIBC who were ineligible for or declined cisplatin-based chemotherapy",
   "summary": "Perioperative enfortumab vedotin plus pembrolizumab improved 2-year EFS (74.7% vs 39.4%), 2-year OS (79.7% vs 63.1%) and pCR (57.1% vs 8.6%) compared with immediate cystectomy.",
-  "criticalReview": "The magnitude of benefit is clinically important and led to FDA approval in the cisplatin-ineligible perioperative setting. The regimen carries substantial toxicity; discuss neuropathy, rash, hyperglycaemia, immune-mediated adverse events and surgical fitness. Do not derive NNT from hazard ratios or mix this comparison with EV-304 or NIAGARA."
+  "criticalReview": "The magnitude of benefit is clinically important and led to FDA approval in the cisplatin-ineligible perioperative setting. The regimen carries substantial toxicity; discuss neuropathy, rash, hyperglycaemia, immune-mediated adverse events and surgical fitness. Do not derive NNT from hazard ratios or mix this comparison with EV-304 or NIAGARA.",
+  "absoluteEffect": {
+    "endpoint": "2-year event-free survival",
+    "treatmentRate": "74.7%",
+    "controlRate": "39.4%",
+    "absoluteBenefit": "35.3 percentage points",
+    "nnt": "≈3; based on 2-year EFS",
+    "additionalEndpoint": {
+      "name": "2-year overall survival",
+      "treatmentRate": "79.7%",
+      "controlRate": "63.1%",
+      "absoluteBenefit": "16.6 percentage points",
+      "nnt": "≈7; based on 2-year OS"
+    },
+    "toxicity": "Clinically important toxicities include peripheral neuropathy, rash, hyperglycaemia and immune-mediated adverse events; page-level grade-specific figures should be consulted.",
+    "nnh": "Not added here because a single verified fixed-time toxicity endpoint was not specified in the prior record."
+  },
+  "archiveNote": "Not duplicated in data/trial-archive.json because EV-303/KEYNOTE-905 already has a permanent trial page."
 }
