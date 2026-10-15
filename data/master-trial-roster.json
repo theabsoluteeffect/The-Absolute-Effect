@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 3,
-  "last_quality_check": "2026-10-14",
+  "last_quality_check": "2026-10-15",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -18,33 +18,28 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 173,
+    "permanent_trial_pages": 183,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 173,
+    "total_unique_trials": 183,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-14",
+    "daily_batch_uploaded": "2026-10-15",
     "new_trials_added_today": [
-      "EV-303 / KEYNOTE-905",
-      "EV-304 / KEYNOTE-B15",
-      "POTOMAC",
-      "IMvigor011",
-      "CheckMate 901",
-      "KEYNOTE-057",
-      "KEYNOTE-052",
-      "TROPHY-U-01",
-      "SWOG S1605",
-      "KEYNOTE-361",
-      "COSMIC-313",
-      "LITESPARK-012",
-      "METEOR",
-      "CONTACT-03",
-      "TiNivo-2"
+      "RTOG 0236",
+      "JBR.10",
+      "MAGIC",
+      "EORTC 22845",
+      "RTOG 9802",
+      "COLOR",
+      "QUASAR",
+      "CAO/ARO/AIO-94",
+      "CONKO-001",
+      "IMbrave150"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -228,7 +223,9 @@
       "renderer_javascript_syntax": "PASS"
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
-    "legacy_flat_route_redirect_count": 135
+    "legacy_flat_route_redirect_count": 135,
+    "batch_date": "2026-10-15",
+    "quality_check_date": "2026-10-15"
   },
   "trials": [
     {
@@ -2485,6 +2482,177 @@
       "setting": "Neoadjuvant",
       "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
       "path": "trial-pages/vesper/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "rtog-0236",
+      "trial": "RTOG 0236",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/rtog-0236/",
+      "aliases": [
+        "RTOG 0236",
+        "ACRIN 6668",
+        "NCT00087659"
+      ],
+      "discipline": "Radiation",
+      "setting": "Stage I · Medically Inoperable · SBRT",
+      "question": "For medically inoperable stage I NSCLC, does SBRT provide durable primary-tumour control?",
+      "path": "trial-pages/rtog-0236/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "jbr-10",
+      "trial": "JBR.10",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/jbr-10/",
+      "aliases": [
+        "JBR.10",
+        "JBR-10",
+        "NCIC CTG BR.10",
+        "NCT00002583"
+      ],
+      "discipline": "Medical",
+      "setting": "Resected Stage IB–II · Adjuvant Chemotherapy",
+      "question": "After complete resection of stage IB–II NSCLC, does cisplatin–vinorelbine improve survival compared with observation?",
+      "path": "trial-pages/jbr-10/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "magic",
+      "trial": "MAGIC",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/magic/",
+      "aliases": [
+        "MAGIC",
+        "MRC Adjuvant Gastric Infusional Chemotherapy",
+        "ISRCTN93793971"
+      ],
+      "discipline": "Medical",
+      "setting": "Resectable Disease · Perioperative Chemotherapy",
+      "question": "In resectable gastric/GEJ adenocarcinoma, does perioperative ECF improve survival over surgery alone?",
+      "path": "trial-pages/magic/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "eortc-22845",
+      "trial": "EORTC 22845",
+      "site": "Neuro-oncology",
+      "source": "trial-pages/eortc-22845/",
+      "aliases": [
+        "EORTC 22845",
+        "EORTC 22844/22845",
+        "Early versus delayed radiotherapy low-grade glioma"
+      ],
+      "discipline": "Radiation",
+      "setting": "Adult Low-Grade Glioma · Early vs Deferred RT",
+      "question": "In adults with low-grade glioma, does early RT improve outcomes compared with RT deferred until progression?",
+      "path": "trial-pages/eortc-22845/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "rtog-9802",
+      "trial": "RTOG 9802",
+      "site": "Neuro-oncology",
+      "source": "trial-pages/rtog-9802/",
+      "aliases": [
+        "RTOG 9802",
+        "NRG/RTOG 9802",
+        "NCT00003375"
+      ],
+      "discipline": "Medical",
+      "setting": "High-Risk Grade 2 Glioma · RT ± PCV",
+      "question": "For high-risk grade 2 glioma, does adding PCV after RT improve survival?",
+      "path": "trial-pages/rtog-9802/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "color",
+      "trial": "COLOR",
+      "site": "Colorectal Cancer",
+      "source": "trial-pages/color/",
+      "aliases": [
+        "COLOR",
+        "COlon carcinoma Laparoscopic or Open Resection",
+        "NCT00387842"
+      ],
+      "discipline": "Surgical",
+      "setting": "Resectable Colon Cancer · Laparoscopic vs Open Surgery",
+      "question": "For resectable colon cancer, is laparoscopic colectomy oncologically non-inferior to open colectomy?",
+      "path": "trial-pages/color/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "quasar",
+      "trial": "QUASAR",
+      "site": "Colorectal Cancer",
+      "source": "trial-pages/quasar/",
+      "aliases": [
+        "QUASAR",
+        "Quick and Simple and Reliable",
+        "ISRCTN82375386"
+      ],
+      "discipline": "Medical",
+      "setting": "Resected Colorectal Cancer · Predominantly Stage II · Adjuvant Therapy",
+      "question": "After curative resection of colorectal cancer, does fluoropyrimidine chemotherapy improve outcomes over observation?",
+      "path": "trial-pages/quasar/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "cao-aro-aio-94",
+      "trial": "CAO/ARO/AIO-94",
+      "site": "Rectal Cancer",
+      "source": "trial-pages/cao-aro-aio-94/",
+      "aliases": [
+        "CAO/ARO/AIO-94",
+        "German Rectal Cancer Study Group trial",
+        "Preoperative versus postoperative chemoradiotherapy rectal cancer"
+      ],
+      "discipline": "Radiation",
+      "setting": "Stage II–III Rectal Cancer · Preoperative vs Postoperative CRT",
+      "question": "In locally advanced rectal cancer, does preoperative rather than postoperative CRT reduce local recurrence?",
+      "path": "trial-pages/cao-aro-aio-94/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "conko-001",
+      "trial": "CONKO-001",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/conko-001/",
+      "aliases": [
+        "CONKO-001",
+        "Charité Onkologie 001",
+        "ISRCTN34802808"
+      ],
+      "discipline": "Medical",
+      "setting": "Resected Pancreatic Ductal Adenocarcinoma · Adjuvant Therapy",
+      "question": "After resection of pancreatic cancer, does adjuvant gemcitabine improve outcomes versus observation?",
+      "path": "trial-pages/conko-001/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "imbrave150",
+      "trial": "IMbrave150",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/imbrave150/",
+      "aliases": [
+        "IMbrave150",
+        "GO30140 cohort 4",
+        "NCT03434379"
+      ],
+      "discipline": "Medical",
+      "setting": "Unresectable HCC · First-line Systemic Therapy",
+      "question": "In untreated unresectable HCC, does atezolizumab plus bevacizumab improve outcomes versus sorafenib?",
+      "path": "trial-pages/imbrave150/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
     }
