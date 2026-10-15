@@ -1,0 +1,313 @@
+[
+  {
+    "id": "rtog-0236",
+    "site": "Non-Small Cell Lung Cancer",
+    "discipline": "Radiation",
+    "setting": "Stage I · Medically Inoperable · SBRT",
+    "treatment": "SBRT 54 Gy in 3 fractions; single-arm",
+    "population": "55 medically inoperable patients with peripheral T1–T2N0M0 NSCLC",
+    "endpoint": "3-year primary-tumour control",
+    "horizon": "3 years",
+    "interventionRate": 97.6,
+    "controlRate": null,
+    "absoluteBenefit": null,
+    "nnt": "Not estimable; single-arm study",
+    "relativeLabel": "Primary tumour control",
+    "relativeEffect": "97.6% at 3 years",
+    "ci": "Single-arm phase II",
+    "benefitText": "Primary-tumour control at 3 years was 97.6%.",
+    "harmLabel": "Grade 3–5 toxicity",
+    "harmIncrease": null,
+    "nnH": "Not applicable to single-arm comparison",
+    "harmText": "Grade 3 toxicity 27.3%, grade 4 3.6%, grade 5 1.8% in original report.",
+    "clinicalInterpretation": "SBRT achieved high primary tumour control in medically inoperable peripheral stage I NSCLC; this does not establish equivalence to surgery.",
+    "trial": "RTOG 0236",
+    "clinicalQuestion": "For medically inoperable stage I NSCLC, does SBRT provide durable primary-tumour control?",
+    "refs": [
+      "Timmerman R, et al. JAMA. 2010;303:1070–1076."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/20233825/"
+    ]
+  },
+  {
+    "id": "jbr-10",
+    "site": "Non-Small Cell Lung Cancer",
+    "discipline": "Medical",
+    "setting": "Resected Stage IB–II · Adjuvant Chemotherapy",
+    "treatment": "4 cycles cisplatin–vinorelbine vs observation",
+    "population": "482 completely resected stage IB–II NSCLC",
+    "endpoint": "5-year overall survival (earlier report)",
+    "horizon": "5 years",
+    "interventionRate": 69,
+    "controlRate": 54,
+    "absoluteBenefit": 15,
+    "nnt": "≈7; based on 5-year OS in earlier pooled analysis",
+    "relativeLabel": "HR for death",
+    "relativeEffect": "0.78",
+    "ci": "95% CI 0.61–0.99; P=.04 at 9.3-year follow-up",
+    "benefitText": "Earlier 5-year OS was 69% vs 54%; long-term pooled HR 0.78.",
+    "harmLabel": "Treatment burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Cisplatin/vinorelbine has substantial hematologic, renal, neurologic and gastrointestinal burden.",
+    "clinicalInterpretation": "Durable adjuvant benefit is clearest in stage II/node-positive disease; do not generalize the pooled 5-year difference to stage IB.",
+    "trial": "JBR.10",
+    "clinicalQuestion": "After complete resection of stage IB–II NSCLC, does cisplatin–vinorelbine improve survival?",
+    "refs": [
+      "Butts CA, et al. J Clin Oncol. 2010."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19933915/"
+    ]
+  },
+  {
+    "id": "magic",
+    "site": "Gastric and Gastroesophageal Junction Cancer",
+    "discipline": "Medical",
+    "setting": "Resectable Disease · Perioperative Chemotherapy",
+    "treatment": "3 pre- and 3 postoperative cycles ECF vs surgery alone",
+    "population": "503 resectable gastric, GEJ or lower oesophageal adenocarcinoma",
+    "endpoint": "5-year overall survival",
+    "horizon": "5 years",
+    "interventionRate": 36,
+    "controlRate": 23,
+    "absoluteBenefit": 13,
+    "nnt": "≈8; based on 5-year OS",
+    "relativeLabel": "HR for death",
+    "relativeEffect": "0.75",
+    "ci": "95% CI 0.60–0.93; P=.009",
+    "benefitText": "5-year OS was 36% vs 23%.",
+    "harmLabel": "Treatment completion",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Only about 42% completed all six planned cycles; perioperative chemotherapy adds hematologic, gastrointestinal, renal and cardiac burden.",
+    "clinicalInterpretation": "Perioperative chemotherapy improved survival over surgery alone; ECF is historical and later FLOT evidence changed practice.",
+    "trial": "MAGIC",
+    "clinicalQuestion": "In resectable gastric/GEJ adenocarcinoma, does perioperative ECF improve survival?",
+    "refs": [
+      "Cunningham D, et al. N Engl J Med. 2006."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/16822992/"
+    ]
+  },
+  {
+    "id": "eortc-22845",
+    "site": "Neuro-oncology",
+    "discipline": "Radiation",
+    "setting": "Adult Low-Grade Glioma · Early vs Deferred RT",
+    "treatment": "Early RT vs observation and RT at progression",
+    "population": "314 adults with histologically defined low-grade glioma",
+    "endpoint": "Median progression-free survival",
+    "horizon": "Median follow-up",
+    "interventionRate": 5.3,
+    "controlRate": 3.4,
+    "absoluteBenefit": 1.9,
+    "nnt": "Not appropriate; median PFS difference is not a fixed-time risk difference",
+    "relativeLabel": "HR for progression/death",
+    "relativeEffect": "0.59",
+    "ci": "95% CI 0.45–0.77; P<.0001; OS HR 0.97",
+    "benefitText": "Median PFS 5.3 vs 3.4 years; median OS 7.4 vs 7.2 years.",
+    "harmLabel": "Quality of life",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Quality of life was not studied in the trial.",
+    "clinicalInterpretation": "Early RT delays progression but did not demonstrate an OS advantage over deferred RT.",
+    "trial": "EORTC 22845",
+    "clinicalQuestion": "Does early RT improve outcomes versus RT deferred until progression in low-grade glioma?",
+    "refs": [
+      "van den Bent MJ, et al. Lancet. 2005."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/16168780/"
+    ]
+  },
+  {
+    "id": "rtog-9802",
+    "site": "Neuro-oncology",
+    "discipline": "Medical",
+    "setting": "High-Risk Grade 2 Glioma · RT ± PCV",
+    "treatment": "54 Gy RT + 6 cycles PCV vs RT alone",
+    "population": "251 high-risk grade 2 glioma patients",
+    "endpoint": "Median overall survival",
+    "horizon": "Long-term follow-up",
+    "interventionRate": 13.3,
+    "controlRate": 7.8,
+    "absoluteBenefit": 5.5,
+    "nnt": "Not appropriate; median OS difference is not a fixed-time risk difference",
+    "relativeLabel": "HR for death",
+    "relativeEffect": "0.59",
+    "ci": "P=.003; median PFS 10.4 vs 4.0 years",
+    "benefitText": "Median OS 13.3 vs 7.8 years; median PFS 10.4 vs 4.0 years.",
+    "harmLabel": "PCV treatment burden",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "PCV adds myelosuppression, infection risk, fatigue and vincristine neuropathy.",
+    "clinicalInterpretation": "Adding PCV to RT improves long-term survival in high-risk grade 2 glioma; apply with modern molecular diagnosis.",
+    "trial": "RTOG 9802",
+    "clinicalQuestion": "Does adding PCV after RT improve survival in high-risk grade 2 glioma?",
+    "refs": [
+      "Buckner JC, et al. N Engl J Med. 2016."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/27050206/"
+    ]
+  },
+  {
+    "id": "color",
+    "site": "Colorectal Cancer",
+    "discipline": "Surgical",
+    "setting": "Resectable Colon Cancer · Laparoscopic vs Open Surgery",
+    "treatment": "Laparoscopic-assisted vs open colectomy",
+    "population": "1,248 patients with colon cancer",
+    "endpoint": "3-year disease-free survival",
+    "horizon": "3 years",
+    "interventionRate": 74.2,
+    "controlRate": 76.2,
+    "absoluteBenefit": -2,
+    "nnt": "Not applicable; non-inferiority trial, not superiority",
+    "relativeLabel": "Non-inferiority",
+    "relativeEffect": "Prespecified margin 7 percentage points",
+    "ci": "Interpret within trial's prespecified non-inferiority analysis",
+    "benefitText": "3-year DFS was approximately 74.2% vs 76.2%; the question is non-inferiority, not superiority.",
+    "harmLabel": "Perioperative recovery",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Laparoscopy can reduce blood loss and accelerate recovery; operative time and conversion risk matter.",
+    "clinicalInterpretation": "Laparoscopic colectomy can preserve oncological outcomes when performed by trained teams; the numerical difference is not proof of inferiority or benefit.",
+    "trial": "COLOR",
+    "clinicalQuestion": "Is laparoscopic colectomy oncologically non-inferior to open colectomy?",
+    "refs": [
+      "COLOR Study Group. Lancet Oncol. 2009."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/19801201/"
+    ]
+  },
+  {
+    "id": "quasar",
+    "site": "Colorectal Cancer",
+    "discipline": "Medical",
+    "setting": "Resected Colorectal Cancer · Predominantly Stage II · Adjuvant Therapy",
+    "treatment": "Fluorouracil plus folinic acid vs observation",
+    "population": "3,239 patients after curative resection; 71% stage II",
+    "endpoint": "5-year overall survival benefit (estimated under assumed baseline risk)",
+    "horizon": "5 years",
+    "interventionRate": 3.6,
+    "controlRate": 0,
+    "absoluteBenefit": 3.6,
+    "nnt": "≈28; based on estimated 3.6-point 5-year survival benefit under trial assumption",
+    "relativeLabel": "Absolute survival benefit",
+    "relativeEffect": "3.6 percentage points",
+    "ci": "95% CI approximately 1.0–6.0 percentage points",
+    "benefitText": "Estimated absolute 5-year survival benefit was 3.6 percentage points assuming 20% baseline mortality.",
+    "harmLabel": "Fluoropyrimidine toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Potential diarrhoea, mucositis, cytopenias and rare severe toxicity; assess DPD deficiency under current practice.",
+    "clinicalInterpretation": "Average absolute survival gain is small and baseline-risk dependent; stage II decisions should be individualized.",
+    "trial": "QUASAR",
+    "clinicalQuestion": "Does adjuvant fluoropyrimidine improve outcomes after curative colorectal resection?",
+    "refs": [
+      "QUASAR Collaborative Group. Lancet. 2007."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/18083404/"
+    ]
+  },
+  {
+    "id": "cao-aro-aio-94",
+    "site": "Rectal Cancer",
+    "discipline": "Radiation",
+    "setting": "Stage II–III · Preoperative vs Postoperative CRT",
+    "treatment": "Preoperative vs postoperative fluorouracil-based CRT",
+    "population": "823 randomized; 799 eligible patients with stage II–III rectal cancer",
+    "endpoint": "10-year cumulative local relapse",
+    "horizon": "10 years",
+    "interventionRate": 7.1,
+    "controlRate": 10.1,
+    "absoluteBenefit": 3,
+    "nnt": "≈34; based on 10-year local relapse",
+    "relativeLabel": "OS",
+    "relativeEffect": "59.6% vs 59.9%",
+    "ci": "OS P=.85; local relapse P=.048",
+    "benefitText": "10-year local relapse 7.1% vs 10.1%; 10-year OS 59.6% vs 59.9%.",
+    "harmLabel": "Treatment toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Preoperative CRT had lower toxicity than postoperative CRT in the original report.",
+    "clinicalInterpretation": "Preoperative CRT reduces local relapse and toxicity without demonstrated OS improvement versus postoperative CRT.",
+    "trial": "CAO/ARO/AIO-94",
+    "clinicalQuestion": "Does preoperative CRT reduce local recurrence versus postoperative CRT in rectal cancer?",
+    "refs": [
+      "Sauer R, et al. J Clin Oncol. 2012."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/22529255/"
+    ]
+  },
+  {
+    "id": "conko-001",
+    "site": "Pancreatic Cancer",
+    "discipline": "Medical",
+    "setting": "Resected Pancreatic Cancer · Adjuvant Therapy",
+    "treatment": "Gemcitabine 1,000 mg/m² days 1, 8, 15 q4w for 6 months vs observation",
+    "population": "368 randomized; 354 eligible for ITT",
+    "endpoint": "5-year overall survival",
+    "horizon": "5 years",
+    "interventionRate": 20.7,
+    "controlRate": 10.4,
+    "absoluteBenefit": 10.3,
+    "nnt": "≈10; based on 5-year OS",
+    "relativeLabel": "HR for death",
+    "relativeEffect": "0.76",
+    "ci": "95% CI 0.61–0.95; P=.01; median follow-up 136 months",
+    "benefitText": "5-year OS 20.7% vs 10.4%; median DFS 13.4 vs 6.7 months.",
+    "harmLabel": "Gemcitabine toxicity",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable",
+    "harmText": "Myelosuppression, fatigue, flu-like symptoms and hepatic abnormalities are relevant treatment burdens.",
+    "clinicalInterpretation": "Adjuvant gemcitabine improves long-term survival over observation but is not the most effective contemporary regimen for every fit patient.",
+    "trial": "CONKO-001",
+    "clinicalQuestion": "Does adjuvant gemcitabine improve outcomes after pancreatic cancer resection?",
+    "refs": [
+      "Oettle H, et al. JAMA. 2013."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/24104372/"
+    ]
+  },
+  {
+    "id": "imbrave150",
+    "site": "Hepatocellular Carcinoma",
+    "discipline": "Medical",
+    "setting": "Unresectable HCC · First-line Systemic Therapy",
+    "treatment": "Atezolizumab 1,200 mg + bevacizumab 15 mg/kg IV q3w vs sorafenib 400 mg twice daily",
+    "population": "501 systemic-treatment-naive patients with unresectable HCC",
+    "endpoint": "18-month overall survival",
+    "horizon": "18 months",
+    "interventionRate": 52,
+    "controlRate": 40,
+    "absoluteBenefit": 12,
+    "nnt": "≈9; based on 18-month OS",
+    "relativeLabel": "HR for death",
+    "relativeEffect": "0.66",
+    "ci": "95% CI 0.52–0.85; updated descriptive P<.001",
+    "benefitText": "18-month OS 52% vs 40%; updated median OS 19.2 vs 13.4 months.",
+    "harmLabel": "Grade 3/4 treatment-related AEs",
+    "harmIncrease": null,
+    "nnH": "Not quantifiable as an excess harm; rates 43% vs 46%",
+    "harmText": "Grade 3/4 treatment-related AEs 43% vs 46%; grade 5 events 2% vs <1%. Bevacizumab-related bleeding risk is central.",
+    "clinicalInterpretation": "Atezolizumab–bevacizumab improved survival over sorafenib in eligible patients; assess varices and portal hypertension before treatment.",
+    "trial": "IMbrave150",
+    "clinicalQuestion": "Does atezolizumab plus bevacizumab improve outcomes versus sorafenib in untreated unresectable HCC?",
+    "refs": [
+      "Finn RS, et al. N Engl J Med. 2020; updated analysis J Hepatol. 2021."
+    ],
+    "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/32402160/",
+      "https://pubmed.ncbi.nlm.nih.gov/34902530/"
+    ]
+  }
+]
