@@ -125,10 +125,10 @@
     "outcome_visual_qa_rule_updated": "2026-10-13",
     "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
     "outcome_visual_page_by_page_audit_completed": false,
-    "outcome_visual_page_by_page_audit_status": "Static audit PASS on 14 October 2026: 173/173 canonical pages found, 0 missing renderer hooks, 0 automated manual-review flags, 135/135 legacy flat routes redirected; renderer JavaScript syntax check passes. Browser-rendered verification remains pending.",
+    "outcome_visual_page_by_page_audit_status": "10 newly added pages have source-grounded outcome visual markup and the renderer script; static source check passed. Browser-rendered verification remains pending.",
     "outcome_visual_review_started": "2026-10-13",
-    "outcome_visual_review_total": 173,
-    "outcome_visual_review_status": "Automated structural audit passes; source-level clinical verification and browser-rendered visual QA remain pending for all roster entries.",
+    "outcome_visual_review_total": 183,
+    "outcome_visual_review_status": "Automated structural checks passed for all 183 canonical roster pages. The 10 pages added on 15 October contain outcome visual markup; browser-rendered QA and full source-level clinical review remain pending.",
     "prostate_oligometastatic_batch_added": "2026-10-13",
     "prostate_oligometastatic_batch_trials": [
       "HORRAD",
@@ -225,7 +225,19 @@
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
     "batch_date": "2026-10-15",
-    "quality_check_date": "2026-10-15"
+    "quality_check_date": "2026-10-15",
+    "daily_batch_upload_verified_on": "2026-10-15",
+    "live_main_branch_verification": {
+      "date": "2026-10-15",
+      "canonical_roster_entries": 183,
+      "canonical_pages_found": 10,
+      "missing_new_pages": [],
+      "index_links_verified": 10,
+      "daily_evidence_records_verified": 10,
+      "trial_of_day": "imbrave150",
+      "previous_trial_of_day": "ev-303",
+      "browser_rendered_visual_qa": "pending"
+    }
   },
   "trials": [
     {
