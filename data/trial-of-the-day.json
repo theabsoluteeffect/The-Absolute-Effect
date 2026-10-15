@@ -1,14 +1,28 @@
 {
-  "date": "2026-10-14",
-  "id": "ev-303",
-  "trial": "EV-303 / KEYNOTE-905",
-  "title": "Perioperative enfortumab vedotin plus pembrolizumab for cisplatin-ineligible muscle-invasive bladder cancer",
-  "journal": "New England Journal of Medicine",
-  "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2511674",
-  "site": "Bladder Cancer",
-  "discipline": "Medical Oncology",
-  "setting": "Perioperative cisplatin-ineligible MIBC",
-  "population": "344 patients with operable MIBC who were ineligible for or declined cisplatin-based chemotherapy",
-  "summary": "Perioperative enfortumab vedotin plus pembrolizumab improved 2-year EFS (74.7% vs 39.4%), 2-year OS (79.7% vs 63.1%) and pCR (57.1% vs 8.6%) compared with immediate cystectomy.",
-  "criticalReview": "The magnitude of benefit is clinically important and led to FDA approval in the cisplatin-ineligible perioperative setting. The regimen carries substantial toxicity; discuss neuropathy, rash, hyperglycaemia, immune-mediated adverse events and surgical fitness. Do not derive NNT from hazard ratios or mix this comparison with EV-304 or NIAGARA."
+  "date": "2026-10-15",
+  "id": "imbrave150",
+  "trial": "IMbrave150",
+  "title": "Atezolizumab plus bevacizumab versus sorafenib for unresectable hepatocellular carcinoma",
+  "journal": "New England Journal of Medicine; updated analysis in Journal of Hepatology",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32402160/",
+  "site": "Hepatocellular Carcinoma",
+  "discipline": "Medical",
+  "setting": "Unresectable HCC · First-line Systemic Therapy",
+  "population": "501 systemic-treatment-naive patients with unresectable HCC, predominantly Child-Pugh A and ECOG 0–1",
+  "treatment": "Atezolizumab 1,200 mg IV plus bevacizumab 15 mg/kg IV every 3 weeks versus sorafenib 400 mg orally twice daily",
+  "summary": "At updated median follow-up of 15.6 months, median OS was 19.2 vs 13.4 months (HR 0.66, 95% CI 0.52–0.85). At 18 months, OS was 52% vs 40%, an absolute improvement of 12 percentage points (NNT ≈9 at 18 months). Median PFS was 6.9 vs 4.3 months (HR 0.65, 95% CI 0.53–0.81).",
+  "criticalReview": "This is a clinically important first-line advance over sorafenib for appropriately selected unresectable HCC. Grade 3/4 treatment-related adverse events were 43% vs 46%, and grade 5 events 2% vs <1% in the updated analysis; do not calculate NNH from these non-increased aggregate toxicity rates. Bevacizumab-associated bleeding risk is central: assess portal hypertension and varices, and manage varices before treatment. Evidence chiefly applies to Child-Pugh A, ECOG 0–1 patients; do not extrapolate automatically to decompensated cirrhosis or compare directly with other modern first-line combinations.",
+  "absoluteEffect": {
+    "endpoint": "18-month overall survival",
+    "treatmentRate": "52%",
+    "controlRate": "40%",
+    "absoluteBenefit": "12 percentage points",
+    "nnt": "≈9; based on 18-month OS",
+    "toxicity": "Grade 3/4 treatment-related AEs 43% vs 46%; grade 5 2% vs <1%",
+    "nnh": "Not quantifiable as an excess harm endpoint"
+  },
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/32402160/",
+    "https://pubmed.ncbi.nlm.nih.gov/34902530/"
+  ]
 }
