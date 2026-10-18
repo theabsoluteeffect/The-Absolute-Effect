@@ -105,7 +105,7 @@
     const main=document.querySelector('main')||document.body;
     if(main.querySelector('[data-study-design-badge]'))return;
     const intro=(main.innerText||'').slice(0,2600);
-    const retrospective=/(?:retrospective\s+(?:study|cohort|analysis|comparison|series|review|database|observational\s+study|registry(?:-based)?\s+(?:study|analysis))|retrospectively\s+(?:reviewed|analysed|analyzed|collected|evaluated|identified)|retrospective,\s+(?:non-randomized|nonrandomized|single-centre|single-center|multicentre|multicenter))/i;
+    const retrospective=/(?:retrospective(?:\s+[\w-]+){0,4}\s+(?:study|cohort|analysis|comparison|series|review|database|data|registry)|retrospectively\s+(?:reviewed|analysed|analyzed|collected|evaluated|identified))/i;
     const explicitRetrospective=retrospective.test(intro) && !/\b(?:not|no longer|rather than)\s+(?:a\s+)?retrospective\s+(?:study|cohort|analysis|comparison|series)\b/i.test(intro.slice(0,1200));
     if(!explicitRetrospective)return;
     const badge=document.createElement('p');
