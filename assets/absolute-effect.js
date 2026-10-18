@@ -100,7 +100,23 @@
     review.innerHTML='<h3>Outcome visual needs manual verification</h3><p class="ae-outcome-subtitle">No supported numeric endpoint was detected automatically. Review the primary source and add a source-reported outcome chart, a defensible NNT/NNH pictogram, or a note explaining why no numeric visualization is appropriate.</p>';
     host.insertAdjacentElement('afterend',review);
   }
-  function init(){document.querySelectorAll('[data-absolute-effect]').forEach(el=>render(el));document.querySelectorAll('[data-outcome-visual]').forEach(el=>renderOutcome(el));document.querySelectorAll('[data-outcome-single]').forEach(el=>renderSingleOutcome(el));renderAutoOutcome();}
+
+  function addStudyDesignBadge(){
+    const main=document.querySelector('main')||document.body;
+    if(main.querySelector('[data-study-design-badge]'))return;
+    const intro=(main.innerText||'').slice(0,2200);
+    const explicitRetrospective=/(?:retrospective\\s+(?:study|cohort|analysis|comparison|series|review|database|observational\\s+study|registry(?:-based)?\\s+(?:study|analysis))|retrospectively\\s+(?:reviewed|analysed|analyzed|collected|evaluated|identified)|retrospective,\\s+(?:non-randomized|nonrandomized|single-centre|single-center|multicentre|multicenter))/i.test(intro);
+    if(!explicitRetrospective)return;
+    const badge=document.createElement('p');
+    badge.dataset.studyDesignBadge='retrospective';
+    badge.setAttribute('role','note');
+    badge.textContent='Study design: Retrospective';
+    badge.style.cssText='display:inline-block;margin:10px 0 0;padding:5px 10px;border:1px solid #d6c7a1;border-radius:6px;background:#fff8e7;color:#6b4d13;font-size:13px;font-weight:750;';
+    const h1=main.querySelector('h1');
+    if(h1)h1.insertAdjacentElement('afterend',badge);else main.insertBefore(badge,main.firstChild);
+  }
+
+  function init(){addStudyDesignBadge();document.querySelectorAll('[data-absolute-effect]').forEach(el=>render(el));document.querySelectorAll('[data-outcome-visual]').forEach(el=>renderOutcome(el));document.querySelectorAll('[data-outcome-single]').forEach(el=>renderSingleOutcome(el));renderAutoOutcome();}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
   window.AbsoluteEffect={render:render,renderOutcome:renderOutcome,init:init};
 })();
