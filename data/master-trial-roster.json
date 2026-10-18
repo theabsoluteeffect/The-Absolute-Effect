@@ -335,7 +335,7 @@
       "date": "2026-10-18",
       "status": "canonical settings applied across all roster entries; original setting retained as setting_detail",
       "previous_unique_settings": 130,
-      "current_unique_settings": 10,
+      "current_unique_settings": 11,
       "options": [
         "Adjuvant / Postoperative",
         "Advanced / Metastatic",
@@ -344,6 +344,7 @@
         "Localized / Early-stage",
         "Locally Advanced / Resectable",
         "Neoadjuvant / Preoperative",
+        "Other / Mixed Setting",
         "Perioperative",
         "Relapsed / Refractory",
         "Surveillance / Follow-up"
@@ -1024,7 +1025,7 @@
         "Early versus delayed radiotherapy low-grade glioma"
       ],
       "discipline": "Radiation",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "In adults with low-grade glioma, does early RT improve outcomes compared with RT deferred until progression?",
       "path": "trial-pages/eortc-22845/",
       "freshness_review_status": "pending",
@@ -1146,7 +1147,7 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/eortc-30983",
       "discipline": "Medical",
-      "setting": "Localized / Early-stage",
+      "setting": "Advanced / Metastatic",
       "question": "Does adding paclitaxel to BEP improve PFS in intermediate-prognosis germ-cell cancer?",
       "path": "trial-pages/eortc-30983/",
       "freshness_review_status": "pending",
@@ -1359,7 +1360,7 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/getug-afu-16",
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "In men with biochemical recurrence after prostatectomy, does adding short-term androgen-deprivation therapy to salvage radiotherapy improve progression-free outcomes compared with salvage radiotherapy alone?",
       "path": "trial-pages/getug-afu-16",
       "freshness_review_status": "pending",
@@ -1958,7 +1959,7 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-9601",
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "In men with biochemical recurrence after prostatectomy, does adding long-term antiandrogen therapy to salvage radiotherapy improve survival compared with salvage radiotherapy alone?",
       "path": "trial-pages/rtog-9601",
       "freshness_review_status": "pending",
@@ -2483,7 +2484,7 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-0534-spport",
       "discipline": "Radiation",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "Does adding short-term ADT and pelvic nodal RT improve freedom from progression after prostatectomy salvage RT?",
       "path": "trial-pages/rtog-0534-spport/",
       "freshness_review_status": "pending",
@@ -2557,7 +2558,7 @@
         "NCT00003375"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Adjuvant / Postoperative",
       "question": "For high-risk grade 2 glioma, does adding PCV after RT improve survival?",
       "path": "trial-pages/rtog-9802/",
       "freshness_review_status": "pending",
@@ -3021,7 +3022,7 @@
         "VeIP in recurrent seminoma"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "In recurrent seminoma after cisplatin-based chemotherapy, can VeIP produce durable remission?",
       "path": "trial-pages/veip-recurrent-seminoma/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3038,7 +3039,7 @@
         "Loehrer VeIP salvage GCT"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "After relapse following cisplatin/etoposide-based chemotherapy, what outcomes were reported with VeIP salvage chemotherapy?",
       "path": "trial-pages/loehrer-veip-salvage-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3055,7 +3056,7 @@
         "McCaffrey VIP/VeIP salvage study"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "What activity was observed with ifosfamide/cisplatin-based VIP or VeIP as first salvage treatment?",
       "path": "trial-pages/mccaffrey-vip-veip-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3072,7 +3073,7 @@
         "MRC phase II TIP study"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "After first relapse following BEP, what response and survival outcomes were observed with TIP?",
       "path": "trial-pages/mrc-tip-phase2/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3089,7 +3090,7 @@
         "IPFSG salvage prognostic model"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "Which baseline and relapse characteristics predict outcomes after first salvage treatment for germ-cell tumours?",
       "path": "trial-pages/ipfsg-salvage-prognostic-model/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3123,7 +3124,7 @@
         "TI-CE high-dose salvage chemotherapy"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "Can paclitaxel/ifosfamide induction followed by high-dose carboplatin/etoposide produce durable remission in poor-risk GCT?",
       "path": "trial-pages/ti-ce-high-dose-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3140,7 +3141,7 @@
         "TIGER: TIP versus TI-CE"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "For relapsed or refractory GCT, does conventional-dose TIP or high-dose TI-CE provide better outcomes as first salvage?",
       "path": "trial-pages/tiger-tip-vs-ti-ce/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3157,7 +3158,7 @@
         "Gemcitabine in refractory GCT"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "Does single-agent gemcitabine have activity in heavily pretreated refractory germ-cell tumours?",
       "path": "trial-pages/gemcitabine-refractory-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3174,7 +3175,7 @@
         "ECOG E9897"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "What activity does paclitaxel plus gemcitabine have in refractory germ-cell tumours?",
       "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3208,7 +3209,7 @@
         "TPG in multiply relapsed GCT"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "What activity and long-term outcomes were reported with paclitaxel/cisplatin/gemcitabine beyond second-line salvage?",
       "path": "trial-pages/tpg-multiply-relapsed-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3225,7 +3226,7 @@
         "Gem-TIP in relapsed GCT"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "Can gemcitabine be added to TIP without reducing TIP dose intensity in first-relapse GCT?",
       "path": "trial-pages/gem-tip-relapsed-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
@@ -3278,7 +3279,7 @@
         "IT-94: conventional-dose versus high-dose salvage"
       ],
       "discipline": "Medical",
-      "setting": "Definitive / Local Treatment",
+      "setting": "Other / Mixed Setting",
       "question": "After relapse following first-line chemotherapy for germ-cell tumours, does adding a single high-dose chemotherapy consolidation after conventional salvage improve survival?",
       "path": "trial-pages/it94-vip-veip-vs-hdct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
