@@ -371,7 +371,20 @@
         "Post-Prostatectomy / Biochemical Recurrence"
       ],
       "mapped_trials": 39,
-      "note": "M0 CRPC is an available category when relevant evidence is added; no current roster entry was classified as M0 CRPC because none of the existing prostate entries clearly addresses non-metastatic CRPC."
+      "note": "The homepage exposes the requested prostate-specific options. M0 CRPC and Localised – Low Risk / Node-Positive currently have no directly classified roster entries; they remain visible as future-ready filters rather than misclassifying existing trials.",
+      "dropdown_options": [
+        "Localised – Low Risk",
+        "Localised – Intermediate Risk",
+        "Localised – High Risk",
+        "Node-Positive",
+        "Hormone-Sensitive Prostate Cancer",
+        "M0 CRPC",
+        "M1 CRPC",
+        "Post-Prostatectomy / Biochemical Recurrence",
+        "Oligorecurrent / Oligometastatic",
+        "Locally Advanced / Node-Positive",
+        "Localised – Risk Not Specified"
+      ]
     }
   },
   "trials": [
