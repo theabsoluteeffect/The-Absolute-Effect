@@ -18,10 +18,10 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 185,
+    "permanent_trial_pages": 198,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 185,
+    "total_unique_trials": 198,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -88,7 +88,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-15",
+    "last_quality_check": "2026-10-18",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -248,6 +248,72 @@
       "duplicate_check": "Master roster and trial archive checked; no existing testicular TIP salvage record found. Existing Pagliaro TIP is a distinct penile cancer study.",
       "source_review": "Original 2005 phase II publication, 2024 long-term cohort, EAU guideline and TIGER trial registry linked on page.",
       "outcome_visual_review": "Source-reported response, 5-year PFS and 5-year OS visuals included; browser-rendered QA pending."
+    },
+    "relapsed_seminoma_salvage_batch": {
+      "date": "2026-10-18",
+      "new_pages": [
+        {
+          "id": "veip-recurrent-seminoma-miller-1997",
+          "path": "trial-pages/veip-recurrent-seminoma/"
+        },
+        {
+          "id": "loehrer-veip-mixed-gct-1998",
+          "path": "trial-pages/loehrer-veip-salvage-gct/"
+        },
+        {
+          "id": "mccaffrey-vip-veip-1997",
+          "path": "trial-pages/mccaffrey-vip-veip-salvage/"
+        },
+        {
+          "id": "mrc-tip-phase2-2005",
+          "path": "trial-pages/mrc-tip-phase2/"
+        },
+        {
+          "id": "ipfsg-prognostic-model-2010",
+          "path": "trial-pages/ipfsg-salvage-prognostic-model/"
+        },
+        {
+          "id": "lorch-cdct-hdct-2011",
+          "path": "trial-pages/lorch-cdct-vs-hdct/"
+        },
+        {
+          "id": "ti-ce-einhorn-2010",
+          "path": "trial-pages/ti-ce-high-dose-salvage/"
+        },
+        {
+          "id": "tiger-tip-vs-tice",
+          "path": "trial-pages/tiger-tip-vs-ti-ce/"
+        },
+        {
+          "id": "gemcitabine-refractory-gct-1999",
+          "path": "trial-pages/gemcitabine-refractory-gct/"
+        },
+        {
+          "id": "ecog-e9897-paclitaxel-gemcitabine",
+          "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/"
+        },
+        {
+          "id": "oechsle-go-gop-2011",
+          "path": "trial-pages/oechsle-go-gop-later-line/"
+        },
+        {
+          "id": "tpg-multiply-relapsed-gct-2014",
+          "path": "trial-pages/tpg-multiply-relapsed-gct/"
+        },
+        {
+          "id": "gem-tip-relapsed-gct-2018",
+          "path": "trial-pages/gem-tip-relapsed-gct/"
+        }
+      ],
+      "existing_tip_page_updated_for_guideline_sources": true,
+      "guideline_sources": [
+        "NCCN Testicular Cancer Guidelines Insights Version 2.2025",
+        "ESMO-EURACAN Testicular seminoma and non-seminoma Clinical Practice Guideline 2022"
+      ],
+      "histology_rule": "Only the recurrent seminoma VeIP series is explicitly seminoma-specific; other salvage regimen evidence is labeled mixed GCT unless the source reports a distinct seminoma cohort.",
+      "clinical_freshness_review": "pending",
+      "browser_rendered_visual_QA": "pending",
+      "live_deployment_verification": "pending"
     }
   },
   "trials": [
@@ -2714,6 +2780,201 @@
       "path": "trial-pages/vesper/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "veip-recurrent-seminoma-miller-1997",
+      "trial": "VeIP in recurrent seminoma",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/veip-recurrent-seminoma/",
+      "aliases": [
+        "VeIP in recurrent seminoma"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Seminoma-specific retrospective series",
+      "question": "In recurrent seminoma after cisplatin-based chemotherapy, can VeIP produce durable remission?",
+      "path": "trial-pages/veip-recurrent-seminoma/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "loehrer-veip-mixed-gct-1998",
+      "trial": "Loehrer VeIP salvage GCT",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/loehrer-veip-salvage-gct/",
+      "aliases": [
+        "Loehrer VeIP salvage GCT"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT",
+      "question": "After relapse following cisplatin/etoposide-based chemotherapy, what outcomes were reported with VeIP salvage chemotherapy?",
+      "path": "trial-pages/loehrer-veip-salvage-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "mccaffrey-vip-veip-1997",
+      "trial": "McCaffrey VIP/VeIP salvage study",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/mccaffrey-vip-veip-salvage/",
+      "aliases": [
+        "McCaffrey VIP/VeIP salvage study"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT",
+      "question": "What activity was observed with ifosfamide/cisplatin-based VIP or VeIP as first salvage treatment?",
+      "path": "trial-pages/mccaffrey-vip-veip-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "mrc-tip-phase2-2005",
+      "trial": "MRC phase II TIP study",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/mrc-tip-phase2/",
+      "aliases": [
+        "MRC phase II TIP study"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT",
+      "question": "After first relapse following BEP, what response and survival outcomes were observed with TIP?",
+      "path": "trial-pages/mrc-tip-phase2/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "ipfsg-prognostic-model-2010",
+      "trial": "IPFSG salvage prognostic model",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/ipfsg-salvage-prognostic-model/",
+      "aliases": [
+        "IPFSG salvage prognostic model"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · prognostic study",
+      "question": "Which baseline and relapse characteristics predict outcomes after first salvage treatment for germ-cell tumours?",
+      "path": "trial-pages/ipfsg-salvage-prognostic-model/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "lorch-cdct-hdct-2011",
+      "trial": "Lorch conventional-dose versus high-dose salvage comparison",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/lorch-cdct-vs-hdct/",
+      "aliases": [
+        "Lorch conventional-dose versus high-dose salvage comparison"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · retrospective comparison",
+      "question": "In relapsed metastatic GCT, how did conventional-dose salvage chemotherapy compare with high-dose chemotherapy?",
+      "path": "trial-pages/lorch-cdct-vs-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "ti-ce-einhorn-2010",
+      "trial": "TI-CE high-dose salvage chemotherapy",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/ti-ce-high-dose-salvage/",
+      "aliases": [
+        "TI-CE high-dose salvage chemotherapy"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · phase I/II",
+      "question": "Can paclitaxel/ifosfamide induction followed by high-dose carboplatin/etoposide produce durable remission in poor-risk GCT?",
+      "path": "trial-pages/ti-ce-high-dose-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "tiger-tip-vs-tice",
+      "trial": "TIGER: TIP versus TI-CE",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/tiger-tip-vs-ti-ce/",
+      "aliases": [
+        "TIGER: TIP versus TI-CE"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Randomized phase III · mixed GCT",
+      "question": "For relapsed or refractory GCT, does conventional-dose TIP or high-dose TI-CE provide better outcomes as first salvage?",
+      "path": "trial-pages/tiger-tip-vs-ti-ce/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "gemcitabine-refractory-gct-1999",
+      "trial": "Gemcitabine in refractory GCT",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/gemcitabine-refractory-gct/",
+      "aliases": [
+        "Gemcitabine in refractory GCT"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · phase II",
+      "question": "Does single-agent gemcitabine have activity in heavily pretreated refractory germ-cell tumours?",
+      "path": "trial-pages/gemcitabine-refractory-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "ecog-e9897-paclitaxel-gemcitabine",
+      "trial": "ECOG E9897",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
+      "aliases": [
+        "ECOG E9897"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · phase II",
+      "question": "What activity does paclitaxel plus gemcitabine have in refractory germ-cell tumours?",
+      "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "oechsle-go-gop-2011",
+      "trial": "Oechsle GO/GOP long-term follow-up",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/oechsle-go-gop-later-line/",
+      "aliases": [
+        "Oechsle GO/GOP long-term follow-up"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · phase II follow-up",
+      "question": "Can gemcitabine/oxaliplatin, with or without paclitaxel and secondary surgery, produce long-term disease-free survival after multiple relapses?",
+      "path": "trial-pages/oechsle-go-gop-later-line/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "tpg-multiply-relapsed-gct-2014",
+      "trial": "TPG in multiply relapsed GCT",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/tpg-multiply-relapsed-gct/",
+      "aliases": [
+        "TPG in multiply relapsed GCT"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · retrospective",
+      "question": "What activity and long-term outcomes were reported with paclitaxel/cisplatin/gemcitabine beyond second-line salvage?",
+      "path": "trial-pages/tpg-multiply-relapsed-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "gem-tip-relapsed-gct-2018",
+      "trial": "Gem-TIP in relapsed GCT",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/gem-tip-relapsed-gct/",
+      "aliases": [
+        "Gem-TIP in relapsed GCT"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · phase I/II",
+      "question": "Can gemcitabine be added to TIP without reducing TIP dose intensity in first-relapse GCT?",
+      "path": "trial-pages/gem-tip-relapsed-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
     }
   ]
 }
