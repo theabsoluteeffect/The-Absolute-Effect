@@ -9,9 +9,9 @@
     const colon=raw.match(/^([^:]{3,100}):/);
     if(colon)return colon[1].trim();
     const label=kind==='NNT'?'NNT':'NNH';
-    const re=new RegExp('(?:'+label+'\\s*(?:≈|=|:)\\s*\\d+(?:\\.\\d+)?(?:\\s*)|'+label+'\\s+of\\s+\\d+(?:\\.\\d+)?(?:\\s*))[.\\-–—,;: ]{0,80}(?:for|based on|from)?\\s*([^.;]{3,100})','i');
+    const re=new RegExp('(?:'+label+'\s*(?:≈|=|:)\s*\\d+(?:\\.\\d+)?(?:\s*)|'+label+'\s+of\s+\\d+(?:\\.\\d+)?(?:\s*))[.\\-–—,;: ]{0,80}(?:for|based on|from)?\s*([^.;]{3,100})','i');
     const m=String(pageText||'').match(re);
-    if(m&&m[1])return m[1].replace(/^(one additional|an additional)\\s+/i,'').trim();
+    if(m&&m[1])return m[1].replace(/^(one additional|an additional)\s+/i,'').trim();
     return '';
   }
   function render(el){
@@ -105,7 +105,7 @@
     const main=document.querySelector('main')||document.body;
     if(main.querySelector('[data-study-design-badge]'))return;
     const intro=(main.innerText||'').slice(0,2200);
-    const explicitRetrospective=/(?:retrospective\\s+(?:study|cohort|analysis|comparison|series|review|database|observational\\s+study|registry(?:-based)?\\s+(?:study|analysis))|retrospectively\\s+(?:reviewed|analysed|analyzed|collected|evaluated|identified)|retrospective,\\s+(?:non-randomized|nonrandomized|single-centre|single-center|multicentre|multicenter))/i.test(intro);
+    const explicitRetrospective=/(?:retrospective\s+(?:study|cohort|analysis|comparison|series|review|database|observational\s+study|registry(?:-based)?\s+(?:study|analysis))|retrospectively\s+(?:reviewed|analysed|analyzed|collected|evaluated|identified)|retrospective,\s+(?:non-randomized|nonrandomized|single-centre|single-center|multicentre|multicenter))/i.test(intro);
     if(!explicitRetrospective)return;
     const badge=document.createElement('p');
     badge.dataset.studyDesignBadge='retrospective';
