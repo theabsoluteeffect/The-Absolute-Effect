@@ -18,10 +18,10 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 183,
+    "permanent_trial_pages": 184,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 183,
+    "total_unique_trials": 184,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -239,6 +239,15 @@
       "outcome_visual_audit": "PASS",
       "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/38672407495",
       "browser_rendered_visual_qa": "pending"
+    },
+    "individual_trial_addition": {
+      "date": "2026-10-18",
+      "id": "keynote-522",
+      "trial": "KEYNOTE-522",
+      "page": "trial-pages/keynote-522/",
+      "duplicate_check": "Checked master roster and trial archive; no existing KEYNOTE-522/NCT03036488 record found.",
+      "source_review": "Primary pCR, EFS and final OS publications linked on page; clinical freshness review remains targeted, not a full guideline audit.",
+      "outcome_visual_review": "Source-reported pCR and 5-year OS bar visuals included; browser-rendered QA pending."
     }
   },
   "trials": [
@@ -2669,6 +2678,23 @@
       "path": "trial-pages/imbrave150/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "keynote-522",
+      "trial": "KEYNOTE-522",
+      "site": "Breast Cancer",
+      "source": "trial-pages/keynote-522/",
+      "aliases": [
+        "KEYNOTE-522",
+        "NCT03036488",
+        "Pembrolizumab in early triple-negative breast cancer"
+      ],
+      "discipline": "Medical",
+      "setting": "Stage II–III TNBC · Neoadjuvant/Adjuvant Immunotherapy",
+      "question": "In previously untreated stage II–III triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological complete response, event-free survival and overall survival compared with chemotherapy alone?",
+      "path": "trial-pages/keynote-522/",
+      "freshness_review_status": "targeted_primary_sources_reviewed_2026-10-18",
+      "outcome_visual_review_status": "automated_markup_present_browser_render_pending"
     }
   ]
 }
