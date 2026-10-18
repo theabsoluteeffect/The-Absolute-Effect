@@ -330,6 +330,31 @@
       "clinical_freshness_review": "pending",
       "browser_rendered_visual_QA": "pending",
       "live_deployment_verification": "pending"
+    },
+    "settings_dropdown_simplification": {
+      "date": "2026-10-18",
+      "status": "canonical settings applied across all roster entries",
+      "previous_unique_settings": 130,
+      "current_unique_settings": 10,
+      "options": [
+        "Adjuvant / Postoperative",
+        "Advanced / Metastatic",
+        "Definitive / Local Treatment",
+        "Diagnosis / Staging / Risk Assessment",
+        "Localized / Early-stage",
+        "Locally Advanced / Resectable",
+        "Neoadjuvant / Preoperative",
+        "Perioperative",
+        "Relapsed / Refractory",
+        "Surveillance / Follow-up"
+      ],
+      "policy": "Clinical question retains study-specific context; setting dropdown uses broad treatment-stage categories. Original setting text is preserved in setting_detail where normalized.",
+      "site_aliases_normalized": {
+        "Neuro-oncology": "Neuro-Oncology",
+        "Testicular Germ-cell Tumours": "Germ Cell Tumours",
+        "Colon Cancer": "Colorectal Cancer"
+      },
+      "retrospective_design_badge": "shared renderer adds a visible Retrospective study badge when the study-design description explicitly identifies a retrospective design; it does not infer retrospective design from a non-randomized result alone."
     }
   },
   "trials": [
@@ -339,11 +364,12 @@
       "site": "Biliary Tract Cancer",
       "source": "trial-pages/abc-02/",
       "discipline": "Medical",
-      "setting": "Advanced/Metastatic · First-line",
+      "setting": "Advanced / Metastatic",
       "question": "In advanced biliary tract cancer, does cisplatin plus gemcitabine improve survival compared with gemcitabine alone?",
       "path": "trial-pages/abc-02/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Metastatic · First-line"
     },
     {
       "id": "acosog-z0011",
@@ -351,11 +377,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/acosog-z0011",
       "discipline": "Surgical",
-      "setting": "Axillary Management",
+      "setting": "Localized / Early-stage",
       "question": "In clinically node-negative women with limited sentinel-node metastases undergoing breast-conserving surgery, can completion axillary lymph-node dissection be safely omitted?",
       "path": "trial-pages/acosog-z0011",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Axillary Management"
     },
     {
       "id": "ambassador",
@@ -367,12 +394,13 @@
         "Alliance A031501",
         "NCT03244384"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "After radical surgery for high-risk muscle-invasive urothelial carcinoma, does one year of adjuvant pembrolizumab improve disease-free survival compared with observation?",
       "path": "trial-pages/ambassador",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "aphinity",
@@ -383,12 +411,13 @@
         "BIG 4-11",
         "NCT01358877"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant HER2-positive",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "In early HER2-positive breast cancer receiving adjuvant chemotherapy and trastuzumab, does adding pertuzumab improve invasive disease-free survival and overall survival?",
       "path": "trial-pages/aphinity",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant HER2-positive"
     },
     {
       "id": "arasens-homepage",
@@ -396,22 +425,24 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/arasens",
       "discipline": "Medical",
-      "setting": "Metastatic Hormone-Sensitive",
+      "setting": "Advanced / Metastatic",
       "question": "In metastatic hormone-sensitive prostate cancer, does adding darolutamide to androgen-deprivation therapy plus docetaxel improve overall survival compared with androgen-deprivation therapy plus docetaxel?",
       "path": "trial-pages/arasens",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
       "id": "arto",
       "trial": "ARTO",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligometastatic mCRPC · SBRT + abiraterone",
+      "discipline": "Radiation",
+      "setting": "Advanced / Metastatic",
       "question": "Does SBRT added to abiraterone/prednisone improve response and PFS in oligometastatic mCRPC?",
       "path": "trial-pages/arto/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligometastatic mCRPC · SBRT + abiraterone"
     },
     {
       "id": "assure",
@@ -419,23 +450,25 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/assure",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant targeted therapy with sorafenib or pazopanib improve disease-free survival compared with placebo?",
       "path": "trial-pages/assure",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "atlas",
       "trial": "ATLAS",
       "site": "Breast Cancer",
       "source": "trial-pages/atlas",
-      "discipline": "Medical Oncology",
-      "setting": "Extended Adjuvant Endocrine Therapy",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does continuing tamoxifen to 10 years improve outcomes after 5 years of therapy?",
       "path": "trial-pages/atlas/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Extended Adjuvant Endocrine Therapy"
     },
     {
       "id": "avoren",
@@ -447,11 +480,12 @@
         "AVOREN trial"
       ],
       "discipline": "Medical",
-      "setting": "Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In metastatic renal cell carcinoma, does adding bevacizumab to interferon alfa improve progression-free and overall outcomes compared with interferon alfa alone?",
       "path": "trial-pages/avoren",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic"
     },
     {
       "id": "axis",
@@ -459,47 +493,51 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/axis",
       "discipline": "Medical",
-      "setting": "Second-line Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In metastatic renal cell carcinoma progressing after prior systemic therapy, does axitinib improve progression-free survival compared with sorafenib?",
       "path": "trial-pages/axis",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Second-line Metastatic"
     },
     {
       "id": "ba06-30894",
       "trial": "BA06 30894",
       "site": "Bladder Cancer",
       "source": "trial-pages/ba06-30894",
-      "discipline": "Medical Oncology",
-      "setting": "Neoadjuvant",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before definitive local treatment of muscle-invasive bladder cancer?",
       "path": "trial-pages/ba06-30894/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "bart",
       "trial": "BART",
       "site": "Bladder Cancer",
       "source": "trial-pages/bart",
-      "discipline": "Radiation Oncology",
-      "setting": "High-risk MIBC after cystectomy",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does adjuvant pelvic RT reduce locoregional relapse after cystectomy and chemotherapy in high-risk MIBC?",
       "path": "trial-pages/bart/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "High-risk MIBC after cystectomy"
     },
     {
       "id": "bc2001",
       "trial": "BC2001",
       "site": "Bladder Cancer",
       "source": "trial-pages/bc2001",
-      "discipline": "Radiation Oncology",
-      "setting": "Bladder Preservation",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced / Resectable",
       "question": "For bladder-preserving RT, does concurrent chemotherapy improve locoregional control?",
       "path": "trial-pages/bc2001/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Bladder Preservation"
     },
     {
       "id": "cabosun",
@@ -510,36 +548,39 @@
         "Alliance A031203",
         "NCT01835158"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line Metastatic · Intermediate/Poor Risk",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated intermediate- or poor-risk metastatic RCC, does cabozantinib improve disease control compared with sunitinib?",
       "path": "trial-pages/cabosun",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic · Intermediate/Poor Risk"
     },
     {
       "id": "calgb-9343",
       "trial": "CALGB 9343",
       "site": "Breast Cancer",
       "source": "trial-pages/calgb-9343",
-      "discipline": "Radiation Oncology",
-      "setting": "RT Omission",
+      "discipline": "Radiation",
+      "setting": "Definitive / Local Treatment",
       "question": "In women ≥70 with T1N0 ER-positive breast cancer after lumpectomy and endocrine therapy, can RT be omitted?",
       "path": "trial-pages/calgb-9343/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "RT Omission"
     },
     {
       "id": "calgb-140503",
       "trial": "CALGB/Alliance 140503",
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/calgb-140503",
-      "discipline": "Surgical Oncology",
-      "setting": "Stage I Localized Disease",
+      "discipline": "Surgical",
+      "setting": "Localized / Early-stage",
       "question": "In peripheral stage IA NSCLC ≤2 cm, can sublobar resection replace lobectomy without compromising cancer control?",
       "path": "trial-pages/calgb-140503/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Localized Disease"
     },
     {
       "id": "cao-aro-aio-94",
@@ -552,23 +593,25 @@
         "Preoperative versus postoperative chemoradiotherapy rectal cancer"
       ],
       "discipline": "Radiation",
-      "setting": "Stage II–III Rectal Cancer · Preoperative vs Postoperative CRT",
+      "setting": "Relapsed / Refractory",
       "question": "In locally advanced rectal cancer, does preoperative rather than postoperative CRT reduce local recurrence?",
       "path": "trial-pages/cao-aro-aio-94/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage II–III Rectal Cancer · Preoperative vs Postoperative CRT"
     },
     {
       "id": "carmena",
       "trial": "CARMENA",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/carmena",
-      "discipline": "Surgical Oncology",
-      "setting": "Metastatic Disease",
+      "discipline": "Surgical",
+      "setting": "Advanced / Metastatic",
       "question": "In intermediate/poor-risk metastatic RCC, is upfront cytoreductive nephrectomy necessary before systemic therapy?",
       "path": "trial-pages/carmena/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic Disease"
     },
     {
       "id": "catnon",
@@ -579,24 +622,26 @@
         "CATNON",
         "EORTC 26053-22033"
       ],
-      "discipline": "Radiation Oncology",
-      "setting": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
       "question": "In newly diagnosed IDH-mutant, 1p/19q non-codeleted grade 3 astrocytoma, does adjuvant temozolomide improve survival, and does concurrent temozolomide add benefit?",
       "path": "trial-pages/catnon/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma"
     },
     {
       "id": "chaarted",
       "trial": "CHAARTED",
       "site": "Prostate Cancer",
       "source": "trial-pages/chaarted",
-      "discipline": "Medical Oncology",
-      "setting": "Metastatic Hormone-Sensitive",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In metastatic hormone-sensitive prostate cancer, does adding docetaxel to ADT improve survival?",
       "path": "trial-pages/chaarted/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
       "id": "checkmate-025",
@@ -604,11 +649,12 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/checkmate-025",
       "discipline": "Medical",
-      "setting": "Second-line Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously treated advanced clear-cell renal cell carcinoma, does nivolumab improve overall survival compared with everolimus?",
       "path": "trial-pages/checkmate-025",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Second-line Metastatic"
     },
     {
       "id": "checkmate-214",
@@ -616,23 +662,25 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/checkmate-214",
       "discipline": "Medical",
-      "setting": "First-line Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated advanced or metastatic clear-cell renal cell carcinoma, does nivolumab plus ipilimumab improve survival and disease control compared with sunitinib?",
       "path": "trial-pages/checkmate-214",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "checkmate-274",
       "trial": "CheckMate 274",
       "site": "Bladder Cancer",
       "source": "trial-pages/checkmate-274",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Does adjuvant nivolumab reduce recurrence after radical surgery for high-risk muscle-invasive urothelial carcinoma?",
       "path": "trial-pages/checkmate-274/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "checkmate-275",
@@ -644,11 +692,12 @@
         "nivolumab platinum-refractory urothelial carcinoma"
       ],
       "discipline": "Medical",
-      "setting": "Advanced/Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory metastatic urothelial carcinoma, can nivolumab produce clinically meaningful and durable tumour responses?",
       "path": "trial-pages/checkmate-275",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Metastatic"
     },
     {
       "id": "checkmate-901",
@@ -660,24 +709,26 @@
         "NCT03036098",
         "nivolumab plus gemcitabine-cisplatin"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line advanced/metastatic UC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated unresectable or metastatic urothelial carcinoma, does nivolumab plus gemcitabine–cisplatin followed by nivolumab improve survival over gemcitabine–cisplatin?",
       "path": "trial-pages/checkmate-901/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "First-line advanced/metastatic UC"
     },
     {
       "id": "checkmate-914",
       "trial": "CheckMate 914",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/checkmate-914",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant nivolumab plus ipilimumab improve disease-free survival after nephrectomy for high-risk RCC?",
       "path": "trial-pages/checkmate-914/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "checkmate-9er",
@@ -685,11 +736,12 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/checkmate-9er",
       "discipline": "Medical",
-      "setting": "First-line Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated advanced or metastatic renal cell carcinoma, does nivolumab plus cabozantinib improve progression-free and overall survival compared with sunitinib?",
       "path": "trial-pages/checkmate-9er",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "chhip",
@@ -697,11 +749,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/chhip",
       "discipline": "Radiation",
-      "setting": "Localized",
+      "setting": "Localized / Early-stage",
       "question": "Can 60 Gy in 20 fractions replace 74 Gy in 37 fractions?",
       "path": "trial-pages/chhip/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized"
     },
     {
       "id": "clear",
@@ -712,12 +765,13 @@
         "Study 307",
         "NCT02811861"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line Metastatic",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In untreated advanced clear-cell RCC, does lenvatinib plus pembrolizumab improve outcomes compared with sunitinib?",
       "path": "trial-pages/clear",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "color",
@@ -730,11 +784,12 @@
         "NCT00387842"
       ],
       "discipline": "Surgical",
-      "setting": "Resectable Colon Cancer · Laparoscopic vs Open Surgery",
+      "setting": "Localized / Early-stage",
       "question": "For resectable colon cancer, is laparoscopic colectomy oncologically non-inferior to open colectomy?",
       "path": "trial-pages/color/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resectable Colon Cancer · Laparoscopic vs Open Surgery"
     },
     {
       "id": "comparz",
@@ -742,11 +797,12 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/comparz",
       "discipline": "Medical",
-      "setting": "First-line Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated metastatic renal cell carcinoma, is pazopanib non-inferior to sunitinib for progression-free and overall survival?",
       "path": "trial-pages/comparz",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "conko-001",
@@ -759,11 +815,12 @@
         "ISRCTN34802808"
       ],
       "discipline": "Medical",
-      "setting": "Resected Pancreatic Ductal Adenocarcinoma · Adjuvant Therapy",
+      "setting": "Adjuvant / Postoperative",
       "question": "After resection of pancreatic cancer, does adjuvant gemcitabine improve outcomes versus observation?",
       "path": "trial-pages/conko-001/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resected Pancreatic Ductal Adenocarcinoma · Adjuvant Therapy"
     },
     {
       "id": "contact-03",
@@ -775,12 +832,13 @@
         "NCT04338269",
         "atezolizumab cabozantinib after ICI"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Advanced RCC progressing on or after prior ICI",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "After progression on an immune checkpoint inhibitor, does adding atezolizumab to cabozantinib improve outcomes over cabozantinib alone?",
       "path": "trial-pages/contact-03/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "primary endpoint results and toxicity comparison included; browser render review pending"
+      "outcome_visual_review_status": "primary endpoint results and toxicity comparison included; browser render review pending",
+      "setting_detail": "Advanced RCC progressing on or after prior ICI"
     },
     {
       "id": "cosmic-313",
@@ -792,12 +850,13 @@
         "NCT03937219",
         "cabozantinib nivolumab ipilimumab"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line advanced ccRCC · IMDC intermediate/poor risk",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In untreated advanced clear-cell RCC with IMDC intermediate/poor risk, does adding cabozantinib to nivolumab/ipilimumab improve outcomes?",
       "path": "trial-pages/cosmic-313/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "source-linked outcome comparison added; browser render review pending"
+      "outcome_visual_review_status": "source-linked outcome comparison added; browser render review pending",
+      "setting_detail": "First-line advanced ccRCC · IMDC intermediate/poor risk"
     },
     {
       "id": "create-x",
@@ -808,24 +867,26 @@
         "Capecitabine for Residual Cancer as Adjuvant Therapy",
         "UMIN000000843"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Post-neoadjuvant residual disease",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In HER2-negative breast cancer with residual invasive disease after neoadjuvant chemotherapy, does adjuvant capecitabine improve disease-free and overall survival?",
       "path": "trial-pages/create-x",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-neoadjuvant residual disease"
     },
     {
       "id": "cross",
       "trial": "CROSS",
       "site": "Esophageal Cancer",
       "source": "trial-pages/cross",
-      "discipline": "Radiation Oncology",
-      "setting": "Locally Advanced Resectable Disease",
+      "discipline": "Radiation",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In resectable locally advanced esophageal or GEJ cancer, does neoadjuvant chemoradiotherapy followed by surgery improve survival over surgery alone?",
       "path": "trial-pages/cross/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced Resectable Disease"
     },
     {
       "id": "cueto-98013",
@@ -833,11 +894,12 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/cueto-98013",
       "discipline": "Radiation",
-      "setting": "Bladder Preservation",
+      "setting": "Definitive / Local Treatment",
       "question": "In muscle-invasive bladder cancer, can bladder-preserving chemoradiotherapy provide effective local control and survival while avoiding radical cystectomy?",
       "path": "trial-pages/cueto-98013",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Bladder Preservation"
     },
     {
       "id": "danube",
@@ -848,12 +910,13 @@
         "NCT02516241",
         "durvalumab ± tremelimumab"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line Advanced/Metastatic",
+      "discipline": "Medical",
+      "setting": "Locally Advanced / Resectable",
       "question": "In previously untreated unresectable locally advanced or metastatic urothelial carcinoma, does durvalumab alone or durvalumab plus tremelimumab improve overall survival over platinum chemotherapy?",
       "path": "trial-pages/danube",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Advanced/Metastatic"
     },
     {
       "id": "daugaard-stage1-nsgct-surveillance",
@@ -865,11 +928,12 @@
         "Daugaard et al. 2014"
       ],
       "discipline": "Medical",
-      "setting": "Stage I Non-seminoma",
+      "setting": "Adjuvant / Postoperative",
       "question": "In stage I nonseminomatous germ-cell cancer, can active surveillance safely avoid immediate adjuvant treatment while maintaining a high cure rate?",
       "path": "trial-pages/daugaard-stage1-nsgct-surveillance",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Non-seminoma"
     },
     {
       "id": "dbcg-77b",
@@ -877,11 +941,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/dbcg-77b",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "In high-risk breast cancer after surgery and radiotherapy, does adjuvant chemotherapy with cyclophosphamide or CMF improve survival compared with no systemic therapy?",
       "path": "trial-pages/dbcg-77b",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "dbcg-77c",
@@ -889,23 +954,25 @@
       "site": "Breast Cancer",
       "source": "trial-pages/dbcg-77c",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Relapsed / Refractory",
       "question": "In high-risk postmenopausal breast cancer, does adding one year of tamoxifen to postoperative radiotherapy improve recurrence and survival compared with radiotherapy alone?",
       "path": "trial-pages/dbcg-77c",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "dbcg-82b",
       "trial": "DBCG 82b",
       "site": "Breast Cancer",
       "source": "trial-pages/dbcg-82b",
-      "discipline": "Radiation Oncology",
-      "setting": "Locoregional Disease",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does postmastectomy radiotherapy improve outcomes in high-risk premenopausal stage II/III breast cancer?",
       "path": "trial-pages/dbcg-82b/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locoregional Disease"
     },
     {
       "id": "dbcg-82c",
@@ -913,23 +980,25 @@
       "site": "Breast Cancer",
       "source": "trial-pages/dbcg-82c",
       "discipline": "Radiation",
-      "setting": "Postmastectomy RT",
+      "setting": "Adjuvant / Postoperative",
       "question": "In high-risk postmenopausal breast cancer, does adding tamoxifen to adjuvant CMF and radiotherapy improve outcomes compared with CMF and radiotherapy alone?",
       "path": "trial-pages/dbcg-82c",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Postmastectomy RT"
     },
     {
       "id": "dissrm",
       "trial": "DISSRM Registry",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/dissrm",
-      "discipline": "Surgical Oncology",
-      "setting": "Localized Small Renal Mass",
+      "discipline": "Surgical",
+      "setting": "Surveillance / Follow-up",
       "question": "Can active surveillance safely defer intervention for small renal masses?",
       "path": "trial-pages/dissrm/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Small Renal Mass"
     },
     {
       "id": "dutch-tme",
@@ -937,16 +1006,17 @@
       "site": "Rectal Cancer",
       "source": "trial-pages/dutch-tme/",
       "discipline": "Surgical",
-      "setting": "Locally Advanced · Total Mesorectal Excision",
+      "setting": "Relapsed / Refractory",
       "question": "When high-quality total mesorectal excision is performed, does adding short-course preoperative radiotherapy reduce local recurrence?",
       "path": "trial-pages/dutch-tme/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced · Total Mesorectal Excision"
     },
     {
       "id": "eortc-22845",
       "trial": "EORTC 22845",
-      "site": "Neuro-oncology",
+      "site": "Neuro-Oncology",
       "source": "trial-pages/eortc-22845/",
       "aliases": [
         "EORTC 22845",
@@ -954,11 +1024,13 @@
         "Early versus delayed radiotherapy low-grade glioma"
       ],
       "discipline": "Radiation",
-      "setting": "Adult Low-Grade Glioma · Early vs Deferred RT",
+      "setting": "Surveillance / Follow-up",
       "question": "In adults with low-grade glioma, does early RT improve outcomes compared with RT deferred until progression?",
       "path": "trial-pages/eortc-22845/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adult Low-Grade Glioma · Early vs Deferred RT",
+      "site_detail": "Neuro-oncology"
     },
     {
       "id": "eortc-22863",
@@ -966,11 +1038,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/eortc-22863",
       "discipline": "Radiation",
-      "setting": "Locally Advanced/High-Risk",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced or high-risk prostate cancer, does adding long-term androgen deprivation to definitive radiotherapy improve survival compared with radiotherapy alone?",
       "path": "trial-pages/eortc-22863",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/High-Risk"
     },
     {
       "id": "eortc-22911",
@@ -978,11 +1051,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/eortc-22911",
       "discipline": "Radiation",
-      "setting": "Post-prostatectomy",
+      "setting": "Relapsed / Refractory",
       "question": "After radical prostatectomy for locally advanced or margin-positive prostate cancer, does immediate adjuvant radiotherapy improve progression-free control compared with observation with radiotherapy reserved for relapse?",
       "path": "trial-pages/eortc-22911",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy"
     },
     {
       "id": "eortc-22961",
@@ -990,11 +1064,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/eortc-22961",
       "discipline": "Radiation",
-      "setting": "Locally Advanced/High-Risk",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced prostate cancer treated with radiotherapy, does extending androgen deprivation to 3 years improve survival compared with 6 months of androgen deprivation?",
       "path": "trial-pages/eortc-22961",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/High-Risk"
     },
     {
       "id": "eortc-26951-rtog-9402",
@@ -1002,35 +1077,38 @@
       "site": "Neuro-Oncology",
       "source": "trial-pages/eortc-26951-rtog-9402/",
       "discipline": "Medical",
-      "setting": "Grade 3 Oligodendroglial Tumour · Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "In newly diagnosed anaplastic oligodendroglial tumours, does adding PCV chemotherapy to radiotherapy improve long-term survival, particularly in 1p/19q-codeleted disease?",
       "path": "trial-pages/eortc-26951-rtog-9402/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Grade 3 Oligodendroglial Tumour · Adjuvant"
     },
     {
       "id": "eortc-30904",
       "trial": "EORTC 30904",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/eortc-30904",
-      "discipline": "Surgical Oncology",
-      "setting": "Localized Disease",
+      "discipline": "Surgical",
+      "setting": "Localized / Early-stage",
       "question": "For small localized RCC, can nephron-sparing surgery preserve renal function without compromising cancer outcomes?",
       "path": "trial-pages/eortc-30904/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Disease"
     },
     {
       "id": "eortc-30911",
       "trial": "EORTC 30911",
       "site": "Bladder Cancer",
       "source": "trial-pages/eortc-30911",
-      "discipline": "Medical Oncology",
-      "setting": "Intermediate/High-risk NMIBC",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Does intravesical BCG improve recurrence and survival outcomes versus epirubicin?",
       "path": "trial-pages/eortc-30911/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Intermediate/High-risk NMIBC"
     },
     {
       "id": "eortc-30941-te20",
@@ -1041,12 +1119,13 @@
         "EORTC 30941",
         "MRC TE20"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Good-Risk Metastatic Germ Cell Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "Can three cycles of BEP provide equivalent disease control to four cycles in good-prognosis metastatic germ-cell cancer while reducing treatment burden?",
       "path": "trial-pages/eortc-30941-te20/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Good-Risk Metastatic Germ Cell Cancer"
     },
     {
       "id": "eortc-30962",
@@ -1054,23 +1133,25 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/eortc-30962",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Relapsed / Refractory",
       "question": "In intermediate- and high-risk non-muscle-invasive bladder cancer, what dose and duration of maintenance BCG best balance recurrence control and treatment burden?",
       "path": "trial-pages/eortc-30962",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "eortc-30983",
       "trial": "EORTC 30983",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/eortc-30983",
-      "discipline": "Medical Oncology",
-      "setting": "Intermediate Prognosis",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "Does adding paclitaxel to BEP improve PFS in intermediate-prognosis germ-cell cancer?",
       "path": "trial-pages/eortc-30983/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Intermediate Prognosis"
     },
     {
       "id": "eortc-30986",
@@ -1078,35 +1159,38 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/eortc-30986",
       "discipline": "Medical",
-      "setting": "Advanced/Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In advanced urothelial cancer patients unfit for cisplatin, how does gemcitabine plus carboplatin compare with methotrexate, carboplatin and vinblastine?",
       "path": "trial-pages/eortc-30986",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Metastatic"
     },
     {
       "id": "eortc-30992",
       "trial": "EORTC 30992",
       "site": "Penile Cancer",
       "source": "trial-pages/eortc-30992",
-      "discipline": "Medical Oncology",
-      "setting": "Neoadjuvant/Locally Advanced",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "Can irinotecan plus cisplatin produce clinically meaningful responses in locally advanced or metastatic penile cancer?",
       "path": "trial-pages/eortc-30992/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant/Locally Advanced"
     },
     {
       "id": "eortc-30994",
       "trial": "EORTC 30994",
       "site": "Bladder Cancer",
       "source": "trial-pages/eortc-30994",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does immediate adjuvant chemotherapy improve outcomes compared with deferred chemotherapy after radical cystectomy?",
       "path": "trial-pages/eortc-30994/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "stupp",
@@ -1116,12 +1200,13 @@
       "aliases": [
         "Stupp trial"
       ],
-      "discipline": "Radiation Oncology",
-      "setting": "Adjuvant Therapy · Newly Diagnosed",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adding concurrent and adjuvant temozolomide to postoperative radiotherapy improve survival in newly diagnosed glioblastoma?",
       "path": "trial-pages/stupp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant Therapy · Newly Diagnosed"
     },
     {
       "id": "espac-4",
@@ -1129,11 +1214,12 @@
       "site": "Pancreatic Cancer",
       "source": "trial-pages/espac-4/",
       "discipline": "Medical",
-      "setting": "Resected · Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "After resection of pancreatic ductal adenocarcinoma, does adjuvant gemcitabine plus capecitabine improve survival compared with gemcitabine alone?",
       "path": "trial-pages/espac-4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resected · Adjuvant"
     },
     {
       "id": "ev-302",
@@ -1141,11 +1227,12 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/ev-302",
       "discipline": "Medical",
-      "setting": "First-line Advanced/Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated advanced or metastatic urothelial carcinoma, does enfortumab vedotin plus pembrolizumab improve overall and progression-free survival compared with platinum-based chemotherapy?",
       "path": "trial-pages/ev-302",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Advanced/Metastatic"
     },
     {
       "id": "ev-303",
@@ -1157,12 +1244,13 @@
         "KEYNOTE-905",
         "NCT03924895"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Perioperative cisplatin-ineligible MIBC",
+      "discipline": "Medical",
+      "setting": "Perioperative",
       "question": "For cisplatin-ineligible or cisplatin-declining patients with operable MIBC, does perioperative enfortumab vedotin plus pembrolizumab improve outcomes over immediate cystectomy?",
       "path": "trial-pages/ev-303/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "Perioperative cisplatin-ineligible MIBC"
     },
     {
       "id": "ev-304",
@@ -1174,12 +1262,13 @@
         "KEYNOTE-B15",
         "NCT04700124"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Perioperative cisplatin-eligible MIBC",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "For cisplatin-eligible patients with operable MIBC, does perioperative enfortumab vedotin plus pembrolizumab improve EFS and OS versus neoadjuvant gemcitabine–cisplatin and cystectomy?",
       "path": "trial-pages/ev-304/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "Perioperative cisplatin-eligible MIBC"
     },
     {
       "id": "everest",
@@ -1187,34 +1276,37 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/everest",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Relapsed / Refractory",
       "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant everolimus improve recurrence-free survival compared with placebo?",
       "path": "trial-pages/everest",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "extend",
       "trial": "EXTEND",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligometastatic prostate cancer · MDT + intermittent hormone therapy",
+      "discipline": "Radiation",
+      "setting": "Advanced / Metastatic",
       "question": "Does MDT added to intermittent hormone therapy improve disease control?",
       "path": "trial-pages/extend/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligometastatic prostate cancer · MDT + intermittent hormone therapy"
     },
     {
       "id": "fastrack-ii",
       "trial": "FASTRACK II",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/fastrack-ii",
-      "discipline": "Radiation Oncology",
-      "setting": "Localized Primary RCC",
+      "discipline": "Radiation",
+      "setting": "Localized / Early-stage",
       "question": "Can stereotactic ablative body radiotherapy provide effective definitive local control for primary RCC in patients unsuitable for surgery?",
       "path": "trial-pages/fastrack-ii/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Primary RCC"
     },
     {
       "id": "flot4",
@@ -1224,12 +1316,13 @@
       "aliases": [
         "FLOT4"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Locally Advanced Resectable Disease · Perioperative",
+      "discipline": "Medical",
+      "setting": "Perioperative",
       "question": "In resectable gastric or GEJ adenocarcinoma, does perioperative FLOT improve survival compared with older ECF/ECX chemotherapy?",
       "path": "trial-pages/flot4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced Resectable Disease · Perioperative"
     },
     {
       "id": "german-ah01-94",
@@ -1239,24 +1332,26 @@
       "aliases": [
         "German AH 01/94"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Stage I Non-seminoma",
+      "discipline": "Medical",
+      "setting": "Localized / Early-stage",
       "question": "In stage I non-seminoma, does one cycle of BEP provide better disease control than RPLND?",
       "path": "trial-pages/german-ah01-94/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Non-seminoma"
     },
     {
       "id": "getug-13",
       "trial": "GETUG-13",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/getug-13",
-      "discipline": "Medical Oncology",
-      "setting": "Risk-adapted Treatment",
+      "discipline": "Medical",
+      "setting": "Localized / Early-stage",
       "question": "Can early tumour-marker decline identify poor-prognosis GCT patients who benefit from intensified chemotherapy?",
       "path": "trial-pages/getug-13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Risk-adapted Treatment"
     },
     {
       "id": "getug-afu-16",
@@ -1264,11 +1359,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/getug-afu-16",
       "discipline": "Medical",
-      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "setting": "Relapsed / Refractory",
       "question": "In men with biochemical recurrence after prostatectomy, does adding short-term androgen-deprivation therapy to salvage radiotherapy improve progression-free outcomes compared with salvage radiotherapy alone?",
       "path": "trial-pages/getug-afu-16",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
       "id": "getug-afu-17",
@@ -1276,57 +1372,63 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/getug-afu-17",
       "discipline": "Radiation",
-      "setting": "Post-prostatectomy",
+      "setting": "Relapsed / Refractory",
       "question": "After radical prostatectomy for high-risk prostate cancer, does immediate adjuvant radiotherapy improve event-free survival compared with early salvage radiotherapy, and what is the effect on treatment toxicity?",
       "path": "trial-pages/getug-afu-17",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy"
     },
     {
       "id": "grouq-pcs-9",
       "trial": "GROUQ-PCS 9",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligometastatic mCRPC · SBRT + enzalutamide",
+      "discipline": "Radiation",
+      "setting": "Advanced / Metastatic",
       "question": "Does SBRT added to ADT+enzalutamide improve radiographic PFS in oligometastatic mCRPC?",
       "path": "trial-pages/grouq-pcs-9/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligometastatic mCRPC · SBRT + enzalutamide"
     },
     {
       "id": "hera-big-1-01",
       "trial": "HERA / BIG 1-01",
       "site": "Breast Cancer",
       "source": "trial-pages/hera-big-1-01",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant HER2-positive",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does 1 year of adjuvant trastuzumab improve long-term outcomes after chemotherapy?",
       "path": "trial-pages/hera-big-1-01/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant HER2-positive"
     },
     {
       "id": "horrad",
       "trial": "HORRAD",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "De novo metastatic HSPC · Prostate RT",
+      "discipline": "Radiation",
+      "setting": "Diagnosis / Staging / Risk Assessment",
       "question": "In newly diagnosed bone-metastatic HSPC, does prostate RT added to ADT improve survival?",
       "path": "trial-pages/horrad/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "De novo metastatic HSPC · Prostate RT"
     },
     {
       "id": "idea",
       "trial": "IDEA Collaboration",
-      "site": "Colon Cancer",
+      "site": "Colorectal Cancer",
       "source": "trial-pages/idea/",
       "discipline": "Medical",
-      "setting": "Stage III · Adjuvant Duration",
+      "setting": "Adjuvant / Postoperative",
       "question": "In stage III colon cancer, can adjuvant oxaliplatin-based chemotherapy safely be shortened from 6 months to 3 months without unacceptable loss of disease control?",
       "path": "trial-pages/idea/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage III · Adjuvant Duration",
+      "site_detail": "Colon Cancer"
     },
     {
       "id": "imbrave150",
@@ -1339,35 +1441,38 @@
         "NCT03434379"
       ],
       "discipline": "Medical",
-      "setting": "Unresectable HCC · First-line Systemic Therapy",
+      "setting": "Advanced / Metastatic",
       "question": "In untreated unresectable HCC, does atezolizumab plus bevacizumab improve outcomes versus sorafenib?",
       "path": "trial-pages/imbrave150/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Unresectable HCC · First-line Systemic Therapy"
     },
     {
       "id": "immotion151",
       "trial": "IMmotion151",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/immotion151",
-      "discipline": "Medical Oncology",
-      "setting": "First-line Metastatic RCC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "Does atezolizumab plus bevacizumab improve outcomes versus sunitinib in first-line metastatic RCC?",
       "path": "trial-pages/immotion151/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic RCC"
     },
     {
       "id": "imvigor010",
       "trial": "IMvigor010",
       "site": "Bladder Cancer",
       "source": "trial-pages/imvigor010",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant atezolizumab improve outcomes after surgery for high-risk muscle-invasive urothelial carcinoma?",
       "path": "trial-pages/imvigor010/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "imvigor011",
@@ -1378,12 +1483,13 @@
         "IMvigor011",
         "NCT04660344"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "ctDNA-guided adjuvant MIBC",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "After cystectomy for MIBC, does serial ctDNA testing identify patients who benefit from adjuvant atezolizumab?",
       "path": "trial-pages/imvigor011/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "ctDNA-guided adjuvant MIBC"
     },
     {
       "id": "imvigor211",
@@ -1394,11 +1500,12 @@
         "NCT02302807"
       ],
       "discipline": "Medical",
-      "setting": "Advanced/Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory advanced urothelial carcinoma, does atezolizumab improve overall survival compared with chemotherapy, particularly in patients with high PD-L1 expression?",
       "path": "trial-pages/imvigor211",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Metastatic"
     },
     {
       "id": "javelin-bladder-100",
@@ -1406,11 +1513,12 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/javelin-bladder-100",
       "discipline": "Medical",
-      "setting": "First-line Advanced/Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In advanced or metastatic urothelial carcinoma that has not progressed after first-line platinum chemotherapy, does maintenance avelumab plus best supportive care improve overall survival compared with best supportive care alone?",
       "path": "trial-pages/javelin-bladder-100",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Advanced/Metastatic"
     },
     {
       "id": "javelin-renal-101",
@@ -1421,12 +1529,13 @@
         "NCT02684006",
         "avelumab + axitinib"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line Metastatic",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In untreated advanced RCC, does avelumab plus axitinib improve disease control compared with sunitinib?",
       "path": "trial-pages/javelin-renal-101",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "jbr-10",
@@ -1440,11 +1549,12 @@
         "NCT00002583"
       ],
       "discipline": "Medical",
-      "setting": "Resected Stage IB–II · Adjuvant Chemotherapy",
+      "setting": "Adjuvant / Postoperative",
       "question": "After complete resection of stage IB–II NSCLC, does cisplatin–vinorelbine improve survival compared with observation?",
       "path": "trial-pages/jbr-10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resected Stage IB–II · Adjuvant Chemotherapy"
     },
     {
       "id": "keynote-045",
@@ -1452,11 +1562,12 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/keynote-045",
       "discipline": "Medical",
-      "setting": "Advanced/Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory advanced urothelial carcinoma, does pembrolizumab improve overall survival compared with investigator's-choice chemotherapy?",
       "path": "trial-pages/keynote-045",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Metastatic"
     },
     {
       "id": "keynote-052",
@@ -1467,12 +1578,13 @@
         "KEYNOTE-052",
         "NCT02335424"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Cisplatin-ineligible advanced UC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "What durable activity does first-line pembrolizumab monotherapy provide for cisplatin-ineligible advanced urothelial carcinoma?",
       "path": "trial-pages/keynote-052/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "Cisplatin-ineligible advanced UC"
     },
     {
       "id": "keynote-057",
@@ -1483,12 +1595,13 @@
         "KEYNOTE-057",
         "NCT02625961"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "BCG-unresponsive high-risk NMIBC",
+      "discipline": "Medical",
+      "setting": "Localized / Early-stage",
       "question": "For selected patients with BCG-unresponsive CIS who decline or are ineligible for cystectomy, can pembrolizumab provide bladder-preserving disease control?",
       "path": "trial-pages/keynote-057/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "BCG-unresponsive high-risk NMIBC"
     },
     {
       "id": "keynote-361",
@@ -1499,12 +1612,13 @@
         "KEYNOTE-361",
         "NCT02853305"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line advanced/metastatic UC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In untreated advanced urothelial carcinoma, did adding pembrolizumab to platinum-based chemotherapy improve PFS or OS versus chemotherapy alone?",
       "path": "trial-pages/keynote-361/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "First-line advanced/metastatic UC"
     },
     {
       "id": "keynote-426",
@@ -1512,11 +1626,12 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/keynote-426",
       "discipline": "Medical",
-      "setting": "First-line Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated advanced or metastatic renal cell carcinoma, does pembrolizumab plus axitinib improve overall survival and disease control compared with sunitinib?",
       "path": "trial-pages/keynote-426",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "keynote-522",
@@ -1529,23 +1644,25 @@
         "Pembrolizumab in early triple-negative breast cancer"
       ],
       "discipline": "Medical",
-      "setting": "Stage II–III TNBC · Neoadjuvant/Adjuvant Immunotherapy",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In previously untreated stage II–III triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological complete response, event-free survival and overall survival compared with chemotherapy alone?",
       "path": "trial-pages/keynote-522/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage II–III TNBC · Neoadjuvant/Adjuvant Immunotherapy"
     },
     {
       "id": "keynote-564",
       "trial": "KEYNOTE-564",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/keynote-564",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
       "path": "trial-pages/keynote-564/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "litespark-012",
@@ -1557,23 +1674,25 @@
         "NCT04736706",
         "MK-6482-013"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "First-line advanced ccRCC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "Do belzutifan or quavonlimab add benefit to first-line pembrolizumab/lenvatinib in advanced clear-cell RCC?",
       "path": "trial-pages/litespark-012/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "qualitative negative primary-endpoint summary; numerical effect sizes not publicly disclosed in sponsor release"
+      "outcome_visual_review_status": "qualitative negative primary-endpoint summary; numerical effect sizes not publicly disclosed in sponsor release",
+      "setting_detail": "First-line advanced ccRCC"
     },
     {
       "id": "lunar",
       "trial": "LUNAR",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent HSPC · 177Lu-PSMA before SBRT",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does neoadjuvant 177Lu-PNT2002 before SBRT improve PFS versus SBRT alone?",
       "path": "trial-pages/lunar/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent HSPC · 177Lu-PSMA before SBRT"
     },
     {
       "id": "magic",
@@ -1586,11 +1705,12 @@
         "ISRCTN93793971"
       ],
       "discipline": "Medical",
-      "setting": "Resectable Disease · Perioperative Chemotherapy",
+      "setting": "Perioperative",
       "question": "In resectable gastric/GEJ adenocarcinoma, does perioperative ECF improve survival over surgery alone?",
       "path": "trial-pages/magic/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resectable Disease · Perioperative Chemotherapy"
     },
     {
       "id": "matterhorn",
@@ -1598,11 +1718,12 @@
       "site": "Gastric Cancer",
       "source": "trial-pages/matterhorn",
       "discipline": "Medical",
-      "setting": "Locally Advanced/Perioperative",
+      "setting": "Perioperative",
       "question": "In resectable locally advanced gastric or gastroesophageal-junction adenocarcinoma, does adding durvalumab to perioperative FLOT chemotherapy improve event-free and overall survival compared with FLOT alone?",
       "path": "trial-pages/matterhorn",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/Perioperative"
     },
     {
       "id": "meteor",
@@ -1615,24 +1736,27 @@
         "cabozantinib versus everolimus",
         "post-VEGFR TKI RCC"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Previously treated advanced RCC after VEGFR-targeted therapy",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "After prior VEGFR-targeted therapy, does cabozantinib improve outcomes versus everolimus, including after prior sunitinib or pazopanib?",
       "path": "trial-pages/meteor/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "prior-agent subgroup outcomes in comparative table; browser render review pending"
+      "outcome_visual_review_status": "prior-agent subgroup outcomes in comparative table; browser render review pending",
+      "setting_detail": "Previously treated advanced RCC after VEGFR-targeted therapy"
     },
     {
       "id": "mosaic",
       "trial": "MOSAIC",
-      "site": "Colon Cancer",
+      "site": "Colorectal Cancer",
       "source": "trial-pages/mosaic",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant · Stage III / High-Risk Stage II",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "In resected stage II/III colon cancer, does adding oxaliplatin to fluoropyrimidine improve disease control and survival?",
       "path": "trial-pages/mosaic/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant · Stage III / High-Risk Stage II",
+      "site_detail": "Colon Cancer"
     },
     {
       "id": "mrc-cr07",
@@ -1640,11 +1764,12 @@
       "site": "Rectal Cancer",
       "source": "trial-pages/mrc-cr07/",
       "discipline": "Radiation",
-      "setting": "Locally Advanced · Preoperative RT",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In operable rectal cancer, does routine short-course preoperative radiotherapy improve local control and disease-free survival compared with selective postoperative chemoradiotherapy?",
       "path": "trial-pages/mrc-cr07/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced · Preoperative RT"
     },
     {
       "id": "mrc-oe02",
@@ -1652,11 +1777,12 @@
       "site": "Esophageal Cancer",
       "source": "trial-pages/mrc-oe02/",
       "discipline": "Medical",
-      "setting": "Locally Advanced Resectable · Neoadjuvant",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In operable esophageal cancer, does two-cycle neoadjuvant cisplatin/5-FU improve survival compared with surgery alone?",
       "path": "trial-pages/mrc-oe02/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced Resectable · Neoadjuvant"
     },
     {
       "id": "mrc-rt01",
@@ -1668,47 +1794,51 @@
         "MRC RT01 dose-escalation trial"
       ],
       "discipline": "Radiation",
-      "setting": "Definitive Localized Disease",
+      "setting": "Localized / Early-stage",
       "question": "In localized prostate cancer treated with external-beam radiotherapy, does dose escalation improve biochemical and clinical disease control compared with conventional-dose radiotherapy?",
       "path": "trial-pages/mrc-rt01",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Definitive Localized Disease"
     },
     {
       "id": "mrc-te05",
       "trial": "MRC TE05",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te05",
-      "discipline": "Medical Oncology",
-      "setting": "Stage I Non-seminoma",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Can short-course BEP substantially reduce relapse in high-risk stage I non-seminoma?",
       "path": "trial-pages/mrc-te05/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Non-seminoma"
     },
     {
       "id": "mrc-te08",
       "trial": "MRC TE08",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te08",
-      "discipline": "Medical Oncology",
-      "setting": "Imaging",
+      "discipline": "Medical",
+      "setting": "Surveillance / Follow-up",
       "question": "Can CT imaging be safely reduced during surveillance of stage I non-seminoma?",
       "path": "trial-pages/mrc-te08/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Imaging"
     },
     {
       "id": "mrc-te10",
       "trial": "MRC TE10",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te10",
-      "discipline": "Radiation Oncology",
-      "setting": "Stage I Seminoma",
+      "discipline": "Radiation",
+      "setting": "Localized / Early-stage",
       "question": "Can para-aortic-only RT replace dog-leg RT in stage I seminoma?",
       "path": "trial-pages/mrc-te10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Seminoma"
     },
     {
       "id": "mrc-te18",
@@ -1716,11 +1846,12 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te18",
       "discipline": "Radiation",
-      "setting": "Stage I Seminoma",
+      "setting": "Relapsed / Refractory",
       "question": "In stage I seminoma, can a lower radiotherapy dose of 20 Gy provide equivalent relapse control to 30 Gy with less treatment burden?",
       "path": "trial-pages/mrc-te18",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Seminoma"
     },
     {
       "id": "mrc-te19",
@@ -1731,12 +1862,13 @@
         "MRC TE19",
         "EORTC 30982"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Stage I Seminoma",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "In stage I seminoma, can single-dose carboplatin replace adjuvant radiotherapy?",
       "path": "trial-pages/mrc-te19/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Seminoma"
     },
     {
       "id": "mrc-te23",
@@ -1744,11 +1876,12 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-te23",
       "discipline": "Radiation",
-      "setting": "Stage I Seminoma",
+      "setting": "Advanced / Metastatic",
       "question": "In poor-prognosis metastatic germ-cell cancer, does intensified induction chemotherapy improve outcomes compared with standard BEP-based chemotherapy?",
       "path": "trial-pages/mrc-te23",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Seminoma"
     },
     {
       "id": "mrc-eortc-bep-vs-ceb",
@@ -1756,35 +1889,38 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-eortc-bep-vs-ceb",
       "discipline": "Medical",
-      "setting": "Good-Risk Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In good-prognosis metastatic nonseminomatous germ-cell cancer, can carboplatin replace cisplatin in BEP-type chemotherapy without compromising efficacy?",
       "path": "trial-pages/mrc-eortc-bep-vs-ceb",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Good-Risk Metastatic"
     },
     {
       "id": "mrc-eortc-te13",
       "trial": "MRC/EORTC TE13 BOP/VIP-B",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-eortc-te13",
-      "discipline": "Medical Oncology",
-      "setting": "Poor-prognosis Metastatic",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "Does intensified induction/sequential chemotherapy improve outcomes over standard BEP/EP?",
       "path": "trial-pages/mrc-eortc-te13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Poor-prognosis Metastatic"
     },
     {
       "id": "penile-dsnb-cno",
       "trial": "Nazzani et al. cN0 penile cancer DSNB cohort",
       "site": "Penile Cancer",
       "source": "trial-pages/penile-dsnb-cno",
-      "discipline": "Surgical Oncology",
-      "setting": "Nodal Staging",
+      "discipline": "Surgical",
+      "setting": "Diagnosis / Staging / Risk Assessment",
       "question": "In cN0 penile cancer, can DSNB guide selective treatment of occult nodal disease while reducing morbidity?",
       "path": "trial-pages/penile-dsnb-cno/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Nodal Staging"
     },
     {
       "id": "niagara",
@@ -1795,12 +1931,13 @@
         "NCT03732677",
         "perioperative durvalumab"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Neoadjuvant/Adjuvant MIBC",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In cisplatin-eligible muscle-invasive bladder cancer, does perioperative durvalumab added to neoadjuvant gemcitabine-cisplatin improve event-free and overall survival?",
       "path": "trial-pages/niagara",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant/Adjuvant MIBC"
     },
     {
       "id": "rtog-0521",
@@ -1808,11 +1945,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-0521",
       "discipline": "Medical",
-      "setting": "High-Risk Localized",
+      "setting": "Localized / Early-stage",
       "question": "In high-risk localized prostate cancer, does adding docetaxel to androgen deprivation therapy and radiotherapy improve overall survival compared with androgen deprivation therapy and radiotherapy alone?",
       "path": "trial-pages/rtog-0521",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "High-Risk Localized"
     },
     {
       "id": "rtog-9601",
@@ -1820,23 +1958,25 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-9601",
       "discipline": "Medical",
-      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "setting": "Relapsed / Refractory",
       "question": "In men with biochemical recurrence after prostatectomy, does adding long-term antiandrogen therapy to salvage radiotherapy improve survival compared with salvage radiotherapy alone?",
       "path": "trial-pages/rtog-9601",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
       "id": "nsabp-b04",
       "trial": "NSABP B-04",
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b04",
-      "discipline": "Surgical Oncology",
-      "setting": "Locoregional Disease",
+      "discipline": "Surgical",
+      "setting": "Locally Advanced / Resectable",
       "question": "Does radical mastectomy improve long-term survival compared with less extensive breast and axillary surgery in operable breast cancer?",
       "path": "trial-pages/nsabp-b04/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locoregional Disease"
     },
     {
       "id": "nsabp-b06",
@@ -1844,35 +1984,38 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b06",
       "discipline": "Surgical",
-      "setting": "Definitive/Locoregional",
+      "setting": "Locally Advanced / Resectable",
       "question": "In operable invasive breast cancer, can breast-conserving surgery followed by radiotherapy provide outcomes comparable to total mastectomy?",
       "path": "trial-pages/nsabp-b06",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Definitive/Locoregional"
     },
     {
       "id": "nsabp-b13",
       "trial": "NSABP B-13",
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b13",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant · ER-negative Node-negative",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant methotrexate/fluorouracil improve outcomes over surgery alone?",
       "path": "trial-pages/nsabp-b13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant · ER-negative Node-negative"
     },
     {
       "id": "nsabp-b14",
       "trial": "NSABP B-14",
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b14",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant Endocrine Therapy",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does five years of tamoxifen improve outcomes compared with placebo?",
       "path": "trial-pages/nsabp-b14/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant Endocrine Therapy"
     },
     {
       "id": "nsabp-b17",
@@ -1884,11 +2027,12 @@
         "B-17"
       ],
       "discipline": "Radiation",
-      "setting": "Adjuvant RT",
+      "setting": "Relapsed / Refractory",
       "question": "In ductal carcinoma in situ treated by lumpectomy, does adding whole-breast radiotherapy reduce ipsilateral breast recurrence compared with lumpectomy alone?",
       "path": "trial-pages/nsabp-b17",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant RT"
     },
     {
       "id": "nsabp-b18",
@@ -1896,23 +2040,25 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b18",
       "discipline": "Medical",
-      "setting": "Neoadjuvant",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In operable breast cancer, does giving chemotherapy before surgery improve outcomes or increase the opportunity for breast-conserving surgery compared with the same chemotherapy after surgery?",
       "path": "trial-pages/nsabp-b18",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "nsabp-b19",
       "trial": "NSABP B-19",
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b19",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant · ER-negative Node-negative",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adding cyclophosphamide to MF improve outcomes?",
       "path": "trial-pages/nsabp-b19/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant · ER-negative Node-negative"
     },
     {
       "id": "nsabp-b20",
@@ -1920,11 +2066,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b20",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "In node-negative, estrogen-receptor-positive breast cancer, does adding adjuvant chemotherapy to tamoxifen improve disease-free and overall survival compared with tamoxifen alone?",
       "path": "trial-pages/nsabp-b20",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "nsabp-b21",
@@ -1932,11 +2079,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b21",
       "discipline": "Radiation",
-      "setting": "RT + Endocrine / RT Omission",
+      "setting": "Relapsed / Refractory",
       "question": "In women with node-negative invasive breast cancer ≤1 cm after lumpectomy, is tamoxifen alone sufficient without radiotherapy, and does adding tamoxifen to radiotherapy further reduce ipsilateral breast recurrence?",
       "path": "trial-pages/nsabp-b21",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "RT + Endocrine / RT Omission"
     },
     {
       "id": "nsabp-b24",
@@ -1948,11 +2096,12 @@
         "B-24"
       ],
       "discipline": "Radiation",
-      "setting": "Adjuvant RT",
+      "setting": "Adjuvant / Postoperative",
       "question": "In ductal carcinoma in situ treated by lumpectomy and radiotherapy, does adding tamoxifen reduce ipsilateral and contralateral breast events compared with radiotherapy alone?",
       "path": "trial-pages/nsabp-b24",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant RT"
     },
     {
       "id": "nsabp-b27",
@@ -1960,23 +2109,25 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b27",
       "discipline": "Medical",
-      "setting": "Neoadjuvant",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In operable breast cancer, does adding docetaxel to preoperative doxorubicin and cyclophosphamide improve response and pathological complete response compared with preoperative AC alone?",
       "path": "trial-pages/nsabp-b27",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "nsabp-b31-n9831",
       "trial": "NSABP B-31 / NCCTG N9831",
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b31-n9831",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant HER2-positive",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adding trastuzumab to AC→paclitaxel improve DFS and OS?",
       "path": "trial-pages/nsabp-b31-n9831/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant HER2-positive"
     },
     {
       "id": "nsabp-b32",
@@ -1984,11 +2135,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b32",
       "discipline": "Surgical",
-      "setting": "Axillary Staging",
+      "setting": "Diagnosis / Staging / Risk Assessment",
       "question": "In clinically node-negative breast cancer, can sentinel lymph-node biopsy accurately stage the axilla and allow omission of axillary dissection when the sentinel node is negative?",
       "path": "trial-pages/nsabp-b32",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Axillary Staging"
     },
     {
       "id": "nsabp-b59-gepardouze",
@@ -1996,45 +2148,49 @@
       "site": "Breast Cancer",
       "source": "trial-pages/nsabp-b59-gepardouze",
       "discipline": "Medical",
-      "setting": "Neoadjuvant",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In high-risk early triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological response and event-free survival?",
       "path": "trial-pages/nsabp-b59-gepardouze",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "oligopelvis",
       "trial": "OLIGOPELVIS (GETUG-P07)",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent pelvic nodes · Elective nodal RT",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Can elective pelvic RT plus short-course ADT provide durable control in pelvic nodal oligorecurrence?",
       "path": "trial-pages/oligopelvis/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent pelvic nodes · Elective nodal RT"
     },
     {
       "id": "oriole",
       "trial": "ORIOLE",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent HSPC · MDT vs observation",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does SABR reduce early progression versus observation in recurrent HSPC with 1–3 metastases?",
       "path": "trial-pages/oriole/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent HSPC · MDT vs observation"
     },
     {
       "id": "pacific",
       "trial": "PACIFIC",
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/pacific",
-      "discipline": "Medical Oncology",
-      "setting": "Stage III Locally Advanced · Consolidation",
+      "discipline": "Medical",
+      "setting": "Locally Advanced / Resectable",
       "question": "After definitive concurrent chemoradiotherapy for unresectable stage III NSCLC, does consolidation durvalumab improve survival?",
       "path": "trial-pages/pacific/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage III Locally Advanced · Consolidation"
     },
     {
       "id": "pagliaro-tip",
@@ -2042,22 +2198,24 @@
       "site": "Penile Cancer",
       "source": "trial-pages/pagliaro-tip",
       "discipline": "Medical",
-      "setting": "Neoadjuvant/Locally Advanced",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In locally advanced or metastatic penile cancer, does neoadjuvant paclitaxel, ifosfamide and cisplatin produce sufficient tumour response to enable definitive local treatment?",
       "path": "trial-pages/pagliaro-tip",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant/Locally Advanced"
     },
     {
       "id": "peace-v-storm",
       "trial": "PEACE V–STORM",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent pelvic nodes · ENRT vs MDT",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does ENRT improve MFS versus focal MDT for PET-detected pelvic nodal recurrence?",
       "path": "trial-pages/peace-v-storm/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent pelvic nodes · ENRT vs MDT"
     },
     {
       "id": "peace-1",
@@ -2067,12 +2225,13 @@
       "aliases": [
         "NCT01957436"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "De novo Metastatic Hormone-Sensitive",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In de novo metastatic castration-sensitive prostate cancer, does adding abiraterone/prednisone to ADT plus docetaxel improve survival?",
       "path": "trial-pages/peace-1",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "De novo Metastatic Hormone-Sensitive"
     },
     {
       "id": "pisces",
@@ -2084,11 +2243,12 @@
         "pazopanib versus sunitinib preference trial"
       ],
       "discipline": "Medical",
-      "setting": "Metastatic",
+      "setting": "Advanced / Metastatic",
       "question": "In previously untreated metastatic renal cell carcinoma, which treatment do patients prefer after experiencing pazopanib and sunitinib sequentially?",
       "path": "trial-pages/pisces",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic"
     },
     {
       "id": "pivot",
@@ -2096,11 +2256,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/pivot",
       "discipline": "Surgical",
-      "setting": "Localized Disease",
+      "setting": "Surveillance / Follow-up",
       "question": "In men with localized prostate cancer, does radical prostatectomy improve overall or prostate-cancer-specific survival compared with observation?",
       "path": "trial-pages/pivot",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Disease"
     },
     {
       "id": "potomac",
@@ -2111,36 +2272,39 @@
         "POTOMAC",
         "NCT03528694"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "BCG-naïve high-risk NMIBC",
+      "discipline": "Medical",
+      "setting": "Localized / Early-stage",
       "question": "In BCG-naïve high-risk NMIBC after TURBT, does adding durvalumab to BCG induction and maintenance improve disease-free survival?",
       "path": "trial-pages/potomac/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "BCG-naïve high-risk NMIBC"
     },
     {
       "id": "preopanc-1",
       "trial": "PREOPANC-1",
       "site": "Pancreatic Cancer",
       "source": "trial-pages/preopanc-1",
-      "discipline": "Radiation Oncology",
-      "setting": "Neoadjuvant · Resectable/Borderline Resectable",
+      "discipline": "Radiation",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In resectable or borderline-resectable pancreatic cancer, does neoadjuvant chemoradiotherapy improve survival compared with immediate surgery?",
       "path": "trial-pages/preopanc-1/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant · Resectable/Borderline Resectable"
     },
     {
       "id": "prime-ii",
       "trial": "PRIME II",
       "site": "Breast Cancer",
       "source": "trial-pages/prime-ii",
-      "discipline": "Radiation Oncology",
-      "setting": "RT Omission",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
       "question": "In older women with low-risk HR-positive node-negative breast cancer, what is the absolute benefit of adjuvant breast RT?",
       "path": "trial-pages/prime-ii/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "RT Omission"
     },
     {
       "id": "prodige-24",
@@ -2151,12 +2315,13 @@
         "PRODIGE 24",
         "CCTG PA.6"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant · Resected Disease",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "After pancreatic resection, does modified FOLFIRINOX improve survival compared with gemcitabine?",
       "path": "trial-pages/prodige-24/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant · Resected Disease"
     },
     {
       "id": "prodige-4",
@@ -2164,11 +2329,12 @@
       "site": "Pancreatic Cancer",
       "source": "trial-pages/prodige-4/",
       "discipline": "Medical",
-      "setting": "Metastatic · First-line",
+      "setting": "Advanced / Metastatic",
       "question": "In fit patients with metastatic pancreatic adenocarcinoma, does first-line FOLFIRINOX improve survival compared with gemcitabine alone?",
       "path": "trial-pages/prodige-4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic · First-line"
     },
     {
       "id": "profit",
@@ -2176,23 +2342,25 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/profit",
       "discipline": "Radiation",
-      "setting": "Intermediate-risk Localized",
+      "setting": "Localized / Early-stage",
       "question": "Can 60 Gy in 20 fractions replace 78 Gy in 39 fractions?",
       "path": "trial-pages/profit/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Intermediate-risk Localized"
     },
     {
       "id": "protect-15y",
       "trial": "ProtecT",
       "site": "Prostate Cancer",
       "source": "trial-pages/protect-15y",
-      "discipline": "Surgical Oncology",
-      "setting": "Localized Disease",
+      "discipline": "Surgical",
+      "setting": "Localized / Early-stage",
       "question": "For localized prostate cancer, what are the long-term trade-offs between monitoring, surgery and radiotherapy?",
       "path": "trial-pages/protect-15y/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Disease"
     },
     {
       "id": "proteus",
@@ -2200,11 +2368,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/proteus",
       "discipline": "Radiation",
-      "setting": "Localized Disease",
+      "setting": "Perioperative",
       "question": "In men with high-risk localized prostate cancer undergoing radical prostatectomy, does perioperative darolutamide plus androgen-deprivation therapy and docetaxel improve pathological and event-free outcomes compared with standard perioperative treatment?",
       "path": "trial-pages/proteus",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Disease"
     },
     {
       "id": "quasar",
@@ -2217,11 +2386,12 @@
         "ISRCTN82375386"
       ],
       "discipline": "Medical",
-      "setting": "Resected Colorectal Cancer · Predominantly Stage II · Adjuvant Therapy",
+      "setting": "Adjuvant / Postoperative",
       "question": "After curative resection of colorectal cancer, does fluoropyrimidine chemotherapy improve outcomes over observation?",
       "path": "trial-pages/quasar/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Resected Colorectal Cancer · Predominantly Stage II · Adjuvant Therapy"
     },
     {
       "id": "radicals-rt",
@@ -2229,22 +2399,24 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/radicals-rt",
       "discipline": "Radiation",
-      "setting": "Post-prostatectomy",
+      "setting": "Relapsed / Refractory",
       "question": "After radical prostatectomy, does routine adjuvant radiotherapy improve outcomes compared with observation with early salvage radiotherapy for PSA relapse?",
       "path": "trial-pages/radicals-rt",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy"
     },
     {
       "id": "radiosa",
       "trial": "RADIOSA",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent HSPC · SBRT ± ADT",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does adding short-course ADT to SBRT improve outcomes in metachronous oligorecurrent HSPC?",
       "path": "trial-pages/radiosa/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent HSPC · SBRT ± ADT"
     },
     {
       "id": "penile-adjuvant-5fu-vs-paclitaxel",
@@ -2255,34 +2427,37 @@
         "Adjuvant paclitaxel-platinum vs 5-FU-platinum"
       ],
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Adjuvant / Postoperative",
       "question": "In high-risk penile cancer after definitive surgery, does adjuvant 5-FU plus platinum improve outcomes compared with paclitaxel plus platinum?",
       "path": "trial-pages/penile-adjuvant-5fu-vs-paclitaxel",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "rapido",
       "trial": "RAPIDO",
       "site": "Rectal Cancer",
       "source": "trial-pages/rapido",
-      "discipline": "Radiation Oncology",
-      "setting": "Locally Advanced Disease · Total Neoadjuvant Therapy",
+      "discipline": "Radiation",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "In high-risk locally advanced rectal cancer, can short-course RT followed by systemic chemotherapy reduce treatment failure compared with conventional chemoradiotherapy?",
       "path": "trial-pages/rapido/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced Disease · Total Neoadjuvant Therapy"
     },
     {
       "id": "ravens",
       "trial": "RAVENS",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent bone-metastatic HSPC · SABR ± radium-223",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does radium-223 added to SABR delay progression in recurrent bone-metastatic HSPC?",
       "path": "trial-pages/ravens/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent bone-metastatic HSPC · SABR ± radium-223"
     },
     {
       "id": "rtog-0236",
@@ -2295,23 +2470,25 @@
         "NCT00087659"
       ],
       "discipline": "Radiation",
-      "setting": "Stage I · Medically Inoperable · SBRT",
+      "setting": "Localized / Early-stage",
       "question": "For medically inoperable stage I NSCLC, does SBRT provide durable primary-tumour control?",
       "path": "trial-pages/rtog-0236/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I · Medically Inoperable · SBRT"
     },
     {
       "id": "rtog-0534-spport",
       "trial": "RTOG 0534 SPPORT",
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-0534-spport",
-      "discipline": "Radiation Oncology",
-      "setting": "Post-prostatectomy Biochemical Recurrence",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Does adding short-term ADT and pelvic nodal RT improve freedom from progression after prostatectomy salvage RT?",
       "path": "trial-pages/rtog-0534-spport/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
       "id": "rtog-0617",
@@ -2319,11 +2496,12 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/rtog-0617/",
       "discipline": "Radiation",
-      "setting": "Stage III · Definitive Chemoradiation",
+      "setting": "Advanced / Metastatic",
       "question": "In unresectable stage IIIA/IIIB NSCLC, does escalating definitive thoracic RT from 60 Gy to 74 Gy improve survival when given with concurrent chemotherapy?",
       "path": "trial-pages/rtog-0617/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage III · Definitive Chemoradiation"
     },
     {
       "id": "rtog-85-31",
@@ -2331,11 +2509,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-85-31",
       "discipline": "Radiation",
-      "setting": "Locally Advanced/High-Risk",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced prostate cancer, does adding long-term androgen deprivation to radiotherapy improve local control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-85-31",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/High-Risk"
     },
     {
       "id": "rtog-92-02",
@@ -2343,11 +2522,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/rtog-92-02",
       "discipline": "Radiation",
-      "setting": "Locally Advanced/High-Risk",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced prostate cancer, does extending androgen deprivation around radiotherapy from short-term to long-term improve disease control and survival?",
       "path": "trial-pages/rtog-92-02",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/High-Risk"
     },
     {
       "id": "rtog-9408",
@@ -2359,16 +2539,17 @@
         "RTOG 94-08"
       ],
       "discipline": "Radiation",
-      "setting": "Localized/Intermediate-Risk",
+      "setting": "Localized / Early-stage",
       "question": "In men with localized or intermediate-risk prostate cancer, does adding short-term androgen-deprivation therapy to radiotherapy improve disease control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-9408",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized/Intermediate-Risk"
     },
     {
       "id": "rtog-9802",
       "trial": "RTOG 9802",
-      "site": "Neuro-oncology",
+      "site": "Neuro-Oncology",
       "source": "trial-pages/rtog-9802/",
       "aliases": [
         "RTOG 9802",
@@ -2376,35 +2557,39 @@
         "NCT00003375"
       ],
       "discipline": "Medical",
-      "setting": "High-Risk Grade 2 Glioma · RT ± PCV",
+      "setting": "Adjuvant / Postoperative",
       "question": "For high-risk grade 2 glioma, does adding PCV after RT improve survival?",
       "path": "trial-pages/rtog-9802/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "High-Risk Grade 2 Glioma · RT ± PCV",
+      "site_detail": "Neuro-oncology"
     },
     {
       "id": "s-trac",
       "trial": "S-TRAC",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/s-trac",
-      "discipline": "Medical Oncology",
-      "setting": "Adjuvant",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant sunitinib improve disease-free survival after nephrectomy in high-risk clear-cell RCC?",
       "path": "trial-pages/s-trac/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "sakk-01-10",
       "trial": "SAKK 01/10",
       "site": "Germ Cell Tumours",
       "source": "trial-pages/sakk-01-10",
-      "discipline": "Radiation Oncology",
-      "setting": "Stage II Seminoma",
+      "discipline": "Radiation",
+      "setting": "Localized / Early-stage",
       "question": "Can stage IIA/IIB seminoma be treated with markedly de-escalated carboplatin plus involved-node RT?",
       "path": "trial-pages/sakk-01-10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage II Seminoma"
     },
     {
       "id": "sharp",
@@ -2412,23 +2597,25 @@
       "site": "Hepatocellular Carcinoma",
       "source": "trial-pages/sharp/",
       "discipline": "Medical",
-      "setting": "Advanced/Unresectable · First-line",
+      "setting": "Relapsed / Refractory",
       "question": "In advanced hepatocellular carcinoma unsuitable for or progressing after locoregional therapy, does sorafenib improve survival compared with placebo?",
       "path": "trial-pages/sharp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Advanced/Unresectable · First-line"
     },
     {
       "id": "soft",
       "trial": "SOFT",
       "site": "Breast Cancer",
       "source": "trial-pages/soft",
-      "discipline": "Medical Oncology",
-      "setting": "Premenopausal HR-positive",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
       "question": "Does ovarian suppression added to endocrine therapy improve outcomes in premenopausal breast cancer?",
       "path": "trial-pages/soft/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Premenopausal HR-positive"
     },
     {
       "id": "sorce",
@@ -2436,11 +2623,12 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/sorce",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Relapsed / Refractory",
       "question": "After nephrectomy for intermediate- or high-risk renal cell carcinoma, does adjuvant sorafenib reduce recurrence compared with placebo, and is longer treatment more effective than shorter treatment?",
       "path": "trial-pages/sorce",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "spcg-4",
@@ -2448,11 +2636,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/spcg-4",
       "discipline": "Surgical",
-      "setting": "Localized Disease",
+      "setting": "Localized / Early-stage",
       "question": "In men with clinically localized prostate cancer, does radical prostatectomy improve survival and disease control compared with watchful waiting?",
       "path": "trial-pages/spcg-4",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized Disease"
     },
     {
       "id": "spcg-7-sfuo-3",
@@ -2460,11 +2649,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/spcg-7-sfuo-3",
       "discipline": "Radiation",
-      "setting": "Localized/Locally Advanced",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced or high-risk prostate cancer, does adding radiotherapy to endocrine therapy improve survival compared with endocrine therapy alone?",
       "path": "trial-pages/spcg-7-sfuo-3",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized/Locally Advanced"
     },
     {
       "id": "stamped-abiraterone",
@@ -2476,35 +2666,38 @@
         "STAMPEDE NCT00268476",
         "abiraterone acetate plus prednisolone"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Metastatic Hormone-Sensitive",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "In metastatic hormone-sensitive prostate cancer starting long-term ADT, does adding abiraterone acetate plus prednisolone improve survival?",
       "path": "trial-pages/stamped-abiraterone",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
       "id": "stampede-arm-h",
       "trial": "STAMPEDE Arm H",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "De novo metastatic HSPC · Prostate RT",
+      "discipline": "Radiation",
+      "setting": "Diagnosis / Staging / Risk Assessment",
       "question": "Does prostate RT improve outcomes in newly diagnosed metastatic prostate cancer, especially low-burden disease?",
       "path": "trial-pages/stampede-arm-h/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "source": "trial-pages/stampede-arm-h/"
+      "source": "trial-pages/stampede-arm-h/",
+      "setting_detail": "De novo metastatic HSPC · Prostate RT"
     },
     {
       "id": "stomp",
       "trial": "STOMP",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligorecurrent HSPC · MDT vs observation",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Can MDT delay ADT compared with surveillance in oligorecurrent HSPC?",
       "path": "trial-pages/stomp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligorecurrent HSPC · MDT vs observation"
     },
     {
       "id": "sunitinib-ifn",
@@ -2512,23 +2705,25 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/sunitinib-ifn",
       "discipline": "Medical",
-      "setting": "First-line Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In previously untreated metastatic renal cell carcinoma, does sunitinib improve progression-free and overall outcomes compared with interferon alfa?",
       "path": "trial-pages/sunitinib-ifn",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "First-line Metastatic"
     },
     {
       "id": "surtime",
       "trial": "SURTIME",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/surtime",
-      "discipline": "Surgical Oncology",
-      "setting": "Synchronous Metastatic RCC",
+      "discipline": "Surgical",
+      "setting": "Advanced / Metastatic",
       "question": "Should sunitinib precede cytoreductive nephrectomy in synchronous metastatic RCC?",
       "path": "trial-pages/surtime/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Synchronous Metastatic RCC"
     },
     {
       "id": "sw-oteca-clinical-stage1",
@@ -2536,11 +2731,12 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/sw-oteca-clinical-stage1",
       "discipline": "Medical",
-      "setting": "Stage I Non-seminoma",
+      "setting": "Adjuvant / Postoperative",
       "question": "In clinical stage I nonseminomatous germ-cell cancer, can surveillance and risk-adapted adjuvant therapy provide high cure rates while reducing unnecessary treatment?",
       "path": "trial-pages/sw-oteca-clinical-stage1",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Non-seminoma"
     },
     {
       "id": "sw-oteca-stage1-nsgct",
@@ -2551,11 +2747,12 @@
         "SWENOTECA stage I NSGCT"
       ],
       "discipline": "Medical",
-      "setting": "Stage I Non-seminoma",
+      "setting": "Adjuvant / Postoperative",
       "question": "In clinical stage I nonseminomatous germ-cell cancer, can risk-adapted surveillance with selective adjuvant treatment safely minimize unnecessary chemotherapy?",
       "path": "trial-pages/sw-oteca-stage1-nsgct",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Non-seminoma"
     },
     {
       "id": "swog-8507",
@@ -2563,11 +2760,12 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/swog-8507",
       "discipline": "Medical",
-      "setting": "Adjuvant",
+      "setting": "Relapsed / Refractory",
       "question": "In high-risk non-muscle-invasive bladder cancer, does maintenance intravesical BCG after induction reduce recurrence compared with induction BCG alone?",
       "path": "trial-pages/swog-8507",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant"
     },
     {
       "id": "swog-8710",
@@ -2578,12 +2776,13 @@
         "SWOG 8710",
         "INT-0080"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Neoadjuvant",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before cystectomy in muscle-invasive bladder cancer?",
       "path": "trial-pages/swog-8710/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "swog-9346",
@@ -2595,23 +2794,25 @@
         "SWOG/INT-0162"
       ],
       "discipline": "Medical",
-      "setting": "Metastatic Hormone-Sensitive",
+      "setting": "Advanced / Metastatic",
       "question": "In metastatic hormone-sensitive prostate cancer, is intermittent androgen deprivation non-inferior to continuous androgen deprivation for survival while reducing treatment exposure?",
       "path": "trial-pages/swog-9346",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
       "id": "swog-s0337",
       "trial": "SWOG S0337",
       "site": "Bladder Cancer",
       "source": "trial-pages/swog-s0337",
-      "discipline": "Medical Oncology",
-      "setting": "Low-grade NMIBC · Post-TURBT",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Does immediate single-dose intravesical gemcitabine reduce recurrence?",
       "path": "trial-pages/swog-s0337/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Low-grade NMIBC · Post-TURBT"
     },
     {
       "id": "swog-s1605",
@@ -2622,12 +2823,13 @@
         "SWOG S1605",
         "NCT02844816"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "BCG-unresponsive high-risk NMIBC",
+      "discipline": "Medical",
+      "setting": "Localized / Early-stage",
       "question": "Does systemic atezolizumab provide sufficient durable response in BCG-unresponsive high-risk NMIBC to support bladder preservation?",
       "path": "trial-pages/swog-s1605/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "BCG-unresponsive high-risk NMIBC"
     },
     {
       "id": "swog-nrg-s1914",
@@ -2635,11 +2837,12 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/swog-nrg-s1914",
       "discipline": "Medical",
-      "setting": "Locally Advanced",
+      "setting": "Locally Advanced / Resectable",
       "question": "In localized small-cell lung cancer, does adding atezolizumab to concurrent chemoradiotherapy and prophylactic cranial irradiation improve survival compared with chemoradiotherapy and prophylactic cranial irradiation alone?",
       "path": "trial-pages/swog-nrg-s1914",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced"
     },
     {
       "id": "tailorx",
@@ -2647,11 +2850,12 @@
       "site": "Breast Cancer",
       "source": "trial-pages/tailorx",
       "discipline": "Biomarker",
-      "setting": "Adjuvant HR-positive/HER2-negative Node-negative",
+      "setting": "Relapsed / Refractory",
       "question": "Can the 21-gene recurrence score identify patients who can omit adjuvant chemotherapy?",
       "path": "trial-pages/tailorx/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Adjuvant HR-positive/HER2-negative Node-negative"
     },
     {
       "id": "taishan-302",
@@ -2659,11 +2863,12 @@
       "site": "Small-Cell Lung Cancer",
       "source": "trial-pages/taishan-302",
       "discipline": "Medical",
-      "setting": "Relapsed SCLC",
+      "setting": "Relapsed / Refractory",
       "question": "In relapsed small-cell lung cancer after platinum therapy, does the B7-H3-directed ADC tambotatug pelitecan improve survival compared with topotecan?",
       "path": "trial-pages/taishan-302",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Relapsed SCLC"
     },
     {
       "id": "talentop",
@@ -2675,11 +2880,12 @@
         "Liver resection after atezolizumab and bevacizumab versus maintenance therapy"
       ],
       "discipline": "Medical",
-      "setting": "Localized/Resectable HCC",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced hepatocellular carcinoma responding to atezolizumab plus bevacizumab, does adding liver resection improve survival compared with continuing systemic maintenance therapy?",
       "path": "trial-pages/talentop",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Localized/Resectable HCC"
     },
     {
       "id": "tinivo-2",
@@ -2691,17 +2897,18 @@
         "NCT04987203",
         "tivozanib plus nivolumab after ICI"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Advanced RCC after prior ICI",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "After prior ICI exposure, does adding nivolumab to tivozanib improve outcomes versus tivozanib alone?",
       "path": "trial-pages/tinivo-2/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "primary endpoint results and prior-ICI subgroup included; browser render review pending"
+      "outcome_visual_review_status": "primary endpoint results and prior-ICI subgroup included; browser render review pending",
+      "setting_detail": "Advanced RCC after prior ICI"
     },
     {
       "id": "tip-salvage-gct",
       "trial": "TIP salvage chemotherapy (Kondagunta et al.)",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/tip-salvage-gct/",
       "aliases": [
         "TIP",
@@ -2711,34 +2918,38 @@
         "JCO.23.02542 long-term cohort"
       ],
       "discipline": "Medical",
-      "setting": "Relapsed / Refractory · Second-line Salvage · Curative Intent",
+      "setting": "Relapsed / Refractory",
       "question": "In patients with relapsed testicular seminoma or non-seminomatous germ-cell tumours after cisplatin-based first-line chemotherapy, can paclitaxel, ifosfamide and cisplatin (TIP) achieve durable remission?",
       "path": "trial-pages/tip-salvage-gct/",
       "freshness_review_status": "targeted_primary_sources_and_EAU_guideline_reviewed_2026-10-18",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Relapsed / Refractory · Second-line Salvage · Curative Intent",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "tivo-3",
       "trial": "TIVO-3",
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/tivo-3",
-      "discipline": "Medical Oncology",
-      "setting": "Relapsed/Refractory Metastatic",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Does tivozanib improve PFS versus sorafenib after multiple prior therapies?",
       "path": "trial-pages/tivo-3/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Relapsed/Refractory Metastatic"
     },
     {
       "id": "trap",
       "trial": "TRAP",
       "site": "Prostate Cancer",
-      "discipline": "Radiation Oncology",
-      "setting": "Oligoprogressive mCRPC · SBRT while continuing ARPI",
+      "discipline": "Radiation",
+      "setting": "Relapsed / Refractory",
       "question": "Can SBRT delay progression or next-line therapy for limited progression on an ARPI?",
       "path": "trial-pages/trap/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Oligoprogressive mCRPC · SBRT while continuing ARPI"
     },
     {
       "id": "trisst",
@@ -2746,11 +2957,12 @@
       "site": "Germ Cell Tumours",
       "source": "trial-pages/trisst",
       "discipline": "Radiation",
-      "setting": "Stage I Seminoma",
+      "setting": "Relapsed / Refractory",
       "question": "In stage I seminoma under surveillance, can MRI replace CT and can the number of surveillance scans be reduced without compromising relapse detection?",
       "path": "trial-pages/trisst",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Stage I Seminoma"
     },
     {
       "id": "trog-03-04-radar",
@@ -2758,11 +2970,12 @@
       "site": "Prostate Cancer",
       "source": "trial-pages/trog-03-04-radar",
       "discipline": "Medical",
-      "setting": "Locally Advanced/High-Risk",
+      "setting": "Locally Advanced / Resectable",
       "question": "In locally advanced or high-risk prostate cancer, does longer androgen deprivation and the addition of zoledronic acid improve bone-metastasis and disease outcomes compared with shorter androgen deprivation?",
       "path": "trial-pages/trog-03-04-radar",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Locally Advanced/High-Risk"
     },
     {
       "id": "trophy-u-01",
@@ -2773,12 +2986,13 @@
         "TROPHY-U-01",
         "NCT03547973"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Previously treated advanced UC",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
       "question": "After prior platinum chemotherapy and checkpoint inhibition, what activity was reported in advanced urothelial carcinoma?",
       "path": "trial-pages/trophy-u-01/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending"
+      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "setting_detail": "Previously treated advanced UC"
     },
     {
       "id": "vesper",
@@ -2790,269 +3004,304 @@
         "GETUG-AFU V05",
         "COGB 0402"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Neoadjuvant",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
       "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
       "path": "trial-pages/vesper/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     },
     {
       "id": "veip-recurrent-seminoma-miller-1997",
       "trial": "VeIP in recurrent seminoma",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/veip-recurrent-seminoma/",
       "aliases": [
         "VeIP in recurrent seminoma"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Seminoma-specific retrospective series",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "In recurrent seminoma after cisplatin-based chemotherapy, can VeIP produce durable remission?",
       "path": "trial-pages/veip-recurrent-seminoma/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Seminoma-specific retrospective series",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "loehrer-veip-mixed-gct-1998",
       "trial": "Loehrer VeIP salvage GCT",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/loehrer-veip-salvage-gct/",
       "aliases": [
         "Loehrer VeIP salvage GCT"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "After relapse following cisplatin/etoposide-based chemotherapy, what outcomes were reported with VeIP salvage chemotherapy?",
       "path": "trial-pages/loehrer-veip-salvage-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "mccaffrey-vip-veip-1997",
       "trial": "McCaffrey VIP/VeIP salvage study",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/mccaffrey-vip-veip-salvage/",
       "aliases": [
         "McCaffrey VIP/VeIP salvage study"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "What activity was observed with ifosfamide/cisplatin-based VIP or VeIP as first salvage treatment?",
       "path": "trial-pages/mccaffrey-vip-veip-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "mrc-tip-phase2-2005",
       "trial": "MRC phase II TIP study",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/mrc-tip-phase2/",
       "aliases": [
         "MRC phase II TIP study"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "After first relapse following BEP, what response and survival outcomes were observed with TIP?",
       "path": "trial-pages/mrc-tip-phase2/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "ipfsg-prognostic-model-2010",
       "trial": "IPFSG salvage prognostic model",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/ipfsg-salvage-prognostic-model/",
       "aliases": [
         "IPFSG salvage prognostic model"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · prognostic study",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Which baseline and relapse characteristics predict outcomes after first salvage treatment for germ-cell tumours?",
       "path": "trial-pages/ipfsg-salvage-prognostic-model/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · prognostic study",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "lorch-cdct-hdct-2011",
       "trial": "Lorch conventional-dose versus high-dose salvage comparison",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/lorch-cdct-vs-hdct/",
       "aliases": [
         "Lorch conventional-dose versus high-dose salvage comparison"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · retrospective comparison",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "In relapsed metastatic GCT, how did conventional-dose salvage chemotherapy compare with high-dose chemotherapy?",
       "path": "trial-pages/lorch-cdct-vs-hdct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · retrospective comparison",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "ti-ce-einhorn-2010",
       "trial": "TI-CE high-dose salvage chemotherapy",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/ti-ce-high-dose-salvage/",
       "aliases": [
         "TI-CE high-dose salvage chemotherapy"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · phase I/II",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Can paclitaxel/ifosfamide induction followed by high-dose carboplatin/etoposide produce durable remission in poor-risk GCT?",
       "path": "trial-pages/ti-ce-high-dose-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase I/II",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "tiger-tip-vs-tice",
       "trial": "TIGER: TIP versus TI-CE",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/tiger-tip-vs-ti-ce/",
       "aliases": [
         "TIGER: TIP versus TI-CE"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Randomized phase III · mixed GCT",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "For relapsed or refractory GCT, does conventional-dose TIP or high-dose TI-CE provide better outcomes as first salvage?",
       "path": "trial-pages/tiger-tip-vs-ti-ce/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Randomized phase III · mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "gemcitabine-refractory-gct-1999",
       "trial": "Gemcitabine in refractory GCT",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/gemcitabine-refractory-gct/",
       "aliases": [
         "Gemcitabine in refractory GCT"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · phase II",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Does single-agent gemcitabine have activity in heavily pretreated refractory germ-cell tumours?",
       "path": "trial-pages/gemcitabine-refractory-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "ecog-e9897-paclitaxel-gemcitabine",
       "trial": "ECOG E9897",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
       "aliases": [
         "ECOG E9897"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · phase II",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "What activity does paclitaxel plus gemcitabine have in refractory germ-cell tumours?",
       "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "oechsle-go-gop-2011",
       "trial": "Oechsle GO/GOP long-term follow-up",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/oechsle-go-gop-later-line/",
       "aliases": [
         "Oechsle GO/GOP long-term follow-up"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · phase II follow-up",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Can gemcitabine/oxaliplatin, with or without paclitaxel and secondary surgery, produce long-term disease-free survival after multiple relapses?",
       "path": "trial-pages/oechsle-go-gop-later-line/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II follow-up",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "tpg-multiply-relapsed-gct-2014",
       "trial": "TPG in multiply relapsed GCT",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/tpg-multiply-relapsed-gct/",
       "aliases": [
         "TPG in multiply relapsed GCT"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · retrospective",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "What activity and long-term outcomes were reported with paclitaxel/cisplatin/gemcitabine beyond second-line salvage?",
       "path": "trial-pages/tpg-multiply-relapsed-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · retrospective",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "gem-tip-relapsed-gct-2018",
       "trial": "Gem-TIP in relapsed GCT",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/gem-tip-relapsed-gct/",
       "aliases": [
         "Gem-TIP in relapsed GCT"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · phase I/II",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Can gemcitabine be added to TIP without reducing TIP dose intensity in first-relapse GCT?",
       "path": "trial-pages/gem-tip-relapsed-gct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase I/II",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "lorch-sequential-vs-single-hdct",
       "trial": "Lorch sequential versus single HDCT randomized trial",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/lorch-sequential-vs-single-hdct/",
       "aliases": [
         "Lorch et al. 2007 randomized trial",
         "Lorch et al. 2012 long-term follow-up",
         "PMID 22291076"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Relapsed/refractory · High-dose salvage",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "In relapsed or refractory germ-cell tumours, does sequential high-dose chemotherapy improve survival and reduce treatment-related mortality compared with a single high-dose regimen?",
       "path": "trial-pages/lorch-sequential-vs-single-hdct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Relapsed/refractory · High-dose salvage",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "loehrer-vip-salvage-1986",
       "trial": "Loehrer VIP salvage study",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/loehrer-vip-salvage/",
       "aliases": [
         "Loehrer VIP salvage study"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · early salvage study",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "In heavily pretreated or refractory germ-cell tumours, what activity was observed with etoposide, ifosfamide and cisplatin (VIP)?",
       "path": "trial-pages/loehrer-vip-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · early salvage study",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "it94-vip-veip-vs-hdct",
       "trial": "IT-94: conventional-dose versus high-dose salvage",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/it94-vip-veip-vs-hdct/",
       "aliases": [
         "IT-94: conventional-dose versus high-dose salvage"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Mixed GCT · randomized second-line study",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "After relapse following first-line chemotherapy for germ-cell tumours, does adding a single high-dose chemotherapy consolidation after conventional salvage improve survival?",
       "path": "trial-pages/it94-vip-veip-vs-hdct/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · randomized second-line study",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "modified-pei-salvage-2013",
       "trial": "Modified PEI first-salvage cohort",
-      "site": "Testicular Germ-cell Tumours",
+      "site": "Germ Cell Tumours",
       "source": "trial-pages/modified-pei-salvage/",
       "aliases": [
         "Modified PEI first-salvage cohort"
       ],
-      "discipline": "Medical Oncology",
-      "setting": "Male GCT · long-term cohort",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
       "question": "Can dose-modified cisplatin, etoposide and ifosfamide (PEI) achieve durable outcomes as first salvage chemotherapy for male germ-cell tumours?",
       "path": "trial-pages/modified-pei-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Male GCT · long-term cohort",
+      "site_detail": "Testicular Germ-cell Tumours"
     }
   ]
 }
