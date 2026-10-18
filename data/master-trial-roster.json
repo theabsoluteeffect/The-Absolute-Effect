@@ -15,7 +15,8 @@
     "Every trial page must remain visually informative when neither NNT nor NNH can be defensibly calculated: show a chart/pictogram of the strongest reported outcome (e.g. survival, response, progression, toxicity, or relative effect) using source-reported values only; label endpoint and time horizon; never derive NNT from median survival.",
     "Every permanent trial page must distinguish historical trial results from current practice context. Audit for later follow-up publications, meta-analyses, guideline changes, and whether the intervention remains standard; display a dated current-practice context and linked sources. Do not overwrite original trial results with newer recommendations.",
     "Do not mark a trial clinically current based only on its original publication date or presence of a source link. A freshness review must check subsequent follow-up, later practice-changing trials/meta-analyses, current disease-specific guideline recommendations, and whether the intervention remains standard; record dated sources and review status.",
-    "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
+    "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival.",
+    "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
     "permanent_trial_pages": 202,
@@ -354,7 +355,8 @@
         "Testicular Germ-cell Tumours": "Germ Cell Tumours",
         "Colon Cancer": "Colorectal Cancer"
       },
-      "retrospective_design_badge": "shared renderer adds a visible Retrospective study badge when the study-design description explicitly identifies a retrospective design; it does not infer retrospective design from a non-randomized result alone."
+      "retrospective_design_badge": "shared renderer adds a visible Retrospective study badge when the study-design description explicitly identifies a retrospective design; it does not infer retrospective design from a non-randomized result alone.",
+      "roster_entries_normalized": 202
     }
   },
   "trials": [
