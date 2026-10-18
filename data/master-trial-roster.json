@@ -18,10 +18,10 @@
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival."
   ],
   "audit": {
-    "permanent_trial_pages": 199,
+    "permanent_trial_pages": 202,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 199,
+    "total_unique_trials": 202,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -307,6 +307,18 @@
         {
           "id": "lorch-sequential-vs-single-hdct",
           "path": "trial-pages/lorch-sequential-vs-single-hdct/"
+        },
+        {
+          "id": "loehrer-vip-salvage-1986",
+          "path": "trial-pages/loehrer-vip-salvage/"
+        },
+        {
+          "id": "it94-vip-veip-vs-hdct",
+          "path": "trial-pages/it94-vip-veip-vs-hdct/"
+        },
+        {
+          "id": "modified-pei-salvage-2013",
+          "path": "trial-pages/modified-pei-salvage/"
         }
       ],
       "existing_tip_page_updated_for_guideline_sources": true,
@@ -2994,6 +3006,51 @@
       "setting": "Relapsed/refractory · High-dose salvage",
       "question": "In relapsed or refractory germ-cell tumours, does sequential high-dose chemotherapy improve survival and reduce treatment-related mortality compared with a single high-dose regimen?",
       "path": "trial-pages/lorch-sequential-vs-single-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "loehrer-vip-salvage-1986",
+      "trial": "Loehrer VIP salvage study",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/loehrer-vip-salvage/",
+      "aliases": [
+        "Loehrer VIP salvage study"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · early salvage study",
+      "question": "In heavily pretreated or refractory germ-cell tumours, what activity was observed with etoposide, ifosfamide and cisplatin (VIP)?",
+      "path": "trial-pages/loehrer-vip-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "it94-vip-veip-vs-hdct",
+      "trial": "IT-94: conventional-dose versus high-dose salvage",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/it94-vip-veip-vs-hdct/",
+      "aliases": [
+        "IT-94: conventional-dose versus high-dose salvage"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Mixed GCT · randomized second-line study",
+      "question": "After relapse following first-line chemotherapy for germ-cell tumours, does adding a single high-dose chemotherapy consolidation after conventional salvage improve survival?",
+      "path": "trial-pages/it94-vip-veip-vs-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
+    },
+    {
+      "id": "modified-pei-salvage-2013",
+      "trial": "Modified PEI first-salvage cohort",
+      "site": "Testicular Germ-cell Tumours",
+      "source": "trial-pages/modified-pei-salvage/",
+      "aliases": [
+        "Modified PEI first-salvage cohort"
+      ],
+      "discipline": "Medical Oncology",
+      "setting": "Male GCT · long-term cohort",
+      "question": "Can dose-modified cisplatin, etoposide and ifosfamide (PEI) achieve durable outcomes as first salvage chemotherapy for male germ-cell tumours?",
+      "path": "trial-pages/modified-pei-salvage/",
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
       "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending"
     }
