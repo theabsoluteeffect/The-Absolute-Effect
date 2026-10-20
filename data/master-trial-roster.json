@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 3,
+  "version": 4,
   "last_quality_check": "2026-10-20",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 227,
+    "permanent_trial_pages": 236,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 227,
+    "total_unique_trials": 236,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -410,43 +410,84 @@
     "last_upload_batch": {
       "date": "2026-10-20",
       "newTrials": [
-        "ADAURA",
-        "RTOG 9410",
-        "KEYNOTE-189",
-        "FLAURA",
-        "CLASSIC",
-        "CheckMate 577",
-        "EF-14",
-        "PRODIGE 23",
-        "TOPAZ-1",
-        "NAPOLI-1",
-        "ASCENT",
-        "KEYNOTE-355",
-        "IMpassion131",
-        "IMpassion130",
-        "OlympiA",
-        "SOPHIA",
-        "NALA",
-        "HER2CLIMB",
-        "BOLERO-2",
-        "BOLERO-6",
-        "TH3RESA",
-        "EMILIA",
-        "DESTINY-Breast03",
-        "SOLAR-1",
-        "CAPItello-291"
+        "ASCOT (JCOG1202)",
+        "BILCAP",
+        "Japanese BT22",
+        "ABC-06",
+        "ClarIDHy",
+        "FIGHT-202 (pemigatinib)",
+        "MyPathway (HER2-positive biliary tract cohort)",
+        "ROAR (BRAF V600E biliary tract cohort)",
+        "KEYNOTE-158 (biliary tract cohort)"
       ],
       "excludedDuplicates": [
-        "KEYNOTE-522 — already exists as a permanent page and remains unchanged"
+        "ABC-02 — existing permanent trial page retained",
+        "TOPAZ-1 — existing permanent trial page retained"
       ],
-      "partialFailureRecovered": true,
-      "source": "user-approved 10-trial roadmap batch plus 15 additional distinct breast cancer trials"
+      "notes": "Added nine distinct BTC trial/cohort pages after checking master roster and trial-page tree. Pemigatinib is represented by FIGHT-202 in previously treated advanced disease; no adjuvant pemigatinib trial was identified in the source check."
     },
     "user_requested_existing_trial_not_duplicated": [
       "KEYNOTE-522"
     ],
     "aliases_reconciled_on": "2026-10-20",
-    "aliases_reconciled_for_last_batch": 25
+    "aliases_reconciled_for_last_batch": 25,
+    "biliary_trial_addition": {
+      "date": "2026-10-20",
+      "new_pages": [
+        {
+          "id": "ascot",
+          "path": "trial-pages/ascot/",
+          "trial": "ASCOT (JCOG1202)"
+        },
+        {
+          "id": "bilcap",
+          "path": "trial-pages/bilcap/",
+          "trial": "BILCAP"
+        },
+        {
+          "id": "bt-22",
+          "path": "trial-pages/bt-22/",
+          "trial": "Japanese BT22"
+        },
+        {
+          "id": "abc-06",
+          "path": "trial-pages/abc-06/",
+          "trial": "ABC-06"
+        },
+        {
+          "id": "claridhy",
+          "path": "trial-pages/claridhy/",
+          "trial": "ClarIDHy"
+        },
+        {
+          "id": "fight-202",
+          "path": "trial-pages/fight-202/",
+          "trial": "FIGHT-202 (pemigatinib)"
+        },
+        {
+          "id": "mypathway-btc",
+          "path": "trial-pages/mypathway-btc/",
+          "trial": "MyPathway (HER2-positive biliary tract cohort)"
+        },
+        {
+          "id": "roar-btc",
+          "path": "trial-pages/roar-btc/",
+          "trial": "ROAR (BRAF V600E biliary tract cohort)"
+        },
+        {
+          "id": "keynote-158-btc",
+          "path": "trial-pages/keynote-158-btc/",
+          "trial": "KEYNOTE-158 (biliary tract cohort)"
+        }
+      ],
+      "existing_trials_not_duplicated": [
+        "ABC-02",
+        "TOPAZ-1"
+      ],
+      "user_requested_pemigatinib_clarification": "No adjuvant pemigatinib trial was identified. FIGHT-202 is a single-arm phase II study in previously treated advanced/metastatic FGFR2 fusion/rearrangement-positive cholangiocarcinoma, not an adjuvant trial.",
+      "source_review": "Primary/authoritative sources linked; exact BT22 primary bibliographic record and full source-by-source freshness audit remain pending.",
+      "browser_rendered_visual_qa": "pending"
+    }
   },
   "trials": [
     {
@@ -463,6 +504,24 @@
       "setting_detail": "Advanced/Metastatic · First-line"
     },
     {
+      "id": "abc-06",
+      "trial": "ABC-06",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After progression on cisplatin–gemcitabine, does second-line FOLFOX plus active symptom control improve survival over active symptom control alone?",
+      "source": "trial-pages/abc-06/",
+      "path": "trial-pages/abc-06/",
+      "aliases": [
+        "ABC-06",
+        "NCT01926236",
+        "Second-line FOLFOX biliary tract cancer"
+      ],
+      "freshness_review_status": "primary source linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported 12-month OS visualization added; browser QA pending",
+      "setting_detail": "Second-line after GemCis"
+    },
+    {
       "id": "acosog-z0011",
       "trial": "ACOSOG Z0011",
       "site": "Breast Cancer",
@@ -474,6 +533,24 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Axillary Management"
+    },
+    {
+      "id": "adaura",
+      "trial": "ADAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/adaura/",
+      "path": "trial-pages/adaura/",
+      "aliases": [
+        "ADAURA",
+        "NCT02511106",
+        "ADAURA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS? [ADAURA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
     },
     {
       "id": "ambassador",
@@ -534,6 +611,43 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Oligometastatic mCRPC · SBRT + abiraterone"
+    },
+    {
+      "id": "ascent",
+      "trial": "ASCENT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/ascent/",
+      "path": "trial-pages/ascent/",
+      "aliases": [
+        "ASCENT",
+        "NCT02574455",
+        "Sacituzumab govitecan ASCENT"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy? [ASCENT]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "ascot",
+      "trial": "ASCOT (JCOG1202)",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After curative resection of biliary tract cancer, does adjuvant S-1 improve survival compared with observation?",
+      "source": "trial-pages/ascot/",
+      "path": "trial-pages/ascot/",
+      "aliases": [
+        "ASCOT",
+        "JCOG1202",
+        "JCOG 1202",
+        "S-1 adjuvant biliary tract cancer trial"
+      ],
+      "freshness_review_status": "primary source linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported outcome visualization added; browser QA pending",
+      "setting_detail": "Adjuvant S-1 after curative resection"
     },
     {
       "id": "assure",
@@ -631,6 +745,61 @@
       "setting_detail": "Bladder Preservation"
     },
     {
+      "id": "bilcap",
+      "trial": "BILCAP",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After macroscopically complete resection of biliary tract cancer, does adjuvant capecitabine improve survival compared with observation?",
+      "source": "trial-pages/bilcap/",
+      "path": "trial-pages/bilcap/",
+      "aliases": [
+        "BILCAP",
+        "ISRCTN72785446",
+        "Adjuvant capecitabine biliary tract cancer"
+      ],
+      "freshness_review_status": "primary and long-term sources linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported median OS visualization added; browser QA pending",
+      "setting_detail": "Adjuvant capecitabine after resection"
+    },
+    {
+      "id": "bolero-2",
+      "trial": "BOLERO-2",
+      "site": "Breast Cancer",
+      "source": "trial-pages/bolero-2/",
+      "path": "trial-pages/bolero-2/",
+      "aliases": [
+        "BOLERO-2",
+        "NCT00863655",
+        "BOLERO 2",
+        "Everolimus exemestane BOLERO-2"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HR-positive/HER2-negative advanced breast cancer after nonsteroidal AI progression, does everolimus plus exemestane improve PFS? [BOLERO-2]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "bolero-6",
+      "trial": "BOLERO-6",
+      "site": "Breast Cancer",
+      "source": "trial-pages/bolero-6/",
+      "path": "trial-pages/bolero-6/",
+      "aliases": [
+        "BOLERO-6",
+        "NCT01783444",
+        "BOLERO 6"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "After nonsteroidal AI progression in HR-positive advanced breast cancer, how does everolimus–exemestane compare with everolimus or capecitabine? [BOLERO-6]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
       "id": "cabosun",
       "trial": "CABOSUN",
       "site": "Renal Cell Carcinoma",
@@ -690,6 +859,25 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Stage II–III Rectal Cancer · Preoperative vs Postoperative CRT"
+    },
+    {
+      "id": "capitello-291",
+      "trial": "CAPItello-291",
+      "site": "Breast Cancer",
+      "source": "trial-pages/capitello-291/",
+      "path": "trial-pages/capitello-291/",
+      "aliases": [
+        "CAPItello-291",
+        "NCT04305496",
+        "CAPItello 291",
+        "CAPItello-291 trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HR-positive/HER2-negative advanced breast cancer progressing on AI therapy, does capivasertib plus fulvestrant improve PFS? [CAPItello-291]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
     },
     {
       "id": "carmena",
@@ -791,6 +979,24 @@
       "setting_detail": "Advanced/Metastatic"
     },
     {
+      "id": "checkmate-577",
+      "trial": "CheckMate 577",
+      "site": "Esophageal and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/checkmate-577/",
+      "path": "trial-pages/checkmate-577/",
+      "aliases": [
+        "CheckMate 577",
+        "NCT02743494",
+        "CheckMate-577"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After neoadjuvant CRT and R0 resection with residual disease, does adjuvant nivolumab improve DFS? [CheckMate 577]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
       "id": "checkmate-901",
       "trial": "CheckMate 901",
       "site": "Bladder Cancer",
@@ -846,6 +1052,43 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Localized"
+    },
+    {
+      "id": "claridhy",
+      "trial": "ClarIDHy",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated IDH1-mutant advanced cholangiocarcinoma, does ivosidenib improve progression-free survival compared with placebo?",
+      "source": "trial-pages/claridhy/",
+      "path": "trial-pages/claridhy/",
+      "aliases": [
+        "ClarIDHy",
+        "AG-120",
+        "NCT02989857",
+        "Ivosidenib IDH1 cholangiocarcinoma"
+      ],
+      "freshness_review_status": "primary and final OS sources linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported median PFS visualization added; browser QA pending",
+      "setting_detail": "IDH1-mutant previously treated advanced disease"
+    },
+    {
+      "id": "classic",
+      "trial": "CLASSIC",
+      "site": "Gastric Cancer",
+      "source": "trial-pages/classic/",
+      "path": "trial-pages/classic/",
+      "aliases": [
+        "CLASSIC",
+        "NCT00411229",
+        "CLASSIC trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After D2 gastrectomy for stage II–IIIB gastric cancer, does adjuvant CAPOX improve outcomes versus surgery alone? [CLASSIC]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
     },
     {
       "id": "clear",
@@ -1079,6 +1322,25 @@
       "setting_detail": "Postmastectomy RT"
     },
     {
+      "id": "destiny-breast-03",
+      "trial": "DESTINY-Breast03",
+      "site": "Breast Cancer",
+      "source": "trial-pages/destiny-breast-03/",
+      "path": "trial-pages/destiny-breast-03/",
+      "aliases": [
+        "DESTINY-Breast03",
+        "NCT03529110",
+        "DESTINY Breast 03",
+        "DESTINY-Breast 03"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HER2-positive metastatic breast cancer after trastuzumab and taxane, does trastuzumab deruxtecan improve outcomes versus T-DM1? [DESTINY-Breast03]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
       "id": "dissrm",
       "trial": "DISSRM Registry",
       "site": "Renal Cell Carcinoma",
@@ -1103,6 +1365,60 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Locally Advanced · Total Mesorectal Excision"
+    },
+    {
+      "id": "ecog-e9897-paclitaxel-gemcitabine",
+      "trial": "ECOG E9897",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
+      "aliases": [
+        "ECOG E9897"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "What activity does paclitaxel plus gemcitabine have in refractory germ-cell tumours?",
+      "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "ef-14",
+      "trial": "EF-14",
+      "site": "Neuro-Oncology",
+      "source": "trial-pages/ef-14/",
+      "path": "trial-pages/ef-14/",
+      "aliases": [
+        "EF-14",
+        "NCT00916409",
+        "EF14",
+        "Tumor Treating Fields glioblastoma"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After chemoradiotherapy for glioblastoma, does TTFields plus maintenance temozolomide improve survival? [EF-14]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "emilia",
+      "trial": "EMILIA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/emilia/",
+      "path": "trial-pages/emilia/",
+      "aliases": [
+        "EMILIA",
+        "NCT00829166",
+        "EMILIA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine? [EMILIA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
     },
     {
       "id": "eortc-22845",
@@ -1400,6 +1716,43 @@
       "setting_detail": "Localized Primary RCC"
     },
     {
+      "id": "fight-202",
+      "trial": "FIGHT-202 (pemigatinib)",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated advanced cholangiocarcinoma with FGFR2 fusions or rearrangements, what activity does pemigatinib show?",
+      "source": "trial-pages/fight-202/",
+      "path": "trial-pages/fight-202/",
+      "aliases": [
+        "FIGHT-202",
+        "Pemigatinib",
+        "NCT02924376",
+        "Pemigatinib cholangiocarcinoma"
+      ],
+      "freshness_review_status": "final primary analysis linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
+      "setting_detail": "FGFR2-altered previously treated advanced disease"
+    },
+    {
+      "id": "flaura",
+      "trial": "FLAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/flaura/",
+      "path": "trial-pages/flaura/",
+      "aliases": [
+        "FLAURA",
+        "NCT02296125",
+        "FLAURA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib? [FLAURA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
       "id": "flot4",
       "trial": "FLOT4-AIO",
       "site": "Gastric Cancer",
@@ -1414,6 +1767,40 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Locally Advanced Resectable Disease · Perioperative"
+    },
+    {
+      "id": "gem-tip-relapsed-gct-2018",
+      "trial": "Gem-TIP in relapsed GCT",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/gem-tip-relapsed-gct/",
+      "aliases": [
+        "Gem-TIP in relapsed GCT"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "Can gemcitabine be added to TIP without reducing TIP dose intensity in first-relapse GCT?",
+      "path": "trial-pages/gem-tip-relapsed-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase I/II",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "gemcitabine-refractory-gct-1999",
+      "trial": "Gemcitabine in refractory GCT",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/gemcitabine-refractory-gct/",
+      "aliases": [
+        "Gemcitabine in refractory GCT"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "Does single-agent gemcitabine have activity in heavily pretreated refractory germ-cell tumours?",
+      "path": "trial-pages/gemcitabine-refractory-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "german-ah01-94",
@@ -1481,6 +1868,24 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Oligometastatic mCRPC · SBRT + enzalutamide"
+    },
+    {
+      "id": "her2climb",
+      "trial": "HER2CLIMB",
+      "site": "Breast Cancer",
+      "source": "trial-pages/her2climb/",
+      "path": "trial-pages/her2climb/",
+      "aliases": [
+        "HER2CLIMB",
+        "NCT02614794",
+        "HER2-CLIMB"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes? [HER2CLIMB]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
     },
     {
       "id": "hera-big-1-01",
@@ -1553,6 +1958,42 @@
       "setting_detail": "First-line Metastatic RCC"
     },
     {
+      "id": "impassion130",
+      "trial": "IMpassion130",
+      "site": "Breast Cancer",
+      "source": "trial-pages/impassion130/",
+      "path": "trial-pages/impassion130/",
+      "aliases": [
+        "IMpassion130",
+        "NCT02425891",
+        "IMpassion 130"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In first-line advanced TNBC, does atezolizumab plus nab-paclitaxel improve outcomes? [IMpassion130]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "impassion131",
+      "trial": "IMpassion131",
+      "site": "Breast Cancer",
+      "source": "trial-pages/impassion131/",
+      "path": "trial-pages/impassion131/",
+      "aliases": [
+        "IMpassion131",
+        "NCT03125902",
+        "IMpassion 131"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In first-line advanced TNBC, does atezolizumab plus conventional paclitaxel improve outcomes? [IMpassion131]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
       "id": "imvigor010",
       "trial": "IMvigor010",
       "site": "Bladder Cancer",
@@ -1597,6 +2038,59 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Advanced/Metastatic"
+    },
+    {
+      "id": "ipfsg-prognostic-model-2010",
+      "trial": "IPFSG salvage prognostic model",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/ipfsg-salvage-prognostic-model/",
+      "aliases": [
+        "IPFSG salvage prognostic model"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "Which baseline and relapse characteristics predict outcomes after first salvage treatment for germ-cell tumours?",
+      "path": "trial-pages/ipfsg-salvage-prognostic-model/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · prognostic study",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "it94-vip-veip-vs-hdct",
+      "trial": "IT-94: conventional-dose versus high-dose salvage",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/it94-vip-veip-vs-hdct/",
+      "aliases": [
+        "IT-94: conventional-dose versus high-dose salvage"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After relapse following first-line chemotherapy for germ-cell tumours, does adding a single high-dose chemotherapy consolidation after conventional salvage improve survival?",
+      "path": "trial-pages/it94-vip-veip-vs-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · randomized second-line study",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "bt-22",
+      "trial": "Japanese BT22",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In advanced biliary tract cancer, does gemcitabine plus cisplatin improve outcomes over gemcitabine alone in a Japanese phase II study?",
+      "source": "trial-pages/bt-22/",
+      "path": "trial-pages/bt-22/",
+      "aliases": [
+        "BT22",
+        "Japanese BT22",
+        "JCOG BT22",
+        "Gemcitabine cisplatin Japanese biliary tract trial"
+      ],
+      "freshness_review_status": "primary source link provided; exact bibliographic details require manual source verification",
+      "outcome_visual_review_status": "source-reported median OS visualization added; browser QA pending",
+      "setting_detail": "Japanese randomized phase II study"
     },
     {
       "id": "javelin-bladder-100",
@@ -1695,6 +2189,62 @@
       "setting_detail": "BCG-unresponsive high-risk NMIBC"
     },
     {
+      "id": "keynote-158-btc",
+      "trial": "KEYNOTE-158 (biliary tract cohort)",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated advanced biliary tract cancer, what activity does pembrolizumab show in the KEYNOTE-158 cohort?",
+      "source": "trial-pages/keynote-158-btc/",
+      "path": "trial-pages/keynote-158-btc/",
+      "aliases": [
+        "KEYNOTE-158",
+        "KN158",
+        "MK-3475-158",
+        "Pembrolizumab advanced biliary tract cancer",
+        "NCT02628067"
+      ],
+      "freshness_review_status": "primary BTC cohort source linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
+      "setting_detail": "Previously treated advanced BTC cohort"
+    },
+    {
+      "id": "keynote-189",
+      "trial": "KEYNOTE-189",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/keynote-189/",
+      "path": "trial-pages/keynote-189/",
+      "aliases": [
+        "KEYNOTE-189",
+        "NCT02578680",
+        "KEYNOTE 189"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival? [KEYNOTE-189]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "keynote-355",
+      "trial": "KEYNOTE-355",
+      "site": "Breast Cancer",
+      "source": "trial-pages/keynote-355/",
+      "path": "trial-pages/keynote-355/",
+      "aliases": [
+        "KEYNOTE-355",
+        "NCT02819518",
+        "KEYNOTE 355"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In previously untreated advanced TNBC with PD-L1 CPS ≥10, does pembrolizumab plus chemotherapy improve survival? [KEYNOTE-355]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
       "id": "keynote-361",
       "trial": "KEYNOTE-361",
       "site": "Bladder Cancer",
@@ -1774,6 +2324,76 @@
       "setting_detail": "First-line advanced ccRCC"
     },
     {
+      "id": "loehrer-veip-mixed-gct-1998",
+      "trial": "Loehrer VeIP salvage GCT",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/loehrer-veip-salvage-gct/",
+      "aliases": [
+        "Loehrer VeIP salvage GCT"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After relapse following cisplatin/etoposide-based chemotherapy, what outcomes were reported with VeIP salvage chemotherapy?",
+      "path": "trial-pages/loehrer-veip-salvage-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "loehrer-vip-salvage-1986",
+      "trial": "Loehrer VIP salvage study",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/loehrer-vip-salvage/",
+      "aliases": [
+        "Loehrer VIP salvage study"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In heavily pretreated or refractory germ-cell tumours, what activity was observed with etoposide, ifosfamide and cisplatin (VIP)?",
+      "path": "trial-pages/loehrer-vip-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · early salvage study",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "lorch-cdct-hdct-2011",
+      "trial": "Lorch conventional-dose versus high-dose salvage comparison",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/lorch-cdct-vs-hdct/",
+      "aliases": [
+        "Lorch conventional-dose versus high-dose salvage comparison"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In relapsed metastatic GCT, how did conventional-dose salvage chemotherapy compare with high-dose chemotherapy?",
+      "path": "trial-pages/lorch-cdct-vs-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · retrospective comparison",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "lorch-sequential-vs-single-hdct",
+      "trial": "Lorch sequential versus single HDCT randomized trial",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/lorch-sequential-vs-single-hdct/",
+      "aliases": [
+        "Lorch et al. 2007 randomized trial",
+        "Lorch et al. 2012 long-term follow-up",
+        "PMID 22291076"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In relapsed or refractory germ-cell tumours, does sequential high-dose chemotherapy improve survival and reduce treatment-related mortality compared with a single high-dose regimen?",
+      "path": "trial-pages/lorch-sequential-vs-single-hdct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Relapsed/refractory · High-dose salvage",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
       "id": "lunar",
       "trial": "LUNAR",
       "site": "Prostate Cancer",
@@ -1817,6 +2437,23 @@
       "setting_detail": "Locally Advanced/Perioperative"
     },
     {
+      "id": "mccaffrey-vip-veip-1997",
+      "trial": "McCaffrey VIP/VeIP salvage study",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/mccaffrey-vip-veip-salvage/",
+      "aliases": [
+        "McCaffrey VIP/VeIP salvage study"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "What activity was observed with ifosfamide/cisplatin-based VIP or VeIP as first salvage treatment?",
+      "path": "trial-pages/mccaffrey-vip-veip-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
       "id": "meteor",
       "trial": "METEOR",
       "site": "Renal Cell Carcinoma",
@@ -1834,6 +2471,23 @@
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "prior-agent subgroup outcomes in comparative table; browser render review pending",
       "setting_detail": "Previously treated advanced RCC after VEGFR-targeted therapy"
+    },
+    {
+      "id": "modified-pei-salvage-2013",
+      "trial": "Modified PEI first-salvage cohort",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/modified-pei-salvage/",
+      "aliases": [
+        "Modified PEI first-salvage cohort"
+      ],
+      "discipline": "Medical",
+      "setting": "Surveillance / Follow-up",
+      "question": "Can dose-modified cisplatin, etoposide and ifosfamide (PEI) achieve durable outcomes as first salvage chemotherapy for male germ-cell tumours?",
+      "path": "trial-pages/modified-pei-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Male GCT · long-term cohort",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "mosaic",
@@ -1874,6 +2528,23 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Locally Advanced Resectable · Neoadjuvant"
+    },
+    {
+      "id": "mrc-tip-phase2-2005",
+      "trial": "MRC phase II TIP study",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/mrc-tip-phase2/",
+      "aliases": [
+        "MRC phase II TIP study"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After first relapse following BEP, what response and survival outcomes were observed with TIP?",
+      "path": "trial-pages/mrc-tip-phase2/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "mrc-rt01",
@@ -1999,6 +2670,61 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Poor-prognosis Metastatic"
+    },
+    {
+      "id": "mypathway-btc",
+      "trial": "MyPathway (HER2-positive biliary tract cohort)",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated HER2-positive metastatic biliary tract cancer, is pertuzumab plus trastuzumab active in a molecular basket cohort?",
+      "source": "trial-pages/mypathway-btc/",
+      "path": "trial-pages/mypathway-btc/",
+      "aliases": [
+        "MyPathway",
+        "MyPathway HER2 BTC",
+        "Pertuzumab trastuzumab biliary tract cancer",
+        "NCT02091141"
+      ],
+      "freshness_review_status": "primary source linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
+      "setting_detail": "HER2-positive basket cohort"
+    },
+    {
+      "id": "nala",
+      "trial": "NALA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nala/",
+      "path": "trial-pages/nala/",
+      "aliases": [
+        "NALA",
+        "NCT01808573",
+        "NALA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes? [NALA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "napoli-1",
+      "trial": "NAPOLI-1",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/napoli-1/",
+      "path": "trial-pages/napoli-1/",
+      "aliases": [
+        "NAPOLI-1",
+        "NCT01494506",
+        "NAPOLI 1"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival? [NAPOLI-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
     },
     {
       "id": "penile-dsnb-cno",
@@ -2247,6 +2973,23 @@
       "setting_detail": "Neoadjuvant"
     },
     {
+      "id": "oechsle-go-gop-2011",
+      "trial": "Oechsle GO/GOP long-term follow-up",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/oechsle-go-gop-later-line/",
+      "aliases": [
+        "Oechsle GO/GOP long-term follow-up"
+      ],
+      "discipline": "Medical",
+      "setting": "Surveillance / Follow-up",
+      "question": "Can gemcitabine/oxaliplatin, with or without paclitaxel and secondary surgery, produce long-term disease-free survival after multiple relapses?",
+      "path": "trial-pages/oechsle-go-gop-later-line/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase II follow-up",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
       "id": "oligopelvis",
       "trial": "OLIGOPELVIS (GETUG-P07)",
       "site": "Prostate Cancer",
@@ -2257,6 +3000,24 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Oligorecurrent pelvic nodes · Elective nodal RT"
+    },
+    {
+      "id": "olympia",
+      "trial": "OlympiA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/olympia/",
+      "path": "trial-pages/olympia/",
+      "aliases": [
+        "OlympiA",
+        "NCT02032823",
+        "OlympiA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In high-risk germline BRCA-mutated HER2-negative early breast cancer, does adjuvant olaparib improve outcomes? [OlympiA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
     },
     {
       "id": "oriole",
@@ -2396,6 +3157,25 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "RT Omission"
+    },
+    {
+      "id": "prodige-23",
+      "trial": "PRODIGE 23",
+      "site": "Rectal Cancer",
+      "source": "trial-pages/prodige-23/",
+      "path": "trial-pages/prodige-23/",
+      "aliases": [
+        "PRODIGE 23",
+        "NCT01804790",
+        "UNICANCER GI 12",
+        "PRODIGE-23"
+      ],
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "question": "In locally advanced rectal cancer, does neoadjuvant mFOLFIRINOX-based treatment improve outcomes versus standard CRT-first treatment? [PRODIGE 23]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Neoadjuvant / Preoperative"
     },
     {
       "id": "prodige-24",
@@ -2551,6 +3331,25 @@
       "setting_detail": "Oligorecurrent bone-metastatic HSPC · SABR ± radium-223"
     },
     {
+      "id": "roar-btc",
+      "trial": "ROAR (BRAF V600E biliary tract cohort)",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated BRAF V600E-mutated advanced biliary tract cancer, is dabrafenib plus trametinib active?",
+      "source": "trial-pages/roar-btc/",
+      "path": "trial-pages/roar-btc/",
+      "aliases": [
+        "ROAR",
+        "Rare Oncology Agnostic Research",
+        "Dabrafenib trametinib BTC",
+        "NCT02034110"
+      ],
+      "freshness_review_status": "primary and final basket sources linked; clinical freshness audit pending",
+      "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
+      "setting_detail": "BRAF V600E basket cohort"
+    },
+    {
       "id": "rtog-0236",
       "trial": "RTOG 0236",
       "site": "Non-Small Cell Lung Cancer",
@@ -2638,6 +3437,25 @@
       "setting_detail": "Localized/Intermediate-Risk"
     },
     {
+      "id": "rtog-9410",
+      "trial": "RTOG 9410",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/rtog-9410/",
+      "path": "trial-pages/rtog-9410/",
+      "aliases": [
+        "RTOG 9410",
+        "NCT00002576",
+        "RTOG 94-10",
+        "RTOG9410"
+      ],
+      "discipline": "Radiation",
+      "setting": "Locally Advanced / Resectable",
+      "question": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT? [RTOG 9410]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Locally Advanced / Resectable"
+    },
+    {
       "id": "rtog-9802",
       "trial": "RTOG 9802",
       "site": "Neuro-Oncology",
@@ -2707,6 +3525,42 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Premenopausal HR-positive"
+    },
+    {
+      "id": "solar-1",
+      "trial": "SOLAR-1",
+      "site": "Breast Cancer",
+      "source": "trial-pages/solar-1/",
+      "path": "trial-pages/solar-1/",
+      "aliases": [
+        "SOLAR-1",
+        "NCT02437318",
+        "SOLAR 1"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, does alpelisib plus fulvestrant improve PFS? [SOLAR-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "sophia",
+      "trial": "SOPHIA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/sophia/",
+      "path": "trial-pages/sophia/",
+      "aliases": [
+        "SOPHIA",
+        "NCT02492711",
+        "SOPHIA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes? [SOPHIA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
     },
     {
       "id": "sorce",
@@ -2979,6 +3833,58 @@
       "setting_detail": "Localized/Resectable HCC"
     },
     {
+      "id": "th3resa",
+      "trial": "TH3RESA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/th3resa/",
+      "path": "trial-pages/th3resa/",
+      "aliases": [
+        "TH3RESA",
+        "NCT01419197",
+        "TH3RESA trial"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy? [TH3RESA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "ti-ce-einhorn-2010",
+      "trial": "TI-CE high-dose salvage chemotherapy",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/ti-ce-high-dose-salvage/",
+      "aliases": [
+        "TI-CE high-dose salvage chemotherapy"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "Can paclitaxel/ifosfamide induction followed by high-dose carboplatin/etoposide produce durable remission in poor-risk GCT?",
+      "path": "trial-pages/ti-ce-high-dose-salvage/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · phase I/II",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "tiger-tip-vs-tice",
+      "trial": "TIGER: TIP versus TI-CE",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/tiger-tip-vs-ti-ce/",
+      "aliases": [
+        "TIGER: TIP versus TI-CE"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "For relapsed or refractory GCT, does conventional-dose TIP or high-dose TI-CE provide better outcomes as first salvage?",
+      "path": "trial-pages/tiger-tip-vs-ti-ce/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Randomized phase III · mixed GCT",
+      "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
       "id": "tinivo-2",
       "trial": "TiNivo-2",
       "site": "Renal Cell Carcinoma",
@@ -3029,6 +3935,41 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Relapsed/Refractory Metastatic"
+    },
+    {
+      "id": "topaz-1",
+      "trial": "TOPAZ-1",
+      "site": "Biliary Tract Cancer",
+      "source": "trial-pages/topaz-1/",
+      "path": "trial-pages/topaz-1/",
+      "aliases": [
+        "TOPAZ-1",
+        "NCT03875235",
+        "TOPAZ 1"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated advanced biliary tract cancer, does durvalumab plus GemCis improve OS? [TOPAZ-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "tpg-multiply-relapsed-gct-2014",
+      "trial": "TPG in multiply relapsed GCT",
+      "site": "Germ Cell Tumours",
+      "source": "trial-pages/tpg-multiply-relapsed-gct/",
+      "aliases": [
+        "TPG in multiply relapsed GCT"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "What activity and long-term outcomes were reported with paclitaxel/cisplatin/gemcitabine beyond second-line salvage?",
+      "path": "trial-pages/tpg-multiply-relapsed-gct/",
+      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
+      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
+      "setting_detail": "Mixed GCT · retrospective",
+      "site_detail": "Testicular Germ-cell Tumours"
     },
     {
       "id": "trap",
@@ -3086,24 +4027,6 @@
       "setting_detail": "Previously treated advanced UC"
     },
     {
-      "id": "vesper",
-      "trial": "VESPER (GETUG-AFU V05 / COGB 0402)",
-      "site": "Bladder Cancer",
-      "source": "trial-pages/vesper",
-      "aliases": [
-        "VESPER",
-        "GETUG-AFU V05",
-        "COGB 0402"
-      ],
-      "discipline": "Medical",
-      "setting": "Neoadjuvant / Preoperative",
-      "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
-      "path": "trial-pages/vesper/",
-      "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Neoadjuvant"
-    },
-    {
       "id": "veip-recurrent-seminoma-miller-1997",
       "trial": "VeIP in recurrent seminoma",
       "site": "Germ Cell Tumours",
@@ -3121,734 +4044,22 @@
       "site_detail": "Testicular Germ-cell Tumours"
     },
     {
-      "id": "loehrer-veip-mixed-gct-1998",
-      "trial": "Loehrer VeIP salvage GCT",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/loehrer-veip-salvage-gct/",
+      "id": "vesper",
+      "trial": "VESPER (GETUG-AFU V05 / COGB 0402)",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/vesper",
       "aliases": [
-        "Loehrer VeIP salvage GCT"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "After relapse following cisplatin/etoposide-based chemotherapy, what outcomes were reported with VeIP salvage chemotherapy?",
-      "path": "trial-pages/loehrer-veip-salvage-gct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "mccaffrey-vip-veip-1997",
-      "trial": "McCaffrey VIP/VeIP salvage study",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/mccaffrey-vip-veip-salvage/",
-      "aliases": [
-        "McCaffrey VIP/VeIP salvage study"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "What activity was observed with ifosfamide/cisplatin-based VIP or VeIP as first salvage treatment?",
-      "path": "trial-pages/mccaffrey-vip-veip-salvage/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "mrc-tip-phase2-2005",
-      "trial": "MRC phase II TIP study",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/mrc-tip-phase2/",
-      "aliases": [
-        "MRC phase II TIP study"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "After first relapse following BEP, what response and survival outcomes were observed with TIP?",
-      "path": "trial-pages/mrc-tip-phase2/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "ipfsg-prognostic-model-2010",
-      "trial": "IPFSG salvage prognostic model",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/ipfsg-salvage-prognostic-model/",
-      "aliases": [
-        "IPFSG salvage prognostic model"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "Which baseline and relapse characteristics predict outcomes after first salvage treatment for germ-cell tumours?",
-      "path": "trial-pages/ipfsg-salvage-prognostic-model/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · prognostic study",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "lorch-cdct-hdct-2011",
-      "trial": "Lorch conventional-dose versus high-dose salvage comparison",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/lorch-cdct-vs-hdct/",
-      "aliases": [
-        "Lorch conventional-dose versus high-dose salvage comparison"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In relapsed metastatic GCT, how did conventional-dose salvage chemotherapy compare with high-dose chemotherapy?",
-      "path": "trial-pages/lorch-cdct-vs-hdct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · retrospective comparison",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "ti-ce-einhorn-2010",
-      "trial": "TI-CE high-dose salvage chemotherapy",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/ti-ce-high-dose-salvage/",
-      "aliases": [
-        "TI-CE high-dose salvage chemotherapy"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "Can paclitaxel/ifosfamide induction followed by high-dose carboplatin/etoposide produce durable remission in poor-risk GCT?",
-      "path": "trial-pages/ti-ce-high-dose-salvage/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · phase I/II",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "tiger-tip-vs-tice",
-      "trial": "TIGER: TIP versus TI-CE",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/tiger-tip-vs-ti-ce/",
-      "aliases": [
-        "TIGER: TIP versus TI-CE"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "For relapsed or refractory GCT, does conventional-dose TIP or high-dose TI-CE provide better outcomes as first salvage?",
-      "path": "trial-pages/tiger-tip-vs-ti-ce/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Randomized phase III · mixed GCT",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "gemcitabine-refractory-gct-1999",
-      "trial": "Gemcitabine in refractory GCT",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/gemcitabine-refractory-gct/",
-      "aliases": [
-        "Gemcitabine in refractory GCT"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "Does single-agent gemcitabine have activity in heavily pretreated refractory germ-cell tumours?",
-      "path": "trial-pages/gemcitabine-refractory-gct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · phase II",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "ecog-e9897-paclitaxel-gemcitabine",
-      "trial": "ECOG E9897",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
-      "aliases": [
-        "ECOG E9897"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "What activity does paclitaxel plus gemcitabine have in refractory germ-cell tumours?",
-      "path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · phase II",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "oechsle-go-gop-2011",
-      "trial": "Oechsle GO/GOP long-term follow-up",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/oechsle-go-gop-later-line/",
-      "aliases": [
-        "Oechsle GO/GOP long-term follow-up"
-      ],
-      "discipline": "Medical",
-      "setting": "Surveillance / Follow-up",
-      "question": "Can gemcitabine/oxaliplatin, with or without paclitaxel and secondary surgery, produce long-term disease-free survival after multiple relapses?",
-      "path": "trial-pages/oechsle-go-gop-later-line/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · phase II follow-up",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "tpg-multiply-relapsed-gct-2014",
-      "trial": "TPG in multiply relapsed GCT",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/tpg-multiply-relapsed-gct/",
-      "aliases": [
-        "TPG in multiply relapsed GCT"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "What activity and long-term outcomes were reported with paclitaxel/cisplatin/gemcitabine beyond second-line salvage?",
-      "path": "trial-pages/tpg-multiply-relapsed-gct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · retrospective",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "gem-tip-relapsed-gct-2018",
-      "trial": "Gem-TIP in relapsed GCT",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/gem-tip-relapsed-gct/",
-      "aliases": [
-        "Gem-TIP in relapsed GCT"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "Can gemcitabine be added to TIP without reducing TIP dose intensity in first-relapse GCT?",
-      "path": "trial-pages/gem-tip-relapsed-gct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · phase I/II",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "lorch-sequential-vs-single-hdct",
-      "trial": "Lorch sequential versus single HDCT randomized trial",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/lorch-sequential-vs-single-hdct/",
-      "aliases": [
-        "Lorch et al. 2007 randomized trial",
-        "Lorch et al. 2012 long-term follow-up",
-        "PMID 22291076"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In relapsed or refractory germ-cell tumours, does sequential high-dose chemotherapy improve survival and reduce treatment-related mortality compared with a single high-dose regimen?",
-      "path": "trial-pages/lorch-sequential-vs-single-hdct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Relapsed/refractory · High-dose salvage",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "loehrer-vip-salvage-1986",
-      "trial": "Loehrer VIP salvage study",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/loehrer-vip-salvage/",
-      "aliases": [
-        "Loehrer VIP salvage study"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In heavily pretreated or refractory germ-cell tumours, what activity was observed with etoposide, ifosfamide and cisplatin (VIP)?",
-      "path": "trial-pages/loehrer-vip-salvage/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · early salvage study",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "it94-vip-veip-vs-hdct",
-      "trial": "IT-94: conventional-dose versus high-dose salvage",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/it94-vip-veip-vs-hdct/",
-      "aliases": [
-        "IT-94: conventional-dose versus high-dose salvage"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "After relapse following first-line chemotherapy for germ-cell tumours, does adding a single high-dose chemotherapy consolidation after conventional salvage improve survival?",
-      "path": "trial-pages/it94-vip-veip-vs-hdct/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Mixed GCT · randomized second-line study",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "modified-pei-salvage-2013",
-      "trial": "Modified PEI first-salvage cohort",
-      "site": "Germ Cell Tumours",
-      "source": "trial-pages/modified-pei-salvage/",
-      "aliases": [
-        "Modified PEI first-salvage cohort"
-      ],
-      "discipline": "Medical",
-      "setting": "Surveillance / Follow-up",
-      "question": "Can dose-modified cisplatin, etoposide and ifosfamide (PEI) achieve durable outcomes as first salvage chemotherapy for male germ-cell tumours?",
-      "path": "trial-pages/modified-pei-salvage/",
-      "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
-      "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
-      "setting_detail": "Male GCT · long-term cohort",
-      "site_detail": "Testicular Germ-cell Tumours"
-    },
-    {
-      "id": "adaura",
-      "trial": "ADAURA",
-      "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/adaura/",
-      "path": "trial-pages/adaura/",
-      "aliases": [
-        "ADAURA",
-        "NCT02511106",
-        "ADAURA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "question": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS? [ADAURA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Adjuvant / Postoperative"
-    },
-    {
-      "id": "rtog-9410",
-      "trial": "RTOG 9410",
-      "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/rtog-9410/",
-      "path": "trial-pages/rtog-9410/",
-      "aliases": [
-        "RTOG 9410",
-        "NCT00002576",
-        "RTOG 94-10",
-        "RTOG9410"
-      ],
-      "discipline": "Radiation",
-      "setting": "Locally Advanced / Resectable",
-      "question": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT? [RTOG 9410]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Locally Advanced / Resectable"
-    },
-    {
-      "id": "keynote-189",
-      "trial": "KEYNOTE-189",
-      "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/keynote-189/",
-      "path": "trial-pages/keynote-189/",
-      "aliases": [
-        "KEYNOTE-189",
-        "NCT02578680",
-        "KEYNOTE 189"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival? [KEYNOTE-189]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "flaura",
-      "trial": "FLAURA",
-      "site": "Non-Small Cell Lung Cancer",
-      "source": "trial-pages/flaura/",
-      "path": "trial-pages/flaura/",
-      "aliases": [
-        "FLAURA",
-        "NCT02296125",
-        "FLAURA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib? [FLAURA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "classic",
-      "trial": "CLASSIC",
-      "site": "Gastric Cancer",
-      "source": "trial-pages/classic/",
-      "path": "trial-pages/classic/",
-      "aliases": [
-        "CLASSIC",
-        "NCT00411229",
-        "CLASSIC trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "question": "After D2 gastrectomy for stage II–IIIB gastric cancer, does adjuvant CAPOX improve outcomes versus surgery alone? [CLASSIC]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Adjuvant / Postoperative"
-    },
-    {
-      "id": "checkmate-577",
-      "trial": "CheckMate 577",
-      "site": "Esophageal and Gastroesophageal Junction Cancer",
-      "source": "trial-pages/checkmate-577/",
-      "path": "trial-pages/checkmate-577/",
-      "aliases": [
-        "CheckMate 577",
-        "NCT02743494",
-        "CheckMate-577"
-      ],
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "question": "After neoadjuvant CRT and R0 resection with residual disease, does adjuvant nivolumab improve DFS? [CheckMate 577]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Adjuvant / Postoperative"
-    },
-    {
-      "id": "ef-14",
-      "trial": "EF-14",
-      "site": "Neuro-Oncology",
-      "source": "trial-pages/ef-14/",
-      "path": "trial-pages/ef-14/",
-      "aliases": [
-        "EF-14",
-        "NCT00916409",
-        "EF14",
-        "Tumor Treating Fields glioblastoma"
-      ],
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "question": "After chemoradiotherapy for glioblastoma, does TTFields plus maintenance temozolomide improve survival? [EF-14]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Adjuvant / Postoperative"
-    },
-    {
-      "id": "prodige-23",
-      "trial": "PRODIGE 23",
-      "site": "Rectal Cancer",
-      "source": "trial-pages/prodige-23/",
-      "path": "trial-pages/prodige-23/",
-      "aliases": [
-        "PRODIGE 23",
-        "NCT01804790",
-        "UNICANCER GI 12",
-        "PRODIGE-23"
+        "VESPER",
+        "GETUG-AFU V05",
+        "COGB 0402"
       ],
       "discipline": "Medical",
       "setting": "Neoadjuvant / Preoperative",
-      "question": "In locally advanced rectal cancer, does neoadjuvant mFOLFIRINOX-based treatment improve outcomes versus standard CRT-first treatment? [PRODIGE 23]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Neoadjuvant / Preoperative"
-    },
-    {
-      "id": "topaz-1",
-      "trial": "TOPAZ-1",
-      "site": "Biliary Tract Cancer",
-      "source": "trial-pages/topaz-1/",
-      "path": "trial-pages/topaz-1/",
-      "aliases": [
-        "TOPAZ-1",
-        "NCT03875235",
-        "TOPAZ 1"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In untreated advanced biliary tract cancer, does durvalumab plus GemCis improve OS? [TOPAZ-1]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "napoli-1",
-      "trial": "NAPOLI-1",
-      "site": "Pancreatic Cancer",
-      "source": "trial-pages/napoli-1/",
-      "path": "trial-pages/napoli-1/",
-      "aliases": [
-        "NAPOLI-1",
-        "NCT01494506",
-        "NAPOLI 1"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival? [NAPOLI-1]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "ascent",
-      "trial": "ASCENT",
-      "site": "Breast Cancer",
-      "source": "trial-pages/ascent/",
-      "path": "trial-pages/ascent/",
-      "aliases": [
-        "ASCENT",
-        "NCT02574455",
-        "Sacituzumab govitecan ASCENT"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy? [ASCENT]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "keynote-355",
-      "trial": "KEYNOTE-355",
-      "site": "Breast Cancer",
-      "source": "trial-pages/keynote-355/",
-      "path": "trial-pages/keynote-355/",
-      "aliases": [
-        "KEYNOTE-355",
-        "NCT02819518",
-        "KEYNOTE 355"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In previously untreated advanced TNBC with PD-L1 CPS ≥10, does pembrolizumab plus chemotherapy improve survival? [KEYNOTE-355]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "impassion131",
-      "trial": "IMpassion131",
-      "site": "Breast Cancer",
-      "source": "trial-pages/impassion131/",
-      "path": "trial-pages/impassion131/",
-      "aliases": [
-        "IMpassion131",
-        "NCT03125902",
-        "IMpassion 131"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In first-line advanced TNBC, does atezolizumab plus conventional paclitaxel improve outcomes? [IMpassion131]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "impassion130",
-      "trial": "IMpassion130",
-      "site": "Breast Cancer",
-      "source": "trial-pages/impassion130/",
-      "path": "trial-pages/impassion130/",
-      "aliases": [
-        "IMpassion130",
-        "NCT02425891",
-        "IMpassion 130"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In first-line advanced TNBC, does atezolizumab plus nab-paclitaxel improve outcomes? [IMpassion130]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "olympia",
-      "trial": "OlympiA",
-      "site": "Breast Cancer",
-      "source": "trial-pages/olympia/",
-      "path": "trial-pages/olympia/",
-      "aliases": [
-        "OlympiA",
-        "NCT02032823",
-        "OlympiA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "question": "In high-risk germline BRCA-mutated HER2-negative early breast cancer, does adjuvant olaparib improve outcomes? [OlympiA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Adjuvant / Postoperative"
-    },
-    {
-      "id": "sophia",
-      "trial": "SOPHIA",
-      "site": "Breast Cancer",
-      "source": "trial-pages/sophia/",
-      "path": "trial-pages/sophia/",
-      "aliases": [
-        "SOPHIA",
-        "NCT02492711",
-        "SOPHIA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes? [SOPHIA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "nala",
-      "trial": "NALA",
-      "site": "Breast Cancer",
-      "source": "trial-pages/nala/",
-      "path": "trial-pages/nala/",
-      "aliases": [
-        "NALA",
-        "NCT01808573",
-        "NALA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes? [NALA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "her2climb",
-      "trial": "HER2CLIMB",
-      "site": "Breast Cancer",
-      "source": "trial-pages/her2climb/",
-      "path": "trial-pages/her2climb/",
-      "aliases": [
-        "HER2CLIMB",
-        "NCT02614794",
-        "HER2-CLIMB"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes? [HER2CLIMB]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "bolero-2",
-      "trial": "BOLERO-2",
-      "site": "Breast Cancer",
-      "source": "trial-pages/bolero-2/",
-      "path": "trial-pages/bolero-2/",
-      "aliases": [
-        "BOLERO-2",
-        "NCT00863655",
-        "BOLERO 2",
-        "Everolimus exemestane BOLERO-2"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In HR-positive/HER2-negative advanced breast cancer after nonsteroidal AI progression, does everolimus plus exemestane improve PFS? [BOLERO-2]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "bolero-6",
-      "trial": "BOLERO-6",
-      "site": "Breast Cancer",
-      "source": "trial-pages/bolero-6/",
-      "path": "trial-pages/bolero-6/",
-      "aliases": [
-        "BOLERO-6",
-        "NCT01783444",
-        "BOLERO 6"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "After nonsteroidal AI progression in HR-positive advanced breast cancer, how does everolimus–exemestane compare with everolimus or capecitabine? [BOLERO-6]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "th3resa",
-      "trial": "TH3RESA",
-      "site": "Breast Cancer",
-      "source": "trial-pages/th3resa/",
-      "path": "trial-pages/th3resa/",
-      "aliases": [
-        "TH3RESA",
-        "NCT01419197",
-        "TH3RESA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy? [TH3RESA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "emilia",
-      "trial": "EMILIA",
-      "site": "Breast Cancer",
-      "source": "trial-pages/emilia/",
-      "path": "trial-pages/emilia/",
-      "aliases": [
-        "EMILIA",
-        "NCT00829166",
-        "EMILIA trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "question": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine? [EMILIA]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
-    },
-    {
-      "id": "destiny-breast-03",
-      "trial": "DESTINY-Breast03",
-      "site": "Breast Cancer",
-      "source": "trial-pages/destiny-breast-03/",
-      "path": "trial-pages/destiny-breast-03/",
-      "aliases": [
-        "DESTINY-Breast03",
-        "NCT03529110",
-        "DESTINY Breast 03",
-        "DESTINY-Breast 03"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In HER2-positive metastatic breast cancer after trastuzumab and taxane, does trastuzumab deruxtecan improve outcomes versus T-DM1? [DESTINY-Breast03]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "solar-1",
-      "trial": "SOLAR-1",
-      "site": "Breast Cancer",
-      "source": "trial-pages/solar-1/",
-      "path": "trial-pages/solar-1/",
-      "aliases": [
-        "SOLAR-1",
-        "NCT02437318",
-        "SOLAR 1"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, does alpelisib plus fulvestrant improve PFS? [SOLAR-1]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
-    },
-    {
-      "id": "capitello-291",
-      "trial": "CAPItello-291",
-      "site": "Breast Cancer",
-      "source": "trial-pages/capitello-291/",
-      "path": "trial-pages/capitello-291/",
-      "aliases": [
-        "CAPItello-291",
-        "NCT04305496",
-        "CAPItello 291",
-        "CAPItello-291 trial"
-      ],
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "question": "In HR-positive/HER2-negative advanced breast cancer progressing on AI therapy, does capivasertib plus fulvestrant improve PFS? [CAPItello-291]",
-      "freshness_review_status": "primary source linked; full independent freshness audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Advanced / Metastatic"
+      "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
+      "path": "trial-pages/vesper/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "setting_detail": "Neoadjuvant"
     }
   ]
 }
