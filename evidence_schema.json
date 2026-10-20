@@ -1,40 +1,42 @@
 {
-  "description": "Evidence record schema for The Absolute Effect. Add one object per treatment/outcome.",
+  "description": "Evidence record schema for The Absolute Effect. One object per underlying trial/study; aliases and follow-up publications collapse to one entry.",
   "fields": {
     "site": "Tumour site",
-    "discipline": "Medical Oncology | Radiation Oncology | Surgical Oncology",
-    "setting": "Adjuvant | Neoadjuvant | Definitive | Palliative | Metastatic | Imaging | Biomarker | Pathology | Theranostic Trials",
+    "discipline": "Exactly one of Surgical | Medical | Radiation | Biomarker | Imaging",
+    "setting": "Clinically meaningful setting under the selected discipline; do not create Pathology or Theranostic as separate disciplines.",
     "treatment": "Treatment comparison",
     "population": "Trial population",
     "endpoint": "Outcome",
     "horizon": "Time point",
-    "relativeLabel": "HR/RR/OR/etc",
+    "relativeLabel": "HR/RR/OR/etc.",
     "relativeEffect": "Reported relative effect",
     "ci": "Confidence interval",
     "interventionRate": "Outcome rate with treatment",
     "controlRate": "Outcome rate with comparator",
-    "absoluteBenefit": "Intervention rate - comparator rate",
-    "nnt": "NNT at specified horizon and explicitly named endpoint",
-    "harmLabel": "Trial-specific principal toxicity/harm endpoint used for NNH",
+    "absoluteBenefit": "Absolute risk difference or meaningful unit",
+    "nnt": "NNT at specified horizon with named endpoint; do not derive from medians",
+    "harmLabel": "Trial-specific principal toxicity/harm endpoint",
     "harmIntervention": "Harm rate treatment",
     "harmControl": "Harm rate comparator",
     "harmIncrease": "Absolute harm increase",
-    "nnH": "NNH at specified horizon and explicitly named toxicity endpoint; use not quantifiable when appropriate",
+    "nnH": "NNH at specified horizon and named toxicity endpoint; use Not quantifiable when appropriate",
     "trial": "Trial name",
     "refs": "Reference strings",
     "urls": "Reference URLs",
-    "outcomeVisualization": "Required when NNT and NNH are not defensibly quantifiable: chart the strongest reported endpoint with source-reported group values, endpoint label, and time horizon; do not invent data.",
-    "visualizationValues": "Source-reported treatment and comparator outcome values with units, group labels, endpoint, and time horizon."
+    "outcomeVisualization": "Required when NNT/NNH cannot be defensibly quantified; use source-reported outcome values only."
   },
-  "special_settings": {
-    "Imaging": "Trials primarily evaluating imaging strategies, imaging-based detection, surveillance or response assessment",
-    "Biomarker": "Trials primarily evaluating biomarkers, molecular signatures or predictive/prognostic markers",
-    "Pathology": "Trials primarily evaluating pathology, histologic classification or pathology-based diagnosis/stratification",
-    "Theranostic Trials": "Trials combining a diagnostic/targeting strategy with a linked therapeutic intervention"
-  },
+  "discipline_categories": [
+    "Surgical",
+    "Medical",
+    "Radiation",
+    "Biomarker",
+    "Imaging"
+  ],
   "rules": [
-    "If NNT or NNH is defensibly quantifiable, show the absolute-effect patient pictogram with endpoint and time horizon.",
-    "If neither NNT nor NNH is defensibly quantifiable, show a graphical/pictorial visualization of the strongest reported survival, response, progression, toxicity, or relative-effect outcome using source-reported values only.",
-    "Never derive NNT from a median survival difference or fabricate missing rates; clearly label relative effects and non-fixed-time endpoints."
+    "Exactly one primary discipline per study.",
+    "Uro-oncology is a tumour-domain descriptor, not a discipline.",
+    "Pathology/diagnostic classification studies belong under Biomarker or Imaging according to purpose.",
+    "Theranostic studies must be assigned to one of the five disciplines.",
+    "When NNT/NNH cannot be calculated, visualize the strongest source-reported outcome; never invent rates or convert median survival differences to NNT."
   ]
 }
