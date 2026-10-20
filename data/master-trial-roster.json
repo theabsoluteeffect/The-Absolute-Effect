@@ -223,20 +223,21 @@
     "trial_of_day_previous_id": "ev-303",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
-      "date": "2026-10-15",
-      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/38672407495",
-      "status": "PASS",
-      "canonical_roster_pages": 183,
-      "canonical_pages_found": 183,
+      "date": "2026-10-20",
+      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/39365798914",
+      "status": "PASS_WITH_LEGACY_REVIEW_FLAGS",
+      "canonical_roster_pages": 227,
+      "canonical_pages_found": 227,
       "missing_roster_pages": 0,
       "renderer_missing": 0,
-      "manual_review_flags": 0,
-      "outcome_visual_candidates": 84,
-      "absolute_effect_markup_pages": 99,
-      "legacy_flat_routes": 135,
-      "legacy_flat_routes_redirected": 135,
-      "note": "Automated static audit and renderer JavaScript syntax check passed. New batch pages contain outcome visual markup; browser-rendered visual inspection and complete source-by-source clinical freshness review remain pending.",
-      "renderer_javascript_syntax": "PASS"
+      "manual_review_flags": 8,
+      "missing_dated_context": 17,
+      "missing_primary_source": 0,
+      "new_batch_pages_checked": 25,
+      "new_batch_pages_with_shared_renderer": 25,
+      "new_batch_pages_with_source_link": 25,
+      "new_batch_pages_with_outcome_visualization": 25,
+      "note": "Automated structural audit passed after the 25 new pages loaded the shared renderer. Eight repository-wide manual-review flags and 17 legacy pages missing dated current-practice context remain outside this batch; browser-rendered QA and complete independent source-by-source clinical freshness review remain pending."
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
@@ -245,12 +246,18 @@
     "daily_batch_upload_verified_on": "2026-10-15",
     "live_main_branch_verification": {
       "date": "2026-10-20",
-      "new_roster_entries": 227,
-      "expected_new_pages": 25,
-      "trial_of_day": "ascent",
-      "previous_trial_of_day": "ev-303",
+      "canonical_roster_entries": 227,
+      "canonical_pages_found": 227,
+      "missing_new_pages": 0,
+      "index_links_verified": 25,
+      "daily_evidence_records_verified": 25,
+      "current_trial_of_the_day": "ascent",
+      "previous_trial_of_the_day": "ev-303",
+      "renderer_missing_in_new_batch": 0,
+      "automated_outcome_audit": "PASS_WITH_LEGACY_REVIEW_FLAGS",
+      "daily_atlas_workflow": "success on commit 5cd0c5d2d5ebea69d2a39fc33b8e48f885672f2b",
       "browser_rendered_visual_qa": "pending",
-      "clinical_freshness_audit": "source-linked page content added; full independent source-by-source review pending"
+      "clinical_freshness_audit": "full source-by-source independent review remains pending"
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
@@ -431,7 +438,10 @@
       ],
       "partialFailureRecovered": true,
       "source": "user-approved 10-trial roadmap batch plus 15 additional distinct breast cancer trials"
-    }
+    },
+    "user_requested_existing_trial_not_duplicated": [
+      "KEYNOTE-522"
+    ]
   },
   "trials": [
     {
