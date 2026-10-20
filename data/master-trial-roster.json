@@ -214,13 +214,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-15",
-      "id": "imbrave150",
-      "trial": "IMbrave150"
+      "date": "2026-10-14",
+      "id": "ev-303",
+      "trial": "EV-303 / KEYNOTE-905"
     },
     "trial_of_day_records_reconciled_on": "2026-10-20",
     "trial_of_day_current_id": "ascent",
-    "trial_of_day_previous_id": "imbrave150",
+    "trial_of_day_previous_id": "ev-303",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-15",
@@ -245,40 +245,12 @@
     "daily_batch_upload_verified_on": "2026-10-15",
     "live_main_branch_verification": {
       "date": "2026-10-20",
-      "canonical_roster_entries": 227,
-      "new_pages": [
-        "trial-pages/adaura/",
-        "trial-pages/rtog-9410/",
-        "trial-pages/keynote-189/",
-        "trial-pages/flaura/",
-        "trial-pages/classic/",
-        "trial-pages/checkmate-577/",
-        "trial-pages/ef-14/",
-        "trial-pages/prodige-23/",
-        "trial-pages/topaz-1/",
-        "trial-pages/napoli-1/",
-        "trial-pages/ascent/",
-        "trial-pages/keynote-355/",
-        "trial-pages/impassion131/",
-        "trial-pages/impassion130/",
-        "trial-pages/olympia/",
-        "trial-pages/sophia/",
-        "trial-pages/nala/",
-        "trial-pages/her2climb/",
-        "trial-pages/bolero-2/",
-        "trial-pages/bolero-6/",
-        "trial-pages/th3resa/",
-        "trial-pages/emilia/",
-        "trial-pages/destiny-breast-03/",
-        "trial-pages/solar-1/",
-        "trial-pages/capitello-291/"
-      ],
-      "index_links_added": 25,
-      "daily_evidence_records": 25,
-      "current_trial_of_the_day": "ascent",
-      "previous_trial_of_the_day": "imbrave150",
+      "new_roster_entries": 227,
+      "expected_new_pages": 25,
+      "trial_of_day": "ascent",
+      "previous_trial_of_day": "ev-303",
       "browser_rendered_visual_qa": "pending",
-      "clinical_freshness_audit": "complete primary-source-linked page drafts published; independent full source-by-source review remains pending"
+      "clinical_freshness_audit": "source-linked page content added; full independent source-by-source review pending"
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
