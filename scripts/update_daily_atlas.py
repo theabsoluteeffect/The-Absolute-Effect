@@ -30,7 +30,7 @@ if previous_id and previous_id != current.get("id") and not any(x.get("id") == p
     latest_daily.append({
         "id": previous["id"],
         "site": previous.get("site", ""),
-        "discipline": previous.get("discipline", "Medical Oncology"),
+        "discipline": previous.get("discipline", "Medical"),
         "setting": previous.get("setting", ""),
         "treatment": previous.get("title", previous.get("trial", "")),
         "population": previous.get("population", ""),
