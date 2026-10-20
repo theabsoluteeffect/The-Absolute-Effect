@@ -198,223 +198,210 @@
     {
       "id": "impassion131",
       "trial": "IMpassion131",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In first-line advanced TNBC, does atezolizumab plus conventional paclitaxel improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/impassion131/index.html",
-      "primarySources": [
+      "page": "trial-pages/impassion131/index.html",
+      "clinicalQuestion": "Population / eligibility 651 patients with previously untreated unresectable locally advanced or metastatic TNBC; 45% had PD-L1-positive tumours by SP142 immune-cell assay. Intervention vs comparator Atezolizumab 840 mg IV days 1 and 15 plus paclitaxel 90 mg/m² days 1, 8 and 15 every 28 days vs placebo plus paclitaxel. Sample size 651 Primary endpoint PFS in PD-L1-positive population",
+      "keyResults": "In PD-L1-positive disease, median PFS was 6.0 vs 5.7 months (HR 0.82, 95% CI 0.60–1.12; P=.20). Final median OS was 22.1 vs 28.3 months (HR 1.11, 95% CI 0.76–1.64), showing no benefit. Source-reported outcome visualization Median PFS (PD-L1-positive) · Median Atezolizumab + paclitaxel 6 months Placebo + paclitaxel 5.7 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "No statistically significant PFS benefit or OS benefit was demonstrated. Numerical OS difference is not proof of harm because the CI includes benefit and harm. NNT: Not applicable; benefit was not demonstrated. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Paclitaxel-related neuropathy and myelosuppression remain important; immune-mediated events are possible. NNH is not quantified because no single fixed-time excess-harm endpoint is selected. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Paclitaxel-related neuropathy and myelosuppression remain important; immune-mediated events are possible. NNH is not quantified because no single fixed-time excess-harm endpoint is selected.",
+      "followupAndLimitations": "Follow-up: Final OS analysis reported 2021. Do not generalize IMpassion130's findings to conventional paclitaxel in IMpassion131. Different chemotherapy backbone and trial outcomes matter.",
+      "clinicalInterpretation": "IMpassion131 failed to show benefit from adding atezolizumab to conventional paclitaxel; it should not be treated as equivalent to IMpassion130 or KEYNOTE-355.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/impassion131/",
+        "https://pubmed.ncbi.nlm.nih.gov/34219000/",
         "https://clinicaltrials.gov/study/NCT03125902"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "impassion130",
       "trial": "IMpassion130",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In first-line advanced TNBC, does atezolizumab plus nab-paclitaxel improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/impassion130/index.html",
-      "primarySources": [
+      "page": "trial-pages/impassion130/index.html",
+      "clinicalQuestion": "Population / eligibility 902 patients with previously untreated unresectable locally advanced or metastatic TNBC; PD-L1-positive subgroup defined as immune-cell expression ≥1% by SP142. Intervention vs comparator Atezolizumab 840 mg IV days 1 and 15 plus nab-paclitaxel 100 mg/m² days 1, 8 and 15 every 28 days vs placebo plus nab-paclitaxel. Sample size 902 Primary endpoint PFS and OS in ITT and PD-L1-positive populations",
+      "keyResults": "Median PFS in ITT was 7.2 vs 5.5 months (HR 0.80); in PD-L1-positive disease it was 7.5 vs 5.0 months (HR 0.62). Updated median OS was 21.0 vs 18.7 months in ITT (HR 0.86, 95% CI 0.72–1.02; P=.078); in PD-L1-positive disease, 25.0 vs 18.0 months (HR 0.71), but formal OS testing was precluded by the statistical hierarchy. Source-reported outcome visualization Median PFS (PD-L1-positive) · Median Atezolizumab + nab-paclitaxel 7.5 months Placebo + nab-paclitaxel 5 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median PFS difference in PD-L1-positive subgroup was 2.5 months; not an NNT. PD-L1-positive OS signal was not formally confirmatory under the prespecified testing hierarchy. NNT: Not calculated; median endpoints and hierarchical OS limitation. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 neutropenia about 8%, peripheral neuropathy about 6% vs 3%; rare treatment-related deaths occurred in both groups. Nab-paclitaxel toxicity and immune-mediated events require monitoring. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 neutropenia about 8%, peripheral neuropathy about 6% vs 3%; rare treatment-related deaths occurred in both groups. Nab-paclitaxel toxicity and immune-mediated events require monitoring.",
+      "followupAndLimitations": "Follow-up: Updated OS analysis median follow-up approximately 18 months. ITT OS did not cross the prespecified significance boundary, so the PD-L1-positive OS finding was not formally tested. Regulatory status varies by jurisdiction.",
+      "clinicalInterpretation": "IMpassion130 improved PFS, with a strong PD-L1-positive subgroup signal, but overall OS was not statistically significant and must not be conflated with IMpassion131.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/impassion130/",
+        "https://pubmed.ncbi.nlm.nih.gov/31786121/",
         "https://clinicaltrials.gov/study/NCT02425891"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "olympia",
       "trial": "OlympiA",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "clinicalQuestion": "In high-risk germline BRCA-mutated HER2-negative early breast cancer, does adjuvant olaparib improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/olympia/index.html",
-      "primarySources": [
+      "page": "trial-pages/olympia/index.html",
+      "clinicalQuestion": "Population 1,836 patients with germline BRCA1/2-mutated HER2-negative early breast cancer at high risk after chemotherapy and definitive local treatment. Intervention vs comparator Olaparib 300 mg orally twice daily for 1 year vs placebo. Sample size 1,836 Primary endpoint Invasive DFS; OS key secondary endpoint",
+      "keyResults": "At 4 years, invasive DFS was 82.7% vs 75.4% (HR 0.63, 95% CI 0.51–0.78); distant DFS was 86.5% vs 79.1%. Four-year OS was 89.8% vs 86.4% (HR 0.68, 98.5% CI 0.47–0.97). Source-reported outcome visualization 4-year overall survival · 4 years Olaparib 89.8 % Placebo 86.4 % Source-reported endpoint and unit; median survival is not converted into an NNT.",
+      "absoluteEffect": "Absolute 4-year OS gain 3.4 points; NNT 30 based on 4-year OS. Four-year invasive DFS gain 7.3 points; NNT 14 based on 4-year invasive DFS. NNT: 30 (4-year OS); 14 (4-year invasive DFS). Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Anaemia, fatigue, nausea and dose interruptions are important; rare MDS/AML is a serious labelled risk. NNH not calculated without a matched fixed-time excess-harm endpoint.",
+      "safety": "Anaemia, fatigue, nausea and dose interruptions are important; rare MDS/AML is a serious labelled risk. NNH not calculated without a matched fixed-time excess-harm endpoint.",
+      "followupAndLimitations": "Updated analysis with approximately 3.5 years median follow-up; 4-year estimates reported. Requires germline BRCA1/2 status, HER2-negative disease and high-risk clinicopathologic eligibility; do not extrapolate to unselected disease.",
+      "clinicalInterpretation": "One year of adjuvant olaparib improves invasive DFS and OS in high-risk germline BRCA-mutated HER2-negative early breast cancer.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/olympia/",
+        "https://pubmed.ncbi.nlm.nih.gov/34081848/",
         "https://clinicaltrials.gov/study/NCT02032823"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "sophia",
       "trial": "SOPHIA",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/sophia/index.html",
-      "primarySources": [
+      "page": "trial-pages/sophia/index.html",
+      "clinicalQuestion": "Population 536 patients with HER2-positive advanced breast cancer previously treated with ≥2 anti-HER2 regimens in metastatic setting, including pertuzumab and T-DM1. Intervention vs comparator Margetuximab 15 mg/kg IV every 3 weeks plus investigator-selected chemotherapy vs trastuzumab plus the same chemotherapy. Sample size 536 Primary endpoint PFS; OS key secondary endpoint",
+      "keyResults": "Median PFS was 5.8 vs 4.9 months (HR 0.76, 95% CI 0.59–0.98; P=.03). Final median OS was 21.6 vs 21.9 months (HR 0.95, 95% CI 0.77–1.17); no OS improvement was demonstrated. Source-reported outcome visualization Median progression-free survival · Median Margetuximab + chemo 5.8 months Trastuzumab + chemo 4.9 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
+      "absoluteEffect": "Median PFS difference 0.9 months is not an NNT. OS was not improved. NNT: Not calculated; median PFS difference is not a valid NNT. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Infusion-related reactions were more common with margetuximab; grade ≥3 AEs largely reflected chemotherapy and advanced disease. Modest PFS gain must be weighed against infusion burden and absence of OS benefit.",
+      "safety": "Infusion-related reactions were more common with margetuximab; grade ≥3 AEs largely reflected chemotherapy and advanced disease. Modest PFS gain must be weighed against infusion burden and absence of OS benefit.",
+      "followupAndLimitations": "Final OS analysis with approximately 30 months follow-up. Compared with trastuzumab plus chemotherapy, not newer ADCs. Treatment landscape has changed with trastuzumab deruxtecan and tucatinib-based regimens.",
+      "clinicalInterpretation": "Margetuximab produced a modest PFS improvement but no OS advantage over trastuzumab in heavily pretreated HER2-positive disease.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/sophia/",
+        "https://pubmed.ncbi.nlm.nih.gov/32366680/",
         "https://clinicaltrials.gov/study/NCT02492711"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "nala",
       "trial": "NALA",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/nala/index.html",
-      "primarySources": [
+      "page": "trial-pages/nala/index.html",
+      "clinicalQuestion": "Population 621 patients with HER2-positive metastatic breast cancer after ≥2 prior anti-HER2 regimens in metastatic setting. Intervention vs comparator Neratinib 240 mg orally daily plus capecitabine 750 mg/m² twice daily days 1–14 every 21 days vs lapatinib 1,250 mg daily plus capecitabine 1,000 mg/m² twice daily days 1–14. Sample size 621 Primary endpoint PFS and OS",
+      "keyResults": "Median PFS was 5.6 vs 5.5 months (HR 0.76, 95% CI 0.63–0.93; P=.0059); 12-month PFS was 29% vs 15%. Median OS was 21.0 vs 18.7 months (HR 0.88, 95% CI 0.72–1.07; P=.2086). CNS intervention was less frequent with neratinib (22.8% vs 29.2%). Source-reported outcome visualization 12-month progression-free survival · 12 months Neratinib + capecitabine 29 % Lapatinib + capecitabine 15 % Source-reported endpoint and unit; median survival is not converted into an NNT.",
+      "absoluteEffect": "Absolute 12-month PFS difference 14 points; NNT 8 based on being progression-free at 12 months. OS improvement was not statistically significant. NNT: 8 based on 12-month PFS. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Grade 3 diarrhoea occurred in approximately 24% with neratinib despite protocol prophylaxis; capecitabine adds hand-foot syndrome and diarrhoea. Prophylactic antidiarrhoeal management is important.",
+      "safety": "Grade 3 diarrhoea occurred in approximately 24% with neratinib despite protocol prophylaxis; capecitabine adds hand-foot syndrome and diarrhoea. Prophylactic antidiarrhoeal management is important.",
+      "followupAndLimitations": "Primary PFS and updated OS analyses. Comparator is historical; modern HER2-directed sequences differ. The modest median PFS difference and absence of significant OS benefit must be considered.",
+      "clinicalInterpretation": "Neratinib–capecitabine improved 12-month PFS and reduced CNS interventions versus lapatinib–capecitabine, without significant OS benefit.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/nala/",
+        "https://pubmed.ncbi.nlm.nih.gov/31804894/",
         "https://clinicaltrials.gov/study/NCT01808573"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "her2climb",
       "trial": "HER2CLIMB",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/her2climb/index.html",
-      "primarySources": [
+      "page": "trial-pages/her2climb/index.html",
+      "clinicalQuestion": "Population 612 patients previously treated with trastuzumab, pertuzumab and T-DM1; stable or active brain metastases were eligible. Intervention vs comparator Tucatinib 300 mg orally twice daily plus trastuzumab and capecitabine vs placebo plus trastuzumab and capecitabine. Sample size 612 Primary endpoint PFS; OS key secondary endpoint",
+      "keyResults": "Updated median OS was 24.7 vs 19.2 months (HR 0.73, 95% CI 0.59–0.90); primary-analysis median PFS was 7.8 vs 5.6 months (HR 0.54, 95% CI 0.42–0.71). Benefit was seen in patients with brain metastases. Source-reported outcome visualization Median overall survival · Updated median Tucatinib triplet 24.7 months Placebo triplet 19.2 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
+      "absoluteEffect": "Median OS difference 5.5 months is not an NNT. CNS activity is a major clinically relevant finding. NNT: Not calculated; median OS difference is not a valid NNT. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Grade ≥3 diarrhoea and aminotransferase elevation are important; capecitabine causes hand-foot syndrome. Diarrhoea, hepatotoxicity and drug interactions require monitoring.",
+      "safety": "Grade ≥3 diarrhoea and aminotransferase elevation are important; capecitabine causes hand-foot syndrome. Diarrhoea, hepatotoxicity and drug interactions require monitoring.",
+      "followupAndLimitations": "Updated survival analyses with multi-year follow-up. Evidence follows prior trastuzumab, pertuzumab and T-DM1. Modern sequencing often places trastuzumab deruxtecan earlier, but inclusion of active brain metastases remains distinctive.",
+      "clinicalInterpretation": "Tucatinib–trastuzumab–capecitabine improves PFS and OS and provides meaningful benefit for HER2-positive disease with brain metastases after multiple prior therapies.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/her2climb/",
+        "https://pubmed.ncbi.nlm.nih.gov/31825569/",
         "https://clinicaltrials.gov/study/NCT02614794"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "bolero-2",
       "trial": "BOLERO-2",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In HR-positive/HER2-negative advanced breast cancer after nonsteroidal AI progression, does everolimus plus exemestane improve PFS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/bolero-2/index.html",
-      "primarySources": [
+      "page": "trial-pages/bolero-2/index.html",
+      "clinicalQuestion": "724 postmenopausal women with HR-positive/HER2-negative advanced breast cancer refractory to letrozole or anastrozole. Intervention: everolimus 10 mg orally daily plus exemestane 25 mg daily vs placebo plus exemestane. Primary endpoint: progression-free survival.",
+      "keyResults": "",
+      "absoluteEffect": "NNT: Not calculated; median PFS difference is not a valid NNT. NNH: Not quantifiable from a single selected fixed-time excess-harm endpoint.",
+      "safety": "Clinically important grade 3+ toxicities include stomatitis, infections, hyperglycaemia, fatigue and noninfectious pneumonitis. Stomatitis prophylaxis and metabolic monitoring are important; dose modifications and discontinuation are common.",
+      "followupAndLimitations": "",
+      "clinicalInterpretation": "Everolimus plus exemestane prolongs PFS after aromatase-inhibitor resistance, but OS benefit was not statistically significant and toxicity can be substantial.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/bolero-2/",
+        "https://pubmed.ncbi.nlm.nih.gov/22149876/",
         "https://clinicaltrials.gov/study/NCT00863655"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "bolero-6",
       "trial": "BOLERO-6",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "After nonsteroidal AI progression in HR-positive advanced breast cancer, how does everolimus–exemestane compare with everolimus or capecitabine?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/bolero-6/index.html",
-      "primarySources": [
+      "page": "trial-pages/bolero-6/index.html",
+      "clinicalQuestion": "Population 309 postmenopausal women with HR-positive/HER2-negative advanced breast cancer progressing during or after letrozole or anastrozole. Intervention vs comparator Everolimus 10 mg daily plus exemestane 25 mg daily vs everolimus alone vs capecitabine. Sample size 309 Primary endpoint PFS; exploratory phase II comparison",
+      "keyResults": "Investigator-assessed median PFS was approximately 8.3 months with everolimus–exemestane and 12.0 months with capecitabine; the phase II study was exploratory and not designed to establish definitive superiority/non-inferiority across all arms. Source-reported outcome visualization Median PFS (exploratory) · Investigator assessment Everolimus + exemestane 8.3 months Capecitabine 12 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
+      "absoluteEffect": "Do not infer NNT or definitive benefit from cross-arm median differences in this exploratory phase II study. NNT: Not quantifiable; exploratory comparison. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ.",
+      "safety": "Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ.",
+      "followupAndLimitations": "Phase II comparative study. Small exploratory design; not powered to establish equivalence. Confirm assessment method when quoting PFS estimates.",
+      "clinicalInterpretation": "BOLERO-6 is an exploratory comparison and does not establish definitive superiority or equivalence of everolimus-based therapy versus capecitabine.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/bolero-6/",
+        "https://pubmed.ncbi.nlm.nih.gov/27161540/",
         "https://clinicaltrials.gov/study/NCT01783444"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "th3resa",
       "trial": "TH3RESA",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/th3resa/index.html",
-      "primarySources": [
+      "page": "trial-pages/th3resa/index.html",
+      "clinicalQuestion": "Population 602 patients with HER2-positive advanced breast cancer previously treated with trastuzumab, lapatinib and a taxane, with progression on ≥2 HER2-directed regimens in advanced disease. Intervention vs comparator Trastuzumab emtansine (T-DM1) 3.6 mg/kg IV every 3 weeks vs physician's-choice therapy; crossover to T-DM1 allowed after progression. Sample size 602 Primary endpoint Overall survival",
+      "keyResults": "Final median OS was 22.7 months with T-DM1 vs 15.8 months with physician's choice (HR 0.68, 95% CI 0.54–0.85; P=.0007), despite 47% crossover from control to T-DM1. Grade ≥3 AEs occurred in 40% vs 47%. Source-reported outcome visualization Median overall survival · Final analysis T-DM1 22.7 months Physician's choice 15.8 months Source-reported endpoint and unit. Median survival is not converted into an NNT.",
+      "absoluteEffect": "Median OS difference 6.9 months is not an NNT; crossover likely attenuated the OS contrast. NNT: Not calculated; median OS difference is not a valid NNT. Do not convert median survival differences into NNT. NNH: Not quantifiable. T-DM1 increases thrombocytopenia and haemorrhage; hepatotoxicity and rare nodular regenerative hyperplasia require monitoring. Grade ≥3 AEs were 40% vs 47%.",
+      "safety": "T-DM1 increases thrombocytopenia and haemorrhage; hepatotoxicity and rare nodular regenerative hyperplasia require monitoring. Grade ≥3 AEs were 40% vs 47%.",
+      "followupAndLimitations": "Final OS analysis. Predates trastuzumab deruxtecan and tucatinib-based treatment. Current sequence differs, but TH3RESA is foundational evidence for T-DM1 after multiple HER2 therapies.",
+      "clinicalInterpretation": "T-DM1 improved OS versus physician's-choice treatment in heavily pretreated HER2-positive advanced breast cancer.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/th3resa/",
+        "https://pubmed.ncbi.nlm.nih.gov/28526538/",
         "https://clinicaltrials.gov/study/NCT01419197"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "emilia",
       "trial": "EMILIA",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/emilia/index.html",
-      "primarySources": [
+      "page": "trial-pages/emilia/index.html",
+      "clinicalQuestion": "Population 991 patients with HER2-positive locally advanced or metastatic breast cancer previously treated with trastuzumab and a taxane. Intervention vs comparator T-DM1 3.6 mg/kg IV every 3 weeks vs lapatinib 1,250 mg orally daily plus capecitabine 1,000 mg/m² twice daily days 1–14 every 21 days. Sample size 991 Primary endpoint PFS and OS",
+      "keyResults": "Median PFS was 9.6 vs 6.4 months (HR 0.65, 95% CI 0.55–0.77); median OS was 30.9 vs 25.1 months (HR 0.68, 95% CI 0.55–0.85). Grade ≥3 AEs occurred in 41% vs 57%. Source-reported outcome visualization Median overall survival · Final analysis T-DM1 30.9 months Lapatinib + capecitabine 25.1 months Source-reported endpoint and unit. Median survival is not converted into an NNT.",
+      "absoluteEffect": "Median OS difference 5.8 months is not an NNT. T-DM1 improved PFS and OS while reducing overall grade ≥3 AE frequency versus this comparator. NNT: Not calculated; median OS difference is not a valid NNT. Do not convert median survival differences into NNT. NNH: Not quantifiable. T-DM1-associated thrombocytopenia and transaminase elevation were important; lapatinib–capecitabine caused more diarrhoea and hand-foot syndrome. Aggregate grade ≥3 AE rates are not used as NNH without a fixed-time risk framework.",
+      "safety": "T-DM1-associated thrombocytopenia and transaminase elevation were important; lapatinib–capecitabine caused more diarrhoea and hand-foot syndrome. Aggregate grade ≥3 AE rates are not used as NNH without a fixed-time risk framework.",
+      "followupAndLimitations": "Final OS analysis; later follow-up extended. Comparator is historical; T-DM1 has been superseded as preferred second-line treatment in many settings by trastuzumab deruxtecan. HER2 status and prior treatment define applicability.",
+      "clinicalInterpretation": "EMILIA established T-DM1 as an effective HER2-targeted ADC with improved PFS/OS and lower overall severe toxicity than lapatinib–capecitabine.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/emilia/",
+        "https://pubmed.ncbi.nlm.nih.gov/23020162/",
         "https://clinicaltrials.gov/study/NCT00829166"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "destiny-breast-03",
       "trial": "DESTINY-Breast03",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In HER2-positive metastatic breast cancer after trastuzumab and taxane, does trastuzumab deruxtecan improve outcomes versus T-DM1?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/destiny-breast-03/index.html",
-      "primarySources": [
+      "page": "trial-pages/destiny-breast-03/index.html",
+      "clinicalQuestion": "Population 524 patients with HER2-positive unresectable/metastatic breast cancer previously treated with trastuzumab and a taxane; active brain metastases were excluded at enrolment. Intervention vs comparator Trastuzumab deruxtecan 5.4 mg/kg IV every 3 weeks vs T-DM1 3.6 mg/kg IV every 3 weeks. Sample size 524 Primary endpoint PFS by blinded independent central review; OS key secondary endpoint",
+      "keyResults": "At median follow-up 28.4 months, median PFS was 28.8 vs 6.8 months (HR 0.33, 95% CI 0.26–0.43); OS HR 0.64 (95% CI 0.47–0.87). Grade ≥3 treatment-emergent AEs were 56% vs 52%. Drug-related ILD/pneumonitis occurred in 15% vs 3%, with no grade 4/5 ILD in that analysis. Source-reported outcome visualization Median progression-free survival · Updated analysis Trastuzumab deruxtecan 28.8 months T-DM1 6.8 months Source-reported endpoint and unit. Median survival is not converted into an NNT.",
+      "absoluteEffect": "Median PFS difference 22 months is not an NNT. ILD/pneumonitis is the distinctive serious harm and requires surveillance. NNT: Not calculated; median PFS difference is not a valid NNT. Do not convert median survival differences into NNT. NNH: Not calculated from aggregate ILD rates because severity/time-to-event handling differs; report incidence and grade explicitly. Drug-related ILD/pneumonitis about 15% vs 3%, mostly low grade in the cited analysis; promptly investigate cough, dyspnoea or radiographic change and permanently discontinue for higher-grade ILD.",
+      "safety": "Drug-related ILD/pneumonitis about 15% vs 3%, mostly low grade in the cited analysis; promptly investigate cough, dyspnoea or radiographic change and permanently discontinue for higher-grade ILD.",
+      "followupAndLimitations": "Updated analysis median follow-up 28.4 months. Applies to HER2-positive disease after trastuzumab/taxane, not HER2-low populations. Active brain metastases were excluded at baseline; later CNS data are separate evidence.",
+      "clinicalInterpretation": "Trastuzumab deruxtecan substantially improves PFS and OS versus T-DM1 in second-line HER2-positive metastatic breast cancer, with ILD surveillance essential.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/destiny-breast-03/",
+        "https://pubmed.ncbi.nlm.nih.gov/36495879/",
         "https://clinicaltrials.gov/study/NCT03529110"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "solar-1",
       "trial": "SOLAR-1",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, does alpelisib plus fulvestrant improve PFS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/solar-1/index.html",
-      "primarySources": [
+      "page": "trial-pages/solar-1/index.html",
+      "clinicalQuestion": "Population 572 patients with HR-positive/HER2-negative advanced breast cancer; primary efficacy cohort had a PIK3CA mutation in tumour tissue. Intervention vs comparator Alpelisib 300 mg orally daily plus fulvestrant 500 mg IM vs placebo plus fulvestrant. Sample size 572 Primary endpoint PFS in PIK3CA-mutated cohort",
+      "keyResults": "In the PIK3CA-mutated cohort, median PFS was 11.0 vs 5.7 months (HR 0.65, 95% CI 0.50–0.85; P<.001). Final median OS was 39.3 vs 31.4 months (HR 0.86, 95% CI 0.64–1.15; not statistically significant). Source-reported outcome visualization Median progression-free survival · Primary analysis Alpelisib + fulvestrant 11 months Placebo + fulvestrant 5.7 months Source-reported endpoint and unit. Median survival is not converted into an NNT.",
+      "absoluteEffect": "Median PFS difference 5.3 months is not an NNT. OS improvement was not statistically significant. NNT: Not calculated; median PFS difference is not a valid NNT. Do not convert median survival differences into NNT. NNH: Not quantifiable. Grade 3+ hyperglycaemia about 37%, rash about 10%, diarrhoea about 7%; approximately one-quarter discontinued alpelisib due to AEs. Screen/manage diabetes risk, glucose and rash early.",
+      "safety": "Grade 3+ hyperglycaemia about 37%, rash about 10%, diarrhoea about 7%; approximately one-quarter discontinued alpelisib due to AEs. Screen/manage diabetes risk, glucose and rash early.",
+      "followupAndLimitations": "Primary PFS and later final OS analyses. Requires PIK3CA mutation confirmation. Trial predates widespread first-line CDK4/6 inhibitor use; evidence after CDK4/6 inhibitors is less directly represented.",
+      "clinicalInterpretation": "Alpelisib plus fulvestrant improves PFS in PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, but hyperglycaemia, rash and discontinuation are substantial.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/solar-1/",
+        "https://pubmed.ncbi.nlm.nih.gov/31091374/",
         "https://clinicaltrials.gov/study/NCT02437318"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "capitello-291",
       "trial": "CAPItello-291",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In HR-positive/HER2-negative advanced breast cancer progressing on AI therapy, does capivasertib plus fulvestrant improve PFS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/capitello-291/index.html",
-      "primarySources": [
+      "page": "trial-pages/capitello-291/index.html",
+      "clinicalQuestion": "Population 708 patients with HR-positive/HER2-negative advanced breast cancer progressing during/after aromatase inhibitor therapy; 40.8% had PIK3CA, AKT1 or PTEN alterations. Intervention vs comparator Capivasertib 400 mg orally twice daily, 4 days on/3 days off, plus fulvestrant vs placebo plus fulvestrant. Sample size 708 Primary endpoint PFS in overall population and AKT-pathway-altered subgroup",
+      "keyResults": "Median PFS in overall population was 7.2 vs 3.6 months (HR 0.60, 95% CI 0.51–0.71; P<.001). In AKT-pathway-altered tumours, median PFS was 7.3 vs 3.1 months (HR 0.50, 95% CI 0.38–0.65). Source-reported outcome visualization Median progression-free survival · Primary analysis Capivasertib + fulvestrant 7.2 months Placebo + fulvestrant 3.6 months Source-reported endpoint and unit. Median survival is not converted into an NNT.",
+      "absoluteEffect": "Median PFS difference 3.6 months is not an NNT. Effect was stronger in the prespecified AKT-pathway-altered subgroup. NNT: Not calculated; median PFS difference is not a valid NNT. Do not convert median survival differences into NNT. NNH: Not quantifiable. Grade ≥3 rash about 12%, diarrhoea 9% and hyperglycaemia 2% with capivasertib; these were uncommon with placebo. Rash, diarrhoea and glucose monitoring are central to delivery.",
+      "safety": "Grade ≥3 rash about 12%, diarrhoea 9% and hyperglycaemia 2% with capivasertib; these were uncommon with placebo. Rash, diarrhoea and glucose monitoring are central to delivery.",
+      "followupAndLimitations": "Primary analysis median follow-up approximately 16 months. Molecular testing is required for biomarker-selected use. Overall and altered-subgroup results should not be conflated; prior CDK4/6 exposure and local approval affect application.",
+      "clinicalInterpretation": "Capivasertib plus fulvestrant improves PFS after endocrine resistance, particularly in tumours with PIK3CA/AKT1/PTEN alterations, with distinctive rash and diarrhoea toxicity.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/capitello-291/",
+        "https://pubmed.ncbi.nlm.nih.gov/37256976/",
         "https://clinicaltrials.gov/study/NCT04305496"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     }
   ]
 }
