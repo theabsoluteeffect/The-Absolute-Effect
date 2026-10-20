@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 3,
-  "last_quality_check": "2026-10-18",
+  "last_quality_check": "2026-10-20",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,28 +19,43 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 202,
+    "permanent_trial_pages": 227,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 202,
+    "total_unique_trials": 227,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-15",
+    "daily_batch_uploaded": "2026-10-20",
     "new_trials_added_today": [
-      "RTOG 0236",
-      "JBR.10",
-      "MAGIC",
-      "EORTC 22845",
-      "RTOG 9802",
-      "COLOR",
-      "QUASAR",
-      "CAO/ARO/AIO-94",
-      "CONKO-001",
-      "IMbrave150"
+      "ADAURA",
+      "RTOG 9410",
+      "KEYNOTE-189",
+      "FLAURA",
+      "CLASSIC",
+      "CheckMate 577",
+      "EF-14",
+      "PRODIGE 23",
+      "TOPAZ-1",
+      "NAPOLI-1",
+      "ASCENT",
+      "KEYNOTE-355",
+      "IMpassion131",
+      "IMpassion130",
+      "OlympiA",
+      "SOPHIA",
+      "NALA",
+      "HER2CLIMB",
+      "BOLERO-2",
+      "BOLERO-6",
+      "TH3RESA",
+      "EMILIA",
+      "DESTINY-Breast03",
+      "SOLAR-1",
+      "CAPItello-291"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -89,13 +104,13 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-18",
+    "last_quality_check": "2026-10-20",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-10-15",
-      "id": "imbrave150",
-      "trial": "IMbrave150"
+      "date": "2026-10-20",
+      "id": "ascent",
+      "trial": "ASCENT"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -199,13 +214,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-14",
-      "id": "ev-303",
-      "trial": "EV-303 / KEYNOTE-905"
+      "date": "2026-10-15",
+      "id": "imbrave150",
+      "trial": "IMbrave150"
     },
-    "trial_of_day_records_reconciled_on": "2026-10-15",
-    "trial_of_day_current_id": "imbrave150",
-    "trial_of_day_previous_id": "ev-303",
+    "trial_of_day_records_reconciled_on": "2026-10-20",
+    "trial_of_day_current_id": "ascent",
+    "trial_of_day_previous_id": "imbrave150",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-15",
@@ -225,21 +240,45 @@
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
-    "batch_date": "2026-10-15",
-    "quality_check_date": "2026-10-15",
+    "batch_date": "2026-10-20",
+    "quality_check_date": "2026-10-20",
     "daily_batch_upload_verified_on": "2026-10-15",
     "live_main_branch_verification": {
-      "date": "2026-10-15",
-      "canonical_roster_entries": 183,
-      "canonical_pages_found": 183,
-      "missing_new_pages": 0,
-      "index_links_verified": 10,
-      "daily_evidence_records_verified": 10,
-      "trial_of_day": "imbrave150",
-      "previous_trial_of_day": "ev-303",
-      "outcome_visual_audit": "PASS",
-      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/38672407495",
-      "browser_rendered_visual_qa": "pending"
+      "date": "2026-10-20",
+      "canonical_roster_entries": 227,
+      "new_pages": [
+        "trial-pages/adaura/",
+        "trial-pages/rtog-9410/",
+        "trial-pages/keynote-189/",
+        "trial-pages/flaura/",
+        "trial-pages/classic/",
+        "trial-pages/checkmate-577/",
+        "trial-pages/ef-14/",
+        "trial-pages/prodige-23/",
+        "trial-pages/topaz-1/",
+        "trial-pages/napoli-1/",
+        "trial-pages/ascent/",
+        "trial-pages/keynote-355/",
+        "trial-pages/impassion131/",
+        "trial-pages/impassion130/",
+        "trial-pages/olympia/",
+        "trial-pages/sophia/",
+        "trial-pages/nala/",
+        "trial-pages/her2climb/",
+        "trial-pages/bolero-2/",
+        "trial-pages/bolero-6/",
+        "trial-pages/th3resa/",
+        "trial-pages/emilia/",
+        "trial-pages/destiny-breast-03/",
+        "trial-pages/solar-1/",
+        "trial-pages/capitello-291/"
+      ],
+      "index_links_added": 25,
+      "daily_evidence_records": 25,
+      "current_trial_of_the_day": "ascent",
+      "previous_trial_of_the_day": "imbrave150",
+      "browser_rendered_visual_qa": "pending",
+      "clinical_freshness_audit": "complete primary-source-linked page drafts published; independent full source-by-source review remains pending"
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
@@ -385,6 +424,41 @@
         "Locally Advanced / Node-Positive",
         "Localised – Risk Not Specified"
       ]
+    },
+    "last_upload_batch": {
+      "date": "2026-10-20",
+      "newTrials": [
+        "ADAURA",
+        "RTOG 9410",
+        "KEYNOTE-189",
+        "FLAURA",
+        "CLASSIC",
+        "CheckMate 577",
+        "EF-14",
+        "PRODIGE 23",
+        "TOPAZ-1",
+        "NAPOLI-1",
+        "ASCENT",
+        "KEYNOTE-355",
+        "IMpassion131",
+        "IMpassion130",
+        "OlympiA",
+        "SOPHIA",
+        "NALA",
+        "HER2CLIMB",
+        "BOLERO-2",
+        "BOLERO-6",
+        "TH3RESA",
+        "EMILIA",
+        "DESTINY-Breast03",
+        "SOLAR-1",
+        "CAPItello-291"
+      ],
+      "excludedDuplicates": [
+        "KEYNOTE-522 — already exists as a permanent page and remains unchanged"
+      ],
+      "partialFailureRecovered": true,
+      "source": "user-approved 10-trial roadmap batch plus 15 additional distinct breast cancer trials"
     }
   },
   "trials": [
@@ -3332,6 +3406,431 @@
       "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
       "setting_detail": "Male GCT · long-term cohort",
       "site_detail": "Testicular Germ-cell Tumours"
+    },
+    {
+      "id": "adaura",
+      "trial": "ADAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/adaura/",
+      "path": "trial-pages/adaura/",
+      "aliases": [
+        "ADAURA",
+        "NCT02511106"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS? [ADAURA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "rtog-9410",
+      "trial": "RTOG 9410",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/rtog-9410/",
+      "path": "trial-pages/rtog-9410/",
+      "aliases": [
+        "RTOG 9410",
+        "NCT00002576"
+      ],
+      "discipline": "Radiation",
+      "setting": "Locally Advanced / Resectable",
+      "question": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT? [RTOG 9410]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Locally Advanced / Resectable"
+    },
+    {
+      "id": "keynote-189",
+      "trial": "KEYNOTE-189",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/keynote-189/",
+      "path": "trial-pages/keynote-189/",
+      "aliases": [
+        "KEYNOTE-189",
+        "NCT02578680"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival? [KEYNOTE-189]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "flaura",
+      "trial": "FLAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/flaura/",
+      "path": "trial-pages/flaura/",
+      "aliases": [
+        "FLAURA",
+        "NCT02296125"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib? [FLAURA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "classic",
+      "trial": "CLASSIC",
+      "site": "Gastric Cancer",
+      "source": "trial-pages/classic/",
+      "path": "trial-pages/classic/",
+      "aliases": [
+        "CLASSIC",
+        "NCT00411229"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After D2 gastrectomy for stage II–IIIB gastric cancer, does adjuvant CAPOX improve outcomes versus surgery alone? [CLASSIC]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "checkmate-577",
+      "trial": "CheckMate 577",
+      "site": "Esophageal and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/checkmate-577/",
+      "path": "trial-pages/checkmate-577/",
+      "aliases": [
+        "CheckMate 577",
+        "NCT02743494"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After neoadjuvant CRT and R0 resection with residual disease, does adjuvant nivolumab improve DFS? [CheckMate 577]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "ef-14",
+      "trial": "EF-14",
+      "site": "Neuro-Oncology",
+      "source": "trial-pages/ef-14/",
+      "path": "trial-pages/ef-14/",
+      "aliases": [
+        "EF-14",
+        "NCT00916409"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After chemoradiotherapy for glioblastoma, does TTFields plus maintenance temozolomide improve survival? [EF-14]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "prodige-23",
+      "trial": "PRODIGE 23",
+      "site": "Rectal Cancer",
+      "source": "trial-pages/prodige-23/",
+      "path": "trial-pages/prodige-23/",
+      "aliases": [
+        "PRODIGE 23",
+        "NCT01804790"
+      ],
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "question": "In locally advanced rectal cancer, does neoadjuvant mFOLFIRINOX-based treatment improve outcomes versus standard CRT-first treatment? [PRODIGE 23]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Neoadjuvant / Preoperative"
+    },
+    {
+      "id": "topaz-1",
+      "trial": "TOPAZ-1",
+      "site": "Biliary Tract Cancer",
+      "source": "trial-pages/topaz-1/",
+      "path": "trial-pages/topaz-1/",
+      "aliases": [
+        "TOPAZ-1",
+        "NCT03875235"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In untreated advanced biliary tract cancer, does durvalumab plus GemCis improve OS? [TOPAZ-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "napoli-1",
+      "trial": "NAPOLI-1",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/napoli-1/",
+      "path": "trial-pages/napoli-1/",
+      "aliases": [
+        "NAPOLI-1",
+        "NCT01494506"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival? [NAPOLI-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "ascent",
+      "trial": "ASCENT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/ascent/",
+      "path": "trial-pages/ascent/",
+      "aliases": [
+        "ASCENT",
+        "NCT02574455"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy? [ASCENT]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "keynote-355",
+      "trial": "KEYNOTE-355",
+      "site": "Breast Cancer",
+      "source": "trial-pages/keynote-355/",
+      "path": "trial-pages/keynote-355/",
+      "aliases": [
+        "KEYNOTE-355",
+        "NCT02819518"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In previously untreated advanced TNBC with PD-L1 CPS ≥10, does pembrolizumab plus chemotherapy improve survival? [KEYNOTE-355]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "impassion131",
+      "trial": "IMpassion131",
+      "site": "Breast Cancer",
+      "source": "trial-pages/impassion131/",
+      "path": "trial-pages/impassion131/",
+      "aliases": [
+        "IMpassion131",
+        "NCT03125902"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In first-line advanced TNBC, does atezolizumab plus conventional paclitaxel improve outcomes? [IMpassion131]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "impassion130",
+      "trial": "IMpassion130",
+      "site": "Breast Cancer",
+      "source": "trial-pages/impassion130/",
+      "path": "trial-pages/impassion130/",
+      "aliases": [
+        "IMpassion130",
+        "NCT02425891"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In first-line advanced TNBC, does atezolizumab plus nab-paclitaxel improve outcomes? [IMpassion130]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "olympia",
+      "trial": "OlympiA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/olympia/",
+      "path": "trial-pages/olympia/",
+      "aliases": [
+        "OlympiA",
+        "NCT02032823"
+      ],
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In high-risk germline BRCA-mutated HER2-negative early breast cancer, does adjuvant olaparib improve outcomes? [OlympiA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Adjuvant / Postoperative"
+    },
+    {
+      "id": "sophia",
+      "trial": "SOPHIA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/sophia/",
+      "path": "trial-pages/sophia/",
+      "aliases": [
+        "SOPHIA",
+        "NCT02492711"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes? [SOPHIA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "nala",
+      "trial": "NALA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nala/",
+      "path": "trial-pages/nala/",
+      "aliases": [
+        "NALA",
+        "NCT01808573"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes? [NALA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "her2climb",
+      "trial": "HER2CLIMB",
+      "site": "Breast Cancer",
+      "source": "trial-pages/her2climb/",
+      "path": "trial-pages/her2climb/",
+      "aliases": [
+        "HER2CLIMB",
+        "NCT02614794"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes? [HER2CLIMB]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "bolero-2",
+      "trial": "BOLERO-2",
+      "site": "Breast Cancer",
+      "source": "trial-pages/bolero-2/",
+      "path": "trial-pages/bolero-2/",
+      "aliases": [
+        "BOLERO-2",
+        "NCT00863655"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HR-positive/HER2-negative advanced breast cancer after nonsteroidal AI progression, does everolimus plus exemestane improve PFS? [BOLERO-2]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "bolero-6",
+      "trial": "BOLERO-6",
+      "site": "Breast Cancer",
+      "source": "trial-pages/bolero-6/",
+      "path": "trial-pages/bolero-6/",
+      "aliases": [
+        "BOLERO-6",
+        "NCT01783444"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "After nonsteroidal AI progression in HR-positive advanced breast cancer, how does everolimus–exemestane compare with everolimus or capecitabine? [BOLERO-6]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "th3resa",
+      "trial": "TH3RESA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/th3resa/",
+      "path": "trial-pages/th3resa/",
+      "aliases": [
+        "TH3RESA",
+        "NCT01419197"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy? [TH3RESA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "emilia",
+      "trial": "EMILIA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/emilia/",
+      "path": "trial-pages/emilia/",
+      "aliases": [
+        "EMILIA",
+        "NCT00829166"
+      ],
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "question": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine? [EMILIA]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Relapsed / Refractory"
+    },
+    {
+      "id": "destiny-breast-03",
+      "trial": "DESTINY-Breast03",
+      "site": "Breast Cancer",
+      "source": "trial-pages/destiny-breast-03/",
+      "path": "trial-pages/destiny-breast-03/",
+      "aliases": [
+        "DESTINY-Breast03",
+        "NCT03529110"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HER2-positive metastatic breast cancer after trastuzumab and taxane, does trastuzumab deruxtecan improve outcomes versus T-DM1? [DESTINY-Breast03]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "solar-1",
+      "trial": "SOLAR-1",
+      "site": "Breast Cancer",
+      "source": "trial-pages/solar-1/",
+      "path": "trial-pages/solar-1/",
+      "aliases": [
+        "SOLAR-1",
+        "NCT02437318"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, does alpelisib plus fulvestrant improve PFS? [SOLAR-1]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
+    },
+    {
+      "id": "capitello-291",
+      "trial": "CAPItello-291",
+      "site": "Breast Cancer",
+      "source": "trial-pages/capitello-291/",
+      "path": "trial-pages/capitello-291/",
+      "aliases": [
+        "CAPItello-291",
+        "NCT04305496"
+      ],
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In HR-positive/HER2-negative advanced breast cancer progressing on AI therapy, does capivasertib plus fulvestrant improve PFS? [CAPItello-291]",
+      "freshness_review_status": "primary source linked; full independent freshness audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
+      "setting_detail": "Advanced / Metastatic"
     }
   ]
 }
