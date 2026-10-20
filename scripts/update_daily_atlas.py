@@ -9,6 +9,8 @@ data_path = ROOT / "data"
 index = index_path.read_text(encoding="utf-8")
 daily_files = sorted(data_path.glob("daily-evidence-*.json"))
 latest_daily = json.loads(daily_files[-1].read_text(encoding="utf-8")) if daily_files else []
+if isinstance(latest_daily, dict):
+    latest_daily = latest_daily.get("records", [])
 
 archive_path = data_path / "trial-archive.json"
 previous_path = data_path / "previous-trial-of-the-day.json"
@@ -17,7 +19,12 @@ archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.e
 previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {}
 current = json.loads(current_path.read_text(encoding="utf-8")) if current_path.exists() else {}
 
-if previous.get("id") and previous.get("id") != current.get("id") and not any(x.get("id") == previous.get("id") for x in archive):
+previous_id = previous.get("id", "")
+previous_page_exists = bool(previous_id) and (
+    (ROOT / "trial-pages" / previous_id / "index.html").exists()
+    or (ROOT / "trial-pages" / f"{previous_id}.html").exists()
+)
+if previous_id and previous_id != current.get("id") and not any(x.get("id") == previous_id for x in archive) and not previous_page_exists:
     archive.append(previous)
     archive_path.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     latest_daily.append({
@@ -51,21 +58,28 @@ if previous.get("id") and previous.get("id") != current.get("id") and not any(x.
         "urls": [previous.get("url", "")],
     })
 
+roster_path = data_path / "master-trial-roster.json"
+roster_data = json.loads(roster_path.read_text(encoding="utf-8")) if roster_path.exists() else {"trials": []}
+known_ids = {str(item.get("id", "")) for item in roster_data.get("trials", [])}
 new_entries = []
 for entry in latest_daily:
-    trial_id = entry.get("id", "")
-    if not trial_id:
+    trial_id = str(entry.get("id", ""))
+    if not trial_id or trial_id in known_ids:
         continue
-    if f'"id":"{trial_id}"' in index or f'id:"{trial_id}"' in index:
+    canonical_page = ROOT / "trial-pages" / trial_id / "index.html"
+    flat_page = ROOT / "trial-pages" / f"{trial_id}.html"
+    if canonical_page.exists() or flat_page.exists():
         continue
     new_entries.append(entry)
 
-if new_entries:
-    marker = "\n]\n\nfunction getSettings"
+# The current homepage loads its selectors directly from data/master-trial-roster.json.
+# Do not attempt to inject evidence into the retired static defaultEvidence array.
+if new_entries and "data/master-trial-roster.json" not in index:
+    marker = "\\n]\\n\\nfunction getSettings"
     if marker not in index:
-        raise SystemExit("defaultEvidence closing marker not found")
-    additions = "".join(",\n" + json.dumps(entry, ensure_ascii=False, indent=2) for entry in new_entries)
-    index = index.replace(marker, additions + "\n]\n\nfunction getSettings", 1)
+        raise SystemExit("Legacy defaultEvidence marker not found on a non-dynamic homepage")
+    additions = "".join(",\\n" + json.dumps(entry, ensure_ascii=False, indent=2) for entry in new_entries)
+    index = index.replace(marker, additions + "\\n]\\n\\nfunction getSettings", 1)
 
 # Keep the original filter repair for future integrations.
 old_filter_block = '''function renderFilters(){
@@ -212,5 +226,6 @@ a = index.index(start)
 b = index.index(end) + len(end)
 index = index[:a] + trial_html(current) + index[b:]
 index_path.write_text(index, encoding="utf-8")
-previous_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+# The caller updates previous_trial_of_the_day.json when the Trial of the Day is rotated.
+# Preserve that record here; copying current into previous would erase the prior entry.
 print(f"Integrated {len(new_entries)} new evidence records")
