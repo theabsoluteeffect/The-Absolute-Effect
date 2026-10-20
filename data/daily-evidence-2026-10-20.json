@@ -5,206 +5,195 @@
     {
       "id": "adaura",
       "trial": "ADAURA",
-      "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "clinicalQuestion": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/adaura/index.html",
-      "primarySources": [
+      "page": "trial-pages/adaura/index.html",
+      "clinicalQuestion": "Population / eligibility 682 patients with completely resected EGFR exon 19 deletion or L858R stage IB–IIIA NSCLC; adjuvant chemotherapy was permitted. Intervention vs comparator Osimertinib 80 mg orally daily for 3 years vs placebo. Sample size 682 Primary endpoint Disease-free survival; overall survival key secondary endpoint",
+      "keyResults": "At 5 years, OS was 88% with osimertinib vs 78% with placebo (HR 0.49, 95.03% CI 0.33–0.73; P<.001). Five-year DFS was 73% vs 38% (HR 0.23, 95% CI 0.18–0.30). Source-reported outcome visualization 5-year overall survival · 5 years Osimertinib 88 % Placebo 78 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 5-year OS gain 10 percentage points; NNT 10 based on 5-year OS. Five-year DFS gain 35 points; NNT 3 based on 5-year DFS. NNT: 10 (5-year OS); 3 (5-year DFS). Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Common effects include diarrhoea, paronychia and rash; uncommon but important risks include interstitial lung disease, QT prolongation and cardiomyopathy. NNH not quantifiable from a single selected fixed-time excess-harm endpoint. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Common effects include diarrhoea, paronychia and rash; uncommon but important risks include interstitial lung disease, QT prolongation and cardiomyopathy. NNH not quantifiable from a single selected fixed-time excess-harm endpoint.",
+      "followupAndLimitations": "Follow-up: Updated 5-year analysis. Applies to EGFR exon 19 deletion/L858R tumours after complete resection; do not extrapolate to uncommon EGFR variants. DFS and OS reflect the adjuvant strategy with chemotherapy permitted.",
+      "clinicalInterpretation": "Three years of adjuvant osimertinib substantially improves DFS and OS after resection of EGFR-mutated stage IB–IIIA NSCLC.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/adaura/",
+        "https://pubmed.ncbi.nlm.nih.gov/37272535/",
         "https://clinicaltrials.gov/study/NCT02511106"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "rtog-9410",
       "trial": "RTOG 9410",
-      "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Radiation",
-      "setting": "Locally Advanced / Resectable",
-      "clinicalQuestion": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/rtog-9410/index.html",
-      "primarySources": [
+      "page": "trial-pages/rtog-9410/index.html",
+      "clinicalQuestion": "Population / eligibility 610 patients with inoperable stage III NSCLC randomized to sequential or concurrent cisplatin-based chemoradiotherapy. Intervention vs comparator Sequential chemotherapy then RT vs concurrent cisplatin-based chemotherapy with thoracic RT (60 Gy in the once-daily concurrent arm). Sample size 610 Primary endpoint Overall survival",
+      "keyResults": "Median OS was 17.0 months with once-daily concurrent CRT vs 14.6 months with sequential treatment; 5-year OS was 16% vs 10% (P=.046). Concurrent therapy increased acute esophageal toxicity. Source-reported outcome visualization 5-year overall survival · 5 years Concurrent CRT 16 % Sequential CRT 10 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 5-year OS difference 6 percentage points; NNT 17 based on 5-year OS. Grade 3+ esophagitis was approximately 22% vs 4%, an 18-point excess; NNH 6 based on grade 3+ esophagitis. NNT: 17 (5-year OS). Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: ≈6 based on grade 3+ esophagitis during treatment. Grade 3+ esophagitis about 22% vs 4%; NNH ≈6 based on grade 3+ esophagitis. Severe pulmonary and hematologic toxicity and treatment-related deaths also matter. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3+ esophagitis about 22% vs 4%; NNH ≈6 based on grade 3+ esophagitis. Severe pulmonary and hematologic toxicity and treatment-related deaths also matter.",
+      "followupAndLimitations": "Follow-up: Mature long-term follow-up. Older chemotherapy and RT techniques. Contemporary stage III care often includes consolidation immunotherapy after concurrent CRT; RTOG 9410 established concurrent over sequential CRT, not the full modern regimen.",
+      "clinicalInterpretation": "Concurrent CRT improves long-term survival versus sequential CRT in fit stage III NSCLC patients, at the cost of greater acute esophageal toxicity.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/rtog-9410/",
+        "https://pubmed.ncbi.nlm.nih.gov/21991922/",
         "https://clinicaltrials.gov/study/NCT00002576"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "keynote-189",
       "trial": "KEYNOTE-189",
-      "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/keynote-189/index.html",
-      "primarySources": [
+      "page": "trial-pages/keynote-189/index.html",
+      "clinicalQuestion": "Population / eligibility 616 patients with untreated metastatic nonsquamous NSCLC without sensitizing EGFR or ALK alterations; all PD-L1 levels were included. Intervention vs comparator Pembrolizumab 200 mg IV every 3 weeks for up to 35 cycles plus pemetrexed and cisplatin/carboplatin, followed by pemetrexed maintenance, vs placebo plus chemotherapy. Sample size 616 Primary endpoint Overall survival and progression-free survival",
+      "keyResults": "At 5-year follow-up, OS HR was 0.60 (95% CI 0.50–0.72) and PFS HR 0.50 (95% CI 0.42–0.60). Five-year OS was 19.4% vs 11.3%; benefit was observed across PD-L1 subgroups. Source-reported outcome visualization 5-year overall survival · 5 years Pembrolizumab + chemo 19.4 % Placebo + chemo 11.3 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 5-year OS gain 8.1 percentage points; NNT 13 based on 5-year OS. NNT: 13 based on 5-year OS. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–5 adverse events are common with platinum–pemetrexed in both groups. Pembrolizumab adds immune-mediated pneumonitis, colitis, hepatitis and endocrinopathies, occasionally fatal. NNH not calculated without a matched fixed-time excess-harm endpoint. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–5 adverse events are common with platinum–pemetrexed in both groups. Pembrolizumab adds immune-mediated pneumonitis, colitis, hepatitis and endocrinopathies, occasionally fatal. NNH not calculated without a matched fixed-time excess-harm endpoint.",
+      "followupAndLimitations": "Follow-up: Five-year follow-up analysis. Excludes sensitizing EGFR/ALK alterations. Molecular drivers, histology, performance status and immunotherapy contraindications affect applicability.",
+      "clinicalInterpretation": "Adding pembrolizumab to pemetrexed–platinum improves long-term survival in first-line metastatic nonsquamous NSCLC without actionable EGFR/ALK drivers.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/keynote-189/",
+        "https://pubmed.ncbi.nlm.nih.gov/29658856/",
+        "https://pubmed.ncbi.nlm.nih.gov/36809080/",
         "https://clinicaltrials.gov/study/NCT02578680"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "flaura",
       "trial": "FLAURA",
-      "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/flaura/index.html",
-      "primarySources": [
+      "page": "trial-pages/flaura/index.html",
+      "clinicalQuestion": "Population / eligibility 556 patients with untreated locally advanced or metastatic NSCLC harbouring EGFR exon 19 deletion or L858R. Intervention vs comparator Osimertinib 80 mg orally daily vs gefitinib 250 mg or erlotinib 150 mg daily. Sample size 556 Primary endpoint Progression-free survival; overall survival key secondary endpoint",
+      "keyResults": "Median PFS was 18.9 vs 10.2 months (HR 0.46, 95% CI 0.37–0.57; P<.001). Final median OS was 38.6 vs 31.8 months (HR 0.80, 95.05% CI 0.64–1.00; P=.046). Source-reported outcome visualization Median overall survival · Median Osimertinib 38.6 months Gefitinib / erlotinib 31.8 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median OS difference 6.8 months is not an NNT; median survival differences cannot be converted directly into NNT. NNT: Not calculated; median OS difference is not a valid NNT. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Osimertinib can cause QT prolongation, cardiomyopathy and interstitial lung disease; first-generation EGFR TKIs have their own rash and diarrhoea burden. NNH not quantified from a selected fixed-time excess-harm endpoint. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Osimertinib can cause QT prolongation, cardiomyopathy and interstitial lung disease; first-generation EGFR TKIs have their own rash and diarrhoea burden. NNH not quantified from a selected fixed-time excess-harm endpoint.",
+      "followupAndLimitations": "Follow-up: Final OS analysis after extended follow-up. Evidence applies to common sensitizing EGFR mutations. Acquired resistance remains common; CNS disease and co-mutations affect treatment selection.",
+      "clinicalInterpretation": "Osimertinib improves PFS and OS compared with first-generation EGFR TKIs in first-line advanced EGFR exon 19 deletion/L858R NSCLC.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/flaura/",
+        "https://pubmed.ncbi.nlm.nih.gov/31751012/",
         "https://clinicaltrials.gov/study/NCT02296125"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "classic",
       "trial": "CLASSIC",
-      "site": "Gastric Cancer",
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "clinicalQuestion": "After D2 gastrectomy for stage II–IIIB gastric cancer, does adjuvant CAPOX improve outcomes versus surgery alone?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/classic/index.html",
-      "primarySources": [
+      "page": "trial-pages/classic/index.html",
+      "clinicalQuestion": "Population / eligibility 1,035 patients with stage II–IIIB gastric cancer after curative D2 gastrectomy in South Korea, China and Taiwan. Intervention vs comparator Eight 3-week cycles of capecitabine plus oxaliplatin vs observation after surgery. Sample size 1,035 Primary endpoint Disease-free survival",
+      "keyResults": "At 5 years, DFS was 68% with adjuvant CAPOX vs 53% with surgery alone (HR 0.58, 95% CI 0.47–0.72). Five-year OS was approximately 78% vs 69% (HR 0.66, 95% CI 0.51–0.85). Source-reported outcome visualization 5-year disease-free survival · 5 years CAPOX 68 % Observation 53 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 5-year DFS gain 15 percentage points; NNT 7 based on 5-year DFS. Approximate 5-year OS gain 9 points; NNT 12 based on 5-year OS. NNT: 7 (5-year DFS); ≈12 (5-year OS). Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 adverse events occurred in approximately 56% with CAPOX. Hand-foot syndrome, nausea, neutropenia and oxaliplatin neuropathy are important; NNH not calculated without a comparator-matched fixed-time harm endpoint. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 adverse events occurred in approximately 56% with CAPOX. Hand-foot syndrome, nausea, neutropenia and oxaliplatin neuropathy are important; NNH not calculated without a comparator-matched fixed-time harm endpoint.",
+      "followupAndLimitations": "Follow-up: Five-year follow-up analysis. Conducted in East Asian centres with D2 surgery; does not directly compare postoperative CAPOX with perioperative chemotherapy used in many Western settings.",
+      "clinicalInterpretation": "Adjuvant CAPOX after D2 gastrectomy improves 5-year DFS and OS over surgery alone in resected stage II–IIIB gastric cancer.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/classic/",
+        "https://pubmed.ncbi.nlm.nih.gov/22226517/",
         "https://clinicaltrials.gov/study/NCT00411229"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "checkmate-577",
       "trial": "CheckMate 577",
-      "site": "Esophageal and Gastroesophageal Junction Cancer",
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "clinicalQuestion": "After neoadjuvant CRT and R0 resection with residual disease, does adjuvant nivolumab improve DFS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/checkmate-577/index.html",
-      "primarySources": [
+      "page": "trial-pages/checkmate-577/index.html",
+      "clinicalQuestion": "Population / eligibility 794 patients with stage II/III esophageal or GEJ cancer and residual pathological disease after neoadjuvant CRT and R0 resection. Intervention vs comparator Nivolumab 240 mg IV every 2 weeks for 16 weeks, then 480 mg every 4 weeks, up to 1 year vs placebo. Sample size 794 Primary endpoint Disease-free survival",
+      "keyResults": "Median DFS was 22.4 months with nivolumab vs 11.0 months with placebo (HR 0.69, 96.4% CI 0.56–0.86; P=.0003). Benefit was seen in squamous and adenocarcinoma subgroups. OS benefit was not established in the primary report. Source-reported outcome visualization Median disease-free survival · Median Nivolumab 22.4 months Placebo 11 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median DFS difference 11.4 months is not an NNT. DFS benefit is demonstrated; do not infer OS benefit from this endpoint. NNT: Not calculated; median DFS difference is not a valid NNT. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 treatment-related AEs occurred in about 13% with nivolumab vs 6% with placebo. Immune-mediated pneumonitis, colitis, hepatitis and endocrinopathies may require prolonged treatment; discontinuation due to treatment-related events was higher with nivolumab. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 treatment-related AEs occurred in about 13% with nivolumab vs 6% with placebo. Immune-mediated pneumonitis, colitis, hepatitis and endocrinopathies may require prolonged treatment; discontinuation due to treatment-related events was higher with nivolumab.",
+      "followupAndLimitations": "Follow-up: Primary analysis median follow-up 24.4 months. Applies to residual disease after neoadjuvant CRT and R0 resection, not pathological complete response or patients without neoadjuvant CRT. DFS was the demonstrated endpoint in the primary publication.",
+      "clinicalInterpretation": "One year of adjuvant nivolumab approximately doubles median DFS after trimodality treatment when residual esophageal/GEJ cancer remains at surgery.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/checkmate-577/",
+        "https://pubmed.ncbi.nlm.nih.gov/33789008/",
         "https://clinicaltrials.gov/study/NCT02743494"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "ef-14",
       "trial": "EF-14",
-      "site": "Neuro-Oncology",
-      "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
-      "clinicalQuestion": "After chemoradiotherapy for glioblastoma, does TTFields plus maintenance temozolomide improve survival?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/ef-14/index.html",
-      "primarySources": [
+      "page": "trial-pages/ef-14/index.html",
+      "clinicalQuestion": "Population / eligibility 695 patients with newly diagnosed supratentorial glioblastoma without progression after chemoradiotherapy. Intervention vs comparator Tumour-treating fields (200 kHz, worn ≥18 h/day) plus maintenance temozolomide vs temozolomide alone. Sample size 695 Primary endpoint PFS and OS",
+      "keyResults": "Median OS was 20.9 months with TTFields plus temozolomide vs 16.0 months with temozolomide alone (HR 0.63, 95% CI 0.53–0.76; P<.001). Five-year OS was 13% vs 5%; median PFS 6.7 vs 4.0 months. Source-reported outcome visualization Median overall survival · Median TTFields + TMZ 20.9 months TMZ alone 16 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 5-year OS gain 8 percentage points; NNT 13 based on 5-year OS. NNT: 13 based on 5-year OS. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Distinctive toxicity is scalp skin irritation; the device requires scalp shaving, array changes and sustained daily adherence. Systemic grade ≥3 toxicity was not substantially increased in the original analysis. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Distinctive toxicity is scalp skin irritation; the device requires scalp shaving, array changes and sustained daily adherence. Systemic grade ≥3 toxicity was not substantially increased in the original analysis.",
+      "followupAndLimitations": "Follow-up: Final analysis with approximately 40 months median follow-up; 5-year OS reported. Open-label, adherence-dependent intervention; patients had to reach maintenance phase without progression. Device burden and patient preference are central.",
+      "clinicalInterpretation": "Adding TTFields to maintenance temozolomide improves OS in selected newly diagnosed glioblastoma patients who can manage the daily device burden.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/ef-14/",
+        "https://pubmed.ncbi.nlm.nih.gov/29260225/",
         "https://clinicaltrials.gov/study/NCT00916409"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "prodige-23",
       "trial": "PRODIGE 23",
-      "site": "Rectal Cancer",
-      "discipline": "Medical",
-      "setting": "Neoadjuvant / Preoperative",
-      "clinicalQuestion": "In locally advanced rectal cancer, does neoadjuvant mFOLFIRINOX-based treatment improve outcomes versus standard CRT-first treatment?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/prodige-23/index.html",
-      "primarySources": [
+      "page": "trial-pages/prodige-23/index.html",
+      "clinicalQuestion": "Population / eligibility 461 patients aged 18–75 with cT3–4 M0 rectal adenocarcinoma eligible for intensive chemotherapy. Intervention vs comparator Six cycles neoadjuvant mFOLFIRINOX, then long-course CRT, surgery and adjuvant chemotherapy vs standard CRT, surgery and adjuvant chemotherapy. Sample size 461 Primary endpoint Disease-free survival",
+      "keyResults": "At 3 years, DFS was 76% with the intensified neoadjuvant strategy vs 69% with standard treatment (HR 0.69, 95% CI 0.49–0.97; P=.034). Pathological complete response was about 27.8% vs 12.1%. Source-reported outcome visualization 3-year disease-free survival · 3 years Neoadjuvant mFOLFIRINOX 76 % Standard CRT-first 69 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 3-year DFS gain 7 percentage points; NNT 15 based on 3-year DFS. NNT: 15 based on 3-year DFS. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 neutropenia, diarrhoea, neuropathy and other triplet chemotherapy toxicities increase treatment burden; irinotecan diarrhoea and oxaliplatin neuropathy require active management. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 neutropenia, diarrhoea, neuropathy and other triplet chemotherapy toxicities increase treatment burden; irinotecan diarrhoea and oxaliplatin neuropathy require active management.",
+      "followupAndLimitations": "Follow-up: Primary report median follow-up approximately 46 months; long-term updates have followed. Requires fitness for triplet chemotherapy. Control strategy predates some modern total-neoadjuvant options; MRI risk assessment and patient selection matter.",
+      "clinicalInterpretation": "For fit patients with locally advanced rectal cancer, neoadjuvant mFOLFIRINOX-based treatment improves DFS and pCR compared with the trial's CRT-first strategy.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/prodige-23/",
+        "https://pubmed.ncbi.nlm.nih.gov/33862000/",
         "https://clinicaltrials.gov/study/NCT01804790"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "topaz-1",
       "trial": "TOPAZ-1",
-      "site": "Biliary Tract Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In untreated advanced biliary tract cancer, does durvalumab plus GemCis improve OS?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/topaz-1/index.html",
-      "primarySources": [
+      "page": "trial-pages/topaz-1/index.html",
+      "clinicalQuestion": "Population / eligibility 685 patients with previously untreated unresectable locally advanced or metastatic biliary tract cancer. Intervention vs comparator Durvalumab 1,500 mg IV day 1 plus gemcitabine 1,000 mg/m² and cisplatin 25 mg/m² days 1 and 8 every 3 weeks for up to 8 cycles, then durvalumab maintenance, vs placebo plus GemCis. Sample size 685 Primary endpoint Overall survival",
+      "keyResults": "Updated median OS was 12.8 months with durvalumab plus GemCis vs 11.5 months with GemCis alone (HR 0.80, 95% CI 0.66–0.97). At 24 months, OS was 23.6% vs 11.5%. Median PFS was 7.2 vs 5.7 months (HR 0.75). Source-reported outcome visualization Overall survival · 24 months Durvalumab + GemCis 23.6 % GemCis 11.5 % Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Absolute 24-month OS gain 12.1 percentage points; NNT 9 based on 24-month OS. NNT: 9 based on 24-month OS. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 adverse events were frequent in both groups due to GemCis; durvalumab adds immune-mediated events. Biliary infection, cytopenias, renal toxicity and immune hepatitis require monitoring. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 adverse events were frequent in both groups due to GemCis; durvalumab adds immune-mediated events. Biliary infection, cytopenias, renal toxicity and immune hepatitis require monitoring.",
+      "followupAndLimitations": "Follow-up: Updated analysis with follow-up approaching 2 years. Most patients had ECOG 0–1 and adequate organ function. Evidence applies to advanced BTC not amenable to curative local treatment; molecular profiling remains important for later lines.",
+      "clinicalInterpretation": "Adding durvalumab to GemCis provides a durable survival benefit in first-line advanced biliary tract cancer.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/topaz-1/",
+        "https://pubmed.ncbi.nlm.nih.gov/36257359/",
         "https://clinicaltrials.gov/study/NCT03875235"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "napoli-1",
       "trial": "NAPOLI-1",
-      "site": "Pancreatic Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/napoli-1/index.html",
-      "primarySources": [
+      "page": "trial-pages/napoli-1/index.html",
+      "clinicalQuestion": "Population / eligibility 417 patients with metastatic pancreatic adenocarcinoma progressing after gemcitabine-based therapy. Intervention vs comparator Nanoliposomal irinotecan 70 mg/m² IV every 2 weeks plus 5-FU 2,400 mg/m² over 46 hours and leucovorin 400 mg/m² vs 5-FU/leucovorin alone. Sample size 417 Primary endpoint Overall survival",
+      "keyResults": "Median OS was 6.1 months with nanoliposomal irinotecan plus 5-FU/LV vs 4.2 months with 5-FU/LV alone (HR 0.67, 95% CI 0.49–0.92; P=.012). Median PFS was 3.1 vs 1.5 months. Source-reported outcome visualization Median overall survival · Median nal-IRI + 5-FU/LV 6.1 months 5-FU/LV 4.2 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median OS difference 1.9 months is not an NNT; no fixed-time OS rate is used here. NNT: Not calculated; median OS difference is not a valid NNT. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade 3–4 neutropenia occurred in about 27%, diarrhoea 13%, fatigue 14% and vomiting 11% with the combination. Monitor diarrhoea, dehydration, myelosuppression and nutritional status. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade 3–4 neutropenia occurred in about 27%, diarrhoea 13%, fatigue 14% and vomiting 11% with the combination. Monitor diarrhoea, dehydration, myelosuppression and nutritional status.",
+      "followupAndLimitations": "Follow-up: Primary report median follow-up approximately 9.2 months. Applies after gemcitabine-based treatment; performance status and ability to tolerate combination chemotherapy are key.",
+      "clinicalInterpretation": "Nanoliposomal irinotecan plus 5-FU/LV improves survival after gemcitabine-based treatment in metastatic pancreatic cancer, with important gastrointestinal and hematologic toxicity.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/napoli-1/",
+        "https://pubmed.ncbi.nlm.nih.gov/26615328/",
         "https://clinicaltrials.gov/study/NCT01494506"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "ascent",
       "trial": "ASCENT",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
-      "clinicalQuestion": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/ascent/index.html",
-      "primarySources": [
+      "page": "trial-pages/ascent/index.html",
+      "clinicalQuestion": "Population / eligibility 468 patients with relapsed/refractory metastatic TNBC after at least two prior systemic therapies, including ≥1 for metastatic disease; primary efficacy population excluded brain metastases. Intervention vs comparator Sacituzumab govitecan 10 mg/kg IV days 1 and 8 every 21 days vs eribulin, vinorelbine, capecitabine or gemcitabine. Sample size 468 Primary endpoint PFS and OS",
+      "keyResults": "Final analysis: median PFS 4.8 vs 1.7 months (HR 0.41, 95% CI 0.33–0.52); median OS 11.8 vs 6.9 months (HR 0.51, 95% CI 0.42–0.63). Source-reported outcome visualization Median overall survival · Final analysis Sacituzumab govitecan 11.8 months Physician's choice 6.9 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median OS difference 4.9 months is not a fixed-time absolute risk difference; no NNT is calculated from medians. NNT: Not calculated; median OS difference is not a valid NNT. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade ≥3 neutropenia was common (about 51%) and grade ≥3 diarrhoea about 10%; febrile neutropenia and discontinuation require attention. UGT1A1*28 may increase neutropenia risk. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade ≥3 neutropenia was common (about 51%) and grade ≥3 diarrhoea about 10%; febrile neutropenia and discontinuation require attention. UGT1A1*28 may increase neutropenia risk.",
+      "followupAndLimitations": "Follow-up: Final efficacy analysis published 2024. Primary efficacy population excluded active brain metastases. Treatment sequence depends on prior therapies and current standards; myelosuppression and diarrhoea require proactive supportive care.",
+      "clinicalInterpretation": "Sacituzumab govitecan markedly improves PFS and OS over single-agent chemotherapy in previously treated metastatic TNBC.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/ascent/",
+        "https://pubmed.ncbi.nlm.nih.gov/38422473/",
         "https://clinicaltrials.gov/study/NCT02574455"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "keynote-355",
       "trial": "KEYNOTE-355",
-      "site": "Breast Cancer",
-      "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
-      "clinicalQuestion": "In previously untreated advanced TNBC with PD-L1 CPS ≥10, does pembrolizumab plus chemotherapy improve survival?",
-      "population": "See complete trial page for eligibility and baseline population.",
-      "interventionComparator": "See complete trial page for regimen and comparator.",
-      "sampleSize": "See complete trial page.",
-      "primaryEndpoint": "See complete trial page.",
-      "sourceLinkedPage": "trial-pages/keynote-355/index.html",
-      "primarySources": [
+      "page": "trial-pages/keynote-355/index.html",
+      "clinicalQuestion": "Population / eligibility 847 patients with previously untreated locally recurrent inoperable or metastatic TNBC; benefit is established for PD-L1 CPS ≥10. Intervention vs comparator Pembrolizumab 200 mg IV every 3 weeks plus investigator-selected nab-paclitaxel, paclitaxel or gemcitabine–carboplatin vs placebo plus chemotherapy. Sample size 847 Primary endpoint OS in PD-L1 CPS ≥10 population",
+      "keyResults": "In CPS ≥10 disease, median OS was 23.0 vs 16.1 months (HR 0.73, 95% CI 0.55–0.95; P=.0185). Median PFS was 9.7 vs 5.6 months (HR 0.65, 95% CI 0.49–0.86). Source-reported outcome visualization Median overall survival (CPS ≥10) · Median Pembrolizumab + chemo 23 months Chemotherapy 16.1 months Bars are scaled to the larger reported group value; endpoint, unit and horizon are labelled. Values are source-reported, not estimated from medians.",
+      "absoluteEffect": "Median OS difference 6.9 months is not an NNT; no fixed-time OS risk difference is used here. NNT: Not calculated; median OS difference is not a valid NNT. Use only at the stated endpoint/time horizon; median survival differences are not converted into NNT. NNH: Not quantifiable. Grade ≥3 treatment-related AEs occurred in roughly two-thirds of patients in both arms. Pembrolizumab adds immune-mediated endocrinopathy, pneumonitis, hepatitis and colitis; chemotherapy adds neuropathy and cytopenias. Time-to-event hazard ratios and median survival are not treated as absolute risk differences. Where no defensible fixed-time NNT/NNH is available, the source-reported endpoint is visualized instead.",
+      "safety": "Grade ≥3 treatment-related AEs occurred in roughly two-thirds of patients in both arms. Pembrolizumab adds immune-mediated endocrinopathy, pneumonitis, hepatitis and colitis; chemotherapy adds neuropathy and cytopenias.",
+      "followupAndLimitations": "Follow-up: Final OS analysis in CPS ≥10 population. Benefit is tied to PD-L1 CPS ≥10 for first-line metastatic TNBC. Do not extrapolate to CPS <10 or conflate with atezolizumab trials.",
+      "clinicalInterpretation": "For PD-L1 CPS ≥10 advanced TNBC, adding pembrolizumab to chemotherapy improves PFS and OS.",
+      "sources": [
+        "https://theabsoluteeffect.pages.dev/trial-pages/keynote-355/",
+        "https://pubmed.ncbi.nlm.nih.gov/35857659/",
         "https://clinicaltrials.gov/study/NCT02819518"
-      ],
-      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+      ]
     },
     {
       "id": "impassion131",
