@@ -1102,5 +1102,118 @@
     "safetyDetails": "Grade ≥3 rash about 12%, diarrhoea 9% and hyperglycaemia 2% with capivasertib; these were uncommon with placebo. Rash, diarrhoea and glucose monitoring are central to delivery.",
     "limitationsDetails": "Primary analysis median follow-up approximately 16 months. Molecular testing is required for biomarker-selected use. Overall and altered-subgroup results should not be conflated; prior CDK4/6 exposure and local approval affect application.",
     "clinicalInterpretation": "Capivasertib plus fulvestrant improves PFS after endocrine resistance, particularly in tumours with PIK3CA/AKT1/PTEN alterations, with distinctive rash and diarrhoea toxicity."
+  },
+  {
+    "id": "ascot",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Medical",
+    "setting": "Adjuvant / Postoperative",
+    "trial": "ASCOT (JCOG1202)",
+    "endpoint": "Overall survival",
+    "source": "trial-pages/ascot/",
+    "urls": [],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "bilcap",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Medical",
+    "setting": "Adjuvant / Postoperative",
+    "trial": "BILCAP",
+    "endpoint": "Overall survival",
+    "source": "trial-pages/bilcap/",
+    "urls": [
+      "ISRCTN72785446"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "bt-22",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Medical",
+    "setting": "Advanced / Metastatic",
+    "trial": "Japanese BT22",
+    "endpoint": "Overall survival",
+    "source": "trial-pages/bt-22/",
+    "urls": [],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "abc-06",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Medical",
+    "setting": "Relapsed / Refractory",
+    "trial": "ABC-06",
+    "endpoint": "Overall survival",
+    "source": "trial-pages/abc-06/",
+    "urls": [
+      "NCT01926236"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "claridhy",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Biomarker",
+    "setting": "Relapsed / Refractory",
+    "trial": "ClarIDHy",
+    "endpoint": "Progression-free survival",
+    "source": "trial-pages/claridhy/",
+    "urls": [
+      "NCT02989857"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "fight-202",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Biomarker",
+    "setting": "Relapsed / Refractory",
+    "trial": "FIGHT-202 (pemigatinib)",
+    "endpoint": "Objective response rate",
+    "source": "trial-pages/fight-202/",
+    "urls": [
+      "NCT02924376"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "mypathway-btc",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Biomarker",
+    "setting": "Relapsed / Refractory",
+    "trial": "MyPathway (HER2-positive biliary tract cohort)",
+    "endpoint": "Objective response rate",
+    "source": "trial-pages/mypathway-btc/",
+    "urls": [
+      "NCT02091141"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "roar-btc",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Biomarker",
+    "setting": "Relapsed / Refractory",
+    "trial": "ROAR (BRAF V600E biliary tract cohort)",
+    "endpoint": "Objective response rate",
+    "source": "trial-pages/roar-btc/",
+    "urls": [
+      "NCT02034110"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
+  },
+  {
+    "id": "keynote-158-btc",
+    "site": "Biliary Tract Cancer",
+    "discipline": "Biomarker",
+    "setting": "Relapsed / Refractory",
+    "trial": "KEYNOTE-158 (biliary tract cohort)",
+    "endpoint": "Objective response rate",
+    "source": "trial-pages/keynote-158-btc/",
+    "urls": [
+      "NCT02628067"
+    ],
+    "record_status": "uploaded; primary-source-linked; independent clinical freshness review pending"
   }
 ]
