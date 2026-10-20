@@ -487,7 +487,8 @@
       "user_requested_pemigatinib_clarification": "No adjuvant pemigatinib trial was identified. FIGHT-202 is a single-arm phase II study in previously treated advanced/metastatic FGFR2 fusion/rearrangement-positive cholangiocarcinoma, not an adjuvant trial.",
       "source_review": "Primary/authoritative sources linked; exact BT22 primary bibliographic record and full source-by-source freshness audit remain pending.",
       "browser_rendered_visual_qa": "pending"
-    }
+    },
+    "uk_abc02_alias_reconciled": "2026-10-20"
   },
   "trials": [
     {
@@ -501,7 +502,11 @@
       "path": "trial-pages/abc-02/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Advanced/Metastatic · First-line"
+      "setting_detail": "Advanced/Metastatic · First-line",
+      "aliases": [
+        "UK ABC-02",
+        "ABC 02 UK"
+      ]
     },
     {
       "id": "abc-06",
