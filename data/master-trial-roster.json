@@ -441,7 +441,9 @@
     },
     "user_requested_existing_trial_not_duplicated": [
       "KEYNOTE-522"
-    ]
+    ],
+    "aliases_reconciled_on": "2026-10-20",
+    "aliases_reconciled_for_last_batch": 25
   },
   "trials": [
     {
@@ -3397,7 +3399,8 @@
       "path": "trial-pages/adaura/",
       "aliases": [
         "ADAURA",
-        "NCT02511106"
+        "NCT02511106",
+        "ADAURA trial"
       ],
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
@@ -3414,7 +3417,9 @@
       "path": "trial-pages/rtog-9410/",
       "aliases": [
         "RTOG 9410",
-        "NCT00002576"
+        "NCT00002576",
+        "RTOG 94-10",
+        "RTOG9410"
       ],
       "discipline": "Radiation",
       "setting": "Locally Advanced / Resectable",
@@ -3431,7 +3436,8 @@
       "path": "trial-pages/keynote-189/",
       "aliases": [
         "KEYNOTE-189",
-        "NCT02578680"
+        "NCT02578680",
+        "KEYNOTE 189"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3448,7 +3454,8 @@
       "path": "trial-pages/flaura/",
       "aliases": [
         "FLAURA",
-        "NCT02296125"
+        "NCT02296125",
+        "FLAURA trial"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3465,7 +3472,8 @@
       "path": "trial-pages/classic/",
       "aliases": [
         "CLASSIC",
-        "NCT00411229"
+        "NCT00411229",
+        "CLASSIC trial"
       ],
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
@@ -3482,7 +3490,8 @@
       "path": "trial-pages/checkmate-577/",
       "aliases": [
         "CheckMate 577",
-        "NCT02743494"
+        "NCT02743494",
+        "CheckMate-577"
       ],
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
@@ -3499,7 +3508,9 @@
       "path": "trial-pages/ef-14/",
       "aliases": [
         "EF-14",
-        "NCT00916409"
+        "NCT00916409",
+        "EF14",
+        "Tumor Treating Fields glioblastoma"
       ],
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
@@ -3516,7 +3527,9 @@
       "path": "trial-pages/prodige-23/",
       "aliases": [
         "PRODIGE 23",
-        "NCT01804790"
+        "NCT01804790",
+        "UNICANCER GI 12",
+        "PRODIGE-23"
       ],
       "discipline": "Medical",
       "setting": "Neoadjuvant / Preoperative",
@@ -3533,7 +3546,8 @@
       "path": "trial-pages/topaz-1/",
       "aliases": [
         "TOPAZ-1",
-        "NCT03875235"
+        "NCT03875235",
+        "TOPAZ 1"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3550,7 +3564,8 @@
       "path": "trial-pages/napoli-1/",
       "aliases": [
         "NAPOLI-1",
-        "NCT01494506"
+        "NCT01494506",
+        "NAPOLI 1"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3567,7 +3582,8 @@
       "path": "trial-pages/ascent/",
       "aliases": [
         "ASCENT",
-        "NCT02574455"
+        "NCT02574455",
+        "Sacituzumab govitecan ASCENT"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3584,7 +3600,8 @@
       "path": "trial-pages/keynote-355/",
       "aliases": [
         "KEYNOTE-355",
-        "NCT02819518"
+        "NCT02819518",
+        "KEYNOTE 355"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3601,7 +3618,8 @@
       "path": "trial-pages/impassion131/",
       "aliases": [
         "IMpassion131",
-        "NCT03125902"
+        "NCT03125902",
+        "IMpassion 131"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3618,7 +3636,8 @@
       "path": "trial-pages/impassion130/",
       "aliases": [
         "IMpassion130",
-        "NCT02425891"
+        "NCT02425891",
+        "IMpassion 130"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3635,7 +3654,8 @@
       "path": "trial-pages/olympia/",
       "aliases": [
         "OlympiA",
-        "NCT02032823"
+        "NCT02032823",
+        "OlympiA trial"
       ],
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
@@ -3652,7 +3672,8 @@
       "path": "trial-pages/sophia/",
       "aliases": [
         "SOPHIA",
-        "NCT02492711"
+        "NCT02492711",
+        "SOPHIA trial"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3669,7 +3690,8 @@
       "path": "trial-pages/nala/",
       "aliases": [
         "NALA",
-        "NCT01808573"
+        "NCT01808573",
+        "NALA trial"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3686,7 +3708,8 @@
       "path": "trial-pages/her2climb/",
       "aliases": [
         "HER2CLIMB",
-        "NCT02614794"
+        "NCT02614794",
+        "HER2-CLIMB"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3703,7 +3726,9 @@
       "path": "trial-pages/bolero-2/",
       "aliases": [
         "BOLERO-2",
-        "NCT00863655"
+        "NCT00863655",
+        "BOLERO 2",
+        "Everolimus exemestane BOLERO-2"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3720,7 +3745,8 @@
       "path": "trial-pages/bolero-6/",
       "aliases": [
         "BOLERO-6",
-        "NCT01783444"
+        "NCT01783444",
+        "BOLERO 6"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3737,7 +3763,8 @@
       "path": "trial-pages/th3resa/",
       "aliases": [
         "TH3RESA",
-        "NCT01419197"
+        "NCT01419197",
+        "TH3RESA trial"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3754,7 +3781,8 @@
       "path": "trial-pages/emilia/",
       "aliases": [
         "EMILIA",
-        "NCT00829166"
+        "NCT00829166",
+        "EMILIA trial"
       ],
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
@@ -3771,7 +3799,9 @@
       "path": "trial-pages/destiny-breast-03/",
       "aliases": [
         "DESTINY-Breast03",
-        "NCT03529110"
+        "NCT03529110",
+        "DESTINY Breast 03",
+        "DESTINY-Breast 03"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3788,7 +3818,8 @@
       "path": "trial-pages/solar-1/",
       "aliases": [
         "SOLAR-1",
-        "NCT02437318"
+        "NCT02437318",
+        "SOLAR 1"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
@@ -3805,7 +3836,9 @@
       "path": "trial-pages/capitello-291/",
       "aliases": [
         "CAPItello-291",
-        "NCT04305496"
+        "NCT04305496",
+        "CAPItello 291",
+        "CAPItello-291 trial"
       ],
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
