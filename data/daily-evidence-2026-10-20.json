@@ -296,13 +296,12 @@
       "trial": "BOLERO-2",
       "page": "trial-pages/bolero-2/index.html",
       "clinicalQuestion": "724 postmenopausal women with HR-positive/HER2-negative advanced breast cancer refractory to letrozole or anastrozole. Intervention: everolimus 10 mg orally daily plus exemestane 25 mg daily vs placebo plus exemestane. Primary endpoint: progression-free survival.",
-      "keyResults": "",
-      "absoluteEffect": "NNT: Not calculated; median PFS difference is not a valid NNT. NNH: Not quantifiable from a single selected fixed-time excess-harm endpoint.",
+      "keyResults": "Final investigator-assessed median PFS was 7.8 vs 3.2 months (HR 0.45, 95% CI 0.38–0.54). Median OS was 31.0 vs 26.6 months (HR 0.89, 95% CI 0.73–1.10; not statistically significant).",
+      "absoluteEffect": "Median PFS difference 4.6 months is not an NNT. No statistically significant OS benefit was demonstrated. NNT: not calculated because median PFS is not a fixed-time risk difference. NNH: not quantifiable from a single selected fixed-time excess-harm endpoint.",
       "safety": "Clinically important grade 3+ toxicities include stomatitis, infections, hyperglycaemia, fatigue and noninfectious pneumonitis. Stomatitis prophylaxis and metabolic monitoring are important; dose modifications and discontinuation are common.",
-      "followupAndLimitations": "",
+      "followupAndLimitations": "Final OS analysis after long follow-up. The trial predates routine CDK4/6 inhibitors and newer molecularly selected agents. Current sequencing depends on prior therapy and tumour genomics.",
       "clinicalInterpretation": "Everolimus plus exemestane prolongs PFS after aromatase-inhibitor resistance, but OS benefit was not statistically significant and toxicity can be substantial.",
       "sources": [
-        "https://theabsoluteeffect.pages.dev/trial-pages/bolero-2/",
         "https://pubmed.ncbi.nlm.nih.gov/22149876/",
         "https://clinicaltrials.gov/study/NCT00863655"
       ]
