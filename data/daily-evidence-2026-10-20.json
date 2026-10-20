@@ -687,10 +687,12 @@
     "trial": "SOPHIA",
     "clinicalQuestion": "Population 536 patients with HER2-positive advanced breast cancer previously treated with ≥2 anti-HER2 regimens in metastatic setting, including pertuzumab and T-DM1. Intervention vs comparator Margetuximab 15 mg/kg IV every 3 weeks plus investigator-selected chemotherapy vs trastuzumab plus the same chemotherapy. Sample size 536 Primary endpoint PFS; OS key secondary endpoint",
     "refs": [
+      "https://pubmed.ncbi.nlm.nih.gov/33480963/",
       "https://pubmed.ncbi.nlm.nih.gov/36332179/",
       "https://clinicaltrials.gov/study/NCT02492711"
     ],
     "urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/33480963/",
       "https://pubmed.ncbi.nlm.nih.gov/36332179/",
       "https://clinicaltrials.gov/study/NCT02492711"
     ],
@@ -836,19 +838,19 @@
     "setting": "",
     "treatment": "Population 309 postmenopausal women with HR-positive/HER2-negative advanced breast cancer progressing during or after letrozole or anastrozole. Intervention vs comparator Everolimus 10 mg daily plus exemestane 25 mg daily vs everolimus alone vs capecitabine. Sample size 309 Primary endpoint PFS; exploratory phase II comparison",
     "population": "Population 309 postmenopausal women with HR-positive/HER2-negative advanced breast cancer progressing during or after letrozole or anastrozole. Intervention vs comparator Everolimus 10 mg daily plus exemestane 25 mg daily vs everolimus alone vs capecitabine. Sample size 309 Primary endpoint PFS; exploratory phase II comparison",
-    "endpoint": "Investigator-assessed median PFS was approximately 8.4 months with everolimus–exemestane and 9.6 months with capecitabine; the phase II study was exploratory and not designed to establish definitive superiority/non-inferiority across all arms. Source-reported outcome visualization Median PFS (exploratory) · Investigator assessment Everolimus + exemestane 8.3 months Capecitabine 12 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
+    "endpoint": "Investigator-assessed median PFS: 8.4 months with everolimus–exemestane vs 9.6 months with capecitabine; exploratory phase II study, not powered for definitive superiority/non-inferiority.",
     "horizon": "See linked trial analysis",
     "interventionRate": null,
     "controlRate": null,
     "absoluteBenefit": null,
-    "nnt": "Do not infer NNT or definitive benefit from cross-arm median differences in this exploratory phase II study. NNT: Not quantifiable; exploratory comparison. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ.",
+    "nnt": "Not quantifiable; exploratory comparison; median PFS difference is not a valid NNT",
     "relativeLabel": "Source-reported trial outcomes",
-    "relativeEffect": "Investigator-assessed median PFS was approximately 8.4 months with everolimus–exemestane and 9.6 months with capecitabine; the phase II study was exploratory and not designed to establish definitive superiority/non-inferiority across all arms. Source-reported outcome visualization Median PFS (exploratory) · Investigator assessment Everolimus + exemestane 8.3 months Capecitabine 12 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
+    "relativeEffect": "Investigator-assessed median PFS: 8.4 months with everolimus–exemestane vs 9.6 months with capecitabine; exploratory phase II study, not powered for definitive superiority/non-inferiority.",
     "ci": "See linked trial analysis for confidence intervals and p values",
     "n": null,
     "interventionN": null,
     "controlN": null,
-    "benefitText": "Do not infer NNT or definitive benefit from cross-arm median differences in this exploratory phase II study. NNT: Not quantifiable; exploratory comparison. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ. Follow-up and limitations: Phase II comparative study. Small exploratory design; not powered to establish equivalence. Confirm assessment method when quoting PFS estimates. Clinical interpretation: BOLERO-6 is an exploratory comparison and does not establish definitive superiority or equivalence of everolimus-based therapy versus capecitabine.",
+    "benefitText": "Do not infer NNT or a definitive benefit from cross-arm median differences in this exploratory phase II study.",
     "harmLabel": "Trial-specific toxicity / treatment burden",
     "harmIntervention": null,
     "harmControl": null,
@@ -865,8 +867,8 @@
       "https://clinicaltrials.gov/study/NCT01783444"
     ],
     "sourcePage": "trial-pages/bolero-6/index.html",
-    "keyResults": "Investigator-assessed median PFS was approximately 8.4 months with everolimus–exemestane and 9.6 months with capecitabine; the phase II study was exploratory and not designed to establish definitive superiority/non-inferiority across all arms. Source-reported outcome visualization Median PFS (exploratory) · Investigator assessment Everolimus + exemestane 8.3 months Capecitabine 12 months Source-reported endpoint and unit; median survival is not converted into an NNT.",
-    "absoluteEffectDetails": "Do not infer NNT or definitive benefit from cross-arm median differences in this exploratory phase II study. NNT: Not quantifiable; exploratory comparison. Endpoint/time horizon are stated above; do not convert median survival differences into NNT. NNH: Not quantifiable. Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ.",
+    "keyResults": "Investigator-assessed median PFS: 8.4 months with everolimus–exemestane vs 9.6 months with capecitabine; exploratory phase II study, not powered for definitive superiority/non-inferiority.",
+    "absoluteEffectDetails": "Do not infer NNT or a definitive benefit from cross-arm median differences in this exploratory phase II study.",
     "safetyDetails": "Everolimus arms had stomatitis, rash, metabolic effects and pneumonitis; capecitabine had hand-foot syndrome and diarrhoea. Toxicity profiles differ.",
     "limitationsDetails": "Phase II comparative study. Small exploratory design; not powered to establish equivalence. Confirm assessment method when quoting PFS estimates.",
     "clinicalInterpretation": "BOLERO-6 is an exploratory comparison and does not establish definitive superiority or equivalence of everolimus-based therapy versus capecitabine."
