@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "id": "ascent",
+  "trial": "ASCENT",
+  "title": "Sacituzumab govitecan versus physician's-choice chemotherapy in previously treated metastatic triple-negative breast cancer",
+  "journal": "Journal of Clinical Oncology; final efficacy analysis",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+  "site": "Breast Cancer",
+  "discipline": "Medical",
+  "setting": "Relapsed / Refractory",
+  "summary": "Final analysis: median PFS 4.8 vs 1.7 months (HR 0.41, 95% CI 0.33–0.52); median OS 11.8 vs 6.9 months (HR 0.51, 95% CI 0.42–0.63).",
+  "absoluteEffect": {
+    "endpoint": "Median overall survival",
+    "treatmentRate": "11.8 months",
+    "controlRate": "6.9 months",
+    "absoluteBenefit": "Median difference 4.9 months; not an NNT",
+    "nnt": "Not calculated; median OS difference is not a valid NNT",
+    "toxicity": "Grade ≥3 neutropenia about 51%; grade ≥3 diarrhoea about 10%.",
+    "nnh": "Not quantifiable"
+  },
+  "clinicalInterpretation": "Sacituzumab govitecan improves PFS and OS in previously treated metastatic TNBC. Monitor neutropenia and diarrhoea; median survival differences are not NNTs.",
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+    "https://clinicaltrials.gov/study/NCT02574455"
+  ]
+}
