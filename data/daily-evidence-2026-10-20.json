@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-20",
+  "batch": "approved roadmap batch plus user-requested breast cancer trials",
+  "records": [
+    {
+      "id": "adaura",
+      "trial": "ADAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "clinicalQuestion": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/adaura/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02511106"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "rtog-9410",
+      "trial": "RTOG 9410",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced / Resectable",
+      "clinicalQuestion": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/rtog-9410/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT00002576"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "keynote-189",
+      "trial": "KEYNOTE-189",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/keynote-189/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02578680"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "flaura",
+      "trial": "FLAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/flaura/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02296125"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "classic",
+      "trial": "CLASSIC",
+      "site": "Gastric Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "clinicalQuestion": "After D2 gastrectomy for stage II–IIIB gastric cancer, does adjuvant CAPOX improve outcomes versus surgery alone?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/classic/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT00411229"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "checkmate-577",
+      "trial": "CheckMate 577",
+      "site": "Esophageal and Gastroesophageal Junction Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "clinicalQuestion": "After neoadjuvant CRT and R0 resection with residual disease, does adjuvant nivolumab improve DFS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/checkmate-577/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02743494"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "ef-14",
+      "trial": "EF-14",
+      "site": "Neuro-Oncology",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "clinicalQuestion": "After chemoradiotherapy for glioblastoma, does TTFields plus maintenance temozolomide improve survival?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/ef-14/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT00916409"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "prodige-23",
+      "trial": "PRODIGE 23",
+      "site": "Rectal Cancer",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "clinicalQuestion": "In locally advanced rectal cancer, does neoadjuvant mFOLFIRINOX-based treatment improve outcomes versus standard CRT-first treatment?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/prodige-23/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT01804790"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "topaz-1",
+      "trial": "TOPAZ-1",
+      "site": "Biliary Tract Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In untreated advanced biliary tract cancer, does durvalumab plus GemCis improve OS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/topaz-1/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT03875235"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "napoli-1",
+      "trial": "NAPOLI-1",
+      "site": "Pancreatic Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/napoli-1/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT01494506"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "ascent",
+      "trial": "ASCENT",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/ascent/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02574455"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "keynote-355",
+      "trial": "KEYNOTE-355",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In previously untreated advanced TNBC with PD-L1 CPS ≥10, does pembrolizumab plus chemotherapy improve survival?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/keynote-355/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02819518"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "impassion131",
+      "trial": "IMpassion131",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In first-line advanced TNBC, does atezolizumab plus conventional paclitaxel improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/impassion131/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT03125902"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "impassion130",
+      "trial": "IMpassion130",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In first-line advanced TNBC, does atezolizumab plus nab-paclitaxel improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/impassion130/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02425891"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "olympia",
+      "trial": "OlympiA",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "clinicalQuestion": "In high-risk germline BRCA-mutated HER2-negative early breast cancer, does adjuvant olaparib improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/olympia/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02032823"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "sophia",
+      "trial": "SOPHIA",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/sophia/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02492711"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "nala",
+      "trial": "NALA",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/nala/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT01808573"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "her2climb",
+      "trial": "HER2CLIMB",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/her2climb/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02614794"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "bolero-2",
+      "trial": "BOLERO-2",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In HR-positive/HER2-negative advanced breast cancer after nonsteroidal AI progression, does everolimus plus exemestane improve PFS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/bolero-2/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT00863655"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "bolero-6",
+      "trial": "BOLERO-6",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "After nonsteroidal AI progression in HR-positive advanced breast cancer, how does everolimus–exemestane compare with everolimus or capecitabine?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/bolero-6/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT01783444"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "th3resa",
+      "trial": "TH3RESA",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/th3resa/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT01419197"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "emilia",
+      "trial": "EMILIA",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "clinicalQuestion": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/emilia/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT00829166"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "destiny-breast-03",
+      "trial": "DESTINY-Breast03",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In HER2-positive metastatic breast cancer after trastuzumab and taxane, does trastuzumab deruxtecan improve outcomes versus T-DM1?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/destiny-breast-03/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT03529110"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "solar-1",
+      "trial": "SOLAR-1",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In PIK3CA-mutated HR-positive/HER2-negative advanced breast cancer, does alpelisib plus fulvestrant improve PFS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/solar-1/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT02437318"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    },
+    {
+      "id": "capitello-291",
+      "trial": "CAPItello-291",
+      "site": "Breast Cancer",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "clinicalQuestion": "In HR-positive/HER2-negative advanced breast cancer progressing on AI therapy, does capivasertib plus fulvestrant improve PFS?",
+      "population": "See complete trial page for eligibility and baseline population.",
+      "interventionComparator": "See complete trial page for regimen and comparator.",
+      "sampleSize": "See complete trial page.",
+      "primaryEndpoint": "See complete trial page.",
+      "sourceLinkedPage": "trial-pages/capitello-291/index.html",
+      "primarySources": [
+        "https://clinicaltrials.gov/study/NCT04305496"
+      ],
+      "qualityStatus": "Source-linked page uploaded; complete independent source-by-source clinical review and browser-rendered visual QA remain pending."
+    }
+  ]
+}
