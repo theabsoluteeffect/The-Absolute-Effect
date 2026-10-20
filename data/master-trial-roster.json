@@ -224,7 +224,7 @@
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
-      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/39365798914",
+      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/39366284307",
       "status": "PASS_WITH_LEGACY_REVIEW_FLAGS",
       "canonical_roster_pages": 227,
       "canonical_pages_found": 227,
@@ -237,7 +237,7 @@
       "new_batch_pages_with_shared_renderer": 25,
       "new_batch_pages_with_source_link": 25,
       "new_batch_pages_with_outcome_visualization": 25,
-      "note": "Automated structural audit passed after the 25 new pages loaded the shared renderer. Eight repository-wide manual-review flags and 17 legacy pages missing dated current-practice context remain outside this batch; browser-rendered QA and complete independent source-by-source clinical freshness review remain pending."
+      "note": "Automated structural audit passed: all 227 canonical roster pages were found, no renderer or primary-source links were missing. The repository-wide heuristic still flags 8 pages for manual outcome review and 17 pages lacking dated current-practice context; the individual flagged paths have not yet been reconciled to this batch. Browser-rendered QA and complete independent source-by-source clinical freshness review remain pending."
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
@@ -246,18 +246,21 @@
     "daily_batch_upload_verified_on": "2026-10-15",
     "live_main_branch_verification": {
       "date": "2026-10-20",
+      "main_commit": "449e2cd13c6a551ed8d75c6122b6e76f4b40c47b",
       "canonical_roster_entries": 227,
       "canonical_pages_found": 227,
       "missing_new_pages": 0,
-      "index_links_verified": 25,
-      "daily_evidence_records_verified": 25,
+      "new_pages_with_renderer": 25,
+      "new_pages_with_source_links": 25,
+      "new_pages_with_outcome_visualization": 25,
+      "evidence_index_links_added": 25,
+      "daily_evidence_records": 25,
       "current_trial_of_the_day": "ascent",
       "previous_trial_of_the_day": "ev-303",
-      "renderer_missing_in_new_batch": 0,
-      "automated_outcome_audit": "PASS_WITH_LEGACY_REVIEW_FLAGS",
-      "daily_atlas_workflow": "success on commit 5cd0c5d2d5ebea69d2a39fc33b8e48f885672f2b",
+      "daily_atlas_workflow": "success",
+      "outcome_visualization_audit": "PASS_WITH_REPOSITORY_WIDE_REVIEW_FLAGS",
       "browser_rendered_visual_qa": "pending",
-      "clinical_freshness_audit": "full source-by-source independent review remains pending"
+      "clinical_freshness_audit": "complete independent source-by-source review remains pending"
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
