@@ -1,27 +1,27 @@
 {
-  "date": "2026-10-20",
-  "id": "ascent",
-  "trial": "ASCENT",
-  "title": "Sacituzumab govitecan versus physician's-choice chemotherapy in previously treated metastatic triple-negative breast cancer",
-  "journal": "Journal of Clinical Oncology; final efficacy analysis",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/38422473/",
-  "site": "Breast Cancer",
-  "discipline": "Medical",
-  "setting": "Relapsed / Refractory",
-  "summary": "Final analysis: median PFS 4.8 vs 1.7 months (HR 0.41, 95% CI 0.33–0.52); median OS 11.8 vs 6.9 months (HR 0.51, 95% CI 0.42–0.63).",
+  "date": "2026-10-21",
+  "id": "rtog-1016",
+  "trial": "NRG/RTOG 1016",
+  "title": "Cisplatin versus cetuximab with definitive radiotherapy for HPV-positive oropharyngeal cancer",
+  "journal": "The Lancet; primary randomized phase III publication",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/30449625/",
+  "site": "Head and Neck Cancer",
+  "discipline": "Radiation",
+  "setting": "Definitive / Curative",
+  "summary": "Five-year OS was 84.6% with cisplatin versus 77.9% with cetuximab; cetuximab-vs-cisplatin HR 1.45 (95% CI 1.03–2.05), p=0.0163. Cetuximab failed the prespecified non-inferiority criterion.",
   "absoluteEffect": {
-    "endpoint": "Median overall survival",
-    "treatmentRate": "11.8 months",
-    "controlRate": "6.9 months",
-    "absoluteBenefit": "Median difference 4.9 months; not an NNT",
-    "nnt": "Not calculated; median OS difference is not a valid NNT",
-    "toxicity": "Grade ≥3 neutropenia about 51%; grade ≥3 diarrhoea about 10%.",
-    "nnh": "Not quantifiable"
+    "endpoint": "5-year overall survival",
+    "treatmentRate": "84.6%",
+    "controlRate": "77.9%",
+    "absoluteBenefit": "6.7 percentage points in favour of cisplatin",
+    "nnt": "Approx. 15 at 5 years, based on rounded fixed-time OS rates",
+    "toxicity": "Moderate-to-severe acute/late toxicity not significantly reduced with cetuximab; cisplatin and cetuximab have distinct toxicity profiles.",
+    "nnh": "Not calculated"
   },
-  "clinicalInterpretation": "Sacituzumab govitecan improves PFS and OS in previously treated metastatic TNBC. Monitor neutropenia and diarrhoea; median survival differences are not NNTs.",
+  "clinicalInterpretation": "In cisplatin-eligible HPV-positive oropharyngeal cancer, cetuximab is not an efficacy-equivalent de-escalation substitute. It failed non-inferiority and showed worse OS.",
   "sources": [
-    "https://pubmed.ncbi.nlm.nih.gov/38422473/",
-    "https://clinicaltrials.gov/study/NCT02574455"
+    "https://pubmed.ncbi.nlm.nih.gov/30449625/",
+    "https://clinicaltrials.gov/study/NCT01302834"
   ],
-  "population": "529 randomized; primary efficacy population 468 patients with relapsed/refractory metastatic TNBC, excluding brain metastases."
+  "population": "849 eligible patients with HPV-positive oropharyngeal squamous cell carcinoma."
 }
