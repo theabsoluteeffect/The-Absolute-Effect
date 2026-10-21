@@ -96,5 +96,33 @@
     "population": "1063 cisplatin-eligible patients with operable muscle-invasive bladder cancer",
     "summary": "Perioperative durvalumab with neoadjuvant gemcitabine-cisplatin followed by cystectomy and adjuvant durvalumab improved 24-month event-free survival from 59.8% to 67.8% and overall survival from 75.2% to 82.2%.",
     "criticalReview": "NIAGARA is a phase III perioperative immunotherapy trial with dual primary efficacy endpoints and a key controlled OS endpoint. The absolute effects are an 8-point improvement in 24-month EFS (NNT 13) and a 7-point improvement in 24-month OS (NNT 15). Grade 3–4 treatment-related adverse events were similar between groups (40.6% vs 40.9%)."
+  },
+  {
+    "date": "2026-10-20",
+    "id": "ascent",
+    "trial": "ASCENT",
+    "title": "Sacituzumab govitecan versus physician's-choice chemotherapy in previously treated metastatic triple-negative breast cancer",
+    "journal": "Journal of Clinical Oncology; final efficacy analysis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+    "site": "Breast Cancer",
+    "discipline": "Medical",
+    "setting": "Relapsed / Refractory",
+    "summary": "Final analysis: median PFS 4.8 vs 1.7 months (HR 0.41, 95% CI 0.33–0.52); median OS 11.8 vs 6.9 months (HR 0.51, 95% CI 0.42–0.63).",
+    "absoluteEffect": {
+      "endpoint": "Median overall survival",
+      "treatmentRate": "11.8 months",
+      "controlRate": "6.9 months",
+      "absoluteBenefit": "Median difference 4.9 months; not an NNT",
+      "nnt": "Not calculated; median OS difference is not a valid NNT",
+      "toxicity": "Grade ≥3 neutropenia about 51%; grade ≥3 diarrhoea about 10%.",
+      "nnh": "Not quantifiable"
+    },
+    "clinicalInterpretation": "Sacituzumab govitecan improves PFS and OS in previously treated metastatic TNBC. Monitor neutropenia and diarrhoea; median survival differences are not NNTs.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+      "https://clinicaltrials.gov/study/NCT02574455"
+    ],
+    "population": "529 randomized; primary efficacy population 468 patients with relapsed/refractory metastatic TNBC, excluding brain metastases.",
+    "archiveNote": "Full prior Trial-of-the-Day analysis preserved when rotated on 2026-10-21."
   }
 ]
