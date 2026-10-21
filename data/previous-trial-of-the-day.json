@@ -1,32 +1,28 @@
 {
-  "date": "2026-10-14",
-  "id": "ev-303",
-  "trial": "EV-303 / KEYNOTE-905",
-  "title": "Perioperative enfortumab vedotin plus pembrolizumab for cisplatin-ineligible muscle-invasive bladder cancer",
-  "journal": "New England Journal of Medicine",
-  "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2511674",
-  "site": "Bladder Cancer",
+  "date": "2026-10-20",
+  "id": "ascent",
+  "trial": "ASCENT",
+  "title": "Sacituzumab govitecan versus physician's-choice chemotherapy in previously treated metastatic triple-negative breast cancer",
+  "journal": "Journal of Clinical Oncology; final efficacy analysis",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+  "site": "Breast Cancer",
   "discipline": "Medical",
-  "setting": "Perioperative treatment",
-  "summary": "Two-year EFS was 74.7% vs 39.4%; two-year OS was 79.7% vs 63.1%; pCR was 57.1% vs 8.6%. EFS HR 0.40 (95% CI 0.28–0.57); OS HR 0.50 (95% CI 0.33–0.74).",
+  "setting": "Relapsed / Refractory",
+  "summary": "Final analysis: median PFS 4.8 vs 1.7 months (HR 0.41, 95% CI 0.33–0.52); median OS 11.8 vs 6.9 months (HR 0.51, 95% CI 0.42–0.63).",
   "absoluteEffect": {
-    "endpoint": "2-year event-free survival",
-    "treatmentRate": "74.7%",
-    "controlRate": "39.4%",
-    "absoluteBenefit": "35.3 percentage points",
-    "nnt": "≈3, based on 2-year EFS",
-    "additionalEndpoint": {
-      "endpoint": "2-year overall survival",
-      "treatmentRate": "79.7%",
-      "controlRate": "63.1%",
-      "absoluteBenefit": "16.6 percentage points",
-      "nnt": "≈7, based on 2-year OS"
-    }
+    "endpoint": "Median overall survival",
+    "treatmentRate": "11.8 months",
+    "controlRate": "6.9 months",
+    "absoluteBenefit": "Median difference 4.9 months; not an NNT",
+    "nnt": "Not calculated; median OS difference is not a valid NNT",
+    "toxicity": "Grade ≥3 neutropenia about 51%; grade ≥3 diarrhoea about 10%.",
+    "nnh": "Not quantifiable"
   },
-  "clinicalInterpretation": "Major perioperative advance for cisplatin-ineligible MIBC; interpret pCR alongside EFS/OS and treatment burden. Do not conflate with EV-304 in cisplatin-eligible disease or NIAGARA.",
-  "archiveNote": "Permanent page already exists at trial-pages/ev-303/; do not create a duplicate archive entry.",
+  "clinicalInterpretation": "Sacituzumab govitecan improves PFS and OS in previously treated metastatic TNBC. Monitor neutropenia and diarrhoea; median survival differences are not NNTs.",
   "sources": [
-    "https://www.nejm.org/doi/full/10.1056/NEJMoa2511674",
-    "https://clinicaltrials.gov/"
-  ]
+    "https://pubmed.ncbi.nlm.nih.gov/38422473/",
+    "https://clinicaltrials.gov/study/NCT02574455"
+  ],
+  "population": "529 randomized; primary efficacy population 468 patients with relapsed/refractory metastatic TNBC, excluding brain metastases.",
+  "archiveNote": "Current Trial of the Day rotated to NRG/RTOG 1016 on 2026-10-21."
 }
