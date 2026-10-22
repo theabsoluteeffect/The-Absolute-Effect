@@ -1,0 +1,155 @@
+[
+  {
+    "id": "adriatic",
+    "trial": "ADRIATIC",
+    "site": "Small Cell Lung Cancer",
+    "discipline": "Medical",
+    "source": "trial-pages/adriatic/",
+    "aliases": [
+      "ADRIATIC trial",
+      "NCT03703297"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "esopec",
+    "trial": "ESOPEC",
+    "site": "Esophageal Cancer",
+    "discipline": "Medical",
+    "source": "trial-pages/esopec/",
+    "aliases": [
+      "ESOPEC trial",
+      "NCT02509286"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "opra",
+    "trial": "OPRA",
+    "site": "Rectal Cancer",
+    "discipline": "Radiation",
+    "source": "trial-pages/opra/",
+    "aliases": [
+      "OPRA trial",
+      "NCT02008656"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "atomic",
+    "trial": "ATOMIC",
+    "site": "Colon Cancer",
+    "discipline": "Medical",
+    "source": "trial-pages/atomic/",
+    "aliases": [
+      "ATOMIC trial",
+      "NCT02912559"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "strass",
+    "trial": "STRASS / EORTC-62092",
+    "site": "Retroperitoneal Sarcoma",
+    "discipline": "Radiation",
+    "source": "trial-pages/strass/",
+    "aliases": [
+      "STRASS trial",
+      "EORTC-62092",
+      "NCT01344018"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "himalaya",
+    "trial": "HIMALAYA / STRIDE",
+    "site": "Hepatocellular Carcinoma",
+    "discipline": "Medical",
+    "source": "trial-pages/himalaya/",
+    "aliases": [
+      "HIMALAYA trial",
+      "STRIDE regimen",
+      "NCT03298451"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "gog-258",
+    "trial": "GOG-258",
+    "site": "Endometrial Cancer",
+    "discipline": "Medical",
+    "source": "trial-pages/gog-258/",
+    "aliases": [
+      "GOG-258",
+      "NCT00942357"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "portec-3",
+    "trial": "PORTEC-3",
+    "site": "Endometrial Cancer",
+    "discipline": "Radiation",
+    "source": "trial-pages/portec-3/",
+    "aliases": [
+      "PORTEC-3",
+      "NCT00411138"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "gog-249",
+    "trial": "GOG-249",
+    "site": "Endometrial Cancer",
+    "discipline": "Radiation",
+    "source": "trial-pages/gog-249/",
+    "aliases": [
+      "GOG-249",
+      "NCT00807768"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  },
+  {
+    "id": "jcog1007",
+    "trial": "JCOG1007 / iPACS",
+    "site": "Colorectal Cancer",
+    "discipline": "Surgical",
+    "source": "trial-pages/jcog1007/",
+    "aliases": [
+      "JCOG1007",
+      "iPACS",
+      "jRCTs031180096"
+    ],
+    "qualityCheckDate": "2026-10-22",
+    "uploadStatus": "uploaded",
+    "fullClinicalFreshnessAudit": "pending",
+    "outcomeVisualizationBrowserQA": "pending"
+  }
+]
