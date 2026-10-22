@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 4,
-  "last_quality_check": "2026-10-21",
+  "last_quality_check": "2026-10-22",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,28 +19,28 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 246,
+    "permanent_trial_pages": 256,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 246,
+    "total_unique_trials": 256,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-21",
+    "daily_batch_uploaded": "2026-10-22",
     "new_trials_added_today": [
-      "KEYNOTE-048",
-      "NRG/RTOG 1016",
-      "KEYNOTE-826",
-      "SOLO-1 / GOG 3004",
-      "PAOLA-1 / ENGOT-ov25",
-      "RUBY / ENGOT-EN6-NSGO",
-      "LION",
-      "FOxTROT",
-      "KEYNOTE-177",
-      "KEYNOTE-054 / EORTC 1325-MG"
+      "ADRIATIC",
+      "ESOPEC",
+      "OPRA",
+      "ATOMIC",
+      "STRASS / EORTC-62092",
+      "HIMALAYA / STRIDE",
+      "GOG-258",
+      "PORTEC-3",
+      "GOG-249",
+      "JCOG1007 / iPACS"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -62,7 +62,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-21",
+    "last_full_reconciliation": "2026-10-22",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -89,13 +89,13 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-21",
+    "last_quality_check": "2026-10-22",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-10-21",
-      "id": "rtog-1016",
-      "trial": "NRG/RTOG 1016"
+      "date": "2026-10-22",
+      "id": "himalaya",
+      "trial": "HIMALAYA / STRIDE"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -199,13 +199,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-20",
-      "id": "ascent",
-      "trial": "ASCENT"
+      "date": "2026-10-21",
+      "id": "rtog-1016",
+      "trial": "NRG/RTOG 1016"
     },
-    "trial_of_day_records_reconciled_on": "2026-10-21",
-    "trial_of_day_current_id": "rtog-1016",
-    "trial_of_day_previous_id": "ascent",
+    "trial_of_day_records_reconciled_on": "2026-10-22",
+    "trial_of_day_current_id": "himalaya",
+    "trial_of_day_previous_id": "rtog-1016",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -226,9 +226,9 @@
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
-    "batch_date": "2026-10-20",
-    "quality_check_date": "2026-10-20",
-    "daily_batch_upload_verified_on": "2026-10-15",
+    "batch_date": "2026-10-22",
+    "quality_check_date": "2026-10-22",
+    "daily_batch_upload_verified_on": "2026-10-22",
     "live_main_branch_verification": {
       "date": "2026-10-20",
       "main_commit": "449e2cd13c6a551ed8d75c6122b6e76f4b40c47b",
@@ -475,10 +475,18 @@
     },
     "uk_abc02_alias_reconciled": "2026-10-20",
     "candidate_duplicate_audit": {
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "candidates": 10,
-      "roster_or_page_duplicates": 0,
-      "status": "PASS"
+      "roster_duplicates": 0,
+      "canonical_page_duplicates": 0,
+      "prior_daily_proposals_checked": true,
+      "exclusions": [
+        "SHAPE",
+        "KEYNOTE-A18",
+        "CheckMate 816",
+        "LAURA: existing standalone pages found during second-pass audit"
+      ],
+      "decision": "PASS after replacing existing page studies with GOG-258, PORTEC-3, GOG-249 and JCOG1007"
     }
   },
   "trials": [
@@ -4216,6 +4224,169 @@
       ],
       "freshness_review_status": "primary source linked; full current-guideline and follow-up audit pending",
       "outcome_visual_review_status": "numeric outcome visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "adriatic",
+      "trial": "ADRIATIC",
+      "site": "Small Cell Lung Cancer",
+      "discipline": "Medical",
+      "setting": "Definitive / Curative",
+      "question": "Consolidation durvalumab after chemoradiotherapy in limited-stage SCLC",
+      "source": "trial-pages/adriatic/",
+      "path": "trial-pages/adriatic/",
+      "aliases": [
+        "ADRIATIC trial",
+        "NCT03703297"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "esopec",
+      "trial": "ESOPEC",
+      "site": "Esophageal Cancer",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Perioperative",
+      "question": "Perioperative FLOT versus CROSS chemoradiotherapy for resectable esophageal adenocarcinoma",
+      "source": "trial-pages/esopec/",
+      "path": "trial-pages/esopec/",
+      "aliases": [
+        "ESOPEC trial",
+        "NCT02509286"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "opra",
+      "trial": "OPRA",
+      "site": "Rectal Cancer",
+      "discipline": "Radiation",
+      "setting": "Locally Advanced",
+      "question": "Induction versus consolidation sequencing of total neoadjuvant therapy for organ preservation",
+      "source": "trial-pages/opra/",
+      "path": "trial-pages/opra/",
+      "aliases": [
+        "OPRA trial",
+        "NCT02008656"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "atomic",
+      "trial": "ATOMIC",
+      "site": "Colon Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Atezolizumab plus adjuvant FOLFOX for resected stage III dMMR colon cancer",
+      "source": "trial-pages/atomic/",
+      "path": "trial-pages/atomic/",
+      "aliases": [
+        "ATOMIC trial",
+        "NCT02912559"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "strass",
+      "trial": "STRASS / EORTC-62092",
+      "site": "Retroperitoneal Sarcoma",
+      "discipline": "Radiation",
+      "setting": "Localized / Resectable",
+      "question": "Preoperative radiotherapy plus surgery versus surgery alone",
+      "source": "trial-pages/strass/",
+      "path": "trial-pages/strass/",
+      "aliases": [
+        "STRASS trial",
+        "EORTC-62092",
+        "NCT01344018"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "himalaya",
+      "trial": "HIMALAYA / STRIDE",
+      "site": "Hepatocellular Carcinoma",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "Tremelimumab plus durvalumab versus sorafenib in untreated unresectable HCC",
+      "source": "trial-pages/himalaya/",
+      "path": "trial-pages/himalaya/",
+      "aliases": [
+        "HIMALAYA trial",
+        "STRIDE regimen",
+        "NCT03298451"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "gog-258",
+      "trial": "GOG-258",
+      "site": "Endometrial Cancer",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Chemoradiotherapy versus chemotherapy alone after surgery for stage III–IVA endometrial cancer",
+      "source": "trial-pages/gog-258/",
+      "path": "trial-pages/gog-258/",
+      "aliases": [
+        "GOG-258",
+        "NCT00942357"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "portec-3",
+      "trial": "PORTEC-3",
+      "site": "Endometrial Cancer",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Adjuvant chemoradiotherapy versus pelvic RT alone in high-risk endometrial cancer",
+      "source": "trial-pages/portec-3/",
+      "path": "trial-pages/portec-3/",
+      "aliases": [
+        "PORTEC-3",
+        "NCT00411138"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "gog-249",
+      "trial": "GOG-249",
+      "site": "Endometrial Cancer",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Vaginal brachytherapy plus chemotherapy versus pelvic RT in high-intermediate/high-risk early endometrial cancer",
+      "source": "trial-pages/gog-249/",
+      "path": "trial-pages/gog-249/",
+      "aliases": [
+        "GOG-249",
+        "NCT00807768"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "jcog1007",
+      "trial": "JCOG1007 / iPACS",
+      "site": "Colorectal Cancer",
+      "discipline": "Surgical",
+      "setting": "Advanced / Metastatic",
+      "question": "Primary tumour resection versus chemotherapy alone for asymptomatic unresectable stage IV colorectal cancer",
+      "source": "trial-pages/jcog1007/",
+      "path": "trial-pages/jcog1007/",
+      "aliases": [
+        "JCOG1007",
+        "iPACS",
+        "jRCTs031180096"
+      ],
+      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
     }
   ]
 }
