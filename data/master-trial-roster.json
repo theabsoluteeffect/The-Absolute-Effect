@@ -30,18 +30,7 @@
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-10-22",
-    "new_trials_added_today": [
-      "ADRIATIC",
-      "ESOPEC",
-      "OPRA",
-      "ATOMIC",
-      "STRASS / EORTC-62092",
-      "HIMALAYA / STRIDE",
-      "GOG-258",
-      "PORTEC-3",
-      "GOG-249",
-      "JCOG1007 / iPACS"
-    ],
+    "new_trials_added_today": [],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
       "MRC TE19 / EORTC 30982",
@@ -480,13 +469,19 @@
       "roster_duplicates": 0,
       "canonical_page_duplicates": 0,
       "prior_daily_proposals_checked": true,
-      "exclusions": [
+      "excluded_existing_pages": [
         "SHAPE",
         "KEYNOTE-A18",
         "CheckMate 816",
-        "LAURA: existing standalone pages found during second-pass audit"
+        "LAURA"
       ],
-      "decision": "PASS after replacing existing page studies with GOG-258, PORTEC-3, GOG-249 and JCOG1007"
+      "replacement_candidates": [
+        "GOG-258",
+        "PORTEC-3",
+        "GOG-249",
+        "JCOG1007"
+      ],
+      "status": "PASS"
     }
   },
   "trials": [
