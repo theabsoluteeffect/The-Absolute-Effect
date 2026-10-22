@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "id": "himalaya",
+  "trial": "HIMALAYA / STRIDE",
+  "title": "Tremelimumab plus durvalumab versus sorafenib in unresectable hepatocellular carcinoma",
+  "journal": "HIMALAYA phase III primary report",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=HIMALAYA+STRIDE+durvalumab+tremelimumab+HCC",
+  "site": "Hepatocellular Carcinoma",
+  "discipline": "Medical",
+  "setting": "Advanced / Metastatic",
+  "population": "1,171 patients randomized among STRIDE, durvalumab monotherapy and sorafenib.",
+  "treatment": "STRIDE: tremelimumab 300 mg once plus durvalumab 1,500 mg every 4 weeks.",
+  "comparator": "Sorafenib 400 mg twice daily.",
+  "summary": "Median OS 16.43 vs 13.77 months; HR 0.78 (96.02% CI 0.65–0.93; p=0.0035). Three-year OS 30.7% vs 20.2%. Grade 3–4 treatment-emergent AEs 50.5% vs 52.4%.",
+  "absoluteEffect": {
+    "endpoint": "Overall survival",
+    "horizon": "3 years",
+    "treatmentRate": "30.7%",
+    "controlRate": "20.2%",
+    "absoluteBenefit": "10.5 percentage points",
+    "nnt": "Approx. 10 at 3 years from fixed-time OS rates, not from median survival.",
+    "nnh": "Not calculated without defensible fixed-time excess-harm risk."
+  },
+  "clinicalInterpretation": "STRIDE showed OS superiority over sorafenib. Durvalumab monotherapy was non-inferior, not superior, for OS; these comparisons must not be conflated. Consider hepatic reserve and immune-mediated hepatitis.",
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/?term=HIMALAYA+STRIDE+durvalumab+tremelimumab+HCC",
+    "https://clinicaltrials.gov/study/NCT03298451"
+  ]
+}
