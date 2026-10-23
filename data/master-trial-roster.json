@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 4,
-  "last_quality_check": "2026-10-22",
+  "last_quality_check": "2026-10-23",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -4387,6 +4387,142 @@
       ],
       "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
       "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "rosel",
+      "trial": "ROSEL",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#rosel",
+      "path": "trial-pages/lung-sabr-definitions/#rosel",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "In operable stage IA NSCLC, how did SABR compare with surgery, and what peripheral eligibility and dose schedules did ROSEL use?",
+      "aliases": [
+        "Trial of Either Surgery or Stereotactic Radiotherapy for Early Stage (IA) Lung Cancer",
+        "ROSEL trial"
+      ],
+      "setting_detail": "Operable stage IA · Early-stage NSCLC",
+      "freshness_review_status": "source_linked; protocol-level OAR limits need full protocol verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "stars-randomized",
+      "trial": "STARS (randomized CyberKnife trial)",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#stars",
+      "path": "trial-pages/lung-sabr-definitions/#stars",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For operable stage I NSCLC, how did CyberKnife SABR compare with surgical resection?",
+      "aliases": [
+        "Randomized Study to Compare CyberKnife to Surgical Resection in Stage I NSCLC",
+        "STARS randomized trial"
+      ],
+      "setting_detail": "Operable stage I · Early-stage NSCLC",
+      "freshness_review_status": "source_linked; distinguish from later single-arm STARS study",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "chisel",
+      "trial": "CHISEL / TROG 09.02",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#chisel",
+      "path": "trial-pages/lung-sabr-definitions/#chisel",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For peripheral stage I NSCLC, does SABR improve local control compared with standard radiotherapy?",
+      "aliases": [
+        "TROG 09.02",
+        "SABR versus standard radiotherapy in stage I NSCLC"
+      ],
+      "setting_detail": "Peripheral stage I · Medically inoperable or unsuitable for surgery",
+      "freshness_review_status": "primary publication linked; protocol-level OAR limits need full protocol verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "space",
+      "trial": "SPACE",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#space",
+      "path": "trial-pages/lung-sabr-definitions/#space",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "In medically inoperable stage I NSCLC, how did SBRT compare with conventional radiotherapy?",
+      "aliases": [
+        "SPACE trial lung cancer",
+        "Stereotactic body radiotherapy versus conventional radiotherapy in stage I NSCLC"
+      ],
+      "setting_detail": "Medically inoperable stage I · Early-stage NSCLC",
+      "freshness_review_status": "primary literature link provided; exact protocol eligibility and OAR limits require source verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "lustre",
+      "trial": "LUSTRE",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#lustre",
+      "path": "trial-pages/lung-sabr-definitions/#lustre",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For medically inoperable stage I NSCLC, does risk-adapted SBRT improve local control compared with hypofractionated radiotherapy?",
+      "aliases": [
+        "LUSTRE phase III trial",
+        "Stereotactic vs hypofractionated radiotherapy for inoperable stage I NSCLC"
+      ],
+      "setting_detail": "Medically inoperable stage I · Peripheral and central disease",
+      "freshness_review_status": "primary publication linked; supplement contains planning details",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "hilus",
+      "trial": "HILUS",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#hilus",
+      "path": "trial-pages/lung-sabr-definitions/#hilus",
+      "discipline": "Radiation Oncology",
+      "setting": "Ultracentral / Definitive",
+      "question": "What are the efficacy and severe toxicity outcomes of 56 Gy in 8 fractions for ultracentral lung tumours?",
+      "aliases": [
+        "HILUS trial",
+        "Nordic multicenter phase II ultracentral lung SBRT study"
+      ],
+      "setting_detail": "Ultracentral tumours ≤1 cm from proximal bronchial tree",
+      "freshness_review_status": "primary publication linked; verify constraints against full protocol before clinical use",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "rtog-0813",
+      "trial": "RTOG 0813",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#rtog0813",
+      "path": "trial-pages/lung-sabr-definitions/#rtog0813",
+      "discipline": "Radiation Oncology",
+      "setting": "Central / Definitive",
+      "question": "What dose-escalation and safety outcomes were observed with 50–60 Gy in 5 fractions for central NSCLC?",
+      "aliases": [
+        "NRG Oncology RTOG 0813",
+        "RTOG-0813"
+      ],
+      "setting_detail": "Medically inoperable central T1–T2 N0M0 NSCLC",
+      "freshness_review_status": "guideline/review source linked; verify all numerical limits in original protocol",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "sunset",
+      "trial": "SUNSET",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#sunset",
+      "path": "trial-pages/lung-sabr-definitions/#sunset",
+      "discipline": "Radiation Oncology",
+      "setting": "Ultracentral / Definitive",
+      "question": "Can 60 Gy in 8 fractions with a capped hotspot treat ultracentral NSCLC with acceptable toxicity?",
+      "aliases": [
+        "SUNSET ultracentral lung trial",
+        "60 Gy in 8 fractions ultracentral NSCLC"
+      ],
+      "setting_detail": "Ultracentral NSCLC; endobronchial invasion excluded",
+      "freshness_review_status": "primary publication and OAR review linked; verify exact constraints against full protocol",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
     }
   ]
 }
