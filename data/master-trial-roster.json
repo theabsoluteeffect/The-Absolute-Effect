@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 4,
-  "last_quality_check": "2026-10-22",
+  "last_quality_check": "2026-10-23",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,17 +19,17 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 256,
+    "permanent_trial_pages": 268,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 256,
+    "total_unique_trials": 268,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-22",
+    "daily_batch_uploaded": "2026-10-23",
     "new_trials_added_today": [
       "ADRIATIC",
       "ESOPEC",
@@ -40,7 +40,19 @@
       "GOG-258",
       "PORTEC-3",
       "GOG-249",
-      "JCOG1007 / iPACS"
+      "JCOG1007 / iPACS",
+      "ROSEL",
+      "STARS (randomized CyberKnife trial)",
+      "CHISEL / TROG 09.02",
+      "SPACE",
+      "LUSTRE",
+      "HILUS",
+      "RTOG 0813",
+      "SUNSET",
+      "evERA Breast Cancer",
+      "CheckMate 76K",
+      "POUT",
+      "Lung ART"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -62,7 +74,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-22",
+    "last_full_reconciliation": "2026-10-23",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -89,7 +101,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-22",
+    "last_quality_check": "2026-10-23",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -487,7 +499,9 @@
         "LAURA"
       ],
       "status": "PASS"
-    }
+    },
+    "lung_sabr_reference_added": "2026-10-23",
+    "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced."
   },
   "trials": [
     {
@@ -4387,6 +4401,205 @@
       ],
       "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
       "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "rosel",
+      "trial": "ROSEL",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#rosel",
+      "path": "trial-pages/lung-sabr-definitions/#rosel",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "In operable stage IA NSCLC, how did SABR compare with surgery, and what peripheral eligibility and dose schedules did ROSEL use?",
+      "aliases": [
+        "Trial of Either Surgery or Stereotactic Radiotherapy for Early Stage (IA) Lung Cancer",
+        "ROSEL trial"
+      ],
+      "setting_detail": "Operable stage IA · Early-stage NSCLC",
+      "freshness_review_status": "source_linked; protocol-level OAR limits need full protocol verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "stars-randomized",
+      "trial": "STARS (randomized CyberKnife trial)",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#stars",
+      "path": "trial-pages/lung-sabr-definitions/#stars",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For operable stage I NSCLC, how did CyberKnife SABR compare with surgical resection?",
+      "aliases": [
+        "Randomized Study to Compare CyberKnife to Surgical Resection in Stage I NSCLC",
+        "STARS randomized trial"
+      ],
+      "setting_detail": "Operable stage I · Early-stage NSCLC",
+      "freshness_review_status": "source_linked; distinguish from later single-arm STARS study",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "chisel",
+      "trial": "CHISEL / TROG 09.02",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#chisel",
+      "path": "trial-pages/lung-sabr-definitions/#chisel",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For peripheral stage I NSCLC, does SABR improve local control compared with standard radiotherapy?",
+      "aliases": [
+        "TROG 09.02",
+        "SABR versus standard radiotherapy in stage I NSCLC"
+      ],
+      "setting_detail": "Peripheral stage I · Medically inoperable or unsuitable for surgery",
+      "freshness_review_status": "primary publication linked; protocol-level OAR limits need full protocol verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "space",
+      "trial": "SPACE",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#space",
+      "path": "trial-pages/lung-sabr-definitions/#space",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "In medically inoperable stage I NSCLC, how did SBRT compare with conventional radiotherapy?",
+      "aliases": [
+        "SPACE trial lung cancer",
+        "Stereotactic body radiotherapy versus conventional radiotherapy in stage I NSCLC"
+      ],
+      "setting_detail": "Medically inoperable stage I · Early-stage NSCLC",
+      "freshness_review_status": "primary literature link provided; exact protocol eligibility and OAR limits require source verification",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "lustre",
+      "trial": "LUSTRE",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#lustre",
+      "path": "trial-pages/lung-sabr-definitions/#lustre",
+      "discipline": "Radiation Oncology",
+      "setting": "Early-stage / Definitive",
+      "question": "For medically inoperable stage I NSCLC, does risk-adapted SBRT improve local control compared with hypofractionated radiotherapy?",
+      "aliases": [
+        "LUSTRE phase III trial",
+        "Stereotactic vs hypofractionated radiotherapy for inoperable stage I NSCLC"
+      ],
+      "setting_detail": "Medically inoperable stage I · Peripheral and central disease",
+      "freshness_review_status": "primary publication linked; supplement contains planning details",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "hilus",
+      "trial": "HILUS",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#hilus",
+      "path": "trial-pages/lung-sabr-definitions/#hilus",
+      "discipline": "Radiation Oncology",
+      "setting": "Ultracentral / Definitive",
+      "question": "What are the efficacy and severe toxicity outcomes of 56 Gy in 8 fractions for ultracentral lung tumours?",
+      "aliases": [
+        "HILUS trial",
+        "Nordic multicenter phase II ultracentral lung SBRT study"
+      ],
+      "setting_detail": "Ultracentral tumours ≤1 cm from proximal bronchial tree",
+      "freshness_review_status": "primary publication linked; verify constraints against full protocol before clinical use",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "rtog-0813",
+      "trial": "RTOG 0813",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#rtog0813",
+      "path": "trial-pages/lung-sabr-definitions/#rtog0813",
+      "discipline": "Radiation Oncology",
+      "setting": "Central / Definitive",
+      "question": "What dose-escalation and safety outcomes were observed with 50–60 Gy in 5 fractions for central NSCLC?",
+      "aliases": [
+        "NRG Oncology RTOG 0813",
+        "RTOG-0813"
+      ],
+      "setting_detail": "Medically inoperable central T1–T2 N0M0 NSCLC",
+      "freshness_review_status": "guideline/review source linked; verify all numerical limits in original protocol",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "sunset",
+      "trial": "SUNSET",
+      "site": "Early-stage NSCLC",
+      "source": "trial-pages/lung-sabr-definitions/#sunset",
+      "path": "trial-pages/lung-sabr-definitions/#sunset",
+      "discipline": "Radiation Oncology",
+      "setting": "Ultracentral / Definitive",
+      "question": "Can 60 Gy in 8 fractions with a capped hotspot treat ultracentral NSCLC with acceptable toxicity?",
+      "aliases": [
+        "SUNSET ultracentral lung trial",
+        "60 Gy in 8 fractions ultracentral NSCLC"
+      ],
+      "setting_detail": "Ultracentral NSCLC; endobronchial invasion excluded",
+      "freshness_review_status": "primary publication and OAR review linked; verify exact constraints against full protocol",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "evera",
+      "trial": "evERA Breast Cancer",
+      "site": "Breast Cancer",
+      "source": "trial-pages/evera/",
+      "path": "trial-pages/evera/",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "question": "After CDK4/6 inhibitor progression in ER-positive/HER2-negative advanced breast cancer, does giredestrant plus everolimus improve outcomes compared with standard endocrine therapy plus everolimus?",
+      "aliases": [
+        "evERA",
+        "NCT05306340"
+      ],
+      "freshness_review_status": "provisional page; verify final publication against primary source",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "checkmate-76k",
+      "trial": "CheckMate 76K",
+      "site": "Melanoma",
+      "source": "trial-pages/checkmate-76k/",
+      "path": "trial-pages/checkmate-76k/",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "After resection of stage IIB/C melanoma, does adjuvant nivolumab improve recurrence-free survival versus placebo?",
+      "aliases": [
+        "CA209-76K",
+        "NCT04099251"
+      ],
+      "freshness_review_status": "source-linked; verify current follow-up",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "pout",
+      "trial": "POUT",
+      "site": "Upper Tract Urothelial Carcinoma",
+      "source": "trial-pages/pout/",
+      "path": "trial-pages/pout/",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "After nephroureterectomy for high-risk upper tract urothelial carcinoma, does adjuvant gemcitabine-platinum improve disease-free survival versus surveillance?",
+      "aliases": [
+        "POUT trial",
+        "NCT01993979"
+      ],
+      "freshness_review_status": "source-linked; verify long-term endpoints",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "lung-art",
+      "trial": "Lung ART",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/lung-art/",
+      "path": "trial-pages/lung-art/",
+      "discipline": "Radiation Oncology",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After complete resection of pN2 NSCLC, does postoperative radiotherapy improve disease-free survival compared with no PORT?",
+      "aliases": [
+        "EORTC 22055-08053"
+      ],
+      "freshness_review_status": "source-linked; verify endpoints against primary publication",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
     }
   ]
 }
