@@ -19,17 +19,17 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 256,
+    "permanent_trial_pages": 264,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 256,
+    "total_unique_trials": 264,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-22",
+    "daily_batch_uploaded": "2026-10-23",
     "new_trials_added_today": [
       "ADRIATIC",
       "ESOPEC",
@@ -40,7 +40,15 @@
       "GOG-258",
       "PORTEC-3",
       "GOG-249",
-      "JCOG1007 / iPACS"
+      "JCOG1007 / iPACS",
+      "ROSEL",
+      "STARS (randomized CyberKnife trial)",
+      "CHISEL / TROG 09.02",
+      "SPACE",
+      "LUSTRE",
+      "HILUS",
+      "RTOG 0813",
+      "SUNSET"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -62,7 +70,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-22",
+    "last_full_reconciliation": "2026-10-23",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -89,7 +97,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-22",
+    "last_quality_check": "2026-10-23",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -487,7 +495,9 @@
         "LAURA"
       ],
       "status": "PASS"
-    }
+    },
+    "lung_sabr_reference_added": "2026-10-23",
+    "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced."
   },
   "trials": [
     {
