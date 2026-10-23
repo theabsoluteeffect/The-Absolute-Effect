@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 264,
+    "permanent_trial_pages": 268,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 264,
+    "total_unique_trials": 268,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -48,7 +48,11 @@
       "LUSTRE",
       "HILUS",
       "RTOG 0813",
-      "SUNSET"
+      "SUNSET",
+      "evERA Breast Cancer",
+      "CheckMate 76K",
+      "POUT",
+      "Lung ART"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -4532,6 +4536,69 @@
       ],
       "setting_detail": "Ultracentral NSCLC; endobronchial invasion excluded",
       "freshness_review_status": "primary publication and OAR review linked; verify exact constraints against full protocol",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "evera",
+      "trial": "evERA Breast Cancer",
+      "site": "Breast Cancer",
+      "source": "trial-pages/evera/",
+      "path": "trial-pages/evera/",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "question": "After CDK4/6 inhibitor progression in ER-positive/HER2-negative advanced breast cancer, does giredestrant plus everolimus improve outcomes compared with standard endocrine therapy plus everolimus?",
+      "aliases": [
+        "evERA",
+        "NCT05306340"
+      ],
+      "freshness_review_status": "provisional page; verify final publication against primary source",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "checkmate-76k",
+      "trial": "CheckMate 76K",
+      "site": "Melanoma",
+      "source": "trial-pages/checkmate-76k/",
+      "path": "trial-pages/checkmate-76k/",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "After resection of stage IIB/C melanoma, does adjuvant nivolumab improve recurrence-free survival versus placebo?",
+      "aliases": [
+        "CA209-76K",
+        "NCT04099251"
+      ],
+      "freshness_review_status": "source-linked; verify current follow-up",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "pout",
+      "trial": "POUT",
+      "site": "Upper Tract Urothelial Carcinoma",
+      "source": "trial-pages/pout/",
+      "path": "trial-pages/pout/",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant",
+      "question": "After nephroureterectomy for high-risk upper tract urothelial carcinoma, does adjuvant gemcitabine-platinum improve disease-free survival versus surveillance?",
+      "aliases": [
+        "POUT trial",
+        "NCT01993979"
+      ],
+      "freshness_review_status": "source-linked; verify long-term endpoints",
+      "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "lung-art",
+      "trial": "Lung ART",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/lung-art/",
+      "path": "trial-pages/lung-art/",
+      "discipline": "Radiation Oncology",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After complete resection of pN2 NSCLC, does postoperative radiotherapy improve disease-free survival compared with no PORT?",
+      "aliases": [
+        "EORTC 22055-08053"
+      ],
+      "freshness_review_status": "source-linked; verify endpoints against primary publication",
       "outcome_visual_review_status": "pending_automated_and_source_review"
     }
   ]
