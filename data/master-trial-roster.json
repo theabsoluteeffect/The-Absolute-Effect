@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 268,
+    "permanent_trial_pages": 278,
     "unique_archive_additions": 3,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 268,
+    "total_unique_trials": 278,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -52,7 +52,17 @@
       "evERA Breast Cancer",
       "CheckMate 76K",
       "POUT",
-      "Lung ART"
+      "Lung ART",
+      "KEYNOTE-671",
+      "monarchE",
+      "KEYNOTE-689",
+      "FLAURA2",
+      "KEYNOTE-811",
+      "DUO-E / GOG-3041 / ENGOT-EN10",
+      "MIRASOL",
+      "CheckMate 8HW",
+      "FRESCO-2",
+      "PEARLS / KEYNOTE-091"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -105,9 +115,9 @@
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-10-22",
-      "id": "himalaya",
-      "trial": "HIMALAYA / STRIDE"
+      "date": "2026-10-23",
+      "id": "keynote-671",
+      "trial": "KEYNOTE-671"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -132,13 +142,13 @@
     },
     "clinical_freshness_audit_started": "2026-10-13",
     "clinical_freshness_audit_completed": false,
-    "clinical_freshness_audit_status": "IN PROGRESS — targeted dated context and source-linked outcomes updated for the 16 previously flagged manual-review pages and selected concise pages; full source-by-source review of all 173 trials remains incomplete.",
+    "clinical_freshness_audit_status": "Source-linked outcome summaries added on 23 October; current guideline review and browser-rendered QA remain pending.",
     "clinical_currency_guard_added": "2026-10-13",
     "clinical_currency_guard": "Cloudflare Pages middleware injects a non-prescriptive clinical currency note into trial-page HTML routes.",
     "outcome_visual_qa_rule_updated": "2026-10-13",
     "outcome_visual_qa_implementation": "Shared renderer now inserts a visible manual-review flag when it cannot detect a supported numeric endpoint; the new trial-page template does the same for future pages. A repository-wide script audits every rostered canonical page and every HTML file under trial-pages, and a GitHub Actions workflow runs it on trial-page/template/renderer/roster changes. The heuristic report is not a substitute for source-level clinical verification.",
     "outcome_visual_page_by_page_audit_completed": false,
-    "outcome_visual_page_by_page_audit_status": "10 newly added pages have source-grounded outcome visual markup and the renderer script; static source check passed. Browser-rendered verification remains pending.",
+    "outcome_visual_page_by_page_audit_status": "Ten pages added on 23 October have source links and outcome-visual markup; static structure verified. Browser-rendered QA and full independent clinical freshness review remain pending.",
     "outcome_visual_review_started": "2026-10-13",
     "outcome_visual_review_total": 183,
     "outcome_visual_review_status": "Automated structural checks passed for all 183 canonical roster pages. The 10 pages added on 15 October contain outcome visual markup; browser-rendered QA and full source-level clinical review remain pending.",
@@ -211,13 +221,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-21",
-      "id": "rtog-1016",
-      "trial": "NRG/RTOG 1016"
+      "date": "2026-10-22",
+      "id": "himalaya",
+      "trial": "HIMALAYA / STRIDE"
     },
-    "trial_of_day_records_reconciled_on": "2026-10-22",
-    "trial_of_day_current_id": "himalaya",
-    "trial_of_day_previous_id": "rtog-1016",
+    "trial_of_day_records_reconciled_on": "2026-10-23",
+    "trial_of_day_current_id": "keynote-671",
+    "trial_of_day_previous_id": "himalaya",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -239,8 +249,8 @@
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
     "batch_date": "2026-10-22",
-    "quality_check_date": "2026-10-22",
-    "daily_batch_upload_verified_on": "2026-10-22",
+    "quality_check_date": "2026-10-23",
+    "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
       "date": "2026-10-20",
       "main_commit": "449e2cd13c6a551ed8d75c6122b6e76f4b40c47b",
@@ -501,7 +511,18 @@
       "status": "PASS"
     },
     "lung_sabr_reference_added": "2026-10-23",
-    "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced."
+    "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced.",
+    "last_trial_batch_duplicate_audit": {
+      "date": "2026-10-23",
+      "candidates": 10,
+      "roster_duplicates": 0,
+      "canonical_page_duplicates": 0,
+      "excluded_existing_page": [
+        "POUT — already in roster and permanent trial pages; not duplicated"
+      ],
+      "replacement_for_existing_candidate": "PEARLS / KEYNOTE-091",
+      "status": "PASS after checking main-branch roster and recursive trial-page tree"
+    }
   },
   "trials": [
     {
@@ -4600,6 +4621,188 @@
       ],
       "freshness_review_status": "source-linked; verify endpoints against primary publication",
       "outcome_visual_review_status": "pending_automated_and_source_review"
+    },
+    {
+      "id": "keynote-671",
+      "trial": "KEYNOTE-671",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology / Perioperative",
+      "setting": "Perioperative",
+      "setting_detail": "Perioperative",
+      "question": "In resectable stage II–IIIB (N2) NSCLC, does perioperative pembrolizumab plus platinum-doublet chemotherapy improve outcomes over chemotherapy and surgery alone?",
+      "source": "trial-pages/keynote-671/",
+      "path": "trial-pages/keynote-671/",
+      "aliases": [
+        "KEYNOTE-671",
+        "3475-671",
+        "NCT03425643"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "monarch-e",
+      "trial": "monarchE",
+      "site": "Breast Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "question": "In high-risk node-positive HR-positive/HER2-negative early breast cancer, does 2 years of abemaciclib added to endocrine therapy improve long-term outcomes?",
+      "source": "trial-pages/monarch-e/",
+      "path": "trial-pages/monarch-e/",
+      "aliases": [
+        "monarchE",
+        "monarch E",
+        "NCT03155997"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-689",
+      "trial": "KEYNOTE-689",
+      "site": "Head and Neck Cancer",
+      "discipline": "Medical Oncology / Surgical Oncology",
+      "setting": "Perioperative",
+      "setting_detail": "Perioperative",
+      "question": "In resectable locally advanced HNSCC, does perioperative pembrolizumab added to surgery and risk-adapted postoperative therapy improve event-free survival?",
+      "source": "trial-pages/keynote-689/",
+      "path": "trial-pages/keynote-689/",
+      "aliases": [
+        "KEYNOTE-689",
+        "MK-689",
+        "NCT03765918"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "flaura2",
+      "trial": "FLAURA2",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "question": "In first-line EGFR-mutated advanced NSCLC, does osimertinib plus platinum–pemetrexed improve survival over osimertinib alone?",
+      "source": "trial-pages/flaura2/",
+      "path": "trial-pages/flaura2/",
+      "aliases": [
+        "FLAURA2",
+        "FLAURA 2",
+        "NCT04035486"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-811",
+      "trial": "KEYNOTE-811",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "question": "In first-line HER2-positive advanced gastric/GEJ adenocarcinoma with PD-L1 CPS ≥1, does pembrolizumab added to trastuzumab and chemotherapy improve outcomes?",
+      "source": "trial-pages/keynote-811/",
+      "path": "trial-pages/keynote-811/",
+      "aliases": [
+        "KEYNOTE-811",
+        "MK-3475-811",
+        "NCT03615326"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "duo-e",
+      "trial": "DUO-E / GOG-3041 / ENGOT-EN10",
+      "site": "Endometrial Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "question": "In advanced or recurrent endometrial cancer, does adding durvalumab with or without maintenance olaparib to carboplatin–paclitaxel improve PFS?",
+      "source": "trial-pages/duo-e/",
+      "path": "trial-pages/duo-e/",
+      "aliases": [
+        "DUO-E",
+        "GOG-3041",
+        "ENGOT-EN10",
+        "NCT04269200"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "mirasol",
+      "trial": "MIRASOL",
+      "site": "Ovarian Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Relapsed / Refractory",
+      "question": "In FRα-high platinum-resistant ovarian cancer, does mirvetuximab soravtansine improve outcomes versus investigator-choice chemotherapy?",
+      "source": "trial-pages/mirasol/",
+      "path": "trial-pages/mirasol/",
+      "aliases": [
+        "MIRASOL",
+        "NCT04209855",
+        "mirvetuximab soravtansine phase III"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-8hw",
+      "trial": "CheckMate 8HW",
+      "site": "Colorectal Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "question": "In MSI-H/dMMR metastatic colorectal cancer, how does nivolumab plus ipilimumab compare with chemotherapy in first line and nivolumab alone across lines?",
+      "source": "trial-pages/checkmate-8hw/",
+      "path": "trial-pages/checkmate-8hw/",
+      "aliases": [
+        "CheckMate 8HW",
+        "CM-8HW",
+        "NCT04008030"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "fresco-2",
+      "trial": "FRESCO-2",
+      "site": "Colorectal Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Relapsed / Refractory",
+      "question": "In heavily pretreated refractory metastatic colorectal cancer, does fruquintinib improve overall survival versus placebo plus best supportive care?",
+      "source": "trial-pages/fresco-2/",
+      "path": "trial-pages/fresco-2/",
+      "aliases": [
+        "FRESCO-2",
+        "NCT04322539",
+        "fruquintinib refractory mCRC"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-091",
+      "trial": "PEARLS / KEYNOTE-091",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "question": "After complete resection of stage IB–IIIA NSCLC, does adjuvant pembrolizumab improve disease-free survival compared with placebo?",
+      "source": "trial-pages/keynote-091/",
+      "path": "trial-pages/keynote-091/",
+      "aliases": [
+        "PEARLS",
+        "KEYNOTE-091",
+        "KEYNOTE 091",
+        "NCT02504372"
+      ],
+      "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
     }
   ]
 }
