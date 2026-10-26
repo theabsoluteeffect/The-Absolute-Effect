@@ -272,8 +272,21 @@
     "quality_check_date": "2026-10-26",
     "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
-      "status": "pending until merge and re-read",
-      "date": "2026-10-26"
+      "date": "2026-10-26",
+      "main_commit": "c15f5365dd7f883b82930290ce13ac4905bf00f6",
+      "roster_entries": 298,
+      "new_pages_found": 20,
+      "new_pages_with_shared_renderer": 20,
+      "new_pages_with_primary_source_links": 20,
+      "new_pages_with_outcome_visualization": 20,
+      "evidence_index_links_added": 20,
+      "daily_evidence_records": 20,
+      "archive_count": 11,
+      "current_trial_of_the_day": "krascendo-1",
+      "previous_trial_of_the_day": "keynote-671",
+      "cloudflare_pages_deployment": "success",
+      "outcome_visual_audit": "failure",
+      "note": "Post-merge re-read confirmed all 20 new canonical pages, 20 roster entries, 20 index links, the 20-record daily-evidence manifest, Trial-of-the-Day rotation and archive update. Cloudflare Pages deployment succeeded. The repository-wide outcome-visual audit workflow remains failing; a failure was also present on the pre-change main commit. Section-anchor handling was improved, but the remaining failing condition was not isolated from the available workflow summary. This is not a clinical-validation pass; browser-rendered and full clinical freshness review remain pending."
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
