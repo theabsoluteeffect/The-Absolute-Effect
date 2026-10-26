@@ -1,30 +1,33 @@
 {
-  "date": "2026-10-22",
-  "id": "himalaya",
-  "trial": "HIMALAYA / STRIDE",
-  "title": "Tremelimumab plus durvalumab versus sorafenib in unresectable hepatocellular carcinoma",
-  "journal": "HIMALAYA phase III primary report",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=HIMALAYA+STRIDE+durvalumab+tremelimumab+HCC",
-  "site": "Hepatocellular Carcinoma",
-  "discipline": "Medical",
-  "setting": "Advanced / Metastatic",
-  "population": "1,171 patients randomized among STRIDE, durvalumab monotherapy and sorafenib.",
-  "treatment": "STRIDE: tremelimumab 300 mg once plus durvalumab 1,500 mg every 4 weeks.",
-  "comparator": "Sorafenib 400 mg twice daily.",
-  "summary": "Median OS 16.43 vs 13.77 months; HR 0.78 (96.02% CI 0.65–0.93; p=0.0035). Three-year OS 30.7% vs 20.2%. Grade 3–4 treatment-emergent AEs 50.5% vs 52.4%.",
+  "date": "2026-10-23",
+  "id": "keynote-671",
+  "trial": "KEYNOTE-671",
+  "title": "Five-year outcomes of perioperative pembrolizumab for resectable early-stage NSCLC",
+  "journal": "Annals of Oncology; five-year outcomes report (2026)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42628840/",
+  "site": "Non-Small Cell Lung Cancer",
+  "discipline": "Medical Oncology",
+  "setting": "Perioperative",
+  "population": "797 patients with previously untreated resectable stage II, IIIA or IIIB (N2) NSCLC.",
+  "treatment": "Pembrolizumab 200 mg every 3 weeks for 4 neoadjuvant cycles with platinum-doublet chemotherapy, followed by surgery and up to 13 adjuvant pembrolizumab cycles.",
+  "comparator": "Placebo plus the same chemotherapy, surgery and adjuvant placebo.",
+  "summary": "At five years, EFS was 49.9% vs 26.5% (HR 0.58, 95% CI 0.48–0.69); OS was 64.6% vs 53.6% (HR 0.74, 95% CI 0.59–0.92).",
   "absoluteEffect": {
-    "endpoint": "Overall survival",
-    "horizon": "3 years",
-    "treatmentRate": "30.7%",
-    "controlRate": "20.2%",
-    "absoluteBenefit": "10.5 percentage points",
-    "nnt": "Approx. 10 at 3 years from fixed-time OS rates, not from median survival.",
-    "nnh": "Not calculated without defensible fixed-time excess-harm risk."
+    "endpoint": "5-year event-free survival",
+    "horizon": "5 years",
+    "treatmentRate": "49.9%",
+    "controlRate": "26.5%",
+    "absoluteBenefit": "23.4 percentage points",
+    "nnt": "Approx. 5 at 5 years from fixed-time EFS rates; not calculated from the HR.",
+    "toxicity": "Earlier primary analysis reported grade 3–5 treatment-related AEs of 45% vs 38%; the five-year report described safety as consistent with known profiles.",
+    "nnh": "Not calculated"
   },
-  "clinicalInterpretation": "STRIDE showed OS superiority over sorafenib. Durvalumab monotherapy was non-inferior, not superior, for OS; these comparisons must not be conflated. Consider hepatic reserve and immune-mediated hepatitis.",
+  "clinicalInterpretation": "Five-year results reinforce durable benefit from perioperative pembrolizumab plus chemotherapy in resectable NSCLC. The studied population was fit for platinum-based chemotherapy and surgery; do not extrapolate to unresectable disease or adjuvant-only regimens.",
   "sources": [
-    "https://pubmed.ncbi.nlm.nih.gov/?term=HIMALAYA+STRIDE+durvalumab+tremelimumab+HCC",
-    "https://clinicaltrials.gov/study/NCT03298451"
+    "https://pubmed.ncbi.nlm.nih.gov/42628840/",
+    "https://clinicaltrials.gov/study/NCT03425643"
   ],
-  "archiveNote": "Previous Trial of the Day after 23 October 2026 rotation."
+  "NCT": "NCT03425643",
+  "criticalReview": "KEYNOTE-671 provides mature five-year evidence for perioperative pembrolizumab plus platinum-doublet chemotherapy in resectable stage II–IIIB(N2) NSCLC. Five-year EFS was 49.9% vs 26.5% and OS 64.6% vs 53.6%. This is a substantial benefit in a selected resectable, platinum-fit population, balanced against added immune-mediated and chemotherapy-related toxicity and the need to complete surgery and adjuvant treatment. Do not extrapolate to unresectable disease or adjuvant-only regimens.",
+  "archiveNote": "Preserved as the previous Trial of the Day during the 2026-10-26 rotation; full existing analysis retained."
 }
