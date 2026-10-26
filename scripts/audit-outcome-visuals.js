@@ -64,7 +64,12 @@ for (const t of (roster.trials || [])) {
   const rel = raw.endsWith('.html') ? raw : path.posix.join(raw.replace(/\/$/, ''), 'index.html');
   const full = path.join(root, rel);
   if (!fs.existsSync(full)) missingRosterPages.push({ id: t.id, trial: t.trial, path: rel });
-  else rosterPages.push({ id: t.id, trial: t.trial, ...inspect(full) });
+  else {
+    const pageAudit = inspect(full);
+    // Fragment-addressed roster entries are sections within a shared reference page, not standalone trial pages.
+    if (rawWithFragment.includes('#') && !pageAudit.hasRenderer && pageAudit.status === 'renderer_missing') pageAudit.status = 'section_reference';
+    rosterPages.push({ id: t.id, trial: t.trial, ...pageAudit });
+  }
 }
 const allPages = canonicalHtmlFiles.map(inspect);
 const report = {
