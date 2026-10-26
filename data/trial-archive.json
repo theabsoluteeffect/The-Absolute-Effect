@@ -182,5 +182,39 @@
       "https://clinicaltrials.gov/study/NCT03298451"
     ],
     "archiveNote": "Full Trial-of-the-Day record preserved when rotated on 23 October 2026."
+  },
+  {
+    "date": "2026-10-23",
+    "id": "keynote-671",
+    "trial": "KEYNOTE-671",
+    "title": "Five-year outcomes of perioperative pembrolizumab for resectable early-stage NSCLC",
+    "journal": "Annals of Oncology; five-year outcomes report (2026)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42628840/",
+    "site": "Non-Small Cell Lung Cancer",
+    "discipline": "Medical Oncology",
+    "setting": "Perioperative",
+    "population": "797 patients with previously untreated resectable stage II, IIIA or IIIB (N2) NSCLC.",
+    "treatment": "Pembrolizumab 200 mg every 3 weeks for 4 neoadjuvant cycles with platinum-doublet chemotherapy, followed by surgery and up to 13 adjuvant pembrolizumab cycles.",
+    "comparator": "Placebo plus the same chemotherapy, surgery and adjuvant placebo.",
+    "summary": "At five years, EFS was 49.9% vs 26.5% (HR 0.58, 95% CI 0.48–0.69); OS was 64.6% vs 53.6% (HR 0.74, 95% CI 0.59–0.92).",
+    "absoluteEffect": {
+      "endpoint": "5-year event-free survival",
+      "horizon": "5 years",
+      "treatmentRate": "49.9%",
+      "controlRate": "26.5%",
+      "absoluteBenefit": "23.4 percentage points",
+      "nnt": "Approx. 5 at 5 years from fixed-time EFS rates; not calculated from the HR.",
+      "toxicity": "Earlier primary analysis reported grade 3–5 treatment-related AEs of 45% vs 38%; the five-year report described safety as consistent with known profiles.",
+      "nnh": "Not calculated"
+    },
+    "clinicalInterpretation": "Five-year results reinforce durable benefit from perioperative pembrolizumab plus chemotherapy in resectable NSCLC. The studied population was fit for platinum-based chemotherapy and surgery; do not extrapolate to unresectable disease or adjuvant-only regimens.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/42628840/",
+      "https://clinicaltrials.gov/study/NCT03425643"
+    ],
+    "NCT": "NCT03425643",
+    "criticalReview": "KEYNOTE-671 provides mature five-year evidence for perioperative pembrolizumab plus platinum-doublet chemotherapy in resectable stage II–IIIB(N2) NSCLC. Five-year EFS was 49.9% vs 26.5% and OS 64.6% vs 53.6%. This is a substantial benefit in a selected resectable, platinum-fit population, balanced against added immune-mediated and chemotherapy-related toxicity and the need to complete surgery and adjuvant treatment. Do not extrapolate to unresectable disease or adjuvant-only regimens.",
+    "archiveNote": "Preserved as the previous Trial of the Day during the 2026-10-26 rotation; full existing analysis retained.",
+    "archiveDate": "2026-10-26"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 4,
-  "last_quality_check": "2026-10-23",
+  "version": 5,
+  "last_quality_check": "2026-10-26",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,17 +19,17 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 278,
-    "unique_archive_additions": 3,
+    "permanent_trial_pages": 298,
+    "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 278,
+    "total_unique_trials": 298,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-23",
+    "daily_batch_uploaded": "2026-10-26",
     "new_trials_added_today": [
       "ADRIATIC",
       "ESOPEC",
@@ -62,7 +62,27 @@
       "MIRASOL",
       "CheckMate 8HW",
       "FRESCO-2",
-      "PEARLS / KEYNOTE-091"
+      "PEARLS / KEYNOTE-091",
+      "GCIG INTERLACE",
+      "DYNAMIC",
+      "CheckMate 648",
+      "KEYNOTE-775 / Study 309",
+      "INTerpath-001 (V940 / mRNA-4157)",
+      "IMpower133",
+      "PACE-B",
+      "MARS 2",
+      "proPSMA",
+      "GOG-0218",
+      "KRASCENDO 1",
+      "VOLGA",
+      "SERENA-6",
+      "INSEMA",
+      "BREAKWATER",
+      "NAPOLI-3",
+      "DESTINY-Gastric04",
+      "PORTEC-4a",
+      "VIALE-A",
+      "TRIANGLE"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -84,7 +104,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-23",
+    "last_full_reconciliation": "2026-10-26",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -111,13 +131,13 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-23",
+    "last_quality_check": "2026-10-26",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-10-23",
-      "id": "keynote-671",
-      "trial": "KEYNOTE-671"
+      "date": "2026-10-26",
+      "id": "krascendo-1",
+      "trial": "KRASCENDO 1"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -221,13 +241,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-22",
-      "id": "himalaya",
-      "trial": "HIMALAYA / STRIDE"
+      "date": "2026-10-23",
+      "id": "keynote-671",
+      "trial": "KEYNOTE-671"
     },
-    "trial_of_day_records_reconciled_on": "2026-10-23",
-    "trial_of_day_current_id": "keynote-671",
-    "trial_of_day_previous_id": "himalaya",
+    "trial_of_day_records_reconciled_on": "2026-10-26",
+    "trial_of_day_current_id": "krascendo-1",
+    "trial_of_day_previous_id": "keynote-671",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -248,26 +268,12 @@
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
-    "batch_date": "2026-10-22",
-    "quality_check_date": "2026-10-23",
+    "batch_date": "2026-10-26",
+    "quality_check_date": "2026-10-26",
     "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
-      "date": "2026-10-20",
-      "main_commit": "449e2cd13c6a551ed8d75c6122b6e76f4b40c47b",
-      "canonical_roster_entries": 227,
-      "canonical_pages_found": 227,
-      "missing_new_pages": 0,
-      "new_pages_with_renderer": 25,
-      "new_pages_with_source_links": 25,
-      "new_pages_with_outcome_visualization": 25,
-      "evidence_index_links_added": 25,
-      "daily_evidence_records": 25,
-      "current_trial_of_the_day": "ascent",
-      "previous_trial_of_the_day": "ev-303",
-      "daily_atlas_workflow": "success",
-      "outcome_visualization_audit": "PASS_WITH_REPOSITORY_WIDE_REVIEW_FLAGS",
-      "browser_rendered_visual_qa": "pending",
-      "clinical_freshness_audit": "complete independent source-by-source review remains pending"
+      "status": "pending until merge and re-read",
+      "date": "2026-10-26"
     },
     "individual_trial_addition": {
       "date": "2026-10-18",
@@ -415,23 +421,38 @@
       ]
     },
     "last_upload_batch": {
-      "date": "2026-10-20",
+      "date": "2026-10-26",
+      "previous_candidate_batch_date": "2026-10-25",
       "newTrials": [
-        "ASCOT (JCOG1202)",
-        "BILCAP",
-        "Japanese BT22",
-        "ABC-06",
-        "ClarIDHy",
-        "FIGHT-202 (pemigatinib)",
-        "MyPathway (HER2-positive biliary tract cohort)",
-        "ROAR (BRAF V600E biliary tract cohort)",
-        "KEYNOTE-158 (biliary tract cohort)"
+        "GCIG INTERLACE",
+        "DYNAMIC",
+        "CheckMate 648",
+        "KEYNOTE-775 / Study 309",
+        "INTerpath-001 (V940 / mRNA-4157)",
+        "IMpower133",
+        "PACE-B",
+        "MARS 2",
+        "proPSMA",
+        "GOG-0218",
+        "KRASCENDO 1",
+        "VOLGA",
+        "SERENA-6",
+        "INSEMA",
+        "BREAKWATER",
+        "NAPOLI-3",
+        "DESTINY-Gastric04",
+        "PORTEC-4a",
+        "VIALE-A",
+        "TRIANGLE"
       ],
-      "excludedDuplicates": [
-        "ABC-02 — existing permanent trial page retained",
-        "TOPAZ-1 — existing permanent trial page retained"
-      ],
-      "notes": "Added nine distinct BTC trial/cohort pages after checking master roster and trial-page tree. Pemigatinib is represented by FIGHT-202 in previously treated advanced disease; no adjuvant pemigatinib trial was identified in the source check."
+      "duplicateAudit": {
+        "rosterDuplicates": 0,
+        "canonicalPageDuplicates": 0,
+        "archiveDuplicates": 0,
+        "dailyEvidenceDuplicates": 0,
+        "pivotExcluded": true
+      },
+      "notes": "User-approved combined upload of ten candidates proposed on 25 October and ten proposed on 26 October 2026. One roster record per underlying study. Source-linked pages created; browser-rendered QA and full independent guideline/freshness review remain pending."
     },
     "user_requested_existing_trial_not_duplicated": [
       "KEYNOTE-522"
@@ -513,15 +534,21 @@
     "lung_sabr_reference_added": "2026-10-23",
     "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced.",
     "last_trial_batch_duplicate_audit": {
-      "date": "2026-10-23",
-      "candidates": 10,
+      "date": "2026-10-26",
+      "candidates": 20,
       "roster_duplicates": 0,
       "canonical_page_duplicates": 0,
-      "excluded_existing_page": [
-        "POUT — already in roster and permanent trial pages; not duplicated"
-      ],
-      "replacement_for_existing_candidate": "PEARLS / KEYNOTE-091",
-      "status": "PASS after checking main-branch roster and recursive trial-page tree"
+      "archive_duplicates": 0,
+      "daily_evidence_duplicates": 0,
+      "prior_daily_evidence_checked": true,
+      "status": "PASS",
+      "note": "Checked main roster, recursive trial-page tree, evidence index, archive, current/previous Trial of the Day and all 16 daily-evidence JSON files. PIVOT excluded."
+    },
+    "batch_counts": {
+      "new_studies": 20,
+      "previous_batch": 10,
+      "current_batch": 10,
+      "total_after_upload": 298
     }
   },
   "trials": [
@@ -4803,6 +4830,366 @@
       ],
       "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
       "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "interlace",
+      "trial": "GCIG INTERLACE",
+      "site": "Cervical Cancer",
+      "source": "trial-pages/interlace/",
+      "discipline": "Medical",
+      "setting": "Definitive / Curative",
+      "setting_detail": "Definitive / Curative",
+      "path": "trial-pages/interlace/",
+      "question": "See the GCIG INTERLACE evidence page for the study-specific clinical question.",
+      "aliases": [
+        "GCIG INTERLACE",
+        "interlace",
+        "NCT01566240"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "dynamic",
+      "trial": "DYNAMIC",
+      "site": "Colorectal Cancer",
+      "source": "trial-pages/dynamic/",
+      "discipline": "Biomarker",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "path": "trial-pages/dynamic/",
+      "question": "See the DYNAMIC evidence page for the study-specific clinical question.",
+      "aliases": [
+        "DYNAMIC",
+        "dynamic",
+        "ACTRN12615000381583"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-648",
+      "trial": "CheckMate 648",
+      "site": "Oesophageal Cancer",
+      "source": "trial-pages/checkmate-648/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/checkmate-648/",
+      "question": "See the CheckMate 648 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "CheckMate 648",
+        "checkmate-648",
+        "NCT03143153"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-775",
+      "trial": "KEYNOTE-775 / Study 309",
+      "site": "Endometrial Cancer",
+      "source": "trial-pages/keynote-775/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Relapsed / Refractory",
+      "path": "trial-pages/keynote-775/",
+      "question": "See the KEYNOTE-775 / Study 309 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "KEYNOTE-775 / Study 309",
+        "keynote-775",
+        "NCT03517449"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "interpath-001",
+      "trial": "INTerpath-001 (V940 / mRNA-4157)",
+      "site": "Melanoma",
+      "source": "trial-pages/interpath-001/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "path": "trial-pages/interpath-001/",
+      "question": "See the INTerpath-001 (V940 / mRNA-4157) evidence page for the study-specific clinical question.",
+      "aliases": [
+        "INTerpath-001 (V940 / mRNA-4157)",
+        "interpath-001",
+        "NCT05933577"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "impower133",
+      "trial": "IMpower133",
+      "site": "Small Cell Lung Cancer",
+      "source": "trial-pages/impower133/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/impower133/",
+      "question": "See the IMpower133 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "IMpower133",
+        "impower133",
+        "NCT02763579"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "pace-b",
+      "trial": "PACE-B",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/pace-b/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Curative",
+      "setting_detail": "Definitive / Curative",
+      "path": "trial-pages/pace-b/",
+      "question": "See the PACE-B evidence page for the study-specific clinical question.",
+      "aliases": [
+        "PACE-B",
+        "pace-b",
+        "NCT01584258"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "mars-2",
+      "trial": "MARS 2",
+      "site": "Pleural Mesothelioma",
+      "source": "trial-pages/mars-2/",
+      "discipline": "Surgical",
+      "setting": "Locally Advanced / Resectable",
+      "setting_detail": "Locally Advanced / Resectable",
+      "path": "trial-pages/mars-2/",
+      "question": "See the MARS 2 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "MARS 2",
+        "mars-2",
+        "ISRCTN95595114"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "propsma",
+      "trial": "proPSMA",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/propsma/",
+      "discipline": "Imaging",
+      "setting": "Diagnosis / Staging / Risk Assessment",
+      "setting_detail": "Diagnosis / Staging / Risk Assessment",
+      "path": "trial-pages/propsma/",
+      "question": "See the proPSMA evidence page for the study-specific clinical question.",
+      "aliases": [
+        "proPSMA",
+        "propsma",
+        "NCT02919111"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "gog-0218",
+      "trial": "GOG-0218",
+      "site": "Ovarian Cancer",
+      "source": "trial-pages/gog-0218/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "path": "trial-pages/gog-0218/",
+      "question": "See the GOG-0218 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "GOG-0218",
+        "gog-0218",
+        "NCT00262847"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "krascendo-1",
+      "trial": "KRASCENDO 1",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/krascendo-1/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Relapsed / Refractory",
+      "path": "trial-pages/krascendo-1/",
+      "question": "See the KRASCENDO 1 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "KRASCENDO 1",
+        "krascendo-1",
+        "NCT06497556"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "volga",
+      "trial": "VOLGA",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/volga/",
+      "discipline": "Medical",
+      "setting": "Perioperative",
+      "setting_detail": "Perioperative",
+      "path": "trial-pages/volga/",
+      "question": "See the VOLGA evidence page for the study-specific clinical question.",
+      "aliases": [
+        "VOLGA",
+        "volga",
+        "NCT04960709"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "serena-6",
+      "trial": "SERENA-6",
+      "site": "Breast Cancer",
+      "source": "trial-pages/serena-6/",
+      "discipline": "Biomarker",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/serena-6/",
+      "question": "See the SERENA-6 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "SERENA-6",
+        "serena-6",
+        "NCT04964934"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "insema",
+      "trial": "INSEMA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/insema/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Curative",
+      "setting_detail": "Definitive / Curative",
+      "path": "trial-pages/insema/",
+      "question": "See the INSEMA evidence page for the study-specific clinical question.",
+      "aliases": [
+        "INSEMA",
+        "insema",
+        "NCT02466737"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "breakwater",
+      "trial": "BREAKWATER",
+      "site": "Colorectal Cancer",
+      "source": "trial-pages/breakwater/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/breakwater/",
+      "question": "See the BREAKWATER evidence page for the study-specific clinical question.",
+      "aliases": [
+        "BREAKWATER",
+        "breakwater",
+        "NCT04607421"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "napoli-3",
+      "trial": "NAPOLI-3",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/napoli-3/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/napoli-3/",
+      "question": "See the NAPOLI-3 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "NAPOLI-3",
+        "napoli-3",
+        "NCT04083235"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "destiny-gastric04",
+      "trial": "DESTINY-Gastric04",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/destiny-gastric04/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Relapsed / Refractory",
+      "path": "trial-pages/destiny-gastric04/",
+      "question": "See the DESTINY-Gastric04 evidence page for the study-specific clinical question.",
+      "aliases": [
+        "DESTINY-Gastric04",
+        "destiny-gastric04",
+        "NCT04704934"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "portec-4a",
+      "trial": "PORTEC-4a",
+      "site": "Endometrial Cancer",
+      "source": "trial-pages/portec-4a/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant / Postoperative",
+      "path": "trial-pages/portec-4a/",
+      "question": "See the PORTEC-4a evidence page for the study-specific clinical question.",
+      "aliases": [
+        "PORTEC-4a",
+        "portec-4a",
+        "NCT03469674"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "viale-a",
+      "trial": "VIALE-A",
+      "site": "Acute Myeloid Leukaemia",
+      "source": "trial-pages/viale-a/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Advanced / Metastatic",
+      "path": "trial-pages/viale-a/",
+      "question": "See the VIALE-A evidence page for the study-specific clinical question.",
+      "aliases": [
+        "VIALE-A",
+        "viale-a",
+        "NCT02993523"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "triangle",
+      "trial": "TRIANGLE",
+      "site": "Mantle Cell Lymphoma",
+      "source": "trial-pages/triangle/",
+      "discipline": "Medical",
+      "setting": "Definitive / Curative",
+      "setting_detail": "Definitive / Curative",
+      "path": "trial-pages/triangle/",
+      "question": "See the TRIANGLE evidence page for the study-specific clinical question.",
+      "aliases": [
+        "TRIANGLE",
+        "triangle",
+        "NCT02858258"
+      ],
+      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
+      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
     }
   ]
 }
