@@ -58,7 +58,9 @@ function inspect(file) {
 const rosterPages = [];
 const missingRosterPages = [];
 for (const t of (roster.trials || [])) {
-  const raw = t.path || t.source || `trial-pages/${t.id}/`;
+  const rawWithFragment = t.path || t.source || `trial-pages/${t.id}/`;
+  // A roster entry may point to a section on a shared reference page; strip the fragment only for file existence/inspection.
+  const raw = rawWithFragment.split('#')[0];
   const rel = raw.endsWith('.html') ? raw : path.posix.join(raw.replace(/\/$/, ''), 'index.html');
   const full = path.join(root, rel);
   if (!fs.existsSync(full)) missingRosterPages.push({ id: t.id, trial: t.trial, path: rel });
