@@ -23,7 +23,15 @@
     "trial": "Trial name",
     "refs": "Reference strings",
     "urls": "Reference URLs",
-    "outcomeVisualization": "Required when NNT/NNH cannot be defensibly quantified; use source-reported outcome values only."
+    "outcomeVisualization": "Required when NNT/NNH cannot be defensibly quantified; use source-reported outcome values only.",
+    "setting_detail": "Specific clinical setting preserved beneath a shared setting category.",
+    "aliases": "Acronyms, registry identifiers, alternate names and follow-up publication names for the same underlying study.",
+    "eligibility": "Key trial eligibility criteria; state exclusions and limits to generalizability.",
+    "sample_size": "Randomized and analysed sample sizes, with analysis population specified.",
+    "primary_endpoint": "Protocol-specified primary endpoint and definition.",
+    "follow_up": "Median follow-up and fixed-time endpoint horizon, distinguished.",
+    "freshness_review_status": "Dated current-practice review status and outstanding guideline/follow-up checks.",
+    "outcome_visual_review_status": "Static source-grounded visualization status and browser-rendered QA status."
   },
   "discipline_categories": [
     "Surgical",
@@ -37,6 +45,9 @@
     "Uro-oncology is a tumour-domain descriptor, not a discipline.",
     "Pathology/diagnostic classification studies belong under Biomarker or Imaging according to purpose.",
     "Theranostic studies must be assigned to one of the five disciplines.",
-    "When NNT/NNH cannot be calculated, visualize the strongest source-reported outcome; never invent rates or convert median survival differences to NNT."
-  ]
+    "When NNT/NNH cannot be calculated, visualize the strongest source-reported outcome; never invent rates or convert median survival differences to NNT.",
+    "Roster discipline must be exactly one of the five canonical categories; map legacy specialty labels to one primary discipline.",
+    "A trial's follow-up publications and aliases must not create additional underlying-study entries."
+  ],
+  "version": 2
 }
