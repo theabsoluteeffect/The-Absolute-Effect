@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "id": "sound",
+  "trial": "SOUND",
+  "title": "Omission of axillary surgery in small breast cancer with negative axillary ultrasound",
+  "journal": "JAMA Oncology 2023; primary phase III randomized non-inferiority report",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/37733364/",
+  "site": "Breast Cancer",
+  "discipline": "Surgical",
+  "setting": "Definitive / Local Treatment",
+  "population": "1,463 women enrolled with breast cancer ≤2 cm and negative preoperative axillary ultrasonography; 1,405 in the intention-to-treat analysis. Median age 60 years; median tumour size 1.1 cm; 87.8% ER-positive/HER2-negative.",
+  "treatment": "Sentinel lymph-node biopsy; patients with sentinel-node metastases underwent axillary lymph-node dissection according to the protocol-era standard.",
+  "comparator": "No axillary surgery; breast surgery and adjuvant treatment otherwise based on available clinical and tumour information.",
+  "summary": "Five-year distant disease-free survival was 97.7% with SLNB versus 98.0% without axillary surgery; HR 0.84 (90% CI 0.45–1.54), non-inferiority P=0.02. Log-rank P=0.67. Locoregional relapse 1.7% vs 1.6%; distant metastases 1.8% vs 2.0%.",
+  "absoluteEffect": {
+    "endpoint": "Five-year distant disease-free survival",
+    "horizon": "5 years",
+    "treatmentRate": "98.0% without axillary surgery",
+    "controlRate": "97.7% with SLNB",
+    "absoluteBenefit": "0.3 percentage points in favour of omission",
+    "nnt": "Not assigned: prespecified non-inferiority strategy; observed difference is too small to justify a superiority NNT.",
+    "toxicity": "SLNB adds an operation and risks of seroma, sensory symptoms, shoulder restriction and lymphedema; no single fixed-time comparative grade ≥3 toxicity endpoint supports a defensible NNH.",
+    "nnh": "Not quantifiable"
+  },
+  "clinicalInterpretation": "SOUND supports omission of SLNB in carefully selected women with tumours ≤2 cm and negative axillary ultrasound when the lack of nodal pathology will not change postoperative treatment. This is a non-inferiority result, not superiority, and must not be generalized to patients whose systemic or regional nodal treatment depends on nodal status.",
+  "criticalReview": "The study enrolled 1,463 women but the primary ITT analysis included 1,405. Five-year DDFS was 97.7% with SLNB and 98.0% without axillary surgery; HR 0.84 (90% CI 0.45–1.54), with non-inferiority P=0.02. The protocol was designed with a 2.5% absolute non-inferiority margin. Registration occurred after 492 patients had been randomized; investigators reported no interim data examination before registration. The trial's adjuvant treatment recommendation analysis was not powered to detect small differences. Applicability depends on the postoperative plan not requiring pathological nodal information.",
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/37733364/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/10514873/",
+    "https://clinicaltrials.gov/study/NCT02167490"
+  ],
+  "NCT": "NCT02167490",
+  "aliases": [
+    "SOUND",
+    "Sentinel Node vs Observation After Axillary Ultra-Sound"
+  ],
+  "archiveNote": "Selected as Trial of the Day on 1 November 2026 after approval of the 10-study Breast Cancer batch."
+}
