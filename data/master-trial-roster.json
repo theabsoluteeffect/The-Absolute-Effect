@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 5,
-  "last_quality_check": "2026-10-26",
+  "version": 6,
+  "last_quality_check": "2026-11-01",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,70 +19,28 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 298,
+    "permanent_trial_pages": 308,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 298,
+    "total_unique_trials": 308,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-10-26",
+    "daily_batch_uploaded": "2026-11-01",
     "new_trials_added_today": [
-      "ADRIATIC",
-      "ESOPEC",
-      "OPRA",
-      "ATOMIC",
-      "STRASS / EORTC-62092",
-      "HIMALAYA / STRIDE",
-      "GOG-258",
-      "PORTEC-3",
-      "GOG-249",
-      "JCOG1007 / iPACS",
-      "ROSEL",
-      "STARS (randomized CyberKnife trial)",
-      "CHISEL / TROG 09.02",
-      "SPACE",
-      "LUSTRE",
-      "HILUS",
-      "RTOG 0813",
-      "SUNSET",
-      "evERA Breast Cancer",
-      "CheckMate 76K",
-      "POUT",
-      "Lung ART",
-      "KEYNOTE-671",
-      "monarchE",
-      "KEYNOTE-689",
-      "FLAURA2",
-      "KEYNOTE-811",
-      "DUO-E / GOG-3041 / ENGOT-EN10",
-      "MIRASOL",
-      "CheckMate 8HW",
-      "FRESCO-2",
-      "PEARLS / KEYNOTE-091",
-      "GCIG INTERLACE",
-      "DYNAMIC",
-      "CheckMate 648",
-      "KEYNOTE-775 / Study 309",
-      "INTerpath-001 (V940 / mRNA-4157)",
-      "IMpower133",
-      "PACE-B",
-      "MARS 2",
-      "proPSMA",
-      "GOG-0218",
-      "KRASCENDO 1",
-      "VOLGA",
-      "SERENA-6",
-      "INSEMA",
-      "BREAKWATER",
-      "NAPOLI-3",
-      "DESTINY-Gastric04",
-      "PORTEC-4a",
-      "VIALE-A",
-      "TRIANGLE"
+      "SOUND",
+      "COMICE",
+      "BIG 1-98",
+      "MA.17",
+      "NSABP B-42",
+      "MINDACT",
+      "RAPID",
+      "NSABP B-39 / RTOG 0413",
+      "ELIOT",
+      "EORTC 22881/10882"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -131,13 +89,13 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-10-26",
+    "last_quality_check": "2026-11-01",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-10-26",
-      "id": "krascendo-1",
-      "trial": "KRASCENDO 1"
+      "date": "2026-11-01",
+      "id": "sound",
+      "trial": "SOUND"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -241,13 +199,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-23",
-      "id": "keynote-671",
-      "trial": "KEYNOTE-671"
+      "date": "2026-10-26",
+      "id": "krascendo-1",
+      "trial": "KRASCENDO 1"
     },
     "trial_of_day_records_reconciled_on": "2026-10-26",
-    "trial_of_day_current_id": "krascendo-1",
-    "trial_of_day_previous_id": "keynote-671",
+    "trial_of_day_current_id": "sound",
+    "trial_of_day_previous_id": "krascendo-1",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -269,7 +227,7 @@
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
     "batch_date": "2026-10-26",
-    "quality_check_date": "2026-10-26",
+    "quality_check_date": "2026-11-01",
     "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
       "date": "2026-10-26",
@@ -547,21 +505,20 @@
     "lung_sabr_reference_added": "2026-10-23",
     "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced.",
     "last_trial_batch_duplicate_audit": {
-      "date": "2026-10-26",
-      "candidates": 20,
+      "date": "2026-11-01",
+      "candidates": 10,
       "roster_duplicates": 0,
       "canonical_page_duplicates": 0,
       "archive_duplicates": 0,
       "daily_evidence_duplicates": 0,
       "prior_daily_evidence_checked": true,
       "status": "PASS",
-      "note": "Checked main roster, recursive trial-page tree, evidence index, archive, current/previous Trial of the Day and all 16 daily-evidence JSON files. PIVOT excluded."
+      "note": "Reconciled master roster, complete recursive tree, evidence index, archive, current/previous Trial of the Day and all 17 daily-evidence JSON files. PIVOT excluded; all ten candidates are distinct underlying studies."
     },
     "batch_counts": {
-      "new_studies": 20,
-      "previous_batch": 10,
-      "current_batch": 10,
-      "total_after_upload": 298
+      "new_studies": 10,
+      "previous_total": 298,
+      "total_after_upload": 308
     }
   },
   "trials": [
@@ -4469,7 +4426,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#rosel",
       "path": "trial-pages/lung-sabr-definitions/#rosel",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Early-stage / Definitive",
       "question": "In operable stage IA NSCLC, how did SABR compare with surgery, and what peripheral eligibility and dose schedules did ROSEL use?",
       "aliases": [
@@ -4486,7 +4443,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#stars",
       "path": "trial-pages/lung-sabr-definitions/#stars",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Early-stage / Definitive",
       "question": "For operable stage I NSCLC, how did CyberKnife SABR compare with surgical resection?",
       "aliases": [
@@ -4503,7 +4460,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#chisel",
       "path": "trial-pages/lung-sabr-definitions/#chisel",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Early-stage / Definitive",
       "question": "For peripheral stage I NSCLC, does SABR improve local control compared with standard radiotherapy?",
       "aliases": [
@@ -4520,7 +4477,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#space",
       "path": "trial-pages/lung-sabr-definitions/#space",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Early-stage / Definitive",
       "question": "In medically inoperable stage I NSCLC, how did SBRT compare with conventional radiotherapy?",
       "aliases": [
@@ -4537,7 +4494,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#lustre",
       "path": "trial-pages/lung-sabr-definitions/#lustre",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Early-stage / Definitive",
       "question": "For medically inoperable stage I NSCLC, does risk-adapted SBRT improve local control compared with hypofractionated radiotherapy?",
       "aliases": [
@@ -4554,7 +4511,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#hilus",
       "path": "trial-pages/lung-sabr-definitions/#hilus",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Ultracentral / Definitive",
       "question": "What are the efficacy and severe toxicity outcomes of 56 Gy in 8 fractions for ultracentral lung tumours?",
       "aliases": [
@@ -4571,7 +4528,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#rtog0813",
       "path": "trial-pages/lung-sabr-definitions/#rtog0813",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Central / Definitive",
       "question": "What dose-escalation and safety outcomes were observed with 50–60 Gy in 5 fractions for central NSCLC?",
       "aliases": [
@@ -4588,7 +4545,7 @@
       "site": "Early-stage NSCLC",
       "source": "trial-pages/lung-sabr-definitions/#sunset",
       "path": "trial-pages/lung-sabr-definitions/#sunset",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Ultracentral / Definitive",
       "question": "Can 60 Gy in 8 fractions with a capped hotspot treat ultracentral NSCLC with acceptable toxicity?",
       "aliases": [
@@ -4605,7 +4562,7 @@
       "site": "Breast Cancer",
       "source": "trial-pages/evera/",
       "path": "trial-pages/evera/",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "question": "After CDK4/6 inhibitor progression in ER-positive/HER2-negative advanced breast cancer, does giredestrant plus everolimus improve outcomes compared with standard endocrine therapy plus everolimus?",
       "aliases": [
@@ -4621,7 +4578,7 @@
       "site": "Melanoma",
       "source": "trial-pages/checkmate-76k/",
       "path": "trial-pages/checkmate-76k/",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Adjuvant",
       "question": "After resection of stage IIB/C melanoma, does adjuvant nivolumab improve recurrence-free survival versus placebo?",
       "aliases": [
@@ -4637,7 +4594,7 @@
       "site": "Upper Tract Urothelial Carcinoma",
       "source": "trial-pages/pout/",
       "path": "trial-pages/pout/",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Adjuvant",
       "question": "After nephroureterectomy for high-risk upper tract urothelial carcinoma, does adjuvant gemcitabine-platinum improve disease-free survival versus surveillance?",
       "aliases": [
@@ -4653,7 +4610,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/lung-art/",
       "path": "trial-pages/lung-art/",
-      "discipline": "Radiation Oncology",
+      "discipline": "Radiation",
       "setting": "Adjuvant / Postoperative",
       "question": "After complete resection of pN2 NSCLC, does postoperative radiotherapy improve disease-free survival compared with no PORT?",
       "aliases": [
@@ -4666,7 +4623,7 @@
       "id": "keynote-671",
       "trial": "KEYNOTE-671",
       "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical Oncology / Perioperative",
+      "discipline": "Medical",
       "setting": "Perioperative",
       "setting_detail": "Perioperative",
       "question": "In resectable stage II–IIIB (N2) NSCLC, does perioperative pembrolizumab plus platinum-doublet chemotherapy improve outcomes over chemotherapy and surgery alone?",
@@ -4684,7 +4641,7 @@
       "id": "monarch-e",
       "trial": "monarchE",
       "site": "Breast Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
       "setting_detail": "Adjuvant / Postoperative",
       "question": "In high-risk node-positive HR-positive/HER2-negative early breast cancer, does 2 years of abemaciclib added to endocrine therapy improve long-term outcomes?",
@@ -4702,7 +4659,7 @@
       "id": "keynote-689",
       "trial": "KEYNOTE-689",
       "site": "Head and Neck Cancer",
-      "discipline": "Medical Oncology / Surgical Oncology",
+      "discipline": "Medical",
       "setting": "Perioperative",
       "setting_detail": "Perioperative",
       "question": "In resectable locally advanced HNSCC, does perioperative pembrolizumab added to surgery and risk-adapted postoperative therapy improve event-free survival?",
@@ -4720,7 +4677,7 @@
       "id": "flaura2",
       "trial": "FLAURA2",
       "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "Advanced / Metastatic",
       "question": "In first-line EGFR-mutated advanced NSCLC, does osimertinib plus platinum–pemetrexed improve survival over osimertinib alone?",
@@ -4738,7 +4695,7 @@
       "id": "keynote-811",
       "trial": "KEYNOTE-811",
       "site": "Gastric and Gastroesophageal Junction Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "Advanced / Metastatic",
       "question": "In first-line HER2-positive advanced gastric/GEJ adenocarcinoma with PD-L1 CPS ≥1, does pembrolizumab added to trastuzumab and chemotherapy improve outcomes?",
@@ -4756,7 +4713,7 @@
       "id": "duo-e",
       "trial": "DUO-E / GOG-3041 / ENGOT-EN10",
       "site": "Endometrial Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "Advanced / Metastatic",
       "question": "In advanced or recurrent endometrial cancer, does adding durvalumab with or without maintenance olaparib to carboplatin–paclitaxel improve PFS?",
@@ -4775,7 +4732,7 @@
       "id": "mirasol",
       "trial": "MIRASOL",
       "site": "Ovarian Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Relapsed / Refractory",
       "question": "In FRα-high platinum-resistant ovarian cancer, does mirvetuximab soravtansine improve outcomes versus investigator-choice chemotherapy?",
@@ -4793,7 +4750,7 @@
       "id": "checkmate-8hw",
       "trial": "CheckMate 8HW",
       "site": "Colorectal Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "Advanced / Metastatic",
       "question": "In MSI-H/dMMR metastatic colorectal cancer, how does nivolumab plus ipilimumab compare with chemotherapy in first line and nivolumab alone across lines?",
@@ -4811,7 +4768,7 @@
       "id": "fresco-2",
       "trial": "FRESCO-2",
       "site": "Colorectal Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Relapsed / Refractory",
       "question": "In heavily pretreated refractory metastatic colorectal cancer, does fruquintinib improve overall survival versus placebo plus best supportive care?",
@@ -4829,7 +4786,7 @@
       "id": "keynote-091",
       "trial": "PEARLS / KEYNOTE-091",
       "site": "Non-Small Cell Lung Cancer",
-      "discipline": "Medical Oncology",
+      "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
       "setting_detail": "Adjuvant / Postoperative",
       "question": "After complete resection of stage IB–IIIA NSCLC, does adjuvant pembrolizumab improve disease-free survival compared with placebo?",
@@ -5203,6 +5160,189 @@
       ],
       "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
       "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+    },
+    {
+      "id": "sound",
+      "trial": "SOUND",
+      "site": "Breast Cancer",
+      "source": "trial-pages/sound/",
+      "path": "trial-pages/sound/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Stage I · Axillary staging / surgical de-escalation",
+      "question": "In women with breast cancer ≤2 cm and negative preoperative axillary ultrasound, can axillary surgery be omitted when nodal pathology would not change postoperative treatment?",
+      "aliases": [
+        "SOUND",
+        "Sentinel Node vs Observation After Axillary Ultra-Sound",
+        "NCT02167490"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "comice",
+      "trial": "COMICE",
+      "site": "Breast Cancer",
+      "source": "trial-pages/comice/",
+      "path": "trial-pages/comice/",
+      "discipline": "Imaging",
+      "setting": "Diagnosis / Staging / Risk Assessment",
+      "setting_detail": "Stage I–II · Preoperative breast MRI",
+      "question": "In women with biopsy-proven breast cancer planned for wide local excision, does routine preoperative breast MRI reduce reoperation?",
+      "aliases": [
+        "COMICE",
+        "Comparative Effectiveness of MRI in Breast Cancer",
+        "ISRCTN57474502"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "big-1-98",
+      "trial": "BIG 1-98",
+      "site": "Breast Cancer",
+      "source": "trial-pages/big-1-98/",
+      "path": "trial-pages/big-1-98/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Adjuvant endocrine therapy · Letrozole versus tamoxifen",
+      "question": "In postmenopausal women with hormone-receptor-positive early breast cancer, does adjuvant letrozole improve outcomes compared with tamoxifen?",
+      "aliases": [
+        "BIG 1-98",
+        "BIG 1-98 trial",
+        "NCT00004205"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "ma-17",
+      "trial": "MA.17",
+      "site": "Breast Cancer",
+      "source": "trial-pages/ma-17/",
+      "path": "trial-pages/ma-17/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Extended adjuvant endocrine therapy after five years of tamoxifen",
+      "question": "After approximately five years of adjuvant tamoxifen, does letrozole improve disease-free survival compared with placebo?",
+      "aliases": [
+        "MA.17",
+        "NCIC CTG MA.17",
+        "BIG 1-97/NCIC CTG MA.17",
+        "NCT00003140"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "nsabp-b-42",
+      "trial": "NSABP B-42",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b-42/",
+      "path": "trial-pages/nsabp-b-42/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Extended adjuvant aromatase-inhibitor therapy",
+      "question": "After five years of endocrine therapy, does extended letrozole improve disease-free survival in postmenopausal HR-positive early breast cancer?",
+      "aliases": [
+        "NSABP B-42",
+        "NRG Oncology/NSABP B-42",
+        "NCT00382070"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "mindact",
+      "trial": "MINDACT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/mindact/",
+      "path": "trial-pages/mindact/",
+      "discipline": "Biomarker",
+      "setting": "Diagnosis / Staging / Risk Assessment",
+      "setting_detail": "Genomic risk-guided adjuvant chemotherapy decision",
+      "question": "Can the 70-gene MammaPrint signature identify clinically high-risk patients with low genomic risk who may omit adjuvant chemotherapy?",
+      "aliases": [
+        "MINDACT",
+        "Microarray In Node-negative and 1-3 positive lymph node Disease may Avoid ChemoTherapy",
+        "NCT00433589",
+        "MammaPrint 70-gene signature"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "rapid",
+      "trial": "RAPID",
+      "site": "Breast Cancer",
+      "source": "trial-pages/rapid/",
+      "path": "trial-pages/rapid/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Partial-breast irradiation after breast-conserving surgery",
+      "question": "After breast-conserving surgery for DCIS or node-negative invasive breast cancer, is twice-daily external-beam APBI non-inferior to whole-breast irradiation?",
+      "aliases": [
+        "RAPID",
+        "NCT00282035",
+        "External beam accelerated partial breast irradiation"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "nsabp-b-39-rtog-0413",
+      "trial": "NSABP B-39 / RTOG 0413",
+      "site": "Breast Cancer",
+      "source": "trial-pages/nsabp-b-39-rtog-0413/",
+      "path": "trial-pages/nsabp-b-39-rtog-0413/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Partial-breast versus whole-breast irradiation",
+      "question": "After lumpectomy for stage 0–II breast cancer, does APBI provide local control equivalent to whole-breast irradiation?",
+      "aliases": [
+        "NSABP B-39",
+        "RTOG 0413",
+        "NSABP B-39/RTOG 0413",
+        "NCT00103181"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "eliot",
+      "trial": "ELIOT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/eliot/",
+      "path": "trial-pages/eliot/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Intraoperative electron radiotherapy",
+      "question": "In selected women with early breast cancer, can single-dose electron intraoperative radiotherapy replace postoperative whole-breast irradiation?",
+      "aliases": [
+        "ELIOT",
+        "Electron Intraoperative Radiotherapy",
+        "NCT01849133"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "eortc-22881-10882",
+      "trial": "EORTC 22881/10882",
+      "site": "Breast Cancer",
+      "source": "trial-pages/eortc-22881-10882/",
+      "path": "trial-pages/eortc-22881-10882/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Tumour-bed boost after breast-conserving surgery",
+      "question": "After complete lumpectomy and whole-breast irradiation, does a 16 Gy tumour-bed boost improve local control and what is the fibrosis trade-off?",
+      "aliases": [
+        "EORTC 22881/10882",
+        "EORTC boost versus no boost",
+        "NCT02295033"
+      ],
+      "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
+      "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
     }
   ]
 }
