@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 6,
-  "last_quality_check": "2026-11-01",
+  "version": 7,
+  "last_quality_check": "2026-11-02",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,28 +19,28 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 307,
+    "permanent_trial_pages": 317,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 308,
+    "total_unique_trials": 318,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-11-01",
+    "daily_batch_uploaded": "2026-11-02",
     "new_trials_added_today": [
-      "SOUND",
-      "COMICE",
-      "BIG 1-98",
-      "MA.17",
-      "NSABP B-42",
-      "MINDACT",
-      "RAPID",
-      "NSABP B-39 / RTOG 0413",
-      "ELIOT",
-      "EORTC 22881/10882"
+      "APT — Adjuvant Paclitaxel and Trastuzumab",
+      "TRAIN-2",
+      "BrighTNess",
+      "BCIRG 006",
+      "ExteNET",
+      "ACOSOG Z1071 (Alliance)",
+      "SUPREMO",
+      "MONALEESA-2",
+      "DESTINY-Breast04",
+      "TROPiCS-02"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -62,7 +62,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-10-26",
+    "last_full_reconciliation": "2026-11-02",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -89,13 +89,13 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-11-01",
+    "last_quality_check": "2026-11-02",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-11-01",
-      "id": "sound",
-      "trial": "SOUND"
+      "date": "2026-11-02",
+      "id": "apt",
+      "trial": "APT"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -199,13 +199,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-10-26",
-      "id": "krascendo-1",
-      "trial": "KRASCENDO 1"
+      "date": "2026-11-01",
+      "id": "sound",
+      "trial": "SOUND"
     },
-    "trial_of_day_records_reconciled_on": "2026-10-26",
-    "trial_of_day_current_id": "sound",
-    "trial_of_day_previous_id": "krascendo-1",
+    "trial_of_day_records_reconciled_on": "2026-11-02",
+    "trial_of_day_current_id": "apt",
+    "trial_of_day_previous_id": "sound",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -227,7 +227,7 @@
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
     "batch_date": "2026-10-26",
-    "quality_check_date": "2026-11-01",
+    "quality_check_date": "2026-11-02",
     "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
       "date": "2026-11-01",
@@ -530,6 +530,32 @@
       "new_studies": 10,
       "previous_total": 298,
       "total_after_upload": 308
+    },
+    "archive_count": 13,
+    "daily_evidence_file_count": 19,
+    "daily_evidence_records": 10,
+    "evidence_index_links_added": 10,
+    "new_pages_found": 10,
+    "new_pages_with_shared_renderer": 10,
+    "new_pages_with_primary_source_links": 10,
+    "new_pages_with_explicit_outcome_visualization": 10,
+    "new_pages_with_dated_context": 10,
+    "latest_batch_verification": {
+      "date": "2026-11-02",
+      "base_main_head": "a17c6b70b6a524db67356c3968a26d08d49cf60a",
+      "candidate_count": 10,
+      "duplicate_audit": "PASS",
+      "recursive_tree_entries": 831,
+      "tree_truncated": false,
+      "canonical_pages_before": 307,
+      "canonical_pages_added": 10,
+      "roster_entries_before": 308,
+      "roster_entries_after": 318,
+      "breast_cancer_entries_before": 57,
+      "breast_cancer_entries_after": 67,
+      "all_18_prior_daily_evidence_files_reviewed": true,
+      "static_visualizations_present": true,
+      "browser_rendered_qa": "pending"
     }
   },
   "trials": [
@@ -5354,6 +5380,189 @@
       ],
       "freshness_review_status": "Primary randomized report and selected follow-up publications checked 2026-11-01; full current-guideline freshness audit pending.",
       "outcome_visual_review_status": "Source-grounded static outcome visualization added; browser-rendered QA pending."
+    },
+    {
+      "id": "apt",
+      "trial": "APT — Adjuvant Paclitaxel and Trastuzumab",
+      "site": "Breast Cancer",
+      "source": "trial-pages/apt/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In small, node-negative HER2-positive early breast cancer, can adjuvant weekly paclitaxel plus trastuzumab provide durable disease control with less chemotherapy intensity?",
+      "path": "trial-pages/apt/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage I · Small node-negative HER2-positive breast cancer",
+      "aliases": [
+        "APT",
+        "APT trial",
+        "Adjuvant Paclitaxel and Trastuzumab",
+        "NCT00542451"
+      ]
+    },
+    {
+      "id": "train-2",
+      "trial": "TRAIN-2",
+      "site": "Breast Cancer",
+      "source": "trial-pages/train-2/",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "question": "With dual trastuzumab–pertuzumab blockade in stage II–III HER2-positive breast cancer, can anthracyclines be omitted without compromising response or survival?",
+      "path": "trial-pages/train-2/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage II · Anthracycline omission with dual HER2 blockade",
+      "aliases": [
+        "TRAIN-2",
+        "TRAIN 2",
+        "NCT01996267"
+      ]
+    },
+    {
+      "id": "brightness",
+      "trial": "BrighTNess",
+      "site": "Breast Cancer",
+      "source": "trial-pages/brightness/",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "question": "Does adding carboplatin, with or without veliparib, to neoadjuvant paclitaxel followed by AC improve pCR and long-term outcomes in stage II–III TNBC?",
+      "path": "trial-pages/brightness/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage II · Carboplatin with or without veliparib in TNBC",
+      "aliases": [
+        "BrighTNess",
+        "BrighTNess trial",
+        "NCT02032277"
+      ]
+    },
+    {
+      "id": "bcirg-006",
+      "trial": "BCIRG 006",
+      "site": "Breast Cancer",
+      "source": "trial-pages/bcirg-006/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Does adding trastuzumab to adjuvant chemotherapy improve DFS and OS, and can TCH provide a less cardiotoxic non-anthracycline alternative to AC-TH?",
+      "path": "trial-pages/bcirg-006/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage II · Adjuvant trastuzumab and anthracycline-sparing TCH",
+      "aliases": [
+        "BCIRG 006",
+        "BCIRG-006",
+        "BCIRG006",
+        "NCT00021255"
+      ]
+    },
+    {
+      "id": "extenet",
+      "trial": "ExteNET",
+      "site": "Breast Cancer",
+      "source": "trial-pages/extenet/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After trastuzumab-based adjuvant therapy, does one year of extended neratinib reduce invasive recurrence in HER2-positive early breast cancer?",
+      "path": "trial-pages/extenet/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage II · Extended adjuvant neratinib after trastuzumab",
+      "aliases": [
+        "ExteNET",
+        "ExteNET trial",
+        "NCT00878709"
+      ]
+    },
+    {
+      "id": "acosog-z1071",
+      "trial": "ACOSOG Z1071 (Alliance)",
+      "site": "Breast Cancer",
+      "source": "trial-pages/acosog-z1071/",
+      "discipline": "Surgical",
+      "setting": "Diagnosis / Staging / Risk Assessment",
+      "question": "How reliably does sentinel lymph-node surgery identify residual axillary disease after neoadjuvant chemotherapy in initially node-positive breast cancer?",
+      "path": "trial-pages/acosog-z1071/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage III · Axillary staging after neoadjuvant chemotherapy",
+      "aliases": [
+        "ACOSOG Z1071",
+        "Z1071",
+        "Alliance Z1071",
+        "NCT00881361"
+      ]
+    },
+    {
+      "id": "supremo",
+      "trial": "SUPREMO",
+      "site": "Breast Cancer",
+      "source": "trial-pages/supremo/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After mastectomy and contemporary systemic therapy for intermediate-risk breast cancer, does chest-wall irradiation improve overall survival or reduce recurrence?",
+      "path": "trial-pages/supremo/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Stage III · Chest-wall irradiation after mastectomy in intermediate-risk disease",
+      "aliases": [
+        "SUPREMO",
+        "SUPREMO trial",
+        "ISRCTN61145589"
+      ]
+    },
+    {
+      "id": "monaleesa-2",
+      "trial": "MONALEESA-2",
+      "site": "Breast Cancer",
+      "source": "trial-pages/monaleesa-2/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In first-line HR-positive, HER2-negative advanced breast cancer, does adding ribociclib to letrozole improve PFS and OS?",
+      "path": "trial-pages/monaleesa-2/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Metastatic · First-line CDK4/6 inhibition",
+      "aliases": [
+        "MONALEESA-2",
+        "MONALEESA 2",
+        "NCT01958021"
+      ]
+    },
+    {
+      "id": "destiny-breast04",
+      "trial": "DESTINY-Breast04",
+      "site": "Breast Cancer",
+      "source": "trial-pages/destiny-breast04/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In previously treated HER2-low metastatic breast cancer, does trastuzumab deruxtecan improve PFS and OS compared with physician's-choice chemotherapy?",
+      "path": "trial-pages/destiny-breast04/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Metastatic · HER2-low antibody–drug conjugate",
+      "aliases": [
+        "DESTINY-Breast04",
+        "DESTINY Breast 04",
+        "NCT03734029"
+      ]
+    },
+    {
+      "id": "tropics-02",
+      "trial": "TROPiCS-02",
+      "site": "Breast Cancer",
+      "source": "trial-pages/tropics-02/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "In heavily pretreated endocrine-resistant HR-positive/HER2-negative metastatic breast cancer, does sacituzumab govitecan improve PFS and OS compared with single-agent chemotherapy?",
+      "path": "trial-pages/tropics-02/",
+      "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
+      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "setting_detail": "Metastatic · Later-line Trop-2 antibody–drug conjugate",
+      "aliases": [
+        "TROPiCS-02",
+        "TROPiCS 02",
+        "NCT03901339"
+      ]
     }
   ]
 }
