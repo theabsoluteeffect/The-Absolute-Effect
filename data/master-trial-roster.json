@@ -555,7 +555,14 @@
       "breast_cancer_entries_after": 67,
       "all_18_prior_daily_evidence_files_reviewed": true,
       "static_visualizations_present": true,
-      "browser_rendered_qa": "pending"
+      "browser_rendered_qa": "pending",
+      "automated_outcome_visualization_audit": "passed",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41381375225",
+      "daily_atlas_workflow": "passed",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41381375203",
+      "verified_main_head_before_final_metadata_update": "4184d05ac3a751c2938597064019a8c93a7304de",
+      "post_workflow_re_read": "passed",
+      "sitemap_updated": true
     }
   },
   "trials": [
@@ -5391,7 +5398,7 @@
       "question": "In small, node-negative HER2-positive early breast cancer, can adjuvant weekly paclitaxel plus trastuzumab provide durable disease control with less chemotherapy intensity?",
       "path": "trial-pages/apt/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage I · Small node-negative HER2-positive breast cancer",
       "aliases": [
         "APT",
@@ -5410,7 +5417,7 @@
       "question": "With dual trastuzumab–pertuzumab blockade in stage II–III HER2-positive breast cancer, can anthracyclines be omitted without compromising response or survival?",
       "path": "trial-pages/train-2/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage II · Anthracycline omission with dual HER2 blockade",
       "aliases": [
         "TRAIN-2",
@@ -5428,7 +5435,7 @@
       "question": "Does adding carboplatin, with or without veliparib, to neoadjuvant paclitaxel followed by AC improve pCR and long-term outcomes in stage II–III TNBC?",
       "path": "trial-pages/brightness/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage II · Carboplatin with or without veliparib in TNBC",
       "aliases": [
         "BrighTNess",
@@ -5446,7 +5453,7 @@
       "question": "Does adding trastuzumab to adjuvant chemotherapy improve DFS and OS, and can TCH provide a less cardiotoxic non-anthracycline alternative to AC-TH?",
       "path": "trial-pages/bcirg-006/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage II · Adjuvant trastuzumab and anthracycline-sparing TCH",
       "aliases": [
         "BCIRG 006",
@@ -5465,7 +5472,7 @@
       "question": "After trastuzumab-based adjuvant therapy, does one year of extended neratinib reduce invasive recurrence in HER2-positive early breast cancer?",
       "path": "trial-pages/extenet/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage II · Extended adjuvant neratinib after trastuzumab",
       "aliases": [
         "ExteNET",
@@ -5483,7 +5490,7 @@
       "question": "How reliably does sentinel lymph-node surgery identify residual axillary disease after neoadjuvant chemotherapy in initially node-positive breast cancer?",
       "path": "trial-pages/acosog-z1071/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage III · Axillary staging after neoadjuvant chemotherapy",
       "aliases": [
         "ACOSOG Z1071",
@@ -5502,7 +5509,7 @@
       "question": "After mastectomy and contemporary systemic therapy for intermediate-risk breast cancer, does chest-wall irradiation improve overall survival or reduce recurrence?",
       "path": "trial-pages/supremo/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Stage III · Chest-wall irradiation after mastectomy in intermediate-risk disease",
       "aliases": [
         "SUPREMO",
@@ -5520,7 +5527,7 @@
       "question": "In first-line HR-positive, HER2-negative advanced breast cancer, does adding ribociclib to letrozole improve PFS and OS?",
       "path": "trial-pages/monaleesa-2/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Metastatic · First-line CDK4/6 inhibition",
       "aliases": [
         "MONALEESA-2",
@@ -5538,7 +5545,7 @@
       "question": "In previously treated HER2-low metastatic breast cancer, does trastuzumab deruxtecan improve PFS and OS compared with physician's-choice chemotherapy?",
       "path": "trial-pages/destiny-breast04/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Metastatic · HER2-low antibody–drug conjugate",
       "aliases": [
         "DESTINY-Breast04",
@@ -5556,7 +5563,7 @@
       "question": "In heavily pretreated endocrine-resistant HR-positive/HER2-negative metastatic breast cancer, does sacituzumab govitecan improve PFS and OS compared with single-agent chemotherapy?",
       "path": "trial-pages/tropics-02/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
-      "outcome_visual_review_status": "Source-reported numeric outcome visualization present; static markup added; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Source-reported visualization present; automated outcome-visualization audit passed 2026-11-02; browser-rendered QA pending.",
       "setting_detail": "Metastatic · Later-line Trop-2 antibody–drug conjugate",
       "aliases": [
         "TROPiCS-02",
