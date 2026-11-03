@@ -573,7 +573,7 @@
     },
     "latest_main_branch_verification": {
       "date": "2026-11-03",
-      "verified_head": "1beb7ac455ea843478bfb368d226013e2aabf059",
+      "verified_head": "4fcad89e329f142d28308a09fc1d43bce2461fe4",
       "roster_entries": 331,
       "breast_cancer_entries": 77,
       "canonical_trial_page_index_files": 330,
@@ -590,9 +590,9 @@
       "trial_of_day_previous": "apt",
       "archive_count": 14,
       "clinical_freshness_review": "Source-level review completed for the three supplemental pages; comprehensive guideline-level freshness audit remains pending.",
-      "verified_head_before_final_audit_metadata_commit": "19590ddde7b66811ab5cf2961ff4b13eb58723bd",
-      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838307",
-      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838305",
+      "verified_head_before_final_audit_metadata_commit": "4fcad89e329f142d28308a09fc1d43bce2461fe4",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965307",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965275",
       "daily_evidence_files": 20,
       "daily_evidence_records": 13,
       "supplemental_pages": [
@@ -605,7 +605,9 @@
         "gallbladder-cancer",
         "pancreatic-cancer"
       ],
-      "site_index_sitemap_entries_added": true
+      "site_index_sitemap_entries_added": true,
+      "post_write_re_read": "PASS",
+      "verification_note": "All modified trial pages, roster, daily evidence, evidence index, site navigation, schema, sitemap, Trial-of-the-Day and archive re-read from main. The following commit changes audit metadata only and uses [skip ci] to avoid regenerating sitemap."
     },
     "supplemental_batch_verification": {
       "date": "2026-11-03",
@@ -628,12 +630,18 @@
       "trial_of_day_unchanged": true,
       "interlace_primary_reference_corrected": true,
       "automated_outcome_visualization_audit": "PASS",
-      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838307",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965307",
       "daily_atlas_workflow": "PASS",
-      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838305",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965275",
       "browser_rendered_qa": "pending",
       "site_navigation_and_sitemap": "integrated",
-      "current_main_head_before_audit_metadata_commit": "19590ddde7b66811ab5cf2961ff4b13eb58723bd"
+      "current_main_head_before_audit_metadata_commit": "19590ddde7b66811ab5cf2961ff4b13eb58723bd",
+      "post_workflow_verified_head": "4fcad89e329f142d28308a09fc1d43bce2461fe4",
+      "recursive_tree_entries": 887,
+      "canonical_trial_pages_after": 330,
+      "roster_entries_after": 331,
+      "daily_evidence_records": 13,
+      "post_write_re_read": "PASS"
     }
   },
   "trials": [
