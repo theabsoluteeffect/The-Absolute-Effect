@@ -31,7 +31,11 @@
     "primary_endpoint": "Protocol-specified primary endpoint and definition.",
     "follow_up": "Median follow-up and fixed-time endpoint horizon, distinguished.",
     "freshness_review_status": "Dated current-practice review status and outstanding guideline/follow-up checks.",
-    "outcome_visual_review_status": "Static source-grounded visualization status and browser-rendered QA status."
+    "outcome_visual_review_status": "Static source-grounded visualization status and browser-rendered QA status.",
+    "stage": "Disease stage bucket or range; navigation follows Stage I → Stage II → Stage III/locoregional → metastatic.",
+    "batch_date": "Date the study was added to the master roster and daily evidence batch.",
+    "quality_check_date": "Date the page, primary sources, numbers, aliases and outcome visualization were last checked.",
+    "source_verification_status": "Status and date of primary-source and outcome-number verification."
   },
   "discipline_categories": [
     "Surgical",
@@ -47,7 +51,9 @@
     "Theranostic studies must be assigned to one of the five disciplines.",
     "When NNT/NNH cannot be calculated, visualize the strongest source-reported outcome; never invent rates or convert median survival differences to NNT.",
     "Roster discipline must be exactly one of the five canonical categories; map legacy specialty labels to one primary discipline.",
-    "A trial's follow-up publications and aliases must not create additional underlying-study entries."
+    "A trial's follow-up publications and aliases must not create additional underlying-study entries.",
+    "Order navigation by Site → Discipline → Setting → Clinical Question/Trial; order breast disease stages Stage I → Stage II → Stage III/locoregional → metastatic.",
+    "Imaging and Biomarker are distinct primary disciplines and must not be merged into Medical or Surgical."
   ],
   "version": 2
 }

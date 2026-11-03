@@ -1,39 +1,40 @@
 {
-  "date": "2026-11-01",
-  "id": "sound",
-  "trial": "SOUND",
-  "title": "Omission of axillary surgery in small breast cancer with negative axillary ultrasound",
-  "journal": "JAMA Oncology 2023; primary phase III randomized non-inferiority report",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/37733364/",
+  "date": "2026-11-02",
+  "id": "apt",
+  "trial": "APT",
+  "title": "Adjuvant paclitaxel and trastuzumab for small node-negative HER2-positive breast cancer: final 10-year analysis",
+  "journal": "Lancet Oncology 2023; final 10-year analysis of the open-label, single-arm phase II APT trial",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/36858723/",
   "site": "Breast Cancer",
-  "discipline": "Surgical",
-  "setting": "Definitive / Local Treatment",
-  "population": "1,463 women enrolled with breast cancer ≤2 cm and negative preoperative axillary ultrasonography; 1,405 in the intention-to-treat analysis. Median age 60 years; median tumour size 1.1 cm; 87.8% ER-positive/HER2-negative.",
-  "treatment": "Sentinel lymph-node biopsy; patients with sentinel-node metastases underwent axillary lymph-node dissection according to the protocol-era standard.",
-  "comparator": "No axillary surgery; breast surgery and adjuvant treatment otherwise based on available clinical and tumour information.",
-  "summary": "Five-year distant disease-free survival was 97.7% with SLNB versus 98.0% without axillary surgery; HR 0.84 (90% CI 0.45–1.54), non-inferiority P=0.02. Log-rank P=0.67. Locoregional relapse 1.7% vs 1.6%; distant metastases 1.8% vs 2.0%.",
+  "discipline": "Medical",
+  "setting": "Adjuvant / Postoperative",
+  "population": "410 enrolled; 406 initiated protocol therapy and were included in the treated analysis population. Small HER2-positive node-negative tumours ≤3 cm; median age 55 years; 67% HR-positive.",
+  "treatment": "Paclitaxel 80 mg/m² weekly for 12 weeks with trastuzumab, followed by trastuzumab to complete one year.",
+  "comparator": "None; single-arm phase II study.",
+  "summary": "At median follow-up 10.8 years, 10-year iDFS was 91.3% (95% CI 88.3–94.4), recurrence-free interval 96.3% (95% CI 94.3–98.3), OS 94.3% (95% CI 91.8–96.8), and breast cancer-specific survival 98.8% (95% CI 97.6–100.0).",
   "absoluteEffect": {
-    "endpoint": "Five-year distant disease-free survival",
-    "horizon": "5 years",
-    "treatmentRate": "98.0% without axillary surgery",
-    "controlRate": "97.7% with SLNB",
-    "absoluteBenefit": "0.3 percentage points in favour of omission",
-    "nnt": "Not assigned: prespecified non-inferiority strategy; observed difference is too small to justify a superiority NNT.",
-    "toxicity": "SLNB adds an operation and risks of seroma, sensory symptoms, shoulder restriction and lymphedema; no single fixed-time comparative grade ≥3 toxicity endpoint supports a defensible NNH.",
-    "nnh": "Not quantifiable"
+    "endpoint": "10-year invasive disease-free survival",
+    "horizon": "10 years",
+    "treatmentRate": "91.3%",
+    "controlRate": "No randomized comparator",
+    "absoluteBenefit": "Not estimable; single-arm study",
+    "nnt": "Not applicable",
+    "toxicity": "Grade 3–4 neuropathy 4%, neutropenia 4%, transaminitis 3%; reversible symptomatic grade 3 LV systolic dysfunction 0.5%.",
+    "nnh": "Not applicable"
   },
-  "clinicalInterpretation": "SOUND supports omission of SLNB in carefully selected women with tumours ≤2 cm and negative axillary ultrasound when the lack of nodal pathology will not change postoperative treatment. This is a non-inferiority result, not superiority, and must not be generalized to patients whose systemic or regional nodal treatment depends on nodal status.",
-  "criticalReview": "The study enrolled 1,463 women but the primary ITT analysis included 1,405. Five-year DDFS was 97.7% with SLNB and 98.0% without axillary surgery; HR 0.84 (90% CI 0.45–1.54), with non-inferiority P=0.02. The protocol was designed with a 2.5% absolute non-inferiority margin. Registration occurred after 492 patients had been randomized; investigators reported no interim data examination before registration. The trial's adjuvant treatment recommendation analysis was not powered to detect small differences. Applicability depends on the postoperative plan not requiring pathological nodal information.",
+  "clinicalInterpretation": "APT supports a less intensive adjuvant option for carefully selected small node-negative HER2-positive breast cancers, with excellent 10-year breast cancer-specific survival. Because the study was single-arm, it cannot establish comparative benefit or non-inferiority to more intensive chemotherapy.",
+  "criticalReview": "The 10-year iDFS rate was 91.3%, while RFI was 96.3%; the distinction matters because iDFS includes contralateral breast cancers and deaths not necessarily attributable to the index tumour. 356/406 patients completed all 52 weeks; 24 stopped for protocol-specified toxicity and six for other toxicities. The trial does not justify extrapolation to larger, node-positive or otherwise high-risk HER2-positive cancers.",
   "sources": [
-    "https://pubmed.ncbi.nlm.nih.gov/37733364/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/10514873/",
-    "https://clinicaltrials.gov/study/NCT02167490"
+    "https://pubmed.ncbi.nlm.nih.gov/36858723/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMoa1406281",
+    "https://clinicaltrials.gov/study/NCT00542451"
   ],
-  "NCT": "NCT02167490",
+  "NCT": "NCT00542451",
   "aliases": [
-    "SOUND",
-    "Sentinel Node vs Observation After Axillary Ultra-Sound"
+    "APT",
+    "APT trial",
+    "Adjuvant Paclitaxel and Trastuzumab"
   ],
-  "archiveNote": "Preserved as the previous Trial of the Day during 2 November 2026 rotation; full analysis archived.",
-  "archiveDate": "2026-11-02"
+  "archiveNote": "Preserved as previous Trial of the Day on 3 November 2026; complete APT 10-year analysis retained.",
+  "archiveDate": "2026-11-03"
 }

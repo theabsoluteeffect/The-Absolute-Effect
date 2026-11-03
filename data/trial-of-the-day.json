@@ -1,39 +1,39 @@
 {
-  "date": "2026-11-02",
-  "id": "apt",
-  "trial": "APT",
-  "title": "Adjuvant paclitaxel and trastuzumab for small node-negative HER2-positive breast cancer: final 10-year analysis",
-  "journal": "Lancet Oncology 2023; final 10-year analysis of the open-label, single-arm phase II APT trial",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/36858723/",
+  "date": "2026-11-03",
+  "id": "acosog-z11102",
+  "trial": "ACOSOG Z11102 (Alliance)",
+  "title": "Local recurrence after breast-conserving therapy in multiple ipsilateral breast cancer",
+  "journal": "Journal of Clinical Oncology 2023; prospective, multicentre, single-arm phase II trial",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/36977292/",
   "site": "Breast Cancer",
-  "discipline": "Medical",
-  "setting": "Adjuvant / Postoperative",
-  "population": "410 enrolled; 406 initiated protocol therapy and were included in the treated analysis population. Small HER2-positive node-negative tumours ≤3 cm; median age 55 years; 67% HR-positive.",
-  "treatment": "Paclitaxel 80 mg/m² weekly for 12 weeks with trastuzumab, followed by trastuzumab to complete one year.",
-  "comparator": "None; single-arm phase II study.",
-  "summary": "At median follow-up 10.8 years, 10-year iDFS was 91.3% (95% CI 88.3–94.4), recurrence-free interval 96.3% (95% CI 94.3–98.3), OS 94.3% (95% CI 91.8–96.8), and breast cancer-specific survival 98.8% (95% CI 97.6–100.0).",
+  "discipline": "Surgical",
+  "setting": "Definitive / Local Treatment",
+  "population": "270 enrolled; 204 eligible patients underwent protocol-directed breast-conserving therapy. Median age 61 years; most had two foci and ER-positive/HER2-negative disease.",
+  "treatment": "Breast-conserving surgery with negative margins, followed by whole-breast irradiation and boost to each lumpectomy bed; systemic therapy according to tumour biology.",
+  "comparator": "None; single-arm phase II study. Prespecified acceptable 5-year local recurrence threshold <8%.",
+  "summary": "At median follow-up 66.4 months, 6 local recurrences occurred; estimated 5-year cumulative local recurrence was 3.1% (95% CI 1.3–6.4). No regional recurrences were reported. Exploratory MRI subgroup: 1.7% with preoperative MRI (n=189) versus 22.6% without MRI (n=15; P=0.002).",
   "absoluteEffect": {
-    "endpoint": "10-year invasive disease-free survival",
-    "horizon": "10 years",
-    "treatmentRate": "91.3%",
+    "endpoint": "5-year cumulative local recurrence",
+    "horizon": "5 years",
+    "treatmentRate": "3.1%",
     "controlRate": "No randomized comparator",
-    "absoluteBenefit": "Not estimable; single-arm study",
+    "absoluteBenefit": "Not estimable; single-arm study. Observed rate below prespecified <8% acceptability threshold.",
     "nnt": "Not applicable",
-    "toxicity": "Grade 3–4 neuropathy 4%, neutropenia 4%, transaminitis 3%; reversible symptomatic grade 3 LV systolic dysfunction 0.5%.",
-    "nnh": "Not applicable"
+    "toxicity": "No randomized comparative toxicity endpoint; treatment includes lumpectomy, whole-breast RT and boosts to each tumour bed.",
+    "nnh": "Not quantifiable"
   },
-  "clinicalInterpretation": "APT supports a less intensive adjuvant option for carefully selected small node-negative HER2-positive breast cancers, with excellent 10-year breast cancer-specific survival. Because the study was single-arm, it cannot establish comparative benefit or non-inferiority to more intensive chemotherapy.",
-  "criticalReview": "The 10-year iDFS rate was 91.3%, while RFI was 96.3%; the distinction matters because iDFS includes contralateral breast cancers and deaths not necessarily attributable to the index tumour. 356/406 patients completed all 52 weeks; 24 stopped for protocol-specified toxicity and six for other toxicities. The trial does not justify extrapolation to larger, node-positive or otherwise high-risk HER2-positive cancers.",
+  "clinicalInterpretation": "Z11102 supports breast conservation in carefully selected women with two or three ipsilateral foci after imaging, biopsy confirmation, margin-negative excision and whole-breast RT with boosts. It does not establish randomized equivalence to mastectomy.",
+  "criticalReview": "The primary analysis included 204 eligible patients and six local recurrences; 5-year cumulative incidence was 3.1% (95% CI 1.3–6.4), below the prespecified 8% acceptability threshold. The MRI comparison was exploratory and highly imbalanced (189 versus 15), so it cannot establish a causal MRI effect. Single-arm design; no comparative NNT.",
   "sources": [
-    "https://pubmed.ncbi.nlm.nih.gov/36858723/",
-    "https://www.nejm.org/doi/full/10.1056/NEJMoa1406281",
-    "https://clinicaltrials.gov/study/NCT00542451"
+    "https://pubmed.ncbi.nlm.nih.gov/36977292/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10256355/",
+    "https://clinicaltrials.gov/study/NCT01585428"
   ],
-  "NCT": "NCT00542451",
+  "NCT": "NCT01585428",
   "aliases": [
-    "APT",
-    "APT trial",
-    "Adjuvant Paclitaxel and Trastuzumab"
+    "ACOSOG Z11102",
+    "Alliance Z11102",
+    "Z11102"
   ],
-  "archiveNote": "Selected as Trial of the Day on 2 November 2026 after completion of the approved Breast Cancer evidence batch."
+  "archiveNote": "Selected as Trial of the Day on 3 November 2026 following completion of the approved Breast Cancer batch."
 }
