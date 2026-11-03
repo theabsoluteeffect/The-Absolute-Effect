@@ -577,7 +577,7 @@
       "roster_entries": 331,
       "breast_cancer_entries": 77,
       "canonical_trial_page_index_files": 330,
-      "recursive_tree_entries": 878,
+      "recursive_tree_entries": 887,
       "tree_truncated": false,
       "new_pages_verified": 3,
       "automated_outcome_visualization_audit": "PASS",
@@ -589,7 +589,23 @@
       "trial_of_day_current": "acosog-z11102",
       "trial_of_day_previous": "apt",
       "archive_count": 14,
-      "clinical_freshness_review": "Source-level review completed for the three supplemental pages; comprehensive guideline-level freshness audit remains pending."
+      "clinical_freshness_review": "Source-level review completed for the three supplemental pages; comprehensive guideline-level freshness audit remains pending.",
+      "verified_head_before_final_audit_metadata_commit": "19590ddde7b66811ab5cf2961ff4b13eb58723bd",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838307",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838305",
+      "daily_evidence_files": 20,
+      "daily_evidence_records": 13,
+      "supplemental_pages": [
+        "polcagb",
+        "embrace-ii",
+        "preopanc-2"
+      ],
+      "site_navigation_pages_added": [
+        "cervical-cancer",
+        "gallbladder-cancer",
+        "pancreatic-cancer"
+      ],
+      "site_index_sitemap_entries_added": true
     },
     "supplemental_batch_verification": {
       "date": "2026-11-03",
@@ -610,7 +626,14 @@
       ],
       "archive_unchanged": true,
       "trial_of_day_unchanged": true,
-      "interlace_primary_reference_corrected": true
+      "interlace_primary_reference_corrected": true,
+      "automated_outcome_visualization_audit": "PASS",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838307",
+      "daily_atlas_workflow": "PASS",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568838305",
+      "browser_rendered_qa": "pending",
+      "site_navigation_and_sitemap": "integrated",
+      "current_main_head_before_audit_metadata_commit": "19590ddde7b66811ab5cf2961ff4b13eb58723bd"
     }
   },
   "trials": [

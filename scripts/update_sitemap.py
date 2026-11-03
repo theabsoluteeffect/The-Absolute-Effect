@@ -4,9 +4,12 @@ from xml.sax.saxutils import escape
 BASE = "https://theabsoluteeffect.pages.dev"
 root = Path(".")
 
-urls = [f"{BASE}/", f"{BASE}/evidence/"]
+urls = [f"{BASE}/", f"{BASE}/evidence/", f"{BASE}/oncology-evidence/"]
 for page in sorted((root / "trial-pages").glob("*/index.html")):
     urls.append(f"{BASE}/trial-pages/{page.parent.name}/")
+
+for page in sorted((root / "oncology-evidence").glob("*/index.html")):
+    urls.append(f"{BASE}/oncology-evidence/{page.parent.name}/")
 
 urls = sorted(set(urls))
 xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
