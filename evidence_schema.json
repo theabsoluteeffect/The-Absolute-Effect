@@ -35,7 +35,11 @@
     "stage": "Disease stage bucket or range; navigation follows Stage I → Stage II → Stage III/locoregional → metastatic.",
     "batch_date": "Date the study was added to the master roster and daily evidence batch.",
     "quality_check_date": "Date the page, primary sources, numbers, aliases and outcome visualization were last checked.",
-    "source_verification_status": "Status and date of primary-source and outcome-number verification."
+    "source_verification_status": "Status and date of primary-source and outcome-number verification.",
+    "study_design": "Randomized, non-randomized, prospective cohort, retrospective, protocol-only or other study design; explicitly distinguish trial design from evidence maturity.",
+    "evidence_maturity": "Protocol-only, interim abstract, full primary publication, mature follow-up or prospective cohort benchmark; state data cut-off.",
+    "study_denominator_note": "If public sources report differing accrual/analysis denominators, identify the chosen source and explain the discrepancy rather than mixing counts.",
+    "fixed_time_effect": "Absolute effect at a stated time horizon from fixed-time survival/control estimates; do not calculate from median survival."
   },
   "discipline_categories": [
     "Surgical",
@@ -53,7 +57,10 @@
     "Roster discipline must be exactly one of the five canonical categories; map legacy specialty labels to one primary discipline.",
     "A trial's follow-up publications and aliases must not create additional underlying-study entries.",
     "Order navigation by Site → Discipline → Setting → Clinical Question/Trial; order breast disease stages Stage I → Stage II → Stage III/locoregional → metastatic.",
-    "Imaging and Biomarker are distinct primary disciplines and must not be merged into Medical or Surgical."
+    "Imaging and Biomarker are distinct primary disciplines and must not be merged into Medical or Surgical.",
+    "Interim meeting-abstract results must be labelled interim and distinguished from final peer-reviewed results; do not present planned sample size as accrued sample size.",
+    "Prospective cohort benchmarking studies such as EMBRACE II must not be presented as randomized comparisons or assigned NNT/NNH against an absent control group.",
+    "Failure to demonstrate superiority is not evidence of equivalence or non-inferiority unless a prespecified non-inferiority/equivalence design and margin were used."
   ],
-  "version": 2
+  "version": 3
 }

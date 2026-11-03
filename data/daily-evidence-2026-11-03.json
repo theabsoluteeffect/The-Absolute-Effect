@@ -245,5 +245,82 @@
       "NRG/NSABP B-51",
       "NCT01872975"
     ]
+  },
+  {
+    "id": "polcagb",
+    "trial": "POLCAGB",
+    "site": "Gallbladder Cancer",
+    "discipline": "Radiation",
+    "setting": "Neoadjuvant / Preoperative",
+    "setting_detail": "Stage III / locoregional · initially unresectable locally advanced gallbladder adenocarcinoma",
+    "source": "trial-pages/polcagb/",
+    "primary": "https://ascopubs.org/doi/10.1200/JCO.2025.43.16_suppl.4007",
+    "protocol": "https://pubmed.ncbi.nlm.nih.gov/31253621/",
+    "registry": "https://clinicaltrials.gov/study/NCT02867865",
+    "qualityCheckDate": "2026-11-03",
+    "uploadStatus": "uploaded",
+    "duplicateAudit": "PASS: current main roster, complete recursive tree, evidence index, archive, current/previous Trial-of-the-Day and all 20 daily-evidence JSON files checked. POLCAGB aliases consolidated.",
+    "sourceVerification": "Peer-reviewed protocol and ASCO 2025 interim abstract checked; interim sample, median follow-up, survival, EFS, resection and postoperative morbidity values cross-checked. Full final publication not available in this audit.",
+    "fullClinicalFreshnessAudit": "Primary protocol and interim results checked 2026-11-03; final results and guideline-level review pending.",
+    "outcomeVisualizationBrowserQA": "Source-grounded static outcome visualizations present; automated structural audit and browser-rendered QA pending.",
+    "clinicalQuestion": "In initially unresectable locally advanced gallbladder adenocarcinoma, does adding concurrent chemoradiotherapy to neoadjuvant chemotherapy improve resection and survival outcomes?",
+    "aliases": [
+      "POLCAGB",
+      "POLCA-GB",
+      "POLCA GB",
+      "NCT02867865",
+      "CTRI/2016/08/007199"
+    ]
+  },
+  {
+    "id": "embrace-ii",
+    "trial": "EMBRACE II",
+    "site": "Cervical Cancer",
+    "discipline": "Radiation",
+    "setting": "Definitive / Curative",
+    "setting_detail": "FIGO 2009 stage IB–IVA · definitive IGRT-IMRT, cisplatin and MRI-guided adaptive brachytherapy",
+    "source": "trial-pages/embrace-ii/",
+    "primary": "https://www.estro.org/About/Newsroom/Newsletter/Brachytheraphy/EMBRACE-II-%E2%80%93-a-multicentre-prospective-interventio",
+    "protocol": "https://www.embracestudy.dk/UserUpload/PublicDocuments/EMBRACE%20II%20Protocol.pdf",
+    "registry": "https://clinicaltrials.gov/study/NCT03617133",
+    "qualityCheckDate": "2026-11-03",
+    "uploadStatus": "uploaded",
+    "duplicateAudit": "PASS: current main roster, complete recursive tree, index, archive, Trial-of-the-Day records and all 20 daily-evidence files checked. EMBRACE II aliases consolidated; EMBRACE I and RetroEMBRACE treated as distinct underlying studies.",
+    "sourceVerification": "Official EMBRACE Collaborative Group/ESTRO 2025 outcome presentation, protocol PDF, 2018 design paper and 2019 EBRT technical report checked. Accrual denominator differences across public sources disclosed.",
+    "fullClinicalFreshnessAudit": "Protocol, technical reports and 2025 outcome presentation checked 2026-11-03; final peer-reviewed overall outcomes and guideline review pending.",
+    "outcomeVisualizationBrowserQA": "Source-grounded static cohort outcome and morbidity visualizations present; automated structural audit and browser-rendered QA pending.",
+    "clinicalQuestion": "Can protocolized risk-adapted IMRT, weekly cisplatin and MRI-guided adaptive brachytherapy achieve excellent local, nodal and systemic control while limiting severe morbidity?",
+    "aliases": [
+      "EMBRACE II",
+      "EMBRACE-II",
+      "NCT03617133",
+      "Image guided intensity modulated External beam radiochemotherapy and MRI based BRAchytherapy in locally advanced CErvical cancer"
+    ]
+  },
+  {
+    "id": "preopanc-2",
+    "trial": "PREOPANC-2",
+    "site": "Pancreatic Cancer",
+    "discipline": "Medical",
+    "setting": "Neoadjuvant / Preoperative",
+    "setting_detail": "Stage I–III · resectable or borderline resectable pancreatic ductal adenocarcinoma",
+    "source": "trial-pages/preopanc-2/",
+    "primary": "https://pubmed.ncbi.nlm.nih.gov/40945523/",
+    "secondary": "https://pubmed.ncbi.nlm.nih.gov/40792645/",
+    "registry": "EudraCT 2017-002036-17",
+    "qualityCheckDate": "2026-11-03",
+    "uploadStatus": "uploaded",
+    "duplicateAudit": "PASS: current main roster, complete recursive tree, index, archive, Trial-of-the-Day records and all 20 daily-evidence files checked. PREOPANC-1 explicitly distinguished and not treated as a duplicate.",
+    "sourceVerification": "Primary Lancet Oncology phase III report and predefined surgical-complication analysis checked; sample, regimen doses, OS, confidence interval, p value and harms verified.",
+    "fullClinicalFreshnessAudit": "Primary publication and selected secondary surgical report checked 2026-11-03; guideline-level review pending.",
+    "outcomeVisualizationBrowserQA": "Source-grounded static median OS and grade ≥3 adverse-event visualizations present; automated structural audit and browser-rendered QA pending.",
+    "clinicalQuestion": "In resectable or borderline resectable pancreatic ductal adenocarcinoma, does neoadjuvant FOLFIRINOX improve OS compared with gemcitabine-based chemoradiotherapy followed by adjuvant gemcitabine?",
+    "aliases": [
+      "PREOPANC-2",
+      "PREOPANC 2",
+      "PREOPANC-II",
+      "EudraCT 2017-002036-17",
+      "Dutch Pancreatic Cancer Group PREOPANC-2"
+    ]
   }
 ]

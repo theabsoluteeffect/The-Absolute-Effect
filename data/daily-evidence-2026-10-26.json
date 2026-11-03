@@ -4,14 +4,15 @@
     "trial": "GCIG INTERLACE",
     "site": "Cervical Cancer",
     "source": "trial-pages/interlace/",
-    "primary": "https://pubmed.ncbi.nlm.nih.gov/39236760/",
+    "primary": "https://pubmed.ncbi.nlm.nih.gov/39419054/",
     "registry": "https://clinicaltrials.gov/study/NCT01566240",
     "discipline": "Medical",
     "qualityCheckDate": "2026-10-26",
     "uploadStatus": "uploaded",
     "duplicateAudit": "pass against current main roster, recursive trial-page tree, index, archive and daily evidence",
     "fullClinicalFreshnessAudit": "primary source linked; full independent guideline/freshness review pending",
-    "outcomeVisualizationBrowserQA": "pending"
+    "outcomeVisualizationBrowserQA": "pending",
+    "sourceVerification": "Primary Lancet report corrected to PMID 39419054 and checked 2026-11-03; registry NCT01566240 retained."
   },
   {
     "id": "dynamic",

@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 8,
+  "version": 9,
   "last_quality_check": "2026-11-03",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 327,
+    "permanent_trial_pages": 330,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 328,
+    "total_unique_trials": 331,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -40,7 +40,10 @@
       "PALLAS (ABCSG-42/AFT-05/BIG-14-03)",
       "RxPONDER (SWOG S1007)",
       "MA.20 (NCIC CTG)",
-      "NSABP B-51 / RTOG 1304"
+      "NSABP B-51 / RTOG 1304",
+      "POLCAGB",
+      "EMBRACE II",
+      "PREOPANC-2"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -528,19 +531,19 @@
       "note": "Reconciled current master roster, full recursive tree, evidence index, archive, current/previous Trial of the Day and all 19 previous daily-evidence JSON files. Aliases, registries and follow-up publications consolidated."
     },
     "batch_counts": {
-      "new_studies": 10,
+      "new_studies": 13,
       "previous_total": 318,
-      "total_after_upload": 328
+      "total_after_upload": 331
     },
     "archive_count": 14,
     "daily_evidence_file_count": 20,
-    "daily_evidence_records": 10,
-    "evidence_index_links_added": 10,
-    "new_pages_found": 10,
-    "new_pages_with_shared_renderer": 10,
-    "new_pages_with_primary_source_links": 10,
-    "new_pages_with_explicit_outcome_visualization": 10,
-    "new_pages_with_dated_context": 10,
+    "daily_evidence_records": 13,
+    "evidence_index_links_added": 13,
+    "new_pages_found": 13,
+    "new_pages_with_shared_renderer": 13,
+    "new_pages_with_primary_source_links": 13,
+    "new_pages_with_explicit_outcome_visualization": 13,
+    "new_pages_with_dated_context": 13,
     "latest_batch_verification": {
       "date": "2026-11-03",
       "base_main_head": "0e11c8b359acc242b1f1713fe971421d42b00b8c",
@@ -571,16 +574,43 @@
     "latest_main_branch_verification": {
       "date": "2026-11-03",
       "verified_head": "1beb7ac455ea843478bfb368d226013e2aabf059",
-      "roster_entries": 328,
+      "roster_entries": 331,
       "breast_cancer_entries": 77,
-      "canonical_trial_page_index_files": 327,
-      "recursive_tree_entries": 875,
+      "canonical_trial_page_index_files": 330,
+      "recursive_tree_entries": 878,
       "tree_truncated": false,
-      "new_pages_verified": 10,
+      "new_pages_verified": 3,
       "automated_outcome_visualization_audit": "PASS",
       "daily_atlas_workflow": "PASS",
       "browser_rendered_qa": "pending",
-      "live_cloudflare_deployment": "not independently verified"
+      "live_cloudflare_deployment": "not independently verified",
+      "pre_upload_head": "ebcf5522794b2f8315c683b8dbf4aa4f392557f1",
+      "recursive_tree_truncated": false,
+      "trial_of_day_current": "acosog-z11102",
+      "trial_of_day_previous": "apt",
+      "archive_count": 14,
+      "clinical_freshness_review": "Source-level review completed for the three supplemental pages; comprehensive guideline-level freshness audit remains pending."
+    },
+    "supplemental_batch_verification": {
+      "date": "2026-11-03",
+      "base_main_head": "ebcf5522794b2f8315c683b8dbf4aa4f392557f1",
+      "candidate_count": 3,
+      "duplicate_audit": "PASS: checked current roster, complete recursive tree, evidence index, archive, current and previous Trial-of-the-Day records and all 20 daily-evidence JSON files. INTERLACE was found already uploaded and was not duplicated; PREOPANC-1 was distinguished from PREOPANC-2.",
+      "new_pages": [
+        "polcagb",
+        "embrace-ii",
+        "preopanc-2"
+      ],
+      "existing_study_not_duplicated": "GCIG INTERLACE",
+      "primary_source_status": "POLCAGB protocol and ASCO 2025 interim abstract; EMBRACE II protocol, peer-reviewed technical publications and official ESTRO 2025 results presentation; PREOPANC-2 primary phase III paper and surgical-complication analysis.",
+      "known_limits": [
+        "POLCAGB efficacy is interim meeting-abstract evidence; planned sample size not reached.",
+        "EMBRACE II is a prospective interventional cohort, not randomized; final overall outcomes were presented at ESTRO 2025 and cohort denominators vary by report.",
+        "PREOPANC-2 did not demonstrate superiority of FOLFIRINOX; no non-inferiority conclusion."
+      ],
+      "archive_unchanged": true,
+      "trial_of_day_unchanged": true,
+      "interlace_primary_reference_corrected": true
     }
   },
   "trials": [
@@ -5835,6 +5865,89 @@
       "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
+    },
+    {
+      "id": "polcagb",
+      "trial": "POLCAGB",
+      "site": "Gallbladder Cancer",
+      "source": "trial-pages/polcagb/",
+      "discipline": "Radiation",
+      "setting": "Neoadjuvant / Preoperative",
+      "setting_detail": "Stage III / locoregional · initially unresectable locally advanced gallbladder adenocarcinoma",
+      "path": "trial-pages/polcagb/",
+      "question": "In initially unresectable locally advanced gallbladder adenocarcinoma, does adding concurrent chemoradiotherapy to neoadjuvant chemotherapy improve resection and survival outcomes?",
+      "aliases": [
+        "POLCAGB",
+        "POLCA-GB",
+        "POLCA GB",
+        "NCT02867865",
+        "CTRI/2016/08/007199"
+      ],
+      "stage": "Stage III / locoregional",
+      "study_design": "Phase III randomized trial; interim analysis",
+      "sample_size": "314 planned; interim ASCO 2025 analysis n=124 (NACT 64; NACRT 60)",
+      "primary_endpoint": "Overall survival",
+      "follow_up": "Median 62 months at interim analysis; 93 OS events",
+      "batch_date": "2026-11-03",
+      "quality_check_date": "2026-11-03",
+      "freshness_review_status": "Protocol and ASCO 2025 interim abstract checked 2026-11-03; final full peer-reviewed results and current guideline review pending.",
+      "outcome_visual_review_status": "Static source-grounded outcome visualizations present; automated structural audit and browser-rendered QA pending.",
+      "source_verification_status": "Peer-reviewed protocol and ASCO 2025 interim abstract checked; interim status and planned-versus-actual accrual explicitly labelled."
+    },
+    {
+      "id": "embrace-ii",
+      "trial": "EMBRACE II",
+      "site": "Cervical Cancer",
+      "source": "trial-pages/embrace-ii/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Curative",
+      "setting_detail": "FIGO 2009 stage IB–IVA · definitive IGRT-IMRT, cisplatin and MRI-guided adaptive brachytherapy",
+      "path": "trial-pages/embrace-ii/",
+      "question": "Can protocolized risk-adapted IMRT, weekly cisplatin and MRI-guided adaptive brachytherapy achieve excellent local, nodal and systemic control while limiting severe morbidity in locally advanced cervical cancer?",
+      "aliases": [
+        "EMBRACE II",
+        "EMBRACE-II",
+        "NCT03617133",
+        "Image guided intensity modulated External beam radiochemotherapy and MRI based BRAchytherapy in locally advanced CErvical cancer"
+      ],
+      "stage": "Stage I–IVA / locally advanced",
+      "study_design": "Prospective multicentre interventional cohort; not randomized",
+      "sample_size": "1,449 accrued across 49 centres per EMBRACE Collaborative Group ESTRO 2025 results presentation; other catalogue/review denominators differ slightly.",
+      "primary_endpoint": "Multi-endpoint benchmarking of local, nodal and systemic control, survival, morbidity and QoL; no single randomized primary endpoint",
+      "follow_up": "Three-year actuarial outcomes reported from November 2024 data; exact median follow-up not specified in the accessible study-group results presentation.",
+      "batch_date": "2026-11-03",
+      "quality_check_date": "2026-11-03",
+      "freshness_review_status": "Study protocol, EBRT technical report and ESTRO 2025 overall-results presentation checked 2026-11-03; full peer-reviewed final outcome paper and guideline review pending.",
+      "outcome_visual_review_status": "Static source-grounded outcome visualizations present; automated structural audit and browser-rendered QA pending.",
+      "source_verification_status": "Protocol PDF, peer-reviewed study design/technique papers and official ESTRO results presentation checked; cohort denominator variation explicitly disclosed."
+    },
+    {
+      "id": "preopanc-2",
+      "trial": "PREOPANC-2",
+      "site": "Pancreatic Cancer",
+      "source": "trial-pages/preopanc-2/",
+      "discipline": "Medical",
+      "setting": "Neoadjuvant / Preoperative",
+      "setting_detail": "Stage I–III · resectable or borderline resectable pancreatic ductal adenocarcinoma",
+      "path": "trial-pages/preopanc-2/",
+      "question": "In resectable or borderline resectable pancreatic ductal adenocarcinoma, does neoadjuvant FOLFIRINOX improve OS compared with gemcitabine-based chemoradiotherapy followed by adjuvant gemcitabine?",
+      "aliases": [
+        "PREOPANC-2",
+        "PREOPANC 2",
+        "PREOPANC-II",
+        "EudraCT 2017-002036-17",
+        "Dutch Pancreatic Cancer Group PREOPANC-2"
+      ],
+      "stage": "Stage I–III / resectable or borderline resectable",
+      "study_design": "Phase III open-label randomized trial",
+      "sample_size": "375 randomized; modified intention-to-treat population n=369 (FFX 185; CRT 184 after exclusions)",
+      "primary_endpoint": "Overall survival in the modified intention-to-treat population",
+      "follow_up": "Median 42.3 months (IQR 35.7–48.7)",
+      "batch_date": "2026-11-03",
+      "quality_check_date": "2026-11-03",
+      "freshness_review_status": "Primary Lancet Oncology 2025 report and 2025 surgical-complication analysis checked 2026-11-03; current guideline review pending.",
+      "outcome_visual_review_status": "Static source-grounded outcome visualizations present; automated structural audit and browser-rendered QA pending.",
+      "source_verification_status": "Primary phase III publication and predefined surgical-complication analysis checked; no NNT derived from median OS; superiority result distinguished from non-inferiority."
     }
   ]
 }
