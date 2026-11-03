@@ -559,7 +559,28 @@
       "daily_evidence_file_count_after": 20,
       "static_visualizations_present": true,
       "browser_rendered_qa": "pending",
-      "source_review": "Primary reports and selected follow-ups checked 2026-11-03; comprehensive guideline freshness review pending."
+      "source_review": "Primary reports and selected follow-ups checked 2026-11-03; comprehensive guideline freshness review pending.",
+      "automated_outcome_visualization_audit": "PASS",
+      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41567834748",
+      "daily_atlas_workflow": "PASS",
+      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41567834820",
+      "post_workflow_re_read": "PASS",
+      "verified_main_head_after_workflows": "1beb7ac455ea843478bfb368d226013e2aabf059",
+      "cloudflare_pages_deployment": "not independently verified"
+    },
+    "latest_main_branch_verification": {
+      "date": "2026-11-03",
+      "verified_head": "1beb7ac455ea843478bfb368d226013e2aabf059",
+      "roster_entries": 328,
+      "breast_cancer_entries": 77,
+      "canonical_trial_page_index_files": 327,
+      "recursive_tree_entries": 875,
+      "tree_truncated": false,
+      "new_pages_verified": 10,
+      "automated_outcome_visualization_audit": "PASS",
+      "daily_atlas_workflow": "PASS",
+      "browser_rendered_qa": "pending",
+      "live_cloudflare_deployment": "not independently verified"
     }
   },
   "trials": [
@@ -5589,7 +5610,7 @@
       "primary_endpoint": "270 enrolled; 204 eligible BCT-treated",
       "follow_up": "5-year local recurrence",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5613,7 +5634,7 @@
       "primary_endpoint": "4,806 underwent SLNB; 1,425 randomized",
       "follow_up": "Axillary recurrence and morbidity",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5638,7 +5659,7 @@
       "primary_endpoint": "4,110 enrolled; 4,087 in 10-year ITT analysis",
       "follow_up": "5-year ipsilateral breast recurrence (non-inferiority)",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5662,7 +5683,7 @@
       "primary_endpoint": "1,486 randomized",
       "follow_up": "iDFS and OS",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5686,7 +5707,7 @@
       "primary_endpoint": "417 randomized across four arms",
       "follow_up": "Breast pCR",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5710,7 +5731,7 @@
       "primary_endpoint": "5,101 randomized",
       "follow_up": "Invasive disease-free survival",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5736,7 +5757,7 @@
       "primary_endpoint": "5,796 enrolled; 5,761 ITT",
       "follow_up": "Invasive disease-free survival",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5762,7 +5783,7 @@
       "primary_endpoint": "5,018 randomized; approx. 4,984 primary efficacy",
       "follow_up": "iDFS; distant DFS",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5786,7 +5807,7 @@
       "primary_endpoint": "1,832 randomized; 916 per arm",
       "follow_up": "OS (primary); DFS and recurrence",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     },
@@ -5811,7 +5832,7 @@
       "primary_endpoint": "1,641 enrolled; 1,556 primary-event analysis",
       "follow_up": "Invasive breast cancer recurrence-free interval",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-03; comprehensive guideline-level freshness review remains pending.",
-      "outcome_visual_review_status": "Source-grounded static visualization present; automated audit and browser-rendered QA pending.",
+      "outcome_visual_review_status": "Automated structural outcome-visualization audit passed 2026-11-03; browser-rendered QA pending.",
       "batch_date": "2026-11-03",
       "quality_check_date": "2026-11-03"
     }
