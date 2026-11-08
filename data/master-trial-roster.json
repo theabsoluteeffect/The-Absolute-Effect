@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 9,
+  "version": 10,
   "last_quality_check": "2026-11-08",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -528,7 +528,7 @@
     },
     "archive_count": 15,
     "daily_evidence_file_count": 21,
-    "daily_evidence_records": 13,
+    "daily_evidence_records": 11,
     "evidence_index_links_added": 11,
     "new_pages_found": 11,
     "new_pages_with_shared_renderer": 11,
@@ -565,22 +565,32 @@
     "latest_main_branch_verification": {
       "date": "2026-11-08",
       "base_main_head": "eca4569854e0cc912a3dfab378dfa1574aae3b5d",
-      "candidate_count": 11,
-      "duplicate_audit": "PASS",
-      "recursive_tree_entries_before": 887,
+      "batch_commit": "28e135aeb036f28efbcf737ba20b8f02adf92de1",
+      "verified_main_head_before_final_metadata": "08db86a1b76654cab6e13908ca5fc2603841070d",
+      "recursive_tree_entries": 910,
       "tree_truncated": false,
-      "canonical_pages_before": 330,
-      "canonical_pages_added": 11,
-      "canonical_pages_after": 341,
-      "roster_entries_before": 331,
-      "roster_entries_after": 342,
-      "breast_cancer_entries_before": 77,
-      "breast_cancer_entries_after": 87,
-      "bladder_cancer_entries_added": 1,
-      "static_visualizations_present": true,
+      "roster_entries": 342,
+      "breast_cancer_entries": 87,
+      "bladder_cancer_entries": 34,
+      "canonical_trial_page_index_files": 341,
+      "new_pages_found": 11,
+      "evidence_index_links_added": 11,
+      "breast_index_links_added": 10,
+      "bladder_index_links_added": 1,
+      "daily_evidence_files": 21,
+      "daily_evidence_records": 11,
+      "archive_count": 15,
+      "current_trial_of_the_day": "gemx",
+      "previous_trial_of_the_day": "acosog-z11102",
+      "schema_version": 4,
+      "static_outcome_visualizations_present": 11,
+      "source_links_present": 11,
+      "dated_context_present": 11,
+      "duplicate_audit": "PASS",
+      "post_write_re_read": "PASS: all 11 canonical pages, roster, archive, current/previous Trial of the Day, daily evidence, evidence index, breast/bladder site indices, sitemap and evidence schema re-read from main.",
       "browser_rendered_qa": "pending",
-      "clinical_freshness_review": "Primary-source review performed; comprehensive guideline-level review pending.",
-      "post_write_re_read": "pending"
+      "cloudflare_pages_deployment": "not independently verified",
+      "clinical_freshness_review": "Primary-source review completed; comprehensive guideline-level freshness review pending."
     },
     "supplemental_batch_verification": {
       "date": "2026-11-03",
@@ -615,7 +625,8 @@
       "roster_entries_after": 331,
       "daily_evidence_records": 13,
       "post_write_re_read": "PASS"
-    }
+    },
+    "post_write_re_read": "PASS"
   },
   "trials": [
     {
