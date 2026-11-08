@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 10,
+  "version": 11,
   "last_quality_check": "2026-11-08",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -626,7 +626,20 @@
       "daily_evidence_records": 13,
       "post_write_re_read": "PASS"
     },
-    "post_write_re_read": "PASS"
+    "post_write_re_read": "PASS",
+    "visualization_rollout_2026_11_08": {
+      "baseline_checkpoint_branch": "checkpoint/pre-visualization-rollout-2026-11-08",
+      "working_branch": "feature/complete-outcome-visualizations-2026-11-08",
+      "baseline_commit": "d10b497ab3dc049e6b9a192da75ae1f4e3b75adf",
+      "records_previously_marked_with_visualization": 139,
+      "records_in_rollout": 203,
+      "records_using_individual_trial_pages": 195,
+      "records_using_shared_lung_sabr_reference_sections": 8,
+      "implementation": "Shared renderer extracts explicitly reported median outcomes, paired outcome percentages, hazard ratios, and numeric NNT/NNH. When no defensible numeric endpoint is detected, an explicit manual-verification panel is shown. The lung SABR consolidated reference page receives section-level visuals for each of its eight trial records. No NNT/NNH is calculated from median survival or hazard ratios.",
+      "numeric_values_inferred": false,
+      "browser_rendered_qa": "pending",
+      "cloudflare_pages_deployment": "not deployed; changes isolated to feature branch"
+    }
   },
   "trials": [
     {
@@ -639,7 +652,7 @@
       "question": "In advanced biliary tract cancer, does cisplatin plus gemcitabine improve survival compared with gemcitabine alone?",
       "path": "trial-pages/abc-02/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Metastatic · First-line",
       "aliases": [
         "UK ABC-02",
@@ -674,7 +687,7 @@
       "question": "In clinically node-negative women with limited sentinel-node metastases undergoing breast-conserving surgery, can completion axillary lymph-node dissection be safely omitted?",
       "path": "trial-pages/acosog-z0011",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Axillary Management"
     },
     {
@@ -710,7 +723,7 @@
       "question": "After radical surgery for high-risk muscle-invasive urothelial carcinoma, does one year of adjuvant pembrolizumab improve disease-free survival compared with observation?",
       "path": "trial-pages/ambassador",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -727,7 +740,7 @@
       "question": "In early HER2-positive breast cancer receiving adjuvant chemotherapy and trastuzumab, does adding pertuzumab improve invasive disease-free survival and overall survival?",
       "path": "trial-pages/aphinity",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant HER2-positive"
     },
     {
@@ -740,7 +753,7 @@
       "question": "In metastatic hormone-sensitive prostate cancer, does adding darolutamide to androgen-deprivation therapy plus docetaxel improve overall survival compared with androgen-deprivation therapy plus docetaxel?",
       "path": "trial-pages/arasens",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
@@ -752,7 +765,7 @@
       "question": "Does SBRT added to abiraterone/prednisone improve response and PFS in oligometastatic mCRPC?",
       "path": "trial-pages/arto/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligometastatic mCRPC · SBRT + abiraterone"
     },
     {
@@ -802,7 +815,7 @@
       "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant targeted therapy with sorafenib or pazopanib improve disease-free survival compared with placebo?",
       "path": "trial-pages/assure",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -815,7 +828,7 @@
       "question": "Does continuing tamoxifen to 10 years improve outcomes after 5 years of therapy?",
       "path": "trial-pages/atlas/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Extended Adjuvant Endocrine Therapy"
     },
     {
@@ -832,7 +845,7 @@
       "question": "In metastatic renal cell carcinoma, does adding bevacizumab to interferon alfa improve progression-free and overall outcomes compared with interferon alfa alone?",
       "path": "trial-pages/avoren",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic"
     },
     {
@@ -845,7 +858,7 @@
       "question": "In metastatic renal cell carcinoma progressing after prior systemic therapy, does axitinib improve progression-free survival compared with sorafenib?",
       "path": "trial-pages/axis",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Second-line Metastatic"
     },
     {
@@ -858,7 +871,7 @@
       "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before definitive local treatment of muscle-invasive bladder cancer?",
       "path": "trial-pages/ba06-30894/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -871,7 +884,7 @@
       "question": "Does adjuvant pelvic RT reduce locoregional relapse after cystectomy and chemotherapy in high-risk MIBC?",
       "path": "trial-pages/bart/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "High-risk MIBC after cystectomy"
     },
     {
@@ -884,7 +897,7 @@
       "question": "For bladder-preserving RT, does concurrent chemotherapy improve locoregional control?",
       "path": "trial-pages/bc2001/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Bladder Preservation"
     },
     {
@@ -956,7 +969,7 @@
       "question": "In previously untreated intermediate- or poor-risk metastatic RCC, does cabozantinib improve disease control compared with sunitinib?",
       "path": "trial-pages/cabosun",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic · Intermediate/Poor Risk"
     },
     {
@@ -969,7 +982,7 @@
       "question": "In women ≥70 with T1N0 ER-positive breast cancer after lumpectomy and endocrine therapy, can RT be omitted?",
       "path": "trial-pages/calgb-9343/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "RT Omission"
     },
     {
@@ -982,7 +995,7 @@
       "question": "In peripheral stage IA NSCLC ≤2 cm, can sublobar resection replace lobectomy without compromising cancer control?",
       "path": "trial-pages/calgb-140503/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Localized Disease"
     },
     {
@@ -1000,7 +1013,7 @@
       "question": "In locally advanced rectal cancer, does preoperative rather than postoperative CRT reduce local recurrence?",
       "path": "trial-pages/cao-aro-aio-94/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II–III Rectal Cancer · Preoperative vs Postoperative CRT"
     },
     {
@@ -1032,7 +1045,7 @@
       "question": "In intermediate/poor-risk metastatic RCC, is upfront cytoreductive nephrectomy necessary before systemic therapy?",
       "path": "trial-pages/carmena/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic Disease"
     },
     {
@@ -1049,7 +1062,7 @@
       "question": "In newly diagnosed IDH-mutant, 1p/19q non-codeleted grade 3 astrocytoma, does adjuvant temozolomide improve survival, and does concurrent temozolomide add benefit?",
       "path": "trial-pages/catnon/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant Therapy · Grade 3 IDH-mutant Astrocytoma"
     },
     {
@@ -1062,7 +1075,7 @@
       "question": "In metastatic hormone-sensitive prostate cancer, does adding docetaxel to ADT improve survival?",
       "path": "trial-pages/chaarted/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
@@ -1075,7 +1088,7 @@
       "question": "In previously treated advanced clear-cell renal cell carcinoma, does nivolumab improve overall survival compared with everolimus?",
       "path": "trial-pages/checkmate-025",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Second-line Metastatic"
     },
     {
@@ -1088,7 +1101,7 @@
       "question": "In previously untreated advanced or metastatic clear-cell renal cell carcinoma, does nivolumab plus ipilimumab improve survival and disease control compared with sunitinib?",
       "path": "trial-pages/checkmate-214",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -1101,7 +1114,7 @@
       "question": "Does adjuvant nivolumab reduce recurrence after radical surgery for high-risk muscle-invasive urothelial carcinoma?",
       "path": "trial-pages/checkmate-274/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1118,7 +1131,7 @@
       "question": "In platinum-refractory metastatic urothelial carcinoma, can nivolumab produce clinically meaningful and durable tumour responses?",
       "path": "trial-pages/checkmate-275",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Metastatic"
     },
     {
@@ -1154,7 +1167,7 @@
       "question": "In previously untreated unresectable or metastatic urothelial carcinoma, does nivolumab plus gemcitabine–cisplatin followed by nivolumab improve survival over gemcitabine–cisplatin?",
       "path": "trial-pages/checkmate-901/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line advanced/metastatic UC"
     },
     {
@@ -1167,7 +1180,7 @@
       "question": "Does adjuvant nivolumab plus ipilimumab improve disease-free survival after nephrectomy for high-risk RCC?",
       "path": "trial-pages/checkmate-914/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1180,7 +1193,7 @@
       "question": "In previously untreated advanced or metastatic renal cell carcinoma, does nivolumab plus cabozantinib improve progression-free and overall survival compared with sunitinib?",
       "path": "trial-pages/checkmate-9er",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -1193,7 +1206,7 @@
       "question": "Can 60 Gy in 20 fractions replace 74 Gy in 37 fractions?",
       "path": "trial-pages/chhip/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized"
     },
     {
@@ -1247,7 +1260,7 @@
       "question": "In untreated advanced clear-cell RCC, does lenvatinib plus pembrolizumab improve outcomes compared with sunitinib?",
       "path": "trial-pages/clear",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -1265,7 +1278,7 @@
       "question": "For resectable colon cancer, is laparoscopic colectomy oncologically non-inferior to open colectomy?",
       "path": "trial-pages/color/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resectable Colon Cancer · Laparoscopic vs Open Surgery"
     },
     {
@@ -1278,7 +1291,7 @@
       "question": "In previously untreated metastatic renal cell carcinoma, is pazopanib non-inferior to sunitinib for progression-free and overall survival?",
       "path": "trial-pages/comparz",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -1296,7 +1309,7 @@
       "question": "After resection of pancreatic cancer, does adjuvant gemcitabine improve outcomes versus observation?",
       "path": "trial-pages/conko-001/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resected Pancreatic Ductal Adenocarcinoma · Adjuvant Therapy"
     },
     {
@@ -1349,7 +1362,7 @@
       "question": "In HER2-negative breast cancer with residual invasive disease after neoadjuvant chemotherapy, does adjuvant capecitabine improve disease-free and overall survival?",
       "path": "trial-pages/create-x",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-neoadjuvant residual disease"
     },
     {
@@ -1362,7 +1375,7 @@
       "question": "In resectable locally advanced esophageal or GEJ cancer, does neoadjuvant chemoradiotherapy followed by surgery improve survival over surgery alone?",
       "path": "trial-pages/cross/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced Resectable Disease"
     },
     {
@@ -1375,7 +1388,7 @@
       "question": "In muscle-invasive bladder cancer, can bladder-preserving chemoradiotherapy provide effective local control and survival while avoiding radical cystectomy?",
       "path": "trial-pages/cueto-98013",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Bladder Preservation"
     },
     {
@@ -1392,7 +1405,7 @@
       "question": "In previously untreated unresectable locally advanced or metastatic urothelial carcinoma, does durvalumab alone or durvalumab plus tremelimumab improve overall survival over platinum chemotherapy?",
       "path": "trial-pages/danube",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Advanced/Metastatic"
     },
     {
@@ -1409,7 +1422,7 @@
       "question": "In stage I nonseminomatous germ-cell cancer, can active surveillance safely avoid immediate adjuvant treatment while maintaining a high cure rate?",
       "path": "trial-pages/daugaard-stage1-nsgct-surveillance",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Non-seminoma"
     },
     {
@@ -1422,7 +1435,7 @@
       "question": "In high-risk breast cancer after surgery and radiotherapy, does adjuvant chemotherapy with cyclophosphamide or CMF improve survival compared with no systemic therapy?",
       "path": "trial-pages/dbcg-77b",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1435,7 +1448,7 @@
       "question": "In high-risk postmenopausal breast cancer, does adding one year of tamoxifen to postoperative radiotherapy improve recurrence and survival compared with radiotherapy alone?",
       "path": "trial-pages/dbcg-77c",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1448,7 +1461,7 @@
       "question": "Does postmastectomy radiotherapy improve outcomes in high-risk premenopausal stage II/III breast cancer?",
       "path": "trial-pages/dbcg-82b/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locoregional Disease"
     },
     {
@@ -1461,7 +1474,7 @@
       "question": "In high-risk postmenopausal breast cancer, does adding tamoxifen to adjuvant CMF and radiotherapy improve outcomes compared with CMF and radiotherapy alone?",
       "path": "trial-pages/dbcg-82c",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Postmastectomy RT"
     },
     {
@@ -1493,7 +1506,7 @@
       "question": "Can active surveillance safely defer intervention for small renal masses?",
       "path": "trial-pages/dissrm/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Small Renal Mass"
     },
     {
@@ -1506,7 +1519,7 @@
       "question": "When high-quality total mesorectal excision is performed, does adding short-course preoperative radiotherapy reduce local recurrence?",
       "path": "trial-pages/dutch-tme/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced · Total Mesorectal Excision"
     },
     {
@@ -1578,7 +1591,7 @@
       "question": "In adults with low-grade glioma, does early RT improve outcomes compared with RT deferred until progression?",
       "path": "trial-pages/eortc-22845/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adult Low-Grade Glioma · Early vs Deferred RT",
       "site_detail": "Neuro-oncology"
     },
@@ -1592,7 +1605,7 @@
       "question": "In locally advanced or high-risk prostate cancer, does adding long-term androgen deprivation to definitive radiotherapy improve survival compared with radiotherapy alone?",
       "path": "trial-pages/eortc-22863",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/High-Risk"
     },
     {
@@ -1605,7 +1618,7 @@
       "question": "After radical prostatectomy for locally advanced or margin-positive prostate cancer, does immediate adjuvant radiotherapy improve progression-free control compared with observation with radiotherapy reserved for relapse?",
       "path": "trial-pages/eortc-22911",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy"
     },
     {
@@ -1618,7 +1631,7 @@
       "question": "In locally advanced prostate cancer treated with radiotherapy, does extending androgen deprivation to 3 years improve survival compared with 6 months of androgen deprivation?",
       "path": "trial-pages/eortc-22961",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/High-Risk"
     },
     {
@@ -1631,7 +1644,7 @@
       "question": "In newly diagnosed anaplastic oligodendroglial tumours, does adding PCV chemotherapy to radiotherapy improve long-term survival, particularly in 1p/19q-codeleted disease?",
       "path": "trial-pages/eortc-26951-rtog-9402/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Grade 3 Oligodendroglial Tumour · Adjuvant"
     },
     {
@@ -1644,7 +1657,7 @@
       "question": "For small localized RCC, can nephron-sparing surgery preserve renal function without compromising cancer outcomes?",
       "path": "trial-pages/eortc-30904/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Disease"
     },
     {
@@ -1657,7 +1670,7 @@
       "question": "Does intravesical BCG improve recurrence and survival outcomes versus epirubicin?",
       "path": "trial-pages/eortc-30911/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Intermediate/High-risk NMIBC"
     },
     {
@@ -1674,7 +1687,7 @@
       "question": "Can three cycles of BEP provide equivalent disease control to four cycles in good-prognosis metastatic germ-cell cancer while reducing treatment burden?",
       "path": "trial-pages/eortc-30941-te20/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Good-Risk Metastatic Germ Cell Cancer"
     },
     {
@@ -1687,7 +1700,7 @@
       "question": "In intermediate- and high-risk non-muscle-invasive bladder cancer, what dose and duration of maintenance BCG best balance recurrence control and treatment burden?",
       "path": "trial-pages/eortc-30962",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1700,7 +1713,7 @@
       "question": "Does adding paclitaxel to BEP improve PFS in intermediate-prognosis germ-cell cancer?",
       "path": "trial-pages/eortc-30983/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Intermediate Prognosis"
     },
     {
@@ -1713,7 +1726,7 @@
       "question": "In advanced urothelial cancer patients unfit for cisplatin, how does gemcitabine plus carboplatin compare with methotrexate, carboplatin and vinblastine?",
       "path": "trial-pages/eortc-30986",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Metastatic"
     },
     {
@@ -1726,7 +1739,7 @@
       "question": "Can irinotecan plus cisplatin produce clinically meaningful responses in locally advanced or metastatic penile cancer?",
       "path": "trial-pages/eortc-30992/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant/Locally Advanced"
     },
     {
@@ -1739,7 +1752,7 @@
       "question": "Does immediate adjuvant chemotherapy improve outcomes compared with deferred chemotherapy after radical cystectomy?",
       "path": "trial-pages/eortc-30994/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1755,7 +1768,7 @@
       "question": "Does adding concurrent and adjuvant temozolomide to postoperative radiotherapy improve survival in newly diagnosed glioblastoma?",
       "path": "trial-pages/stupp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant Therapy · Newly Diagnosed"
     },
     {
@@ -1768,7 +1781,7 @@
       "question": "After resection of pancreatic ductal adenocarcinoma, does adjuvant gemcitabine plus capecitabine improve survival compared with gemcitabine alone?",
       "path": "trial-pages/espac-4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resected · Adjuvant"
     },
     {
@@ -1781,7 +1794,7 @@
       "question": "In previously untreated advanced or metastatic urothelial carcinoma, does enfortumab vedotin plus pembrolizumab improve overall and progression-free survival compared with platinum-based chemotherapy?",
       "path": "trial-pages/ev-302",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Advanced/Metastatic"
     },
     {
@@ -1799,7 +1812,7 @@
       "question": "For cisplatin-ineligible or cisplatin-declining patients with operable MIBC, does perioperative enfortumab vedotin plus pembrolizumab improve outcomes over immediate cystectomy?",
       "path": "trial-pages/ev-303/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Perioperative cisplatin-ineligible MIBC"
     },
     {
@@ -1817,7 +1830,7 @@
       "question": "For cisplatin-eligible patients with operable MIBC, does perioperative enfortumab vedotin plus pembrolizumab improve EFS and OS versus neoadjuvant gemcitabine–cisplatin and cystectomy?",
       "path": "trial-pages/ev-304/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Perioperative cisplatin-eligible MIBC"
     },
     {
@@ -1830,7 +1843,7 @@
       "question": "After nephrectomy for high-risk renal cell carcinoma, does adjuvant everolimus improve recurrence-free survival compared with placebo?",
       "path": "trial-pages/everest",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -1842,7 +1855,7 @@
       "question": "Does MDT added to intermittent hormone therapy improve disease control?",
       "path": "trial-pages/extend/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligometastatic prostate cancer · MDT + intermittent hormone therapy"
     },
     {
@@ -1855,7 +1868,7 @@
       "question": "Can stereotactic ablative body radiotherapy provide effective definitive local control for primary RCC in patients unsuitable for surgery?",
       "path": "trial-pages/fastrack-ii/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Primary RCC"
     },
     {
@@ -1908,7 +1921,7 @@
       "question": "In resectable gastric or GEJ adenocarcinoma, does perioperative FLOT improve survival compared with older ECF/ECX chemotherapy?",
       "path": "trial-pages/flot4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced Resectable Disease · Perioperative"
     },
     {
@@ -1958,7 +1971,7 @@
       "question": "In stage I non-seminoma, does one cycle of BEP provide better disease control than RPLND?",
       "path": "trial-pages/german-ah01-94/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Non-seminoma"
     },
     {
@@ -1971,7 +1984,7 @@
       "question": "Can early tumour-marker decline identify poor-prognosis GCT patients who benefit from intensified chemotherapy?",
       "path": "trial-pages/getug-13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Risk-adapted Treatment"
     },
     {
@@ -1984,7 +1997,7 @@
       "question": "In men with biochemical recurrence after prostatectomy, does adding short-term androgen-deprivation therapy to salvage radiotherapy improve progression-free outcomes compared with salvage radiotherapy alone?",
       "path": "trial-pages/getug-afu-16",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
@@ -1997,7 +2010,7 @@
       "question": "After radical prostatectomy for high-risk prostate cancer, does immediate adjuvant radiotherapy improve event-free survival compared with early salvage radiotherapy, and what is the effect on treatment toxicity?",
       "path": "trial-pages/getug-afu-17",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy"
     },
     {
@@ -2009,7 +2022,7 @@
       "question": "Does SBRT added to ADT+enzalutamide improve radiographic PFS in oligometastatic mCRPC?",
       "path": "trial-pages/grouq-pcs-9/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligometastatic mCRPC · SBRT + enzalutamide"
     },
     {
@@ -2040,7 +2053,7 @@
       "question": "Does 1 year of adjuvant trastuzumab improve long-term outcomes after chemotherapy?",
       "path": "trial-pages/hera-big-1-01/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant HER2-positive"
     },
     {
@@ -2052,7 +2065,7 @@
       "question": "In newly diagnosed bone-metastatic HSPC, does prostate RT added to ADT improve survival?",
       "path": "trial-pages/horrad/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "De novo metastatic HSPC · Prostate RT"
     },
     {
@@ -2065,7 +2078,7 @@
       "question": "In stage III colon cancer, can adjuvant oxaliplatin-based chemotherapy safely be shortened from 6 months to 3 months without unacceptable loss of disease control?",
       "path": "trial-pages/idea/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage III · Adjuvant Duration",
       "site_detail": "Colon Cancer"
     },
@@ -2084,7 +2097,7 @@
       "question": "In untreated unresectable HCC, does atezolizumab plus bevacizumab improve outcomes versus sorafenib?",
       "path": "trial-pages/imbrave150/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Unresectable HCC · First-line Systemic Therapy"
     },
     {
@@ -2097,7 +2110,7 @@
       "question": "Does atezolizumab plus bevacizumab improve outcomes versus sunitinib in first-line metastatic RCC?",
       "path": "trial-pages/immotion151/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic RCC"
     },
     {
@@ -2146,7 +2159,7 @@
       "question": "Does adjuvant atezolizumab improve outcomes after surgery for high-risk muscle-invasive urothelial carcinoma?",
       "path": "trial-pages/imvigor010/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -2163,7 +2176,7 @@
       "question": "After cystectomy for MIBC, does serial ctDNA testing identify patients who benefit from adjuvant atezolizumab?",
       "path": "trial-pages/imvigor011/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "ctDNA-guided adjuvant MIBC"
     },
     {
@@ -2179,7 +2192,7 @@
       "question": "In platinum-refractory advanced urothelial carcinoma, does atezolizumab improve overall survival compared with chemotherapy, particularly in patients with high PD-L1 expression?",
       "path": "trial-pages/imvigor211",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Metastatic"
     },
     {
@@ -2245,7 +2258,7 @@
       "question": "In advanced or metastatic urothelial carcinoma that has not progressed after first-line platinum chemotherapy, does maintenance avelumab plus best supportive care improve overall survival compared with best supportive care alone?",
       "path": "trial-pages/javelin-bladder-100",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Advanced/Metastatic"
     },
     {
@@ -2262,7 +2275,7 @@
       "question": "In untreated advanced RCC, does avelumab plus axitinib improve disease control compared with sunitinib?",
       "path": "trial-pages/javelin-renal-101",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -2281,7 +2294,7 @@
       "question": "After complete resection of stage IB–II NSCLC, does cisplatin–vinorelbine improve survival compared with observation?",
       "path": "trial-pages/jbr-10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resected Stage IB–II · Adjuvant Chemotherapy"
     },
     {
@@ -2294,7 +2307,7 @@
       "question": "In platinum-refractory advanced urothelial carcinoma, does pembrolizumab improve overall survival compared with investigator's-choice chemotherapy?",
       "path": "trial-pages/keynote-045",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Metastatic"
     },
     {
@@ -2311,7 +2324,7 @@
       "question": "What durable activity does first-line pembrolizumab monotherapy provide for cisplatin-ineligible advanced urothelial carcinoma?",
       "path": "trial-pages/keynote-052/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Cisplatin-ineligible advanced UC"
     },
     {
@@ -2328,7 +2341,7 @@
       "question": "For selected patients with BCG-unresponsive CIS who decline or are ineligible for cystectomy, can pembrolizumab provide bladder-preserving disease control?",
       "path": "trial-pages/keynote-057/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "BCG-unresponsive high-risk NMIBC"
     },
     {
@@ -2401,7 +2414,7 @@
       "question": "In untreated advanced urothelial carcinoma, did adding pembrolizumab to platinum-based chemotherapy improve PFS or OS versus chemotherapy alone?",
       "path": "trial-pages/keynote-361/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line advanced/metastatic UC"
     },
     {
@@ -2414,7 +2427,7 @@
       "question": "In previously untreated advanced or metastatic renal cell carcinoma, does pembrolizumab plus axitinib improve overall survival and disease control compared with sunitinib?",
       "path": "trial-pages/keynote-426",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -2432,7 +2445,7 @@
       "question": "In previously untreated stage II–III triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological complete response, event-free survival and overall survival compared with chemotherapy alone?",
       "path": "trial-pages/keynote-522/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II–III TNBC · Neoadjuvant/Adjuvant Immunotherapy"
     },
     {
@@ -2445,7 +2458,7 @@
       "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
       "path": "trial-pages/keynote-564/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -2545,7 +2558,7 @@
       "question": "Does neoadjuvant 177Lu-PNT2002 before SBRT improve PFS versus SBRT alone?",
       "path": "trial-pages/lunar/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent HSPC · 177Lu-PSMA before SBRT"
     },
     {
@@ -2563,7 +2576,7 @@
       "question": "In resectable gastric/GEJ adenocarcinoma, does perioperative ECF improve survival over surgery alone?",
       "path": "trial-pages/magic/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resectable Disease · Perioperative Chemotherapy"
     },
     {
@@ -2576,7 +2589,7 @@
       "question": "In resectable locally advanced gastric or gastroesophageal-junction adenocarcinoma, does adding durvalumab to perioperative FLOT chemotherapy improve event-free and overall survival compared with FLOT alone?",
       "path": "trial-pages/matterhorn",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/Perioperative"
     },
     {
@@ -2642,7 +2655,7 @@
       "question": "In resected stage II/III colon cancer, does adding oxaliplatin to fluoropyrimidine improve disease control and survival?",
       "path": "trial-pages/mosaic/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant · Stage III / High-Risk Stage II",
       "site_detail": "Colon Cancer"
     },
@@ -2656,7 +2669,7 @@
       "question": "In operable rectal cancer, does routine short-course preoperative radiotherapy improve local control and disease-free survival compared with selective postoperative chemoradiotherapy?",
       "path": "trial-pages/mrc-cr07/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced · Preoperative RT"
     },
     {
@@ -2669,7 +2682,7 @@
       "question": "In operable esophageal cancer, does two-cycle neoadjuvant cisplatin/5-FU improve survival compared with surgery alone?",
       "path": "trial-pages/mrc-oe02/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced Resectable · Neoadjuvant"
     },
     {
@@ -2703,7 +2716,7 @@
       "question": "In localized prostate cancer treated with external-beam radiotherapy, does dose escalation improve biochemical and clinical disease control compared with conventional-dose radiotherapy?",
       "path": "trial-pages/mrc-rt01",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Definitive Localized Disease"
     },
     {
@@ -2716,7 +2729,7 @@
       "question": "Can short-course BEP substantially reduce relapse in high-risk stage I non-seminoma?",
       "path": "trial-pages/mrc-te05/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Non-seminoma"
     },
     {
@@ -2729,7 +2742,7 @@
       "question": "Can CT imaging be safely reduced during surveillance of stage I non-seminoma?",
       "path": "trial-pages/mrc-te08/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Imaging"
     },
     {
@@ -2742,7 +2755,7 @@
       "question": "Can para-aortic-only RT replace dog-leg RT in stage I seminoma?",
       "path": "trial-pages/mrc-te10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Seminoma"
     },
     {
@@ -2755,7 +2768,7 @@
       "question": "In stage I seminoma, can a lower radiotherapy dose of 20 Gy provide equivalent relapse control to 30 Gy with less treatment burden?",
       "path": "trial-pages/mrc-te18",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Seminoma"
     },
     {
@@ -2772,7 +2785,7 @@
       "question": "In stage I seminoma, can single-dose carboplatin replace adjuvant radiotherapy?",
       "path": "trial-pages/mrc-te19/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Seminoma"
     },
     {
@@ -2785,7 +2798,7 @@
       "question": "In poor-prognosis metastatic germ-cell cancer, does intensified induction chemotherapy improve outcomes compared with standard BEP-based chemotherapy?",
       "path": "trial-pages/mrc-te23",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Seminoma"
     },
     {
@@ -2798,7 +2811,7 @@
       "question": "In good-prognosis metastatic nonseminomatous germ-cell cancer, can carboplatin replace cisplatin in BEP-type chemotherapy without compromising efficacy?",
       "path": "trial-pages/mrc-eortc-bep-vs-ceb",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Good-Risk Metastatic"
     },
     {
@@ -2811,7 +2824,7 @@
       "question": "Does intensified induction/sequential chemotherapy improve outcomes over standard BEP/EP?",
       "path": "trial-pages/mrc-eortc-te13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Poor-prognosis Metastatic"
     },
     {
@@ -2879,7 +2892,7 @@
       "question": "In cN0 penile cancer, can DSNB guide selective treatment of occult nodal disease while reducing morbidity?",
       "path": "trial-pages/penile-dsnb-cno/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Nodal Staging"
     },
     {
@@ -2896,7 +2909,7 @@
       "question": "In cisplatin-eligible muscle-invasive bladder cancer, does perioperative durvalumab added to neoadjuvant gemcitabine-cisplatin improve event-free and overall survival?",
       "path": "trial-pages/niagara",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant/Adjuvant MIBC"
     },
     {
@@ -2909,7 +2922,7 @@
       "question": "In high-risk localized prostate cancer, does adding docetaxel to androgen deprivation therapy and radiotherapy improve overall survival compared with androgen deprivation therapy and radiotherapy alone?",
       "path": "trial-pages/rtog-0521",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "High-Risk Localized"
     },
     {
@@ -2922,7 +2935,7 @@
       "question": "In men with biochemical recurrence after prostatectomy, does adding long-term antiandrogen therapy to salvage radiotherapy improve survival compared with salvage radiotherapy alone?",
       "path": "trial-pages/rtog-9601",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
@@ -2935,7 +2948,7 @@
       "question": "Does radical mastectomy improve long-term survival compared with less extensive breast and axillary surgery in operable breast cancer?",
       "path": "trial-pages/nsabp-b04/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locoregional Disease"
     },
     {
@@ -2948,7 +2961,7 @@
       "question": "In operable invasive breast cancer, can breast-conserving surgery followed by radiotherapy provide outcomes comparable to total mastectomy?",
       "path": "trial-pages/nsabp-b06",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Definitive/Locoregional"
     },
     {
@@ -2961,7 +2974,7 @@
       "question": "Does adjuvant methotrexate/fluorouracil improve outcomes over surgery alone?",
       "path": "trial-pages/nsabp-b13/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant · ER-negative Node-negative"
     },
     {
@@ -2974,7 +2987,7 @@
       "question": "Does five years of tamoxifen improve outcomes compared with placebo?",
       "path": "trial-pages/nsabp-b14/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant Endocrine Therapy"
     },
     {
@@ -2991,7 +3004,7 @@
       "question": "In ductal carcinoma in situ treated by lumpectomy, does adding whole-breast radiotherapy reduce ipsilateral breast recurrence compared with lumpectomy alone?",
       "path": "trial-pages/nsabp-b17",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant RT"
     },
     {
@@ -3004,7 +3017,7 @@
       "question": "In operable breast cancer, does giving chemotherapy before surgery improve outcomes or increase the opportunity for breast-conserving surgery compared with the same chemotherapy after surgery?",
       "path": "trial-pages/nsabp-b18",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -3017,7 +3030,7 @@
       "question": "Does adding cyclophosphamide to MF improve outcomes?",
       "path": "trial-pages/nsabp-b19/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant · ER-negative Node-negative"
     },
     {
@@ -3030,7 +3043,7 @@
       "question": "In node-negative, estrogen-receptor-positive breast cancer, does adding adjuvant chemotherapy to tamoxifen improve disease-free and overall survival compared with tamoxifen alone?",
       "path": "trial-pages/nsabp-b20",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -3043,7 +3056,7 @@
       "question": "In women with node-negative invasive breast cancer ≤1 cm after lumpectomy, is tamoxifen alone sufficient without radiotherapy, and does adding tamoxifen to radiotherapy further reduce ipsilateral breast recurrence?",
       "path": "trial-pages/nsabp-b21",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "RT + Endocrine / RT Omission"
     },
     {
@@ -3060,7 +3073,7 @@
       "question": "In ductal carcinoma in situ treated by lumpectomy and radiotherapy, does adding tamoxifen reduce ipsilateral and contralateral breast events compared with radiotherapy alone?",
       "path": "trial-pages/nsabp-b24",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant RT"
     },
     {
@@ -3073,7 +3086,7 @@
       "question": "In operable breast cancer, does adding docetaxel to preoperative doxorubicin and cyclophosphamide improve response and pathological complete response compared with preoperative AC alone?",
       "path": "trial-pages/nsabp-b27",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -3086,7 +3099,7 @@
       "question": "Does adding trastuzumab to AC→paclitaxel improve DFS and OS?",
       "path": "trial-pages/nsabp-b31-n9831/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant HER2-positive"
     },
     {
@@ -3099,7 +3112,7 @@
       "question": "In clinically node-negative breast cancer, can sentinel lymph-node biopsy accurately stage the axilla and allow omission of axillary dissection when the sentinel node is negative?",
       "path": "trial-pages/nsabp-b32",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Axillary Staging"
     },
     {
@@ -3112,7 +3125,7 @@
       "question": "In high-risk early triple-negative breast cancer, does adding pembrolizumab to neoadjuvant chemotherapy and continuing it after surgery improve pathological response and event-free survival?",
       "path": "trial-pages/nsabp-b59-gepardouze",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -3141,7 +3154,7 @@
       "question": "Can elective pelvic RT plus short-course ADT provide durable control in pelvic nodal oligorecurrence?",
       "path": "trial-pages/oligopelvis/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent pelvic nodes · Elective nodal RT"
     },
     {
@@ -3171,7 +3184,7 @@
       "question": "Does SABR reduce early progression versus observation in recurrent HSPC with 1–3 metastases?",
       "path": "trial-pages/oriole/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent HSPC · MDT vs observation"
     },
     {
@@ -3184,7 +3197,7 @@
       "question": "After definitive concurrent chemoradiotherapy for unresectable stage III NSCLC, does consolidation durvalumab improve survival?",
       "path": "trial-pages/pacific/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage III Locally Advanced · Consolidation"
     },
     {
@@ -3197,7 +3210,7 @@
       "question": "In locally advanced or metastatic penile cancer, does neoadjuvant paclitaxel, ifosfamide and cisplatin produce sufficient tumour response to enable definitive local treatment?",
       "path": "trial-pages/pagliaro-tip",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant/Locally Advanced"
     },
     {
@@ -3209,7 +3222,7 @@
       "question": "Does ENRT improve MFS versus focal MDT for PET-detected pelvic nodal recurrence?",
       "path": "trial-pages/peace-v-storm/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent pelvic nodes · ENRT vs MDT"
     },
     {
@@ -3225,7 +3238,7 @@
       "question": "In de novo metastatic castration-sensitive prostate cancer, does adding abiraterone/prednisone to ADT plus docetaxel improve survival?",
       "path": "trial-pages/peace-1",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "De novo Metastatic Hormone-Sensitive"
     },
     {
@@ -3242,7 +3255,7 @@
       "question": "In previously untreated metastatic renal cell carcinoma, which treatment do patients prefer after experiencing pazopanib and sunitinib sequentially?",
       "path": "trial-pages/pisces",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic"
     },
     {
@@ -3255,7 +3268,7 @@
       "question": "In men with localized prostate cancer, does radical prostatectomy improve overall or prostate-cancer-specific survival compared with observation?",
       "path": "trial-pages/pivot",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Disease"
     },
     {
@@ -3272,7 +3285,7 @@
       "question": "In BCG-naïve high-risk NMIBC after TURBT, does adding durvalumab to BCG induction and maintenance improve disease-free survival?",
       "path": "trial-pages/potomac/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "BCG-naïve high-risk NMIBC"
     },
     {
@@ -3285,7 +3298,7 @@
       "question": "In resectable or borderline-resectable pancreatic cancer, does neoadjuvant chemoradiotherapy improve survival compared with immediate surgery?",
       "path": "trial-pages/preopanc-1/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant · Resectable/Borderline Resectable"
     },
     {
@@ -3298,7 +3311,7 @@
       "question": "In older women with low-risk HR-positive node-negative breast cancer, what is the absolute benefit of adjuvant breast RT?",
       "path": "trial-pages/prime-ii/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "RT Omission"
     },
     {
@@ -3334,7 +3347,7 @@
       "question": "After pancreatic resection, does modified FOLFIRINOX improve survival compared with gemcitabine?",
       "path": "trial-pages/prodige-24/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant · Resected Disease"
     },
     {
@@ -3347,7 +3360,7 @@
       "question": "In fit patients with metastatic pancreatic adenocarcinoma, does first-line FOLFIRINOX improve survival compared with gemcitabine alone?",
       "path": "trial-pages/prodige-4/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic · First-line"
     },
     {
@@ -3360,7 +3373,7 @@
       "question": "Can 60 Gy in 20 fractions replace 78 Gy in 39 fractions?",
       "path": "trial-pages/profit/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Intermediate-risk Localized"
     },
     {
@@ -3373,7 +3386,7 @@
       "question": "For localized prostate cancer, what are the long-term trade-offs between monitoring, surgery and radiotherapy?",
       "path": "trial-pages/protect-15y/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Disease"
     },
     {
@@ -3386,7 +3399,7 @@
       "question": "In men with high-risk localized prostate cancer undergoing radical prostatectomy, does perioperative darolutamide plus androgen-deprivation therapy and docetaxel improve pathological and event-free outcomes compared with standard perioperative treatment?",
       "path": "trial-pages/proteus",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Disease"
     },
     {
@@ -3404,7 +3417,7 @@
       "question": "After curative resection of colorectal cancer, does fluoropyrimidine chemotherapy improve outcomes over observation?",
       "path": "trial-pages/quasar/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Resected Colorectal Cancer · Predominantly Stage II · Adjuvant Therapy"
     },
     {
@@ -3417,7 +3430,7 @@
       "question": "After radical prostatectomy, does routine adjuvant radiotherapy improve outcomes compared with observation with early salvage radiotherapy for PSA relapse?",
       "path": "trial-pages/radicals-rt",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy"
     },
     {
@@ -3429,7 +3442,7 @@
       "question": "Does adding short-course ADT to SBRT improve outcomes in metachronous oligorecurrent HSPC?",
       "path": "trial-pages/radiosa/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent HSPC · SBRT ± ADT"
     },
     {
@@ -3445,7 +3458,7 @@
       "question": "In high-risk penile cancer after definitive surgery, does adjuvant 5-FU plus platinum improve outcomes compared with paclitaxel plus platinum?",
       "path": "trial-pages/penile-adjuvant-5fu-vs-paclitaxel",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -3458,7 +3471,7 @@
       "question": "In high-risk locally advanced rectal cancer, can short-course RT followed by systemic chemotherapy reduce treatment failure compared with conventional chemoradiotherapy?",
       "path": "trial-pages/rapido/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced Disease · Total Neoadjuvant Therapy"
     },
     {
@@ -3470,7 +3483,7 @@
       "question": "Does radium-223 added to SABR delay progression in recurrent bone-metastatic HSPC?",
       "path": "trial-pages/ravens/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent bone-metastatic HSPC · SABR ± radium-223"
     },
     {
@@ -3507,7 +3520,7 @@
       "question": "For medically inoperable stage I NSCLC, does SBRT provide durable primary-tumour control?",
       "path": "trial-pages/rtog-0236/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I · Medically Inoperable · SBRT"
     },
     {
@@ -3520,7 +3533,7 @@
       "question": "Does adding short-term ADT and pelvic nodal RT improve freedom from progression after prostatectomy salvage RT?",
       "path": "trial-pages/rtog-0534-spport/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Post-prostatectomy Biochemical Recurrence"
     },
     {
@@ -3533,7 +3546,7 @@
       "question": "In unresectable stage IIIA/IIIB NSCLC, does escalating definitive thoracic RT from 60 Gy to 74 Gy improve survival when given with concurrent chemotherapy?",
       "path": "trial-pages/rtog-0617/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage III · Definitive Chemoradiation"
     },
     {
@@ -3546,7 +3559,7 @@
       "question": "In locally advanced prostate cancer, does adding long-term androgen deprivation to radiotherapy improve local control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-85-31",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/High-Risk"
     },
     {
@@ -3559,7 +3572,7 @@
       "question": "In locally advanced prostate cancer, does extending androgen deprivation around radiotherapy from short-term to long-term improve disease control and survival?",
       "path": "trial-pages/rtog-92-02",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/High-Risk"
     },
     {
@@ -3576,7 +3589,7 @@
       "question": "In men with localized or intermediate-risk prostate cancer, does adding short-term androgen-deprivation therapy to radiotherapy improve disease control and survival compared with radiotherapy alone?",
       "path": "trial-pages/rtog-9408",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized/Intermediate-Risk"
     },
     {
@@ -3613,7 +3626,7 @@
       "question": "For high-risk grade 2 glioma, does adding PCV after RT improve survival?",
       "path": "trial-pages/rtog-9802/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "High-Risk Grade 2 Glioma · RT ± PCV",
       "site_detail": "Neuro-oncology"
     },
@@ -3627,7 +3640,7 @@
       "question": "Does adjuvant sunitinib improve disease-free survival after nephrectomy in high-risk clear-cell RCC?",
       "path": "trial-pages/s-trac/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -3640,7 +3653,7 @@
       "question": "Can stage IIA/IIB seminoma be treated with markedly de-escalated carboplatin plus involved-node RT?",
       "path": "trial-pages/sakk-01-10/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II Seminoma"
     },
     {
@@ -3653,7 +3666,7 @@
       "question": "In advanced hepatocellular carcinoma unsuitable for or progressing after locoregional therapy, does sorafenib improve survival compared with placebo?",
       "path": "trial-pages/sharp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Advanced/Unresectable · First-line"
     },
     {
@@ -3666,7 +3679,7 @@
       "question": "Does ovarian suppression added to endocrine therapy improve outcomes in premenopausal breast cancer?",
       "path": "trial-pages/soft/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Premenopausal HR-positive"
     },
     {
@@ -3715,7 +3728,7 @@
       "question": "After nephrectomy for intermediate- or high-risk renal cell carcinoma, does adjuvant sorafenib reduce recurrence compared with placebo, and is longer treatment more effective than shorter treatment?",
       "path": "trial-pages/sorce",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -3728,7 +3741,7 @@
       "question": "In men with clinically localized prostate cancer, does radical prostatectomy improve survival and disease control compared with watchful waiting?",
       "path": "trial-pages/spcg-4",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized Disease"
     },
     {
@@ -3741,7 +3754,7 @@
       "question": "In locally advanced or high-risk prostate cancer, does adding radiotherapy to endocrine therapy improve survival compared with endocrine therapy alone?",
       "path": "trial-pages/spcg-7-sfuo-3",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized/Locally Advanced"
     },
     {
@@ -3759,7 +3772,7 @@
       "question": "In metastatic hormone-sensitive prostate cancer starting long-term ADT, does adding abiraterone acetate plus prednisolone improve survival?",
       "path": "trial-pages/stamped-abiraterone",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
@@ -3771,7 +3784,7 @@
       "question": "Does prostate RT improve outcomes in newly diagnosed metastatic prostate cancer, especially low-burden disease?",
       "path": "trial-pages/stampede-arm-h/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "source": "trial-pages/stampede-arm-h/",
       "setting_detail": "De novo metastatic HSPC · Prostate RT"
     },
@@ -3784,7 +3797,7 @@
       "question": "Can MDT delay ADT compared with surveillance in oligorecurrent HSPC?",
       "path": "trial-pages/stomp/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligorecurrent HSPC · MDT vs observation"
     },
     {
@@ -3797,7 +3810,7 @@
       "question": "In previously untreated metastatic renal cell carcinoma, does sunitinib improve progression-free and overall outcomes compared with interferon alfa?",
       "path": "trial-pages/sunitinib-ifn",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "First-line Metastatic"
     },
     {
@@ -3810,7 +3823,7 @@
       "question": "Should sunitinib precede cytoreductive nephrectomy in synchronous metastatic RCC?",
       "path": "trial-pages/surtime/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Synchronous Metastatic RCC"
     },
     {
@@ -3823,7 +3836,7 @@
       "question": "In clinical stage I nonseminomatous germ-cell cancer, can surveillance and risk-adapted adjuvant therapy provide high cure rates while reducing unnecessary treatment?",
       "path": "trial-pages/sw-oteca-clinical-stage1",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Non-seminoma"
     },
     {
@@ -3839,7 +3852,7 @@
       "question": "In clinical stage I nonseminomatous germ-cell cancer, can risk-adapted surveillance with selective adjuvant treatment safely minimize unnecessary chemotherapy?",
       "path": "trial-pages/sw-oteca-stage1-nsgct",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Non-seminoma"
     },
     {
@@ -3852,7 +3865,7 @@
       "question": "In high-risk non-muscle-invasive bladder cancer, does maintenance intravesical BCG after induction reduce recurrence compared with induction BCG alone?",
       "path": "trial-pages/swog-8507",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant"
     },
     {
@@ -3869,7 +3882,7 @@
       "question": "Does neoadjuvant cisplatin-based chemotherapy improve survival before cystectomy in muscle-invasive bladder cancer?",
       "path": "trial-pages/swog-8710/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -3886,7 +3899,7 @@
       "question": "In metastatic hormone-sensitive prostate cancer, is intermittent androgen deprivation non-inferior to continuous androgen deprivation for survival while reducing treatment exposure?",
       "path": "trial-pages/swog-9346",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Metastatic Hormone-Sensitive"
     },
     {
@@ -3899,7 +3912,7 @@
       "question": "Does immediate single-dose intravesical gemcitabine reduce recurrence?",
       "path": "trial-pages/swog-s0337/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Low-grade NMIBC · Post-TURBT"
     },
     {
@@ -3916,7 +3929,7 @@
       "question": "Does systemic atezolizumab provide sufficient durable response in BCG-unresponsive high-risk NMIBC to support bladder preservation?",
       "path": "trial-pages/swog-s1605/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "BCG-unresponsive high-risk NMIBC"
     },
     {
@@ -3929,7 +3942,7 @@
       "question": "In localized small-cell lung cancer, does adding atezolizumab to concurrent chemoradiotherapy and prophylactic cranial irradiation improve survival compared with chemoradiotherapy and prophylactic cranial irradiation alone?",
       "path": "trial-pages/swog-nrg-s1914",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced"
     },
     {
@@ -3942,7 +3955,7 @@
       "question": "Can the 21-gene recurrence score identify patients who can omit adjuvant chemotherapy?",
       "path": "trial-pages/tailorx/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Adjuvant HR-positive/HER2-negative Node-negative"
     },
     {
@@ -3955,7 +3968,7 @@
       "question": "In relapsed small-cell lung cancer after platinum therapy, does the B7-H3-directed ADC tambotatug pelitecan improve survival compared with topotecan?",
       "path": "trial-pages/taishan-302",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Relapsed SCLC"
     },
     {
@@ -3972,7 +3985,7 @@
       "question": "In locally advanced hepatocellular carcinoma responding to atezolizumab plus bevacizumab, does adding liver resection improve survival compared with continuing systemic maintenance therapy?",
       "path": "trial-pages/talentop",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Localized/Resectable HCC"
     },
     {
@@ -4062,7 +4075,7 @@
       "question": "In patients with relapsed testicular seminoma or non-seminomatous germ-cell tumours after cisplatin-based first-line chemotherapy, can paclitaxel, ifosfamide and cisplatin (TIP) achieve durable remission?",
       "path": "trial-pages/tip-salvage-gct/",
       "freshness_review_status": "targeted_primary_sources_and_EAU_guideline_reviewed_2026-10-18",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Relapsed / Refractory · Second-line Salvage · Curative Intent",
       "site_detail": "Testicular Germ-cell Tumours"
     },
@@ -4076,7 +4089,7 @@
       "question": "Does tivozanib improve PFS versus sorafenib after multiple prior therapies?",
       "path": "trial-pages/tivo-3/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Relapsed/Refractory Metastatic"
     },
     {
@@ -4123,7 +4136,7 @@
       "question": "Can SBRT delay progression or next-line therapy for limited progression on an ARPI?",
       "path": "trial-pages/trap/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Oligoprogressive mCRPC · SBRT while continuing ARPI"
     },
     {
@@ -4136,7 +4149,7 @@
       "question": "In stage I seminoma under surveillance, can MRI replace CT and can the number of surveillance scans be reduced without compromising relapse detection?",
       "path": "trial-pages/trisst",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I Seminoma"
     },
     {
@@ -4149,7 +4162,7 @@
       "question": "In locally advanced or high-risk prostate cancer, does longer androgen deprivation and the addition of zoledronic acid improve bone-metastasis and disease outcomes compared with shorter androgen deprivation?",
       "path": "trial-pages/trog-03-04-radar",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Locally Advanced/High-Risk"
     },
     {
@@ -4166,7 +4179,7 @@
       "question": "After prior platinum chemotherapy and checkpoint inhibition, what activity was reported in advanced urothelial carcinoma?",
       "path": "trial-pages/trophy-u-01/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
-      "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Previously treated advanced UC"
     },
     {
@@ -4201,7 +4214,7 @@
       "question": "Which cisplatin-based neoadjuvant regimen is preferable before cystectomy: ddMVAC or gemcitabine-cisplatin?",
       "path": "trial-pages/vesper/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Neoadjuvant"
     },
     {
@@ -4542,7 +4555,7 @@
       ],
       "setting_detail": "Operable stage IA · Early-stage NSCLC",
       "freshness_review_status": "source_linked; protocol-level OAR limits need full protocol verification",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "stars-randomized",
@@ -4559,7 +4572,7 @@
       ],
       "setting_detail": "Operable stage I · Early-stage NSCLC",
       "freshness_review_status": "source_linked; distinguish from later single-arm STARS study",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "chisel",
@@ -4576,7 +4589,7 @@
       ],
       "setting_detail": "Peripheral stage I · Medically inoperable or unsuitable for surgery",
       "freshness_review_status": "primary publication linked; protocol-level OAR limits need full protocol verification",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "space",
@@ -4593,7 +4606,7 @@
       ],
       "setting_detail": "Medically inoperable stage I · Early-stage NSCLC",
       "freshness_review_status": "primary literature link provided; exact protocol eligibility and OAR limits require source verification",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "lustre",
@@ -4610,7 +4623,7 @@
       ],
       "setting_detail": "Medically inoperable stage I · Peripheral and central disease",
       "freshness_review_status": "primary publication linked; supplement contains planning details",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "hilus",
@@ -4627,7 +4640,7 @@
       ],
       "setting_detail": "Ultracentral tumours ≤1 cm from proximal bronchial tree",
       "freshness_review_status": "primary publication linked; verify constraints against full protocol before clinical use",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "rtog-0813",
@@ -4644,7 +4657,7 @@
       ],
       "setting_detail": "Medically inoperable central T1–T2 N0M0 NSCLC",
       "freshness_review_status": "guideline/review source linked; verify all numerical limits in original protocol",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "sunset",
@@ -4661,7 +4674,7 @@
       ],
       "setting_detail": "Ultracentral NSCLC; endobronchial invasion excluded",
       "freshness_review_status": "primary publication and OAR review linked; verify exact constraints against full protocol",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_lung_sabr_section_visual_2026-11-08: source-reported outcome visualization or explicit non-quantifiable panel added; browser QA pending"
     },
     {
       "id": "evera",
@@ -4677,7 +4690,7 @@
         "NCT05306340"
       ],
       "freshness_review_status": "provisional page; verify final publication against primary source",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending"
     },
     {
       "id": "checkmate-76k",
@@ -4693,7 +4706,7 @@
         "NCT04099251"
       ],
       "freshness_review_status": "source-linked; verify current follow-up",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending"
     },
     {
       "id": "pout",
@@ -4709,7 +4722,7 @@
         "NCT01993979"
       ],
       "freshness_review_status": "source-linked; verify long-term endpoints",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending"
     },
     {
       "id": "lung-art",
@@ -4724,7 +4737,7 @@
         "EORTC 22055-08053"
       ],
       "freshness_review_status": "source-linked; verify endpoints against primary publication",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending"
     },
     {
       "id": "keynote-671",
@@ -5974,7 +5987,7 @@
       "question": "In early breast cancer with sentinel-node micrometastases ≤2 mm, can completion ALND be omitted?",
       "path": "trial-pages/ibcsg-23-01/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I · sentinel-node micrometastases ≤2 mm",
       "aliases": [
         "IBCSG 23-01",
@@ -5995,7 +6008,7 @@
       "question": "Does 40 Gy in 15 fractions provide long-term control comparable to 50 Gy in 25 fractions?",
       "path": "trial-pages/start-b/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I · moderate hypofractionation after breast surgery",
       "aliases": [
         "START-B",
@@ -6017,7 +6030,7 @@
       "question": "Can reduced-volume or partial-breast RT preserve local control in selected low-risk disease?",
       "path": "trial-pages/import-low/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I · partial-breast and reduced-dose irradiation",
       "aliases": [
         "IMPORT LOW",
@@ -6038,7 +6051,7 @@
       "question": "Can a 48-Gy simultaneous integrated boost replace sequential boost without compromising local control?",
       "path": "trial-pages/import-high/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I–II · simultaneous integrated boost",
       "aliases": [
         "IMPORT HIGH",
@@ -6059,7 +6072,7 @@
       "question": "In stage I HER2-positive disease, does adjuvant T-DM1 offer acceptable outcomes and lower toxicity than paclitaxel/trastuzumab?",
       "path": "trial-pages/atempt/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage I · HER2-positive adjuvant de-escalation",
       "aliases": [
         "ATEMPT",
@@ -6079,7 +6092,7 @@
       "question": "After five years of endocrine therapy, does five rather than two additional years of anastrozole improve DFS?",
       "path": "trial-pages/abcsg-16-salsa/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II · extended adjuvant endocrine therapy duration",
       "aliases": [
         "ABCSG-16",
@@ -6100,7 +6113,7 @@
       "question": "Can completion ALND be omitted in clinically node-negative patients with one or two sentinel-node macrometastases?",
       "path": "trial-pages/senomac/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II · sentinel-node macrometastases",
       "aliases": [
         "SENOMAC",
@@ -6120,7 +6133,7 @@
       "question": "Does one year of palbociclib improve outcomes after residual invasive disease following neoadjuvant chemotherapy?",
       "path": "trial-pages/penelope-b/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II–III · residual HR-positive/HER2-negative disease after NACT",
       "aliases": [
         "PENELOPE-B",
@@ -6141,7 +6154,7 @@
       "question": "Does one year of adjuvant avelumab improve DFS after curative treatment of high-risk TNBC?",
       "path": "trial-pages/a-brave/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II–III · high-risk early triple-negative breast cancer",
       "aliases": [
         "A-BRAVE",
@@ -6162,7 +6175,7 @@
       "question": "Does elective IM-MS nodal irradiation improve long-term outcomes in stage I–III breast cancer?",
       "path": "trial-pages/eortc-22922-10925/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage III / locoregional · internal mammary and medial supraclavicular irradiation",
       "aliases": [
         "EORTC 22922/10925",
@@ -6184,7 +6197,7 @@
       "question": "Can weekly gemcitabine with four-week hypofractionated RT achieve bladder preservation in selected MIBC?",
       "path": "trial-pages/gemx/",
       "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_browser_qa",
+      "outcome_visual_review_status": "shared_renderer_rollout_2026-11-08: source-reported numeric endpoint visualization when extractable; otherwise explicit non-quantifiable/manual-review panel; browser QA pending",
       "setting_detail": "Stage II–III / locoregional · T2–3 N0 M0 muscle-invasive bladder cancer",
       "aliases": [
         "GemX",
