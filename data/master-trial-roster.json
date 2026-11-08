@@ -6230,7 +6230,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line metastatic squamous NSCLC",
-      "question": "First-line metastatic squamous NSCLC",
+      "question": "In previously untreated metastatic squamous NSCLC, does pembrolizumab plus platinum-taxane chemotherapy improve overall and progression-free survival over chemotherapy alone?",
       "aliases": [
         "KEYNOTE-407",
         "NCT02775435"
@@ -6247,7 +6247,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line metastatic NSCLC · PD-L1 TPS ≥50%",
-      "question": "First-line metastatic NSCLC · PD-L1 TPS ≥50%",
+      "question": "In untreated metastatic NSCLC with PD-L1 TPS ≥50% and no sensitizing EGFR/ALK alteration, does pembrolizumab monotherapy improve survival over platinum chemotherapy?",
       "aliases": [
         "KEYNOTE-024",
         "NCT02142738"
@@ -6264,7 +6264,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line locally advanced/metastatic NSCLC · PD-L1 TPS ≥1%",
-      "question": "First-line locally advanced/metastatic NSCLC · PD-L1 TPS ≥1%",
+      "question": "In untreated advanced NSCLC with PD-L1 TPS ≥1% and no EGFR/ALK alteration, does pembrolizumab monotherapy improve overall survival over platinum chemotherapy?",
       "aliases": [
         "KEYNOTE-042",
         "NCT02220894"
@@ -6281,7 +6281,7 @@
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
       "setting_detail": "Consolidation after CRT · unresectable stage III EGFR exon19del/L858R",
-      "question": "Consolidation after CRT · unresectable stage III EGFR exon19del/L858R",
+      "question": "After definitive chemoradiotherapy for unresectable EGFR exon 19 deletion/L858R stage III NSCLC, does osimertinib consolidation improve progression-free survival over placebo?",
       "aliases": [
         "LAURA",
         "NCT03521154"
@@ -6298,7 +6298,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line EGFR-mutated advanced NSCLC",
-      "question": "First-line EGFR-mutated advanced NSCLC",
+      "question": "In untreated EGFR-mutated advanced NSCLC, does amivantamab plus lazertinib improve progression-free survival over osimertinib?",
       "aliases": [
         "MARIPOSA",
         "NCT04487080"
@@ -6315,7 +6315,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line EGFR exon20 insertion-mutated advanced NSCLC",
-      "question": "First-line EGFR exon20 insertion-mutated advanced NSCLC",
+      "question": "In untreated advanced NSCLC with EGFR exon 20 insertion, does amivantamab plus carboplatin-pemetrexed improve progression-free survival over chemotherapy?",
       "aliases": [
         "PAPILLON",
         "NCT04538664"
@@ -6332,7 +6332,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line ALK-positive advanced NSCLC",
-      "question": "First-line ALK-positive advanced NSCLC",
+      "question": "In untreated advanced ALK-positive NSCLC, does lorlatinib improve systemic and intracranial disease control over crizotinib?",
       "aliases": [
         "CROWN",
         "NCT03052608"
@@ -6349,7 +6349,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line ALK-positive advanced NSCLC",
-      "question": "First-line ALK-positive advanced NSCLC",
+      "question": "In ALK-inhibitor-naive advanced ALK-positive NSCLC, does brigatinib improve progression-free survival over crizotinib?",
       "aliases": [
         "ALTA-1L",
         "NCT02737501"
@@ -6366,7 +6366,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Previously treated KRAS G12C-mutated advanced NSCLC",
-      "question": "Previously treated KRAS G12C-mutated advanced NSCLC",
+      "question": "After platinum chemotherapy and immunotherapy for KRAS G12C-mutated NSCLC, does sotorasib improve progression-free survival over docetaxel?",
       "aliases": [
         "CodeBreaK 200",
         "NCT04303780"
@@ -6383,7 +6383,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line metastatic/recurrent NSCLC without sensitizing EGFR/ALK",
-      "question": "First-line metastatic/recurrent NSCLC without sensitizing EGFR/ALK",
+      "question": "In untreated metastatic NSCLC without sensitizing EGFR/ALK alterations, does nivolumab-ipilimumab plus two cycles of chemotherapy improve overall survival over chemotherapy?",
       "aliases": [
         "CheckMate 9LA",
         "NCT03215706"
@@ -6400,7 +6400,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line unresectable HCC · Child-Pugh A",
-      "question": "First-line unresectable HCC · Child-Pugh A",
+      "question": "In first-line unresectable hepatocellular carcinoma with preserved liver function, is lenvatinib non-inferior to sorafenib for overall survival?",
       "aliases": [
         "REFLECT",
         "NCT01761266"
@@ -6417,7 +6417,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line unresectable locally advanced/metastatic biliary tract cancer",
-      "question": "First-line unresectable locally advanced/metastatic biliary tract cancer",
+      "question": "In previously untreated unresectable or metastatic biliary tract cancer, does pembrolizumab added to gemcitabine-cisplatin improve overall survival?",
       "aliases": [
         "KEYNOTE-966",
         "NCT04003636"
@@ -6434,7 +6434,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line FGFR2-rearranged advanced cholangiocarcinoma",
-      "question": "First-line FGFR2-rearranged advanced cholangiocarcinoma",
+      "question": "In untreated advanced FGFR2-rearranged cholangiocarcinoma, does pemigatinib improve progression-free survival over gemcitabine-cisplatin?",
       "aliases": [
         "FIGHT-302",
         "NCT03656536"
@@ -6451,7 +6451,7 @@
       "discipline": "Biomarker",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Previously treated FGFR-altered advanced solid tumour basket",
-      "question": "Previously treated FGFR-altered advanced solid tumour basket",
+      "question": "In previously treated FGFR-altered advanced solid tumours, what antitumour activity does pemigatinib demonstrate across fusion/rearrangement and mutation cohorts?",
       "aliases": [
         "FIGHT-207",
         "NCT03822117"
@@ -6468,7 +6468,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "FGFR1-rearranged myeloid/lymphoid neoplasms",
-      "question": "FGFR1-rearranged myeloid/lymphoid neoplasms",
+      "question": "In FGFR1-rearranged myeloid/lymphoid neoplasms, can pemigatinib induce complete responses and complete cytogenetic responses?",
       "aliases": [
         "FIGHT-203",
         "NCT03011372"
@@ -6485,7 +6485,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line stage IV/recurrent NSCLC without sensitizing EGFR/ALK",
-      "question": "First-line stage IV/recurrent NSCLC without sensitizing EGFR/ALK",
+      "question": "In first-line metastatic NSCLC without sensitizing EGFR/ALK alterations, does nivolumab plus ipilimumab improve long-term survival over platinum chemotherapy across PD-L1 strata?",
       "aliases": [
         "CheckMate 227",
         "NCT02477826"
@@ -6502,7 +6502,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line unresectable malignant pleural mesothelioma",
-      "question": "First-line unresectable malignant pleural mesothelioma",
+      "question": "In previously untreated unresectable malignant pleural mesothelioma, does nivolumab plus ipilimumab improve overall survival over platinum-pemetrexed chemotherapy?",
       "aliases": [
         "CheckMate 743",
         "NCT02899299"
@@ -6519,7 +6519,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line unresectable stage III/IV melanoma",
-      "question": "First-line unresectable stage III/IV melanoma",
+      "question": "In previously untreated advanced melanoma, how do nivolumab-ipilimumab and nivolumab compare with ipilimumab for long-term survival?",
       "aliases": [
         "CheckMate 067",
         "NCT01844505"
@@ -6536,7 +6536,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line unresectable/metastatic melanoma",
-      "question": "First-line unresectable/metastatic melanoma",
+      "question": "In previously untreated advanced melanoma, does nivolumab plus relatlimab improve progression-free survival over nivolumab alone?",
       "aliases": [
         "RELATIVITY-047",
         "NCT03470922"
@@ -6553,7 +6553,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "Treatment sequencing in BRAF V600-mutant metastatic melanoma",
-      "question": "Treatment sequencing in BRAF V600-mutant metastatic melanoma",
+      "question": "In BRAF V600-mutant metastatic melanoma, is immunotherapy-first sequencing superior to BRAF/MEK-targeted therapy-first sequencing?",
       "aliases": [
         "DREAMseq (ECOG-ACRIN EA6134)",
         "NCT02224781"
@@ -6570,7 +6570,7 @@
       "discipline": "Medical",
       "setting": "Advanced / Metastatic",
       "setting_detail": "First-line mCRPC · HRR-deficient and all-comer cohorts",
-      "question": "First-line mCRPC · HRR-deficient and all-comer cohorts",
+      "question": "In metastatic castration-resistant prostate cancer, does talazoparib plus enzalutamide improve survival over enzalutamide alone, and how does benefit vary by HRR status?",
       "aliases": [
         "TALAPRO-2",
         "NCT03395197"
@@ -6587,7 +6587,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "PSMA-positive mCRPC after ARPI and taxane",
-      "question": "PSMA-positive mCRPC after ARPI and taxane",
+      "question": "In PSMA-positive mCRPC previously treated with an ARPI and taxane chemotherapy, does 177Lu-PSMA-617 plus standard care improve radiographic PFS and OS?",
       "aliases": [
         "VISION",
         "NCT03511664"
@@ -6604,7 +6604,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Taxane-naive PSMA-positive mCRPC after one ARPI",
-      "question": "Taxane-naive PSMA-positive mCRPC after one ARPI",
+      "question": "In taxane-naive PSMA-positive mCRPC progressing after one ARPI, does 177Lu-PSMA-617 improve radiographic PFS over switching to another ARPI?",
       "aliases": [
         "PSMAfore",
         "NCT04689828"
@@ -6621,7 +6621,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Advanced urothelial carcinoma after platinum and PD-1/PD-L1 inhibitor",
-      "question": "Advanced urothelial carcinoma after platinum and PD-1/PD-L1 inhibitor",
+      "question": "In advanced urothelial carcinoma after platinum chemotherapy and PD-1/PD-L1 inhibitor, does enfortumab vedotin improve overall survival over chemotherapy?",
       "aliases": [
         "EV-301",
         "NCT03478592"
@@ -6638,7 +6638,7 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "setting_detail": "Locally advanced cervical cancer · durvalumab with CRT",
-      "question": "Locally advanced cervical cancer · durvalumab with CRT",
+      "question": "In locally advanced cervical cancer treated with chemoradiotherapy, does adding and continuing durvalumab improve PFS over chemoradiotherapy alone?",
       "aliases": [
         "CALLA",
         "NCT03830866"
@@ -6655,7 +6655,7 @@
       "discipline": "Surgical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Platinum-sensitive recurrent ovarian/fallopian tube/primary peritoneal cancer",
-      "question": "Platinum-sensitive recurrent ovarian/fallopian tube/primary peritoneal cancer",
+      "question": "In selected platinum-sensitive recurrent ovarian cancer, does secondary cytoreductive surgery before chemotherapy improve overall survival compared with chemotherapy alone?",
       "aliases": [
         "GOG-0213",
         "NCT00565851"
@@ -6672,7 +6672,7 @@
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
       "setting_detail": "First-line maintenance after response to platinum chemotherapy",
-      "question": "First-line maintenance after response to platinum chemotherapy",
+      "question": "After response to first-line platinum chemotherapy for advanced ovarian cancer, does rucaparib maintenance improve PFS over placebo in an unselected population?",
       "aliases": [
         "ATHENA-MONO",
         "NCT03522246"
@@ -6689,7 +6689,7 @@
       "discipline": "Medical",
       "setting": "Adjuvant / Postoperative",
       "setting_detail": "Resected stage III BRAF V600-mutant melanoma",
-      "question": "Resected stage III BRAF V600-mutant melanoma",
+      "question": "After complete resection of stage III BRAF V600-mutant melanoma, does adjuvant dabrafenib plus trametinib improve recurrence-free and distant-metastasis-free survival over placebo?",
       "aliases": [
         "COMBI-AD",
         "NCT01682083"
@@ -6706,7 +6706,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Transplant-ineligible R/R DLBCL after 1–3 prior regimens",
-      "question": "Transplant-ineligible R/R DLBCL after 1–3 prior regimens",
+      "question": "In transplant-ineligible relapsed/refractory DLBCL, does tafasitamab plus lenalidomide produce durable responses?",
       "aliases": [
         "L-MIND",
         "NCT02399085"
@@ -6723,7 +6723,7 @@
       "discipline": "Medical",
       "setting": "Relapsed / Refractory",
       "setting_detail": "Second-line primary refractory or early-relapsed LBCL ≤12 months · transplant eligible",
-      "question": "Second-line primary refractory or early-relapsed LBCL ≤12 months · transplant eligible",
+      "question": "In transplant-eligible primary refractory or early-relapsed large B-cell lymphoma, does second-line lisocabtagene maraleucel improve EFS over salvage chemotherapy and autologous transplantation?",
       "aliases": [
         "TRANSFORM",
         "NCT03575351"
