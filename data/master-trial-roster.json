@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 10,
-  "last_quality_check": "2026-11-08",
+  "version": 11,
+  "last_quality_check": "2026-11-09",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,29 +19,47 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 341,
+    "permanent_trial_pages": 370,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 342,
+    "total_unique_trials": 372,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-11-03",
+    "daily_batch_uploaded": "2026-11-09",
     "new_trials_added_today": [
-      "IBCSG 23-01",
-      "START-B",
-      "IMPORT LOW",
-      "IMPORT HIGH",
-      "ATEMPT",
-      "ABCSG-16 / SALSA",
-      "SENOMAC",
-      "PENELOPE-B",
-      "A-BRAVE",
-      "EORTC 22922/10925",
-      "GemX"
+      "KEYNOTE-407",
+      "KEYNOTE-024",
+      "KEYNOTE-042",
+      "MARIPOSA",
+      "PAPILLON",
+      "CROWN",
+      "ALTA-1L",
+      "CodeBreaK 200",
+      "CheckMate 9LA",
+      "REFLECT",
+      "KEYNOTE-966",
+      "FIGHT-302",
+      "FIGHT-207",
+      "FIGHT-203",
+      "CheckMate 227",
+      "CheckMate 743",
+      "CheckMate 067",
+      "RELATIVITY-047",
+      "DREAMseq (ECOG-ACRIN EA6134)",
+      "TALAPRO-2",
+      "VISION",
+      "PSMAfore",
+      "EV-301",
+      "CALLA",
+      "GOG-0213",
+      "ATHENA-MONO",
+      "COMBI-AD",
+      "L-MIND",
+      "TRANSFORM"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -63,7 +81,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-08",
+    "last_full_reconciliation": "2026-11-09",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -507,16 +525,24 @@
     "lung_sabr_reference_added": "2026-10-23",
     "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced.",
     "last_trial_batch_duplicate_audit": {
-      "date": "2026-11-08",
-      "candidates": 11,
+      "date": "2026-11-09",
+      "candidates": 30,
+      "new_pages": 29,
+      "existing_pages_updated": [
+        "LAURA"
+      ],
       "roster_duplicates": 0,
       "canonical_page_duplicates": 0,
       "archive_duplicates": 0,
       "daily_evidence_duplicates": 0,
-      "prior_daily_evidence_checked": true,
-      "pivot_excluded": true,
       "status": "PASS",
-      "note": "Current master roster, complete recursive Git tree, evidence index, archive, current/previous Trial of the Day and all 20 daily-evidence JSON files checked. All 11 absent before upload; aliases and follow-up publications consolidated. GemX treated as a single-arm phase II study; separate later tolerability cohort linked, not pooled."
+      "notes": [
+        "LAURA already existed as an unrostered page and was corrected rather than duplicated.",
+        "FIGHT-203 is the distinct FGFR1-rearranged myeloid/lymphoid neoplasm phase II study.",
+        "FIGHT-207 is the FGFR-altered solid tumour basket phase II study.",
+        "FIGHT-302 is the phase III FGFR2-rearranged cholangiocarcinoma study.",
+        "EV-301 is distinct from EV-302, EV-303 and EV-304."
+      ]
     },
     "batch_counts": {
       "new_studies": 11,
@@ -6194,6 +6220,516 @@
       ],
       "primary": "https://pubmed.ncbi.nlm.nih.gov/21205754/",
       "registry": "Not reported"
+    },
+    {
+      "id": "keynote-407",
+      "trial": "KEYNOTE-407",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/keynote-407/",
+      "path": "trial-pages/keynote-407/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line metastatic squamous NSCLC",
+      "question": "First-line metastatic squamous NSCLC",
+      "aliases": [
+        "KEYNOTE-407",
+        "NCT02775435"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-024",
+      "trial": "KEYNOTE-024",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/keynote-024/",
+      "path": "trial-pages/keynote-024/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line metastatic NSCLC · PD-L1 TPS ≥50%",
+      "question": "First-line metastatic NSCLC · PD-L1 TPS ≥50%",
+      "aliases": [
+        "KEYNOTE-024",
+        "NCT02142738"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-042",
+      "trial": "KEYNOTE-042",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/keynote-042/",
+      "path": "trial-pages/keynote-042/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line locally advanced/metastatic NSCLC · PD-L1 TPS ≥1%",
+      "question": "First-line locally advanced/metastatic NSCLC · PD-L1 TPS ≥1%",
+      "aliases": [
+        "KEYNOTE-042",
+        "NCT02220894"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "laura",
+      "trial": "LAURA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/laura/",
+      "path": "trial-pages/laura/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Consolidation after CRT · unresectable stage III EGFR exon19del/L858R",
+      "question": "Consolidation after CRT · unresectable stage III EGFR exon19del/L858R",
+      "aliases": [
+        "LAURA",
+        "NCT03521154"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "mariposa",
+      "trial": "MARIPOSA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/mariposa/",
+      "path": "trial-pages/mariposa/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line EGFR-mutated advanced NSCLC",
+      "question": "First-line EGFR-mutated advanced NSCLC",
+      "aliases": [
+        "MARIPOSA",
+        "NCT04487080"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "papillon",
+      "trial": "PAPILLON",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/papillon/",
+      "path": "trial-pages/papillon/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line EGFR exon20 insertion-mutated advanced NSCLC",
+      "question": "First-line EGFR exon20 insertion-mutated advanced NSCLC",
+      "aliases": [
+        "PAPILLON",
+        "NCT04538664"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "crown",
+      "trial": "CROWN",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/crown/",
+      "path": "trial-pages/crown/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line ALK-positive advanced NSCLC",
+      "question": "First-line ALK-positive advanced NSCLC",
+      "aliases": [
+        "CROWN",
+        "NCT03052608"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "alta-1l",
+      "trial": "ALTA-1L",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/alta-1l/",
+      "path": "trial-pages/alta-1l/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line ALK-positive advanced NSCLC",
+      "question": "First-line ALK-positive advanced NSCLC",
+      "aliases": [
+        "ALTA-1L",
+        "NCT02737501"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "codebreak-200",
+      "trial": "CodeBreaK 200",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/codebreak-200/",
+      "path": "trial-pages/codebreak-200/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Previously treated KRAS G12C-mutated advanced NSCLC",
+      "question": "Previously treated KRAS G12C-mutated advanced NSCLC",
+      "aliases": [
+        "CodeBreaK 200",
+        "NCT04303780"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-9la",
+      "trial": "CheckMate 9LA",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/checkmate-9la/",
+      "path": "trial-pages/checkmate-9la/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line metastatic/recurrent NSCLC without sensitizing EGFR/ALK",
+      "question": "First-line metastatic/recurrent NSCLC without sensitizing EGFR/ALK",
+      "aliases": [
+        "CheckMate 9LA",
+        "NCT03215706"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "reflect",
+      "trial": "REFLECT",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/reflect/",
+      "path": "trial-pages/reflect/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line unresectable HCC · Child-Pugh A",
+      "question": "First-line unresectable HCC · Child-Pugh A",
+      "aliases": [
+        "REFLECT",
+        "NCT01761266"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "keynote-966",
+      "trial": "KEYNOTE-966",
+      "site": "Biliary Tract Cancer",
+      "source": "trial-pages/keynote-966/",
+      "path": "trial-pages/keynote-966/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line unresectable locally advanced/metastatic biliary tract cancer",
+      "question": "First-line unresectable locally advanced/metastatic biliary tract cancer",
+      "aliases": [
+        "KEYNOTE-966",
+        "NCT04003636"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "fight-302",
+      "trial": "FIGHT-302",
+      "site": "Biliary Tract Cancer",
+      "source": "trial-pages/fight-302/",
+      "path": "trial-pages/fight-302/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line FGFR2-rearranged advanced cholangiocarcinoma",
+      "question": "First-line FGFR2-rearranged advanced cholangiocarcinoma",
+      "aliases": [
+        "FIGHT-302",
+        "NCT03656536"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "fight-207",
+      "trial": "FIGHT-207",
+      "site": "Solid Tumours",
+      "source": "trial-pages/fight-207/",
+      "path": "trial-pages/fight-207/",
+      "discipline": "Biomarker",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Previously treated FGFR-altered advanced solid tumour basket",
+      "question": "Previously treated FGFR-altered advanced solid tumour basket",
+      "aliases": [
+        "FIGHT-207",
+        "NCT03822117"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "fight-203",
+      "trial": "FIGHT-203",
+      "site": "Myeloid/Lymphoid Neoplasms",
+      "source": "trial-pages/fight-203/",
+      "path": "trial-pages/fight-203/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "FGFR1-rearranged myeloid/lymphoid neoplasms",
+      "question": "FGFR1-rearranged myeloid/lymphoid neoplasms",
+      "aliases": [
+        "FIGHT-203",
+        "NCT03011372"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-227",
+      "trial": "CheckMate 227",
+      "site": "Non-Small Cell Lung Cancer",
+      "source": "trial-pages/checkmate-227/",
+      "path": "trial-pages/checkmate-227/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line stage IV/recurrent NSCLC without sensitizing EGFR/ALK",
+      "question": "First-line stage IV/recurrent NSCLC without sensitizing EGFR/ALK",
+      "aliases": [
+        "CheckMate 227",
+        "NCT02477826"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-743",
+      "trial": "CheckMate 743",
+      "site": "Malignant Pleural Mesothelioma",
+      "source": "trial-pages/checkmate-743/",
+      "path": "trial-pages/checkmate-743/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line unresectable malignant pleural mesothelioma",
+      "question": "First-line unresectable malignant pleural mesothelioma",
+      "aliases": [
+        "CheckMate 743",
+        "NCT02899299"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "checkmate-067",
+      "trial": "CheckMate 067",
+      "site": "Melanoma",
+      "source": "trial-pages/checkmate-067/",
+      "path": "trial-pages/checkmate-067/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line unresectable stage III/IV melanoma",
+      "question": "First-line unresectable stage III/IV melanoma",
+      "aliases": [
+        "CheckMate 067",
+        "NCT01844505"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "relativity-047",
+      "trial": "RELATIVITY-047",
+      "site": "Melanoma",
+      "source": "trial-pages/relativity-047/",
+      "path": "trial-pages/relativity-047/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line unresectable/metastatic melanoma",
+      "question": "First-line unresectable/metastatic melanoma",
+      "aliases": [
+        "RELATIVITY-047",
+        "NCT03470922"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "dreamseq",
+      "trial": "DREAMseq (ECOG-ACRIN EA6134)",
+      "site": "Melanoma",
+      "source": "trial-pages/dreamseq/",
+      "path": "trial-pages/dreamseq/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "Treatment sequencing in BRAF V600-mutant metastatic melanoma",
+      "question": "Treatment sequencing in BRAF V600-mutant metastatic melanoma",
+      "aliases": [
+        "DREAMseq (ECOG-ACRIN EA6134)",
+        "NCT02224781"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "talapro-2",
+      "trial": "TALAPRO-2",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/talapro-2/",
+      "path": "trial-pages/talapro-2/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "First-line mCRPC · HRR-deficient and all-comer cohorts",
+      "question": "First-line mCRPC · HRR-deficient and all-comer cohorts",
+      "aliases": [
+        "TALAPRO-2",
+        "NCT03395197"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "vision",
+      "trial": "VISION",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/vision/",
+      "path": "trial-pages/vision/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "PSMA-positive mCRPC after ARPI and taxane",
+      "question": "PSMA-positive mCRPC after ARPI and taxane",
+      "aliases": [
+        "VISION",
+        "NCT03511664"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "psmafore",
+      "trial": "PSMAfore",
+      "site": "Prostate Cancer",
+      "source": "trial-pages/psmafore/",
+      "path": "trial-pages/psmafore/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Taxane-naive PSMA-positive mCRPC after one ARPI",
+      "question": "Taxane-naive PSMA-positive mCRPC after one ARPI",
+      "aliases": [
+        "PSMAfore",
+        "NCT04689828"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "ev-301",
+      "trial": "EV-301",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/ev-301/",
+      "path": "trial-pages/ev-301/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Advanced urothelial carcinoma after platinum and PD-1/PD-L1 inhibitor",
+      "question": "Advanced urothelial carcinoma after platinum and PD-1/PD-L1 inhibitor",
+      "aliases": [
+        "EV-301",
+        "NCT03478592"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "calla",
+      "trial": "CALLA",
+      "site": "Cervical Cancer",
+      "source": "trial-pages/calla/",
+      "path": "trial-pages/calla/",
+      "discipline": "Medical",
+      "setting": "Definitive / Local Treatment",
+      "setting_detail": "Locally advanced cervical cancer · durvalumab with CRT",
+      "question": "Locally advanced cervical cancer · durvalumab with CRT",
+      "aliases": [
+        "CALLA",
+        "NCT03830866"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "gog-0213",
+      "trial": "GOG-0213",
+      "site": "Ovarian Cancer",
+      "source": "trial-pages/gog-0213/",
+      "path": "trial-pages/gog-0213/",
+      "discipline": "Surgical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Platinum-sensitive recurrent ovarian/fallopian tube/primary peritoneal cancer",
+      "question": "Platinum-sensitive recurrent ovarian/fallopian tube/primary peritoneal cancer",
+      "aliases": [
+        "GOG-0213",
+        "NCT00565851"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "athena-mono",
+      "trial": "ATHENA-MONO",
+      "site": "Ovarian Cancer",
+      "source": "trial-pages/athena-mono/",
+      "path": "trial-pages/athena-mono/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "First-line maintenance after response to platinum chemotherapy",
+      "question": "First-line maintenance after response to platinum chemotherapy",
+      "aliases": [
+        "ATHENA-MONO",
+        "NCT03522246"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "combi-ad",
+      "trial": "COMBI-AD",
+      "site": "Melanoma",
+      "source": "trial-pages/combi-ad/",
+      "path": "trial-pages/combi-ad/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "setting_detail": "Resected stage III BRAF V600-mutant melanoma",
+      "question": "Resected stage III BRAF V600-mutant melanoma",
+      "aliases": [
+        "COMBI-AD",
+        "NCT01682083"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "l-mind",
+      "trial": "L-MIND",
+      "site": "Diffuse Large B-Cell Lymphoma",
+      "source": "trial-pages/l-mind/",
+      "path": "trial-pages/l-mind/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Transplant-ineligible R/R DLBCL after 1–3 prior regimens",
+      "question": "Transplant-ineligible R/R DLBCL after 1–3 prior regimens",
+      "aliases": [
+        "L-MIND",
+        "NCT02399085"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "transform",
+      "trial": "TRANSFORM",
+      "site": "Large B-Cell Lymphoma",
+      "source": "trial-pages/transform/",
+      "path": "trial-pages/transform/",
+      "discipline": "Medical",
+      "setting": "Relapsed / Refractory",
+      "setting_detail": "Second-line primary refractory or early-relapsed LBCL ≤12 months · transplant eligible",
+      "question": "Second-line primary refractory or early-relapsed LBCL ≤12 months · transplant eligible",
+      "aliases": [
+        "TRANSFORM",
+        "NCT03575351"
+      ],
+      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
     }
   ]
 }
