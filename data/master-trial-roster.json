@@ -638,7 +638,7 @@
       "implementation": "Shared renderer extracts explicitly reported median outcomes, paired outcome percentages, hazard ratios, and numeric NNT/NNH. When no defensible numeric endpoint is detected, an explicit manual-verification panel is shown. The lung SABR consolidated reference page receives section-level visuals for each of its eight trial records. No NNT/NNH is calculated from median survival or hazard ratios.",
       "numeric_values_inferred": false,
       "browser_rendered_qa": "pending",
-      "cloudflare_pages_deployment": "not deployed; changes isolated to feature branch"
+      "cloudflare_pages_deployment": "Not merged to main; production deployment not initiated; automatic branch-preview deployment not independently verified."
     }
   },
   "trials": [
