@@ -33,12 +33,12 @@ function inspect(file) {
   const visibleText = html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;|&#160;/gi, ' ').replace(/&gt;/gi, '>').replace(/&lt;/gi, '<').replace(/&amp;/gi, '&').replace(/\s+/g, ' ');
   const numericNnt = /data-nnt=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/.test(html);
-  const hasRenderer = /assets\/absolute-effect\.js/.test(html);
+  const hasRenderer = /assets\/absolute-effect\.js/.test(html) || /<meta[^>]+http-equiv=[\"']refresh[\"'][^>]+url=/i.test(html);
   const hasDatedContext = /current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText);
   const hasPrimarySource = /(?:pubmed\.ncbi\.nlm\.nih\.gov|doi\.org|clinicaltrials\.gov|nejm\.org|thelancet\.com|ascopubs\.org|nature\.com|pmc\.ncbi\.nlm\.nih\.gov)/i.test(html);
   const genericInterpretation = /interpret the absolute difference together with the endpoint|patient-level value of an intervention depends on absolute event risk|historical trials may use older staging/i.test(visibleText);
   const shortPage = html.length < 3500;
-  const hasExplicitVisual = /data-outcome-visual|data-outcome-single|data-outcome-static|ae-outcome-chart|ae-hr-track/.test(html);
+  const hasExplicitVisual = /data-outcome-visual|data-outcome-single|data-outcome-static|ae-outcome-chart|ae-hr-track|class=[\"'][^\"']*(?:barrow|chartrow)[^\"']*[\"']|role=[\"']img[\"'][^>]*aria-label/i.test(html);
   const pairedPercent = /\d+(?:\.\d+)?\s*%[^.]{0,80}?(?:vs\.?|versus)[^.]{0,60}?\d+(?:\.\d+)?\s*%/i.test(visibleText);
   const medianPair = /median.{0,180}?\d+(?:\.\d+)?\s*(?:months?|mos? years?|years?)?[^.]{0,50}?(?:vs\.?|versus)[^.]{0,40}?\d+(?:\.\d+)?\s*(?:months?|years?)?/i.test(visibleText);
   const hrWithCI = /\bHR\s*[:=]?\s*\d+(?:\.\d+)?[^.]{0,100}?95\s*%\s*CI\s*[:=]?\s*\d+(?:\.\d+)?\s*(?:[-–—]|to)\s*\d+(?:\.\d+)?/i.test(visibleText);
