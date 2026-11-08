@@ -53,6 +53,15 @@
     const host=document.querySelector('[data-absolute-effect]')||document.querySelector('main')||document.body;
     if(!host)return;
     const text=(document.querySelector('main')||document.body).innerText||'';
+    // Extract only explicitly stated numeric NNT / NNH values; never calculate them from medians or hazard ratios.
+    const explicitNnt=text.match(/\bNNT\b\s*(?:(?:≈|~=|=|:)\s*|(?:of\s+|about\s+|approximately\s+))([0-9]+(?:\.[0-9]+)?)/i);
+    const explicitNnh=text.match(/\bNNH\b\s*(?:(?:≈|~=|=|:)\s*|(?:(?:of\s+)?(?:about\s+|approximately\s+)?))([0-9]+(?:\.[0-9]+)?)/i);
+    if(explicitNnt||explicitNnh){
+      const el=document.createElement('div');
+      if(explicitNnt){el.dataset.nnt=explicitNnt[1];el.dataset.nntEndpoint=endpointFrom(explicitNnt[0],text,'NNT');}
+      if(explicitNnh){el.dataset.nnh=explicitNnh[1];el.dataset.nnhEndpoint=endpointFrom(explicitNnh[0],text,'NNH');}
+      host.insertAdjacentElement('afterend',el);render(el);
+    }
     const nnt=host.dataset?.nnt||'',nnh=host.dataset?.nnh||'';
     const quantifiedNnt=/^\s*\d+(?:\.\d+)?\s*$/.test(nnt),quantifiedNnh=/^\s*\d+(?:\.\d+)?\s*$/.test(nnh);
     if(quantifiedNnt||quantifiedNnh)return;
@@ -68,6 +77,14 @@
     const rates=text.match(/((?:[0-9]+[- ]year\s+)?(?:overall survival|OS|progression[- ]free survival|PFS|disease[- ]free survival|DFS|objective response(?: rate)?|overall response rate|objective response|patient preference|survival|pathological complete response|pathologic complete response|pCR|locoregional failure|grade\s*[≥>=]?\s*[0-4]\s+toxicity|late toxicity|treatment-related mortality|relapse(?: rate)?|local control))[^.\n]{0,120}?([0-9]+(?:\.[0-9]+)?)%[^.\n]{0,50}?(?:vs\.?|versus)[^.\n]{0,50}?([0-9]+(?:\.[0-9]+)?)%/i);
     if(rates){
       const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=rates[1];el.dataset.treatment=rates[2];el.dataset.control=rates[3];el.dataset.unit='%';el.dataset.horizon='Reported endpoint rate';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';el.dataset.direction='higher';
+      host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
+    }
+    // Broad fallback for a clearly paired, source-reported percentage comparison with an adjacent endpoint label.
+    const genericPair=text.match(/([^\.\n]{3,90}?)\s+([0-9]+(?:\.[0-9]+)?)%\s*(?:vs\.?|versus)\s*([0-9]+(?:\.[0-9]+)?)%/i);
+    if(genericPair){
+      const rawLabel=genericPair[1].trim().split(/[;:]/).pop().trim();
+      const label=rawLabel.length>70?rawLabel.slice(-70):rawLabel;
+      const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel=label||'Reported outcome rate';el.dataset.treatment=genericPair[2];el.dataset.control=genericPair[3];el.dataset.unit='%';el.dataset.horizon='Source-reported paired percentage';el.dataset.treatmentLabel='Intervention';el.dataset.controlLabel='Comparator';
       host.insertAdjacentElement('afterend',el);renderOutcome(el);return;
     }
     // If a trial has a reported hazard ratio and confidence interval, display an effect-size plot.
@@ -95,9 +112,13 @@
       const el=document.createElement('div');el.dataset.outcomeVisual='';el.dataset.outcomeLabel='Reported event proportion';el.dataset.value=String(value);el.dataset.groupLabel=eventCount[1]+' of '+eventCount[2]+' reported events';el.dataset.horizon='Source-reported count; percentage calculated from numerator / denominator';
       host.insertAdjacentElement('afterend',el);renderSingleOutcome(el);return;
     }
-    // Do not let an abstract-only page silently appear complete when no supported endpoint was detected.
+    if(explicitNnt||explicitNnh)return;
+    // Transparent fallback: make the evidence gap visible without inventing a comparator, percentage or NNT.
     const review=document.createElement('section');review.className='ae-outcome-chart ae-outcome-review';review.dataset.outcomeReview='manual';review.setAttribute('role','note');
-    review.innerHTML='<h3>Outcome visual needs manual verification</h3><p class="ae-outcome-subtitle">No supported numeric endpoint was detected automatically. Review the primary source and add a source-reported outcome chart, a defensible NNT/NNH pictogram, or a note explaining why no numeric visualization is appropriate.</p>';
+    const heading=document.createElement('h3');heading.textContent='Outcome evidence — manual verification required';review.appendChild(heading);
+    const primary=(text.match(/(?:primary endpoint|primary clinical outcome|primary outcome|primary efficacy endpoint)\s*[:\-]?\s*([^.;\n]{4,150})/i)||[])[1];
+    const endpoint=document.createElement('p');endpoint.className='ae-outcome-subtitle';endpoint.textContent=primary?'Primary endpoint: '+primary.trim():'No clearly labelled primary endpoint was extractable from this page.';review.appendChild(endpoint);
+    const note=document.createElement('p');note.className='ae-outcome-footnote';note.textContent='No defensible numeric result was detected in the indexed page text. No treatment effect, absolute risk reduction, NNT or NNH has been inferred. Add a source-reported chart or retain this explicit non-quantifiable status after checking the primary report.';review.appendChild(note);
     host.insertAdjacentElement('afterend',review);
   }
 
