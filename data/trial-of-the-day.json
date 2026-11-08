@@ -1,39 +1,40 @@
 {
-  "date": "2026-11-03",
-  "id": "acosog-z11102",
-  "trial": "ACOSOG Z11102 (Alliance)",
-  "title": "Local recurrence after breast-conserving therapy in multiple ipsilateral breast cancer",
-  "journal": "Journal of Clinical Oncology 2023; prospective, multicentre, single-arm phase II trial",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/36977292/",
-  "site": "Breast Cancer",
-  "discipline": "Surgical",
-  "setting": "Definitive / Local Treatment",
-  "population": "270 enrolled; 204 eligible patients underwent protocol-directed breast-conserving therapy. Median age 61 years; most had two foci and ER-positive/HER2-negative disease.",
-  "treatment": "Breast-conserving surgery with negative margins, followed by whole-breast irradiation and boost to each lumpectomy bed; systemic therapy according to tumour biology.",
-  "comparator": "None; single-arm phase II study. Prespecified acceptable 5-year local recurrence threshold <8%.",
-  "summary": "At median follow-up 66.4 months, 6 local recurrences occurred; estimated 5-year cumulative local recurrence was 3.1% (95% CI 1.3–6.4). No regional recurrences were reported. Exploratory MRI subgroup: 1.7% with preoperative MRI (n=189) versus 22.6% without MRI (n=15; P=0.002).",
+  "date": "2026-11-08",
+  "id": "gemx",
+  "trial": "GemX",
+  "title": "Phase II study of conformal hypofractionated radiotherapy with concurrent gemcitabine in muscle-invasive bladder cancer",
+  "journal": "Journal of Clinical Oncology 2011; prospective single-arm phase II study",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/21205754/",
+  "site": "Bladder Cancer",
+  "discipline": "Radiation",
+  "setting": "Definitive / Curative",
+  "population": "50 patients with T2–3 N0 M0 transitional-cell muscle-invasive bladder cancer after TURBT and MRI staging; post-treatment cystoscopy available in 47.",
+  "treatment": "Gemcitabine 100 mg/m² IV on days 1, 8, 15 and 22 with conformal radiotherapy 52.5 Gy in 20 fractions over 4 weeks. Chemotherapy stopped for RTOG grade 3 bladder or bowel toxicity.",
+  "comparator": "None. Prospective single-arm phase II study; no randomized comparator.",
+  "summary": "All 50 patients completed RT; 46 tolerated all four gemcitabine cycles. Forty-four (88%) achieved complete endoscopic response. At median follow-up 36 months, 3-year CSS was 82% and OS 75%; 32 of 36 survivors had a functional intact bladder. Four underwent cystectomy; two treatment-associated deaths and one late bowel resection were reported.",
   "absoluteEffect": {
-    "endpoint": "5-year cumulative local recurrence",
-    "horizon": "5 years",
-    "treatmentRate": "3.1%",
+    "endpoint": "Complete endoscopic response and 3-year survival",
+    "horizon": "Post-treatment response; 3 years",
+    "treatmentRate": "Complete endoscopic response 44/50 (88%); 3-year CSS 82%; 3-year OS 75%",
     "controlRate": "No randomized comparator",
-    "absoluteBenefit": "Not estimable; single-arm study. Observed rate below prespecified <8% acceptability threshold.",
+    "absoluteBenefit": "Not estimable; single-arm phase II outcomes only.",
     "nnt": "Not applicable",
-    "toxicity": "No randomized comparative toxicity endpoint; treatment includes lumpectomy, whole-breast RT and boosts to each tumour bed.",
-    "nnh": "Not quantifiable"
+    "toxicity": "Four patients stopped gemcitabine early for bowel toxicity; two treatment-associated deaths; one bowel resection for late toxicity.",
+    "nnh": "Not applicable; no comparative harm estimate."
   },
-  "clinicalInterpretation": "Z11102 supports breast conservation in carefully selected women with two or three ipsilateral foci after imaging, biopsy confirmation, margin-negative excision and whole-breast RT with boosts. It does not establish randomized equivalence to mastectomy.",
-  "criticalReview": "The primary analysis included 204 eligible patients and six local recurrences; 5-year cumulative incidence was 3.1% (95% CI 1.3–6.4), below the prespecified 8% acceptability threshold. The MRI comparison was exploratory and highly imbalanced (189 versus 15), so it cannot establish a causal MRI effect. Single-arm design; no comparative NNT.",
+  "clinicalInterpretation": "GemX is a prospective phase II bladder-preservation regimen using weekly low-dose gemcitabine with 52.5 Gy in 20 fractions. It demonstrated promising response and survival estimates but cannot establish superiority over cisplatin or 5-FU/mitomycin C chemoradiotherapy.",
+  "criticalReview": "Single-arm n=50; median follow-up 36 months. 44/50 complete endoscopic response (88% as reported); 3-year CSS 82%, OS 75%. All completed RT; 46 completed all four gemcitabine cycles. Four underwent cystectomy, two treatment-associated deaths and one late bowel resection. No comparative NNT/NNH.",
   "sources": [
-    "https://pubmed.ncbi.nlm.nih.gov/36977292/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10256355/",
-    "https://clinicaltrials.gov/study/NCT01585428"
+    "https://pubmed.ncbi.nlm.nih.gov/21205754/",
+    "https://ascopubs.org/doi/abs/10.1200/jco.2010.31.5721",
+    "https://pubmed.ncbi.nlm.nih.gov/28244408/"
   ],
-  "NCT": "NCT01585428",
+  "registry": "Not reported in primary publication",
   "aliases": [
-    "ACOSOG Z11102",
-    "Alliance Z11102",
-    "Z11102"
+    "GemX",
+    "Weekly gemcitabine chemoradiotherapy in MIBC",
+    "Choudhury et al 2011 GemX phase II",
+    "DOI 10.1200/JCO.2010.31.5721"
   ],
-  "archiveNote": "Selected as Trial of the Day on 3 November 2026 following completion of the approved Breast Cancer batch."
+  "archiveNote": "Selected as Trial of the Day on 8 November 2026 as part of the user-approved 11-study upload; single-arm phase II design explicitly retained."
 }

@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 9,
-  "last_quality_check": "2026-11-03",
+  "last_quality_check": "2026-11-08",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 330,
+    "permanent_trial_pages": 341,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 331,
+    "total_unique_trials": 342,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -31,19 +31,17 @@
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-11-03",
     "new_trials_added_today": [
-      "ACOSOG Z11102 (Alliance)",
-      "AMAROS (EORTC 10981-22023)",
-      "FAST-Forward",
-      "KATHERINE",
-      "NeoSphere",
-      "NATALEE",
-      "PALLAS (ABCSG-42/AFT-05/BIG-14-03)",
-      "RxPONDER (SWOG S1007)",
-      "MA.20 (NCIC CTG)",
-      "NSABP B-51 / RTOG 1304",
-      "POLCAGB",
-      "EMBRACE II",
-      "PREOPANC-2"
+      "IBCSG 23-01",
+      "START-B",
+      "IMPORT LOW",
+      "IMPORT HIGH",
+      "ATEMPT",
+      "ABCSG-16 / SALSA",
+      "SENOMAC",
+      "PENELOPE-B",
+      "A-BRAVE",
+      "EORTC 22922/10925",
+      "GemX"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -65,7 +63,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-03",
+    "last_full_reconciliation": "2026-11-08",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -96,9 +94,9 @@
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-11-03",
-      "id": "acosog-z11102",
-      "trial": "ACOSOG Z11102"
+      "date": "2026-11-08",
+      "id": "gemx",
+      "trial": "GemX"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -202,11 +200,11 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-11-02",
-      "id": "apt",
-      "trial": "APT"
+      "date": "2026-11-08",
+      "id": "acosog-z11102",
+      "trial": "ACOSOG Z11102 (Alliance)"
     },
-    "trial_of_day_records_reconciled_on": "2026-11-03",
+    "trial_of_day_records_reconciled_on": "2026-11-08",
     "trial_of_day_current_id": "acosog-z11102",
     "trial_of_day_previous_id": "apt",
     "trial_of_day_archive_reconciled": true,
@@ -406,29 +404,19 @@
       ]
     },
     "last_upload_batch": {
-      "date": "2026-10-26",
-      "previous_candidate_batch_date": "2026-10-25",
+      "date": "2026-11-08",
       "newTrials": [
-        "GCIG INTERLACE",
-        "DYNAMIC",
-        "CheckMate 648",
-        "KEYNOTE-775 / Study 309",
-        "INTerpath-001 (V940 / mRNA-4157)",
-        "IMpower133",
-        "PACE-B",
-        "MARS 2",
-        "proPSMA",
-        "GOG-0218",
-        "KRASCENDO 1",
-        "VOLGA",
-        "SERENA-6",
-        "INSEMA",
-        "BREAKWATER",
-        "NAPOLI-3",
-        "DESTINY-Gastric04",
-        "PORTEC-4a",
-        "VIALE-A",
-        "TRIANGLE"
+        "IBCSG 23-01",
+        "START-B",
+        "IMPORT LOW",
+        "IMPORT HIGH",
+        "ATEMPT",
+        "ABCSG-16 / SALSA",
+        "SENOMAC",
+        "PENELOPE-B",
+        "A-BRAVE",
+        "EORTC 22922/10925",
+        "GemX"
       ],
       "duplicateAudit": {
         "rosterDuplicates": 0,
@@ -437,7 +425,7 @@
         "dailyEvidenceDuplicates": 0,
         "pivotExcluded": true
       },
-      "notes": "User-approved combined upload of ten candidates proposed on 25 October and ten proposed on 26 October 2026. One roster record per underlying study. Source-linked pages created; browser-rendered QA and full independent guideline/freshness review remain pending."
+      "notes": "User-approved upload of ten Breast Cancer trials and GemX bladder cancer phase II study. One roster record per underlying study. Guideline-level freshness review and browser-rendered QA remain pending."
     },
     "user_requested_existing_trial_not_duplicated": [
       "KEYNOTE-522"
@@ -519,8 +507,8 @@
     "lung_sabr_reference_added": "2026-10-23",
     "lung_sabr_reference_scope": "Protocol-specific lesion definitions, dose/fractionation, and reported OAR constraints for ROSEL, randomized STARS, CHISEL, SPACE, LUSTRE, HILUS, RTOG 0813 and SUNSET; exact constraints marked for source verification where original protocol detail is not reproduced.",
     "last_trial_batch_duplicate_audit": {
-      "date": "2026-11-03",
-      "candidates": 10,
+      "date": "2026-11-08",
+      "candidates": 11,
       "roster_duplicates": 0,
       "canonical_page_duplicates": 0,
       "archive_duplicates": 0,
@@ -528,22 +516,25 @@
       "prior_daily_evidence_checked": true,
       "pivot_excluded": true,
       "status": "PASS",
-      "note": "Reconciled current master roster, full recursive tree, evidence index, archive, current/previous Trial of the Day and all 19 previous daily-evidence JSON files. Aliases, registries and follow-up publications consolidated."
+      "note": "Current master roster, complete recursive Git tree, evidence index, archive, current/previous Trial of the Day and all 20 daily-evidence JSON files checked. All 11 absent before upload; aliases and follow-up publications consolidated. GemX treated as a single-arm phase II study; separate later tolerability cohort linked, not pooled."
     },
     "batch_counts": {
-      "new_studies": 13,
-      "previous_total": 318,
-      "total_after_upload": 331
+      "new_studies": 11,
+      "previous_total": 331,
+      "total_after_upload": 342,
+      "breast_cancer_before": 77,
+      "breast_cancer_after": 87,
+      "bladder_cancer_added": 1
     },
-    "archive_count": 14,
-    "daily_evidence_file_count": 20,
+    "archive_count": 15,
+    "daily_evidence_file_count": 21,
     "daily_evidence_records": 13,
-    "evidence_index_links_added": 13,
-    "new_pages_found": 13,
-    "new_pages_with_shared_renderer": 13,
-    "new_pages_with_primary_source_links": 13,
-    "new_pages_with_explicit_outcome_visualization": 13,
-    "new_pages_with_dated_context": 13,
+    "evidence_index_links_added": 11,
+    "new_pages_found": 11,
+    "new_pages_with_shared_renderer": 11,
+    "new_pages_with_primary_source_links": 11,
+    "new_pages_with_explicit_outcome_visualization": 11,
+    "new_pages_with_dated_context": 11,
     "latest_batch_verification": {
       "date": "2026-11-03",
       "base_main_head": "0e11c8b359acc242b1f1713fe971421d42b00b8c",
@@ -572,42 +563,24 @@
       "cloudflare_pages_deployment": "not independently verified"
     },
     "latest_main_branch_verification": {
-      "date": "2026-11-03",
-      "verified_head": "4fcad89e329f142d28308a09fc1d43bce2461fe4",
-      "roster_entries": 331,
-      "breast_cancer_entries": 77,
-      "canonical_trial_page_index_files": 330,
-      "recursive_tree_entries": 887,
+      "date": "2026-11-08",
+      "base_main_head": "eca4569854e0cc912a3dfab378dfa1574aae3b5d",
+      "candidate_count": 11,
+      "duplicate_audit": "PASS",
+      "recursive_tree_entries_before": 887,
       "tree_truncated": false,
-      "new_pages_verified": 3,
-      "automated_outcome_visualization_audit": "PASS",
-      "daily_atlas_workflow": "PASS",
+      "canonical_pages_before": 330,
+      "canonical_pages_added": 11,
+      "canonical_pages_after": 341,
+      "roster_entries_before": 331,
+      "roster_entries_after": 342,
+      "breast_cancer_entries_before": 77,
+      "breast_cancer_entries_after": 87,
+      "bladder_cancer_entries_added": 1,
+      "static_visualizations_present": true,
       "browser_rendered_qa": "pending",
-      "live_cloudflare_deployment": "not independently verified",
-      "pre_upload_head": "ebcf5522794b2f8315c683b8dbf4aa4f392557f1",
-      "recursive_tree_truncated": false,
-      "trial_of_day_current": "acosog-z11102",
-      "trial_of_day_previous": "apt",
-      "archive_count": 14,
-      "clinical_freshness_review": "Source-level review completed for the three supplemental pages; comprehensive guideline-level freshness audit remains pending.",
-      "verified_head_before_final_audit_metadata_commit": "4fcad89e329f142d28308a09fc1d43bce2461fe4",
-      "automated_outcome_visualization_audit_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965307",
-      "daily_atlas_workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/41568965275",
-      "daily_evidence_files": 20,
-      "daily_evidence_records": 13,
-      "supplemental_pages": [
-        "polcagb",
-        "embrace-ii",
-        "preopanc-2"
-      ],
-      "site_navigation_pages_added": [
-        "cervical-cancer",
-        "gallbladder-cancer",
-        "pancreatic-cancer"
-      ],
-      "site_index_sitemap_entries_added": true,
-      "post_write_re_read": "PASS",
-      "verification_note": "All modified trial pages, roster, daily evidence, evidence index, site navigation, schema, sitemap, Trial-of-the-Day and archive re-read from main. The following commit changes audit metadata only and uses [skip ci] to avoid regenerating sitemap."
+      "clinical_freshness_review": "Primary-source review performed; comprehensive guideline-level review pending.",
+      "post_write_re_read": "pending"
     },
     "supplemental_batch_verification": {
       "date": "2026-11-03",
@@ -5979,6 +5952,237 @@
       "freshness_review_status": "Primary Lancet Oncology 2025 report and 2025 surgical-complication analysis checked 2026-11-03; current guideline review pending.",
       "outcome_visual_review_status": "Static source-grounded outcome visualizations present; automated structural audit and browser-rendered QA pending.",
       "source_verification_status": "Primary phase III publication and predefined surgical-complication analysis checked; no NNT derived from median OS; superiority result distinguished from non-inferiority."
+    },
+    {
+      "id": "ibcsg-23-01",
+      "trial": "IBCSG 23-01",
+      "site": "Breast Cancer",
+      "source": "trial-pages/ibcsg-23-01/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Local Treatment",
+      "question": "In early breast cancer with sentinel-node micrometastases ≤2 mm, can completion ALND be omitted?",
+      "path": "trial-pages/ibcsg-23-01/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage I · sentinel-node micrometastases ≤2 mm",
+      "aliases": [
+        "IBCSG 23-01",
+        "International Breast Cancer Study Group 23-01",
+        "NCT00072293",
+        "No ALND sentinel-node micrometastases trial"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/30196031/",
+      "registry": "NCT00072293"
+    },
+    {
+      "id": "start-b",
+      "trial": "START-B",
+      "site": "Breast Cancer",
+      "source": "trial-pages/start-b/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Does 40 Gy in 15 fractions provide long-term control comparable to 50 Gy in 25 fractions?",
+      "path": "trial-pages/start-b/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage I · moderate hypofractionation after breast surgery",
+      "aliases": [
+        "START-B",
+        "START B",
+        "UK START Trial B",
+        "ISRCTN59368779",
+        "40 Gy in 15 fractions START"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/24055415/",
+      "registry": "ISRCTN59368779"
+    },
+    {
+      "id": "import-low",
+      "trial": "IMPORT LOW",
+      "site": "Breast Cancer",
+      "source": "trial-pages/import-low/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Can reduced-volume or partial-breast RT preserve local control in selected low-risk disease?",
+      "path": "trial-pages/import-low/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage I · partial-breast and reduced-dose irradiation",
+      "aliases": [
+        "IMPORT LOW",
+        "UK IMPORT LOW",
+        "CRUK/06/003",
+        "ISRCTN12852634"
+      ],
+      "primary": "https://doi.org/10.1016/S1470-2045(25)00194-9",
+      "registry": "ISRCTN12852634"
+    },
+    {
+      "id": "import-high",
+      "trial": "IMPORT HIGH",
+      "site": "Breast Cancer",
+      "source": "trial-pages/import-high/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Can a 48-Gy simultaneous integrated boost replace sequential boost without compromising local control?",
+      "path": "trial-pages/import-high/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage I–II · simultaneous integrated boost",
+      "aliases": [
+        "IMPORT HIGH",
+        "IMPORT-HIGH",
+        "ISRCTN47437448",
+        "Dose-escalated SIB breast radiotherapy"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/37302395/",
+      "registry": "ISRCTN47437448"
+    },
+    {
+      "id": "atempt",
+      "trial": "ATEMPT",
+      "site": "Breast Cancer",
+      "source": "trial-pages/atempt/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "In stage I HER2-positive disease, does adjuvant T-DM1 offer acceptable outcomes and lower toxicity than paclitaxel/trastuzumab?",
+      "path": "trial-pages/atempt/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage I · HER2-positive adjuvant de-escalation",
+      "aliases": [
+        "ATEMPT",
+        "Adjuvant T-DM1 stage I HER2-positive trial",
+        "NCT01853748"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/34077270/",
+      "registry": "NCT01853748"
+    },
+    {
+      "id": "abcsg-16-salsa",
+      "trial": "ABCSG-16 / SALSA",
+      "site": "Breast Cancer",
+      "source": "trial-pages/abcsg-16-salsa/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "After five years of endocrine therapy, does five rather than two additional years of anastrozole improve DFS?",
+      "path": "trial-pages/abcsg-16-salsa/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage II · extended adjuvant endocrine therapy duration",
+      "aliases": [
+        "ABCSG-16",
+        "ABCSG 16",
+        "SALSA",
+        "NCT00295620"
+      ],
+      "primary": "https://doi.org/10.1056/NEJMoa2104162",
+      "registry": "NCT00295620"
+    },
+    {
+      "id": "senomac",
+      "trial": "SENOMAC",
+      "site": "Breast Cancer",
+      "source": "trial-pages/senomac/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Local Treatment",
+      "question": "Can completion ALND be omitted in clinically node-negative patients with one or two sentinel-node macrometastases?",
+      "path": "trial-pages/senomac/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage II · sentinel-node macrometastases",
+      "aliases": [
+        "SENOMAC",
+        "NCT02240472",
+        "Omitting Axillary Dissection in Breast Cancer with Sentinel-Node Metastases"
+      ],
+      "primary": "https://doi.org/10.1056/NEJMoa2313487",
+      "registry": "NCT02240472"
+    },
+    {
+      "id": "penelope-b",
+      "trial": "PENELOPE-B",
+      "site": "Breast Cancer",
+      "source": "trial-pages/penelope-b/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Does one year of palbociclib improve outcomes after residual invasive disease following neoadjuvant chemotherapy?",
+      "path": "trial-pages/penelope-b/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage II–III · residual HR-positive/HER2-negative disease after NACT",
+      "aliases": [
+        "PENELOPE-B",
+        "PENELOPE B",
+        "GBG 78",
+        "NCT01864746"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/33793299/",
+      "registry": "NCT01864746"
+    },
+    {
+      "id": "a-brave",
+      "trial": "A-BRAVE",
+      "site": "Breast Cancer",
+      "source": "trial-pages/a-brave/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Does one year of adjuvant avelumab improve DFS after curative treatment of high-risk TNBC?",
+      "path": "trial-pages/a-brave/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage II–III · high-risk early triple-negative breast cancer",
+      "aliases": [
+        "A-BRAVE",
+        "ABRAVE",
+        "NCT02926196",
+        "Adjuvant avelumab high-risk early TNBC"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/40885530/",
+      "registry": "NCT02926196"
+    },
+    {
+      "id": "eortc-22922-10925",
+      "trial": "EORTC 22922/10925",
+      "site": "Breast Cancer",
+      "source": "trial-pages/eortc-22922-10925/",
+      "discipline": "Radiation",
+      "setting": "Adjuvant / Postoperative",
+      "question": "Does elective IM-MS nodal irradiation improve long-term outcomes in stage I–III breast cancer?",
+      "path": "trial-pages/eortc-22922-10925/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage III / locoregional · internal mammary and medial supraclavicular irradiation",
+      "aliases": [
+        "EORTC 22922/10925",
+        "EORTC 22922",
+        "EORTC 10925",
+        "NCT00002851",
+        "IM-MS nodal irradiation trial"
+      ],
+      "primary": "https://doi.org/10.3322/caac.70082",
+      "registry": "NCT00002851"
+    },
+    {
+      "id": "gemx",
+      "trial": "GemX",
+      "site": "Bladder Cancer",
+      "source": "trial-pages/gemx/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Curative",
+      "question": "Can weekly gemcitabine with four-week hypofractionated RT achieve bladder preservation in selected MIBC?",
+      "path": "trial-pages/gemx/",
+      "freshness_review_status": "pending",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "Stage II–III / locoregional · T2–3 N0 M0 muscle-invasive bladder cancer",
+      "aliases": [
+        "GemX",
+        "Weekly gemcitabine chemoradiotherapy in MIBC",
+        "Choudhury et al 2011 GemX phase II",
+        "DOI 10.1200/JCO.2010.31.5721"
+      ],
+      "primary": "https://pubmed.ncbi.nlm.nih.gov/21205754/",
+      "registry": "Not reported"
     }
   ]
 }

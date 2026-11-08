@@ -62,5 +62,23 @@
     "Prospective cohort benchmarking studies such as EMBRACE II must not be presented as randomized comparisons or assigned NNT/NNH against an absent control group.",
     "Failure to demonstrate superiority is not evidence of equivalence or non-inferiority unless a prespecified non-inferiority/equivalence design and margin were used."
   ],
-  "version": 3
+  "version": 4,
+  "last_updated": "2026-11-08",
+  "latest_batch": {
+    "date": "2026-11-08",
+    "study_ids": [
+      "ibcsg-23-01",
+      "start-b",
+      "import-low",
+      "import-high",
+      "atempt",
+      "abcsg-16-salsa",
+      "senomac",
+      "penelope-b",
+      "a-brave",
+      "eortc-22922-10925",
+      "gemx"
+    ],
+    "rule": "One entry per underlying study; one primary discipline only from Surgical, Medical, Radiation, Biomarker, Imaging. Keep Imaging and Biomarker as separate settings. Single-arm studies must not receive comparative NNT/NNH; non-inferiority must not be described as superiority."
+  }
 }

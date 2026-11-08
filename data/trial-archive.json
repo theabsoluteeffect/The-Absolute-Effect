@@ -330,5 +330,45 @@
     ],
     "archiveNote": "Full APT 10-year Trial-of-the-Day analysis preserved during the 3 November 2026 rotation.",
     "archiveDate": "2026-11-03"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "acosog-z11102",
+    "trial": "ACOSOG Z11102 (Alliance)",
+    "title": "Local recurrence after breast-conserving therapy in multiple ipsilateral breast cancer",
+    "journal": "Journal of Clinical Oncology 2023; prospective, multicentre, single-arm phase II trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36977292/",
+    "site": "Breast Cancer",
+    "discipline": "Surgical",
+    "setting": "Definitive / Local Treatment",
+    "population": "270 enrolled; 204 eligible patients underwent protocol-directed breast-conserving therapy. Median age 61 years; most had two foci and ER-positive/HER2-negative disease.",
+    "treatment": "Breast-conserving surgery with negative margins, followed by whole-breast irradiation and boost to each lumpectomy bed; systemic therapy according to tumour biology.",
+    "comparator": "None; single-arm phase II study. Prespecified acceptable 5-year local recurrence threshold <8%.",
+    "summary": "At median follow-up 66.4 months, 6 local recurrences occurred; estimated 5-year cumulative local recurrence was 3.1% (95% CI 1.3–6.4). No regional recurrences were reported. Exploratory MRI subgroup: 1.7% with preoperative MRI (n=189) versus 22.6% without MRI (n=15; P=0.002).",
+    "absoluteEffect": {
+      "endpoint": "5-year cumulative local recurrence",
+      "horizon": "5 years",
+      "treatmentRate": "3.1%",
+      "controlRate": "No randomized comparator",
+      "absoluteBenefit": "Not estimable; single-arm study. Observed rate below prespecified <8% acceptability threshold.",
+      "nnt": "Not applicable",
+      "toxicity": "No randomized comparative toxicity endpoint; treatment includes lumpectomy, whole-breast RT and boosts to each tumour bed.",
+      "nnh": "Not quantifiable"
+    },
+    "clinicalInterpretation": "Z11102 supports breast conservation in carefully selected women with two or three ipsilateral foci after imaging, biopsy confirmation, margin-negative excision and whole-breast RT with boosts. It does not establish randomized equivalence to mastectomy.",
+    "criticalReview": "The primary analysis included 204 eligible patients and six local recurrences; 5-year cumulative incidence was 3.1% (95% CI 1.3–6.4), below the prespecified 8% acceptability threshold. The MRI comparison was exploratory and highly imbalanced (189 versus 15), so it cannot establish a causal MRI effect. Single-arm design; no comparative NNT.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/36977292/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10256355/",
+      "https://clinicaltrials.gov/study/NCT01585428"
+    ],
+    "NCT": "NCT01585428",
+    "aliases": [
+      "ACOSOG Z11102",
+      "Alliance Z11102",
+      "Z11102"
+    ],
+    "archiveNote": "Archived as the previous Trial of the Day on 8 November 2026; full analysis retained during rotation to GemX.",
+    "archiveDate": "2026-11-08"
   }
 ]
