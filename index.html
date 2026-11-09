@@ -94,6 +94,61 @@ footer div{width:100%;max-width:none;margin:0}
  .method .card:last-child{border-bottom:0}
  .browse-strip{grid-template-columns:1fr}
 }
+
+/* Final viewport override: remove every inherited narrow content measure. */
+html,body,#app,.page,.container,.wrapper{width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important}
+body{font-size:17px!important}
+header,.nav,.hero,.hero-inner,main,footer,footer div{width:100%!important;max-width:none!important}
+.nav{padding-left:4vw!important;padding-right:4vw!important;min-height:74px!important}
+.hero{padding:clamp(76px,8vw,132px) 4vw 100px!important}
+.hero-inner{grid-template-columns:minmax(0,1.45fr) minmax(380px,.75fr)!important;gap:5vw!important}
+.hero h1{font-size:clamp(68px,8vw,132px)!important;max-width:1200px!important;line-height:.94!important}
+.hero h2{font-size:clamp(25px,2.5vw,36px)!important;max-width:900px!important}
+.hero p{font-size:clamp(17px,1.2vw,20px)!important;max-width:900px!important;line-height:1.7!important}
+.hero-panel{padding:clamp(28px,3vw,44px)!important}
+.metric-row{padding:24px 0!important}
+.metric-row strong{font-size:clamp(19px,1.5vw,25px)!important}
+.metric-row span{font-size:15px!important}
+main{padding:0 4vw 100px!important}
+.trial-day{width:100%!important;max-width:none!important;margin:0 0 84px!important;padding:44px 0 50px!important}
+.trial-day-title{font-size:clamp(32px,3.6vw,52px)!important;max-width:1500px!important}
+.trial-day-meta{font-size:14px!important}
+.trial-day-grid{grid-template-columns:minmax(0,1.4fr) minmax(380px,.8fr)!important;gap:5vw!important}
+.trial-day-grid p{font-size:17px!important;line-height:1.75!important}
+.review{font-size:16px!important;padding:24px 26px!important}
+.review strong{font-size:20px!important}
+.section-title{font-size:clamp(38px,4vw,58px)!important}
+.section-sub,.muted{font-size:17px!important;max-width:1200px!important}
+.filters-wrap{width:100%!important;max-width:none!important;padding:34px 36px!important}
+.filters{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px!important}
+.filters label{font-size:12px!important}
+.filters select{font-size:16px!important;min-height:58px!important}
+.entry{width:100%!important;max-width:none!important;padding:28px 0!important}
+.entry h3{font-size:28px!important}
+.method{width:100%!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.method .card{padding:32px 34px 32px 0!important}
+.method .card+.card{padding-left:34px!important}
+.method .card h3{font-size:25px!important}
+.method .card p{font-size:16px!important}
+#about .card{width:100%!important;max-width:none!important}
+footer{padding:38px 4vw!important}
+@media(max-width:900px){
+ .hero-inner{grid-template-columns:1fr!important}
+ .trial-day-grid{grid-template-columns:1fr!important}
+ .filters{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:600px){
+ .nav{padding:0 5%!important}
+ .hero{padding:58px 5% 64px!important}
+ .hero h1{font-size:clamp(48px,13vw,70px)!important}
+ main{padding:0 5% 60px!important}
+ .trial-day{padding:28px 0 34px!important}
+ .trial-day-grid{grid-template-columns:1fr!important}
+ .filters{grid-template-columns:1fr!important}
+ .filters-wrap{padding:20px!important}
+ .method{grid-template-columns:1fr!important}
+ .method .card,.method .card+.card{padding:22px 0!important}
+}
 </style><meta property="og:title" content="The Absolute Effect | Oncology Evidence Atlas"><meta property="og:description" content="Clinician-facing oncology evidence atlas translating clinical-trial results into absolute benefit, harm, NNT, NNH and patient-level interpretation."><meta property="og:url" content="https://theabsoluteeffect.pages.dev/"><meta property="og:type" content="website"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Absolute Effect","url":"https://theabsoluteeffect.pages.dev/","description":"Clinician-facing oncology evidence atlas translating clinical-trial results into absolute benefit, harm, NNT, NNH and patient-level interpretation.","publisher":{"@type":"Person","name":"Dr Rishi P Nair"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dr Rishi P Nair","jobTitle":"Clinical Oncologist","worksFor":{"@type":"Organization","name":"The Absolute Effect"},"url":"https://theabsoluteeffect.pages.dev/"}</script><!-- Cloudflare production deployment refresh: 2026-09-18 -->
 </head><body><header><div class="nav"><div class="brand">THE ABSOLUTE <i>EFFECT</i></div><nav class="nav-links" aria-label="Main navigation"><button onclick="scrollToId('explore')">Explore</button><button onclick="scrollToId('method')">Method</button><button onclick="scrollToId('about')">About</button></nav></div></header><section class="hero"><div class="hero-inner"><div><div class="eyebrow">The oncology evidence atlas</div><h1>The Absolute Effect</h1><h2>Evidence is relative. Decisions are absolute.</h2><p>Turn oncology trial results into the outcomes that matter at the bedside: absolute benefit, absolute harm, NNT, NNH and the uncertainty behind every number.</p><div class="hero-actions"><a class="btn" href="#explore">Explore the evidence <span aria-hidden="true">↘</span></a><a class="hero-link" href="oncology-evidence/">Browse by cancer type ↗</a></div></div><aside class="hero-panel" aria-label="The Absolute Effect approach"><div class="hero-panel-head"><span><i class="live-dot"></i>Our evidence lens</span><span>01 — 03</span></div><div class="metric-row"><div><strong>Relative effect</strong><span>What the trial measured</span></div><span class="metric-index">01</span></div><div class="metric-row"><div><strong>Absolute difference</strong><span>How many patients benefit or are harmed</span></div><span class="metric-index">02</span></div><div class="metric-row"><div><strong>Clinical meaning</strong><span>Time horizon, uncertainty and context</span></div><span class="metric-index">03</span></div><div class="hero-foot"><span>Benefit</span><span>Harm</span><span>NNT / NNH</span><span>Uncertainty</span></div></aside></div></section><main><!-- TRIAL_OF_THE_DAY_START --><section class="trial-day" id="trialOfTheDay"><div class="trial-day-top"><div class="eyebrow">Trial of the day</div><div class="trial-day-meta" id="todDate">Loading current selection…</div></div><h2 class="trial-day-title" id="todTitle">A closer look at the evidence</h2><div class="trial-day-meta" id="todMeta">The featured study is being loaded from the live evidence archive.</div><div class="trial-day-grid"><div><p id="todSummary">A source-linked clinical interpretation will appear here.</p><p><a class="trial-link" id="todPage" href="evidence/">View full trial analysis →</a></p></div><div><div class="review"><strong>Critical clinical review</strong><span id="todReview">The review distinguishes the trial design, absolute outcomes and limitations.</span></div><p style="margin-top:14px"><a class="trial-link" id="todSource" href="evidence/" target="_blank" rel="noopener">Read primary report →</a></p></div></div></section><!-- TRIAL_OF_THE_DAY_END --><section id="explore"><div class="section-heading"><div><div class="section-kicker">Find the evidence</div><h2 class="section-title">Explore the atlas</h2><p class="section-sub">Start with a tumour site. Then filter by discipline, treatment setting and the clinical question you need answered.</p></div></div><div class="filters-wrap"><div class="filters"><div><label for="siteFilter">1 · TUMOUR SITE</label><select id="siteFilter"><option value="">Select tumour site</option></select></div><div><label for="disciplineFilter">2 · DISCIPLINE</label><select id="disciplineFilter" disabled><option value="">Select discipline</option></select></div><div><label for="settingFilter">3 · SETTING</label><select id="settingFilter" disabled><option value="">Select setting</option></select></div><div><label for="questionFilter">4 · CLINICAL QUESTION</label><select id="questionFilter" disabled><option value="">Select clinical question</option></select></div></div><div id="entryContainer"><p class="muted">Choose a tumour site to begin exploring the indexed trials.</p></div></div><div class="browse-strip"><div><strong>Prefer to browse rather than filter?</strong><p>Explore the evidence grouped by cancer type.</p></div><a href="oncology-evidence/">Browse cancer types →</a></div></section><section id="method" class="method-section"><div class="section-kicker">Our method</div><h2 class="section-title">From trial result to bedside decision</h2><p class="section-sub">Every entry should make the clinical consequence easier to see.</p><div class="method"><div class="card"><div class="method-number">01 / RELATIVE</div><h3>What the trial reported</h3><p class="muted">HR, RR, OR or another relative measure, exactly as reported.</p></div><div class="card"><div class="method-number">02 / ABSOLUTE</div><h3>What changes for patients</h3><p class="muted">Absolute difference at a defined time point or clinically meaningful unit.</p></div><div class="card"><div class="method-number">03 / CLINICAL</div><h3>Put it in 100 patients</h3><p class="muted">NNT/NNH when appropriate, always tied to a specified endpoint and time horizon.</p></div></div></section><section id="about"><h2 class="section-title">About</h2><div class="card"><h3>Dr Rishi P Nair</h3><p class="muted">Clinical Oncology · Evidence-based oncology</p><p>The Absolute Effect is a clinician-facing evidence atlas designed to move beyond statistical significance and relative measures toward quantities that are easier to interpret at the bedside.</p></div></section></main><footer><div><strong>The Absolute Effect</strong><br>Quantifying benefit, harm and uncertainty in oncology.</div></footer><script id="atlas-runtime-roster">
 let trials=[];
