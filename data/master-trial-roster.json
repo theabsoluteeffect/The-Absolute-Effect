@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 11,
-  "last_quality_check": "2026-11-09",
+  "version": 12,
+  "last_quality_check": "2026-11-13",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -19,47 +19,48 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 370,
+    "permanent_trial_pages": 400,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 372,
+    "total_unique_trials": 402,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-11-09",
+    "daily_batch_uploaded": "2026-11-13",
     "new_trials_added_today": [
-      "KEYNOTE-407",
-      "KEYNOTE-024",
-      "KEYNOTE-042",
-      "MARIPOSA",
-      "PAPILLON",
-      "CROWN",
-      "ALTA-1L",
-      "CodeBreaK 200",
-      "CheckMate 9LA",
-      "REFLECT",
-      "KEYNOTE-966",
-      "FIGHT-302",
-      "FIGHT-207",
-      "FIGHT-203",
-      "CheckMate 227",
-      "CheckMate 743",
-      "CheckMate 067",
-      "RELATIVITY-047",
-      "DREAMseq (ECOG-ACRIN EA6134)",
-      "TALAPRO-2",
-      "VISION",
-      "PSMAfore",
-      "EV-301",
-      "CALLA",
-      "GOG-0213",
-      "ATHENA-MONO",
-      "COMBI-AD",
-      "L-MIND",
-      "TRANSFORM"
+      "GLOW",
+      "SPOTLIGHT",
+      "CheckMate 649",
+      "KEYNOTE-062",
+      "KEYNOTE-859",
+      "RATIONALE-305",
+      "ORIENT-16",
+      "ATTRACTION-4",
+      "GEMSTONE-303",
+      "RAINBOW",
+      "REGARD",
+      "CheckMate 9DW",
+      "RATIONALE-301",
+      "KEYNOTE-224",
+      "KEYNOTE-240",
+      "KEYNOTE-394",
+      "CheckMate 040 (Cohort 4)",
+      "NRG/RTOG 1112",
+      "Xi et al. 2025 (SBRT vs RFA)",
+      "Proton Beam Therapy vs RFA (Kim et al.)",
+      "CCTG HE1",
+      "Chen et al. 2006 (PLAT vs resection)",
+      "Peng et al. 2012 (TACE + RFA vs RFA)",
+      "Feng et al. 2012 (RFA vs resection)",
+      "HEPATORCH",
+      "CARES-310",
+      "COSMIC-312",
+      "CheckMate 459",
+      "EVOLVE-1",
+      "IMbrave050"
     ],
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -108,7 +109,7 @@
       "CheckMate 214",
       "COMPARZ"
     ],
-    "last_quality_check": "2026-11-03",
+    "last_quality_check": "2026-11-13",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -652,7 +653,10 @@
       "daily_evidence_records": 13,
       "post_write_re_read": "PASS"
     },
-    "post_write_re_read": "PASS"
+    "post_write_re_read": "PASS",
+    "duplicate_audit_2026_11_13": "PASS: all 30 IDs absent from prior roster; canonical page paths were confirmed absent from recursive tree before creation. Aliases and follow-up reports consolidated.",
+    "source_review_status": "30 primary-source dossiers uploaded; several older procedural HCC studies carry explicit full-text toxicity extraction caveats. Comprehensive guideline/regulatory reconciliation pending.",
+    "browser_rendered_qa": "pending"
   },
   "trials": [
     {
@@ -6730,6 +6734,519 @@
       ],
       "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+    },
+    {
+      "id": "glow",
+      "trial": "GLOW",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/glow/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative cldn18.2-positive unresectable/metastatic disease?",
+      "path": "trial-pages/glow/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative CLDN18.2-positive unresectable/metastatic disease",
+      "aliases": [
+        "GLOW",
+        "NCT03653507"
+      ]
+    },
+    {
+      "id": "spotlight",
+      "trial": "SPOTLIGHT",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/spotlight/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative cldn18.2-positive disease?",
+      "path": "trial-pages/spotlight/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative CLDN18.2-positive disease",
+      "aliases": [
+        "SPOTLIGHT",
+        "NCT03504397"
+      ]
+    },
+    {
+      "id": "checkmate-649",
+      "trial": "CheckMate 649",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/checkmate-649/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative advanced gastroesophageal adenocarcinoma?",
+      "path": "trial-pages/checkmate-649/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative advanced gastroesophageal adenocarcinoma",
+      "aliases": [
+        "CheckMate 649",
+        "NCT02872116"
+      ]
+    },
+    {
+      "id": "keynote-062",
+      "trial": "KEYNOTE-062",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/keynote-062/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative advanced gastric/gej adenocarcinoma, pd-l1 cps ≥1?",
+      "path": "trial-pages/keynote-062/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative advanced gastric/GEJ adenocarcinoma, PD-L1 CPS ≥1",
+      "aliases": [
+        "KEYNOTE-062",
+        "NCT02494583"
+      ]
+    },
+    {
+      "id": "keynote-859",
+      "trial": "KEYNOTE-859",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/keynote-859/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative locally advanced/metastatic gastric/gej adenocarcinoma?",
+      "path": "trial-pages/keynote-859/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative locally advanced/metastatic gastric/GEJ adenocarcinoma",
+      "aliases": [
+        "KEYNOTE-859",
+        "NCT03675737"
+      ]
+    },
+    {
+      "id": "rationale-305",
+      "trial": "RATIONALE-305",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/rationale-305/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative advanced gastric/gej adenocarcinoma?",
+      "path": "trial-pages/rationale-305/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative advanced gastric/GEJ adenocarcinoma",
+      "aliases": [
+        "RATIONALE-305",
+        "NCT03777657"
+      ]
+    },
+    {
+      "id": "orient-16",
+      "trial": "ORIENT-16",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/orient-16/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line unresectable locally advanced/recurrent/metastatic gastric/gej adenocarcinoma?",
+      "path": "trial-pages/orient-16/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line unresectable locally advanced/recurrent/metastatic gastric/GEJ adenocarcinoma",
+      "aliases": [
+        "ORIENT-16",
+        "NCT03745170"
+      ]
+    },
+    {
+      "id": "attraction-4",
+      "trial": "ATTRACTION-4",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/attraction-4/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line her2-negative advanced/recurrent gastric/gej cancer in east asia?",
+      "path": "trial-pages/attraction-4/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line HER2-negative advanced/recurrent gastric/GEJ cancer in East Asia",
+      "aliases": [
+        "ATTRACTION-4",
+        "NCT02746796"
+      ]
+    },
+    {
+      "id": "gemstone-303",
+      "trial": "GEMSTONE-303",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/gemstone-303/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line pd-l1 cps ≥5 unresectable/metastatic gastric/gej adenocarcinoma?",
+      "path": "trial-pages/gemstone-303/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line PD-L1 CPS ≥5 unresectable/metastatic gastric/GEJ adenocarcinoma",
+      "aliases": [
+        "GEMSTONE-303",
+        "NCT03802591"
+      ]
+    },
+    {
+      "id": "rainbow",
+      "trial": "RAINBOW",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/rainbow/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in second-line previously treated advanced gastric/gej adenocarcinoma?",
+      "path": "trial-pages/rainbow/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Second-line previously treated advanced gastric/GEJ adenocarcinoma",
+      "aliases": [
+        "RAINBOW",
+        "NCT01170663"
+      ]
+    },
+    {
+      "id": "regard",
+      "trial": "REGARD",
+      "site": "Gastric and Gastroesophageal Junction Cancer",
+      "source": "trial-pages/regard/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in second-line monotherapy after progression on first-line chemotherapy?",
+      "path": "trial-pages/regard/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Second-line monotherapy after progression on first-line chemotherapy",
+      "aliases": [
+        "REGARD",
+        "NCT00917384"
+      ]
+    },
+    {
+      "id": "checkmate-9dw",
+      "trial": "CheckMate 9DW",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/checkmate-9dw/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line unresectable hcc?",
+      "path": "trial-pages/checkmate-9dw/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line unresectable HCC",
+      "aliases": [
+        "CheckMate 9DW",
+        "NCT04039607"
+      ]
+    },
+    {
+      "id": "rationale-301",
+      "trial": "RATIONALE-301",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/rationale-301/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line unresectable hcc?",
+      "path": "trial-pages/rationale-301/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line unresectable HCC",
+      "aliases": [
+        "RATIONALE-301",
+        "NCT03412773"
+      ]
+    },
+    {
+      "id": "keynote-224",
+      "trial": "KEYNOTE-224",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/keynote-224/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in pembrolizumab phase ii; sorafenib-pretreated and untreated cohorts?",
+      "path": "trial-pages/keynote-224/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Pembrolizumab phase II; sorafenib-pretreated and untreated cohorts",
+      "aliases": [
+        "KEYNOTE-224",
+        "NCT02702414",
+        "KEYNOTE-224 cohort 1",
+        "KEYNOTE-224 cohort 2"
+      ]
+    },
+    {
+      "id": "keynote-240",
+      "trial": "KEYNOTE-240",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/keynote-240/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in second-line pembrolizumab after sorafenib?",
+      "path": "trial-pages/keynote-240/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Second-line pembrolizumab after sorafenib",
+      "aliases": [
+        "KEYNOTE-240",
+        "NCT02702401"
+      ]
+    },
+    {
+      "id": "keynote-394",
+      "trial": "KEYNOTE-394",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/keynote-394/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in second-line pembrolizumab in asian patients after sorafenib/oxaliplatin?",
+      "path": "trial-pages/keynote-394/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Second-line pembrolizumab in Asian patients after sorafenib/oxaliplatin",
+      "aliases": [
+        "KEYNOTE-394",
+        "NCT03062358"
+      ]
+    },
+    {
+      "id": "checkmate-040",
+      "trial": "CheckMate 040 (Cohort 4)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/checkmate-040/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in post-sorafenib nivolumab/ipilimumab dose-regimen study?",
+      "path": "trial-pages/checkmate-040/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Post-sorafenib nivolumab/ipilimumab dose-regimen study",
+      "aliases": [
+        "CheckMate 040 cohort 4",
+        "NCT01658878"
+      ]
+    },
+    {
+      "id": "rtog-1112",
+      "trial": "NRG/RTOG 1112",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/rtog-1112/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Curative",
+      "question": "What are the efficacy and safety outcomes in locally advanced hcc unsuitable for standard locoregional therapy?",
+      "path": "trial-pages/rtog-1112/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Locally advanced HCC unsuitable for standard locoregional therapy",
+      "aliases": [
+        "NRG/RTOG 1112",
+        "RTOG 1112",
+        "NCT01730937"
+      ]
+    },
+    {
+      "id": "xi-2025-hcc",
+      "trial": "Xi et al. 2025 (SBRT vs RFA)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/xi-2025-hcc/",
+      "discipline": "Radiation",
+      "setting": "Salvage / Recurrent",
+      "question": "What are the efficacy and safety outcomes in single recurrent hcc ≤5 cm?",
+      "path": "trial-pages/xi-2025-hcc/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Single recurrent HCC ≤5 cm",
+      "aliases": [
+        "Xi 2025 SBRT RFA HCC",
+        "NCT04047173"
+      ]
+    },
+    {
+      "id": "proton-rfa-hcc",
+      "trial": "Proton Beam Therapy vs RFA (Kim et al.)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/proton-rfa-hcc/",
+      "discipline": "Radiation",
+      "setting": "Salvage / Recurrent",
+      "question": "What are the efficacy and safety outcomes in recurrent/residual hcc ≤2 lesions and <3 cm?",
+      "path": "trial-pages/proton-rfa-hcc/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Recurrent/residual HCC ≤2 lesions and <3 cm",
+      "aliases": [
+        "Proton beam therapy versus RFA HCC",
+        "NCT01963429"
+      ]
+    },
+    {
+      "id": "cctg-he1",
+      "trial": "CCTG HE1",
+      "site": "Hepatocellular Carcinoma and Liver Metastases",
+      "source": "trial-pages/cctg-he1/",
+      "discipline": "Radiation",
+      "setting": "Palliative",
+      "question": "What are the efficacy and safety outcomes in painful hepatic cancer refractory to standard treatment; mixed hcc/liver metastases?",
+      "path": "trial-pages/cctg-he1/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Painful hepatic cancer refractory to standard treatment; mixed HCC/liver metastases",
+      "aliases": [
+        "CCTG HE1",
+        "NCT02511522"
+      ]
+    },
+    {
+      "id": "chen-2006-hcc",
+      "trial": "Chen et al. 2006 (PLAT vs resection)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/chen-2006-hcc/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Curative",
+      "question": "What are the efficacy and safety outcomes in solitary hcc ≤5 cm?",
+      "path": "trial-pages/chen-2006-hcc/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Solitary HCC ≤5 cm",
+      "aliases": [
+        "Chen et al 2006 PLAT resection",
+        "PMID 16495695"
+      ]
+    },
+    {
+      "id": "peng-2012-hcc",
+      "trial": "Peng et al. 2012 (TACE + RFA vs RFA)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/peng-2012-hcc/",
+      "discipline": "Interventional Oncology",
+      "setting": "Salvage / Recurrent",
+      "question": "What are the efficacy and safety outcomes in recurrent hcc ≤5 cm?",
+      "path": "trial-pages/peng-2012-hcc/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Recurrent HCC ≤5 cm",
+      "aliases": [
+        "Peng et al 2012 TACE RFA",
+        "PMID 22157201"
+      ]
+    },
+    {
+      "id": "feng-2012-hcc",
+      "trial": "Feng et al. 2012 (RFA vs resection)",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/feng-2012-hcc/",
+      "discipline": "Surgical",
+      "setting": "Definitive / Curative",
+      "question": "What are the efficacy and safety outcomes in small hcc <4 cm, up to two nodules?",
+      "path": "trial-pages/feng-2012-hcc/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Small HCC <4 cm, up to two nodules",
+      "aliases": [
+        "Feng et al 2012 RFA resection",
+        "PMID 22634125"
+      ]
+    },
+    {
+      "id": "hepatorch",
+      "trial": "HEPATORCH",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/hepatorch/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line advanced/unresectable hcc?",
+      "path": "trial-pages/hepatorch/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line advanced/unresectable HCC",
+      "aliases": [
+        "HEPATORCH",
+        "NCT04723004"
+      ]
+    },
+    {
+      "id": "cares-310",
+      "trial": "CARES-310",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/cares-310/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line unresectable/metastatic hcc?",
+      "path": "trial-pages/cares-310/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line unresectable/metastatic HCC",
+      "aliases": [
+        "CARES-310",
+        "NCT03764293"
+      ]
+    },
+    {
+      "id": "cosmic-312",
+      "trial": "COSMIC-312",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/cosmic-312/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line advanced hcc?",
+      "path": "trial-pages/cosmic-312/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line advanced HCC",
+      "aliases": [
+        "COSMIC-312",
+        "NCT03755791"
+      ]
+    },
+    {
+      "id": "checkmate-459",
+      "trial": "CheckMate 459",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/checkmate-459/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in first-line nivolumab versus sorafenib?",
+      "path": "trial-pages/checkmate-459/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "First-line nivolumab versus sorafenib",
+      "aliases": [
+        "CheckMate 459",
+        "NCT02576509"
+      ]
+    },
+    {
+      "id": "evolve-1",
+      "trial": "EVOLVE-1",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/evolve-1/",
+      "discipline": "Medical",
+      "setting": "Advanced / Metastatic",
+      "question": "What are the efficacy and safety outcomes in second-line after sorafenib progression/intolerance?",
+      "path": "trial-pages/evolve-1/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "Second-line after sorafenib progression/intolerance",
+      "aliases": [
+        "EVOLVE-1",
+        "NCT01035229"
+      ]
+    },
+    {
+      "id": "imbrave050",
+      "trial": "IMbrave050",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/imbrave050/",
+      "discipline": "Medical",
+      "setting": "Adjuvant / Postoperative",
+      "question": "What are the efficacy and safety outcomes in high-risk recurrence after curative-intent resection/ablation?",
+      "path": "trial-pages/imbrave050/",
+      "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
+      "outcome_visual_review_status": "content_markup_present_browser_qa_pending",
+      "setting_detail": "High-risk recurrence after curative-intent resection/ablation",
+      "aliases": [
+        "IMbrave050",
+        "NCT04102098"
+      ]
     }
   ]
 }
