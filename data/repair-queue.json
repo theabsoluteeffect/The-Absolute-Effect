@@ -1155,8 +1155,8 @@
       "path": "trial-pages/talentace/index.html",
       "category": "new_trial_candidate_review",
       "severity": "medium",
-      "evidence": "10.1016/S2468-1253(26)00212-8; PMID 42641632. Primary Lancet Gastroenterology & Hepatology phase III report located; registry identifier requires final registry cross-check.",
-      "action": "Verify registry ID and full paper; extract TACE-PFS definition, OS, treatment schedule, TACE burden, toxicity and patient-reported outcomes.",
+      "evidence": "10.1016/S2468-1253(26)00212-8; PMID 42641632; NCT04712643. Primary Lancet Gastroenterology & Hepatology phase III report verified.",
+      "action": "Extract TACE-PFS definition, OS maturity, treatment schedule, TACE burden, toxicity and patient-reported outcomes.",
       "status": "open",
       "created_on": "2026-11-14"
     },
