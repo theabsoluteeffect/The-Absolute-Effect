@@ -26,6 +26,15 @@
     const box=document.createElement("div");box.className="ae-design";const label=document.createElement("b");label.textContent=context;const note=document.createElement("p");note.textContent="Reported values. Bar lengths are scaled to the larger value; they are not Kaplan–Meier probabilities unless the endpoint is a fixed-time rate.";box.append(label,note);h2.after(box);
     [["Experimental arm",a,false],["Comparator arm",b,true]].forEach(row=>{const wrap=document.createElement("div");wrap.className="ae-outcome";const head=document.createElement("div");head.className="ae-outcome-head";const l=document.createElement("span");l.textContent=row[0];const v=document.createElement("strong");v.textContent=row[1]+suffix;head.append(l,v);const track=document.createElement("div");track.className="ae-track";const fill=document.createElement("div");fill.className="ae-fill"+(row[2]?" control":"");fill.style.width=(row[1]/max*100).toFixed(1)+"%";track.append(fill);wrap.append(head,track);box.after(wrap);});
    });}else{const note=document.createElement("div");note.className="ae-note";note.textContent=summaryText||"No directly comparable numerical endpoint was available for a quantitative display.";h2.after(note);}
+   if(slug==="unicorn"){
+    const rows=[["pMMR · BOT",0],["pMMR · BOT + BAL",36],["dMMR · BOT",36],["dMMR · BOT + BAL",100]];
+    const chart=document.createElement("div");chart.className="ae-design";chart.style.marginTop="18px";
+    const title=document.createElement("b");title.textContent="Major pathological response by cohort";
+    const note=document.createElement("p");note.textContent="Source-reported pMR rates. These are sequential, non-randomized cohorts; comparisons are descriptive and do not establish a causal treatment effect.";
+    chart.append(title,note);
+    rows.forEach(row=>{const wrap=document.createElement("div");wrap.className="ae-outcome";const head=document.createElement("div");head.className="ae-outcome-head";const label=document.createElement("span");label.textContent=row[0];const value=document.createElement("strong");value.textContent=row[1]+"%";head.append(label,value);const track=document.createElement("div");track.className="ae-track";const fill=document.createElement("div");fill.className="ae-fill";fill.style.width=row[1]+"%";track.append(fill);wrap.append(head,track);chart.append(wrap);});
+    h2.after(chart);
+   }
    const hr=summaryText.match(/\bHR\s*([0-9.]+)\s*\(?(?:95%\s*CI\s*)?([0-9.]+)\s*[–-]\s*([0-9.]+)/i);
    if(hr){const box=document.createElement("div");box.className="ae-hr";box.textContent="Hazard ratio "+hr[1]+" (95% CI "+hr[2]+"–"+hr[3]+"). "+(Number(hr[1])<1?"Point estimate favours the experimental arm.":"Point estimate does not favour the experimental arm.");efficacy.append(box);}
    const nnt=summaryText.match(/\bNNT\s*([0-9]+)/i);if(nnt){const box=document.createElement("div");box.className="ae-note";box.textContent="Reported NNT: "+nnt[1]+". Interpret only for the specific endpoint and time horizon reported in the source.";efficacy.append(box);}
