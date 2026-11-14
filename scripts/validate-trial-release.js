@@ -26,7 +26,7 @@ if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Dupli
 const canonicalTitle = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
-  if (!/^10\\.\\d{4,9}\\//i.test(doi)) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
+  if (!doi.startsWith('10.') || !doi.includes('/')) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
   if (!t.primary_title) { fail(t.id, 'Primary publication title missing from roster'); continue; }
   try {
     const response = await fetch('https://api.crossref.org/works/' + encodeURIComponent(doi), { headers: { 'User-Agent': 'TheAbsoluteEffectReleaseQA/1.0 (https://theabsoluteeffect.pages.dev)' } });
