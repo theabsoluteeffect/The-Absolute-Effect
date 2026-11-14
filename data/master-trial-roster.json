@@ -19,7 +19,7 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 404,
+    "permanent_trial_pages": 400,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
     "total_unique_trials": 406,
@@ -82,7 +82,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-09",
+    "last_full_reconciliation": "2026-11-14",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -113,7 +113,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-13",
+    "last_quality_check": "2026-11-14",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -223,13 +223,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-11-08",
+      "date": "2026-11-03",
       "id": "acosog-z11102",
       "trial": "ACOSOG Z11102 (Alliance)"
     },
-    "trial_of_day_records_reconciled_on": "2026-11-08",
-    "trial_of_day_current_id": "acosog-z11102",
-    "trial_of_day_previous_id": "apt",
+    "trial_of_day_records_reconciled_on": "2026-11-14",
+    "trial_of_day_current_id": "gemx",
+    "trial_of_day_previous_id": "acosog-z11102",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -558,9 +558,9 @@
       "bladder_cancer_added": 1
     },
     "archive_count": 15,
-    "daily_evidence_file_count": 21,
-    "daily_evidence_records": 11,
-    "evidence_index_links_added": 11,
+    "daily_evidence_file_count": 23,
+    "daily_evidence_records": 30,
+    "evidence_index_links_added": 32,
     "new_pages_found": 11,
     "new_pages_with_shared_renderer": 11,
     "new_pages_with_primary_source_links": 11,
@@ -698,6 +698,42 @@
         "reason": "Protocol/definition reference page covering multiple trials; not a separate trial."
       },
       "duplicate_route_policy": "Legacy flat .html routes and canonical /index.html routes were grouped by common trial slug and counted once."
+    },
+    "evidence_index_rostered_paths_missing": 0,
+    "canonical_trial_page_index_files": 400,
+    "roster_unique_page_paths": 399,
+    "redirect_only_trial_page_stubs": 1,
+    "shared_anchor_trial_entries": 8,
+    "daily_evidence_total_records": 289,
+    "daily_evidence_uploaded_records": 143,
+    "full_roster_reconciliation_2026_11_14": {
+      "status": "PASS",
+      "roster_entries": 406,
+      "unique_trial_ids": 406,
+      "exact_normalized_alias_collisions": 0,
+      "canonical_trial_page_index_files": 400,
+      "unique_page_paths_referenced_by_roster": 399,
+      "redirect_only_trial_page_stubs": 1,
+      "shared_anchor_trial_entries": 8,
+      "missing_roster_page_targets": 0,
+      "unrostered_canonical_content_pages": 0,
+      "unrostered_redirect_only_pages": [
+        "trial-pages/rosel/"
+      ],
+      "rosEL_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier.",
+      "archive_records": 15,
+      "archive_records_missing_from_roster": 0,
+      "current_trial_of_the_day": "GemX (gemx)",
+      "previous_trial_of_the_day": "ACOSOG Z11102 (acosog-z11102)",
+      "daily_evidence_files": 23,
+      "daily_evidence_records_total": 289,
+      "daily_evidence_records_marked_uploaded": 143,
+      "uploaded_daily_records_missing_from_roster": 0,
+      "evidence_index_rostered_page_paths_missing_before_reconciliation": 32,
+      "evidence_index_rostered_page_paths_added": 32,
+      "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
+      "checked_on": "2026-11-14",
+      "scope_note": "Structural and registry reconciliation of roster IDs, exact-normalized aliases, canonical page paths, shared anchors, redirect-only stubs, archive records, current/previous Trial-of-the-Day, all daily-evidence JSON record totals and uploaded-status records, and main evidence-index links. This is not a clinical freshness review or browser-rendered QA."
     }
   },
   "trials": [
