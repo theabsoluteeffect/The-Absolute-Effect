@@ -77,12 +77,20 @@ for (const t of batch) {
   const heads = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m => norm(m[1]).toLowerCase());
   const dup = heads.find((h, i) => heads.indexOf(h) !== i);
   if (dup) fail(t.id, 'Duplicate section heading: ' + dup);
+  const requiredHeadings = ['design, population and treatment', 'key efficacy outcome', 'safety and absolute effect', 'interpretation and limitations', 'primary source'];
+  for (const heading of requiredHeadings) if (!heads.includes(heading)) fail(t.id, 'Required section missing: ' + heading);
+  const visibleText = norm(html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' '));
+  if (!(/current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText))) fail(t.id, 'Dated current-practice review status missing');
+  if (html.length < 3500) fail(t.id, 'Trial page is too short to contain the required evidence summary');
   const detailNnt = String(t.setting_detail || '').match(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/i);
   if (detailNnt) {
     const pageNnts = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => m[1]);
     if (pageNnts.some(n => Number(n) !== Number(detailNnt[1]))) fail(t.id, `NNT mismatch: roster ${detailNnt[1]}, page ${pageNnts.join(', ')}`);
   }
   const absolute = t.absolute_effect;
+  const pageNntClaims = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
+  const pageNnhClaims = [...html.matchAll(/\bNNH\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
+  if ((pageNntClaims.length || pageNnhClaims.length) && !absolute) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
   if (t.descriptive_outcome && /data-absolute-effect/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must not be rendered as an absolute treatment-effect pictogram');
   const aeMarkup = (html.match(/<div\b[^>]*data-absolute-effect[^>]*>/i) || [''])[0];
   if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
