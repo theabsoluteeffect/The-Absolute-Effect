@@ -812,6 +812,33 @@
       "short_pages": 2,
       "browser_rendered_qa": "pending",
       "cloudflare_pages_deployment": "not independently verified"
+    },
+    "repair_batch_2026_11_14": {
+      "checkmate76k": {
+        "status": "expanded_from_primary_source",
+        "primary": "PMID 37845511",
+        "RFS": "89.0% vs 79.4% at 12 months; HR 0.42",
+        "DMFS_HR": "0.47",
+        "grade34_TRAE": "10.3% vs 2.3%",
+        "approx_NNT_RFS": 11,
+        "approx_NNH_grade34": 13
+      },
+      "pout": {
+        "status": "expanded_from_final_primary_update",
+        "primary": "PMID 38350047",
+        "DFS": "62% vs 45% at 5 years; HR 0.55",
+        "OS": "66% vs 57% at 5 years; HR 0.68",
+        "approx_NNT_DFS": 6,
+        "approx_NNT_OS": 12,
+        "RMST_DFS_months": 18,
+        "RMST_OS_months": 11
+      },
+      "manual_outcome_visual_review": {
+        "reviewed": 9,
+        "resolved": 9,
+        "method": "Confirmed existing CSS barrow/track or status visualization; no new numbers inferred."
+      },
+      "remaining_guideline_freshness_review": 68
     }
   },
   "trials": [
