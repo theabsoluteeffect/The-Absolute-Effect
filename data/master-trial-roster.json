@@ -19,7 +19,7 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 430,
+    "permanent_trial_pages": 431,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
     "total_unique_trials": 437,
@@ -875,7 +875,8 @@
       "uploaded": 30,
       "discovery": "publication-led multi-source screening",
       "guideline_mapping": "pending; NCCN provenance not claimed",
-      "browser_qa": "pending"
+      "browser_qa": "pending",
+      "nnt_nnh_pictograms": "added where fixed-time absolute effect was defensible"
     }
   },
   "trials": [

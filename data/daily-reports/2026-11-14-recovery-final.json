@@ -505,10 +505,11 @@
   "held": [],
   "qa": {
     "canonical_url_and_structured_data": "included on each page",
-    "outcome_visualization": "source-reported endpoint chart included on each page",
+    "outcome_visualization": "Source-reported endpoint chart included on each page; NNT/NNH pictogram markup added where fixed-time absolute differences were defensible.",
     "nnt_nnh": "calculated only for fixed-time absolute event-rate differences; no NNT derived from median survival",
     "guideline_freshness": "not completed; separate current-guideline mapping remains open",
-    "browser_rendered_qa": "pending GitHub Actions/deployment verification"
+    "browser_rendered_qa": "GitHub Actions static checks passed for the original batch commit; browser-rendered QA and live CDN cache verification remain pending.",
+    "current_practice_context": "Dated current-practice context label added to reviewed pages; comprehensive guideline-level recommendation mapping remains pending."
   },
   "previous_morning_batch_note": "The separate 08:00 catch-up report remains 1/30. This recovery batch adds 30 additional unique pages and does not rewrite that earlier report.",
   "verified_roster_count_after_batch": 437
