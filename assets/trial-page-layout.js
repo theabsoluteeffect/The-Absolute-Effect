@@ -12,7 +12,9 @@
   const h1=hero.querySelector("h1");if(h1)h1.textContent=entry.trial||h1.textContent;
   document.title=(entry.trial||document.title)+" | The Absolute Effect";
   const ps=[...hero.querySelectorAll("p")],question=ps.find(p=>/clinical question:/i.test(p.textContent)),summary=ps.find(p=>p!==question);
-  if(question)question.classList.add("ae-question");const summaryText=summary?summary.textContent.trim():"";if(summary)summary.classList.add("ae-summary");
+  if(question)question.classList.add("ae-question");
+  const summaryText=String(entry.setting_detail||"").trim()||(summary?summary.textContent.trim():"");
+  if(summary){summary.textContent=summaryText;summary.classList.add("ae-summary");}
   const sections=[...main.querySelectorAll("section.card")],design=sections.find(s=>/design, population and treatment/i.test((s.querySelector("h2")||{}).textContent||""));
   if(design){const p=design.querySelector("p");if(p&&designText){p.textContent=designText;p.className="ae-design";}}
   const efficacy=sections.find(s=>/key efficacy outcome/i.test((s.querySelector("h2")||{}).textContent||""));
@@ -40,6 +42,17 @@
    const nnt=summaryText.match(/\bNNT\s*([0-9]+)/i);if(nnt){const box=document.createElement("div");box.className="ae-note";box.textContent="Reported NNT: "+nnt[1]+". Interpret only for the specific endpoint and time horizon reported in the source.";efficacy.append(box);}
    const safety=sections.find(s=>/safety and absolute effect/i.test((s.querySelector("h2")||{}).textContent||""));if(safety&&tox){const p=document.createElement("p");p.textContent=tox;safety.insertBefore(p,safety.querySelector("p"));}
   }
-  const source=sections.find(s=>/primary source/i.test((s.querySelector("h2")||{}).textContent||""));if(source)source.querySelectorAll("a").forEach(a=>{let href=a.getAttribute("href")||"",txt=a.textContent.trim();if(/^10\./.test(href))href="https://doi.org/"+href;if(!/^https?:\/\//i.test(href)&&/^https?:\/\//i.test(txt))href=txt;if(/^https?:\/\//i.test(href)){a.href=href;a.target="_blank";a.rel="noopener noreferrer";}else{a.removeAttribute("href");a.textContent=txt+" (link not verified)";}});
+  const source=sections.find(s=>/primary source/i.test((s.querySelector("h2")||{}).textContent||""));
+  if(source){
+   source.querySelectorAll("p").forEach(p=>{if(/^\s*(?:DOI|PMID)\s*:/i.test(p.textContent))p.remove();});
+   const primary=String(entry.primary||"").trim();
+   const primaryUrl=/^10\./.test(primary)?"https://doi.org/"+primary:(/^https?:\/\//i.test(primary)?primary:"");
+   if(primaryUrl){
+    let a=[...source.querySelectorAll("a")].find(x=>/doi\.org|primary publication|open primary/i.test((x.getAttribute("href")||"")+" "+x.textContent));
+    if(!a){const p=document.createElement("p");a=document.createElement("a");p.append(a);source.append(p);}
+    a.href=primaryUrl;a.textContent=/^10\./.test(primary)?"Primary publication · DOI: "+primary:"Primary publication";a.target="_blank";a.rel="noopener noreferrer";
+   }
+   source.querySelectorAll("a").forEach(a=>{let href=a.getAttribute("href")||"",txt=a.textContent.trim();if(/^10\./.test(href))href="https://doi.org/"+href;if(!/^https?:\/\//i.test(href)&&/^https?:\/\//i.test(txt))href=txt;if(/^https?:\/\//i.test(href)){a.href=href;a.target="_blank";a.rel="noopener noreferrer";}else{a.removeAttribute("href");a.textContent=txt+" (link not verified)";}});
+  }
  }).catch(()=>{});
 })();
