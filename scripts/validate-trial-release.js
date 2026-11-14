@@ -20,7 +20,7 @@ const norm = s => String(s || '').replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&'
 const fail = (id, issue) => errors.push({ id, issue });
 const rendererPath = path.join(root, 'assets/trial-page-layout.js');
 const rendererSource = fs.readFileSync(rendererPath, 'utf8');
-if (/\\.card \\[data-absolute-effect\\]\\s*\\{\\s*display\\s*:\\s*none/i.test(rendererSource)) {
+if (/\.card \[data-absolute-effect\]\s*\{\s*display\s*:\s*none/i.test(rendererSource)) {
   fail('renderer', 'Shared renderer hides absolute-effect pictograms inside trial cards');
 }
 if (!rendererSource.includes('dataset.outcomeStatic="true"')) {
