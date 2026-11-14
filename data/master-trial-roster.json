@@ -7563,18 +7563,17 @@
       ]
     },
     {
-      "id": "ASCENT-04 / KEYNOTE-D19",
-      "trial": "Breast Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "ascent-04-keynote-d19",
+      "trial": "ASCENT-04 / KEYNOTE-D19",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III; N=443; first-line PD-L1-positive unresectable locally advanced/metastatic TNBC. Sacituzumab govitecan + pembrolizumab vs chemotherapy + pembrolizumab. Primary endpoint: BICR PFS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS 11.2 vs 7.8 months; HR 0.65 (95% CI 0.51–0.84; P<0.001). ORR 60% vs 53%; OS immature.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of ASCENT-04 / KEYNOTE-D19 in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/ascent-04-keynote-d19/",
       "path": "trial-pages/ascent-04-keynote-d19/",
       "primary": "10.1056/NEJMoa2508959",
       "aliases": [
-        "Breast Cancer",
         "ASCENT-04 / KEYNOTE-D19"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7583,18 +7582,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "RASolute 302",
-      "trial": "Pancreatic Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "rasolute-302",
+      "trial": "RASolute 302",
+      "site": "Pancreatic Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III; N=500; previously treated metastatic PDAC. Daraxonrasib vs investigator-choice chemotherapy. Dual primary endpoints: OS and PFS in RAS G12 population.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Overall population: median OS 13.2 vs 6.7 months (HR 0.40; P<0.001); median PFS 7.2 vs 3.6 months (HR 0.49; P<0.001). RAS G12 OS HR 0.40; PFS HR 0.45.",
-      "question": "What is the clinical effect of the intervention studied in Pancreatic Cancer?",
+      "question": "What is the clinical effect of RASolute 302 in Pancreatic Cancer (relapsed / refractory)?",
       "source": "trial-pages/rasolute-302/",
       "path": "trial-pages/rasolute-302/",
       "primary": "10.1056/NEJMoa2605555",
       "aliases": [
-        "Pancreatic Cancer",
         "RASolute 302"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7603,18 +7601,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "RECITE",
-      "trial": "Supportive Care / GI Oncology",
-      "site": "Supportive / Treatment Toxicity",
+      "id": "recite",
+      "trial": "RECITE",
+      "site": "Supportive Care / GI Oncology",
       "discipline": "Medical Oncology",
-      "setting": "Phase III double-blind placebo-controlled; N=165 with persistent CIT in GI cancers. Romiplostim vs placebo for three chemotherapy cycles. Primary endpoint: no CIT-related chemotherapy dose modification in cycles 2 and 3.",
+      "setting": "Supportive / Treatment Toxicity",
       "setting_detail": "No dose modification: 84% (92/109) vs 36% (20/56); OR 10.16 (95% CI 4.44–23.72; P<0.001). Absolute gain 48 points; NNT 3.",
-      "question": "What is the clinical effect of the intervention studied in Supportive Care / GI Oncology?",
+      "question": "What is the clinical effect of RECITE in Supportive Care / GI Oncology (supportive / treatment toxicity)?",
       "source": "trial-pages/recite/",
       "path": "trial-pages/recite/",
       "primary": "10.1056/NEJMoa2511882",
       "aliases": [
-        "Supportive Care / GI Oncology",
         "RECITE"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7623,18 +7620,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "OptiTROP-Lung06",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "optitrop-lung06",
+      "trial": "OptiTROP-Lung06",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III open-label randomized; N=455; first-line PD-L1 TPS <1% nonsquamous NSCLC without targetable alterations. Sacituzumab tirumotecan + pembrolizumab vs platinum-pemetrexed + pembrolizumab. Primary endpoint BICR PFS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS 15.0 vs 5.7 months; HR 0.49 (95% CI 0.36–0.65; P<0.001). ORR 50.2% vs 47.3%; OS immature (HR 0.58).",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of OptiTROP-Lung06 in Non-Small Cell Lung Cancer (advanced / metastatic)?",
       "source": "trial-pages/optitrop-lung06/",
       "path": "trial-pages/optitrop-lung06/",
       "primary": "10.1056/NEJMoa2611280",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "OptiTROP-Lung06",
         "42929694"
       ],
@@ -7644,18 +7640,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "Dalmelitinib plus aumolertinib",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "dalmelitinib-aumolertinib",
+      "trial": "Dalmelitinib plus aumolertinib",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III randomized; N=314; EGFR-mutated, MET-amplified advanced NSCLC after EGFR-TKI resistance. Dalmelitinib + aumolertinib vs platinum chemotherapy. Primary endpoint BICR PFS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Median PFS 6.2 vs 4.4 months; HR 0.60 (95% CI 0.45–0.81; P<0.001). ORR 59.6% vs 38.6%; DoR 9.7 vs 4.4 months; OS immature.",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of Dalmelitinib plus aumolertinib in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/dalmelitinib-aumolertinib/",
       "path": "trial-pages/dalmelitinib-aumolertinib/",
       "primary": "10.1200/JCO-26-02432",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "Dalmelitinib plus aumolertinib",
         "42928710"
       ],
@@ -7665,18 +7660,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "HARMONi",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "harmoni",
+      "trial": "HARMONi",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III double-blind placebo-controlled; N=438; EGFR-mutated stage IIIB/IIIC or IV nonsquamous NSCLC after third-generation EGFR-TKI. Ivonescimab + pemetrexed/carboplatin vs placebo + chemotherapy. Dual primary endpoints PFS and OS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Median PFS 6.8 vs 4.4 months; HR 0.52 (95% CI 0.41–0.66; P<0.0001). Median OS 16.8 vs 14.0 months; HR 0.79 (95% CI 0.62–1.01).",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of HARMONi in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/harmoni/",
       "path": "trial-pages/harmoni/",
       "primary": "10.1016/S1470-2045(26)00282-2",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "HARMONi",
         "42636833"
       ],
@@ -7686,18 +7680,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
-      "trial": "Endometrial Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "keynote-c93",
+      "trial": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "site": "Endometrial Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III open-label randomized; N=299; first-line dMMR advanced/recurrent endometrial cancer. Pembrolizumab vs carboplatin-paclitaxel. Dual primary endpoints BICR PFS and OS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS 38.2 vs 8.4 months; HR 0.57 (95% CI 0.42–0.79; P=0.0002). 12-month PFS 67% vs 40% (NNT 4). OS boundary not met (HR 0.77; P=0.10).",
-      "question": "What is the clinical effect of the intervention studied in Endometrial Cancer?",
+      "question": "What is the clinical effect of KEYNOTE-C93 / GOG-3064 / ENGOT-en15 in Endometrial Cancer (advanced / metastatic)?",
       "source": "trial-pages/keynote-c93/",
       "path": "trial-pages/keynote-c93/",
       "primary": "10.1016/S0140-6736(26)02095-7",
       "aliases": [
-        "Endometrial Cancer",
         "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
         "42933458"
       ],
@@ -7707,18 +7700,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "SUBITO",
-      "trial": "Breast Cancer",
-      "site": "Adjuvant / Postoperative",
+      "id": "subito",
+      "trial": "SUBITO",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III open-label randomized; N=174 women with stage III HER2-negative HRD breast cancer. Intensified alkylating chemotherapy + autologous stem-cell rescue vs contemporary chemotherapy followed by olaparib. Primary endpoint OS.",
+      "setting": "Adjuvant / Postoperative",
       "setting_detail": "Four-year OS 77.0% vs 76.4%; HR 1.11 (95% CI 0.57–2.17; P=0.37); no survival advantage for intensified chemotherapy.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of SUBITO in Breast Cancer (adjuvant / postoperative)?",
       "source": "trial-pages/subito/",
       "path": "trial-pages/subito/",
       "primary": "10.1016/S1470-2045(26)00173-5",
       "aliases": [
-        "Breast Cancer",
         "SUBITO",
         "42372741"
       ],
@@ -7728,18 +7720,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "HORIZON-Breast06",
-      "trial": "Breast Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "horizon-breast06",
+      "trial": "HORIZON-Breast06",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Randomized clinical trial; N=551; ERBB2-low advanced breast cancer. Trastuzumab rezetecan 6.4 mg/kg q3w vs physician-choice chemotherapy. Primary endpoint BICR PFS in chemotherapy-naive and overall populations.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Overall median PFS 16.4 vs 6.8 months; HR 0.27 (95% CI 0.21–0.34; P<0.001). Chemotherapy-naive PFS 16.6 vs 6.8 months; HR 0.25.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of HORIZON-Breast06 in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/horizon-breast06/",
       "path": "trial-pages/horizon-breast06/",
       "primary": "10.1001/jama.2026.21372",
       "aliases": [
-        "Breast Cancer",
         "HORIZON-Breast06",
         "42925007"
       ],
@@ -7749,18 +7740,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "EMERALD-3",
-      "trial": "Hepatocellular Carcinoma",
-      "site": "Locoregional / Embolisation-Eligible",
+      "id": "emerald-3",
+      "trial": "EMERALD-3",
+      "site": "Hepatocellular Carcinoma",
       "discipline": "Medical Oncology",
-      "setting": "Phase III global randomized open-label; N=760; embolisation-eligible HCC. STRIDE (durvalumab+tremelimumab) + lenvatinib + TACE; STRIDE+TACE; or TACE. PFS and OS assessed.",
+      "setting": "Locoregional / Embolisation-Eligible",
       "setting_detail": "STRIDE+lenvatinib+TACE vs TACE: median PFS 13.0 vs 9.8 months; HR 0.70 (95% CI 0.57–0.86; P=0.0007). Median OS 39.5 vs 34.7 months; HR 0.84 (95% CI 0.65–1.09; P=0.18).",
-      "question": "What is the clinical effect of the intervention studied in Hepatocellular Carcinoma?",
+      "question": "What is the clinical effect of EMERALD-3 in Hepatocellular Carcinoma (locoregional / embolisation-eligible)?",
       "source": "trial-pages/emerald-3/",
       "path": "trial-pages/emerald-3/",
       "primary": "10.1016/S1470-2045(26)00278-0",
       "aliases": [
-        "Hepatocellular Carcinoma",
         "EMERALD-3"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7769,18 +7759,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "IMpower151",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "impower151",
+      "trial": "IMpower151",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III randomized double-blind; N=305 chemotherapy-naive metastatic nonsquamous NSCLC. Atezolizumab+bevacizumab+carboplatin+pemetrexed/paclitaxel vs placebo+bevacizumab+chemotherapy. Primary endpoint investigator PFS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS 9.5 vs 7.1 months; HR 0.84 (95% CI 0.65–1.09; P=0.184). Median OS 20.7 vs 18.7 months; HR 0.93. ORR 48% vs 50%; primary endpoint negative.",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of IMpower151 in Non-Small Cell Lung Cancer (advanced / metastatic)?",
       "source": "trial-pages/impower151/",
       "path": "trial-pages/impower151/",
       "primary": "10.1038/s41591-025-03658-y",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "IMpower151"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7789,18 +7778,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "DeLLphi-304",
-      "trial": "Small-Cell Lung Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "dellphi-304",
+      "trial": "DeLLphi-304",
+      "site": "Small-Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III multinational open-label randomized; N=509; SCLC progressing during/after platinum. Tarlatamab vs investigator-choice topotecan/lurbinectedin/amrubicin. Primary endpoint OS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Median OS 13.6 vs 8.3 months; HR 0.60 (95% CI 0.47–0.77; P<0.001). PFS and cancer-related dyspnoea/cough also favoured tarlatamab.",
-      "question": "What is the clinical effect of the intervention studied in Small-Cell Lung Cancer?",
+      "question": "What is the clinical effect of DeLLphi-304 in Small-Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/dellphi-304/",
       "path": "trial-pages/dellphi-304/",
       "primary": "10.1056/NEJMoa2502099",
       "aliases": [
-        "Small-Cell Lung Cancer",
         "DeLLphi-304"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7809,18 +7797,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "KRYSTAL-12",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "krystal-12",
+      "trial": "KRYSTAL-12",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III multicentre open-label randomized; N=453; KRAS G12C advanced NSCLC after platinum and immunotherapy. Adagrasib 600 mg BID vs docetaxel 75 mg/m² q3w. Primary endpoint BICR PFS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Median PFS 5.5 vs 3.8 months; HR 0.58 (95% CI 0.45–0.76; P<0.0001).",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of KRYSTAL-12 in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/krystal-12/",
       "path": "trial-pages/krystal-12/",
       "primary": "10.1016/S0140-6736(25)00866-9",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "KRYSTAL-12",
         "40783289"
       ],
@@ -7830,18 +7817,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "INAVO120",
-      "trial": "Breast Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "inavo120",
+      "trial": "INAVO120",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III double-blind randomized; N=325; PIK3CA-mutated HR+/HER2− advanced breast cancer relapsing during/within 12 months of adjuvant endocrine therapy. Inavolisib+palbociclib+fulvestrant vs placebo+palbociclib+fulvestrant. Final OS analysis.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median OS 34.0 vs 27.0 months; HR 0.67 (95% CI 0.48–0.94; P=0.02). ORR 62.7% vs 28.0%; ORR-based NNT 3.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of INAVO120 in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/inavo120/",
       "path": "trial-pages/inavo120/",
       "primary": "10.1056/NEJMoa2501796",
       "aliases": [
-        "Breast Cancer",
         "INAVO120"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7850,18 +7836,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "STELLAR-303",
-      "trial": "Colorectal Cancer",
-      "site": "Relapsed / Refractory",
+      "id": "stellar-303",
+      "trial": "STELLAR-303",
+      "site": "Colorectal Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III global open-label randomized; N=901 refractory metastatic colorectal adenocarcinoma excluding MSI-H/dMMR. Zanzalintinib+atezolizumab vs regorafenib. Dual primary OS endpoints in ITT and no-liver-metastases subgroup.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "ITT median OS 10.9 vs 9.4 months; HR 0.80 (95% CI 0.69–0.93; P=0.0045). No-liver-metastases interim HR 0.79 (95% CI 0.61–1.03; P=0.087).",
-      "question": "What is the clinical effect of the intervention studied in Colorectal Cancer?",
+      "question": "What is the clinical effect of STELLAR-303 in Colorectal Cancer (relapsed / refractory)?",
       "source": "trial-pages/stellar-303/",
       "path": "trial-pages/stellar-303/",
       "primary": "10.1016/S0140-6736(25)02025-2",
       "aliases": [
-        "Colorectal Cancer",
         "STELLAR-303",
         "41130252"
       ],
@@ -7871,18 +7856,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "OCLURANDOM",
-      "trial": "Pancreatic Neuroendocrine Tumours",
-      "site": "Relapsed / Refractory",
+      "id": "oclurandom",
+      "trial": "OCLURANDOM",
+      "site": "Pancreatic Neuroendocrine Tumours",
       "discipline": "Medical Oncology",
-      "setting": "Randomized non-comparative phase II; N=84 pretreated progressive SSTR-positive metastatic pancreatic NET. 177Lu-DOTATATE 7.4 GBq q8w up to four cycles vs sunitinib 37.5 mg daily. Primary endpoint 12-month PFS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "12-month PFS 80.5% (33/41) vs 41.9% (18/43); absolute gain 38.6 points; NNT 3.",
-      "question": "What is the clinical effect of the intervention studied in Pancreatic Neuroendocrine Tumours?",
+      "question": "What is the clinical effect of OCLURANDOM in Pancreatic Neuroendocrine Tumours (relapsed / refractory)?",
       "source": "trial-pages/oclurandom/",
       "path": "trial-pages/oclurandom/",
       "primary": "10.1016/S1470-2045(26)00108-7",
       "aliases": [
-        "Pancreatic Neuroendocrine Tumours",
         "OCLURANDOM",
         "42225102"
       ],
@@ -7892,18 +7876,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "UNICORN",
-      "trial": "Colon Cancer",
-      "site": "Neoadjuvant",
+      "id": "unicorn",
+      "trial": "UNICORN",
+      "site": "Colon Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase II sequential non-randomized cohorts; N=56 resectable locally advanced pMMR/dMMR colon cancer. Neoadjuvant botensilimab alone or botensilimab+balstilimab. Primary endpoint centrally assessed pMR.",
+      "setting": "Neoadjuvant",
       "setting_detail": "pMR: pMMR BOT 0%; pMMR BOT+BAL 36%; dMMR BOT 36%; dMMR BOT+BAL 100%. 12-month EFS 93%, 100%, 79%, 100% across reported cohorts.",
-      "question": "What is the clinical effect of the intervention studied in Colon Cancer?",
+      "question": "What is the clinical effect of UNICORN in Colon Cancer (neoadjuvant)?",
       "source": "trial-pages/unicorn/",
       "path": "trial-pages/unicorn/",
       "primary": "10.1038/s41591-026-04710-1",
       "aliases": [
-        "Colon Cancer",
         "UNICORN"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7912,18 +7895,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "CAMORAL",
-      "trial": "Head and Neck Squamous Cell Carcinoma",
-      "site": "Neoadjuvant / Perioperative",
+      "id": "camoral",
+      "trial": "CAMORAL",
+      "site": "Head and Neck Squamous Cell Carcinoma",
       "discipline": "Medical Oncology",
-      "setting": "Phase II multicentre randomized open-label; N=125 resectable stage III–IVB HNSCC. Neoadjuvant camrelizumab+nab-paclitaxel+carboplatin, surgery, risk-adapted adjuvant therapy and camrelizumab maintenance vs surgery-based standard care. Primary endpoint 2-year EFS.",
+      "setting": "Neoadjuvant / Perioperative",
       "setting_detail": "2-year EFS 77.8% vs 46.1%; HR 0.34 (95% CI 0.17–0.68; P=0.001); absolute gain 31.7 points; NNT 4.",
-      "question": "What is the clinical effect of the intervention studied in Head and Neck Squamous Cell Carcinoma?",
+      "question": "What is the clinical effect of CAMORAL in Head and Neck Squamous Cell Carcinoma (neoadjuvant / perioperative)?",
       "source": "trial-pages/camoral/",
       "path": "trial-pages/camoral/",
       "primary": "10.1001/jamaoncol.2026.4642",
       "aliases": [
-        "Head and Neck Squamous Cell Carcinoma",
         "CAMORAL"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -7932,18 +7914,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "ALLIANCE A051701",
-      "trial": "Aggressive B-Cell Lymphoma",
-      "site": "First-line / Newly Diagnosed",
+      "id": "alliance-a051701",
+      "trial": "ALLIANCE A051701",
+      "site": "Aggressive B-Cell Lymphoma",
       "discipline": "Medical Oncology",
-      "setting": "Phase II component of randomized phase II/III; N=73 newly diagnosed double-hit lymphoma. DA-EPOCH-R vs DA-EPOCH-R+venetoclax. Primary endpoint PFS.",
+      "setting": "First-line / Newly Diagnosed",
       "setting_detail": "Median PFS 28.4 vs 7.7 months; HR 1.13 (95% CI 0.53–2.37; P=0.75). 24-month OS 72% vs 52%; HR 2.49 (95% CI 1.03–6.04; P=0.038), favouring DA-EPOCH-R alone.",
-      "question": "What is the clinical effect of the intervention studied in Aggressive B-Cell Lymphoma?",
+      "question": "What is the clinical effect of ALLIANCE A051701 in Aggressive B-Cell Lymphoma (first-line / newly diagnosed)?",
       "source": "trial-pages/alliance-a051701/",
       "path": "trial-pages/alliance-a051701/",
       "primary": "10.1016/S2352-3026(26)00191-2",
       "aliases": [
-        "Aggressive B-Cell Lymphoma",
         "ALLIANCE A051701",
         "42660130"
       ],
@@ -7953,18 +7934,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "RADICAL / Alliance A031801",
-      "trial": "Renal Cell Carcinoma",
-      "site": "Advanced / Metastatic",
+      "id": "radical",
+      "trial": "RADICAL / Alliance A031801",
+      "site": "Renal Cell Carcinoma",
       "discipline": "Medical Oncology",
-      "setting": "Phase II randomized; N=98 RCC with bone metastases. Cabozantinib+radium-223 vs cabozantinib. Primary endpoint symptomatic skeletal event-free survival.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median SSE-FS 16.7 vs 17.6 months; HR 1.46 (90% CI 0.86–2.51; P=0.12). Median PFS 10.3 vs 10.5 months (HR 1.37; P=0.32); trial closed at futility.",
-      "question": "What is the clinical effect of the intervention studied in Renal Cell Carcinoma?",
+      "question": "What is the clinical effect of RADICAL / Alliance A031801 in Renal Cell Carcinoma (advanced / metastatic)?",
       "source": "trial-pages/radical/",
       "path": "trial-pages/radical/",
       "primary": "10.1200/JCO-26-01135",
       "aliases": [
-        "Renal Cell Carcinoma",
         "RADICAL / Alliance A031801",
         "42507969"
       ],
@@ -7974,18 +7954,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "DALY 2-EU",
-      "trial": "Large B-Cell Lymphoma",
-      "site": "Relapsed / Refractory",
+      "id": "daly-2-eu",
+      "trial": "DALY 2-EU",
+      "site": "Large B-Cell Lymphoma",
       "discipline": "Medical Oncology",
-      "setting": "Randomized phase II; N=160 transplant-ineligible second-line LBCL. Zamtocabtagene autoleucel (zamto-cel) vs R-GemOx. Primary endpoint independently reviewed EFS.",
+      "setting": "Relapsed / Refractory",
       "setting_detail": "Median EFS 6.21 vs 2.53 months; HR 0.39 (95% CI 0.27–0.58; P<0.0001).",
-      "question": "What is the clinical effect of the intervention studied in Large B-Cell Lymphoma?",
+      "question": "What is the clinical effect of DALY 2-EU in Large B-Cell Lymphoma (relapsed / refractory)?",
       "source": "trial-pages/daly-2-eu/",
       "path": "trial-pages/daly-2-eu/",
       "primary": "10.1016/S1470-2045(26)00290-1",
       "aliases": [
-        "Large B-Cell Lymphoma",
         "DALY 2-EU",
         "42933440"
       ],
@@ -7995,18 +7974,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Adjuvant / Postoperative",
+      "id": "e4512",
+      "trial": "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III randomized; 166 enrolled, 153 centrally ALK-positive resected NSCLC. Crizotinib 250 mg BID up to 2 years vs observation. Primary endpoint DFS.",
+      "setting": "Adjuvant / Postoperative",
       "setting_detail": "Median DFS 74.6 vs 75.1 months; HR 1.08 (95% CI 0.61–1.90; P=0.80). Adjuvant crizotinib did not prolong DFS.",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of ECOG-ACRIN E4512 / ALCHEMIST-ALK in Non-Small Cell Lung Cancer (adjuvant / postoperative)?",
       "source": "trial-pages/e4512/",
       "path": "trial-pages/e4512/",
       "primary": "10.1016/S2213-2600(26)00192-X",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
         "42641639"
       ],
@@ -8016,18 +7994,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "JCOG1109 NExT",
-      "trial": "Oesophageal Cancer",
-      "site": "Neoadjuvant",
+      "id": "jcog1109-next",
+      "trial": "JCOG1109 NExT",
+      "site": "Oesophageal Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III open-label three-arm randomized; N=601 locally advanced oesophageal SCC. Neoadjuvant CF vs DCF vs CF+RT. Primary endpoint OS.",
+      "setting": "Neoadjuvant",
       "setting_detail": "3-year OS: DCF 72.1% vs CF 62.6% (HR 0.68; P=0.006); CF+RT 68.3% (HR 0.84; P=0.12). Later 5-year OS: 65.1%, 51.9%, 60.2%, respectively.",
-      "question": "What is the clinical effect of the intervention studied in Oesophageal Cancer?",
+      "question": "What is the clinical effect of JCOG1109 NExT in Oesophageal Cancer (neoadjuvant)?",
       "source": "trial-pages/jcog1109-next/",
       "path": "trial-pages/jcog1109-next/",
       "primary": "10.1016/S0140-6736(24)00745-1",
       "aliases": [
-        "Oesophageal Cancer",
         "JCOG1109 NExT",
         "38876133"
       ],
@@ -8037,18 +8014,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "R-ALPS",
-      "trial": "Non-Small Cell Lung Cancer",
-      "site": "Consolidation",
+      "id": "r-alps",
+      "trial": "R-ALPS",
+      "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Randomized trial; N=553 unresectable stage III NSCLC after CRT. Benmelstobart+anlotinib, benmelstobart alone or placebo. Primary endpoint IRC PFS.",
+      "setting": "Consolidation",
       "setting_detail": "Stage 1 median PFS 15.1, 9.7 and 4.2 months, respectively; HR vs placebo 0.49 and 0.53. Pooled combo vs benmelstobart alone 17.4 vs 11.2 months; HR 0.82 (95% CI 0.63–1.08; P=0.12), not significant.",
-      "question": "What is the clinical effect of the intervention studied in Non-Small Cell Lung Cancer?",
+      "question": "What is the clinical effect of R-ALPS in Non-Small Cell Lung Cancer (consolidation)?",
       "source": "trial-pages/r-alps/",
       "path": "trial-pages/r-alps/",
       "primary": "10.1001/jamaoncol.2026.3918",
       "aliases": [
-        "Non-Small Cell Lung Cancer",
         "R-ALPS",
         "42955021"
       ],
@@ -8058,18 +8034,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "HEALER",
-      "trial": "Breast Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "healer",
+      "trial": "HEALER",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III multicentre open-label randomized; N=885 HER2-positive advanced breast cancer. Anbenitamab+HB1801 vs docetaxel-trastuzumab-pertuzumab. Primary endpoint BICR PFS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "24-month PFS 58.5% vs 34.4%; HR 0.46 (95% CI 0.37–0.56; P<0.001); absolute gain 24.1 points; NNT 5. ORR 87.6% vs 73.4%.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of HEALER in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/healer/",
       "path": "trial-pages/healer/",
       "primary": "10.1056/NEJMoa2610345",
       "aliases": [
-        "Breast Cancer",
         "HEALER",
         "42929681"
       ],
@@ -8079,18 +8054,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "Fovinaciclib phase III trial",
-      "trial": "Breast Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "fovinaciclib",
+      "trial": "Fovinaciclib phase III trial",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Randomized phase III; N=417 women with HR+/HER2− advanced breast cancer. Fovinaciclib+letrozole/anastrozole vs placebo+AI. Primary endpoint BICR PFS.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS not reached vs 20.2 months; HR 0.55 (95% CI 0.38–0.77; one-sided P<0.001); OS immature.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of Fovinaciclib phase III trial in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/fovinaciclib/",
       "path": "trial-pages/fovinaciclib/",
       "primary": "10.1001/jamaoncol.2026.1938",
       "aliases": [
-        "Breast Cancer",
         "Fovinaciclib phase III trial"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -8099,18 +8073,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "HELEN-Trio 011",
-      "trial": "Breast Cancer",
-      "site": "Neoadjuvant",
+      "id": "helen-trio-011",
+      "trial": "HELEN-Trio 011",
+      "site": "Breast Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III multicentre open-label randomized; 369 enrolled, 352 mITT stage II–III TNBC. Docetaxel+carboplatin±camrelizumab. Primary endpoint pCR.",
+      "setting": "Neoadjuvant",
       "setting_detail": "pCR 57.5% (134/233) vs 45.4% (54/119); absolute difference 12.2 points (95% CI 1.4–22.9; P=0.014); NNT 9.",
-      "question": "What is the clinical effect of the intervention studied in Breast Cancer?",
+      "question": "What is the clinical effect of HELEN-Trio 011 in Breast Cancer (neoadjuvant)?",
       "source": "trial-pages/helen-trio-011/",
       "path": "trial-pages/helen-trio-011/",
       "primary": "10.1016/j.annonc.2026.10.102",
       "aliases": [
-        "Breast Cancer",
         "HELEN-Trio 011",
         "42887596"
       ],
@@ -8120,18 +8093,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "ANCHOR",
-      "trial": "Colorectal Cancer",
-      "site": "Advanced / Metastatic",
+      "id": "anchor",
+      "trial": "ANCHOR",
+      "site": "Colorectal Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase III randomized noninferiority; N=748 RAS/BRAF wild-type unresectable mCRC. Anlotinib+CapeOX vs bevacizumab+CapeOX; primary endpoint independent-review PFS; HR noninferiority margin 1.09.",
+      "setting": "Advanced / Metastatic",
       "setting_detail": "Median PFS 11.0 vs 11.0 months; HR 1.00 (95% CI 0.84–1.18; P=0.87). Prespecified noninferiority criterion not met.",
-      "question": "What is the clinical effect of the intervention studied in Colorectal Cancer?",
+      "question": "What is the clinical effect of ANCHOR in Colorectal Cancer (advanced / metastatic)?",
       "source": "trial-pages/anchor/",
       "path": "trial-pages/anchor/",
       "primary": "10.1038/s41392-026-02938-4",
       "aliases": [
-        "Colorectal Cancer",
         "ANCHOR"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
@@ -8140,18 +8112,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "PICC-2",
-      "trial": "Colorectal Cancer",
-      "site": "Neoadjuvant",
+      "id": "picc-2",
+      "trial": "PICC-2",
+      "site": "Colorectal Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Randomized phase II; N=110 locally advanced dMMR/MSI-H CRC. Toripalimab+celecoxib vs toripalimab alone for 12 cycles. Primary endpoint centrally reviewed pCR.",
+      "setting": "Neoadjuvant",
       "setting_detail": "pCR 89% (49/55) vs 69% (38/55); absolute gain ~20 points; P=0.014; NNT 5. Median follow-up 18.1 months.",
-      "question": "What is the clinical effect of the intervention studied in Colorectal Cancer?",
+      "question": "What is the clinical effect of PICC-2 in Colorectal Cancer (neoadjuvant)?",
       "source": "trial-pages/picc-2/",
       "path": "trial-pages/picc-2/",
       "primary": "10.1016/S1470-2045(26)00220-2",
       "aliases": [
-        "Colorectal Cancer",
         "PICC-2",
         "42385761"
       ],
@@ -8161,18 +8132,17 @@
       "quality_check_date": "2026-11-14"
     },
     {
-      "id": "STAR-TREC",
-      "trial": "Rectal Cancer",
-      "site": "Definitive / Organ Preservation",
+      "id": "star-trec",
+      "trial": "STAR-TREC",
+      "site": "Rectal Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Phase II/III international randomized; 409 mITT early/intermediate rectal cancer. Long-course CRT vs short-course RT with response-adapted organ preservation; primary TME arm separate. Early 12-month results.",
+      "setting": "Definitive / Organ Preservation",
       "setting_detail": "Among participants opting for organ preservation, 12-month TME-free survival 78.5% with LCCRT vs 60.6% with SCRT; HR 1.90 (95% CI 1.29–2.81); approximate NNT 6. Definitive 30-month endpoint pending.",
-      "question": "What is the clinical effect of the intervention studied in Rectal Cancer?",
+      "question": "What is the clinical effect of STAR-TREC in Rectal Cancer (definitive / organ preservation)?",
       "source": "trial-pages/star-trec/",
       "path": "trial-pages/star-trec/",
       "primary": "10.1016/S1470-2045(26)00228-7",
       "aliases": [
-        "Rectal Cancer",
         "STAR-TREC",
         "42633754"
       ],
