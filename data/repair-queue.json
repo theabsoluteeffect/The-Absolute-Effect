@@ -1484,6 +1484,19 @@
       "verification": "Re-read both JSON files after update; 30/30 fields corrected; NSCLC setting values remain within Early, Metastatic, Adjuvant, Neoadjuvant and Consolidation.",
       "status": "resolved",
       "resolved_on": "2026-11-14"
+    },
+    {
+      "issue_id": "orphan-rosel-reference-stub-2026-11-14",
+      "trial_id": "rosel-reference-alias",
+      "trial": "ROSEL reference-only stub",
+      "path": "trial-pages/rosel/index.html",
+      "category": "orphan_page_alias_reconciliation",
+      "severity": "low",
+      "evidence": "The only page-tree slug not mapped to a roster page_path was a 1,909-character ROSEL stub. It contained no outcomes, DOI or registry ID and explicitly referred to the shared lung SABR protocol reference, which contains the canonical #rosel anchor.",
+      "action": "Marked the page as a reference-only alias with a canonical URL and visible link to trial-pages/lung-sabr-definitions/#rosel; did not create a duplicate roster trial or count it as a new study.",
+      "verification": "Re-read the stub after patch; canonical link and visible shared-reference link are present.",
+      "status": "resolved",
+      "resolved_on": "2026-11-14"
     }
   ]
 }
