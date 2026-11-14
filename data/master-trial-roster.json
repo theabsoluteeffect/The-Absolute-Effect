@@ -19,7 +19,8 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question.",
     "A batch is not releasable unless the latest-batch release validator passes: exact roster/page identity, canonical primary DOI link, no non-finite chart widths, no generic trial headings, no duplicated sections, and no conflicting NNT claims.",
     "For every NNT/NNH pictogram, store the endpoint, time horizon, source-reported absolute percentage-point difference, and NNT/NNH in a structured absolute_effect object. data-benefit/data-harm must contain the absolute percentage-point differences, never 100 divided by NNT/NNH.",
-    "Do not calculate or display NNT from non-comparative trials, including randomized studies with an internal-control arm; display the source-reported outcome rates and state why NNT is not appropriate."
+    "Do not calculate or display NNT from non-comparative trials, including randomized studies with an internal-control arm; display the source-reported outcome rates and state why NNT is not appropriate.",
+    "For randomized non-comparative designs with an internal control, show the arm-specific source-reported outcome rates as descriptive data; do not label the difference as absolute treatment benefit or render an NNT/NNH pictogram."
   ],
   "audit": {
     "permanent_trial_pages": 431,
@@ -7889,14 +7890,19 @@
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
-      "absolute_effect": {
+      "primary_title": "[177Lu]Lu-dota-tate versus sunitinib in patients with metastatic progressive neuroendocrine tumours of the pancreas (OCLURANDOM): a randomised, controlled, phase 2 trial",
+      "descriptive_outcome": {
         "endpoint": "Progression-free survival",
         "horizon": "12 months",
-        "benefit_percentage_points": 38.6,
-        "notes": "The 12-month PFS contrast is descriptive and should not be interpreted as a formal comparative treatment effect.",
-        "nnt_not_calculated_reason": "Non-comparative phase II design: the sunitinib arm was an internal control, not a formal confirmatory comparator; the between-arm difference is descriptive."
-      },
-      "primary_title": "[177Lu]Lu-dota-tate versus sunitinib in patients with metastatic progressive neuroendocrine tumours of the pancreas (OCLURANDOM): a randomised, controlled, phase 2 trial"
+        "lutetium_dotatate_rate": 80.5,
+        "lutetium_dotatate_events": 33,
+        "lutetium_dotatate_n": 41,
+        "sunitinib_rate": 41.9,
+        "sunitinib_events": 18,
+        "sunitinib_n": 43,
+        "between_arm_descriptive_difference_percentage_points": 38.6,
+        "nnt_not_calculated_reason": "Randomized non-comparative phase II design: sunitinib was an internal control rather than a formal confirmatory comparator; do not interpret the between-arm difference as a causal treatment effect."
+      }
     },
     {
       "id": "unicorn",
