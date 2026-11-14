@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 16,
+  "version": 17,
   "last_quality_check": "2026-11-14",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -23,7 +23,8 @@
     "For randomized non-comparative designs with an internal control, show the arm-specific source-reported outcome rates as descriptive data; do not label the difference as absolute treatment benefit or render an NNT/NNH pictogram.",
     "Any numeric NNT/NNH appearing anywhere on a trial page must be represented in absolute_effect with the exact endpoint and time horizon; pictogram values must equal the absolute percentage-point difference, not 100 divided by NNT/NNH.",
     "Taxonomy: primary setting represents the treatment context, not disease extent. Relapsed / Refractory takes precedence when trial eligibility requires recurrence, progression on/after prior systemic therapy, or established treatment resistance. Advanced / Metastatic is reserved for advanced disease without a defining prior-progression/resistance requirement, including first-line treatment and maintenance in non-progressive disease.",
-    "Record disease extent, prior-treatment status, and treatment line as separate dimensions where supported by trial eligibility. A trial may be metastatic and relapsed/refractory simultaneously; do not duplicate the trial or force metastatic disease extent into the primary setting."
+    "Record disease extent, prior-treatment status, and treatment line as separate dimensions where supported by trial eligibility. A trial may be metastatic and relapsed/refractory simultaneously; do not duplicate the trial or force metastatic disease extent into the primary setting.",
+    "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
     "permanent_trial_pages": 431,
@@ -910,7 +911,227 @@
         "oclurandom"
       ],
       "scope": "Roster metadata reconciliation; page-level text and live deployment still require separate QA."
-    }
+    },
+    "nsclc_setting_taxonomy_updated": "2026-11-14",
+    "nsclc_setting_taxonomy_allowed_values": [
+      "Early",
+      "Metastatic",
+      "Adjuvant",
+      "Neoadjuvant",
+      "Consolidation"
+    ],
+    "nsclc_setting_taxonomy_changed": [
+      {
+        "id": "adaura",
+        "from": "Adjuvant / Postoperative",
+        "to": "Adjuvant"
+      },
+      {
+        "id": "alta-1l",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "calgb-140503",
+        "from": "Localized / Early-stage",
+        "to": "Early"
+      },
+      {
+        "id": "checkmate-227",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "checkmate-816",
+        "from": "Neoadjuvant / Preoperative",
+        "to": "Neoadjuvant"
+      },
+      {
+        "id": "checkmate-9la",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "chisel",
+        "from": "Early-stage / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "codebreak-200",
+        "from": "Relapsed / Refractory",
+        "to": "Metastatic"
+      },
+      {
+        "id": "crown",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "flaura",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "flaura2",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "hilus",
+        "from": "Ultracentral / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "jbr-10",
+        "from": "Adjuvant / Postoperative",
+        "to": "Adjuvant"
+      },
+      {
+        "id": "keynote-024",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "keynote-042",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "keynote-189",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "keynote-407",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "keynote-671",
+        "from": "Perioperative",
+        "to": "Neoadjuvant"
+      },
+      {
+        "id": "krascendo-1",
+        "from": "Relapsed / Refractory",
+        "to": "Metastatic"
+      },
+      {
+        "id": "laura",
+        "from": "Adjuvant / Postoperative",
+        "to": "Consolidation"
+      },
+      {
+        "id": "lung-art",
+        "from": "Adjuvant / Postoperative",
+        "to": "Adjuvant"
+      },
+      {
+        "id": "lustre",
+        "from": "Early-stage / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "mariposa",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "pacific",
+        "from": "Locally Advanced / Resectable",
+        "to": "Consolidation"
+      },
+      {
+        "id": "papillon",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "keynote-091",
+        "from": "Adjuvant / Postoperative",
+        "to": "Adjuvant"
+      },
+      {
+        "id": "rosel",
+        "from": "Early-stage / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "rtog-0236",
+        "from": "Localized / Early-stage",
+        "to": "Early"
+      },
+      {
+        "id": "rtog-0617",
+        "from": "Localized / Early-stage",
+        "to": "Early"
+      },
+      {
+        "id": "rtog-0813",
+        "from": "Central / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "rtog-9410",
+        "from": "Locally Advanced / Resectable",
+        "to": "Early"
+      },
+      {
+        "id": "space",
+        "from": "Early-stage / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "stars-randomized",
+        "from": "Early-stage / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "sunset",
+        "from": "Ultracentral / Definitive",
+        "to": "Early"
+      },
+      {
+        "id": "swog-nrg-s1914",
+        "from": "Locally Advanced / Resectable",
+        "to": "Early"
+      },
+      {
+        "id": "optitrop-lung06",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "dalmelitinib-aumolertinib",
+        "from": "Relapsed / Refractory",
+        "to": "Metastatic"
+      },
+      {
+        "id": "harmoni",
+        "from": "Relapsed / Refractory",
+        "to": "Metastatic"
+      },
+      {
+        "id": "impower151",
+        "from": "Advanced / Metastatic",
+        "to": "Metastatic"
+      },
+      {
+        "id": "krystal-12",
+        "from": "Relapsed / Refractory",
+        "to": "Metastatic"
+      },
+      {
+        "id": "e4512",
+        "from": "Adjuvant / Postoperative",
+        "to": "Adjuvant"
+      },
+      {
+        "id": "r-alps",
+        "from": "Consolidation",
+        "to": "Metastatic"
+      }
+    ]
   },
   "trials": [
     {
@@ -1059,7 +1280,7 @@
         "ADAURA trial"
       ],
       "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Adjuvant",
       "question": "In completely resected EGFR-mutated stage IB–IIIA NSCLC, does adjuvant osimertinib improve DFS and OS? [ADAURA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
@@ -1088,7 +1309,7 @@
       "source": "trial-pages/alta-1l/",
       "path": "trial-pages/alta-1l/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line ALK-positive advanced NSCLC",
       "question": "In ALK-inhibitor-naive advanced ALK-positive NSCLC, does brigatinib improve progression-free survival over crizotinib?",
       "aliases": [
@@ -1572,7 +1793,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/calgb-140503",
       "discipline": "Surgical",
-      "setting": "Localized / Early-stage",
+      "setting": "Early",
       "question": "In peripheral stage IA NSCLC ≤2 cm, can sublobar resection replace lobectomy without compromising cancer control?",
       "path": "trial-pages/calgb-140503/",
       "freshness_review_status": "pending",
@@ -1780,7 +2001,7 @@
       "source": "trial-pages/checkmate-227/",
       "path": "trial-pages/checkmate-227/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line stage IV/recurrent NSCLC without sensitizing EGFR/ALK",
       "question": "In first-line metastatic NSCLC without sensitizing EGFR/ALK alterations, does nivolumab plus ipilimumab improve long-term survival over platinum chemotherapy across PD-L1 strata?",
       "aliases": [
@@ -1938,7 +2159,7 @@
         "NCT02998528"
       ],
       "discipline": "Medical",
-      "setting": "Neoadjuvant / Preoperative",
+      "setting": "Neoadjuvant",
       "question": "In resectable stage IB–IIIA NSCLC, does neoadjuvant nivolumab plus platinum-doublet chemotherapy improve pathological response and survival compared with neoadjuvant chemotherapy alone? [CheckMate 816]",
       "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
       "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
@@ -2030,7 +2251,7 @@
       "source": "trial-pages/checkmate-9la/",
       "path": "trial-pages/checkmate-9la/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line metastatic/recurrent NSCLC without sensitizing EGFR/ALK",
       "question": "In untreated metastatic NSCLC without sensitizing EGFR/ALK alterations, does nivolumab-ipilimumab plus two cycles of chemotherapy improve overall survival over chemotherapy?",
       "aliases": [
@@ -2077,7 +2298,7 @@
       "source": "trial-pages/lung-sabr-definitions/#chisel",
       "path": "trial-pages/lung-sabr-definitions/#chisel",
       "discipline": "Radiation",
-      "setting": "Early-stage / Definitive",
+      "setting": "Early",
       "question": "For peripheral stage I NSCLC, does SABR improve local control compared with standard radiotherapy?",
       "aliases": [
         "TROG 09.02",
@@ -2150,7 +2371,7 @@
       "source": "trial-pages/codebreak-200/",
       "path": "trial-pages/codebreak-200/",
       "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
+      "setting": "Metastatic",
       "setting_detail": "Previously treated KRAS G12C-mutated advanced NSCLC",
       "question": "After platinum chemotherapy and immunotherapy for KRAS G12C-mutated NSCLC, does sotorasib improve progression-free survival over docetaxel?",
       "aliases": [
@@ -2339,7 +2560,7 @@
       "source": "trial-pages/crown/",
       "path": "trial-pages/crown/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line ALK-positive advanced NSCLC",
       "question": "In untreated advanced ALK-positive NSCLC, does lorlatinib improve systemic and intracranial disease control over crizotinib?",
       "aliases": [
@@ -3242,7 +3463,7 @@
         "FLAURA trial"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "question": "In untreated advanced EGFR-mutated NSCLC, does osimertinib improve outcomes versus gefitinib/erlotinib? [FLAURA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
@@ -3253,7 +3474,7 @@
       "trial": "FLAURA2",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "Advanced / Metastatic",
       "question": "In first-line EGFR-mutated advanced NSCLC, does osimertinib plus platinum–pemetrexed improve survival over osimertinib alone?",
       "source": "trial-pages/flaura2/",
@@ -3616,7 +3837,7 @@
       "source": "trial-pages/lung-sabr-definitions/#hilus",
       "path": "trial-pages/lung-sabr-definitions/#hilus",
       "discipline": "Radiation",
-      "setting": "Ultracentral / Definitive",
+      "setting": "Early",
       "question": "What are the efficacy and severe toxicity outcomes of 56 Gy in 8 fractions for ultracentral lung tumours?",
       "aliases": [
         "HILUS trial",
@@ -4017,7 +4238,7 @@
         "NCT00002583"
       ],
       "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Adjuvant",
       "question": "After complete resection of stage IB–II NSCLC, does cisplatin–vinorelbine improve survival compared with observation?",
       "path": "trial-pages/jbr-10/",
       "freshness_review_status": "pending",
@@ -4072,7 +4293,7 @@
       "source": "trial-pages/keynote-024/",
       "path": "trial-pages/keynote-024/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line metastatic NSCLC · PD-L1 TPS ≥50%",
       "question": "In untreated metastatic NSCLC with PD-L1 TPS ≥50% and no sensitizing EGFR/ALK alteration, does pembrolizumab monotherapy improve survival over platinum chemotherapy?",
       "aliases": [
@@ -4089,7 +4310,7 @@
       "source": "trial-pages/keynote-042/",
       "path": "trial-pages/keynote-042/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line locally advanced/metastatic NSCLC · PD-L1 TPS ≥1%",
       "question": "In untreated advanced NSCLC with PD-L1 TPS ≥1% and no EGFR/ALK alteration, does pembrolizumab monotherapy improve overall survival over platinum chemotherapy?",
       "aliases": [
@@ -4248,7 +4469,7 @@
         "KEYNOTE 189"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "question": "In untreated metastatic nonsquamous NSCLC without EGFR/ALK alterations, does pembrolizumab plus pemetrexed–platinum improve survival? [KEYNOTE-189]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
@@ -4358,7 +4579,7 @@
       "source": "trial-pages/keynote-407/",
       "path": "trial-pages/keynote-407/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line metastatic squamous NSCLC",
       "question": "In previously untreated metastatic squamous NSCLC, does pembrolizumab plus platinum-taxane chemotherapy improve overall and progression-free survival over chemotherapy alone?",
       "aliases": [
@@ -4417,7 +4638,7 @@
       "trial": "KEYNOTE-671",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical",
-      "setting": "Perioperative",
+      "setting": "Neoadjuvant",
       "setting_detail": "Perioperative",
       "question": "In resectable stage II–IIIB (N2) NSCLC, does perioperative pembrolizumab plus platinum-doublet chemotherapy improve outcomes over chemotherapy and surgery alone?",
       "source": "trial-pages/keynote-671/",
@@ -4559,7 +4780,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/krascendo-1/",
       "discipline": "Medical",
-      "setting": "Relapsed / Refractory",
+      "setting": "Metastatic",
       "setting_detail": "Relapsed / Refractory",
       "path": "trial-pages/krascendo-1/",
       "question": "See the KRASCENDO 1 evidence page for the study-specific clinical question.",
@@ -4613,7 +4834,7 @@
       "source": "trial-pages/laura/",
       "path": "trial-pages/laura/",
       "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Consolidation",
       "setting_detail": "Consolidation after CRT · unresectable stage III EGFR exon19del/L858R",
       "question": "After definitive chemoradiotherapy for unresectable EGFR exon 19 deletion/L858R stage III NSCLC, does osimertinib consolidation improve progression-free survival over placebo?",
       "aliases": [
@@ -4748,7 +4969,7 @@
       "source": "trial-pages/lung-art/",
       "path": "trial-pages/lung-art/",
       "discipline": "Radiation",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Adjuvant",
       "question": "After complete resection of pN2 NSCLC, does postoperative radiotherapy improve disease-free survival compared with no PORT?",
       "aliases": [
         "EORTC 22055-08053"
@@ -4763,7 +4984,7 @@
       "source": "trial-pages/lung-sabr-definitions/#lustre",
       "path": "trial-pages/lung-sabr-definitions/#lustre",
       "discipline": "Radiation",
-      "setting": "Early-stage / Definitive",
+      "setting": "Early",
       "question": "For medically inoperable stage I NSCLC, does risk-adapted SBRT improve local control compared with hypofractionated radiotherapy?",
       "aliases": [
         "LUSTRE phase III trial",
@@ -4841,7 +5062,7 @@
       "source": "trial-pages/mariposa/",
       "path": "trial-pages/mariposa/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line EGFR-mutated advanced NSCLC",
       "question": "In untreated EGFR-mutated advanced NSCLC, does amivantamab plus lazertinib improve progression-free survival over osimertinib?",
       "aliases": [
@@ -5778,7 +5999,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/pacific",
       "discipline": "Medical",
-      "setting": "Locally Advanced / Resectable",
+      "setting": "Consolidation",
       "question": "After definitive concurrent chemoradiotherapy for unresectable stage III NSCLC, does consolidation durvalumab improve survival?",
       "path": "trial-pages/pacific/",
       "freshness_review_status": "pending",
@@ -5847,7 +6068,7 @@
       "source": "trial-pages/papillon/",
       "path": "trial-pages/papillon/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "First-line EGFR exon20 insertion-mutated advanced NSCLC",
       "question": "In untreated advanced NSCLC with EGFR exon 20 insertion, does amivantamab plus carboplatin-pemetrexed improve progression-free survival over chemotherapy?",
       "aliases": [
@@ -5890,7 +6111,7 @@
       "trial": "PEARLS / KEYNOTE-091",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Adjuvant",
       "setting_detail": "Adjuvant / Postoperative",
       "question": "After complete resection of stage IB–IIIA NSCLC, does adjuvant pembrolizumab improve disease-free survival compared with placebo?",
       "source": "trial-pages/keynote-091/",
@@ -6499,7 +6720,7 @@
       "source": "trial-pages/lung-sabr-definitions/#rosel",
       "path": "trial-pages/lung-sabr-definitions/#rosel",
       "discipline": "Radiation",
-      "setting": "Early-stage / Definitive",
+      "setting": "Early",
       "question": "In operable stage IA NSCLC, how did SABR compare with surgery, and what peripheral eligibility and dose schedules did ROSEL use?",
       "aliases": [
         "Trial of Either Surgery or Stereotactic Radiotherapy for Early Stage (IA) Lung Cancer",
@@ -6520,7 +6741,7 @@
         "NCT00087659"
       ],
       "discipline": "Radiation",
-      "setting": "Localized / Early-stage",
+      "setting": "Early",
       "question": "For medically inoperable stage I NSCLC, does SBRT provide durable primary-tumour control?",
       "path": "trial-pages/rtog-0236/",
       "freshness_review_status": "pending",
@@ -6546,7 +6767,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/rtog-0617/",
       "discipline": "Radiation",
-      "setting": "Localized / Early-stage",
+      "setting": "Early",
       "question": "In unresectable stage IIIA/IIIB NSCLC, does escalating definitive thoracic RT from 60 Gy to 74 Gy improve survival when given with concurrent chemotherapy?",
       "path": "trial-pages/rtog-0617/",
       "freshness_review_status": "pending",
@@ -6560,7 +6781,7 @@
       "source": "trial-pages/lung-sabr-definitions/#rtog0813",
       "path": "trial-pages/lung-sabr-definitions/#rtog0813",
       "discipline": "Radiation",
-      "setting": "Central / Definitive",
+      "setting": "Early",
       "question": "What dose-escalation and safety outcomes were observed with 50–60 Gy in 5 fractions for central NSCLC?",
       "aliases": [
         "NRG Oncology RTOG 0813",
@@ -6626,7 +6847,7 @@
         "RTOG9410"
       ],
       "discipline": "Radiation",
-      "setting": "Locally Advanced / Resectable",
+      "setting": "Early",
       "question": "For unresectable stage III NSCLC, does concurrent CRT improve survival versus sequential CRT? [RTOG 9410]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
@@ -6896,7 +7117,7 @@
       "source": "trial-pages/lung-sabr-definitions/#space",
       "path": "trial-pages/lung-sabr-definitions/#space",
       "discipline": "Radiation",
-      "setting": "Early-stage / Definitive",
+      "setting": "Early",
       "question": "In medically inoperable stage I NSCLC, how did SBRT compare with conventional radiotherapy?",
       "aliases": [
         "SPACE trial lung cancer",
@@ -6987,7 +7208,7 @@
       "source": "trial-pages/lung-sabr-definitions/#stars",
       "path": "trial-pages/lung-sabr-definitions/#stars",
       "discipline": "Radiation",
-      "setting": "Early-stage / Definitive",
+      "setting": "Early",
       "question": "For operable stage I NSCLC, how did CyberKnife SABR compare with surgical resection?",
       "aliases": [
         "Randomized Study to Compare CyberKnife to Surgical Resection in Stage I NSCLC",
@@ -7068,7 +7289,7 @@
       "source": "trial-pages/lung-sabr-definitions/#sunset",
       "path": "trial-pages/lung-sabr-definitions/#sunset",
       "discipline": "Radiation",
-      "setting": "Ultracentral / Definitive",
+      "setting": "Early",
       "question": "Can 60 Gy in 8 fractions with a capped hotspot treat ultracentral NSCLC with acceptable toxicity?",
       "aliases": [
         "SUNSET ultracentral lung trial",
@@ -7221,7 +7442,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "source": "trial-pages/swog-nrg-s1914",
       "discipline": "Medical",
-      "setting": "Locally Advanced / Resectable",
+      "setting": "Early",
       "question": "In localized small-cell lung cancer, does adding atezolizumab to concurrent chemoradiotherapy and prophylactic cranial irradiation improve survival compared with chemoradiotherapy and prophylactic cranial irradiation alone?",
       "path": "trial-pages/swog-nrg-s1914",
       "freshness_review_status": "pending",
@@ -7777,7 +7998,7 @@
       "trial": "OptiTROP-Lung06",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "Median PFS 15.0 vs 5.7 months; HR 0.49 (95% CI 0.36–0.65; P<0.001). ORR 50.2% vs 47.3%; OS immature (HR 0.58).",
       "question": "What is the clinical effect of OptiTROP-Lung06 in Non-Small Cell Lung Cancer (advanced / metastatic)?",
       "source": "trial-pages/optitrop-lung06/",
@@ -7803,7 +8024,7 @@
       "trial": "Dalmelitinib plus aumolertinib",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Relapsed / Refractory",
+      "setting": "Metastatic",
       "setting_detail": "Median PFS 6.2 vs 4.4 months; HR 0.60 (95% CI 0.45–0.81; P<0.001). ORR 59.6% vs 38.6%; DoR 9.7 vs 4.4 months; OS immature.",
       "question": "What is the clinical effect of Dalmelitinib plus aumolertinib in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/dalmelitinib-aumolertinib/",
@@ -7829,7 +8050,7 @@
       "trial": "HARMONi",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Relapsed / Refractory",
+      "setting": "Metastatic",
       "setting_detail": "Median PFS 6.8 vs 4.4 months; HR 0.52 (95% CI 0.41–0.66; P<0.0001). Median OS 16.8 vs 14.0 months; HR 0.79 (95% CI 0.62–1.01).",
       "question": "What is the clinical effect of HARMONi in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/harmoni/",
@@ -7972,7 +8193,7 @@
       "trial": "IMpower151",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Advanced / Metastatic",
+      "setting": "Metastatic",
       "setting_detail": "Median PFS 9.5 vs 7.1 months; HR 0.84 (95% CI 0.65–1.09; P=0.184). Median OS 20.7 vs 18.7 months; HR 0.93. ORR 48% vs 50%; primary endpoint negative.",
       "question": "What is the clinical effect of IMpower151 in Non-Small Cell Lung Cancer (advanced / metastatic)?",
       "source": "trial-pages/impower151/",
@@ -8018,7 +8239,7 @@
       "trial": "KRYSTAL-12",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Relapsed / Refractory",
+      "setting": "Metastatic",
       "setting_detail": "Median PFS 5.5 vs 3.8 months; HR 0.58 (95% CI 0.45–0.76; P<0.0001).",
       "question": "What is the clinical effect of KRYSTAL-12 in Non-Small Cell Lung Cancer (relapsed / refractory)?",
       "source": "trial-pages/krystal-12/",
@@ -8286,7 +8507,7 @@
       "trial": "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Adjuvant / Postoperative",
+      "setting": "Adjuvant",
       "setting_detail": "Median DFS 74.6 vs 75.1 months; HR 1.08 (95% CI 0.61–1.90; P=0.80). Adjuvant crizotinib did not prolong DFS.",
       "question": "What is the clinical effect of ECOG-ACRIN E4512 / ALCHEMIST-ALK in Non-Small Cell Lung Cancer (adjuvant / postoperative)?",
       "source": "trial-pages/e4512/",
@@ -8345,7 +8566,7 @@
       "trial": "R-ALPS",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Consolidation",
+      "setting": "Metastatic",
       "setting_detail": "Stage 1 median PFS 15.1, 9.7 and 4.2 months, respectively; HR vs placebo 0.49 and 0.53. Pooled combo vs benmelstobart alone 17.4 vs 11.2 months; HR 0.82 (95% CI 0.63–1.08; P=0.12), not significant.",
       "question": "What is the clinical effect of R-ALPS in Non-Small Cell Lung Cancer (consolidation)?",
       "source": "trial-pages/r-alps/",
