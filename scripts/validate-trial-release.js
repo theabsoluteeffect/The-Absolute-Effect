@@ -38,7 +38,7 @@ for (const t of batch) {
   if (/width\s*:\s*(?:NaN|undefined|Infinity)/i.test(html)) fail(t.id, 'Non-finite chart width in HTML');
   if (/href=["'](?:10\.|doi:)/i.test(html)) fail(t.id, 'Malformed bare DOI hyperlink');
   if (/DOI:\s*;|PMID\s*NCT|DOI:\s*NCT|PMID\s*10\./i.test(html)) fail(t.id, 'DOI/PMID/registry metadata appears misassigned');
-  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Primary source\s*<\/h2>[\s\S]*?<\/section>/i) || [,''])[1];
+  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Primary source\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   if (!primarySection) fail(t.id, 'Primary source section missing');
   else {
     const hrefs = [...primarySection.matchAll(/href=["']([^"']+)["']/gi)].map(m => m[1]);
