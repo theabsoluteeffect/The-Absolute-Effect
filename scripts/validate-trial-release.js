@@ -23,6 +23,58 @@ if (batch.length !== 30) fail('roster', `Latest batch ${latestDate} has ${batch.
 if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Duplicate trial IDs');
 if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Duplicate paths in latest batch');
 
+const canonicalName = s => norm(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const extractDoi = s => { const m = String(s || '').match(/10\.\d{4,9}\/[^s<>")]+/i); return m ? m[0].replace(/[.,;]+$/, '').toLowerCase() : ''; };
+const identifiers = x => [...new Set([x.registry_id, x.registry, x.pmid, ...(x.aliases || [])].map(v => String(v || '').trim().replace(/^PMID\s*/i, '').toUpperCase()).filter(v => /^(?:NCT\d{8}|CHICTR\d{10,}|JRCTS\d{9,}|ISRCTN\d{8}|\d{7,8})$/.test(v)))];
+const allNames = trials.map(t => canonicalName(t.trial)).filter(Boolean);
+if (new Set(allNames).size !== allNames.length) fail('roster', 'Duplicate normalized trial names in master roster');
+const allDois = trials.map(t => extractDoi(t.primary)).filter(Boolean);
+if (new Set(allDois).size !== allDois.length) fail('roster', 'Duplicate primary DOI in master roster');
+const priorTrials = trials.filter(t => t.batch_date !== latestDate);
+for (const t of batch) {
+  const doi = extractDoi(t.primary);
+  const ids = identifiers(t);
+  for (const old of priorTrials) {
+    if (canonicalName(old.trial) === canonicalName(t.trial)) fail(t.id, 'Duplicate trial name in prior master roster: ' + old.trial);
+    if (doi && doi === extractDoi(old.primary)) fail(t.id, 'Duplicate primary DOI in prior master roster: ' + doi);
+    const oldIds = identifiers(old);
+    for (const id of ids) if (oldIds.includes(id)) fail(t.id, 'Duplicate PMID/registry identifier in prior master roster: ' + id);
+  }
+}
+const dataDir = path.join(root, 'data');
+const oldDailyFiles = fs.readdirSync(dataDir).filter(f => /^daily-evidence-.*\\.json$/i.test(f) && !f.includes('recovery'));
+for (const fileName of oldDailyFiles) {
+  let rows = [];
+  try { const parsed = JSON.parse(fs.readFileSync(path.join(dataDir, fileName), 'utf8')); rows = Array.isArray(parsed) ? parsed : [parsed]; }
+  catch (error) { fail(fileName, 'Could not parse daily-evidence JSON: ' + String(error)); continue; }
+  for (const row of rows) {
+    for (const t of batch) {
+      if (row.duplicate_of === t.id) continue;
+      const rowName = canonicalName(row.trial || row.title);
+      if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in ' + fileName + ': ' + (row.trial || row.title));
+      const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
+      if (rowDoi && rowDoi === extractDoi(t.primary)) fail(t.id, 'Duplicate DOI in ' + fileName + ': ' + rowDoi);
+      const rowIds = identifiers(row);
+      for (const id of identifiers(t)) if (rowIds.includes(id)) fail(t.id, 'Duplicate PMID/registry identifier in ' + fileName + ': ' + id);
+      if (row.path && t.path && String(row.path).replace(/\\/$/, '') === String(t.path).replace(/\\/$/, '')) fail(t.id, 'Duplicate canonical path in ' + fileName);
+    }
+  }
+}
+try {
+  const archive = JSON.parse(fs.readFileSync(path.join(dataDir, 'trial-archive.json'), 'utf8'));
+  for (const row of (Array.isArray(archive) ? archive : [archive])) {
+    for (const t of batch) {
+      if (row.duplicate_of === t.id) continue;
+      const rowName = canonicalName(row.trial || row.title || row.name);
+      if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in trial-archive.json');
+      const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
+      if (rowDoi && rowDoi === extractDoi(t.primary)) fail(t.id, 'Duplicate DOI in trial-archive.json: ' + rowDoi);
+      const rowIds = identifiers(row);
+      for (const id of identifiers(t)) if (rowIds.includes(id)) fail(t.id, 'Duplicate PMID/registry identifier in trial-archive.json: ' + id);
+    }
+  }
+} catch (error) { fail('archive', 'Could not parse trial-archive.json: ' + String(error)); }
+
 const canonicalTitle = s => norm(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
