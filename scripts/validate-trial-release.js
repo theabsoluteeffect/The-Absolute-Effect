@@ -56,6 +56,23 @@ for (const t of batch) {
     const pageNnts = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => m[1]);
     if (pageNnts.some(n => Number(n) !== Number(detailNnt[1]))) fail(t.id, `NNT mismatch: roster ${detailNnt[1]}, page ${pageNnts.join(', ')}`);
   }
+  const absolute = t.absolute_effect;
+  const aeMarkup = (html.match(/<div\\b[^>]*data-absolute-effect[^>]*>/i) || [''])[0];
+  if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
+  if (absolute) {
+    if (!aeMarkup) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
+    const attr = name => { const m = aeMarkup.match(new RegExp('\\\\bdata-' + name + '=["\\\\']([^"\\\\']*)["\\\\']', 'i')); return m ? m[1] : ''; };
+    const benefit = Number(attr('benefit'));
+    const expectedBenefit = Number(absolute.benefit_percentage_points);
+    if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
+    if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`);
+    const expectedHarm = absolute.harm_percentage_points;
+    if (expectedHarm !== undefined) {
+      const harm = Number(attr('harm'));
+      if (!Number.isFinite(harm) || Math.abs(harm - Number(expectedHarm)) > 0.11) fail(t.id, `Absolute harm mismatch: expected ${expectedHarm}, page ${attr('harm')}`);
+      if (Number(attr('nnh')) !== Number(absolute.nnh)) fail(t.id, `NNH markup mismatch: expected ${absolute.nnh}, page ${attr('nnh')}`);
+    } else if (attr('harm') !== '') fail(t.id, 'Page shows a harm percentage without a structured source-grounded harm endpoint');
+  }
   if (!html.includes('assets/trial-page-layout.js')) fail(t.id, 'Shared trial-page renderer missing');
 }
 const report = { generated_at: new Date().toISOString(), latest_batch_date: latestDate, latest_batch_count: batch.length, errors };
