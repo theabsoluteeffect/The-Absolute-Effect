@@ -91,7 +91,9 @@ for (const t of batch) {
     const benefit = Number(attr('benefit'));
     const expectedBenefit = Number(absolute.benefit_percentage_points);
     if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
-    if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`);
+    if (absolute.nnt !== undefined) { if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`); }
+    else if (attr('nnt') !== '') fail(t.id, 'Page displays an NNT without a defensible structured NNT value');
+    if (absolute.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
     const expectedHarm = absolute.harm_percentage_points;
     if (expectedHarm !== undefined) {
       const harm = Number(attr('harm'));
