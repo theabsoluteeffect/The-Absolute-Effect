@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-14T19:54:02+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -104,5 +104,16 @@
       ]
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "The HCC and Esophagus/EGJ records are focused NCCN Insights articles, not complete guideline audits. Official full guideline/reference-list access remains unresolved; no new NCCN citation provenance was inferred in the 14 November evening follow-up.",
+  "source_access_log": [
+    {
+      "date": "2026-11-14",
+      "timestamp": "2026-11-14T19:54:02+05:30",
+      "scope": "Current official NCCN guideline and reference-list access across breast, lung, GI, GU, haematologic, head-and-neck, diagnostic, supportive-care and palliative-care families.",
+      "result": "No complete official NCCN guideline text or complete 2026 reference lists were accessible through the public route. The HCC Version 2.2026 and Esophagus/EGJ Version 4.2026 Insights records already in this ledger remain the only current Insights sources with explicit scope; no additional NCCN citation numbers, sections or recommendation categories were verified.",
+      "action": "Retry authorised NCCN access; meanwhile continue primary-publication and accessible ESMO/ASCO/EAU/ASTRO discovery without claiming NCCN provenance.",
+      "status": "open"
+    }
+  ],
+  "last_access_attempt": "2026-11-14T19:54:02+05:30"
 }
