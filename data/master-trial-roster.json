@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 13,
+  "version": 14,
   "last_quality_check": "2026-11-14",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -19,10 +19,10 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 399,
+    "permanent_trial_pages": 400,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 406,
+    "total_unique_trials": 407,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -700,19 +700,19 @@
       "duplicate_route_policy": "Legacy flat .html routes and canonical /index.html routes were grouped by common trial slug and counted once."
     },
     "evidence_index_rostered_paths_missing": 0,
-    "canonical_trial_page_index_files": 400,
+    "canonical_trial_page_index_files": 401,
     "roster_unique_page_paths": 399,
     "redirect_only_trial_page_stubs": 1,
     "shared_anchor_trial_entries": 8,
     "daily_evidence_total_records": 289,
     "daily_evidence_uploaded_records": 143,
     "full_roster_reconciliation_2026_11_14": {
-      "status": "PASS",
-      "roster_entries": 406,
-      "unique_trial_ids": 406,
+      "status": "PASS_AFTER_2026_11_14_MORNING_BATCH",
+      "roster_entries": 407,
+      "unique_trial_ids": 407,
       "exact_normalized_alias_collisions": 0,
-      "canonical_trial_page_index_files": 400,
-      "unique_page_paths_referenced_by_roster": 399,
+      "canonical_trial_page_index_files": 401,
+      "unique_page_paths_referenced_by_roster": 400,
       "redirect_only_trial_page_stubs": 1,
       "shared_anchor_trial_entries": 8,
       "missing_roster_page_targets": 0,
@@ -724,9 +724,9 @@
       "archive_records_missing_from_roster": 0,
       "current_trial_of_the_day": "GemX (gemx)",
       "previous_trial_of_the_day": "ACOSOG Z11102 (acosog-z11102)",
-      "daily_evidence_files": 23,
-      "daily_evidence_records_total": 289,
-      "daily_evidence_records_marked_uploaded": 143,
+      "daily_evidence_files": 24,
+      "daily_evidence_records_total": 290,
+      "daily_evidence_records_marked_uploaded": 144,
       "uploaded_daily_records_missing_from_roster": 0,
       "evidence_index_rostered_page_paths_missing_before_reconciliation": 32,
       "evidence_index_rostered_page_paths_added": 32,
@@ -734,9 +734,33 @@
       "checked_on": "2026-11-14",
       "scope_note": "Structural and registry reconciliation of roster IDs, exact-normalized aliases, canonical page paths, shared anchors, redirect-only stubs, archive records, current/previous Trial-of-the-Day, all daily-evidence JSON record totals and uploaded-status records, and main evidence-index links. This is not a clinical freshness review or browser-rendered QA.",
       "rosel_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier.",
-      "permanent_trial_pages": 399
+      "permanent_trial_pages": 399,
+      "latest_addition": {
+        "id": "kim-hypofractionated-pbt-hcc",
+        "path": "trial-pages/hypofractionated-proton-hcc/",
+        "primary": "PMID 32411594",
+        "registry": "NCT02395523",
+        "nccn_guideline": "HCC Version 2.2026",
+        "nccn_reference": "42"
+      }
     },
-    "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper."
+    "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper.",
+    "daily_evidence_files_count": 24,
+    "daily_evidence_records_total": 290,
+    "daily_evidence_records_uploaded": 144,
+    "morning_run_2026_11_14": {
+      "new_trials_added": [
+        "Kim et al. 2020 phase II hypofractionated proton beam therapy"
+      ],
+      "new_trial_count": 1,
+      "nccn_guideline": "Hepatocellular Carcinoma Version 2.2026",
+      "nccn_article_doi": "10.6004/jnccn.2026.0047",
+      "nccn_citation": "Reference 42",
+      "duplicate_audit": "PASS",
+      "primary_source_review": "PASS",
+      "publication_status": "committed_to_main; deployment and browser-rendered QA pending",
+      "prior_audit_findings": "9 manual outcome-review flags and 68 missing dated current-practice-context flags queued; GOG-258 shared renderer restored in this commit."
+    }
   },
   "trials": [
     {
@@ -7399,6 +7423,26 @@
       "aliases": [
         "Xi 2025 SBRT RFA HCC",
         "NCT04047173"
+      ]
+    },
+    {
+      "id": "kim-hypofractionated-pbt-hcc",
+      "trial": "Kim et al. 2020 phase II hypofractionated proton beam therapy",
+      "site": "Hepatocellular Carcinoma",
+      "source": "trial-pages/hypofractionated-proton-hcc/",
+      "discipline": "Radiation",
+      "setting": "Definitive / Curative",
+      "question": "What local control and survival outcomes can be achieved with hypofractionated proton beam therapy in selected HCC?",
+      "path": "trial-pages/hypofractionated-proton-hcc/",
+      "freshness_review_status": "primary_source_reviewed_nccn_hcc_v2_2026_reference_42",
+      "outcome_visual_review_status": "single_arm_outcome_markup_present_browser_qa_pending",
+      "setting_detail": "Prospective single-arm phase II; selected primary or recurrent/residual HCC ≤7 cm, ≤2 lesions, ≥2 cm from GI organs; Child–Pugh ≤7",
+      "aliases": [
+        "Phase II Study of Hypofractionated Proton Beam Therapy for Hepatocellular Carcinoma",
+        "Kim et al. 2020 proton HCC phase II",
+        "NCT02395523",
+        "PMID 32411594",
+        "DOI 10.3389/fonc.2020.00542"
       ]
     }
   ]

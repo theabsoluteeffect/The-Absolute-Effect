@@ -1,0 +1,28 @@
+[
+  {
+    "id": "kim-hypofractionated-pbt-hcc",
+    "trial": "Kim et al. 2020 phase II hypofractionated proton beam therapy",
+    "site": "Hepatocellular Carcinoma",
+    "discipline": "Radiation",
+    "setting": "Definitive / Curative",
+    "setting_detail": "Selected primary or recurrent/residual HCC; ≤7 cm, ≤2 lesions, ≥2 cm from GI organs; Child–Pugh ≤7",
+    "source": "trial-pages/hypofractionated-proton-hcc/",
+    "path": "trial-pages/hypofractionated-proton-hcc/",
+    "primary": "https://pubmed.ncbi.nlm.nih.gov/32411594/",
+    "registry": "NCT02395523",
+    "qualityCheckDate": "2026-11-14",
+    "uploadStatus": "uploaded",
+    "duplicateAudit": "PASS: live version-13 master roster, complete recursive Git tree, all daily-evidence files and aliases checked; PMID 32411594, DOI 10.3389/fonc.2020.00542 and NCT02395523 absent before addition.",
+    "sourceVerification": "Full open-access primary phase II publication and ClinicalTrials.gov record reviewed. Population, eligibility, dose, sample size, endpoints, follow-up, efficacy and acute toxicity transcribed.",
+    "fullClinicalFreshnessAudit": "NCCN Guidelines Insights HCC Version 2.2026 explicitly cites the study as reference 42 in its radiation-therapy update. Insights scope and limitations stated on page.",
+    "outcomeVisualizationBrowserQA": "Three source-reported single-arm 3-year outcomes have explicit data-outcome-single hooks; shared renderer included. Browser-rendered QA pending.",
+    "clinicalQuestion": "What local control and survival outcomes can be achieved with hypofractionated proton beam therapy in selected HCC?",
+    "aliases": [
+      "Phase II Study of Hypofractionated Proton Beam Therapy for Hepatocellular Carcinoma",
+      "Kim et al. 2020 proton HCC phase II",
+      "NCT02395523",
+      "PMID 32411594",
+      "DOI 10.3389/fonc.2020.00542"
+    ]
+  }
+]

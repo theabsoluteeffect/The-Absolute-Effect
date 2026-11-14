@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-14",
+  "items": [
+    {
+      "trial_id": "imbrave050",
+      "trial": "IMbrave050",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-hcc-v2-2026",
+      "references": [
+        "19",
+        "20"
+      ],
+      "reason": "The initial interim RFS benefit was not sustained on updated analysis (updated RFS HR 1.26, 95% CI 0.85–1.87); the NCCN HCC Version 2.2026 Insights states that the recommendation was subsequently removed and that there is no adjuvant strategy at this time.",
+      "action": "Retain the initial and updated reports together as one study; use as contrary/withdrawn-recommendation evidence in a dedicated review, not as a new trial page.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/37871608/",
+        "https://doi.org/10.6004/jnccn.2026.0047"
+      ],
+      "status_note": "Already rostered; no duplicate page."
+    }
+  ]
+}

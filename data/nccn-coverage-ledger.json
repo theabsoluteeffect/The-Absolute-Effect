@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-14",
+  "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
+  "guidelines": [
+    {
+      "guideline_id": "nccn-hcc-v2-2026",
+      "title": "NCCN Guidelines Insights: Hepatocellular Carcinoma, Version 2.2026",
+      "version": "2.2026",
+      "publication_date": "2026-10",
+      "doi": "10.6004/jnccn.2026.0047",
+      "pmid": "42874666",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0047",
+      "scope": "Focused Guidelines Insights article; does not represent the complete NCCN HCC guideline.",
+      "review_status": "insights_text_reviewed; reference-to-study mapping partially complete",
+      "reviewed_on": "2026-11-14",
+      "subsets_reviewed": [
+        "First-line systemic therapy",
+        "Subsequent-line systemic therapy",
+        "Adjuvant therapy",
+        "Locoregional therapy and ablation",
+        "Radiation therapy and proton therapy",
+        "Palliative radiation"
+      ],
+      "citation_map": [
+        {
+          "reference": "7",
+          "trial_id": "checkmate-9dw",
+          "study": "CheckMate 9DW",
+          "status": "already_in_roster"
+        },
+        {
+          "reference": "8",
+          "trial_id": "rationale-301",
+          "study": "RATIONALE-301",
+          "status": "already_in_roster"
+        },
+        {
+          "reference": "19",
+          "trial_id": "imbrave050",
+          "study": "IMbrave050",
+          "status": "already_in_roster; updated analysis cited as reference 20"
+        },
+        {
+          "reference": "20",
+          "trial_id": "imbrave050",
+          "study": "IMbrave050 updated analysis",
+          "status": "same underlying study; no duplicate page"
+        },
+        {
+          "reference": "34",
+          "trial_id": "xi-2025-hcc",
+          "study": "Xi et al. 2025 randomized SBRT versus RFA",
+          "status": "already_in_roster"
+        },
+        {
+          "reference": "36",
+          "trial_id": "rtog-1112",
+          "study": "NRG/RTOG 1112",
+          "status": "already_in_roster"
+        },
+        {
+          "reference": "42",
+          "trial_id": "kim-hypofractionated-pbt-hcc",
+          "study": "Kim et al. 2020 phase II hypofractionated PBT",
+          "status": "published_this_run"
+        },
+        {
+          "reference": "43",
+          "trial_id": "cctg-he1",
+          "study": "CCTG HE1",
+          "status": "already_in_roster"
+        }
+      ],
+      "unresolved_reference_groups": [
+        "4–6",
+        "9–18",
+        "21–33",
+        "37–41",
+        "44–45"
+      ],
+      "next_actions": [
+        "Resolve remaining reference bibliography against the complete article reference list.",
+        "Verify the exact identities of proton-therapy references 39–41 before adding candidates.",
+        "Reconcile full NCCN HCC guideline recommendations where access permits."
+      ]
+    },
+    {
+      "guideline_id": "nccn-esophagus-egj-v4-2026",
+      "title": "NCCN Guidelines Insights: Esophageal and Esophagogastric Junction Cancers, Version 4.2026",
+      "version": "4.2026",
+      "publication_date": "2026-09",
+      "doi": "10.6004/jnccn.2026.0043",
+      "pmid": "42753809",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42753809/",
+      "scope": "Insights article focuses on first-line treatment and biomarker testing in advanced ESCC; full guideline and full reference list not retrieved.",
+      "review_status": "access-limited; candidate mining held",
+      "reviewed_on": "2026-11-14",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Obtain the complete publicly accessible Insights reference list or an authorised full guideline source.",
+        "Do not infer exact NCCN citation numbers or mine candidates from secondary summaries."
+      ]
+    }
+  ],
+  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+}
