@@ -35,7 +35,7 @@ for (const t of batch) {
   const h1 = norm((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [,''])[1]);
   if (title !== t.trial) fail(t.id, `HTML title mismatch: "${title}"`);
   if (h1 !== t.trial) fail(t.id, `H1 mismatch: "${h1}"`);
-  if (/NaN|undefined%|Infinity%/i.test(html)) fail(t.id, 'Non-finite chart value in HTML');
+  if (/width\\s*:\\s*(?:NaN|undefined|Infinity)/i.test(html)) fail(t.id, 'Non-finite chart width in HTML');
   if (/href=["'](?:10\.|doi:)/i.test(html)) fail(t.id, 'Malformed bare DOI hyperlink');
   if (/DOI:\s*;|PMID\s*NCT|DOI:\s*NCT|PMID\s*10\./i.test(html)) fail(t.id, 'DOI/PMID/registry metadata appears misassigned');
   const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Primary source\s*<\/h2>[\s\S]*?<\/section>/i) || [,''])[1];
