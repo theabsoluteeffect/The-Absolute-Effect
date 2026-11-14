@@ -35,7 +35,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary phase III report and registry identity located; full protocol/supplement, exact endpoint hierarchy, treatment schedules, toxicity and follow-up not yet reconciled.",
-      "next_action": "Extract complete methods, dose schedules, pCR/EFS/OS denominators, adverse events and patient-reported outcomes."
+      "next_action": "Extract complete methods, dose schedules, pCR/EFS/OS denominators, adverse events and patient-reported outcomes.",
+      "primary_title": "Neoadjuvant short-course radiotherapy followed by camrelizumab and chemotherapy versus standard of care for locally advanced rectal cancer (UNION): a prespecified interim analysis of a multicentre, open-label, randomised, phase 3 trial.",
+      "publication_date": "2026-10-25",
+      "journal": "The Lancet Oncology"
     },
     {
       "candidate_id": "heron-lung01",
@@ -53,7 +56,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary Lancet phase III report and NCT located; full subgroup, CNS, OS maturity and grade 3–5 toxicity tables not yet fully extracted.",
-      "next_action": "Extract the full paper and supplement, including exact analysis populations, PFS, OS, dose intensity and toxicity."
+      "next_action": "Extract the full paper and supplement, including exact analysis populations, PFS, OS, dose intensity and toxicity.",
+      "primary_title": "Ruzaltatug rezetecan versus chemotherapy for EGFR-mutated advanced non-small-cell lung cancer progressing after EGFR tyrosine kinase inhibitor therapy (HERON-Lung01): interim analysis of a randomised, open-label, phase 3 trial in China.",
+      "publication_date": "2026-11-07",
+      "journal": "The Lancet"
     },
     {
       "candidate_id": "panku-lung01",
@@ -71,7 +77,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary Lancet phase III report, exact regimen and NCT located; complete results, subgroup, OS and safety extraction remains outstanding.",
-      "next_action": "Extract final PFS/interim OS estimates, exact denominators, grade 3–5 events and subsequent therapy."
+      "next_action": "Extract final PFS/interim OS estimates, exact denominators, grade 3–5 events and subsequent therapy.",
+      "primary_title": "Izalontamab brengitecan versus platinum-based chemotherapy in EGFR-mutated advanced non-squamous non-small-cell lung cancer after progression on third-generation EGFR tyrosine kinase inhibitors (PANKU-Lung01): a multicentre, randomised, open-label, phase 3 trial.",
+      "publication_date": "2026-10",
+      "journal": "The Lancet"
     },
     {
       "candidate_id": "find",
@@ -89,7 +98,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary JCO report and registry located. Curative-intent treatment for recurrence is a process-of-care endpoint; recurrence incidence and survival maturity must be clearly separated.",
-      "next_action": "Extract complete endpoint definitions, follow-up, recurrence denominators, treatment pathways, QoL and resource-use data; do not infer survival benefit."
+      "next_action": "Extract complete endpoint definitions, follow-up, recurrence denominators, treatment pathways, QoL and resource-use data; do not infer survival benefit.",
+      "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial.",
+      "publication_date": "2026-11-10",
+      "journal": "Journal of Clinical Oncology"
     },
     {
       "candidate_id": "skyscraper-07",
@@ -107,7 +119,10 @@
       "underlying_study": "new_unique",
       "disposition": "deferred_negative_contrary_evidence",
       "reason": "The hierarchically tested atezolizumab-plus-tiragolumab comparison failed primary INV-PFS (HR 0.82, 95% CI 0.65–1.03; P=0.0947) and OS (HR 0.91, 95% CI 0.70–1.18). Atezolizumab-alone comparisons were descriptive after hierarchy failure; no confirmatory positive primary claim.",
-      "next_action": "Retain for nuanced consolidation review; extract protocol hierarchy and do not treat descriptive monotherapy findings as confirmatory."
+      "next_action": "Retain for nuanced consolidation review; extract protocol hierarchy and do not treat descriptive monotherapy findings as confirmatory.",
+      "primary_title": "Atezolizumab with or without tiragolumab in unresectable esophageal squamous-cell carcinoma following definitive concurrent chemoradiotherapy (SKYSCRAPER-07): a randomised, phase III study.",
+      "publication_date": "2026-11",
+      "journal": "Annals of Oncology"
     },
     {
       "candidate_id": "relight",
@@ -125,7 +140,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary JCO phase III report and registry located; full subgroup, dosing, patient-reported outcomes and safety extraction required before clinical interpretation.",
-      "next_action": "Extract CPS-defined and ITT OS/PFS, exact safety denominators, exposure, QoL and the comparator-era limitation."
+      "next_action": "Extract CPS-defined and ITT OS/PFS, exact safety denominators, exposure, QoL and the comparator-era limitation.",
+      "primary_title": "First-Line Retlirafusp Alfa Plus Chemotherapy for Human Epidermal Growth Factor Receptor 2-Negative Gastric or Gastroesophageal Junction Adenocarcinoma: A Randomized, Double-Blind, Phase III Study (RELIGHT).",
+      "publication_date": "2026-11",
+      "journal": "Journal of Clinical Oncology"
     },
     {
       "candidate_id": "zeal-1l",
@@ -143,14 +161,19 @@
       "underlying_study": "new_unique",
       "disposition": "deferred_negative_contrary_evidence",
       "reason": "Primary phase III result: in the CR/PR primary population median BICR PFS was 5.55 months in both arms; HR 1.00 (95% CI 0.79–1.27), one-sided P=0.502. No benefit from adding niraparib.",
-      "next_action": "Retain as negative maintenance-intensification evidence; do not promote exploratory secondary endpoints as formally positive."
+      "next_action": "Retain as negative maintenance-intensification evidence; do not promote exploratory secondary endpoints as formally positive.",
+      "primary_title": "Phase III Study of Niraparib Plus Pembrolizumab as Maintenance Therapy for Advanced or Metastatic NSCLC (ZEAL-1L).",
+      "publication_date": "2026-11",
+      "journal": "Journal of Thoracic Oncology"
     },
     {
       "candidate_id": "talentace",
       "trial": "TALENTACE",
       "doi": "10.1016/S2468-1253(26)00212-8",
       "pmid": "42641632",
-      "registry_ids": [],
+      "registry_ids": [
+        "NCT04712643"
+      ],
       "site": "Hepatocellular Carcinoma",
       "setting": "Untreated intermediate/high-burden unresectable HCC eligible for TACE",
       "design": "Multicentre randomized open-label phase III; TACE plus atezolizumab/bevacizumab versus TACE alone",
@@ -159,7 +182,11 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary Lancet Gastroenterology & Hepatology phase III report located; exact registry ID, TACE-PFS definition, OS maturity, treatment burden and full toxicity tables require reconciliation.",
-      "next_action": "Verify registry from the primary article/official record and extract all efficacy, safety and QoL outcomes."
+      "next_action": "Verify registry from the primary article/official record and extract all efficacy, safety and QoL outcomes.",
+      "primary_title": "On-demand transarterial chemoembolisation combined with atezolizumab and bevacizumab in patients with untreated hepatocellular carcinoma (TALENTACE): a multicentre, randomised, open-label, phase 3 trial.",
+      "publication_date": "2026-11",
+      "journal": "The Lancet Gastroenterology & Hepatology",
+      "registry_verification": "ClinicalTrials.gov identifier explicitly stated in primary PubMed abstract."
     },
     {
       "candidate_id": "keylynk-001",
@@ -177,7 +204,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary Lancet Oncology phase III report and registry located; all three arms, biomarker hierarchy, maintenance schedules and OS maturity need complete extraction.",
-      "next_action": "Extract arm-specific PFS/OS, crossover, subgroup, QoL, discontinuation and grade 3–5 toxicity."
+      "next_action": "Extract arm-specific PFS/OS, crossover, subgroup, QoL, discontinuation and grade 3–5 toxicity.",
+      "primary_title": "Chemotherapy with or without pembrolizumab followed by maintenance pembrolizumab with or without olaparib as first-line treatment of patients with advanced BRCA non-mutated epithelial ovarian cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): a randomised, double-blind, placebo-controlled, phase 3 trial.",
+      "publication_date": "2026-10",
+      "journal": "The Lancet Oncology"
     },
     {
       "candidate_id": "open",
@@ -193,7 +223,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary open-access phase III report located; exact sample size, setup accuracy margins, patient-experience endpoints and registry record not yet extracted.",
-      "next_action": "Extract protocol-defined non-inferiority/superiority endpoints, setup accuracy, comfort/QoL, resource use and denominators."
+      "next_action": "Extract protocol-defined non-inferiority/superiority endpoints, setup accuracy, comfort/QoL, resource use and denominators.",
+      "primary_title": "OPEN: optimising patient experience in head and neck radiotherapy, a phase 3 randomised control trial comparing open versus closed face masks.",
+      "publication_date": "2026-11",
+      "journal": "Radiotherapy and Oncology"
     },
     {
       "candidate_id": "pearly",
@@ -209,7 +242,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary Annals of Oncology phase III report located; exact eligibility, treatment sequence, DFS/OS, grade 3–5 toxicity and QoL need extraction; registry not yet verified.",
-      "next_action": "Extract full methods, event denominators, subgroup results, safety and patient-reported outcomes."
+      "next_action": "Extract full methods, event denominators, subgroup results, safety and patient-reported outcomes.",
+      "primary_title": "A randomized phase III trial of anthracyclines followed by taxane versus taxane plus carboplatin as (neo)adjuvant therapy in patients with triple-negative breast cancer: KCSG BR 15-1 PEARLY trial.",
+      "publication_date": "2026-10",
+      "journal": "Annals of Oncology"
     },
     {
       "candidate_id": "npc-tpf-pf-sequencing",
@@ -227,7 +263,10 @@
       "underlying_study": "new_unique",
       "disposition": "deferred_negative_contrary_evidence",
       "reason": "3-year PFS 79.0% versus 74.5% (P=0.454), with no significant OS/LRFS/DMFS difference; induction arm had more grade 3–4 leukopenia and neutropenia.",
-      "next_action": "Retain as sequencing/contrary evidence; extract full dose schedules and toxicity denominators."
+      "next_action": "Retain as sequencing/contrary evidence; extract full dose schedules and toxicity denominators.",
+      "primary_title": "Induction TPF versus adjuvant PF after CCRT in locally advanced nasopharyngeal carcinoma: A multicenter, randomized controlled phase III clinical trial.",
+      "publication_date": "2026-10",
+      "journal": "Radiotherapy and Oncology"
     },
     {
       "candidate_id": "celestimo",
@@ -275,7 +314,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary BJS Open phase II report verified; treatment assignment was not randomized, so comparisons with SOC are vulnerable to selection bias.",
-      "next_action": "Extract eligibility, cohort assignment, primary feasibility endpoint, ctDNA and RFS analyses, toxicity and limitations."
+      "next_action": "Extract eligibility, cohort assignment, primary feasibility endpoint, ctDNA and RFS analyses, toxicity and limitations.",
+      "primary_title": "Adjuvant mFOLFOXIRI after curative-intent resection of oligometastatic colorectal cancer: phase II FANTASTIC trial.",
+      "publication_date": "2026-11-03",
+      "journal": "BJS Open"
     },
     {
       "candidate_id": "optim",
@@ -293,7 +335,10 @@
       "underlying_study": "new_unique",
       "disposition": "deferred_negative_contrary_evidence",
       "reason": "Only 31 patients randomized after early termination; ORR 0% versus 17.6%, median PFS 1.97 versus 3.66 months (P=0.036), with numerically inferior OS for nivolumab-ipilimumab.",
-      "next_action": "Retain as small, early-terminated negative post-PD-1 rechallenge evidence; do not overinterpret OS."
+      "next_action": "Retain as small, early-terminated negative post-PD-1 rechallenge evidence; do not overinterpret OS.",
+      "primary_title": "OPTIM: a randomized phase II trial of nivolumab followed by nivolumab-ipilimumab or docetaxel at progression in recurrent/metastatic squamous cell carcinoma of the head and neck (OPTIM; AIO-KHT-0117).",
+      "publication_date": "2026-07-18",
+      "journal": "British Journal of Cancer"
     },
     {
       "candidate_id": "ringside",
@@ -311,7 +356,10 @@
       "underlying_study": "new_unique",
       "disposition": "held_for_full_source_extraction",
       "reason": "Primary JCO phase II report and NCT located; dose-selection rationale, response criteria, durability, patient-reported outcomes and grade 3–5 toxicity need extraction.",
-      "next_action": "Extract all dose cohorts, efficacy and safety; distinguish dose-finding evidence from phase III confirmation."
+      "next_action": "Extract all dose cohorts, efficacy and safety; distinguish dose-finding evidence from phase III confirmation.",
+      "primary_title": "RINGSIDE Phase II Study of Varegacestat for Treatment of Desmoid Tumors: A Randomized Dose-Finding Clinical Trial.",
+      "publication_date": "2026-11-10",
+      "journal": "Journal of Clinical Oncology"
     },
     {
       "candidate_id": "etctn-10302",
