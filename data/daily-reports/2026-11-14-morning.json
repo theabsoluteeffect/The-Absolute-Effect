@@ -1,0 +1,71 @@
+{
+  "report_id": "daily-atlas-2026-11-14-morning-catchup",
+  "run_date": "2026-11-14",
+  "cycle": "Morning 08:00 IST catch-up run executed later the same day",
+  "target_new_unique_trials": 30,
+  "uploaded_count": 1,
+  "unfilled_slots": 29,
+  "screened_candidates_count": 1,
+  "duplicate_exclusions_count": 0,
+  "held_for_verification_count": 0,
+  "not_screened_slots": 29,
+  "uploaded_cases": [
+    {
+      "serial": 1,
+      "canonical_trial_name": "Kim et al. 2020 phase II hypofractionated proton beam therapy for HCC",
+      "roster_id": "kim-hypofractionated-pbt-hcc",
+      "tumour_site": "Hepatocellular carcinoma",
+      "setting": "Definitive/curative; selected primary or recurrent/residual HCC",
+      "phase_design": "Prospective, single-institution, single-arm phase II",
+      "population": "45 patients; target lesion(s) ≤7 cm, ≤2 lesions, ≥2 cm from GI organs; Child–Pugh ≤7; ECOG 0–1; no extrahepatic metastases",
+      "intervention": "Proton beam therapy 70 GyE in 10 fractions",
+      "comparator": "None (single-arm)",
+      "primary_endpoint": "3-year local progression-free survival",
+      "follow_up": "Median 35.1 months (range 11.2–56.3)",
+      "outcomes": {
+        "local_PFS_3y": "95.2% (95% CI 89.1–100%)",
+        "PFS_3y": "45.2% (95% CI 29.9–60.5%)",
+        "OS_3y": "86.4% (95% CI 72.9–99.9%)",
+        "local_progression": "2 patients (8.7%)"
+      },
+      "safety": "No grade ≥3 acute toxicity; all patients completed planned treatment without interruption.",
+      "NNT_NNH": "Not applicable; single-arm study without comparator.",
+      "primary_publication": "Kim TH et al. Front Oncol. 2020;10:542. PMID 32411594. DOI 10.3389/fonc.2020.00542.",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7198869/",
+      "registry_id": "NCT02395523",
+      "NCCN_provenance": "NCCN Guidelines Insights: Hepatocellular Carcinoma, Version 2.2026, radiation therapy update, reference 42.",
+      "NCCN_url": "https://doi.org/10.6004/jnccn.2026.0047",
+      "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/hypofractionated-proton-hcc/",
+      "page_path": "trial-pages/hypofractionated-proton-hcc/",
+      "duplicate_check": {
+        "status": "PASS",
+        "keys_checked": [
+          "NCT02395523",
+          "PMID 32411594",
+          "DOI 10.3389/fonc.2020.00542",
+          "title/aliases"
+        ],
+        "matched_existing_study": false,
+        "similar_but_distinct_study": {
+          "roster_id": "proton-rfa-hcc",
+          "trial": "Proton Beam Therapy vs RFA (Kim et al.)",
+          "registry": "NCT01963429",
+          "decision": "Distinct phase III randomized PBT-versus-RFA study; not a duplicate of the single-arm phase II NCT02395523 cohort."
+        },
+        "archive_match": false,
+        "prior_trial_of_day_match": false
+      },
+      "commit": "f7c1f027409bb060b174b4b7f511942b562b10ab"
+    }
+  ],
+  "candidate_disposition": [
+    {
+      "candidate": "Kim et al. 2020 phase II hypofractionated PBT for HCC",
+      "disposition": "new unique; uploaded",
+      "registry": "NCT02395523",
+      "primary": "PMID 32411594",
+      "duplicate_result": "No match; distinct from NCT01963429 phase III PBT vs RFA trial."
+    }
+  ],
+  "note": "This catch-up run did NOT produce 30 uploaded trials. Only one NCCN-cited, primary-source-verified candidate was identified and committed. The remaining 29 slots were not screened or filled and must not be represented as completed."
+}
