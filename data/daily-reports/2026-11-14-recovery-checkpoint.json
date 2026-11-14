@@ -1,0 +1,83 @@
+{
+  "report_id": "daily-atlas-2026-11-14-recovery-checkpoint",
+  "run_date": "2026-11-14",
+  "cycle": "Recovery run initiated after incomplete morning catch-up",
+  "status": "INCOMPLETE",
+  "target_new_unique_trials": 30,
+  "uploaded_count": 0,
+  "unfilled_slots": 30,
+  "candidate_leads_screened": 4,
+  "roster_level_duplicate_checks": {
+    "method": "Checked candidate trial names and primary DOI/registry identifiers against the live master-trial-roster.json (407 records).",
+    "result": "No matching roster entry found for the four candidates below.",
+    "limitation": "This is a preliminary roster-level check only. Full recursive page, archive, prior Trial-of-the-Day, daily-evidence, and alias reconciliation remains required before publication."
+  },
+  "candidates": [
+    {
+      "trial": "ASCENT-04 / KEYNOTE-D19",
+      "site": "PD-L1-positive advanced TNBC",
+      "phase": "Phase III randomized",
+      "n": 443,
+      "intervention": "Sacituzumab govitecan + pembrolizumab",
+      "comparator": "Chemotherapy + pembrolizumab",
+      "primary_endpoint": "BICR PFS",
+      "result": "Median PFS 11.2 vs 7.8 months; HR 0.65 (95% CI 0.51–0.84), P<0.001; ORR 60% vs 53%; OS immature; grade ≥3 AEs 71% vs 70%; discontinuation due to AEs 12% vs 31%.",
+      "primary": "NEJM 2026; DOI 10.1056/NEJMoa2508959; NCT05382286",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2508959",
+      "disposition": "candidate lead; not uploaded; full primary-source extraction and full duplicate audit pending"
+    },
+    {
+      "trial": "RASolute 302",
+      "site": "Previously treated metastatic pancreatic ductal adenocarcinoma",
+      "phase": "Phase III randomized open-label",
+      "n": 500,
+      "intervention": "Daraxonrasib",
+      "comparator": "Investigator-choice chemotherapy",
+      "primary_endpoint": "OS and PFS in RAS G12 population",
+      "result": "Overall-population median OS 13.2 vs 6.7 months; HR 0.40, P<0.001. Overall-population median PFS 7.2 vs 3.6 months; HR 0.49, P<0.001. Grade ≥3 AEs 61.8% vs 69.6%; treatment-related discontinuation 1.2% vs 11.2%.",
+      "primary": "NEJM 2026; DOI 10.1056/NEJMoa2605555; NCT06625320",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2605555",
+      "disposition": "candidate lead; not uploaded; full primary-source extraction and full duplicate audit pending"
+    },
+    {
+      "trial": "RECITE",
+      "site": "Chemotherapy-induced thrombocytopenia in GI cancers",
+      "phase": "Phase III double-blind randomized placebo-controlled",
+      "n": 165,
+      "intervention": "Romiplostim for three chemotherapy cycles",
+      "comparator": "Placebo",
+      "primary_endpoint": "Absence of CIT-induced chemotherapy dose modifications in cycles 2 and 3",
+      "result": "84% (92/109) vs 36% (20/56); OR 10.16 (95% CI 4.44–23.72), P<0.001; grade ≥3 AEs 37% vs 22%; thromboembolic events 2% vs 0%.",
+      "primary": "NEJM 2026; DOI 10.1056/NEJMoa2511882; PMID 41812193; NCT03362177",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41812193/",
+      "disposition": "candidate lead; not uploaded; full primary-source extraction and full duplicate audit pending"
+    },
+    {
+      "trial": "OptiTROP-Lung06",
+      "site": "First-line PD-L1-negative advanced nonsquamous NSCLC without targetable alterations",
+      "phase": "Phase III randomized open-label",
+      "n": 455,
+      "intervention": "Sacituzumab tirumotecan + pembrolizumab",
+      "comparator": "Platinum-pemetrexed chemotherapy + pembrolizumab",
+      "primary_endpoint": "BICR PFS",
+      "result": "Median follow-up 9.7 months; median PFS 15.0 vs 5.7 months; HR 0.49 (95% CI 0.36–0.65), P<0.001; ORR 50.2% vs 47.3%; OS immature (HR 0.58, 95% CI 0.38–0.88); grade ≥3 AEs 47.6% vs 60.6%.",
+      "primary": "NEJM 2026; DOI 10.1056/NEJMoa2611280; PMID 42929694; NCT06711900",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42929694/",
+      "disposition": "candidate lead; not uploaded; full primary-source extraction and full duplicate audit pending"
+    }
+  ],
+  "duplicate_exclusions": [],
+  "held_count": 4,
+  "held_reason": "These are preliminary leads only. They are not counted as eligible or uploaded until full page-level extraction, full repository duplicate reconciliation, exact regimen/dose details, source and link checks, NNT/NNH/visualisation QA, and roster/index/archive integration are complete.",
+  "blocker": "This recovery execution established candidate discovery and preliminary roster-level screening but has not yet completed the 30-case publication workflow. No new page was committed in this checkpoint.",
+  "verified_repository_head": "fb88d13e0efa0976759e84427a73bc4a2c5c2dd2",
+  "verified_roster_count": 407,
+  "open_repair_queue_count": 68,
+  "resolved_repair_queue_count": 13,
+  "next_actions": [
+    "Complete full duplicate reconciliation for the four leads against all 401 trial-page index files, archive, Trial-of-the-Day and daily-evidence records.",
+    "Extract full protocols/supplementary appendices and exact dosing, stratification, QoL, follow-up, and toxicity details from primary publications.",
+    "Build and QA canonical trial pages and update roster, evidence index, archive/ledger, and persistent report.",
+    "Continue multi-site candidate screening until 30 verified uploads or documented eligible-candidate exhaustion."
+  ]
+}
