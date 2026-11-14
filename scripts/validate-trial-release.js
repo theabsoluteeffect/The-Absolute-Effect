@@ -61,7 +61,7 @@ for (const t of batch) {
   if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
   if (absolute) {
     if (!aeMarkup) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
-    const attr = name => { const m = aeMarkup.match(new RegExp('\\\\bdata-' + name + '=["\\\\']([^"\\\\']*)["\\\\']', 'i')); return m ? m[1] : ''; };
+    const attr = name => { const m = aeMarkup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
     const benefit = Number(attr('benefit'));
     const expectedBenefit = Number(absolute.benefit_percentage_points);
     if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
