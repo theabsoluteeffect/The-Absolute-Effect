@@ -6,6 +6,9 @@
  fetch("../../data/master-trial-roster.json").then(r=>r.ok?r.json():null).then(roster=>{
   const entry=roster&&roster.trials&&roster.trials.find(t=>(t.path||"").replace(/\/+$/,"").split("/").pop()===slug);
   if(!entry)return;const hero=main.querySelector(".hero");if(!hero)return;
+  const registryId=String(entry.registry_id||entry.registry||"").trim(),registryAlt=String(entry.registry_alt||"").trim(),registryText=[registryId,registryAlt].filter(Boolean).join(" · ");
+  if(registryText){const rp=[...hero.querySelectorAll("p")].find(p=>/\bregistry\s*:/i.test(p.textContent));if(rp&&!rp.textContent.includes(registryId)){const label=[...rp.querySelectorAll("strong")].find(x=>/registry/i.test(x.textContent));const frag=document.createDocumentFragment();[registryId,registryAlt].filter(Boolean).forEach((id,i)=>{if(i)frag.append(document.createTextNode(" · "));const nct=id.match(/NCT\d{8}/i);if(nct){const a=document.createElement("a");a.href="https://clinicaltrials.gov/study/"+nct[0].toUpperCase();a.textContent=id;a.target="_blank";a.rel="noopener noreferrer";frag.append(a);}else frag.append(document.createTextNode(id));});if(label)label.after(document.createTextNode(" "),frag);else rp.append(document.createTextNode(" Registry: "),frag);}}
+
   const eyebrow=hero.querySelector(".eyebrow"),old=eyebrow?eyebrow.textContent.trim():"",pieces=old.split(" · ");
   const designText=pieces.length>2?pieces.slice(1,-1).join(" · "):(pieces.length===2?pieces[1]:"");
   if(eyebrow)eyebrow.textContent=[entry.site,entry.setting,entry.discipline].filter(Boolean).join("  /  ");
@@ -44,6 +47,9 @@
   }
   const source=sections.find(s=>/primary source/i.test((s.querySelector("h2")||{}).textContent||""));
   if(source){
+   const primaryTitle=String(entry.primary_title||"").trim();
+   if(primaryTitle&&!source.textContent.includes(primaryTitle)){const p=document.createElement("p");const strong=document.createElement("strong");strong.textContent="Primary publication title: ";p.append(strong,document.createTextNode(primaryTitle));const h=source.querySelector("h2");if(h)h.after(p);else source.prepend(p);}
+
    source.querySelectorAll("p").forEach(p=>{if(/^\s*(?:DOI|PMID)\s*:/i.test(p.textContent))p.remove();});
    const primary=String(entry.primary||"").trim();
    const primaryUrl=/^10\./.test(primary)?"https://doi.org/"+primary:(/^https?:\/\//i.test(primary)?primary:"");

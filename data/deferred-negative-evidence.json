@@ -1,23 +1,69 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "schema_version": "1.0",
+  "updated_at": "2026-11-14T18:57:14+05:30",
+  "description": "Negative, superseded or recommendation-discordant clinical oncology evidence retained separately from the active trial-page queue. Items are not new uploads.",
   "items": [
     {
-      "trial_id": "imbrave050",
-      "trial": "IMbrave050",
-      "status": "deferred_contrary_evidence",
-      "guideline_id": "nccn-hcc-v2-2026",
-      "references": [
-        "19",
-        "20"
+      "id": "enzarad",
+      "trial": "ENZARAD (ANZUP 1303)",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_ids": [
+        "NCT02446444",
+        "ACTRN12614000126617"
       ],
-      "reason": "The initial interim RFS benefit was not sustained on updated analysis (updated RFS HR 1.26, 95% CI 0.85–1.87); the NCCN HCC Version 2.2026 Insights states that the recommendation was subsequently removed and that there is no adjuvant strategy at this time.",
-      "action": "Retain the initial and updated reports together as one study; use as contrary/withdrawn-recommendation evidence in a dedicated review, not as a new trial page.",
-      "primary_sources": [
-        "https://pubmed.ncbi.nlm.nih.gov/37871608/",
-        "https://doi.org/10.6004/jnccn.2026.0047"
+      "site": "Prostate Cancer",
+      "setting": "Definitive RT plus long-term ADT",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Phase III: 8-year MFS-CI 74% vs 72%, HR 0.88 (95% CI 0.67–1.15), P=0.34; no overall MFS-CI or OS improvement. Prespecified pelvic-node RT subgroup (n=324) showed HR 0.47 (95% CI 0.29–0.76), adjusted P=0.004; interpret as subgroup signal, not overall success.",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-01794",
+      "next_action": "Retain for contrary-evidence synthesis on ARPI intensification with definitive RT."
+    },
+    {
+      "id": "nhs-galleri",
+      "trial": "NHS-Galleri",
+      "doi": "10.1056/NEJMoa2505723",
+      "pmid": "42776074",
+      "registry_ids": [
+        "NCT05611632",
+        "ISRCTN91431511"
       ],
-      "status_note": "Already rostered; no duplicate page."
+      "site": "Cancer Screening",
+      "setting": "Population multicancer early detection",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "71,122 vs 71,128 randomized; primary stage III/IV incidence IRR 1.03 (95% CI 0.92–1.14), P=0.63. Stage IV IRR 0.86 (95% CI 0.74–1.00) after three rounds; further follow-up required.",
+      "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505723",
+      "next_action": "Retain for screening-policy contrary-evidence review; do not claim mortality benefit."
+    },
+    {
+      "id": "pemda-hn",
+      "trial": "PEMDA-HN",
+      "doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_ids": [
+        "NCT05814666"
+      ],
+      "site": "Head and Neck Squamous Cell Carcinoma",
+      "setting": "First-line recurrent/metastatic, PD-L1 CPS ≥1",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Randomized phase II: 69 randomized, 66 treated; ORR 15.6% with danvatirsen+pembrolizumab vs 14.3% with pembrolizumab, risk difference 1.3, P=1.0; stopped for lack of response.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42615600/",
+      "next_action": "Retain as negative STAT3/PD-1 combination evidence."
+    },
+    {
+      "id": "saci-io-hr-positive",
+      "trial": "SACI-IO HR+",
+      "doi": "10.1016/j.annonc.2026.06.012",
+      "pmid": "42323161",
+      "registry_ids": [
+        "NCT04448886"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Metastatic HR-positive/HER2-negative",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "PFS 8.4 vs 6.7 months, HR 0.76 (95% CI 0.48–1.19), P=0.12; OS 20 vs 18 months, P=0.18; no significant benefit in the unselected population.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42323161/",
+      "next_action": "Retain as contrary evidence against unselected PD-1 addition to SG; do not over-interpret exploratory PD-L1 subgroup."
     }
   ]
 }

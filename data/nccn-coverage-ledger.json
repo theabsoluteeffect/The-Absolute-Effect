@@ -104,5 +104,22 @@
       ]
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited. Evening 14 Nov 2026: no new NCCN guideline versions/subsets verified because full official source access failed; no provenance inferred. Source-access task remains open. Evening 14 Nov 2026: no new NCCN guideline versions/subsets verified because full official source access failed; no provenance inferred. Source-access task remains open.",
+  "source_access_log": [
+    {
+      "date": "2026-11-14",
+      "scope": "Official NCCN multi-site guideline/reference-list retrieval across breast, lung, GI, GU, haematologic, head-and-neck and supportive-care families.",
+      "result": "No complete official NCCN guideline text or complete reference list was accessible through public search. Exact current versions, sections, recommendation categories and citation numbers were not verified.",
+      "action": "Retry authenticated/direct official NCCN access; use complete NCCN Insights reference lists only when available; continue ESMO, ASCO, EAU, ASTRO and primary-publication discovery without claiming NCCN provenance.",
+      "status": "open"
+    },
+    {
+      "date": "2026-11-14",
+      "scope": "Official NCCN multi-site guideline/reference-list retrieval across breast, lung, GI, GU, haematologic, head-and-neck and supportive-care families.",
+      "result": "No complete official NCCN guideline text or complete reference list was accessible through public search. Exact current versions, sections, recommendation categories and citation numbers were not verified.",
+      "action": "Retry authenticated/direct official NCCN access; use complete NCCN Insights reference lists only when available; continue ESMO, ASCO, EAU, ASTRO and primary-publication discovery without claiming NCCN provenance.",
+      "status": "open"
+    }
+  ],
+  "last_access_attempt": "2026-11-14"
 }

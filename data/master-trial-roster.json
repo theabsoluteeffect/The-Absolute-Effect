@@ -855,7 +855,18 @@
     },
     "latest_batch_repair_status": "structural_repairs_complete_clinical_qa_in_progress",
     "latest_batch_release_gate": "scripts/validate-trial-release.js",
-    "latest_batch_expected_page_count": 30
+    "latest_batch_expected_page_count": 30,
+    "evening_reconciliation_2026_11_14": {
+      "base_main_head": "62bd1634d838f111ecff30b24d518156978eb8b9",
+      "branch": "atlas-batch/2026-11-14-pm",
+      "roster_entries": 437,
+      "canonical_trial_page_directories": 431,
+      "recovery_batch_pages_reconciled": 30,
+      "registry_metadata_completed": 30,
+      "new_trials_uploaded_this_evening": 0,
+      "status": "INCOMPLETE — 0/30 new trials; repair-only branch; not merged",
+      "note": "Thirty earlier recovery-batch pages were reconciled to the evidence index. Shared renderer now displays exact primary publication titles and registry identifiers from the roster. Browser-rendered QA and full clinical audit remain open."
+    }
   },
   "trials": [
     {
@@ -7667,7 +7678,8 @@
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
-      "pmid": "42928710"
+      "pmid": "42928710",
+      "registry_id": "NCT06110663"
     },
     {
       "id": "harmoni",
@@ -8002,7 +8014,8 @@
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
-      "primary_title": "Neoadjuvant botensilimab with or without balstilimab in pMMR and dMMR colon cancer: the phase 2 UNICORN trial"
+      "primary_title": "Neoadjuvant botensilimab with or without balstilimab in pMMR and dMMR colon cancer: the phase 2 UNICORN trial",
+      "registry_id": "NCT05845450"
     },
     {
       "id": "camoral",
@@ -8298,7 +8311,8 @@
         "notes": "NNT and NNH are based on the modified intention-to-treat population."
       },
       "primary_title": "Efficacy and safety of camrelizumab plus docetaxel and carboplatin as neoadjuvant therapy for stage II-III triple-negative breast cancer: the HELEN-Trio 011 randomized clinical trial",
-      "pmid": "42887596"
+      "pmid": "42887596",
+      "registry_id": "NCT05475678"
     },
     {
       "id": "anchor",
@@ -8392,7 +8406,9 @@
         "notes": "Approximate NNT; definitive 30-month primary endpoint remains pending."
       },
       "primary_title": "Chemoradiotherapy versus short-course radiotherapy for response-adapted organ preservation in early-stage and intermediate-stage rectal cancer (STAR-TREC): 12-month results of an international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial",
-      "pmid": "42633754"
+      "pmid": "42633754",
+      "registry_id": "NCT02945566",
+      "registry_alt": "ISRCTN14240288"
     }
   ]
 }
