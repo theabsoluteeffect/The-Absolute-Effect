@@ -24,7 +24,7 @@ if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Dupli
 if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Duplicate paths in latest batch');
 
 const canonicalName = s => norm(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-const extractDoi = s => { const m = String(s || '').match(/10\.\d{4,9}\/[^s<>")]+/i); return m ? m[0].replace(/[.,;]+$/, '').toLowerCase() : ''; };
+const extractDoi = s => { const m = String(s || '').match(/10\.\d{4,9}\/[A-Za-z0-9()._-]+/i); return m ? m[0].replace(/[.,;]+$/, '').toLowerCase() : ''; };
 const identifiers = x => [...new Set([x.registry_id, x.registry, x.pmid, ...(x.aliases || [])].map(v => String(v || '').trim().replace(/^PMID\s*/i, '').toUpperCase()).filter(v => /^(?:NCT\d{8}|CHICTR\d{10,}|JRCTS\d{9,}|ISRCTN\d{8}|\d{7,8})$/.test(v)))];
 const allNames = trials.map(t => canonicalName(t.trial)).filter(Boolean);
 if (new Set(allNames).size !== allNames.length) fail('roster', 'Duplicate normalized trial names in master roster');
@@ -42,7 +42,7 @@ for (const t of batch) {
   }
 }
 const dataDir = path.join(root, 'data');
-const oldDailyFiles = fs.readdirSync(dataDir).filter(f => /^daily-evidence-.*\\.json$/i.test(f) && !f.includes('recovery'));
+const oldDailyFiles = fs.readdirSync(dataDir).filter(f => f.startsWith('daily-evidence-') && f.endsWith('.json') && !f.includes('recovery'));
 for (const fileName of oldDailyFiles) {
   let rows = [];
   try { const parsed = JSON.parse(fs.readFileSync(path.join(dataDir, fileName), 'utf8')); rows = Array.isArray(parsed) ? parsed : [parsed]; }
@@ -56,7 +56,7 @@ for (const fileName of oldDailyFiles) {
       if (rowDoi && rowDoi === extractDoi(t.primary)) fail(t.id, 'Duplicate DOI in ' + fileName + ': ' + rowDoi);
       const rowIds = identifiers(row);
       for (const id of identifiers(t)) if (rowIds.includes(id)) fail(t.id, 'Duplicate PMID/registry identifier in ' + fileName + ': ' + id);
-      if (row.path && t.path && String(row.path).replace(/\\/$/, '') === String(t.path).replace(/\\/$/, '')) fail(t.id, 'Duplicate canonical path in ' + fileName);
+      if (row.path && t.path && (String(row.path).endsWith('/') ? String(row.path).slice(0, -1) : String(row.path)) === (String(t.path).endsWith('/') ? String(t.path).slice(0, -1) : String(t.path))) fail(t.id, 'Duplicate canonical path in ' + fileName);
     }
   }
 }
