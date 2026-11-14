@@ -6,6 +6,8 @@ on:
       - 'trial-pages/**'
       - 'assets/absolute-effect.js'
       - 'assets/trial-page-template.js'
+      - 'assets/trial-page-layout.js'
+      - 'scripts/validate-trial-release.js'
       - 'data/master-trial-roster.json'
       - 'scripts/audit-outcome-visuals.js'
       - '.github/workflows/outcome-visual-audit.yml'
@@ -29,7 +31,9 @@ jobs:
         with:
           node-version: 20
       - name: Check shared renderer JavaScript syntax
-        run: node --check assets/absolute-effect.js && node --check assets/trial-page-template.js
+        run: node --check assets/absolute-effect.js && node --check assets/trial-page-template.js && node --check assets/trial-page-layout.js
+      - name: Validate newest trial batch release quality
+        run: node scripts/validate-trial-release.js
       - name: Audit all roster and trial HTML pages
         run: node scripts/audit-outcome-visuals.js
       - name: Upload visual audit report
