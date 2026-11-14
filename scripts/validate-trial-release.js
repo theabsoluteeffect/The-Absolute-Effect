@@ -23,7 +23,7 @@ if (batch.length !== 30) fail('roster', `Latest batch ${latestDate} has ${batch.
 if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Duplicate trial IDs');
 if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Duplicate paths in latest batch');
 
-const canonicalTitle = s => String(s || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const canonicalTitle = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
   if (!/^10\\.\\d{4,9}\\//i.test(doi)) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
