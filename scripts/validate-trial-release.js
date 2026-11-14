@@ -150,13 +150,14 @@ for (const t of batch) {
   if (absolute) {
     if (!aeMarkup) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
     const attr = name => { const m = aeMarkup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
+    const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
     if (absolute.benefit_percentage_points !== undefined) {
       const benefit = Number(attr('benefit'));
       const expectedBenefit = Number(absolute.benefit_percentage_points);
       if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
     } else if (attr('benefit') !== '') fail(t.id, 'Page shows a benefit percentage without a structured source-grounded benefit endpoint');
     if (absolute.nnt !== undefined) { if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`); }
-    else if (attr('nnt') !== '') fail(t.id, 'Page displays an NNT without a defensible structured NNT value');
+    else if (!unspecified(attr('nnt'))) fail(t.id, 'Page displays an NNT without a defensible structured NNT value');
     if (absolute.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
     const expectedHarm = absolute.harm_percentage_points;
     if (expectedHarm !== undefined) {
@@ -164,7 +165,7 @@ for (const t of batch) {
       if (!Number.isFinite(harm) || Math.abs(harm - Number(expectedHarm)) > 0.11) fail(t.id, `Absolute harm mismatch: expected ${expectedHarm}, page ${attr('harm')}`);
     } else if (attr('harm') !== '') fail(t.id, 'Page shows a harm percentage without a structured source-grounded harm endpoint');
     if (absolute.nnh !== undefined) { if (Number(attr('nnh')) !== Number(absolute.nnh)) fail(t.id, `NNH markup mismatch: expected ${absolute.nnh}, page ${attr('nnh')}`); }
-    else if (attr('nnh') !== '') fail(t.id, 'Page displays an NNH without a defensible structured NNH value');
+    else if (!unspecified(attr('nnh'))) fail(t.id, 'Page displays an NNH without a defensible structured NNH value');
     if (absolute.nnt !== undefined && pageNntClaims.some(m => Number(m[1]) !== Number(absolute.nnt))) fail(t.id, 'NNT text does not match structured NNT value');
     if (absolute.nnh !== undefined && pageNnhClaims.some(m => Number(m[1]) !== Number(absolute.nnh))) fail(t.id, 'NNH text does not match structured NNH value');
   }
