@@ -8,6 +8,8 @@ on:
       - 'scripts/merge_all_daily_evidence.py'
       - 'scripts/update_sitemap.py'
       - 'scripts/update_trial_page_seo.py'
+      - 'scripts/validate-trial-release.js'
+      - 'assets/trial-page-layout.js'
       - 'index.html'
       - 'trial-pages/**'
       - 'evidence.html'
