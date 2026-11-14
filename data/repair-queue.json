@@ -2,17 +2,22 @@
   "schema_version": 1,
   "updated_at": "2026-11-14",
   "source_audit": {
-    "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43557003653",
-    "generated_at": "2026-11-14T04:30:49.072Z",
-    "audited_head": "74793a7da2f856a421e6eabfd79f4bf07a96be09",
+    "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
+    "generated_at": "2026-11-14T06:33:37.234Z",
+    "audited_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
+    "status": "PASS",
     "counts": {
+      "roster_pages_found": 407,
+      "roster_pages_missing": 0,
+      "canonical_renderer_missing": 0,
+      "all_html_renderer_missing": 2,
+      "legacy_redirects_missing": 0,
       "manual_outcome_review": 9,
       "missing_dated_context": 68,
-      "renderer_missing_at_audit": 2,
-      "missing_primary_source": 0,
-      "missing_roster_pages": 0
+      "short_pages": 2,
+      "missing_primary_source": 0
     },
-    "note": "Structural heuristic only; not a completed source-level clinical audit. Current main was re-read before recording resolved renderer items."
+    "note": "Static structural audit passed. Two renderer gaps from the earlier audit were resolved. Two legacy flat HTML files remain without renderer markup but are covered by redirects; all canonical roster pages have the shared renderer. Manual and dated-context flags remain review tasks, not proven clinical errors."
   },
   "open_items": [
     {
@@ -936,6 +941,30 @@
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "short-page-review-checkmate-76k",
+      "trial_id": "checkmate-76k",
+      "trial": "CheckMate 76K",
+      "path": "trial-pages/checkmate-76k/index.html",
+      "category": "short_page_content_review",
+      "severity": "medium",
+      "evidence": "GitHub Actions outcome audit identified page length below 3,500 characters. This heuristic is not proof of missing clinical content.",
+      "action": "Review against primary publication for completeness of population, regimen, endpoints, follow-up, absolute outcomes, toxicity, QoL, limitations, references and current-practice context; expand only with verified data.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "short-page-review-pout",
+      "trial_id": "pout",
+      "trial": "POUT",
+      "path": "trial-pages/pout/index.html",
+      "category": "short_page_content_review",
+      "severity": "medium",
+      "evidence": "GitHub Actions outcome audit identified page length below 3,500 characters. This heuristic is not proof of missing clinical content.",
+      "action": "Review against primary publication for completeness of population, regimen, endpoints, follow-up, absolute outcomes, toxicity, QoL, limitations, references and current-practice context; expand only with verified data.",
       "status": "open",
       "created_on": "2026-11-14"
     }
