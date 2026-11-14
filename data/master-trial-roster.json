@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 15,
+  "version": 16,
   "last_quality_check": "2026-11-14",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -21,7 +21,9 @@
     "For every NNT/NNH pictogram, store the endpoint, time horizon, source-reported absolute percentage-point difference, and NNT/NNH in a structured absolute_effect object. data-benefit/data-harm must contain the absolute percentage-point differences, never 100 divided by NNT/NNH.",
     "Do not calculate or display NNT from non-comparative trials, including randomized studies with an internal-control arm; display the source-reported outcome rates and state why NNT is not appropriate.",
     "For randomized non-comparative designs with an internal control, show the arm-specific source-reported outcome rates as descriptive data; do not label the difference as absolute treatment benefit or render an NNT/NNH pictogram.",
-    "Any numeric NNT/NNH appearing anywhere on a trial page must be represented in absolute_effect with the exact endpoint and time horizon; pictogram values must equal the absolute percentage-point difference, not 100 divided by NNT/NNH."
+    "Any numeric NNT/NNH appearing anywhere on a trial page must be represented in absolute_effect with the exact endpoint and time horizon; pictogram values must equal the absolute percentage-point difference, not 100 divided by NNT/NNH.",
+    "Taxonomy: primary setting represents the treatment context, not disease extent. Relapsed / Refractory takes precedence when trial eligibility requires recurrence, progression on/after prior systemic therapy, or established treatment resistance. Advanced / Metastatic is reserved for advanced disease without a defining prior-progression/resistance requirement, including first-line treatment and maintenance in non-progressive disease.",
+    "Record disease extent, prior-treatment status, and treatment line as separate dimensions where supported by trial eligibility. A trial may be metastatic and relapsed/refractory simultaneously; do not duplicate the trial or force metastatic disease extent into the primary setting."
   ],
   "audit": {
     "permanent_trial_pages": 431,
@@ -855,7 +857,60 @@
     },
     "latest_batch_repair_status": "structural_repairs_complete_clinical_qa_in_progress",
     "latest_batch_release_gate": "scripts/validate-trial-release.js",
-    "latest_batch_expected_page_count": 30
+    "latest_batch_expected_page_count": 30,
+    "setting_taxonomy_reconciled": "2026-11-14",
+    "setting_taxonomy_backup_branch": "backup/pre-setting-reconciliation-2026-11-14",
+    "setting_taxonomy_changes": {
+      "moved_to_relapsed_refractory": [
+        "axis",
+        "checkmate-025",
+        "checkmate-275",
+        "contact-03",
+        "destiny-breast04",
+        "evera",
+        "evolve-1",
+        "imvigor211",
+        "keynote-045",
+        "keynote-240",
+        "keynote-394",
+        "meteor",
+        "rainbow",
+        "regard",
+        "tinivo-2",
+        "trophy-u-01",
+        "tropics-02"
+      ],
+      "cohort_or_maintenance_exceptions": [
+        "keynote-224",
+        "sharp",
+        "javelin-bladder-100"
+      ],
+      "relapsed_refractory_with_advanced_extent": [
+        "ascent",
+        "claridhy",
+        "codebreak-200",
+        "emilia",
+        "ev-301",
+        "fight-202",
+        "fight-207",
+        "fresco-2",
+        "her2climb",
+        "keynote-158-btc",
+        "lorch-cdct-hdct-2011",
+        "mypathway-btc",
+        "nala",
+        "napoli-1",
+        "roar-btc",
+        "sophia",
+        "th3resa",
+        "tivo-3",
+        "rasolute-302",
+        "dalmelitinib-aumolertinib",
+        "harmoni",
+        "oclurandom"
+      ],
+      "scope": "Roster metadata reconciliation; page-level text and live deployment still require separate QA."
+    }
   },
   "trials": [
     {
@@ -1162,7 +1217,9 @@
       "question": "In previously treated metastatic TNBC, does sacituzumab govitecan improve outcomes versus physician's-choice chemotherapy? [ASCENT]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "ascot",
@@ -1302,12 +1359,15 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/axis",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In metastatic renal cell carcinoma progressing after prior systemic therapy, does axitinib improve progression-free survival compared with sorafenib?",
       "path": "trial-pages/axis",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Second-line Metastatic"
+      "setting_detail": "Second-line Metastatic",
+      "disease_extent": "Metastatic",
+      "treatment_status": "Progression after prior systemic therapy",
+      "treatment_line": "Second-line"
     },
     {
       "id": "ba06-30894",
@@ -1656,12 +1716,15 @@
       "site": "Renal Cell Carcinoma",
       "source": "trial-pages/checkmate-025",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In previously treated advanced clear-cell renal cell carcinoma, does nivolumab improve overall survival compared with everolimus?",
       "path": "trial-pages/checkmate-025",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Second-line Metastatic"
+      "setting_detail": "Second-line Metastatic",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Previously treated with one or two antiangiogenic regimens",
+      "treatment_line": "Later-line"
     },
     {
       "id": "checkmate-040",
@@ -1750,12 +1813,15 @@
         "nivolumab platinum-refractory urothelial carcinoma"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory metastatic urothelial carcinoma, can nivolumab produce clinically meaningful and durable tumour responses?",
       "path": "trial-pages/checkmate-275",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Advanced/Metastatic"
+      "setting_detail": "Advanced/Metastatic",
+      "disease_extent": "Metastatic",
+      "treatment_status": "Platinum-refractory",
+      "treatment_line": "Post-platinum"
     },
     {
       "id": "checkmate-459",
@@ -2038,7 +2104,9 @@
       ],
       "freshness_review_status": "primary and final OS sources linked; clinical freshness audit pending",
       "outcome_visual_review_status": "source-reported median PFS visualization added; browser QA pending",
-      "setting_detail": "IDH1-mutant previously treated advanced disease"
+      "setting_detail": "IDH1-mutant previously treated advanced disease",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "classic",
@@ -2090,7 +2158,9 @@
         "NCT04303780"
       ],
       "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "color",
@@ -2187,12 +2257,15 @@
         "atezolizumab cabozantinib after ICI"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "After progression on an immune checkpoint inhibitor, does adding atezolizumab to cabozantinib improve outcomes over cabozantinib alone?",
       "path": "trial-pages/contact-03/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "primary endpoint results and toxicity comparison included; browser render review pending",
-      "setting_detail": "Advanced RCC progressing on or after prior ICI"
+      "setting_detail": "Advanced RCC progressing on or after prior ICI",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression on or after prior immune-checkpoint inhibitor",
+      "treatment_line": "Post-ICI"
     },
     {
       "id": "cosmic-312",
@@ -2400,7 +2473,7 @@
       "site": "Breast Cancer",
       "source": "trial-pages/destiny-breast04/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In previously treated HER2-low metastatic breast cancer, does trastuzumab deruxtecan improve PFS and OS compared with physician's-choice chemotherapy?",
       "path": "trial-pages/destiny-breast04/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
@@ -2410,7 +2483,10 @@
         "DESTINY-Breast04",
         "DESTINY Breast 04",
         "NCT03734029"
-      ]
+      ],
+      "disease_extent": "Metastatic",
+      "treatment_status": "Previously treated HER2-low disease",
+      "treatment_line": "Later-line"
     },
     {
       "id": "destiny-gastric04",
@@ -2607,7 +2683,9 @@
       "question": "In HER2-positive advanced breast cancer after trastuzumab and taxane, does T-DM1 improve outcomes versus lapatinib–capecitabine? [EMILIA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "eortc-22845",
@@ -2888,7 +2966,9 @@
         "NCT03478592"
       ],
       "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "ev-302",
@@ -2946,14 +3026,17 @@
       "source": "trial-pages/evera/",
       "path": "trial-pages/evera/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "After CDK4/6 inhibitor progression in ER-positive/HER2-negative advanced breast cancer, does giredestrant plus everolimus improve outcomes compared with standard endocrine therapy plus everolimus?",
       "aliases": [
         "evERA",
         "NCT05306340"
       ],
       "freshness_review_status": "provisional page; verify final publication against primary source",
-      "outcome_visual_review_status": "pending_automated_and_source_review"
+      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression after CDK4/6 inhibitor and endocrine therapy",
+      "treatment_line": "Post-CDK4/6 inhibitor"
     },
     {
       "id": "everest",
@@ -2974,7 +3057,7 @@
       "site": "Hepatocellular Carcinoma",
       "source": "trial-pages/evolve-1/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "What are the efficacy and safety outcomes in second-line after sorafenib progression/intolerance?",
       "path": "trial-pages/evolve-1/",
       "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
@@ -2983,7 +3066,10 @@
       "aliases": [
         "EVOLVE-1",
         "NCT01035229"
-      ]
+      ],
+      "disease_extent": "Advanced / unresectable",
+      "treatment_status": "Progression or intolerance after sorafenib",
+      "treatment_line": "Second-line"
     },
     {
       "id": "extend",
@@ -3087,7 +3173,9 @@
       ],
       "freshness_review_status": "final primary analysis linked; clinical freshness audit pending",
       "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
-      "setting_detail": "FGFR2-altered previously treated advanced disease"
+      "setting_detail": "FGFR2-altered previously treated advanced disease",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "fight-203",
@@ -3121,7 +3209,9 @@
         "NCT03822117"
       ],
       "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "fight-302",
@@ -3224,7 +3314,9 @@
         "fruquintinib refractory mCRC"
       ],
       "freshness_review_status": "primary/authoritative source linked; current guideline review pending",
-      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending"
+      "outcome_visual_review_status": "source-reported outcome visualization markup added; browser-rendered QA pending",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "interlace",
@@ -3500,7 +3592,9 @@
       "question": "In heavily pretreated HER2-positive metastatic breast cancer, including brain metastases, does tucatinib added to trastuzumab–capecitabine improve outcomes? [HER2CLIMB]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "hera-big-1-01",
@@ -3779,12 +3873,15 @@
         "NCT02302807"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory advanced urothelial carcinoma, does atezolizumab improve overall survival compared with chemotherapy, particularly in patients with high PD-L1 expression?",
       "path": "trial-pages/imvigor211",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Advanced/Metastatic"
+      "setting_detail": "Advanced/Metastatic",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Platinum-refractory",
+      "treatment_line": "Post-platinum"
     },
     {
       "id": "insema",
@@ -3886,7 +3983,10 @@
       "path": "trial-pages/javelin-bladder-100",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "First-line Advanced/Metastatic"
+      "setting_detail": "First-line Advanced/Metastatic",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Non-progressive after first-line platinum chemotherapy; maintenance setting",
+      "treatment_line": "Maintenance"
     },
     {
       "id": "javelin-renal-101",
@@ -4005,12 +4105,15 @@
       "site": "Bladder Cancer",
       "source": "trial-pages/keynote-045",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In platinum-refractory advanced urothelial carcinoma, does pembrolizumab improve overall survival compared with investigator's-choice chemotherapy?",
       "path": "trial-pages/keynote-045",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Advanced/Metastatic"
+      "setting_detail": "Advanced/Metastatic",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression after platinum chemotherapy",
+      "treatment_line": "Post-platinum"
     },
     {
       "id": "keynote-048",
@@ -4113,7 +4216,9 @@
       ],
       "freshness_review_status": "primary BTC cohort source linked; clinical freshness audit pending",
       "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
-      "setting_detail": "Previously treated advanced BTC cohort"
+      "setting_detail": "Previously treated advanced BTC cohort",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "keynote-177",
@@ -4166,7 +4271,10 @@
         "NCT02702414",
         "KEYNOTE-224 cohort 1",
         "KEYNOTE-224 cohort 2"
-      ]
+      ],
+      "disease_extent": "Advanced / unresectable",
+      "treatment_status": "Mixed cohorts: sorafenib-pretreated and systemic-therapy-naive",
+      "treatment_line": "Mixed; cohort-specific"
     },
     {
       "id": "keynote-240",
@@ -4174,7 +4282,7 @@
       "site": "Hepatocellular Carcinoma",
       "source": "trial-pages/keynote-240/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "What are the efficacy and safety outcomes in second-line pembrolizumab after sorafenib?",
       "path": "trial-pages/keynote-240/",
       "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
@@ -4183,7 +4291,10 @@
       "aliases": [
         "KEYNOTE-240",
         "NCT02702401"
-      ]
+      ],
+      "disease_extent": "Advanced / unresectable",
+      "treatment_status": "Progression after sorafenib",
+      "treatment_line": "Second-line"
     },
     {
       "id": "keynote-355",
@@ -4226,7 +4337,7 @@
       "site": "Hepatocellular Carcinoma",
       "source": "trial-pages/keynote-394/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "What are the efficacy and safety outcomes in second-line pembrolizumab in asian patients after sorafenib/oxaliplatin?",
       "path": "trial-pages/keynote-394/",
       "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
@@ -4235,7 +4346,10 @@
       "aliases": [
         "KEYNOTE-394",
         "NCT03062358"
-      ]
+      ],
+      "disease_extent": "Advanced / unresectable",
+      "treatment_status": "Previously treated after sorafenib/oxaliplatin",
+      "treatment_line": "Second-line"
     },
     {
       "id": "keynote-407",
@@ -4592,7 +4706,9 @@
       "freshness_review_status": "guideline_and_primary_source_links_added_2026-10-18_full_clinical_freshness_review_pending",
       "outcome_visual_review_status": "source-grounded_outcome_visual_markup_added_browser_rendered_QA_pending",
       "setting_detail": "Mixed GCT · retrospective comparison",
-      "site_detail": "Testicular Germ-cell Tumours"
+      "site_detail": "Testicular Germ-cell Tumours",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "lorch-sequential-vs-single-hdct",
@@ -4795,12 +4911,15 @@
         "post-VEGFR TKI RCC"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "After prior VEGFR-targeted therapy, does cabozantinib improve outcomes versus everolimus, including after prior sunitinib or pazopanib?",
       "path": "trial-pages/meteor/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "prior-agent subgroup outcomes in comparative table; browser render review pending",
-      "setting_detail": "Previously treated advanced RCC after VEGFR-targeted therapy"
+      "setting_detail": "Previously treated advanced RCC after VEGFR-targeted therapy",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression after VEGFR-targeted therapy",
+      "treatment_line": "Post-VEGFR therapy"
     },
     {
       "id": "mindact",
@@ -5091,7 +5210,9 @@
       ],
       "freshness_review_status": "primary source linked; clinical freshness audit pending",
       "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
-      "setting_detail": "HER2-positive basket cohort"
+      "setting_detail": "HER2-positive basket cohort",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "nala",
@@ -5109,7 +5230,9 @@
       "question": "In HER2-positive metastatic breast cancer after ≥2 anti-HER2 regimens, does neratinib–capecitabine improve outcomes? [NALA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "napoli-1",
@@ -5127,7 +5250,9 @@
       "question": "After gemcitabine-based therapy for metastatic pancreatic cancer, does nanoliposomal irinotecan plus 5-FU/LV improve survival? [NAPOLI-1]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "napoli-3",
@@ -6185,7 +6310,7 @@
       "site": "Gastric and Gastroesophageal Junction Cancer",
       "source": "trial-pages/rainbow/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "What are the efficacy and safety outcomes in second-line previously treated advanced gastric/gej adenocarcinoma?",
       "path": "trial-pages/rainbow/",
       "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
@@ -6194,7 +6319,10 @@
       "aliases": [
         "RAINBOW",
         "NCT01170663"
-      ]
+      ],
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression after first-line chemotherapy",
+      "treatment_line": "Second-line"
     },
     {
       "id": "penile-adjuvant-5fu-vs-paclitaxel",
@@ -6312,7 +6440,7 @@
       "site": "Gastric and Gastroesophageal Junction Cancer",
       "source": "trial-pages/regard/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "What are the efficacy and safety outcomes in second-line monotherapy after progression on first-line chemotherapy?",
       "path": "trial-pages/regard/",
       "freshness_review_status": "primary_source_reviewed_guideline_reconciliation_pending",
@@ -6321,7 +6449,10 @@
       "aliases": [
         "REGARD",
         "NCT00917384"
-      ]
+      ],
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Progression after first-line chemotherapy",
+      "treatment_line": "Second-line"
     },
     {
       "id": "relativity-047",
@@ -6357,7 +6488,9 @@
       ],
       "freshness_review_status": "primary and final basket sources linked; clinical freshness audit pending",
       "outcome_visual_review_status": "source-reported response visualization added; browser QA pending",
-      "setting_detail": "BRAF V600E basket cohort"
+      "setting_detail": "BRAF V600E basket cohort",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "rosel",
@@ -6653,7 +6786,10 @@
       "path": "trial-pages/sharp/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Advanced/Unresectable · First-line"
+      "setting_detail": "Advanced/Unresectable · First-line",
+      "disease_extent": "Advanced / unresectable",
+      "treatment_status": "Locoregional-therapy unsuitable or post-locoregional therapy; not necessarily systemic-treatment refractory",
+      "treatment_line": "First-line systemic"
     },
     {
       "id": "soft",
@@ -6718,7 +6854,9 @@
       "question": "In pretreated HER2-positive advanced breast cancer, does margetuximab plus chemotherapy improve outcomes? [SOPHIA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "sorce",
@@ -7166,7 +7304,9 @@
       "question": "In heavily pretreated HER2-positive advanced breast cancer, does T-DM1 improve survival versus physician's-choice therapy? [TH3RESA]",
       "freshness_review_status": "primary source linked; full independent freshness audit pending",
       "outcome_visual_review_status": "source-reported visualization added; browser QA pending",
-      "setting_detail": "Relapsed / Refractory"
+      "setting_detail": "Relapsed / Refractory",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "ti-ce-einhorn-2010",
@@ -7213,12 +7353,15 @@
         "tivozanib plus nivolumab after ICI"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "After prior ICI exposure, does adding nivolumab to tivozanib improve outcomes versus tivozanib alone?",
       "path": "trial-pages/tinivo-2/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "primary endpoint results and prior-ICI subgroup included; browser render review pending",
-      "setting_detail": "Advanced RCC after prior ICI"
+      "setting_detail": "Advanced RCC after prior ICI",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Previously treated after immune-checkpoint inhibitor",
+      "treatment_line": "Post-ICI"
     },
     {
       "id": "tip-salvage-gct",
@@ -7252,7 +7395,9 @@
       "path": "trial-pages/tivo-3/",
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Relapsed/Refractory Metastatic"
+      "setting_detail": "Relapsed/Refractory Metastatic",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "topaz-1",
@@ -7390,12 +7535,15 @@
         "NCT03547973"
       ],
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "After prior platinum chemotherapy and checkpoint inhibition, what activity was reported in advanced urothelial carcinoma?",
       "path": "trial-pages/trophy-u-01/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "outcome_chart_in_page_automated_render_check_pending",
-      "setting_detail": "Previously treated advanced UC"
+      "setting_detail": "Previously treated advanced UC",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Previously treated with platinum and checkpoint inhibitor",
+      "treatment_line": "Later-line"
     },
     {
       "id": "tropics-02",
@@ -7403,7 +7551,7 @@
       "site": "Breast Cancer",
       "source": "trial-pages/tropics-02/",
       "discipline": "Medical",
-      "setting": "Advanced / Metastatic",
+      "setting": "Relapsed / Refractory",
       "question": "In heavily pretreated endocrine-resistant HR-positive/HER2-negative metastatic breast cancer, does sacituzumab govitecan improve PFS and OS compared with single-agent chemotherapy?",
       "path": "trial-pages/tropics-02/",
       "freshness_review_status": "Primary report and selected follow-up publications checked 2026-11-02; current-practice context reviewed 2026-11-02; comprehensive guideline freshness review remains pending.",
@@ -7413,7 +7561,10 @@
         "TROPiCS-02",
         "TROPiCS 02",
         "NCT03901339"
-      ]
+      ],
+      "disease_extent": "Metastatic",
+      "treatment_status": "Heavily pretreated endocrine-resistant HR+/HER2− disease",
+      "treatment_line": "Later-line"
     },
     {
       "id": "veip-recurrent-seminoma-miller-1997",
@@ -7584,7 +7735,9 @@
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "primary_title": "Daraxonrasib or Chemotherapy in Previously Treated Metastatic Pancreatic Cancer",
-      "registry_id": "NCT06625320"
+      "registry_id": "NCT06625320",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "recite",
@@ -7667,7 +7820,9 @@
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
-      "pmid": "42928710"
+      "pmid": "42928710",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "harmoni",
@@ -7693,7 +7848,9 @@
       "quality_check_date": "2026-11-14",
       "primary_title": "Ivonescimab plus chemotherapy versus placebo plus chemotherapy in patients with advanced EGFR-mutated non-small-cell lung cancer after disease progression on EGFR tyrosine kinase inhibitor therapy (HARMONi): a multicentre, randomised, double-blind, phase 3 trial",
       "pmid": "42636833",
-      "registry_id": "NCT06396065"
+      "registry_id": "NCT06396065",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "keynote-c93",
@@ -7981,7 +8138,9 @@
         "nnt_not_calculated_reason": "Randomized non-comparative phase II design: sunitinib was an internal control rather than a formal confirmatory comparator; do not interpret the between-arm difference as a causal treatment effect."
       },
       "pmid": "42225102",
-      "registry_id": "NCT02230176"
+      "registry_id": "NCT02230176",
+      "disease_extent": "Advanced / metastatic",
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
     },
     {
       "id": "unicorn",
