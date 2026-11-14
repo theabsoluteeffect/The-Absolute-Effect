@@ -151,7 +151,8 @@
     "duplicateAudit": "PASS: no matching trial name, DOI, PMID, registry ID or canonical page path was found in prior master-roster entries, archive records or prior daily-evidence records.",
     "uploadStatus": "uploaded",
     "batch_date": "2026-11-14",
-    "qualityCheckDate": "2026-11-14"
+    "qualityCheckDate": "2026-11-14",
+    "registry_id": "NCT06110663"
   },
   {
     "id": "harmoni",
@@ -546,7 +547,8 @@
     "duplicateAudit": "PASS: no matching trial name, DOI, PMID, registry ID or canonical page path was found in prior master-roster entries, archive records or prior daily-evidence records.",
     "uploadStatus": "uploaded",
     "batch_date": "2026-11-14",
-    "qualityCheckDate": "2026-11-14"
+    "qualityCheckDate": "2026-11-14",
+    "registry_id": "NCT05845450"
   },
   {
     "id": "camoral",
@@ -892,7 +894,8 @@
     "duplicateAudit": "PASS: no matching trial name, DOI, PMID, registry ID or canonical page path was found in prior master-roster entries, archive records or prior daily-evidence records.",
     "uploadStatus": "uploaded",
     "batch_date": "2026-11-14",
-    "qualityCheckDate": "2026-11-14"
+    "qualityCheckDate": "2026-11-14",
+    "registry_id": "NCT05475678"
   },
   {
     "id": "anchor",
@@ -1001,6 +1004,8 @@
     "duplicateAudit": "PASS: no matching trial name, DOI, PMID, registry ID or canonical page path was found in prior master-roster entries, archive records or prior daily-evidence records.",
     "uploadStatus": "uploaded",
     "batch_date": "2026-11-14",
-    "qualityCheckDate": "2026-11-14"
+    "qualityCheckDate": "2026-11-14",
+    "registry_id": "NCT02945566",
+    "registry_alt": "ISRCTN14240288"
   }
 ]

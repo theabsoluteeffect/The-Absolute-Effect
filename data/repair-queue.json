@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-14T18:57:14+05:30",
   "source_audit": {
-    "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
-    "generated_at": "2026-11-14T06:33:37.234Z",
-    "audited_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
-    "status": "PASS",
+    "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43600676704",
+    "generated_at": "2026-11-14T18:57:14+05:30",
+    "audited_head": "62bd1634d838f111ecff30b24d518156978eb8b9",
+    "status": "PARTIAL",
     "counts": {
-      "roster_pages_found": 407,
-      "roster_pages_missing": 0,
-      "canonical_renderer_missing": 0,
-      "all_html_renderer_missing": 2,
-      "legacy_redirects_missing": 0,
-      "manual_outcome_review": 0,
-      "missing_dated_context": 68,
-      "short_pages": 0,
-      "missing_primary_source": 0
+      "roster_entries": 437,
+      "canonical_trial_page_directories": 431,
+      "recovery_batch_pages_inspected": 30,
+      "recovery_batch_index_links_missing_before_repair": 30,
+      "recovery_batch_index_links_added": 30,
+      "legacy_redirects_remaining_unindexed": 1,
+      "registry_headers_blank_before_shared_renderer_fix": 29,
+      "registry_identifiers_added_to_roster": 4,
+      "dated_current_practice_context_open": 68,
+      "manual_browser_visual_review": 0
     },
-    "note": "Manual source/page review of all nine outcome-visual flags confirmed existing accessible CSS bar charts or status graphics; they were false positives from a data-outcome-hook-only heuristic. CheckMate 76K and POUT short pages were expanded from primary sources. Dated current-practice flags remain open pending full guideline freshness checks."
+    "note": "Thirty canonical pages from the earlier 14 November recovery batch were checked for registry/primary-title display and index reconciliation. Thirty index links were added; registry and primary-title display was fixed centrally. ROSEL is a legacy redirect to the consolidated lung SABR page. This is not a full clinical/source audit of all 437 roster entries. Sixty-eight dated current-practice items remain open; browser-rendered chart QA and guideline freshness remain open."
   },
   "open_items": [
     {
@@ -835,6 +836,258 @@
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
       "status": "open",
       "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "recovery-report-case-schema-2026-11-14",
+      "trial_id": null,
+      "trial": "14 November recovery report",
+      "path": "data/daily-reports/2026-11-14-recovery-final.json",
+      "category": "report_data_integrity",
+      "severity": "high",
+      "evidence": "The prior recovery-final report contains 30 case objects with misaligned fields. The roster/page records are the source of truth; do not use the malformed case rows for clinical reporting.",
+      "action": "Reconstruct the 30-case report from canonical roster entries and primary publications; preserve the original file and publish a corrected reconciliation report.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "nccn-guideline-access-2026-11-14",
+      "trial_id": null,
+      "trial": "NCCN multi-site guideline mining",
+      "path": "data/nccn-coverage-ledger.json",
+      "category": "guideline_source_access",
+      "severity": "high",
+      "evidence": "Public search did not return complete official NCCN guideline text/reference lists for breast, lung, GI, GU, haematologic, head-and-neck or supportive-care families. No exact version/section/reference/category was verified.",
+      "action": "Retry authenticated/direct official NCCN access; use complete NCCN Insights reference lists only when actually available; continue ESMO/ASCO/EAU/ASTRO primary-source mining without claiming NCCN provenance.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "browser-rendered-visual-qa-2026-11-14",
+      "trial_id": null,
+      "trial": "Atlas outcome visualizations",
+      "path": "assets/trial-page-layout.js",
+      "category": "browser_rendered_visual_qa",
+      "severity": "medium",
+      "evidence": "Main-branch Outcome visualization audit passed at 2026-11-14T13:38Z, but this is a static workflow result. This run did not complete desktop/mobile browser rendering of all pages.",
+      "action": "After branch preview deployment, inspect representative pages across chart types and mobile/desktop layouts; keep open until rendered output is verified.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "soft-final-15-year-followup-2026-11-14",
+      "trial_id": "soft",
+      "trial": "SOFT",
+      "path": "trial-pages/soft/index.html",
+      "category": "primary_followup_update",
+      "severity": "medium",
+      "evidence": "Final 15-year SOFT/TEXT analysis DOI 10.1016/j.annonc.2026.05.704; PMID 42229584. SOFT is already rostered; attach SOFT-specific results to the existing page.",
+      "action": "Extract SOFT-specific 15-year DFS/BCFI/DRFI/OS, subgroup denominators and late fracture/cardiovascular data from the full paper and update the existing page.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "fight-302-primary-metadata-2026-11-14",
+      "trial_id": "fight-302",
+      "trial": "FIGHT-302",
+      "path": "trial-pages/fight-302/index.html",
+      "category": "primary_source_metadata",
+      "severity": "medium",
+      "evidence": "Roster contains NCT03656536 as an alias but lacks primary DOI/PMID and primary_title fields. The canonical page exists, so this is a metadata completeness issue.",
+      "action": "Inspect the canonical FIGHT-302 page and primary source; add exact primary title, DOI/PMID and current result status to the roster.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-dellphi-305-2026-11-14",
+      "trial_id": "dellphi-305",
+      "trial": "DeLLphi-305",
+      "path": "data/daily-evidence-2026-11-14-evening.json#dellphi-305",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1056/NEJMoa2609482; NCT06211036; primary NEJM phase III paper published 24 Oct 2026; screened in September before results were available.",
+      "action": "Create one canonical page after full protocol/supplement extraction.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-gimema-all2820-2026-11-14",
+      "trial_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "path": "data/daily-evidence-2026-11-14-evening.json#gimema-all2820",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1056/NEJMoa2606208; PMID 42874102; NCT04722848; primary phase III NEJM report published 14 Oct 2026.",
+      "action": "Extract protocol/supplement doses, crossover and exact EFS/MRD denominators.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-excaliber-rrmm-2026-11-14",
+      "trial_id": "excaliber-rrmm",
+      "trial": "EXCALIBER-RRMM",
+      "path": "data/daily-evidence-2026-11-14-evening.json#excaliber-rrmm",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1016/S1470-2045(26)00450-X; PMID 42790445; NCT04975997; primary Lancet Oncology phase III report.",
+      "action": "Retrieve full paper/supplement; verify dose schedule, endpoint maturity and safety.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-trastuzumab-botidotin-2026-11-14",
+      "trial_id": "trastuzumab-botidotin",
+      "trial": "Trastuzumab botidotin phase III",
+      "path": "data/daily-evidence-2026-11-14-evening.json#trastuzumab-botidotin",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1200/JCO-26-00602; PMID 42727044; NCT06968585; JCO phase III primary report.",
+      "action": "Extract full article/supplement for dose, follow-up and grade 3–5 toxicity.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-pro-b-2026-11-14",
+      "trial_id": "pro-b",
+      "trial": "PRO-B electronic symptom monitoring",
+      "path": "data/daily-evidence-2026-11-14-evening.json#pro-b",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1001/jamaoncol.2026.2661; PMID 42560727; DRKS00024015; JAMA Oncology randomized report.",
+      "action": "Extract full alert workflow, primary symptom endpoint, QoL and health-service outcomes.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-dex-oinv-2026-11-14",
+      "trial_id": "dex-oinv",
+      "trial": "DEX-OINV",
+      "path": "data/daily-evidence-2026-11-14-evening.json#dex-oinv",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1007/s00520-026-11459-3; PMID 42998233; CTRI/2026/02/104005; 150 randomized.",
+      "action": "Verify dexamethasone dose/schedule, nausea definition, follow-up and Day-1 NNT arithmetic.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-hr20013-2026-11-14",
+      "trial_id": "hr20013",
+      "trial": "HR20013 / PROTECT",
+      "path": "data/daily-evidence-2026-11-14-evening.json#hr20013",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1200/JCO.2026.44.16_suppl.11006; NCT06554184; ASCO 2026 primary oral abstract; 706 randomized.",
+      "action": "Create a conference-report page labelled abstract-only; verify delayed-phase CR and FLIE outcomes.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-text-2026-11-14",
+      "trial_id": "text",
+      "trial": "TEXT",
+      "path": "data/daily-evidence-2026-11-14-evening.json#text",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1016/j.annonc.2026.05.704; PMID 42229584; NCT00066703; separate phase III trial with 2,660 ITT participants.",
+      "action": "Extract TEXT-specific 15-year endpoints and denominators; create a separate page from SOFT.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-dasl-hicap-2026-11-14",
+      "trial_id": "dasl-hicap",
+      "trial": "DASL-HiCaP",
+      "path": "data/daily-evidence-2026-11-14-evening.json#dasl-hicap",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. NCT04136353; ESMO 2026 LBA4; interim MFS-CI 95% vs 88%, HR 0.42.",
+      "action": "Retrieve official ESMO abstract/supplement; do not publish from press-release-only evidence.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-jcog2506-2026-11-14",
+      "trial_id": "jcog2506",
+      "trial": "JCOG2506 DECIDE-MET",
+      "path": "data/daily-evidence-2026-11-14-evening.json#jcog2506",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1016/j.cllc.2026.08.008; protocol/design publication without outcomes.",
+      "action": "Await primary results; no outcomes page from protocol alone.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-bnt324-03-2026-11-14",
+      "trial_id": "bnt324-03",
+      "trial": "BNT324-03",
+      "path": "data/daily-evidence-2026-11-14-evening.json#bnt324-03",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1200/JCO.2026.44.16_suppl.TPS5137; NCT07365995; ongoing phase III protocol.",
+      "action": "Await randomized results.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-xalience-2026-11-14",
+      "trial_id": "xalience",
+      "trial": "XALience",
+      "path": "data/daily-evidence-2026-11-14-evening.json#xalience",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1200/JCO.2026.44.16_suppl.TPS5144; NCT07213674; ongoing phase III protocol.",
+      "action": "Await randomized results.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-pancreatic-immunochemotherapy-2026-11-14",
+      "trial_id": "pancreatic-immunochemotherapy",
+      "trial": "Toripalimab plus mFOLFIRINOX in BRPC/LAPC",
+      "path": "data/daily-evidence-2026-11-14-evening.json#pancreatic-immunochemotherapy",
+      "category": "new_trial_candidate_review",
+      "severity": "high",
+      "evidence": "Disposition: held. 10.1200/JCO-26-01393; PMID 42970668; NCT03983057; JCO randomized phase II report published 2 Nov 2026.",
+      "action": "Retrieve protocol/supplement for exact doses, stratification, surgery and safety.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-teclistamab-hr-smm-2026-11-14",
+      "trial_id": "teclistamab-hr-smm",
+      "trial": "ImmunoPRISM",
+      "path": "data/daily-evidence-2026-11-14-evening.json#teclistamab-hr-smm",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1038/s41591-026-04642-w; PMID 42728379; NCT05469893; randomized phase II Nature Medicine report.",
+      "action": "Extract full tables and infection/CRS details; separate run-in from randomized population.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-felzartamab-rd-2026-11-14",
+      "trial_id": "felzartamab-rd",
+      "trial": "Felzartamab plus lenalidomide-dexamethasone",
+      "path": "data/daily-evidence-2026-11-14-evening.json#felzartamab-rd",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1016/S2352-3026(26)00223-1; PMID 42822478; NCT03952091; phase III primary report.",
+      "action": "Extract complete toxicity and treatment-related mortality tables; note all participants were Asian.",
+      "status": "open",
+      "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "candidate-zsab-neogolp-2026-11-14",
+      "trial_id": "zsab-neogolp",
+      "trial": "ZSAB-neoGOLP",
+      "path": "data/daily-evidence-2026-11-14-evening.json#zsab-neogolp",
+      "category": "new_trial_candidate_review",
+      "severity": "medium",
+      "evidence": "Disposition: ready_for_next_batch. 10.1056/NEJMoa2513918; PMID 41780001; NCT04669496; phase 2–3 primary NEJM report.",
+      "action": "Extract protocol doses and interim OS alpha boundary; preserve EFS/OS distinction.",
+      "status": "open",
+      "created_on": "2026-11-14"
     }
   ],
   "resolved_items": [
@@ -1009,6 +1262,24 @@
       "created_on": "2026-11-14",
       "resolved_on": "2026-11-14",
       "resolution": "Page expanded from primary publication/final update with design, denominators, efficacy, harms, absolute effects, NNT/NNH limitations, QoL where reported, and dated freshness caveat."
+    },
+    {
+      "issue_id": "evidence-index-recovery-batch-2026-11-14",
+      "trial_id": null,
+      "path": "evidence/index.html",
+      "category": "evidence_index_omissions",
+      "status": "resolved",
+      "verified_on": "2026-11-14",
+      "verification": "Added all 30 canonical recovery-batch trial links under a dated section. ROSEL remains an unindexed legacy redirect, not a separate canonical trial."
+    },
+    {
+      "issue_id": "registry-header-recovery-batch-2026-11-14",
+      "trial_id": null,
+      "path": "assets/trial-page-layout.js",
+      "category": "registry_and_primary_title_display",
+      "status": "resolved",
+      "verified_on": "2026-11-14",
+      "verification": "Shared renderer reads registry_id/registry_alt and primary_title from the roster; added verified IDs for Dalmelitinib NCT06110663, UNICORN NCT05845450, HELEN-Trio 011 NCT05475678 and STAR-TREC NCT02945566 (ISRCTN14240288). Browser rendering remains open separately."
     }
   ]
 }
