@@ -501,7 +501,9 @@
       "trial": "CELESTIMO",
       "doi": null,
       "pmid": null,
-      "registry_ids": [],
+      "registry_ids": [
+        "NCT04712097"
+      ],
       "site": "Follicular Lymphoma",
       "setting": "Relapsed/refractory follicular lymphoma",
       "design": "Phase III mosunetuzumab-lenalidomide versus rituximab-lenalidomide",
@@ -536,7 +538,9 @@
       "trial": "EPCORE DLBCL-2",
       "doi": null,
       "pmid": null,
-      "registry_ids": [],
+      "registry_ids": [
+        "NCT05578976"
+      ],
       "site": "Diffuse Large B-Cell Lymphoma",
       "setting": "Newly diagnosed DLBCL, IPI 2–5",
       "design": "Phase III epcoritamab plus R-CHOP versus R-CHOP",
