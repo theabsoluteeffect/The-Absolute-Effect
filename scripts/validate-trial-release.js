@@ -9,6 +9,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const root = process.cwd();
+async function main() {
 const roster = JSON.parse(fs.readFileSync(path.join(root, 'data/master-trial-roster.json'), 'utf8'));
 const trials = roster.trials || [];
 const dates = [...new Set(trials.map(t => t.batch_date).filter(Boolean))].sort();
@@ -21,6 +22,25 @@ if (!latestDate) fail('roster', 'No batch_date found on roster entries');
 if (batch.length !== 30) fail('roster', `Latest batch ${latestDate} has ${batch.length} entries; expected exactly 30`);
 if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Duplicate trial IDs');
 if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Duplicate paths in latest batch');
+
+const canonicalTitle = s => String(s || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+for (const t of batch) {
+  const doi = String(t.primary || '').trim();
+  if (!/^10\\.\\d{4,9}\\//i.test(doi)) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
+  if (!t.primary_title) { fail(t.id, 'Primary publication title missing from roster'); continue; }
+  try {
+    const response = await fetch('https://api.crossref.org/works/' + encodeURIComponent(doi), { headers: { 'User-Agent': 'TheAbsoluteEffectReleaseQA/1.0 (https://theabsoluteeffect.pages.dev)' } });
+    if (!response.ok) { fail(t.id, 'Crossref could not resolve primary DOI: HTTP ' + response.status); continue; }
+    const payload = await response.json();
+    const resolvedTitle = payload?.message?.title?.[0] || '';
+    if (!resolvedTitle) fail(t.id, 'Crossref returned no publication title for primary DOI');
+    else if (canonicalTitle(resolvedTitle) !== canonicalTitle(t.primary_title)) {
+      fail(t.id, 'Primary DOI/title mismatch: Crossref="' + resolvedTitle + '" roster="' + t.primary_title + '"');
+    }
+  } catch (error) {
+    fail(t.id, 'Primary DOI verification request failed: ' + String(error));
+  }
+}
 const announced = roster.audit?.new_trials_added_today || [];
 const expected = batch.map(t => t.trial).sort();
 if (JSON.stringify([...announced].sort()) !== JSON.stringify(expected)) {
@@ -80,3 +100,5 @@ fs.mkdirSync(path.join(root, 'data'), { recursive: true });
 fs.writeFileSync(path.join(root, 'data/trial-release-validation.json'), JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ latest_batch_date: latestDate, latest_batch_count: batch.length, error_count: errors.length, errors }, null, 2));
 if (errors.length) process.exitCode = 1;
+}
+main().catch(error => { console.error(error); process.exitCode = 1; });
