@@ -1126,7 +1126,31 @@
         "from": "Adjuvant / Postoperative",
         "to": "Adjuvant"
       }
-    ]
+    ],
+    "repair_followup_2026_11_14": {
+      "date": "2026-11-14",
+      "branch": "atlas-batch/2026-11-14-pm-followup",
+      "base_commit": "9ef6ac58189958fc761cb6f1d059a5ced4a43f0f",
+      "status": "repair changes prepared; not merged",
+      "targeted_pages_reviewed": 30,
+      "setting_detail_fields_corrected": 30,
+      "registry_identifiers_added": {
+        "dalmelitinib-aumolertinib": "NCT06110663",
+        "unicorn": "NCT05845450",
+        "helen-trio-011": "NCT05475678",
+        "star-trec": "NCT02945566; ISRCTN14240288"
+      },
+      "evidence_index_links_added": 30,
+      "renderer_changes": [
+        "verified registry identifiers rendered as ClinicalTrials.gov links",
+        "exact primary publication title rendered in primary-source section"
+      ],
+      "full_roster_clinical_audit_complete": false,
+      "local_release_validator": "not run; container network could not resolve github.com",
+      "pr_checks": "not run; no PR opened",
+      "deployment": "not verified"
+    },
+    "last_targeted_metadata_repair": "2026-11-14"
   },
   "trials": [
     {
