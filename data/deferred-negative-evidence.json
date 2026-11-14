@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-14T19:54:02+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -18,6 +18,128 @@
         "https://doi.org/10.6004/jnccn.2026.0047"
       ],
       "status_note": "Already rostered; no duplicate page."
+    },
+    {
+      "trial": "ENZARAD (ANZUP 1303)",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_ids": [
+        "NCT02446444",
+        "ACTRN12614000126617"
+      ],
+      "site": "Prostate Cancer",
+      "setting": "Definitive RT plus long-term ADT",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Phase III: 8-year MFS-CI 74% vs 72%, HR 0.88 (95% CI 0.67–1.15), P=0.34; no overall MFS-CI or OS improvement. Prespecified pelvic-node RT subgroup (n=324) showed HR 0.47 (95% CI 0.29–0.76), adjusted P=0.004; interpret as subgroup signal, not overall success.",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-01794",
+      "next_action": "Retain for contrary-evidence synthesis on ARPI intensification with definitive RT.",
+      "trial_id": "enzarad"
+    },
+    {
+      "trial": "NHS-Galleri",
+      "doi": "10.1056/NEJMoa2505723",
+      "pmid": "42776074",
+      "registry_ids": [
+        "NCT05611632",
+        "ISRCTN91431511"
+      ],
+      "site": "Cancer Screening",
+      "setting": "Population multicancer early detection",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "71,122 vs 71,128 randomized; primary stage III/IV incidence IRR 1.03 (95% CI 0.92–1.14), P=0.63. Stage IV IRR 0.86 (95% CI 0.74–1.00) after three rounds; further follow-up required.",
+      "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505723",
+      "next_action": "Retain for screening-policy contrary-evidence review; do not claim mortality benefit.",
+      "trial_id": "nhs-galleri"
+    },
+    {
+      "trial": "PEMDA-HN",
+      "doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_ids": [
+        "NCT05814666"
+      ],
+      "site": "Head and Neck Squamous Cell Carcinoma",
+      "setting": "First-line recurrent/metastatic, PD-L1 CPS ≥1",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Randomized phase II: 69 randomized, 66 treated; ORR 15.6% with danvatirsen+pembrolizumab vs 14.3% with pembrolizumab, risk difference 1.3, P=1.0; stopped for lack of response.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42615600/",
+      "next_action": "Retain as negative STAT3/PD-1 combination evidence.",
+      "trial_id": "pemda-hn"
+    },
+    {
+      "trial": "SACI-IO HR+",
+      "doi": "10.1016/j.annonc.2026.06.012",
+      "pmid": "42323161",
+      "registry_ids": [
+        "NCT04448886"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Metastatic HR-positive/HER2-negative",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "PFS 8.4 vs 6.7 months, HR 0.76 (95% CI 0.48–1.19), P=0.12; OS 20 vs 18 months, P=0.18; no significant benefit in the unselected population.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42323161/",
+      "next_action": "Retain as contrary evidence against unselected PD-1 addition to SG; do not over-interpret exploratory PD-L1 subgroup.",
+      "trial_id": "saci-io-hr-positive"
+    },
+    {
+      "trial_id": "zeal-1l",
+      "trial": "ZEAL-1L",
+      "doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_ids": [
+        "NCT04475939"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Maintenance after first-line chemoimmunotherapy",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Phase III: in the CR/PR primary population median BICR PFS was 5.55 months in both arms; HR 1.00 (95% CI 0.79–1.27), one-sided P=0.502. Key secondary endpoints were not formally tested after hierarchical failure. No efficacy gain from adding niraparib.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42431263/",
+      "next_action": "Retain as negative maintenance-intensification evidence; do not present exploratory secondary outcomes as formally positive."
+    },
+    {
+      "trial_id": "skyscraper-07",
+      "trial": "SKYSCRAPER-07",
+      "doi": "10.1016/j.annonc.2026.07.413",
+      "pmid": "42628839",
+      "registry_ids": [
+        "NCT04543617"
+      ],
+      "site": "Oesophageal Squamous Cell Carcinoma",
+      "setting": "Consolidation after definitive chemoradiotherapy",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "The prespecified hierarchical primary comparison of atezolizumab plus tiragolumab versus placebo did not improve investigator PFS (HR 0.82, 95% CI 0.65–1.03; P=0.0947) or OS (HR 0.91, 95% CI 0.70–1.18). Atezolizumab-alone comparisons were reported as descriptive after the hierarchy failed; do not claim a confirmatory positive primary endpoint.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42628839/",
+      "next_action": "Retain for nuanced consolidation evidence review; extract full protocol hierarchy and distinguish descriptive atezolizumab-alone findings from confirmatory testing."
+    },
+    {
+      "trial_id": "optim",
+      "trial": "OPTIM (AIO-KHT-0117)",
+      "doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "registry_ids": [
+        "EudraCT 2017-003349-14"
+      ],
+      "site": "Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma",
+      "setting": "After nivolumab progression",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Randomized phase II; only 31 patients randomized after early termination. Nivolumab-ipilimumab versus docetaxel: ORR 0% vs 17.6%, median PFS 1.97 vs 3.66 months (P=0.036), median OS 3.97 vs 11.9 months; NIVO-IPI did not improve efficacy and showed numerically inferior survival.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42471483/",
+      "next_action": "Retain as small, early-terminated negative post-PD-1 rechallenge evidence; avoid overinterpreting the underpowered OS comparison."
+    },
+    {
+      "trial_id": "npc-induction-tpf-vs-adjuvant-pf",
+      "trial": "Induction TPF versus adjuvant PF after CCRT in locally advanced nasopharyngeal carcinoma",
+      "doi": "10.1016/j.radonc.2026.111746",
+      "pmid": "42604670",
+      "registry_ids": [
+        "NCT03574324"
+      ],
+      "site": "Nasopharyngeal Carcinoma",
+      "setting": "Locally advanced; induction versus adjuvant chemotherapy around CCRT",
+      "status": "deferred_negative_contrary_evidence",
+      "reason": "Phase III randomized study, N=266: 3-year PFS 79.0% with induction TPF plus CCRT versus 74.5% with CCRT followed by PF (P=0.454); no significant OS, LRFS or DMFS difference. Induction TPF increased grade 3–4 leukopenia and neutropenia.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42604670/",
+      "next_action": "Retain as sequencing/contrary evidence; extract full dose schedules and toxicity denominators before any clinical summary."
     }
   ]
 }
