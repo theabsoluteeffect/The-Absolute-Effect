@@ -1,5 +1,9 @@
 name: Update Daily Oncology Atlas
 
+concurrency:
+  group: daily-atlas-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main]
@@ -62,6 +66,13 @@ jobs:
         run: |
           node --check assets/trial-page-layout.js
           node scripts/validate-trial-release.js
+
+      - name: Upload trial release validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trial-release-validation
+          path: data/trial-release-validation.json
 
       - name: Validate atlas
         run: |
