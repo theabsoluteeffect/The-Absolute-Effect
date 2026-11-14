@@ -720,7 +720,6 @@
       "unrostered_redirect_only_pages": [
         "trial-pages/rosel/"
       ],
-      "rosEL_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier.",
       "archive_records": 15,
       "archive_records_missing_from_roster": 0,
       "current_trial_of_the_day": "GemX (gemx)",
@@ -733,7 +732,8 @@
       "evidence_index_rostered_page_paths_added": 32,
       "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
       "checked_on": "2026-11-14",
-      "scope_note": "Structural and registry reconciliation of roster IDs, exact-normalized aliases, canonical page paths, shared anchors, redirect-only stubs, archive records, current/previous Trial-of-the-Day, all daily-evidence JSON record totals and uploaded-status records, and main evidence-index links. This is not a clinical freshness review or browser-rendered QA."
+      "scope_note": "Structural and registry reconciliation of roster IDs, exact-normalized aliases, canonical page paths, shared anchors, redirect-only stubs, archive records, current/previous Trial-of-the-Day, all daily-evidence JSON record totals and uploaded-status records, and main evidence-index links. This is not a clinical freshness review or browser-rendered QA.",
+      "rosel_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier."
     }
   },
   "trials": [
