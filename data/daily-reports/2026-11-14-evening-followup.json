@@ -74,7 +74,26 @@
       "next_action": "Extract complete methods, dose schedules, pCR/EFS/OS denominators, adverse events and patient-reported outcomes.",
       "primary_title": "Neoadjuvant short-course radiotherapy followed by camrelizumab and chemotherapy versus standard of care for locally advanced rectal cancer (UNION): a prespecified interim analysis of a multicentre, open-label, randomised, phase 3 trial.",
       "publication_date": "2026-10-25",
-      "journal": "The Lancet Oncology"
+      "journal": "The Lancet Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "heron-lung01",
@@ -95,7 +114,26 @@
       "next_action": "Extract the full paper and supplement, including exact analysis populations, PFS, OS, dose intensity and toxicity.",
       "primary_title": "Ruzaltatug rezetecan versus chemotherapy for EGFR-mutated advanced non-small-cell lung cancer progressing after EGFR tyrosine kinase inhibitor therapy (HERON-Lung01): interim analysis of a randomised, open-label, phase 3 trial in China.",
       "publication_date": "2026-11-07",
-      "journal": "The Lancet"
+      "journal": "The Lancet",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "panku-lung01",
@@ -116,7 +154,26 @@
       "next_action": "Extract final PFS/interim OS estimates, exact denominators, grade 3–5 events and subsequent therapy.",
       "primary_title": "Izalontamab brengitecan versus platinum-based chemotherapy in EGFR-mutated advanced non-squamous non-small-cell lung cancer after progression on third-generation EGFR tyrosine kinase inhibitors (PANKU-Lung01): a multicentre, randomised, open-label, phase 3 trial.",
       "publication_date": "2026-10",
-      "journal": "The Lancet"
+      "journal": "The Lancet",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "find",
@@ -137,7 +194,26 @@
       "next_action": "Extract complete endpoint definitions, follow-up, recurrence denominators, treatment pathways, QoL and resource-use data; do not infer survival benefit.",
       "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial.",
       "publication_date": "2026-11-10",
-      "journal": "Journal of Clinical Oncology"
+      "journal": "Journal of Clinical Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "skyscraper-07",
@@ -158,7 +234,26 @@
       "next_action": "Retain for nuanced consolidation review; extract protocol hierarchy and do not treat descriptive monotherapy findings as confirmatory.",
       "primary_title": "Atezolizumab with or without tiragolumab in unresectable esophageal squamous-cell carcinoma following definitive concurrent chemoradiotherapy (SKYSCRAPER-07): a randomised, phase III study.",
       "publication_date": "2026-11",
-      "journal": "Annals of Oncology"
+      "journal": "Annals of Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "relight",
@@ -179,7 +274,26 @@
       "next_action": "Extract CPS-defined and ITT OS/PFS, exact safety denominators, exposure, QoL and the comparator-era limitation.",
       "primary_title": "First-Line Retlirafusp Alfa Plus Chemotherapy for Human Epidermal Growth Factor Receptor 2-Negative Gastric or Gastroesophageal Junction Adenocarcinoma: A Randomized, Double-Blind, Phase III Study (RELIGHT).",
       "publication_date": "2026-11",
-      "journal": "Journal of Clinical Oncology"
+      "journal": "Journal of Clinical Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "zeal-1l",
@@ -200,7 +314,26 @@
       "next_action": "Retain as negative maintenance-intensification evidence; do not promote exploratory secondary endpoints as formally positive.",
       "primary_title": "Phase III Study of Niraparib Plus Pembrolizumab as Maintenance Therapy for Advanced or Metastatic NSCLC (ZEAL-1L).",
       "publication_date": "2026-11",
-      "journal": "Journal of Thoracic Oncology"
+      "journal": "Journal of Thoracic Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "talentace",
@@ -222,7 +355,26 @@
       "primary_title": "On-demand transarterial chemoembolisation combined with atezolizumab and bevacizumab in patients with untreated hepatocellular carcinoma (TALENTACE): a multicentre, randomised, open-label, phase 3 trial.",
       "publication_date": "2026-11",
       "journal": "The Lancet Gastroenterology & Hepatology",
-      "registry_verification": "ClinicalTrials.gov identifier explicitly stated in primary PubMed abstract."
+      "registry_verification": "ClinicalTrials.gov identifier explicitly stated in primary PubMed abstract.",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "keylynk-001",
@@ -243,7 +395,26 @@
       "next_action": "Extract arm-specific PFS/OS, crossover, subgroup, QoL, discontinuation and grade 3–5 toxicity.",
       "primary_title": "Chemotherapy with or without pembrolizumab followed by maintenance pembrolizumab with or without olaparib as first-line treatment of patients with advanced BRCA non-mutated epithelial ovarian cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): a randomised, double-blind, placebo-controlled, phase 3 trial.",
       "publication_date": "2026-10",
-      "journal": "The Lancet Oncology"
+      "journal": "The Lancet Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "open",
@@ -262,7 +433,26 @@
       "next_action": "Extract protocol-defined non-inferiority/superiority endpoints, setup accuracy, comfort/QoL, resource use and denominators.",
       "primary_title": "OPEN: optimising patient experience in head and neck radiotherapy, a phase 3 randomised control trial comparing open versus closed face masks.",
       "publication_date": "2026-11",
-      "journal": "Radiotherapy and Oncology"
+      "journal": "Radiotherapy and Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "pearly",
@@ -281,7 +471,26 @@
       "next_action": "Extract full methods, event denominators, subgroup results, safety and patient-reported outcomes.",
       "primary_title": "A randomized phase III trial of anthracyclines followed by taxane versus taxane plus carboplatin as (neo)adjuvant therapy in patients with triple-negative breast cancer: KCSG BR 15-1 PEARLY trial.",
       "publication_date": "2026-10",
-      "journal": "Annals of Oncology"
+      "journal": "Annals of Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "npc-tpf-pf-sequencing",
@@ -302,7 +511,26 @@
       "next_action": "Retain as sequencing/contrary evidence; extract full dose schedules and toxicity denominators.",
       "primary_title": "Induction TPF versus adjuvant PF after CCRT in locally advanced nasopharyngeal carcinoma: A multicenter, randomized controlled phase III clinical trial.",
       "publication_date": "2026-10",
-      "journal": "Radiotherapy and Oncology"
+      "journal": "Radiotherapy and Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "celestimo",
@@ -318,7 +546,26 @@
       "underlying_study": "new_unique",
       "disposition": "held_primary_report_unavailable",
       "reason": "Sponsor topline announcement only; no peer-reviewed primary publication or complete conference abstract/supplement verified.",
-      "next_action": "Await primary report and official registry extraction; do not create an outcomes page from press-release-only data."
+      "next_action": "Await primary report and official registry extraction; do not create an outcomes page from press-release-only data.",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "epcore-dlbcl-2",
@@ -334,7 +581,26 @@
       "underlying_study": "new_unique",
       "disposition": "held_primary_report_unavailable",
       "reason": "Sponsor topline announcement only; exact primary endpoint definition, denominators, dose schedule, safety and full publication not verified.",
-      "next_action": "Await peer-reviewed primary report or complete conference abstract/supplement; verify registry and analysis maturity."
+      "next_action": "Await peer-reviewed primary report or complete conference abstract/supplement; verify registry and analysis maturity.",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "fantastic",
@@ -353,7 +619,26 @@
       "next_action": "Extract eligibility, cohort assignment, primary feasibility endpoint, ctDNA and RFS analyses, toxicity and limitations.",
       "primary_title": "Adjuvant mFOLFOXIRI after curative-intent resection of oligometastatic colorectal cancer: phase II FANTASTIC trial.",
       "publication_date": "2026-11-03",
-      "journal": "BJS Open"
+      "journal": "BJS Open",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "optim",
@@ -374,7 +659,26 @@
       "next_action": "Retain as small, early-terminated negative post-PD-1 rechallenge evidence; do not overinterpret OS.",
       "primary_title": "OPTIM: a randomized phase II trial of nivolumab followed by nivolumab-ipilimumab or docetaxel at progression in recurrent/metastatic squamous cell carcinoma of the head and neck (OPTIM; AIO-KHT-0117).",
       "publication_date": "2026-07-18",
-      "journal": "British Journal of Cancer"
+      "journal": "British Journal of Cancer",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "ringside",
@@ -395,7 +699,26 @@
       "next_action": "Extract all dose cohorts, efficacy and safety; distinguish dose-finding evidence from phase III confirmation.",
       "primary_title": "RINGSIDE Phase II Study of Varegacestat for Treatment of Desmoid Tumors: A Randomized Dose-Finding Clinical Trial.",
       "publication_date": "2026-11-10",
-      "journal": "Journal of Clinical Oncology"
+      "journal": "Journal of Clinical Oncology",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "etctn-10302",
@@ -411,7 +734,26 @@
       "underlying_study": "new_unique",
       "disposition": "held_abstract_only",
       "reason": "Conference abstract located; full peer-reviewed report, registry, detailed denominators and complete safety tables not verified.",
-      "next_action": "Retrieve the full abstract/supplement and registry; label evidence level clearly if a page is later justified."
+      "next_action": "Retrieve the full abstract/supplement and registry; label evidence level clearly if a page is later justified.",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "duplicate_audit": {
+        "checked_against": [
+          "master-trial-roster.json",
+          "recursive canonical trial-pages tree",
+          "trial-archive.json",
+          "trial-of-the-day.json",
+          "previous-trial-of-the-day.json",
+          "all existing daily-evidence JSON files"
+        ],
+        "exact_doi_pmid_registry_match": false,
+        "decision": "No exact study identifier or primary-publication match found; distinct underlying study."
+      }
     },
     {
       "candidate_id": "duplicate-harmoni",
