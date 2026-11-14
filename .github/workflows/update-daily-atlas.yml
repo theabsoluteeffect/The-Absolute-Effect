@@ -51,6 +51,16 @@ jobs:
       - name: Update SEO metadata and structured data on trial pages
         run: python scripts/update_trial_page_seo.py
 
+      - name: Install Node for strict trial-page release validation
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Block incomplete or malformed trial batches
+        run: |
+          node --check assets/trial-page-layout.js
+          node scripts/validate-trial-release.js
+
       - name: Validate atlas
         run: |
           python - <<'PY'
