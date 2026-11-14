@@ -1125,11 +1125,6 @@
         "id": "e4512",
         "from": "Adjuvant / Postoperative",
         "to": "Adjuvant"
-      },
-      {
-        "id": "r-alps",
-        "from": "Consolidation",
-        "to": "Metastatic"
       }
     ]
   },
@@ -8566,7 +8561,7 @@
       "trial": "R-ALPS",
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
-      "setting": "Metastatic",
+      "setting": "Consolidation",
       "setting_detail": "Stage 1 median PFS 15.1, 9.7 and 4.2 months, respectively; HR vs placebo 0.49 and 0.53. Pooled combo vs benmelstobart alone 17.4 vs 11.2 months; HR 0.82 (95% CI 0.63–1.08; P=0.12), not significant.",
       "question": "What is the clinical effect of R-ALPS in Non-Small Cell Lung Cancer (consolidation)?",
       "source": "trial-pages/r-alps/",
