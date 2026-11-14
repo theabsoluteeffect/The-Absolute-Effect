@@ -8,10 +8,12 @@
     "base_branch": "main",
     "base_commit": "62bd1634d838f111ecff30b24d518156978eb8b9",
     "work_branch": "atlas-batch/2026-11-14-pm",
-    "branch_commit_sha": "PENDING",
+    "branch_commit_sha": "9ff0f88474f1a101df8fb014f9814e45f11a4e8a",
     "pull_request": null,
     "merge_status": "not merged",
-    "production_deployment": "not claimed for this branch"
+    "production_deployment": "not claimed for this branch",
+    "repair_commit_sha": "9ff0f88474f1a101df8fb014f9814e45f11a4e8a",
+    "report_file_commit_sha": "recorded in branch history; not self-referential"
   },
   "audit": {
     "roster_entries": 437,
