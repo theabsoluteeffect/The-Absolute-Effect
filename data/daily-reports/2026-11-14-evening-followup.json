@@ -24,13 +24,17 @@
     "evidence_index_links_added": 30,
     "renderer_registry_and_primary_title_display_updated": true,
     "archive_records": 15,
-    "full_437_page_audit_complete": false
+    "full_437_page_audit_complete": false,
+    "orphan_page_paths_found": 1,
+    "orphan_stub_aliases_resolved": 1,
+    "orphan_pages_remaining": 0,
+    "page_path_roster_reconciliation": "All 431 canonical page directories map to roster page_path; the only unmatched slug was a reference-only ROSEL stub, now marked with a canonical link to the shared #rosel anchor."
   },
   "repair_queue": {
     "open_items": 105,
-    "resolved_items": 16,
+    "resolved_items": 17,
     "previous_run_open_items_merged": 21,
-    "items_closed_this_run": 3,
+    "items_closed_this_run": 4,
     "new_candidate_review_items": 14,
     "remaining_dated_current_practice_items": 68
   },
@@ -1120,7 +1124,9 @@
     "archive_count": 15,
     "unindexed_recovery_pages": 0,
     "registry_ids_added": 4,
-    "duplicate_pages_created": 0
+    "duplicate_pages_created": 0,
+    "unrostered_canonical_pages": 0,
+    "orphan_reference_stubs": 1
   },
   "validation": {
     "local_release_validator": "NOT RUN — local git clone failed because github.com could not be resolved in the container; no claim of local validation.",
