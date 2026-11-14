@@ -23,20 +23,26 @@ if (batch.length !== 30) fail('roster', `Latest batch ${latestDate} has ${batch.
 if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Duplicate trial IDs');
 if (new Set(batch.map(t => t.path)).size !== batch.length) fail('roster', 'Duplicate paths in latest batch');
 
-const canonicalTitle = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const canonicalTitle = s => norm(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
   if (!doi.startsWith('10.') || !doi.includes('/')) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
   if (!t.primary_title) { fail(t.id, 'Primary publication title missing from roster'); continue; }
   try {
-    const response = await fetch('https://api.crossref.org/works/' + encodeURIComponent(doi), { headers: { 'User-Agent': 'TheAbsoluteEffectReleaseQA/1.0 (https://theabsoluteeffect.pages.dev)' } });
-    if (!response.ok) { fail(t.id, 'Crossref could not resolve primary DOI: HTTP ' + response.status); continue; }
+    let response = null;
+    for (let attempt = 0; attempt < 4; attempt++) {
+      response = await fetch('https://api.crossref.org/works/' + encodeURIComponent(doi), { headers: { 'User-Agent': 'TheAbsoluteEffectReleaseQA/1.0 (https://theabsoluteeffect.pages.dev)' } });
+      if (response.status !== 429 || attempt === 3) break;
+      await new Promise(resolve => setTimeout(resolve, 2500 * (attempt + 1)));
+    }
+    if (!response || !response.ok) { fail(t.id, 'Crossref could not resolve primary DOI: HTTP ' + (response?.status || 'network error')); continue; }
     const payload = await response.json();
     const resolvedTitle = payload?.message?.title?.[0] || '';
     if (!resolvedTitle) fail(t.id, 'Crossref returned no publication title for primary DOI');
     else if (canonicalTitle(resolvedTitle) !== canonicalTitle(t.primary_title)) {
       fail(t.id, 'Primary DOI/title mismatch: Crossref="' + resolvedTitle + '" roster="' + t.primary_title + '"');
     }
+    await new Promise(resolve => setTimeout(resolve, 1200));
   } catch (error) {
     fail(t.id, 'Primary DOI verification request failed: ' + String(error));
   }
