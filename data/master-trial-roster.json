@@ -1148,7 +1148,9 @@
       "full_roster_clinical_audit_complete": false,
       "local_release_validator": "not run; container network could not resolve github.com",
       "pr_checks": "not run; no PR opened",
-      "deployment": "not verified"
+      "deployment": "not verified",
+      "orphan_stub_aliases_resolved": 1,
+      "full_roster_page_path_reconciliation": "431 canonical page directories mapped to roster page_path; one ROSEL stub explicitly linked to the shared reference anchor; no unrostered canonical pages remain."
     },
     "last_targeted_metadata_repair": "2026-11-14"
   },
