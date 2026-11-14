@@ -18,6 +18,14 @@ const batch = trials.filter(t => t.batch_date === latestDate);
 const errors = [];
 const norm = s => String(s || '').replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 const fail = (id, issue) => errors.push({ id, issue });
+const rendererPath = path.join(root, 'assets/trial-page-layout.js');
+const rendererSource = fs.readFileSync(rendererPath, 'utf8');
+if (/\\.card \\[data-absolute-effect\\]\\s*\\{\\s*display\\s*:\\s*none/i.test(rendererSource)) {
+  fail('renderer', 'Shared renderer hides absolute-effect pictograms inside trial cards');
+}
+if (!rendererSource.includes('dataset.outcomeStatic="true"')) {
+  fail('renderer', 'Generated outcome visualizations are not guarded against duplicate auto-rendering');
+}
 if (!latestDate) fail('roster', 'No batch_date found on roster entries');
 if (batch.length !== 30) fail('roster', `Latest batch ${latestDate} has ${batch.length} entries; expected exactly 30`);
 if (new Set(trials.map(t => t.id)).size !== trials.length) fail('roster', 'Duplicate trial IDs');
@@ -126,6 +134,9 @@ for (const t of batch) {
     }
     if (!hrefs.some(h => /^https?:\/\//i.test(h))) fail(t.id, 'No absolute external primary-source link');
   }
+  const designSection = (html.match(/<section[^>]*>[\\s\\S]*?<h2[^>]*>\\s*Design, population and treatment\\s*<\\/h2>[\\s\\S]*?<\\/section>/i) || [''])[0];
+  const designContent = norm(designSection.replace(/<h2[^>]*>[\\s\\S]*?<\\/h2>/i, ''));
+  if (t.setting_detail && designContent.includes(norm(t.setting_detail))) fail(t.id, 'Efficacy summary duplicated in design section');
   const heads = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m => norm(m[1]).toLowerCase());
   const dup = heads.find((h, i) => heads.indexOf(h) !== i);
   if (dup) fail(t.id, 'Duplicate section heading: ' + dup);
