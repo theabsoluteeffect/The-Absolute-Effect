@@ -19,7 +19,7 @@
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question."
   ],
   "audit": {
-    "permanent_trial_pages": 400,
+    "permanent_trial_pages": 399,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
     "total_unique_trials": 406,
@@ -733,8 +733,10 @@
       "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
       "checked_on": "2026-11-14",
       "scope_note": "Structural and registry reconciliation of roster IDs, exact-normalized aliases, canonical page paths, shared anchors, redirect-only stubs, archive records, current/previous Trial-of-the-Day, all daily-evidence JSON record totals and uploaded-status records, and main evidence-index links. This is not a clinical freshness review or browser-rendered QA.",
-      "rosel_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier."
-    }
+      "rosel_redirect_explanation": "The standalone trial-pages/rosel/index.html is a redirect-only wrapper to ../lung-sabr-definitions/#rosel; ROSEL is correctly represented once as an anchor-level study in the shared lung SABR reference page and is not a separate content dossier.",
+      "permanent_trial_pages": 399
+    },
+    "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper."
   },
   "trials": [
     {
