@@ -17,7 +17,8 @@
     "Do not mark a trial clinically current based only on its original publication date or presence of a source link. A freshness review must check subsequent follow-up, later practice-changing trials/meta-analyses, current disease-specific guideline recommendations, and whether the intervention remains standard; record dated sources and review status.",
     "Every rostered and newly added trial page must be checked for an actual, readable outcome visualization: show a defensible NNT/NNH patient pictogram when possible; otherwise chart a source-reported survival, response, recurrence, toxicity, or relative-effect endpoint. Pages with no detectable numeric endpoint must be explicitly flagged for manual review rather than silently left as abstract-only. Never derive NNT from median survival.",
     "Use a small shared set of treatment-setting categories across tumour sites; preserve the original specific setting in setting_detail and the full clinical question.",
-    "A batch is not releasable unless the latest-batch release validator passes: exact roster/page identity, canonical primary DOI link, no non-finite chart widths, no generic trial headings, no duplicated sections, and no conflicting NNT claims."
+    "A batch is not releasable unless the latest-batch release validator passes: exact roster/page identity, canonical primary DOI link, no non-finite chart widths, no generic trial headings, no duplicated sections, and no conflicting NNT claims.",
+    "For every NNT/NNH pictogram, store the endpoint, time horizon, source-reported absolute percentage-point difference, and NNT/NNH in a structured absolute_effect object. data-benefit/data-harm must contain the absolute percentage-point differences, never 100 divided by NNT/NNH."
   ],
   "audit": {
     "permanent_trial_pages": 431,
@@ -849,7 +850,7 @@
       "browser_qa": "pending",
       "nnt_nnh_pictograms": "added where fixed-time absolute effect was defensible"
     },
-    "latest_batch_repair_status": "in_progress",
+    "latest_batch_repair_status": "structural_repairs_complete_clinical_qa_in_progress",
     "latest_batch_release_gate": "scripts/validate-trial-release.js",
     "latest_batch_expected_page_count": 30
   },
@@ -7591,7 +7592,17 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "No CIT-related chemotherapy dose modification",
+        "horizon": "Cycles 2 and 3",
+        "benefit_percentage_points": 48,
+        "nnt": 3,
+        "harm_endpoint": "Grade ≥3 adverse events",
+        "harm_percentage_points": 15,
+        "nnh": 7,
+        "notes": "Grade ≥3 events were largely attributed to chemotherapy; the harm estimate is descriptive."
+      }
     },
     {
       "id": "optitrop-lung06",
@@ -7671,7 +7682,14 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 27,
+        "nnt": 4,
+        "notes": "OS statistical boundary was not met at interim analysis; this NNT applies only to 12-month PFS."
+      }
     },
     {
       "id": "subito",
@@ -7807,7 +7825,14 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Objective response rate",
+        "horizon": "Final OS analysis follow-up",
+        "benefit_percentage_points": 34.7,
+        "nnt": 3,
+        "notes": "ORR-based NNT only; not an OS NNT."
+      }
     },
     {
       "id": "stellar-303",
@@ -7847,7 +7872,14 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 38.6,
+        "nnt": 3,
+        "notes": "Randomized phase II non-comparative design; interpret the between-arm contrast cautiously."
+      }
     },
     {
       "id": "unicorn",
@@ -7885,7 +7917,17 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Event-free survival",
+        "horizon": "2 years",
+        "benefit_percentage_points": 31.7,
+        "nnt": 4,
+        "harm_endpoint": "Grade ≥3 treatment-emergent adverse events",
+        "harm_percentage_points": 22.9,
+        "nnh": 5,
+        "notes": "NNH is descriptive and based on all-cause grade ≥3 TEAEs."
+      }
     },
     {
       "id": "alliance-a051701",
@@ -8025,7 +8067,17 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "24 months",
+        "benefit_percentage_points": 24.1,
+        "nnt": 5,
+        "harm_endpoint": "Grade ≥3 adverse events",
+        "harm_percentage_points": 11.5,
+        "nnh": 9,
+        "notes": "Descriptive NNH based on the between-arm difference in grade ≥3 AEs."
+      }
     },
     {
       "id": "fovinaciclib",
@@ -8064,7 +8116,17 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Pathological complete response",
+        "horizon": "At surgery",
+        "benefit_percentage_points": 12.2,
+        "nnt": 9,
+        "harm_endpoint": "Grade 3–4 treatment-related adverse events",
+        "harm_percentage_points": 3.1,
+        "nnh": 33,
+        "notes": "NNT and NNH are based on the modified intention-to-treat population."
+      }
     },
     {
       "id": "anchor",
@@ -8103,7 +8165,14 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Pathological complete response",
+        "horizon": "At surgery",
+        "benefit_percentage_points": 20,
+        "nnt": 5,
+        "notes": "Calculated from 49/55 versus 38/55; no comparative grade-specific toxicity estimate entered."
+      }
     },
     {
       "id": "star-trec",
@@ -8123,7 +8192,14 @@
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
       "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14"
+      "quality_check_date": "2026-11-14",
+      "absolute_effect": {
+        "endpoint": "Total mesorectal excision-free survival among participants opting for organ preservation",
+        "horizon": "12 months",
+        "benefit_percentage_points": 17.9,
+        "nnt": 6,
+        "notes": "Approximate NNT; definitive 30-month primary endpoint remains pending."
+      }
     }
   ]
 }
