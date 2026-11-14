@@ -1,0 +1,834 @@
+{
+  "report_id": "2026-11-14-evening",
+  "run_timestamp": "2026-11-14T18:57:14+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "base_branch": "main",
+    "base_commit": "62bd1634d838f111ecff30b24d518156978eb8b9",
+    "work_branch": "atlas-batch/2026-11-14-pm",
+    "branch_commit_sha": "9ff0f88474f1a101df8fb014f9814e45f11a4e8a",
+    "pull_request": null,
+    "merge_status": "not merged",
+    "production_deployment": "not claimed for this branch",
+    "repair_commit_sha": "9ff0f88474f1a101df8fb014f9814e45f11a4e8a",
+    "report_file_commit_sha": "recorded in branch history; not self-referential"
+  },
+  "audit": {
+    "roster_entries": 437,
+    "canonical_trial_page_directories": 431,
+    "existing_pages_source_inspected": 30,
+    "scope": "Earlier 14 November recovery-batch pages inspected for registry metadata, primary-source display and index reconciliation; not a full clinical/source audit of all 437 roster entries.",
+    "index_links_added": 30,
+    "registry_identifiers_added_to_roster": 4,
+    "registry_display_renderer_updated": true,
+    "archive_records": 15,
+    "remaining_unindexed_legacy_redirects": 1
+  },
+  "repair_queue": {
+    "open_before": 68,
+    "open_after": 89,
+    "resolved_before": 13,
+    "resolved_after": 15,
+    "items_closed_this_run": 2,
+    "items_added_this_run": 21,
+    "remaining_dated_current_practice_items": 68
+  },
+  "nccn": {
+    "new_guideline_versions_verified": 0,
+    "new_subsets_reviewed": 0,
+    "existing_ledger_guidelines": [
+      {
+        "id": "nccn-hcc-v2-2026",
+        "title": "NCCN Guidelines Insights: Hepatocellular Carcinoma, Version 2.2026",
+        "version": "2.2026"
+      },
+      {
+        "id": "nccn-esophagus-egj-v4-2026",
+        "title": "NCCN Guidelines Insights: Esophageal and Esophagogastric Junction Cancers, Version 4.2026",
+        "version": "4.2026"
+      }
+    ],
+    "access_status": "official full guideline/reference-list access not obtained in this run",
+    "note": "No exact version, section, recommendation category or reference number was inferred. Existing HCC v2.2026 and Esophagus/EGJ v4.2026 entries were preserved; guideline freshness follow-up remains open."
+  },
+  "candidate_summary": {
+    "screened": 30,
+    "duplicates": 10,
+    "new_unique": 20,
+    "ready": 6,
+    "held": 10,
+    "deferred_negative": 4
+  },
+  "uploaded_count": 0,
+  "target_new_unique_trials": 30,
+  "not_uploaded": 30,
+  "uploaded_cases": [],
+  "candidate_decisions": [
+    {
+      "candidate_id": "dellphi-305",
+      "trial": "DeLLphi-305",
+      "doi": "10.1056/NEJMoa2609482",
+      "pmid": null,
+      "registry_ids": [
+        "NCT06211036"
+      ],
+      "site": "Small-Cell Lung Cancer",
+      "setting": "First-line maintenance after non-progressive platinum/etoposide/durvalumab",
+      "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2609482",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": [
+          "data/daily-evidence-2026-09-09.json"
+        ]
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_for_next_batch",
+      "reason": "Primary NEJM phase III report published 24 Oct 2026; 563 randomized; OS HR 0.42 and PFS HR 0.34 at interim analysis. September candidate record predated the results.",
+      "next_action": "Create one canonical page after full protocol/supplement extraction; potential Trial of the Day if uploaded within the freshness window."
+    },
+    {
+      "candidate_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "doi": "10.1056/NEJMoa2606208",
+      "pmid": "42874102",
+      "registry_ids": [
+        "NCT04722848"
+      ],
+      "site": "Philadelphia-positive Acute Lymphoblastic Leukaemia",
+      "setting": "Frontline adult Ph-positive ALL",
+      "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2606208",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_for_next_batch",
+      "reason": "Primary phase III NEJM report published 14 Oct 2026; 236 randomized; 24-month EFS 86% versus 67%, P<0.001.",
+      "next_action": "Extract protocol/supplement dosing and crossover details; report exact EFS and MRD denominators."
+    },
+    {
+      "candidate_id": "excaliber-rrmm",
+      "trial": "EXCALIBER-RRMM",
+      "doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_ids": [
+        "NCT04975997"
+      ],
+      "site": "Multiple Myeloma",
+      "setting": "Relapsed/refractory after 1–2 prior lines",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42790445/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held",
+      "reason": "Primary Lancet Oncology phase III report identified; initial MRD analysis available but PFS co-primary remains immature; full dose/schedule and safety extraction incomplete.",
+      "next_action": "Retrieve full paper and supplement; verify endpoint maturity and complete safety denominators."
+    },
+    {
+      "candidate_id": "trastuzumab-botidotin",
+      "trial": "Trastuzumab botidotin phase III",
+      "doi": "10.1200/JCO-26-00602",
+      "pmid": "42727044",
+      "registry_ids": [
+        "NCT06968585"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Previously treated HER2-positive unresectable/metastatic disease",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42727044/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held",
+      "reason": "Primary JCO phase III report identified; detailed dosing, full follow-up and complete grade 3–5 toxicity extraction remain incomplete.",
+      "next_action": "Retrieve full JCO article/supplement and verify all efficacy/safety denominators."
+    },
+    {
+      "candidate_id": "pro-b",
+      "trial": "PRO-B electronic symptom monitoring",
+      "doi": "10.1001/jamaoncol.2026.2661",
+      "pmid": "42560727",
+      "registry_ids": [
+        "DRKS00024015"
+      ],
+      "site": "Breast Cancer / Supportive Care",
+      "setting": "Metastatic breast cancer symptom monitoring",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42560727/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held",
+      "reason": "Primary JAMA Oncology randomized report identified; full alert workflow, denominators, symptom/QoL effect sizes and health-service outcomes not yet extracted.",
+      "next_action": "Read full article and supplement; quantify the primary symptom endpoint and patient-reported outcomes."
+    },
+    {
+      "candidate_id": "nhs-galleri",
+      "trial": "NHS-Galleri",
+      "doi": "10.1056/NEJMoa2505723",
+      "pmid": "42776074",
+      "registry_ids": [
+        "NCT05611632",
+        "ISRCTN91431511"
+      ],
+      "site": "Cancer Screening",
+      "setting": "Population multicancer early detection",
+      "source_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505723",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "Primary NEJM RCT; 71,122 versus 71,128 randomized; primary stage III/IV incidence IRR 1.03, P=0.63. Not a positive screening trial.",
+      "next_action": "Keep in the deferred-negative/contrary-evidence queue; await longer follow-up."
+    },
+    {
+      "candidate_id": "enzarad",
+      "trial": "ENZARAD (ANZUP 1303)",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_ids": [
+        "NCT02446444",
+        "ACTRN12614000126617"
+      ],
+      "site": "Prostate Cancer",
+      "setting": "Definitive RT plus long-term ADT",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-01794",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "Primary JCO phase III report; 8-year MFS-CI 74% versus 72%, HR 0.88, P=0.34; pelvic-node RT subgroup signal does not change the overall negative result.",
+      "next_action": "Keep in deferred-negative queue for ARPI intensification/RT evidence synthesis."
+    },
+    {
+      "candidate_id": "dex-oinv",
+      "trial": "DEX-OINV",
+      "doi": "10.1007/s00520-026-11459-3",
+      "pmid": "42998233",
+      "registry_ids": [
+        "CTRI/2026/02/104005"
+      ],
+      "site": "Supportive and Palliative Care",
+      "setting": "Prevention of opioid-induced nausea/vomiting in cancer pain",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42998233/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held",
+      "reason": "Primary Supportive Care in Cancer RCT; 150 randomized; reported Day-1 NNT 5 for clinically meaningful nausea. Exact dexamethasone schedule and complete safety data need full-text extraction.",
+      "next_action": "Retrieve full paper and verify NNT endpoint/timepoint arithmetic and regimen."
+    },
+    {
+      "candidate_id": "hr20013",
+      "trial": "HR20013 / PROTECT",
+      "doi": "10.1200/JCO.2026.44.16_suppl.11006",
+      "pmid": null,
+      "registry_ids": [
+        "NCT06554184"
+      ],
+      "site": "Supportive Care / Antiemesis",
+      "setting": "Prevention of CINV with moderately emetogenic chemotherapy",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.11006",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_conference_report",
+      "reason": "Authoritative ASCO 2026 oral phase III abstract; 706 randomized; delayed-phase complete response 79.0% versus 61.4%, difference 17.8 points; grade ≥3 TRAEs 1.2% versus 1.4%; FLIE patient-reported outcomes included.",
+      "next_action": "Create a conference-report page labelled abstract-only; verify NNT 6 from rounded source rates if used."
+    },
+    {
+      "candidate_id": "soft-final-followup",
+      "trial": "SOFT final 15-year outcomes",
+      "doi": "10.1016/j.annonc.2026.05.704",
+      "pmid": "42229584",
+      "registry_ids": [
+        "NCT00066690"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Adjuvant endocrine therapy in premenopausal HR-positive early breast cancer",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42229584/",
+      "match": {
+        "roster": [
+          "soft"
+        ],
+        "pages": [
+          "trial-pages/soft/index.html"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "same_existing_study_followup",
+      "disposition": "duplicate_excluded_attach_followup",
+      "reason": "SOFT is already a canonical roster/page entry. This publication is a final follow-up, not a new study; attach SOFT-specific results to the existing page.",
+      "next_action": "Update existing SOFT page after extracting SOFT-specific 15-year outcomes."
+    },
+    {
+      "candidate_id": "text",
+      "trial": "TEXT",
+      "doi": "10.1016/j.annonc.2026.05.704",
+      "pmid": "42229584",
+      "registry_ids": [
+        "NCT00066703"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Adjuvant endocrine therapy with ovarian suppression in premenopausal HR-positive early breast cancer",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42229584/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held_trial_specific_followup_extraction",
+      "reason": "TEXT is a separate randomized phase III study (2,660 ITT participants) and has no canonical page. The shared final-analysis paper must be separated from SOFT.",
+      "next_action": "Extract TEXT-specific 15-year endpoints and denominators; create a separate TEXT page and cross-link the shared publication."
+    },
+    {
+      "candidate_id": "fight-302",
+      "trial": "FIGHT-302",
+      "doi": null,
+      "pmid": null,
+      "registry_ids": [
+        "NCT03656536"
+      ],
+      "site": "Biliary Tract Cancer",
+      "setting": "First-line FGFR2-rearranged advanced cholangiocarcinoma",
+      "source_url": "https://clinicaltrials.gov/study/NCT03656536",
+      "match": {
+        "roster": [
+          "fight-302"
+        ],
+        "pages": [
+          "trial-pages/fight-302/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical FIGHT-302 page and roster entry already exist. Primary DOI/PMID/title metadata are missing from the roster and have been queued separately.",
+      "next_action": "Repair primary metadata on existing page; do not create another FIGHT-302 page."
+    },
+    {
+      "candidate_id": "dasl-hicap",
+      "trial": "DASL-HiCaP",
+      "doi": null,
+      "pmid": null,
+      "registry_ids": [
+        "NCT04136353"
+      ],
+      "site": "Prostate Cancer",
+      "setting": "Very high-risk localized or early biochemical persistent/recurrent prostate cancer treated with RT plus ADT",
+      "source_url": "https://www.bayer.com/media/en-us/darolutamide-plus-adt-and-radiation-therapy-reduces-risk-of-metastasis-or-death-in-prostate-cancer-patients-at-high-risk-of-recurrence/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held_official_conference_source",
+      "reason": "New phase III interim result reported at ESMO 2026; only sponsor/secondary summaries retrieved, not official abstract/full source. Do not publish from press-release-only evidence.",
+      "next_action": "Retrieve official ESMO LBA4 abstract/supplement and verify population, doses, event counts, OS maturity and toxicity."
+    },
+    {
+      "candidate_id": "jcog2506",
+      "trial": "JCOG2506 DECIDE-MET",
+      "doi": "10.1016/j.cllc.2026.08.008",
+      "pmid": null,
+      "registry_ids": [],
+      "site": "Gastroesophageal Cancer",
+      "setting": "Trial design/protocol only",
+      "source_url": "https://doi.org/10.1016/j.cllc.2026.08.008",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "new_unique_protocol_only",
+      "disposition": "held_protocol_only",
+      "reason": "Protocol/design publication without primary clinical outcomes; no outcomes page is appropriate yet.",
+      "next_action": "Retain protocol identity for future duplicate checks; await results."
+    },
+    {
+      "candidate_id": "bnt324-03",
+      "trial": "BNT324-03",
+      "doi": "10.1200/JCO.2026.44.16_suppl.TPS5137",
+      "pmid": null,
+      "registry_ids": [
+        "NCT07365995"
+      ],
+      "site": "Prostate Cancer",
+      "setting": "Taxane-naïve mCRPC after 1–2 ARPI lines",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.TPS5137",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "new_unique_protocol_only",
+      "disposition": "held_protocol_only",
+      "reason": "ASCO 2026 abstract describes an ongoing phase III protocol; no results are posted.",
+      "next_action": "Await randomized efficacy/safety results; retain trial identifier only."
+    },
+    {
+      "candidate_id": "xalience",
+      "trial": "XALience",
+      "doi": "10.1200/JCO.2026.44.16_suppl.TPS5144",
+      "pmid": null,
+      "registry_ids": [
+        "NCT07213674"
+      ],
+      "site": "Prostate Cancer",
+      "setting": "Chemotherapy-naïve mCRPC after ARPI",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.TPS5144",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "new_unique_protocol_only",
+      "disposition": "held_protocol_only",
+      "reason": "ASCO 2026 abstract describes an ongoing phase III protocol; no randomized outcomes are available.",
+      "next_action": "Await results; do not create an outcomes page from a protocol abstract."
+    },
+    {
+      "candidate_id": "volga",
+      "trial": "VOLGA",
+      "doi": "10.1056/NEJMoa2608323",
+      "pmid": null,
+      "registry_ids": [
+        "NCT04960709"
+      ],
+      "site": "Bladder Cancer",
+      "setting": "Perioperative MIBC",
+      "source_url": "https://www.nejm.org/doi/10.1056/NEJMoa2608323",
+      "match": {
+        "roster": [
+          "volga"
+        ],
+        "pages": [
+          "trial-pages/volga/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Existing canonical roster/page entry; same underlying VOLGA study.",
+      "next_action": "No new page; keep follow-up publications attached to the existing page."
+    },
+    {
+      "candidate_id": "optitrop-lung06",
+      "trial": "OptiTROP-Lung06",
+      "doi": "10.1056/NEJMoa2611280",
+      "pmid": "42929694",
+      "registry_ids": [
+        "NCT06711900"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Advanced EGFR-wildtype/PD-L1-negative NSCLC",
+      "source_url": "https://www.nejm.org/doi/10.1056/NEJMoa2611280",
+      "match": {
+        "roster": [
+          "optitrop-lung06"
+        ],
+        "pages": [
+          "trial-pages/optitrop-lung06/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same NCT/DOI and canonical page.",
+      "next_action": "No duplicate page; registry display was repaired centrally."
+    },
+    {
+      "candidate_id": "r-alps",
+      "trial": "R-ALPS",
+      "doi": "10.1001/jamaoncol.2026.3918",
+      "pmid": "42955021",
+      "registry_ids": [
+        "NCT04325763"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Consolidation after chemoradiotherapy",
+      "source_url": "https://doi.org/10.1001/jamaoncol.2026.3918",
+      "match": {
+        "roster": [
+          "r-alps"
+        ],
+        "pages": [
+          "trial-pages/r-alps/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same registry and primary DOI.",
+      "next_action": "No duplicate page."
+    },
+    {
+      "candidate_id": "camoral",
+      "trial": "CAMORAL",
+      "doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": null,
+      "registry_ids": [
+        "ChiCTR2000037980"
+      ],
+      "site": "Head and Neck Squamous Cell Carcinoma",
+      "setting": "Perioperative locally advanced disease",
+      "source_url": "https://doi.org/10.1001/jamaoncol.2026.4642",
+      "match": {
+        "roster": [
+          "camoral"
+        ],
+        "pages": [
+          "trial-pages/camoral/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same registry and primary DOI.",
+      "next_action": "No duplicate page."
+    },
+    {
+      "candidate_id": "dalmelitinib-aumolertinib",
+      "trial": "Dalmelitinib plus aumolertinib",
+      "doi": "10.1200/JCO-26-02432",
+      "pmid": "42928710",
+      "registry_ids": [
+        "NCT06110663"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "EGFR-TKI resistance with MET amplification",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-02432",
+      "match": {
+        "roster": [
+          "dalmelitinib-aumolertinib"
+        ],
+        "pages": [
+          "trial-pages/dalmelitinib-aumolertinib/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same primary DOI and canonical page.",
+      "next_action": "No duplicate page; registry ID added to the roster."
+    },
+    {
+      "candidate_id": "harmoni",
+      "trial": "HARMONi",
+      "doi": "10.1016/S1470-2045(26)00282-2",
+      "pmid": "42636833",
+      "registry_ids": [
+        "NCT06396065"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "EGFR-mutated advanced NSCLC after EGFR-TKI progression",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00282-2",
+      "match": {
+        "roster": [
+          "harmoni"
+        ],
+        "pages": [
+          "trial-pages/harmoni/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same NCT and DOI.",
+      "next_action": "No duplicate page."
+    },
+    {
+      "candidate_id": "krascendo-1",
+      "trial": "KRASCENDO 1",
+      "doi": "10.1056/NEJMoa2605703",
+      "pmid": null,
+      "registry_ids": [
+        "NCT06497556"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Previously treated KRAS G12C-mutated NSCLC",
+      "source_url": "https://www.nejm.org/doi/10.1056/NEJMoa2605703",
+      "match": {
+        "roster": [
+          "krascendo-1"
+        ],
+        "pages": [
+          "trial-pages/krascendo-1/index.html"
+        ],
+        "archive": [
+          "KRASCENDO 1"
+        ],
+        "prior_tod": [
+          "data/trial-of-the-day-2026-10-26.json"
+        ]
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already rostered and paged, present in trial archive, and selected as Trial of the Day on 26 October 2026.",
+      "next_action": "No duplicate page."
+    },
+    {
+      "candidate_id": "horizon-breast06",
+      "trial": "HORIZON-Breast06",
+      "doi": "10.1001/jama.2026.21372",
+      "pmid": "42925007",
+      "registry_ids": [
+        "NCT05814354"
+      ],
+      "site": "Breast Cancer",
+      "setting": "ERBB2-low advanced breast cancer",
+      "source_url": "https://doi.org/10.1001/jama.2026.21372",
+      "match": {
+        "roster": [
+          "horizon-breast06"
+        ],
+        "pages": [
+          "trial-pages/horizon-breast06/index.html"
+        ],
+        "archive": [],
+        "prior_tod": []
+      },
+      "underlying_study": "same_existing_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already committed in the 14 November recovery batch; same registry and primary DOI.",
+      "next_action": "No duplicate page."
+    },
+    {
+      "candidate_id": "pancreatic-immunochemotherapy",
+      "trial": "Toripalimab plus mFOLFIRINOX in BRPC/LAPC",
+      "doi": "10.1200/JCO-26-01393",
+      "pmid": "42970668",
+      "registry_ids": [
+        "NCT03983057"
+      ],
+      "site": "Pancreatic Cancer",
+      "setting": "Borderline resectable or locally advanced pancreatic cancer",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-01393",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "held",
+      "reason": "Primary JCO phase II RCT published 2 Nov 2026; 392 randomized; EFS 11.1 vs 9.6 months, HR 0.74 (95% CI 0.60–0.92), P=0.007; full protocol dose schedule and subgroup detail not extracted.",
+      "next_action": "Retrieve protocol/supplement and complete dose, subgroup, surgical and safety extraction."
+    },
+    {
+      "candidate_id": "pemda-hn",
+      "trial": "PEMDA-HN",
+      "doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_ids": [
+        "NCT05814666"
+      ],
+      "site": "Head and Neck Squamous Cell Carcinoma",
+      "setting": "First-line recurrent/metastatic, PD-L1 CPS ≥1",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42615600/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "Phase II RCT; ORR 15.6% versus 14.3%, risk difference 1.3, P=1.0; stopped early for lack of response.",
+      "next_action": "Retain in deferred-negative queue."
+    },
+    {
+      "candidate_id": "saci-io-hr-positive",
+      "trial": "SACI-IO HR+",
+      "doi": "10.1016/j.annonc.2026.06.012",
+      "pmid": "42323161",
+      "registry_ids": [
+        "NCT04448886"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Metastatic HR-positive/HER2-negative after endocrine therapy and 0–1 chemotherapy lines",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42323161/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "PFS 8.4 versus 6.7 months; HR 0.76 (95% CI 0.48–1.19), P=0.12; no significant benefit in the unselected population.",
+      "next_action": "Retain in deferred-negative queue; avoid over-interpreting exploratory PD-L1 subgroup."
+    },
+    {
+      "candidate_id": "teclistamab-hr-smm",
+      "trial": "ImmunoPRISM",
+      "doi": "10.1038/s41591-026-04642-w",
+      "pmid": "42728379",
+      "registry_ids": [
+        "NCT05469893"
+      ],
+      "site": "Multiple Myeloma",
+      "setting": "High-risk smoldering multiple myeloma",
+      "source_url": "https://www.nature.com/articles/s41591-026-04642-w",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_for_next_batch",
+      "reason": "Primary Nature Medicine phase II RCT; 64 enrolled, 39 randomized to teclistamab and 14 to Rd after a six-patient safety run-in; median follow-up 24.5 months; CR 74% versus 0% in randomized population.",
+      "next_action": "Extract full primary tables, dose modification and infection/CRS details."
+    },
+    {
+      "candidate_id": "felzartamab-rd",
+      "trial": "Felzartamab plus lenalidomide-dexamethasone",
+      "doi": "10.1016/S2352-3026(26)00223-1",
+      "pmid": "42822478",
+      "registry_ids": [
+        "NCT03952091"
+      ],
+      "site": "Multiple Myeloma",
+      "setting": "Relapsed/refractory after prior therapy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42822478/",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_for_next_batch",
+      "reason": "Primary Lancet Haematology phase III report; 295 randomized, 289 in full analysis; median PFS 18.9 versus 10.4 months, HR 0.62 (95% CI 0.45–0.86), P=0.0035; all participants were Asian.",
+      "next_action": "Extract complete toxicity, serious infection and treatment-related mortality tables."
+    },
+    {
+      "candidate_id": "zsab-neogolp",
+      "trial": "ZSAB-neoGOLP",
+      "doi": "10.1056/NEJMoa2513918",
+      "pmid": "41780001",
+      "registry_ids": [
+        "NCT04669496"
+      ],
+      "site": "Intrahepatic Cholangiocarcinoma",
+      "setting": "Resectable high-risk disease, neoadjuvant/perioperative",
+      "source_url": "https://www.nejm.org/doi/10.1056/NEJMoa2513918",
+      "match": {
+        "roster": [],
+        "pages": [],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "underlying_study": "new_unique",
+      "disposition": "ready_for_next_batch",
+      "reason": "Primary NEJM phase 2–3 report; 178 randomized; median EFS 18.0 versus 8.7 months, P<0.001; 24-month OS HR 0.43 but P=0.005 did not cross prespecified alpha 0.0019.",
+      "next_action": "Extract protocol doses and toxicity details; preserve the interim OS alpha-boundary distinction."
+    }
+  ],
+  "nnt_nnh_qa": {
+    "new_pages": "No new pages were committed; no new NNT/NNH values were published.",
+    "recovery_batch": "RECITE source-grounded 84% vs 36% no-dose-modification difference gives NNT 3; grade ≥3 AE 37% vs 22% gives descriptive NNH 7. These apply only to their stated endpoint/timepoint.",
+    "visualization": "Main-branch static Outcome visualization audit passed on 14 Nov 2026; browser-rendered desktop/mobile QA remains open."
+  },
+  "index_roster_archive": {
+    "roster_entries": 437,
+    "archive_records": 15,
+    "index_links_added": 30,
+    "archive_changes": 0,
+    "trial_of_day_changes": 0,
+    "current_trial_of_day": "GemX (2026-11-08)",
+    "previous_trial_of_day": "ACOSOG Z11102 (2026-11-03)",
+    "prior_tod_duplicate": "KRASCENDO 1 (2026-10-26)"
+  },
+  "validation": {
+    "main_static_audit": "PASS at 2026-11-14T13:38:04Z (workflow 43600676704)",
+    "local_release_validator": "not run locally",
+    "branch_pr_checks": "pending",
+    "browser_rendered_qa": "pending",
+    "commit_verification": "pending"
+  },
+  "deployment": {
+    "main_commit": "62bd1634d838f111ecff30b24d518156978eb8b9",
+    "main_cloudflare_check": "success",
+    "branch_preview": "pending",
+    "production_deployment_after_run": "not applicable; branch not merged"
+  },
+  "blockers_and_next_actions": [
+    "Strict release gate requires exactly 30 genuinely new unique studies in one branch. This run screened 30 candidates: 20 new unique, 10 duplicates; 6 ready for next-batch drafting, 10 held and 4 deferred-negative. No pages were committed.",
+    "Complete primary-source extraction for the 10 held unique candidates before drafting.",
+    "Create a separate TEXT page only after extracting TEXT-specific outcomes; attach the combined SOFT/TEXT follow-up to the existing SOFT page.",
+    "Reconstruct the malformed 14 November recovery-final case report; do not rely on its shifted case fields.",
+    "Retry official NCCN access and complete the 68 dated current-practice context reviews.",
+    "Run PR checks and browser-rendered desktop/mobile QA; do not merge this repair-only branch."
+  ],
+  "cumulative_unique_studies": 437,
+  "target_unique_studies": 1000,
+  "remaining_to_target": 563,
+  "pace_note": "Count is the live master-roster count; not every roster entry was independently re-audited in this run."
+}
