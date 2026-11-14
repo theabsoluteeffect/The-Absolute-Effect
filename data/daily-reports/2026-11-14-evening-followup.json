@@ -1,0 +1,750 @@
+{
+  "report_id": "2026-11-14-evening-followup",
+  "run_timestamp": "2026-11-14T19:54:02+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE — repair-only branch; 0/30 new trial pages uploaded",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "base_branch": "main",
+    "base_commit": "9ef6ac58189958fc761cb6f1d059a5ced4a43f0f",
+    "work_branch": "atlas-batch/2026-11-14-pm-followup",
+    "pull_request": null,
+    "merge_status": "not merged",
+    "deployment": "not verified"
+  },
+  "audit": {
+    "roster_entries": 437,
+    "canonical_trial_page_directories": 431,
+    "pages_reviewed_this_run": 30,
+    "scope": "Targeted audit of all 30 recovery-batch pages for setting_detail/population metadata and registry linkage; not a full clinical/source audit of all 437 canonical studies.",
+    "setting_detail_fields_corrected": 30,
+    "registry_identifiers_added": 4,
+    "evidence_index_links_added": 30,
+    "renderer_registry_and_primary_title_display_updated": true,
+    "archive_records": 15,
+    "full_437_page_audit_complete": false
+  },
+  "repair_queue": {
+    "open_items": 105,
+    "resolved_items": 16,
+    "previous_run_open_items_merged": 21,
+    "items_closed_this_run": 3,
+    "new_candidate_review_items": 14,
+    "remaining_dated_current_practice_items": 68
+  },
+  "nccn": {
+    "current_insights_records": 2,
+    "new_guideline_versions_verified": 0,
+    "new_subsets_reviewed": 0,
+    "access": "Official full NCCN guideline/reference-list access failed; existing HCC v2.2026 and Esophagus/EGJ v4.2026 records remain explicitly Insights-only.",
+    "provenance_claimed": false
+  },
+  "candidate_summary": {
+    "screened": 30,
+    "duplicates": 12,
+    "new_unique": 18,
+    "held": 14,
+    "deferred_negative": 4,
+    "uploaded": 0,
+    "target": 30
+  },
+  "uploaded_count": 0,
+  "target_new_unique_trials": 30,
+  "not_uploaded": 30,
+  "uploaded_cases": [],
+  "candidate_decisions": [
+    {
+      "candidate_id": "union",
+      "trial": "UNION",
+      "doi": "10.1016/S1470-2045(26)00446-8",
+      "pmid": "42927765",
+      "registry_ids": [
+        "NCT04928807"
+      ],
+      "site": "Rectal Cancer",
+      "setting": "Neoadjuvant; locally advanced rectal cancer",
+      "design": "Multicentre, open-label, randomized phase III; short-course RT followed by neoadjuvant chemotherapy and camrelizumab versus long-course chemoradiotherapy followed by CAPOX",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42927765/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary phase III report and registry identity located; full protocol/supplement, exact endpoint hierarchy, treatment schedules, toxicity and follow-up not yet reconciled.",
+      "next_action": "Extract complete methods, dose schedules, pCR/EFS/OS denominators, adverse events and patient-reported outcomes."
+    },
+    {
+      "candidate_id": "heron-lung01",
+      "trial": "HERON-Lung01",
+      "doi": "10.1016/S0140-6736(26)01899-4",
+      "pmid": "42933457",
+      "registry_ids": [
+        "NCT06671379"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic; EGFR-mutated disease after EGFR-TKI",
+      "design": "Multicentre randomized phase III; ruzaltatug rezetecan versus platinum-pemetrexed",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42933457/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary Lancet phase III report and NCT located; full subgroup, CNS, OS maturity and grade 3–5 toxicity tables not yet fully extracted.",
+      "next_action": "Extract the full paper and supplement, including exact analysis populations, PFS, OS, dose intensity and toxicity."
+    },
+    {
+      "candidate_id": "panku-lung01",
+      "trial": "PANKU-Lung01",
+      "doi": "10.1016/S0140-6736(26)02026-X",
+      "pmid": "42933461",
+      "registry_ids": [
+        "NCT06382116"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic; EGFR-mutated nonsquamous NSCLC after third-generation EGFR-TKI",
+      "design": "Multicentre, open-label randomized phase III; izalontamab brengitecan 2.5 mg/kg IV days 1 and 8 every 3 weeks versus platinum-pemetrexed for 4–6 cycles with pemetrexed maintenance if non-progressive",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42933461/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary Lancet phase III report, exact regimen and NCT located; complete results, subgroup, OS and safety extraction remains outstanding.",
+      "next_action": "Extract final PFS/interim OS estimates, exact denominators, grade 3–5 events and subsequent therapy."
+    },
+    {
+      "candidate_id": "find",
+      "trial": "FIND",
+      "doi": "10.1200/JCO-25-03009",
+      "pmid": "42525894",
+      "registry_ids": [
+        "NCT05904665"
+      ],
+      "site": "Colorectal Cancer",
+      "setting": "Post-curative-intent treatment; ctDNA-guided recurrence surveillance",
+      "design": "Randomized phase III surveillance strategy trial; ctDNA-guided versus standard imaging surveillance",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary JCO report and registry located. Curative-intent treatment for recurrence is a process-of-care endpoint; recurrence incidence and survival maturity must be clearly separated.",
+      "next_action": "Extract complete endpoint definitions, follow-up, recurrence denominators, treatment pathways, QoL and resource-use data; do not infer survival benefit."
+    },
+    {
+      "candidate_id": "skyscraper-07",
+      "trial": "SKYSCRAPER-07",
+      "doi": "10.1016/j.annonc.2026.07.413",
+      "pmid": "42628839",
+      "registry_ids": [
+        "NCT04543617"
+      ],
+      "site": "Oesophageal Squamous Cell Carcinoma",
+      "setting": "Consolidation after definitive chemoradiotherapy",
+      "design": "Global, double-blind, randomized phase III, 760 patients; atezolizumab plus tiragolumab, atezolizumab alone or placebo for up to 17 cycles",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42628839/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative_contrary_evidence",
+      "reason": "The hierarchically tested atezolizumab-plus-tiragolumab comparison failed primary INV-PFS (HR 0.82, 95% CI 0.65–1.03; P=0.0947) and OS (HR 0.91, 95% CI 0.70–1.18). Atezolizumab-alone comparisons were descriptive after hierarchy failure; no confirmatory positive primary claim.",
+      "next_action": "Retain for nuanced consolidation review; extract protocol hierarchy and do not treat descriptive monotherapy findings as confirmatory."
+    },
+    {
+      "candidate_id": "relight",
+      "trial": "RELIGHT",
+      "doi": "10.1200/JCO-25-02933",
+      "pmid": "42784781",
+      "registry_ids": [
+        "NCT04950322"
+      ],
+      "site": "Gastric and Gastroesophageal Junction Adenocarcinoma",
+      "setting": "First-line HER2-negative advanced/metastatic disease",
+      "design": "Randomized phase III; retlirafusp alfa plus CAPOX versus placebo plus CAPOX",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary JCO phase III report and registry located; full subgroup, dosing, patient-reported outcomes and safety extraction required before clinical interpretation.",
+      "next_action": "Extract CPS-defined and ITT OS/PFS, exact safety denominators, exposure, QoL and the comparator-era limitation."
+    },
+    {
+      "candidate_id": "zeal-1l",
+      "trial": "ZEAL-1L",
+      "doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_ids": [
+        "NCT04475939"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Maintenance after response to first-line chemoimmunotherapy",
+      "design": "Phase III randomized maintenance trial; niraparib plus pembrolizumab versus pembrolizumab-based control",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42431263/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative_contrary_evidence",
+      "reason": "Primary phase III result: in the CR/PR primary population median BICR PFS was 5.55 months in both arms; HR 1.00 (95% CI 0.79–1.27), one-sided P=0.502. No benefit from adding niraparib.",
+      "next_action": "Retain as negative maintenance-intensification evidence; do not promote exploratory secondary endpoints as formally positive."
+    },
+    {
+      "candidate_id": "talentace",
+      "trial": "TALENTACE",
+      "doi": "10.1016/S2468-1253(26)00212-8",
+      "pmid": "42641632",
+      "registry_ids": [],
+      "site": "Hepatocellular Carcinoma",
+      "setting": "Untreated intermediate/high-burden unresectable HCC eligible for TACE",
+      "design": "Multicentre randomized open-label phase III; TACE plus atezolizumab/bevacizumab versus TACE alone",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42641632/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary Lancet Gastroenterology & Hepatology phase III report located; exact registry ID, TACE-PFS definition, OS maturity, treatment burden and full toxicity tables require reconciliation.",
+      "next_action": "Verify registry from the primary article/official record and extract all efficacy, safety and QoL outcomes."
+    },
+    {
+      "candidate_id": "keylynk-001",
+      "trial": "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+      "doi": "10.1016/S1470-2045(26)00223-8",
+      "pmid": "42705254",
+      "registry_ids": [
+        "NCT03740165"
+      ],
+      "site": "Ovarian Cancer",
+      "setting": "First-line advanced epithelial ovarian cancer; BRCA-wild-type population",
+      "design": "Phase III randomized three-arm maintenance strategy trial",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42705254/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary Lancet Oncology phase III report and registry located; all three arms, biomarker hierarchy, maintenance schedules and OS maturity need complete extraction.",
+      "next_action": "Extract arm-specific PFS/OS, crossover, subgroup, QoL, discontinuation and grade 3–5 toxicity."
+    },
+    {
+      "candidate_id": "open",
+      "trial": "OPEN",
+      "doi": "10.1016/j.radonc.2026.111779",
+      "pmid": "42731759",
+      "registry_ids": [],
+      "site": "Head and Neck Cancer Radiotherapy / Supportive Care",
+      "setting": "Radiotherapy immobilisation and patient experience",
+      "design": "Phase III randomized trial comparing closed five-point mask without SGRT with open three-point and open five-point masks supported by SGRT",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42731759/",
+      "source_status": "primary_open_access_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary open-access phase III report located; exact sample size, setup accuracy margins, patient-experience endpoints and registry record not yet extracted.",
+      "next_action": "Extract protocol-defined non-inferiority/superiority endpoints, setup accuracy, comfort/QoL, resource use and denominators."
+    },
+    {
+      "candidate_id": "pearly",
+      "trial": "KCSG BR 15-1 PEARLY",
+      "doi": "10.1016/j.annonc.2026.05.703",
+      "pmid": "42218963",
+      "registry_ids": [],
+      "site": "Triple-Negative Breast Cancer",
+      "setting": "Neoadjuvant/adjuvant early-stage TNBC",
+      "design": "Randomized phase III; anthracycline followed by taxane versus taxane plus carboplatin as (neo)adjuvant chemotherapy",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42218963/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary Annals of Oncology phase III report located; exact eligibility, treatment sequence, DFS/OS, grade 3–5 toxicity and QoL need extraction; registry not yet verified.",
+      "next_action": "Extract full methods, event denominators, subgroup results, safety and patient-reported outcomes."
+    },
+    {
+      "candidate_id": "npc-tpf-pf-sequencing",
+      "trial": "Induction TPF versus adjuvant PF after CCRT in locally advanced nasopharyngeal carcinoma",
+      "doi": "10.1016/j.radonc.2026.111746",
+      "pmid": "42604670",
+      "registry_ids": [
+        "NCT03574324"
+      ],
+      "site": "Nasopharyngeal Carcinoma",
+      "setting": "Locally advanced; induction versus adjuvant chemotherapy around CCRT",
+      "design": "Multicentre randomized phase III, N=266; induction TPF then CCRT versus CCRT then PF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42604670/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative_contrary_evidence",
+      "reason": "3-year PFS 79.0% versus 74.5% (P=0.454), with no significant OS/LRFS/DMFS difference; induction arm had more grade 3–4 leukopenia and neutropenia.",
+      "next_action": "Retain as sequencing/contrary evidence; extract full dose schedules and toxicity denominators."
+    },
+    {
+      "candidate_id": "celestimo",
+      "trial": "CELESTIMO",
+      "doi": null,
+      "pmid": null,
+      "registry_ids": [],
+      "site": "Follicular Lymphoma",
+      "setting": "Relapsed/refractory follicular lymphoma",
+      "design": "Phase III mosunetuzumab-lenalidomide versus rituximab-lenalidomide",
+      "source_url": "https://www.gene.com/media/press-releases/15126/2026-09-16/genentechs-lunsumio-based-regimen-significantly-improves-progression-free-survival-in-phase-iii-celestimo-study",
+      "source_status": "sponsor_topline_only",
+      "underlying_study": "new_unique",
+      "disposition": "held_primary_report_unavailable",
+      "reason": "Sponsor topline announcement only; no peer-reviewed primary publication or complete conference abstract/supplement verified.",
+      "next_action": "Await primary report and official registry extraction; do not create an outcomes page from press-release-only data."
+    },
+    {
+      "candidate_id": "epcore-dlbcl-2",
+      "trial": "EPCORE DLBCL-2",
+      "doi": null,
+      "pmid": null,
+      "registry_ids": [],
+      "site": "Diffuse Large B-Cell Lymphoma",
+      "setting": "Newly diagnosed DLBCL, IPI 2–5",
+      "design": "Phase III epcoritamab plus R-CHOP versus R-CHOP",
+      "source_url": "https://mfn.se/one/a/genmab/genmab-and-abbvie-announce-epcoritamab-in-combination-with-r-chop-demonstrates-statistically-significant-improvement-in-progression-free-survival-in-patients-with-newly-diagnosed-diffuse-large-b-cell-lymphoma-806b1c4e",
+      "source_status": "sponsor_topline_only",
+      "underlying_study": "new_unique",
+      "disposition": "held_primary_report_unavailable",
+      "reason": "Sponsor topline announcement only; exact primary endpoint definition, denominators, dose schedule, safety and full publication not verified.",
+      "next_action": "Await peer-reviewed primary report or complete conference abstract/supplement; verify registry and analysis maturity."
+    },
+    {
+      "candidate_id": "fantastic",
+      "trial": "FANTASTIC",
+      "doi": "10.1093/bjsopen/zrag144",
+      "pmid": "42981165",
+      "registry_ids": [],
+      "site": "Colorectal Cancer",
+      "setting": "Oligometastatic colorectal cancer after complete metastasectomy",
+      "design": "Multicentre non-randomized phase II; adjuvant mFOLFOXIRI versus standard-of-care selection cohort",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42981165/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary BJS Open phase II report verified; treatment assignment was not randomized, so comparisons with SOC are vulnerable to selection bias.",
+      "next_action": "Extract eligibility, cohort assignment, primary feasibility endpoint, ctDNA and RFS analyses, toxicity and limitations."
+    },
+    {
+      "candidate_id": "optim",
+      "trial": "OPTIM (AIO-KHT-0117)",
+      "doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "registry_ids": [
+        "EudraCT 2017-003349-14"
+      ],
+      "site": "Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma",
+      "setting": "After nivolumab progression",
+      "design": "Early-terminated randomized phase II; nivolumab-ipilimumab versus docetaxel after nivolumab progression",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42471483/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "deferred_negative_contrary_evidence",
+      "reason": "Only 31 patients randomized after early termination; ORR 0% versus 17.6%, median PFS 1.97 versus 3.66 months (P=0.036), with numerically inferior OS for nivolumab-ipilimumab.",
+      "next_action": "Retain as small, early-terminated negative post-PD-1 rechallenge evidence; do not overinterpret OS."
+    },
+    {
+      "candidate_id": "ringside",
+      "trial": "RINGSIDE",
+      "doi": "10.1200/JCO-26-00725",
+      "pmid": "42848980",
+      "registry_ids": [
+        "NCT04871282"
+      ],
+      "site": "Desmoid Tumour",
+      "setting": "Progressive desmoid tumour requiring systemic therapy",
+      "design": "Randomized phase II dose-finding trial of varegacestat",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42848980/",
+      "source_status": "primary_peer_reviewed_report_verified",
+      "underlying_study": "new_unique",
+      "disposition": "held_for_full_source_extraction",
+      "reason": "Primary JCO phase II report and NCT located; dose-selection rationale, response criteria, durability, patient-reported outcomes and grade 3–5 toxicity need extraction.",
+      "next_action": "Extract all dose cohorts, efficacy and safety; distinguish dose-finding evidence from phase III confirmation."
+    },
+    {
+      "candidate_id": "etctn-10302",
+      "trial": "ETCTN 10302",
+      "doi": "10.1200/JCO.2026.44.16_suppl.3096",
+      "pmid": null,
+      "registry_ids": [],
+      "site": "Breast Cancer",
+      "setting": "Metastatic HER2-negative breast cancer; biomarker-selected bone-dominant disease",
+      "design": "Phase II conference abstract only",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.3096",
+      "source_status": "conference_abstract_only",
+      "underlying_study": "new_unique",
+      "disposition": "held_abstract_only",
+      "reason": "Conference abstract located; full peer-reviewed report, registry, detailed denominators and complete safety tables not verified.",
+      "next_action": "Retrieve the full abstract/supplement and registry; label evidence level clearly if a page is later justified."
+    },
+    {
+      "candidate_id": "duplicate-harmoni",
+      "trial": "HARMONi",
+      "doi": "10.1016/S1470-2045(26)00282-2",
+      "primary_title": "Ivonescimab plus chemotherapy versus placebo plus chemotherapy in patients with advanced EGFR-mutated non-small-cell lung cancer after disease progression on EGFR tyrosine kinase inhibitor therapy (HARMONi): a multicentre, randomised, double-blind, phase 3 trial",
+      "pmid": "42636833",
+      "registry_ids": [
+        "NCT06396065"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00282-2",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "harmoni"
+        ],
+        "pages": [
+          "trial-pages/harmoni/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-dalmelitinib-aumolertinib",
+      "trial": "Dalmelitinib plus aumolertinib",
+      "doi": "10.1200/JCO-26-02432",
+      "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
+      "pmid": "42928710",
+      "registry_ids": [
+        "NCT06110663"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic",
+      "source_url": "https://doi.org/10.1200/JCO-26-02432",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "dalmelitinib-aumolertinib"
+        ],
+        "pages": [
+          "trial-pages/dalmelitinib-aumolertinib/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-optitrop-lung06",
+      "trial": "OptiTROP-Lung06",
+      "doi": "10.1056/NEJMoa2611280",
+      "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
+      "pmid": "42929694",
+      "registry_ids": [
+        "NCT06711900"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic",
+      "source_url": "https://doi.org/10.1056/NEJMoa2611280",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "optitrop-lung06"
+        ],
+        "pages": [
+          "trial-pages/optitrop-lung06/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-krystal-12",
+      "trial": "KRYSTAL-12",
+      "doi": "10.1016/S0140-6736(25)00866-9",
+      "primary_title": "Adagrasib versus docetaxel in KRASG12C-mutated non-small-cell lung cancer (KRYSTAL-12): a randomised, open-label, phase 3 trial",
+      "pmid": "40783289",
+      "registry_ids": [
+        "NCT04685135"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic",
+      "source_url": "https://doi.org/10.1016/S0140-6736(25)00866-9",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "krystal-12"
+        ],
+        "pages": [
+          "trial-pages/krystal-12/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-impower151",
+      "trial": "IMpower151",
+      "doi": "10.1038/s41591-025-03658-y",
+      "primary_title": "Atezolizumab plus bevacizumab and chemotherapy in metastatic nonsquamous NSCLC: the randomized double-blind phase 3 IMpower151 trial",
+      "pmid": null,
+      "registry_ids": [
+        "NCT04194203"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Metastatic",
+      "source_url": "https://doi.org/10.1038/s41591-025-03658-y",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "impower151"
+        ],
+        "pages": [
+          "trial-pages/impower151/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-r-alps",
+      "trial": "R-ALPS",
+      "doi": "10.1001/jamaoncol.2026.3918",
+      "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer",
+      "pmid": "42955021",
+      "registry_ids": [
+        "NCT04325763"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Consolidation",
+      "source_url": "https://doi.org/10.1001/jamaoncol.2026.3918",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "r-alps"
+        ],
+        "pages": [
+          "trial-pages/r-alps/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-e4512",
+      "trial": "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "primary_title": "Crizotinib versus observation or placebo for surgically resected early-stage ALK-positive non-small-cell lung cancer (Eastern Cooperative Oncology Group–American College of Radiology Imaging Network E4512): a phase 3 trial",
+      "pmid": "42641639",
+      "registry_ids": [
+        "NCT02201992"
+      ],
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Adjuvant",
+      "source_url": "https://doi.org/10.1016/S2213-2600(26)00192-X",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "e4512"
+        ],
+        "pages": [
+          "trial-pages/e4512/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-emerald-3",
+      "trial": "EMERALD-3",
+      "doi": "10.1016/S1470-2045(26)00278-0",
+      "primary_title": "Durvalumab and tremelimumab, with or without lenvatinib, combined with transarterial chemoembolisation in participants with embolisation-eligible hepatocellular carcinoma (EMERALD-3): a global, randomised, open-label, sponsor-blinded, phase 3 study",
+      "pmid": null,
+      "registry_ids": [
+        "NCT05301842"
+      ],
+      "site": "Hepatocellular Carcinoma",
+      "setting": "Locoregional / Embolisation-Eligible",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00278-0",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "emerald-3"
+        ],
+        "pages": [
+          "trial-pages/emerald-3/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-horizon-breast06",
+      "trial": "HORIZON-Breast06",
+      "doi": "10.1001/jama.2026.21372",
+      "primary_title": "Trastuzumab Rezetecan in ERBB2-Low Advanced Breast Cancer",
+      "pmid": "42925007",
+      "registry_ids": [
+        "NCT05814354"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Advanced / Metastatic",
+      "source_url": "https://doi.org/10.1001/jama.2026.21372",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "horizon-breast06"
+        ],
+        "pages": [
+          "trial-pages/horizon-breast06/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-ascent-04-keynote-d19",
+      "trial": "ASCENT-04 / KEYNOTE-D19",
+      "doi": "10.1056/NEJMoa2508959",
+      "primary_title": "Sacituzumab Govitecan plus Pembrolizumab for Advanced Triple-Negative Breast Cancer",
+      "pmid": null,
+      "registry_ids": [
+        "NCT05382286"
+      ],
+      "site": "Breast Cancer",
+      "setting": "Advanced / Metastatic",
+      "source_url": "https://doi.org/10.1056/NEJMoa2508959",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "ascent-04-keynote-d19"
+        ],
+        "pages": [
+          "trial-pages/ascent-04-keynote-d19/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-keynote-c93",
+      "trial": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "doi": "10.1016/S0140-6736(26)02095-7",
+      "primary_title": "First-line pembrolizumab versus carboplatin plus paclitaxel in participants with mismatch repair-deficient advanced or recurrent endometrial cancer (KEYNOTE-C93/GOG-3064/ENGOT-en15): interim analysis of a multicentre, open-label, randomised, active-comparator controlled, phase 3 trial",
+      "pmid": "42933458",
+      "registry_ids": [
+        "NCT05173987"
+      ],
+      "site": "Endometrial Cancer",
+      "setting": "Advanced / Metastatic",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)02095-7",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "keynote-c93"
+        ],
+        "pages": [
+          "trial-pages/keynote-c93/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    },
+    {
+      "candidate_id": "duplicate-star-trec",
+      "trial": "STAR-TREC",
+      "doi": "10.1016/S1470-2045(26)00228-7",
+      "primary_title": "Chemoradiotherapy versus short-course radiotherapy for response-adapted organ preservation in early-stage and intermediate-stage rectal cancer (STAR-TREC): 12-month results of an international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial",
+      "pmid": "42633754",
+      "registry_ids": [
+        "NCT02945566",
+        "ISRCTN14240288"
+      ],
+      "site": "Rectal Cancer",
+      "setting": "Definitive / Organ Preservation",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00228-7",
+      "source_status": "existing_canonical_study",
+      "underlying_study": "duplicate_existing",
+      "disposition": "duplicate_excluded",
+      "match": {
+        "roster": [
+          "star-trec"
+        ],
+        "pages": [
+          "trial-pages/star-trec/"
+        ],
+        "archive": [],
+        "prior_tod": [],
+        "prior_daily_evidence": []
+      },
+      "reason": "Exact canonical trial already exists in the live master roster and page tree; no second page permitted.",
+      "next_action": "Keep one canonical page and attach any follow-up publication to this record."
+    }
+  ],
+  "nnt_nnh_qa": {
+    "new_pages": 0,
+    "existing_batch": "No new NNT/NNH claims altered in this run. The 30 recovery-batch pages' setting_detail metadata was corrected; NNT/NNH still requires separate primary-source and visual QA. Static outcome audit status from main is not a substitute for manual review.",
+    "manual_review_complete": false
+  },
+  "index_roster_archive": {
+    "roster_count": 437,
+    "canonical_page_count": 431,
+    "archive_count": 15,
+    "unindexed_recovery_pages": 0,
+    "registry_ids_added": 4,
+    "duplicate_pages_created": 0
+  },
+  "validation": {
+    "local_release_validator": "NOT RUN — local git clone failed because github.com could not be resolved in the container; no claim of local validation.",
+    "pr_checks": "NOT RUN — no PR opened because the required local validator gate could not be satisfied.",
+    "merge": "not merged"
+  },
+  "deployment": {
+    "cloudflare_pages": "not independently verified",
+    "representative_live_pages": "not opened and visually inspected in a browser"
+  },
+  "blockers_and_next_actions": [
+    "0/30 new pages uploaded; 30 not uploaded. Fourteen new unique candidates remain held for full extraction; four negative/contrary candidates are deferred.",
+    "Run scripts/validate-trial-release.js locally in an environment with a current checkout before opening a PR.",
+    "After local validation, open a repair-only PR for metadata, index and renderer corrections; run Outcome visualization audit and strict release validator and inspect their reports.",
+    "Verify Cloudflare Pages deployment and browser-rendered registry/primary-title metadata on representative desktop and mobile pages.",
+    "Continue the 14 held candidate reviews; do not publish until each has complete source extraction and the exact 30-study release batch is ready.",
+    "Retry authorised official NCCN access and continue ESMO/ASCO/EAU/ASTRO mapping without inferring NCCN citation provenance."
+  ],
+  "cumulative_unique_studies": 437,
+  "target_unique_studies": 1000,
+  "remaining_to_target": 563,
+  "pace_note": "43.7% of target; 563 remaining. The target of 30 new unique studies was not met in this run."
+}
