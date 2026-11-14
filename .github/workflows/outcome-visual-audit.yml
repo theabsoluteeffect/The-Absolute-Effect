@@ -20,6 +20,8 @@ on:
       - 'trial-pages/**'
       - 'assets/absolute-effect.js'
       - 'assets/trial-page-template.js'
+      - 'assets/trial-page-layout.js'
+      - 'scripts/validate-trial-release.js'
       - 'data/master-trial-roster.json'
       - 'scripts/audit-outcome-visuals.js'
       - '.github/workflows/outcome-visual-audit.yml'
