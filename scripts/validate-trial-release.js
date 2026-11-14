@@ -134,8 +134,8 @@ for (const t of batch) {
     }
     if (!hrefs.some(h => /^https?:\/\//i.test(h))) fail(t.id, 'No absolute external primary-source link');
   }
-  const designSection = (html.match(/<section[^>]*>[\\s\\S]*?<h2[^>]*>\\s*Design, population and treatment\\s*<\\/h2>[\\s\\S]*?<\\/section>/i) || [''])[0];
-  const designContent = norm(designSection.replace(/<h2[^>]*>[\\s\\S]*?<\\/h2>/i, ''));
+  const designSection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Design, population and treatment\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const designContent = norm(designSection.replace(/<h2[^>]*>[\s\S]*?<\/h2>/i, ''));
   if (t.setting_detail && designContent.includes(norm(t.setting_detail))) fail(t.id, 'Efficacy summary duplicated in design section');
   const heads = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m => norm(m[1]).toLowerCase());
   const dup = heads.find((h, i) => heads.indexOf(h) !== i);
