@@ -83,6 +83,7 @@ for (const t of batch) {
     if (pageNnts.some(n => Number(n) !== Number(detailNnt[1]))) fail(t.id, `NNT mismatch: roster ${detailNnt[1]}, page ${pageNnts.join(', ')}`);
   }
   const absolute = t.absolute_effect;
+  if (t.descriptive_outcome && /data-absolute-effect/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must not be rendered as an absolute treatment-effect pictogram');
   const aeMarkup = (html.match(/<div\b[^>]*data-absolute-effect[^>]*>/i) || [''])[0];
   if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
   if (absolute) {
