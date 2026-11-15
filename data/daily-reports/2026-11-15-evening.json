@@ -10,7 +10,8 @@
     "work_branch": "atlas-batch/2026-11-15-pm",
     "branch_commit": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
     "pull_request": null,
-    "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c"
+    "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
+    "follow_up_commit_sha": "eb719413fc96c4f83836f084645ce8ed486302df"
   },
   "audit": {
     "canonical_trial_pages_total": 431,
@@ -1018,7 +1019,11 @@
   "deployment": {
     "main_commit_cloudflare_check": "success reported on main commit 608076f",
     "branch_changes_deployed": false,
-    "live_page_open_check": "not independently verified"
+    "live_page_open_check": "not independently verified",
+    "branch_cloudflare_check": "success",
+    "branch_preview": "Cloudflare Pages status check completed successfully; a public preview URL was not independently retrieved/opened.",
+    "production_deployment": "not claimed; no PR was opened or merged",
+    "main_cloudflare_check": "success on main commit 608076f608609d0483f63cee7084ff431c21c2fe"
   },
   "blockers_and_next_actions": [
     "0/30 new pages uploaded; 30 not uploaded. The candidate pool contains 6 page candidates requiring full dose/safety/endpoint extraction, 11 held candidates and 5 deferred-negative candidates; do not pad to 30.",
