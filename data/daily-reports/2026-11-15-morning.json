@@ -22,7 +22,9 @@
     "identity_and_index_checked": 4,
     "repairs_made": 3,
     "full_roster_audit_completed": false,
-    "source_audit_metadata_stale": true
+    "source_audit_metadata_stale": true,
+    "repair_queue_open_after": 67,
+    "repair_queue_resolved_total": 19
   },
   "repairs": [
     {
@@ -79,11 +81,20 @@
   "repair_queue": {
     "open_before": 68,
     "resolved_before": 13,
-    "existing_items_closed": 0,
+    "existing_items_closed": 3,
     "new_resolved_defects": 3,
-    "open_after": 70,
-    "resolved_after": 16,
-    "full_queue_complete": false
+    "open_after": 67,
+    "resolved_after": 19,
+    "full_queue_complete": false,
+    "closed_issue_ids": [
+      "dated-context-keynote-a18",
+      "dated-context-lacc",
+      "dated-context-shape"
+    ],
+    "next_open_guideline_tasks": [
+      "nccn-cervical-guideline-freshness-2026-11-15",
+      "nccn-breast-guideline-mapping-neo-healer-2026-11-15"
+    ]
   },
   "guideline_review": {
     "nccn_guidelines_or_records_added": 2,

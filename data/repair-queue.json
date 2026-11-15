@@ -407,34 +407,10 @@
       "created_on": "2026-11-14"
     },
     {
-      "issue_id": "dated-context-keynote-a18",
-      "trial_id": "keynote-a18",
-      "trial": "KEYNOTE-A18",
-      "path": "trial-pages/keynote-a18/index.html",
-      "category": "dated_current_practice_context",
-      "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
-      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
-    },
-    {
       "issue_id": "dated-context-krascendo-1",
       "trial_id": "krascendo-1",
       "trial": "KRASCENDO 1",
       "path": "trial-pages/krascendo-1/index.html",
-      "category": "dated_current_practice_context",
-      "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
-      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
-    },
-    {
-      "issue_id": "dated-context-lacc",
-      "trial_id": "lacc",
-      "trial": "LACC trial",
-      "path": "trial-pages/lacc/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
@@ -675,18 +651,6 @@
       "trial_id": "serena-6",
       "trial": "SERENA-6",
       "path": "trial-pages/serena-6/index.html",
-      "category": "dated_current_practice_context",
-      "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
-      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
-    },
-    {
-      "issue_id": "dated-context-shape",
-      "trial_id": "shape",
-      "trial": "SHAPE",
-      "path": "trial-pages/shape/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
@@ -1094,6 +1058,72 @@
         "browser_rendered_qa": false,
         "branch_only": true
       }
+    },
+    {
+      "issue_id": "dated-context-keynote-a18",
+      "trial_id": "keynote-a18",
+      "trial": "KEYNOTE-A18",
+      "path": "trial-pages/keynote-a18/index.html",
+      "category": "dated_current_practice_context",
+      "severity": "low",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
+      "status": "resolved",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      }
+    },
+    {
+      "issue_id": "dated-context-lacc",
+      "trial_id": "lacc",
+      "trial": "LACC trial",
+      "path": "trial-pages/lacc/index.html",
+      "category": "dated_current_practice_context",
+      "severity": "low",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
+      "status": "resolved",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      }
+    },
+    {
+      "issue_id": "dated-context-shape",
+      "trial_id": "shape",
+      "trial": "SHAPE",
+      "path": "trial-pages/shape/index.html",
+      "category": "dated_current_practice_context",
+      "severity": "low",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
+      "status": "resolved",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      }
     }
   ],
   "last_partial_run": {
@@ -1111,10 +1141,10 @@
       "lacc",
       "shape"
     ],
-    "closed_existing_items": 0,
+    "closed_existing_items": 3,
     "new_resolved_defects": 3,
-    "open_items_after_run": 70,
-    "resolved_items_total": 16,
+    "open_items_after_run": 67,
+    "resolved_items_total": 19,
     "full_audit_completed": false,
     "next_page_to_review": "abcsg-16-salsa"
   }
