@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -18,6 +18,51 @@
         "https://doi.org/10.6004/jnccn.2026.0047"
       ],
       "status_note": "Already rostered; no duplicate page."
+    },
+    {
+      "id": "enzarad",
+      "trial": "ENZARAD / ANZUP 1303",
+      "tumour_site": "Prostate cancer",
+      "setting": "High-risk localised disease · definitive radiotherapy + ADT",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer.",
+      "primary_source_url": "https://doi.org/10.1200/JCO-26-01794",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "Phase 3 result did not establish a metastasis-free or overall-survival benefit from adding enzalutamide to standard ADT plus radiotherapy; subgroup findings should not be promoted as a general standard.",
+      "next_action": "Verify the exact trial registry/protocol identifier and extract the full primary efficacy/safety tables; map only if needed to interpret an active recommendation."
+    },
+    {
+      "id": "anzup-1301",
+      "trial": "ANZUP 1301",
+      "tumour_site": "Bladder cancer",
+      "setting": "High-risk non-muscle-invasive bladder cancer · intravesical adjuvant therapy",
+      "doi": "10.1016/j.eururo.2026.01.009",
+      "pmid": "41633899",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer an ACTRN/UMIN identifier.",
+      "primary_source_url": "https://doi.org/10.1016/j.eururo.2026.01.009",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "BCG plus mitomycin did not demonstrate a statistically significant disease-free-survival advantage over BCG alone in the primary analysis. The possible reduction in BCG exposure is a treatment-burden signal, not proof of superior disease control.",
+      "next_action": "Retrieve the full protocol/registry and detailed primary tables; retain as contrary evidence for BCG-sparing decisions."
+    },
+    {
+      "id": "e4512",
+      "trial": "E4512",
+      "tumour_site": "Non-small-cell lung cancer",
+      "setting": "Adjuvant · resected ALK-positive disease",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "pmid": null,
+      "registry_id": "NCT01871805",
+      "primary_source_url": "https://clinicaltrials.gov/study/NCT01871805",
+      "existing_page": "trial-pages/e4512/index.html",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "The existing Atlas page records no disease-free-survival benefit from adjuvant crizotinib versus observation. Retain as negative evidence; do not create a duplicate page or present adjuvant crizotinib as standard.",
+      "next_action": "Complete primary-publication/abstract citation verification and map the negative result to current ALK-positive resected NSCLC recommendations."
     }
   ]
 }

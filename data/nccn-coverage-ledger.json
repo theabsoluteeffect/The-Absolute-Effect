@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -102,7 +102,85 @@
         "Obtain the complete publicly accessible Insights reference list or an authorised full guideline source.",
         "Do not infer exact NCCN citation numbers or mine candidates from secondary summaries."
       ]
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v2-2026-metadata-only",
+      "title": "Cervical Cancer, Version 2.2026: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2026",
+      "publication_date": "2025-12",
+      "doi": "10.6004/jnccn.2025.0057",
+      "pmid": "41671440",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671440/",
+      "source_scope": "PubMed-indexed NCCN-authored guideline article record only; complete NCCN guideline and reference list were not accessible in this run.",
+      "review_status": "metadata_only_no_recommendation_mapping",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [],
+      "next_action": "Retrieve authorised full guideline/reference list; confirm current version and map exact citations for KEYNOTE-A18, LACC and SHAPE."
+    },
+    {
+      "guideline_id": "nccn-gastric-cancer-v2-2025-citation-only",
+      "title": "Gastric Cancer, Version 2.2025: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2025",
+      "publication_date": "2025",
+      "source_url": "https://www.nccn.org/guidelines",
+      "source_scope": "Cited as reference 4 in the 2026 oral paclitaxel phase 3 publication; this is citation provenance only, not a direct review of the guideline.",
+      "review_status": "citation_only_current_version_not_confirmed",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [
+        {
+          "source_doi": "10.1016/j.esmoop.2026.108312",
+          "source_pmid": "42617423",
+          "source_reference_number": 4,
+          "exact_reference_text": "NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer. Version 2.2025."
+        }
+      ],
+      "next_action": "Retrieve the current official NCCN Gastric Cancer version and reference list; map the cited recommendation only if the exact section/category is visible."
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited.",
+  "access_failures": [
+    {
+      "date": "2026-11-15",
+      "source": "NCCN official guideline portal / JNCCN full text",
+      "areas_attempted": [
+        "Cervical Cancer",
+        "Breast Cancer",
+        "NSCLC",
+        "Prostate Cancer",
+        "Colorectal Cancer",
+        "AML"
+      ],
+      "result": "No complete official guideline/reference list was retrievable in this run. Cervical v2.2026 PubMed metadata was accessible; full text/reference list was not. Breast guideline version/reference mapping remains unavailable.",
+      "action": "Continue with primary peer-reviewed publications and accessible ESGO/ESMO/ASCO sources; do not claim NCCN recommendation provenance; keep guideline-freshness tasks open."
+    },
+    {
+      "date": "2026-11-15",
+      "source": "NCCN Gastric Cancer citation in oral paclitaxel primary paper",
+      "areas_attempted": [
+        "Gastric Cancer"
+      ],
+      "result": "Version 2.2025 is explicitly cited as reference 4 in the primary paper; current NCCN version, section and recommendation category were not independently checked.",
+      "action": "Obtain current official guideline and exact citation mapping."
+    }
+  ],
+  "last_run": {
+    "date": "2026-11-15",
+    "cycle": "morning",
+    "disease_site_passes": [
+      "Breast",
+      "Thoracic",
+      "Gastrointestinal",
+      "Hepatobiliary",
+      "Genitourinary",
+      "Haematology",
+      "Neuro-oncology",
+      "Gynaecological oncology"
+    ],
+    "nccn_full_text_access": "partial_failure_not_blocking",
+    "exact_new_nccn_recommendation_mappings": 0,
+    "primary_source_discovery_continued": true,
+    "next_rotation": "Continue NCCN/ESMO/ASCO/ESGO mining with exact citation provenance; prioritise gastric, breast, NSCLC and GU subsets once full source lists are available."
+  }
 }

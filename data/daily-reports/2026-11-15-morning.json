@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-15-am",
+  "run_timestamp": "2026-11-15T08:27:43+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_head_at_start": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "main_head_at_end": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "working_branch": "atlas-batch/2026-11-15-am",
+    "branch_repair_commit": "2030417481a9a656d71ac88d9efb4709d70d6f9d",
+    "pr_created": false,
+    "pr_status": "Not opened: only 1 of 30 new unique trials staged; batch gate requires exactly 30 and the local strict release validator has not been run."
+  },
+  "audit": {
+    "canonical_page_files_at_start": 431,
+    "roster_entries_at_start": 437,
+    "archive_entries": 15,
+    "existing_pages_fully_manually_audited": 3,
+    "identity_and_index_checked": 4,
+    "repairs_made": 3,
+    "full_roster_audit_completed": false,
+    "source_audit_metadata_stale": true
+  },
+  "repairs": [
+    {
+      "trial_id": "keynote-a18",
+      "page_path": "trial-pages/keynote-a18/index.html",
+      "issues": [
+        "Malformed NNT text",
+        "Unlabelled 74.8/82.6 fragments",
+        "Incomplete absolute-effect structure",
+        "Dated context"
+      ],
+      "actions": [
+        "Rebuilt PFS and OS charts",
+        "Added 24-month PFS NNT 10 (10.5 pp)",
+        "Added 36-month OS NNT 13 (7.8 pp)",
+        "Added primary PFS/OS sources and registry",
+        "Added dated current-practice context"
+      ],
+      "status": "committed_to_branch"
+    },
+    {
+      "trial_id": "lacc",
+      "page_path": "trial-pages/lacc/index.html",
+      "issues": [
+        "Malformed primary-source link",
+        "Stray numeric fragment",
+        "Incomplete absolute-effect structure",
+        "Dated context"
+      ],
+      "actions": [
+        "Rebuilt 4.5-year DFS chart",
+        "Added NNH 10 for 11.0-pp DFS harm difference",
+        "Added primary, final follow-up, safety and QoL sources",
+        "Added dated current-practice context"
+      ],
+      "status": "committed_to_branch"
+    },
+    {
+      "trial_id": "shape",
+      "page_path": "trial-pages/shape/index.html",
+      "issues": [
+        "Incomplete primary-source/context information",
+        "Non-inferiority interpretation not sufficiently explicit"
+      ],
+      "actions": [
+        "Rebuilt 3-year pelvic recurrence chart",
+        "Added exact DOI/PMID/registry",
+        "Explicitly explained why NNT/NNH is inappropriate",
+        "Added dated current-practice context"
+      ],
+      "status": "committed_to_branch"
+    }
+  ],
+  "repair_queue": {
+    "open_before": 68,
+    "resolved_before": 13,
+    "existing_items_closed": 0,
+    "new_resolved_defects": 3,
+    "open_after": 70,
+    "resolved_after": 16,
+    "full_queue_complete": false
+  },
+  "guideline_review": {
+    "nccn_guidelines_or_records_added": 2,
+    "metadata_only_or_citation_only": [
+      "Cervical Cancer Version 2.2026 (PubMed metadata only; full guideline/reference list inaccessible)",
+      "Gastric Cancer Version 2.2025 (reference 4 cited in oral paclitaxel paper; not direct guideline review)"
+    ],
+    "exact_new_nccn_recommendation_mappings": 0,
+    "source_access_failures": [
+      "Official NCCN full guideline/reference lists not accessible for cervical, breast, NSCLC, prostate, colorectal and AML in this run."
+    ],
+    "fallback": "Continued using primary papers, eviQ protocol and ESGO guideline portal; no NCCN recommendation category/reference inferred."
+  },
+  "screening": {
+    "screened": 30,
+    "duplicates": 9,
+    "new_unique": 21,
+    "primary_identity_verified": 8,
+    "branch_staged": 1,
+    "held": 11,
+    "deferred_negative": 2,
+    "published_to_main": 0
+  },
+  "staged_cases": [
+    {
+      "trial": "Neo-Healer / BCTOP-H-N01",
+      "roster_id": "neo-healer",
+      "tumour_site": "Breast · HER2-positive",
+      "setting": "Neoadjuvant",
+      "phase_design": "Phase 3, multicentre, open-label randomized",
+      "population": "521 stage II–III ERBB2-positive patients; IHC 3+ or IHC 2+/ISH+, ECOG 0–1",
+      "intervention": "Anbenitamab 30 mg/kg + HB1801 100 mg/m² q3w ×6, with/without carboplatin AUC6",
+      "comparator": "Trastuzumab/pertuzumab/docetaxel ± carboplatin q3w ×6",
+      "primary_endpoint": "tpCR at surgery after 6 cycles; data cutoff 28 Jan 2026; median follow-up <8 months",
+      "key_efficacy": "164/263 (62.4%) vs 132/258 (51.2%); difference 11.4 pp (95% CI 3.2–19.6); P=0.004",
+      "grade3_4_toxicity": "77/263 (29.3%) vs 73/258 (28.3%); grade 3 neutropenia 30/263 (11.4%) vs 28/258 (10.9%); no treatment-related deaths",
+      "qol": "No validated QoL endpoint reported in primary paper",
+      "nnt": "9 for one additional tpCR at surgery; 1/0.114=8.77, rounded up to 9",
+      "doi": "10.1001/jamaoncol.2026.3329",
+      "pmid": "42690668",
+      "registry": "NCT06747338",
+      "nccn_provenance": "not verified — source inaccessible",
+      "branch_page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-15-am/trial-pages/neo-healer/index.html",
+      "commit_sha": "2030417481a9a656d71ac88d9efb4709d70d6f9d",
+      "status": "branch-staged; not published to main"
+    }
+  ],
+  "uploaded_cases": [],
+  "candidate_duplicate_decisions": [
+    {
+      "candidate": "Ponatinib–blinatumomab (ALL2820)",
+      "doi": "10.1056/NEJMoa2606208",
+      "pmid": "42874102",
+      "registry_id": "NCT04722848",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary identity is clear, but full NEJM protocol/appendix data for exact comparator dosing, grade 3–5 toxicity and patient-reported outcomes were not accessible; page-level completeness cannot yet be signed off.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2606208",
+        "https://clinicaltrials.gov/study/NCT04722848"
+      ]
+    },
+    {
+      "candidate": "EXCALIBER-RRMM",
+      "doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "The published first analysis reports MRD-negative complete response; the PFS co-primary endpoint remains pending. Do not present this as mature PFS evidence.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00450-X",
+        "https://clinicaltrials.gov/study/NCT04975997"
+      ]
+    },
+    {
+      "candidate": "Trastuzumab botidotin versus T-DM1",
+      "doi": "10.1200/JCO-26-00602",
+      "pmid": "42727044",
+      "registry_id": "NCT06968585",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "DOI/PMID/registry identity matched, but the full primary article and protocol-level dose, safety and QoL tables were not independently accessible.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00602",
+        "https://clinicaltrials.gov/study/NCT06968585"
+      ]
+    },
+    {
+      "candidate": "EMERALD-3",
+      "doi": "10.1016/S1470-2045(26)00278-0",
+      "pmid": "42636832",
+      "registry_id": "NCT05301842",
+      "matched_existing": {
+        "roster_id": "emerald-3",
+        "page_path": "trial-pages/emerald-3/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical EMERALD-3 page; do not create a second page.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00278-0",
+        "https://clinicaltrials.gov/study/NCT05301842"
+      ]
+    },
+    {
+      "candidate": "Felzartamab plus lenalidomide/dexamethasone",
+      "doi": "10.1016/S2352-3026(26)00223-1",
+      "pmid": "42822478",
+      "registry_id": "NCT03952091",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary publication identity and PFS signal located; exact full regimen/schedule, grade 3–5 toxicity tables and QoL data need primary full-text/supplement extraction before release.",
+      "source_urls": [
+        "https://doi.org/10.1016/S2352-3026(26)00223-1",
+        "https://clinicaltrials.gov/study/NCT03952091"
+      ]
+    },
+    {
+      "candidate": "Neo-Healer / BCTOP-H-N01",
+      "doi": "10.1001/jamaoncol.2026.3329",
+      "pmid": "42690668",
+      "registry_id": "NCT06747338",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "branch_staged_not_published",
+      "reason": "Full JAMA Oncology primary article and registry reviewed; page, structured tpCR NNT, roster and index staged on the AM branch. Not merged because the batch contains fewer than 30 new unique studies.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.3329",
+        "https://clinicaltrials.gov/study/NCT06747338"
+      ],
+      "page_path": "trial-pages/neo-healer/index.html",
+      "commit_sha": "2030417481a9a656d71ac88d9efb4709d70d6f9d"
+    },
+    {
+      "candidate": "HEALER",
+      "doi": null,
+      "pmid": "42929681",
+      "registry_id": "NCT05838066",
+      "matched_existing": {
+        "roster_id": "healer",
+        "page_path": "trial-pages/healer/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical HEALER page; this is not a second trial page.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+        "https://clinicaltrials.gov/study/NCT05838066"
+      ]
+    },
+    {
+      "candidate": "TAISHAN-302 / tambotatug pelitecan",
+      "doi": "10.1056/NEJMoa2610229",
+      "pmid": "42734213",
+      "registry_id": "NCT06612151",
+      "matched_existing": {
+        "roster_id": "taishan-302",
+        "page_path": "trial-pages/taishan-302/index.html",
+        "archive_match": true
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented in the roster/page and Trial-of-the-Day archive; no new page.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2610229",
+        "https://clinicaltrials.gov/study/NCT06612151"
+      ]
+    },
+    {
+      "candidate": "ROAM / EORTC-1308",
+      "doi": "10.1016/S0140-6736(26)01804-0",
+      "pmid": "42790456",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary publication located, but the exact trial registry/protocol identifier and full source-level safety/QoL details were not verified.",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)01804-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42790456/"
+      ]
+    },
+    {
+      "candidate": "ENZARAD / ANZUP 1303",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "deferred_negative",
+      "reason": "Negative/contrary phase 3 result; moved to deferred-negative queue pending exact registry verification and full primary table extraction.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-01794",
+        "https://pubmed.ncbi.nlm.nih.gov/42921729/"
+      ]
+    },
+    {
+      "candidate": "Oral paclitaxel solution versus IV paclitaxel",
+      "doi": "10.1016/j.esmoop.2026.108312",
+      "pmid": "42617423",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary paper and key results located, but exact trial-registration identifier could not be verified from the accessible primary record; hold until registration/protocol identity is confirmed.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108312",
+        "https://pubmed.ncbi.nlm.nih.gov/42617423/"
+      ]
+    },
+    {
+      "candidate": "CAPITAL",
+      "doi": "10.1016/j.medj.2026.101258",
+      "pmid": "42600610",
+      "registry_id": "NCT01795027",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Primary publication DOI/PMID and registry matched; 5-year OS/DFS outcomes identified. Full page extraction and release QA remain pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.medj.2026.101258",
+        "https://clinicaltrials.gov/study/NCT01795027"
+      ]
+    },
+    {
+      "candidate": "HARMONi",
+      "doi": null,
+      "pmid": "42636833",
+      "registry_id": "NCT06396065",
+      "matched_existing": {
+        "roster_id": "harmoni",
+        "page_path": "trial-pages/harmoni/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "The global HARMONi study already has a canonical page; do not duplicate.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42636833/",
+        "https://clinicaltrials.gov/study/NCT06396065"
+      ]
+    },
+    {
+      "candidate": "Dalmelitinib plus aumolertinib",
+      "doi": "10.1200/JCO-26-02432",
+      "pmid": "42928710",
+      "registry_id": "NCT06110663",
+      "matched_existing": {
+        "roster_id": "dalmelitinib-aumolertinib",
+        "page_path": "trial-pages/dalmelitinib-aumolertinib/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical page and same registry ID.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-02432",
+        "https://clinicaltrials.gov/study/NCT06110663"
+      ]
+    },
+    {
+      "candidate": "BREAKWATER cohort 3",
+      "doi": "10.1016/j.annonc.2026.04.017",
+      "pmid": "42219860",
+      "registry_id": "NCT04607421",
+      "matched_existing": {
+        "roster_id": "breakwater",
+        "page_path": "trial-pages/breakwater/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Cohort/follow-up publication belongs to the existing BREAKWATER study; retain as secondary evidence on the canonical page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.04.017",
+        "https://clinicaltrials.gov/study/NCT04607421"
+      ]
+    },
+    {
+      "candidate": "AUGMENT",
+      "doi": "10.1200/JCO.19.00010",
+      "pmid": "30811293",
+      "registry_id": "NCT01938001",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Original phase 3 publication and 2026 long-term follow-up DOI/PMID identified; no roster/page/archive match. One canonical page should combine both publications.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.19.00010",
+        "https://doi.org/10.1200/JCO-25-01770",
+        "https://clinicaltrials.gov/study/NCT01938001"
+      ]
+    },
+    {
+      "candidate": "CAMPASS",
+      "doi": "10.1016/S1470-2045(26)00049-5",
+      "pmid": "41825453",
+      "registry_id": "NCT04964479",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Primary phase 3 publication and registry matched; PFS and grade ≥3 toxicity outcomes identified. Full page extraction and current-practice context review remain pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00049-5",
+        "https://clinicaltrials.gov/study/NCT04964479"
+      ]
+    },
+    {
+      "candidate": "ctDNA-guided post-adjuvant chemotherapy in colorectal cancer",
+      "doi": "10.1038/s41591-026-04428-0",
+      "pmid": "42260101",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary publication identified, but exact trial registry/protocol and endpoint/denominator details were not independently confirmed in this run.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04428-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42260101/"
+      ]
+    },
+    {
+      "candidate": "SUBITO",
+      "doi": "10.1016/S1470-2045(26)00131-2",
+      "pmid": "42372741",
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "subito",
+        "page_path": "trial-pages/subito/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical SUBITO page.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00131-2",
+        "https://pubmed.ncbi.nlm.nih.gov/42372741/"
+      ]
+    },
+    {
+      "candidate": "ANZUP 1301",
+      "doi": "10.1016/j.eururo.2026.01.009",
+      "pmid": "41633899",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "deferred_negative",
+      "reason": "Primary phase 3 analysis did not establish DFS superiority for BCG plus mitomycin versus BCG alone; retained as contrary evidence rather than promoted as a standard.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.eururo.2026.01.009",
+        "https://pubmed.ncbi.nlm.nih.gov/41633899/"
+      ]
+    },
+    {
+      "candidate": "BOND-003 cohort C",
+      "doi": "10.1016/S1470-2045(26)00194-4",
+      "pmid": "42508433",
+      "registry_id": "NCT04452513",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct to Atlas; multiple cohorts within one study",
+      "disposition": "held",
+      "reason": "No canonical BOND-003 page was found, but cohort C must be reconciled with the overall multi-cohort study and earlier cohort publications before one consolidated page is created.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00194-4",
+        "https://clinicaltrials.gov/study/NCT04452513"
+      ]
+    },
+    {
+      "candidate": "AEGEAN",
+      "doi": "10.1056/NEJMoa2304875",
+      "pmid": "37931632",
+      "registry_id": "NCT03800134",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Primary NEJM report and 2026 JCO update DOI/PMID matched; no roster/page/archive match. One canonical page should combine primary and updated outcomes.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2304875",
+        "https://doi.org/10.1200/JCO-25-02659",
+        "https://clinicaltrials.gov/study/NCT03800134"
+      ]
+    },
+    {
+      "candidate": "Fovinaciclib",
+      "doi": "10.1001/jamaoncol.2026.1938",
+      "pmid": "42224659",
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "fovinaciclib",
+        "page_path": "trial-pages/fovinaciclib/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical Fovinaciclib page.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.1938",
+        "https://pubmed.ncbi.nlm.nih.gov/42224659/"
+      ]
+    },
+    {
+      "candidate": "JCOG1403",
+      "doi": "10.1016/S1470-2045(26)00130-0",
+      "pmid": "42435772",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary publication identified, but the candidate UMIN/JCOG registry match was ambiguous against a similarly labelled JCOG record; do not assign a registry ID until reconciled.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00130-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42435772/"
+      ]
+    },
+    {
+      "candidate": "JCOG1019",
+      "doi": "10.1016/j.eururo.2026.01.008",
+      "pmid": "41571573",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary publication identified, but the exact UMIN registry record could not be matched confidently to the JCOG1019 trial; no registry ID inferred.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.eururo.2026.01.008",
+        "https://pubmed.ncbi.nlm.nih.gov/41571573/"
+      ]
+    },
+    {
+      "candidate": "E4512",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "pmid": null,
+      "registry_id": "NCT01871805",
+      "matched_existing": {
+        "roster_id": "e4512",
+        "page_path": "trial-pages/e4512/index.html"
+      },
+      "underlying_study": "same underlying study",
+      "disposition": "duplicate_excluded",
+      "reason": "Already represented by the canonical E4512 page. Also added to the deferred-negative queue as contrary adjuvant evidence.",
+      "source_urls": [
+        "https://doi.org/10.1016/S2213-2600(26)00192-X",
+        "https://clinicaltrials.gov/study/NCT01871805"
+      ]
+    },
+    {
+      "candidate": "DeLLphi-305",
+      "doi": "10.1056/NEJMoa2609482",
+      "pmid": "42929702",
+      "registry_id": "NCT06211036",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "New NEJM phase 3 publication and registry match; efficacy and grade ≥3 safety outcomes identified, but exact trial-specific step-up/maintenance dosing requires protocol confirmation before release.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609482",
+        "https://clinicaltrials.gov/study/NCT06211036"
+      ],
+      "trial_of_the_day_candidate": true,
+      "publication_date": "2026-10-24"
+    },
+    {
+      "candidate": "HARMONi-A",
+      "doi": "10.1001/jama.2026.7745",
+      "pmid": "42307937",
+      "registry_id": "NCT05184712",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct from HARMONi (NCT06396065)",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Distinct China-based phase 3 study with separate registry; final OS report and conference PFS results identified, but full PFS primary publication/source extraction remains pending.",
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2026.7745",
+        "https://clinicaltrials.gov/study/NCT05184712"
+      ]
+    },
+    {
+      "candidate": "LITESPARK-011",
+      "doi": "10.1016/j.annonc.2026.10.109",
+      "pmid": "42927855",
+      "registry_id": "NCT04586231",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "new_unique_primary_identity_verified",
+      "reason": "Final phase 3 publication and registry match; PFS/OS and grade ≥3 safety outcomes identified. Full page extraction, figure verification and current-practice context remain pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.109",
+        "https://clinicaltrials.gov/study/NCT04586231"
+      ],
+      "trial_of_the_day_candidate": true,
+      "publication_date": "2026-10-25"
+    },
+    {
+      "candidate": "IRIMAD",
+      "doi": "10.1016/j.dld.2026.09.014",
+      "pmid": "42850173",
+      "registry_id": null,
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct",
+      "disposition": "held",
+      "reason": "Primary DOI/PMID located, but exact trial registry/protocol and complete endpoint/denominator details were not verified.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.dld.2026.09.014",
+        "https://pubmed.ncbi.nlm.nih.gov/42850173/"
+      ]
+    }
+  ],
+  "consistency": {
+    "roster_entries_after_branch": 438,
+    "canonical_pages_after_branch": 432,
+    "master_evidence_index_link_added": true,
+    "breast_site_index_link_added": true,
+    "sitemap_entry_added": true,
+    "trial_archive_changed": false,
+    "trial_of_the_day_changed": false,
+    "reason_no_archive_or_tod_update": "No new page was selected as Trial of the Day; candidate pages remain unmerged."
+  },
+  "visualization_qa": {
+    "keynote_a18": {
+      "pfs_24m": {
+        "difference_pp": 10.5,
+        "nnt": 10
+      },
+      "os_36m": {
+        "difference_pp": 7.8,
+        "nnt": 13
+      }
+    },
+    "lacc": {
+      "dfs_4_5y_harm_pp": 11,
+      "nnh": 10
+    },
+    "shape": {
+      "nnt_nnh": "Not appropriate: non-inferiority design; CI crosses zero."
+    },
+    "neo_healer": {
+      "tpcr_difference_pp": 11.4,
+      "nnt": 9
+    },
+    "data_attributes_match_structured_records": true,
+    "finite_chart_values": true,
+    "visible_fallback_chart_markup": true,
+    "browser_rendered_qa": false
+  },
+  "validation": {
+    "changed_files_re_read_after_commit": false,
+    "static_source_markup_checks": "passed before first commit",
+    "local_release_validator": "not run",
+    "strict_release_validator": "not run",
+    "outcome_visualization_audit": "not run",
+    "reason": "No PR opened because the batch is incomplete; local checkout/validator execution was not available in this run."
+  },
+  "deployment": {
+    "status": "not checked",
+    "reason": "No merge to main; production deployment cannot be claimed."
+  },
+  "cumulative_progress": {
+    "roster_entries_after_branch": 438,
+    "roster_audit_unique_trial_ids": 438,
+    "independent_global_underlying_study_reconciliation": "not completed; do not treat roster count as verified unique-study count",
+    "target": 1000,
+    "remaining_gap": "not safely calculated"
+  },
+  "next_actions": [
+    "Continue primary extraction for CAPITAL, AUGMENT, CAMPASS, AEGEAN, LITESPARK-011, DeLLphi-305 and HARMONi-A.",
+    "Resolve held registry/protocol issues for Ponatinib, EXCALIBER, botidotin, Felzartamab, ROAM, oral paclitaxel, ctDNA-CRC, BOND-003, JCOG1403, JCOG1019 and IRIMAD.",
+    "Retrieve current official NCCN guideline/reference lists and exact citation provenance.",
+    "Continue independent canonical-page audit; next review from persistent repair queue.",
+    "Do not open or merge a PR until exactly 30 unique pages are fully verified and the strict validator and outcome visualization audit pass."
+  ]
+}
