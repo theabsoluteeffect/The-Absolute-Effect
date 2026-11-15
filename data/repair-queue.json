@@ -835,6 +835,18 @@
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
       "status": "open",
       "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "fight-302-hrqol-guideline-freshness-2026-11-15",
+      "trial_id": "fight-302",
+      "trial": "FIGHT-302",
+      "path": "trial-pages/fight-302/index.html",
+      "category": "hrqol_followup_and_guideline_freshness",
+      "severity": "medium",
+      "evidence": "The primary JCO report identifies HRQoL as a secondary endpoint but states results will be published separately; exact current NCCN/ESMO sequencing version and section have not been retrieved.",
+      "action": "Search for the separate HRQoL report and verify the latest accessible disease-specific guideline version/section before closing the freshness task.",
+      "status": "open",
+      "created_on": "2026-11-15"
     }
   ],
   "resolved_items": [
@@ -1061,6 +1073,19 @@
       "status": "resolved",
       "verified_on": "2026-11-15",
       "verification": "NEJMoa2308900 / PMID 38416430; 3-year pelvic recurrence 2.52% vs 2.17%, 90% CI −1.62 to 2.32; urinary incontinence 4.7% vs 11.0% and retention 0.6% vs 9.9% beyond 4 weeks."
+    },
+    {
+      "issue_id": "fight-302-primary-metadata-visual-2026-11-15",
+      "trial_id": "fight-302",
+      "trial": "FIGHT-302",
+      "path": "trial-pages/fight-302/index.html",
+      "category": "primary_metadata_dose_and_visualization",
+      "severity": "high",
+      "evidence": "Roster lacked primary DOI/title and registry metadata; page incorrectly described pemigatinib as 2 weeks on/1 week off (the FIGHT-202 schedule), rendered median PFS in percent units and lacked endpoint-specific landmark NNT records.",
+      "action": "Added exact JCO primary DOI/title/PMID and protocol DOI; corrected FIGHT-302 to continuous 13.5 mg daily on a 21-day cycle; corrected PFS units and denominators; added 12- and 24-month PFS landmark NNTs.",
+      "status": "resolved",
+      "verified_on": "2026-11-15",
+      "verification": "JCO full text PMCID PMC13641261 / PMID 42223137; DOI 10.1200/JCO-26-00788; registry NCT03656536. PFS 39% vs17% at12m (22pp; NNT5), 21% vs9% at24m (12pp; NNT9); grade ≥3 TEAEs 65/83 vs49/73."
     }
   ],
   "run_audit_log": [
@@ -1073,6 +1098,16 @@
       "repairs_staged": 4,
       "repair_branch": "atlas-batch/2026-11-15-pm",
       "note": "Four specifically flagged pages rechecked against primary publications. The existing source_audit remains stale (audited_head 896d844); do not mark the full repository audit complete. Dated current-practice issues for these four pages remain open."
+    },
+    {
+      "run_id": "2026-11-15-evening",
+      "main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "pages_manually_inspected": 5,
+      "canonical_pages_total": 431,
+      "full_manual_audit_complete": false,
+      "repairs_staged": 5,
+      "repair_branch": "atlas-batch/2026-11-15-pm",
+      "note": "FIGHT-302 primary full text was inspected; dosing, median-PFS units, safety denominators and landmark PFS NNTs corrected. HRQoL and current guideline freshness remain open."
     }
   ]
 }

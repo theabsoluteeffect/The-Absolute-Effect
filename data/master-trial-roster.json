@@ -3479,8 +3479,34 @@
         "FIGHT-302",
         "NCT03656536"
       ],
-      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+      "freshness_review_status": "Primary JCO 2026 results and 2020 protocol report verified 2026-11-15; contemporary guideline sequencing and separate HRQoL report remain pending.",
+      "outcome_visual_review_status": "Corrected pemigatinib continuous dosing, median-PFS units, source denominators and 12/24-month PFS landmark charts; static bars and absolute-effect pictograms source-checked 2026-11-15; browser QA pending.",
+      "primary": "10.1200/JCO-26-00788",
+      "primary_title": "Pemigatinib for Unresectable or Metastatic Cholangiocarcinoma With Fibroblast Growth Factor–2 Rearrangement: Results From the Phase III FIGHT-302 Trial",
+      "registry_id": "NCT03656536",
+      "protocol_publications": [
+        {
+          "doi": "10.2217/FON-2020-0429",
+          "title": "FIGHT-302: first-line pemigatinib vs gemcitabine plus cisplatin for advanced cholangiocarcinoma with FGFR2 rearrangements"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 22,
+        "nnt": 5,
+        "additional_endpoints": [
+          {
+            "endpoint": "Progression-free survival",
+            "horizon": "24 months",
+            "benefit_percentage_points": 12,
+            "nnt": 9
+          }
+        ],
+        "calculation": "Approximate landmark NNT = ceil(100 / absolute percentage-point difference), using published Kaplan–Meier PFS estimates; not derived from median PFS or HR.",
+        "source_doi": "10.1200/JCO-26-00788"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "flaura",

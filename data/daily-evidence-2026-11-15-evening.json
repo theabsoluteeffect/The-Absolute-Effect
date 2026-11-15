@@ -325,7 +325,7 @@
       },
       "underlying_study": "same_existing_study",
       "disposition": "duplicate_excluded",
-      "reason": "Canonical FIGHT-302 page and roster entry already exist. Primary DOI/PMID/title metadata are missing from the roster and have been queued separately.",
+      "reason": "Duplicate: canonical FIGHT-302 page already exists. Primary DOI/title, registry metadata, continuous dosing and PFS visualisation were repaired on the 15 Nov branch; separate HRQoL publication and current guideline freshness remain open.",
       "next_action": "Repair primary metadata on existing page; do not create another FIGHT-302 page.",
       "same_underlying_study": true,
       "carried_forward_from": "2026-11-14-evening"

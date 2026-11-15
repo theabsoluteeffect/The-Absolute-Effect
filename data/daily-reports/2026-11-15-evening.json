@@ -11,16 +11,17 @@
     "branch_commit": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
     "pull_request": null,
     "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
-    "follow_up_commit_sha": "eb719413fc96c4f83836f084645ce8ed486302df"
+    "follow_up_commit_sha": "pending"
   },
   "audit": {
     "canonical_trial_pages_total": 431,
-    "manually_inspected_this_run": 4,
+    "manually_inspected_this_run": 5,
     "pages": [
       "CheckMate 816",
       "KEYNOTE-A18",
       "LACC",
-      "SHAPE"
+      "SHAPE",
+      "FIGHT-302"
     ],
     "full_manual_audit_complete": false,
     "main_source_audit_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
@@ -30,16 +31,18 @@
   "repair_queue": {
     "open_before": 68,
     "resolved_before": 13,
-    "closed_this_run": 4,
-    "open_after": 68,
-    "resolved_after": 17,
+    "closed_this_run": 5,
+    "open_after": 69,
+    "resolved_after": 18,
     "remaining_dated_context_for_checked_pages": [
       "dated-context-checkmate-816",
       "dated-context-keynote-a18",
       "dated-context-lacc",
-      "dated-context-shape"
+      "dated-context-shape",
+      "fight-302-hrqol-guideline-freshness-2026-11-15"
     ],
-    "source_audit_metadata": "stale — not advanced to current main because full manual audit is incomplete"
+    "source_audit_metadata": "stale — not advanced to current main because full manual audit is incomplete",
+    "open_added_this_run": 1
   },
   "nccn": {
     "guidelines_versions_reviewed": 0,
@@ -998,12 +1001,21 @@
     {
       "trial": "Visualization renderer guard",
       "result": "Added data-outcome-static to the four manually inspected pages; removed SHAPE's redundant data-outcome-visual hook. The shared renderer's init uses querySelectorAll for each absolute-effect block, so all three CheckMate 816 endpoint-specific pictograms render independently."
+    },
+    {
+      "trial": "FIGHT-302",
+      "result": "Corrected pemigatinib to continuous 13.5 mg daily on a 21-day cycle; corrected median PFS chart units to months; added source-reported PFS landmark rates 39% vs17% at12 months (22 pp; approximate NNT5) and21% vs9% at24 months (12 pp; approximate NNT9). No NNT from median PFS/HR or ORR; QoL results are reported separately and remain open.",
+      "sources": [
+        "https://doi.org/10.1200/JCO-26-00788",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13641261/",
+        "https://clinicaltrials.gov/study/NCT03656536"
+      ]
     }
   ],
   "index_roster_archive": {
     "new_trial_pages": 0,
     "roster_new_entries": 0,
-    "roster_metadata_repairs": 4,
+    "roster_metadata_repairs": 5,
     "evidence_index_changed": false,
     "archive_entries_before": 15,
     "archive_entries_after": 15,
@@ -1011,7 +1023,7 @@
     "note": "No new trial page was added, so no evidence-index, archive or Trial-of-the-Day record was created."
   },
   "validation": {
-    "static_repair_checks": "passed on re-read: no NaN chart widths, malformed ClinicalTrials.gov URLs or NCT-as-NNT fields; source values and NNT/NNH arithmetic match; static charts are explicitly marked to prevent duplicate automatic rendering; SHAPE auto-render hook removed because the static chart is present. Full release validator not run because the exact-30 publication gate was unmet and no PR was opened.",
+    "static_repair_checks": "passed on re-read of five pages: no NaN chart widths, malformed ClinicalTrials.gov URLs, NCT-as-NNT fields or incorrect median-PFS percentage units; all absolute-effect values and NNT/NNH arithmetic match source-reported landmark rates. Full release validator not run because the exact-30 publication gate was unmet and no PR was opened.",
     "full_release_validator": "not run — exact-30 publication gate unmet and no PR opened",
     "branch_pr_checks": "not run — no PR opened because 0/30 new unique pages were ready for publication",
     "branch_unmerged": true
@@ -1031,7 +1043,8 @@
     "NEONIPIGA is a new unique phase II study with primary and 2026 follow-up verified, but held from publication by the exact-30 gate. ATTRACTION-6 is deferred as negative contrary evidence.",
     "Complete independent audit of all 431 canonical pages; do not close dated-context tasks from regex alone. Source-audit metadata remains stale.",
     "Retrieve current official NCCN guideline/reference lists where accessible; no exact NCCN provenance claimed this run.",
-    "Existing draft PR #4 (atlas-batch/2026-11-14-pm) remains open and unmerged; this run uses a fresh branch from latest main and does not merge a partial batch."
+    "Existing draft PR #4 (atlas-batch/2026-11-14-pm) remains open and unmerged; this run uses a fresh branch from latest main and does not merge a partial batch.",
+    "FIGHT-302 HRQoL results were not included in the primary JCO report and current guideline sequencing remains unverified; the separate follow-up task remains open."
   ],
   "cumulative_unique_studies": 437,
   "target_unique_studies": 1000,
