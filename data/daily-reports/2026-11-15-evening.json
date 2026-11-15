@@ -11,7 +11,8 @@
     "branch_commit": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
     "pull_request": null,
     "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
-    "follow_up_commit_sha": "c61558150cb9770003af512ede870ff6b3f2fe8f"
+    "follow_up_commit_sha": "11cd624144cc340c05401111b703c9872e1499ec",
+    "latest_verified_content_commit": "11cd624144cc340c05401111b703c9872e1499ec"
   },
   "audit": {
     "canonical_trial_pages_total": 431,
@@ -1032,8 +1033,8 @@
     "main_commit_cloudflare_check": "success reported on main commit 608076f",
     "branch_changes_deployed": false,
     "live_page_open_check": "not independently verified",
-    "branch_cloudflare_check": "success",
-    "branch_preview": "Cloudflare Pages status check completed successfully; a public preview URL was not independently retrieved/opened.",
+    "branch_cloudflare_check": "success on branch content commit 11cd624144cc340c05401111b703c9872e1499ec",
+    "branch_preview": "Cloudflare Pages check passed; preview URL was not independently retrieved/opened.",
     "production_deployment": "not claimed; no PR was opened or merged",
     "main_cloudflare_check": "success on main commit 608076f608609d0483f63cee7084ff431c21c2fe"
   },
