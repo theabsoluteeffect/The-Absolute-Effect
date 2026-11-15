@@ -31,7 +31,9 @@
     "branch_staged": 1,
     "held": 11,
     "deferred_negative": 2,
-    "published_to_main": 0
+    "published_to_main": 0,
+    "identity_verified_extraction_pending": 7,
+    "release_ready_primary_extractions": 1
   },
   "candidate_decisions": [
     {
@@ -46,7 +48,8 @@
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2606208",
         "https://clinicaltrials.gov/study/NCT04722848"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-ponatinib-blinatumomab-all2820"
     },
     {
       "candidate": "EXCALIBER-RRMM",
@@ -60,7 +63,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S1470-2045(26)00450-X",
         "https://clinicaltrials.gov/study/NCT04975997"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-excaliber-rrmm"
     },
     {
       "candidate": "Trastuzumab botidotin versus T-DM1",
@@ -74,7 +78,8 @@
       "source_urls": [
         "https://doi.org/10.1200/JCO-26-00602",
         "https://clinicaltrials.gov/study/NCT06968585"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-trastuzumab-botidotin-versus-t-dm1"
     },
     {
       "candidate": "EMERALD-3",
@@ -105,7 +110,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S2352-3026(26)00223-1",
         "https://clinicaltrials.gov/study/NCT03952091"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-felzartamab-plus-lenalidomide-dexamethasone"
     },
     {
       "candidate": "Neo-Healer / BCTOP-H-N01",
@@ -175,7 +181,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S0140-6736(26)01804-0",
         "https://pubmed.ncbi.nlm.nih.gov/42790456/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-roam-eortc-1308"
     },
     {
       "candidate": "ENZARAD / ANZUP 1303",
@@ -203,7 +210,8 @@
       "source_urls": [
         "https://doi.org/10.1016/j.esmoop.2026.108312",
         "https://pubmed.ncbi.nlm.nih.gov/42617423/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-oral-paclitaxel-solution-versus-iv-paclitaxel"
     },
     {
       "candidate": "CAPITAL",
@@ -217,7 +225,8 @@
       "source_urls": [
         "https://doi.org/10.1016/j.medj.2026.101258",
         "https://clinicaltrials.gov/study/NCT01795027"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-capital"
     },
     {
       "candidate": "HARMONi",
@@ -283,7 +292,8 @@
         "https://doi.org/10.1200/JCO.19.00010",
         "https://doi.org/10.1200/JCO-25-01770",
         "https://clinicaltrials.gov/study/NCT01938001"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-augment"
     },
     {
       "candidate": "CAMPASS",
@@ -297,7 +307,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S1470-2045(26)00049-5",
         "https://clinicaltrials.gov/study/NCT04964479"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-campass"
     },
     {
       "candidate": "ctDNA-guided post-adjuvant chemotherapy in colorectal cancer",
@@ -311,7 +322,8 @@
       "source_urls": [
         "https://doi.org/10.1038/s41591-026-04428-0",
         "https://pubmed.ncbi.nlm.nih.gov/42260101/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-ctdna-guided-post-adjuvant-chemotherapy-in-colorectal-cancer"
     },
     {
       "candidate": "SUBITO",
@@ -356,7 +368,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S1470-2045(26)00194-4",
         "https://clinicaltrials.gov/study/NCT04452513"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-bond-003-cohort-c"
     },
     {
       "candidate": "AEGEAN",
@@ -371,7 +384,8 @@
         "https://doi.org/10.1056/NEJMoa2304875",
         "https://doi.org/10.1200/JCO-25-02659",
         "https://clinicaltrials.gov/study/NCT03800134"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-aegean"
     },
     {
       "candidate": "Fovinaciclib",
@@ -402,7 +416,8 @@
       "source_urls": [
         "https://doi.org/10.1016/S1470-2045(26)00130-0",
         "https://pubmed.ncbi.nlm.nih.gov/42435772/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-jcog1403"
     },
     {
       "candidate": "JCOG1019",
@@ -416,7 +431,8 @@
       "source_urls": [
         "https://doi.org/10.1016/j.eururo.2026.01.008",
         "https://pubmed.ncbi.nlm.nih.gov/41571573/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-jcog1019"
     },
     {
       "candidate": "E4512",
@@ -449,7 +465,8 @@
         "https://clinicaltrials.gov/study/NCT06211036"
       ],
       "trial_of_the_day_candidate": true,
-      "publication_date": "2026-10-24"
+      "publication_date": "2026-10-24",
+      "review_queue_item_id": "candidate-review-dellphi-305"
     },
     {
       "candidate": "HARMONi-A",
@@ -463,7 +480,8 @@
       "source_urls": [
         "https://doi.org/10.1001/jama.2026.7745",
         "https://clinicaltrials.gov/study/NCT05184712"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-harmoni-a"
     },
     {
       "candidate": "LITESPARK-011",
@@ -479,7 +497,8 @@
         "https://clinicaltrials.gov/study/NCT04586231"
       ],
       "trial_of_the_day_candidate": true,
-      "publication_date": "2026-10-25"
+      "publication_date": "2026-10-25",
+      "review_queue_item_id": "candidate-review-litespark-011"
     },
     {
       "candidate": "IRIMAD",
@@ -493,7 +512,8 @@
       "source_urls": [
         "https://doi.org/10.1016/j.dld.2026.09.014",
         "https://pubmed.ncbi.nlm.nih.gov/42850173/"
-      ]
+      ],
+      "review_queue_item_id": "candidate-review-irimad"
     }
   ],
   "trial_of_the_day": {
@@ -556,6 +576,80 @@
       "overlapping_files": [
         "data/master-trial-roster.json"
       ]
+    }
+  ],
+  "candidate_review_queue_items": [
+    {
+      "candidate": "Ponatinib–blinatumomab (ALL2820)",
+      "queue_id": "candidate-review-ponatinib-blinatumomab-all2820"
+    },
+    {
+      "candidate": "EXCALIBER-RRMM",
+      "queue_id": "candidate-review-excaliber-rrmm"
+    },
+    {
+      "candidate": "Trastuzumab botidotin versus T-DM1",
+      "queue_id": "candidate-review-trastuzumab-botidotin-versus-t-dm1"
+    },
+    {
+      "candidate": "Felzartamab plus lenalidomide/dexamethasone",
+      "queue_id": "candidate-review-felzartamab-plus-lenalidomide-dexamethasone"
+    },
+    {
+      "candidate": "ROAM / EORTC-1308",
+      "queue_id": "candidate-review-roam-eortc-1308"
+    },
+    {
+      "candidate": "Oral paclitaxel solution versus IV paclitaxel",
+      "queue_id": "candidate-review-oral-paclitaxel-solution-versus-iv-paclitaxel"
+    },
+    {
+      "candidate": "CAPITAL",
+      "queue_id": "candidate-review-capital"
+    },
+    {
+      "candidate": "AUGMENT",
+      "queue_id": "candidate-review-augment"
+    },
+    {
+      "candidate": "CAMPASS",
+      "queue_id": "candidate-review-campass"
+    },
+    {
+      "candidate": "ctDNA-guided post-adjuvant chemotherapy in colorectal cancer",
+      "queue_id": "candidate-review-ctdna-guided-post-adjuvant-chemotherapy-in-colorectal-cancer"
+    },
+    {
+      "candidate": "BOND-003 cohort C",
+      "queue_id": "candidate-review-bond-003-cohort-c"
+    },
+    {
+      "candidate": "AEGEAN",
+      "queue_id": "candidate-review-aegean"
+    },
+    {
+      "candidate": "JCOG1403",
+      "queue_id": "candidate-review-jcog1403"
+    },
+    {
+      "candidate": "JCOG1019",
+      "queue_id": "candidate-review-jcog1019"
+    },
+    {
+      "candidate": "DeLLphi-305",
+      "queue_id": "candidate-review-dellphi-305"
+    },
+    {
+      "candidate": "HARMONi-A",
+      "queue_id": "candidate-review-harmoni-a"
+    },
+    {
+      "candidate": "LITESPARK-011",
+      "queue_id": "candidate-review-litespark-011"
+    },
+    {
+      "candidate": "IRIMAD",
+      "queue_id": "candidate-review-irimad"
     }
   ]
 }

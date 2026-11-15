@@ -115,7 +115,7 @@
     "resolved_before": 13,
     "existing_items_closed": 3,
     "new_resolved_defects": 4,
-    "open_after": 68,
+    "open_after": 86,
     "resolved_after": 20,
     "full_queue_complete": false,
     "closed_issue_ids": [
@@ -127,7 +127,82 @@
       "nccn-cervical-guideline-freshness-2026-11-15",
       "nccn-breast-guideline-mapping-neo-healer-2026-11-15"
     ],
-    "overlap_issue_added": "open-pr-overlap-serialization-2026-11-15"
+    "overlap_issue_added": "open-pr-overlap-serialization-2026-11-15",
+    "candidate_review_items_added": 18,
+    "candidate_review_queue_ids": [
+      {
+        "candidate": "Ponatinib–blinatumomab (ALL2820)",
+        "queue_id": "candidate-review-ponatinib-blinatumomab-all2820"
+      },
+      {
+        "candidate": "EXCALIBER-RRMM",
+        "queue_id": "candidate-review-excaliber-rrmm"
+      },
+      {
+        "candidate": "Trastuzumab botidotin versus T-DM1",
+        "queue_id": "candidate-review-trastuzumab-botidotin-versus-t-dm1"
+      },
+      {
+        "candidate": "Felzartamab plus lenalidomide/dexamethasone",
+        "queue_id": "candidate-review-felzartamab-plus-lenalidomide-dexamethasone"
+      },
+      {
+        "candidate": "ROAM / EORTC-1308",
+        "queue_id": "candidate-review-roam-eortc-1308"
+      },
+      {
+        "candidate": "Oral paclitaxel solution versus IV paclitaxel",
+        "queue_id": "candidate-review-oral-paclitaxel-solution-versus-iv-paclitaxel"
+      },
+      {
+        "candidate": "CAPITAL",
+        "queue_id": "candidate-review-capital"
+      },
+      {
+        "candidate": "AUGMENT",
+        "queue_id": "candidate-review-augment"
+      },
+      {
+        "candidate": "CAMPASS",
+        "queue_id": "candidate-review-campass"
+      },
+      {
+        "candidate": "ctDNA-guided post-adjuvant chemotherapy in colorectal cancer",
+        "queue_id": "candidate-review-ctdna-guided-post-adjuvant-chemotherapy-in-colorectal-cancer"
+      },
+      {
+        "candidate": "BOND-003 cohort C",
+        "queue_id": "candidate-review-bond-003-cohort-c"
+      },
+      {
+        "candidate": "AEGEAN",
+        "queue_id": "candidate-review-aegean"
+      },
+      {
+        "candidate": "JCOG1403",
+        "queue_id": "candidate-review-jcog1403"
+      },
+      {
+        "candidate": "JCOG1019",
+        "queue_id": "candidate-review-jcog1019"
+      },
+      {
+        "candidate": "DeLLphi-305",
+        "queue_id": "candidate-review-dellphi-305"
+      },
+      {
+        "candidate": "HARMONi-A",
+        "queue_id": "candidate-review-harmoni-a"
+      },
+      {
+        "candidate": "LITESPARK-011",
+        "queue_id": "candidate-review-litespark-011"
+      },
+      {
+        "candidate": "IRIMAD",
+        "queue_id": "candidate-review-irimad"
+      }
+    ]
   },
   "guideline_review": {
     "nccn_guidelines_or_records_added": 2,
@@ -149,7 +224,10 @@
     "branch_staged": 1,
     "held": 11,
     "deferred_negative": 2,
-    "published_to_main": 0
+    "published_to_main": 0,
+    "identity_verified_extraction_pending": 7,
+    "release_ready_primary_extractions": 1,
+    "held_queue_items": 11
   },
   "staged_cases": [
     {
@@ -728,6 +806,7 @@
     "remaining_gap": "not safely calculated"
   },
   "next_actions": [
+    "Resolve the 18 persistent candidate-review items before any page is drafted or released; the seven identity-matched candidates still need full page-level extraction.",
     "Resolve open PR #4 and PR #3 serially, reconcile overlapping files, then rebase/reapply the AM work on a fresh batch branch before continuing.",
     "Continue primary extraction for CAPITAL, AUGMENT, CAMPASS, AEGEAN, LITESPARK-011, DeLLphi-305 and HARMONi-A.",
     "Resolve held registry/protocol issues for Ponatinib, EXCALIBER, botidotin, Felzartamab, ROAM, oral paclitaxel, ctDNA-CRC, BOND-003, JCOG1403, JCOG1019 and IRIMAD.",
