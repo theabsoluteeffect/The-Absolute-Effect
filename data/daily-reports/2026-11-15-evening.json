@@ -11,7 +11,7 @@
     "branch_commit": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
     "pull_request": null,
     "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
-    "follow_up_commit_sha": "82543a73a2773ad4e2c878da0678b33b058e4dbf"
+    "follow_up_commit_sha": "c61558150cb9770003af512ede870ff6b3f2fe8f"
   },
   "audit": {
     "canonical_trial_pages_total": 431,
@@ -1023,7 +1023,7 @@
     "note": "No new trial page was added, so no evidence-index, archive or Trial-of-the-Day record was created."
   },
   "validation": {
-    "static_repair_checks": "passed on re-read of five pages: no NaN chart widths, malformed ClinicalTrials.gov URLs, NCT-as-NNT fields or incorrect median-PFS percentage units; FIGHT-302 median PFS is labelled in months, PFS landmark NNTs use source-reported 12/24-month estimates, and static charts are guarded against duplicate auto-rendering. Full release validator not run because the exact-30 publication gate was unmet and no PR was opened.",
+    "static_repair_checks": "passed on re-read of five pages: no NaN chart widths, malformed ClinicalTrials.gov URLs, NCT-as-NNT fields or incorrect median-PFS percentage units; FIGHT-302 median PFS is labelled in months while safety rates retain percentage units, PFS landmark NNTs use source-reported 12/24-month estimates, and static charts are guarded against duplicate auto-rendering. Full release validator not run because the exact-30 publication gate was unmet and no PR was opened.",
     "full_release_validator": "not run — exact-30 publication gate unmet and no PR opened",
     "branch_pr_checks": "not run — no PR opened because 0/30 new unique pages were ready for publication",
     "branch_unmerged": true
