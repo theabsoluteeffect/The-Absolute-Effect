@@ -823,6 +823,17 @@
       "created_on": "2026-11-15",
       "evidence": "Neo-Healer primary publication and registry are verified, but the current official NCCN Breast Cancer guideline/reference list was not accessible. The page explicitly states that NCCN provenance is not verified and does not claim a recommendation category or reference number.",
       "next_action": "Retrieve the current authorised NCCN Breast Cancer guideline or complete NCCN-authored Insights reference list and check whether the trial is cited in an active recommendation; otherwise retain the source-access limitation."
+    },
+    {
+      "id": "open-pr-overlap-serialization-2026-11-15",
+      "trial_id": null,
+      "page_path": null,
+      "issue_type": "branch_serialization",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "evidence": "Two existing open PRs were found after the AM branch was committed. PR #4 (atlas-batch/2026-11-14-pm) overlaps this branch in data/master-trial-roster.json, evidence/index.html, data/deferred-negative-evidence.json, data/nccn-coverage-ledger.json and data/repair-queue.json. PR #3 (feature/complete-outcome-visualizations-2026-11-08) also overlaps data/master-trial-roster.json. Both PRs report audit and Cloudflare Pages checks completed successfully, but GitHub reports mergeable=false.",
+      "next_action": "Resolve existing PRs serially and reconcile their file changes with atlas-batch/2026-11-15-am. Do not open or merge a new PR until overlapping changes are reconciled, exactly 30 new unique trial pages are complete, and strict release/outcome-visualization validators pass."
     }
   ],
   "resolved_items": [
@@ -1146,6 +1157,37 @@
     "open_items_after_run": 67,
     "resolved_items_total": 19,
     "full_audit_completed": false,
-    "next_page_to_review": "abcsg-16-salsa"
+    "next_page_to_review": "abcsg-16-salsa",
+    "status": "blocked_by_open_overlapping_prs_and_incomplete_batch",
+    "overlapping_prs": [
+      {
+        "number": 4,
+        "head": "atlas-batch/2026-11-14-pm",
+        "mergeable": false,
+        "checks": {
+          "audit": "success",
+          "cloudflare_pages": "success"
+        },
+        "overlapping_files": [
+          "data/master-trial-roster.json",
+          "evidence/index.html",
+          "data/deferred-negative-evidence.json",
+          "data/nccn-coverage-ledger.json",
+          "data/repair-queue.json"
+        ]
+      },
+      {
+        "number": 3,
+        "head": "feature/complete-outcome-visualizations-2026-11-08",
+        "mergeable": false,
+        "checks": {
+          "audit": "success",
+          "cloudflare_pages": "success"
+        },
+        "overlapping_files": [
+          "data/master-trial-roster.json"
+        ]
+      }
+    ]
   }
 }

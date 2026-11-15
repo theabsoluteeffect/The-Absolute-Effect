@@ -516,5 +516,40 @@
     "The 30-case list includes 9 exact existing-study duplicates and 21 genuinely distinct underlying studies.",
     "Eight unique candidates have primary publication/registry identity matched; only Neo-Healer has a complete primary-data extraction and branch-staged page in this run.",
     "No new page was merged or published to main."
+  ],
+  "publication_blockers": [
+    "Batch incomplete: 1 new unique page staged versus required 30; 29 additional fully verified pages are not staged.",
+    "Open PR #4 overlaps the roster, evidence index, deferred-negative queue, NCCN ledger and repair queue; open PR #3 overlaps the roster. Both report successful audit/Cloudflare checks but mergeable=false.",
+    "Local strict release validator and branch-specific outcome visualization audit were not run; no new PR opened and no deployment claimed."
+  ],
+  "existing_open_prs": [
+    {
+      "number": 4,
+      "head": "atlas-batch/2026-11-14-pm",
+      "mergeable": false,
+      "checks": {
+        "audit": "success",
+        "cloudflare_pages": "success"
+      },
+      "overlapping_files": [
+        "data/master-trial-roster.json",
+        "evidence/index.html",
+        "data/deferred-negative-evidence.json",
+        "data/nccn-coverage-ledger.json",
+        "data/repair-queue.json"
+      ]
+    },
+    {
+      "number": 3,
+      "head": "feature/complete-outcome-visualizations-2026-11-08",
+      "mergeable": false,
+      "checks": {
+        "audit": "success",
+        "cloudflare_pages": "success"
+      },
+      "overlapping_files": [
+        "data/master-trial-roster.json"
+      ]
+    }
   ]
 }
