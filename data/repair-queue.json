@@ -1135,6 +1135,26 @@
         "browser_rendered_qa": false,
         "branch_only": true
       }
+    },
+    {
+      "id": "neo-healer-crude-versus-adjusted-absolute-effect-2026-11-15",
+      "trial_id": "neo-healer",
+      "page_path": "trial-pages/neo-healer/index.html",
+      "issue_type": "absolute_effect_arithmetic",
+      "severity": "high",
+      "status": "resolved",
+      "resolved_on": "2026-11-15",
+      "evidence": "The primary paper reports tpCR 164/263 (62.4%) versus 132/258 (51.2%) and an adjusted absolute difference of 11.4 pp. The crude difference between the displayed rounded rates is 11.2 pp.",
+      "resolution": "The outcome chart continues to show the observed rates. The NNT pictogram data-benefit is now 11.2 pp and NNT 9 (1/0.112=8.93, rounded up). The page and roster separately retain the paper-reported adjusted difference of 11.4 pp.",
+      "verification": {
+        "primary_article_checked": true,
+        "raw_rate_arithmetic_checked": true,
+        "adjusted_estimate_preserved": true,
+        "data_benefit_matches_crude_rates": true,
+        "nnt_calculation_checked": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      }
     }
   ],
   "last_partial_run": {
@@ -1153,9 +1173,9 @@
       "shape"
     ],
     "closed_existing_items": 3,
-    "new_resolved_defects": 3,
+    "new_resolved_defects": 4,
     "open_items_after_run": 67,
-    "resolved_items_total": 19,
+    "resolved_items_total": 20,
     "full_audit_completed": false,
     "next_page_to_review": "abcsg-16-salsa",
     "status": "blocked_by_open_overlapping_prs_and_incomplete_batch",

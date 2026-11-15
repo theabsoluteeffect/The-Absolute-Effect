@@ -8879,9 +8879,10 @@
       "absolute_effect": {
         "endpoint": "Total pathological complete response",
         "horizon": "At surgery after 6 cycles",
-        "benefit_percentage_points": 11.4,
+        "benefit_percentage_points": 11.2,
+        "source_reported_adjusted_difference_percentage_points": 11.4,
         "nnt": 9,
-        "notes": "62.4% vs 51.2%; 1/0.114=8.77, rounded up to 9."
+        "notes": "NNT uses the crude difference between the displayed observed rates (62.4%−51.2%=11.2 pp); the paper separately reports an adjusted absolute difference of 11.4 pp."
       }
     }
   ],
