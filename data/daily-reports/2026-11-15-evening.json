@@ -12,9 +12,11 @@
     "pull_request": null,
     "repair_commit_sha": "05911e4f2f82ccdaa75d1e99f951dbccf15ee89c",
     "follow_up_commit_sha": "11cd624144cc340c05401111b703c9872e1499ec",
-    "latest_verified_content_commit": "11cd624144cc340c05401111b703c9872e1499ec",
+    "latest_verified_content_commit": "f383e98edbeea7af4d6bdace0447d76be75956c0",
     "branch_commit_before_report_update": "8ec1d2a846719209f139585812e1f22f85be8427",
-    "report_update_commit_sha": "pending"
+    "report_update_commit_sha": "f383e98edbeea7af4d6bdace0447d76be75956c0",
+    "branch_head_after_evidence_update": "f383e98edbeea7af4d6bdace0447d76be75956c0",
+    "report_content_blob_sha": "60a59fbe09c42d3790deef2c93b50b341cd1d448"
   },
   "audit": {
     "canonical_trial_pages_total": 431,
