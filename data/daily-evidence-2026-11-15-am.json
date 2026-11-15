@@ -121,7 +121,12 @@
         "https://clinicaltrials.gov/study/NCT06747338"
       ],
       "page_path": "trial-pages/neo-healer/index.html",
-      "commit_sha": "2030417481a9a656d71ac88d9efb4709d70d6f9d"
+      "commit_sha": "74539b829b2c17f7c46f45016611bf698b6d6be4",
+      "effect": {
+        "crude_difference_pp": 11.2,
+        "source_reported_adjusted_difference_pp": 11.4,
+        "nnt": 9
+      }
     },
     {
       "candidate": "HEALER",
@@ -515,7 +520,8 @@
     "HARMONi-A (NCT05184712) is distinct from global HARMONi (NCT06396065); it is not a duplicate.",
     "The 30-case list includes 9 exact existing-study duplicates and 21 genuinely distinct underlying studies.",
     "Eight unique candidates have primary publication/registry identity matched; only Neo-Healer has a complete primary-data extraction and branch-staged page in this run.",
-    "No new page was merged or published to main."
+    "No new page was merged or published to main.",
+    "Neo-Healer absolute-effect QA distinguishes the crude 11.2-pp difference between displayed observed rates from the paper-reported adjusted 11.4-pp difference; the NNT pictogram uses the crude 11.2-pp difference."
   ],
   "publication_blockers": [
     "Batch incomplete: 1 new unique page staged versus required 30; 29 additional fully verified pages are not staged.",

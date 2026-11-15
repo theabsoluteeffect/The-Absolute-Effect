@@ -42,7 +42,8 @@
           "data/master-trial-roster.json"
         ]
       }
-    ]
+    ],
+    "branch_page_correction_commit": "74539b829b2c17f7c46f45016611bf698b6d6be4"
   },
   "audit": {
     "canonical_page_files_at_start": 431,
@@ -54,7 +55,8 @@
     "full_roster_audit_completed": false,
     "source_audit_metadata_stale": true,
     "repair_queue_open_after": 67,
-    "repair_queue_resolved_total": 19
+    "repair_queue_resolved_total": 19,
+    "new_page_qc_corrections": 1
   },
   "repairs": [
     {
@@ -112,9 +114,9 @@
     "open_before": 68,
     "resolved_before": 13,
     "existing_items_closed": 3,
-    "new_resolved_defects": 3,
+    "new_resolved_defects": 4,
     "open_after": 68,
-    "resolved_after": 19,
+    "resolved_after": 20,
     "full_queue_complete": false,
     "closed_issue_ids": [
       "dated-context-keynote-a18",
@@ -160,16 +162,16 @@
       "intervention": "Anbenitamab 30 mg/kg + HB1801 100 mg/m² q3w ×6, with/without carboplatin AUC6",
       "comparator": "Trastuzumab/pertuzumab/docetaxel ± carboplatin q3w ×6",
       "primary_endpoint": "tpCR at surgery after 6 cycles; data cutoff 28 Jan 2026; median follow-up <8 months",
-      "key_efficacy": "164/263 (62.4%) vs 132/258 (51.2%); difference 11.4 pp (95% CI 3.2–19.6); P=0.004",
+      "key_efficacy": "164/263 (62.4%) vs 132/258 (51.2%); crude difference 11.2 pp; trial-reported adjusted difference 11.4 pp (95% CI 3.2–19.6); P=0.004.",
       "grade3_4_toxicity": "77/263 (29.3%) vs 73/258 (28.3%); grade 3 neutropenia 30/263 (11.4%) vs 28/258 (10.9%); no treatment-related deaths",
       "qol": "No validated QoL endpoint reported in primary paper",
-      "nnt": "9 for one additional tpCR at surgery; 1/0.114=8.77, rounded up to 9",
+      "nnt": "9 for one additional tpCR at surgery; crude-rate calculation: 1/(0.624−0.512)=8.93, rounded up to 9. The trial separately reports an adjusted difference of 11.4 pp.",
       "doi": "10.1001/jamaoncol.2026.3329",
       "pmid": "42690668",
       "registry": "NCT06747338",
       "nccn_provenance": "not verified — source inaccessible",
       "branch_page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-15-am/trial-pages/neo-healer/index.html",
-      "commit_sha": "2030417481a9a656d71ac88d9efb4709d70d6f9d",
+      "commit_sha": "74539b829b2c17f7c46f45016611bf698b6d6be4",
       "status": "branch-staged; not published to main"
     }
   ],
@@ -262,7 +264,10 @@
         "https://clinicaltrials.gov/study/NCT06747338"
       ],
       "page_path": "trial-pages/neo-healer/index.html",
-      "commit_sha": "2030417481a9a656d71ac88d9efb4709d70d6f9d"
+      "commit_sha": "74539b829b2c17f7c46f45016611bf698b6d6be4",
+      "crude_difference_pp": 11.2,
+      "source_reported_adjusted_difference_pp": 11.4,
+      "nnt": 9
     },
     {
       "candidate": "HEALER",
@@ -661,8 +666,11 @@
       "nnt_nnh": "Not appropriate: non-inferiority design; CI crosses zero."
     },
     "neo_healer": {
-      "tpcr_difference_pp": 11.4,
-      "nnt": 9
+      "tpcr_crude_difference_pp": 11.2,
+      "source_reported_adjusted_difference_pp": 11.4,
+      "nnt": 9,
+      "data_benefit_attribute": 11.2,
+      "arithmetic": "1/0.112=8.93; round up to 9"
     },
     "data_attributes_match_structured_records": true,
     "finite_chart_values": true,
