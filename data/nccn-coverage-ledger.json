@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -104,5 +104,21 @@
       ]
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited. 15 November 2026: official NCCN full guideline/reference-list access was not obtained for the selected disease sites; no new NCCN subset or citation provenance is claimed.",
+  "source_access_log": [
+    {
+      "date": "2026-11-15",
+      "source": "Official NCCN Clinical Practice Guidelines",
+      "status": "not retrieved",
+      "attempts": [
+        "NCCN official guideline searches for Cervical Cancer 2026",
+        "NCCN official guideline searches for NSCLC 2026",
+        "NCCN official guideline searches for Acute Lymphoblastic Leukemia 2026",
+        "NCCN official guideline searches for Multiple Myeloma 2026",
+        "NCCN official guideline searches for Pancreatic Adenocarcinoma 2026",
+        "NCCN official guideline searches for Antiemesis 2026"
+      ],
+      "note": "No complete official guideline or complete NCCN-authored Insights reference list was retrieved. No guideline version, section, reference number or recommendation category is claimed for this run. Discovery continued through primary NEJM/JCO publications, official ASCO abstracts and PubMed records; NCCN citation mapping remains open."
+    }
+  ]
 }

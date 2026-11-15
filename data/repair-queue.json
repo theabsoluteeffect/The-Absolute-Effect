@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-14T06:33:37.234Z",
@@ -1009,6 +1009,70 @@
       "created_on": "2026-11-14",
       "resolved_on": "2026-11-14",
       "resolution": "Page expanded from primary publication/final update with design, denominators, efficacy, harms, absolute effects, NNT/NNH limitations, QoL where reported, and dated freshness caveat."
+    },
+    {
+      "issue_id": "visual-nnt-checkmate-816-2026-11-15",
+      "trial_id": "checkmate-816",
+      "trial": "CheckMate 816",
+      "path": "trial-pages/checkmate-816/index.html",
+      "category": "absolute_effect_calculation_and_structured_metadata",
+      "severity": "high",
+      "evidence": "Primary NEJM 2022 and 2025 reports show pCR 24.0% vs 2.2%, 2-year EFS 63.8% vs 45.3%, and 5-year OS 65.4% vs 55.0%. Existing page had data-benefit 10.00 despite a 10.4-point OS difference and three numeric NNTs without endpoint-specific structured records.",
+      "action": "Corrected pCR absolute difference to 21.8 points; added separate structured endpoint/horizon/NNT records for EFS, pCR and OS; corrected OS data-benefit to 10.4.",
+      "status": "resolved",
+      "verified_on": "2026-11-15",
+      "verification": "Cross-checked NEJMoa2202170 and NEJMoa2502931; arithmetic ceil(100/difference): EFS 6, pCR 5, OS 10. Static page markup reread."
+    },
+    {
+      "issue_id": "visual-link-keynote-a18-2026-11-15",
+      "trial_id": "keynote-a18",
+      "trial": "KEYNOTE-A18",
+      "path": "trial-pages/keynote-a18/index.html",
+      "category": "broken_source_link_and_nonfinite_visualization",
+      "severity": "critical",
+      "evidence": "Canonical page contained NaN% chart widths, nonnumeric data-outcome values (\"36 months\"), a malformed ClinicalTrials.gov URL embedding a PubMed query, a broken primary-source href and NNT text populated with NCT04221945.",
+      "action": "Replaced non-finite charts with numeric static OS/PFS bars; corrected registry and primary publication links; corrected 36-month OS NNT and added exact absolute-effect metadata.",
+      "status": "resolved",
+      "verified_on": "2026-11-15",
+      "verification": "Lancet primary PFS DOI 10.1016/S0140-6736(24)00317-9 / PMID 38521086; OS DOI 10.1016/S0140-6736(24)01808-7 / PMID 39288779; registry NCT04221945. OS 82.6% vs 74.8%, difference 7.8 points, ceil(100/7.8)=13."
+    },
+    {
+      "issue_id": "visual-link-lacc-2026-11-15",
+      "trial_id": "lacc",
+      "trial": "LACC trial",
+      "path": "trial-pages/lacc/index.html",
+      "category": "broken_source_link_nonfinite_visualization_and_nnt_error",
+      "severity": "critical",
+      "evidence": "Canonical page contained NaN% chart widths, nonnumeric data-outcome values, malformed registry/source URLs and NNT field populated with NCT00614211.",
+      "action": "Replaced chart with source-grounded numeric 4.5-year DFS bars; corrected primary, follow-up, QoL and registry links; changed erroneous NNT identifier to an endpoint-specific approximate NNH.",
+      "status": "resolved",
+      "verified_on": "2026-11-15",
+      "verification": "NEJMoa1806395 / PMID 30380365: DFS 86.0% vs 96.5%, absolute harm 10.6 points, ceil(100/10.6)=10; final analysis DOI 10.1200/JCO.23.02335 / PMID 38810208; QoL DOI 10.1016/S1470-2045(20)30081-4 / PMID 32502445."
+    },
+    {
+      "issue_id": "source-link-and-completeness-shape-2026-11-15",
+      "trial_id": "shape",
+      "trial": "SHAPE",
+      "path": "trial-pages/shape/index.html",
+      "category": "primary_source_link_and_page_completeness",
+      "severity": "medium",
+      "evidence": "Canonical page linked to a generic PubMed search query and left the randomized denominator and key urinary morbidity outcomes incompletely specified.",
+      "action": "Replaced query link with exact DOI/PMID; specified 700 randomized (350 per arm), 4.5-year median follow-up and trial-reported urinary incontinence/retention rates; retained no-NNT non-inferiority interpretation.",
+      "status": "resolved",
+      "verified_on": "2026-11-15",
+      "verification": "NEJMoa2308900 / PMID 38416430; 3-year pelvic recurrence 2.52% vs 2.17%, 90% CI −1.62 to 2.32; urinary incontinence 4.7% vs 11.0% and retention 0.6% vs 9.9% beyond 4 weeks."
+    }
+  ],
+  "run_audit_log": [
+    {
+      "run_id": "2026-11-15-evening",
+      "main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "pages_manually_inspected": 4,
+      "canonical_pages_total": 431,
+      "full_manual_audit_complete": false,
+      "repairs_staged": 4,
+      "repair_branch": "atlas-batch/2026-11-15-pm",
+      "note": "Four specifically flagged pages rechecked against primary publications. The existing source_audit remains stale (audited_head 896d844); do not mark the full repository audit complete. Dated current-practice issues for these four pages remain open."
     }
   ]
 }

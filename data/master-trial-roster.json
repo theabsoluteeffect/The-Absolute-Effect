@@ -2156,9 +2156,45 @@
       "discipline": "Medical",
       "setting": "Neoadjuvant",
       "question": "In resectable stage IB–IIIA NSCLC, does neoadjuvant nivolumab plus platinum-doublet chemotherapy improve pathological response and survival compared with neoadjuvant chemotherapy alone? [CheckMate 816]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Resectable stage IB–IIIA NSCLC · neoadjuvant chemoimmunotherapy"
+      "freshness_review_status": "Primary 2022 and 2025 NEJM reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Source-reported rates and endpoint-specific absolute-effect markup corrected 2026-11-15; browser-rendered QA pending.",
+      "setting_detail": "Resectable stage IB–IIIA NSCLC · neoadjuvant chemoimmunotherapy",
+      "primary": "10.1056/NEJMoa2202170",
+      "primary_title": "Neoadjuvant Nivolumab plus Chemotherapy in Resectable Lung Cancer",
+      "registry_id": "NCT02998528",
+      "follow_up_publications": [
+        {
+          "doi": "10.1056/NEJMoa2502931",
+          "title": "Overall Survival with Neoadjuvant Nivolumab plus Chemotherapy in Lung Cancer",
+          "pmid": null
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Event-free survival",
+        "horizon": "2 years",
+        "benefit_percentage_points": 18.5,
+        "nnt": 6,
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "5 years",
+            "benefit_percentage_points": 10.4,
+            "nnt": 10
+          },
+          {
+            "endpoint": "Pathological complete response",
+            "horizon": "At surgery",
+            "benefit_percentage_points": 21.8,
+            "nnt": 5
+          }
+        ],
+        "calculation": "For each endpoint, approximate NNT = ceil(100 / absolute percentage-point difference); endpoints and horizons are distinct.",
+        "sources": [
+          "10.1056/NEJMoa2202170",
+          "10.1056/NEJMoa2502931"
+        ]
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "checkmate-8hw",
@@ -4765,9 +4801,29 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab"
+      "freshness_review_status": "Primary PFS and OS Lancet reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Non-finite chart widths and malformed source link corrected; static source-rate bars and NNT markup verified 2026-11-15; browser QA pending.",
+      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
+      "primary": "10.1016/S0140-6736(24)00317-9",
+      "primary_title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer (ENGOT-cx11/GOG-3047/KEYNOTE-A18): a randomised, double-blind, phase 3 clinical trial",
+      "registry_id": "NCT04221945",
+      "follow_up_publications": [
+        {
+          "doi": "10.1016/S0140-6736(24)01808-7",
+          "title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer: overall survival results",
+          "pmid": "39288779"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Overall survival",
+        "horizon": "36 months",
+        "benefit_percentage_points": 7.8,
+        "nnt": 13,
+        "event_definition": "One additional patient alive at 36 months",
+        "calculation": "ceil(100 / 7.8) = 13",
+        "source_doi": "10.1016/S0140-6736(24)01808-7"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "krascendo-1",
@@ -4818,9 +4874,34 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In early-stage cervical cancer requiring radical hysterectomy, does minimally invasive radical hysterectomy preserve disease-free and overall survival compared with open abdominal radical hysterectomy? [LACC]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy"
+      "freshness_review_status": "Primary NEJM, JCO final analysis and Lancet Oncology QoL reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Non-finite chart widths, malformed registry/source links and NNT identifier error corrected; source-rate bars and NNH markup verified 2026-11-15; browser QA pending.",
+      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy",
+      "primary": "10.1056/NEJMoa1806395",
+      "primary_title": "Minimally Invasive versus Abdominal Radical Hysterectomy for Cervical Cancer",
+      "registry_id": "NCT00614211",
+      "follow_up_publications": [
+        {
+          "doi": "10.1200/JCO.23.02335",
+          "title": "LACC Trial: Final Analysis on Overall Survival Comparing Open Versus Minimally Invasive Radical Hysterectomy for Early-Stage Cervical Cancer",
+          "pmid": "38810208"
+        },
+        {
+          "doi": "10.1016/S1470-2045(20)30081-4",
+          "title": "Quality of life in patients with cervical cancer after open versus minimally invasive radical hysterectomy (LACC)",
+          "pmid": "32502445"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Disease-free survival (recurrence or death from cervical cancer)",
+        "horizon": "4.5 years",
+        "harm_percentage_points": 10.6,
+        "nnh": 10,
+        "event_definition": "One additional recurrence or cervical-cancer death with minimally invasive versus open surgery",
+        "calculation": "ceil(100 / 10.6) = 10",
+        "source_doi": "10.1056/NEJMoa1806395"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "laura",
@@ -6987,9 +7068,13 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In carefully selected patients with low-risk early-stage cervical cancer, is simple hysterectomy non-inferior to radical hysterectomy for pelvic recurrence while reducing surgical morbidity? [SHAPE]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy"
+      "freshness_review_status": "Primary NEJM report verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Generic PubMed query replaced with DOI/PMID links; 3-year recurrence chart and source values checked 2026-11-15; browser QA pending.",
+      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy",
+      "primary": "10.1056/NEJMoa2308900",
+      "primary_title": "Simple versus Radical Hysterectomy in Women with Low-Risk Cervical Cancer",
+      "registry_id": "NCT01658930",
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "sharp",

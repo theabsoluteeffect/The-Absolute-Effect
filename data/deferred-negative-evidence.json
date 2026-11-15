@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -18,6 +18,22 @@
         "https://doi.org/10.6004/jnccn.2026.0047"
       ],
       "status_note": "Already rostered; no duplicate page."
+    },
+    {
+      "trial_id": "attraction-6",
+      "trial": "ATTRACTION-6",
+      "status": "deferred_contrary_evidence",
+      "discovery_source": "ASCO 2026 official abstract",
+      "primary_title": "Nivolumab plus ipilimumab combined with chemotherapy as first-line treatment for HER2-negative unresectable advanced or recurrent gastric/gastroesophageal junction cancer: A randomized phase 3 trial (ATTRACTION-6)",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.4006",
+      "registry_id": "NCT05144854",
+      "reason": "The phase III primary OS endpoint was not met: median OS 15.7 vs 15.8 months; HR 0.90 (95.8% CI 0.74–1.09), P=0.267. Grade ≥3 AEs were 80.0% vs 62.4% and grade ≥3 treatment-related AEs 64.8% vs 42.9%.",
+      "action": "Retain as negative/contrary evidence for first-line HER2-negative advanced gastric/GEJ cancer; do not promote as a positive practice-changing trial page. Reassess if a full peer-reviewed report changes the evidence.",
+      "primary_sources": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4006",
+        "https://clinicaltrials.gov/study/NCT05144854"
+      ],
+      "reviewed_on": "2026-11-15"
     }
   ]
 }
