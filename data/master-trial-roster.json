@@ -27,10 +27,10 @@
     "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
-    "permanent_trial_pages": 431,
+    "permanent_trial_pages": 432,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 437,
+    "total_unique_trials": 438,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -1126,7 +1126,42 @@
         "from": "Adjuvant / Postoperative",
         "to": "Adjuvant"
       }
-    ]
+    ],
+    "branch_work_in_progress": {
+      "date": "2026-11-15",
+      "branch": "atlas-batch/2026-11-15-am",
+      "status": "INCOMPLETE_NOT_MERGED",
+      "new_page_ids": [
+        "neo-healer"
+      ],
+      "page_count_staged": 1,
+      "batch_target": 30,
+      "not_published_to_main": 1
+    },
+    "last_partial_review": {
+      "date": "2026-11-15",
+      "base_main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "existing_pages_manually_source_and_visual_reviewed": [
+        "keynote-a18",
+        "lacc",
+        "shape"
+      ],
+      "identity_and_index_checked": [
+        "checkmate-816",
+        "keynote-a18",
+        "lacc",
+        "shape"
+      ],
+      "candidate_screened": 30,
+      "duplicates": 9,
+      "new_unique": 21,
+      "primary_identity_verified": 8,
+      "held": 11,
+      "deferred_negative": 2,
+      "published_to_main": 0,
+      "branch_staged": 1,
+      "full_roster_clinical_audit_completed": false
+    }
   },
   "trials": [
     {
@@ -4765,9 +4800,29 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab"
+      "freshness_review_status": "Dated current-practice context added 2026-11-15; latest full NCCN guideline/reference list not retrievable; guideline freshness task remains open.",
+      "outcome_visual_review_status": "Primary-source values and visible chart structure manually checked 2026-11-15; browser-rendered QA and strict release validator pending.",
+      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
+      "primary": "https://doi.org/10.1016/S0140-6736(24)01808-7",
+      "primary_title": "Pembrolizumab or placebo plus chemoradiotherapy followed by pembrolizumab or placebo for high-risk locally advanced cervical cancer: overall survival results from KEYNOTE-A18",
+      "pmid": "39288779",
+      "registry_id": "NCT04221945",
+      "registry": "NCT04221945",
+      "quality_check_date": "2026-11-15",
+      "absolute_effects": [
+        {
+          "endpoint": "PFS event by 24 months",
+          "horizon": "24 months",
+          "benefit_percentage_points": 10.5,
+          "nnt": 10
+        },
+        {
+          "endpoint": "All-cause death by 36 months",
+          "horizon": "36 months",
+          "benefit_percentage_points": 7.8,
+          "nnt": 13
+        }
+      ]
     },
     {
       "id": "krascendo-1",
@@ -4818,9 +4873,21 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In early-stage cervical cancer requiring radical hysterectomy, does minimally invasive radical hysterectomy preserve disease-free and overall survival compared with open abdominal radical hysterectomy? [LACC]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy"
+      "freshness_review_status": "Dated current-practice context added 2026-11-15; latest full NCCN guideline/reference list not retrievable; guideline freshness task remains open.",
+      "outcome_visual_review_status": "Primary-source values and visible chart structure manually checked 2026-11-15; browser-rendered QA and strict release validator pending.",
+      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy",
+      "primary": "https://doi.org/10.1056/NEJMoa1806395",
+      "primary_title": "Minimally Invasive versus Abdominal Radical Hysterectomy for Cervical Cancer",
+      "pmid": "30380365",
+      "registry_id": "NCT00614211",
+      "registry": "NCT00614211",
+      "quality_check_date": "2026-11-15",
+      "absolute_effects": {
+        "endpoint": "DFS event (recurrence or death)",
+        "horizon": "4.5 years",
+        "harm_percentage_points": 11,
+        "nnh": 10
+      }
     },
     {
       "id": "laura",
@@ -6987,9 +7054,23 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In carefully selected patients with low-risk early-stage cervical cancer, is simple hysterectomy non-inferior to radical hysterectomy for pelvic recurrence while reducing surgical morbidity? [SHAPE]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy"
+      "freshness_review_status": "Dated current-practice context added 2026-11-15; NCCN full guideline/reference list inaccessible; guideline freshness task remains open.",
+      "outcome_visual_review_status": "Primary-source recurrence values and non-inferiority visualization manually checked 2026-11-15; browser-rendered QA pending.",
+      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy",
+      "primary": "https://doi.org/10.1056/NEJMoa2308900",
+      "primary_title": "Simple versus Radical Hysterectomy in Women with Low-Risk Cervical Cancer",
+      "pmid": "38416430",
+      "registry": "NCT01658930",
+      "registry_id": "NCT01658930",
+      "quality_check_date": "2026-11-15",
+      "absolute_effect": {
+        "endpoint": "Pelvic recurrence",
+        "horizon": "3 years",
+        "absolute_difference_percentage_points": 0.35,
+        "nnt": null,
+        "nnh": null,
+        "notes": "Non-inferiority design; CI crosses zero; NNT/NNH not appropriate."
+      }
     },
     {
       "id": "sharp",
@@ -8768,6 +8849,44 @@
       },
       "primary_title": "Chemoradiotherapy versus short-course radiotherapy for response-adapted organ preservation in early-stage and intermediate-stage rectal cancer (STAR-TREC): 12-month results of an international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial",
       "pmid": "42633754"
+    },
+    {
+      "id": "neo-healer",
+      "trial": "Neo-Healer / BCTOP-H-N01",
+      "site": "Breast Cancer",
+      "source": "trial-pages/neo-healer/",
+      "discipline": "Medical Oncology",
+      "setting": "Neoadjuvant / Preoperative",
+      "question": "In stage II–III ERBB2-positive breast cancer, does neoadjuvant anbenitamab plus HB1801 improve tpCR versus THP, with or without carboplatin?",
+      "path": "trial-pages/neo-healer/",
+      "primary": "https://doi.org/10.1001/jamaoncol.2026.3329",
+      "primary_title": "Neoadjuvant Anbenitamab and HB1801 in ERBB2-Positive Breast Cancer: A Phase 3 Randomized Clinical Trial",
+      "pmid": "42690668",
+      "registry": "NCT06747338",
+      "registry_id": "NCT06747338",
+      "aliases": [
+        "Neo-Healer",
+        "BCTOP-H-N01",
+        "KN026-004",
+        "Anbenitamab plus HB1801 neoadjuvant phase 3"
+      ],
+      "setting_detail": "Stage II–III ERBB2-positive early/locally advanced disease · neoadjuvant · tpCR primary analysis",
+      "freshness_review_status": "Primary report reviewed 2026-11-15; NCCN Breast Cancer guideline provenance not verified because full guideline/reference list was inaccessible; mapping task open.",
+      "outcome_visual_review_status": "Primary-source tpCR and grade 3–4 toxicity charts checked; NNT arithmetic checked; browser-rendered QA and strict release validator pending.",
+      "quality_check_date": "2026-11-15",
+      "batch_date": "2026-11-15",
+      "nccn_provenance": "not verified — source inaccessible",
+      "absolute_effect": {
+        "endpoint": "Total pathological complete response",
+        "horizon": "At surgery after 6 cycles",
+        "benefit_percentage_points": 11.4,
+        "nnt": 9,
+        "notes": "62.4% vs 51.2%; 1/0.114=8.77, rounded up to 9."
+      }
     }
-  ]
+  ],
+  "partial_quality_check": {
+    "date": "2026-11-15",
+    "scope": "Three existing cervical pages source/visual repaired and one new Neo-Healer page staged on branch; not a full roster audit; strict release validator and browser rendering pending."
+  }
 }
