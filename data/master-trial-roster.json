@@ -27,10 +27,10 @@
     "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
-    "permanent_trial_pages": 431,
+    "permanent_trial_pages": 432,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 437,
+    "total_unique_trials": 439,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -535,7 +535,7 @@
       "bladder_cancer_added": 1
     },
     "archive_count": 15,
-    "daily_evidence_file_count": 23,
+    "daily_evidence_file_count": 28,
     "daily_evidence_records": 30,
     "evidence_index_links_added": 32,
     "new_pages_found": 11,
@@ -677,7 +677,7 @@
       "duplicate_route_policy": "Legacy flat .html routes and canonical /index.html routes were grouped by common trial slug and counted once."
     },
     "evidence_index_rostered_paths_missing": 0,
-    "canonical_trial_page_index_files": 401,
+    "canonical_trial_page_index_files": 433,
     "roster_unique_page_paths": 399,
     "redirect_only_trial_page_stubs": 1,
     "shared_anchor_trial_entries": 8,
@@ -723,7 +723,7 @@
     },
     "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper.",
     "daily_evidence_files_count": 24,
-    "daily_evidence_records_total": 290,
+    "daily_evidence_records_total": 388,
     "daily_evidence_records_uploaded": 144,
     "morning_run_2026_11_14": {
       "new_trials_added": [
@@ -1102,13 +1102,46 @@
     "last_batch_expected_page_count": 30,
     "last_batch_actual_page_count": 2,
     "last_batch_missing": 28,
-    "last_batch_status": "IN_PROGRESS — do not open PR until exactly 30 independently verified unique studies",
+    "last_batch_status": "IN_PROGRESS — staged on atlas-batch/2026-11-16-am; do not open PR until exactly 30 verified unique studies",
     "last_batch_ids": [
       "dellphi-305",
       "harmoni-a"
     ],
-    "full_release_validation": "not run — batch incomplete",
-    "deployment_status": "not deployed — branch unmerged"
+    "full_release_validation": "not run — exact-30 gate not met",
+    "deployment_status": "not deployed — branch unmerged",
+    "last_structural_reconciliation": "2026-11-16",
+    "roster_entries": 439,
+    "evidence_index_unique_links": 440,
+    "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
+    "evidence_index_rostered_page_paths_added": 30,
+    "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
+    "full_roster_reconciliation_2026_11_16": {
+      "status": "STRUCTURAL_RECONCILIATION_COMPLETE; CLINICAL_AUDIT_INCOMPLETE",
+      "roster_entries": 439,
+      "unique_trial_ids": 439,
+      "canonical_trial_page_index_files": 433,
+      "unique_page_paths_referenced_by_roster": 432,
+      "shared_anchor_trial_entries": 8,
+      "redirect_only_trial_page_stubs": 1,
+      "unrostered_redirect_only_pages": [
+        "trial-pages/rosel/"
+      ],
+      "unrostered_canonical_content_pages": 0,
+      "missing_roster_page_targets": 0,
+      "archive_records": 15,
+      "archive_records_missing_from_roster": 0,
+      "current_trial_of_the_day": "GemX (gemx)",
+      "previous_trial_of_the_day": "ACOSOG Z11102 (acosog-z11102)",
+      "daily_evidence_files": 28,
+      "daily_evidence_records_total": 388,
+      "daily_evidence_records_marked_uploaded": 144,
+      "evidence_index_unique_links": 440,
+      "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
+      "evidence_index_rostered_page_paths_added": 30,
+      "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
+      "checked_on": "2026-11-16",
+      "scope_note": "Structural and registry reconciliation only. It does not constitute a complete clinical freshness audit or browser-rendered QA."
+    }
   },
   "trials": [
     {
@@ -8981,5 +9014,7 @@
       "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open"
     }
   ],
-  "last_updated": "2026-11-16"
+  "last_updated": "2026-11-16",
+  "batch_date": "2026-11-16",
+  "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded."
 }

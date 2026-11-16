@@ -3,7 +3,7 @@
   "updated_at": "2026-11-16",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
-    "generated_at": "2026-11-16T08:00:00+05:30",
+    "generated_at": "2026-11-16T07:59:04+05:30",
     "audited_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
     "status": "PARTIAL",
     "counts": {
@@ -33,7 +33,18 @@
     "missing_roster_index_links_after_branch": 0,
     "manual_pages_rechecked": 5,
     "full_clinical_audit_complete": false,
-    "scope_note": "Structural reconciliation across the complete page tree; only five canonical pages were manually re-read against primary evidence in this run."
+    "scope_note": "Structural reconciliation across all canonical page paths and index links; five existing pages manually re-reviewed against primary evidence. The remaining 426 existing canonical pages still require page-by-page source and current-practice review.",
+    "branch_roster_entries": 439,
+    "branch_unique_trial_ids": 439,
+    "branch_canonical_page_files": 433,
+    "branch_unique_roster_page_paths": 432,
+    "branch_evidence_index_unique_links": 440,
+    "branch_missing_roster_index_links": 0,
+    "branch_archive_entries": 15,
+    "branch_daily_evidence_files": 28,
+    "branch_daily_evidence_records": 388,
+    "manual_existing_pages_rechecked": 5,
+    "remaining_existing_pages_for_manual_audit": 426
   },
   "open_items": [
     {
@@ -1449,21 +1460,13 @@
       "page_path": "trial-pages/neo-healer/index.html",
       "issue_type": "absolute_effect_arithmetic",
       "severity": "high",
-      "status": "resolved_on_branch",
+      "status": "open",
       "resolved_on": "2026-11-15",
       "evidence": "The primary paper reports tpCR 164/263 (62.4%) versus 132/258 (51.2%) and an adjusted absolute difference of 11.4 pp. The crude difference between the displayed rounded rates is 11.2 pp.",
       "resolution": "The outcome chart continues to show the observed rates. The NNT pictogram data-benefit is now 11.2 pp and NNT 9 (1/0.112=8.93, rounded up). The page and roster separately retain the paper-reported adjusted difference of 11.4 pp.",
-      "verification": {
-        "primary_article_checked": true,
-        "raw_rate_arithmetic_checked": true,
-        "adjusted_estimate_preserved": true,
-        "data_benefit_matches_crude_rates": true,
-        "nnt_calculation_checked": true,
-        "browser_rendered_qa": false,
-        "branch_only": true
-      },
+      "verification": "Prior report marked this resolved on the 15 Nov AM branch, but the Neo-Healer page was not migrated to the 16 Nov AM branch; do not treat as repaired or published.",
       "issue_id": "neo-healer-crude-versus-adjusted-absolute-effect-2026-11-15",
-      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+      "next_action": "Carry forward only after independent source review and inclusion in a complete exact-30 batch."
     },
     {
       "issue_id": "index-roster-link-reconciliation-2026-11-16",
@@ -2008,6 +2011,10 @@
     "new_unique_candidates": 15,
     "duplicates": 1,
     "pages_staged": 2,
-    "pages_published": 0
+    "pages_published": 0,
+    "report_commit_sha": "426e7c0f84afc90221b3683dd8905a3559173d1e",
+    "branch_head_before_metadata_update": "426e7c0f84afc90221b3683dd8905a3559173d1e",
+    "resolved_on_branch": 12,
+    "reopened_not_migrated": 1
   }
 }

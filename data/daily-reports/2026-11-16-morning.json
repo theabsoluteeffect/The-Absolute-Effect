@@ -14,8 +14,12 @@
     "branch": "atlas-batch/2026-11-16-am",
     "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "work_commit_sha": "a4ec0903417d2c4fbd42c5853544e2ec112845c6",
-    "report_commit_sha": "to be verified after this report-file commit",
-    "main_head_unchanged": true
+    "report_commit_sha": "426e7c0f84afc90221b3683dd8905a3559173d1e",
+    "main_head_unchanged": true,
+    "branch_roster_entries": 439,
+    "branch_canonical_page_directories": 433,
+    "branch_unique_roster_page_paths": 432,
+    "branch_head_at_report_creation": "426e7c0f84afc90221b3683dd8905a3559173d1e"
   },
   "audit": {
     "main_roster_entries": 437,
@@ -49,15 +53,17 @@
       "SHAPE non-inferiority endpoint separated from secondary urinary morbidity; NNT 11 and 16 pictograms added"
     ],
     "closed_on_main": 0,
-    "resolved_on_branch_pending_merge": 8,
-    "source_level_verification": "Five pages were re-read against their primary publication/source data; browser-rendered QA remains pending."
+    "resolved_on_branch_pending_merge": 12,
+    "source_level_verification": "Five pages were re-read against their primary publication/source data; browser-rendered QA remains pending.",
+    "reopened_not_migrated": 1
   },
   "repair_queue": {
     "open_items": 120,
     "resolved_items_on_main": 13,
-    "resolved_on_branch": 13,
+    "resolved_on_branch": 12,
     "full_audit_open": true,
-    "queue_path": "data/repair-queue.json"
+    "queue_path": "data/repair-queue.json",
+    "deferred_negative_items": 12
   },
   "nccn": {
     "guidelines_in_ledger": 6,
@@ -473,7 +479,9 @@
     "pr_checks": "not run; no PR opened",
     "build": "not run",
     "commit": "three branch commits verified; work commit a4ec0903417d2c4fbd42c5853544e2ec112845c6",
-    "deployment": "not deployed; branch unmerged; no production claim"
+    "deployment": "not deployed; branch unmerged; no production claim",
+    "script_syntax_check": "PASS — release validator and outcome audit scripts compiled in isolated JavaScript syntax check",
+    "report_commit_sha": "426e7c0f84afc90221b3683dd8905a3559173d1e"
   },
   "cumulative_progress": {
     "verified_main_unique_studies": 437,
