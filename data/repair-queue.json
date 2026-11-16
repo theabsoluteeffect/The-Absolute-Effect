@@ -1722,11 +1722,14 @@
       "status": "open",
       "trial_id": "dellphi-305-release-qa",
       "evidence": "DeLLphi-305 page staged with NEJM primary report, NCT06211036 and 12-month OS landmark NNT; release QA remains pending",
-      "source_urls": [],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609482",
+        "https://pubmed.ncbi.nlm.nih.gov/42929702/"
+      ],
       "action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
       "next_action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
       "created_on": "2026-11-16",
-      "verification": "not closed"
+      "verification": "not closed Exact primary DOI/title match independently checked; primary outcome values corrected to source; full release gate still pending."
     },
     {
       "issue_id": "candidate-harmoni-a-release-qa-2026-11-16",
@@ -1735,11 +1738,15 @@
       "status": "open",
       "trial_id": "harmoni-a-release-qa",
       "evidence": "HARMONi-A staged as a distinct study (NCT05184712), separate from global HARMONi (NCT06396065)",
-      "source_urls": [],
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2024.10613",
+        "https://doi.org/10.1001/jama.2026.7745",
+        "https://pubmed.ncbi.nlm.nih.gov/42307937/"
+      ],
       "action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
       "next_action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
       "created_on": "2026-11-16",
-      "verification": "not closed"
+      "verification": "not closed Exact primary DOI/title match independently checked; primary outcome values corrected to source; full release gate still pending."
     }
   ],
   "resolved_items": [

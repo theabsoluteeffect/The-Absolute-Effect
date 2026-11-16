@@ -8953,11 +8953,11 @@
         "endpoint": "Overall survival at 12 months",
         "horizon": "12 months from randomization at maintenance start",
         "event_definition": "Alive at 12 months (Kaplan–Meier estimate; rounded landmark rates)",
-        "treatment_rate_pct": 79,
-        "control_rate_pct": 53,
-        "benefit_percentage_points": 26,
+        "treatment_rate_pct": 79.4,
+        "control_rate_pct": 53.3,
+        "benefit_percentage_points": 26.1,
         "nnt": 4,
-        "calculation": "ceil(100 / (79 − 53)) = ceil(3.85) = 4",
+        "calculation": "ceil(100 / (79.4 − 53.3)) = ceil(3.83) = 4",
         "source_doi": "10.1056/NEJMoa2609482",
         "source_type": "Primary NEJM report and ESMO 2026 presentation; landmark rates rounded"
       },
@@ -8973,7 +8973,7 @@
       "setting_detail": "Locally advanced/metastatic EGFR-variant non-squamous NSCLC after progression on EGFR-TKI therapy; distinct China phase III study",
       "phase": "III",
       "primary": "10.1001/jama.2024.10613",
-      "primary_title": "Ivonescimab Plus Chemotherapy in Non-Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
       "pmid": "38820549",
       "registry_id": "NCT05184712",
       "publication_date": "2024-08-20",
@@ -8987,7 +8987,7 @@
       "secondary_publications": [
         {
           "doi": "10.1001/jama.2026.7745",
-          "title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non-Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
+          "title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
           "pmid": "42307937",
           "publication_date": "2026-07-28"
         }

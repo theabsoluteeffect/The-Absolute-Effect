@@ -253,7 +253,13 @@
       "pmid": "42929702",
       "status": "primary_source_verified_page_staged",
       "trial_of_the_day_eligible": true,
-      "reason": "New primary NEJM publication 24 October 2026; no roster/page/archive/ToD match; exact DOI/title and registry reconciled."
+      "reason": "New primary NEJM publication 24 October 2026; no roster/page/archive/ToD match; exact DOI/title and registry reconciled.",
+      "landmark_os": {
+        "treatment": 79.4,
+        "control": 53.3,
+        "benefit_pp": 26.1,
+        "nnt": 4
+      }
     },
     {
       "trial": "HARMONi-A",
@@ -265,7 +271,17 @@
       "followup_pmid": "42307937",
       "status": "primary_and_final_os_verified_page_staged",
       "trial_of_the_day_eligible": false,
-      "reason": "Distinct from existing HARMONi NCT06396065; separate registry and trial protocol; setting is Metastatic."
+      "reason": "Distinct from existing HARMONi NCT06396065; separate registry and trial protocol; setting is Metastatic.",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "followup_title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
+      "primary_pfs_hr": "0.46 (95% CI 0.34–0.62)",
+      "final_os_hr": "0.74 (95% CI 0.58–0.95)",
+      "final_os_30m": {
+        "treatment": 29.1,
+        "control": 18.4,
+        "benefit_pp": 10.7,
+        "nnt": 10
+      }
     }
   ],
   "cross_run_reconciliation": {

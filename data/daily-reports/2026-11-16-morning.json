@@ -352,10 +352,10 @@
       "comparator": "Durvalumab 1,500 mg IV every 4 weeks",
       "primary_endpoint": "Overall survival; prespecified interim analysis",
       "follow_up": "Median OS follow-up 15.9 vs 16.1 months; PFS follow-up 13.9 months",
-      "efficacy": "Median OS 21.1 vs 12.7 months; HR 0.42 (95% CI 0.32–0.54), P<0.001. Median PFS 7.4 vs 1.9 months; HR 0.34 (95% CI 0.28–0.42), P<0.001. 12-month OS approximately 79% vs 53%; ORR 26.4% vs 4.1% among measurable disease n=235 vs244.",
+      "efficacy": "Median OS 21.1 vs 12.7 months; HR 0.42 (95% CI 0.32–0.54), P<0.001. Median PFS 7.4 vs 1.9 months; HR 0.34 (95% CI 0.28–0.42), P<0.001. 12-month OS 79.4% vs 53.3%; ORR 26.4% vs 4.1% among measurable disease n=235 vs244.",
       "toxicity": "Grade ≥3 TEAEs 46.8% vs40.6%; CRS 49.6% vs1.4%, grade 3 CRS 0.4%; ICANS about1.1%.",
       "quality_of_life": "Not reported in primary interim paper.",
-      "nnt_nnh": "NNT 4 at 12 months for OS from rounded Kaplan–Meier rates: ceil[100/(79−53)]=4. NNH not calculated because cumulative AEs lack a common fixed time horizon.",
+      "nnt_nnh": "NNT 4 at 12 months for OS from Kaplan–Meier rates: ceil[100/(79.4−53.3)]=4. NNH not calculated because cumulative AEs lack a common fixed time horizon.",
       "primary_doi": "10.1056/NEJMoa2609482",
       "primary_title": "Tarlatamab–Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer",
       "pmid": "42929702",
@@ -379,12 +379,12 @@
       "comparator": "Placebo plus the same platinum–pemetrexed chemotherapy and maintenance",
       "primary_endpoint": "PFS by independent radiology review; OS key secondary",
       "follow_up": "Final OS analysis median follow-up 32.5 months",
-      "efficacy": "Primary PFS 7.1 vs4.8 months; HR 0.46 (95% CI 0.36–0.60), P<0.001. ORR 50.6% vs35.4%, P=.006. Final OS 16.8 vs14.1 months; HR 0.74 (95% CI 0.58–0.95), P=.02. 30-month OS 29.1% vs18.4%.",
+      "efficacy": "Primary PFS 7.1 vs4.8 months (median follow-up 7.89 months; OS immature at the primary analysis); HR 0.46 (95% CI 0.34–0.62), P<0.001. ORR 50.6% vs35.4%, P=.006. Final OS 16.8 vs14.1 months; HR 0.74 (95% CI 0.58–0.95), P=.02. 30-month OS 29.1% vs18.4%.",
       "toxicity": "Final grade ≥3 TEAEs 67.1% vs54.7%; primary report grade ≥3 immune-related events 6.2% vs2.5% and VEGF-related events 3.1% vs2.5%.",
       "quality_of_life": "Not reported in accessible primary reports; supplement extraction pending.",
-      "nnt_nnh": "NNT 10 at 30 months for OS: ceil[100/(29.1−18.4)]=10. NNH not calculated from cumulative AE rates without common fixed-time exposure.",
+      "nnt_nnh": "NNT 10 at 30 months for OS: ceil[100/(29.1−18.4)]=10. NNH not calculated from cumulative AE rates without a common fixed-time exposure.",
       "primary_doi": "10.1001/jama.2024.10613",
-      "primary_title": "Ivonescimab Plus Chemotherapy in Non-Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
       "pmid": "38820549",
       "followup_doi": "10.1001/jama.2026.7745",
       "followup_pmid": "42307937",
@@ -395,7 +395,8 @@
       "commit_sha": "a4ec0903417d2c4fbd42c5853544e2ec112845c6",
       "trial_of_day_eligible": false,
       "publication_date": "2024-08-20",
-      "status": "staged only; not uploaded to main"
+      "status": "staged only; not uploaded to main",
+      "followup_title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial"
     }
   ],
   "uploaded_cases": [],
@@ -481,7 +482,9 @@
     "commit": "three branch commits verified; work commit a4ec0903417d2c4fbd42c5853544e2ec112845c6",
     "deployment": "not deployed; branch unmerged; no production claim",
     "script_syntax_check": "PASS — release validator and outcome audit scripts compiled in isolated JavaScript syntax check",
-    "report_commit_sha": "426e7c0f84afc90221b3683dd8905a3559173d1e"
+    "report_commit_sha": "426e7c0f84afc90221b3683dd8905a3559173d1e",
+    "doi_title_match": "PASS for DeLLphi-305 primary NEJM DOI and HARMONi-A primary/final OS JAMA DOIs",
+    "source_data_correction": "HARMONi-A primary PFS HR CI corrected to 0.34–0.62; DeLLphi-305 12-month OS landmark rates corrected to 79.4% vs53.3%"
   },
   "cumulative_progress": {
     "verified_main_unique_studies": 437,
@@ -501,5 +504,25 @@
     "Re-run strict release validator and outcome visualization audit on the complete batch; inspect every report.",
     "Verify the 16 November main head again before PR; no main writes are permitted.",
     "After a passing PR, merge and independently verify main, archive/index/roster, Cloudflare deployment and representative live pages."
+  ],
+  "source_title_verification": [
+    {
+      "doi": "10.1056/NEJMoa2609482",
+      "primary_title": "Tarlatamab–Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer",
+      "result": "exact title verified against NEJM article",
+      "url": "https://doi.org/10.1056/NEJMoa2609482"
+    },
+    {
+      "doi": "10.1001/jama.2024.10613",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "result": "exact title verified against JAMA article",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2819600"
+    },
+    {
+      "doi": "10.1001/jama.2026.7745",
+      "primary_title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
+      "result": "exact title verified against JAMA article",
+      "url": "https://jamanetwork.com/journals/jama/article-abstract/2850536"
+    }
   ]
 }
