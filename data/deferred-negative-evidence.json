@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-16",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -18,6 +18,180 @@
         "https://doi.org/10.6004/jnccn.2026.0047"
       ],
       "status_note": "Already rostered; no duplicate page."
+    },
+    {
+      "trial_id": "attraction-6",
+      "trial": "ATTRACTION-6",
+      "status": "deferred_contrary_evidence",
+      "discovery_source": "ASCO 2026 official abstract",
+      "primary_title": "Nivolumab plus ipilimumab combined with chemotherapy as first-line treatment for HER2-negative unresectable advanced or recurrent gastric/gastroesophageal junction cancer: A randomized phase 3 trial (ATTRACTION-6)",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.4006",
+      "registry_id": "NCT05144854",
+      "reason": "The phase III primary OS endpoint was not met: median OS 15.7 vs 15.8 months; HR 0.90 (95.8% CI 0.74–1.09), P=0.267. Grade ≥3 AEs were 80.0% vs 62.4% and grade ≥3 treatment-related AEs 64.8% vs 42.9%.",
+      "action": "Retain as negative/contrary evidence for first-line HER2-negative advanced gastric/GEJ cancer; do not promote as a positive practice-changing trial page. Reassess if a full peer-reviewed report changes the evidence.",
+      "primary_sources": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4006",
+        "https://clinicaltrials.gov/study/NCT05144854"
+      ],
+      "reviewed_on": "2026-11-15"
+    },
+    {
+      "id": "enzarad",
+      "trial": "ENZARAD / ANZUP 1303",
+      "tumour_site": "Prostate cancer",
+      "setting": "High-risk localised disease · definitive radiotherapy + ADT",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer.",
+      "primary_source_url": "https://doi.org/10.1200/JCO-26-01794",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "Phase 3 result did not establish a metastasis-free or overall-survival benefit from adding enzalutamide to standard ADT plus radiotherapy; subgroup findings should not be promoted as a general standard.",
+      "next_action": "Verify the exact trial registry/protocol identifier and extract the full primary efficacy/safety tables; map only if needed to interpret an active recommendation."
+    },
+    {
+      "id": "anzup-1301",
+      "trial": "ANZUP 1301",
+      "tumour_site": "Bladder cancer",
+      "setting": "High-risk non-muscle-invasive bladder cancer · intravesical adjuvant therapy",
+      "doi": "10.1016/j.eururo.2026.01.009",
+      "pmid": "41633899",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer an ACTRN/UMIN identifier.",
+      "primary_source_url": "https://doi.org/10.1016/j.eururo.2026.01.009",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "BCG plus mitomycin did not demonstrate a statistically significant disease-free-survival advantage over BCG alone in the primary analysis. The possible reduction in BCG exposure is a treatment-burden signal, not proof of superior disease control.",
+      "next_action": "Retrieve the full protocol/registry and detailed primary tables; retain as contrary evidence for BCG-sparing decisions."
+    },
+    {
+      "id": "e4512",
+      "trial": "E4512",
+      "tumour_site": "Non-small-cell lung cancer",
+      "setting": "Adjuvant · resected ALK-positive disease",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "pmid": null,
+      "registry_id": "NCT01871805",
+      "primary_source_url": "https://clinicaltrials.gov/study/NCT01871805",
+      "existing_page": "trial-pages/e4512/index.html",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "The existing Atlas page records no disease-free-survival benefit from adjuvant crizotinib versus observation. Retain as negative evidence; do not create a duplicate page or present adjuvant crizotinib as standard.",
+      "next_action": "Complete primary-publication/abstract citation verification and map the negative result to current ALK-positive resected NSCLC recommendations."
+    },
+    {
+      "trial_id": "nhs-galleri",
+      "trial": "NHS-Galleri",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1056/NEJMoa2505723",
+      "pmid": "42776074",
+      "registry_id": "NCT05611632",
+      "reason": "Randomized multicancer screening trial did not meet the primary late-stage cancer incidence endpoint at the reported analysis; do not portray as established screening benefit.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2505723",
+        "https://clinicaltrials.gov/study/NCT05611632"
+      ],
+      "next_action": "Retain as contrary screening evidence; revisit if mature mortality follow-up is published."
+    },
+    {
+      "trial_id": "pemda-hn",
+      "trial": "PEMDA-HN",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_id": "NCT05814666",
+      "reason": "Negative/ non-practice-changing head-and-neck immunotherapy study in the screened report; full primary endpoint context retained for review.",
+      "source_urls": [
+        "https://doi.org/10.1158/1078-0432.CCR-26-0819",
+        "https://clinicaltrials.gov/study/NCT05814666"
+      ],
+      "next_action": "Reassess only if a guideline recommendation or mature follow-up makes it essential."
+    },
+    {
+      "trial_id": "saci-io-hr-positive",
+      "trial": "SACI-IO HR-positive",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1016/j.annonc.2026.06.012",
+      "pmid": "42323161",
+      "registry_id": "NCT04448886",
+      "reason": "No practice-changing benefit demonstrated in the screened HR-positive cohort; retain as contrary evidence rather than a preferred-regimen page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.06.012",
+        "https://clinicaltrials.gov/study/NCT04448886"
+      ],
+      "next_action": "Revisit if guideline context or mature subgroup data warrants a dedicated page."
+    },
+    {
+      "trial_id": "irocas",
+      "trial": "IROCAS",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1016/j.annonc.2026.10.104",
+      "pmid": "42927853",
+      "registry_id": "NCT02967289",
+      "reason": "Phase III adjuvant intensification did not improve 3-year DFS (65.6% vs 66.3%; HR 1.07; P=.61).",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.104",
+        "https://pubmed.ncbi.nlm.nih.gov/42927853/",
+        "https://clinicaltrials.gov/study/NCT02967289"
+      ],
+      "next_action": "Keep in deferred-negative queue unless essential to interpret an active recommendation."
+    },
+    {
+      "trial_id": "preste-hn",
+      "trial": "PreSte-HN",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1007/s10147-026-03138-4",
+      "pmid": "42479256",
+      "registry_id": null,
+      "reason": "Negative randomized perioperative supportive-care study; trial registry identifier not verified in this run.",
+      "source_urls": [
+        "https://doi.org/10.1007/s10147-026-03138-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42479256/"
+      ],
+      "next_action": "Verify registry and primary endpoint details; retain as negative evidence, not a new practice page."
+    },
+    {
+      "trial_id": "altair-ctdna",
+      "trial": "ALTAIR",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1038/s41591-026-04428-0",
+      "pmid": "42260101",
+      "registry_id": "NCT04457297",
+      "reason": "Phase III ctDNA-guided trifluridine/tipiracil after adjuvant therapy did not improve the primary DFS endpoint.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04428-0",
+        "https://clinicaltrials.gov/study/NCT04457297"
+      ],
+      "next_action": "Retain as contrary evidence for ctDNA-guided escalation; do not infer benefit from ctDNA positivity alone."
+    },
+    {
+      "trial_id": "transform-1",
+      "trial": "TRANSFORM-1",
+      "category": "contrary_evidence_mixed",
+      "status": "deferred_review",
+      "primary_doi": "10.1182/blood.2025032360",
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "reason": "Mixed phase III result: spleen-volume primary endpoint positive, but symptom endpoint did not show a corresponding benefit; full benefit–harm and development-status interpretation required. Not labelled a negative trial.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ],
+      "next_action": "Review full Blood report and patient-reported outcomes before deciding whether to create a canonical page."
     }
-  ]
+  ],
+  "last_run": {
+    "date": "2026-11-16",
+    "cycle": "morning",
+    "new_deferred_negative": 5,
+    "new_contrary_mixed": 1,
+    "source_verified": true
+  }
 }

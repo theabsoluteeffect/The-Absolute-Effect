@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-16",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
-    "generated_at": "2026-11-14T06:33:37.234Z",
+    "generated_at": "2026-11-16T08:00:00+05:30",
     "audited_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
-    "status": "PASS",
+    "status": "PARTIAL",
     "counts": {
       "roster_pages_found": 407,
       "roster_pages_missing": 0,
@@ -17,7 +17,23 @@
       "short_pages": 0,
       "missing_primary_source": 0
     },
-    "note": "Manual source/page review of all nine outcome-visual flags confirmed existing accessible CSS bar charts or status graphics; they were false positives from a data-outcome-hook-only heuristic. CheckMate 76K and POUT short pages were expanded from primary sources. Dated current-practice flags remain open pending full guideline freshness checks."
+    "note": "Manual source/page review of all nine outcome-visual flags confirmed existing accessible CSS bar charts or status graphics; they were false positives from a data-outcome-hook-only heuristic. CheckMate 76K and POUT short pages were expanded from primary sources. Dated current-practice flags remain open pending full guideline freshness checks.",
+    "audited_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "roster_entries_before": 437,
+    "canonical_trial_page_directories_before": 431,
+    "unique_roster_page_paths_before": 430,
+    "missing_roster_page_targets": 0,
+    "unrostered_page_directories": [
+      "trial-pages/rosel/index.html"
+    ],
+    "unrostered_page_explanation": "ROSEL is a redirect/stub to the shared lung-sabr-definitions#rosel anchor, not a second canonical study",
+    "evidence_index_unique_links_before": 408,
+    "missing_roster_index_links_before": 30,
+    "evidence_index_unique_links_after_branch": 440,
+    "missing_roster_index_links_after_branch": 0,
+    "manual_pages_rechecked": 5,
+    "full_clinical_audit_complete": false,
+    "scope_note": "Structural reconciliation across the complete page tree; only five canonical pages were manually re-read against primary evidence in this run."
   },
   "open_items": [
     {
@@ -413,8 +429,19 @@
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
     },
     {
       "issue_id": "dated-context-krascendo-1",
@@ -437,8 +464,19 @@
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
     },
     {
       "issue_id": "dated-context-loehrer-veip-mixed-gct-1998",
@@ -689,8 +727,19 @@
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-15",
+      "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
+      "verification": {
+        "manual_page_review": true,
+        "primary_source_reviewed": true,
+        "source_links_checked": true,
+        "guideline_freshness_pending": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
     },
     {
       "issue_id": "dated-context-space",
@@ -835,6 +884,859 @@
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
       "status": "open",
       "created_on": "2026-11-14"
+    },
+    {
+      "issue_id": "fight-302-hrqol-guideline-freshness-2026-11-15",
+      "trial_id": "fight-302",
+      "trial": "FIGHT-302",
+      "path": "trial-pages/fight-302/index.html",
+      "category": "hrqol_followup_and_guideline_freshness",
+      "severity": "medium",
+      "evidence": "The primary JCO report identifies HRQoL as a secondary endpoint but states results will be published separately; exact current NCCN/ESMO sequencing version and section have not been retrieved.",
+      "action": "Search for the separate HRQoL report and verify the latest accessible disease-specific guideline version/section before closing the freshness task.",
+      "status": "open",
+      "created_on": "2026-11-15"
+    },
+    {
+      "issue_id": "visual-nnt-checkmate-816-2026-11-15",
+      "trial_id": "checkmate-816",
+      "trial": "CheckMate 816",
+      "path": "trial-pages/checkmate-816/index.html",
+      "category": "absolute_effect_calculation_and_structured_metadata",
+      "severity": "high",
+      "evidence": "Primary NEJM 2022 and 2025 reports show pCR 24.0% vs 2.2%, 2-year EFS 63.8% vs 45.3%, and 5-year OS 65.4% vs 55.0%. Existing page had data-benefit 10.00 despite a 10.4-point OS difference and three numeric NNTs without endpoint-specific structured records.",
+      "action": "Corrected pCR absolute difference to 21.8 points; added separate structured endpoint/horizon/NNT records for EFS, pCR and OS; corrected OS data-benefit to 10.4.",
+      "status": "resolved_on_branch",
+      "verified_on": "2026-11-15",
+      "verification": "Cross-checked NEJMoa2202170 and NEJMoa2502931; arithmetic ceil(100/difference): EFS 6, pCR 5, OS 10. Static page markup reread.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "issue_id": "visual-link-keynote-a18-2026-11-15",
+      "trial_id": "keynote-a18",
+      "trial": "KEYNOTE-A18",
+      "path": "trial-pages/keynote-a18/index.html",
+      "category": "broken_source_link_and_nonfinite_visualization",
+      "severity": "critical",
+      "evidence": "Canonical page contained NaN% chart widths, nonnumeric data-outcome values (\"36 months\"), a malformed ClinicalTrials.gov URL embedding a PubMed query, a broken primary-source href and NNT text populated with NCT04221945.",
+      "action": "Replaced non-finite charts with numeric static OS/PFS bars; corrected registry and primary publication links; corrected 36-month OS NNT and added exact absolute-effect metadata.",
+      "status": "resolved_on_branch",
+      "verified_on": "2026-11-15",
+      "verification": "Lancet primary PFS DOI 10.1016/S0140-6736(24)00317-9 / PMID 38521086; OS DOI 10.1016/S0140-6736(24)01808-7 / PMID 39288779; registry NCT04221945. OS 82.6% vs 74.8%, difference 7.8 points, ceil(100/7.8)=13.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "issue_id": "visual-link-lacc-2026-11-15",
+      "trial_id": "lacc",
+      "trial": "LACC trial",
+      "path": "trial-pages/lacc/index.html",
+      "category": "broken_source_link_nonfinite_visualization_and_nnt_error",
+      "severity": "critical",
+      "evidence": "Canonical page contained NaN% chart widths, nonnumeric data-outcome values, malformed registry/source URLs and NNT field populated with NCT00614211.",
+      "action": "Replaced chart with source-grounded numeric 4.5-year DFS bars; corrected primary, follow-up, QoL and registry links; changed erroneous NNT identifier to an endpoint-specific approximate NNH.",
+      "status": "resolved_on_branch",
+      "verified_on": "2026-11-15",
+      "verification": "NEJMoa1806395 / PMID 30380365: DFS 86.0% vs 96.5%, absolute harm 10.6 points, ceil(100/10.6)=10; final analysis DOI 10.1200/JCO.23.02335 / PMID 38810208; QoL DOI 10.1016/S1470-2045(20)30081-4 / PMID 32502445.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "issue_id": "source-link-and-completeness-shape-2026-11-15",
+      "trial_id": "shape",
+      "trial": "SHAPE",
+      "path": "trial-pages/shape/index.html",
+      "category": "primary_source_link_and_page_completeness",
+      "severity": "medium",
+      "evidence": "Canonical page linked to a generic PubMed search query and left the randomized denominator and key urinary morbidity outcomes incompletely specified.",
+      "action": "Replaced query link with exact DOI/PMID; specified 700 randomized (350 per arm), 4.5-year median follow-up and trial-reported urinary incontinence/retention rates; retained no-NNT non-inferiority interpretation.",
+      "status": "resolved_on_branch",
+      "verified_on": "2026-11-15",
+      "verification": "NEJMoa2308900 / PMID 38416430; 3-year pelvic recurrence 2.52% vs 2.17%, 90% CI −1.62 to 2.32; urinary incontinence 4.7% vs 11.0% and retention 0.6% vs 9.9% beyond 4 weeks.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "issue_id": "fight-302-primary-metadata-visual-2026-11-15",
+      "trial_id": "fight-302",
+      "trial": "FIGHT-302",
+      "path": "trial-pages/fight-302/index.html",
+      "category": "primary_metadata_dose_and_visualization",
+      "severity": "high",
+      "evidence": "Roster lacked primary DOI/title and registry metadata; page incorrectly described pemigatinib as 2 weeks on/1 week off (the FIGHT-202 schedule), rendered median PFS in percent units and lacked endpoint-specific landmark NNT records.",
+      "action": "Added exact JCO primary DOI/title/PMID and protocol DOI; corrected FIGHT-302 to continuous 13.5 mg daily on a 21-day cycle; corrected PFS units and denominators; added 12- and 24-month PFS landmark NNTs.",
+      "status": "resolved_on_branch",
+      "verified_on": "2026-11-15",
+      "verification": "JCO full text PMCID PMC13641261 / PMID 42223137; DOI 10.1200/JCO-26-00788; registry NCT03656536. PFS 39% vs17% at12m (22pp; NNT5), 21% vs9% at24m (12pp; NNT9); grade ≥3 TEAEs 65/83 vs49/73.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "trial_id": null,
+      "page_path": null,
+      "issue_type": "guideline_freshness",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "evidence": "NCCN Cervical Cancer Version 2.2026 is identifiable from its PubMed-indexed NCCN-authored guideline article record (PMID 41671440; DOI 10.6004/jnccn.2025.0057), but the full guideline and complete reference list were not retrievable in this run. The latest currently active version was not independently confirmed; no NCCN section, category or reference number has been claimed.",
+      "next_action": "Retrieve the current authorised full NCCN Cervical Cancer guideline or a complete NCCN-authored Insights reference list; confirm version/date and map exact reference numbers and recommendation context for KEYNOTE-A18, LACC and SHAPE.",
+      "issue_id": "nccn-cervical-guideline-freshness-2026-11-15"
+    },
+    {
+      "trial_id": "neo-healer",
+      "page_path": "trial-pages/neo-healer/index.html",
+      "issue_type": "guideline_provenance",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "evidence": "Neo-Healer primary publication and registry are verified, but the current official NCCN Breast Cancer guideline/reference list was not accessible. The page explicitly states that NCCN provenance is not verified and does not claim a recommendation category or reference number.",
+      "next_action": "Retrieve the current authorised NCCN Breast Cancer guideline or complete NCCN-authored Insights reference list and check whether the trial is cited in an active recommendation; otherwise retain the source-access limitation.",
+      "issue_id": "nccn-breast-guideline-mapping-neo-healer-2026-11-15"
+    },
+    {
+      "trial_id": null,
+      "page_path": null,
+      "issue_type": "branch_serialization",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "evidence": "Two existing open PRs were found after the AM branch was committed. PR #4 (atlas-batch/2026-11-14-pm) overlaps this branch in data/master-trial-roster.json, evidence/index.html, data/deferred-negative-evidence.json, data/nccn-coverage-ledger.json and data/repair-queue.json. PR #3 (feature/complete-outcome-visualizations-2026-11-08) also overlaps data/master-trial-roster.json. Both PRs report audit and Cloudflare Pages checks completed successfully, but GitHub reports mergeable=false.",
+      "next_action": "Resolve existing PRs serially and reconcile their file changes with atlas-batch/2026-11-15-am. Do not open or merge a new PR until overlapping changes are reconciled, exactly 30 new unique trial pages are complete, and strict release/outcome-visualization validators pass.",
+      "issue_id": "open-pr-overlap-serialization-2026-11-15"
+    },
+    {
+      "trial_id": "ponatinib-blinatumomab-all2820",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "Ponatinib–blinatumomab (ALL2820)",
+      "primary_doi": "10.1056/NEJMoa2606208",
+      "pmid": "42874102",
+      "registry_id": "NCT04722848",
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2606208",
+        "https://clinicaltrials.gov/study/NCT04722848"
+      ],
+      "evidence": "Primary identity is clear, but full NEJM protocol/appendix data for exact comparator dosing, grade 3–5 toxicity and patient-reported outcomes were not accessible; page-level completeness cannot yet be signed off.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-ponatinib-blinatumomab-all2820"
+    },
+    {
+      "trial_id": "excaliber-rrmm",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "EXCALIBER-RRMM",
+      "primary_doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00450-X",
+        "https://clinicaltrials.gov/study/NCT04975997"
+      ],
+      "evidence": "The published first analysis reports MRD-negative complete response; the PFS co-primary endpoint remains pending. Do not present this as mature PFS evidence.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-excaliber-rrmm"
+    },
+    {
+      "trial_id": "trastuzumab-botidotin-versus-t-dm1",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "Trastuzumab botidotin versus T-DM1",
+      "primary_doi": "10.1200/JCO-26-00602",
+      "pmid": "42727044",
+      "registry_id": "NCT06968585",
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00602",
+        "https://clinicaltrials.gov/study/NCT06968585"
+      ],
+      "evidence": "DOI/PMID/registry identity matched, but the full primary article and protocol-level dose, safety and QoL tables were not independently accessible.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-trastuzumab-botidotin-versus-t-dm1"
+    },
+    {
+      "trial_id": "felzartamab-plus-lenalidomide-dexamethasone",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "Felzartamab plus lenalidomide/dexamethasone",
+      "primary_doi": "10.1016/S2352-3026(26)00223-1",
+      "pmid": "42822478",
+      "registry_id": "NCT03952091",
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/S2352-3026(26)00223-1",
+        "https://clinicaltrials.gov/study/NCT03952091"
+      ],
+      "evidence": "Primary publication identity and PFS signal located; exact full regimen/schedule, grade 3–5 toxicity tables and QoL data need primary full-text/supplement extraction before release.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-felzartamab-plus-lenalidomide-dexamethasone"
+    },
+    {
+      "trial_id": "roam-eortc-1308",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "ROAM / EORTC-1308",
+      "primary_doi": "10.1016/S0140-6736(26)01804-0",
+      "pmid": "42790456",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)01804-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42790456/"
+      ],
+      "evidence": "Primary publication located, but the exact trial registry/protocol identifier and full source-level safety/QoL details were not verified.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-roam-eortc-1308"
+    },
+    {
+      "trial_id": "oral-paclitaxel-solution-versus-iv-paclitaxel",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "Oral paclitaxel solution versus IV paclitaxel",
+      "primary_doi": "10.1016/j.esmoop.2026.108312",
+      "pmid": "42617423",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108312",
+        "https://pubmed.ncbi.nlm.nih.gov/42617423/"
+      ],
+      "evidence": "Primary paper and key results located, but exact trial-registration identifier could not be verified from the accessible primary record; hold until registration/protocol identity is confirmed.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-oral-paclitaxel-solution-versus-iv-paclitaxel"
+    },
+    {
+      "trial_id": "capital",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "CAPITAL",
+      "primary_doi": "10.1016/j.medj.2026.101258",
+      "pmid": "42600610",
+      "registry_id": "NCT01795027",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1016/j.medj.2026.101258",
+        "https://clinicaltrials.gov/study/NCT01795027"
+      ],
+      "evidence": "Primary publication DOI/PMID and registry matched; 5-year OS/DFS outcomes identified. Full page extraction and release QA remain pending.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-capital"
+    },
+    {
+      "trial_id": "augment",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "AUGMENT",
+      "primary_doi": "10.1200/JCO.19.00010",
+      "pmid": "30811293",
+      "registry_id": "NCT01938001",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.19.00010",
+        "https://doi.org/10.1200/JCO-25-01770",
+        "https://clinicaltrials.gov/study/NCT01938001"
+      ],
+      "evidence": "Original phase 3 publication and 2026 long-term follow-up DOI/PMID identified; no roster/page/archive match. One canonical page should combine both publications.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-augment"
+    },
+    {
+      "trial_id": "campass",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "CAMPASS",
+      "primary_doi": "10.1016/S1470-2045(26)00049-5",
+      "pmid": "41825453",
+      "registry_id": "NCT04964479",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00049-5",
+        "https://clinicaltrials.gov/study/NCT04964479"
+      ],
+      "evidence": "Primary phase 3 publication and registry matched; PFS and grade ≥3 toxicity outcomes identified. Full page extraction and current-practice context review remain pending.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-campass"
+    },
+    {
+      "trial_id": "ctdna-guided-post-adjuvant-chemotherapy-in-colorectal-cancer",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "ctDNA-guided post-adjuvant chemotherapy in colorectal cancer",
+      "primary_doi": "10.1038/s41591-026-04428-0",
+      "pmid": "42260101",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04428-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42260101/"
+      ],
+      "evidence": "Primary publication identified, but exact trial registry/protocol and endpoint/denominator details were not independently confirmed in this run.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-ctdna-guided-post-adjuvant-chemotherapy-in-colorectal-cancer"
+    },
+    {
+      "trial_id": "bond-003-cohort-c",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "BOND-003 cohort C",
+      "primary_doi": "10.1016/S1470-2045(26)00194-4",
+      "pmid": "42508433",
+      "registry_id": "NCT04452513",
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00194-4",
+        "https://clinicaltrials.gov/study/NCT04452513"
+      ],
+      "evidence": "No canonical BOND-003 page was found, but cohort C must be reconciled with the overall multi-cohort study and earlier cohort publications before one consolidated page is created.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-bond-003-cohort-c"
+    },
+    {
+      "trial_id": "aegean",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "AEGEAN",
+      "primary_doi": "10.1056/NEJMoa2304875",
+      "pmid": "37931632",
+      "registry_id": "NCT03800134",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2304875",
+        "https://doi.org/10.1200/JCO-25-02659",
+        "https://clinicaltrials.gov/study/NCT03800134"
+      ],
+      "evidence": "Primary NEJM report and 2026 JCO update DOI/PMID matched; no roster/page/archive match. One canonical page should combine primary and updated outcomes.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-aegean"
+    },
+    {
+      "trial_id": "jcog1403",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "JCOG1403",
+      "primary_doi": "10.1016/S1470-2045(26)00130-0",
+      "pmid": "42435772",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00130-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42435772/"
+      ],
+      "evidence": "Primary publication identified, but the candidate UMIN/JCOG registry match was ambiguous against a similarly labelled JCOG record; do not assign a registry ID until reconciled.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-jcog1403"
+    },
+    {
+      "trial_id": "jcog1019",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "JCOG1019",
+      "primary_doi": "10.1016/j.eururo.2026.01.008",
+      "pmid": "41571573",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/j.eururo.2026.01.008",
+        "https://pubmed.ncbi.nlm.nih.gov/41571573/"
+      ],
+      "evidence": "Primary publication identified, but the exact UMIN registry record could not be matched confidently to the JCOG1019 trial; no registry ID inferred.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-jcog1019"
+    },
+    {
+      "trial_id": "dellphi-305",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "DeLLphi-305",
+      "primary_doi": "10.1056/NEJMoa2609482",
+      "pmid": "42929702",
+      "registry_id": "NCT06211036",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609482",
+        "https://clinicaltrials.gov/study/NCT06211036"
+      ],
+      "evidence": "New NEJM phase 3 publication and registry match; efficacy and grade ≥3 safety outcomes identified, but exact trial-specific step-up/maintenance dosing requires protocol confirmation before release.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-dellphi-305"
+    },
+    {
+      "trial_id": "harmoni-a",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "HARMONi-A",
+      "primary_doi": "10.1001/jama.2026.7745",
+      "pmid": "42307937",
+      "registry_id": "NCT05184712",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2026.7745",
+        "https://clinicaltrials.gov/study/NCT05184712"
+      ],
+      "evidence": "Distinct China-based phase 3 study with separate registry; final OS report and conference PFS results identified, but full PFS primary publication/source extraction remains pending.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-harmoni-a"
+    },
+    {
+      "trial_id": "litespark-011",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "LITESPARK-011",
+      "primary_doi": "10.1016/j.annonc.2026.10.109",
+      "pmid": "42927855",
+      "registry_id": "NCT04586231",
+      "candidate_disposition": "new_unique_primary_identity_verified",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.109",
+        "https://clinicaltrials.gov/study/NCT04586231"
+      ],
+      "evidence": "Final phase 3 publication and registry match; PFS/OS and grade ≥3 safety outcomes identified. Full page extraction, figure verification and current-practice context remain pending.",
+      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-litespark-011"
+    },
+    {
+      "trial_id": "irimad",
+      "page_path": null,
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-15",
+      "candidate_name": "IRIMAD",
+      "primary_doi": "10.1016/j.dld.2026.09.014",
+      "pmid": "42850173",
+      "registry_id": null,
+      "candidate_disposition": "held",
+      "source_urls": [
+        "https://doi.org/10.1016/j.dld.2026.09.014",
+        "https://pubmed.ncbi.nlm.nih.gov/42850173/"
+      ],
+      "evidence": "Primary DOI/PMID located, but exact trial registry/protocol and complete endpoint/denominator details were not verified.",
+      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
+      "issue_id": "candidate-review-irimad"
+    },
+    {
+      "trial_id": "keynote-a18",
+      "page_path": "trial-pages/keynote-a18/index.html",
+      "issue_type": "clinical_content_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "resolved_on": "2026-11-15",
+      "evidence": "The prior page contained malformed NNT text and loose numeric fragments. Primary PFS and OS reports were rechecked; the page now displays 24-month PFS 67.8% vs 57.3% and 36-month OS 82.6% vs 74.8%, with structured absolute-effect records.",
+      "resolution": "Rebuilt the visible outcome charts and NNT pictograms. PFS difference 10.5 pp -> NNT 10; OS difference 7.8 pp -> NNT 13. data-benefit values equal the source-derived percentage-point differences; no 100/NNT substitution.",
+      "verification": {
+        "primary_doi_checked": true,
+        "registry_checked": true,
+        "visible_chart_markup": true,
+        "structured_absolute_effect": true,
+        "finite_values": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "issue_id": "keynote-a18-malformed-nnt-and-outcome-values-2026-11-15",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "trial_id": "lacc",
+      "page_path": "trial-pages/lacc/index.html",
+      "issue_type": "primary_source_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "resolved_on": "2026-11-15",
+      "evidence": "The prior page contained a malformed source link and an unlabelled numeric fragment. The NEJM primary report, JCO final follow-up, safety analysis and QoL report were checked.",
+      "resolution": "Rebuilt the visible 4.5-year DFS chart and primary-source links. Published DFS estimates 85.0% vs 96.0% yield an 11.0-pp absolute harm difference; NNH 10 after rounding up. Structured absolute-effect record added.",
+      "verification": {
+        "primary_doi_checked": true,
+        "follow_up_doi_checked": true,
+        "registry_checked": true,
+        "visible_chart_markup": true,
+        "structured_absolute_effect": true,
+        "finite_values": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "issue_id": "lacc-broken-reference-and-stray-value-2026-11-15",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "trial_id": "shape",
+      "page_path": "trial-pages/shape/index.html",
+      "issue_type": "primary_source_visualization",
+      "severity": "medium",
+      "status": "resolved_on_branch",
+      "resolved_on": "2026-11-15",
+      "evidence": "The prior page had incomplete source context. The NEJM primary report and NCT01658930 registry were checked.",
+      "resolution": "Added exact DOI/PMID/registry links, the 3-year pelvic recurrence comparison (2.52% vs 2.17%), the 4-pp non-inferiority margin and an explicit explanation that NNT/NNH is inappropriate for this non-inferiority result.",
+      "verification": {
+        "primary_doi_checked": true,
+        "registry_checked": true,
+        "visible_chart_markup": true,
+        "structured_no_nnt_record": true,
+        "finite_values": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "issue_id": "shape-primary-source-and-noninferiority-visualization-2026-11-15",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "trial_id": "neo-healer",
+      "page_path": "trial-pages/neo-healer/index.html",
+      "issue_type": "absolute_effect_arithmetic",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "resolved_on": "2026-11-15",
+      "evidence": "The primary paper reports tpCR 164/263 (62.4%) versus 132/258 (51.2%) and an adjusted absolute difference of 11.4 pp. The crude difference between the displayed rounded rates is 11.2 pp.",
+      "resolution": "The outcome chart continues to show the observed rates. The NNT pictogram data-benefit is now 11.2 pp and NNT 9 (1/0.112=8.93, rounded up). The page and roster separately retain the paper-reported adjusted difference of 11.4 pp.",
+      "verification": {
+        "primary_article_checked": true,
+        "raw_rate_arithmetic_checked": true,
+        "adjusted_estimate_preserved": true,
+        "data_benefit_matches_crude_rates": true,
+        "nnt_calculation_checked": true,
+        "browser_rendered_qa": false,
+        "branch_only": true
+      },
+      "issue_id": "neo-healer-crude-versus-adjusted-absolute-effect-2026-11-15",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+    },
+    {
+      "issue_id": "index-roster-link-reconciliation-2026-11-16",
+      "category": "index_reconciliation",
+      "severity": "high",
+      "status": "open",
+      "trial_id": null,
+      "evidence": "30 rostered trial links were absent from the main evidence index; all 30 are restored on this branch, plus two staged links",
+      "source_urls": [],
+      "action": "Merge only after exact-30 batch passes PR checks; verify all 439 roster entries resolve",
+      "next_action": "Merge only after exact-30 batch passes PR checks; verify all 439 roster entries resolve",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "full-clinical-audit-remaining-pages-2026-11-16",
+      "category": "full_page_audit",
+      "severity": "high",
+      "status": "open",
+      "trial_id": null,
+      "evidence": "Structural reconciliation covers 431 original canonical page directories; only five pages were manually re-reviewed this run",
+      "source_urls": [],
+      "action": "Continue source-by-source audit of remaining canonical pages; do not close on static checks",
+      "next_action": "Continue source-by-source audit of remaining canonical pages; do not close on static checks",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "absolute-effect-audit-hook-2026-11-16",
+      "category": "visualization_audit",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": null,
+      "evidence": "Outcome audit did not recognize data-absolute-effect pictogram markup as an explicit visible visualization",
+      "source_urls": [],
+      "action": "Updated audit regex on branch; run the workflow and inspect rendered output before closure",
+      "next_action": "Updated audit regex on branch; run the workflow and inspect rendered output before closure",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "multi-endpoint-release-validator-2026-11-16",
+      "category": "release_validator",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": null,
+      "evidence": "Current strict validator checks only the primary absolute_effect record; older pages contain structured additional_endpoints",
+      "source_urls": [],
+      "action": "Extend validator to validate each pictogram against its matching structured endpoint",
+      "next_action": "Extend validator to validate each pictogram against its matching structured endpoint",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "nccn-freshness-nsclc-breast-2026-11-16",
+      "category": "guideline_freshness",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": null,
+      "evidence": "NCCN full guideline PDFs/reference lists could not be retrieved; JNCCN selections reviewed but exact recommendation references not mapped",
+      "source_urls": [],
+      "action": "Retry official NCCN access; map exact references/categories without inference",
+      "next_action": "Retry official NCCN access; map exact references/categories without inference",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-keylynk-001-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "keylynk-001-full-extraction",
+      "evidence": "Unique phase III KEYLYNK-001 publication identified; full efficacy, dose, safety and QoL extraction incomplete",
+      "source_urls": [],
+      "action": "Extract primary paper and supplement; verify exact endpoints and registry before page creation",
+      "next_action": "Extract primary paper and supplement; verify exact endpoints and registry before page creation",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-trofuse-005-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "trofuse-005-full-extraction",
+      "evidence": "Unique phase III TroFuse-005 primary Lancet report identified; full dose/schedule, denominators and grade 3–5 safety extraction pending",
+      "source_urls": [],
+      "action": "Extract primary paper and supplement; verify all outcomes before page creation",
+      "next_action": "Extract primary paper and supplement; verify all outcomes before page creation",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-panku-breast01-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "panku-breast01-full-extraction",
+      "evidence": "Unique phase III PANKU-Breast01 primary Lancet report identified; full dose/schedule and safety extraction pending",
+      "source_urls": [],
+      "action": "Extract primary paper and supplement; verify comparator and denominators",
+      "next_action": "Extract primary paper and supplement; verify comparator and denominators",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-union-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "union-full-extraction",
+      "evidence": "Unique phase III UNION rectal-cancer report identified; exact treatment sequence and endpoint maturity need full extraction",
+      "source_urls": [],
+      "action": "Extract primary paper and protocol; verify all arms and outcomes",
+      "next_action": "Extract primary paper and protocol; verify all arms and outcomes",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-keynote-b49-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "keynote-b49-full-extraction",
+      "evidence": "Unique phase III KEYNOTE-B49 report identified; chemotherapy backbone, subgroup and final safety extraction pending",
+      "source_urls": [],
+      "action": "Extract full publication/supplement; distinguish PFS benefit from OS result",
+      "next_action": "Extract full publication/supplement; distinguish PFS benefit from OS result",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-artemis-011-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "artemis-011-full-extraction",
+      "evidence": "Unique ARTEMIS-011 phase III conference report identified; full dosing and grade 3–5 safety extraction incomplete",
+      "source_urls": [],
+      "action": "Retrieve full abstract/supplement and verify trial regimen",
+      "next_action": "Retrieve full abstract/supplement and verify trial regimen",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-enable-pro-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "enable-pro-extraction",
+      "evidence": "Unique ENABLE digital symptom-monitoring study identified; PRO, QoL and health-service outcomes not fully extracted",
+      "source_urls": [],
+      "action": "Retrieve full paper and protocol; verify primary endpoint and denominators",
+      "next_action": "Retrieve full paper and protocol; verify primary endpoint and denominators",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-fit4treat-full-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "low",
+      "status": "open",
+      "trial_id": "fit4treat-full-extraction",
+      "evidence": "Unique FIT4TREAT supportive-care RCT identified; small study and full endpoint/safety details pending",
+      "source_urls": [],
+      "action": "Extract full text and assess eligibility against Atlas inclusion policy",
+      "next_action": "Extract full text and assess eligibility against Atlas inclusion policy",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-ringside-dose-schedule-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "ringside-dose-schedule",
+      "evidence": "Unique RINGSIDE phase II desmoid study identified; exact intermittent schedule and arm-level safety not fully verified",
+      "source_urls": [],
+      "action": "Retrieve full JCO article and supplement; do not infer the 4-mg schedule",
+      "next_action": "Retrieve full JCO article and supplement; do not infer the 4-mg schedule",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-jcog2510-results-2026-11-16",
+      "category": "protocol_only",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "jcog2510-results",
+      "evidence": "JCOG2510/PRIME-CRT protocol identified without mature primary outcomes",
+      "source_urls": [],
+      "action": "Hold until results publication",
+      "next_action": "Hold until results publication",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-lucerna-results-2026-11-16",
+      "category": "protocol_only",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "lucerna-results",
+      "evidence": "LUCERNA protocol identified without outcome publication",
+      "source_urls": [],
+      "action": "Hold until results publication",
+      "next_action": "Hold until results publication",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-jcog2107e-results-2026-11-16",
+      "category": "protocol_only",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "jcog2107e-results",
+      "evidence": "JCOG2107E protocol identified without mature primary outcomes",
+      "source_urls": [],
+      "action": "Hold until results publication",
+      "next_action": "Hold until results publication",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-transform1-clinical-interpretation-2026-11-16",
+      "category": "contrary_evidence_review",
+      "severity": "medium",
+      "status": "open",
+      "trial_id": "transform1-clinical-interpretation",
+      "evidence": "TRANSFORM-1 has a positive spleen-volume primary endpoint but no symptom endpoint benefit; full benefit–harm and development-status review pending",
+      "source_urls": [],
+      "action": "Review primary Blood paper and registry; retain as mixed evidence, not a negative trial",
+      "next_action": "Review primary Blood paper and registry; retain as mixed evidence, not a negative trial",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-gimema-all2820-safety-extraction-2026-11-16",
+      "category": "candidate_primary_evidence",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "gimema-all2820-safety-extraction",
+      "evidence": "GIMEMA ALL2820 sample size corrected to 236 randomized (not 210); full safety extraction remains incomplete",
+      "source_urls": [],
+      "action": "Extract NEJM full text and supplement before page creation",
+      "next_action": "Extract NEJM full text and supplement before page creation",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-dellphi-305-release-qa-2026-11-16",
+      "category": "release_qa",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "dellphi-305-release-qa",
+      "evidence": "DeLLphi-305 page staged with NEJM primary report, NCT06211036 and 12-month OS landmark NNT; release QA remains pending",
+      "source_urls": [],
+      "action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
+      "next_action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
+    },
+    {
+      "issue_id": "candidate-harmoni-a-release-qa-2026-11-16",
+      "category": "release_qa",
+      "severity": "high",
+      "status": "open",
+      "trial_id": "harmoni-a-release-qa",
+      "evidence": "HARMONi-A staged as a distinct study (NCT05184712), separate from global HARMONi (NCT06396065)",
+      "source_urls": [],
+      "action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
+      "next_action": "Run exact-30 validator, DOI/title check, visual audit and PR checks",
+      "created_on": "2026-11-16",
+      "verification": "not closed"
     }
   ],
   "resolved_items": [
@@ -1010,5 +1912,102 @@
       "resolved_on": "2026-11-14",
       "resolution": "Page expanded from primary publication/final update with design, denominators, efficacy, harms, absolute effects, NNT/NNH limitations, QoL where reported, and dated freshness caveat."
     }
-  ]
+  ],
+  "run_audit_log": [
+    {
+      "run_id": "2026-11-15-evening",
+      "main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "pages_manually_inspected": 4,
+      "canonical_pages_total": 431,
+      "full_manual_audit_complete": false,
+      "repairs_staged": 4,
+      "repair_branch": "atlas-batch/2026-11-15-pm",
+      "note": "Four specifically flagged pages rechecked against primary publications. The existing source_audit remains stale (audited_head 896d844); do not mark the full repository audit complete. Dated current-practice issues for these four pages remain open."
+    },
+    {
+      "run_id": "2026-11-15-evening",
+      "main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "pages_manually_inspected": 5,
+      "canonical_pages_total": 431,
+      "full_manual_audit_complete": false,
+      "repairs_staged": 5,
+      "repair_branch": "atlas-batch/2026-11-15-pm",
+      "note": "FIGHT-302 primary full text was inspected; dosing, median-PFS units, safety denominators and landmark PFS NNTs corrected. HRQoL and current guideline freshness remain open."
+    }
+  ],
+  "previous_partial_runs": [
+    {
+      "date": "2026-11-15",
+      "base_main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "working_branch": "atlas-batch/2026-11-15-am",
+      "manual_existing_pages_reviewed": [
+        "keynote-a18",
+        "lacc",
+        "shape"
+      ],
+      "identity_index_checks": [
+        "checkmate-816",
+        "keynote-a18",
+        "lacc",
+        "shape"
+      ],
+      "closed_existing_items": 3,
+      "new_resolved_defects": 4,
+      "open_items_after_run": 86,
+      "resolved_items_total": 20,
+      "full_audit_completed": false,
+      "next_page_to_review": "abcsg-16-salsa",
+      "status": "blocked_by_open_overlapping_prs_and_incomplete_batch",
+      "overlapping_prs": [
+        {
+          "number": 4,
+          "head": "atlas-batch/2026-11-14-pm",
+          "mergeable": false,
+          "checks": {
+            "audit": "success",
+            "cloudflare_pages": "success"
+          },
+          "overlapping_files": [
+            "data/master-trial-roster.json",
+            "evidence/index.html",
+            "data/deferred-negative-evidence.json",
+            "data/nccn-coverage-ledger.json",
+            "data/repair-queue.json"
+          ]
+        },
+        {
+          "number": 3,
+          "head": "feature/complete-outcome-visualizations-2026-11-08",
+          "mergeable": false,
+          "checks": {
+            "audit": "success",
+            "cloudflare_pages": "success"
+          },
+          "overlapping_files": [
+            "data/master-trial-roster.json"
+          ]
+        }
+      ],
+      "candidate_review_items_added": 18
+    }
+  ],
+  "last_partial_run": {
+    "date": "2026-11-16",
+    "cycle": "morning",
+    "branch": "atlas-batch/2026-11-16-am",
+    "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "status": "INCOMPLETE",
+    "manual_pages_rechecked": [
+      "checkmate-816",
+      "fight-302",
+      "keynote-a18",
+      "lacc",
+      "shape"
+    ],
+    "candidate_count": 16,
+    "new_unique_candidates": 15,
+    "duplicates": 1,
+    "pages_staged": 2,
+    "pages_published": 0
+  }
 }
