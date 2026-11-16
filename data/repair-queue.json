@@ -1508,14 +1508,14 @@
       "issue_id": "multi-endpoint-release-validator-2026-11-16",
       "category": "release_validator",
       "severity": "medium",
-      "status": "open",
+      "status": "resolved_on_branch",
       "trial_id": null,
       "evidence": "Current strict validator checks only the primary absolute_effect record; older pages contain structured additional_endpoints",
       "source_urls": [],
       "action": "Extend validator to validate each pictogram against its matching structured endpoint",
-      "next_action": "Extend validator to validate each pictogram against its matching structured endpoint",
+      "next_action": "Run strict validator on the complete 30-trial batch and inspect report before PR.",
       "created_on": "2026-11-16",
-      "verification": "not closed"
+      "verification": "Release validator updated to validate every data-absolute-effect block against primary and additional_endpoints structured records."
     },
     {
       "issue_id": "nccn-freshness-nsclc-breast-2026-11-16",

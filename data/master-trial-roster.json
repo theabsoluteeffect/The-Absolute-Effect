@@ -7082,7 +7082,33 @@
       "primary": "10.1056/NEJMoa2308900",
       "primary_title": "Simple versus Radical Hysterectomy in Women with Low-Risk Cervical Cancer",
       "registry_id": "NCT01658930",
-      "quality_check_date": "2026-11-15"
+      "quality_check_date": "2026-11-15",
+      "absolute_effect": {
+        "endpoint": "Persistent urinary retention beyond 4 weeks after surgery",
+        "horizon": "Postoperative period beyond 4 weeks",
+        "event_definition": "Urinary retention persisting beyond 4 weeks",
+        "treatment_event_rate_pct": 0.6,
+        "control_event_rate_pct": 9.9,
+        "benefit_percentage_points": 9.3,
+        "nnt": 11,
+        "calculation": "ceil(100 / (9.9 − 0.6)) = ceil(10.75) = 11",
+        "source_doi": "10.1056/NEJMoa2308900",
+        "source_type": "Primary SHAPE randomized trial report",
+        "additional_endpoints": [
+          {
+            "endpoint": "Persistent urinary incontinence beyond 4 weeks after surgery",
+            "horizon": "Postoperative period beyond 4 weeks",
+            "event_definition": "Urinary incontinence persisting beyond 4 weeks",
+            "treatment_event_rate_pct": 4.7,
+            "control_event_rate_pct": 11,
+            "benefit_percentage_points": 6.3,
+            "nnt": 16,
+            "calculation": "ceil(100 / (11.0 − 4.7)) = ceil(15.87) = 16",
+            "source_doi": "10.1056/NEJMoa2308900",
+            "source_type": "Primary SHAPE randomized trial report"
+          }
+        ]
+      }
     },
     {
       "id": "sharp",
