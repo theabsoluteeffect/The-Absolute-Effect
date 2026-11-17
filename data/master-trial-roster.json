@@ -9207,8 +9207,10 @@
       "primary_title_verified_via": "PubMed/publisher primary record checked 17 November 2026",
       "source_verified": true,
       "doi_title_verified": true,
-      "release_qa_status": "held_pending_full_source_or_safety_extraction",
-      "nnt_not_calculated_reason": null
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "nnt_not_calculated_reason": null,
+      "release_hold_reason": "Exact 12-month OS landmark from the primary NEJM figure and full step-up/CRS/ICANS dosing/safety detail require figure/supplement verification.",
+      "release_ready": false
     },
     {
       "id": "harmoni-a",
@@ -9532,7 +9534,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/ivonescimab-perioperative/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact platinum-doublet backbone/dose and complete cohort-specific perioperative safety require protocol/supplement verification.",
+      "release_ready": false
     },
     {
       "id": "toripalimab-mfolfirinox",
@@ -9579,7 +9583,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/toripalimab-mfolfirinox/index.html",
-      "release_qa_status": "held_pending_full_source_or_safety_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
+      "release_ready": false
     },
     {
       "id": "gimema-all2820",
@@ -9638,7 +9644,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/gimema-all2820/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Full grade 3–5 safety table, arterial/venous vascular events and treatment discontinuations require primary supplement extraction.",
+      "release_ready": false
     },
     {
       "id": "felzartamab-rd",
@@ -9829,7 +9837,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/trastuzumab-botidotin/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact trastuzumab botidotin dose/schedule and full ocular/ILD/grade 3–5 safety table require primary protocol/supplement verification.",
+      "release_ready": false
     },
     {
       "id": "pro-b",
@@ -9925,7 +9935,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/pds0101-pembrolizumab/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact vaccine dose and administration schedule are not present in the accessible primary abstract; protocol/supplement and full grade 3–5 safety table required.",
+      "release_ready": false
     },
     {
       "id": "disitamab-tislelizumab",
@@ -9973,7 +9985,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/disitamab-tislelizumab/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact disitamab/tislelizumab doses and full safety denominator table require primary supplement/protocol verification.",
+      "release_ready": false
     },
     {
       "id": "optical-2",
@@ -10033,7 +10047,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/optical-2/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact chemotherapy component doses, cycle count and complete three-arm grade 3–5 safety table require primary protocol/supplement extraction.",
+      "release_ready": false
     },
     {
       "id": "litespark-011",
@@ -10080,7 +10096,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/litespark-011/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact arm-specific grade 3–5 AE, discontinuation and patient-reported outcome tables require full primary safety supplement.",
+      "release_ready": false
     },
     {
       "id": "keynote-b49",
@@ -10127,7 +10145,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/keynote-b49/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Investigator-choice chemotherapy component/dose distribution and full grade 3–5 safety/QoL table require primary supplement extraction.",
+      "release_ready": false
     },
     {
       "id": "artemis-011",
@@ -10174,7 +10194,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/artemis-011/index.html",
-      "release_qa_status": "held_pending_full_safety_or_dose_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
+      "release_ready": false
     },
     {
       "id": "ringside",
@@ -10569,7 +10591,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-esophagus01/index.html",
-      "release_qa_status": "held_pending_full_source_or_safety_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact HR, confidence intervals and p values for PFS/OS plus full safety table require full primary report extraction.",
+      "release_ready": false
     },
     {
       "id": "panku-lung01",
@@ -10616,7 +10640,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-lung01/index.html",
-      "release_qa_status": "held_pending_full_protocol_or_safety_extraction"
+      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_hold_reason": "Exact platinum/pemetrexed choice and component doses plus full grade 3–5 safety table require the full primary report/supplement.",
+      "release_ready": false
     },
     {
       "id": "capital",
