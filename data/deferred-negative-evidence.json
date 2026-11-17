@@ -263,10 +263,19 @@
       "registry_id": "NCT02364557",
       "site": "Breast",
       "setting": "Oligometastatic",
-      "reason": "Metastasis-directed therapy added to standard systemic therapy did not improve PFS/OS.",
+      "reason": "NRG-BR002 did not improve PFS or OS when metastasis-directed ablation was added to standard systemic therapy in oligometastatic breast cancer. Exploratory circulating-tumour-cell subgroup findings are hypothesis-generating only and do not establish a treatment benefit.",
       "source_url": "https://doi.org/10.1200/JCO-26-00201",
       "status": "deferred_negative",
-      "created_on": "2026-11-17"
+      "created_on": "2026-11-17",
+      "additional_evidence": [
+        "NRG-BR002 did not improve PFS or OS when metastasis-directed ablation was added to standard systemic therapy in oligometastatic breast cancer. Exploratory circulating-tumour-cell subgroup findings are hypothesis-generating only and do not establish a treatment benefit.",
+        "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only."
+      ],
+      "aliases": [
+        "NRG-BR002",
+        "NRG BR002",
+        "Metastasis-directed therapy in oligometastatic breast cancer"
+      ]
     },
     {
       "id": "optim-2026-11-17",
@@ -336,37 +345,6 @@
       "last_reviewed_on": "2026-11-17"
     },
     {
-      "trial_id": "nrg-br002",
-      "trial": "NRG-BR002",
-      "doi": "10.1200/JCO-26-00201",
-      "pmid": "42842849",
-      "registry_id": "NCT02364557",
-      "primary_title": "NRG-BR002: A Randomized Phase II/III Trial of Metastasis-Directed Ablation With First-Line Systemic Therapy for Oligometastatic Breast Cancer",
-      "site": "Oligometastatic breast cancer",
-      "setting": "First-line systemic therapy with/without metastasis-directed ablation",
-      "phase": "II/III (phase II go/no-go; did not proceed to phase III)",
-      "design": "Randomized phase II/III; 1:1",
-      "population": "129 enrolled, 125 eligible: no ablation n=65, ablation n=60. ≤4 metastases, controlled primary, ≤12 months of first-line systemic therapy without progression; all visible metastases amenable to SBRT or surgery.",
-      "intervention": "First-line systemic therapy plus metastasis-directed ablation; 93% of ablation delivered by SBRT, remainder surgery.",
-      "comparator": "First-line systemic therapy alone, no metastasis-directed ablation.",
-      "primary_endpoint": "PFS, time to progression or death",
-      "follow_up": "Median follow-up 29.9 months at phase II go/no-go analysis; extended follow-up median57.5 months was not protocol-specified.",
-      "efficacy": "At 72 PFS events: median PFS23.0 months without ablation vs19.5 months with ablation; HR0.92 (70% CI0.71–1.17; 95% CI0.57–1.47), one-sided P=.36, stratified P=.42. OS HR1.07 (95% CI0.60–1.89), one-sided P=.41. Trial did not proceed to phase III.",
-      "safety": "No grade5 toxicity reported.",
-      "disposition": "deferred_negative",
-      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
-      "source_urls": [
-        "https://doi.org/10.1200/JCO-26-00201",
-        "https://pubmed.ncbi.nlm.nih.gov/42842849/",
-        "https://clinicaltrials.gov/study/NCT02364557"
-      ],
-      "nccn_provenance": "not verified — official complete guideline/reference list inaccessible",
-      "canonical_page_required": false,
-      "status": "deferred_negative",
-      "next_action": "Retain as contrary/negative evidence; do not create a canonical trial page unless later guideline recommendation context makes it essential.",
-      "last_reviewed_on": "2026-11-17"
-    },
-    {
       "trial": "MOIO",
       "trial_id": "moio",
       "registry_id": "NCT05078047",
@@ -397,5 +375,5 @@
   "last_run": "2026-11-17-evening",
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets."
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026."
 }
