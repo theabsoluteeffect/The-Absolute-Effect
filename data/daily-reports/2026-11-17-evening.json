@@ -1365,7 +1365,7 @@
     "branch_ci": "Cloudflare Pages deployment check succeeded for current branch head; no PR checks because no PR was opened",
     "cloudflare_branch_preview": {
       "status": "success",
-      "head_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+      "head_sha": "44bec4eb8860e9853b6aae4e06e509510a2c11d6",
       "check_run_id": 134140991439,
       "preview_url": "https://414c596e.theabsoluteeffect.pages.dev",
       "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
@@ -1458,8 +1458,8 @@
     "archive_updated": true
   },
   "page_commit_sha": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-  "branch_head_after": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
-  "deployment_status": "Cloudflare branch preview deployment succeeded for current branch head; production deployment not verified",
+  "branch_head_after": "44bec4eb8860e9853b6aae4e06e509510a2c11d6",
+  "deployment_status": "Cloudflare branch preview check succeeded for this head; representative page inaccessible via browser; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
   "target_progress_percent": 43.7,
@@ -1495,6 +1495,7 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
-  "metadata_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
+  "report_commit_sha": "44bec4eb8860e9853b6aae4e06e509510a2c11d6",
+  "metadata_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+  "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately"
 }
