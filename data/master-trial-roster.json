@@ -27,10 +27,10 @@
     "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
-    "permanent_trial_pages": 431,
+    "permanent_trial_pages": 439,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 437,
+    "total_unique_trials": 439,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -38,38 +38,7 @@
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-11-14",
-    "new_trials_added_today": [
-      "ASCENT-04 / KEYNOTE-D19",
-      "RASolute 302",
-      "RECITE",
-      "OptiTROP-Lung06",
-      "Dalmelitinib plus aumolertinib",
-      "HARMONi",
-      "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
-      "SUBITO",
-      "HORIZON-Breast06",
-      "EMERALD-3",
-      "IMpower151",
-      "DeLLphi-304",
-      "KRYSTAL-12",
-      "INAVO120",
-      "STELLAR-303",
-      "OCLURANDOM",
-      "UNICORN",
-      "CAMORAL",
-      "ALLIANCE A051701",
-      "RADICAL / Alliance A031801",
-      "DALY 2-EU",
-      "ECOG-ACRIN E4512 / ALCHEMIST-ALK",
-      "JCOG1109 NExT",
-      "R-ALPS",
-      "HEALER",
-      "Fovinaciclib phase III trial",
-      "HELEN-Trio 011",
-      "ANCHOR",
-      "PICC-2",
-      "STAR-TREC"
-    ],
+    "new_trials_added_today": 2,
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
       "MRC TE19 / EORTC 30982",
@@ -566,7 +535,7 @@
       "bladder_cancer_added": 1
     },
     "archive_count": 15,
-    "daily_evidence_file_count": 23,
+    "daily_evidence_file_count": 28,
     "daily_evidence_records": 30,
     "evidence_index_links_added": 32,
     "new_pages_found": 11,
@@ -708,7 +677,7 @@
       "duplicate_route_policy": "Legacy flat .html routes and canonical /index.html routes were grouped by common trial slug and counted once."
     },
     "evidence_index_rostered_paths_missing": 0,
-    "canonical_trial_page_index_files": 401,
+    "canonical_trial_page_index_files": 433,
     "roster_unique_page_paths": 399,
     "redirect_only_trial_page_stubs": 1,
     "shared_anchor_trial_entries": 8,
@@ -754,7 +723,7 @@
     },
     "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper.",
     "daily_evidence_files_count": 24,
-    "daily_evidence_records_total": 290,
+    "daily_evidence_records_total": 388,
     "daily_evidence_records_uploaded": 144,
     "morning_run_2026_11_14": {
       "new_trials_added": [
@@ -1126,7 +1095,75 @@
         "from": "Adjuvant / Postoperative",
         "to": "Adjuvant"
       }
-    ]
+    ],
+    "last_updated": "2026-11-16",
+    "total_trials": 439,
+    "last_batch_date": "2026-11-17",
+    "last_batch_expected_page_count": 30,
+    "last_batch_actual_page_count": 2,
+    "last_batch_missing": 28,
+    "last_batch_status": "IN_PROGRESS — carried forward from 2026-11-16; active on atlas-batch/2026-11-17-am; 2/30 new unique pages staged; 28 remain; no PR opened",
+    "last_batch_ids": [
+      "dellphi-305",
+      "harmoni-a"
+    ],
+    "full_release_validation": "not run — exact-30 gate not met",
+    "deployment_status": "not deployed — branch unmerged",
+    "last_structural_reconciliation": "2026-11-16",
+    "roster_entries": 439,
+    "evidence_index_unique_links": 440,
+    "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
+    "evidence_index_rostered_page_paths_added": 30,
+    "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
+    "full_roster_reconciliation_2026_11_16": {
+      "status": "STRUCTURAL_RECONCILIATION_COMPLETE; CLINICAL_AUDIT_INCOMPLETE",
+      "roster_entries": 439,
+      "unique_trial_ids": 439,
+      "canonical_trial_page_index_files": 433,
+      "unique_page_paths_referenced_by_roster": 432,
+      "shared_anchor_trial_entries": 8,
+      "redirect_only_trial_page_stubs": 1,
+      "unrostered_redirect_only_pages": [
+        "trial-pages/rosel/"
+      ],
+      "unrostered_canonical_content_pages": 0,
+      "missing_roster_page_targets": 0,
+      "archive_records": 15,
+      "archive_records_missing_from_roster": 0,
+      "current_trial_of_the_day": "GemX (gemx)",
+      "previous_trial_of_the_day": "ACOSOG Z11102 (acosog-z11102)",
+      "daily_evidence_files": 28,
+      "daily_evidence_records_total": 388,
+      "daily_evidence_records_marked_uploaded": 144,
+      "evidence_index_unique_links": 440,
+      "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
+      "evidence_index_rostered_page_paths_added": 30,
+      "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
+      "checked_on": "2026-11-16",
+      "scope_note": "Structural and registry reconciliation only. It does not constitute a complete clinical freshness audit or browser-rendered QA."
+    },
+    "latest_structural_reconciliation_2026_11_17": {
+      "checked_on": "2026-11-17",
+      "main_head": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "main_roster_entries": 437,
+      "main_canonical_trial_page_index_files": 431,
+      "main_roster_unique_page_paths": 430,
+      "redirect_only_stubs": [
+        "trial-pages/rosel/index.html"
+      ],
+      "orphan_canonical_content_pages": 0,
+      "archive_entries": 15,
+      "archive_records_missing_from_roster": 0,
+      "main_evidence_index_unique_links": 408,
+      "missing_rostered_paths_on_main_before_carry_forward": 30,
+      "missing_rostered_paths_on_active_branch_after_carry_forward": 0,
+      "active_branch_evidence_index_unique_links": 440,
+      "daily_evidence_files_checked": 28,
+      "current_trial_of_the_day": "GemX · 2026-11-08",
+      "previous_trial_of_the_day": "ACOSOG Z11102 · 2026-11-03",
+      "full_manual_clinical_audit_complete": false,
+      "note": "Structural reconciliation is complete for the listed sources. Full 431-page clinical/source/freshness and browser-rendered visualization audit remains incomplete."
+    }
   },
   "trials": [
     {
@@ -2156,9 +2193,45 @@
       "discipline": "Medical",
       "setting": "Neoadjuvant",
       "question": "In resectable stage IB–IIIA NSCLC, does neoadjuvant nivolumab plus platinum-doublet chemotherapy improve pathological response and survival compared with neoadjuvant chemotherapy alone? [CheckMate 816]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Resectable stage IB–IIIA NSCLC · neoadjuvant chemoimmunotherapy"
+      "freshness_review_status": "Primary 2022 and 2025 NEJM reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Source-reported rates and endpoint-specific absolute-effect markup corrected 2026-11-15; browser-rendered QA pending.",
+      "setting_detail": "Resectable stage IB–IIIA NSCLC · neoadjuvant chemoimmunotherapy",
+      "primary": "10.1056/NEJMoa2202170",
+      "primary_title": "Neoadjuvant Nivolumab plus Chemotherapy in Resectable Lung Cancer",
+      "registry_id": "NCT02998528",
+      "follow_up_publications": [
+        {
+          "doi": "10.1056/NEJMoa2502931",
+          "title": "Overall Survival with Neoadjuvant Nivolumab plus Chemotherapy in Lung Cancer",
+          "pmid": null
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Event-free survival",
+        "horizon": "2 years",
+        "benefit_percentage_points": 18.5,
+        "nnt": 6,
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "5 years",
+            "benefit_percentage_points": 10.4,
+            "nnt": 10
+          },
+          {
+            "endpoint": "Pathological complete response",
+            "horizon": "At surgery",
+            "benefit_percentage_points": 21.8,
+            "nnt": 5
+          }
+        ],
+        "calculation": "For each endpoint, approximate NNT = ceil(100 / absolute percentage-point difference); endpoints and horizons are distinct.",
+        "sources": [
+          "10.1056/NEJMoa2202170",
+          "10.1056/NEJMoa2502931"
+        ]
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "checkmate-8hw",
@@ -3246,13 +3319,33 @@
       "question": "After CDK4/6 inhibitor progression in ER-positive/HER2-negative advanced breast cancer, does giredestrant plus everolimus improve outcomes compared with standard endocrine therapy plus everolimus?",
       "aliases": [
         "evERA",
-        "NCT05306340"
+        "NCT05306340",
+        "evERA Breast Cancer",
+        "Giredestrant plus Everolimus in Advanced Breast Cancer",
+        "10.1056/NEJMoa2602457",
+        "42814929"
       ],
-      "freshness_review_status": "provisional page; verify final publication against primary source",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
+      "freshness_review_status": "primary NEJM publication and FDA approval notice reviewed 2026-11-17; exact NCCN recommendation/reference mapping remains open",
+      "outcome_visual_review_status": "source-grounded PFS and immature OS charts added; HTML structure inspected; browser-rendered QA pending",
       "disease_extent": "Advanced / metastatic",
       "treatment_status": "Progression after CDK4/6 inhibitor and endocrine therapy",
-      "treatment_line": "Post-CDK4/6 inhibitor"
+      "treatment_line": "Post-CDK4/6 inhibitor",
+      "primary": "10.1056/NEJMoa2602457",
+      "primary_title": "Giredestrant plus Everolimus in Advanced Breast Cancer",
+      "pmid": "42814929",
+      "registry_id": "NCT05306340",
+      "publication_date": "2026-10-01",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2602457",
+        "https://pubmed.ncbi.nlm.nih.gov/42814929/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13674676/",
+        "https://clinicaltrials.gov/study/NCT05306340",
+        "https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally"
+      ],
+      "last_source_reviewed_on": "2026-11-17",
+      "last_clinical_context_reviewed_on": "2026-11-17",
+      "regulatory_context": "US FDA approval 2026-11-16 for ESR1-mutated ER-positive/HER2-negative locally advanced or metastatic breast cancer; FoundationOne Liquid CDx companion diagnostic",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; mapping follow-up remains open"
     },
     {
       "id": "everest",
@@ -3443,8 +3536,34 @@
         "FIGHT-302",
         "NCT03656536"
       ],
-      "freshness_review_status": "primary source and selected follow-up reviewed 2026-11-09; full current-guideline audit pending",
-      "outcome_visual_review_status": "source-reported visualization added; browser-rendered QA pending"
+      "freshness_review_status": "Primary JCO 2026 results and 2020 protocol report verified 2026-11-15; contemporary guideline sequencing and separate HRQoL report remain pending.",
+      "outcome_visual_review_status": "Corrected pemigatinib continuous dosing, median-PFS units, source denominators and 12/24-month PFS landmark charts; static bars and absolute-effect pictograms source-checked 2026-11-15; browser QA pending.",
+      "primary": "10.1200/JCO-26-00788",
+      "primary_title": "Pemigatinib for Unresectable or Metastatic Cholangiocarcinoma With Fibroblast Growth Factor Receptor–2 Rearrangement: Results From the Phase III FIGHT-302 Trial",
+      "registry_id": "NCT03656536",
+      "protocol_publications": [
+        {
+          "doi": "10.2217/FON-2020-0429",
+          "title": "FIGHT-302: first-line pemigatinib vs gemcitabine plus cisplatin for advanced cholangiocarcinoma with FGFR2 rearrangements"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 22,
+        "nnt": 5,
+        "additional_endpoints": [
+          {
+            "endpoint": "Progression-free survival",
+            "horizon": "24 months",
+            "benefit_percentage_points": 12,
+            "nnt": 9
+          }
+        ],
+        "calculation": "Approximate landmark NNT = ceil(100 / absolute percentage-point difference), using published Kaplan–Meier PFS estimates; not derived from median PFS or HR.",
+        "source_doi": "10.1200/JCO-26-00788"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "flaura",
@@ -4765,9 +4884,29 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab"
+      "freshness_review_status": "Primary PFS and OS Lancet reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Non-finite chart widths and malformed source link corrected; static source-rate bars and NNT markup verified 2026-11-15; browser QA pending.",
+      "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
+      "primary": "10.1016/S0140-6736(24)00317-9",
+      "primary_title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer (ENGOT-cx11/GOG-3047/KEYNOTE-A18): a randomised, double-blind, phase 3 clinical trial",
+      "registry_id": "NCT04221945",
+      "follow_up_publications": [
+        {
+          "doi": "10.1016/S0140-6736(24)01808-7",
+          "title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer: overall survival results",
+          "pmid": "39288779"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Overall survival",
+        "horizon": "36 months",
+        "benefit_percentage_points": 7.8,
+        "nnt": 13,
+        "event_definition": "One additional patient alive at 36 months",
+        "calculation": "ceil(100 / 7.8) = 13",
+        "source_doi": "10.1016/S0140-6736(24)01808-7"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "krascendo-1",
@@ -4818,9 +4957,34 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In early-stage cervical cancer requiring radical hysterectomy, does minimally invasive radical hysterectomy preserve disease-free and overall survival compared with open abdominal radical hysterectomy? [LACC]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy"
+      "freshness_review_status": "Primary NEJM, JCO final analysis and Lancet Oncology QoL reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Non-finite chart widths, malformed registry/source links and NNT identifier error corrected; source-rate bars and NNH markup verified 2026-11-15; browser QA pending.",
+      "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy",
+      "primary": "10.1056/NEJMoa1806395",
+      "primary_title": "Minimally Invasive versus Abdominal Radical Hysterectomy for Cervical Cancer",
+      "registry_id": "NCT00614211",
+      "follow_up_publications": [
+        {
+          "doi": "10.1200/JCO.23.02335",
+          "title": "LACC Trial: Final Analysis on Overall Survival Comparing Open Versus Minimally Invasive Radical Hysterectomy for Early-Stage Cervical Cancer",
+          "pmid": "38810208"
+        },
+        {
+          "doi": "10.1016/S1470-2045(20)30081-4",
+          "title": "Quality of life in patients with cervical cancer after open versus minimally invasive radical hysterectomy (LACC)",
+          "pmid": "32502445"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Disease-free survival (recurrence or death from cervical cancer)",
+        "horizon": "4.5 years",
+        "harm_percentage_points": 10.6,
+        "nnh": 10,
+        "event_definition": "One additional recurrence or cervical-cancer death with minimally invasive versus open surgery",
+        "calculation": "ceil(100 / 10.6) = 10",
+        "source_doi": "10.1056/NEJMoa1806395"
+      },
+      "quality_check_date": "2026-11-15"
     },
     {
       "id": "laura",
@@ -6987,9 +7151,39 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In carefully selected patients with low-risk early-stage cervical cancer, is simple hysterectomy non-inferior to radical hysterectomy for pelvic recurrence while reducing surgical morbidity? [SHAPE]",
-      "freshness_review_status": "page discovered during repository audit; primary-source and clinical freshness review pending",
-      "outcome_visual_review_status": "outcome visualization present in page; independent source and browser QA pending",
-      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy"
+      "freshness_review_status": "Primary NEJM report verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Generic PubMed query replaced with DOI/PMID links; 3-year recurrence chart and source values checked 2026-11-15; browser QA pending.",
+      "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy",
+      "primary": "10.1056/NEJMoa2308900",
+      "primary_title": "Simple versus Radical Hysterectomy in Women with Low-Risk Cervical Cancer",
+      "registry_id": "NCT01658930",
+      "quality_check_date": "2026-11-15",
+      "absolute_effect": {
+        "endpoint": "Persistent urinary retention beyond 4 weeks after surgery",
+        "horizon": "Postoperative period beyond 4 weeks",
+        "event_definition": "Urinary retention persisting beyond 4 weeks",
+        "treatment_event_rate_pct": 0.6,
+        "control_event_rate_pct": 9.9,
+        "benefit_percentage_points": 9.3,
+        "nnt": 11,
+        "calculation": "ceil(100 / (9.9 − 0.6)) = ceil(10.75) = 11",
+        "source_doi": "10.1056/NEJMoa2308900",
+        "source_type": "Primary SHAPE randomized trial report",
+        "additional_endpoints": [
+          {
+            "endpoint": "Persistent urinary incontinence beyond 4 weeks after surgery",
+            "horizon": "Postoperative period beyond 4 weeks",
+            "event_definition": "Urinary incontinence persisting beyond 4 weeks",
+            "treatment_event_rate_pct": 4.7,
+            "control_event_rate_pct": 11,
+            "benefit_percentage_points": 6.3,
+            "nnt": 16,
+            "calculation": "ceil(100 / (11.0 − 4.7)) = ceil(15.87) = 16",
+            "source_doi": "10.1056/NEJMoa2308900",
+            "source_type": "Primary SHAPE randomized trial report"
+          }
+        ]
+      }
     },
     {
       "id": "sharp",
@@ -8768,6 +8962,125 @@
       },
       "primary_title": "Chemoradiotherapy versus short-course radiotherapy for response-adapted organ preservation in early-stage and intermediate-stage rectal cancer (STAR-TREC): 12-month results of an international, multicentre, open-label, parallel-group, randomised, phase 2/3 trial",
       "pmid": "42633754"
+    },
+    {
+      "id": "dellphi-305",
+      "trial": "DeLLphi-305",
+      "path": "trial-pages/dellphi-305/index.html",
+      "site": "Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Consolidation",
+      "setting_detail": "Maintenance after first-line durvalumab plus platinum–etoposide induction in extensive-stage SCLC without progression",
+      "phase": "III",
+      "primary": "10.1056/NEJMoa2609482",
+      "primary_title": "Tarlatamab–Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer",
+      "pmid": "42929702",
+      "registry_id": "NCT06211036",
+      "publication_date": "2026-10-24",
+      "batch_date": "2026-11-16",
+      "publication_status": "staged",
+      "aliases": [
+        "DeLLphi 305",
+        "Tarlatamab–durvalumab maintenance",
+        "NCT06211036"
+      ],
+      "secondary_publications": [],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609482",
+        "https://pubmed.ncbi.nlm.nih.gov/42929702/",
+        "https://clinicaltrials.gov/study/NCT06211036",
+        "https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imdelltra-reduced-the-risk-of-death-by-58-pct-in-1st-line-extensive-stage-small-cell-lung-cancer-in-the-dellphi-305-phase-iii-trial.html"
+      ],
+      "absolute_effect": {
+        "endpoint": "Overall survival at 12 months",
+        "horizon": "12 months from randomization at maintenance start",
+        "event_definition": "Alive at 12 months (Kaplan–Meier estimate; rounded landmark rates)",
+        "treatment_rate_pct": 79,
+        "control_rate_pct": 53,
+        "benefit_percentage_points": 26,
+        "nnt": 4,
+        "calculation": "ceil(100 / (79 − 53)) = ceil(3.85) = 4",
+        "source_doi": "10.1056/NEJMoa2609482",
+        "source_type": "Official sponsor summary of the primary ESMO 2026 interim analysis; rounded Kaplan–Meier 12-month landmark rates"
+      },
+      "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open",
+      "last_source_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "harmoni-a",
+      "trial": "HARMONi-A",
+      "path": "trial-pages/harmoni-a/index.html",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Metastatic",
+      "setting_detail": "Locally advanced/metastatic EGFR-variant non-squamous NSCLC after progression on EGFR-TKI therapy; distinct China phase III study",
+      "phase": "III",
+      "primary": "10.1001/jama.2024.10613",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "pmid": "38820549",
+      "registry_id": "NCT05184712",
+      "publication_date": "2024-08-20",
+      "batch_date": "2026-11-16",
+      "publication_status": "staged",
+      "aliases": [
+        "HARMONi-A",
+        "AK112 plus pemetrexed/carboplatin",
+        "NCT05184712"
+      ],
+      "secondary_publications": [
+        {
+          "doi": "10.1001/jama.2026.7745",
+          "title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
+          "pmid": "42307937",
+          "publication_date": "2026-07-28"
+        }
+      ],
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2024.10613",
+        "https://pubmed.ncbi.nlm.nih.gov/38820549/",
+        "https://doi.org/10.1001/jama.2026.7745",
+        "https://pubmed.ncbi.nlm.nih.gov/42307937/",
+        "https://clinicaltrials.gov/study/NCT05184712",
+        "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000092/smmt-20261115.htm",
+        "https://www.smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx"
+      ],
+      "absolute_effect": {
+        "endpoint": "Overall survival at 30 months",
+        "horizon": "30 months from randomization",
+        "event_definition": "Alive at 30 months (Kaplan–Meier estimate)",
+        "treatment_rate_pct": 29.1,
+        "control_rate_pct": 18.4,
+        "benefit_percentage_points": 10.7,
+        "nnt": 10,
+        "calculation": "ceil(100 / (29.1 − 18.4)) = ceil(9.35) = 10",
+        "source_doi": "10.1001/jama.2026.7745",
+        "source_type": "Final overall-survival analysis, JAMA 2026"
+      },
+      "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open",
+      "last_source_reviewed_on": "2026-11-17"
     }
-  ]
+  ],
+  "last_updated": "2026-11-17",
+  "batch_date": "2026-11-17",
+  "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
+  "active_batch": {
+    "date": "2026-11-17",
+    "cycle": "morning",
+    "branch": "atlas-batch/2026-11-17-am",
+    "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "carried_forward_from": "archive/atlas-batch-2026-11-16-am",
+    "carried_forward_commit": "6be38c4542cd48360f1b67094483092a907eaa42",
+    "expected_new_unique_trials": 30,
+    "staged_new_unique_trials": [
+      "dellphi-305",
+      "harmoni-a"
+    ],
+    "staged_new_unique_count": 2,
+    "remaining_to_target": 28,
+    "new_unique_candidates_screened_this_run": 3,
+    "duplicate_candidates_screened_this_run": 1,
+    "verified_new_pages_this_run": 0,
+    "published_this_run": 0,
+    "status": "IN_PROGRESS — no PR until exactly 30 independently verified new unique studies pass release validation"
+  }
 }

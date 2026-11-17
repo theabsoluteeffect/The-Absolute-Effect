@@ -150,36 +150,56 @@ for (const t of batch) {
     const pageNnts = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => m[1]);
     if (pageNnts.some(n => Number(n) !== Number(detailNnt[1]))) fail(t.id, `NNT mismatch: roster ${detailNnt[1]}, page ${pageNnts.join(', ')}`);
   }
-  const absolute = t.absolute_effect;
-  const pageNntClaims = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
-  const pageNnhClaims = [...html.matchAll(/\bNNH\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
-  if ((pageNntClaims.length || pageNnhClaims.length) && !absolute) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
+  const absolute = t.absolute_effect || null;
+  const structuredEffects = absolute ? [absolute, ...(absolute.additional_endpoints || [])] : [];
+  const pageNntClaims = [...html.matchAll(/\\bNNT\\s*(?:of\\s*)?(\\d+(?:\\.\\d+)?)/gi)].map(m => Number(m[1]));
+  const pageNnhClaims = [...html.matchAll(/\\bNNH\\s*(?:of\\s*)?(\\d+(?:\\.\\d+)?)/gi)].map(m => Number(m[1]));
+  if ((pageNntClaims.length || pageNnhClaims.length) && !structuredEffects.length) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
   if (t.descriptive_outcome && /data-absolute-effect/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must not be rendered as an absolute treatment-effect pictogram');
   if (t.descriptive_outcome && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must explicitly state why NNT is not calculated');
-  const aeMarkup = (html.match(/<div\b[^>]*data-absolute-effect[^>]*>/i) || [''])[0];
-  if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
-  if (absolute) {
-    if (!aeMarkup) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
-    const attr = name => { const m = aeMarkup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
-    const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
-    if (absolute.benefit_percentage_points !== undefined) {
-      const benefit = Number(attr('benefit'));
-      const expectedBenefit = Number(absolute.benefit_percentage_points);
-      if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
-    } else if (attr('benefit') !== '') fail(t.id, 'Page shows a benefit percentage without a structured source-grounded benefit endpoint');
-    if (absolute.nnt !== undefined) { if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`); }
-    else if (!unspecified(attr('nnt'))) fail(t.id, 'Page displays an NNT without a defensible structured NNT value');
-    if (absolute.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
-    const expectedHarm = absolute.harm_percentage_points;
-    if (expectedHarm !== undefined) {
-      const harm = Number(attr('harm'));
-      if (!Number.isFinite(harm) || Math.abs(harm - Number(expectedHarm)) > 0.11) fail(t.id, `Absolute harm mismatch: expected ${expectedHarm}, page ${attr('harm')}`);
-    } else if (attr('harm') !== '') fail(t.id, 'Page shows a harm percentage without a structured source-grounded harm endpoint');
-    if (absolute.nnh !== undefined) { if (Number(attr('nnh')) !== Number(absolute.nnh)) fail(t.id, `NNH markup mismatch: expected ${absolute.nnh}, page ${attr('nnh')}`); }
-    else if (!unspecified(attr('nnh'))) fail(t.id, 'Page displays an NNH without a defensible structured NNH value');
-    if (absolute.nnt !== undefined && pageNntClaims.some(m => Number(m[1]) !== Number(absolute.nnt))) fail(t.id, 'NNT text does not match structured NNT value');
-    if (absolute.nnh !== undefined && pageNnhClaims.some(m => Number(m[1]) !== Number(absolute.nnh))) fail(t.id, 'NNH text does not match structured NNH value');
+  const aeMarkups = [...html.matchAll(/<div\\b[^>]*data-absolute-effect[^>]*>/gi)].map(m => m[0]);
+  const attr = (markup, name) => { const m = markup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
+  const hasValue = value => value !== undefined && value !== null && value !== '' && Number.isFinite(Number(value));
+  const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
+  const normEndpoint = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const structuredNnts = structuredEffects.filter(e => hasValue(e.nnt)).map(e => Number(e.nnt));
+  const structuredNnhs = structuredEffects.filter(e => hasValue(e.nnh)).map(e => Number(e.nnh));
+  if (pageNntClaims.some(n => !structuredNnts.includes(n))) fail(t.id, 'NNT text does not match any structured primary/additional endpoint');
+  if (pageNnhClaims.some(n => !structuredNnhs.includes(n))) fail(t.id, 'NNH text does not match any structured primary/additional endpoint');
+  if (detailNnt && !structuredNnts.includes(Number(detailNnt[1]))) fail(t.id, `NNT mismatch: setting detail ${detailNnt[1]} is not present in structured endpoints`);
+  if (structuredEffects.length) {
+    const effectsWithPictograms = structuredEffects.filter(e => hasValue(e.nnt) || hasValue(e.nnh));
+    if (effectsWithPictograms.length && aeMarkups.length < effectsWithPictograms.length) fail(t.id, 'One or more structured NNT/NNH endpoints lack pictogram markup');
+    if (!aeMarkups.length) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
+    const matched = new Set();
+    aeMarkups.forEach((markup, index) => {
+      const endpointLabel = attr(markup, 'nnt-endpoint') || attr(markup, 'nnh-endpoint') || attr(markup, 'endpoint');
+      let effect = endpointLabel ? structuredEffects.find(e => normEndpoint(e.endpoint) === normEndpoint(endpointLabel)) : structuredEffects[index] || structuredEffects[0];
+      if (!effect) { fail(t.id, `Pictogram ${index + 1} has no matching structured endpoint`); return; }
+      matched.add(effect);
+      const benefitAttr = attr(markup, 'benefit');
+      const harmAttr = attr(markup, 'harm');
+      if (effect.benefit_percentage_points !== undefined) {
+        const benefit = Number(benefitAttr);
+        const expected = Number(effect.benefit_percentage_points);
+        if (!Number.isFinite(benefit) || Math.abs(benefit - expected) > 0.11) fail(t.id, `Absolute benefit mismatch for ${effect.endpoint}: expected ${expected}, page ${benefitAttr}`);
+      } else if (benefitAttr !== '') fail(t.id, `Page shows a benefit percentage without a structured endpoint: ${effect.endpoint}`);
+      if (effect.harm_percentage_points !== undefined) {
+        const harm = Number(harmAttr);
+        const expected = Number(effect.harm_percentage_points);
+        if (!Number.isFinite(harm) || Math.abs(harm - expected) > 0.11) fail(t.id, `Absolute harm mismatch for ${effect.endpoint}: expected ${expected}, page ${harmAttr}`);
+      } else if (harmAttr !== '') fail(t.id, `Page shows a harm percentage without a structured endpoint: ${effect.endpoint}`);
+      if (hasValue(effect.nnt)) { if (Number(attr(markup, 'nnt')) !== Number(effect.nnt)) fail(t.id, `NNT markup mismatch for ${effect.endpoint}: expected ${effect.nnt}, page ${attr(markup, 'nnt')}`); }
+      else if (!unspecified(attr(markup, 'nnt'))) fail(t.id, `Page displays an NNT without a defensible value for ${effect.endpoint}`);
+      if (hasValue(effect.nnh)) { if (Number(attr(markup, 'nnh')) !== Number(effect.nnh)) fail(t.id, `NNH markup mismatch for ${effect.endpoint}: expected ${effect.nnh}, page ${attr(markup, 'nnh')}`); }
+      else if (!unspecified(attr(markup, 'nnh'))) fail(t.id, `Page displays an NNH without a defensible value for ${effect.endpoint}`);
+    });
+    for (const effect of effectsWithPictograms) {
+      if (!effect.endpoint || !effect.horizon) fail(t.id, 'Every pictorial absolute-effect endpoint must include endpoint and time horizon');
+      if (!matched.has(effect)) fail(t.id, `Structured endpoint lacks a matching pictogram: ${effect.endpoint}`);
+    }
   }
+  if (absolute?.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
   if (!html.includes('assets/trial-page-layout.js')) fail(t.id, 'Shared trial-page renderer missing');
 }
 const report = { generated_at: new Date().toISOString(), latest_batch_date: latestDate, latest_batch_count: batch.length, errors };

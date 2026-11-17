@@ -1,0 +1,330 @@
+{
+  "run_id": "2026-11-16-am",
+  "date": "2026-11-16",
+  "cycle": "morning",
+  "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+  "branch": "atlas-batch/2026-11-16-am",
+  "candidate_decisions": [
+    {
+      "candidate": "KEYLYNK-001",
+      "doi": "10.1016/S1470-2045(26)00223-8",
+      "pmid": "42705254",
+      "registry_id": "NCT03740165",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary phase III publication identified; complete dose, endpoint, subgroup, grade 3–5 safety and QoL extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00223-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42705254/",
+        "https://clinicaltrials.gov/study/NCT03740165"
+      ]
+    },
+    {
+      "candidate": "TroFuse-005",
+      "doi": "10.1016/S0140-6736(26)02099-4",
+      "pmid": "42933460",
+      "registry_id": "NCT06132958",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary phase III Lancet report identified; exact treatment schedule, denominators, mature safety and QoL extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)02099-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42933460/",
+        "https://clinicaltrials.gov/study/NCT06132958"
+      ]
+    },
+    {
+      "candidate": "PANKU-Breast01",
+      "doi": "10.1016/S0140-6736(26)02096-9",
+      "pmid": "42933459",
+      "registry_id": "NCT06343948",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary phase III Lancet report identified; exact regimen, denominators and grade 3–5 safety extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)02096-9",
+        "https://pubmed.ncbi.nlm.nih.gov/42933459/",
+        "https://clinicaltrials.gov/study/NCT06343948"
+      ]
+    },
+    {
+      "candidate": "IROCAS",
+      "doi": "10.1016/j.annonc.2026.10.104",
+      "pmid": "42927853",
+      "registry_id": "NCT02967289",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "deferred_negative",
+      "reason": "Phase III adjuvant intensification did not improve 3-year DFS (65.6% vs 66.3%; HR 1.07; P=.61).",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.104",
+        "https://pubmed.ncbi.nlm.nih.gov/42927853/",
+        "https://clinicaltrials.gov/study/NCT02967289"
+      ]
+    },
+    {
+      "candidate": "UNION",
+      "doi": "10.1016/S1470-2045(26)00446-8",
+      "pmid": "42927765",
+      "registry_id": "NCT04928807",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary phase III rectal-cancer report identified; full treatment sequence, endpoint maturity and safety extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00446-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42927765/",
+        "https://clinicaltrials.gov/study/NCT04928807"
+      ]
+    },
+    {
+      "candidate": "JCOG2510 / PRIME-CRT",
+      "doi": "10.1016/j.cllc.2026.09.007",
+      "pmid": "42887199",
+      "registry_id": null,
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_protocol_only_hold",
+      "reason": "Protocol/design publication only; no mature primary outcomes.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.cllc.2026.09.007",
+        "https://pubmed.ncbi.nlm.nih.gov/42887199/"
+      ]
+    },
+    {
+      "candidate": "LITESPARK-011",
+      "doi": "10.1016/j.annonc.2026.10.109",
+      "pmid": "42927855",
+      "registry_id": "NCT04586231",
+      "matched_existing": "data/daily-evidence-2026-09-09.json and 2026-11-15 AM candidate ledger",
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded_prior_screen",
+      "reason": "Same underlying study was already screened in the 9 September evidence file and 15 November AM run; not a duplicate of an existing canonical page, but not a new candidate for this run.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.109",
+        "https://pubmed.ncbi.nlm.nih.gov/42927855/",
+        "https://clinicaltrials.gov/study/NCT04586231"
+      ]
+    },
+    {
+      "candidate": "KEYNOTE-B49",
+      "doi": "10.1016/j.annonc.2026.10.1285",
+      "pmid": "42926111",
+      "registry_id": "NCT04895358",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary phase III conference report identified; chemotherapy backbone, subgroup and full safety extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.1285",
+        "https://pubmed.ncbi.nlm.nih.gov/42926111/",
+        "https://clinicaltrials.gov/study/NCT04895358"
+      ]
+    },
+    {
+      "candidate": "ARTEMIS-011",
+      "doi": "10.1016/j.annonc.2026.10.1284",
+      "pmid": "42933637",
+      "registry_id": "NCT06935409",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Phase III osteosarcoma conference report identified; full dose schedule and grade 3–5 safety extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.1284",
+        "https://pubmed.ncbi.nlm.nih.gov/42933637/",
+        "https://clinicaltrials.gov/study/NCT06935409"
+      ]
+    },
+    {
+      "candidate": "LUCERNA",
+      "doi": "10.1016/j.esmogo.2026.100352",
+      "pmid": "42583212",
+      "registry_id": "NCT06901531",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_protocol_only_hold",
+      "reason": "Protocol/design report only; no mature primary outcomes.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmogo.2026.100352",
+        "https://pubmed.ncbi.nlm.nih.gov/42583212/",
+        "https://clinicaltrials.gov/study/NCT06901531"
+      ]
+    },
+    {
+      "candidate": "JCOG2107E",
+      "doi": "10.1080/14796694.2026.2749305",
+      "pmid": "42911120",
+      "registry_id": "jRCT2031230456",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_protocol_only_hold",
+      "reason": "Protocol/design report only; no mature primary outcomes.",
+      "source_urls": [
+        "https://doi.org/10.1080/14796694.2026.2749305",
+        "https://pubmed.ncbi.nlm.nih.gov/42911120/",
+        "https://jrct.niph.go.jp/"
+      ]
+    },
+    {
+      "candidate": "TRANSFORM-1",
+      "doi": "10.1182/blood.2025032360",
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_mixed_contrary_hold",
+      "reason": "Primary spleen-volume endpoint positive but symptom endpoint did not show a corresponding benefit; not labelled a negative trial.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://pubmed.ncbi.nlm.nih.gov/42378247/",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ]
+    },
+    {
+      "candidate": "ENABLE (digital symptom monitoring)",
+      "doi": "10.1001/jamaoncol.2026.2661",
+      "pmid": "42954133",
+      "registry_id": "DRKS00025611",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Primary supportive-care publication identified; patient-reported outcomes, quality of life and health-service outcomes need full extraction.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.2661",
+        "https://pubmed.ncbi.nlm.nih.gov/42954133/",
+        "https://drks.de/"
+      ]
+    },
+    {
+      "candidate": "FIT4TREAT",
+      "doi": "10.1016/j.oraloncology.2026.108119",
+      "pmid": "42673774",
+      "registry_id": "NCT05418842",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Small supportive-care RCT; full primary endpoint, exercise intervention and safety extraction pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.oraloncology.2026.108119",
+        "https://pubmed.ncbi.nlm.nih.gov/42673774/",
+        "https://clinicaltrials.gov/study/NCT05418842"
+      ]
+    },
+    {
+      "candidate": "PreSte-HN",
+      "doi": "10.1007/s10147-026-03138-4",
+      "pmid": "42479256",
+      "registry_id": null,
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "deferred_negative",
+      "reason": "Negative randomized perioperative supportive-care study; registry identifier not verified.",
+      "source_urls": [
+        "https://doi.org/10.1007/s10147-026-03138-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42479256/"
+      ]
+    },
+    {
+      "candidate": "RINGSIDE",
+      "doi": "10.1200/JCO-26-00725",
+      "pmid": "42848980",
+      "registry_id": "NCT04871282",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_hold_for_full_extraction",
+      "reason": "Randomized phase II desmoid study identified; exact intermittent dose schedule and arm-level safety need full JCO article/supplement extraction.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00725",
+        "https://pubmed.ncbi.nlm.nih.gov/42848980/",
+        "https://clinicaltrials.gov/study/NCT04871282"
+      ]
+    }
+  ],
+  "carry_forward_promoted": [
+    {
+      "trial": "DeLLphi-305",
+      "id": "dellphi-305",
+      "registry_id": "NCT06211036",
+      "doi": "10.1056/NEJMoa2609482",
+      "pmid": "42929702",
+      "status": "primary_source_verified_page_staged",
+      "trial_of_the_day_eligible": true,
+      "reason": "New primary NEJM publication 24 October 2026; no roster/page/archive/ToD match; exact DOI/title and registry reconciled.",
+      "landmark_os": {
+        "treatment": 79.4,
+        "control": 53.3,
+        "benefit_pp": 26.1,
+        "nnt": 4
+      }
+    },
+    {
+      "trial": "HARMONi-A",
+      "id": "harmoni-a",
+      "registry_id": "NCT05184712",
+      "primary_doi": "10.1001/jama.2024.10613",
+      "followup_doi": "10.1001/jama.2026.7745",
+      "pmid": "38820549",
+      "followup_pmid": "42307937",
+      "status": "primary_and_final_os_verified_page_staged",
+      "trial_of_the_day_eligible": false,
+      "reason": "Distinct from existing HARMONi NCT06396065; separate registry and trial protocol; setting is Metastatic.",
+      "primary_title": "Ivonescimab Plus Chemotherapy in Non–Small Cell Lung Cancer With EGFR Variant: A Randomized Clinical Trial",
+      "followup_title": "Bispecific Antibody Ivonescimab Added to Chemotherapy in EGFR-Variant Non–Small Cell Lung Cancer: The HARMONi-A Randomized Clinical Trial",
+      "primary_pfs_hr": "0.46 (95% CI 0.34–0.62)",
+      "final_os_hr": "0.74 (95% CI 0.58–0.95)",
+      "final_os_30m": {
+        "treatment": 29.1,
+        "control": 18.4,
+        "benefit_pp": 10.7,
+        "nnt": 10
+      }
+    }
+  ],
+  "cross_run_reconciliation": {
+    "nov15_am_candidates": 30,
+    "nov15_pm_candidates": 34,
+    "cross_run_overlaps": 9,
+    "distinct_new_to_atlas_candidates_across_nov15_runs": 34,
+    "nov16_new_candidates_screened": 16,
+    "nov16_new_unique_candidates": 15,
+    "nov16_prior_screen_duplicate": 1,
+    "cumulative_distinct_new_candidate_identities": 49
+  },
+  "repository_reconciliation": {
+    "main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "roster_entries_before": 437,
+    "canonical_page_directories_before": 431,
+    "unique_roster_page_paths_before": 430,
+    "main_index_unique_links_before": 408,
+    "missing_roster_index_links_before": 30,
+    "archive_entries": 15,
+    "current_tod": "GemX",
+    "previous_tod": "ACOSOG Z11102",
+    "daily_evidence_files_checked": 25,
+    "daily_evidence_matches": [
+      "LITESPARK-011 in data/daily-evidence-2026-09-09.json"
+    ]
+  },
+  "nccn_sources": [
+    {
+      "guideline": "NCCN NSCLC",
+      "version": "4.2026",
+      "doi": "10.6004/jnccn.2026.0017",
+      "pmid": "41956107",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+      "scope": "NCCN-authored JNCCN guideline selection, not complete guideline; advanced/metastatic and actionable molecular biomarker subsets; no exact recommendation reference mapped."
+    },
+    {
+      "guideline": "NCCN Breast Cancer",
+      "version": "4.2026",
+      "doi": "10.6004/jnccn.2026.0033",
+      "pmid": "42425164",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42425164/",
+      "scope": "NCCN-authored JNCCN guideline selection, not complete guideline; recurrent/metastatic and systemic sequencing subsets; no exact recommendation reference mapped."
+    }
+  ]
+}

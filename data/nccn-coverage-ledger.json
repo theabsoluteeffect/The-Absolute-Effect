@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-17",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -102,7 +102,205 @@
         "Obtain the complete publicly accessible Insights reference list or an authorised full guideline source.",
         "Do not infer exact NCCN citation numbers or mine candidates from secondary summaries."
       ]
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v2-2026-metadata-only",
+      "title": "Cervical Cancer, Version 2.2026: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2026",
+      "publication_date": "2025-12",
+      "doi": "10.6004/jnccn.2025.0057",
+      "pmid": "41671440",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671440/",
+      "source_scope": "PubMed-indexed NCCN-authored guideline article record only; complete NCCN guideline and reference list were not accessible in this run.",
+      "review_status": "metadata_only_no_recommendation_mapping",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [],
+      "next_action": "Retrieve authorised full guideline/reference list; confirm current version and map exact citations for KEYNOTE-A18, LACC and SHAPE."
+    },
+    {
+      "guideline_id": "nccn-gastric-cancer-v2-2025-citation-only",
+      "title": "Gastric Cancer, Version 2.2025: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2025",
+      "publication_date": "2025",
+      "source_url": "https://www.nccn.org/guidelines",
+      "source_scope": "Cited as reference 4 in the 2026 oral paclitaxel phase 3 publication; this is citation provenance only, not a direct review of the guideline.",
+      "review_status": "citation_only_current_version_not_confirmed",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [
+        {
+          "source_doi": "10.1016/j.esmoop.2026.108312",
+          "source_pmid": "42617423",
+          "source_reference_number": 4,
+          "exact_reference_text": "NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer. Version 2.2025."
+        }
+      ],
+      "next_action": "Retrieve the current official NCCN Gastric Cancer version and reference list; map the cited recommendation only if the exact section/category is visible."
+    },
+    {
+      "guideline_id": "nccn-nsclc-4-2026",
+      "guideline": "Non-Small Cell Lung Cancer",
+      "version": "4.2026",
+      "source_title": "NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer, Version 4.2026",
+      "source_type": "NCCN-authored JNCCN guideline selection; not the complete guideline",
+      "publication_date": "2026-04",
+      "doi": "10.6004/jnccn.2026.0017",
+      "pmid": "41956107",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+      "subsets_reviewed": [
+        "advanced/metastatic disease",
+        "actionable molecular biomarkers",
+        "systemic therapy selection"
+      ],
+      "reference_map": [],
+      "recommendation_context_verified": false,
+      "full_guideline_access": "not retrieved",
+      "limitations": "Publicly accessible NCCN-authored guideline selection only; full NCCN PDF and complete reference list unavailable. No reference number or category inferred.",
+      "last_reviewed": "2026-11-16"
+    },
+    {
+      "guideline_id": "nccn-breast-4-2026",
+      "guideline": "Breast Cancer",
+      "version": "4.2026",
+      "source_title": "NCCN Clinical Practice Guidelines in Oncology: Breast Cancer, Version 4.2026",
+      "source_type": "NCCN-authored JNCCN guideline selection; not the complete guideline",
+      "publication_date": "2026-07",
+      "doi": "10.6004/jnccn.2026.0033",
+      "pmid": "42425164",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42425164/",
+      "subsets_reviewed": [
+        "recurrent/metastatic disease",
+        "HR-positive/HER2-negative pathways",
+        "HER2-positive pathways",
+        "systemic treatment sequencing"
+      ],
+      "reference_map": [],
+      "recommendation_context_verified": false,
+      "full_guideline_access": "not retrieved",
+      "limitations": "Publicly accessible NCCN-authored guideline selection only; full NCCN PDF and complete reference list unavailable. No reference number or category inferred.",
+      "last_reviewed": "2026-11-16"
+    },
+    {
+      "guideline_id": "nccn-older-adult-oncology-v2-2026",
+      "title": "Older Adult Oncology, Version 2.2026, NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2026",
+      "publication_date": "2026-11",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "source_scope": "NCCN-authored guideline article metadata/abstract only; complete guideline PDF and full reference list were not retrieved. Not represented as a complete guideline review.",
+      "review_status": "metadata_verified; full_text_and_reference_list_inaccessible; no trial citation mapping",
+      "reviewed_on": "2026-11-17",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "recommendation_context_verified": false,
+      "next_actions": [
+        "Retrieve complete authorised guideline/reference list.",
+        "Do not infer exact reference numbers or recommendation categories.",
+        "Continue geriatric-oncology discovery through accessible ASCO/ESMO/peer-reviewed sources."
+      ]
+    },
+    {
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "version": "3.2026",
+      "publication_date": "2026-11",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "source_scope": "NCCN Guidelines Insights article metadata/abstract only; this is a focused Insights article, not the complete Colon Cancer guideline. Full reference list not retrieved.",
+      "review_status": "metadata_verified; insights_reference_list_inaccessible; no trial citation mapping",
+      "reviewed_on": "2026-11-17",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "recommendation_context_verified": false,
+      "next_actions": [
+        "Retrieve complete publicly accessible Insights reference list or authorised full guideline.",
+        "Do not infer exact reference numbers or recommendation categories.",
+        "Continue colon cancer discovery through accessible ESMO/ASCO and primary trial reports."
+      ]
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "Coverage ledger reconciled across 15 Nov AM/PM branches and 16 Nov AM. HCC, Esophageal/EGJ, Cervical and Gastric entries retained; NSCLC v4.2026 and Breast v4.2026 selections added. Full NCCN guideline PDFs/reference lists remain inaccessible; exact reference-to-trial mappings are not inferred. Next rotation: prostate, colorectal, pancreatic, AML and B-cell lymphoma. 2026-11-17: Added Older Adult Oncology v2.2026 and Colon Cancer Insights v3.2026 as metadata-only records; complete reference lists inaccessible, so no citation mapping inferred.",
+  "source_access_log": [
+    {
+      "date": "2026-11-15",
+      "source": "Official NCCN Clinical Practice Guidelines",
+      "status": "not retrieved",
+      "attempts": [
+        "NCCN official guideline searches for Cervical Cancer 2026",
+        "NCCN official guideline searches for NSCLC 2026",
+        "NCCN official guideline searches for Acute Lymphoblastic Leukemia 2026",
+        "NCCN official guideline searches for Multiple Myeloma 2026",
+        "NCCN official guideline searches for Pancreatic Adenocarcinoma 2026",
+        "NCCN official guideline searches for Antiemesis 2026"
+      ],
+      "note": "No complete official guideline or complete NCCN-authored Insights reference list was retrieved. No guideline version, section, reference number or recommendation category is claimed for this run. Discovery continued through primary NEJM/JCO publications, official ASCO abstracts and PubMed records; NCCN citation mapping remains open."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN NSCLC full guideline",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "inaccessible",
+      "note": "Full current guideline/reference list not retrievable; continued with NCCN-authored JNCCN selection and primary literature."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN NSCLC Version 4.2026 JNCCN selection",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+      "status": "accessible_partial",
+      "note": "Selection only; not a complete guideline or full reference list."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN Breast Cancer full guideline",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "inaccessible",
+      "note": "Full current guideline/reference list not retrievable; continued with NCCN-authored JNCCN selection and primary literature."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN Breast Cancer Version 4.2026 JNCCN selection",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42425164/",
+      "status": "accessible_partial",
+      "note": "Selection only; not a complete guideline or full reference list."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-older-adult-oncology-v2-2026",
+      "source": "PubMed-indexed NCCN guideline article metadata/abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "status": "metadata_abstract_accessible; complete guideline PDF/reference list inaccessible",
+      "action": "No citation-to-trial mapping performed; follow-up queued."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "source": "PubMed-indexed NCCN Guidelines Insights article metadata/abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "status": "metadata_abstract_accessible; complete Insights reference list inaccessible",
+      "action": "No citation-to-trial mapping performed; follow-up queued."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-official-full-guideline-access",
+      "source": "Official NCCN guideline portal",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "full guideline/reference-list access not obtained in this run",
+      "action": "Continue through accessible authoritative guidelines and primary evidence; do not infer NCCN provenance."
+    }
+  ],
+  "last_run": {
+    "date": "2026-11-17",
+    "cycle": "morning",
+    "reviewed": [
+      "Older Adult Oncology v2.2026 — bibliographic metadata/abstract only",
+      "Colon Cancer Insights v3.2026 — bibliographic metadata/abstract only"
+    ],
+    "full_guideline_access": false,
+    "exact_reference_mapping_completed": 0,
+    "follow_up_required": true,
+    "note": "Two new NCCN guideline records added; no trial citation numbers, recommendation categories or active-pathway mappings inferred."
+  }
 }
