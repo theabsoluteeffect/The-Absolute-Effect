@@ -513,5 +513,33 @@
       "read_back_after_write": true,
       "browser_rendered": "not verified"
     }
-  ]
+  ],
+  "repository_reconciliation": {
+    "roster_entries": 467,
+    "unique_roster_page_paths": 460,
+    "canonical_page_files": 461,
+    "redirect_only_stub_count": 1,
+    "archive_entries": 16,
+    "archive_records_missing_from_roster": 0,
+    "index_links_before": 432,
+    "index_links_after": 460,
+    "missing_index_links_after": 0,
+    "sitemap_trial_urls": 461,
+    "sitemap_new_urls": 30,
+    "unrostered_canonical_content_pages": 0,
+    "unique_canonical_destinations": 460,
+    "canonical_content_page_files": 460,
+    "redirect_stub_files": 1,
+    "index_unique_destinations": 460,
+    "missing_canonical_index_destinations": 0,
+    "extra_index_destinations": 0,
+    "all_destinations_reconciled": true,
+    "normalization_rule": "Use roster source/path/page_path as canonical destination; strip URL fragments and trailing /index.html; normalize trailing slash.",
+    "shared_page_anchor_records": 8,
+    "alternate_slug_alias_records": 16,
+    "redirect_stub_records": [
+      "ROSEL"
+    ],
+    "note": "Roster IDs without a same-named directory are intentional anchor/alias records. Eight lung-SABR studies share trial-pages/lung-sabr-definitions anchors; 16 alternate slugs map to existing canonical pages. ROSEL is a redirect stub. No duplicate pages were created."
+  }
 }

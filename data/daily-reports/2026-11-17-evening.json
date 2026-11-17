@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main.",
+  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1703,7 +1703,21 @@
     "missing_index_links_after": 0,
     "sitemap_trial_urls": 461,
     "sitemap_new_urls": 30,
-    "unrostered_canonical_content_pages": 0
+    "unrostered_canonical_content_pages": 0,
+    "unique_canonical_destinations": 460,
+    "canonical_content_page_files": 460,
+    "redirect_stub_files": 1,
+    "index_unique_destinations": 460,
+    "missing_canonical_index_destinations": 0,
+    "extra_index_destinations": 0,
+    "all_destinations_reconciled": true,
+    "normalization_rule": "Use roster source/path/page_path as canonical destination; strip URL fragments and trailing /index.html; normalize trailing slash.",
+    "shared_page_anchor_records": 8,
+    "alternate_slug_alias_records": 16,
+    "redirect_stub_records": [
+      "ROSEL"
+    ],
+    "note": "Roster IDs without a same-named directory are intentional anchor/alias records. Eight lung-SABR studies share trial-pages/lung-sabr-definitions anchors; 16 alternate slugs map to existing canonical pages. ROSEL is a redirect stub. No duplicate pages were created."
   },
   "release_gate": {
     "batch_target_met_on_branch": true,
