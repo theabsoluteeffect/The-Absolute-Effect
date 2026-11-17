@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "63 candidates screened; 49 new unique candidates. Thirty unique trial pages are staged and reconciled; all 30 have been re-read and structurally checked. 24 are release-ready subject to official validation; 6 remain held for protocol/supplement detail. Zero uploaded to main.",
+  "headline": "65 candidates screened; 51 new unique candidates, including 10 deferred-negative/contrary-evidence studies. Thirty unique pages remain staged; 24 are release-ready subject to official validation and 6 remain held for exact protocol/supplement detail. Zero uploaded to main.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -116,13 +116,13 @@
     "follow_up": "Open — do not infer section/reference/category"
   },
   "candidate_screening": {
-    "screened": 63,
+    "screened": 65,
     "duplicates": 14,
-    "new_unique": 49,
+    "new_unique": 51,
     "ready_for_page_build": 26,
     "carry_forward_ready": 2,
     "held": 13,
-    "deferred_negative": 8,
+    "deferred_negative": 10,
     "rejected": 2,
     "uploaded": 0,
     "batch_ready_including_two_staged_carry_forward": 30,
@@ -759,6 +759,16 @@
       "identity": "new_unique",
       "disposition": "ready_for_page_build",
       "reason": "Primary Lancet phase III report; PFS and grade ≥3 toxicity extracted"
+    },
+    {
+      "candidate": "KEYNOTE-867",
+      "doi": "10.1200/JCO-26-00404",
+      "pmid": "42950173",
+      "registry_id": "NCT03924869",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk."
     }
   ],
   "ready_candidates": [
@@ -1455,6 +1465,30 @@
       "pmid": "42479256",
       "registry_id": "jRCTs031210593",
       "reason": "Single-dose preoperative dexamethasone did not improve prespecified quality-of-recovery endpoint"
+    },
+    {
+      "trial": "KEYNOTE-867",
+      "doi": "10.1200/JCO-26-00404",
+      "pmid": "42950173",
+      "registry_id": "NCT03924869",
+      "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00404",
+        "https://pubmed.ncbi.nlm.nih.gov/42950173/",
+        "https://clinicaltrials.gov/study/NCT03924869"
+      ]
+    },
+    {
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "pmid": "42842849",
+      "registry_id": "NCT02364557",
+      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00201",
+        "https://pubmed.ncbi.nlm.nih.gov/42842849/",
+        "https://clinicaltrials.gov/study/NCT02364557"
+      ]
     }
   ],
   "rejected": [
@@ -1672,5 +1706,17 @@
       "reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     }
-  ]
+  ],
+  "duplicate_check_summary": {
+    "screened": 65,
+    "duplicates": 14,
+    "new_unique": 51,
+    "held": 13,
+    "deferred_negative": 10,
+    "rejected": 2,
+    "staged_pages": 30,
+    "release_ready_pages": 24,
+    "release_hold_pages": 6,
+    "uploaded": 0
+  }
 }

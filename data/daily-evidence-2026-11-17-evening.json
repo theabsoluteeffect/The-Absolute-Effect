@@ -41,12 +41,12 @@
     "trial_of_day_changed": false
   },
   "candidate_screening": {
-    "screened": 63,
+    "screened": 65,
     "duplicates": 14,
-    "new_unique": 49,
+    "new_unique": 51,
     "ready_for_page_build": 26,
     "held": 13,
-    "deferred_negative": 8,
+    "deferred_negative": 10,
     "rejected": 2,
     "uploaded": 0,
     "candidates": [
@@ -1467,6 +1467,24 @@
         "release_qa_status": "held_pending_primary_source_supplement",
         "final_disposition": "held",
         "final_disposition_reason": "Exact platinum/pemetrexed choice and component doses plus full grade 3–5 safety table require the full primary report/supplement."
+      },
+      {
+        "trial": "KEYNOTE-867",
+        "doi": "10.1200/JCO-26-00404",
+        "pmid": "42950173",
+        "registry_id": "NCT03924869",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "deferred_negative",
+        "final_disposition": "held",
+        "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk.",
+        "primary_title": "KEYNOTE-867: A Phase III, Randomized, Double-Blind Study of Stereotactic Body Radiotherapy With Pembrolizumab for Unresected Stage I or II Non–Small Cell Lung Cancer",
+        "primary_title_verification": "Primary JCO report checked 17 November 2026",
+        "source_urls": [
+          "https://doi.org/10.1200/JCO-26-00404",
+          "https://pubmed.ncbi.nlm.nih.gov/42950173/",
+          "https://clinicaltrials.gov/study/NCT03924869"
+        ]
       }
     ],
     "source_passes": [
@@ -1729,7 +1747,8 @@
     "target": 30,
     "batch_ready_including_carry_forward": 30,
     "target_shortfall": 0,
-    "note": "26 current-screen candidates plus 2 verified carry-forward candidates (CAPITAL, BCTOP) and 2 staged carry-forward pages (DeLLphi-305, HARMONi-A) form a 30-study unique batch. No candidate is counted as uploaded until main merge is verified."
+    "note": "26 current-screen candidates plus 2 verified carry-forward candidates (CAPITAL, BCTOP) and 2 staged carry-forward pages (DeLLphi-305, HARMONi-A) form a 30-study unique batch. No candidate is counted as uploaded until main merge is verified.",
+    "candidates_count": 65
   },
   "batch": {
     "target": 30,
@@ -2800,6 +2819,22 @@
         "https://pubmed.ncbi.nlm.nih.gov/42479256/"
       ],
       "screened_on": "2026-11-17"
+    },
+    {
+      "trial": "KEYNOTE-867",
+      "doi": "10.1200/JCO-26-00404",
+      "pmid": "42950173",
+      "registry_id": "NCT03924869",
+      "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk.",
+      "disposition": "deferred_negative"
+    },
+    {
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "pmid": "42842849",
+      "registry_id": "NCT02364557",
+      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "disposition": "deferred_negative"
     }
   ],
   "rejected_candidates": [

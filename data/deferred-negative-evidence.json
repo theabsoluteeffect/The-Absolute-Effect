@@ -303,22 +303,71 @@
       "source_url": "https://doi.org/10.1016/j.ejca.2026.116824",
       "status": "deferred_negative",
       "created_on": "2026-11-17"
+    },
+    {
+      "trial_id": "keynote-867",
+      "trial": "KEYNOTE-867",
+      "doi": "10.1200/JCO-26-00404",
+      "pmid": "42950173",
+      "registry_id": "NCT03924869",
+      "primary_title": "KEYNOTE-867: A Phase III, Randomized, Double-Blind Study of Stereotactic Body Radiotherapy With Pembrolizumab for Unresected Stage I or II Non–Small Cell Lung Cancer",
+      "site": "Unresected stage I–II NSCLC",
+      "setting": "Definitive SBRT with/without pembrolizumab",
+      "phase": "III",
+      "design": "Randomized, double-blind phase III",
+      "population": "448 adults with untreated inoperable or surgery-refusing stage I/II NSCLC; SBRT+pembrolizumab n=227, SBRT+placebo n=221.",
+      "intervention": "Thoracic SBRT to primary tumour over ≤2 weeks plus pembrolizumab 200 mg IV every 3 weeks for up to 17 cycles.",
+      "comparator": "Same SBRT plus placebo every 3 weeks for up to 17 cycles.",
+      "primary_endpoint": "EFS by blinded independent central review",
+      "follow_up": "Median follow-up 20.6 months at first prespecified interim analysis; study treatment discontinued after premature stop.",
+      "efficacy": "Median EFS 31.2 vs28.3 months; HR0.92 (95% CI0.69–1.24), P=.2932. Median time to death or distant metastasis 39.1 vs41.3 months; HR1.02 (0.74–1.42). OS median54.7 vs not reached; HR1.33 (0.93–1.90), not confirmatory.",
+      "safety": "Grade3–5 treatment-related AEs 46/226 (20.4%) vs8/218 (3.7%); five treatment-related deaths (2.2%) in pembrolizumab arm, none in placebo.",
+      "disposition": "deferred_negative",
+      "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00404",
+        "https://pubmed.ncbi.nlm.nih.gov/42950173/",
+        "https://clinicaltrials.gov/study/NCT03924869"
+      ],
+      "nccn_provenance": "not verified — official complete guideline/reference list inaccessible",
+      "canonical_page_required": false,
+      "status": "deferred_negative",
+      "next_action": "Retain as contrary/negative evidence; do not create a canonical trial page unless later guideline recommendation context makes it essential.",
+      "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "nrg-br002",
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "pmid": "42842849",
+      "registry_id": "NCT02364557",
+      "primary_title": "NRG-BR002: A Randomized Phase II/III Trial of Metastasis-Directed Ablation With First-Line Systemic Therapy for Oligometastatic Breast Cancer",
+      "site": "Oligometastatic breast cancer",
+      "setting": "First-line systemic therapy with/without metastasis-directed ablation",
+      "phase": "II/III (phase II go/no-go; did not proceed to phase III)",
+      "design": "Randomized phase II/III; 1:1",
+      "population": "129 enrolled, 125 eligible: no ablation n=65, ablation n=60. ≤4 metastases, controlled primary, ≤12 months of first-line systemic therapy without progression; all visible metastases amenable to SBRT or surgery.",
+      "intervention": "First-line systemic therapy plus metastasis-directed ablation; 93% of ablation delivered by SBRT, remainder surgery.",
+      "comparator": "First-line systemic therapy alone, no metastasis-directed ablation.",
+      "primary_endpoint": "PFS, time to progression or death",
+      "follow_up": "Median follow-up 29.9 months at phase II go/no-go analysis; extended follow-up median57.5 months was not protocol-specified.",
+      "efficacy": "At 72 PFS events: median PFS23.0 months without ablation vs19.5 months with ablation; HR0.92 (70% CI0.71–1.17; 95% CI0.57–1.47), one-sided P=.36, stratified P=.42. OS HR1.07 (95% CI0.60–1.89), one-sided P=.41. Trial did not proceed to phase III.",
+      "safety": "No grade5 toxicity reported.",
+      "disposition": "deferred_negative",
+      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00201",
+        "https://pubmed.ncbi.nlm.nih.gov/42842849/",
+        "https://clinicaltrials.gov/study/NCT02364557"
+      ],
+      "nccn_provenance": "not verified — official complete guideline/reference list inaccessible",
+      "canonical_page_required": false,
+      "status": "deferred_negative",
+      "next_action": "Retain as contrary/negative evidence; do not create a canonical trial page unless later guideline recommendation context makes it essential.",
+      "last_reviewed_on": "2026-11-17"
     }
   ],
-  "last_run": {
-    "run_id": "2026-11-17-evening",
-    "date": "2026-11-17",
-    "added": 6,
-    "existing_items_reconciled": [
-      "IROCAS",
-      "PreSte-HN"
-    ],
-    "reclassified": [
-      "TRANSFORM-1"
-    ],
-    "status": "INCOMPLETE",
-    "commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
-  },
+  "last_run": "2026-11-17-evening",
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets."
