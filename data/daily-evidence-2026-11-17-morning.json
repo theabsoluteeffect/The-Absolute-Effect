@@ -20,7 +20,7 @@
     "archive_roster_matches": 15,
     "main_evidence_index_unique_links": 408,
     "main_missing_rostered_page_links": 30,
-    "active_branch_evidence_index_unique_links": 440,
+    "active_branch_evidence_index_unique_links": 464,
     "active_branch_missing_rostered_page_links": 0,
     "daily_evidence_files_checked": 28,
     "duplicate_comparison_fields": [
@@ -43,7 +43,9 @@
       "trial": "ACOSOG Z11102",
       "date": "2026-11-03"
     },
-    "note": "Main remains unchanged. The 30 evidence-index omissions are fixed only in the carried-forward branch tree. Full clinical audit of all 431 canonical pages is not complete."
+    "note": "Main remains unchanged. The 30 evidence-index omissions are fixed only in the carried-forward branch tree. Full clinical audit of all 431 canonical pages is not complete. Two missing links for the staged DeLLphi-305 and HARMONi-A pages were identified during post-write verification and added; active-branch missing links are now zero.",
+    "active_branch_missing_rostered_page_links_before_today_fix": 2,
+    "active_branch_new_links_added_today": 2
   },
   "candidate_decisions": [
     {
@@ -195,7 +197,10 @@
     "roster_new_entries": 0,
     "roster_metadata_updates": 3,
     "archive_entries": 0,
-    "trial_of_the_day": 0
+    "trial_of_the_day": 0,
+    "evidence_index_links_added_today": 2,
+    "evidence_index_missing_before_today_fix": 2,
+    "evidence_index_missing_after_today_fix": 0
   },
   "publication_gate": {
     "exact_30_new_unique_pages": false,

@@ -1111,9 +1111,9 @@
     "deployment_status": "not deployed — branch unmerged",
     "last_structural_reconciliation": "2026-11-16",
     "roster_entries": 439,
-    "evidence_index_unique_links": 440,
+    "evidence_index_unique_links": 464,
     "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
-    "evidence_index_rostered_page_paths_added": 30,
+    "evidence_index_rostered_page_paths_added": 32,
     "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
     "full_roster_reconciliation_2026_11_16": {
       "status": "STRUCTURAL_RECONCILIATION_COMPLETE; CLINICAL_AUDIT_INCOMPLETE",
@@ -1157,12 +1157,15 @@
       "main_evidence_index_unique_links": 408,
       "missing_rostered_paths_on_main_before_carry_forward": 30,
       "missing_rostered_paths_on_active_branch_after_carry_forward": 0,
-      "active_branch_evidence_index_unique_links": 440,
+      "active_branch_evidence_index_unique_links": 464,
       "daily_evidence_files_checked": 28,
       "current_trial_of_the_day": "GemX · 2026-11-08",
       "previous_trial_of_the_day": "ACOSOG Z11102 · 2026-11-03",
       "full_manual_clinical_audit_complete": false,
-      "note": "Structural reconciliation is complete for the listed sources. Full 431-page clinical/source/freshness and browser-rendered visualization audit remains incomplete."
+      "note": "Structural reconciliation is complete for the listed sources. Full 431-page clinical/source/freshness and browser-rendered visualization audit remains incomplete.",
+      "missing_rostered_paths_on_active_branch_before_today_fix": 2,
+      "new_staged_page_links_added_on_2026_11_17": 2,
+      "missing_rostered_paths_on_active_branch_after_reconciliation": 0
     }
   },
   "trials": [

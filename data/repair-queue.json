@@ -2012,6 +2012,29 @@
         "https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally",
         "https://clinicaltrials.gov/study/NCT05306340"
       ]
+    },
+    {
+      "issue_id": "index-link-dellphi-harmoni-2026-11-17",
+      "category": "evidence_index_navigation",
+      "severity": "medium",
+      "status": "resolved",
+      "created_on": "2026-11-17",
+      "resolved_on": "2026-11-17",
+      "trial_ids": [
+        "dellphi-305",
+        "harmoni-a"
+      ],
+      "page_paths": [
+        "trial-pages/dellphi-305/index.html",
+        "trial-pages/harmoni-a/index.html"
+      ],
+      "evidence": "Independent roster-to-index comparison found the two carried-forward staged pages were absent from the evidence index (two missing roster paths). Added a clearly labelled staged/not-yet-published section with both canonical links; post-edit reconciliation shows zero missing roster paths.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/tree/atlas-batch/2026-11-17-am"
+      ],
+      "action": "Add canonical page links to the evidence index and rerun path reconciliation.",
+      "verification": "Re-read index and roster; both page paths resolve in index; missing roster-to-index paths = 0 on active branch.",
+      "resolution": "Added two canonical navigation links; no production publication claimed."
     }
   ],
   "run_audit_log": [
@@ -2052,7 +2075,10 @@
       "deferred_negative": 1,
       "rejected_by_user_policy": 1,
       "pages_published": 0,
-      "note": "Three staged pages were individually re-read and corrected (evERA, DeLLphi-305, HARMONi-A). Five previously reviewed pages and the 30-link evidence-index reconciliation were carried forward from the archived 16 Nov branch. Full 431-page clinical audit remains incomplete; source_audit metadata intentionally remains stale."
+      "note": "Three staged pages were individually re-read and corrected (evERA, DeLLphi-305, HARMONi-A). Five previously reviewed pages and the 30-link evidence-index reconciliation were carried forward from the archived 16 Nov branch. Full 431-page clinical audit remains incomplete; source_audit metadata intentionally remains stale. Two staged-page index omissions (DeLLphi-305 and HARMONi-A) were found on the 17 Nov branch and fixed; post-edit roster-to-index check now returns zero missing paths.",
+      "evidence_index_links_added": 2,
+      "evidence_index_missing_before": 2,
+      "evidence_index_missing_after": 0
     }
   ],
   "previous_partial_runs": [
@@ -2120,10 +2146,10 @@
     "pages_manually_inspected": 3,
     "canonical_pages_total": 431,
     "repairs_staged": 3,
-    "queue_items_closed": 1,
+    "queue_items_closed": 2,
     "queue_items_added": 4,
     "open_items_after_run": 123,
-    "resolved_items_after_run": 14,
+    "resolved_items_after_run": 15,
     "candidates_screened": 4,
     "duplicate_exclusions": 1,
     "new_unique_candidates": 3,
@@ -2139,6 +2165,8 @@
     "source_audit_stale": true,
     "next_action": "Complete held primary-source checks and continue multi-site discovery; do not open PR until 30 unique pages pass all checks.",
     "report_commit_sha": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
-    "branch_head_at_report_creation": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41"
+    "branch_head_at_report_creation": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
+    "index_links_added": 2,
+    "active_branch_missing_index_paths_after": 0
   }
 }

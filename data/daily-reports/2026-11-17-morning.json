@@ -19,7 +19,9 @@
     "prior_branch_archived": "archive/atlas-batch-2026-11-16-am",
     "prior_branch_archived_commit": "6be38c4542cd48360f1b67094483092a907eaa42",
     "prior_branch_reset_to_main": "atlas-batch/2026-11-16-am",
-    "branch_migration": "Prior staged work was preserved on an archive branch; the previous active ref was reset to main; the new 17 Nov branch was created from the verified main commit and carries forward the prior staged tree in a single coherent commit."
+    "branch_migration": "Prior staged work was preserved on an archive branch; the previous active ref was reset to main; the new 17 Nov branch was created from the verified main commit and carries forward the prior staged tree in a single coherent commit.",
+    "branch_head_before_final_reconciliation_commit": "10a68808d9044074aee864ae24314edb92c44970",
+    "report_commit_sha": "10a68808d9044074aee864ae24314edb92c44970"
   },
   "coverage": {
     "verified_main_unique_studies": 437,
@@ -33,7 +35,9 @@
       "harmoni-a"
     ],
     "staged_page_count": 2,
-    "remaining_to_batch_target": 28
+    "remaining_to_batch_target": 28,
+    "branch_index_unique_links": 464,
+    "branch_missing_rostered_paths": 0
   },
   "preflight": {
     "core_sources_retrieved": true,
@@ -57,7 +61,10 @@
       "trial": "ACOSOG Z11102",
       "date": "2026-11-03"
     },
-    "source_audit_metadata": "stale; intentionally not marked current because full clinical audit is incomplete"
+    "source_audit_metadata": "stale; intentionally not marked current because full clinical audit is incomplete",
+    "active_branch_evidence_index_unique_links": 464,
+    "missing_index_links_on_active_branch_before_today_fix": 2,
+    "new_staged_page_links_added_today": 2
   },
   "repairs": {
     "pages_manually_inspected_today": 3,
@@ -88,14 +95,17 @@
     "evidence_index": {
       "main_missing_links": 30,
       "branch_missing_links": 0,
-      "note": "All 30 omissions remain fixed only on the active branch; no main-branch index changes."
+      "note": "All 30 omissions remain fixed only on the active branch; no main-branch index changes.",
+      "branch_missing_links_before_today_fix": 2,
+      "branch_missing_links_added_today": 2,
+      "branch_missing_links_after_today_fix": 0
     },
     "queue": {
       "main_open": 68,
       "branch_open_before_run": 120,
       "branch_open_after_run": 123,
-      "branch_resolved_after_run": 14,
-      "closed_this_run": 1,
+      "branch_resolved_after_run": 15,
+      "closed_this_run": 2,
       "added_this_run": 4,
       "full_manual_audit_complete": false
     }
@@ -192,12 +202,12 @@
   "synchronization": {
     "roster_new_entries": 0,
     "roster_metadata_updates": 3,
-    "evidence_index_new_links_today": 0,
+    "evidence_index_new_links_today": 2,
     "evidence_index_links_carried_forward": 30,
     "archive_changes": 0,
     "trial_of_the_day_changes": 0,
     "nccn_coverage_ledger_guideline_records_added": 2,
-    "repair_queue_items_closed": 1,
+    "repair_queue_items_closed": 2,
     "repair_queue_items_added": 4,
     "deferred_negative_items_added": 1
   },
