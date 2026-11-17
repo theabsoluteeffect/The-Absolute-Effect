@@ -4097,5 +4097,42 @@
       "ROSEL"
     ],
     "note": "Roster IDs without a same-named directory are intentional anchor/alias records. Eight lung-SABR studies share trial-pages/lung-sabr-definitions anchors; 16 alternate slugs map to existing canonical pages. ROSEL is a redirect stub. No duplicate pages were created."
+  },
+  "audit_metadata": {
+    "new_trials_added_today": 30,
+    "new_trials_added_today_names": [
+      "ACT-GI",
+      "ARTEMIS-011",
+      "BCTOP-H-N01",
+      "CAPITAL",
+      "DeLLphi-305",
+      "Disitamab vedotin plus tislelizumab (TRUCE-04)",
+      "FIT4TREAT",
+      "Felzartamab plus lenalidomide-dexamethasone",
+      "GIMEMA ALL2820",
+      "HARMONi-A",
+      "I-SPY2.2 RT-DXd",
+      "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+      "KEYNOTE-B49",
+      "LITESPARK-011",
+      "MonumenTAL-3",
+      "NEONIPIGA / GERCOR",
+      "OPTICAL-2",
+      "PANKU-Breast01",
+      "PANKU-Esophagus01",
+      "PANKU-Lung01",
+      "PDS0101 plus pembrolizumab (VERSATILE-002)",
+      "PRO-B",
+      "Perioperative ivonescimab in resectable NSCLC",
+      "RINGSIDE",
+      "TRANSFORM-1",
+      "Toripalimab plus modified FOLFIRINOX",
+      "Trastuzumab botidotin vs T-DM1",
+      "TroFuse-005 / ENGOT-en23 / GOG-3095",
+      "UNION",
+      "ZSAB-neoGOLP"
+    ],
+    "permanent_trial_pages": 460,
+    "total_unique_trials": 467
   }
 }

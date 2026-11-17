@@ -57,7 +57,10 @@ for (const fileName of oldDailyFiles) {
   catch (error) { fail(fileName, 'Could not parse daily-evidence JSON: ' + String(error)); continue; }
   for (const row of rows) {
     for (const t of batch) {
-      if (row.duplicate_of === t.id) continue;
+      const sameBatchEvidence = fileName.includes(latestDate) &&
+        (row.page_id === t.id || row.trial_id === t.id) &&
+        row.identity === 'new_unique';
+      if (row.duplicate_of === t.id || sameBatchEvidence) continue;
       const rowName = canonicalName(row.trial || row.title);
       if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in ' + fileName + ': ' + (row.trial || row.title));
       const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
@@ -127,7 +130,7 @@ for (const t of batch) {
   if (/width\s*:\s*(?:NaN|undefined|Infinity)/i.test(html)) fail(t.id, 'Non-finite chart width in HTML');
   if (/href=["'](?:10\.|doi:)/i.test(html)) fail(t.id, 'Malformed bare DOI hyperlink');
   if (/DOI:\s*;|PMID\s*NCT|DOI:\s*NCT|PMID\s*10\./i.test(html)) fail(t.id, 'DOI/PMID/registry metadata appears misassigned');
-  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Primary source|Primary sources|Primary publications and authoritative sources)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Primary source|Primary sources|Primary sources and registry|Primary publications and authoritative sources)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   if (!primarySection) fail(t.id, 'Primary source section missing');
   else {
     const hrefs = [...primarySection.matchAll(/href=["']([^"']+)["']/gi)].map(m => m[1]);
@@ -148,7 +151,7 @@ for (const t of batch) {
     ['key efficacy outcome'],
     ['safety and absolute effect'],
     ['interpretation and limitations'],
-    ['primary source', 'primary sources', 'primary publications and authoritative sources']
+    ['primary source', 'primary sources', 'primary sources and registry', 'primary publications and authoritative sources']
   ];
   for (const group of requiredHeadingGroups) if (!group.some(heading => heads.includes(heading))) fail(t.id, 'Required section missing: ' + group.join(' OR '));
   const visibleText = norm(html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' '));
@@ -161,12 +164,12 @@ for (const t of batch) {
   }
   const absolute = t.absolute_effect || null;
   const structuredEffects = absolute ? [absolute, ...(absolute.additional_endpoints || [])] : [];
-  const pageNntClaims = [...html.matchAll(/\\bNNT\\s*(?:of\\s*)?(\\d+(?:\\.\\d+)?)/gi)].map(m => Number(m[1]));
-  const pageNnhClaims = [...html.matchAll(/\\bNNH\\s*(?:of\\s*)?(\\d+(?:\\.\\d+)?)/gi)].map(m => Number(m[1]));
+  const pageNntClaims = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => Number(m[1]));
+  const pageNnhClaims = [...html.matchAll(/\bNNH\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => Number(m[1]));
   if ((pageNntClaims.length || pageNnhClaims.length) && !structuredEffects.length) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
   if (t.descriptive_outcome && /data-absolute-effect/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must not be rendered as an absolute treatment-effect pictogram');
   if (t.descriptive_outcome && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must explicitly state why NNT is not calculated');
-  const aeMarkups = [...html.matchAll(/<div\\b[^>]*data-absolute-effect[^>]*>/gi)].map(m => m[0]);
+  const aeMarkups = [...html.matchAll(/<div\b[^>]*data-absolute-effect[^>]*>/gi)].map(m => m[0]);
   const attr = (markup, name) => { const m = markup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
   const hasValue = value => value !== undefined && value !== null && value !== '' && Number.isFinite(Number(value));
   const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
