@@ -100,18 +100,6 @@
       "verification_note": "PubMed/publisher primary record checked 17 November 2026"
     },
     {
-      "trial_id": "gimema-all2820",
-      "doi": "10.1056/NEJMoa2606208",
-      "primary_title": "Ponatinib–Blinatumomab or Imatinib–Chemotherapy for Adult Ph-Positive ALL",
-      "pmid": "42874102",
-      "registry_id": "NCT04722848",
-      "verified_by": "PubMed/publisher metadata",
-      "verified_on": "2026-11-17",
-      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42874102/",
-      "title_match": true,
-      "verification_note": "NEJM/Annals of Oncology primary abstract checked 17 November 2026"
-    },
-    {
       "trial_id": "felzartamab-rd",
       "doi": "10.1016/S2352-3026(26)00223-1",
       "primary_title": "Felzartamab Plus Lenalidomide-Dexamethasone Versus Lenalidomide-Dexamethasone for Relapsed or Refractory Multiple Myeloma: An Open-Label, Parallel-Controlled, Randomised, Phase 3 Trial",
@@ -194,18 +182,6 @@
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42848391/",
       "title_match": true,
       "verification_note": "Full primary article and protocol/supplement checked 17 November 2026"
-    },
-    {
-      "trial_id": "optical-2",
-      "doi": "10.1016/j.medj.2026.101141",
-      "primary_title": "Cadonilimab Plus Neoadjuvant Chemotherapy in Locally Advanced Rectal Cancer: The OPTICAL-2 Randomized Phase 2 Trial",
-      "pmid": "42134324",
-      "registry_id": "NCT05571644",
-      "verified_by": "PubMed/publisher metadata",
-      "verified_on": "2026-11-17",
-      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42134324/",
-      "title_match": true,
-      "verification_note": "PubMed primary record checked 17 November 2026"
     },
     {
       "trial_id": "litespark-011",
@@ -362,6 +338,30 @@
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42690668/",
       "title_match": true,
       "verification_note": "PubMed primary record checked 17 November 2026"
+    },
+    {
+      "trial_id": "relight",
+      "doi": "10.1200/JCO-25-02933",
+      "primary_title": "First-Line Retlirafusp Alfa Plus Chemotherapy for Human Epidermal Growth Factor Receptor 2-Negative Gastric or Gastroesophageal Junction Adenocarcinoma: A Randomized, Double-Blind, Phase III Study (RELIGHT)",
+      "pmid": "42784781",
+      "registry_id": "NCT04950322",
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-17",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+      "title_match": true,
+      "verification_note": "Primary PubMed/publisher record checked 17 November 2026; DOI and exact title matched."
+    },
+    {
+      "trial_id": "herizon-gea-01",
+      "doi": "10.1056/NEJMoa2517729",
+      "primary_title": "Zanidatamab with and without Tislelizumab in HER2-Positive Gastroesophageal Cancer",
+      "pmid": "42202319",
+      "registry_id": "NCT05152147",
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-17",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42202319/",
+      "title_match": true,
+      "verification_note": "Primary PubMed/publisher record checked 17 November 2026; DOI and exact title matched."
     }
   ]
 }

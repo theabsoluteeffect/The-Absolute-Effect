@@ -1954,7 +1954,7 @@
     "uploaded": 0,
     "not_uploaded": 30,
     "pr_opened": false,
-    "reason": "All 30 unique new-to-main page files and release metadata are staged/read back: 28 candidate pages plus 2 still-unpublished carry-forward pages. Zero uploaded pending strict release validation, PR checks and merge.",
+    "reason": "All 30 unique new-to-main page files and release metadata are staged and read back: 28 candidate pages plus 2 still-unpublished carry-forward pages. Zero uploaded pending current-head strict release validation, PR checks and merge.",
     "evening_target": 30,
     "evening_new_unique_candidates_ready": 28,
     "evening_target_shortfall": 0,
@@ -3950,7 +3950,7 @@
   ],
   "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred",
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
+  "branch_head_after": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
   "page_qa_status": {
     "staged_pages": 30,
     "read_back_after_correction": 30,

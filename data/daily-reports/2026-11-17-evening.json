@@ -1763,10 +1763,10 @@
     "release_ready_page_count": 30,
     "release_hold_page_count": 0,
     "uploaded_to_main": 0,
-    "local_release_validator": "not run; repository clone/local execution not available",
-    "custom_static_validator": "passed for 30 pages",
+    "local_release_validator": "not run locally — git clone failed due DNS/network; exact validator will run in PR CI",
+    "custom_static_validator": "stale — previous static report predates final page substitutions; not accepted as current-head validation",
     "pr_opened": false,
-    "pr_checks": "pending — PR not yet opened",
+    "pr_checks": "not yet run — PR not opened",
     "merge_status": "not merged",
     "production_deployment": "not verified",
     "validator_patch": {
@@ -1789,30 +1789,16 @@
     },
     "custom_static_validation": "passed for 30 staged pages",
     "branch_ci": {
-      "status": "passed",
-      "run_id": 44128311168,
-      "workflow": "Outcome visualization audit",
-      "head_sha": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-      "workflow_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44128311168",
-      "strict_release_validator": "passed",
-      "outcome_visualization_audit": "passed"
+      "status": "stale",
+      "run_id": "44128311168",
+      "validated_commit": "67f3ee4 (prior head)",
+      "current_branch_head": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
+      "note": "Earlier PASS does not validate the current branch head; PR checks required."
     },
     "preview_visual_review": "Cloudflare preview URL was not accessible through the browser; static HTML chart/status structures and source values were inspected; browser-rendered QA remains pending.",
-    "outcome_visualization_audit": {
-      "status": "passed",
-      "run_id": 44128311168,
-      "roster_count": 467,
-      "roster_unique_canonical_destinations": 460,
-      "canonical_trial_html_pages": 460,
-      "missing_dated_context": 52,
-      "renderer_missing": 0,
-      "manual_review": 0,
-      "redirect_stubs": 1,
-      "primary_source_missing": 0,
-      "short_pages": 0,
-      "unrostered_canonical_pages": 0
-    },
-    "validated_branch_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
+    "outcome_visualization_audit": "not run on current head",
+    "validated_branch_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
+    "strict_release_validator": "not run on current head"
   },
   "trial_of_the_day": {
     "current": "PANKU-Esophagus01",
@@ -1823,7 +1809,7 @@
     "archive_updated": true
   },
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
+  "branch_head_after": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1861,7 +1847,7 @@
     "bctop-h-n01"
   ],
   "report_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "metadata_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+  "metadata_commit_sha": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
   "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately",
   "page_qa_status": {
     "staged_pages": 30,
@@ -2078,6 +2064,9 @@
     "new_page_links_added": [
       "relight",
       "herizon-gea-01"
-    ]
+    ],
+    "active_batch_section_links": 28,
+    "carry_forward_section_links": 2,
+    "missing_rostered_index_paths": 0
   }
 }
