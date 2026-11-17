@@ -57,10 +57,14 @@ for (const fileName of oldDailyFiles) {
   catch (error) { fail(fileName, 'Could not parse daily-evidence JSON: ' + String(error)); continue; }
   for (const row of rows) {
     for (const t of batch) {
+      const rowDisposition = String(row.disposition || row.final_disposition || row.status || '').toLowerCase().replace(/[^a-z]+/g, '_');
+      const priorPublishedOrDuplicate = row.published === true || row.uploaded === true || row.merged === true ||
+        ['published', 'uploaded', 'committed', 'merged', 'duplicate_excluded'].includes(rowDisposition) ||
+        row.identity === 'duplicate' || (row.duplicate_of !== undefined && row.duplicate_of !== null);
       const sameBatchEvidence = fileName.includes(latestDate) &&
         (row.page_id === t.id || row.trial_id === t.id) &&
         row.identity === 'new_unique';
-      if (row.duplicate_of === t.id || sameBatchEvidence) continue;
+      if (row.duplicate_of === t.id || sameBatchEvidence || !priorPublishedOrDuplicate) continue;
       const rowName = canonicalName(row.trial || row.title);
       if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in ' + fileName + ': ' + (row.trial || row.title));
       const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
@@ -201,9 +205,23 @@ for (const t of batch) {
     if (effectsWithPictograms.length && aeMarkups.length < effectsWithPictograms.length) fail(t.id, 'One or more structured NNT/NNH endpoints lack pictogram markup');
     if (!aeMarkups.length) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
     const matched = new Set();
+    const normHorizon = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     aeMarkups.forEach((markup, index) => {
       const endpointLabel = attr(markup, 'nnt-endpoint') || attr(markup, 'nnh-endpoint') || attr(markup, 'endpoint');
-      let effect = endpointLabel ? structuredEffects.find(e => normEndpoint(e.endpoint) === normEndpoint(endpointLabel)) : structuredEffects[index] || structuredEffects[0];
+      const horizonLabel = attr(markup, 'nnt-horizon') || attr(markup, 'nnh-horizon') || attr(markup, 'horizon');
+      const benefitLabel = attr(markup, 'benefit');
+      const harmLabel = attr(markup, 'harm');
+      const nntLabel = attr(markup, 'nnt');
+      const nnhLabel = attr(markup, 'nnh');
+      const candidates = structuredEffects.filter(e =>
+        (!endpointLabel || normEndpoint(e.endpoint) === normEndpoint(endpointLabel)) &&
+        (!horizonLabel || normHorizon(e.horizon) === normHorizon(horizonLabel)) &&
+        (!hasValue(benefitLabel) || (hasValue(e.benefit_percentage_points) && Math.abs(Number(e.benefit_percentage_points) - Number(benefitLabel)) <= 0.11)) &&
+        (!hasValue(harmLabel) || (hasValue(e.harm_percentage_points) && Math.abs(Number(e.harm_percentage_points) - Number(harmLabel)) <= 0.11)) &&
+        (!hasValue(nntLabel) || (hasValue(e.nnt) && Number(e.nnt) === Number(nntLabel))) &&
+        (!hasValue(nnhLabel) || (hasValue(e.nnh) && Number(e.nnh) === Number(nnhLabel)))
+      );
+      const effect = candidates.find(e => !matched.has(e)) || structuredEffects[index] || structuredEffects[0];
       if (!effect) { fail(t.id, `Pictogram ${index + 1} has no matching structured endpoint`); return; }
       matched.add(effect);
       const benefitAttr = attr(markup, 'benefit');
