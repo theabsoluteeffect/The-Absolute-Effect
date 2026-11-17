@@ -41,12 +41,12 @@
     "trial_of_day_changed": false
   },
   "candidate_screening": {
-    "screened": 73,
+    "screened": 72,
     "duplicates": 15,
-    "new_unique": 58,
+    "new_unique": 57,
     "ready_for_page_build": 28,
-    "held": 13,
-    "deferred_negative": 11,
+    "held": 19,
+    "deferred_negative": 10,
     "rejected": 2,
     "uploaded": 0,
     "candidates": [
@@ -186,8 +186,8 @@
         "primary_title": "Immunochemotherapy for Borderline Resectable or Locally Advanced Pancreatic Cancer: A Randomized Controlled Trial",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
-        "reason": "Primary JCO report and registry; EFS11.1 vs9.6 months, HR0.74, P=.007",
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back.",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1200/JCO-26-01393",
@@ -197,9 +197,11 @@
         "screened_on": "2026-11-17",
         "page_id": "toripalimab-mfolfirinox",
         "release_qa_status": "held_pending_primary_source_supplement",
-        "final_disposition": "held",
+        "final_disposition": "release_ready",
         "final_disposition_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "source_verified": true,
+        "doi_title_verified": true
       },
       {
         "trial": "GIMEMA ALL2820",
@@ -212,7 +214,7 @@
         "primary_title": "Ponatinib-Blinatumomab or Imatinib-Chemotherapy for Adult Ph-Positive ALL",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
+        "disposition": "held_out_of_current_batch",
         "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%",
         "matched_existing": null,
         "source_urls": [
@@ -225,7 +227,8 @@
         "release_qa_status": "held_pending_primary_source_supplement",
         "final_disposition": "held",
         "final_disposition_reason": "Exact NEJM protocol dosing and complete grade 3–5 safety table require supplementary appendix; NEJM supplement inaccessible in this run.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "in_current_batch": false
       },
       {
         "trial": "Felzartamab plus Rd",
@@ -457,7 +460,7 @@
         "primary_title": "Cadonilimab Plus Neoadjuvant Chemotherapy in Locally Advanced Rectal Cancer: The OPTICAL-2 Randomized Phase 2 Trial",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
+        "disposition": "held_out_of_current_batch",
         "reason": "pCR26.8% vs9.8%; NNT6 at surgery",
         "matched_existing": null,
         "source_urls": [
@@ -470,7 +473,8 @@
         "release_qa_status": "held_pending_primary_source_supplement",
         "final_disposition": "held",
         "final_disposition_reason": "Exact chemotherapy component doses, cycle count and complete three-arm grade 3–5 safety table require primary protocol/supplement extraction.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "in_current_batch": false
       },
       {
         "trial": "LITESPARK-011",
@@ -508,8 +512,8 @@
         "primary_title": "Pembrolizumab Plus Chemotherapy for HR+/HER2- PD-L1-Positive Advanced Breast Cancer: Final Analysis of the Phase 3 KEYNOTE-B49 Study",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
-        "reason": "PFS HR0.74 P=.0089; OS HR1.04 P=.6185",
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back.",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1016/j.annonc.2026.10.1285",
@@ -519,9 +523,11 @@
         "screened_on": "2026-11-17",
         "page_id": "keynote-b49",
         "release_qa_status": "held_pending_primary_source_supplement",
-        "final_disposition": "held",
+        "final_disposition": "release_ready",
         "final_disposition_reason": "Exact investigator-choice chemotherapy distribution/doses and complete safety tables require Annals Oncology protocol/supplement.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "source_verified": true,
+        "doi_title_verified": true
       },
       {
         "trial": "ARTEMIS-011",
@@ -534,8 +540,8 @@
         "primary_title": "Risvutatug Rezetecan Versus Gemcitabine-Docetaxel in Relapsed/Refractory Osteosarcoma: The ARTEMIS-011 Randomized Phase 3 Trial",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
-        "reason": "PFS5.5 vs1.4 months, HR0.33; OS immature",
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back.",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1016/j.annonc.2026.10.1284",
@@ -545,9 +551,11 @@
         "screened_on": "2026-11-17",
         "page_id": "artemis-011",
         "release_qa_status": "held_pending_primary_source_supplement",
-        "final_disposition": "held",
+        "final_disposition": "release_ready",
         "final_disposition_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "source_verified": true,
+        "doi_title_verified": true
       },
       {
         "trial": "RINGSIDE",
@@ -1459,8 +1467,8 @@
         "primary_title": "Izalontamab Brengitecan Versus Platinum-Based Chemotherapy in EGFR-Mutated Advanced Non-Small-Cell Lung Cancer After Progression on Third-Generation EGFR Tyrosine Kinase Inhibitors (PANKU-Lung01): A Multicentre, Randomised, Open-Label, Phase 3 Trial in China",
         "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
         "identity": "new_unique",
-        "disposition": "held_pending_primary_source_supplement",
-        "reason": "Primary Lancet phase III report; PFS and grade ≥3 toxicity extracted",
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back.",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1016/S0140-6736(26)02026-X",
@@ -1470,9 +1478,11 @@
         "screened_on": "2026-11-17",
         "page_id": "panku-lung01",
         "release_qa_status": "held_pending_primary_source_supplement",
-        "final_disposition": "held",
+        "final_disposition": "release_ready",
         "final_disposition_reason": "Exact platinum/pemetrexed choice and component doses plus full grade 3–5 safety table require the full primary report/supplement.",
-        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
+        "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+        "source_verified": true,
+        "doi_title_verified": true
       },
       {
         "trial": "KEYNOTE-867",
@@ -1604,7 +1614,8 @@
         "final_disposition": "release_ready",
         "release_qa_status": "primary_source_reviewed_pending_release_validator",
         "source_verified": true,
-        "doi_title_verified": true
+        "doi_title_verified": true,
+        "disposition": "release_ready_for_pr"
       },
       {
         "id": "herizon-gea-01",
@@ -1622,7 +1633,8 @@
         "final_disposition": "release_ready",
         "release_qa_status": "primary_source_reviewed_pending_release_validator",
         "source_verified": true,
-        "doi_title_verified": true
+        "doi_title_verified": true,
+        "disposition": "release_ready_for_pr"
       }
     ],
     "source_passes": [
@@ -1954,7 +1966,7 @@
     "uploaded": 0,
     "not_uploaded": 30,
     "pr_opened": false,
-    "reason": "All 30 unique new-to-main page files and release metadata are staged and read back: 28 candidate pages plus 2 still-unpublished carry-forward pages. Zero uploaded pending current-head strict release validation, PR checks and merge.",
+    "reason": "30 unique new-to-main page files are staged: 28 candidate pages plus 2 still-unpublished carry-forward pages. All 30 have page files, roster/index integration and primary-source metadata; 0 uploaded pending strict release validation, PR checks and merge.",
     "evening_target": 30,
     "evening_new_unique_candidates_ready": 28,
     "evening_target_shortfall": 0,
@@ -2724,6 +2736,20 @@
       "registry_id": "NCT04136353",
       "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed.",
       "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
+    },
+    {
+      "id": "GIMEMA ALL2820",
+      "trial": "GIMEMA ALL2820",
+      "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%",
+      "status": "held",
+      "next_action": "Retrieve full protocol/supplement for exact doses, denominators, grade 3–5 toxicity and transplant/HRQoL outcomes."
+    },
+    {
+      "id": "OPTICAL-2",
+      "trial": "OPTICAL-2",
+      "reason": "pCR26.8% vs9.8%; NNT6 at surgery",
+      "status": "held",
+      "next_action": "Retrieve full primary paper/supplement for arm-specific grade 3–5 toxicity and QoL; do not publish until verified."
     }
   ],
   "deferred_negative_candidates": [
@@ -2771,22 +2797,10 @@
     {
       "trial": "NRG-BR002",
       "doi": "10.1200/JCO-26-00201",
-      "pmid": null,
+      "pmid": "42842849",
       "registry_id": "NCT02364557",
-      "site": "Breast cancer",
-      "setting": "Oligometastatic metastatic",
-      "phase": "Randomized phase II/III",
-      "primary_title": null,
-      "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
-      "identity": "new_unique",
-      "disposition": "deferred_negative",
-      "reason": "Metastasis-directed therapy added to standard systemic therapy did not improve PFS/OS",
-      "matched_existing": null,
-      "source_urls": [
-        "https://doi.org/10.1200/JCO-26-00201",
-        "https://clinicaltrials.gov/study/NCT02364557"
-      ],
-      "screened_on": "2026-11-17"
+      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "disposition": "deferred_negative"
     },
     {
       "trial": "OPTIM",
@@ -2897,14 +2911,6 @@
       "disposition": "deferred_negative"
     },
     {
-      "trial": "NRG-BR002",
-      "doi": "10.1200/JCO-26-00201",
-      "pmid": "42842849",
-      "registry_id": "NCT02364557",
-      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
-      "disposition": "deferred_negative"
-    },
-    {
       "trial": "MOIO",
       "registry_id": "NCT05078047",
       "conference": "ESMO 2026 LBA10",
@@ -2994,11 +3000,11 @@
     }
   ],
   "duplicate_check_summary": {
-    "screened": 63,
-    "duplicates": 14,
-    "new_unique": 49,
-    "held": 13,
-    "deferred_negative": 8,
+    "screened": 72,
+    "duplicates": 15,
+    "new_unique": 57,
+    "held": 19,
+    "deferred_negative": 10,
     "rejected": 2,
     "uploaded": 0,
     "details": [
@@ -3009,7 +3015,7 @@
         "registry_id": "NCT06132958",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary Lancet phase III report; PFS/OS and safety extracted"
       },
       {
@@ -3019,7 +3025,7 @@
         "registry_id": "NCT06343948",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary Lancet phase III report identified; exact title normalization and complete safety table to be checked"
       },
       {
@@ -3029,7 +3035,7 @@
         "registry_id": "NCT01042379",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary JAMA Oncology report; preserve platform/cohort identity"
       },
       {
@@ -3039,7 +3045,7 @@
         "registry_id": "NCT05772546",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Avatrombopag vs placebo; composite response70% vs17%; NNT2"
       },
       {
@@ -3049,7 +3055,7 @@
         "registry_id": "NCT05247684",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary Nature Medicine report and registry; MPR/pCR/R0 and safety identified"
       },
       {
@@ -3059,8 +3065,8 @@
         "registry_id": "NCT03983057",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
-        "reason": "Primary JCO report and registry; EFS11.1 vs9.6 months, HR0.74, P=.007"
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
       },
       {
         "candidate": "GIMEMA ALL2820",
@@ -3069,7 +3075,7 @@
         "registry_id": "NCT04722848",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "held_out_of_current_batch",
         "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%"
       },
       {
@@ -3079,7 +3085,7 @@
         "registry_id": "NCT03952091",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary Lancet Haematology report; median PFS18.9 vs10.4 months, HR0.62"
       },
       {
@@ -3089,7 +3095,7 @@
         "registry_id": "NCT04669496",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "EFS18.0 vs8.7 months; OS signal did not cross prespecified alpha"
       },
       {
@@ -3099,7 +3105,7 @@
         "registry_id": "NCT04006262",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "17/29 pCR (58.6%); single-arm; follow-up publication attached"
       },
       {
@@ -3109,7 +3115,7 @@
         "registry_id": "NCT06968585",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "4.8 mg/kg q3w vs T-DM1 3.6 mg/kg q3w; PFS11.1 vs4.4, HR0.39"
       },
       {
@@ -3119,7 +3125,7 @@
         "registry_id": "DRKS00024015",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "909 randomized; digital ePRO/triage; continuous PRO outcomes; no NNT"
       },
       {
@@ -3149,7 +3155,7 @@
         "registry_id": "NCT04260126",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Separate ICI-naive/resistant cohorts; single-arm; no comparative NNT"
       },
       {
@@ -3159,7 +3165,7 @@
         "registry_id": "NCT05495724",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "CR19/26 (73.1%) in efficacy-evaluable population; single-arm"
       },
       {
@@ -3169,7 +3175,7 @@
         "registry_id": "NCT05571644",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "held_out_of_current_batch",
         "reason": "pCR26.8% vs9.8%; NNT6 at surgery"
       },
       {
@@ -3179,7 +3185,7 @@
         "registry_id": "NCT04586231",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "PFS HR0.74; OS HR0.85 did not cross prespecified alpha; no NNT from HR/medians"
       },
       {
@@ -3189,8 +3195,8 @@
         "registry_id": "NCT04895358",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
-        "reason": "PFS HR0.74 P=.0089; OS HR1.04 P=.6185"
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
       },
       {
         "candidate": "ARTEMIS-011",
@@ -3199,8 +3205,8 @@
         "registry_id": "NCT06935409",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
-        "reason": "PFS5.5 vs1.4 months, HR0.33; OS immature"
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
       },
       {
         "candidate": "RINGSIDE",
@@ -3209,7 +3215,7 @@
         "registry_id": "NCT04871282",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "42 participants; varegacestat dose cohorts; no grade4/5 events reported"
       },
       {
@@ -3219,8 +3225,8 @@
         "registry_id": "NCT04472598",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
-        "reason": "SVR35 week24 63.2% vs31.5%, NNT4 for surrogate; TSS not improved"
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary SVR35 endpoint positive; TSS not significantly improved. Retain as mixed endpoint/contrary-evidence note, not deferred-negative."
       },
       {
         "candidate": "UNION",
@@ -3229,7 +3235,7 @@
         "registry_id": "NCT04928807",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "pCR39.8% vs15.3%, NNT5; 3-year EFS91.3% vs77.4%, NNT8"
       },
       {
@@ -3239,7 +3245,7 @@
         "registry_id": "NCT05418842",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "47 enrolled,40 analysed; 6MWD difference28.6m; no NNT for continuous endpoint"
       },
       {
@@ -3249,7 +3255,7 @@
         "registry_id": "NCT05455320",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "24-month PFS81.3% vs51.2%, NNT4; CRS/infection and treatment burden"
       },
       {
@@ -3269,7 +3275,7 @@
         "registry_id": "NCT03740165",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Three-arm design; preserve maintenance arms and distinguish primary/follow-up analyses"
       },
       {
@@ -3619,7 +3625,7 @@
         "registry_id": "NCT06304974",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
+        "disposition": "release_ready_for_pr",
         "reason": "Primary JAMA phase III report; OS/PFS and grade ≥3 toxicity extracted"
       },
       {
@@ -3629,8 +3635,98 @@
         "registry_id": "NCT06382116",
         "matched_existing": null,
         "identity": "new_unique",
-        "disposition": "ready_for_page_build",
-        "reason": "Primary Lancet phase III report; PFS and grade ≥3 toxicity extracted"
+        "disposition": "release_ready_for_pr",
+        "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
+      },
+      {
+        "candidate": "KEYNOTE-867",
+        "doi": "10.1200/JCO-26-00404",
+        "pmid": "42950173",
+        "registry_id": "NCT03924869",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "deferred_negative",
+        "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk."
+      },
+      {
+        "candidate": "INTerpath-001",
+        "doi": "10.1056/NEJMoa2609762",
+        "pmid": "43013837",
+        "registry_id": "NCT05933577",
+        "matched_existing": "interpath-001",
+        "identity": "duplicate",
+        "disposition": "duplicate_excluded",
+        "reason": "Same underlying study; existing canonical page updated with primary NEJM publication, not added as a new trial."
+      },
+      {
+        "candidate": "SAFFRON",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT05261399",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "held",
+        "reason": "ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification."
+      },
+      {
+        "candidate": "CLARITY-Gastric01",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT06346392",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete."
+      },
+      {
+        "candidate": "HARMONi-GI1",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT06591520",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; complete primary safety supplement and exact chemotherapy doses require verification."
+      },
+      {
+        "candidate": "DASL-HiCaP (ANZUP1801)",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT04136353",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed."
+      },
+      {
+        "candidate": "MOIO",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT05078047",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "deferred_negative",
+        "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page."
+      },
+      {
+        "candidate": "RELIGHT",
+        "doi": "10.1200/JCO-25-02933",
+        "pmid": "42784781",
+        "registry_id": "NCT04950322",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "release_ready_for_pr",
+        "reason": "No additional rationale recorded."
+      },
+      {
+        "candidate": "HERIZON-GEA-01",
+        "doi": "10.1056/NEJMoa2517729",
+        "pmid": "42202319",
+        "registry_id": "NCT05152147",
+        "matched_existing": null,
+        "identity": "new_unique",
+        "disposition": "release_ready_for_pr",
+        "reason": "No additional rationale recorded."
       }
     ]
   },
@@ -3950,7 +4046,7 @@
   ],
   "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred",
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
+  "branch_head_after": "faba2e83a491b377603b8485f1442b95c459819b",
   "page_qa_status": {
     "staged_pages": 30,
     "read_back_after_correction": 30,
@@ -4193,5 +4289,5 @@
   "branch_ci_run_id": 44128311168,
   "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
   "run_status": "INCOMPLETE — 30 unique new-to-main pages staged; awaiting strict release validation and PR checks",
-  "updated_at": "2026-11-17T17:37:17.333Z"
+  "updated_at": "2026-11-17T20:00:32+05:30"
 }

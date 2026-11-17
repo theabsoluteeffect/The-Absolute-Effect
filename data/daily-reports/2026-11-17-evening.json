@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "30 unique new-to-main trial pages staged; 0 uploaded pending release gate.",
+  "headline": "30 unique new-to-main trial pages staged and read back; 0 uploaded pending current-head PR checks.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -193,13 +193,13 @@
     "follow_up": "Open — do not infer section/reference/category"
   },
   "candidate_screening": {
-    "screened": 73,
+    "screened": 72,
     "duplicates": 15,
-    "new_unique": 58,
+    "new_unique": 57,
     "ready_for_page_build": 28,
     "carry_forward_ready": 2,
-    "held": 13,
-    "deferred_negative": 11,
+    "held": 19,
+    "deferred_negative": 10,
     "rejected": 2,
     "uploaded": 0,
     "batch_ready_including_two_staged_carry_forward": 30,
@@ -214,7 +214,7 @@
       "registry_id": "NCT06132958",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary Lancet phase III report; PFS/OS and safety extracted"
     },
     {
@@ -224,7 +224,7 @@
       "registry_id": "NCT06343948",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary Lancet phase III report identified; exact title normalization and complete safety table to be checked"
     },
     {
@@ -234,7 +234,7 @@
       "registry_id": "NCT01042379",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary JAMA Oncology report; preserve platform/cohort identity"
     },
     {
@@ -244,7 +244,7 @@
       "registry_id": "NCT05772546",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Avatrombopag vs placebo; composite response70% vs17%; NNT2"
     },
     {
@@ -254,7 +254,7 @@
       "registry_id": "NCT05247684",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary Nature Medicine report and registry; MPR/pCR/R0 and safety identified"
     },
     {
@@ -264,8 +264,8 @@
       "registry_id": "NCT03983057",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
-      "reason": "Primary JCO report and registry; EFS11.1 vs9.6 months, HR0.74, P=.007"
+      "disposition": "release_ready_for_pr",
+      "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
     },
     {
       "candidate": "GIMEMA ALL2820",
@@ -274,7 +274,7 @@
       "registry_id": "NCT04722848",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "held_out_of_current_batch",
       "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%"
     },
     {
@@ -284,7 +284,7 @@
       "registry_id": "NCT03952091",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary Lancet Haematology report; median PFS18.9 vs10.4 months, HR0.62"
     },
     {
@@ -294,7 +294,7 @@
       "registry_id": "NCT04669496",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "EFS18.0 vs8.7 months; OS signal did not cross prespecified alpha"
     },
     {
@@ -304,7 +304,7 @@
       "registry_id": "NCT04006262",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "17/29 pCR (58.6%); single-arm; follow-up publication attached"
     },
     {
@@ -314,7 +314,7 @@
       "registry_id": "NCT06968585",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "4.8 mg/kg q3w vs T-DM1 3.6 mg/kg q3w; PFS11.1 vs4.4, HR0.39"
     },
     {
@@ -324,7 +324,7 @@
       "registry_id": "DRKS00024015",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "909 randomized; digital ePRO/triage; continuous PRO outcomes; no NNT"
     },
     {
@@ -354,7 +354,7 @@
       "registry_id": "NCT04260126",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Separate ICI-naive/resistant cohorts; single-arm; no comparative NNT"
     },
     {
@@ -364,7 +364,7 @@
       "registry_id": "NCT05495724",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "CR19/26 (73.1%) in efficacy-evaluable population; single-arm"
     },
     {
@@ -374,7 +374,7 @@
       "registry_id": "NCT05571644",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "held_out_of_current_batch",
       "reason": "pCR26.8% vs9.8%; NNT6 at surgery"
     },
     {
@@ -384,7 +384,7 @@
       "registry_id": "NCT04586231",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "PFS HR0.74; OS HR0.85 did not cross prespecified alpha; no NNT from HR/medians"
     },
     {
@@ -394,8 +394,8 @@
       "registry_id": "NCT04895358",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
-      "reason": "PFS HR0.74 P=.0089; OS HR1.04 P=.6185"
+      "disposition": "release_ready_for_pr",
+      "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
     },
     {
       "candidate": "ARTEMIS-011",
@@ -404,8 +404,8 @@
       "registry_id": "NCT06935409",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
-      "reason": "PFS5.5 vs1.4 months, HR0.33; OS immature"
+      "disposition": "release_ready_for_pr",
+      "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
     },
     {
       "candidate": "RINGSIDE",
@@ -414,7 +414,7 @@
       "registry_id": "NCT04871282",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "42 participants; varegacestat dose cohorts; no grade4/5 events reported"
     },
     {
@@ -424,8 +424,8 @@
       "registry_id": "NCT04472598",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
-      "reason": "SVR35 week24 63.2% vs31.5%, NNT4 for surrogate; TSS not improved"
+      "disposition": "release_ready_for_pr",
+      "reason": "Primary SVR35 endpoint positive; TSS not significantly improved. Retain as mixed endpoint/contrary-evidence note, not deferred-negative."
     },
     {
       "candidate": "UNION",
@@ -434,7 +434,7 @@
       "registry_id": "NCT04928807",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "pCR39.8% vs15.3%, NNT5; 3-year EFS91.3% vs77.4%, NNT8"
     },
     {
@@ -444,7 +444,7 @@
       "registry_id": "NCT05418842",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "47 enrolled,40 analysed; 6MWD difference28.6m; no NNT for continuous endpoint"
     },
     {
@@ -454,7 +454,7 @@
       "registry_id": "NCT05455320",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "24-month PFS81.3% vs51.2%, NNT4; CRS/infection and treatment burden"
     },
     {
@@ -474,7 +474,7 @@
       "registry_id": "NCT03740165",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Three-arm design; preserve maintenance arms and distinguish primary/follow-up analyses"
     },
     {
@@ -824,7 +824,7 @@
       "registry_id": "NCT06304974",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
+      "disposition": "release_ready_for_pr",
       "reason": "Primary JAMA phase III report; OS/PFS and grade ≥3 toxicity extracted"
     },
     {
@@ -834,8 +834,8 @@
       "registry_id": "NCT06382116",
       "matched_existing": null,
       "identity": "new_unique",
-      "disposition": "ready_for_page_build",
-      "reason": "Primary Lancet phase III report; PFS and grade ≥3 toxicity extracted"
+      "disposition": "release_ready_for_pr",
+      "reason": "Primary publication and registry verified; regimen/outcomes/safety corrected; canonical page read back."
     },
     {
       "candidate": "KEYNOTE-867",
@@ -853,8 +853,9 @@
       "pmid": "43013837",
       "registry_id": "NCT05933577",
       "matched_existing": "interpath-001",
-      "identity": "same underlying study; existing canonical page",
-      "disposition": "duplicate excluded from new additions; existing page updated"
+      "identity": "duplicate",
+      "disposition": "duplicate_excluded",
+      "reason": "Same underlying study; existing canonical page updated with primary NEJM publication, not added as a new trial."
     },
     {
       "candidate": "SAFFRON",
@@ -905,6 +906,26 @@
       "identity": "new_unique",
       "disposition": "deferred_negative",
       "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page."
+    },
+    {
+      "candidate": "RELIGHT",
+      "doi": "10.1200/JCO-25-02933",
+      "pmid": "42784781",
+      "registry_id": "NCT04950322",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "release_ready_for_pr",
+      "reason": "No additional rationale recorded."
+    },
+    {
+      "candidate": "HERIZON-GEA-01",
+      "doi": "10.1056/NEJMoa2517729",
+      "pmid": "42202319",
+      "registry_id": "NCT05152147",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "release_ready_for_pr",
+      "reason": "No additional rationale recorded."
     }
   ],
   "ready_candidates": [
@@ -1547,6 +1568,20 @@
       "registry_id": "NCT04136353",
       "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed.",
       "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
+    },
+    {
+      "id": "GIMEMA ALL2820",
+      "trial": "GIMEMA ALL2820",
+      "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%",
+      "status": "held",
+      "next_action": "Retrieve full protocol/supplement for exact doses, denominators, grade 3–5 toxicity and transplant/HRQoL outcomes."
+    },
+    {
+      "id": "OPTICAL-2",
+      "trial": "OPTICAL-2",
+      "reason": "pCR26.8% vs9.8%; NNT6 at surgery",
+      "status": "held",
+      "next_action": "Retrieve full primary paper/supplement for arm-specific grade 3–5 toxicity and QoL; do not publish until verified."
     }
   ],
   "deferred_negative": [
@@ -1567,9 +1602,14 @@
     {
       "trial": "NRG-BR002",
       "doi": "10.1200/JCO-26-00201",
-      "pmid": null,
+      "pmid": "42842849",
       "registry_id": "NCT02364557",
-      "reason": "Metastasis-directed therapy added to standard systemic therapy did not improve PFS/OS"
+      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00201",
+        "https://pubmed.ncbi.nlm.nih.gov/42842849/",
+        "https://clinicaltrials.gov/study/NCT02364557"
+      ]
     },
     {
       "trial": "OPTIM",
@@ -1616,18 +1656,6 @@
         "https://doi.org/10.1200/JCO-26-00404",
         "https://pubmed.ncbi.nlm.nih.gov/42950173/",
         "https://clinicaltrials.gov/study/NCT03924869"
-      ]
-    },
-    {
-      "trial": "NRG-BR002",
-      "doi": "10.1200/JCO-26-00201",
-      "pmid": "42842849",
-      "registry_id": "NCT02364557",
-      "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
-      "source_urls": [
-        "https://doi.org/10.1200/JCO-26-00201",
-        "https://pubmed.ncbi.nlm.nih.gov/42842849/",
-        "https://clinicaltrials.gov/study/NCT02364557"
       ]
     },
     {
@@ -1763,7 +1791,7 @@
     "release_ready_page_count": 30,
     "release_hold_page_count": 0,
     "uploaded_to_main": 0,
-    "local_release_validator": "not run locally — git clone failed due DNS/network; exact validator will run in PR CI",
+    "local_release_validator": "not run locally — git clone failed due DNS/network; current-head PR CI is required",
     "custom_static_validator": "stale — previous static report predates final page substitutions; not accepted as current-head validation",
     "pr_opened": false,
     "pr_checks": "not yet run — PR not opened",
@@ -1792,8 +1820,8 @@
       "status": "stale",
       "run_id": "44128311168",
       "validated_commit": "67f3ee4 (prior head)",
-      "current_branch_head": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
-      "note": "Earlier PASS does not validate the current branch head; PR checks required."
+      "current_branch_head": "faba2e83a491b377603b8485f1442b95c459819b",
+      "note": "Earlier PASS does not validate the current branch head."
     },
     "preview_visual_review": "Cloudflare preview URL was not accessible through the browser; static HTML chart/status structures and source values were inspected; browser-rendered QA remains pending.",
     "outcome_visualization_audit": "not run on current head",
@@ -1809,7 +1837,7 @@
     "archive_updated": true
   },
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
+  "branch_head_after": "faba2e83a491b377603b8485f1442b95c459819b",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1846,8 +1874,8 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "metadata_commit_sha": "d79d756bf2f5b693a71efdf29f6e2333f79fa7f2",
+  "report_commit_sha": "faba2e83a491b377603b8485f1442b95c459819b",
+  "metadata_commit_sha": "faba2e83a491b377603b8485f1442b95c459819b",
   "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately",
   "page_qa_status": {
     "staged_pages": 30,
@@ -1892,16 +1920,18 @@
   },
   "release_hold_pages": [],
   "duplicate_check_summary": {
-    "screened": 71,
+    "screened": 72,
     "duplicates": 15,
-    "new_unique": 56,
-    "held": 17,
-    "deferred_negative": 11,
+    "new_unique": 57,
+    "held": 19,
+    "deferred_negative": 10,
     "rejected": 2,
     "staged_pages": 30,
-    "release_ready_pages": 24,
-    "release_hold_pages": 6,
-    "uploaded": 0
+    "release_ready_pages": 30,
+    "release_hold_pages": 0,
+    "uploaded": 0,
+    "details_count": 72,
+    "details_source": "data/daily-evidence-2026-11-17-evening.json#duplicate_check_summary.details"
   },
   "existing_pages_manually_reviewed": 9,
   "nccn_coverage": {
@@ -2041,7 +2071,7 @@
   "run_cycle": "evening",
   "branch_ci_run_id": 44128311168,
   "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-  "run_status": "INCOMPLETE — 30 pages staged and source-reviewed; strict validator, PR checks, merge and deployment verification remain",
+  "run_status": "INCOMPLETE — 30 unique new-to-main pages staged; local validator unavailable; PR checks required; 0 uploaded.",
   "main_commit_before": "608076f608609d0483f63cee7084ff431c21c2fe",
   "branch": "atlas-batch/2026-11-17-am",
   "branch_head_before": "a91892cc213a94d1b83b1080396aa1821aca008b",
@@ -2068,5 +2098,6 @@
     "active_batch_section_links": 28,
     "carry_forward_section_links": 2,
     "missing_rostered_index_paths": 0
-  }
+  },
+  "duplicate_check_reconciliation_note": "Candidate-level ledger contains 72 distinct screened candidate records. The earlier aggregate of 73 was corrected because NRG-BR002 appeared twice in the deferred-negative list; duplicate deferred-negative entries are now consolidated."
 }
