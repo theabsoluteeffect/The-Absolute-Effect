@@ -5051,7 +5051,20 @@
       "nccn_provenance": "not verified — source inaccessible",
       "nccn_mapping_status": "pending",
       "batch_date": "2026-11-17",
-      "nnt_reason": "No NNT: median PFS/OS and hazard ratios are reported; no comparable fixed-time absolute event rates were used."
+      "nnt_reason": "No NNT: median PFS/OS and hazard ratios are reported; no comparable fixed-time absolute event rates were used.",
+      "path": "trial-pages/herizon-gea-01/",
+      "source": "trial-pages/herizon-gea-01/",
+      "discipline": "Medical",
+      "question": "Does zanidatamab with or without tislelizumab plus chemotherapy improve outcomes versus trastuzumab plus chemotherapy in first-line HER2-positive advanced GEA?",
+      "aliases": [
+        "HERIZON-GEA-01",
+        "HERIZON GEA-01",
+        "Zanidatamab plus tislelizumab",
+        "NCT05152147"
+      ],
+      "freshness_review_status": "pending_current_guideline_mapping",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma"
     },
     {
       "id": "hilus",
@@ -9086,7 +9099,20 @@
       "nccn_provenance": "not verified — source inaccessible",
       "nccn_mapping_status": "pending",
       "batch_date": "2026-11-17",
-      "nnt_reason": "No NNT: verified primary reports provide medians/HRs and exploratory PRO time-to-deterioration, but no fixed-time absolute survival/event risk difference used for NNT."
+      "nnt_reason": "No NNT: verified primary reports provide medians/HRs and exploratory PRO time-to-deterioration, but no fixed-time absolute survival/event risk difference used for NNT.",
+      "path": "trial-pages/relight/",
+      "source": "trial-pages/relight/",
+      "discipline": "Medical",
+      "question": "Does retlirafusp alfa plus CAPOX improve overall survival versus CAPOX alone in first-line HER2-negative advanced gastric/GEJ adenocarcinoma?",
+      "aliases": [
+        "RELIGHT",
+        "SHR-1701",
+        "Retlirafusp alfa",
+        "NCT04950322"
+      ],
+      "freshness_review_status": "pending_current_guideline_mapping",
+      "outcome_visual_review_status": "pending_browser_qa",
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma"
     },
     {
       "id": "ringside",

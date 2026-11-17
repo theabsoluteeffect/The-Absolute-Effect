@@ -1950,11 +1950,11 @@
     ],
     "new_unique_candidates_ready": 28,
     "pages_staged": 2,
-    "pages_to_build": 28,
+    "pages_to_build": 0,
     "uploaded": 0,
     "not_uploaded": 30,
     "pr_opened": false,
-    "reason": "30-study selection identified (2 carry-forward plus 28 new unique candidates); 28 page files and complete release metadata are not yet staged.",
+    "reason": "All 30 unique new-to-main page files and release metadata are staged/read back: 28 candidate pages plus 2 still-unpublished carry-forward pages. Zero uploaded pending strict release validation, PR checks and merge.",
     "evening_target": 30,
     "evening_new_unique_candidates_ready": 28,
     "evening_target_shortfall": 0,
@@ -1966,7 +1966,9 @@
     "carry_forward_ready": 2,
     "staged_carry_forward_pages": 2,
     "release_ready_pages": 30,
-    "release_hold_pages": 0
+    "release_hold_pages": 0,
+    "pages_built": 28,
+    "pages_read_back": 30
   },
   "nccn": {
     "guideline_records_in_ledger": 8,
@@ -3947,8 +3949,8 @@
     }
   ],
   "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred",
-  "page_commit_sha": "pending",
-  "branch_head_after": "pending",
+  "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
+  "branch_head_after": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
   "page_qa_status": {
     "staged_pages": 30,
     "read_back_after_correction": 30,

@@ -1822,8 +1822,8 @@
     "previous": "GemX",
     "archive_updated": true
   },
-  "page_commit_sha": "pending",
-  "branch_head_after": "pending",
+  "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
+  "branch_head_after": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1860,7 +1860,7 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "da6a47bced7d94e72ea90a26ce113b801078e957",
+  "report_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
   "metadata_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
   "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately",
   "page_qa_status": {
@@ -2065,5 +2065,19 @@
       "HERIZON-GEA-01"
     ],
     "provenance": "not verified — complete NCCN sources inaccessible; no reference numbers/categories inferred"
+  },
+  "index_reconciliation": {
+    "static_batch_section": "batch-2026-11-17",
+    "current_batch_links": 28,
+    "carry_forward_section": "batch-2026-11-17-staged",
+    "carry_forward_links": 2,
+    "held_page_links_removed": [
+      "gimema-all2820",
+      "optical-2"
+    ],
+    "new_page_links_added": [
+      "relight",
+      "herizon-gea-01"
+    ]
   }
 }
