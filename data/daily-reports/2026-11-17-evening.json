@@ -28,7 +28,12 @@
     "branch_head_before_validator_patch": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
     "validator_patch_commit_sha": "42e0b468bad9ac553cedf607f1ea727b966fce64",
     "cloudflare_branch_preview_status": "success",
-    "cloudflare_branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev"
+    "cloudflare_branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+    "branch_ahead_by": 7,
+    "branch_behind_by": 0,
+    "changed_files_vs_main": 26,
+    "new_trial_pages_staged": 2,
+    "modified_trial_pages_staged": 6
   },
   "coverage": {
     "main_unique_studies": 437,
@@ -54,7 +59,7 @@
   },
   "repairs": {
     "manual_pages_reviewed_total": 8,
-    "branch_repairs_staged": 3,
+    "branch_repairs_staged": 6,
     "repairs_this_evening": 0,
     "main_repairs": 0,
     "queue_open_before": 123,
