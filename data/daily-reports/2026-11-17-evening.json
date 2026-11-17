@@ -110,7 +110,9 @@
         "path": "trial-pages/interpath-001/index.html",
         "status": "corrected_and_read_back_on_branch",
         "source": "NEJM 2026; DOI10.1056/NEJMoa2609762; PMID43013837",
-        "details": "Corrected primary title/DOI/PMID, distinguished ESMO overall HR from NEJM piecewise HRs, corrected all-cause vs treatment-related grade≥3 AE definitions, added 24m DMFS chart and NNT13, corrected RFS data-benefit from11.11 to12.2 percentage points, and structured both NNTs."
+        "details": "Corrected primary title/DOI/PMID, distinguished ESMO overall HR from NEJM piecewise HRs, corrected all-cause vs treatment-related grade≥3 AE definitions, added 24m DMFS chart and NNT13, corrected RFS data-benefit from11.11 to12.2 percentage points, and structured both NNTs.",
+        "primary_title_visible_on_page": true,
+        "read_back_after_title_insertion": true
       }
     ]
   },
@@ -1521,14 +1523,21 @@
   ],
   "uploaded_cases": [],
   "nnt_nnh_visualization_qa": {
-    "numeric_effect_pages": 10,
-    "structured_effect_records": 12,
-    "pictogram_count": 12,
+    "numeric_effect_pages": 11,
+    "structured_effect_records": 14,
+    "pictogram_count": 14,
     "benefit_attributes_match_structured_values": true,
     "all_nnt_values_calculated_from_same_horizon_absolute_difference": true,
     "median_hr_not_converted_to_nnt": true,
     "static_visualization_markup": true,
-    "browser_rendered_preview": "not verified"
+    "browser_rendered_preview": "not verified",
+    "existing_page_int002": {
+      "rfs_benefit": 12.2,
+      "rfs_nnt": 9,
+      "dmfs_benefit": 8.3,
+      "dmfs_nnt": 13,
+      "markup_matches_roster": true
+    }
   },
   "release_validation": {
     "local_validator": "not run — container DNS/network cannot resolve github.com",
@@ -1679,7 +1688,8 @@
     "held_pending_primary_source_detail": 6,
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
-    "release_hold_count": 6
+    "release_hold_count": 6,
+    "existing_pages_manually_reviewed": 9
   },
   "release_hold_pages": [
     {
