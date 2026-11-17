@@ -179,7 +179,7 @@
     },
     {
       "id": "trastuzumab-botidotin",
-      "length": 6129,
+      "length": 6133,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
@@ -190,7 +190,8 @@
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches_roster": true
+      "primary_title_matches_roster": true,
+      "primary_title_matches": true
     },
     {
       "id": "neonipiga",
@@ -402,7 +403,7 @@
     },
     {
       "id": "panku-esophagus01",
-      "length": 5504,
+      "length": 5619,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
@@ -411,22 +412,24 @@
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches": true
+      "primary_title_matches": true,
+      "structured_effects": 0
     },
     {
       "id": "dellphi-305",
-      "length": 6464,
+      "length": 6293,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
       "bad_width": false,
       "charts": 1,
-      "structured_effects": 1,
+      "structured_effects": 0,
       "markup_effects": 1,
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches_roster": true
+      "primary_title_matches_roster": true,
+      "primary_title_matches": true
     },
     {
       "id": "harmoni-a",

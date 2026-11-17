@@ -2093,20 +2093,6 @@
       "branch": "atlas-batch/2026-11-17-am"
     },
     {
-      "issue_id": "release-hold-trastuzumab-botidotin",
-      "trial_id": "trastuzumab-botidotin",
-      "trial": "Trastuzumab botidotin vs T-DM1",
-      "path": "trial-pages/trastuzumab-botidotin/index.html",
-      "category": "primary_source_or_regimen_detail_incomplete",
-      "severity": "high",
-      "evidence": "Exact trastuzumab botidotin dose/schedule and full ocular/ILD/grade 3–5 safety table require primary protocol/supplement verification.",
-      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
       "issue_id": "release-hold-optical-2",
       "trial_id": "optical-2",
       "trial": "OPTICAL-2",
@@ -2142,34 +2128,6 @@
       "category": "primary_source_or_regimen_detail_incomplete",
       "severity": "high",
       "evidence": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
-      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
-      "issue_id": "release-hold-panku-esophagus01",
-      "trial_id": "panku-esophagus01",
-      "trial": "PANKU-Esophagus01",
-      "path": "trial-pages/panku-esophagus01/index.html",
-      "category": "primary_source_or_regimen_detail_incomplete",
-      "severity": "high",
-      "evidence": "Exact HR, confidence intervals and p values for PFS/OS plus full safety table require full primary report extraction.",
-      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
-      "issue_id": "release-hold-dellphi-305",
-      "trial_id": "dellphi-305",
-      "trial": "DeLLphi-305",
-      "path": "trial-pages/dellphi-305/index.html",
-      "category": "primary_source_or_regimen_detail_incomplete",
-      "severity": "high",
-      "evidence": "Exact 12-month OS landmark from the primary NEJM figure and full step-up/CRS/ICANS dosing/safety detail require figure/supplement verification.",
       "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
       "status": "open",
       "created_on": "2026-11-17",
@@ -2506,6 +2464,54 @@
       "branch": "atlas-batch/2026-11-17-am",
       "resolved_on": "2026-11-17",
       "resolution": "Final Annals of Oncology abstract and FDA label verified dose 120 mg belzutifan + 20 mg lenvatinib daily vs cabozantinib60 mg daily; final PFS HR0.74, ORR53.1 vs40.2, DOR22.0 vs11.9, OS33.7 vs28.6 HR0.85 P=.04689 not crossing alpha0.0223; grade≥3 TEAEs85.4 vs83.0. Earlier PFS medians removed."
+    },
+    {
+      "issue_id": "release-hold-trastuzumab-botidotin",
+      "trial_id": "trastuzumab-botidotin",
+      "trial": "Trastuzumab botidotin vs T-DM1",
+      "path": "trial-pages/trastuzumab-botidotin/index.html",
+      "category": "primary_source_or_regimen_detail_incomplete",
+      "severity": "high",
+      "evidence": "Exact trastuzumab botidotin dose/schedule and full ocular/ILD/grade 3–5 safety table require primary protocol/supplement verification.",
+      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "resolved_on": "2026-11-17",
+      "resolution": "Annals of Oncology LBA24 primary conference abstract verified A1664.8 mg/kg q3w versus T-DM1 3.6 mg/kg q3w and detailed grade ≥3/ocular safety, ADL limitations and discontinuations."
+    },
+    {
+      "issue_id": "release-hold-dellphi-305",
+      "trial_id": "dellphi-305",
+      "trial": "DeLLphi-305",
+      "path": "trial-pages/dellphi-305/index.html",
+      "category": "primary_source_or_regimen_detail_incomplete",
+      "severity": "high",
+      "evidence": "Exact 12-month OS landmark from the primary NEJM figure and full step-up/CRS/ICANS dosing/safety detail require figure/supplement verification.",
+      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "resolved_on": "2026-11-17",
+      "resolution": "NEJM primary report verified efficacy/safety; FDA 2026 prescribing information verified tarlatamab step-up 1 mg C1D1, 10 mg C1D8/D15 then 10 mg Q2W; official AstraZeneca report verified durvalumab maintenance. Unsupported sponsor-only 12-month NNT removed."
+    },
+    {
+      "issue_id": "release-hold-panku-esophagus01",
+      "trial_id": "panku-esophagus01",
+      "trial": "PANKU-Esophagus01",
+      "path": "trial-pages/panku-esophagus01/index.html",
+      "category": "primary_source_or_regimen_detail_incomplete",
+      "severity": "high",
+      "evidence": "Exact HR, confidence intervals and p values for PFS/OS plus full safety table require full primary report extraction.",
+      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "resolved_on": "2026-11-17",
+      "resolution": "JAMA primary abstract provides izalontamab brengitecan2.5 mg/kg D1/D8 Q3W and physician-selected irinotecan/paclitaxel/docetaxel Q3W; comparator is heterogeneous and no single dose is applicable. Exact HR/CI/P and grade ≥3 safety retained."
     }
   ],
   "run_audit_log": [
@@ -2661,8 +2667,8 @@
   "last_run": "2026-11-17-evening",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 149,
-    "resolved_items": 22,
+    "open_items": 146,
+    "resolved_items": 25,
     "note": "Thirty staged trial pages were re-read and structurally checked on 17 November. Thirteen remain open high-severity primary-source/supplement release holds. Full existing canonical-page clinical audit and guideline-freshness review remain incomplete."
   }
 }

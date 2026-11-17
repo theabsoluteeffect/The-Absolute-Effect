@@ -3851,11 +3851,11 @@
     "structured_effect_pages": 10,
     "pictograms": 12,
     "benefit_nnt_markup_matches": true,
-    "release_ready_pages": 21,
-    "held_pending_primary_source_detail": 9,
+    "release_ready_pages": 24,
+    "held_pending_primary_source_detail": 6,
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
-    "release_hold_count": 9
+    "release_hold_count": 6
   },
   "release_hold_pages": [
     {
@@ -3880,13 +3880,6 @@
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     },
     {
-      "trial_id": "trastuzumab-botidotin",
-      "path": "trial-pages/trastuzumab-botidotin/index.html",
-      "status": "held",
-      "reason": "Exact trastuzumab botidotin dose/schedule and full ocular/ILD/grade 3–5 safety table require primary protocol/supplement verification.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
       "trial_id": "optical-2",
       "path": "trial-pages/optical-2/index.html",
       "status": "held",
@@ -3905,20 +3898,6 @@
       "path": "trial-pages/toripalimab-mfolfirinox/index.html",
       "status": "held",
       "reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "panku-esophagus01",
-      "path": "trial-pages/panku-esophagus01/index.html",
-      "status": "held",
-      "reason": "Exact HR, confidence intervals and p values for PFS/OS plus full safety table require full primary report extraction.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "dellphi-305",
-      "path": "trial-pages/dellphi-305/index.html",
-      "status": "held",
-      "reason": "Exact 12-month OS landmark from the primary NEJM figure and full step-up/CRS/ICANS dosing/safety detail require figure/supplement verification.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     }
   ],
