@@ -403,7 +403,7 @@
         "setting": "Recurrent/metastatic",
         "phase": "Phase II single-arm",
         "primary_title": "PDS0101 With Pembrolizumab in HPV16-Positive Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma: A Phase 2 Nonrandomized Clinical Trial",
-        "primary_title_verification": "Exact primary title checked against PubMed/publisher metadata 17 November 2026",
+        "primary_title_verification": "Full JAMA primary article and protocol checked 17 November 2026",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Separate ICI-naive/resistant cohorts; single-arm; no comparative NNT",
@@ -415,7 +415,7 @@
         ],
         "screened_on": "2026-11-17",
         "page_id": "pds0101-pembrolizumab",
-        "release_qa_status": "held_pending_primary_source_supplement",
+        "release_qa_status": "corrected_primary_source_reviewed",
         "final_disposition": "held",
         "final_disposition_reason": "Exact vaccine dose and administration schedule are not present in the accessible primary abstract; protocol/supplement and full grade 3–5 safety table required."
       },
@@ -3851,19 +3851,13 @@
     "structured_effect_pages": 10,
     "pictograms": 12,
     "benefit_nnt_markup_matches": true,
-    "release_ready_pages": 17,
-    "held_pending_primary_source_detail": 13,
+    "release_ready_pages": 18,
+    "held_pending_primary_source_detail": 12,
     "browser_rendered_visual_review": "not verified",
-    "full_existing_canonical_page_audit_complete": false
+    "full_existing_canonical_page_audit_complete": false,
+    "release_hold_count": 12
   },
   "release_hold_pages": [
-    {
-      "trial_id": "pds0101-pembrolizumab",
-      "path": "trial-pages/pds0101-pembrolizumab/index.html",
-      "status": "held",
-      "reason": "Exact vaccine dose and administration schedule are not present in the accessible primary abstract; protocol/supplement and full grade 3–5 safety table required.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
     {
       "trial_id": "disitamab-tislelizumab",
       "path": "trial-pages/disitamab-tislelizumab/index.html",

@@ -2051,20 +2051,6 @@
       "updated_at": "2026-11-17T20:00:32+05:30"
     },
     {
-      "issue_id": "release-hold-pds0101-pembrolizumab",
-      "trial_id": "pds0101-pembrolizumab",
-      "trial": "PDS0101 plus pembrolizumab",
-      "path": "trial-pages/pds0101-pembrolizumab/index.html",
-      "category": "primary_source_or_regimen_detail_incomplete",
-      "severity": "high",
-      "evidence": "Exact vaccine dose and administration schedule are not present in the accessible primary abstract; protocol/supplement and full grade 3–5 safety table required.",
-      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
       "issue_id": "release-hold-disitamab-tislelizumab",
       "trial_id": "disitamab-tislelizumab",
       "trial": "Disitamab vedotin plus tislelizumab",
@@ -2498,6 +2484,22 @@
       "last_reviewed_on": "2026-11-17",
       "resolved_on": "2026-11-17",
       "resolution": "Dose verified: trastuzumab botidotin 4.8 mg/kg IV q3w vs T-DM1 3.6 mg/kg IV q3w."
+    },
+    {
+      "issue_id": "release-hold-pds0101-pembrolizumab",
+      "trial_id": "pds0101-pembrolizumab",
+      "trial": "PDS0101 plus pembrolizumab",
+      "path": "trial-pages/pds0101-pembrolizumab/index.html",
+      "category": "primary_source_or_regimen_detail_incomplete",
+      "severity": "high",
+      "evidence": "Exact vaccine dose and administration schedule are not present in the accessible primary abstract; protocol/supplement and full grade 3–5 safety table required.",
+      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "resolved_on": "2026-11-17",
+      "resolution": "Full JAMA article and protocol verified PDS0101 3.0 mg lipid + 2.7 mg HPVmix in 1 mL SC on cycles 1,2,3,4,12; pembrolizumab 200 mg q3w. Corrected ICI-naive ORR to 34% and mITT/safety denominators."
     }
   ],
   "run_audit_log": [
@@ -2653,8 +2655,8 @@
   "last_run": "2026-11-17-evening",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 153,
-    "resolved_items": 18,
+    "open_items": 152,
+    "resolved_items": 19,
     "note": "Thirty staged trial pages were re-read and structurally checked on 17 November. Thirteen remain open high-severity primary-source/supplement release holds. Full existing canonical-page clinical audit and guideline-freshness review remain incomplete."
   }
 }
