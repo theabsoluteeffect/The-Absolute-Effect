@@ -56,7 +56,8 @@ function inspect(file) {
     .replace(/\s+/g, ' ');
   const numericNnt = /data-nnt=["']\s*\d+(?:\.\d+)?\s*["']/i.test(html);
   const numericNnh = /data-nnh=["']\s*\d+(?:\.\d+)?\s*["']/i.test(html);
-  const hasStaticVisual = /class=["'][^"']*(?:chart|chart-row|chart-note|outcome-chart|bar-chart|bar-row|progress-bar|meter|visualization|visualisation)[^"']*["']/i.test(html) || /<(?:svg|canvas)\b/i.test(html);
+  const classTokens = [...html.matchAll(/class=["']([^"']+)["']/gi)].flatMap(m => m[1].split(/\s+/).map(token => token.trim().toLowerCase()));
+  const hasStaticVisual = classTokens.some(token => /^(?:chart|chart-row|chart-note|outcome-chart|bar-chart|bar-row|barrow|bar|progress-bar|meter|visualization|visualisation|status-badge|status-pill|status-graphic)$/.test(token)) || /<(?:svg|canvas)\b/i.test(html);
   const hasRendererScript = /assets\/(?:absolute-effect|trial-page-layout)\.js/i.test(html);
   const hasRenderer = hasRendererScript || hasStaticVisual;
   const hasDatedContext = /current[- ]practice context|current practice|clinical currency|practice context/i.test(visibleText) && /202[4-6]/.test(visibleText);
