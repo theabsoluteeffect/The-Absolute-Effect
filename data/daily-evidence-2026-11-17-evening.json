@@ -41,8 +41,8 @@
     "trial_of_day_changed": false
   },
   "candidate_screening": {
-    "screened": 65,
-    "duplicates": 14,
+    "screened": 66,
+    "duplicates": 15,
     "new_unique": 51,
     "ready_for_page_build": 26,
     "held": 13,
@@ -1485,6 +1485,17 @@
           "https://pubmed.ncbi.nlm.nih.gov/42950173/",
           "https://clinicaltrials.gov/study/NCT03924869"
         ]
+      },
+      {
+        "trial": "INTerpath-001",
+        "doi": "10.1056/NEJMoa2609762",
+        "pmid": "43013837",
+        "registry_id": "NCT05933577",
+        "identity": "duplicate",
+        "matched_existing": "interpath-001",
+        "disposition": "duplicate_excluded",
+        "final_disposition": "duplicate",
+        "reason": "Same underlying study; existing canonical page updated with primary NEJM publication, not added as a new trial."
       }
     ],
     "source_passes": [

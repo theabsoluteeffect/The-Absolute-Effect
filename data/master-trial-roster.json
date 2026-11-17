@@ -4427,7 +4427,7 @@
     },
     {
       "id": "interpath-001",
-      "trial": "INTerpath-001 (V940 / mRNA-4157)",
+      "trial": "INTerpath-001 (intismeran autogene / V940 / mRNA-4157)",
       "site": "Melanoma",
       "source": "trial-pages/interpath-001/",
       "discipline": "Medical",
@@ -4440,8 +4440,55 @@
         "interpath-001",
         "NCT05933577"
       ],
-      "freshness_review_status": "primary source linked; full independent clinical freshness review pending",
-      "outcome_visual_review_status": "source-grounded outcome visual markup added; browser-rendered QA pending"
+      "freshness_review_status": "primary NEJM publication verified 17 Nov 2026; NCCN guideline freshness pending",
+      "outcome_visual_review_status": "RFS and DMFS chart markup read back; browser-rendered QA pending",
+      "primary": "10.1056/NEJMoa2609762",
+      "primary_title": "Intismeran Autogene plus Pembrolizumab for Resected Stage IIB to IV Melanoma",
+      "pmid": "43013837",
+      "registry_id": "NCT05933577",
+      "publication_date": "2026-11-11",
+      "population": "1,137 patients with completely resected stage IIB–IV cutaneous melanoma randomized 2:1: intismeran+pembrolizumab n=757, placebo+pembrolizumab n=380.",
+      "intervention": "Intismeran autogene 1 mg intramuscularly every 3 weeks for nine doses plus pembrolizumab 400 mg IV every 6 weeks for nine cycles.",
+      "comparator": "Placebo intramuscularly every 3 weeks for nine doses plus pembrolizumab 400 mg IV every 6 weeks for nine cycles.",
+      "primary_endpoint": "Investigator-determined recurrence-free survival (RFS); key secondary endpoint distant-metastasis-free survival (DMFS).",
+      "follow_up": "Median follow-up 24.6 months; OS immature.",
+      "efficacy": "24-month RFS 82.2% vs70.0%; absolute difference12.2 percentage points; ESMO overall HR0.58 (95% CI0.45–0.75), P<0.001; NEJM piecewise HR0.99 (0.66–1.49) months0–6 and0.42 (0.30–0.58) after6 months. 24-month DMFS88.5% vs80.2%; difference8.3 points; ESMO HR0.62 (0.45–0.85), P=.002; NEJM piecewise HR1.01 (0.58–1.79) months0–6 and0.50 (0.34–0.73) after6 months. OS immature; ESMO HR0.77 (0.45–1.31), P=.33.",
+      "safety": "NEJM all-cause grade≥3 AEs23.6% vs20.3%; ESMO grade3–5 treatment-related AEs14.2% vs13.4%. Eight adverse-event deaths (1.1%) in combination arm, five before vaccine administration. Pyrexia52.2%, injection-site pain51.0%, fatigue38.5%.",
+      "quality_of_life": "QoL was a key secondary endpoint; no definitive numerical QoL advantage asserted.",
+      "limitations": "OS immature; personalized manufacturing logistics and cost/access remain important. Vaccine investigational.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609762",
+        "https://pubmed.ncbi.nlm.nih.gov/43013837/",
+        "https://clinicaltrials.gov/study/NCT05933577"
+      ],
+      "primary_title_verified_via": "NEJM primary publication and PubMed metadata checked 17 November 2026",
+      "last_source_reviewed_on": "2026-11-17",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "absolute_effect": {
+        "endpoint": "24-month RFS",
+        "horizon": "24 months",
+        "event_definition": "Alive and recurrence-free at 24 months",
+        "treatment_rate_pct": 82.2,
+        "control_rate_pct": 70,
+        "benefit_percentage_points": 12.2,
+        "nnt": 9,
+        "calculation": "ceil(100 / (82.2 − 70.0)) = 9",
+        "source_doi": "10.1056/NEJMoa2609762",
+        "additional_endpoints": [
+          {
+            "endpoint": "24-month DMFS",
+            "horizon": "24 months",
+            "event_definition": "Alive and distant-metastasis-free at 24 months",
+            "treatment_rate_pct": 88.5,
+            "control_rate_pct": 80.2,
+            "benefit_percentage_points": 8.3,
+            "nnt": 13,
+            "calculation": "ceil(100 / (88.5 − 80.2)) = 13",
+            "source_doi": "10.1056/NEJMoa2609762"
+          }
+        ]
+      }
     },
     {
       "id": "ipfsg-prognostic-model-2010",

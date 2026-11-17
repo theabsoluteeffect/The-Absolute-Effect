@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "65 candidates screened; 51 new unique candidates, including 10 deferred-negative/contrary-evidence studies. Thirty unique pages remain staged; 24 are release-ready subject to official validation and 6 remain held for exact protocol/supplement detail. Zero uploaded to main.",
+  "headline": "66 candidates screened; 51 new unique candidates. INTerpath-001 was matched to its existing canonical page and updated with the 11 November NEJM report. Thirty new trial pages remain staged; 24 release-ready subject to official validation and 6 held. Zero uploaded to main.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -55,7 +55,7 @@
     "trial_of_day_changed": false
   },
   "repairs": {
-    "existing_pages_manually_reviewed": 8,
+    "existing_pages_manually_reviewed": 9,
     "repairs_staged_this_run": [
       "evERA",
       "DeLLphi-305",
@@ -103,7 +103,16 @@
     "structural_pass": 30,
     "release_ready_pages": 17,
     "release_hold_pages": 6,
-    "additional_holds_resolved": 7
+    "additional_holds_resolved": 7,
+    "existing_page_corrections": [
+      {
+        "trial_id": "interpath-001",
+        "path": "trial-pages/interpath-001/index.html",
+        "status": "corrected_and_read_back_on_branch",
+        "source": "NEJM 2026; DOI10.1056/NEJMoa2609762; PMID43013837",
+        "details": "Corrected primary title/DOI/PMID, distinguished ESMO overall HR from NEJM piecewise HRs, corrected all-cause vs treatment-related grade≥3 AE definitions, added 24m DMFS chart and NNT13, corrected RFS data-benefit from11.11 to12.2 percentage points, and structured both NNTs."
+      }
+    ]
   },
   "nccn": {
     "ledger_records": 8,
@@ -116,8 +125,8 @@
     "follow_up": "Open — do not infer section/reference/category"
   },
   "candidate_screening": {
-    "screened": 65,
-    "duplicates": 14,
+    "screened": 66,
+    "duplicates": 15,
     "new_unique": 51,
     "ready_for_page_build": 26,
     "carry_forward_ready": 2,
@@ -769,6 +778,15 @@
       "identity": "new_unique",
       "disposition": "deferred_negative",
       "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk."
+    },
+    {
+      "candidate": "INTerpath-001",
+      "doi": "10.1056/NEJMoa2609762",
+      "pmid": "43013837",
+      "registry_id": "NCT05933577",
+      "matched_existing": "interpath-001",
+      "identity": "same underlying study; existing canonical page",
+      "disposition": "duplicate excluded from new additions; existing page updated"
     }
   ],
   "ready_candidates": [
@@ -1708,8 +1726,8 @@
     }
   ],
   "duplicate_check_summary": {
-    "screened": 65,
-    "duplicates": 14,
+    "screened": 66,
+    "duplicates": 15,
     "new_unique": 51,
     "held": 13,
     "deferred_negative": 10,
@@ -1718,5 +1736,6 @@
     "release_ready_pages": 24,
     "release_hold_pages": 6,
     "uploaded": 0
-  }
+  },
+  "existing_pages_manually_reviewed": 9
 }
