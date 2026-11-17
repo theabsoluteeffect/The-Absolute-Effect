@@ -1236,7 +1236,11 @@
     "trial_of_day_status": "unchanged; GemX current, ACOSOG Z11102 previous; TroFuse-005 is a ToD candidate once published",
     "full_audit_status": "structural reconciliation complete; full clinical/manual audit incomplete",
     "working_branch_head_after_evening_evidence_commit": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
-    "validator_heading_compatibility_patch": "supports existing Study identity and design / Primary publications and authoritative sources headings"
+    "validator_heading_compatibility_patch": "supports existing Study identity and design / Primary publications and authoritative sources headings",
+    "working_branch_head_after_validator_patch": "42e0b468bad9ac553cedf607f1ea727b966fce64",
+    "cloudflare_branch_preview_status": "success",
+    "cloudflare_branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+    "cloudflare_production_status": "not verified — no merge"
   },
   "trials": [
     {

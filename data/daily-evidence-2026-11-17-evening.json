@@ -14,7 +14,8 @@
     "merged": false,
     "deployment_verified": false,
     "content_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
-    "report_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
+    "report_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
+    "validator_patch_commit_sha": "42e0b468bad9ac553cedf607f1ea727b966fce64"
   },
   "preflight": {
     "core_sources_retrieved": true,
@@ -1630,11 +1631,26 @@
     "staged_page_heading_convention_patch_staged": true,
     "branch_ci": "not run",
     "pr_checks": "not run — no PR",
-    "merge": "not performed"
+    "merge": "not performed",
+    "cloudflare_pages_branch_preview": {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/runs/134118115995",
+      "details_url": "https://dash.cloudflare.com/?to=/d496b5726cd3966de5a5d9ee72993e30/pages/view/theabsoluteeffect/5c76b54e-4ac3-47fc-8ff4-f7e2c88fb923",
+      "preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+      "checked_commit": "42e0b468bad9ac553cedf607f1ea727b966fce64"
+    },
+    "strict_release_validator": "not run — exact 30-page batch not yet constructed",
+    "outcome_visualization_audit": "not run — no PR"
   },
   "deployment": {
-    "status": "not deployed",
-    "cloudflare_production_verified": false
+    "status": "branch preview deployed successfully; production not deployed",
+    "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+    "branch_preview_check": "https://github.com/theabsoluteeffect/The-Absolute-Effect/runs/134118115995",
+    "production_verified": false,
+    "representative_pages_opened": false,
+    "preview_open_limitation": "Preview URL returned inaccessible through the available page-opening service; Cloudflare Pages check itself reports successful deployment."
   },
   "uploaded_cases": [],
   "staged_carry_forward": [

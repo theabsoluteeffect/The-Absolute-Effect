@@ -25,7 +25,10 @@
     "merge": null,
     "deployment": "not verified/not deployed",
     "content_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
-    "branch_head_before_validator_patch": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
+    "branch_head_before_validator_patch": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
+    "validator_patch_commit_sha": "42e0b468bad9ac553cedf607f1ea727b966fce64",
+    "cloudflare_branch_preview_status": "success",
+    "cloudflare_branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev"
   },
   "coverage": {
     "main_unique_studies": 437,
@@ -754,7 +757,20 @@
     "merge": "not performed",
     "deployment": "not verified",
     "validator_schema_compatibility_patch": "staged; preserves numeric new_trials_added_today and compares new_trials_added_today_names",
-    "heading_compatibility_patch": "staged; accepts existing canonical heading variants without weakening required sections"
+    "heading_compatibility_patch": "staged; accepts existing canonical heading variants without weakening required sections",
+    "cloudflare_pages_branch_preview": {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/runs/134118115995",
+      "details_url": "https://dash.cloudflare.com/?to=/d496b5726cd3966de5a5d9ee72993e30/pages/view/theabsoluteeffect/5c76b54e-4ac3-47fc-8ff4-f7e2c88fb923",
+      "preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+      "checked_commit": "42e0b468bad9ac553cedf607f1ea727b966fce64"
+    },
+    "strict_release_validator": "not run — exact 30-page batch not yet constructed",
+    "outcome_visualization_audit": "not run — no PR",
+    "preview_open_status": "Cloudflare check successful; representative preview pages could not be opened through available page-opening service",
+    "production_deployment": "not verified — branch unmerged"
   },
   "persistent_evidence_file": "data/daily-evidence-2026-11-17-evening.json",
   "next_actions": [
