@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-17",
+  "publicationDate": "2026-11-12",
+  "id": "panku-esophagus01",
+  "trial": "PANKU-Esophagus01",
+  "title": "Izalontamab brengitecan in recurrent or metastatic esophageal squamous cell carcinoma: the PANKU-Esophagus01 randomized clinical trial",
+  "journal": "JAMA",
+  "url": "https://doi.org/10.1001/jama.2026.20250",
+  "site": "Esophageal squamous cell carcinoma",
+  "discipline": "Medical Oncology",
+  "setting": "Post-first-line immunochemotherapy",
+  "population": "497 patients with recurrent/metastatic ESCC after first-line PD-1/platinum-based therapy.",
+  "treatment": "Izalontamab brengitecan 2.5 mg/kg IV on days 1 and 8 every 21 days.",
+  "comparator": "Physician-choice chemotherapy.",
+  "summary": "Phase III randomized evidence in post-immunochemotherapy ESCC: median OS 9.79 versus 7.20 months (HR 0.63) and median PFS 4.17 versus 1.97 months (HR 0.50). Grade ≥3 treatment-related adverse events were 85.1% versus 59.3%.",
+  "absoluteEffect": "NNT is not calculated from median OS/PFS or hazard ratios; no verified common fixed-time absolute survival rate is used.",
+  "clinicalInterpretation": "A recent positive phase III result relevant to sequencing after first-line immunochemotherapy. The high grade ≥3 toxicity rate, regional access and longer-term survival maturity remain important.",
+  "criticalReview": "The randomized design and dual time-to-event benefit are strengths. Interpret the large toxicity burden and do not convert median survival differences into NNT. NCCN reference/category not verified for this run.",
+  "sources": [
+    "https://doi.org/10.1001/jama.2026.20250",
+    "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+    "https://clinicaltrials.gov/study/NCT06304974"
+  ],
+  "registry": "NCT06304974",
+  "aliases": [
+    "PANKU-Esophagus01",
+    "izalontamab brengitecan ESCC"
+  ],
+  "archiveNote": "Eligible Trial of the Day: primary publication within the preceding month and absent from the Atlas roster/page/archive/previous ToD."
+}

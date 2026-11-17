@@ -1971,6 +1971,84 @@
       "verified": false,
       "created_on": "2026-11-17",
       "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "hold-hr20013-protect-2026-11-17",
+      "type": "primary_source_verification",
+      "trial_id": "hr20013-protect",
+      "page_path": null,
+      "severity": "high",
+      "status": "open",
+      "evidence": "JCO 2026 abstract DOI 10.1200/JCO.2026.44.16_suppl.11006; exact primary title and complete intervention/safety extraction not independently retrieved.",
+      "action": "Retrieve official ASCO/JCO abstract and protocol; verify dose, population, primary endpoint, denominators and grade 3–5 toxicity before page creation.",
+      "verification": "pending",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
+    },
+    {
+      "id": "hold-dex-oinv-2026-11-17",
+      "type": "primary_source_verification",
+      "trial_id": "dex-oinv",
+      "page_path": null,
+      "severity": "medium",
+      "status": "open",
+      "evidence": "Primary DOI 10.1007/s00520-026-11459-3; dose escalation and arm-specific toxicity require supplement verification.",
+      "action": "Retrieve full supplement and verify exact dose/schedule, denominators, endpoint definition and grade 3–5 safety.",
+      "verification": "pending",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
+    },
+    {
+      "id": "hold-oral-paclitaxel-2026-11-17",
+      "type": "study_identity",
+      "trial_id": "oral-paclitaxel-solution",
+      "page_path": null,
+      "severity": "high",
+      "status": "open",
+      "evidence": "DOI 10.1016/j.esmoop.2026.108312 and PMID 42617423; registry identity and protocol arms not independently reconciled.",
+      "action": "Verify trial registry and canonical underlying study identity; then extract complete primary results and dosing.",
+      "verification": "pending",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
+    },
+    {
+      "id": "hold-enable-preprint-2026-11-17",
+      "type": "publication_status",
+      "trial_id": "enable-digital-epro",
+      "page_path": null,
+      "severity": "medium",
+      "status": "open",
+      "evidence": "DOI 10.2196/95155; available record did not establish peer-reviewed primary publication status.",
+      "action": "Locate peer-reviewed primary article or authoritative conference report; do not publish based on preprint alone.",
+      "verification": "pending",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
+    },
+    {
+      "id": "local-release-validator-network-2026-11-17",
+      "type": "release_validation",
+      "trial_id": null,
+      "page_path": null,
+      "severity": "critical",
+      "status": "open",
+      "evidence": "Container network cannot resolve github.com; official scripts/validate-trial-release.js could not be executed locally.",
+      "action": "Run the official validator in a network-enabled local environment; do not open PR until it passes.",
+      "verification": "blocked_environment",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
+    },
+    {
+      "id": "browser-preview-qa-2026-11-17",
+      "type": "visualization_rendering",
+      "trial_id": null,
+      "page_path": null,
+      "severity": "high",
+      "status": "open",
+      "evidence": "Static HTML chart structures are present; browser-rendered branch preview was not independently opened.",
+      "action": "Open the deployed branch preview and inspect every new outcome chart and NNT/NNH pictogram before PR.",
+      "verification": "pending",
+      "created_at": "2026-11-17T20:00:32+05:30",
+      "updated_at": "2026-11-17T20:00:32+05:30"
     }
   ],
   "resolved_items": [
@@ -2376,7 +2454,7 @@
     "active_branch_index_unique_paths_after": 432,
     "active_branch_raw_href_refs_after": 472
   },
-  "last_updated": "2026-11-17T19:30:04+05:30",
+  "last_updated": "2026-11-17T20:00:32+05:30",
   "last_run": {
     "run_id": "2026-11-17-evening",
     "date": "2026-11-17",
@@ -2390,5 +2468,11 @@
     "full_manual_audit_complete": false,
     "status": "INCOMPLETE",
     "commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
+  },
+  "generated_at": "2026-11-17T20:00:32+05:30",
+  "summary": {
+    "open_items": 140,
+    "resolved_items": 18,
+    "note": "No full canonical-page audit closure claimed; six new source/release/preview follow-ups added on 17 November."
   }
 }
