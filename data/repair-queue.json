@@ -2137,6 +2137,8 @@
     "remaining_to_target": 28,
     "status": "INCOMPLETE — no PR or merge; exact-30 and full QA gates not met",
     "source_audit_stale": true,
-    "next_action": "Complete held primary-source checks and continue multi-site discovery; do not open PR until 30 unique pages pass all checks."
+    "next_action": "Complete held primary-source checks and continue multi-site discovery; do not open PR until 30 unique pages pass all checks.",
+    "report_commit_sha": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
+    "branch_head_at_report_creation": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41"
   }
 }
