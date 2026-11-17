@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T19:30:04+05:30",
   "cycle": "evening",
   "status": "INCOMPLETE",
-  "headline": "61 candidates screened; 14 duplicates excluded; 28 new unique candidates ready for page construction; 9 held; 8 deferred negative/contrary; 2 rejected; 0 uploaded.",
+  "headline": "61 candidates screened; 28 new unique candidates ready for page construction (2 short of the evening target); 14 duplicates excluded; 9 held; 8 deferred negative/contrary; 2 rejected; 0 uploaded.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -13,7 +13,14 @@
     "carry_forward_staged": 2,
     "new_candidates_ready": 28,
     "pages_staged": 2,
-    "pages_to_build": 28
+    "pages_to_build": 28,
+    "evening_target": 30,
+    "evening_new_unique_candidates_ready": 28,
+    "evening_target_shortfall": 2,
+    "carry_forward_pages_from_previous_run": 2,
+    "carry_forward_counted_as_new_this_evening": false,
+    "combined_unmerged_batch_pool": 30,
+    "target_met": false
   },
   "repository": {
     "full_name": "theabsoluteeffect/The-Absolute-Effect",
@@ -86,7 +93,10 @@
     "held": 9,
     "deferred_negative": 8,
     "rejected": 2,
-    "uploaded": 0
+    "uploaded": 0,
+    "evening_target_shortfall": 2,
+    "carry_forward_not_counted_as_new_this_evening": 2,
+    "target_met": false
   },
   "duplicate_check": [
     {
@@ -784,5 +794,6 @@
     "Run strict release validation and the outcome visualization audit; open a PR only when the exact 30-page batch is complete.",
     "Wait for all PR checks; merge only after every check passes; verify main and Cloudflare production deployment.",
     "Continue full manual clinical and guideline-freshness audit."
-  ]
+  ],
+  "batch_selection_note": "The 30-study combined unmerged batch pool consists of 2 carry-forward pages from the previous run plus 28 new unique candidates identified this evening. The evening run itself is 2 short of the 30-new-study target."
 }

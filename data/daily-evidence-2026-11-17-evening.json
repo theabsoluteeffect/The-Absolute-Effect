@@ -3,7 +3,7 @@
   "run_id": "2026-11-17-evening",
   "run_timestamp": "2026-11-17T19:30:04+05:30",
   "cycle": "evening",
-  "status": "INCOMPLETE — research completed and persisted; no PM branch opened because active AM batch remains unmerged",
+  "status": "INCOMPLETE — 28 new unique candidates ready this evening (2 short of target); 2 prior-run pages carried forward; 0 uploaded.",
   "repository": {
     "full_name": "theabsoluteeffect/The-Absolute-Effect",
     "branch": "atlas-batch/2026-11-17-am",
@@ -1531,7 +1531,9 @@
         "underlying_study": "same",
         "disposition": "duplicate excluded"
       }
-    ]
+    ],
+    "evening_target_shortfall": 2,
+    "carry_forward_not_counted_as_new_this_evening": 2
   },
   "batch": {
     "target": 30,
@@ -1563,7 +1565,14 @@
     "uploaded": 0,
     "not_uploaded": 30,
     "pr_opened": false,
-    "reason": "30-study selection identified (2 carry-forward plus 28 new unique candidates); 28 page files and complete release metadata are not yet staged."
+    "reason": "30-study selection identified (2 carry-forward plus 28 new unique candidates); 28 page files and complete release metadata are not yet staged.",
+    "evening_target": 30,
+    "evening_new_unique_candidates_ready": 28,
+    "evening_target_shortfall": 2,
+    "carry_forward_pages_from_previous_run": 2,
+    "carry_forward_counted_as_new_this_evening": false,
+    "combined_unmerged_batch_pool": 30,
+    "selection_note": "The combined unmerged batch pool is 30 studies (2 carry-forward from the previous run + 28 new candidates from this evening). The evening run itself has only 28 new unique candidates ready for page construction, so it is 2 short of the 30-new-study per-run target."
   },
   "nccn": {
     "guideline_records_in_ledger": 8,

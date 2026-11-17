@@ -1195,8 +1195,11 @@
       "published_this_run": 0,
       "pr_opened": false,
       "merged": false,
-      "status": "30-study selection identified (2 carry-forward staged + 28 ready for page construction); 28 page files not yet staged; release gate not met.",
-      "next_action": "Build 28 canonical pages; verify DOI/title via Crossref; run release validator and visualization audit; PR only after all 30 pages pass."
+      "status": "INCOMPLETE — combined unmerged pool is 30 (2 prior-run carry-forward + 28 new this evening); evening new-study target is 2 short; only 2 page files staged and 28 page files still to build.",
+      "next_action": "Build 28 canonical pages; verify DOI/title via Crossref; run release validator and visualization audit; PR only after all 30 pages pass.",
+      "additional_unique_studies_needed": 2,
+      "evening_target_met": false,
+      "carry_forward_not_counted_as_new_this_evening": true
     },
     "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "working_branch": "atlas-batch/2026-11-17-am",
@@ -1230,7 +1233,9 @@
       "held": 9,
       "deferred_negative": 8,
       "rejected": 2,
-      "uploaded": 0
+      "uploaded": 0,
+      "evening_target_shortfall": 2,
+      "carry_forward_not_counted_as_new_this_evening": 2
     },
     "release_validation_status": "not run — local clone unavailable; validator schema compatibility patch staged; PR CI not run",
     "trial_of_day_status": "unchanged; GemX current, ACOSOG Z11102 previous; TroFuse-005 is a ToD candidate once published",
