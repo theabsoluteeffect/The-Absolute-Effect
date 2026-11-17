@@ -59,7 +59,7 @@
         "setting": "Recurrent/metastatic after platinum",
         "phase": "Phase III randomized",
         "primary_title": "Sacituzumab tirumotecan versus treatment of physician's choice in previously treated endometrial cancer (TroFuse-005/ENGOT-en23/GOG-3095): a randomised, open-label, phase 3 trial",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary Lancet phase III report; PFS/OS and safety extracted",
@@ -69,7 +69,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42933460/",
           "https://clinicaltrials.gov/study/NCT06132958"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "trofuse-005"
       },
       {
         "trial": "PANKU-Breast01",
@@ -79,8 +80,8 @@
         "site": "Breast cancer",
         "setting": "Advanced/metastatic HR+/HER2−",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Izalontamab brengitecan versus chemotherapy in previously treated hormone receptor-positive, HER2-negative advanced breast cancer: a randomised, open-label, phase 3 trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary Lancet phase III report identified; exact title normalization and complete safety table to be checked",
@@ -90,7 +91,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42933459/",
           "https://clinicaltrials.gov/study/NCT06343948"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "panku-breast01"
       },
       {
         "trial": "I-SPY2.2 — rilvegostomig plus T-DXd",
@@ -101,7 +103,7 @@
         "setting": "Neoadjuvant/high-risk early",
         "phase": "Phase II adaptive platform",
         "primary_title": "Rilvegostomig Plus Trastuzumab-Deruxtecan for Early-Stage Breast Cancer: The I-SPY2.2 Randomized Clinical Trial",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary JAMA Oncology report; preserve platform/cohort identity",
@@ -111,7 +113,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42911610/",
           "https://clinicaltrials.gov/study/NCT01042379"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "i-spy2-2"
       },
       {
         "trial": "ACT-GI",
@@ -122,7 +125,7 @@
         "setting": "Supportive care — persistent CIT",
         "phase": "Phase II randomized placebo-controlled",
         "primary_title": "Avatrombopag Versus Placebo for Persistent Chemotherapy-Induced Thrombocytopenia in GI Cancers: The Phase II ACT-GI Trial",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Avatrombopag vs placebo; composite response70% vs17%; NNT2",
@@ -132,7 +135,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42441933/",
           "https://clinicaltrials.gov/study/NCT05772546"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "act-gi"
       },
       {
         "trial": "Perioperative ivonescimab in resectable NSCLC",
@@ -142,17 +146,19 @@
         "site": "NSCLC",
         "setting": "Neoadjuvant/perioperative",
         "phase": "Phase II",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Perioperative Ivonescimab Plus Chemotherapy in Resectable Non-Small-Cell Lung Cancer: A Phase 2 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary Nature Medicine report and registry; MPR/pCR/R0 and safety identified",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1038/s41591-026-04745-4",
+          "https://pubmed.ncbi.nlm.nih.gov/42982996/",
           "https://clinicaltrials.gov/study/NCT05247684"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "ivonescimab-perioperative"
       },
       {
         "trial": "Toripalimab plus mFOLFIRINOX",
@@ -162,8 +168,8 @@
         "site": "Pancreatic cancer",
         "setting": "Borderline-resectable/locally advanced",
         "phase": "Randomized phase II",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Neoadjuvant Toripalimab Plus Modified FOLFIRINOX for Borderline-Resectable and Locally Advanced Pancreatic Cancer: A Randomized Phase II Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary JCO report and registry; EFS11.1 vs9.6 months, HR0.74, P=.007",
@@ -173,7 +179,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42970668/",
           "https://clinicaltrials.gov/study/NCT03983057"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "toripalimab-mfolfirinox"
       },
       {
         "trial": "GIMEMA ALL2820",
@@ -183,8 +190,8 @@
         "site": "Ph+ acute lymphoblastic leukemia",
         "setting": "Newly diagnosed",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Ponatinib and Blinatumomab for Newly Diagnosed Philadelphia Chromosome–Positive Acute Lymphoblastic Leukemia",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Ponatinib/blinatumomab vs imatinib/chemotherapy; 24-month EFS86% vs67%",
@@ -194,7 +201,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42874102/",
           "https://clinicaltrials.gov/study/NCT04722848"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "gimema-all2820"
       },
       {
         "trial": "Felzartamab plus Rd",
@@ -205,7 +213,7 @@
         "setting": "Relapsed/refractory",
         "phase": "Phase III randomized",
         "primary_title": "Felzartamab plus lenalidomide-dexamethasone versus lenalidomide-dexamethasone for relapsed or refractory multiple myeloma: an open-label, parallel-controlled, randomised, phase 3 trial",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary Lancet Haematology report; median PFS18.9 vs10.4 months, HR0.62",
@@ -215,7 +223,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42822478/",
           "https://clinicaltrials.gov/study/NCT03952091"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "felzartamab-rd"
       },
       {
         "trial": "ZSAB-neoGOLP",
@@ -226,7 +235,7 @@
         "setting": "Neoadjuvant/resectable high-risk",
         "phase": "Randomized phase II",
         "primary_title": "Neoadjuvant GOLP in Resectable High-Risk Intrahepatic Cholangiocarcinoma",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "EFS18.0 vs8.7 months; OS signal did not cross prespecified alpha",
@@ -236,7 +245,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/41780001/",
           "https://clinicaltrials.gov/study/NCT04669496"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "zsab-neogolp"
       },
       {
         "trial": "NEONIPIGA / GERCOR",
@@ -246,8 +256,8 @@
         "site": "Gastric/GEJ adenocarcinoma",
         "setting": "Localized dMMR/MSI-H; neoadjuvant/adjuvant",
         "phase": "Phase II single-arm",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Neoadjuvant Nivolumab Plus Ipilimumab and Adjuvant Nivolumab in Localized dMMR/MSI-H Gastric or Gastroesophageal Junction Adenocarcinoma: The GERCOR NEONIPIGA Phase II Study",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "17/29 pCR (58.6%); single-arm; follow-up publication attached",
@@ -257,7 +267,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/35969830/",
           "https://clinicaltrials.gov/study/NCT04006262"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "neonipiga"
       },
       {
         "trial": "Trastuzumab botidotin vs T-DM1",
@@ -268,7 +279,7 @@
         "setting": "Advanced/metastatic",
         "phase": "Phase III randomized",
         "primary_title": "Trastuzumab Botidotin Versus Trastuzumab Emtansine in Human Epidermal Growth Factor Receptor 2-Positive Advanced Breast Cancer: A Phase III, Open-Label, Randomized Controlled Trial",
-        "primary_title_verification": "PubMed/publisher title retrieved; Crossref exact-title check remains mandatory",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "4.8 mg/kg q3w vs T-DM1 3.6 mg/kg q3w; PFS11.1 vs4.4, HR0.39",
@@ -278,7 +289,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42727044/",
           "https://clinicaltrials.gov/study/NCT06968585"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "trastuzumab-botidotin"
       },
       {
         "trial": "PRO-B",
@@ -288,17 +300,19 @@
         "site": "Mixed advanced solid tumours",
         "setting": "Supportive care — symptom monitoring",
         "phase": "Randomized clinical trial",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Electronic Patient-Reported Outcome Monitoring in Patients With Advanced Cancer: A Randomized Clinical Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "909 randomized; digital ePRO/triage; continuous PRO outcomes; no NNT",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1001/jamaoncol.2026.2661",
-          "https://pubmed.ncbi.nlm.nih.gov/42560727/"
+          "https://pubmed.ncbi.nlm.nih.gov/42560727/",
+          "https://drks.de/search/en/trial/DRKS00024015"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "pro-b"
       },
       {
         "trial": "HR20013 / PROTECT",
@@ -350,8 +364,8 @@
         "site": "HPV16+ HNSCC",
         "setting": "Recurrent/metastatic",
         "phase": "Phase II single-arm",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Therapeutic HPV16 Vaccination Plus Pembrolizumab for Recurrent or Metastatic HPV16-Positive Head and Neck Squamous Cell Carcinoma: A Phase 2 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Separate ICI-naive/resistant cohorts; single-arm; no comparative NNT",
@@ -361,7 +375,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42752531/",
           "https://clinicaltrials.gov/study/NCT04260126"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "pds0101-pembrolizumab"
       },
       {
         "trial": "Disitamab vedotin plus tislelizumab",
@@ -371,17 +386,19 @@
         "site": "Bladder cancer",
         "setting": "High-risk BCG-unresponsive NMIBC",
         "phase": "Phase II",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Disitamab Vedotin Plus Tislelizumab in BCG-Unresponsive Non–Muscle-Invasive Bladder Cancer: A Phase 2 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "CR19/26 (73.1%) in efficacy-evaluable population; single-arm",
         "matched_existing": null,
         "source_urls": [
           "https://doi.org/10.1001/jamaoncol.2026.3909",
+          "https://pubmed.ncbi.nlm.nih.gov/42848391/",
           "https://clinicaltrials.gov/study/NCT05495724"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "disitamab-tislelizumab"
       },
       {
         "trial": "OPTICAL-2",
@@ -391,8 +408,8 @@
         "site": "Colorectal cancer",
         "setting": "Neoadjuvant locally advanced",
         "phase": "Randomized phase II",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Cadonilimab Plus Neoadjuvant Chemotherapy in Locally Advanced Rectal Cancer: The OPTICAL-2 Randomized Phase 2 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "pCR26.8% vs9.8%; NNT6 at surgery",
@@ -402,7 +419,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42134324/",
           "https://clinicaltrials.gov/study/NCT05571644"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "optical-2"
       },
       {
         "trial": "LITESPARK-011",
@@ -412,8 +430,8 @@
         "site": "Renal cell carcinoma",
         "setting": "Post-ICI advanced/metastatic",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Belzutifan Plus Lenvatinib Versus Cabozantinib After Immune Checkpoint Inhibitor Therapy in Advanced Clear-Cell Renal Cell Carcinoma: The Phase 3 LITESPARK-011 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "PFS HR0.74; OS HR0.85 did not cross prespecified alpha; no NNT from HR/medians",
@@ -423,7 +441,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42927855/",
           "https://clinicaltrials.gov/study/NCT04586231"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "litespark-011"
       },
       {
         "trial": "KEYNOTE-B49",
@@ -433,8 +452,8 @@
         "site": "HR+/HER2− breast cancer",
         "setting": "Advanced/metastatic after endocrine therapy",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Pembrolizumab Plus Chemotherapy for Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer: The Phase 3 KEYNOTE-B49 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "PFS HR0.74 P=.0089; OS HR1.04 P=.6185",
@@ -444,7 +463,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42926111/",
           "https://clinicaltrials.gov/study/NCT04895358"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "keynote-b49"
       },
       {
         "trial": "ARTEMIS-011",
@@ -454,8 +474,8 @@
         "site": "Osteosarcoma",
         "setting": "Relapsed/refractory",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Cabozantinib Versus Gemcitabine and Docetaxel in Relapsed or Refractory Osteosarcoma: A Randomized Phase 3 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "PFS5.5 vs1.4 months, HR0.33; OS immature",
@@ -465,7 +485,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42933637/",
           "https://clinicaltrials.gov/study/NCT06935409"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "artemis-011"
       },
       {
         "trial": "RINGSIDE",
@@ -475,8 +496,8 @@
         "site": "Desmoid-type fibromatosis",
         "setting": "Progressive",
         "phase": "Randomized phase II dose-finding",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Phase II Study of Varegacestat for Treatment of Desmoid Tumors: A Randomized Dose-Finding Clinical Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "42 participants; varegacestat dose cohorts; no grade4/5 events reported",
@@ -486,7 +507,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42848980/",
           "https://clinicaltrials.gov/study/NCT04871282"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "ringside"
       },
       {
         "trial": "TRANSFORM-1",
@@ -496,8 +518,8 @@
         "site": "Myelofibrosis",
         "setting": "First-line/JAK-inhibitor-naive",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Navitoclax Plus Ruxolitinib in Patients With Myelofibrosis: The Phase 3 TRANSFORM-1 Study",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "SVR35 week24 63.2% vs31.5%, NNT4 for surrogate; TSS not improved",
@@ -507,7 +529,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42378247/",
           "https://clinicaltrials.gov/study/NCT04472598"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "transform-1"
       },
       {
         "trial": "UNION",
@@ -517,8 +540,8 @@
         "site": "Rectal cancer",
         "setting": "Locally advanced/neoadjuvant",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Short-Course Radiotherapy and Neoadjuvant Camrelizumab Plus Chemotherapy for Locally Advanced Rectal Cancer: The Phase 3 UNION Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "pCR39.8% vs15.3%, NNT5; 3-year EFS91.3% vs77.4%, NNT8",
@@ -528,7 +551,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42927765/",
           "https://clinicaltrials.gov/study/NCT04928807"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "union"
       },
       {
         "trial": "FIT4TREAT",
@@ -538,8 +562,8 @@
         "site": "Head and neck cancer",
         "setting": "Prehabilitation during curative treatment",
         "phase": "Randomized phase II",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Exercise-Based Prehabilitation During Chemoradiotherapy for Head and Neck Cancer: The FIT4TREAT Randomized Phase 2 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "47 enrolled,40 analysed; 6MWD difference28.6m; no NNT for continuous endpoint",
@@ -549,7 +573,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42673774/",
           "https://clinicaltrials.gov/study/NCT05418842"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "fit4treat"
       },
       {
         "trial": "MonumenTAL-3",
@@ -559,8 +584,8 @@
         "site": "Multiple myeloma",
         "setting": "Relapsed/refractory",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Talquetamab–Daratumumab in Relapsed or Refractory Myeloma",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "24-month PFS81.3% vs51.2%, NNT4; CRS/infection and treatment burden",
@@ -570,7 +595,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42294841/",
           "https://clinicaltrials.gov/study/NCT05455320"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "monumental-3"
       },
       {
         "trial": "Oral paclitaxel solution",
@@ -601,8 +627,8 @@
         "site": "Ovarian/fallopian tube/primary peritoneal cancer",
         "setting": "First-line advanced BRCA-non-mutated epithelial disease",
         "phase": "Phase III randomized",
-        "primary_title": null,
-        "primary_title_verification": "Primary DOI/record identified; exact Crossref title check pending",
+        "primary_title": "Chemotherapy With or Without Pembrolizumab Followed by Maintenance Pembrolizumab With or Without Olaparib as First-Line Treatment of Patients With Advanced BRCA Non-Mutated Epithelial Ovarian Cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): A Randomised, Double-Blind, Placebo-Controlled, Phase 3 Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Three-arm design; preserve maintenance arms and distinguish primary/follow-up analyses",
@@ -612,7 +638,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42705254/",
           "https://clinicaltrials.gov/study/NCT03740165"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "keylynk-001"
       },
       {
         "trial": "ENABLE digital ePRO monitoring",
@@ -1290,8 +1317,8 @@
         "site": "Esophageal squamous cell carcinoma",
         "setting": "Recurrent/metastatic after first-line immunochemotherapy",
         "phase": "Phase III randomized",
-        "primary_title": "Izalontamab brengitecan in recurrent or metastatic esophageal squamous cell carcinoma: the PANKU-Esophagus01 randomized clinical trial",
-        "primary_title_verification": "PubMed/publisher title matched to DOI on 2026-11-17",
+        "primary_title": "Izalontamab Brengitecan in Recurrent or Metastatic Esophageal Squamous Cell Carcinoma: The PANKU-Esophagus01 Randomized Clinical Trial",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary JAMA phase III report; OS/PFS and grade ≥3 toxicity extracted",
@@ -1301,7 +1328,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/43018949/",
           "https://clinicaltrials.gov/study/NCT06304974"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "panku-esophagus01"
       },
       {
         "trial": "PANKU-Lung01",
@@ -1312,7 +1340,7 @@
         "setting": "Post-third-generation EGFR-TKI",
         "phase": "Phase III randomized",
         "primary_title": "Izalontamab Brengitecan in Previously Treated EGFR-Mutated Advanced Non-Small-Cell Lung Cancer: A Randomized Phase 3 Trial",
-        "primary_title_verification": "PubMed/publisher title matched to DOI on 2026-11-17",
+        "primary_title_verification": "PubMed/publisher title matched to DOI record during 17 November source review; official release validator still pending.",
         "identity": "new_unique",
         "disposition": "ready_for_page_build",
         "reason": "Primary Lancet phase III report; PFS and grade ≥3 toxicity extracted",
@@ -1322,7 +1350,8 @@
           "https://pubmed.ncbi.nlm.nih.gov/42933461/",
           "https://clinicaltrials.gov/study/NCT06382116"
         ],
-        "screened_on": "2026-11-17"
+        "screened_on": "2026-11-17",
+        "page_id": "panku-lung01"
       }
     ],
     "source_passes": [
@@ -1578,14 +1607,14 @@
         "disposition": "duplicate excluded"
       }
     ],
-    "evening_target_shortfall": 2,
-    "carry_forward_not_counted_as_new_this_evening": 2,
+    "evening_target_shortfall": 0,
+    "carry_forward_not_counted_as_new_this_evening": 0,
     "carry_forward_ready": 2,
     "current_screen_ready": 26,
     "target": 30,
     "batch_ready_including_carry_forward": 30,
     "target_shortfall": 0,
-    "note": "26 ready candidates from the current 63-candidate screen plus 2 fully verified carry-forward page candidates (CAPITAL and BCTOP); 2 additional pages (DeLLphi-305 and HARMONi-A) were already staged from the prior run. Four previously ready candidates were moved to hold after independent source review."
+    "note": "26 current-screen candidates plus 2 verified carry-forward candidates (CAPITAL, BCTOP) and 2 staged carry-forward pages (DeLLphi-305, HARMONi-A) form a 30-study unique batch. No candidate is counted as uploaded until main merge is verified."
   },
   "batch": {
     "target": 30,
@@ -3694,5 +3723,7 @@
       "disposition": "staged_not_published"
     }
   ],
-  "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred"
+  "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred",
+  "page_commit_sha": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
+  "branch_head_after": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d"
 }

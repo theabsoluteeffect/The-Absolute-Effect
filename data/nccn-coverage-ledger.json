@@ -746,6 +746,28 @@
       "reference_number": null,
       "recommendation_category": null,
       "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "dellphi-305",
+      "site": "Small-cell lung cancer",
+      "status": "not verified — exact NCCN reference inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Map exact current NCCN citation only when official reference list is accessible."
+    },
+    {
+      "trial_id": "harmoni-a",
+      "site": "EGFR-mutated NSCLC",
+      "status": "not verified — exact NCCN reference inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Map exact current NCCN citation only when official reference list is accessible."
     }
   ]
 }
