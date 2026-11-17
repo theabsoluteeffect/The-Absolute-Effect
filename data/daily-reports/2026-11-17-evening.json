@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "63 candidates screened; 49 new unique candidates. Thirty unique trial pages are staged and reconciled; all 30 have been re-read and structurally checked. 21 are release-ready subject to official validation; 9 remain held for exact protocol/supplement details. Zero uploaded to main.",
+  "headline": "63 candidates screened; 49 new unique candidates. Thirty pages staged and structurally reconciled; 21 release-ready subject to official validation, 9 held for exact protocol/supplement detail. Zero uploaded to main.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1634,14 +1634,14 @@
       "trial_id": "keynote-b49",
       "path": "trial-pages/keynote-b49/index.html",
       "status": "held",
-      "reason": "Investigator-choice chemotherapy component/dose distribution and full grade 3–5 safety/QoL table require primary supplement extraction.",
+      "reason": "Exact investigator-choice chemotherapy distribution/doses and complete safety tables require Annals Oncology protocol/supplement.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     },
     {
       "trial_id": "gimema-all2820",
       "path": "trial-pages/gimema-all2820/index.html",
       "status": "held",
-      "reason": "Full grade 3–5 safety table, arterial/venous vascular events and treatment discontinuations require primary supplement extraction.",
+      "reason": "Exact NEJM protocol dosing and complete grade 3–5 safety table require supplementary appendix; NEJM supplement inaccessible in this run.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     },
     {
