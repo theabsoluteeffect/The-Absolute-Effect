@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "66 candidates screened; 51 new unique candidates. INTerpath-001 was matched to its existing canonical page and updated with the 11 November NEJM report. Thirty new trial pages remain staged; 24 release-ready subject to official validation and 6 held. Zero uploaded to main.",
+  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -127,13 +127,13 @@
     "follow_up": "Open — do not infer section/reference/category"
   },
   "candidate_screening": {
-    "screened": 66,
+    "screened": 71,
     "duplicates": 15,
-    "new_unique": 51,
+    "new_unique": 56,
     "ready_for_page_build": 26,
     "carry_forward_ready": 2,
-    "held": 13,
-    "deferred_negative": 10,
+    "held": 17,
+    "deferred_negative": 11,
     "rejected": 2,
     "uploaded": 0,
     "batch_ready_including_two_staged_carry_forward": 30,
@@ -789,6 +789,56 @@
       "matched_existing": "interpath-001",
       "identity": "same underlying study; existing canonical page",
       "disposition": "duplicate excluded from new additions; existing page updated"
+    },
+    {
+      "candidate": "SAFFRON",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT05261399",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held",
+      "reason": "ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification."
+    },
+    {
+      "candidate": "CLARITY-Gastric01",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06346392",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete."
+    },
+    {
+      "candidate": "HARMONi-GI1",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06591520",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; complete primary safety supplement and exact chemotherapy doses require verification."
+    },
+    {
+      "candidate": "DASL-HiCaP (ANZUP1801)",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT04136353",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed."
+    },
+    {
+      "candidate": "MOIO",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT05078047",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "deferred_negative",
+      "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page."
     }
   ],
   "ready_candidates": [
@@ -1427,6 +1477,38 @@
       "trial": "ENABLE digital ePRO monitoring",
       "disposition": "held",
       "reason": "Held: DOI 10.2196/95155 resolves to a preprint/record whose peer-reviewed primary status was not established; do not treat preprint as a peer-reviewed primary report."
+    },
+    {
+      "trial": "SAFFRON",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT05261399",
+      "reason": "ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification.",
+      "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
+    },
+    {
+      "trial": "CLARITY-Gastric01",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06346392",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete.",
+      "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
+    },
+    {
+      "trial": "HARMONi-GI1",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06591520",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; complete primary safety supplement and exact chemotherapy doses require verification.",
+      "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
+    },
+    {
+      "trial": "DASL-HiCaP (ANZUP1801)",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT04136353",
+      "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed.",
+      "next_action": "Retrieve exact ESMO abstract DOI/title and full primary source; verify arm denominators, regimen doses and complete grade3–5 safety before page creation."
     }
   ],
   "deferred_negative": [
@@ -1508,6 +1590,17 @@
         "https://doi.org/10.1200/JCO-26-00201",
         "https://pubmed.ncbi.nlm.nih.gov/42842849/",
         "https://clinicaltrials.gov/study/NCT02364557"
+      ]
+    },
+    {
+      "trial": "MOIO",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT05078047",
+      "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page.",
+      "source_urls": [
+        "https://kolpulse.com/kol-pulse-trial-profile-moio",
+        "https://clinicaltrials.gov/study/NCT05078047"
       ]
     }
   ],
@@ -1736,11 +1829,11 @@
     }
   ],
   "duplicate_check_summary": {
-    "screened": 66,
+    "screened": 71,
     "duplicates": 15,
-    "new_unique": 51,
-    "held": 13,
-    "deferred_negative": 10,
+    "new_unique": 56,
+    "held": 17,
+    "deferred_negative": 11,
     "rejected": 2,
     "staged_pages": 30,
     "release_ready_pages": 24,

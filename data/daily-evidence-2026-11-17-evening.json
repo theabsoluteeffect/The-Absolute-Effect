@@ -41,12 +41,12 @@
     "trial_of_day_changed": false
   },
   "candidate_screening": {
-    "screened": 66,
+    "screened": 71,
     "duplicates": 15,
-    "new_unique": 51,
+    "new_unique": 56,
     "ready_for_page_build": 26,
-    "held": 13,
-    "deferred_negative": 10,
+    "held": 17,
+    "deferred_negative": 11,
     "rejected": 2,
     "uploaded": 0,
     "candidates": [
@@ -1496,6 +1496,91 @@
         "disposition": "duplicate_excluded",
         "final_disposition": "duplicate",
         "reason": "Same underlying study; existing canonical page updated with primary NEJM publication, not added as a new trial."
+      },
+      {
+        "trial": "SAFFRON",
+        "trial_id": "saffron",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT05261399",
+        "conference": "ESMO 2026 LBA6",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "held",
+        "final_disposition": "held",
+        "reason": "ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification.",
+        "source_urls": [
+          "https://www.emjreviews.com/oncology/news/targeted-combination-improves-lung-cancer-survival-esmo-2026/",
+          "https://clinicaltrials.gov/study/NCT05261399"
+        ]
+      },
+      {
+        "trial": "CLARITY-Gastric01",
+        "trial_id": "clarity-gastric01",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT06346392",
+        "conference": "ESMO 2026 LBA7",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "held",
+        "final_disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete.",
+        "source_urls": [
+          "https://www.astrazeneca.com/media-centre/press-releases/2026/sonesitatug-vedotin-reduced-the-risk-of-death-by-42-pct-in-2nd-and-later-line-cldn182-positive-advanced-gastricgej-cancers-in-clarity-gastric01.html",
+          "https://clinicaltrials.gov/study/NCT06346392"
+        ]
+      },
+      {
+        "trial": "HARMONi-GI1",
+        "trial_id": "harmoni-gi1",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT06591520",
+        "conference": "ESMO 2026 LBA8",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "held",
+        "final_disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; complete primary safety supplement and exact chemotherapy doses require verification.",
+        "source_urls": [
+          "https://kolpulse.com/kol-pulse-trial-profile-harmonigi1",
+          "https://clinicaltrials.gov/study/NCT06591520"
+        ]
+      },
+      {
+        "trial": "DASL-HiCaP (ANZUP1801)",
+        "trial_id": "dasl-hicap",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT04136353",
+        "conference": "ESMO 2026 LBA4",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "held",
+        "final_disposition": "held",
+        "reason": "Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed.",
+        "source_urls": [
+          "https://www.bayer.com/media/en-us/darolutamide-plus-adt-and-radiation-therapy-reduces-risk-of-metastasis-or-death-by-58-in-prostate-cancer-patients-at-high-risk-of-recurrence/",
+          "https://clinicaltrials.gov/study/NCT04136353"
+        ]
+      },
+      {
+        "trial": "MOIO",
+        "trial_id": "moio",
+        "doi": null,
+        "pmid": null,
+        "registry_id": "NCT05078047",
+        "conference": "ESMO 2026 LBA10",
+        "identity": "new_unique",
+        "matched_existing": null,
+        "disposition": "deferred_negative",
+        "final_disposition": "held",
+        "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page.",
+        "source_urls": [
+          "https://kolpulse.com/kol-pulse-trial-profile-moio",
+          "https://clinicaltrials.gov/study/NCT05078047"
+        ]
       }
     ],
     "source_passes": [
@@ -1759,7 +1844,7 @@
     "batch_ready_including_carry_forward": 30,
     "target_shortfall": 0,
     "note": "26 current-screen candidates plus 2 verified carry-forward candidates (CAPITAL, BCTOP) and 2 staged carry-forward pages (DeLLphi-305, HARMONi-A) form a 30-study unique batch. No candidate is counted as uploaded until main merge is verified.",
-    "candidates_count": 65
+    "candidates_count": 71
   },
   "batch": {
     "target": 30,
@@ -2845,6 +2930,13 @@
       "pmid": "42842849",
       "registry_id": "NCT02364557",
       "reason": "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only.",
+      "disposition": "deferred_negative"
+    },
+    {
+      "trial": "MOIO",
+      "registry_id": "NCT05078047",
+      "conference": "ESMO 2026 LBA10",
+      "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page.",
       "disposition": "deferred_negative"
     }
   ],

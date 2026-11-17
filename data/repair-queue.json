@@ -2147,6 +2147,62 @@
       "created_on": "2026-11-17",
       "last_verified_on": "2026-11-17",
       "branch": "atlas-batch/2026-11-17-am"
+    },
+    {
+      "issue_id": "candidate-review-saffron",
+      "trial_id": "saffron",
+      "trial": "SAFFRON",
+      "path": null,
+      "category": "new_candidate_primary_source_verification",
+      "severity": "high",
+      "evidence": "ESMO 2026 LBA6; ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification.",
+      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
+      "status": "open",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am"
+    },
+    {
+      "issue_id": "candidate-review-clarity-gastric01",
+      "trial_id": "clarity-gastric01",
+      "trial": "CLARITY-Gastric01",
+      "path": null,
+      "category": "new_candidate_primary_source_verification",
+      "severity": "high",
+      "evidence": "ESMO 2026 LBA7; Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete.",
+      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
+      "status": "open",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am"
+    },
+    {
+      "issue_id": "candidate-review-harmoni-gi1",
+      "trial_id": "harmoni-gi1",
+      "trial": "HARMONi-GI1",
+      "path": null,
+      "category": "new_candidate_primary_source_verification",
+      "severity": "high",
+      "evidence": "ESMO 2026 LBA8; Primary ESMO abstract DOI/PMID and exact title not retrieved; complete primary safety supplement and exact chemotherapy doses require verification.",
+      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
+      "status": "open",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am"
+    },
+    {
+      "issue_id": "candidate-review-dasl-hicap",
+      "trial_id": "dasl-hicap",
+      "trial": "DASL-HiCaP (ANZUP1801)",
+      "path": null,
+      "category": "new_candidate_primary_source_verification",
+      "severity": "high",
+      "evidence": "ESMO 2026 LBA4; Primary ESMO abstract DOI/PMID and exact title not retrieved; full primary paper not yet published/accessed.",
+      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
+      "status": "open",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am"
     }
   ],
   "resolved_items": [
@@ -2677,11 +2733,11 @@
     "active_branch_index_unique_paths_after": 432,
     "active_branch_raw_href_refs_after": 472
   },
-  "last_updated": "2026-11-17T20:00:32+05:30",
+  "last_updated": "2026-11-17",
   "last_run": "2026-11-17-evening",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 147,
+    "open_items": 151,
     "resolved_items": 25,
     "note": "Thirty staged trial pages were re-read and structurally checked on 17 November. Thirteen remain open high-severity primary-source/supplement release holds. Full existing canonical-page clinical audit and guideline-freshness review remain incomplete."
   }
