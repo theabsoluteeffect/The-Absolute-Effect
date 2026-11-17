@@ -1351,7 +1351,8 @@
     "canonical_page_index_files": 461,
     "canonical_page_files_including_redirect": 461,
     "sitemap_trial_urls": 461,
-    "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d"
+    "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
+    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
   },
   "trials": [
     {
@@ -10693,8 +10694,10 @@
     "local_release_validator": "not run — container DNS/network cannot resolve github.com",
     "pr_status": "not opened",
     "merge_status": "not merged",
-    "deployment_status": "not verified",
+    "deployment_status": "Cloudflare branch preview check success for current head; representative browser page inaccessible; production not deployed",
     "nccn_provenance": "not verified — complete guideline/reference lists inaccessible",
-    "branch_head_after": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d"
+    "branch_head_after": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+    "last_cloudflare_check_run": 134140991439,
+    "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev"
   }
 }

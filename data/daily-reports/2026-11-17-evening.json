@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "63 candidates screened; 49 new unique candidates identified. A 30-study batch is staged on the review branch (28 new page files plus 2 previously staged carry-forward pages); 0 uploaded to main. Four candidates held, 14 duplicates excluded, 8 deferred negative/contrary, 2 rejected. Local release validator and PR gate remain pending.",
+  "headline": "63 candidates screened; 49 new unique candidates identified. Exactly 30 unique trial pages are staged on the review branch (28 new page files plus 2 carry-forward pages); 0 uploaded to main. The Cloudflare branch-preview deployment check succeeded for the current branch head. Official local release validation and browser inspection remain outstanding.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -30,7 +30,7 @@
     "branch_head_before": "09ace1ae86fa5323beae685a631fbcb3e0ca03d7",
     "base_tree_sha": "f0769b528f432da0caf8dedd4ef5cc27f64390fa",
     "page_content_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-    "branch_head_after": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d"
+    "branch_head_after": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
   },
   "coverage": {
     "main_unique_studies": 437,
@@ -1357,16 +1357,23 @@
     "benefit_attributes_match_structured_values": true,
     "median_hr_not_converted_to_nnt": true,
     "static_visualization_markup": true,
-    "browser_rendered_preview": "not verified for current branch head"
+    "browser_rendered_preview": "not verified"
   },
   "release_validation": {
     "local_validator": "not run — container DNS/network cannot resolve github.com",
-    "custom_static_validation": "passed for 28 newly generated page files; 2 previously staged pages require inclusion in final batch check",
-    "branch_ci": "not run for final batch commit",
+    "custom_static_validation": "passed for all 30 staged pages; required headings (including accepted canonical variants), page length, static charts, structured NNT markup and finite chart widths checked",
+    "branch_ci": "Cloudflare Pages deployment check succeeded for current branch head; no PR checks because no PR was opened",
+    "cloudflare_branch_preview": {
+      "status": "success",
+      "head_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+      "check_run_id": 134140991439,
+      "preview_url": "https://414c596e.theabsoluteeffect.pages.dev",
+      "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+      "browser_open": "not accessible via browser tool"
+    },
     "pr": "not opened",
     "merge": "not performed",
-    "deployment": "not verified — branch unmerged",
-    "cloudflare_branch_preview": "previous successful check was for earlier commit 42e0b468; current commit preview status not independently verified"
+    "production_deployment": "not verified — branch remains unmerged"
   },
   "persistent_evidence_file": "data/daily-evidence-2026-11-17-evening.json",
   "next_actions": [
@@ -1434,7 +1441,9 @@
     "staged_new_unique_page_count": 30,
     "uploaded_to_main": 0,
     "local_release_validator": "not run — network unavailable; official validator remains a blocker",
-    "custom_static_validator": "passed for 28 new pages; final combined 30-page validation pending",
+    "custom_static_validator": "passed for 30 staged pages",
+    "branch_preview_deployment": "Cloudflare Pages check success",
+    "branch_preview_opened": false,
     "pr_opened": false,
     "pr_checks": "not run",
     "merge_status": "not merged",
@@ -1449,8 +1458,8 @@
     "archive_updated": true
   },
   "page_commit_sha": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-  "branch_head_after": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-  "deployment_status": "not verified — branch unmerged",
+  "branch_head_after": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+  "deployment_status": "Cloudflare branch preview deployment succeeded for current branch head; production deployment not verified",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
   "target_progress_percent": 43.7,
@@ -1486,5 +1495,6 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "this metadata follow-up commit; SHA recorded in branch history"
+  "report_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+  "metadata_commit_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
 }

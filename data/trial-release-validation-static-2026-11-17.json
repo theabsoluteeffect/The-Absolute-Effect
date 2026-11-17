@@ -4,14 +4,14 @@
   "main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
   "base_branch_head": "09ace1ae86fa5323beae685a631fbcb3e0ca03d7",
   "scope": "custom structural validation only; official local release validator not run",
-  "pages_checked": 28,
+  "pages_checked": 30,
   "all_page_lengths_at_least_3500": true,
   "required_headings_present": true,
   "no_duplicate_h2": true,
   "no_nonfinite_chart_widths": true,
   "structured_absolute_effect_markup_matches": true,
   "doi_title_metadata": "manually verified against PubMed/publisher records; Crossref/official release validator still pending",
-  "browser_rendering": "not verified",
+  "browser_rendering": "not verified — Cloudflare branch preview deployed, but the representative page URL was inaccessible through the browser tool",
   "results": [
     {
       "id": "trofuse-005",
@@ -376,6 +376,43 @@
       "effect_count_ok": true,
       "doi": "10.1001/jamaoncol.2026.3329",
       "primary_title": "Neoadjuvant Anbenitamab and HB1801 in ERBB2-Positive Breast Cancer: A Phase 3 Randomized Clinical Trial"
+    },
+    {
+      "id": "dellphi-305",
+      "length": 11367,
+      "length_ok": true,
+      "missing_headings": [],
+      "duplicate_h2": [],
+      "bad_width": false,
+      "structured_effects": 1,
+      "markup_effects": 1,
+      "effect_count_ok": true,
+      "doi": "10.1056/NEJMoa2609482",
+      "primary_title": "Tarlatamab plus durvalumab as maintenance therapy in extensive-stage small-cell lung cancer",
+      "heading_variant": "Design, population and treatment; Primary sources"
+    },
+    {
+      "id": "harmoni-a",
+      "length": 11740,
+      "length_ok": true,
+      "missing_headings": [],
+      "duplicate_h2": [],
+      "bad_width": false,
+      "structured_effects": 1,
+      "markup_effects": 1,
+      "effect_count_ok": true,
+      "doi": "10.1001/jama.2024.10613",
+      "primary_title": "Ivonescimab plus chemotherapy in EGFR-mutated non-small-cell lung cancer after EGFR-TKI progression",
+      "heading_variant": "Study identity and design; Primary publications and authoritative sources"
     }
-  ]
+  ],
+  "cloudflare_branch_preview": {
+    "status": "success",
+    "head_sha": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+    "check_run_id": 134140991439,
+    "preview_url": "https://414c596e.theabsoluteeffect.pages.dev",
+    "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+    "opened": false
+  },
+  "note": "Custom structural validation passed for all 30 staged page files. This is not a substitute for the official local release validator or browser-rendered visual inspection."
 }
