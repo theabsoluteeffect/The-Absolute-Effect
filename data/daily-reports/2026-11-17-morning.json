@@ -21,7 +21,8 @@
     "prior_branch_reset_to_main": "atlas-batch/2026-11-16-am",
     "branch_migration": "Prior staged work was preserved on an archive branch; the previous active ref was reset to main; the new 17 Nov branch was created from the verified main commit and carries forward the prior staged tree in a single coherent commit.",
     "branch_head_before_final_reconciliation_commit": "10a68808d9044074aee864ae24314edb92c44970",
-    "report_commit_sha": "10a68808d9044074aee864ae24314edb92c44970"
+    "report_commit_sha": "10a68808d9044074aee864ae24314edb92c44970",
+    "report_update_commit_sha": "2a5db3979e9ca03c3a5e23295db3abb1fabf1bd1"
   },
   "coverage": {
     "verified_main_unique_studies": 437,
@@ -36,8 +37,9 @@
     ],
     "staged_page_count": 2,
     "remaining_to_batch_target": 28,
-    "branch_index_unique_links": 464,
-    "branch_missing_rostered_paths": 0
+    "branch_index_unique_links": 432,
+    "branch_missing_rostered_paths": 0,
+    "branch_raw_index_href_references": 472
   },
   "preflight": {
     "core_sources_retrieved": true,
@@ -48,7 +50,7 @@
     "orphan_canonical_pages": 0,
     "archive_entries": 15,
     "archive_roster_matches": 15,
-    "main_index_unique_links": 408,
+    "main_index_unique_links": 400,
     "missing_index_links_on_main": 30,
     "missing_index_links_on_active_branch": 0,
     "branch_index_unique_links": 440,
@@ -62,9 +64,10 @@
       "date": "2026-11-03"
     },
     "source_audit_metadata": "stale; intentionally not marked current because full clinical audit is incomplete",
-    "active_branch_evidence_index_unique_links": 464,
+    "active_branch_evidence_index_unique_links": 432,
     "missing_index_links_on_active_branch_before_today_fix": 2,
-    "new_staged_page_links_added_today": 2
+    "new_staged_page_links_added_today": 2,
+    "active_branch_evidence_index_raw_href_references": 472
   },
   "repairs": {
     "pages_manually_inspected_today": 3,
