@@ -101,7 +101,7 @@
     "pages_corrected_or_rebuilt_on_branch": 30,
     "pages_read_back_after_correction": 30,
     "structural_pass": 30,
-    "release_ready_pages": 17,
+    "release_ready_pages": 24,
     "release_hold_pages": 6,
     "additional_holds_resolved": 7,
     "existing_page_corrections": [
@@ -1862,5 +1862,14 @@
     "additional_mapping_followups_added": 8,
     "full_guideline_accessible": false,
     "complete_reference_lists_accessible": false
-  }
+  },
+  "queue_status": {
+    "open": 151,
+    "resolved": 25,
+    "high_severity_release_holds": 6,
+    "candidate_primary_source_reviews": 4,
+    "full_canonical_audit_complete": false
+  },
+  "branch_head_before_report_commit": "7e634407764a2430972cdf2a4f8975a255bb57d6",
+  "report_updated_on": "2026-11-17T20:00:32+05:30"
 }

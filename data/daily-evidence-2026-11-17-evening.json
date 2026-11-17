@@ -4062,5 +4062,12 @@
     "additional_mapping_followups_added": 8,
     "full_guideline_accessible": false,
     "complete_reference_lists_accessible": false
+  },
+  "queue_status": {
+    "open": 151,
+    "resolved": 25,
+    "high_severity_release_holds": 6,
+    "candidate_primary_source_reviews": 4,
+    "full_canonical_audit_complete": false
   }
 }
