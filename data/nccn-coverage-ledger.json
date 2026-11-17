@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-17",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -788,6 +788,32 @@
       "section": null,
       "reference_number": null,
       "recommendation_category": null
+    },
+    {
+      "trial_id": "relight",
+      "trial": "RELIGHT",
+      "source_guideline": "NCCN Gastric/Esophageal Cancers",
+      "version": "not verified",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "source_url": null,
+      "status": "not verified — source inaccessible",
+      "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
+      "updated_on": "2026-11-17"
+    },
+    {
+      "trial_id": "herizon-gea-01",
+      "trial": "HERIZON-GEA-01",
+      "source_guideline": "NCCN Esophageal and Esophagogastric Junction Cancers",
+      "version": "not verified",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "source_url": null,
+      "status": "not verified — source inaccessible",
+      "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
+      "updated_on": "2026-11-17"
     }
   ],
   "alternative_guideline_sources": [

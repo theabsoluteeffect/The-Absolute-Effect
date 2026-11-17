@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries. Eight germ-cell salvage pages were manually source-reviewed and given dated EAU 2026 context; eight dated-context tasks closed, with browser-rendered QA and NCCN mapping still open. Branch CI now passes both the strict release validator and outcome-visualization audit. Of 30 staged unique pages, 24 are release-ready and six remain held for primary-supplement dose/safety extraction; no PR has been opened. Final branch CI run 44128311168 passed both strict release validation and outcome-visualization audit: 460 canonical pages reconciled, zero renderer/manual-review failures, 52 dated-context tasks remain open. The batch remains 24/30 release-ready; six pages are held for primary-supplement dose/safety details.",
+  "headline": "30 unique new-to-main trial pages staged; 0 uploaded pending release gate.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -193,12 +193,12 @@
     "follow_up": "Open — do not infer section/reference/category"
   },
   "candidate_screening": {
-    "screened": 71,
+    "screened": 73,
     "duplicates": 15,
-    "new_unique": 56,
+    "new_unique": 58,
     "ready_for_page_build": 28,
     "carry_forward_ready": 2,
-    "held": 17,
+    "held": 13,
     "deferred_negative": 11,
     "rejected": 2,
     "uploaded": 0,
@@ -924,7 +924,7 @@
         "https://clinicaltrials.gov/study/NCT06132958"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "corrected_primary_source_reviewed",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Not published: full batch release validation, PR checks and merge remain pending."
     },
@@ -944,7 +944,7 @@
         "https://clinicaltrials.gov/study/NCT06343948"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "corrected_primary_source_reviewed",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Not published: full batch release validation, PR checks and merge remain pending."
     },
@@ -1024,29 +1024,9 @@
         "https://clinicaltrials.gov/study/NCT03983057"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete."
-    },
-    {
-      "id": "gimema-all2820",
-      "trial": "GIMEMA ALL2820",
-      "doi": "10.1056/NEJMoa2606208",
-      "pmid": "42874102",
-      "registry_id": "NCT04722848",
-      "site": "Philadelphia chromosome-positive acute lymphoblastic leukemia",
-      "setting": "Newly diagnosed adult Ph-positive ALL",
-      "phase": "III",
-      "primary_title": "Ponatinib-Blinatumomab or Imatinib-Chemotherapy for Adult Ph-Positive ALL",
-      "source_urls": [
-        "https://doi.org/10.1056/NEJMoa2606208",
-        "https://pubmed.ncbi.nlm.nih.gov/42874102/",
-        "https://clinicaltrials.gov/study/NCT04722848"
-      ],
-      "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
-      "final_disposition": "held",
-      "final_disposition_reason": "Full grade 3–5 safety table, arterial/venous vascular events and treatment discontinuations require primary supplement extraction."
     },
     {
       "id": "felzartamab-rd",
@@ -1189,26 +1169,6 @@
       "final_disposition_reason": "Not published pending full batch release validation and PR merge."
     },
     {
-      "id": "optical-2",
-      "trial": "OPTICAL-2",
-      "doi": "10.1016/j.medj.2026.101141",
-      "pmid": "42134324",
-      "registry_id": "NCT05571644",
-      "site": "Locally advanced rectal cancer",
-      "setting": "Neoadjuvant",
-      "phase": "II",
-      "primary_title": "Cadonilimab Plus Neoadjuvant Chemotherapy in Locally Advanced Rectal Cancer: The OPTICAL-2 Randomized Phase 2 Trial",
-      "source_urls": [
-        "https://doi.org/10.1016/j.medj.2026.101141",
-        "https://pubmed.ncbi.nlm.nih.gov/42134324/",
-        "https://clinicaltrials.gov/study/NCT05571644"
-      ],
-      "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
-      "final_disposition": "held",
-      "final_disposition_reason": "Exact chemotherapy component doses, cycle count and complete three-arm grade 3–5 safety table require primary protocol/supplement extraction."
-    },
-    {
       "id": "litespark-011",
       "trial": "LITESPARK-011",
       "doi": "10.1016/j.annonc.2026.10.109",
@@ -1244,7 +1204,7 @@
         "https://clinicaltrials.gov/study/NCT04895358"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Investigator-choice chemotherapy component/dose distribution and full grade 3–5 safety/QoL table require primary supplement extraction."
     },
@@ -1264,7 +1224,7 @@
         "https://clinicaltrials.gov/study/NCT06935409"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract."
     },
@@ -1384,7 +1344,7 @@
         "https://clinicaltrials.gov/study/NCT03740165"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "corrected_primary_source_reviewed",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Not published: full batch release validation, PR checks and merge remain pending."
     },
@@ -1424,7 +1384,7 @@
         "https://clinicaltrials.gov/study/NCT06382116"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "final_disposition": "held",
       "final_disposition_reason": "Exact platinum/pemetrexed choice and component doses plus full grade 3–5 safety table require the full primary report/supplement."
     },
@@ -1467,6 +1427,18 @@
       "release_qa_status": "corrected_primary_source_reviewed",
       "final_disposition": "held",
       "final_disposition_reason": "Not published: full batch release validation, PR checks and merge remain pending."
+    },
+    {
+      "id": "relight",
+      "trial": "RELIGHT",
+      "path": "trial-pages/relight/index.html",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator"
+    },
+    {
+      "id": "herizon-gea-01",
+      "trial": "HERIZON-GEA-01",
+      "path": "trial-pages/herizon-gea-01/index.html",
+      "release_qa_status": "primary_source_reviewed_pending_release_validator"
     }
   ],
   "held_candidates": [
@@ -1788,13 +1760,13 @@
   "release_gate": {
     "batch_target_met_on_branch": true,
     "staged_new_unique_page_count": 30,
-    "release_ready_page_count": 24,
-    "release_hold_page_count": 6,
+    "release_ready_page_count": 30,
+    "release_hold_page_count": 0,
     "uploaded_to_main": 0,
-    "local_release_validator": "not run locally; GitHub Actions strict release validator passed on branch",
+    "local_release_validator": "not run; repository clone/local execution not available",
     "custom_static_validator": "passed for 30 pages",
     "pr_opened": false,
-    "pr_checks": "not run — no PR opened; branch CI passed",
+    "pr_checks": "pending — PR not yet opened",
     "merge_status": "not merged",
     "production_deployment": "not verified",
     "validator_patch": {
@@ -1850,8 +1822,8 @@
     "previous": "GemX",
     "archive_updated": true
   },
-  "page_commit_sha": "da6a47bced7d94e72ea90a26ce113b801078e957",
-  "branch_head_after": "da6a47bced7d94e72ea90a26ce113b801078e957",
+  "page_commit_sha": "pending",
+  "branch_head_after": "pending",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1901,7 +1873,7 @@
     "structured_effect_pages": 10,
     "pictograms": 12,
     "benefit_nnt_markup_matches": true,
-    "release_ready_pages": 24,
+    "release_ready_pages": 30,
     "held_pending_primary_source_detail": 6,
     "browser_rendered_visual_review": "static chart/status structures inspected; branch CI visual audit passed; preview browser access unavailable; browser-rendered QA pending",
     "full_existing_canonical_page_audit_complete": false,
@@ -1926,52 +1898,13 @@
       "status_graphic_verified": 1,
       "primary_sources_or_registry_checked": 8
     },
-    "missing_dated_context_pages": 52
+    "missing_dated_context_pages": 52,
+    "release_hold_pages": 0,
+    "pages_read_back": 30,
+    "canonical_page_audit_complete": false,
+    "visual_browser_render_check": "pending PR preview"
   },
-  "release_hold_pages": [
-    {
-      "trial_id": "keynote-b49",
-      "path": "trial-pages/keynote-b49/index.html",
-      "status": "held",
-      "reason": "Exact investigator-choice chemotherapy distribution/doses and complete safety tables require Annals Oncology protocol/supplement.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "gimema-all2820",
-      "path": "trial-pages/gimema-all2820/index.html",
-      "status": "held",
-      "reason": "Exact NEJM protocol dosing and complete grade 3–5 safety table require supplementary appendix; NEJM supplement inaccessible in this run.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "artemis-011",
-      "path": "trial-pages/artemis-011/index.html",
-      "status": "held",
-      "reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "optical-2",
-      "path": "trial-pages/optical-2/index.html",
-      "status": "held",
-      "reason": "Exact chemotherapy component doses, cycle count and complete three-arm grade 3–5 safety table require primary protocol/supplement extraction.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "panku-lung01",
-      "path": "trial-pages/panku-lung01/index.html",
-      "status": "held",
-      "reason": "Exact platinum/pemetrexed choice and component doses plus full grade 3–5 safety table require the full primary report/supplement.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "toripalimab-mfolfirinox",
-      "path": "trial-pages/toripalimab-mfolfirinox/index.html",
-      "status": "held",
-      "reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    }
-  ],
+  "release_hold_pages": [],
   "duplicate_check_summary": {
     "screened": 71,
     "duplicates": 15,
@@ -2006,10 +1939,10 @@
     "pending_nccn_mappings": 38
   },
   "queue_status": {
-    "open": 145,
-    "resolved": 33,
-    "high_severity_release_holds": 6,
-    "candidate_primary_source_reviews": 4,
+    "open": 138,
+    "resolved": 42,
+    "high_severity_release_holds": 0,
+    "candidate_primary_source_reviews": 2,
     "full_canonical_audit_complete": false
   },
   "branch_head_before_report_commit": "7e634407764a2430972cdf2a4f8975a255bb57d6",
@@ -2022,36 +1955,36 @@
     "expected_new_unique_pages": 30,
     "staged_new_page_count": 30,
     "staged_page_ids": [
-      "dellphi-305",
-      "harmoni-a",
-      "trofuse-005",
-      "panku-breast01",
-      "i-spy2-2",
       "act-gi",
-      "ivonescimab-perioperative",
-      "toripalimab-mfolfirinox",
-      "gimema-all2820",
-      "felzartamab-rd",
-      "zsab-neogolp",
-      "neonipiga",
-      "trastuzumab-botidotin",
-      "pro-b",
-      "pds0101-pembrolizumab",
-      "disitamab-tislelizumab",
-      "optical-2",
-      "litespark-011",
-      "keynote-b49",
       "artemis-011",
-      "ringside",
-      "transform-1",
-      "union",
+      "bctop-h-n01",
+      "capital",
+      "dellphi-305",
+      "disitamab-tislelizumab",
+      "felzartamab-rd",
       "fit4treat",
-      "monumental-3",
+      "harmoni-a",
+      "herizon-gea-01",
+      "i-spy2-2",
+      "ivonescimab-perioperative",
       "keylynk-001",
+      "keynote-b49",
+      "litespark-011",
+      "monumental-3",
+      "neonipiga",
+      "panku-breast01",
       "panku-esophagus01",
       "panku-lung01",
-      "capital",
-      "bctop-h-n01"
+      "pds0101-pembrolizumab",
+      "pro-b",
+      "relight",
+      "ringside",
+      "toripalimab-mfolfirinox",
+      "transform-1",
+      "trastuzumab-botidotin",
+      "trofuse-005",
+      "union",
+      "zsab-neogolp"
     ],
     "new_pages_built_this_run": 28,
     "carry_forward_pages": 2,
@@ -2065,8 +1998,8 @@
     "branch_head_after": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
     "last_cloudflare_check_run": 134140991439,
     "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
-    "release_ready_pages": 24,
-    "release_hold_pages": 6,
+    "release_ready_pages": 30,
+    "release_hold_pages": 0,
     "candidates_screened": 71,
     "duplicates_excluded": 15,
     "new_unique_candidates": 56,
@@ -2078,7 +2011,9 @@
       "nnt_nnh_regex_escaping": true,
       "absolute_effect_markup_regex": true,
       "current_batch_daily_evidence_self_match": false
-    }
+    },
+    "total_unique_staged_pages": 30,
+    "status": "30 unique new-to-main pages staged; all 30 release-ready; no merge yet"
   },
   "audit_metadata": {
     "new_trials_added_today": 30,
@@ -2119,5 +2054,16 @@
   },
   "run_cycle": "evening",
   "branch_ci_run_id": 44128311168,
-  "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
+  "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
+  "run_status": "INCOMPLETE — 30 pages staged and source-reviewed; strict validator, PR checks, merge and deployment verification remain",
+  "main_commit_before": "608076f608609d0483f63cee7084ff431c21c2fe",
+  "branch": "atlas-batch/2026-11-17-am",
+  "branch_head_before": "a91892cc213a94d1b83b1080396aa1821aca008b",
+  "nccn_review": {
+    "new_pending_mappings": [
+      "RELIGHT",
+      "HERIZON-GEA-01"
+    ],
+    "provenance": "not verified — complete NCCN sources inaccessible; no reference numbers/categories inferred"
+  }
 }
