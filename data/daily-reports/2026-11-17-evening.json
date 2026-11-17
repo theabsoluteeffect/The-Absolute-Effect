@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "63 candidates screened; 49 new unique candidates. Thirty unique trial pages are staged and reconciled; all 30 have been re-read and structurally checked. 18 are release-ready subject to official validation; 12 remain held for exact supplement/safety details. Zero uploaded to main.",
+  "headline": "63 candidates screened; 49 new unique candidates. Thirty unique trial pages are staged and reconciled; all 30 have been re-read and structurally checked. 20 are release-ready subject to official validation; 10 remain held for exact supplement/safety details. Zero uploaded to main.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -102,8 +102,8 @@
     "pages_read_back_after_correction": 30,
     "structural_pass": 30,
     "release_ready_pages": 17,
-    "release_hold_pages": 12,
-    "additional_holds_resolved": 1
+    "release_hold_pages": 10,
+    "additional_holds_resolved": 3
   },
   "nccn": {
     "ledger_records": 8,
@@ -858,9 +858,9 @@
         "https://clinicaltrials.gov/study/NCT05247684"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "corrected_primary_source_reviewed",
       "final_disposition": "held",
-      "final_disposition_reason": "Exact platinum-doublet backbone/dose and complete cohort-specific perioperative safety require protocol/supplement verification."
+      "final_disposition_reason": "Not published pending full batch release validation and PR merge."
     },
     {
       "id": "toripalimab-mfolfirinox",
@@ -1038,9 +1038,9 @@
         "https://clinicaltrials.gov/study/NCT05495724"
       ],
       "disposition": "staged_not_published",
-      "release_qa_status": "held_pending_primary_source_supplement",
+      "release_qa_status": "corrected_primary_source_reviewed",
       "final_disposition": "held",
-      "final_disposition_reason": "Exact disitamab/tislelizumab doses and full safety denominator table require primary supplement/protocol verification."
+      "final_disposition_reason": "Not published pending full batch release validation and PR merge."
     },
     {
       "id": "optical-2",
@@ -1554,8 +1554,8 @@
   "release_gate": {
     "batch_target_met_on_branch": true,
     "staged_new_unique_page_count": 30,
-    "release_ready_page_count": 18,
-    "release_hold_page_count": 12,
+    "release_ready_page_count": 20,
+    "release_hold_page_count": 10,
     "uploaded_to_main": 0,
     "local_release_validator": "not run",
     "custom_static_validator": "passed for 30 pages",
@@ -1623,32 +1623,18 @@
     "structured_effect_pages": 10,
     "pictograms": 12,
     "benefit_nnt_markup_matches": true,
-    "release_ready_pages": 18,
-    "held_pending_primary_source_detail": 12,
+    "release_ready_pages": 20,
+    "held_pending_primary_source_detail": 10,
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
-    "release_hold_count": 12
+    "release_hold_count": 10
   },
   "release_hold_pages": [
-    {
-      "trial_id": "disitamab-tislelizumab",
-      "path": "trial-pages/disitamab-tislelizumab/index.html",
-      "status": "held",
-      "reason": "Exact disitamab/tislelizumab doses and full safety denominator table require primary supplement/protocol verification.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
     {
       "trial_id": "keynote-b49",
       "path": "trial-pages/keynote-b49/index.html",
       "status": "held",
       "reason": "Investigator-choice chemotherapy component/dose distribution and full grade 3–5 safety/QoL table require primary supplement extraction.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "ivonescimab-perioperative",
-      "path": "trial-pages/ivonescimab-perioperative/index.html",
-      "status": "held",
-      "reason": "Exact platinum-doublet backbone/dose and complete cohort-specific perioperative safety require protocol/supplement verification.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     },
     {

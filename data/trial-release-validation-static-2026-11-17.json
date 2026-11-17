@@ -30,7 +30,7 @@
     },
     {
       "id": "pds0101-pembrolizumab",
-      "length": 6277,
+      "length": 6196,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
@@ -41,11 +41,12 @@
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches_roster": true
+      "primary_title_matches_roster": true,
+      "primary_title_matches": true
     },
     {
       "id": "disitamab-tislelizumab",
-      "length": 6290,
+      "length": 6102,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
@@ -56,7 +57,8 @@
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches_roster": true
+      "primary_title_matches_roster": true,
+      "primary_title_matches": true
     },
     {
       "id": "keynote-b49",
@@ -75,7 +77,7 @@
     },
     {
       "id": "ivonescimab-perioperative",
-      "length": 6147,
+      "length": 5700,
       "length_ok": true,
       "missing_headings": [],
       "duplicate_h2": [],
@@ -86,7 +88,8 @@
       "doi_link": true,
       "pubmed_link": true,
       "registry_link": true,
-      "primary_title_matches_roster": true
+      "primary_title_matches_roster": true,
+      "primary_title_matches": true
     },
     {
       "id": "gimema-all2820",
@@ -474,7 +477,7 @@
   },
   "note": "Post-correction GitHub read-back completed for all 30 staged pages in three batches. Structural checks passed; this does not replace full clinical sign-off for the 13 held pages or the official release validator.",
   "all_primary_doi_pubmed_registry_links_present": true,
-  "primary_titles_match_roster": true,
+  "primary_titles_match_roster": false,
   "effect_pages_checked": 10,
   "pictogram_count": 12,
   "effect_arithmetic_check": {

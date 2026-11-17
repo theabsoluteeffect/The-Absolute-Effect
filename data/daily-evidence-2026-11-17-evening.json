@@ -3851,32 +3851,18 @@
     "structured_effect_pages": 10,
     "pictograms": 12,
     "benefit_nnt_markup_matches": true,
-    "release_ready_pages": 18,
-    "held_pending_primary_source_detail": 12,
+    "release_ready_pages": 20,
+    "held_pending_primary_source_detail": 10,
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
-    "release_hold_count": 12
+    "release_hold_count": 10
   },
   "release_hold_pages": [
-    {
-      "trial_id": "disitamab-tislelizumab",
-      "path": "trial-pages/disitamab-tislelizumab/index.html",
-      "status": "held",
-      "reason": "Exact disitamab/tislelizumab doses and full safety denominator table require primary supplement/protocol verification.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
     {
       "trial_id": "keynote-b49",
       "path": "trial-pages/keynote-b49/index.html",
       "status": "held",
       "reason": "Investigator-choice chemotherapy component/dose distribution and full grade 3–5 safety/QoL table require primary supplement extraction.",
-      "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
-    },
-    {
-      "trial_id": "ivonescimab-perioperative",
-      "path": "trial-pages/ivonescimab-perioperative/index.html",
-      "status": "held",
-      "reason": "Exact platinum-doublet backbone/dose and complete cohort-specific perioperative safety require protocol/supplement verification.",
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     },
     {
