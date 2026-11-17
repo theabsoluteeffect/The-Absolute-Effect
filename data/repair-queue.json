@@ -2079,20 +2079,6 @@
       "branch": "atlas-batch/2026-11-17-am"
     },
     {
-      "issue_id": "release-hold-litespark-011",
-      "trial_id": "litespark-011",
-      "trial": "LITESPARK-011",
-      "path": "trial-pages/litespark-011/index.html",
-      "category": "primary_source_or_regimen_detail_incomplete",
-      "severity": "high",
-      "evidence": "Exact arm-specific grade 3–5 AE, discontinuation and patient-reported outcome tables require full primary safety supplement.",
-      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
       "issue_id": "release-hold-artemis-011",
       "trial_id": "artemis-011",
       "trial": "ARTEMIS-011",
@@ -2504,6 +2490,22 @@
       "branch": "atlas-batch/2026-11-17-am",
       "resolved_on": "2026-11-17",
       "resolution": "Full JAMA Oncology article verified DV120 mg IV day1 plus tislelizumab200 mg IV day2 q3w for3 cycles, responders up to8 DV/17 tislelizumab cycles, primary CR denominator and complete grade3–4/discontinuation safety."
+    },
+    {
+      "issue_id": "release-hold-litespark-011",
+      "trial_id": "litespark-011",
+      "trial": "LITESPARK-011",
+      "path": "trial-pages/litespark-011/index.html",
+      "category": "primary_source_or_regimen_detail_incomplete",
+      "severity": "high",
+      "evidence": "Exact arm-specific grade 3–5 AE, discontinuation and patient-reported outcome tables require full primary safety supplement.",
+      "action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "resolved_on": "2026-11-17",
+      "resolution": "Final Annals of Oncology abstract and FDA label verified dose 120 mg belzutifan + 20 mg lenvatinib daily vs cabozantinib60 mg daily; final PFS HR0.74, ORR53.1 vs40.2, DOR22.0 vs11.9, OS33.7 vs28.6 HR0.85 P=.04689 not crossing alpha0.0223; grade≥3 TEAEs85.4 vs83.0. Earlier PFS medians removed."
     }
   ],
   "run_audit_log": [
@@ -2659,8 +2661,8 @@
   "last_run": "2026-11-17-evening",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 150,
-    "resolved_items": 21,
+    "open_items": 149,
+    "resolved_items": 22,
     "note": "Thirty staged trial pages were re-read and structurally checked on 17 November. Thirteen remain open high-severity primary-source/supplement release holds. Full existing canonical-page clinical audit and guideline-freshness review remain incomplete."
   }
 }
