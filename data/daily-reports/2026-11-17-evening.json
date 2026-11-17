@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries. Eight germ-cell salvage pages were manually source-reviewed and given dated EAU 2026 context; eight dated-context tasks closed, with browser-rendered QA and NCCN mapping still open. Branch CI now passes both the strict release validator and outcome-visualization audit. Of 30 staged unique pages, 24 are release-ready and six remain held for primary-supplement dose/safety extraction; no PR has been opened.",
+  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries. Eight germ-cell salvage pages were manually source-reviewed and given dated EAU 2026 context; eight dated-context tasks closed, with browser-rendered QA and NCCN mapping still open. Branch CI now passes both the strict release validator and outcome-visualization audit. Of 30 staged unique pages, 24 are release-ready and six remain held for primary-supplement dose/safety extraction; no PR has been opened. Final branch CI run 44128311168 passed both strict release validation and outcome-visualization audit: 460 canonical pages reconciled, zero renderer/manual-review failures, 52 dated-context tasks remain open. The batch remains 24/30 release-ready; six pages are held for primary-supplement dose/safety details.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1818,16 +1818,18 @@
     "custom_static_validation": "passed for 30 staged pages",
     "branch_ci": {
       "status": "passed",
-      "run_id": 44127215213,
+      "run_id": 44128311168,
       "workflow": "Outcome visualization audit",
-      "head_sha": "1935601462db4dadd2edc4f6c89d5d095dc2e969",
+      "head_sha": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
+      "workflow_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44128311168",
       "strict_release_validator": "passed",
       "outcome_visualization_audit": "passed"
     },
-    "preview_visual_review": "Cloudflare branch preview URL could not be opened through the available browser; actual static chart/status markup inspected in source; browser-rendered QA remains pending.",
+    "preview_visual_review": "Cloudflare preview URL was not accessible through the browser; static HTML chart/status structures and source values were inspected; browser-rendered QA remains pending.",
     "outcome_visualization_audit": {
       "status": "passed",
-      "run_id": 44127215213,
+      "run_id": 44128311168,
+      "roster_count": 467,
       "roster_unique_canonical_destinations": 460,
       "canonical_trial_html_pages": 460,
       "missing_dated_context": 52,
@@ -1835,8 +1837,10 @@
       "manual_review": 0,
       "redirect_stubs": 1,
       "primary_source_missing": 0,
-      "short_pages": 0
-    }
+      "short_pages": 0,
+      "unrostered_canonical_pages": 0
+    },
+    "validated_branch_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
   },
   "trial_of_the_day": {
     "current": "PANKU-Esophagus01",
@@ -1899,7 +1903,7 @@
     "benefit_nnt_markup_matches": true,
     "release_ready_pages": 24,
     "held_pending_primary_source_detail": 6,
-    "browser_rendered_visual_review": "static chart/status structures inspected; preview URL inaccessible; browser-rendered QA pending",
+    "browser_rendered_visual_review": "static chart/status structures inspected; branch CI visual audit passed; preview browser access unavailable; browser-rendered QA pending",
     "full_existing_canonical_page_audit_complete": false,
     "release_hold_count": 6,
     "existing_pages_manually_reviewed": 17,
@@ -1921,7 +1925,8 @@
       "static_bar_charts_verified": 7,
       "status_graphic_verified": 1,
       "primary_sources_or_registry_checked": 8
-    }
+    },
+    "missing_dated_context_pages": 52
   },
   "release_hold_pages": [
     {
@@ -2055,9 +2060,9 @@
     "local_release_validator": "not run locally; GitHub Actions strict release validator passed",
     "pr_status": "not opened",
     "merge_status": "not merged",
-    "deployment_status": "Branch CI passed; Cloudflare preview browser inspection unavailable; production not deployed",
+    "deployment_status": "Branch CI passed; preview browser inspection unavailable; production not deployed",
     "nccn_provenance": "not verified — complete guideline/reference lists inaccessible",
-    "branch_head_after": "674d0637782189411acbe6739fbc0b01a3a6d184",
+    "branch_head_after": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
     "last_cloudflare_check_run": 134140991439,
     "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
     "release_ready_pages": 24,
@@ -2111,5 +2116,8 @@
     ],
     "permanent_trial_pages": 460,
     "total_unique_trials": 467
-  }
+  },
+  "run_cycle": "evening",
+  "branch_ci_run_id": 44128311168,
+  "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
 }

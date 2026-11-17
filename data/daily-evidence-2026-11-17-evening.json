@@ -1885,7 +1885,8 @@
         "note": "Unmerged prior staged work; remains new to the Atlas and is included in the 17 November batch of 30."
       }
     ],
-    "batch_ready_including_two_staged_carry_forward": 30
+    "batch_ready_including_two_staged_carry_forward": 30,
+    "final_dispositions_updated": true
   },
   "batch": {
     "target": 30,
@@ -4280,24 +4281,28 @@
     "local_validator": "not run locally: container network/DNS unavailable",
     "strict_release_validator": {
       "status": "passed",
-      "run_id": 44127215213,
+      "run_id": 44128311168,
       "workflow": "Outcome visualization audit",
-      "head_sha": "1935601462db4dadd2edc4f6c89d5d095dc2e969"
+      "head_sha": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
     },
     "outcome_visualization_audit": {
       "status": "passed",
-      "run_id": 44127215213,
+      "run_id": 44128311168,
       "counts": {
         "roster_unique_canonical_destinations": 460,
         "canonical_trial_html_pages": 460,
         "missing_dated_context": 52,
         "renderer_missing": 0,
         "manual_review": 0,
-        "redirect_stubs": 1
+        "redirect_stubs": 1,
+        "primary_source_missing": 0,
+        "short_pages": 0
       }
     },
     "pr": "not opened",
     "merge": "not merged",
     "production_deployment": "not verified"
-  }
+  },
+  "branch_ci_run_id": 44128311168,
+  "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981"
 }
