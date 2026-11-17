@@ -1,0 +1,763 @@
+{
+  "schema_version": 2,
+  "run_id": "2026-11-17-evening",
+  "run_timestamp": "2026-11-17T19:30:04+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE",
+  "headline": "61 candidates screened; 14 duplicates excluded; 28 new unique candidates ready for page construction; 9 held; 8 deferred negative/contrary; 2 rejected; 0 uploaded.",
+  "target": {
+    "per_run": 30,
+    "uploaded": 0,
+    "not_uploaded": 30,
+    "unique_study_selection": 30,
+    "carry_forward_staged": 2,
+    "new_candidates_ready": 28,
+    "pages_staged": 2,
+    "pages_to_build": 28
+  },
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "working_branch": "atlas-batch/2026-11-17-am",
+    "branch_head_before_report_commit": "4daf6414b059541e0379897a3e4fce4f258a863a",
+    "branch_status": "unmerged",
+    "pr": null,
+    "merge": null,
+    "deployment": "not verified/not deployed"
+  },
+  "coverage": {
+    "main_unique_studies": 437,
+    "target": 1000,
+    "remaining": 563,
+    "progress_percent": 43.7,
+    "branch_roster_entries": 439
+  },
+  "reconciliation": {
+    "main_page_html_files": 431,
+    "branch_page_html_files": 433,
+    "main_missing_index_links": 30,
+    "branch_missing_index_links": 0,
+    "branch_index_links": 440,
+    "branch_canonical_index_links": 432,
+    "shared_anchor_entries": 8,
+    "redirect_stub_files": 1,
+    "archive_entries": 15,
+    "archive_consistent": true,
+    "trial_of_day_current": "GemX (2026-11-08)",
+    "trial_of_day_previous": "ACOSOG Z11102 (2026-11-03)",
+    "trial_of_day_changed": false
+  },
+  "repairs": {
+    "manual_pages_reviewed_total": 8,
+    "branch_repairs_staged": 3,
+    "repairs_this_evening": 0,
+    "main_repairs": 0,
+    "queue_open_before": 123,
+    "queue_open_after": 134,
+    "queue_resolved_before": 15,
+    "queue_resolved_after": 18,
+    "full_manual_audit_complete": false
+  },
+  "nccn": {
+    "ledger_records": 8,
+    "latest_insights": [
+      "Colon Cancer v3.2026 — abstract/metadata only",
+      "Older Adult Oncology v2.2026 — abstract/metadata only"
+    ],
+    "complete_guidelines_accessible": false,
+    "exact_reference_mappings_added": 0,
+    "follow_up": "Open — do not infer section/reference/category"
+  },
+  "candidate_screening": {
+    "screened": 61,
+    "duplicates": 14,
+    "new_unique": 47,
+    "ready_for_page_build": 28,
+    "held": 9,
+    "deferred_negative": 8,
+    "rejected": 2,
+    "uploaded": 0
+  },
+  "duplicate_check": [
+    {
+      "candidate": "evERA",
+      "doi": "10.1056/NEJMoa2602457",
+      "pmid": "42814929",
+      "registry_id": "NCT05306340",
+      "matched_existing": "trial-pages/evera/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "CAMORAL",
+      "doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": null,
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing": "trial-pages/camoral/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "R-ALPS",
+      "doi": "10.1001/jamaoncol.2026.3918",
+      "pmid": "42955021",
+      "registry_id": "NCT04325763",
+      "matched_existing": "trial-pages/r-alps/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "OptiTROP-Lung06",
+      "doi": "10.1056/NEJMoa2611280",
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "matched_existing": "trial-pages/optitrop-lung06/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "HARMONi",
+      "doi": "10.1016/S1470-2045(26)00282-2",
+      "pmid": "42636833",
+      "registry_id": "NCT06396065",
+      "matched_existing": "trial-pages/harmoni/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "HEALER",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": "trial-pages/healer/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "ECOG-ACRIN E4512",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "pmid": "42641639",
+      "registry_id": "NCT02201992",
+      "matched_existing": "trial-pages/e4512/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "FIGHT-302",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT03656536",
+      "matched_existing": "trial-pages/fight-302/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "VOLGA",
+      "doi": "10.1056/NEJMoa2608323",
+      "pmid": null,
+      "registry_id": "NCT04960709",
+      "matched_existing": "trial-pages/volga/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "SOFT 15-year follow-up",
+      "doi": "10.1016/j.annonc.2026.05.704",
+      "pmid": "42229584",
+      "registry_id": "NCT00066690",
+      "matched_existing": "trial-pages/soft/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "HORIZON-Breast06",
+      "doi": "10.1001/jama.2026.21372",
+      "pmid": "42925007",
+      "registry_id": "NCT05814354",
+      "matched_existing": "trial-pages/horizon-breast06/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "Dalmelitinib plus aumolertinib",
+      "doi": "10.1200/JCO-26-02432",
+      "pmid": "42928710",
+      "registry_id": "NCT06110663",
+      "matched_existing": "trial-pages/dalmelitinib-aumolertinib/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "KRASCENDO-1",
+      "doi": "10.1056/NEJMoa2605703",
+      "pmid": null,
+      "registry_id": "NCT06497556",
+      "matched_existing": "trial-pages/krascendo-1/index.html",
+      "disposition": "duplicate excluded"
+    },
+    {
+      "candidate": "TAISHAN-302",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": "trial-pages/taishan-302/index.html",
+      "disposition": "duplicate excluded"
+    }
+  ],
+  "ready_candidates": [
+    {
+      "trial": "TroFuse-005 / ENGOT-en23 / GOG-3095",
+      "doi": "10.1016/S0140-6736(26)02099-4",
+      "pmid": "42933460",
+      "registry_id": "NCT06132958",
+      "site": "Endometrial cancer",
+      "setting": "Recurrent/metastatic after platinum",
+      "phase": "Phase III randomized",
+      "primary_title": "Sacituzumab tirumotecan versus treatment of physician's choice in previously treated endometrial cancer (TroFuse-005/ENGOT-en23/GOG-3095): a randomised, open-label, phase 3 trial",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)02099-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42933460/",
+        "https://clinicaltrials.gov/study/NCT06132958"
+      ]
+    },
+    {
+      "trial": "PANKU-Breast01",
+      "doi": "10.1016/S0140-6736(26)02096-9",
+      "pmid": "42933459",
+      "registry_id": "NCT06343948",
+      "site": "Breast cancer",
+      "setting": "Advanced/metastatic HR+/HER2−",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(26)02096-9",
+        "https://pubmed.ncbi.nlm.nih.gov/42933459/",
+        "https://clinicaltrials.gov/study/NCT06343948"
+      ]
+    },
+    {
+      "trial": "I-SPY2.2 — rilvegostomig plus T-DXd",
+      "doi": "10.1001/jamaoncol.2026.4258",
+      "pmid": "42911610",
+      "registry_id": "NCT01042379",
+      "site": "Breast cancer",
+      "setting": "Neoadjuvant/high-risk early",
+      "phase": "Phase II adaptive platform",
+      "primary_title": "Rilvegostomig Plus Trastuzumab-Deruxtecan for Early-Stage Breast Cancer: The I-SPY2.2 Randomized Clinical Trial",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4258",
+        "https://pubmed.ncbi.nlm.nih.gov/42911610/",
+        "https://clinicaltrials.gov/study/NCT01042379"
+      ]
+    },
+    {
+      "trial": "ACT-GI",
+      "doi": "10.1200/JCO-26-00568",
+      "pmid": "42441933",
+      "registry_id": "NCT05772546",
+      "site": "Gastrointestinal cancers",
+      "setting": "Supportive care — persistent CIT",
+      "phase": "Phase II randomized placebo-controlled",
+      "primary_title": "Avatrombopag Versus Placebo for Persistent Chemotherapy-Induced Thrombocytopenia in GI Cancers: The Phase II ACT-GI Trial",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00568",
+        "https://pubmed.ncbi.nlm.nih.gov/42441933/",
+        "https://clinicaltrials.gov/study/NCT05772546"
+      ]
+    },
+    {
+      "trial": "Perioperative ivonescimab in resectable NSCLC",
+      "doi": "10.1038/s41591-026-04745-4",
+      "pmid": null,
+      "registry_id": "NCT05247684",
+      "site": "NSCLC",
+      "setting": "Neoadjuvant/perioperative",
+      "phase": "Phase II",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04745-4",
+        "https://clinicaltrials.gov/study/NCT05247684"
+      ]
+    },
+    {
+      "trial": "Toripalimab plus mFOLFIRINOX",
+      "doi": "10.1200/JCO-26-01393",
+      "pmid": "42970668",
+      "registry_id": "NCT03983057",
+      "site": "Pancreatic cancer",
+      "setting": "Borderline-resectable/locally advanced",
+      "phase": "Randomized phase II",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-01393",
+        "https://pubmed.ncbi.nlm.nih.gov/42970668/",
+        "https://clinicaltrials.gov/study/NCT03983057"
+      ]
+    },
+    {
+      "trial": "GIMEMA ALL2820",
+      "doi": "10.1056/NEJMoa2606208",
+      "pmid": "42874102",
+      "registry_id": "NCT04722848",
+      "site": "Ph+ acute lymphoblastic leukemia",
+      "setting": "Newly diagnosed",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2606208",
+        "https://pubmed.ncbi.nlm.nih.gov/42874102/",
+        "https://clinicaltrials.gov/study/NCT04722848"
+      ]
+    },
+    {
+      "trial": "Felzartamab plus Rd",
+      "doi": "10.1016/S2352-3026(26)00223-1",
+      "pmid": "42822478",
+      "registry_id": "NCT03952091",
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory",
+      "phase": "Phase III randomized",
+      "primary_title": "Felzartamab plus lenalidomide-dexamethasone versus lenalidomide-dexamethasone for relapsed or refractory multiple myeloma: an open-label, parallel-controlled, randomised, phase 3 trial",
+      "source_urls": [
+        "https://doi.org/10.1016/S2352-3026(26)00223-1",
+        "https://pubmed.ncbi.nlm.nih.gov/42822478/",
+        "https://clinicaltrials.gov/study/NCT03952091"
+      ]
+    },
+    {
+      "trial": "ZSAB-neoGOLP",
+      "doi": "10.1056/NEJMoa2513918",
+      "pmid": "41780001",
+      "registry_id": "NCT04669496",
+      "site": "Intrahepatic cholangiocarcinoma",
+      "setting": "Neoadjuvant/resectable high-risk",
+      "phase": "Randomized phase II",
+      "primary_title": "Neoadjuvant GOLP in Resectable High-Risk Intrahepatic Cholangiocarcinoma",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2513918",
+        "https://pubmed.ncbi.nlm.nih.gov/41780001/",
+        "https://clinicaltrials.gov/study/NCT04669496"
+      ]
+    },
+    {
+      "trial": "NEONIPIGA / GERCOR",
+      "doi": "10.1200/JCO.22.00686",
+      "pmid": "35969830",
+      "registry_id": "NCT04006262",
+      "site": "Gastric/GEJ adenocarcinoma",
+      "setting": "Localized dMMR/MSI-H; neoadjuvant/adjuvant",
+      "phase": "Phase II single-arm",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.22.00686",
+        "https://pubmed.ncbi.nlm.nih.gov/35969830/",
+        "https://clinicaltrials.gov/study/NCT04006262"
+      ]
+    },
+    {
+      "trial": "Trastuzumab botidotin vs T-DM1",
+      "doi": "10.1200/JCO-26-00602",
+      "pmid": "42727044",
+      "registry_id": "NCT06968585",
+      "site": "HER2+ breast cancer",
+      "setting": "Advanced/metastatic",
+      "phase": "Phase III randomized",
+      "primary_title": "Trastuzumab Botidotin Versus Trastuzumab Emtansine in Human Epidermal Growth Factor Receptor 2-Positive Advanced Breast Cancer: A Phase III, Open-Label, Randomized Controlled Trial",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00602",
+        "https://pubmed.ncbi.nlm.nih.gov/42727044/",
+        "https://clinicaltrials.gov/study/NCT06968585"
+      ]
+    },
+    {
+      "trial": "PRO-B",
+      "doi": "10.1001/jamaoncol.2026.2661",
+      "pmid": "42560727",
+      "registry_id": "DRKS00024015",
+      "site": "Mixed advanced solid tumours",
+      "setting": "Supportive care — symptom monitoring",
+      "phase": "Randomized clinical trial",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.2661",
+        "https://pubmed.ncbi.nlm.nih.gov/42560727/"
+      ]
+    },
+    {
+      "trial": "HR20013 / PROTECT",
+      "doi": "10.1200/JCO.2026.44.16_suppl.11006",
+      "pmid": null,
+      "registry_id": "NCT06554184",
+      "site": "Supportive care — CINV",
+      "setting": "Highly emetogenic chemotherapy",
+      "phase": "Phase III randomized conference report",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.11006",
+        "https://clinicaltrials.gov/study/NCT06554184"
+      ]
+    },
+    {
+      "trial": "DEX-OINV",
+      "doi": "10.1007/s00520-026-11459-3",
+      "pmid": "42998233",
+      "registry_id": "CTRI/2026/02/104005",
+      "site": "Supportive/palliative care",
+      "setting": "Opioid-induced nausea prophylaxis",
+      "phase": "Randomized controlled trial",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1007/s00520-026-11459-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42998233/"
+      ]
+    },
+    {
+      "trial": "PDS0101 plus pembrolizumab",
+      "doi": "10.1001/jamaoncol.2026.3492",
+      "pmid": "42752531",
+      "registry_id": "NCT04260126",
+      "site": "HPV16+ HNSCC",
+      "setting": "Recurrent/metastatic",
+      "phase": "Phase II single-arm",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.3492",
+        "https://pubmed.ncbi.nlm.nih.gov/42752531/",
+        "https://clinicaltrials.gov/study/NCT04260126"
+      ]
+    },
+    {
+      "trial": "Disitamab vedotin plus tislelizumab",
+      "doi": "10.1001/jamaoncol.2026.3909",
+      "pmid": null,
+      "registry_id": "NCT05495724",
+      "site": "Bladder cancer",
+      "setting": "High-risk BCG-unresponsive NMIBC",
+      "phase": "Phase II",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.3909",
+        "https://clinicaltrials.gov/study/NCT05495724"
+      ]
+    },
+    {
+      "trial": "OPTICAL-2",
+      "doi": "10.1016/j.medj.2026.101141",
+      "pmid": "42134324",
+      "registry_id": "NCT05571644",
+      "site": "Colorectal cancer",
+      "setting": "Neoadjuvant locally advanced",
+      "phase": "Randomized phase II",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.medj.2026.101141",
+        "https://pubmed.ncbi.nlm.nih.gov/42134324/",
+        "https://clinicaltrials.gov/study/NCT05571644"
+      ]
+    },
+    {
+      "trial": "LITESPARK-011",
+      "doi": "10.1016/j.annonc.2026.10.109",
+      "pmid": "42927855",
+      "registry_id": "NCT04586231",
+      "site": "Renal cell carcinoma",
+      "setting": "Post-ICI advanced/metastatic",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.109",
+        "https://pubmed.ncbi.nlm.nih.gov/42927855/",
+        "https://clinicaltrials.gov/study/NCT04586231"
+      ]
+    },
+    {
+      "trial": "KEYNOTE-B49",
+      "doi": "10.1016/j.annonc.2026.10.1285",
+      "pmid": "42926111",
+      "registry_id": "NCT04895358",
+      "site": "HR+/HER2− breast cancer",
+      "setting": "Advanced/metastatic after endocrine therapy",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.1285",
+        "https://pubmed.ncbi.nlm.nih.gov/42926111/",
+        "https://clinicaltrials.gov/study/NCT04895358"
+      ]
+    },
+    {
+      "trial": "ARTEMIS-011",
+      "doi": "10.1016/j.annonc.2026.10.1284",
+      "pmid": "42933637",
+      "registry_id": "NCT06935409",
+      "site": "Osteosarcoma",
+      "setting": "Relapsed/refractory",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.1284",
+        "https://pubmed.ncbi.nlm.nih.gov/42933637/",
+        "https://clinicaltrials.gov/study/NCT06935409"
+      ]
+    },
+    {
+      "trial": "RINGSIDE",
+      "doi": "10.1200/JCO-26-00725",
+      "pmid": "42848980",
+      "registry_id": "NCT04871282",
+      "site": "Desmoid-type fibromatosis",
+      "setting": "Progressive",
+      "phase": "Randomized phase II dose-finding",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00725",
+        "https://pubmed.ncbi.nlm.nih.gov/42848980/",
+        "https://clinicaltrials.gov/study/NCT04871282"
+      ]
+    },
+    {
+      "trial": "TRANSFORM-1",
+      "doi": "10.1182/blood.2025032360",
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "site": "Myelofibrosis",
+      "setting": "First-line/JAK-inhibitor-naive",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://pubmed.ncbi.nlm.nih.gov/42378247/",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ]
+    },
+    {
+      "trial": "UNION",
+      "doi": "10.1016/S1470-2045(26)00446-8",
+      "pmid": "42927765",
+      "registry_id": "NCT04928807",
+      "site": "Rectal cancer",
+      "setting": "Locally advanced/neoadjuvant",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00446-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42927765/",
+        "https://clinicaltrials.gov/study/NCT04928807"
+      ]
+    },
+    {
+      "trial": "FIT4TREAT",
+      "doi": "10.1016/j.oraloncology.2026.108119",
+      "pmid": "42673774",
+      "registry_id": "NCT05418842",
+      "site": "Head and neck cancer",
+      "setting": "Prehabilitation during curative treatment",
+      "phase": "Randomized phase II",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.oraloncology.2026.108119",
+        "https://pubmed.ncbi.nlm.nih.gov/42673774/",
+        "https://clinicaltrials.gov/study/NCT05418842"
+      ]
+    },
+    {
+      "trial": "MonumenTAL-3",
+      "doi": "10.1056/NEJMoa2604657",
+      "pmid": "42294841",
+      "registry_id": "NCT05455320",
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2604657",
+        "https://pubmed.ncbi.nlm.nih.gov/42294841/",
+        "https://clinicaltrials.gov/study/NCT05455320"
+      ]
+    },
+    {
+      "trial": "Oral paclitaxel solution",
+      "doi": "10.1016/j.esmoop.2026.108312",
+      "pmid": "42617423",
+      "registry_id": null,
+      "site": "Gastric cancer",
+      "setting": "Advanced/metastatic",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108312",
+        "https://pubmed.ncbi.nlm.nih.gov/42617423/"
+      ]
+    },
+    {
+      "trial": "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+      "doi": "10.1016/S1470-2045(26)00223-8",
+      "pmid": "42705254",
+      "registry_id": "NCT03740165",
+      "site": "Ovarian/fallopian tube/primary peritoneal cancer",
+      "setting": "First-line advanced BRCA-non-mutated epithelial disease",
+      "phase": "Phase III randomized",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00223-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42705254/",
+        "https://clinicaltrials.gov/study/NCT03740165"
+      ]
+    },
+    {
+      "trial": "ENABLE digital ePRO monitoring",
+      "doi": "10.2196/95155",
+      "pmid": null,
+      "registry_id": "DRKS00025611",
+      "site": "Early breast cancer",
+      "setting": "Supportive care — electronic PRO monitoring",
+      "phase": "Randomized controlled trial",
+      "primary_title": null,
+      "source_urls": [
+        "https://doi.org/10.2196/95155"
+      ]
+    }
+  ],
+  "held_candidates": [
+    {
+      "trial": "Ontorpacept plus doxorubicin",
+      "doi": null,
+      "registry_id": "NCT04996004",
+      "reason": "Registry/topline only; no primary DOI/PMID or complete peer-reviewed report"
+    },
+    {
+      "trial": "Erlotinib plus celecoxib window study",
+      "doi": "10.1016/j.oraloncology.2026.108156",
+      "registry_id": null,
+      "reason": "Exact arm-specific dose/schedule and registry not reconciled"
+    },
+    {
+      "trial": "JCOG2510 / PRIME-CRT",
+      "doi": "10.1016/j.cllc.2026.09.007",
+      "registry_id": null,
+      "reason": "Protocol only; no primary outcome report"
+    },
+    {
+      "trial": "LUCERNA",
+      "doi": "10.1016/j.esmogo.2026.100352",
+      "registry_id": "NCT06901531",
+      "reason": "Protocol only; no primary outcome report"
+    },
+    {
+      "trial": "JCOG2107E",
+      "doi": "10.1080/14796694.2026.2749305",
+      "registry_id": null,
+      "reason": "Protocol only; no primary outcome report"
+    },
+    {
+      "trial": "MagnetisMM-32",
+      "doi": null,
+      "registry_id": null,
+      "reason": "Sponsor topline only; full primary report unavailable"
+    },
+    {
+      "trial": "RAINFOL-02",
+      "doi": null,
+      "registry_id": null,
+      "reason": "Sponsor topline only; primary report/registry/outcomes unavailable"
+    },
+    {
+      "trial": "DASL-HiCaP",
+      "doi": null,
+      "registry_id": "NCT04136353",
+      "reason": "Registry found; exact primary abstract DOI/PMID and complete efficacy/safety not retrieved"
+    },
+    {
+      "trial": "EXCALIBER-RRMM",
+      "doi": "10.1016/S1470-2045(26)00450-X",
+      "registry_id": "NCT04975997",
+      "reason": "Co-primary PFS result remains immature/incomplete"
+    }
+  ],
+  "deferred_negative": [
+    {
+      "trial": "Neo-CheckRay",
+      "doi": "10.1038/s41591-026-04453-z",
+      "pmid": null,
+      "registry_id": "NCT03875573",
+      "reason": "Primary RCB0/1 endpoint not significantly improved; per-protocol pCR signal exploratory"
+    },
+    {
+      "trial": "ENDURANCE maintenance-duration randomization",
+      "doi": "10.1056/NEJMoa2600157",
+      "pmid": "42456135",
+      "registry_id": "NCT01863550",
+      "reason": "7-year OS68.6% vs69.0%; no survival advantage for continuous vs fixed-duration lenalidomide; more grade≥3 non-haematologic toxicity"
+    },
+    {
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "pmid": null,
+      "registry_id": "NCT02364557",
+      "reason": "Metastasis-directed therapy added to standard systemic therapy did not improve PFS/OS"
+    },
+    {
+      "trial": "OPTIM",
+      "doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "registry_id": null,
+      "reason": "Nivolumab/ipilimumab did not outperform docetaxel; ORR0% vs17.6%"
+    },
+    {
+      "trial": "LUNA",
+      "doi": null,
+      "pmid": "41369813",
+      "registry_id": null,
+      "reason": "Early-closed small trial; ITT 3-year OS30% vs34%, P=.53"
+    },
+    {
+      "trial": "LEAP-009",
+      "doi": "10.1016/j.ejca.2026.116824",
+      "pmid": "42241967",
+      "registry_id": "NCT04428151",
+      "reason": "No OS advantage; OS8.4 vs11.3 months, HR1.48"
+    },
+    {
+      "trial": "IROCAS",
+      "doi": "10.1016/j.annonc.2026.10.104",
+      "pmid": "42927853",
+      "registry_id": null,
+      "reason": "3-year DFS65.6% vs66.3%, HR1.07, P=.61"
+    },
+    {
+      "trial": "PreSte-HN",
+      "doi": "10.1007/s10147-026-03138-4",
+      "pmid": "42479256",
+      "registry_id": "jRCTs031210593",
+      "reason": "Single-dose preoperative dexamethasone did not improve prespecified quality-of-recovery endpoint"
+    }
+  ],
+  "rejected": [
+    {
+      "trial": "Cachexia education intervention",
+      "reason": "Out of scope: clinician education rather than patient-level cancer intervention"
+    },
+    {
+      "trial": "PIVOT-006",
+      "reason": "Explicit PIVOT exclusion; distinct from prostate PIVOT but excluded by rule"
+    }
+  ],
+  "uploaded_cases": [],
+  "nnt_nnh_visualization_qa": {
+    "fixed_time_calculations_reviewed": [
+      "ACT-GI",
+      "GIMEMA ALL2820",
+      "HR20013/PROTECT",
+      "OPTICAL-2",
+      "UNION",
+      "MonumenTAL-3",
+      "TRANSFORM-1"
+    ],
+    "no_nnh_calculated": true,
+    "median_hr_only_not_converted": true,
+    "dex_oinv": "No NNT calculated; arm-specific event rates not available for independent risk-difference verification."
+  },
+  "release_validation": {
+    "local_validator": "not run",
+    "branch_ci": "not run",
+    "pr": "not opened",
+    "merge": "not performed",
+    "deployment": "not verified"
+  },
+  "persistent_evidence_file": "data/daily-evidence-2026-11-17-evening.json",
+  "next_actions": [
+    "Build the 28 source-reviewed canonical pages and verify each primary DOI against exact Crossref title metadata.",
+    "Keep the 9 held candidates unpublished until their specified primary-evidence gaps are resolved.",
+    "Run strict release validation and the outcome visualization audit; open a PR only when the exact 30-page batch is complete.",
+    "Wait for all PR checks; merge only after every check passes; verify main and Cloudflare production deployment.",
+    "Continue full manual clinical and guideline-freshness audit."
+  ]
+}

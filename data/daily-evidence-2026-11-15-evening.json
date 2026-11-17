@@ -1127,7 +1127,7 @@
         "https://doi.org/10.1016/S0140-6736(26)02096-9"
       ],
       "preliminary_signal": "Primary Lancet phase III report identified; 383 randomized. Full intervention/comparator schedules, efficacy denominators and grade 3–5 safety extraction remain outstanding.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1145,7 +1145,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "irocas",
@@ -1164,7 +1166,7 @@
         "https://doi.org/10.1016/j.annonc.2026.10.104"
       ],
       "preliminary_signal": "Negative primary comparison: 3-year DFS 65.6% versus 66.3% (HR 1.07; P=0.61); 3-year OS 91.2% versus 86.7% (HR 0.85; P=0.37). Defer to contrary/negative evidence queue after full source extraction.",
-      "disposition": "deferred_negative_candidate_pending_queue_update",
+      "disposition": "deferred_negative",
       "match": {
         "roster": [],
         "pages": [],
@@ -1182,7 +1184,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "union",
@@ -1199,7 +1203,7 @@
         "https://doi.org/10.1016/S1470-2045(26)00446-8"
       ],
       "preliminary_signal": "Primary phase III report identified; interim EFS and pathological response signals reported. Exact registry identifier, full regimen details and complete toxicity extraction remain outstanding.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1217,7 +1221,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "jcog2510-prime-crt",
@@ -1252,7 +1258,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "litespark-011",
@@ -1271,7 +1279,7 @@
         "https://doi.org/10.1016/j.annonc.2026.10.109"
       ],
       "preliminary_signal": "Final phase III analysis identified; 747 randomized (371 vs 376), PFS HR 0.74, ORR 53.1% versus 40.2%; final OS analysis did not cross its prespecified significance boundary. Earlier primary PFS report must be attached to the same study.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1289,7 +1297,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "keynote-b49",
@@ -1308,7 +1318,7 @@
         "https://doi.org/10.1016/j.annonc.2026.10.1285"
       ],
       "preliminary_signal": "Primary phase III report identified; PFS signal reported, with no established OS benefit in the current report. Full population, arm schedules and grade 3–5 safety extraction pending.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1326,7 +1336,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "artemis-011",
@@ -1345,7 +1357,7 @@
         "https://doi.org/10.1016/j.annonc.2026.10.1284"
       ],
       "preliminary_signal": "Primary phase III report identified; BICR PFS 5.5 versus 1.4 months (HR 0.33; 95% CI 0.20–0.55; P<0.0001); grade ≥3 treatment-related AEs 93% versus 83%; OS immature.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1363,7 +1375,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "lucerna",
@@ -1400,7 +1414,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "jcog2107e",
@@ -1437,7 +1453,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "transform-1",
@@ -1456,7 +1474,7 @@
         "https://doi.org/10.1182/blood.2025032360"
       ],
       "preliminary_signal": "Primary phase III report identified; week-24 SVR35 63.2% versus 31.5% (P<0.0001), but TSS change was not different (P=0.2852); grade 3/4 thrombocytopenia 54.0% versus 19.2% and neutropenia 40.3% versus 8.8%.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build_with_contrary_symptom_note",
       "match": {
         "roster": [],
         "pages": [],
@@ -1474,26 +1492,28 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "enable",
       "trial": "ENABLE",
-      "doi": null,
-      "pmid": "42954133",
+      "doi": "10.2196/95155",
+      "pmid": null,
       "registry_ids": [
         "DRKS00025611"
       ],
       "site": "Breast",
       "setting": "Supportive care / digital symptom monitoring during systemic therapy for stage I–III breast cancer",
-      "primary_title": "Real-Time ePRO Monitoring With Digital Triage and Care-Team Integration in Early Breast Cancer: The ENABLE Randomized Controlled Trial",
+      "primary_title": "Real-Time Electronic Patient-Reported Outcome Monitoring With Digital Triage and Care Team Integration for Early Breast Cancer: Randomized Controlled Trial",
       "source_url": "https://preprints.jmir.org/preprint/95155/accepted",
       "primary_sources": [
         "https://pubmed.ncbi.nlm.nih.gov/42954133/",
         "https://drks.de/search/en/trial/DRKS00025611"
       ],
       "preliminary_signal": "487-patient modified intention-to-treat analysis; weekly ePRO-triggered triage improved selected PROMIS-29 domains; exact final DOI and complete safety/health-service outcomes require verification.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build_metadata_corrected",
       "match": {
         "roster": [],
         "pages": [],
@@ -1511,7 +1531,10 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening",
+      "registry_id": "DRKS00025611"
     },
     {
       "candidate_id": "fit4treat",
@@ -1528,7 +1551,7 @@
         "https://doi.org/10.1016/j.oraloncology.2026.108119"
       ],
       "preliminary_signal": "Small randomized exercise/prehabilitation study identified; full sample, endpoint, follow-up and registry extraction pending.",
-      "disposition": "not_yet_screened",
+      "disposition": "ready_for_page_build",
       "match": {
         "roster": [],
         "pages": [],
@@ -1546,7 +1569,9 @@
       "underlying_study": "candidate_new_unique_pending_full_duplicate_audit",
       "same_underlying_study": null,
       "doi_title_verification": "pending exact DOI-to-primary-title check",
-      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
+      "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition.",
+      "screened_on": "2026-11-17",
+      "follow_up_run_id": "2026-11-17-evening"
     },
     {
       "candidate_id": "preste-hn",
@@ -1618,5 +1643,41 @@
       "doi_title_verification": "pending exact DOI-to-primary-title check",
       "next_action": "Check older daily-evidence files; verify exact DOI/title and registry; extract full primary report/supplement and complete intervention, endpoints, denominators, follow-up, grade 3–5 toxicity and QoL before assigning a publishable disposition."
     }
-  ]
+  ],
+  "reconciliation_corrections": [
+    {
+      "corrected_on": "2026-11-17",
+      "field": "ENABLE primary publication metadata",
+      "prior_error": "Earlier run summary associated DOI10.1001/jamaoncol.2026.2661 / PMID42560727 with ENABLE.",
+      "correction": "That DOI/PMID belongs to PRO-B (DRKS00024015). ENABLE is distinct (DRKS00025611), DOI10.2196/95155; no PMID identified in current search.",
+      "sources": [
+        "https://doi.org/10.2196/95155",
+        "https://pubmed.ncbi.nlm.nih.gov/42560727/"
+      ],
+      "status": "verified correction"
+    }
+  ],
+  "follow_up_screening_2026_11_17": {
+    "screened_on": "2026-11-17",
+    "results": {
+      "KEYLYNK-001": "ready_for_page_build",
+      "TroFuse-005": "ready_for_page_build",
+      "PANKU-Breast01": "ready_for_page_build",
+      "IROCAS": "deferred_negative",
+      "UNION": "ready_for_page_build",
+      "JCOG2510 / PRIME-CRT": "held_protocol_only",
+      "LITESPARK-011": "ready_for_page_build",
+      "KEYNOTE-B49": "ready_for_page_build",
+      "ARTEMIS-011": "ready_for_page_build",
+      "LUCERNA": "held_protocol_only",
+      "JCOG2107E": "held_protocol_only",
+      "TRANSFORM-1": "ready_for_page_build_with_contrary_symptom_note",
+      "ENABLE": "ready_for_page_build_metadata_corrected",
+      "FIT4TREAT": "ready_for_page_build",
+      "PreSte-HN": "deferred_negative",
+      "RINGSIDE": "ready_for_page_build"
+    },
+    "metadata_correction": "ENABLE DOI/PMID corrected; PRO-B remains distinct."
+  },
+  "last_reconciled_on": "2026-11-17"
 }

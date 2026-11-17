@@ -289,18 +289,117 @@
       "url": "https://www.nccn.org/guidelines/category_1",
       "status": "full guideline/reference-list access not obtained in this run",
       "action": "Continue through accessible authoritative guidelines and primary evidence; do not infer NCCN provenance."
+    },
+    {
+      "guideline": "Colon Cancer",
+      "version": "3.2026",
+      "source_type": "NCCN Insights metadata/abstract only",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "reviewed_on": "2026-11-17",
+      "full_guideline_accessible": false,
+      "complete_reference_list_accessible": false,
+      "limitations": "Insights metadata/abstract only; not complete guideline; no exact recommendation/reference mapping."
+    },
+    {
+      "guideline": "Older Adult Oncology",
+      "version": "2.2026",
+      "source_type": "NCCN Insights metadata/abstract only",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "reviewed_on": "2026-11-17",
+      "full_guideline_accessible": false,
+      "complete_reference_list_accessible": false,
+      "limitations": "Insights metadata/abstract only; not complete guideline; no exact recommendation/reference mapping."
     }
   ],
   "last_run": {
-    "date": "2026-11-17",
-    "cycle": "morning",
-    "reviewed": [
-      "Older Adult Oncology v2.2026 — bibliographic metadata/abstract only",
-      "Colon Cancer Insights v3.2026 — bibliographic metadata/abstract only"
+    "run_id": "2026-11-17-evening",
+    "reviewed_on": "2026-11-17",
+    "guideline_records_in_ledger": 8,
+    "latest_records": [
+      "Colon Cancer v3.2026 — Insights abstract only",
+      "Older Adult Oncology v2.2026 — Insights abstract only"
     ],
-    "full_guideline_access": false,
-    "exact_reference_mapping_completed": 0,
-    "follow_up_required": true,
-    "note": "Two new NCCN guideline records added; no trial citation numbers, recommendation categories or active-pathway mappings inferred."
-  }
+    "subsets_screened": [
+      {
+        "site": "Breast/gynaecologic",
+        "subsets": [
+          "early-stage neoadjuvant breast",
+          "HR+/HER2− metastatic breast",
+          "HER2+ metastatic breast",
+          "advanced endometrial",
+          "advanced ovarian",
+          "ePRO supportive care"
+        ]
+      },
+      {
+        "site": "Thoracic",
+        "subsets": [
+          "ES-SCLC maintenance",
+          "EGFR-mutant post-TKI NSCLC",
+          "perioperative resectable NSCLC"
+        ]
+      },
+      {
+        "site": "Gastrointestinal",
+        "subsets": [
+          "pancreatic borderline-resectable/locally advanced",
+          "intrahepatic cholangiocarcinoma",
+          "gastric/GEJ dMMR",
+          "locally advanced colorectal",
+          "rectal perioperative",
+          "advanced gastric"
+        ]
+      },
+      {
+        "site": "Genitourinary",
+        "subsets": [
+          "post-ICI RCC",
+          "high-risk BCG-unresponsive NMIBC"
+        ]
+      },
+      {
+        "site": "Haemato-oncology",
+        "subsets": [
+          "Ph+ ALL first-line",
+          "RRMM",
+          "myelofibrosis",
+          "MM maintenance duration"
+        ]
+      },
+      {
+        "site": "Sarcoma/rare tumours",
+        "subsets": [
+          "relapsed osteosarcoma",
+          "progressive desmoid",
+          "leiomyosarcoma"
+        ]
+      },
+      {
+        "site": "Supportive/palliative/rehabilitation",
+        "subsets": [
+          "CIT",
+          "CINV",
+          "OINV",
+          "electronic symptom monitoring",
+          "exercise prehabilitation"
+        ]
+      },
+      {
+        "site": "Head and neck",
+        "subsets": [
+          "HPV16+ recurrent/metastatic",
+          "post-PD-1 resistance",
+          "perioperative recovery"
+        ]
+      }
+    ],
+    "citation_mappings_added": 0,
+    "provenance": "not verified — full NCCN guideline/reference lists inaccessible; no section/reference/category inferred",
+    "next_action": "Retrieve complete official NCCN guideline/reference lists or complete Insights reference lists; map exact citations only."
+  },
+  "last_updated": "2026-11-17T19:30:04+05:30"
 }

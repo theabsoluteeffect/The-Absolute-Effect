@@ -107,10 +107,13 @@ for (const t of batch) {
     fail(t.id, 'Primary DOI verification request failed: ' + String(error));
   }
 }
-const announced = roster.audit?.new_trials_added_today || [];
+const announcedRaw = roster.audit?.new_trials_added_today;
+const announcedNames = Array.isArray(announcedRaw) ? announcedRaw : (Array.isArray(roster.audit?.new_trials_added_today_names) ? roster.audit.new_trials_added_today_names : []);
+const announcedCount = typeof announcedRaw === 'number' ? announcedRaw : announcedNames.length;
 const expected = batch.map(t => t.trial).sort();
-if (JSON.stringify([...announced].sort()) !== JSON.stringify(expected)) {
-  fail('roster', 'new_trials_added_today does not exactly match the latest 30 uploaded trial names');
+if (announcedCount !== batch.length) fail('roster', `new_trials_added_today count (${announcedCount}) does not match latest batch (${batch.length})`);
+if (!Array.isArray(announcedNames) || JSON.stringify([...announcedNames].sort()) !== JSON.stringify(expected)) {
+  fail('roster', 'new_trials_added_today_names does not exactly match the latest batch trial names');
 }
 for (const t of batch) {
   const raw = (t.path || '').split('#')[0];

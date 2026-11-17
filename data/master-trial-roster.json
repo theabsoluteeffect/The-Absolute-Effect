@@ -1096,20 +1096,20 @@
         "to": "Adjuvant"
       }
     ],
-    "last_updated": "2026-11-16",
+    "last_updated": "2026-11-17T19:30:04+05:30",
     "total_trials": 439,
     "last_batch_date": "2026-11-17",
     "last_batch_expected_page_count": 30,
     "last_batch_actual_page_count": 2,
     "last_batch_missing": 28,
-    "last_batch_status": "IN_PROGRESS — carried forward from 2026-11-16; active on atlas-batch/2026-11-17-am; 2/30 new unique pages staged; 28 remain; no PR opened",
+    "last_batch_status": "IN_PROGRESS — 2/30 pages staged; 28 new unique candidates ready for page construction; no PR/merge.",
     "last_batch_ids": [
       "dellphi-305",
       "harmoni-a"
     ],
     "full_release_validation": "not run — exact-30 gate not met",
-    "deployment_status": "not deployed — branch unmerged",
-    "last_structural_reconciliation": "2026-11-16",
+    "deployment_status": "not deployed — no PR/merge",
+    "last_structural_reconciliation": "2026-11-17",
     "roster_entries": 439,
     "evidence_index_unique_links": 432,
     "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
@@ -1167,7 +1167,74 @@
       "new_staged_page_links_added_on_2026_11_17": 2,
       "missing_rostered_paths_on_active_branch_after_reconciliation": 0,
       "active_branch_evidence_index_raw_href_refs": 472
-    }
+    },
+    "new_trials_added_today_names": [
+      "DeLLphi-305",
+      "HARMONi-A"
+    ],
+    "new_trials_added_today_count": 2,
+    "active_batch": {
+      "branch": "atlas-batch/2026-11-17-am",
+      "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+      "last_activity": "2026-11-17T19:30:04+05:30",
+      "cycle_status": "INCOMPLETE — evening research serialized into active morning branch; no separate PM branch opened",
+      "expected_new_unique_trials": 30,
+      "staged_new_unique_count": 2,
+      "staged_new_unique_trials": [
+        "dellphi-305",
+        "harmoni-a"
+      ],
+      "page_ready_candidates": 28,
+      "pages_to_build": 28,
+      "candidates_screened": 61,
+      "duplicates_excluded": 14,
+      "new_unique_candidates": 47,
+      "held_candidates": 9,
+      "deferred_negative_candidates": 8,
+      "rejected_candidates": 2,
+      "published_this_run": 0,
+      "pr_opened": false,
+      "merged": false,
+      "status": "30-study selection identified (2 carry-forward staged + 28 ready for page construction); 28 page files not yet staged; release gate not met.",
+      "next_action": "Build 28 canonical pages; verify DOI/title via Crossref; run release validator and visualization audit; PR only after all 30 pages pass."
+    },
+    "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "working_branch": "atlas-batch/2026-11-17-am",
+    "working_branch_head_before_evening_commit": "4daf6414b059541e0379897a3e4fce4f258a863a",
+    "roster_entries_main": 437,
+    "roster_entries_branch": 439,
+    "canonical_page_html_files_main": 431,
+    "canonical_page_html_files_branch": 433,
+    "redirect_stub_files": 1,
+    "evidence_index_links_main": 408,
+    "evidence_index_canonical_links_main": 400,
+    "evidence_index_links_branch": 440,
+    "evidence_index_canonical_links_branch": 432,
+    "roster_to_index_missing_main": 30,
+    "roster_to_index_missing_branch": 0,
+    "archive_records": 15,
+    "last_batch_missing_page_count": 28,
+    "last_batch_trial_names": [
+      "DeLLphi-305",
+      "HARMONi-A"
+    ],
+    "last_full_manual_clinical_audit_complete": false,
+    "manual_page_reviews_total": 8,
+    "pages_repaired_on_branch": 3,
+    "main_branch_repairs_this_run": 0,
+    "candidate_screening_2026_11_17_evening": {
+      "screened": 61,
+      "duplicates": 14,
+      "new_unique": 47,
+      "ready_for_page_build": 28,
+      "held": 9,
+      "deferred_negative": 8,
+      "rejected": 2,
+      "uploaded": 0
+    },
+    "release_validation_status": "not run — local clone unavailable; validator schema compatibility patch staged; PR CI not run",
+    "trial_of_day_status": "unchanged; GemX current, ACOSOG Z11102 previous; TroFuse-005 is a ToD candidate once published",
+    "full_audit_status": "structural reconciliation complete; full clinical/manual audit incomplete"
   },
   "trials": [
     {

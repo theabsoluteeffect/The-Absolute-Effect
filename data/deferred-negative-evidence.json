@@ -175,16 +175,18 @@
       "trial_id": "transform-1",
       "trial": "TRANSFORM-1",
       "category": "contrary_evidence_mixed",
-      "status": "deferred_review",
+      "status": "contextual_contrary_evidence",
       "primary_doi": "10.1182/blood.2025032360",
       "pmid": "42378247",
       "registry_id": "NCT04472598",
-      "reason": "Mixed phase III result: spleen-volume primary endpoint positive, but symptom endpoint did not show a corresponding benefit; full benefit–harm and development-status interpretation required. Not labelled a negative trial.",
+      "reason": "Primary endpoint SVR35 week24 positive (63.2% vs31.5%, p<.0001); TSS not improved. Retain only as contrary evidence for TSS, not as negative-primary trial.",
       "source_urls": [
         "https://doi.org/10.1182/blood.2025032360",
         "https://clinicaltrials.gov/study/NCT04472598"
       ],
-      "next_action": "Review full Blood report and patient-reported outcomes before deciding whether to create a canonical page."
+      "next_action": "Review full Blood report and patient-reported outcomes before deciding whether to create a canonical page.",
+      "page_candidate": true,
+      "last_reviewed_on": "2026-11-17"
     },
     {
       "trial_id": "zeal-1l",
@@ -227,16 +229,93 @@
         "https://clinicaltrials.gov/study/NCT04475939"
       ],
       "reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "neo-checkray-2026-11-17",
+      "trial": "Neo-CheckRay",
+      "doi": "10.1038/s41591-026-04453-z",
+      "registry_id": "NCT03875573",
+      "site": "Breast",
+      "setting": "Neoadjuvant",
+      "reason": "Primary RCB0/1 endpoint not significantly improved; per-protocol pCR signal exploratory.",
+      "source_url": "https://doi.org/10.1038/s41591-026-04453-z",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "endurance-maintenance-2026-11-17",
+      "trial": "ENDURANCE maintenance-duration randomization",
+      "doi": "10.1056/NEJMoa2600157",
+      "pmid": "42456135",
+      "registry_id": "NCT01863550",
+      "site": "Multiple myeloma",
+      "setting": "Maintenance duration",
+      "reason": "7-year OS68.6% vs69.0%; no survival advantage for continuous vs fixed-duration lenalidomide; more grade≥3 non-haematologic toxicity.",
+      "source_url": "https://doi.org/10.1056/NEJMoa2600157",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "nrg-br002-2026-11-17",
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "registry_id": "NCT02364557",
+      "site": "Breast",
+      "setting": "Oligometastatic",
+      "reason": "Metastasis-directed therapy added to standard systemic therapy did not improve PFS/OS.",
+      "source_url": "https://doi.org/10.1200/JCO-26-00201",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "optim-2026-11-17",
+      "trial": "OPTIM",
+      "doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "site": "Head and neck",
+      "setting": "R/M after PD-1",
+      "reason": "Nivolumab/ipilimumab did not outperform docetaxel; ORR0% vs17.6%; PFS/OS favoured docetaxel.",
+      "source_url": "https://doi.org/10.1038/s41416-026-03558-z",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "luna-2026-11-17",
+      "trial": "LUNA",
+      "pmid": "41369813",
+      "site": "Colorectal",
+      "setting": "Resected colorectal liver/lung metastases",
+      "reason": "Early-closed small trial; ITT 3-year OS30% vs34%, P=.53.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41369813/",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "leap-009-2026-11-17",
+      "trial": "LEAP-009",
+      "doi": "10.1016/j.ejca.2026.116824",
+      "pmid": "42241967",
+      "registry_id": "NCT04428151",
+      "site": "Head and neck",
+      "setting": "Recurrent/metastatic",
+      "reason": "No OS advantage; OS8.4 vs11.3 months, HR1.48; toxicity/discontinuation concerns.",
+      "source_url": "https://doi.org/10.1016/j.ejca.2026.116824",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
     }
   ],
   "last_run": {
+    "run_id": "2026-11-17-evening",
     "date": "2026-11-17",
-    "cycle": "morning",
-    "screened_new_unique": 3,
-    "added_deferred_negative": 1,
-    "added_trials": [
-      "zeal-1l"
+    "added": 6,
+    "existing_items_reconciled": [
+      "IROCAS",
+      "PreSte-HN"
     ],
-    "note": "ZEAL-1L primary phase III negative report added; no new page created."
-  }
+    "reclassified": [
+      "TRANSFORM-1"
+    ],
+    "status": "INCOMPLETE"
+  },
+  "last_updated": "2026-11-17T19:30:04+05:30"
 }
