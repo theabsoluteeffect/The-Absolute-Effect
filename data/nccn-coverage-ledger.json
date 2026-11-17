@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-17T20:00:32+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -222,7 +222,7 @@
       ]
     }
   ],
-  "coverage_note": "NCCN Insights articles are selected guideline updates, not complete guidelines; full guideline/reference-list access failure is logged and is not used to block otherwise verified trial evidence.",
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
   "source_access_log": [
     {
       "date": "2026-11-15",
@@ -321,94 +321,8 @@
       "action": "Continue with NCCN-authored Insights metadata and other authoritative sources; do not infer references or categories."
     }
   ],
-  "last_run": {
-    "run_id": "2026-11-17-evening",
-    "reviewed_on": "2026-11-17",
-    "guideline_records_in_ledger": 8,
-    "latest_records": [
-      "Colon Cancer v3.2026 — Insights abstract only",
-      "Older Adult Oncology v2.2026 — Insights abstract only"
-    ],
-    "subsets_screened": [
-      {
-        "site": "Breast/gynaecologic",
-        "subsets": [
-          "early-stage neoadjuvant breast",
-          "HR+/HER2− metastatic breast",
-          "HER2+ metastatic breast",
-          "advanced endometrial",
-          "advanced ovarian",
-          "ePRO supportive care"
-        ]
-      },
-      {
-        "site": "Thoracic",
-        "subsets": [
-          "ES-SCLC maintenance",
-          "EGFR-mutant post-TKI NSCLC",
-          "perioperative resectable NSCLC"
-        ]
-      },
-      {
-        "site": "Gastrointestinal",
-        "subsets": [
-          "pancreatic borderline-resectable/locally advanced",
-          "intrahepatic cholangiocarcinoma",
-          "gastric/GEJ dMMR",
-          "locally advanced colorectal",
-          "rectal perioperative",
-          "advanced gastric"
-        ]
-      },
-      {
-        "site": "Genitourinary",
-        "subsets": [
-          "post-ICI RCC",
-          "high-risk BCG-unresponsive NMIBC"
-        ]
-      },
-      {
-        "site": "Haemato-oncology",
-        "subsets": [
-          "Ph+ ALL first-line",
-          "RRMM",
-          "myelofibrosis",
-          "MM maintenance duration"
-        ]
-      },
-      {
-        "site": "Sarcoma/rare tumours",
-        "subsets": [
-          "relapsed osteosarcoma",
-          "progressive desmoid",
-          "leiomyosarcoma"
-        ]
-      },
-      {
-        "site": "Supportive/palliative/rehabilitation",
-        "subsets": [
-          "CIT",
-          "CINV",
-          "OINV",
-          "electronic symptom monitoring",
-          "exercise prehabilitation"
-        ]
-      },
-      {
-        "site": "Head and neck",
-        "subsets": [
-          "HPV16+ recurrent/metastatic",
-          "post-PD-1 resistance",
-          "perioperative recovery"
-        ]
-      }
-    ],
-    "citation_mappings_added": 0,
-    "provenance": "not verified — full NCCN guideline/reference lists inaccessible; no section/reference/category inferred",
-    "next_action": "Retrieve complete official NCCN guideline/reference lists or complete Insights reference lists; map exact citations only.",
-    "commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
-  },
-  "last_updated": "2026-11-17T20:00:32+05:30",
+  "last_run": "2026-11-17",
+  "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
   "pending_trial_mappings": [
     {
@@ -768,6 +682,102 @@
       "reference_number": null,
       "recommendation_category": null,
       "next_action": "Map exact current NCCN citation only when official reference list is accessible."
+    },
+    {
+      "trial_id": "interpath-001",
+      "site": "Cutaneous melanoma",
+      "setting": "Adjuvant systemic therapy after complete resection stage IIB–IV",
+      "guideline_title": "NCCN Guidelines for Cutaneous Melanoma",
+      "next_action": "Retrieve current official Cutaneous Melanoma guideline and map the exact adjuvant recommendation/reference for intismeran+pembrolizumab only if cited.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "keynote-867",
+      "site": "Non-small cell lung cancer",
+      "setting": "Unresected stage I–II; definitive SBRT ± pembrolizumab",
+      "guideline_title": "NCCN Guidelines for Non-Small Cell Lung Cancer",
+      "next_action": "Retrieve current official NSCLC guideline; determine whether SBRT plus pembrolizumab is discussed or explicitly not recommended; map only exact references.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "nrg-br002",
+      "site": "Breast cancer",
+      "setting": "Oligometastatic disease; metastasis-directed therapy",
+      "guideline_title": "NCCN Guidelines for Breast Cancer",
+      "next_action": "Retrieve current official Breast Cancer guideline and exact oligometastatic disease references; do not infer a recommendation from the trial result.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "saffron",
+      "site": "Non-small cell lung cancer",
+      "setting": "EGFR-mutant/MET-amplified after osimertinib",
+      "guideline_title": "NCCN Guidelines for Non-Small Cell Lung Cancer",
+      "next_action": "Retrieve current official NSCLC guideline and exact MET-directed sequencing references; primary ESMO DOI/title remains separately held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "clarity-gastric01",
+      "site": "Gastric/GEJ adenocarcinoma",
+      "setting": "CLDN18.2-positive second-line and later",
+      "guideline_title": "NCCN Guidelines for Gastric Cancer",
+      "next_action": "Retrieve current official Gastric Cancer guideline and exact CLDN18.2/ADC references; do not infer recommendation category.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "harmoni-gi1",
+      "site": "Biliary tract cancer",
+      "setting": "First-line unresectable/recurrent advanced disease",
+      "guideline_title": "NCCN Guidelines for Biliary Tract Cancers",
+      "next_action": "Retrieve current official Biliary Tract guideline and exact first-line immunotherapy/anti-VEGF references; primary abstract DOI/title remains held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "dasl-hicap",
+      "site": "Prostate cancer",
+      "setting": "Very-high-risk localized or postoperative persistent/recurrent disease with RT+ADT",
+      "guideline_title": "NCCN Guidelines for Prostate Cancer",
+      "next_action": "Retrieve current official Prostate Cancer guideline and exact intensification/RT references; primary ESMO DOI/title remains held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "moio",
+      "site": "Cross-tumour supportive treatment",
+      "setting": "Checkpoint-inhibitor interval de-escalation after response",
+      "guideline_title": null,
+      "next_action": "Determine whether NCCN disease-site or immunotherapy-toxicity guidelines address interval de-escalation; no reference/category should be inferred.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
     }
   ]
 }

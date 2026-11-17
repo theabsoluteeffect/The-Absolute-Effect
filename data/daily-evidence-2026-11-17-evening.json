@@ -4055,5 +4055,12 @@
       "next_action": "Retrieve exact primary supplement/protocol, verify all regimen doses and arm denominators, extract grade 3–5 safety/QoL and update the page; then rerun strict release validator."
     }
   ],
-  "batch_final_disposition": "30 staged, 0 published; all 30 held at batch release gate until local validation, PR checks and merge."
+  "batch_final_disposition": "30 staged, 0 published; all 30 held at batch release gate until local validation, PR checks and merge.",
+  "nccn_coverage": {
+    "guidelines_in_ledger": 8,
+    "pending_trial_mappings": 38,
+    "additional_mapping_followups_added": 8,
+    "full_guideline_accessible": false,
+    "complete_reference_lists_accessible": false
+  }
 }

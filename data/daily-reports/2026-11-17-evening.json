@@ -1855,5 +1855,12 @@
     "release_hold_pages": 6,
     "uploaded": 0
   },
-  "existing_pages_manually_reviewed": 9
+  "existing_pages_manually_reviewed": 9,
+  "nccn_coverage": {
+    "guidelines_in_ledger": 8,
+    "pending_trial_mappings": 38,
+    "additional_mapping_followups_added": 8,
+    "full_guideline_accessible": false,
+    "complete_reference_lists_accessible": false
+  }
 }
