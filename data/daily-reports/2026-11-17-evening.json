@@ -1782,7 +1782,22 @@
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
     "release_hold_count": 6,
-    "existing_pages_manually_reviewed": 9
+    "existing_pages_manually_reviewed": 9,
+    "existing_page_visualization_qa": {
+      "trial_id": "interpath-001",
+      "outcome_visuals": 2,
+      "structured_effects": 2,
+      "benefit_differences": [
+        12.2,
+        8.3
+      ],
+      "nnt": [
+        9,
+        13
+      ],
+      "markup_matches": true,
+      "browser_rendered": "not verified"
+    }
   },
   "release_hold_pages": [
     {

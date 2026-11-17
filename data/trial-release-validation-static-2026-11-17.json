@@ -470,16 +470,48 @@
     "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
     "opened": false
   },
-  "note": "Post-correction GitHub read-back completed for all 30 staged pages in three batches. Structural checks passed; this does not replace full clinical sign-off for the 13 held pages or the official release validator.",
+  "note": "Post-correction GitHub read-back completed for all 30 staged pages in three batches. Structural checks passed; this does not replace full clinical sign-off for the 13 held pages or the official release validator. Existing INTerpath-001 page independently re-read after correction: exact NEJM title/DOI/PMID/registry verified; RFS benefit12.2pp/NNT9 and DMFS benefit8.3pp/NNT13 match structured records and chart values. Browser-rendered check remains pending.",
   "all_primary_doi_pubmed_registry_links_present": true,
   "primary_titles_match_roster": false,
-  "effect_pages_checked": 10,
-  "pictogram_count": 12,
+  "effect_pages_checked": 11,
+  "pictogram_count": 14,
   "effect_arithmetic_check": {
-    "pages": 10,
-    "structured_records": 12,
-    "markup_records": 12,
+    "pages": 11,
+    "structured_records": 14,
+    "markup_records": 14,
     "all_benefit_and_nnt_attributes_match": true
   },
-  "official_local_release_validator": "not run — container DNS/network cannot resolve GitHub"
+  "official_local_release_validator": "not run — container DNS/network cannot resolve GitHub",
+  "existing_page_results": [
+    {
+      "id": "interpath-001",
+      "length": 10648,
+      "exact_primary_title": true,
+      "doi_link": true,
+      "pubmed_link": true,
+      "registry_link": true,
+      "outcome_visuals": 2,
+      "structured_absolute_effects": 2,
+      "markup_benefits": [
+        12.2,
+        8.3
+      ],
+      "nnt": [
+        9,
+        13
+      ],
+      "structured_benefits": [
+        12.2,
+        8.3
+      ],
+      "structured_nnt": [
+        9,
+        13
+      ],
+      "arithmetic_match": true,
+      "nonfinite_widths": false,
+      "read_back_after_write": true,
+      "browser_rendered": "not verified"
+    }
+  ]
 }
