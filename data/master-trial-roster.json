@@ -1102,7 +1102,7 @@
     "last_batch_expected_page_count": 30,
     "last_batch_actual_page_count": 30,
     "last_batch_missing": 0,
-    "last_batch_status": "30 unique new-to-main pages staged; local validator unavailable; current-head PR checks pending; not published",
+    "last_batch_status": "PR #5 open; strict release validator and outcome visualization audit passed on head 3697bef2; audit artifact inspection pending; not published",
     "last_batch_ids": [
       "act-gi",
       "artemis-011",
@@ -1289,7 +1289,13 @@
       "pages_read_back": 30,
       "current_cycle_new_candidates": 28,
       "carry_forward_pages": 2,
-      "branch_head": "faba2e83a491b377603b8485f1442b95c459819b"
+      "branch_head": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "pr_number": 5,
+      "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+      "pr_head_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "pr_checks_status": "passed on head 3697bef2; rerun required after report update",
+      "merge_status": "held pending audit artifact inspection",
+      "published": false
     },
     "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "working_branch": "atlas-batch/2026-11-17-am",

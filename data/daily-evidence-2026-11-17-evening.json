@@ -4046,7 +4046,7 @@
   ],
   "nccn_provenance": "not verified — complete guideline/reference lists inaccessible; no recommendation reference/category inferred",
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "faba2e83a491b377603b8485f1442b95c459819b",
+  "branch_head_after": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
   "page_qa_status": {
     "staged_pages": 30,
     "read_back_after_correction": 30,
@@ -4289,5 +4289,21 @@
   "branch_ci_run_id": 44128311168,
   "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
   "run_status": "INCOMPLETE — 30 unique new-to-main pages staged; awaiting strict release validation and PR checks",
-  "updated_at": "2026-11-17T20:00:32+05:30"
+  "updated_at": "2026-11-17T20:00:32+05:30",
+  "pr_number": 5,
+  "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+  "pr_head_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "pr_checks_status": "passed on head 3697bef2; rerun required after report update",
+  "release_gate": {
+    "pr_opened": true,
+    "pr_number": 5,
+    "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+    "strict_release_validator": "passed on PR head 3697bef2",
+    "outcome_visualization_audit": "passed on PR head 3697bef2; artifact content not inspected",
+    "artifact_id": 14356120035,
+    "artifact_contents_inspected": false,
+    "merge_status": "held pending artifact inspection",
+    "cloudflare_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+    "production_deployment": "not verified"
+  }
 }

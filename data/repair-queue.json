@@ -2040,6 +2040,20 @@
       "next_action": "Verify NCCN citation provenance; do not infer a recommendation category.",
       "created_on": "2026-11-17",
       "verification": "Trial identity and primary evidence verified; NCCN provenance not verified — source inaccessible."
+    },
+    {
+      "issue_id": "release-audit-artifact-inspection-2026-11-17",
+      "category": "release_process",
+      "severity": "high",
+      "status": "open",
+      "trial_id": null,
+      "trial": "17 November batch release audit",
+      "path": "data/daily-reports/2026-11-17-evening.json",
+      "evidence": "PR #5 checks passed on head 3697bef2 and uploaded outcome-visual-audit artifact 14356120035, but the artifact ZIP/report contents could not be retrieved through the available GitHub connector. Check-run output had no text summary.",
+      "action": "Expose the strict release and outcome-visual audit report as a readable JSON/text repository file or PR check summary, then inspect all findings before merge.",
+      "next_action": "Make the audit report fetchable through GitHub contents API; inspect report; rerun checks on current PR head; merge only if no unresolved failures.",
+      "created_on": "2026-11-17",
+      "verification": "Check run success verified; artifact metadata/digest verified; report contents not inspected."
     }
   ],
   "resolved_items": [
@@ -2841,7 +2855,7 @@
   "last_run": "2026-11-17-evening",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 138,
+    "open_items": 139,
     "resolved_items": 42,
     "note": "Thirty staged trial pages were re-read and structurally checked; 24 are release-ready subject to the official validator and six remain open high-severity primary-source/protocol holds. Four additional ESMO 2026 candidates remain held for exact DOI/title/full-primary verification. The full existing canonical-page clinical audit and guideline-freshness review remain incomplete.",
     "release_holds_in_active_batch": 0

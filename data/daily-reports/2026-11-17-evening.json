@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "30 unique new-to-main trial pages staged and read back; 0 uploaded pending current-head PR checks.",
+  "headline": "30 unique new-to-main pages staged; PR #5 checks passed on head 3697bef2; 0 uploaded pending artifact review and fresh checks.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1793,10 +1793,10 @@
     "uploaded_to_main": 0,
     "local_release_validator": "not run locally — git clone failed due DNS/network; current-head PR CI is required",
     "custom_static_validator": "stale — previous static report predates final page substitutions; not accepted as current-head validation",
-    "pr_opened": false,
-    "pr_checks": "not yet run — PR not opened",
-    "merge_status": "not merged",
-    "production_deployment": "not verified",
+    "pr_opened": true,
+    "pr_checks": "passed on head 3697bef2; rerun required after this report/queue commit",
+    "merge_status": "held — audit artifact content not inspected; do not merge until report is accessible and reviewed",
+    "production_deployment": "not verified — Cloudflare preview only",
     "validator_patch": {
       "primary_sources_and_registry_heading": true,
       "nnt_nnh_regex_escaping": true,
@@ -1824,9 +1824,25 @@
       "note": "Earlier PASS does not validate the current branch head."
     },
     "preview_visual_review": "Cloudflare preview URL was not accessible through the browser; static HTML chart/status structures and source values were inspected; browser-rendered QA remains pending.",
-    "outcome_visualization_audit": "not run on current head",
+    "outcome_visualization_audit": "passed on PR head 3697bef2 (run 44142838075); audit artifact generated",
     "validated_branch_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-    "strict_release_validator": "not run on current head"
+    "strict_release_validator": "passed on PR head 3697bef2 (run 44142838075); current next head pending rerun",
+    "pr_number": 5,
+    "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+    "artifact_inspection": {
+      "name": "outcome-visual-audit",
+      "artifact_id": 14356120035,
+      "size_bytes": 19123,
+      "digest": "sha256:d41fff1f57a241cc246b2af4c38cff952a0d7b33bc5e0d9e43689e6c34c2967c",
+      "contents_inspected": false,
+      "reason": "GitHub connector exposes artifact metadata but not ZIP contents; GitHub Actions page and artifact ZIP were inaccessible through available fetch routes."
+    },
+    "failed_stale_push_run": {
+      "run_id": 44122493834,
+      "commit": "abc34b1 (pre-PR branch commit)",
+      "conclusion": "failure",
+      "status": "stale; not a check on PR head 3697bef2"
+    }
   },
   "trial_of_the_day": {
     "current": "PANKU-Esophagus01",
@@ -1837,7 +1853,7 @@
     "archive_updated": true
   },
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "faba2e83a491b377603b8485f1442b95c459819b",
+  "branch_head_after": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1874,8 +1890,8 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "faba2e83a491b377603b8485f1442b95c459819b",
-  "metadata_commit_sha": "faba2e83a491b377603b8485f1442b95c459819b",
+  "report_commit_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "metadata_commit_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
   "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately",
   "page_qa_status": {
     "staged_pages": 30,
@@ -2071,7 +2087,7 @@
   "run_cycle": "evening",
   "branch_ci_run_id": 44128311168,
   "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-  "run_status": "INCOMPLETE — 30 unique new-to-main pages staged; local validator unavailable; PR checks required; 0 uploaded.",
+  "run_status": "INCOMPLETE — PR #5 open; checks passed on previous head; merge held pending outcome-audit artifact inspection; 0 uploaded.",
   "main_commit_before": "608076f608609d0483f63cee7084ff431c21c2fe",
   "branch": "atlas-batch/2026-11-17-am",
   "branch_head_before": "a91892cc213a94d1b83b1080396aa1821aca008b",
@@ -2099,5 +2115,34 @@
     "carry_forward_section_links": 2,
     "missing_rostered_index_paths": 0
   },
-  "duplicate_check_reconciliation_note": "Candidate-level ledger contains 72 distinct screened candidate records. The earlier aggregate of 73 was corrected because NRG-BR002 appeared twice in the deferred-negative list; duplicate deferred-negative entries are now consolidated."
+  "duplicate_check_reconciliation_note": "Candidate-level ledger contains 72 distinct screened candidate records. The earlier aggregate of 73 was corrected because NRG-BR002 appeared twice in the deferred-negative list; duplicate deferred-negative entries are now consolidated.",
+  "pr_number": 5,
+  "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+  "pr_head_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "pr_checks": [
+    {
+      "name": "Strict release validator",
+      "run_id": 44142838075,
+      "check_run_id": 134249977352,
+      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "conclusion": "success"
+    },
+    {
+      "name": "Outcome visualization audit",
+      "run_id": 44142838075,
+      "check_run_id": 134249977352,
+      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "conclusion": "success"
+    },
+    {
+      "name": "Cloudflare Pages preview",
+      "check_run_id": 134247052434,
+      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "conclusion": "success",
+      "preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev"
+    }
+  ],
+  "pr_checks_status": "passed on PR head 3697bef2; subsequent report commit will trigger a fresh check run",
+  "cloudflare_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+  "uploaded_count": 0
 }
