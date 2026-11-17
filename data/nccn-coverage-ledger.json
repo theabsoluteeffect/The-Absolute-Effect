@@ -319,6 +319,16 @@
       "source": "Official NCCN Clinical Practice Guidelines PDFs/reference lists",
       "status": "not accessible in this run",
       "action": "Continue with NCCN-authored Insights metadata and other authoritative sources; do not infer references or categories."
+    },
+    {
+      "date": "2026-11-17",
+      "source": "EAU Guidelines on Testicular Cancer 2026",
+      "status": "accessible_official_full_guideline",
+      "sections": [
+        "6.3.4",
+        "6.3.5"
+      ],
+      "finding": "Alternative guideline review completed. EAU reference-list mismatch identified for section 6.3.4 inline refs [245,246] and IPFSG numbering; mismatched citations were not used."
     }
   ],
   "last_run": "2026-11-17",
@@ -778,6 +788,137 @@
       "section": null,
       "reference_number": null,
       "recommendation_category": null
+    }
+  ],
+  "alternative_guideline_sources": [
+    {
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "source_type": "Official EAU full guideline web publication; alternative authoritative source because current NCCN full guideline/reference list was inaccessible",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer",
+      "disease_management_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "summary_publication_doi": "10.1016/j.eururo.2026.03.021",
+      "sections_reviewed": [
+        "6.3.4 Systemic salvage treatment for relapse or refractory disease",
+        "6.3.5 Treatment of second relapse"
+      ],
+      "reviewed_on": "2026-11-17",
+      "scope_limitations": "EAU source, not NCCN. Full current NCCN Testicular Cancer guideline/reference list could not be independently accessed. EAU inline/reference-list number discrepancies are documented; mismatched citations were not used."
+    }
+  ],
+  "trial_to_guideline_mappings": [
+    {
+      "trial_id": "veip-recurrent-seminoma-miller-1997",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": 252,
+      "recommendation_category": null,
+      "recommendation_context": "Miller et al. recurrent seminoma VeIP salvage series; exact title and PMID match EAU reference 252.",
+      "status": "exact_reference_verified",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "oechsle-go-gop-2011",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.5",
+      "reference_number": 247,
+      "recommendation_category": null,
+      "recommendation_context": "Oechsle et al. GO/GOP plus secondary surgery long-term follow-up; exact title match EAU reference 247.",
+      "status": "exact_reference_verified",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "tiger-tip-vs-tice",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "TIGER phase III TIP versus TI-CE trial explicitly named as ongoing in guideline text; no numbered reference assigned.",
+      "status": "explicit_text_mention_no_numbered_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "loehrer-veip-mixed-gct-1998",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "VeIP appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified.",
+      "status": "regimen_context_only_no_exact_study_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "loehrer-vip-salvage-1986",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "VIP/PEI appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified.",
+      "status": "regimen_context_only_no_exact_study_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "mccaffrey-vip-veip-1997",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Historical VIP/VeIP cohort not explicitly mapped to a numbered EAU citation.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "ecog-e9897-paclitaxel-gemcitabine",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4–6.3.5",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Historical paclitaxel/gemcitabine phase II trial; no exact EAU reference number verified.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "gemcitabine-refractory-gct-1999",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.5",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Single-agent gemcitabine phase II study; later-line gemcitabine combinations are discussed, but this individual study is not mapped to an exact numbered citation.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
     }
   ]
 }

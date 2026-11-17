@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries.",
+  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries. Eight germ-cell salvage pages were manually source-reviewed and given dated EAU 2026 context; eight dated-context tasks closed, with browser-rendered QA and NCCN mapping still open.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -55,7 +55,7 @@
     "trial_of_day_changed": false
   },
   "repairs": {
-    "existing_pages_manually_reviewed": 9,
+    "existing_pages_manually_reviewed": 17,
     "repairs_staged_this_run": [
       "evERA",
       "DeLLphi-305",
@@ -113,8 +113,74 @@
         "details": "Corrected primary title/DOI/PMID, distinguished ESMO overall HR from NEJM piecewise HRs, corrected all-cause vs treatment-related grade≥3 AE definitions, added 24m DMFS chart and NNT13, corrected RFS data-benefit from11.11 to12.2 percentage points, and structured both NNTs.",
         "primary_title_visible_on_page": true,
         "read_back_after_title_insertion": true
+      },
+      {
+        "trial_id": "ecog-e9897-paclitaxel-gemcitabine",
+        "canonical_path": "trial-pages/ecog-e9897-paclitaxel-gemcitabine/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "gemcitabine-refractory-gct-1999",
+        "canonical_path": "trial-pages/gemcitabine-refractory-gct-1999/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "loehrer-veip-mixed-gct-1998",
+        "canonical_path": "trial-pages/loehrer-veip-mixed-gct-1998/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "loehrer-vip-salvage-1986",
+        "canonical_path": "trial-pages/loehrer-vip-salvage-1986/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "mccaffrey-vip-veip-1997",
+        "canonical_path": "trial-pages/mccaffrey-vip-veip-1997/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "oechsle-go-gop-2011",
+        "canonical_path": "trial-pages/oechsle-go-gop-2011/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "tiger-tip-vs-tice",
+        "canonical_path": "trial-pages/tiger-tip-vs-tice/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
+      },
+      {
+        "trial_id": "veip-recurrent-seminoma-miller-1997",
+        "canonical_path": "trial-pages/veip-recurrent-seminoma-miller-1997/index.html",
+        "action": "Added dated EAU Testicular Cancer 2026 current-practice context and exact primary DOI/PMID or registry title; manually inspected source-grounded static outcome visualization.",
+        "verified_on": "2026-11-17",
+        "primary_source_verified": true,
+        "browser_rendered_qa": "pending"
       }
-    ]
+    ],
+    "current_practice_context_items_closed": 8,
+    "browser_rendered_visual_QA_still_pending": 8
   },
   "nccn": {
     "ledger_records": 8,
@@ -1814,7 +1880,7 @@
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
     "release_hold_count": 6,
-    "existing_pages_manually_reviewed": 9,
+    "existing_pages_manually_reviewed": 17,
     "existing_page_visualization_qa": {
       "trial_id": "interpath-001",
       "outcome_visuals": 2,
@@ -1828,7 +1894,11 @@
         13
       ],
       "markup_matches": true,
-      "browser_rendered": "not verified"
+      "browser_rendered": "pending",
+      "gct_pages_reviewed": 8,
+      "static_bar_charts_verified": 7,
+      "status_graphic_verified": 1,
+      "primary_sources_or_registry_checked": 8
     }
   },
   "release_hold_pages": [
@@ -1893,11 +1963,24 @@
     "pending_trial_mappings": 38,
     "additional_mapping_followups_added": 8,
     "full_guideline_accessible": false,
-    "complete_reference_lists_accessible": false
+    "complete_reference_lists_accessible": false,
+    "alternative_guideline_sources_reviewed": 1,
+    "alternative_guideline": "EAU Testicular Cancer 2026 (limited text update March 2026)",
+    "alternative_sections_reviewed": [
+      "6.3.4",
+      "6.3.5"
+    ],
+    "alternative_trial_mappings_added": 8,
+    "exact_reference_mappings": 2,
+    "explicit_text_no_number_mappings": 1,
+    "regimen_context_only_mappings": 2,
+    "not_exactly_cited": 3,
+    "reference_number_discrepancies": 2,
+    "pending_nccn_mappings": 38
   },
   "queue_status": {
-    "open": 151,
-    "resolved": 25,
+    "open": 145,
+    "resolved": 33,
     "high_severity_release_holds": 6,
     "candidate_primary_source_reviews": 4,
     "full_canonical_audit_complete": false

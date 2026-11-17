@@ -3994,7 +3994,7 @@
     "browser_rendered_visual_review": "not verified",
     "full_existing_canonical_page_audit_complete": false,
     "release_hold_count": 6,
-    "existing_pages_manually_reviewed": 9,
+    "existing_pages_manually_reviewed": 17,
     "existing_page_visualization_qa": {
       "trial_id": "interpath-001",
       "outcome_visuals": 2,
@@ -4008,7 +4008,11 @@
         13
       ],
       "markup_matches": true,
-      "browser_rendered": "not verified"
+      "browser_rendered": "pending",
+      "gct_pages_reviewed": 8,
+      "static_bar_charts_verified": 7,
+      "status_graphic_verified": 1,
+      "primary_sources_or_registry_checked": 8
     }
   },
   "release_hold_pages": [
@@ -4061,7 +4065,20 @@
     "pending_trial_mappings": 38,
     "additional_mapping_followups_added": 8,
     "full_guideline_accessible": false,
-    "complete_reference_lists_accessible": false
+    "complete_reference_lists_accessible": false,
+    "alternative_guideline_sources_reviewed": 1,
+    "alternative_guideline": "EAU Testicular Cancer 2026 (limited text update March 2026)",
+    "alternative_sections_reviewed": [
+      "6.3.4",
+      "6.3.5"
+    ],
+    "alternative_trial_mappings_added": 8,
+    "exact_reference_mappings": 2,
+    "explicit_text_no_number_mappings": 1,
+    "regimen_context_only_mappings": 2,
+    "not_exactly_cited": 3,
+    "reference_number_discrepancies": 2,
+    "pending_nccn_mappings": 38
   },
   "queue_status": {
     "open": 151,
@@ -4143,5 +4160,79 @@
     "exact_primary_title_match": true,
     "verification_date": "2026-11-17",
     "crossref_fallback": "enabled for uncached DOI"
+  },
+  "repair_queue_status": {
+    "open": 145,
+    "resolved": 33,
+    "high_severity_release_holds": 6,
+    "candidate_primary_source_reviews": 4,
+    "full_canonical_audit_complete": false
+  },
+  "alternative_guideline_review": {
+    "guideline": "EAU Guidelines on Testicular Cancer",
+    "version": "2026 (limited text update March 2026)",
+    "sections": [
+      "6.3.4 Systemic salvage treatment for relapse or refractory disease",
+      "6.3.5 Treatment of second relapse"
+    ],
+    "trial_mappings": [
+      {
+        "id": "veip-recurrent-seminoma-miller-1997",
+        "section": "6.3.4",
+        "ref": 252,
+        "status": "exact_reference_verified",
+        "context": "Miller et al. recurrent seminoma VeIP salvage series; exact title and PMID match EAU reference 252."
+      },
+      {
+        "id": "oechsle-go-gop-2011",
+        "section": "6.3.5",
+        "ref": 247,
+        "status": "exact_reference_verified",
+        "context": "Oechsle et al. GO/GOP plus secondary surgery long-term follow-up; exact title match EAU reference 247."
+      },
+      {
+        "id": "tiger-tip-vs-tice",
+        "section": "6.3.4",
+        "ref": null,
+        "status": "explicit_text_mention_no_numbered_reference",
+        "context": "TIGER phase III TIP versus TI-CE trial explicitly named as ongoing in guideline text; no numbered reference assigned."
+      },
+      {
+        "id": "loehrer-veip-mixed-gct-1998",
+        "section": "6.3.4",
+        "ref": null,
+        "status": "regimen_context_only_no_exact_study_reference",
+        "context": "VeIP appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified."
+      },
+      {
+        "id": "loehrer-vip-salvage-1986",
+        "section": "6.3.4",
+        "ref": null,
+        "status": "regimen_context_only_no_exact_study_reference",
+        "context": "VIP/PEI appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified."
+      },
+      {
+        "id": "mccaffrey-vip-veip-1997",
+        "section": "6.3.4",
+        "ref": null,
+        "status": "not_exactly_cited_in_accessible_guideline_text",
+        "context": "Historical VIP/VeIP cohort not explicitly mapped to a numbered EAU citation."
+      },
+      {
+        "id": "ecog-e9897-paclitaxel-gemcitabine",
+        "section": "6.3.4–6.3.5",
+        "ref": null,
+        "status": "not_exactly_cited_in_accessible_guideline_text",
+        "context": "Historical paclitaxel/gemcitabine phase II trial; no exact EAU reference number verified."
+      },
+      {
+        "id": "gemcitabine-refractory-gct-1999",
+        "section": "6.3.5",
+        "ref": null,
+        "status": "not_exactly_cited_in_accessible_guideline_text",
+        "context": "Single-agent gemcitabine phase II study; later-line gemcitabine combinations are discussed, but this individual study is not mapped to an exact numbered citation."
+      }
+    ],
+    "reference_number_discrepancies": 2
   }
 }
