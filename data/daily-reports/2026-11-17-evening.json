@@ -23,7 +23,9 @@
     "branch_status": "unmerged",
     "pr": null,
     "merge": null,
-    "deployment": "not verified/not deployed"
+    "deployment": "not verified/not deployed",
+    "content_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
+    "branch_head_before_validator_patch": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
   },
   "coverage": {
     "main_unique_studies": 437,
@@ -750,7 +752,9 @@
     "branch_ci": "not run",
     "pr": "not opened",
     "merge": "not performed",
-    "deployment": "not verified"
+    "deployment": "not verified",
+    "validator_schema_compatibility_patch": "staged; preserves numeric new_trials_added_today and compares new_trials_added_today_names",
+    "heading_compatibility_patch": "staged; accepts existing canonical heading variants without weakening required sections"
   },
   "persistent_evidence_file": "data/daily-evidence-2026-11-17-evening.json",
   "next_actions": [

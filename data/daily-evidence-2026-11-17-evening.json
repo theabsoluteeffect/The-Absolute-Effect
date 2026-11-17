@@ -12,7 +12,9 @@
     "main_unchanged": true,
     "pr_opened": false,
     "merged": false,
-    "deployment_verified": false
+    "deployment_verified": false,
+    "content_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e",
+    "report_commit_sha": "d75e841ca9a66b52ec43ddb15a6b1f70f711957e"
   },
   "preflight": {
     "core_sources_retrieved": true,

@@ -127,7 +127,7 @@ for (const t of batch) {
   if (/width\s*:\s*(?:NaN|undefined|Infinity)/i.test(html)) fail(t.id, 'Non-finite chart width in HTML');
   if (/href=["'](?:10\.|doi:)/i.test(html)) fail(t.id, 'Malformed bare DOI hyperlink');
   if (/DOI:\s*;|PMID\s*NCT|DOI:\s*NCT|PMID\s*10\./i.test(html)) fail(t.id, 'DOI/PMID/registry metadata appears misassigned');
-  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Primary source\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Primary source|Primary sources|Primary publications and authoritative sources)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   if (!primarySection) fail(t.id, 'Primary source section missing');
   else {
     const hrefs = [...primarySection.matchAll(/href=["']([^"']+)["']/gi)].map(m => m[1]);
@@ -137,14 +137,20 @@ for (const t of batch) {
     }
     if (!hrefs.some(h => /^https?:\/\//i.test(h))) fail(t.id, 'No absolute external primary-source link');
   }
-  const designSection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Design, population and treatment\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const designSection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Design, population and treatment|Study identity and design)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   const designContent = norm(designSection.replace(/<h2[^>]*>[\s\S]*?<\/h2>/i, ''));
   if (t.setting_detail && designContent.includes(norm(t.setting_detail))) fail(t.id, 'Efficacy summary duplicated in design section');
   const heads = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m => norm(m[1]).toLowerCase());
   const dup = heads.find((h, i) => heads.indexOf(h) !== i);
   if (dup) fail(t.id, 'Duplicate section heading: ' + dup);
-  const requiredHeadings = ['design, population and treatment', 'key efficacy outcome', 'safety and absolute effect', 'interpretation and limitations', 'primary source'];
-  for (const heading of requiredHeadings) if (!heads.includes(heading)) fail(t.id, 'Required section missing: ' + heading);
+  const requiredHeadingGroups = [
+    ['design, population and treatment', 'study identity and design'],
+    ['key efficacy outcome'],
+    ['safety and absolute effect'],
+    ['interpretation and limitations'],
+    ['primary source', 'primary sources', 'primary publications and authoritative sources']
+  ];
+  for (const group of requiredHeadingGroups) if (!group.some(heading => heads.includes(heading))) fail(t.id, 'Required section missing: ' + group.join(' OR '));
   const visibleText = norm(html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' '));
   if (!(/current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText))) fail(t.id, 'Dated current-practice review status missing');
   if (html.length < 3500) fail(t.id, 'Trial page is too short to contain the required evidence summary');
