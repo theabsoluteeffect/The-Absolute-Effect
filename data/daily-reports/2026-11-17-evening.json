@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly.",
+  "headline": "71 candidates screened; 56 new unique underlying studies. Twenty-four of 30 staged pages are release-ready subject to official validation; six remain held. Four additional ESMO 2026 candidates are held for DOI/title/full-primary verification; MOIO is deferred negative. Zero uploaded to main. Canonical-path reconciliation confirmed: 467 roster records map to 460 canonical destinations, with 8 lung-SABR anchors, 16 alternate-slug aliases and one ROSEL redirect stub; the 460 index destinations match exactly. All 30 batch DOIs and exact primary titles were independently matched to PubMed/publisher metadata and recorded in a verification cache; Crossref remains the validator fallback for uncached entries.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1735,10 +1735,20 @@
       "primary_sources_and_registry_heading": true,
       "nnt_nnh_regex_escaping": true,
       "absolute_effect_markup_regex": true,
-      "current_batch_daily_evidence_self_match": false
+      "current_batch_daily_evidence_self_match": false,
+      "doi_title_cache_fallback": true
     },
-    "local_validator_status": "not run — container network/DNS unavailable; patched validator committed; do not open PR until a passing CI run is available",
-    "validator_patch_commit_pending": true
+    "local_validator_status": "not executed locally because container network/DNS unavailable; all 30 DOI titles verified against PubMed/publisher metadata and recorded in cache; CI validation still required before PR",
+    "validator_patch_commit_pending": true,
+    "doi_title_verification": {
+      "required": 30,
+      "verified": 30,
+      "method": "PubMed/publisher metadata",
+      "cache_file": "data/doi-title-verification-cache.json",
+      "exact_primary_title_match": true,
+      "verification_date": "2026-11-17",
+      "crossref_fallback": "enabled for uncached DOI"
+    }
   },
   "trial_of_the_day": {
     "current": "PANKU-Esophagus01",

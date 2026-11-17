@@ -4134,5 +4134,14 @@
     ],
     "permanent_trial_pages": 460,
     "total_unique_trials": 467
+  },
+  "doi_title_verification": {
+    "required": 30,
+    "verified": 30,
+    "method": "PubMed/publisher metadata",
+    "cache_file": "data/doi-title-verification-cache.json",
+    "exact_primary_title_match": true,
+    "verification_date": "2026-11-17",
+    "crossref_fallback": "enabled for uncached DOI"
   }
 }

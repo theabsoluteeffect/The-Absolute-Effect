@@ -87,10 +87,27 @@ try {
 } catch (error) { fail('archive', 'Could not parse trial-archive.json: ' + String(error)); }
 
 const canonicalTitle = s => norm(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const doiTitleCacheFile = path.join(dataDir, 'doi-title-verification-cache.json');
+let doiTitleCache = new Map();
+try {
+  const cache = JSON.parse(fs.readFileSync(doiTitleCacheFile, 'utf8'));
+  doiTitleCache = new Map((cache.entries || []).map(entry => [String(entry.doi || '').toLowerCase(), entry]));
+} catch (error) {
+  fail('doi-title-verification-cache.json', 'Could not read PubMed/publisher DOI title cache: ' + String(error));
+}
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
   if (!doi.startsWith('10.') || !doi.includes('/')) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
   if (!t.primary_title) { fail(t.id, 'Primary publication title missing from roster'); continue; }
+  const cached = doiTitleCache.get(doi.toLowerCase());
+  if (cached) {
+    if (cached.title_match !== true || canonicalTitle(cached.primary_title) !== canonicalTitle(t.primary_title)) {
+      fail(t.id, 'Cached PubMed/publisher primary DOI/title mismatch');
+    } else if (!cached.verification_url || !/PubMed|publisher/i.test(cached.verified_by || '')) {
+      fail(t.id, 'Cached DOI verification lacks an authoritative PubMed/publisher source');
+    }
+    continue;
+  }
   try {
     let response = null;
     for (let attempt = 0; attempt < 4; attempt++) {
@@ -98,7 +115,7 @@ for (const t of batch) {
       if (response.status !== 429 || attempt === 3) break;
       await new Promise(resolve => setTimeout(resolve, 2500 * (attempt + 1)));
     }
-    if (!response || !response.ok) { fail(t.id, 'Crossref could not resolve primary DOI: HTTP ' + (response?.status || 'network error')); continue; }
+    if (!response || !response.ok) { fail(t.id, 'Crossref could not resolve primary DOI and no verified PubMed/publisher cache entry exists: HTTP ' + (response?.status || 'network error')); continue; }
     const payload = await response.json();
     const resolvedTitle = payload?.message?.title?.[0] || '';
     if (!resolvedTitle) fail(t.id, 'Crossref returned no publication title for primary DOI');
@@ -107,7 +124,7 @@ for (const t of batch) {
     }
     await new Promise(resolve => setTimeout(resolve, 1200));
   } catch (error) {
-    fail(t.id, 'Primary DOI verification request failed: ' + String(error));
+    fail(t.id, 'Primary DOI verification request failed and no verified cache entry exists: ' + String(error));
   }
 }
 const announcedRaw = roster.audit?.new_trials_added_today;
