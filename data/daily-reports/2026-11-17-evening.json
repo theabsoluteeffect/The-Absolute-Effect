@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-17T20:00:32+05:30",
   "cycle": "evening continuation — serialized on existing 17 November branch; no overlapping PM branch created",
   "status": "INCOMPLETE",
-  "headline": "30 unique new-to-main pages staged; PR #5 checks passed on head 3697bef2; 0 uploaded pending artifact review and fresh checks.",
+  "headline": "30 unique new-to-main pages staged; PR #5 checks passed on ce986e9; 0 uploaded pending audit artifact review.",
   "target": {
     "per_run": 30,
     "uploaded": 0,
@@ -1794,9 +1794,9 @@
     "local_release_validator": "not run locally — git clone failed due DNS/network; current-head PR CI is required",
     "custom_static_validator": "stale — previous static report predates final page substitutions; not accepted as current-head validation",
     "pr_opened": true,
-    "pr_checks": "passed on head 3697bef2; rerun required after this report/queue commit",
-    "merge_status": "held — audit artifact content not inspected; do not merge until report is accessible and reviewed",
-    "production_deployment": "not verified — Cloudflare preview only",
+    "pr_checks": "all check runs complete and successful on ce986e9; commit-status endpoint returned pending with zero status contexts",
+    "merge_status": "held — audit artifact content not inspected; release-process task remains open",
+    "production_deployment": "not verified — Cloudflare branch preview only",
     "validator_patch": {
       "primary_sources_and_registry_heading": true,
       "nnt_nnh_regex_escaping": true,
@@ -1824,9 +1824,9 @@
       "note": "Earlier PASS does not validate the current branch head."
     },
     "preview_visual_review": "Cloudflare preview URL was not accessible through the browser; static HTML chart/status structures and source values were inspected; browser-rendered QA remains pending.",
-    "outcome_visualization_audit": "passed on PR head 3697bef2 (run 44142838075); audit artifact generated",
+    "outcome_visualization_audit": "passed on current PR head ce986e9 (run 44144890490); artifact generated",
     "validated_branch_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-    "strict_release_validator": "passed on PR head 3697bef2 (run 44142838075); current next head pending rerun",
+    "strict_release_validator": "passed on current PR head ce986e9 (run 44144890490)",
     "pr_number": 5,
     "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
     "artifact_inspection": {
@@ -1853,7 +1853,7 @@
     "archive_updated": true
   },
   "page_commit_sha": "c2ee4ad6118a89428b5392c0bcb6145c5a151087",
-  "branch_head_after": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "branch_head_after": "ce986e9427248a52ed8587527b2d63f6535f2a77",
   "deployment_status": "Branch preview not re-verified after latest source corrections; production not deployed",
   "cumulative_main_unique_studies": 437,
   "remaining_to_1000": 563,
@@ -1890,8 +1890,8 @@
     "capital",
     "bctop-h-n01"
   ],
-  "report_commit_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
-  "metadata_commit_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "report_commit_sha": "ce986e9427248a52ed8587527b2d63f6535f2a77",
+  "metadata_commit_sha": "ce986e9427248a52ed8587527b2d63f6535f2a77",
   "final_report_metadata_commit": "metadata-only commit follows; final branch head reported separately",
   "page_qa_status": {
     "staged_pages": 30,
@@ -2087,7 +2087,7 @@
   "run_cycle": "evening",
   "branch_ci_run_id": 44128311168,
   "branch_ci_validated_head": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-  "run_status": "INCOMPLETE — PR #5 open; checks passed on previous head; merge held pending outcome-audit artifact inspection; 0 uploaded.",
+  "run_status": "INCOMPLETE — PR #5 open; strict validator and audit passed on ce986e9; merge held pending artifact-content inspection; 0 uploaded.",
   "main_commit_before": "608076f608609d0483f63cee7084ff431c21c2fe",
   "branch": "atlas-batch/2026-11-17-am",
   "branch_head_before": "a91892cc213a94d1b83b1080396aa1821aca008b",
@@ -2118,31 +2118,33 @@
   "duplicate_check_reconciliation_note": "Candidate-level ledger contains 72 distinct screened candidate records. The earlier aggregate of 73 was corrected because NRG-BR002 appeared twice in the deferred-negative list; duplicate deferred-negative entries are now consolidated.",
   "pr_number": 5,
   "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
-  "pr_head_sha": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+  "pr_head_sha": "ce986e9427248a52ed8587527b2d63f6535f2a77",
   "pr_checks": [
     {
-      "name": "Strict release validator",
-      "run_id": 44142838075,
-      "check_run_id": 134249977352,
-      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "name": "Strict trial release validator",
+      "run_id": 44144890490,
+      "check_run_id": 134257214963,
+      "commit": "ce986e9427248a52ed8587527b2d63f6535f2a77",
       "conclusion": "success"
     },
     {
-      "name": "Outcome visualization audit",
-      "run_id": 44142838075,
-      "check_run_id": 134249977352,
-      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "name": "Audit all roster and trial HTML pages / outcome visualization audit",
+      "run_id": 44144890490,
+      "check_run_id": 134257214963,
+      "commit": "ce986e9427248a52ed8587527b2d63f6535f2a77",
       "conclusion": "success"
     },
     {
       "name": "Cloudflare Pages preview",
-      "check_run_id": 134247052434,
-      "commit": "3697bef2f06ac616218c7a694a1e90619ab3b02a",
+      "check_run_id": 134254583888,
+      "commit": "ce986e9427248a52ed8587527b2d63f6535f2a77",
       "conclusion": "success",
-      "preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev"
+      "preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
+      "deployment_id": "58403e55-9a47-4ddd-ace7-40df1a03b05e"
     }
   ],
-  "pr_checks_status": "passed on PR head 3697bef2; subsequent report commit will trigger a fresh check run",
+  "pr_checks_status": "passed on current PR head ce986e9 (17 Nov 2026); strict validator, all-page audit and Cloudflare preview completed successfully.",
   "cloudflare_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
-  "uploaded_count": 0
+  "uploaded_count": 0,
+  "cloudflare_preview_deployment_id": "58403e55-9a47-4ddd-ace7-40df1a03b05e"
 }
