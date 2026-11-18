@@ -70,7 +70,7 @@
       "merge_commit_sha": "88e90e26cfc55a33420090d495de6ca83b06a4fb",
       "head": "56da9929bf3b256c8f3dc76ced4be4cb9524f203"
     },
-    "branch_head_before_report_update": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
+    "branch_head_before_report_update": "35fa69e976c918ccaa8b8cb4036d8527747b4cc7",
     "current_branch_pr": null
   },
   "repairs": {
@@ -394,11 +394,11 @@
     "main_post_merge_workflow_run": 44226050992,
     "main_post_merge_workflow_conclusion": "success",
     "branch_preview_build": "success",
-    "latest_preview_commit": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
+    "latest_preview_commit": "35fa69e976c918ccaa8b8cb4036d8527747b4cc7",
     "strict_release_validator": "not run — no complete 30-page batch; no PR opened",
     "outcome_visualization_audit": "HTML-level checks passed for 12 panels across five repaired pages; browser-rendered review remains open",
     "production_build": "not triggered",
-    "cloudflare_deployment_id": "edd499d4-1953-4ee1-832d-0a3cdee7b322"
+    "cloudflare_deployment_id": "ebefdbf4-1dc0-4152-a087-829fbe6b6b5d"
   },
   "deployment": {
     "branch_preview_deployment": "success",
@@ -411,7 +411,7 @@
     "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML",
     "branch_preview": "success",
     "production_deployment": "not deployed/verified; main unchanged",
-    "branch_preview_deployment_id": "edd499d4-1953-4ee1-832d-0a3cdee7b322",
+    "branch_preview_deployment_id": "ebefdbf4-1dc0-4152-a087-829fbe6b6b5d",
     "representative_page_open": "not independently verified; available web viewer returned an error"
   },
   "trial_of_the_day_candidate_pending_release": {
@@ -517,7 +517,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
+  "content_commit_sha": "35fa69e976c918ccaa8b8cb4036d8527747b4cc7",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
