@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-17-morning",
+  "run_timestamp": "2026-11-17T07:56:12+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE",
+  "target_new_unique_trials": 30,
+  "uploaded_count": 0,
+  "not_uploaded": 30,
+  "uploaded_cases": [],
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "active_branch": "atlas-batch/2026-11-17-am",
+    "content_commit_sha": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
+    "branch_head_at_report_creation": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
+    "branch_base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+    "prior_branch_archived": "archive/atlas-batch-2026-11-16-am",
+    "prior_branch_archived_commit": "6be38c4542cd48360f1b67094483092a907eaa42",
+    "prior_branch_reset_to_main": "atlas-batch/2026-11-16-am",
+    "branch_migration": "Prior staged work was preserved on an archive branch; the previous active ref was reset to main; the new 17 Nov branch was created from the verified main commit and carries forward the prior staged tree in a single coherent commit.",
+    "branch_head_before_final_reconciliation_commit": "10a68808d9044074aee864ae24314edb92c44970",
+    "report_commit_sha": "10a68808d9044074aee864ae24314edb92c44970",
+    "report_update_commit_sha": "2a5db3979e9ca03c3a5e23295db3abb1fabf1bd1"
+  },
+  "coverage": {
+    "verified_main_unique_studies": 437,
+    "branch_roster_entries_including_staged_pages": 439,
+    "target": 1000,
+    "remaining_on_main": 563,
+    "main_canonical_page_files": 431,
+    "branch_canonical_page_files": 433,
+    "staged_new_unique_pages_not_uploaded": [
+      "dellphi-305",
+      "harmoni-a"
+    ],
+    "staged_page_count": 2,
+    "remaining_to_batch_target": 28,
+    "branch_index_unique_links": 432,
+    "branch_missing_rostered_paths": 0,
+    "branch_raw_index_href_references": 472
+  },
+  "preflight": {
+    "core_sources_retrieved": true,
+    "roster_entries_main": 437,
+    "page_files_main": 431,
+    "roster_unique_page_paths_main": 430,
+    "redirect_only_stub": "trial-pages/rosel/index.html",
+    "orphan_canonical_pages": 0,
+    "archive_entries": 15,
+    "archive_roster_matches": 15,
+    "main_index_unique_links": 400,
+    "missing_index_links_on_main": 30,
+    "missing_index_links_on_active_branch": 0,
+    "branch_index_unique_links": 440,
+    "daily_evidence_files_checked": 28,
+    "current_trial_of_the_day": {
+      "trial": "GemX",
+      "date": "2026-11-08"
+    },
+    "previous_trial_of_the_day": {
+      "trial": "ACOSOG Z11102",
+      "date": "2026-11-03"
+    },
+    "source_audit_metadata": "stale; intentionally not marked current because full clinical audit is incomplete",
+    "active_branch_evidence_index_unique_links": 432,
+    "missing_index_links_on_active_branch_before_today_fix": 2,
+    "new_staged_page_links_added_today": 2,
+    "active_branch_evidence_index_raw_href_references": 472
+  },
+  "repairs": {
+    "pages_manually_inspected_today": 3,
+    "pages_manually_inspected_in_carried_forward_batch": 5,
+    "total_pages_manually_reinspected_on_active_branch": 8,
+    "pages_repaired_today": 3,
+    "repairs_staged_not_published": [
+      {
+        "trial_id": "evera",
+        "change": "Rebuilt sparse page from primary NEJM report; added exact DOI/PMID/registry, eligibility, dose, efficacy, safety, OS maturity, QoL status, no-NNT rationale, accessible PFS/OS visualizations and FDA approval context."
+      },
+      {
+        "trial_id": "dellphi-305",
+        "change": "Corrected 12-month OS to 79% vs 53%, 26.0 pp benefit, NNT 4; corrected PFS landmarks to 38% vs 10%; removed unsupported detailed CRS/ICANS rates; added official sponsor summary and treatment duration."
+      },
+      {
+        "trial_id": "harmoni-a",
+        "change": "Corrected primary PFS HR 95% CI to 0.34–0.62; added the 15 Nov 2026 FDA CRL context for the separate global HARMONi study, with SEC/company source."
+      }
+    ],
+    "carry_forward_repairs": [
+      "CheckMate 816",
+      "FIGHT-302",
+      "KEYNOTE-A18",
+      "LACC",
+      "SHAPE"
+    ],
+    "evidence_index": {
+      "main_missing_links": 30,
+      "branch_missing_links": 0,
+      "note": "All 30 omissions remain fixed only on the active branch; no main-branch index changes.",
+      "branch_missing_links_before_today_fix": 2,
+      "branch_missing_links_added_today": 2,
+      "branch_missing_links_after_today_fix": 0
+    },
+    "queue": {
+      "main_open": 68,
+      "branch_open_before_run": 120,
+      "branch_open_after_run": 123,
+      "branch_resolved_after_run": 15,
+      "closed_this_run": 2,
+      "added_this_run": 4,
+      "full_manual_audit_complete": false
+    }
+  },
+  "nccn": {
+    "records_in_branch_ledger": 8,
+    "new_records_added": [
+      {
+        "title": "Older Adult Oncology",
+        "version": "2.2026",
+        "doi": "10.6004/jnccn.2026.0050",
+        "pmid": "43019760",
+        "review_scope": "bibliographic metadata/abstract only; complete guideline/reference list inaccessible",
+        "citation_mappings": 0
+      },
+      {
+        "title": "Colon Cancer Insights",
+        "version": "3.2026",
+        "doi": "10.6004/jnccn.2026.0051",
+        "pmid": "43019762",
+        "review_scope": "metadata/abstract only; complete Insights reference list inaccessible",
+        "citation_mappings": 0
+      }
+    ],
+    "exact_reference_mappings_completed": 0,
+    "source_access_followups_open": true
+  },
+  "candidate_screening": {
+    "candidates_screened": 4,
+    "new_unique_underlying_studies": 3,
+    "duplicates": 1,
+    "held": 1,
+    "deferred_negative": 1,
+    "rejected_by_user_policy": 1,
+    "verified_for_new_page_publication": 0,
+    "published": 0,
+    "duplicate_check": [
+      {
+        "candidate": "evERA Breast Cancer",
+        "doi": "10.1056/NEJMoa2602457",
+        "pmid": "42814929",
+        "registry": "NCT05306340",
+        "matched_existing": "roster evera; trial-pages/evera; evidence index",
+        "same_underlying_study": true,
+        "disposition": "duplicate excluded; existing page repaired"
+      },
+      {
+        "candidate": "ZEAL-1L",
+        "doi": "10.1016/j.jtho.2026.104087",
+        "pmid": "42431263",
+        "registry": "NCT04475939",
+        "matched_existing": null,
+        "same_underlying_study": false,
+        "disposition": "new unique; deferred negative"
+      },
+      {
+        "candidate": "DESTINY-Lung04",
+        "doi": null,
+        "pmid": null,
+        "registry": "NCT05048797",
+        "matched_existing": null,
+        "same_underlying_study": false,
+        "disposition": "new unique; held because exact primary WCLC abstract DOI/PMID and full safety/QoL extraction are missing"
+      },
+      {
+        "candidate": "PIVOT-006",
+        "doi": null,
+        "pmid": null,
+        "registry": "NCT06111235",
+        "matched_existing": null,
+        "same_underlying_study": false,
+        "disposition": "new unique but rejected by explicit PIVOT exclusion; distinct from prostate PIVOT, only sponsor topline release available"
+      }
+    ],
+    "carry_forward_not_counted_as_new_screened": [
+      "DeLLphi-305",
+      "HARMONi-A"
+    ]
+  },
+  "deferred_negative": {
+    "queue_path": "data/deferred-negative-evidence.json",
+    "total_items": 13,
+    "added": [
+      "ZEAL-1L"
+    ],
+    "rationale": "Primary phase III endpoint negative; no PFS improvement; key secondary endpoints not formally tested."
+  },
+  "outcome_qa": {
+    "dellphi_305": "12-month OS 79% vs 53%, 26.0 pp, NNT 4; data-benefit corrected to 26.0. 12-month PFS 38% vs 10%, no PFS NNT.",
+    "harmoni_a": "30-month OS 29.1% vs 18.4%, 10.7 pp, NNT 10; primary PFS CI corrected to 0.34–0.62.",
+    "evera": "No NNT/NNH; median PFS/HR are not converted; immature 18-month OS did not cross prespecified significance boundaries. Actual accessible PFS/OS charts added.",
+    "browser_rendered_qa": "Not run; HTML structure and source values manually inspected."
+  },
+  "synchronization": {
+    "roster_new_entries": 0,
+    "roster_metadata_updates": 3,
+    "evidence_index_new_links_today": 2,
+    "evidence_index_links_carried_forward": 30,
+    "archive_changes": 0,
+    "trial_of_the_day_changes": 0,
+    "nccn_coverage_ledger_guideline_records_added": 2,
+    "repair_queue_items_closed": 2,
+    "repair_queue_items_added": 4,
+    "deferred_negative_items_added": 1
+  },
+  "release_gate": {
+    "exact_30_new_unique_pages": false,
+    "local_release_validator": "not run; batch is 2/30 staged and not PR-eligible",
+    "primary_doi_exact_title_gate": "not run for held candidates; DESTINY-Lung04 lacks DOI/PMID",
+    "pull_request": "not opened",
+    "outcome_visualization_audit": "not run",
+    "strict_release_validator": "not run",
+    "merge": "not performed",
+    "production_deployment": "not verified"
+  },
+  "next_actions": [
+    "Complete DeLLphi-305 exact protocol step-up dosing and full supplement review.",
+    "Complete HARMONi-A supplement and QoL review; run browser-rendered chart QA.",
+    "Retrieve exact WCLC 2026 DESTINY-Lung04 primary abstract DOI/PMID and full safety/QoL data; keep held until verified.",
+    "Keep ZEAL-1L in deferred-negative evidence and PIVOT-006 excluded under the explicit PIVOT rule.",
+    "Retrieve complete NCCN Older Adult Oncology and Colon Cancer reference lists; do not infer reference numbers.",
+    "Continue disease-site rotation and primary-source candidate screening until 30 new unique studies are independently verified.",
+    "Run strict local release validator, open PR and wait for all required checks only after exactly 30 eligible pages pass."
+  ]
+}

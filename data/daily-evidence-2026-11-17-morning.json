@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-17-morning",
+  "date": "2026-11-17",
+  "cycle": "morning",
+  "timestamp": "2026-11-17T07:56:12+05:30",
+  "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
+  "branch": "atlas-batch/2026-11-17-am",
+  "carried_forward_from": "archive/atlas-batch/2026-11-16-am",
+  "carried_forward_commit": "6be38c4542cd48360f1b67094483092a907eaa42",
+  "source_reconciliation": {
+    "main_roster_entries": 437,
+    "main_canonical_page_files": 431,
+    "main_roster_unique_page_paths": 430,
+    "redirect_only_page_stubs": [
+      "trial-pages/rosel/index.html"
+    ],
+    "orphan_canonical_content_pages": 0,
+    "archive_entries": 15,
+    "archive_roster_matches": 15,
+    "main_evidence_index_unique_links": 400,
+    "main_missing_rostered_page_links": 30,
+    "active_branch_evidence_index_unique_links": 432,
+    "active_branch_missing_rostered_page_links": 0,
+    "daily_evidence_files_checked": 28,
+    "duplicate_comparison_fields": [
+      "trial name and aliases",
+      "registry IDs",
+      "primary and follow-up DOI/PMID",
+      "roster",
+      "recursive page paths",
+      "archive",
+      "evidence index",
+      "current and previous Trial-of-the-Day",
+      "daily-evidence files"
+    ],
+    "candidate_identity_matches": [],
+    "current_trial_of_the_day": {
+      "trial": "GemX",
+      "date": "2026-11-08"
+    },
+    "previous_trial_of_the_day": {
+      "trial": "ACOSOG Z11102",
+      "date": "2026-11-03"
+    },
+    "note": "Main remains unchanged. The 30 evidence-index omissions are fixed only in the carried-forward branch tree. Full clinical audit of all 431 canonical pages is not complete. Two missing links for the staged DeLLphi-305 and HARMONi-A pages were identified during post-write verification and added; active-branch unique canonical links now equal all 432 rostered paths; raw href references include duplicates.",
+    "active_branch_missing_rostered_page_links_before_today_fix": 2,
+    "active_branch_new_links_added_today": 2,
+    "active_branch_evidence_index_raw_href_refs": 472
+  },
+  "candidate_decisions": [
+    {
+      "candidate": "evERA Breast Cancer",
+      "aliases": [
+        "evERA",
+        "Giredestrant plus everolimus",
+        "NCT05306340"
+      ],
+      "doi": "10.1056/NEJMoa2602457",
+      "pmid": "42814929",
+      "registry_id": "NCT05306340",
+      "matched_existing": {
+        "roster_id": "evera",
+        "page": "trial-pages/evera/index.html",
+        "index_link": true,
+        "archive": false
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded_existing_canonical_page_repaired",
+      "reason": "Already present as one canonical study; this run repaired primary DOI/PMID/title/registry metadata, full primary outcomes, safety, accessible outcome visualizations and FDA approval context. Not counted as a new trial."
+    },
+    {
+      "candidate": "ZEAL-1L",
+      "aliases": [
+        "Niraparib plus pembrolizumab maintenance"
+      ],
+      "doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_id": "NCT04475939",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "deferred_negative",
+      "reason": "New underlying phase III study, but the primary PFS endpoint was negative (5.55 vs 5.55 months; HR 1.00, 95% CI 0.79–1.27; one-sided P=0.502). Added to deferred-negative/contrary-evidence queue, not a new positive trial page."
+    },
+    {
+      "candidate": "DESTINY-Lung04",
+      "aliases": [
+        "D967SC00001",
+        "T-DXd first-line HER2-mutant NSCLC"
+      ],
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT05048797",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "new_unique_held_primary_metadata",
+      "reason": "New unique phase III trial with WCLC 2026 primary conference results, but exact primary abstract DOI/PMID was not located. The mandatory DOI-to-exact-title release gate therefore fails; full safety/QoL extraction remains incomplete."
+    },
+    {
+      "candidate": "PIVOT-006",
+      "aliases": [
+        "Cretostimogene intravesical therapy"
+      ],
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06111235",
+      "matched_existing": null,
+      "same_underlying_study": false,
+      "disposition": "rejected_user_policy_exclusion",
+      "reason": "Distinct NMIBC study, not the prostate PIVOT trial; nevertheless the explicit instruction to exclude PIVOT from new additions was applied to the literal PIVOT-006 name. Only sponsor topline release available on 2026-11-16; no primary DOI/PMID or full peer-reviewed results."
+    }
+  ],
+  "screening_summary": {
+    "candidates_screened": 4,
+    "duplicates_found": 1,
+    "new_unique_underlying_studies": 3,
+    "held": 1,
+    "deferred_negative": 1,
+    "rejected_by_user_policy": 1,
+    "fully_verified_for_new_page_publication": 0,
+    "published": 0
+  },
+  "carry_forward_trials": [
+    {
+      "id": "dellphi-305",
+      "trial": "DeLLphi-305",
+      "registry_id": "NCT06211036",
+      "status": "staged_not_published",
+      "source_reviewed": true,
+      "page_corrected": true,
+      "remaining": "confirm exact protocol step-up schedule and full supplementary safety/QoL; exact-30 release gate"
+    },
+    {
+      "id": "harmoni-a",
+      "trial": "HARMONi-A",
+      "registry_id": "NCT05184712",
+      "status": "staged_not_published",
+      "source_reviewed": true,
+      "page_corrected": true,
+      "remaining": "full supplementary/QoL review; browser QA; exact-30 release gate"
+    }
+  ],
+  "page_repairs": [
+    {
+      "trial_id": "evera",
+      "page": "trial-pages/evera/index.html",
+      "status": "staged_on_branch",
+      "change": "Replaced sparse page with primary NEJM outcomes, eligibility, dose, safety, QoL status, PFS/OS visualizations, NNT rationale and FDA approval dated 2026-11-16."
+    },
+    {
+      "trial_id": "dellphi-305",
+      "page": "trial-pages/dellphi-305/index.html",
+      "status": "staged_on_branch",
+      "change": "Corrected 12-month OS to 79% vs 53%, benefit 26.0 pp, NNT 4; PFS 38% vs 10%; removed unsupported third-party CRS/ICANS numeric claims; added official sponsor source and treatment duration."
+    },
+    {
+      "trial_id": "harmoni-a",
+      "page": "trial-pages/harmoni-a/index.html",
+      "status": "staged_on_branch",
+      "change": "Corrected primary PFS HR 95% CI to 0.34–0.62; added distinct global HARMONi FDA CRL context with SEC/company source."
+    }
+  ],
+  "nccn_guideline_metadata_reviewed": [
+    {
+      "guideline": "Older Adult Oncology",
+      "version": "2.2026",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "scope": "metadata/abstract only; full guideline/reference list inaccessible",
+      "citation_mappings": 0
+    },
+    {
+      "guideline": "Colon Cancer Insights",
+      "version": "3.2026",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "scope": "metadata/abstract only; full Insights reference list inaccessible",
+      "citation_mappings": 0
+    }
+  ],
+  "nnt_nnh_visualization_qa": {
+    "dellphi_305": "12-month OS 79% vs 53%; 26.0 pp; ceil(100/26)=4. data-benefit corrected to 26.0; 12-month PFS 38% vs 10% shown without a second NNT.",
+    "harmoni_a": "30-month OS 29.1% vs 18.4%; 10.7 pp; ceil(100/10.7)=10. Primary PFS CI corrected; no PFS NNT.",
+    "evera": "No NNT/NNH. Primary PFS reported as medians/HR without fixed-time PFS rates; 18-month OS estimates are immature and did not cross prespecified boundaries. Accessible PFS/OS bar charts added.",
+    "browser_rendered_qa": "Not run; HTML structure and source values inspected only."
+  },
+  "main_changes": {
+    "pages": 0,
+    "roster_entries": 0,
+    "index_links": 0,
+    "archive_entries": 0,
+    "trial_of_the_day": 0
+  },
+  "branch_changes": {
+    "new_pages_carried_forward": 2,
+    "existing_pages_repaired": 3,
+    "index_links_carried_forward": 30,
+    "roster_new_entries": 0,
+    "roster_metadata_updates": 3,
+    "archive_entries": 0,
+    "trial_of_the_day": 0,
+    "evidence_index_links_added_today": 2,
+    "evidence_index_missing_before_today_fix": 2,
+    "evidence_index_missing_after_today_fix": 0,
+    "evidence_index_unique_canonical_links_after": 432,
+    "evidence_index_raw_href_references_after": 472
+  },
+  "publication_gate": {
+    "exact_30_new_unique_pages": false,
+    "local_release_validator": "not run",
+    "doi_title_gate": "not run for held candidates",
+    "pull_request": "not opened",
+    "checks": "not run",
+    "merge": "not performed",
+    "production_deployment": "not verified"
+  },
+  "content_commit_sha": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
+  "report_path": "data/daily-reports/2026-11-17-morning.json"
+}

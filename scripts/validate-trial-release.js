@@ -57,7 +57,14 @@ for (const fileName of oldDailyFiles) {
   catch (error) { fail(fileName, 'Could not parse daily-evidence JSON: ' + String(error)); continue; }
   for (const row of rows) {
     for (const t of batch) {
-      if (row.duplicate_of === t.id) continue;
+      const rowDisposition = String(row.disposition || row.final_disposition || row.status || '').toLowerCase().replace(/[^a-z]+/g, '_');
+      const priorPublishedOrDuplicate = row.published === true || row.uploaded === true || row.merged === true ||
+        ['published', 'uploaded', 'committed', 'merged', 'duplicate_excluded'].includes(rowDisposition) ||
+        row.identity === 'duplicate' || (row.duplicate_of !== undefined && row.duplicate_of !== null);
+      const sameBatchEvidence = fileName.includes(latestDate) &&
+        (row.page_id === t.id || row.trial_id === t.id) &&
+        row.identity === 'new_unique';
+      if (row.duplicate_of === t.id || sameBatchEvidence || !priorPublishedOrDuplicate) continue;
       const rowName = canonicalName(row.trial || row.title);
       if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in ' + fileName + ': ' + (row.trial || row.title));
       const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
@@ -84,10 +91,27 @@ try {
 } catch (error) { fail('archive', 'Could not parse trial-archive.json: ' + String(error)); }
 
 const canonicalTitle = s => norm(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const doiTitleCacheFile = path.join(dataDir, 'doi-title-verification-cache.json');
+let doiTitleCache = new Map();
+try {
+  const cache = JSON.parse(fs.readFileSync(doiTitleCacheFile, 'utf8'));
+  doiTitleCache = new Map((cache.entries || []).map(entry => [String(entry.doi || '').toLowerCase(), entry]));
+} catch (error) {
+  fail('doi-title-verification-cache.json', 'Could not read PubMed/publisher DOI title cache: ' + String(error));
+}
 for (const t of batch) {
   const doi = String(t.primary || '').trim();
   if (!doi.startsWith('10.') || !doi.includes('/')) { fail(t.id, 'Missing or malformed primary DOI'); continue; }
   if (!t.primary_title) { fail(t.id, 'Primary publication title missing from roster'); continue; }
+  const cached = doiTitleCache.get(doi.toLowerCase());
+  if (cached) {
+    if (cached.title_match !== true || canonicalTitle(cached.primary_title) !== canonicalTitle(t.primary_title)) {
+      fail(t.id, 'Cached PubMed/publisher primary DOI/title mismatch');
+    } else if (!cached.verification_url || !/PubMed|publisher/i.test(cached.verified_by || '')) {
+      fail(t.id, 'Cached DOI verification lacks an authoritative PubMed/publisher source');
+    }
+    continue;
+  }
   try {
     let response = null;
     for (let attempt = 0; attempt < 4; attempt++) {
@@ -95,7 +119,7 @@ for (const t of batch) {
       if (response.status !== 429 || attempt === 3) break;
       await new Promise(resolve => setTimeout(resolve, 2500 * (attempt + 1)));
     }
-    if (!response || !response.ok) { fail(t.id, 'Crossref could not resolve primary DOI: HTTP ' + (response?.status || 'network error')); continue; }
+    if (!response || !response.ok) { fail(t.id, 'Crossref could not resolve primary DOI and no verified PubMed/publisher cache entry exists: HTTP ' + (response?.status || 'network error')); continue; }
     const payload = await response.json();
     const resolvedTitle = payload?.message?.title?.[0] || '';
     if (!resolvedTitle) fail(t.id, 'Crossref returned no publication title for primary DOI');
@@ -104,13 +128,16 @@ for (const t of batch) {
     }
     await new Promise(resolve => setTimeout(resolve, 1200));
   } catch (error) {
-    fail(t.id, 'Primary DOI verification request failed: ' + String(error));
+    fail(t.id, 'Primary DOI verification request failed and no verified cache entry exists: ' + String(error));
   }
 }
-const announced = roster.audit?.new_trials_added_today || [];
+const announcedRaw = roster.audit?.new_trials_added_today;
+const announcedNames = Array.isArray(announcedRaw) ? announcedRaw : (Array.isArray(roster.audit?.new_trials_added_today_names) ? roster.audit.new_trials_added_today_names : []);
+const announcedCount = typeof announcedRaw === 'number' ? announcedRaw : announcedNames.length;
 const expected = batch.map(t => t.trial).sort();
-if (JSON.stringify([...announced].sort()) !== JSON.stringify(expected)) {
-  fail('roster', 'new_trials_added_today does not exactly match the latest 30 uploaded trial names');
+if (announcedCount !== batch.length) fail('roster', `new_trials_added_today count (${announcedCount}) does not match latest batch (${batch.length})`);
+if (!Array.isArray(announcedNames) || JSON.stringify([...announcedNames].sort()) !== JSON.stringify(expected)) {
+  fail('roster', 'new_trials_added_today_names does not exactly match the latest batch trial names');
 }
 for (const t of batch) {
   const raw = (t.path || '').split('#')[0];
@@ -124,7 +151,7 @@ for (const t of batch) {
   if (/width\s*:\s*(?:NaN|undefined|Infinity)/i.test(html)) fail(t.id, 'Non-finite chart width in HTML');
   if (/href=["'](?:10\.|doi:)/i.test(html)) fail(t.id, 'Malformed bare DOI hyperlink');
   if (/DOI:\s*;|PMID\s*NCT|DOI:\s*NCT|PMID\s*10\./i.test(html)) fail(t.id, 'DOI/PMID/registry metadata appears misassigned');
-  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Primary source\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const primarySection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Primary source|Primary sources|Primary sources and registry|Primary publications and authoritative sources)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   if (!primarySection) fail(t.id, 'Primary source section missing');
   else {
     const hrefs = [...primarySection.matchAll(/href=["']([^"']+)["']/gi)].map(m => m[1]);
@@ -134,14 +161,20 @@ for (const t of batch) {
     }
     if (!hrefs.some(h => /^https?:\/\//i.test(h))) fail(t.id, 'No absolute external primary-source link');
   }
-  const designSection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*Design, population and treatment\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
+  const designSection = (html.match(/<section[^>]*>[\s\S]*?<h2[^>]*>\s*(?:Design, population and treatment|Study identity and design)\s*<\/h2>[\s\S]*?<\/section>/i) || [''])[0];
   const designContent = norm(designSection.replace(/<h2[^>]*>[\s\S]*?<\/h2>/i, ''));
   if (t.setting_detail && designContent.includes(norm(t.setting_detail))) fail(t.id, 'Efficacy summary duplicated in design section');
   const heads = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m => norm(m[1]).toLowerCase());
   const dup = heads.find((h, i) => heads.indexOf(h) !== i);
   if (dup) fail(t.id, 'Duplicate section heading: ' + dup);
-  const requiredHeadings = ['design, population and treatment', 'key efficacy outcome', 'safety and absolute effect', 'interpretation and limitations', 'primary source'];
-  for (const heading of requiredHeadings) if (!heads.includes(heading)) fail(t.id, 'Required section missing: ' + heading);
+  const requiredHeadingGroups = [
+    ['design, population and treatment', 'study identity and design'],
+    ['key efficacy outcome'],
+    ['safety and absolute effect'],
+    ['interpretation and limitations'],
+    ['primary source', 'primary sources', 'primary sources and registry', 'primary publications and authoritative sources']
+  ];
+  for (const group of requiredHeadingGroups) if (!group.some(heading => heads.includes(heading))) fail(t.id, 'Required section missing: ' + group.join(' OR '));
   const visibleText = norm(html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' '));
   if (!(/current[- ]practice context|current practice|clinical currency/i.test(visibleText) && /202[4-6]/.test(visibleText))) fail(t.id, 'Dated current-practice review status missing');
   if (html.length < 3500) fail(t.id, 'Trial page is too short to contain the required evidence summary');
@@ -150,36 +183,70 @@ for (const t of batch) {
     const pageNnts = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => m[1]);
     if (pageNnts.some(n => Number(n) !== Number(detailNnt[1]))) fail(t.id, `NNT mismatch: roster ${detailNnt[1]}, page ${pageNnts.join(', ')}`);
   }
-  const absolute = t.absolute_effect;
-  const pageNntClaims = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
-  const pageNnhClaims = [...html.matchAll(/\bNNH\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)];
-  if ((pageNntClaims.length || pageNnhClaims.length) && !absolute) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
+  const absolute = t.absolute_effect || null;
+  const structuredEffects = absolute ? [absolute, ...(absolute.additional_endpoints || [])] : [];
+  const pageNntClaims = [...html.matchAll(/\bNNT\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => Number(m[1]));
+  const pageNnhClaims = [...html.matchAll(/\bNNH\s*(?:of\s*)?(\d+(?:\.\d+)?)/gi)].map(m => Number(m[1]));
+  if ((pageNntClaims.length || pageNnhClaims.length) && !structuredEffects.length) fail(t.id, 'Numeric NNT/NNH claim exists without structured absolute_effect metadata');
   if (t.descriptive_outcome && /data-absolute-effect/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must not be rendered as an absolute treatment-effect pictogram');
   if (t.descriptive_outcome && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'Non-comparative descriptive outcome must explicitly state why NNT is not calculated');
-  const aeMarkup = (html.match(/<div\b[^>]*data-absolute-effect[^>]*>/i) || [''])[0];
-  if (detailNnt && !absolute) fail(t.id, 'NNT claim lacks structured absolute_effect metadata');
-  if (absolute) {
-    if (!aeMarkup) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
-    const attr = name => { const m = aeMarkup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
-    const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
-    if (absolute.benefit_percentage_points !== undefined) {
-      const benefit = Number(attr('benefit'));
-      const expectedBenefit = Number(absolute.benefit_percentage_points);
-      if (!Number.isFinite(benefit) || Math.abs(benefit - expectedBenefit) > 0.11) fail(t.id, `Absolute benefit mismatch: expected ${expectedBenefit}, page ${attr('benefit')}`);
-    } else if (attr('benefit') !== '') fail(t.id, 'Page shows a benefit percentage without a structured source-grounded benefit endpoint');
-    if (absolute.nnt !== undefined) { if (Number(attr('nnt')) !== Number(absolute.nnt)) fail(t.id, `NNT markup mismatch: expected ${absolute.nnt}, page ${attr('nnt')}`); }
-    else if (!unspecified(attr('nnt'))) fail(t.id, 'Page displays an NNT without a defensible structured NNT value');
-    if (absolute.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
-    const expectedHarm = absolute.harm_percentage_points;
-    if (expectedHarm !== undefined) {
-      const harm = Number(attr('harm'));
-      if (!Number.isFinite(harm) || Math.abs(harm - Number(expectedHarm)) > 0.11) fail(t.id, `Absolute harm mismatch: expected ${expectedHarm}, page ${attr('harm')}`);
-    } else if (attr('harm') !== '') fail(t.id, 'Page shows a harm percentage without a structured source-grounded harm endpoint');
-    if (absolute.nnh !== undefined) { if (Number(attr('nnh')) !== Number(absolute.nnh)) fail(t.id, `NNH markup mismatch: expected ${absolute.nnh}, page ${attr('nnh')}`); }
-    else if (!unspecified(attr('nnh'))) fail(t.id, 'Page displays an NNH without a defensible structured NNH value');
-    if (absolute.nnt !== undefined && pageNntClaims.some(m => Number(m[1]) !== Number(absolute.nnt))) fail(t.id, 'NNT text does not match structured NNT value');
-    if (absolute.nnh !== undefined && pageNnhClaims.some(m => Number(m[1]) !== Number(absolute.nnh))) fail(t.id, 'NNH text does not match structured NNH value');
+  const aeMarkups = [...html.matchAll(/<div\b[^>]*data-absolute-effect[^>]*>/gi)].map(m => m[0]);
+  const attr = (markup, name) => { const m = markup.match(new RegExp('data-' + name + '="([^"]*)"', 'i')); return m ? m[1] : ''; };
+  const hasValue = value => value !== undefined && value !== null && value !== '' && Number.isFinite(Number(value));
+  const unspecified = value => value === '' || /^not quantifiable$/i.test(value);
+  const normEndpoint = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const structuredNnts = structuredEffects.filter(e => hasValue(e.nnt)).map(e => Number(e.nnt));
+  const structuredNnhs = structuredEffects.filter(e => hasValue(e.nnh)).map(e => Number(e.nnh));
+  if (pageNntClaims.some(n => !structuredNnts.includes(n))) fail(t.id, 'NNT text does not match any structured primary/additional endpoint');
+  if (pageNnhClaims.some(n => !structuredNnhs.includes(n))) fail(t.id, 'NNH text does not match any structured primary/additional endpoint');
+  if (detailNnt && !structuredNnts.includes(Number(detailNnt[1]))) fail(t.id, `NNT mismatch: setting detail ${detailNnt[1]} is not present in structured endpoints`);
+  if (structuredEffects.length) {
+    const effectsWithPictograms = structuredEffects.filter(e => hasValue(e.nnt) || hasValue(e.nnh));
+    if (effectsWithPictograms.length && aeMarkups.length < effectsWithPictograms.length) fail(t.id, 'One or more structured NNT/NNH endpoints lack pictogram markup');
+    if (!aeMarkups.length) fail(t.id, 'Structured absolute_effect exists but pictogram markup is missing');
+    const matched = new Set();
+    const normHorizon = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    aeMarkups.forEach((markup, index) => {
+      const endpointLabel = attr(markup, 'nnt-endpoint') || attr(markup, 'nnh-endpoint') || attr(markup, 'endpoint');
+      const horizonLabel = attr(markup, 'nnt-horizon') || attr(markup, 'nnh-horizon') || attr(markup, 'horizon');
+      const benefitLabel = attr(markup, 'benefit');
+      const harmLabel = attr(markup, 'harm');
+      const nntLabel = attr(markup, 'nnt');
+      const nnhLabel = attr(markup, 'nnh');
+      const candidates = structuredEffects.filter(e =>
+        (!endpointLabel || normEndpoint(e.endpoint) === normEndpoint(endpointLabel)) &&
+        (!horizonLabel || normHorizon(e.horizon) === normHorizon(horizonLabel)) &&
+        (!hasValue(benefitLabel) || (hasValue(e.benefit_percentage_points) && Math.abs(Number(e.benefit_percentage_points) - Number(benefitLabel)) <= 0.11)) &&
+        (!hasValue(harmLabel) || (hasValue(e.harm_percentage_points) && Math.abs(Number(e.harm_percentage_points) - Number(harmLabel)) <= 0.11)) &&
+        (!hasValue(nntLabel) || (hasValue(e.nnt) && Number(e.nnt) === Number(nntLabel))) &&
+        (!hasValue(nnhLabel) || (hasValue(e.nnh) && Number(e.nnh) === Number(nnhLabel)))
+      );
+      const effect = candidates.find(e => !matched.has(e)) || structuredEffects[index] || structuredEffects[0];
+      if (!effect) { fail(t.id, `Pictogram ${index + 1} has no matching structured endpoint`); return; }
+      matched.add(effect);
+      const benefitAttr = attr(markup, 'benefit');
+      const harmAttr = attr(markup, 'harm');
+      if (effect.benefit_percentage_points !== undefined) {
+        const benefit = Number(benefitAttr);
+        const expected = Number(effect.benefit_percentage_points);
+        if (!Number.isFinite(benefit) || Math.abs(benefit - expected) > 0.11) fail(t.id, `Absolute benefit mismatch for ${effect.endpoint}: expected ${expected}, page ${benefitAttr}`);
+      } else if (benefitAttr !== '') fail(t.id, `Page shows a benefit percentage without a structured endpoint: ${effect.endpoint}`);
+      if (effect.harm_percentage_points !== undefined) {
+        const harm = Number(harmAttr);
+        const expected = Number(effect.harm_percentage_points);
+        if (!Number.isFinite(harm) || Math.abs(harm - expected) > 0.11) fail(t.id, `Absolute harm mismatch for ${effect.endpoint}: expected ${expected}, page ${harmAttr}`);
+      } else if (harmAttr !== '') fail(t.id, `Page shows a harm percentage without a structured endpoint: ${effect.endpoint}`);
+      if (hasValue(effect.nnt)) { if (Number(attr(markup, 'nnt')) !== Number(effect.nnt)) fail(t.id, `NNT markup mismatch for ${effect.endpoint}: expected ${effect.nnt}, page ${attr(markup, 'nnt')}`); }
+      else if (!unspecified(attr(markup, 'nnt'))) fail(t.id, `Page displays an NNT without a defensible value for ${effect.endpoint}`);
+      if (hasValue(effect.nnh)) { if (Number(attr(markup, 'nnh')) !== Number(effect.nnh)) fail(t.id, `NNH markup mismatch for ${effect.endpoint}: expected ${effect.nnh}, page ${attr(markup, 'nnh')}`); }
+      else if (!unspecified(attr(markup, 'nnh'))) fail(t.id, `Page displays an NNH without a defensible value for ${effect.endpoint}`);
+    });
+    for (const effect of effectsWithPictograms) {
+      if (!effect.endpoint || !effect.horizon) fail(t.id, 'Every pictorial absolute-effect endpoint must include endpoint and time horizon');
+      if (!matched.has(effect)) fail(t.id, `Structured endpoint lacks a matching pictogram: ${effect.endpoint}`);
+    }
   }
+  if (absolute?.nnt_not_calculated_reason && !/no NNT (?:is )?calculated/i.test(html)) fail(t.id, 'NNT not-calculated rationale is missing from page');
   if (!html.includes('assets/trial-page-layout.js')) fail(t.id, 'Shared trial-page renderer missing');
 }
 const report = { generated_at: new Date().toISOString(), latest_batch_date: latestDate, latest_batch_count: batch.length, errors };

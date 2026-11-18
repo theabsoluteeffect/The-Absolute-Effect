@@ -5,7 +5,7 @@ concurrency:
   cancel-in-progress: true
 on:
   push:
-    branches: [main]
+    branches: [main, 'atlas-batch/**']
     paths:
       - 'trial-pages/**'
       - 'assets/absolute-effect.js'
@@ -13,6 +13,7 @@ on:
       - 'assets/trial-page-layout.js'
       - 'scripts/validate-trial-release.js'
       - 'data/master-trial-roster.json'
+      - 'data/doi-title-verification-cache.json'
       - 'scripts/audit-outcome-visuals.js'
       - '.github/workflows/outcome-visual-audit.yml'
   pull_request:
@@ -38,7 +39,7 @@ jobs:
           node-version: 20
       - name: Check shared renderer JavaScript syntax
         run: node --check assets/absolute-effect.js && node --check assets/trial-page-template.js && node --check assets/trial-page-layout.js
-      - name: Validate newest trial batch release quality
+      - name: Strict trial release validator
         run: node scripts/validate-trial-release.js
       - name: Audit all roster and trial HTML pages
         run: node scripts/audit-outcome-visuals.js

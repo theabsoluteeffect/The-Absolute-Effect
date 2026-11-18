@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-17T20:00:32+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -18,6 +18,362 @@
         "https://doi.org/10.6004/jnccn.2026.0047"
       ],
       "status_note": "Already rostered; no duplicate page."
+    },
+    {
+      "trial_id": "attraction-6",
+      "trial": "ATTRACTION-6",
+      "status": "deferred_contrary_evidence",
+      "discovery_source": "ASCO 2026 official abstract",
+      "primary_title": "Nivolumab plus ipilimumab combined with chemotherapy as first-line treatment for HER2-negative unresectable advanced or recurrent gastric/gastroesophageal junction cancer: A randomized phase 3 trial (ATTRACTION-6)",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.4006",
+      "registry_id": "NCT05144854",
+      "reason": "The phase III primary OS endpoint was not met: median OS 15.7 vs 15.8 months; HR 0.90 (95.8% CI 0.74–1.09), P=0.267. Grade ≥3 AEs were 80.0% vs 62.4% and grade ≥3 treatment-related AEs 64.8% vs 42.9%.",
+      "action": "Retain as negative/contrary evidence for first-line HER2-negative advanced gastric/GEJ cancer; do not promote as a positive practice-changing trial page. Reassess if a full peer-reviewed report changes the evidence.",
+      "primary_sources": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4006",
+        "https://clinicaltrials.gov/study/NCT05144854"
+      ],
+      "reviewed_on": "2026-11-15"
+    },
+    {
+      "id": "enzarad",
+      "trial": "ENZARAD / ANZUP 1303",
+      "tumour_site": "Prostate cancer",
+      "setting": "High-risk localised disease · definitive radiotherapy + ADT",
+      "doi": "10.1200/JCO-26-01794",
+      "pmid": "42921729",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer.",
+      "primary_source_url": "https://doi.org/10.1200/JCO-26-01794",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "Phase 3 result did not establish a metastasis-free or overall-survival benefit from adding enzalutamide to standard ADT plus radiotherapy; subgroup findings should not be promoted as a general standard.",
+      "next_action": "Verify the exact trial registry/protocol identifier and extract the full primary efficacy/safety tables; map only if needed to interpret an active recommendation."
+    },
+    {
+      "id": "anzup-1301",
+      "trial": "ANZUP 1301",
+      "tumour_site": "Bladder cancer",
+      "setting": "High-risk non-muscle-invasive bladder cancer · intravesical adjuvant therapy",
+      "doi": "10.1016/j.eururo.2026.01.009",
+      "pmid": "41633899",
+      "registry_id": null,
+      "registry_status": "Not verified in the accessible primary abstract; do not infer an ACTRN/UMIN identifier.",
+      "primary_source_url": "https://doi.org/10.1016/j.eururo.2026.01.009",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "BCG plus mitomycin did not demonstrate a statistically significant disease-free-survival advantage over BCG alone in the primary analysis. The possible reduction in BCG exposure is a treatment-burden signal, not proof of superior disease control.",
+      "next_action": "Retrieve the full protocol/registry and detailed primary tables; retain as contrary evidence for BCG-sparing decisions."
+    },
+    {
+      "id": "e4512",
+      "trial": "E4512",
+      "tumour_site": "Non-small-cell lung cancer",
+      "setting": "Adjuvant · resected ALK-positive disease",
+      "doi": "10.1016/S2213-2600(26)00192-X",
+      "pmid": null,
+      "registry_id": "NCT01871805",
+      "primary_source_url": "https://clinicaltrials.gov/study/NCT01871805",
+      "existing_page": "trial-pages/e4512/index.html",
+      "status": "deferred_contrary_evidence",
+      "reviewed_on": "2026-11-15",
+      "reason_deferred": "The existing Atlas page records no disease-free-survival benefit from adjuvant crizotinib versus observation. Retain as negative evidence; do not create a duplicate page or present adjuvant crizotinib as standard.",
+      "next_action": "Complete primary-publication/abstract citation verification and map the negative result to current ALK-positive resected NSCLC recommendations."
+    },
+    {
+      "trial_id": "nhs-galleri",
+      "trial": "NHS-Galleri",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1056/NEJMoa2505723",
+      "pmid": "42776074",
+      "registry_id": "NCT05611632",
+      "reason": "Randomized multicancer screening trial did not meet the primary late-stage cancer incidence endpoint at the reported analysis; do not portray as established screening benefit.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2505723",
+        "https://clinicaltrials.gov/study/NCT05611632"
+      ],
+      "next_action": "Retain as contrary screening evidence; revisit if mature mortality follow-up is published."
+    },
+    {
+      "trial_id": "pemda-hn",
+      "trial": "PEMDA-HN",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_id": "NCT05814666",
+      "reason": "Negative/ non-practice-changing head-and-neck immunotherapy study in the screened report; full primary endpoint context retained for review.",
+      "source_urls": [
+        "https://doi.org/10.1158/1078-0432.CCR-26-0819",
+        "https://clinicaltrials.gov/study/NCT05814666"
+      ],
+      "next_action": "Reassess only if a guideline recommendation or mature follow-up makes it essential."
+    },
+    {
+      "trial_id": "saci-io-hr-positive",
+      "trial": "SACI-IO HR-positive",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1016/j.annonc.2026.06.012",
+      "pmid": "42323161",
+      "registry_id": "NCT04448886",
+      "reason": "No practice-changing benefit demonstrated in the screened HR-positive cohort; retain as contrary evidence rather than a preferred-regimen page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.06.012",
+        "https://clinicaltrials.gov/study/NCT04448886"
+      ],
+      "next_action": "Revisit if guideline context or mature subgroup data warrants a dedicated page."
+    },
+    {
+      "trial_id": "irocas",
+      "trial": "IROCAS",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1016/j.annonc.2026.10.104",
+      "pmid": "42927853",
+      "registry_id": "NCT02967289",
+      "reason": "Phase III adjuvant intensification did not improve 3-year DFS (65.6% vs 66.3%; HR 1.07; P=.61).",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.104",
+        "https://pubmed.ncbi.nlm.nih.gov/42927853/",
+        "https://clinicaltrials.gov/study/NCT02967289"
+      ],
+      "next_action": "Keep in deferred-negative queue unless essential to interpret an active recommendation."
+    },
+    {
+      "trial_id": "preste-hn",
+      "trial": "PreSte-HN",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1007/s10147-026-03138-4",
+      "pmid": "42479256",
+      "registry_id": null,
+      "reason": "Negative randomized perioperative supportive-care study; trial registry identifier not verified in this run.",
+      "source_urls": [
+        "https://doi.org/10.1007/s10147-026-03138-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42479256/"
+      ],
+      "next_action": "Verify registry and primary endpoint details; retain as negative evidence, not a new practice page."
+    },
+    {
+      "trial_id": "altair-ctdna",
+      "trial": "ALTAIR",
+      "category": "deferred_negative",
+      "status": "deferred",
+      "primary_doi": "10.1038/s41591-026-04428-0",
+      "pmid": "42260101",
+      "registry_id": "NCT04457297",
+      "reason": "Phase III ctDNA-guided trifluridine/tipiracil after adjuvant therapy did not improve the primary DFS endpoint.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04428-0",
+        "https://clinicaltrials.gov/study/NCT04457297"
+      ],
+      "next_action": "Retain as contrary evidence for ctDNA-guided escalation; do not infer benefit from ctDNA positivity alone."
+    },
+    {
+      "trial_id": "transform-1",
+      "trial": "TRANSFORM-1",
+      "category": "contrary_evidence_mixed",
+      "status": "contextual_contrary_evidence",
+      "primary_doi": "10.1182/blood.2025032360",
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "reason": "Primary endpoint SVR35 at week 24 positive (63.2% vs 31.5%, P<0.0001; NNT 4); total symptom score not improved (−10.2 vs −11.6; P=0.2852). Retain as contextual contrary evidence for the symptom endpoint, not as a negative-primary trial.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ],
+      "next_action": "Keep the mixed endpoint caveat attached to canonical trial-pages/transform-1/index.html; reassess only with mature symptom, progression and survival follow-up.",
+      "page_candidate": false,
+      "last_reviewed_on": "2026-11-17",
+      "canonical_page_path": "trial-pages/transform-1/index.html"
+    },
+    {
+      "trial_id": "zeal-1l",
+      "trial": "ZEAL-1L",
+      "status": "deferred_contrary_evidence",
+      "discovery_source": "Primary phase III Journal of Thoracic Oncology report; PubMed record",
+      "primary_title": "Phase III Study of Niraparib Plus Pembrolizumab as Maintenance Therapy for Advanced or Metastatic NSCLC (ZEAL-1L)",
+      "primary_doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_id": "NCT04475939",
+      "publication_date": "2026-07-10",
+      "issue_publication_date": "2026-11",
+      "phase": "III",
+      "design": "Randomized, double-blind, placebo-controlled, phase III maintenance trial",
+      "setting": "Advanced/metastatic squamous or nonsquamous NSCLC without known targetable driver alteration, after first-line chemotherapy plus pembrolizumab",
+      "population": {
+        "itt_n": 666,
+        "experimental_n": 331,
+        "control_n": 335,
+        "primary_crpr_population": {
+          "experimental_n": 200,
+          "control_n": 201
+        }
+      },
+      "interventions": {
+        "experimental": "Niraparib 300 mg or 200 mg orally once daily plus pembrolizumab 200 mg IV every 3 weeks",
+        "control": "Placebo plus pembrolizumab 200 mg IV every 3 weeks"
+      },
+      "primary_endpoint": "BICR-assessed PFS in patients with CR/PR after first-line chemotherapy plus pembrolizumab",
+      "primary_result": "Median PFS 5.55 months in both arms; HR 1.00 (95% CI 0.79–1.27); one-sided P=0.502.",
+      "secondary_endpoint_status": "Hierarchical testing stopped after the primary endpoint failed; ITT PFS, OS in CR/PR and ITT populations, and CNS time-to-progression were not formally tested.",
+      "safety": "Most common grade ≥3 treatment-related adverse events with niraparib were hematologic (anemia, thrombocytopenia, neutropenia); abstract reports no new safety signal. Exact overall grade ≥3 rates not stated in the accessible abstract.",
+      "reason": "Negative phase III primary endpoint; adding niraparib to pembrolizumab maintenance did not improve efficacy. Retain as contrary evidence rather than a new positive trial page.",
+      "action": "Keep as a single canonical negative-evidence record; attach later follow-up if published and revisit only if it becomes essential to interpret a current recommendation.",
+      "trial_of_day_eligible": false,
+      "trial_of_day_exclusion_reason": "Earliest online publication 2026-07-10, outside the preceding month despite November issue date.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42431263/",
+        "https://doi.org/10.1016/j.jtho.2026.104087",
+        "https://clinicaltrials.gov/study/NCT04475939"
+      ],
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "neo-checkray-2026-11-17",
+      "trial": "Neo-CheckRay",
+      "doi": "10.1038/s41591-026-04453-z",
+      "registry_id": "NCT03875573",
+      "site": "Breast",
+      "setting": "Neoadjuvant",
+      "reason": "Primary RCB0/1 endpoint not significantly improved; per-protocol pCR signal exploratory.",
+      "source_url": "https://doi.org/10.1038/s41591-026-04453-z",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "endurance-maintenance-2026-11-17",
+      "trial": "ENDURANCE maintenance-duration randomization",
+      "doi": "10.1056/NEJMoa2600157",
+      "pmid": "42456135",
+      "registry_id": "NCT01863550",
+      "site": "Multiple myeloma",
+      "setting": "Maintenance duration",
+      "reason": "7-year OS68.6% vs69.0%; no survival advantage for continuous vs fixed-duration lenalidomide; more grade≥3 non-haematologic toxicity.",
+      "source_url": "https://doi.org/10.1056/NEJMoa2600157",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "nrg-br002-2026-11-17",
+      "trial": "NRG-BR002",
+      "doi": "10.1200/JCO-26-00201",
+      "registry_id": "NCT02364557",
+      "site": "Breast",
+      "setting": "Oligometastatic",
+      "reason": "NRG-BR002 did not improve PFS or OS when metastasis-directed ablation was added to standard systemic therapy in oligometastatic breast cancer. Exploratory circulating-tumour-cell subgroup findings are hypothesis-generating only and do not establish a treatment benefit.",
+      "source_url": "https://doi.org/10.1200/JCO-26-00201",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17",
+      "additional_evidence": [
+        "NRG-BR002 did not improve PFS or OS when metastasis-directed ablation was added to standard systemic therapy in oligometastatic breast cancer. Exploratory circulating-tumour-cell subgroup findings are hypothesis-generating only and do not establish a treatment benefit.",
+        "Metastasis-directed ablation did not improve PFS or OS in unselected oligometastatic breast cancer; exploratory CTC subgroup is hypothesis-generating only."
+      ],
+      "aliases": [
+        "NRG-BR002",
+        "NRG BR002",
+        "Metastasis-directed therapy in oligometastatic breast cancer"
+      ]
+    },
+    {
+      "id": "optim-2026-11-17",
+      "trial": "OPTIM",
+      "doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "site": "Head and neck",
+      "setting": "R/M after PD-1",
+      "reason": "Nivolumab/ipilimumab did not outperform docetaxel; ORR0% vs17.6%; PFS/OS favoured docetaxel.",
+      "source_url": "https://doi.org/10.1038/s41416-026-03558-z",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "luna-2026-11-17",
+      "trial": "LUNA",
+      "pmid": "41369813",
+      "site": "Colorectal",
+      "setting": "Resected colorectal liver/lung metastases",
+      "reason": "Early-closed small trial; ITT 3-year OS30% vs34%, P=.53.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41369813/",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "id": "leap-009-2026-11-17",
+      "trial": "LEAP-009",
+      "doi": "10.1016/j.ejca.2026.116824",
+      "pmid": "42241967",
+      "registry_id": "NCT04428151",
+      "site": "Head and neck",
+      "setting": "Recurrent/metastatic",
+      "reason": "No OS advantage; OS8.4 vs11.3 months, HR1.48; toxicity/discontinuation concerns.",
+      "source_url": "https://doi.org/10.1016/j.ejca.2026.116824",
+      "status": "deferred_negative",
+      "created_on": "2026-11-17"
+    },
+    {
+      "trial_id": "keynote-867",
+      "trial": "KEYNOTE-867",
+      "doi": "10.1200/JCO-26-00404",
+      "pmid": "42950173",
+      "registry_id": "NCT03924869",
+      "primary_title": "KEYNOTE-867: A Phase III, Randomized, Double-Blind Study of Stereotactic Body Radiotherapy With Pembrolizumab for Unresected Stage I or II Non–Small Cell Lung Cancer",
+      "site": "Unresected stage I–II NSCLC",
+      "setting": "Definitive SBRT with/without pembrolizumab",
+      "phase": "III",
+      "design": "Randomized, double-blind phase III",
+      "population": "448 adults with untreated inoperable or surgery-refusing stage I/II NSCLC; SBRT+pembrolizumab n=227, SBRT+placebo n=221.",
+      "intervention": "Thoracic SBRT to primary tumour over ≤2 weeks plus pembrolizumab 200 mg IV every 3 weeks for up to 17 cycles.",
+      "comparator": "Same SBRT plus placebo every 3 weeks for up to 17 cycles.",
+      "primary_endpoint": "EFS by blinded independent central review",
+      "follow_up": "Median follow-up 20.6 months at first prespecified interim analysis; study treatment discontinued after premature stop.",
+      "efficacy": "Median EFS 31.2 vs28.3 months; HR0.92 (95% CI0.69–1.24), P=.2932. Median time to death or distant metastasis 39.1 vs41.3 months; HR1.02 (0.74–1.42). OS median54.7 vs not reached; HR1.33 (0.93–1.90), not confirmatory.",
+      "safety": "Grade3–5 treatment-related AEs 46/226 (20.4%) vs8/218 (3.7%); five treatment-related deaths (2.2%) in pembrolizumab arm, none in placebo.",
+      "disposition": "deferred_negative",
+      "reason": "No EFS benefit and substantially higher grade3–5 toxicity and treatment-related deaths; trial stopped early for unfavorable benefit-risk.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-00404",
+        "https://pubmed.ncbi.nlm.nih.gov/42950173/",
+        "https://clinicaltrials.gov/study/NCT03924869"
+      ],
+      "nccn_provenance": "not verified — official complete guideline/reference list inaccessible",
+      "canonical_page_required": false,
+      "status": "deferred_negative",
+      "next_action": "Retain as contrary/negative evidence; do not create a canonical trial page unless later guideline recommendation context makes it essential.",
+      "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "trial": "MOIO",
+      "trial_id": "moio",
+      "registry_id": "NCT05078047",
+      "conference": "ESMO 2026 LBA10",
+      "site": "Advanced/metastatic solid tumours",
+      "setting": "Treatment de-escalation after response to ≥6 months of checkpoint inhibitor",
+      "phase": "III",
+      "design": "Multicentre randomized non-inferiority phase III (UNICANCER UC-IMM-2101)",
+      "population": "340 of planned646 randomized; mITT308: standard schedule n=152, 12-week schedule n=156; responders after 6 months of approved ICI regimen.",
+      "intervention": "Same approved immune checkpoint inhibitor dose every 12 weeks.",
+      "comparator": "Same ICI at standard approved interval.",
+      "primary_endpoint": "PFS non-inferiority; prespecified HR margin1.30.",
+      "efficacy": "At first interim (120/498 planned PFS events; median follow-up18.6 vs18.7 months), median PFS25.0 vs21.9 months; HR1.35 (96.16% CI0.90–2.04), one-sided P=.0635; non-inferiority not established. OS HR2.04 (95% CI1.08–3.85); deaths10.5% vs19.9%.",
+      "safety": "Grade3–4 treatment-related AE rates similar; no clear safety advantage from 12-week dosing.",
+      "reason": "Negative interim non-inferiority result with concerning OS imbalance; trial stopped early. No DOI/PMID or full primary abstract metadata identified; retain as contrary evidence, not a new page.",
+      "source_urls": [
+        "https://kolpulse.com/kol-pulse-trial-profile-moio",
+        "https://clinicaltrials.gov/study/NCT05078047"
+      ],
+      "disposition": "deferred_negative",
+      "status": "deferred_negative",
+      "canonical_page_required": false,
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "next_action": "Retain as contrary evidence against routine 12-week ICI de-escalation; do not create a new page unless future guideline recommendations make it essential.",
+      "last_reviewed_on": "2026-11-17"
     }
-  ]
+  ],
+  "last_run": "2026-11-17-evening",
+  "last_updated": "2026-11-17",
+  "last_run_date": "2026-11-17",
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026."
 }

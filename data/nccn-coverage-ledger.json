@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-17",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -102,7 +102,849 @@
         "Obtain the complete publicly accessible Insights reference list or an authorised full guideline source.",
         "Do not infer exact NCCN citation numbers or mine candidates from secondary summaries."
       ]
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v2-2026-metadata-only",
+      "title": "Cervical Cancer, Version 2.2026: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2026",
+      "publication_date": "2025-12",
+      "doi": "10.6004/jnccn.2025.0057",
+      "pmid": "41671440",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671440/",
+      "source_scope": "PubMed-indexed NCCN-authored guideline article record only; complete NCCN guideline and reference list were not accessible in this run.",
+      "review_status": "metadata_only_no_recommendation_mapping",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [],
+      "next_action": "Retrieve authorised full guideline/reference list; confirm current version and map exact citations for KEYNOTE-A18, LACC and SHAPE."
+    },
+    {
+      "guideline_id": "nccn-gastric-cancer-v2-2025-citation-only",
+      "title": "Gastric Cancer, Version 2.2025: NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2025",
+      "publication_date": "2025",
+      "source_url": "https://www.nccn.org/guidelines",
+      "source_scope": "Cited as reference 4 in the 2026 oral paclitaxel phase 3 publication; this is citation provenance only, not a direct review of the guideline.",
+      "review_status": "citation_only_current_version_not_confirmed",
+      "reviewed_on": "2026-11-15",
+      "subsets_reviewed": [],
+      "references_mined": [
+        {
+          "source_doi": "10.1016/j.esmoop.2026.108312",
+          "source_pmid": "42617423",
+          "source_reference_number": 4,
+          "exact_reference_text": "NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer. Version 2.2025."
+        }
+      ],
+      "next_action": "Retrieve the current official NCCN Gastric Cancer version and reference list; map the cited recommendation only if the exact section/category is visible."
+    },
+    {
+      "guideline_id": "nccn-nsclc-4-2026",
+      "guideline": "Non-Small Cell Lung Cancer",
+      "version": "4.2026",
+      "source_title": "NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer, Version 4.2026",
+      "source_type": "NCCN-authored JNCCN guideline selection; not the complete guideline",
+      "publication_date": "2026-04",
+      "doi": "10.6004/jnccn.2026.0017",
+      "pmid": "41956107",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+      "subsets_reviewed": [
+        "advanced/metastatic disease",
+        "actionable molecular biomarkers",
+        "systemic therapy selection"
+      ],
+      "reference_map": [],
+      "recommendation_context_verified": false,
+      "full_guideline_access": "not retrieved",
+      "limitations": "Publicly accessible NCCN-authored guideline selection only; full NCCN PDF and complete reference list unavailable. No reference number or category inferred.",
+      "last_reviewed": "2026-11-16"
+    },
+    {
+      "guideline_id": "nccn-breast-4-2026",
+      "guideline": "Breast Cancer",
+      "version": "4.2026",
+      "source_title": "NCCN Clinical Practice Guidelines in Oncology: Breast Cancer, Version 4.2026",
+      "source_type": "NCCN-authored JNCCN guideline selection; not the complete guideline",
+      "publication_date": "2026-07",
+      "doi": "10.6004/jnccn.2026.0033",
+      "pmid": "42425164",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42425164/",
+      "subsets_reviewed": [
+        "recurrent/metastatic disease",
+        "HR-positive/HER2-negative pathways",
+        "HER2-positive pathways",
+        "systemic treatment sequencing"
+      ],
+      "reference_map": [],
+      "recommendation_context_verified": false,
+      "full_guideline_access": "not retrieved",
+      "limitations": "Publicly accessible NCCN-authored guideline selection only; full NCCN PDF and complete reference list unavailable. No reference number or category inferred.",
+      "last_reviewed": "2026-11-16"
+    },
+    {
+      "guideline_id": "nccn-older-adult-oncology-v2-2026",
+      "title": "Older Adult Oncology, Version 2.2026, NCCN Clinical Practice Guidelines in Oncology",
+      "version": "2.2026",
+      "publication_date": "2026-11",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "source_scope": "NCCN-authored guideline article metadata/abstract only; complete guideline PDF and full reference list were not retrieved. Not represented as a complete guideline review.",
+      "review_status": "metadata_verified; full_text_and_reference_list_inaccessible; no trial citation mapping",
+      "reviewed_on": "2026-11-17",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "recommendation_context_verified": false,
+      "next_actions": [
+        "Retrieve complete authorised guideline/reference list.",
+        "Do not infer exact reference numbers or recommendation categories.",
+        "Continue geriatric-oncology discovery through accessible ASCO/ESMO/peer-reviewed sources."
+      ]
+    },
+    {
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "version": "3.2026",
+      "publication_date": "2026-11",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "source_scope": "NCCN Guidelines Insights article metadata/abstract only; this is a focused Insights article, not the complete Colon Cancer guideline. Full reference list not retrieved.",
+      "review_status": "metadata_verified; insights_reference_list_inaccessible; no trial citation mapping",
+      "reviewed_on": "2026-11-17",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "recommendation_context_verified": false,
+      "next_actions": [
+        "Retrieve complete publicly accessible Insights reference list or authorised full guideline.",
+        "Do not infer exact reference numbers or recommendation categories.",
+        "Continue colon cancer discovery through accessible ESMO/ASCO and primary trial reports."
+      ]
     }
   ],
-  "coverage_note": "The HCC review is a partial Insights-based review, not a claim that the entire guideline or all references have been exhaustively audited."
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
+  "source_access_log": [
+    {
+      "date": "2026-11-15",
+      "source": "Official NCCN Clinical Practice Guidelines",
+      "status": "not retrieved",
+      "attempts": [
+        "NCCN official guideline searches for Cervical Cancer 2026",
+        "NCCN official guideline searches for NSCLC 2026",
+        "NCCN official guideline searches for Acute Lymphoblastic Leukemia 2026",
+        "NCCN official guideline searches for Multiple Myeloma 2026",
+        "NCCN official guideline searches for Pancreatic Adenocarcinoma 2026",
+        "NCCN official guideline searches for Antiemesis 2026"
+      ],
+      "note": "No complete official guideline or complete NCCN-authored Insights reference list was retrieved. No guideline version, section, reference number or recommendation category is claimed for this run. Discovery continued through primary NEJM/JCO publications, official ASCO abstracts and PubMed records; NCCN citation mapping remains open."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN NSCLC full guideline",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "inaccessible",
+      "note": "Full current guideline/reference list not retrievable; continued with NCCN-authored JNCCN selection and primary literature."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN NSCLC Version 4.2026 JNCCN selection",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+      "status": "accessible_partial",
+      "note": "Selection only; not a complete guideline or full reference list."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN Breast Cancer full guideline",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "inaccessible",
+      "note": "Full current guideline/reference list not retrievable; continued with NCCN-authored JNCCN selection and primary literature."
+    },
+    {
+      "date": "2026-11-16",
+      "source": "NCCN Breast Cancer Version 4.2026 JNCCN selection",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42425164/",
+      "status": "accessible_partial",
+      "note": "Selection only; not a complete guideline or full reference list."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-older-adult-oncology-v2-2026",
+      "source": "PubMed-indexed NCCN guideline article metadata/abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "status": "metadata_abstract_accessible; complete guideline PDF/reference list inaccessible",
+      "action": "No citation-to-trial mapping performed; follow-up queued."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "source": "PubMed-indexed NCCN Guidelines Insights article metadata/abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "status": "metadata_abstract_accessible; complete Insights reference list inaccessible",
+      "action": "No citation-to-trial mapping performed; follow-up queued."
+    },
+    {
+      "date": "2026-11-17",
+      "guideline_id": "nccn-official-full-guideline-access",
+      "source": "Official NCCN guideline portal",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "full guideline/reference-list access not obtained in this run",
+      "action": "Continue through accessible authoritative guidelines and primary evidence; do not infer NCCN provenance."
+    },
+    {
+      "guideline": "Colon Cancer",
+      "version": "3.2026",
+      "source_type": "NCCN Insights metadata/abstract only",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "reviewed_on": "2026-11-17",
+      "full_guideline_accessible": false,
+      "complete_reference_list_accessible": false,
+      "limitations": "Insights metadata/abstract only; not complete guideline; no exact recommendation/reference mapping."
+    },
+    {
+      "guideline": "Older Adult Oncology",
+      "version": "2.2026",
+      "source_type": "NCCN Insights metadata/abstract only",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "reviewed_on": "2026-11-17",
+      "full_guideline_accessible": false,
+      "complete_reference_list_accessible": false,
+      "limitations": "Insights metadata/abstract only; not complete guideline; no exact recommendation/reference mapping."
+    },
+    {
+      "date": "2026-11-17",
+      "source": "Official NCCN Clinical Practice Guidelines PDFs/reference lists",
+      "status": "not accessible in this run",
+      "action": "Continue with NCCN-authored Insights metadata and other authoritative sources; do not infer references or categories."
+    },
+    {
+      "date": "2026-11-17",
+      "source": "EAU Guidelines on Testicular Cancer 2026",
+      "status": "accessible_official_full_guideline",
+      "sections": [
+        "6.3.4",
+        "6.3.5"
+      ],
+      "finding": "Alternative guideline review completed. EAU reference-list mismatch identified for section 6.3.4 inline refs [245,246] and IPFSG numbering; mismatched citations were not used."
+    }
+  ],
+  "last_run": "2026-11-17",
+  "last_updated": "2026-11-17",
+  "last_run_date": "2026-11-17",
+  "pending_trial_mappings": [
+    {
+      "trial_id": "trofuse-005",
+      "site": "Endometrial cancer",
+      "setting": "Recurrent/metastatic after platinum",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "panku-breast01",
+      "site": "Breast cancer",
+      "setting": "Advanced/metastatic HR-positive, HER2-negative",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "i-spy2-2",
+      "site": "Breast cancer",
+      "setting": "Neoadjuvant/high-risk early breast cancer",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "act-gi",
+      "site": "Gastrointestinal cancers",
+      "setting": "Supportive care — persistent chemotherapy-induced thrombocytopenia",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "ivonescimab-perioperative",
+      "site": "Non-small-cell lung cancer",
+      "setting": "Neoadjuvant/perioperative",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "toripalimab-mfolfirinox",
+      "site": "Pancreatic adenocarcinoma",
+      "setting": "Borderline-resectable/locally advanced",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "gimema-all2820",
+      "site": "Philadelphia chromosome-positive acute lymphoblastic leukemia",
+      "setting": "Newly diagnosed adult Ph-positive ALL",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "felzartamab-rd",
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory multiple myeloma",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "zsab-neogolp",
+      "site": "Intrahepatic cholangiocarcinoma",
+      "setting": "Neoadjuvant/resectable high-risk",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "neonipiga",
+      "site": "Gastric/gastroesophageal junction adenocarcinoma",
+      "setting": "Localized dMMR/MSI-H; neoadjuvant/adjuvant",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "trastuzumab-botidotin",
+      "site": "HER2-positive breast cancer",
+      "setting": "Advanced/metastatic after HER2-directed therapy",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "pro-b",
+      "site": "Mixed advanced solid tumours",
+      "setting": "Supportive care — symptom monitoring during systemic therapy",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "pds0101-pembrolizumab",
+      "site": "HPV16-positive head and neck squamous cell carcinoma",
+      "setting": "Recurrent/metastatic",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "disitamab-tislelizumab",
+      "site": "Bladder cancer",
+      "setting": "High-risk BCG-unresponsive non-muscle-invasive bladder cancer",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "optical-2",
+      "site": "Rectal cancer",
+      "setting": "Neoadjuvant locally advanced rectal cancer",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "litespark-011",
+      "site": "Clear-cell renal cell carcinoma",
+      "setting": "Post-ICI advanced/metastatic",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "keynote-b49",
+      "site": "HR-positive, HER2-negative breast cancer",
+      "setting": "Advanced/metastatic after endocrine therapy",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "artemis-011",
+      "site": "Osteosarcoma",
+      "setting": "Relapsed/refractory",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "ringside",
+      "site": "Desmoid-type fibromatosis",
+      "setting": "Progressive desmoid tumour",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "transform-1",
+      "site": "Myelofibrosis",
+      "setting": "First-line/JAK-inhibitor-naive",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "union",
+      "site": "Rectal cancer",
+      "setting": "Locally advanced/neoadjuvant",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "fit4treat",
+      "site": "Head and neck cancer",
+      "setting": "Prehabilitation during curative treatment",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "monumental-3",
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "keylynk-001",
+      "site": "Ovarian/fallopian tube/primary peritoneal cancer",
+      "setting": "First-line advanced BRCA-non-mutated epithelial disease",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "panku-esophagus01",
+      "site": "Esophageal squamous cell carcinoma",
+      "setting": "Recurrent/metastatic after first-line immunochemotherapy",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "panku-lung01",
+      "site": "EGFR-mutated non-small-cell lung cancer",
+      "setting": "Post-third-generation EGFR-TKI advanced/metastatic",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "capital",
+      "site": "Gastric cancer",
+      "setting": "Adjuvant after D2 gastrectomy",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "bctop-h-n01",
+      "site": "HER2-positive early breast cancer",
+      "setting": "Neoadjuvant",
+      "status": "not verified — source inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve current official NCCN guideline/reference list and map only exact citations."
+    },
+    {
+      "trial_id": "dellphi-305",
+      "site": "Small-cell lung cancer",
+      "status": "not verified — exact NCCN reference inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Map exact current NCCN citation only when official reference list is accessible."
+    },
+    {
+      "trial_id": "harmoni-a",
+      "site": "EGFR-mutated NSCLC",
+      "status": "not verified — exact NCCN reference inaccessible",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Map exact current NCCN citation only when official reference list is accessible."
+    },
+    {
+      "trial_id": "interpath-001",
+      "site": "Cutaneous melanoma",
+      "setting": "Adjuvant systemic therapy after complete resection stage IIB–IV",
+      "guideline_title": "NCCN Guidelines for Cutaneous Melanoma",
+      "next_action": "Retrieve current official Cutaneous Melanoma guideline and map the exact adjuvant recommendation/reference for intismeran+pembrolizumab only if cited.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "keynote-867",
+      "site": "Non-small cell lung cancer",
+      "setting": "Unresected stage I–II; definitive SBRT ± pembrolizumab",
+      "guideline_title": "NCCN Guidelines for Non-Small Cell Lung Cancer",
+      "next_action": "Retrieve current official NSCLC guideline; determine whether SBRT plus pembrolizumab is discussed or explicitly not recommended; map only exact references.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "nrg-br002",
+      "site": "Breast cancer",
+      "setting": "Oligometastatic disease; metastasis-directed therapy",
+      "guideline_title": "NCCN Guidelines for Breast Cancer",
+      "next_action": "Retrieve current official Breast Cancer guideline and exact oligometastatic disease references; do not infer a recommendation from the trial result.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "saffron",
+      "site": "Non-small cell lung cancer",
+      "setting": "EGFR-mutant/MET-amplified after osimertinib",
+      "guideline_title": "NCCN Guidelines for Non-Small Cell Lung Cancer",
+      "next_action": "Retrieve current official NSCLC guideline and exact MET-directed sequencing references; primary ESMO DOI/title remains separately held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "clarity-gastric01",
+      "site": "Gastric/GEJ adenocarcinoma",
+      "setting": "CLDN18.2-positive second-line and later",
+      "guideline_title": "NCCN Guidelines for Gastric Cancer",
+      "next_action": "Retrieve current official Gastric Cancer guideline and exact CLDN18.2/ADC references; do not infer recommendation category.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "harmoni-gi1",
+      "site": "Biliary tract cancer",
+      "setting": "First-line unresectable/recurrent advanced disease",
+      "guideline_title": "NCCN Guidelines for Biliary Tract Cancers",
+      "next_action": "Retrieve current official Biliary Tract guideline and exact first-line immunotherapy/anti-VEGF references; primary abstract DOI/title remains held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "dasl-hicap",
+      "site": "Prostate cancer",
+      "setting": "Very-high-risk localized or postoperative persistent/recurrent disease with RT+ADT",
+      "guideline_title": "NCCN Guidelines for Prostate Cancer",
+      "next_action": "Retrieve current official Prostate Cancer guideline and exact intensification/RT references; primary ESMO DOI/title remains held.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "moio",
+      "site": "Cross-tumour supportive treatment",
+      "setting": "Checkpoint-inhibitor interval de-escalation after response",
+      "guideline_title": null,
+      "next_action": "Determine whether NCCN disease-site or immunotherapy-toxicity guidelines address interval de-escalation; no reference/category should be inferred.",
+      "status": "not verified — source inaccessible",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null
+    },
+    {
+      "trial_id": "relight",
+      "trial": "RELIGHT",
+      "source_guideline": "NCCN Gastric/Esophageal Cancers",
+      "version": "not verified",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "source_url": null,
+      "status": "not verified — source inaccessible",
+      "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
+      "updated_on": "2026-11-17"
+    },
+    {
+      "trial_id": "herizon-gea-01",
+      "trial": "HERIZON-GEA-01",
+      "source_guideline": "NCCN Esophageal and Esophagogastric Junction Cancers",
+      "version": "not verified",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "source_url": null,
+      "status": "not verified — source inaccessible",
+      "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
+      "updated_on": "2026-11-17"
+    }
+  ],
+  "alternative_guideline_sources": [
+    {
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "source_type": "Official EAU full guideline web publication; alternative authoritative source because current NCCN full guideline/reference list was inaccessible",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer",
+      "disease_management_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "summary_publication_doi": "10.1016/j.eururo.2026.03.021",
+      "sections_reviewed": [
+        "6.3.4 Systemic salvage treatment for relapse or refractory disease",
+        "6.3.5 Treatment of second relapse"
+      ],
+      "reviewed_on": "2026-11-17",
+      "scope_limitations": "EAU source, not NCCN. Full current NCCN Testicular Cancer guideline/reference list could not be independently accessed. EAU inline/reference-list number discrepancies are documented; mismatched citations were not used."
+    }
+  ],
+  "trial_to_guideline_mappings": [
+    {
+      "trial_id": "veip-recurrent-seminoma-miller-1997",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": 252,
+      "recommendation_category": null,
+      "recommendation_context": "Miller et al. recurrent seminoma VeIP salvage series; exact title and PMID match EAU reference 252.",
+      "status": "exact_reference_verified",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "oechsle-go-gop-2011",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.5",
+      "reference_number": 247,
+      "recommendation_category": null,
+      "recommendation_context": "Oechsle et al. GO/GOP plus secondary surgery long-term follow-up; exact title match EAU reference 247.",
+      "status": "exact_reference_verified",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "tiger-tip-vs-tice",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "TIGER phase III TIP versus TI-CE trial explicitly named as ongoing in guideline text; no numbered reference assigned.",
+      "status": "explicit_text_mention_no_numbered_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "loehrer-veip-mixed-gct-1998",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "VeIP appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified.",
+      "status": "regimen_context_only_no_exact_study_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "loehrer-vip-salvage-1986",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "VIP/PEI appears among standard-dose salvage options; no exact numbered citation for this individual Loehrer study verified.",
+      "status": "regimen_context_only_no_exact_study_reference",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "mccaffrey-vip-veip-1997",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Historical VIP/VeIP cohort not explicitly mapped to a numbered EAU citation.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "ecog-e9897-paclitaxel-gemcitabine",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.4–6.3.5",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Historical paclitaxel/gemcitabine phase II trial; no exact EAU reference number verified.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "gemcitabine-refractory-gct-1999",
+      "guideline_title": "EAU Guidelines on Testicular Cancer",
+      "version": "2026 (limited text update March 2026)",
+      "section": "6.3.5",
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": "Single-agent gemcitabine phase II study; later-line gemcitabine combinations are discussed, but this individual study is not mapped to an exact numbered citation.",
+      "status": "not_exactly_cited_in_accessible_guideline_text",
+      "source_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/disease-management",
+      "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
+      "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-17"
+    }
+  ]
 }

@@ -370,5 +370,47 @@
     ],
     "archiveNote": "Archived as the previous Trial of the Day on 8 November 2026; full analysis retained during rotation to GemX.",
     "archiveDate": "2026-11-08"
+  },
+  {
+    "date": "2026-11-08",
+    "id": "gemx",
+    "trial": "GemX",
+    "title": "Phase II study of conformal hypofractionated radiotherapy with concurrent gemcitabine in muscle-invasive bladder cancer",
+    "journal": "Journal of Clinical Oncology 2011; prospective single-arm phase II study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21205754/",
+    "site": "Bladder Cancer",
+    "discipline": "Radiation",
+    "setting": "Definitive / Curative",
+    "population": "50 patients with T2–3 N0 M0 transitional-cell muscle-invasive bladder cancer after TURBT and MRI staging; post-treatment cystoscopy available in 47.",
+    "treatment": "Gemcitabine 100 mg/m² IV on days 1, 8, 15 and 22 with conformal radiotherapy 52.5 Gy in 20 fractions over 4 weeks. Chemotherapy stopped for RTOG grade 3 bladder or bowel toxicity.",
+    "comparator": "None. Prospective single-arm phase II study; no randomized comparator.",
+    "summary": "All 50 patients completed RT; 46 tolerated all four gemcitabine cycles. Forty-four (88%) achieved complete endoscopic response. At median follow-up 36 months, 3-year CSS was 82% and OS 75%; 32 of 36 survivors had a functional intact bladder. Four underwent cystectomy; two treatment-associated deaths and one late bowel resection were reported.",
+    "absoluteEffect": {
+      "endpoint": "Complete endoscopic response and 3-year survival",
+      "horizon": "Post-treatment response; 3 years",
+      "treatmentRate": "Complete endoscopic response 44/50 (88%); 3-year CSS 82%; 3-year OS 75%",
+      "controlRate": "No randomized comparator",
+      "absoluteBenefit": "Not estimable; single-arm phase II outcomes only.",
+      "nnt": "Not applicable",
+      "toxicity": "Four patients stopped gemcitabine early for bowel toxicity; two treatment-associated deaths; one bowel resection for late toxicity.",
+      "nnh": "Not applicable; no comparative harm estimate."
+    },
+    "clinicalInterpretation": "GemX is a prospective phase II bladder-preservation regimen using weekly low-dose gemcitabine with 52.5 Gy in 20 fractions. It demonstrated promising response and survival estimates but cannot establish superiority over cisplatin or 5-FU/mitomycin C chemoradiotherapy.",
+    "criticalReview": "Single-arm n=50; median follow-up 36 months. 44/50 complete endoscopic response (88% as reported); 3-year CSS 82%, OS 75%. All completed RT; 46 completed all four gemcitabine cycles. Four underwent cystectomy, two treatment-associated deaths and one late bowel resection. No comparative NNT/NNH.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/21205754/",
+      "https://ascopubs.org/doi/abs/10.1200/jco.2010.31.5721",
+      "https://pubmed.ncbi.nlm.nih.gov/28244408/"
+    ],
+    "registry": "Not reported in primary publication",
+    "aliases": [
+      "GemX",
+      "Weekly gemcitabine chemoradiotherapy in MIBC",
+      "Choudhury et al 2011 GemX phase II",
+      "DOI 10.1200/JCO.2010.31.5721"
+    ],
+    "archiveNote": "Archived when the 17 November 2026 Trial of the Day rotated to PANKU-Esophagus01.",
+    "archivedOn": "2026-11-17",
+    "archiveDate": "2026-11-17"
   }
 ]
