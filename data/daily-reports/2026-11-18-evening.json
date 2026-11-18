@@ -38,12 +38,37 @@
       ],
       "individual_canonical_pages_missing": 7
     },
-    "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping"
+    "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping",
+    "main_commit_sha": "8315e5e",
+    "branch": "atlas-batch/2026-11-18-am",
+    "branch_head": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
+    "main_roster_unique_trials": 467,
+    "main_permanent_trial_pages": 460,
+    "main_trial_page_index_files": 461,
+    "main_canonical_page_count": 460,
+    "main_evidence_index_unique_links": 460,
+    "main_unindexed_stub_pages": [
+      "trial-pages/rosel/index.html"
+    ],
+    "main_unrostered_canonical_pages": 0,
+    "main_archive_records": 16,
+    "previous_pr5": {
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "merge_commit_sha": "a17e8c6f"
+    },
+    "previous_pr6": {
+      "number": 6,
+      "state": "closed",
+      "merged": true,
+      "merge_commit_sha": "c4f6a2d1"
+    }
   },
   "repairs": {
     "existing_pages_manually_reviewed": 9,
     "pages_repaired": 5,
-    "repair_queue_open": 136,
+    "repair_queue_open": 137,
     "repair_queue_resolved": 61,
     "repairs": [
       {
@@ -78,7 +103,8 @@
       "18-Nov exact-30 release gate/page-build work",
       "browser-rendered QA for GOG-258, KEYNOTE-A18, KEYNOTE-C93, OptiTROP-Lung06 and EV-303",
       "EXCALIBER-RRMM evidence-maturity hold",
-      "IsKia MRD-surrogate evidence hold"
+      "IsKia MRD-surrogate evidence hold",
+      "Rosel title-only stub: resolve identity or retire; not a canonical page"
     ],
     "full_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false,
@@ -99,8 +125,8 @@
     "remaining_existing_pages_for_manual_audit": 451,
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
-      "open_items": "+3 (133→136)",
-      "resolved_items": "+7 (53→60)"
+      "open_items": "+4 (133→137)",
+      "resolved_items": "+8 (53→61)"
     }
   },
   "nccn": {
@@ -110,7 +136,28 @@
     "complete_reference_lists_accessible": 0,
     "exact_reference_numbers_extracted": 0,
     "pending_trial_mappings_total": 90,
-    "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN metadata/abstracts recorded as metadata-only; no exact recommendation section, reference number or category inferred."
+    "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN metadata/abstracts recorded as metadata-only; no exact recommendation section, reference number or category inferred.",
+    "guideline_records_reviewed": 14,
+    "full_official_guideline_access": "unavailable for most; logged, not a run blocker",
+    "partial_exact_reference_mapping": [
+      "NCCN Guidelines Insights: Hepatocellular Carcinoma, Version 2.2026 (partial refs 7,8,19,20,34,36,42,43; remaining reference groups unresolved)"
+    ],
+    "metadata_only_or_access_limited": [
+      "Esophageal/EGJ v4.2026",
+      "Cervical Cancer v2.2026",
+      "Gastric Cancer v2.2025 citation-only",
+      "NSCLC v4.2026",
+      "Breast Cancer v4.2026",
+      "Older Adult Oncology v2.2026",
+      "Colon Cancer v3.2026",
+      "AML v3.2026",
+      "Prostate Cancer v5.2026",
+      "SCLC v2.2026",
+      "Survivorship v3.2026",
+      "Distress Management v1.2026",
+      "Genetic/Familial High-Risk v2.2026"
+    ],
+    "exact_recommendation_categories_inferred": 0
   },
   "candidates": {
     "screening_records": 119,
@@ -295,7 +342,30 @@
     "new_index_links": 0,
     "new_archive_records": 0,
     "new_tod_records": 0,
-    "structural_reconciliation": "467 roster entries; 460 unique canonical paths; zero missing canonical index paths after normalization; 16 archive records; ToD unchanged. Eight lung-SABR trial IDs share one aggregate page and require split."
+    "structural_reconciliation": "467 roster entries; 460 unique canonical paths; zero missing canonical index paths after normalization; 16 archive records; ToD unchanged. Eight lung-SABR trial IDs share one aggregate page and require split.",
+    "main_roster_count": 467,
+    "main_canonical_page_count": 460,
+    "main_tree_index_html_count": 461,
+    "main_index_unique_links": 460,
+    "missing_index_links": [
+      "trial-pages/rosel/index.html (stub; not canonical)"
+    ],
+    "unrostered_canonical_pages": [],
+    "unrostered_stub_pages": [
+      "trial-pages/rosel/index.html"
+    ],
+    "archive_count": 16,
+    "current_trial_of_day": {
+      "trial": "PANKU-Esophagus01",
+      "date": "2026-11-17",
+      "doi": "10.1001/jama.2026.20250",
+      "pmid": "43018949",
+      "registry_id": "NCT06304974"
+    },
+    "previous_trial_of_day": {
+      "trial": "GemX",
+      "date": "2026-11-08"
+    }
   },
   "validation": {
     "json_structural_checks": "passed before commit",
@@ -305,7 +375,12 @@
     "current_batch_outcome_visualization_audit": "not run; no PR opened. HTML attribute checks passed, Cloudflare preview build succeeded; browser-rendered visualization QA pending.",
     "strict_validator_PR_gate": "not run for current batch",
     "main_post_merge_workflow_run": 44226050992,
-    "main_post_merge_workflow_conclusion": "success"
+    "main_post_merge_workflow_conclusion": "success",
+    "branch_preview_build": "success",
+    "latest_preview_commit": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
+    "strict_release_validator": "not run — no complete 30-page batch; no PR opened",
+    "outcome_visualization_audit": "HTML-level finite-width and data-benefit checks completed for repaired pages; browser-rendered pictogram audit still open",
+    "production_build": "not triggered"
   },
   "deployment": {
     "branch_preview_deployment": "success",
@@ -315,7 +390,9 @@
     "cloudflare_check_completed_at": "2026-11-18T14:48:24Z",
     "browser_open_attempts": "Attempted to open KEYNOTE-C93, KEYNOTE-A18 and GOG-258 preview pages; the browser retrieval tool returned inaccessible/internal error, so visual rendering remains unverified.",
     "production_live_pages": "not independently verified; no merge to main",
-    "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML"
+    "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML",
+    "branch_preview": "Cloudflare Pages preview check successful on previous commit; latest data-only commit requires check completion",
+    "production_deployment": "not deployed/verified; main unchanged"
   },
   "trial_of_the_day_candidate_pending_release": {
     "trial_id": "panova-3",
@@ -420,7 +497,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "e13222d94fe885617c0c6351757847ffbe231b8c",
+  "content_commit_sha": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",

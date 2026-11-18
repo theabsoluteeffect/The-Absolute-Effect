@@ -2015,6 +2015,22 @@
       "reason": "Only first interim analysis at 33% information time; 194 randomized,168 included,100 TTFS events; trial continued to planned 66% interim analysis.",
       "action": "Hold from page release pending 66% information-time or final analysis; verify full safety and maturity.",
       "next_action": "Monitor for second interim/final publication."
+    },
+    {
+      "issue_id": "unrostered-unindexed-rosel-stub-2026-11-18",
+      "trial_id": null,
+      "trial": "Rosel (stub)",
+      "canonical_page_path": "trial-pages/rosel/index.html",
+      "issue_type": "unrostered_unindexed_stub",
+      "severity": "low",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/main/trial-pages/rosel/index.html"
+      ],
+      "reason": "Recursive main tree contains a minimal title-only Rosel stub with no trial design, primary source, DOI, registry or clinical content. It is not a canonical trial page and should not be added to the roster or index until identity is established.",
+      "action": "Preserve as stub; determine whether it is an alias/redirect or accidental placeholder.",
+      "next_action": "Resolve intended study identity from repository history or source evidence; then either replace with a verified canonical page or retire the stub through an approved repository cleanup."
     }
   ],
   "resolved_items": [
@@ -4159,6 +4175,12 @@
       "date": "2026-11-18",
       "cycle": "evening",
       "action": "verified SAFFRON primary publication; added six new unique identity-verified candidates; held IKF-035 for interim maturity; deferred iPRIME"
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "identified Rosel title-only stub as unrostered and unindexed; held without roster/index addition",
+      "status": "open"
     }
   ],
   "previous_partial_runs": [
@@ -4254,7 +4276,7 @@
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
-    "open_items": 136,
+    "open_items": 137,
     "resolved_items": 61,
     "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item. OptiTROP-Lung06 canonical page repaired on 2026-11-18; zero-width bars and invalid median-derived NNT removed; browser QA pending.",
     "release_holds_in_active_batch": 26
