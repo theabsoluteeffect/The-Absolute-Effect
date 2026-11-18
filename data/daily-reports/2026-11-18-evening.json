@@ -87,8 +87,8 @@
     "remaining_existing_pages_for_manual_audit": 453,
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
-      "open_items": "+5 (133→138)",
-      "resolved_items": "+3 (53→56)"
+      "open_items": "+3 (133→136)",
+      "resolved_items": "+5 (53→58)"
     }
   },
   "nccn": {
@@ -104,7 +104,7 @@
     "screening_records": 102,
     "unique_candidate_ids": 94,
     "new_unique_underlying_candidates": 63,
-    "primary_source_verified_new_unique_page_build_candidates": 30,
+    "primary_source_verified_new_unique_page_build_candidates": 0,
     "source_verified_but_held_low_maturity": 4,
     "primary_source_incomplete_or_not_verified_holds": 21,
     "held_total": 25,
@@ -217,7 +217,7 @@
     "NCCN complete guideline/reference lists inaccessible; exact citation mapping remains pending.",
     "Full clinical and browser-rendered audit incomplete.",
     "PR #5 strict validator was independently verified only post-merge, not as a pre-merge PR check.",
-    "Thirty new unique candidates have primary publication/registry identity confirmed, but full outcome, toxicity, QoL, dose/schedule and limitations extraction is incomplete; 0 new pages are release-ready.",
+    "Thirty new unique candidates have primary-source/registry identity confirmed, but full dose/schedule, endpoint, toxicity, QoL and limitations extraction is not complete; zero are fully page-verified or release-ready.",
     "The 27 held screening records resolve to 25 unique held studies after consolidating repeated HARMONi-GI1 and EXCALIBER-RRMM screens."
   ],
   "next_actions": [
@@ -299,7 +299,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "ca7b90fed01ffaaddd115781f91b1b6470b1e38c",
+  "content_commit_sha": "e5f46696cee8950689493d4f4d4a38101c203f8f",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
