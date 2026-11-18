@@ -4620,6 +4620,13 @@
       "repair": "Rebuilt full primary publication summary; corrected zero-width bars and comparator label; added 36-month PFS NNT5 and grade≥3 TRAE avoided NNT4 panels.",
       "source_doi": "10.1016/S0140-6736(26)02095-7",
       "status": "committed_to_branch_browser_qa_pending"
+    },
+    {
+      "trial_id": "ev-303",
+      "path": "trial-pages/ev-303/index.html",
+      "repair": "Updated existing canonical page with primary NEJM publication, PMID/NCT links, regimen cycles, follow-up, efficacy/safety and three source-grounded NNT panels (EFS NNT3, OS NNT7, pCR NNT3); no NNH for AE.",
+      "source_doi": "10.1056/NEJMoa2511674",
+      "status": "committed_to_branch_browser_qa_pending"
     }
   ],
   "publication": {

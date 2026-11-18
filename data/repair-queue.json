@@ -3954,6 +3954,31 @@
         "pfs_12m": "51.1% vs22.8%; absolute benefit28.3 pp; NNT4; ESMO 2026 LBA66"
       },
       "next_action": "Browser-rendered QA before closing on main."
+    },
+    {
+      "id": "ev-303-primary-publication-nnt-repair-2026-11-18",
+      "trial_id": "ev-303",
+      "trial": "EV-303 / KEYNOTE-905",
+      "canonical_page_path": "trial-pages/ev-303/index.html",
+      "issue_type": "clinical_content_nnt_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-18",
+      "closed_on": "2026-11-18",
+      "issue": "Page lacked PMID/NCT links, full follow-up and safety details, p values, and source-grounded NNT pictograms.",
+      "evidence": [
+        "https://doi.org/10.1056/NEJMoa2511674",
+        "https://pubmed.ncbi.nlm.nih.gov/41707170/",
+        "https://clinicaltrials.gov/study/NCT03924895"
+      ],
+      "resolution": "Updated with 344 randomized denominators, exact perioperative regimen and total cycles, 25.6-month follow-up, EFS/OS/pCR effect estimates, grade≥3 AE rates, PMID/NCT links, and three source-grounded NNT panels.",
+      "verification": {
+        "efs_24m": "74.7% vs39.4%; benefit35.3 pp; NNT3",
+        "os_24m": "79.7% vs63.1%; benefit16.6 pp; NNT7",
+        "pcr": "57.1% vs8.6%; raw benefit48.5 pp; NNT3",
+        "grade3plus_ae": "71.3% vs45.9%; no NNH due no fixed safety horizon"
+      },
+      "next_action": "Browser-rendered QA before closing on main."
     }
   ],
   "run_audit_log": [
@@ -4097,6 +4122,13 @@
       "action": "repaired existing OptiTROP-Lung06 canonical page",
       "page_path": "trial-pages/optitrop-lung06/index.html",
       "status": "resolved_on_branch"
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "repaired EV-303 primary publication and NNTs",
+      "page_path": "trial-pages/ev-303/index.html",
+      "status": "resolved_on_branch"
     }
   ],
   "previous_partial_runs": [
@@ -4193,7 +4225,7 @@
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
     "open_items": 136,
-    "resolved_items": 59,
+    "resolved_items": 60,
     "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item. OptiTROP-Lung06 canonical page repaired on 2026-11-18; zero-width bars and invalid median-derived NNT removed; browser QA pending.",
     "release_holds_in_active_batch": 25
   }

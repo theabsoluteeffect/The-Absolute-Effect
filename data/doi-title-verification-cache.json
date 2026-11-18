@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T20:38:00+05:30",
+  "updated_at": "2026-11-18T21:10:00+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -881,6 +881,19 @@
       "verified_by": "PubMed/publisher metadata",
       "verified_on": "2026-11-18",
       "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-0819"
+    },
+    {
+      "trial_id": "ev-303",
+      "trial_name": "EV-303 / KEYNOTE-905",
+      "doi": "10.1056/NEJMoa2511674",
+      "primary_title": "Perioperative Enfortumab Vedotin and Pembrolizumab in Bladder Cancer",
+      "pmid": "41707170",
+      "registry_id": "NCT03924895",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "NEJM and PubMed metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2511674"
     }
   ],
   "last_run": {
@@ -891,5 +904,5 @@
   },
   "last_run_additions": 14,
   "last_run_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
-  "last_updated": "2026-11-18T20:38:00+05:30"
+  "last_updated": "2026-11-18T21:10:00+05:30"
 }

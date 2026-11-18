@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T20:38:00+05:30",
+  "updated_at": "2026-11-18T21:10:00+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -524,7 +524,7 @@
     "morning_candidate_mappings_added": 0,
     "additional_pending_mappings": 4
   },
-  "last_updated": "2026-11-18T20:38:00+05:30",
+  "last_updated": "2026-11-18T21:10:00+05:30",
   "last_run_date": "2026-11-18",
   "pending_trial_mappings": [
     {
@@ -1567,6 +1567,23 @@
       "status": "pending_exact_citation_mapping",
       "reason": "Exact current NCCN citation could not be checked because full guideline/reference list was inaccessible.",
       "next_action": "Map to exact current NCCN guideline/version/section/reference when source becomes accessible."
+    },
+    {
+      "trial_id": "ev-303",
+      "trial_name": "EV-303 / KEYNOTE-905",
+      "primary_doi": "10.1056/NEJMoa2511674",
+      "pmid": "41707170",
+      "registry_id": "NCT03924895",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Exact current NCCN citation not verified because full guideline/reference list inaccessible.",
+      "next_action": "Map to exact current NCCN bladder cancer guideline/version/section/reference when source becomes accessible."
     }
   ],
   "alternative_guideline_sources": [

@@ -41,10 +41,10 @@
     "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping"
   },
   "repairs": {
-    "existing_pages_manually_reviewed": 8,
-    "pages_repaired": 4,
+    "existing_pages_manually_reviewed": 9,
+    "pages_repaired": 5,
     "repair_queue_open": 136,
-    "repair_queue_resolved": 59,
+    "repair_queue_resolved": 60,
     "repairs": [
       {
         "trial_id": "keynote-a18",
@@ -65,19 +65,24 @@
         "trial_id": "optitrop-lung06",
         "page_path": "trial-pages/optitrop-lung06/index.html",
         "change": "Rebuilt against NEJM primary publication; added PMID/NCT and ESMO LBA66 source; replaced zero-width median bars; added 12-month PFS 51.1% vs22.8% with 28.3 pp benefit and NNT4; removed invalid median-derived NNT."
+      },
+      {
+        "trial_id": "ev-303",
+        "page_path": "trial-pages/ev-303/index.html",
+        "change": "Updated primary NEJM publication metadata, PMID/NCT, exact treatment schedule, follow-up, EFS/OS/pCR and grade≥3 safety; added NNT3 (24m EFS), NNT7 (24m OS), NNT3 (pCR at surgery)."
       }
     ],
     "new_open_items": [
       "eight lung-SABR records sharing one aggregate page",
       "PR #5 pre-merge strict-validator gate gap",
       "18-Nov exact-30 release gate/page-build work",
-      "browser-rendered QA for GOG-258, KEYNOTE-A18, KEYNOTE-C93 and OptiTROP-Lung06",
+      "browser-rendered QA for GOG-258, KEYNOTE-A18, KEYNOTE-C93, OptiTROP-Lung06 and EV-303",
       "EXCALIBER-RRMM evidence-maturity hold",
       "IsKia MRD-surrogate evidence hold"
     ],
     "full_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false,
-    "manual_review_events": 9,
+    "manual_review_events": 10,
     "morning_manual_pages_rechecked": 5,
     "evening_manual_pages_reviewed": 3,
     "unique_pages_manually_reviewed": [
@@ -88,13 +93,14 @@
       "fight-302",
       "gog-258",
       "keynote-c93",
-      "optitrop-lung06"
+      "optitrop-lung06",
+      "ev-303"
     ],
-    "remaining_existing_pages_for_manual_audit": 452,
+    "remaining_existing_pages_for_manual_audit": 451,
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
       "open_items": "+3 (133→136)",
-      "resolved_items": "+6 (53→59)"
+      "resolved_items": "+7 (53→60)"
     }
   },
   "nccn": {
@@ -103,7 +109,7 @@
     "complete_official_guidelines_accessible": 0,
     "complete_reference_lists_accessible": 0,
     "exact_reference_numbers_extracted": 0,
-    "pending_trial_mappings_total": 74,
+    "pending_trial_mappings_total": 75,
     "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN metadata/abstracts recorded as metadata-only; no exact recommendation section, reference number or category inferred."
   },
   "candidates": {
@@ -259,6 +265,29 @@
       "status": "HTML attributes and finite widths checked; Cloudflare preview rebuild pending; browser rendering pending.",
       "source_url": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026",
       "dose_schedule_source": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026"
+    },
+    "ev303": {
+      "efs_24m": {
+        "rates": "74.7% vs39.4%",
+        "benefit_pp": 35.3,
+        "nnt": 3
+      },
+      "os_24m": {
+        "rates": "79.7% vs63.1%",
+        "benefit_pp": 16.6,
+        "nnt": 7,
+        "qualification": "less mature key secondary endpoint"
+      },
+      "pcr": {
+        "rates": "57.1% vs8.6%",
+        "benefit_pp": 48.5,
+        "nnt": 3,
+        "source_reported_adjusted_difference_pp": 48.3
+      },
+      "grade3plus_ae": {
+        "rates": "71.3% vs45.9%",
+        "nnh": "not calculated; no common fixed safety horizon"
+      }
     }
   },
   "roster_index_archive": {
@@ -314,7 +343,7 @@
     "Continue evening discovery for 14 additional unique identity-verified studies without padding; CA017-078 remains deferred-negative, while ZEAL-1L and PEMDA-HN remain in the pre-existing deferred queue."
   ],
   "evidence_file": "data/daily-evidence-2026-11-18-evening.json",
-  "doi_title_cache_entries": 71,
+  "doi_title_cache_entries": 72,
   "held_candidate_names": [
     "DEX-OINV",
     "Nivolumab in ctDNA-defined high blood TMB",
@@ -385,7 +414,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "cfe95a1f0ea610897b5eda61a597279e1a0e0a65",
+  "content_commit_sha": "3f8f178ce93e5e4fd55f589b1ecb453263b26b7c",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
