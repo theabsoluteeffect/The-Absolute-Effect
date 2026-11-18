@@ -44,7 +44,7 @@
     "existing_pages_manually_reviewed": 9,
     "pages_repaired": 5,
     "repair_queue_open": 136,
-    "repair_queue_resolved": 60,
+    "repair_queue_resolved": 61,
     "repairs": [
       {
         "trial_id": "keynote-a18",
@@ -109,18 +109,18 @@
     "complete_official_guidelines_accessible": 0,
     "complete_reference_lists_accessible": 0,
     "exact_reference_numbers_extracted": 0,
-    "pending_trial_mappings_total": 75,
+    "pending_trial_mappings_total": 82,
     "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN metadata/abstracts recorded as metadata-only; no exact recommendation section, reference number or category inferred."
   },
   "candidates": {
-    "screening_records": 103,
-    "unique_candidate_ids": 95,
-    "new_unique_underlying_candidates": 64,
+    "screening_records": 111,
+    "unique_candidate_ids": 103,
+    "new_unique_underlying_candidates": 72,
     "primary_source_verified_new_unique_page_build_candidates": 0,
-    "source_verified_but_held_low_maturity": 4,
+    "source_verified_but_held_low_maturity": 5,
     "primary_source_incomplete_or_not_verified_holds": 21,
-    "held_total": 25,
-    "deferred_negative_unique": 9,
+    "held_total": 26,
+    "deferred_negative_unique": 10,
     "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
@@ -133,7 +133,7 @@
     "target": 30,
     "eligible_candidate_shortfall": 0,
     "policy_exclusions_rechecked": 1,
-    "primary_source_identity_verified_new_unique": 30,
+    "primary_source_identity_verified_new_unique": 36,
     "full_page_data_verified_new_unique": 0,
     "release_ready_page_shortfall": 30,
     "morning": {
@@ -156,13 +156,13 @@
       "not_uploaded": 30
     },
     "evening": {
-      "screening_records": 50,
-      "unique_candidate_ids": 42,
-      "new_unique_underlying_candidates": 26,
-      "primary_source_identity_verified_new_unique": 16,
+      "screening_records": 58,
+      "unique_candidate_ids": 50,
+      "new_unique_underlying_candidates": 34,
+      "primary_source_identity_verified_new_unique": 22,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 7,
-      "deferred_negative_unique": 3,
+      "held_unique": 8,
+      "deferred_negative_unique": 4,
       "unique_duplicate_exclusions": 16,
       "policy_excluded_unique": 0,
       "repeated_screening_records": 8,
@@ -170,18 +170,18 @@
       "release_ready_pages": 0,
       "published": 0,
       "target_new_trials": 30,
-      "identity_verified_shortfall": 14,
+      "identity_verified_shortfall": 8,
       "uploaded": 0,
       "not_uploaded": 30
     },
     "daily_combined": {
-      "screening_records": 103,
-      "unique_candidate_ids": 95,
-      "new_unique_underlying_candidates": 64,
-      "primary_source_identity_verified_new_unique": 30,
+      "screening_records": 111,
+      "unique_candidate_ids": 103,
+      "new_unique_underlying_candidates": 72,
+      "primary_source_identity_verified_new_unique": 36,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 25,
-      "deferred_negative_unique": 9,
+      "held_unique": 26,
+      "deferred_negative_unique": 10,
       "unique_duplicate_exclusions": 30,
       "policy_excluded_unique": 1,
       "repeated_screening_records": 8,
@@ -189,7 +189,7 @@
       "release_ready_pages": 0,
       "published": 0,
       "daily_target": 60,
-      "identity_verified_shortfall": 30,
+      "identity_verified_shortfall": 24,
       "uploaded": 0,
       "not_uploaded": 60
     }
@@ -332,7 +332,8 @@
     "PR #5 strict validator was independently verified only post-merge, not as a pre-merge PR check.",
     "Morning cycle: 14/30 new unique candidates had primary-source/registry identity confirmed; 16/30 short. Evening cycle: 16/30 identity-confirmed; 14/30 short. Combined 30/60 daily identity-confirmed; no pages built or uploaded.",
     "No cycle reached 30 fully page-verified studies; full endpoint, dose/schedule, grade 3–5 toxicity, QoL, limitations and visualization extraction remains outstanding.",
-    "One additional negative phase III study (CA017-078) was screened and deferred; OptiTROP-Lung06 was confirmed as an existing canonical duplicate and its broken page was repaired. Evening identity-verified count remains 16/30."
+    "One additional negative phase III study (CA017-078) was screened and deferred; OptiTROP-Lung06 was confirmed as an existing canonical duplicate and its broken page was repaired. Evening identity-verified count remains 16/30.",
+    "Evening identity-verified count increased to22/30 after six additional unique primary-source studies; eight more are still needed to reach the per-cycle target. IKF-035 remains held at 33% information time; iPRIME is deferred-negative."
   ],
   "next_actions": [
     "Continue evening discovery for 14 additional unique primary-source-identified candidates without padding; preserve the 16 verified candidates already screened in the evening cycle.",
@@ -340,10 +341,12 @@
     "Keep the 25 unique held candidates in the review queue and retain the eight deferred-negative studies separately.",
     "Do not open a PR until exactly 30 complete unique pages for the cycle pass the strict validator and Outcome visualization audit.",
     "Split the eight lung-SABR roster entries currently sharing one aggregate page and finish browser-rendered QA for the three repaired pages.",
-    "Continue evening discovery for 14 additional unique identity-verified studies without padding; CA017-078 remains deferred-negative, while ZEAL-1L and PEMDA-HN remain in the pre-existing deferred queue."
+    "Continue evening discovery for 14 additional unique identity-verified studies without padding; CA017-078 remains deferred-negative, while ZEAL-1L and PEMDA-HN remain in the pre-existing deferred queue.",
+    "Continue evening discovery for eight additional new unique studies; do not pad with immature or protocol-only evidence.",
+    "Build complete pages for 22 evening identity-verified candidates only after extracting all required clinical fields and passing source/visualization QA."
   ],
   "evidence_file": "data/daily-evidence-2026-11-18-evening.json",
-  "doi_title_cache_entries": 72,
+  "doi_title_cache_entries": 80,
   "held_candidate_names": [
     "DEX-OINV",
     "Nivolumab in ctDNA-defined high blood TMB",
@@ -414,7 +417,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "3f8f178ce93e5e4fd55f589b1ecb453263b26b7c",
+  "content_commit_sha": "c008a24ea8b0f7502d05a43fe09de1d50afebb7b",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
@@ -434,11 +437,11 @@
     "unique_candidate_ids": 94,
     "repeated_screening_records": 8,
     "morning_identity_verified": 14,
-    "evening_identity_verified": 16,
+    "evening_identity_verified": 22,
     "morning_held_unique": 18,
-    "evening_held_unique": 7,
+    "evening_held_unique": 8,
     "morning_deferred": 6,
-    "evening_deferred": 3,
+    "evening_deferred": 4,
     "morning_duplicates": 14,
     "evening_duplicates": 16,
     "morning_policy_excluded": 1,
@@ -446,13 +449,15 @@
     "morning_uploaded": 0,
     "evening_uploaded": 0,
     "daily_uploaded": 0,
-    "evening_screening_records": 50,
-    "evening_unique_candidate_ids": 42,
-    "evening_new_unique_underlying_candidates": 26,
-    "daily_screening_records": 103,
-    "daily_unique_candidate_ids": 95,
-    "daily_new_unique_underlying_candidates": 64,
-    "daily_deferred": 9
+    "evening_screening_records": 58,
+    "evening_unique_candidate_ids": 50,
+    "evening_new_unique_underlying_candidates": 34,
+    "daily_screening_records": 111,
+    "daily_unique_candidate_ids": 103,
+    "daily_new_unique_underlying_candidates": 72,
+    "daily_deferred": 10,
+    "daily_identity_verified": 36,
+    "daily_held_unique": 26
   },
   "report_update_parent_sha": "a9878966b743922914939b43cb1c2a2ddace7c0f",
   "cycle_breakdown": {
@@ -476,13 +481,13 @@
       "not_uploaded": 30
     },
     "evening": {
-      "screening_records": 50,
-      "unique_candidate_ids": 42,
-      "new_unique_underlying_candidates": 26,
-      "primary_source_identity_verified_new_unique": 16,
+      "screening_records": 58,
+      "unique_candidate_ids": 50,
+      "new_unique_underlying_candidates": 34,
+      "primary_source_identity_verified_new_unique": 22,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 7,
-      "deferred_negative_unique": 3,
+      "held_unique": 8,
+      "deferred_negative_unique": 4,
       "unique_duplicate_exclusions": 16,
       "policy_excluded_unique": 0,
       "repeated_screening_records": 8,
@@ -490,18 +495,18 @@
       "release_ready_pages": 0,
       "published": 0,
       "target_new_trials": 30,
-      "identity_verified_shortfall": 14,
+      "identity_verified_shortfall": 8,
       "uploaded": 0,
       "not_uploaded": 30
     },
     "daily_combined": {
-      "screening_records": 103,
-      "unique_candidate_ids": 95,
-      "new_unique_underlying_candidates": 64,
-      "primary_source_identity_verified_new_unique": 30,
+      "screening_records": 111,
+      "unique_candidate_ids": 103,
+      "new_unique_underlying_candidates": 72,
+      "primary_source_identity_verified_new_unique": 36,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 25,
-      "deferred_negative_unique": 9,
+      "held_unique": 26,
+      "deferred_negative_unique": 10,
       "unique_duplicate_exclusions": 30,
       "policy_excluded_unique": 1,
       "repeated_screening_records": 8,
@@ -509,7 +514,7 @@
       "release_ready_pages": 0,
       "published": 0,
       "daily_target": 60,
-      "identity_verified_shortfall": 30,
+      "identity_verified_shortfall": 24,
       "uploaded": 0,
       "not_uploaded": 60
     }
@@ -520,5 +525,13 @@
   "evening_not_uploaded_count": 30,
   "daily_uploaded_count": 0,
   "daily_not_uploaded_count": 60,
-  "deferred_negative_queue_items": 30
+  "deferred_negative_queue_items": 31,
+  "trial_of_day_candidate": {
+    "trial": "SAFFRON",
+    "publication_date": "2026-10-25",
+    "primary_doi": "10.1056/NEJMoa2611335",
+    "pmid": "42929693",
+    "registry_id": "NCT05261399",
+    "reason": "Published within the preceding month and genuinely new to the Atlas; page build and full QA pending, so current ToD record is unchanged."
+  }
 }

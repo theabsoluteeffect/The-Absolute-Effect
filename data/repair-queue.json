@@ -1769,20 +1769,6 @@
       "branch": "atlas-batch/2026-11-17-am"
     },
     {
-      "issue_id": "candidate-review-saffron",
-      "trial_id": "saffron",
-      "trial": "SAFFRON",
-      "path": null,
-      "category": "new_candidate_primary_source_verification",
-      "severity": "high",
-      "evidence": "ESMO 2026 LBA6; ESMO primary abstract DOI/PMID and exact primary title not retrieved; arm denominators and exact doses need source verification.",
-      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
-      "status": "open",
-      "created_on": "2026-11-17",
-      "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
-    },
-    {
       "issue_id": "candidate-review-clarity-gastric01",
       "trial_id": "clarity-gastric01",
       "trial": "CLARITY-Gastric01",
@@ -2014,6 +2000,21 @@
       "source_url": "https://doi.org/10.1038/s41591-026-04282-0",
       "issue": "Randomised phase III newly diagnosed myeloma study reports an MRD primary endpoint while PFS remains immature. This is a valid surrogate-endpoint trial but is not being used to fill the batch until clinical maturity and exact regimen/outcome details are fully extracted.",
       "next_action": "Retain in the review queue; extract full randomisation, MRD definition/timepoint, PFS maturity and grade 3–5 toxicity before considering release."
+    },
+    {
+      "issue_id": "candidate-review-ikf-035",
+      "trial_id": "ikf-035",
+      "trial": "IKF-035 / ABC-HCC",
+      "issue_type": "candidate_evidence_maturity_hold",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "evidence": [
+        "https://doi.org/10.1200/JCO.2026.44.2_suppl.478"
+      ],
+      "reason": "Only first interim analysis at 33% information time; 194 randomized,168 included,100 TTFS events; trial continued to planned 66% interim analysis.",
+      "action": "Hold from page release pending 66% information-time or final analysis; verify full safety and maturity.",
+      "next_action": "Monitor for second interim/final publication."
     }
   ],
   "resolved_items": [
@@ -3979,6 +3980,30 @@
         "grade3plus_ae": "71.3% vs45.9%; no NNH due no fixed safety horizon"
       },
       "next_action": "Browser-rendered QA before closing on main."
+    },
+    {
+      "issue_id": "candidate-review-saffron",
+      "trial_id": "saffron",
+      "trial": "SAFFRON",
+      "path": null,
+      "category": "new_candidate_primary_source_verification",
+      "severity": "high",
+      "evidence": [
+        "https://doi.org/10.1056/NEJMoa2611335",
+        "https://pubmed.ncbi.nlm.nih.gov/42929693/",
+        "https://clinicaltrials.gov/study/NCT05261399"
+      ],
+      "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-17",
+      "last_verified_on": "2026-11-17",
+      "branch": "atlas-batch/2026-11-17-am",
+      "closed_on": "2026-11-18",
+      "primary_doi": "10.1056/NEJMoa2611335",
+      "pmid": "42929693",
+      "registry_id": "NCT05261399",
+      "resolution": "Exact NEJM primary title, DOI, PMID and NCT verified; phase III identity and key results confirmed. Candidate moved to source-verified page-build queue.",
+      "next_action": "Complete full extraction of population, dosing, endpoint definitions, mature OS, grade3–5 safety, QoL and limitations before page build."
     }
   ],
   "run_audit_log": [
@@ -4129,6 +4154,11 @@
       "action": "repaired EV-303 primary publication and NNTs",
       "page_path": "trial-pages/ev-303/index.html",
       "status": "resolved_on_branch"
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "verified SAFFRON primary publication; added six new unique identity-verified candidates; held IKF-035 for interim maturity; deferred iPRIME"
     }
   ],
   "previous_partial_runs": [
@@ -4192,15 +4222,15 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 95,
-    "verified_new_unique": 30,
-    "held": 25,
-    "deferred_negative": 8,
+    "unique_candidate_ids": 103,
+    "verified_new_unique": 36,
+    "held": 26,
+    "deferred_negative": 10,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE — one additional negative study added to deferred queue; OptiTROP-Lung06 page repair staged.",
-    "new_unique_underlying_candidates": 64,
+    "status": "INCOMPLETE — 36 identity-verified across both cycles; no new pages fully extracted or release-ready.",
+    "new_unique_underlying_candidates": 72,
     "repeated_screening_records": 8,
     "deferred": 9
   },
@@ -4210,23 +4240,23 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 95,
-    "verified_new_unique": 30,
-    "held": 25,
-    "deferred_negative": 8,
+    "unique_candidate_ids": 103,
+    "verified_new_unique": 36,
+    "held": 26,
+    "deferred_negative": 10,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE — one additional negative study added to deferred queue; OptiTROP-Lung06 page repair staged.",
-    "new_unique_underlying_candidates": 64,
+    "status": "INCOMPLETE — 36 identity-verified across both cycles; no new pages fully extracted or release-ready.",
+    "new_unique_underlying_candidates": 72,
     "repeated_screening_records": 8,
     "deferred": 9
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
     "open_items": 136,
-    "resolved_items": 60,
+    "resolved_items": 61,
     "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item. OptiTROP-Lung06 canonical page repaired on 2026-11-18; zero-width bars and invalid median-derived NNT removed; browser QA pending.",
-    "release_holds_in_active_batch": 25
+    "release_holds_in_active_batch": 26
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T21:10:00+05:30",
+  "updated_at": "2026-11-18T21:45:00+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -894,15 +894,119 @@
       "verified_by": "NEJM and PubMed metadata",
       "verified_on": "2026-11-18",
       "source_url": "https://doi.org/10.1056/NEJMoa2511674"
+    },
+    {
+      "trial_id": "saffron",
+      "trial_name": "SAFFRON",
+      "doi": "10.1056/NEJMoa2611335",
+      "primary_title": "Osimertinib-Savolitinib in Advanced NSCLC after Progression during EGFR-TKI Therapy",
+      "pmid": "42929693",
+      "registry_id": "NCT05261399",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2611335"
+    },
+    {
+      "trial_id": "torch",
+      "trial_name": "TORCH",
+      "doi": "10.1001/jamaoncol.2026.2366",
+      "primary_title": "Transarterial Chemoembolization Plus Thermal Ablation in Unresectable Hepatocellular Carcinoma: The Phase 3 TORCH Randomized Clinical Trial",
+      "pmid": "42530948",
+      "registry_id": "NCT02435953",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1001/jamaoncol.2026.2366"
+    },
+    {
+      "trial_id": "camrelizumab-rivoceranib-tace",
+      "trial_name": "Camrelizumab + rivoceranib + TACE",
+      "doi": "10.1200/JCO.2026.44.16_suppl.4001",
+      "primary_title": "Camrelizumab (C) plus rivoceranib (R) with transarterial chemoembolization (TACE) vs TACE alone in unresectable hepatocellular carcinoma (uHCC): A randomized, phase 3 trial",
+      "pmid": null,
+      "registry_id": "NCT05320692",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1200/JCO.2026.44.16_suppl.4001"
+    },
+    {
+      "trial_id": "patina",
+      "trial_name": "PATINA",
+      "doi": "10.1056/NEJMoa2511218",
+      "primary_title": "Palbociclib for Hormone-Receptor–Positive, HER2-Positive Advanced Breast Cancer",
+      "pmid": "41604639",
+      "registry_id": "NCT02947685",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2511218"
+    },
+    {
+      "trial_id": "majestec-3",
+      "trial_name": "MajesTEC-3",
+      "doi": "10.1056/NEJMoa2514663",
+      "primary_title": "Teclistamab plus Daratumumab in Relapsed or Refractory Multiple Myeloma",
+      "pmid": "41363801",
+      "registry_id": "NCT05083169",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2514663"
+    },
+    {
+      "trial_id": "preoperative-s-1-plus-oxaliplatin-phase-ii",
+      "trial_name": "Preoperative S-1 plus oxaliplatin phase II",
+      "doi": "10.1111/ajco.70214",
+      "primary_title": "Minimum 7-Year Follow-Up of a Prospective Phase II Trial of Preoperative S-1 Plus Oxaliplatin Chemotherapy for Clinical Stage III Gastric Cancer",
+      "pmid": "42894432",
+      "registry_id": "UMIN000036139",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1111/ajco.70214"
+    },
+    {
+      "trial_id": "ikf-035",
+      "trial_name": "IKF-035 / ABC-HCC",
+      "doi": "10.1200/JCO.2026.44.2_suppl.478",
+      "primary_title": "IKF-035/ABC-HCC: A phase IIIb, randomized, multicenter, open-label trial of atezolizumab plus bevacizumab versus transarterial chemoembolization (TACE) in intermediate-stage hepatocellular carcinoma.",
+      "pmid": null,
+      "registry_id": "CTIS 2024-512953-26-00",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1200/JCO.2026.44.2_suppl.478"
+    },
+    {
+      "trial_id": "iprime",
+      "trial_name": "iPRIME",
+      "doi": "10.1007/s00262-026-04589-4",
+      "primary_title": "Neoadjuvant durvalumab and tremelimumab in combination with chemotherapy in newly diagnosed advanced high-grade serous ovarian cancer (iPRIME): a randomized, non-comparative phase 2 trial using chemotherapy response score as the primary endpoint",
+      "pmid": null,
+      "registry_id": "ACTRN12618000109202",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1007/s00262-026-04589-4"
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "additional_title_checks": 4,
-    "total_entries": 71
+    "additional_title_checks": 8,
+    "total_entries": 80
   },
   "last_run_additions": 14,
   "last_run_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
-  "last_updated": "2026-11-18T21:10:00+05:30"
+  "last_updated": "2026-11-18T21:45:00+05:30"
 }

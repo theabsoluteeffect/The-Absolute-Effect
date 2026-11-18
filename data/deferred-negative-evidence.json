@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T20:38:00+05:30",
+  "updated_at": "2026-11-18T21:45:00+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -561,16 +561,38 @@
         "https://clinicaltrials.gov/study/NCT03661320"
       ],
       "next_action": "Revisit only if a guideline recommendation or mature subgroup analysis makes this evidence essential."
+    },
+    {
+      "run_date": "2026-11-18",
+      "cycle": "evening",
+      "screened_on": "2026-11-18T21:45:00+05:30",
+      "nccn_provenance": "not verified — full official NCCN guideline/reference list inaccessible; no reference number or category inferred",
+      "trial_id": "iprime",
+      "trial": "iPRIME",
+      "site": "Ovarian / advanced high-grade serous",
+      "setting": "Neoadjuvant treatment of newly diagnosed FIGO IIIC–IV disease",
+      "phase_design": "Randomised, non-comparative phase II",
+      "primary_doi": "10.1007/s00262-026-04589-4",
+      "registry_id": "ACTRN12618000109202",
+      "reason": "The dual-checkpoint plus chemotherapy arm did not meet its prespecified CRS3 primary endpoint (13/40, 32%; 90%CI20–47%); radiological response was similar (45% vs50%, p=0.82), and median PFS was 14.7 months in both arms (12/24-month PFS p=0.64). Retain as negative/contrary evidence, not a new positive trial page.",
+      "next_action": "Revisit only if guideline recommendation or biomarker analysis makes this negative result essential.",
+      "source_urls": [
+        "https://doi.org/10.1007/s00262-026-04589-4",
+        "https://link.springer.com/article/10.1007/s00262-026-04589-4"
+      ],
+      "disposition": "deferred_negative",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
     "added": [
-      "ca017-078"
+      "iprime"
     ]
   },
-  "last_updated": "2026-11-18T20:38:00+05:30",
+  "last_updated": "2026-11-18T21:45:00+05:30",
   "last_run_date": "2026-11-18",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026.",
   "last_run_additions": [
@@ -584,11 +606,16 @@
       "trial_id": "ca017-078",
       "disposition": "deferred_contrary_evidence",
       "reason": "Phase III EFS-negative final analysis"
+    },
+    {
+      "trial_id": "iprime",
+      "disposition": "deferred_negative",
+      "reason": "Phase II dual checkpoint blockade failed primary CRS3 endpoint; no PFS improvement"
     }
   ],
-  "total_items": 30,
+  "total_items": 31,
   "summary": {
-    "total_items": 30,
+    "total_items": 31,
     "new_items_added_this_run": 6,
     "last_updated": "2026-11-18",
     "note": "Six newly screened negative/contrary-evidence studies added; existing PEMDA-HN and IROCAS entries retained without duplication."

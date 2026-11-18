@@ -10,14 +10,14 @@
   "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
   "morning_run_file": "data/daily-evidence-2026-11-18-morning.json",
   "screening_counts": {
-    "screening_records": 103,
-    "unique_candidate_ids": 95,
-    "new_unique_underlying_candidates": 64,
+    "screening_records": 111,
+    "unique_candidate_ids": 103,
+    "new_unique_underlying_candidates": 72,
     "primary_source_verified_new_unique_page_build_candidates": 0,
-    "source_verified_but_held_low_maturity": 4,
+    "source_verified_but_held_low_maturity": 5,
     "primary_source_incomplete_or_not_verified_holds": 21,
-    "held_total": 25,
-    "deferred_negative_unique": 9,
+    "held_total": 26,
+    "deferred_negative_unique": 10,
     "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
@@ -28,10 +28,10 @@
     "release_ready_pages": 0,
     "published_pages": 0,
     "target_new_trials": 30,
-    "eligible_candidate_shortfall": 0,
-    "primary_source_identity_verified_new_unique": 30,
+    "eligible_candidate_shortfall": 24,
+    "primary_source_identity_verified_new_unique": 36,
     "full_page_data_verified_new_unique": 0,
-    "release_ready_page_shortfall": 30,
+    "release_ready_page_shortfall": 60,
     "cycle_breakdown": {
       "morning": {
         "screening_records": 53,
@@ -53,13 +53,13 @@
         "not_uploaded": 30
       },
       "evening": {
-        "screening_records": 50,
-        "unique_candidate_ids": 42,
-        "new_unique_underlying_candidates": 26,
-        "primary_source_identity_verified_new_unique": 16,
+        "screening_records": 58,
+        "unique_candidate_ids": 50,
+        "new_unique_underlying_candidates": 34,
+        "primary_source_identity_verified_new_unique": 22,
         "full_page_data_verified_new_unique": 0,
-        "held_unique": 7,
-        "deferred_negative_unique": 3,
+        "held_unique": 8,
+        "deferred_negative_unique": 4,
         "unique_duplicate_exclusions": 16,
         "policy_excluded_unique": 0,
         "repeated_screening_records": 8,
@@ -67,18 +67,18 @@
         "release_ready_pages": 0,
         "published": 0,
         "target_new_trials": 30,
-        "identity_verified_shortfall": 14,
+        "identity_verified_shortfall": 8,
         "uploaded": 0,
         "not_uploaded": 30
       },
       "daily_combined": {
-        "screening_records": 103,
-        "unique_candidate_ids": 95,
-        "new_unique_underlying_candidates": 64,
-        "primary_source_identity_verified_new_unique": 30,
+        "screening_records": 111,
+        "unique_candidate_ids": 103,
+        "new_unique_underlying_candidates": 72,
+        "primary_source_identity_verified_new_unique": 36,
         "full_page_data_verified_new_unique": 0,
-        "held_unique": 25,
-        "deferred_negative_unique": 9,
+        "held_unique": 26,
+        "deferred_negative_unique": 10,
         "unique_duplicate_exclusions": 30,
         "policy_excluded_unique": 1,
         "repeated_screening_records": 8,
@@ -86,7 +86,7 @@
         "release_ready_pages": 0,
         "published": 0,
         "daily_target": 60,
-        "identity_verified_shortfall": 30,
+        "identity_verified_shortfall": 24,
         "uploaded": 0,
         "not_uploaded": 60
       }
@@ -2637,6 +2637,253 @@
         "https://pubmed.ncbi.nlm.nih.gov/42918420/",
         "https://clinicaltrials.gov/study/NCT03661320"
       ]
+    },
+    {
+      "trial": "SAFFRON",
+      "doi": "10.1056/NEJMoa2611335",
+      "pmid": "42929693",
+      "registry_id": "NCT05261399",
+      "primary_title": "Osimertinib-Savolitinib in Advanced NSCLC after Progression during EGFR-TKI Therapy",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2611335",
+        "https://pubmed.ncbi.nlm.nih.gov/42929693/",
+        "https://clinicaltrials.gov/study/NCT05261399"
+      ],
+      "run_cycle": "evening",
+      "site": "NSCLC / EGFR-mutant / MET-positive",
+      "setting": "After progression on EGFR-TKI",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 338,
+      "randomized_denominators": {
+        "savolitinib_osimertinib": 171,
+        "platinum_pemetrexed": 167
+      },
+      "primary_endpoint": "PFS by BICR",
+      "key_results": "Median PFS 7.6 vs5.4 months; HR0.55 (95%CI0.42–0.72), p<0.001. OS HR0.68 (95%CI0.50–0.91), p=0.010; median OS17.8 vs12.9 months.",
+      "treatment": "Savolitinib 300 mg twice daily plus osimertinib 80 mg daily",
+      "comparator": "Platinum-pemetrexed chemotherapy",
+      "safety": "Grade≥3 adverse events67.9% vs61.5%",
+      "status": "identity_verified_page_data_pending",
+      "tod_candidate": true,
+      "publication_date": "2026-10-25",
+      "candidate_name": "SAFFRON",
+      "candidate_id": "saffron",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "TORCH",
+      "doi": "10.1001/jamaoncol.2026.2366",
+      "pmid": "42530948",
+      "registry_id": "NCT02435953",
+      "primary_title": "Transarterial Chemoembolization Plus Thermal Ablation in Unresectable Hepatocellular Carcinoma: The Phase 3 TORCH Randomized Clinical Trial",
+      "source_url": [
+        "https://doi.org/10.1001/jamaoncol.2026.2366",
+        "https://pubmed.ncbi.nlm.nih.gov/42530948/",
+        "https://clinicaltrials.gov/study/NCT02435953"
+      ],
+      "run_cycle": "evening",
+      "site": "HCC / BCLC B / liver-confined",
+      "setting": "Intermediate-stage unresectable HCC",
+      "phase": "III",
+      "design": "Open-label, two-centre randomised phase III",
+      "sample_size": 241,
+      "randomized_denominators": {
+        "TACE_thermal_ablation": 121,
+        "TACE_alone": 120
+      },
+      "primary_endpoint": "PFS by RECIST 1.1",
+      "key_results": "Median PFS17.7 vs7.3 months; HR0.47 (95%CI0.34–0.65), p<0.001. Untreatable PFS35.1 vs12.3 months; HR0.40 (95%CI0.27–0.58), p<0.001. Median OS88.6 vs35.1 months; HR0.50 (95%CI0.34–0.73), p<0.001.",
+      "treatment": "TACE followed by selective radiofrequency/thermal ablation",
+      "comparator": "TACE alone",
+      "safety": "Grade3–4 treatment-related AEs23.2% vs18.3%",
+      "status": "identity_verified_page_data_pending",
+      "candidate_name": "TORCH",
+      "candidate_id": "torch",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "Camrelizumab + rivoceranib + TACE",
+      "doi": "10.1200/JCO.2026.44.16_suppl.4001",
+      "pmid": null,
+      "registry_id": "NCT05320692",
+      "primary_title": "Camrelizumab (C) plus rivoceranib (R) with transarterial chemoembolization (TACE) vs TACE alone in unresectable hepatocellular carcinoma (uHCC): A randomized, phase 3 trial",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.4001",
+        "https://clinicaltrials.gov/study/NCT05320692"
+      ],
+      "run_cycle": "evening",
+      "site": "HCC / intermediate stage / TACE-eligible",
+      "setting": "Unresectable HCC eligible for TACE",
+      "phase": "III",
+      "design": "Multicentre, open-label randomised phase III; protocol-specified PFS interim analysis",
+      "sample_size": 423,
+      "randomized_denominators": {
+        "camrelizumab_rivoceranib_TACE": 214,
+        "TACE_alone": 209
+      },
+      "primary_endpoint": "PFS by BICR per mRECIST",
+      "key_results": "Median PFS11.1 vs8.3 months; HR0.73 (95%CI0.56–0.96), one-sided p=0.0127. RECIST 1.1 PFS13.9 vs9.5 months; HR0.67 (95%CI0.50–0.91). OS immature; HR0.76 (95%CI0.46–1.24); 12-month OS91.4% vs85.5%, 24-month OS82.0% vs73.3%.",
+      "treatment": "Camrelizumab 200 mg IV every 3 weeks plus rivoceranib 250 mg orally daily and TACE",
+      "comparator": "TACE alone",
+      "safety": "Grade≥3 TRAEs73.7% (157/213) vs28.7% (60/209)",
+      "status": "identity_verified_conference_abstract_page_data_pending",
+      "interim": true,
+      "candidate_name": "Camrelizumab + rivoceranib + TACE",
+      "candidate_id": "camrelizumab-rivoceranib-tace",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "PATINA",
+      "doi": "10.1056/NEJMoa2511218",
+      "pmid": "41604639",
+      "registry_id": "NCT02947685",
+      "primary_title": "Palbociclib for Hormone-Receptor–Positive, HER2-Positive Advanced Breast Cancer",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2511218",
+        "https://pubmed.ncbi.nlm.nih.gov/41604639/",
+        "https://clinicaltrials.gov/study/NCT02947685"
+      ],
+      "run_cycle": "evening",
+      "site": "Breast / HR-positive / HER2-positive",
+      "setting": "Maintenance after induction chemotherapy and HER2-directed therapy in advanced disease",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 518,
+      "randomized_denominators": {
+        "palbociclib_plus_antiHER2_ET": 261,
+        "antiHER2_ET": 257
+      },
+      "primary_endpoint": "Investigator-assessed PFS",
+      "key_results": "Median PFS44.3 vs29.1 months; HR0.75 (95%CI0.59–0.96), p=0.02; OS immature.",
+      "treatment": "Palbociclib 125 mg orally days1–21 every28 days plus trastuzumab with/without pertuzumab and endocrine therapy",
+      "comparator": "HER2-directed maintenance plus endocrine therapy without palbociclib",
+      "safety": "Grade3/4 AEs79.7%/10.0% vs30.6%/3.6%",
+      "status": "identity_verified_page_data_pending",
+      "candidate_name": "PATINA",
+      "candidate_id": "patina",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "MajesTEC-3",
+      "doi": "10.1056/NEJMoa2514663",
+      "pmid": "41363801",
+      "registry_id": "NCT05083169",
+      "primary_title": "Teclistamab plus Daratumumab in Relapsed or Refractory Multiple Myeloma",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2514663",
+        "https://pubmed.ncbi.nlm.nih.gov/41363801/",
+        "https://clinicaltrials.gov/study/NCT05083169"
+      ],
+      "run_cycle": "evening",
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory after 1–3 prior lines",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 587,
+      "randomized_denominators": {
+        "teclistamab_daratumumab": 291,
+        "DPd_or_DVd": 296
+      },
+      "primary_endpoint": "PFS",
+      "key_results": "36-month PFS83.4% vs29.7%; HR0.17 (95%CI0.12–0.23), p<0.001. 36-month OS83.3% vs65.0%; HR0.46 (95%CI0.32–0.65), p<0.001. ORR89.0% vs75.3%.",
+      "treatment": "Teclistamab plus subcutaneous daratumumab with step-up dosing and subsequent weekly/biweekly/monthly schedules",
+      "comparator": "Daratumumab, pomalidomide and dexamethasone or daratumumab, bortezomib and dexamethasone",
+      "safety": "Grade3/4 TEAEs95.1% vs96.6%; grade3/4 infections54.1% vs43.4%; CRS60.1% (grade1/2 only); ICANS1.1%",
+      "status": "identity_verified_page_data_pending",
+      "candidate_name": "MajesTEC-3",
+      "candidate_id": "majestec-3",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "Preoperative S-1 plus oxaliplatin phase II",
+      "doi": "10.1111/ajco.70214",
+      "pmid": "42894432",
+      "registry_id": "UMIN000036139",
+      "primary_title": "Minimum 7-Year Follow-Up of a Prospective Phase II Trial of Preoperative S-1 Plus Oxaliplatin Chemotherapy for Clinical Stage III Gastric Cancer",
+      "source_url": [
+        "https://doi.org/10.1111/ajco.70214",
+        "https://pubmed.ncbi.nlm.nih.gov/42894432/"
+      ],
+      "run_cycle": "evening",
+      "site": "Gastric cancer / stage III",
+      "setting": "Neoadjuvant/perioperative",
+      "phase": "II",
+      "design": "Prospective single-arm phase II with ≥7-year follow-up",
+      "sample_size": 34,
+      "randomized_denominators": {
+        "single_arm": 34
+      },
+      "primary_endpoint": "Long-term survival after preoperative SOX",
+      "key_results": "Primary publication reports minimum 7-year follow-up; detailed outcome extraction remains pending.",
+      "treatment": "Two cycles of preoperative S-1 plus oxaliplatin",
+      "comparator": "None; single-arm",
+      "safety": "Full grade3–5 toxicity extraction pending",
+      "status": "identity_verified_page_data_pending",
+      "registry_note": "UMIN000036139",
+      "candidate_name": "Preoperative S-1 plus oxaliplatin phase II",
+      "candidate_id": "preoperative-s-1-plus-oxaliplatin-phase-ii",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "run_date": "2026-11-18",
+      "cycle": "evening",
+      "screened_on": "2026-11-18T21:45:00+05:30",
+      "nccn_provenance": "not verified — full official NCCN guideline/reference list inaccessible; no reference number or category inferred",
+      "trial_id": "ikf-035",
+      "candidate_name": "IKF-035 / ABC-HCC",
+      "site": "HCC / intermediate stage / TACE-eligible",
+      "setting": "Systemic atezolizumab-bevacizumab versus TACE",
+      "primary_doi": "10.1200/JCO.2026.44.2_suppl.478",
+      "registry_id": "CTIS 2024-512953-26-00",
+      "reason": "Phase IIIb randomised trial, but only the first interim analysis at 33% information time is available; 194 randomised and 168 included in interim efficacy analysis, with 100 TTFS events. Trial continued to the planned 66% interim analysis. Early evidence is not sufficiently mature for a definitive practice-changing page.",
+      "next_action": "Await the 66% information-time analysis or final report; verify full safety, follow-up and subgroup data before page release.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.2026.44.2_suppl.478"
+      ],
+      "disposition": "held_primary_source_verified_low_maturity",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true,
+      "first_seen_cycle": "evening",
+      "run_cycle": "evening",
+      "candidate_id": "ikf-035"
+    },
+    {
+      "run_date": "2026-11-18",
+      "cycle": "evening",
+      "screened_on": "2026-11-18T21:45:00+05:30",
+      "nccn_provenance": "not verified — full official NCCN guideline/reference list inaccessible; no reference number or category inferred",
+      "trial_id": "iprime",
+      "trial": "iPRIME",
+      "site": "Ovarian / advanced high-grade serous",
+      "setting": "Neoadjuvant treatment of newly diagnosed FIGO IIIC–IV disease",
+      "phase_design": "Randomised, non-comparative phase II",
+      "primary_doi": "10.1007/s00262-026-04589-4",
+      "registry_id": "ACTRN12618000109202",
+      "reason": "The dual-checkpoint plus chemotherapy arm did not meet its prespecified CRS3 primary endpoint (13/40, 32%; 90%CI20–47%); radiological response was similar (45% vs50%, p=0.82), and median PFS was 14.7 months in both arms (12/24-month PFS p=0.64). Retain as negative/contrary evidence, not a new positive trial page.",
+      "next_action": "Revisit only if guideline recommendation or biomarker analysis makes this negative result essential.",
+      "source_urls": [
+        "https://doi.org/10.1007/s00262-026-04589-4",
+        "https://link.springer.com/article/10.1007/s00262-026-04589-4"
+      ],
+      "disposition": "deferred_negative",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true,
+      "run_cycle": "evening",
+      "candidate_name": "iPRIME",
+      "candidate_id": "iprime"
     }
   ],
   "duplicate_check": [
@@ -3615,6 +3862,100 @@
       "registry_id": "NCT05116189",
       "source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1",
       "run_cycle": "evening"
+    },
+    {
+      "trial": "SAFFRON",
+      "doi": "10.1056/NEJMoa2611335",
+      "pmid": "42929693",
+      "registry_id": "NCT05261399",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2611335",
+        "https://pubmed.ncbi.nlm.nih.gov/42929693/",
+        "https://clinicaltrials.gov/study/NCT05261399"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Osimertinib-Savolitinib in Advanced NSCLC after Progression during EGFR-TKI Therapy",
+      "phase": "III",
+      "setting": "After progression on EGFR-TKI",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "TORCH",
+      "doi": "10.1001/jamaoncol.2026.2366",
+      "pmid": "42530948",
+      "registry_id": "NCT02435953",
+      "source_url": [
+        "https://doi.org/10.1001/jamaoncol.2026.2366",
+        "https://pubmed.ncbi.nlm.nih.gov/42530948/",
+        "https://clinicaltrials.gov/study/NCT02435953"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Transarterial Chemoembolization Plus Thermal Ablation in Unresectable Hepatocellular Carcinoma: The Phase 3 TORCH Randomized Clinical Trial",
+      "phase": "III",
+      "setting": "Intermediate-stage unresectable HCC",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "Camrelizumab + rivoceranib + TACE",
+      "doi": "10.1200/JCO.2026.44.16_suppl.4001",
+      "pmid": null,
+      "registry_id": "NCT05320692",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.4001",
+        "https://clinicaltrials.gov/study/NCT05320692"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Camrelizumab (C) plus rivoceranib (R) with transarterial chemoembolization (TACE) vs TACE alone in unresectable hepatocellular carcinoma (uHCC): A randomized, phase 3 trial",
+      "phase": "III",
+      "setting": "Unresectable HCC eligible for TACE",
+      "status": "identity_verified_conference_abstract_page_data_pending"
+    },
+    {
+      "trial": "PATINA",
+      "doi": "10.1056/NEJMoa2511218",
+      "pmid": "41604639",
+      "registry_id": "NCT02947685",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2511218",
+        "https://pubmed.ncbi.nlm.nih.gov/41604639/",
+        "https://clinicaltrials.gov/study/NCT02947685"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Palbociclib for Hormone-Receptor–Positive, HER2-Positive Advanced Breast Cancer",
+      "phase": "III",
+      "setting": "Maintenance after induction chemotherapy and HER2-directed therapy in advanced disease",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "MajesTEC-3",
+      "doi": "10.1056/NEJMoa2514663",
+      "pmid": "41363801",
+      "registry_id": "NCT05083169",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2514663",
+        "https://pubmed.ncbi.nlm.nih.gov/41363801/",
+        "https://clinicaltrials.gov/study/NCT05083169"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Teclistamab plus Daratumumab in Relapsed or Refractory Multiple Myeloma",
+      "phase": "III",
+      "setting": "Relapsed/refractory after 1–3 prior lines",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "Preoperative S-1 plus oxaliplatin phase II",
+      "doi": "10.1111/ajco.70214",
+      "pmid": "42894432",
+      "registry_id": "UMIN000036139",
+      "source_url": [
+        "https://doi.org/10.1111/ajco.70214",
+        "https://pubmed.ncbi.nlm.nih.gov/42894432/"
+      ],
+      "run_cycle": "evening",
+      "primary_title": "Minimum 7-Year Follow-Up of a Prospective Phase II Trial of Preoperative S-1 Plus Oxaliplatin Chemotherapy for Clinical Stage III Gastric Cancer",
+      "phase": "II",
+      "setting": "Neoadjuvant/perioperative",
+      "status": "identity_verified_page_data_pending"
     }
   ],
   "held_candidates": [
@@ -4101,6 +4442,27 @@
       "disposition": "held_primary_source_verified_surrogate_endpoint",
       "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction.",
       "first_seen_cycle": "evening"
+    },
+    {
+      "run_date": "2026-11-18",
+      "cycle": "evening",
+      "screened_on": "2026-11-18T21:45:00+05:30",
+      "nccn_provenance": "not verified — full official NCCN guideline/reference list inaccessible; no reference number or category inferred",
+      "trial_id": "ikf-035",
+      "candidate_name": "IKF-035 / ABC-HCC",
+      "site": "HCC / intermediate stage / TACE-eligible",
+      "setting": "Systemic atezolizumab-bevacizumab versus TACE",
+      "primary_doi": "10.1200/JCO.2026.44.2_suppl.478",
+      "registry_id": "CTIS 2024-512953-26-00",
+      "reason": "Phase IIIb randomised trial, but only the first interim analysis at 33% information time is available; 194 randomised and 168 included in interim efficacy analysis, with 100 TTFS events. Trial continued to the planned 66% interim analysis. Early evidence is not sufficiently mature for a definitive practice-changing page.",
+      "next_action": "Await the 66% information-time analysis or final report; verify full safety, follow-up and subgroup data before page release.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.2026.44.2_suppl.478"
+      ],
+      "disposition": "held_primary_source_verified_low_maturity",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true,
+      "first_seen_cycle": "evening"
     }
   ],
   "deferred_negative_additions": [
@@ -4314,6 +4676,28 @@
         "https://pubmed.ncbi.nlm.nih.gov/42918420/",
         "https://clinicaltrials.gov/study/NCT03661320"
       ]
+    },
+    {
+      "run_date": "2026-11-18",
+      "cycle": "evening",
+      "screened_on": "2026-11-18T21:45:00+05:30",
+      "nccn_provenance": "not verified — full official NCCN guideline/reference list inaccessible; no reference number or category inferred",
+      "trial_id": "iprime",
+      "trial": "iPRIME",
+      "site": "Ovarian / advanced high-grade serous",
+      "setting": "Neoadjuvant treatment of newly diagnosed FIGO IIIC–IV disease",
+      "phase_design": "Randomised, non-comparative phase II",
+      "primary_doi": "10.1007/s00262-026-04589-4",
+      "registry_id": "ACTRN12618000109202",
+      "reason": "The dual-checkpoint plus chemotherapy arm did not meet its prespecified CRS3 primary endpoint (13/40, 32%; 90%CI20–47%); radiological response was similar (45% vs50%, p=0.82), and median PFS was 14.7 months in both arms (12/24-month PFS p=0.64). Retain as negative/contrary evidence, not a new positive trial page.",
+      "next_action": "Revisit only if guideline recommendation or biomarker analysis makes this negative result essential.",
+      "source_urls": [
+        "https://doi.org/10.1007/s00262-026-04589-4",
+        "https://link.springer.com/article/10.1007/s00262-026-04589-4"
+      ],
+      "disposition": "deferred_negative",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
     }
   ],
   "nccn": {
@@ -4645,14 +5029,14 @@
     "Split the eight lung-SABR studies sharing one aggregate page into eight canonical pages.",
     "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 visualizations."
   ],
-  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy. CA017-078 was added to deferred-negative evidence after full phase III final-result review; OptiTROP-Lung06 was already in the duplicate ledger and its existing canonical page was repaired.",
+  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy. CA017-078 was added to deferred-negative evidence after full phase III final-result review; OptiTROP-Lung06 was already in the duplicate ledger and its existing canonical page was repaired. Added six new identity-verified candidates (SAFFRON, TORCH, camrelizumab-rivoceranib-TACE, PATINA, MajesTEC-3, preoperative SOX phase II), held IKF-035 pending 66% interim analysis, and deferred negative iPRIME.",
   "toD_candidate_pending_release": {
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
   },
   "duplicate_check_count": 30,
   "held_candidate_count": 25,
-  "deferred_negative_candidate_count": 9,
+  "deferred_negative_candidate_count": 10,
   "morning_screening_summary": {
     "screened": 53,
     "new_unique": 38,
@@ -4687,13 +5071,13 @@
       "not_uploaded": 30
     },
     "evening": {
-      "screening_records": 50,
-      "unique_candidate_ids": 42,
-      "new_unique_underlying_candidates": 26,
-      "primary_source_identity_verified_new_unique": 16,
+      "screening_records": 58,
+      "unique_candidate_ids": 50,
+      "new_unique_underlying_candidates": 34,
+      "primary_source_identity_verified_new_unique": 22,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 7,
-      "deferred_negative_unique": 3,
+      "held_unique": 8,
+      "deferred_negative_unique": 4,
       "unique_duplicate_exclusions": 16,
       "policy_excluded_unique": 0,
       "repeated_screening_records": 8,
@@ -4701,18 +5085,18 @@
       "release_ready_pages": 0,
       "published": 0,
       "target_new_trials": 30,
-      "identity_verified_shortfall": 14,
+      "identity_verified_shortfall": 8,
       "uploaded": 0,
       "not_uploaded": 30
     },
     "daily_combined": {
-      "screening_records": 103,
-      "unique_candidate_ids": 95,
-      "new_unique_underlying_candidates": 64,
-      "primary_source_identity_verified_new_unique": 30,
+      "screening_records": 111,
+      "unique_candidate_ids": 103,
+      "new_unique_underlying_candidates": 72,
+      "primary_source_identity_verified_new_unique": 36,
       "full_page_data_verified_new_unique": 0,
-      "held_unique": 25,
-      "deferred_negative_unique": 9,
+      "held_unique": 26,
+      "deferred_negative_unique": 10,
       "unique_duplicate_exclusions": 30,
       "policy_excluded_unique": 1,
       "repeated_screening_records": 8,
@@ -4720,7 +5104,7 @@
       "release_ready_pages": 0,
       "published": 0,
       "daily_target": 60,
-      "identity_verified_shortfall": 30,
+      "identity_verified_shortfall": 24,
       "uploaded": 0,
       "not_uploaded": 60
     }
