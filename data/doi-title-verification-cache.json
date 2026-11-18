@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-18T09:58:23.327+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -362,6 +362,176 @@
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42202319/",
       "title_match": true,
       "verification_note": "Primary PubMed/publisher record checked 17 November 2026; DOI and exact title matched."
+    },
+    {
+      "doi": "10.1016/S1470-2045(24)00814-6",
+      "trial_id": "cupisco",
+      "primary_title": "Molecularly guided therapy versus chemotherapy after disease control in unfavourable cancer of unknown primary (CUPISCO): an open-label, randomised, phase 2 study",
+      "pmid": "39096924",
+      "registry_id": "NCT03498521",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/39096924/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1200/JCO-26-02188",
+      "trial_id": "companion-002",
+      "primary_title": "COMPANION-002: A Randomized Phase 2/3 Trial of Tovecimig Plus Paclitaxel versus Paclitaxel Alone as a Second-line Therapy in Patients with Advanced Biliary Tract Cancer",
+      "pmid": "42920414",
+      "registry_id": "NCT05506943",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42920414/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1200/JCO.23.00775",
+      "trial_id": "rosewood",
+      "primary_title": "ROSEWOOD: A Phase II Randomized Study of Zanubrutinib Plus Obinutuzumab Versus Obinutuzumab Monotherapy in Patients With Relapsed or Refractory Follicular Lymphoma",
+      "pmid": "37506346",
+      "registry_id": "NCT03332017",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1200/JCO-25-01957",
+      "trial_id": "sunmo",
+      "primary_title": "Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/41037766/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1056/NEJMoa2606208",
+      "trial_id": "gimema-all2820",
+      "primary_title": "Ponatinib-Blinatumomab or Imatinib-Chemotherapy for Adult Ph-Positive ALL",
+      "pmid": "42874102",
+      "registry_id": "NCT04722848",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42874102/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1200/JCO-25-03009",
+      "trial_id": "find",
+      "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial",
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1038/s41392-026-02834-x",
+      "trial_id": "metis",
+      "primary_title": "Neoadjuvant concurrent or sequential anthracycline-containing chemotherapy and HER2-targeted agents for HER2-positive breast cancer: a randomized phase 2 study (METIS)",
+      "pmid": "42967914",
+      "registry_id": "NCT04172259",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42967914/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1038/s41591-026-04742-7",
+      "trial_id": "mdt-bridge",
+      "primary_title": "Neoadjuvant durvalumab plus chemotherapy in resectable or borderline resectable non-small-cell lung cancer: the phase 2 MDT-BRIDGE trial",
+      "pmid": "42934326",
+      "registry_id": "NCT05925530",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42934326/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1016/j.radonc.2026.111836",
+      "trial_id": "pack",
+      "primary_title": "Carbon ion radiotherapy for non-metastatic pancreatic cancer: final results of the prospective phase 2 PACK-study (NCT04194268)",
+      "pmid": "42913944",
+      "registry_id": "NCT04194268",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42913944/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1016/j.jtho.2026.106154",
+      "trial_id": "pecati",
+      "primary_title": "Final analysis from PECATI phase 2 trial, lenvatinib in combination with pembrolizumab in pretreated advanced B3-thymoma and thymic carcinoma",
+      "pmid": "43025701",
+      "registry_id": "NCT04710628",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/43025701/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1016/S1470-2045(26)00337-2",
+      "trial_id": "risovalisib",
+      "primary_title": "Risovalisib for PIK3CA-mutated recurrent or persistent ovarian clear cell carcinoma: a single-arm, multicentre, phase 2 trial",
+      "pmid": "43008753",
+      "registry_id": "NCT05043922",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/43008753/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1016/S1470-2045(26)00387-6",
+      "trial_id": "nant",
+      "primary_title": "Neoadjuvant niraparib monotherapy for unresectable, homologous recombination deficiency-positive, high-grade serous ovarian cancer (NANT): a multicentre, single-arm, phase 2 trial",
+      "pmid": "42843394",
+      "registry_id": "NCT04507841",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42843394/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1056/NEJMoa2405008",
+      "trial_id": "enrgy",
+      "primary_title": "Efficacy of Zenocutuzumab in NRG1 Fusion–Positive Cancer",
+      "pmid": "39908431",
+      "registry_id": "NCT02912949",
+      "title_match": true,
+      "verification_source": "PubMed and publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/39908431/",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
+    },
+    {
+      "doi": "10.1038/s41591-026-04642-w",
+      "trial_id": "immunoprism",
+      "primary_title": "Teclistamab versus lenalidomide-dexamethasone in high-risk smoldering multiple myeloma: a randomized phase 2 trial",
+      "pmid": null,
+      "registry_id": "NCT05469893",
+      "title_match": true,
+      "verification_source": "Publisher metadata",
+      "verification_url": "https://www.nature.com/articles/s41591-026-04642-w",
+      "verified_on": "2026-11-18",
+      "verification_note": "DOI resolves to the exact primary title; identity/registry checked. Candidate only; no trial page released in this run."
     }
-  ]
+  ],
+  "last_run": "2026-11-18-morning",
+  "last_run_additions": 14
 }

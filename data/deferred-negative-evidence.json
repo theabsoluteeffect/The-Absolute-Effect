@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-18T09:58:23.327+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -370,10 +370,149 @@
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "next_action": "Retain as contrary evidence against routine 12-week ICI de-escalation; do not create a new page unless future guideline recommendations make it essential.",
       "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "aspen-06",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Mixed/contrary evidence: the experimental arm showed a response signal versus internal control but did not meet the prespecified historical ORR benchmark; the phase III programme did not establish a practice-changing benefit. Retain as contrary evidence rather than a new standard-of-care page.",
+      "action": "Revisit only if a confirmatory phase III report or guideline recommendation makes it essential.",
+      "primary_sources": [
+        "https://doi.org/10.1038/s41591-026-04700-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42786305/",
+        "https://clinicaltrials.gov/study/NCT05002127"
+      ],
+      "primary_doi": "10.1038/s41591-026-04700-3",
+      "pmid": "42786305",
+      "registry_id": "NCT05002127",
+      "site": "HER2-positive gastric/GEJ adenocarcinoma",
+      "setting": "Second-line advanced disease",
+      "date_added": "2026-11-18",
+      "evidence_summary": "Mixed/contrary evidence: the experimental arm showed a response signal versus internal control but did not meet the prespecified historical ORR benchmark; the phase III programme did not establish a practice-changing benefit. Retain as contrary evidence rather than a new standard-of-care page.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
+    },
+    {
+      "trial_id": "talazoparib-enzalutamide",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "No sufficiently persuasive benefit to alter practice in the reported phase II study; serious/fatal myeloid neoplasms raise concern.",
+      "action": "Keep in contrary-evidence queue; revisit only if incorporated into a current recommendation.",
+      "primary_sources": [
+        "https://doi.org/10.1038/s41591-026-04671-5",
+        "https://pubmed.ncbi.nlm.nih.gov/42875559/",
+        "https://clinicaltrials.gov/study/NCT04332744"
+      ],
+      "primary_doi": "10.1038/s41591-026-04671-5",
+      "pmid": "42875559",
+      "registry_id": "NCT04332744",
+      "site": "Prostate cancer",
+      "setting": "High-volume metastatic hormone-sensitive disease",
+      "date_added": "2026-11-18",
+      "evidence_summary": "No sufficiently persuasive benefit to alter practice in the reported phase II study; serious/fatal myeloid neoplasms raise concern.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
+    },
+    {
+      "trial_id": "amplify-7p",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Randomized phase II primary PFS endpoint not improved; no practice-changing benefit established.",
+      "action": "Retain as deferred-negative evidence; retrieve registry identifier if reported in supplement.",
+      "primary_sources": [
+        "https://doi.org/10.1038/s41591-026-04734-7",
+        "https://pubmed.ncbi.nlm.nih.gov/42919966/"
+      ],
+      "primary_doi": "10.1038/s41591-026-04734-7",
+      "pmid": "42919966",
+      "registry_id": null,
+      "site": "Pancreatic cancer",
+      "setting": "Adjuvant / post-resection",
+      "date_added": "2026-11-18",
+      "evidence_summary": "Randomized phase II primary PFS endpoint not improved; no practice-changing benefit established.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
+    },
+    {
+      "trial_id": "tobemstomig",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Phase II programme stopped for futility; no efficacy signal sufficient to support a new practice pathway.",
+      "action": "Retain in deferred-negative queue; do not create a new positive-evidence page.",
+      "primary_sources": [
+        "https://doi.org/10.1016/j.esmoop.2026.108587",
+        "https://pubmed.ncbi.nlm.nih.gov/42849355/",
+        "https://clinicaltrials.gov/study/NCT05805501"
+      ],
+      "primary_doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "site": "Renal cell carcinoma",
+      "setting": "Advanced/metastatic",
+      "date_added": "2026-11-18",
+      "evidence_summary": "Phase II programme stopped for futility; no efficacy signal sufficient to support a new practice pathway.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
+    },
+    {
+      "trial_id": "danis-2",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Phase III addition of NIS793 did not demonstrate the required PFS/OS benefit; negative confirmatory evidence.",
+      "action": "Retain in deferred-negative queue; use only when interpreting the relevant treatment pathway.",
+      "primary_sources": [
+        "https://doi.org/10.1016/j.esmoop.2026.108621",
+        "https://pubmed.ncbi.nlm.nih.gov/43002828/",
+        "https://clinicaltrials.gov/study/NCT04935359"
+      ],
+      "primary_doi": "10.1016/j.esmoop.2026.108621",
+      "pmid": "43002828",
+      "registry_id": "NCT04935359",
+      "site": "Pancreatic ductal adenocarcinoma",
+      "setting": "First-line metastatic",
+      "date_added": "2026-11-18",
+      "evidence_summary": "Phase III addition of NIS793 did not demonstrate the required PFS/OS benefit; negative confirmatory evidence.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
+    },
+    {
+      "trial_id": "fulvestrant-ganetespib",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Randomized phase II report did not establish a meaningful benefit over fulvestrant alone; no new practice pathway.",
+      "action": "Retain as deferred-negative evidence; verify registry ID from full paper if later needed.",
+      "primary_sources": [
+        "https://doi.org/10.1093/oncolo/oyag414",
+        "https://pubmed.ncbi.nlm.nih.gov/42873573/"
+      ],
+      "primary_doi": "10.1093/oncolo/oyag414",
+      "pmid": "42873573",
+      "registry_id": null,
+      "site": "Hormone receptor-positive breast cancer",
+      "setting": "Advanced/metastatic",
+      "date_added": "2026-11-18",
+      "evidence_summary": "Randomized phase II report did not establish a meaningful benefit over fulvestrant alone; no new practice pathway.",
+      "next_review": "When a current guideline recommendation or confirmatory evidence makes this trial essential."
     }
   ],
-  "last_run": "2026-11-17-evening",
+  "last_run": "2026-11-18-morning",
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026."
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026.",
+  "last_run_additions": [
+    "aspen-06",
+    "talazoparib-enzalutamide",
+    "amplify-7p",
+    "tobemstomig",
+    "danis-2",
+    "fulvestrant-ganetespib"
+  ],
+  "total_items": 27,
+  "summary": {
+    "total_items": 27,
+    "new_items_added_this_run": 6,
+    "last_updated": "2026-11-18",
+    "note": "Six newly screened negative/contrary-evidence studies added; existing PEMDA-HN and IROCAS entries retained without duplication."
+  }
 }

@@ -222,7 +222,7 @@
       ]
     }
   ],
-  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible. 2026-11-18 AM: full NCCN guideline/reference lists inaccessible; seven official ESMO alternative guideline metadata/section indexes logged; 14 new trial-to-NCCN mappings remain pending. No NCCN provenance inferred.",
   "source_access_log": [
     {
       "date": "2026-11-15",
@@ -329,11 +329,33 @@
         "6.3.5"
       ],
       "finding": "Alternative guideline review completed. EAU reference-list mismatch identified for section 6.3.4 inline refs [245,246] and IPFSG numbering; mismatched citations were not used."
+    },
+    {
+      "date": "2026-11-18",
+      "source": "NCCN official Clinical Practice Guidelines portal and full guideline/reference lists",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "full_guideline_and_reference_lists_inaccessible",
+      "guideline_areas_attempted": [
+        "Pancreatic",
+        "Biliary tract",
+        "Gastric/GEJ",
+        "Lymphomas",
+        "Multiple myeloma",
+        "ALL",
+        "Colorectal",
+        "Breast",
+        "NSCLC",
+        "Prostate",
+        "Ovarian",
+        "Supportive and palliative care"
+      ],
+      "detail": "The official portal/PDF/reference lists could not be retrieved at sufficient completeness to extract exact guideline version, section, citation number or recommendation category. No NCCN reference numbers or categories were inferred. Continued screening with primary publications, registries and accessible official ESMO guideline metadata/section indexes; this is not a repository blocker.",
+      "next_action": "Retry NCCN source access in the next cycle; complete exact citation-to-trial mapping only when the full guideline/reference list is accessible."
     }
   ],
-  "last_run": "2026-11-17",
-  "last_updated": "2026-11-17",
-  "last_run_date": "2026-11-17",
+  "last_run": "2026-11-18-morning",
+  "last_updated": "2026-11-18T09:58:23.327+05:30",
+  "last_run_date": "2026-11-18",
   "pending_trial_mappings": [
     {
       "trial_id": "trofuse-005",
@@ -814,6 +836,227 @@
       "status": "not verified — source inaccessible",
       "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
       "updated_on": "2026-11-17"
+    },
+    {
+      "trial_id": "cupisco",
+      "trial_name": "CUPISCO",
+      "site": "Cancer of unknown primary",
+      "setting": "First-line treatment after induction chemotherapy and disease control",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "companion-002",
+      "trial_name": "COMPANION-002",
+      "site": "Biliary tract cancer",
+      "setting": "Second-line advanced/metastatic disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "rosewood",
+      "trial_name": "ROSEWOOD",
+      "site": "Follicular lymphoma",
+      "setting": "Relapsed/refractory after ≥2 prior lines",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-lymphomas-v1.2-2026-10",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "sunmo",
+      "trial_name": "SUNMO",
+      "site": "Large B-cell lymphoma",
+      "setting": "Relapsed/refractory; transplant-ineligible",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-lymphomas-v1.2-2026-10",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "find",
+      "trial_name": "FIND",
+      "site": "Colorectal cancer",
+      "setting": "Postoperative surveillance after curative-intent resection",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-mcrc-v2.0-2026-06",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "metis",
+      "trial_name": "METIS",
+      "site": "HER2-positive breast cancer",
+      "setting": "Neoadjuvant early breast cancer",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-early-breast-2024",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "mdt-bridge",
+      "trial_name": "MDT-BRIDGE",
+      "site": "Non-small-cell lung cancer",
+      "setting": "Neoadjuvant resectable/borderline resectable disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-early-nsclc-v1.3-2026-08",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "pack",
+      "trial_name": "PACK study",
+      "site": "Pancreatic adenocarcinoma",
+      "setting": "Non-metastatic disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": "esmo-pancreatic-update-2026-08",
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "pecati",
+      "trial_name": "PECATI",
+      "site": "Thymic epithelial tumours (B3 thymoma and thymic carcinoma)",
+      "setting": "Advanced pretreated disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "risovalisib",
+      "trial_name": "Risovalisib phase II",
+      "site": "Ovarian clear cell carcinoma",
+      "setting": "Recurrent or persistent disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "nant",
+      "trial_name": "NANT",
+      "site": "High-grade serous ovarian cancer",
+      "setting": "Neoadjuvant unresectable HRD-positive disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "enrgy",
+      "trial_name": "eNRGy",
+      "site": "Multiple solid tumours with NRG1 fusion",
+      "setting": "Advanced/metastatic biomarker-selected disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
+    },
+    {
+      "trial_id": "immunoprism",
+      "trial_name": "ImmunoPRISM",
+      "site": "High-risk smouldering multiple myeloma",
+      "setting": "Immune-interception / early disease",
+      "guideline_id": null,
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "status": "pending_nccn_mapping",
+      "provenance_status": "not verified — full official NCCN guideline/reference list inaccessible",
+      "alternative_guideline_source_id": null,
+      "last_checked": "2026-11-18",
+      "next_action": "When official NCCN version and reference list are accessible, map exact guideline/version/section/reference/category; do not infer."
     }
   ],
   "alternative_guideline_sources": [
@@ -831,6 +1074,114 @@
       ],
       "reviewed_on": "2026-11-17",
       "scope_limitations": "EAU source, not NCCN. Full current NCCN Testicular Cancer guideline/reference list could not be independently accessed. EAU inline/reference-list number discrepancies are documented; mismatched citations were not used."
+    },
+    {
+      "source_id": "esmo-gastric-oesophageal-v1.0-2026-11",
+      "source": "ESMO",
+      "title": "ESMO Living Guideline: Gastric and Oesophageal Cancer",
+      "version": "v1.0",
+      "date": "2026-11",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-gastric-and-oesophageal-cancer",
+      "sections_reviewed": [
+        "Diagnosis and pathology",
+        "Staging and risk assessment",
+        "Local and locoregional disease",
+        "Advanced and metastatic disease",
+        "Follow-up and survivorship"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metadata and section index checked, full recommendation/reference mapping not completed; not NCCN."
+    },
+    {
+      "source_id": "esmo-lymphomas-v1.2-2026-10",
+      "source": "ESMO",
+      "title": "ESMO Living Guideline: Lymphomas",
+      "version": "v1.2",
+      "date": "2026-10",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-lymphomas",
+      "sections_reviewed": [
+        "Follicular lymphoma",
+        "Diffuse large B-cell lymphoma",
+        "Relapsed/refractory lymphoma pathways"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metadata/section index checked, exact recommendation reference mapping pending; not NCCN."
+    },
+    {
+      "source_id": "esmo-mcrc-v2.0-2026-06",
+      "source": "ESMO",
+      "title": "ESMO Living Guideline: Metastatic Colorectal Cancer",
+      "version": "v2.0",
+      "date": "2026-06",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-metastatic-colorectal-cancer",
+      "sections_reviewed": [
+        "Biomarker-directed treatment",
+        "Later-line treatment",
+        "Follow-up"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metastatic pathway only, not a substitute for a localized CRC surveillance guideline; not NCCN."
+    },
+    {
+      "source_id": "esmo-pancreatic-update-2026-08",
+      "source": "ESMO",
+      "title": "ESMO Clinical Practice Guideline for Pancreatic Cancer",
+      "version": "2023 guideline with express updates through 2026-08-19",
+      "date": "2026-08-19",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-pancreatic-cancer",
+      "sections_reviewed": [
+        "Resectable disease",
+        "Locally advanced disease",
+        "Metastatic disease"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; update metadata/section index checked, exact reference mapping pending; not NCCN."
+    },
+    {
+      "source_id": "esmo-early-nsclc-v1.3-2026-08",
+      "source": "ESMO",
+      "title": "ESMO Living Guideline: Early and Locally Advanced NSCLC",
+      "version": "v1.3",
+      "date": "2026-08",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-early-and-locally-advanced-nsclc",
+      "sections_reviewed": [
+        "Resectable disease",
+        "Neoadjuvant and perioperative treatment",
+        "Adjuvant treatment",
+        "Follow-up"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metadata/section index checked, exact reference mapping pending; not NCCN."
+    },
+    {
+      "source_id": "esmo-early-breast-2024",
+      "source": "ESMO",
+      "title": "ESMO Clinical Practice Guideline: Early Breast Cancer",
+      "version": "2024",
+      "date": "2024",
+      "source_url": "https://www.esmo.org/guidelines/breast-and-other-cancers/breast-cancer/early-breast-cancer",
+      "sections_reviewed": [
+        "Neoadjuvant systemic therapy",
+        "HER2-positive early breast cancer",
+        "Adjuvant treatment"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metadata/section index checked, exact reference mapping pending; not NCCN."
+    },
+    {
+      "source_id": "esmo-prostate-v1.0-2026-06",
+      "source": "ESMO",
+      "title": "ESMO Living Guideline: Advanced and Metastatic Prostate Cancer",
+      "version": "v1.0",
+      "date": "2026-06",
+      "source_url": "https://www.esmo.org/living-guidelines/esmo-living-guideline-advanced-and-metastatic-prostate-cancer",
+      "sections_reviewed": [
+        "Metastatic hormone-sensitive disease",
+        "Metastatic castration-resistant disease",
+        "Biomarker-directed pathways"
+      ],
+      "reviewed_on": "2026-11-18",
+      "scope_limitations": "Official ESMO alternative source; metadata/section index checked, exact reference mapping pending; not NCCN."
     }
   ],
   "trial_to_guideline_mappings": [
@@ -946,5 +1297,15 @@
       "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
       "reviewed_on": "2026-11-17"
     }
-  ]
+  ],
+  "last_run_summary": {
+    "date": "2026-11-18",
+    "cycle": "morning",
+    "existing_nccn_guideline_records": 8,
+    "full_nccn_guidelines_retrieved": 0,
+    "alternative_guideline_sources_added": 7,
+    "pending_trial_mappings_added": 13,
+    "pending_trial_mappings_total": 53,
+    "source_access_status": "NCCN full guideline/reference lists inaccessible; alternative official sources logged."
+  }
 }
