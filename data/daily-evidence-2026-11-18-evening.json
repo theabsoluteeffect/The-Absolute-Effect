@@ -18,7 +18,7 @@
     "primary_source_incomplete_or_not_verified_holds": 23,
     "held_total": 27,
     "deferred_negative_unique": 8,
-    "unique_duplicate_exclusions": 27,
+    "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
     "policy_exclusion_rechecks": 1,
@@ -2800,7 +2800,10 @@
       "registry_id": "NCT06711900",
       "matched_existing_entry": {
         "roster_id": "optitrop-lung06",
-        "canonical_page_path": "trial-pages/optitrop-lung06/"
+        "canonical_page_path": "trial-pages/optitrop-lung06/",
+        "doi": "10.1056/NEJMoa2611280",
+        "pmid": "42929694",
+        "registry_id": "NCT06711900"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2814,7 +2817,10 @@
       "registry_id": null,
       "matched_existing_entry": {
         "roster_id": "ringside",
-        "canonical_page_path": "trial-pages/ringside/"
+        "canonical_page_path": "trial-pages/ringside/",
+        "doi": "10.1200/JCO-26-00725",
+        "pmid": null,
+        "registry_id": null
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2828,7 +2834,10 @@
       "registry_id": "NCT05772546",
       "matched_existing_entry": {
         "roster_id": "act-gi",
-        "canonical_page_path": "trial-pages/act-gi/"
+        "canonical_page_path": "trial-pages/act-gi/",
+        "doi": "10.1200/JCO-26-00568",
+        "pmid": "42441933",
+        "registry_id": "NCT05772546"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2842,7 +2851,10 @@
       "registry_id": null,
       "matched_existing_entry": {
         "roster_id": "unicorn",
-        "canonical_page_path": "trial-pages/unicorn/"
+        "canonical_page_path": "trial-pages/unicorn/",
+        "doi": "10.1038/s41591-026-04710-1",
+        "pmid": null,
+        "registry_id": null
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2856,7 +2868,10 @@
       "registry_id": null,
       "matched_existing_entry": {
         "roster_id": "dalmelitinib-aumolertinib",
-        "canonical_page_path": "trial-pages/dalmelitinib-aumolertinib/"
+        "canonical_page_path": "trial-pages/dalmelitinib-aumolertinib/",
+        "doi": "10.1200/JCO-26-02432",
+        "pmid": "42928710",
+        "registry_id": null
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2870,7 +2885,10 @@
       "registry_id": "NCT05933577",
       "matched_existing_entry": {
         "roster_id": "interpath-001",
-        "canonical_page_path": "trial-pages/interpath-001/"
+        "canonical_page_path": "trial-pages/interpath-001/",
+        "doi": null,
+        "pmid": "43013837",
+        "registry_id": "NCT05933577"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2884,7 +2902,10 @@
       "registry_id": null,
       "matched_existing_entry": {
         "roster_id": "nsabp-b59-gepardouze",
-        "canonical_page_path": "trial-pages/nsabp-b59-gepardouze"
+        "canonical_page_path": "trial-pages/nsabp-b59-gepardouze",
+        "doi": null,
+        "pmid": null,
+        "registry_id": null
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2898,7 +2919,10 @@
       "registry_id": "NCT05306340",
       "matched_existing_entry": {
         "roster_id": "evera",
-        "canonical_page_path": "trial-pages/evera/"
+        "canonical_page_path": "trial-pages/evera/",
+        "doi": "10.1056/NEJMoa2602457",
+        "pmid": "42814929",
+        "registry_id": "NCT05306340"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2912,7 +2936,10 @@
       "registry_id": "NCT06968585",
       "matched_existing_entry": {
         "roster_id": "trastuzumab-botidotin",
-        "canonical_page_path": "trial-pages/trastuzumab-botidotin/"
+        "canonical_page_path": "trial-pages/trastuzumab-botidotin/",
+        "doi": "10.1200/JCO-26-00602",
+        "pmid": "42727044",
+        "registry_id": "NCT06968585"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2926,7 +2953,10 @@
       "registry_id": "NCT06132958",
       "matched_existing_entry": {
         "roster_id": "trofuse-005",
-        "canonical_page_path": "trial-pages/trofuse-005/"
+        "canonical_page_path": "trial-pages/trofuse-005/",
+        "doi": "10.1016/S0140-6736(26)02099-4",
+        "pmid": "42933460",
+        "registry_id": "NCT06132958"
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -2940,7 +2970,61 @@
       "registry_id": "NCT06304974",
       "matched_existing_entry": {
         "roster_id": "panku-esophagus01",
-        "canonical_page_path": "trial-pages/panku-esophagus01/"
+        "canonical_page_path": "trial-pages/panku-esophagus01/",
+        "doi": "10.1001/jama.2026.20250",
+        "pmid": "43018949",
+        "registry_id": "NCT06304974"
+      },
+      "identity_resolution": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "source": "18-Nov morning live roster/page reconciliation",
+      "reason": "Exact existing canonical roster/page match."
+    },
+    {
+      "candidate_name": "CAMORAL",
+      "primary_doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing_entry": {
+        "roster_id": "camoral",
+        "canonical_page_path": "trial-pages/camoral/",
+        "doi": "10.1001/jamaoncol.2026.4642",
+        "pmid": "43018983",
+        "registry_id": "ChiCTR2000037980"
+      },
+      "identity_resolution": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "source": "18-Nov morning live roster/page reconciliation",
+      "reason": "Exact existing canonical roster/page match."
+    },
+    {
+      "candidate_name": "TAISHAN-302",
+      "primary_doi": "10.1056/NEJMoa2610229",
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing_entry": {
+        "roster_id": "taishan-302",
+        "canonical_page_path": "trial-pages/taishan-302",
+        "doi": "10.1056/NEJMoa2610229",
+        "pmid": null,
+        "registry_id": null
+      },
+      "identity_resolution": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "source": "18-Nov morning live roster/page reconciliation",
+      "reason": "Exact existing canonical roster/page match."
+    },
+    {
+      "candidate_name": "HELEN-Trio 011",
+      "primary_doi": "10.1016/j.annonc.2026.10.102",
+      "pmid": "42887596",
+      "registry_id": null,
+      "matched_existing_entry": {
+        "roster_id": "helen-trio-011",
+        "canonical_page_path": "trial-pages/helen-trio-011/",
+        "doi": "10.1016/j.annonc.2026.10.102",
+        "pmid": "42887596",
+        "registry_id": null
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
@@ -4298,7 +4382,7 @@
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
   },
-  "duplicate_check_count": 27,
+  "duplicate_check_count": 30,
   "held_candidate_count": 27,
   "deferred_negative_candidate_count": 8,
   "morning_screening_summary": {

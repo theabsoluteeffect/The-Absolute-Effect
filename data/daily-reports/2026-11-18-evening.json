@@ -108,7 +108,7 @@
   "uploaded_count": 0,
   "not_uploaded_count": 30,
   "duplicate_check": {
-    "unique_duplicates": 27,
+    "unique_duplicates": 30,
     "duplicate_rechecks": 3,
     "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json"
   },
@@ -268,7 +268,10 @@
     "evERA",
     "Trastuzumab botidotin versus T-DM1",
     "TroFuse-005",
-    "PANKU-Esophagus01"
+    "PANKU-Esophagus01",
+    "CAMORAL",
+    "TAISHAN-302",
+    "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
   "content_commit_sha": "826772340dc7eed7110c0bb019e7066bca1246ce",
