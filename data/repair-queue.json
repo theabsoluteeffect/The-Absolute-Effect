@@ -2028,9 +2028,34 @@
       "evidence": [
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/main/trial-pages/rosel/index.html"
       ],
-      "reason": "Recursive main tree contains a minimal title-only Rosel stub with no trial design, primary source, DOI, registry or clinical content. It is not a canonical trial page and should not be added to the roster or index until identity is established.",
+      "reason": "The title-only Rosel stub may be an alias/placeholder for the ROSEL anchor in the shared lung-SABR aggregate page. It is not a separate verified canonical study and must not be added to roster/index until reconciled.",
       "action": "Preserve as stub; determine whether it is an alias/redirect or accidental placeholder.",
-      "next_action": "Resolve intended study identity from repository history or source evidence; then either replace with a verified canonical page or retire the stub through an approved repository cleanup."
+      "next_action": "Compare repository history and the ROSEL aggregate-page section; decide whether to redirect/replace this stub or split the ROSEL study into its own canonical page.",
+      "possible_alias_of": "trial-pages/lung-sabr-definitions/#rosel"
+    },
+    {
+      "issue_id": "lung-sabr-eight-trials-shared-aggregate-page-2026-11-18",
+      "trial_ids": [
+        "chisel",
+        "hilus",
+        "lustre",
+        "rosel",
+        "rtog-0813",
+        "space",
+        "stars-randomized",
+        "sunset"
+      ],
+      "canonical_page_path": "trial-pages/lung-sabr-definitions/index.html",
+      "issue_type": "multiple_studies_sharing_one_canonical_page",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/main/trial-pages/lung-sabr-definitions/index.html"
+      ],
+      "reason": "Eight distinct roster trial IDs point to anchors in one aggregate definitions page; seven individual canonical pages are absent. Several roster records lack their own primary DOI/registry metadata. This violates the one-underlying-study/one-canonical-page rule until identity and source provenance are independently reconciled.",
+      "action": "Inspect each anchor and primary source/registry; verify whether all eight are distinct underlying studies; create separate canonical pages only for verified studies; update roster paths and index links; retain aggregate page as a landing/definitions page.",
+      "next_action": "Audit CHISEL, HILUS, LUSTRE, ROSEL, RTOG 0813, SPACE, STARS randomized and SUNSET individually; resolve Rosel stub alias before creating a second page."
     }
   ],
   "resolved_items": [
@@ -4181,6 +4206,12 @@
       "cycle": "evening",
       "action": "identified Rosel title-only stub as unrostered and unindexed; held without roster/index addition",
       "status": "open"
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "reconfirmed eight lung-SABR roster records share one aggregate page; opened high-severity canonical-page split task",
+      "status": "open"
     }
   ],
   "previous_partial_runs": [
@@ -4276,7 +4307,7 @@
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
-    "open_items": 137,
+    "open_items": 138,
     "resolved_items": 61,
     "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item. OptiTROP-Lung06 canonical page repaired on 2026-11-18; zero-width bars and invalid median-derived NNT removed; browser QA pending.",
     "release_holds_in_active_batch": 26

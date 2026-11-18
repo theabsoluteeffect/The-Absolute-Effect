@@ -36,9 +36,11 @@
         "stars-randomized",
         "sunset"
       ],
-      "individual_canonical_pages_missing": 7
+      "individual_canonical_pages_missing": 7,
+      "identity_and_source_metadata": "incomplete for several roster records",
+      "status": "high-severity repair open"
     },
-    "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping",
+    "underlying_study_count_certification": "provisional: roster contains 467 entries, but eight lung-SABR records share one aggregate page and seven individual canonical pages are missing; verify primary-source/registry identity before certifying the unique-study count.",
     "main_commit_sha": "8315e5e",
     "branch": "atlas-batch/2026-11-18-am",
     "branch_head": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
@@ -68,7 +70,7 @@
   "repairs": {
     "existing_pages_manually_reviewed": 9,
     "pages_repaired": 5,
-    "repair_queue_open": 137,
+    "repair_queue_open": 138,
     "repair_queue_resolved": 61,
     "repairs": [
       {
@@ -104,7 +106,9 @@
       "browser-rendered QA for GOG-258, KEYNOTE-A18, KEYNOTE-C93, OptiTROP-Lung06 and EV-303",
       "EXCALIBER-RRMM evidence-maturity hold",
       "IsKia MRD-surrogate evidence hold",
-      "Rosel title-only stub: resolve identity or retire; not a canonical page"
+      "Rosel title-only stub: resolve identity or retire; not a canonical page",
+      "Eight lung-SABR trial records share one aggregate page; verify identities and split into individual canonical pages",
+      "Rosel title-only stub may alias the ROSEL anchor; reconcile before creating any second page"
     ],
     "full_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false,
@@ -125,7 +129,7 @@
     "remaining_existing_pages_for_manual_audit": 451,
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
-      "open_items": "+4 (133→137)",
+      "open_items": "+6 (133→139)",
       "resolved_items": "+8 (53→61)"
     }
   },
@@ -504,7 +508,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "00702c45b7ebf30b75454f44224d06cc6add3de5",
+  "content_commit_sha": "f349e5c1bca1eb8f9d968929503b736df00908ac",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
