@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-18",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-16T07:59:04+05:30",
@@ -2049,11 +2049,11 @@
       "trial_id": null,
       "trial": "17 November batch release audit",
       "path": "data/daily-reports/2026-11-17-evening.json",
-      "evidence": "PR #5 checks passed on head 3697bef2 and uploaded outcome-visual-audit artifact 14356120035, but the artifact ZIP/report contents could not be retrieved through the available GitHub connector. Check-run output had no text summary.",
+      "evidence": "PR #5 checks passed on head 3697bef2 and uploaded outcome-visual-audit artifact 14356120035, but the artifact ZIP/report contents could not be retrieved through the available GitHub connector. Check-run output had no text summary. Subsequent current-head run 44145235451 produced artifact 14355857876; ZIP downloaded and JSON inspected. It reports 460/460 roster pages found, zero manual-review flags, zero missing primary sources, zero renderer-missing pages, and 52 dated-context flags. This artifact predates the 18 November page corrections; a fresh post-correction CI artifact remains required.",
       "action": "Expose the strict release and outcome-visual audit report as a readable JSON/text repository file or PR check summary, then inspect all findings before merge.",
-      "next_action": "Make the audit report fetchable through GitHub contents API; inspect report; rerun checks on current PR head; merge only if no unresolved failures.",
+      "next_action": "Inspect the latest post-correction PR CI artifact and confirm no new failures before merge; keep all 52 dated-guideline freshness items open.",
       "created_on": "2026-11-17",
-      "verification": "Check run success verified; artifact metadata/digest verified; report contents not inspected."
+      "verification": "Artifact 14355857876 inspected on 2026-11-18; post-correction CI pending."
     }
   ],
   "resolved_items": [
@@ -2696,6 +2696,48 @@
       "resolved_on": "2026-11-17",
       "verification": "Primary publication and registry re-read; regimen/outcomes/safety corrected on branch; page read-back completed. Final PR validator still pending.",
       "resolution": "Resolved for this release batch; any source limitation is explicitly stated on the canonical page."
+    },
+    {
+      "issue_id": "herizon-gea-01-primary-hr-ci-pubmed-2026-11-18",
+      "trial_id": "herizon-gea-01",
+      "trial": "HERIZON-GEA-01",
+      "path": "trial-pages/herizon-gea-01/index.html",
+      "category": "primary_source_numeric_correction",
+      "severity": "high",
+      "status": "resolved",
+      "created_on": "2026-11-18",
+      "resolved_on": "2026-11-18",
+      "evidence": "Primary NEJM report and PubMed record: https://doi.org/10.1056/NEJMoa2517729 and https://pubmed.ncbi.nlm.nih.gov/42202319/. The prior page confidence intervals differed from the primary report.",
+      "action": "Correct the four PFS/OS HR confidence intervals, add the missing PubMed primary-record link, and date current-practice review.",
+      "verification": "Corrected to PFS HR 0.63 (95% CI 0.51–0.78) and 0.65 (0.52–0.81); OS HR 0.72 (0.57–0.90) and 0.80 (0.64–1.01). PubMed link added; page read back on branch; current-practice context dated 18 November 2026. No NNT derived from medians/HRs."
+    },
+    {
+      "issue_id": "relight-primary-hr-ci-pubmed-2026-11-18",
+      "trial_id": "relight",
+      "trial": "RELIGHT",
+      "path": "trial-pages/relight/index.html",
+      "category": "primary_source_numeric_correction",
+      "severity": "high",
+      "status": "resolved",
+      "created_on": "2026-11-18",
+      "resolved_on": "2026-11-18",
+      "evidence": "Primary JCO report and PubMed record: https://doi.org/10.1200/JCO-25-02933 and https://pubmed.ncbi.nlm.nih.gov/42784781/. Primary abstract reports HR confidence intervals differing from the previous page.",
+      "action": "Correct OS/PFS HR confidence intervals, add PubMed primary-record link, and date current-practice review.",
+      "verification": "Corrected CPS≥5 OS HR 0.53 (95% CI 0.40–0.68), ITT OS HR 0.66 (0.53–0.81), CPS≥5 PFS HR 0.52 (0.42–0.66), ITT PFS HR 0.57 (0.48–0.69). PubMed link added; page read back; context dated 18 November 2026. NNT remains not applicable because no comparable fixed-time absolute risk difference was used."
+    },
+    {
+      "issue_id": "batch-30-page-publication-status-footers-2026-11-18",
+      "trial_id": null,
+      "trial": "17 November 2026 30-page release batch",
+      "path": "trial-pages/*/index.html",
+      "category": "stale_release_status_metadata",
+      "severity": "medium",
+      "status": "resolved",
+      "created_on": "2026-11-18",
+      "resolved_on": "2026-11-18",
+      "evidence": "All 30 latest-batch canonical pages contained footer language saying staged/not merged/not production-published, which would become false after the authorised merge.",
+      "action": "Replace transient staging-status footer text with a stable batch-preparation note; re-read all 30 pages.",
+      "verification": "All 30 page files were fetched again after updates. Each contains a stable 'Prepared for the 17 November 2026 Atlas release batch' or equivalent reviewed note; none retains staged/not-merged wording. Titles, primary-source links and canonical paths unchanged."
     }
   ],
   "run_audit_log": [
