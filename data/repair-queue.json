@@ -34,7 +34,7 @@
     "missing_primary_source_links": 0,
     "browser_rendered_qa": false,
     "full_clinical_audit_complete": false,
-    "note": "Static audit alone is not treated as clinical closure. Five canonical pages were manually re-read with roster absolute_effect data and primary source metadata. Four visual/source issues plus validator and index reconciliation were closed; KEYNOTE-A18 PFS NNT remains open. Dated current-practice review remains incomplete across 52 pages."
+    "note": "Static audit alone is not treated as clinical closure. Five canonical pages were manually re-read with roster absolute_effect data and primary source metadata. Visual/source corrections for CheckMate 816, KEYNOTE-A18, LACC, SHAPE and FIGHT-302 were checked; the corresponding eight issue records plus index reconciliation were closed. KEYNOTE-A18 PFS NNT remains open. Dated current-practice review remains incomplete across 52 pages."
   },
   "open_items": [
     {
@@ -3842,7 +3842,7 @@
       "resolved_items_after_update": 53,
       "full_clinical_audit_complete": false,
       "browser_rendered_qa": false,
-      "notes": "Four existing pages and one release/index code path manually checked; KEYNOTE-A18 PFS effect remains open; 52 dated-context items remain.",
+      "notes": "Five canonical pages manually rechecked; visual/source repair records for CheckMate 816, KEYNOTE-A18, LACC, SHAPE and FIGHT-302 plus index reconciliation were closed (eight issue records total). KEYNOTE-A18 PFS effect remains open; 52 dated-context items remain. The main strict validator passed, but browser-rendered QA and the full clinical audit remain incomplete.",
       "branch_data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
     }
   ],
@@ -3946,7 +3946,7 @@
   "summary": {
     "open_items": 133,
     "resolved_items": 53,
-    "note": "2026-11-18 structural reconciliation: 467 roster entries / 460 canonical trial pages; all 467 roster targets (including shared anchors) resolve in the evidence index; 16 archive entries; current ToD PANKU-Esophagus01, previous GemX. Nine issues were verified and closed on main (five-page visual/source checks, release validator and index reconciliation); KEYNOTE-A18 24-month PFS effect remains open; one missing MRC-TIP dated-context item added. 52 pages still lack dated current-practice context; full clinical and browser-rendered audit remains incomplete.",
+    "note": "2026-11-18 structural reconciliation: 467 roster entries / 460 canonical trial pages; all 467 roster targets (including shared anchors) resolve in the evidence index; 16 archive entries; current ToD PANKU-Esophagus01, previous GemX. Eight issue records were verified and closed on main (five-page visual/source checks plus index reconciliation); KEYNOTE-A18 24-month PFS effect remains open; one missing MRC-TIP dated-context item added. 52 pages still lack dated current-practice context; full clinical and browser-rendered audit remains incomplete.",
     "release_holds_in_active_batch": 0
   }
 }
