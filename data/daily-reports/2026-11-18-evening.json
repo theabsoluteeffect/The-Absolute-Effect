@@ -335,6 +335,13 @@
         "rates": "71.3% vs45.9%",
         "nnh": "not calculated; no common fixed safety horizon"
       }
+    },
+    "summary": {
+      "pages_with_panels": 5,
+      "total_panels": 12,
+      "browser_rendered_review": "pending",
+      "HTML_attribute_and_finite_width_checks": "passed",
+      "main_production_rendering": "not applicable; no merge/deployment"
     }
   },
   "roster_index_archive": {
@@ -497,7 +504,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
+  "content_commit_sha": "00702c45b7ebf30b75454f44224d06cc6add3de5",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
