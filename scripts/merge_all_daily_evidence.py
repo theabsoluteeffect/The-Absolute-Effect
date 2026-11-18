@@ -1,10 +1,14 @@
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 DATA = ROOT / "data"
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from daily_evidence_reader import iter_trial_records, record_id
 
 html = INDEX.read_text(encoding="utf-8")
 
@@ -15,8 +19,8 @@ for path in sorted(DATA.glob("daily-evidence-*.json")):
         rows = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
         raise SystemExit(f"Could not parse {path}: {exc}")
-    for row in rows:
-        rid = row.get("id")
+    for row in iter_trial_records(rows):
+        rid = record_id(row)
         if rid and rid not in seen:
             entries.append(row)
             seen.add(rid)

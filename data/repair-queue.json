@@ -2054,6 +2054,19 @@
       "next_action": "Inspect the latest post-correction PR CI artifact and confirm no new failures before merge; keep all 52 dated-guideline freshness items open.",
       "created_on": "2026-11-17",
       "verification": "Artifact 14355857876 inspected on 2026-11-18; post-correction CI pending."
+    },
+    {
+      "issue_id": "post-merge-daily-evidence-merger-root-schema-2026-11-18",
+      "trial_id": null,
+      "trial": "Daily evidence merge workflow",
+      "path": "scripts/merge_all_daily_evidence.py",
+      "category": "workflow_failure",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "evidence": "Post-merge workflow run 44225145915 on main commit 8c521b631056b3eca7f01b613cf54e6db336bee6 failed at scripts/merge_all_daily_evidence.py line 19 with AttributeError: 'str' object has no attribute 'get'. Daily-evidence files from 2026-11-15 onward use object-root envelopes with mixed arrays and strings, while the merger assumed every JSON root was a list of dictionaries.",
+      "action": "Add a schema-aware reader for legacy list roots and object-root candidate collections; ignore metadata strings; add unit tests; rerun the daily-atlas workflow on the hotfix branch and verify canonical/SEO updates and strict validation.",
+      "verification": "Fix staged on atlas-fix/2026-11-18-daily-evidence-reader; awaiting unit-test and PR checks, then post-merge workflow rerun."
     }
   ],
   "resolved_items": [
