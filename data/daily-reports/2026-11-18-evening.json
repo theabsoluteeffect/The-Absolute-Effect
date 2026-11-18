@@ -108,7 +108,7 @@
   "uploaded_count": 0,
   "not_uploaded_count": 30,
   "duplicate_check": {
-    "unique_duplicates": 30,
+    "unique_duplicates": 27,
     "duplicate_rechecks": 3,
     "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json"
   },
@@ -257,9 +257,6 @@
     "PORTEC-3",
     "Toripalimab plus modified FOLFIRINOX",
     "HARMONi-A",
-    "CAMORAL",
-    "TAISHAN-302",
-    "HELEN-Trio 011",
     "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
     "OptiTROP-Lung06",
     "RINGSIDE",
@@ -274,5 +271,10 @@
     "PANKU-Esophagus01"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "826772340dc7eed7110c0bb019e7066bca1246ce"
+  "content_commit_sha": "826772340dc7eed7110c0bb019e7066bca1246ce",
+  "duplicate_recheck_names": [
+    "CAMORAL",
+    "TAISHAN-302",
+    "HELEN-Trio 011"
+  ]
 }

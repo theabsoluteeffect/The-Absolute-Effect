@@ -18,7 +18,7 @@
     "primary_source_incomplete_or_not_verified_holds": 23,
     "held_total": 27,
     "deferred_negative_unique": 8,
-    "unique_duplicate_exclusions": 30,
+    "unique_duplicate_exclusions": 27,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
     "policy_exclusion_rechecks": 1,
@@ -2776,66 +2776,6 @@
       "reason": "Exact canonical roster/page match; attach follow-up to existing study."
     },
     {
-      "candidate_name": "CAMORAL",
-      "candidate_id": "camoral",
-      "primary_doi": "10.1001/jamaoncol.2026.4642",
-      "pmid": null,
-      "registry_id": "ChiCTR2000037980",
-      "matched_existing_entry": {
-        "roster_id": "camoral",
-        "trial_name": "CAMORAL",
-        "canonical_page_path": "trial-pages/camoral/index.html",
-        "doi": "10.1001/jamaoncol.2026.4642",
-        "pmid": null,
-        "registry_id": "ChiCTR2000037980"
-      },
-      "identity_resolution": "same_underlying_study",
-      "disposition": "duplicate_reconfirmed_recheck",
-      "recheck": true,
-      "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
-    },
-    {
-      "candidate_name": "TAISHAN-302",
-      "candidate_id": "taishan-302",
-      "primary_doi": null,
-      "pmid": null,
-      "registry_id": null,
-      "matched_existing_entry": {
-        "roster_id": "taishan-302",
-        "trial_name": "TAISHAN-302",
-        "canonical_page_path": "trial-pages/taishan-302/index.html",
-        "doi": null,
-        "pmid": null,
-        "registry_id": null
-      },
-      "identity_resolution": "same_underlying_study",
-      "disposition": "duplicate_reconfirmed_recheck",
-      "recheck": true,
-      "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
-    },
-    {
-      "candidate_name": "HELEN-Trio 011",
-      "candidate_id": "helen-trio-011",
-      "primary_doi": "10.1016/j.annonc.2026.10.102",
-      "pmid": "42887596",
-      "registry_id": null,
-      "matched_existing_entry": {
-        "roster_id": "helen-trio-011",
-        "trial_name": "HELEN-Trio 011",
-        "canonical_page_path": "trial-pages/helen-trio-011/index.html",
-        "doi": "10.1016/j.annonc.2026.10.102",
-        "pmid": "42887596",
-        "registry_id": null
-      },
-      "identity_resolution": "same_underlying_study",
-      "disposition": "duplicate_reconfirmed_recheck",
-      "recheck": true,
-      "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
-    },
-    {
       "candidate_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
       "candidate_id": "keynote-c93",
       "primary_doi": "10.1016/S0140-6736(26)02095-7",
@@ -4358,7 +4298,7 @@
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
   },
-  "duplicate_check_count": 30,
+  "duplicate_check_count": 27,
   "held_candidate_count": 27,
   "deferred_negative_candidate_count": 8,
   "morning_screening_summary": {
