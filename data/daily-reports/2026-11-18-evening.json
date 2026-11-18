@@ -1,8 +1,8 @@
 {
   "report_id": "2026-11-18-evening",
   "run_date": "2026-11-18",
-  "run_timestamp_local": "2026-11-18T19:43:00+05:30",
-  "cycle": "evening continuation on the already-active morning branch (serialized; no parallel PM branch)",
+  "run_timestamp_local": "2026-11-18T20:02:00+05:30",
+  "cycle": "evening continuation on the existing serialized AM branch",
   "status": "INCOMPLETE",
   "repository": {
     "name": "theabsoluteeffect/The-Absolute-Effect",
@@ -10,7 +10,7 @@
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-18-am",
     "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
-    "content_commit_sha": "6d90d808bcda9a11e585948af47b591c6a9f4daf",
+    "content_commit_sha": "d442976e8314366645b7c49baefac0d0f81dde0f",
     "pr_opened": false,
     "merged": false,
     "production_deployment_verified": false
@@ -38,128 +38,93 @@
       ],
       "individual_canonical_pages_missing": 7
     },
-    "underlying_study_count": "467 roster IDs; certification provisional until the eight lung-SABR records have separate canonical page mapping"
+    "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping"
   },
   "repairs": {
     "existing_pages_manually_reviewed": 5,
-    "pages_repaired": 2,
-    "repair_queue_open": 136,
-    "repair_queue_resolved": 55,
+    "pages_repaired": 3,
+    "repair_queue_open": 138,
+    "repair_queue_resolved": 56,
     "repairs": [
       {
         "trial_id": "keynote-a18",
         "page_path": "trial-pages/keynote-a18/index.html",
-        "change": "Added 24-month PFS landmark 68% vs57%, 11 percentage-point benefit, approximate NNT10; structured primary absolute_effect record and pictogram. Existing 36-month OS NNT13 retained as secondary endpoint.",
-        "source_doi": "10.1016/S0140-6736(24)00317-9",
-        "status": "committed_to_branch_browser_qa_pending"
+        "change": "Added primary 24-month PFS landmark 68% vs57%, 11 pp benefit, approximate NNT10; structured primary effect record; retained 36-month OS NNT13 as secondary."
       },
       {
         "trial_id": "gog-258",
         "page_path": "trial-pages/gog-258/index.html",
-        "change": "Added three secondary 5-year site-specific recurrence pictograms and structured records: vaginal NNT20, pelvic/paraaortic NNT12, distant recurrence NNH17. Primary 5-year RFS NNT not calculated because the primary endpoint was not significantly different.",
-        "source_doi": "10.1056/NEJMoa1813181",
-        "status": "committed_to_branch_browser_qa_pending"
+        "change": "Added three secondary 5-year site-specific recurrence pictograms: vaginal NNT20, pelvic/paraaortic NNT12, distant recurrence NNH17; primary RFS NNT not calculated because endpoint was not significantly different."
+      },
+      {
+        "trial_id": "keynote-c93",
+        "page_path": "trial-pages/keynote-c93/index.html",
+        "change": "Rebuilt full primary publication summary; fixed zero-width bars and comparator label; added 12-month PFS NNT4, 36-month PFS NNT5 and grade≥3 treatment-related AE avoided NNT4; updated source, registry, safety and limitation details."
       }
-    ],
-    "queue_items_moved_or_resolved": [
-      "KEYNOTE-A18 visualization issue",
-      "daily-evidence merge workflow",
-      "17-Nov batch release gate (with process exception)",
-      "17-Nov batch release audit (with process exception)",
-      "duplicate MRC TIP dated-context item",
-      "post-merge validator record",
-      "GOG-258 pictogram repair"
     ],
     "new_open_items": [
       "eight lung-SABR records sharing one aggregate page",
       "PR #5 pre-merge strict-validator gate gap",
-      "18-Nov exact-30 release gate",
-      "browser-rendered QA for GOG-258 and KEYNOTE-A18"
+      "18-Nov exact-30 release gate/page-build work",
+      "browser-rendered QA for GOG-258, KEYNOTE-A18 and KEYNOTE-C93",
+      "EXCALIBER-RRMM evidence-maturity hold",
+      "IsKia MRD-surrogate evidence hold"
     ],
     "full_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false
   },
   "nccn": {
     "total_guideline_metadata_records": 14,
-    "new_metadata_only_records": [
-      {
-        "title": "Acute Myeloid Leukemia, Version 3.2026",
-        "pmid": "42297017",
-        "doi": "10.6004/jnccn.2026.0028"
-      },
-      {
-        "title": "Prostate Cancer, Version 5.2026",
-        "pmid": "42134408",
-        "doi": "10.6004/jnccn.2026.0023"
-      },
-      {
-        "title": "Small Cell Lung Cancer, Version 2.2026",
-        "pmid": "41671459",
-        "doi": "10.6004/jnccn.2026.0002"
-      },
-      {
-        "title": "Survivorship, Version 3.2026",
-        "pmid": "42607712",
-        "doi": "10.6004/jnccn.2026.0039"
-      },
-      {
-        "title": "Distress Management, Version 1.2026",
-        "pmid": "41956112",
-        "doi": "10.6004/jnccn.2026.0018"
-      },
-      {
-        "title": "Genetic/Familial High-Risk Assessment, Version 2.2026",
-        "pmid": "41671423",
-        "doi": "10.6004/jnccn.2026.0007"
-      }
-    ],
+    "new_metadata_only_records": 6,
     "complete_official_guidelines_accessible": 0,
     "complete_reference_lists_accessible": 0,
-    "exact_nccn_reference_numbers_extracted": 0,
-    "pending_trial_mappings_total": 67,
-    "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN article metadata/abstracts are recorded as metadata-only; no exact reference number, section, recommendation category or context inferred."
+    "exact_reference_numbers_extracted": 0,
+    "pending_trial_mappings_total": 70,
+    "provenance_note": "NCCN portal/full reference lists inaccessible. JNCCN metadata/abstracts recorded as metadata-only; no exact recommendation section, reference number or category inferred."
   },
   "candidates": {
-    "screening_records": 97,
-    "unique_candidate_ids": 91,
-    "new_unique_underlying_candidates": 61,
-    "primary_source_verified_new_unique_page_build_candidates": 28,
-    "source_verified_but_held_low_maturity": 2,
-    "held_total": 25,
+    "screening_records": 102,
+    "unique_candidate_ids": 96,
+    "new_unique_underlying_candidates": 65,
+    "primary_source_verified_new_unique_page_build_candidates": 30,
+    "source_verified_but_held_low_maturity": 4,
+    "primary_source_incomplete_or_not_verified_holds": 23,
+    "held_total": 27,
     "deferred_negative_unique": 8,
-    "unique_duplicate_exclusions": 29,
+    "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
+    "policy_exclusion_rechecks": 1,
     "deferred_negative_rechecks": 2,
-    "excluded_rechecks": 1,
+    "repeated_screening_records": 6,
     "pages_built": 0,
     "release_ready_pages": 0,
     "published": 0,
     "target": 30,
-    "eligible_shortfall": 2
+    "eligible_candidate_shortfall": 0
   },
   "published_cases": [],
   "uploaded_count": 0,
   "not_uploaded_count": 30,
   "duplicate_check": {
-    "unique_duplicates": 29,
+    "unique_duplicates": 30,
     "duplicate_rechecks": 3,
     "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json"
   },
   "nnt_nnh_visualization_qa": {
     "keynote_a18": {
-      "benefit_percentage_points": 11,
+      "benefit_pp": 11,
       "nnt": 10,
       "horizon": "24 months",
       "source_doi": "10.1016/S0140-6736(24)00317-9",
       "status": "HTML/roster checks passed; browser render pending"
     },
     "gog_258": {
-      "benefit_percentage_points": [
+      "benefit_pp": [
         5,
         9
       ],
-      "harm_percentage_points": 6,
+      "harm_pp": 6,
       "nnt": [
         20,
         12
@@ -169,22 +134,41 @@
       "source_doi": "10.1056/NEJMoa1813181",
       "status": "HTML/roster checks passed; browser render pending"
     },
-    "new_candidate_pages": "No new pages built; no candidate-page NNT/NNH graphics audited."
+    "keynote_c93": {
+      "pfs_12m": {
+        "rates": "67% vs40%",
+        "benefit_pp": 27,
+        "nnt": 4
+      },
+      "pfs_36m": {
+        "rates": "53% vs30%",
+        "benefit_pp": 23,
+        "nnt": 5
+      },
+      "grade3plus_trae_avoided": {
+        "rates": "18% vs51%",
+        "benefit_pp": 33,
+        "nnt": 4
+      },
+      "source_doi": "10.1016/S0140-6736(26)02095-7",
+      "status": "HTML/roster checks passed; browser render pending"
+    },
+    "new_candidate_pages": "No new pages built; candidate-page NNT/NNH and visualization QA not yet performed."
   },
   "roster_index_archive": {
     "new_roster_entries": 0,
     "new_index_links": 0,
     "new_archive_records": 0,
     "new_tod_records": 0,
-    "structural_reconciliation": "467 roster entries; 460 unique canonical page paths; zero missing canonical index paths after path normalization; 16 archive records; current/previous ToD unchanged. Eight lung-SABR IDs share one aggregate page and require split."
+    "structural_reconciliation": "467 roster entries; 460 unique canonical paths; zero missing canonical index paths after normalization; 16 archive records; ToD unchanged. Eight lung-SABR trial IDs share one aggregate page and require split."
   },
   "validation": {
-    "JSON_structural_checks": "passed before commit",
+    "json_structural_checks": "passed before commit",
     "absolute_effect_attribute_checks": "passed before commit",
-    "local_strict_release_validator": "not run; no new trial pages built and no local repository checkout available",
+    "local_strict_release_validator": "not run; no new trial pages built",
     "current_batch_PR_checks": "not applicable; no PR opened",
-    "current_batch_outcome_visualization_audit": "pending on current branch head",
-    "strict_validator_PR_gate": "not run for this incomplete batch",
+    "current_batch_outcome_visualization_audit": "not run; no PR",
+    "strict_validator_PR_gate": "not run for current batch",
     "main_post_merge_workflow_run": 44226050992,
     "main_post_merge_workflow_conclusion": "success"
   },
@@ -193,21 +177,27 @@
     "production_live_pages": "not independently opened/verified",
     "current_batch_preview": "not available; no PR"
   },
+  "trial_of_the_day_candidate_pending_release": {
+    "trial_id": "panova-3",
+    "recent_publication": "QoL/pain secondary analysis, 2026-11-13",
+    "doi": "10.1001/jamanetworkopen.2026.41241",
+    "pmid": "43024239",
+    "status": "candidate only; do not set ToD until canonical page is built, merged and verified"
+  },
   "blockers": [
-    "28 eligible new unique candidates are two short of the 30-page target.",
-    "No trial pages were built; full per-page clinical, DOI/title, link, NNT/NNH, visualization and strict-release QA remains outstanding.",
+    "Thirty unique candidates have primary publication/registry identity, but none has a complete new page or passed page-level release QA.",
+    "Twenty-seven additional unique candidates are held; four are source-verified but low maturity/surrogate-endpoint, 23 require additional source extraction/verification.",
     "Eight lung-SABR trials share one aggregate page; seven individual canonical pages are missing.",
-    "NCCN complete guideline/reference lists are inaccessible; exact citation mapping remains pending.",
-    "Full clinical and browser-rendered audit remains incomplete.",
+    "NCCN complete guideline/reference lists inaccessible; exact citation mapping remains pending.",
+    "Full clinical and browser-rendered audit incomplete.",
     "PR #5 strict validator was independently verified only post-merge, not as a pre-merge PR check."
   ],
   "next_actions": [
-    "Build the 28 source-verified candidate pages and continue screening for two more eligible studies.",
-    "Keep NEOTERIC and KROCUS held; do not pad the batch.",
-    "Split the lung-SABR aggregate page into eight canonical trial pages.",
-    "Require both strict release validator and Outcome visualization audit as PR checks before future merge.",
-    "Complete browser-rendered QA for GOG-258 and KEYNOTE-A18 and independently verify production deployment."
+    "Build and fully source-extract the 30 verified candidates; no page is counted as published until all per-page QA passes.",
+    "Keep NEOTERIC, KROCUS, EXCALIBER-RRMM and IsKia held; do not pad.",
+    "Split the lung-SABR aggregate page into eight canonical pages.",
+    "Require strict release validator and Outcome visualization audit as PR checks before future merge.",
+    "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 and verify production deployment."
   ],
-  "evidence_file": "data/daily-evidence-2026-11-18-evening.json",
-  "report_content_commit_sha": "6d90d808bcda9a11e585948af47b591c6a9f4daf"
+  "evidence_file": "data/daily-evidence-2026-11-18-evening.json"
 }
