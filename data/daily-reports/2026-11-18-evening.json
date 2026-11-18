@@ -41,7 +41,7 @@
       "status": "high-severity repair open"
     },
     "underlying_study_count_certification": "provisional: roster contains 467 entries, but eight lung-SABR records share one aggregate page and seven individual canonical pages are missing; verify primary-source/registry identity before certifying the unique-study count.",
-    "main_commit_sha": "8315e5e",
+    "main_commit_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch": "atlas-batch/2026-11-18-am",
     "branch_head": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
     "main_roster_unique_trials": 467,
@@ -58,14 +58,20 @@
       "number": 5,
       "state": "closed",
       "merged": true,
-      "merge_commit_sha": "a17e8c6f"
+      "merged_at": "2026-11-18T02:41:48Z",
+      "merge_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "head": "1a4502c6dc7a06f59c451b63cbafb4d1ba6946a7"
     },
     "previous_pr6": {
       "number": 6,
       "state": "closed",
       "merged": true,
-      "merge_commit_sha": "c4f6a2d1"
-    }
+      "merged_at": "2026-11-18T02:49:30Z",
+      "merge_commit_sha": "88e90e26cfc55a33420090d495de6ca83b06a4fb",
+      "head": "56da9929bf3b256c8f3dc76ced4be4cb9524f203"
+    },
+    "branch_head_before_report_update": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
+    "current_branch_pr": null
   },
   "repairs": {
     "existing_pages_manually_reviewed": 9,
@@ -129,7 +135,7 @@
     "remaining_existing_pages_for_manual_audit": 451,
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
-      "open_items": "+6 (133→139)",
+      "open_items": "+5 (133→138)",
       "resolved_items": "+8 (53→61)"
     }
   },
@@ -388,9 +394,9 @@
     "main_post_merge_workflow_run": 44226050992,
     "main_post_merge_workflow_conclusion": "success",
     "branch_preview_build": "success",
-    "latest_preview_commit": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
-    "strict_release_validator": "not run — no complete 30-page batch; no PR opened",
-    "outcome_visualization_audit": "HTML-level finite-width and data-benefit checks completed for repaired pages; browser-rendered pictogram audit still open",
+    "latest_preview_commit": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
+    "strict_release_validator": "not run — no complete 30-page release batch; no PR opened",
+    "outcome_visualization_audit": "HTML-level checks passed for 12 panels across five repaired pages; browser-rendered review remains open",
     "production_build": "not triggered"
   },
   "deployment": {
@@ -402,7 +408,7 @@
     "browser_open_attempts": "Attempted to open KEYNOTE-C93, KEYNOTE-A18 and GOG-258 preview pages; the browser retrieval tool returned inaccessible/internal error, so visual rendering remains unverified.",
     "production_live_pages": "not independently verified; no merge to main",
     "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML",
-    "branch_preview": "Cloudflare Pages preview check successful on previous commit; latest data-only commit requires check completion",
+    "branch_preview": "Cloudflare Pages build successful on commit a2207def; representative page URL could not be opened through the available web viewer",
     "production_deployment": "not deployed/verified; main unchanged"
   },
   "trial_of_the_day_candidate_pending_release": {
@@ -508,7 +514,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "f349e5c1bca1eb8f9d968929503b736df00908ac",
+  "content_commit_sha": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
