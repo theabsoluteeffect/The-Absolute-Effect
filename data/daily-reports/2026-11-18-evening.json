@@ -43,7 +43,7 @@
     "underlying_study_count_certification": "provisional: roster contains 467 entries, but eight lung-SABR records share one aggregate page and seven individual canonical pages are missing; verify primary-source/registry identity before certifying the unique-study count.",
     "main_commit_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch": "atlas-batch/2026-11-18-am",
-    "branch_head": "99ccd0fab5ee1a12ec0f7d25f25232c32c93d340",
+    "branch_head": "44d584a292bb6f7ff52573430a605b36dfefa1f4",
     "main_roster_unique_trials": 467,
     "main_permanent_trial_pages": 460,
     "main_trial_page_index_files": 461,
@@ -70,7 +70,7 @@
       "merge_commit_sha": "88e90e26cfc55a33420090d495de6ca83b06a4fb",
       "head": "56da9929bf3b256c8f3dc76ced4be4cb9524f203"
     },
-    "branch_head_before_report_update": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
+    "branch_head_before_report_update": "44d584a292bb6f7ff52573430a605b36dfefa1f4",
     "current_branch_pr": null
   },
   "repairs": {
@@ -514,7 +514,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
+  "content_commit_sha": "44d584a292bb6f7ff52573430a605b36dfefa1f4",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
