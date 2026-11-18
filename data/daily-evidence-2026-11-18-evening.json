@@ -10,9 +10,9 @@
   "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
   "morning_run_file": "data/daily-evidence-2026-11-18-morning.json",
   "screening_counts": {
-    "screening_records": 111,
-    "unique_candidate_ids": 103,
-    "new_unique_underlying_candidates": 72,
+    "screening_records": 119,
+    "unique_candidate_ids": 111,
+    "new_unique_underlying_candidates": 80,
     "primary_source_verified_new_unique_page_build_candidates": 0,
     "source_verified_but_held_low_maturity": 5,
     "primary_source_incomplete_or_not_verified_holds": 21,
@@ -28,8 +28,8 @@
     "release_ready_pages": 0,
     "published_pages": 0,
     "target_new_trials": 30,
-    "eligible_candidate_shortfall": 24,
-    "primary_source_identity_verified_new_unique": 36,
+    "eligible_candidate_shortfall": 16,
+    "primary_source_identity_verified_new_unique": 44,
     "full_page_data_verified_new_unique": 0,
     "release_ready_page_shortfall": 60,
     "cycle_breakdown": {
@@ -53,10 +53,10 @@
         "not_uploaded": 30
       },
       "evening": {
-        "screening_records": 58,
-        "unique_candidate_ids": 50,
-        "new_unique_underlying_candidates": 34,
-        "primary_source_identity_verified_new_unique": 22,
+        "screening_records": 66,
+        "unique_candidate_ids": 58,
+        "new_unique_underlying_candidates": 42,
+        "primary_source_identity_verified_new_unique": 30,
         "full_page_data_verified_new_unique": 0,
         "held_unique": 8,
         "deferred_negative_unique": 4,
@@ -67,15 +67,15 @@
         "release_ready_pages": 0,
         "published": 0,
         "target_new_trials": 30,
-        "identity_verified_shortfall": 8,
+        "identity_verified_shortfall": 0,
         "uploaded": 0,
         "not_uploaded": 30
       },
       "daily_combined": {
-        "screening_records": 111,
-        "unique_candidate_ids": 103,
-        "new_unique_underlying_candidates": 72,
-        "primary_source_identity_verified_new_unique": 36,
+        "screening_records": 119,
+        "unique_candidate_ids": 111,
+        "new_unique_underlying_candidates": 80,
+        "primary_source_identity_verified_new_unique": 44,
         "full_page_data_verified_new_unique": 0,
         "held_unique": 26,
         "deferred_negative_unique": 10,
@@ -86,7 +86,7 @@
         "release_ready_pages": 0,
         "published": 0,
         "daily_target": 60,
-        "identity_verified_shortfall": 24,
+        "identity_verified_shortfall": 16,
         "uploaded": 0,
         "not_uploaded": 60
       }
@@ -2884,6 +2884,272 @@
       "run_cycle": "evening",
       "candidate_name": "iPRIME",
       "candidate_id": "iprime"
+    },
+    {
+      "trial": "SUCCESSOR-2",
+      "doi": "10.1016/S0140-6736(26)01088-3",
+      "pmid": "42289183",
+      "registry_id": "NCT05552976",
+      "primary_title": "Mezigdomide plus carfilzomib and dexamethasone in relapsed or refractory multiple myeloma: a randomised, phase 3 trial",
+      "source_url": [
+        "https://doi.org/10.1016/S0140-6736(26)01088-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42289183/",
+        "https://clinicaltrials.gov/study/NCT05552976"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory after prior lines",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 479,
+      "denominators": {
+        "mezigdomide_Kd": 288,
+        "Kd": 191
+      },
+      "primary_endpoint": "PFS",
+      "results": "Median PFS18.0 vs8.3 months; HR0.48 (95%CI0.36–0.63), p<0.0001; ORR80.2% vs53.4%; CR26.7% vs8.9%; median follow-up10.6 months.",
+      "treatment": "Mezigdomide plus carfilzomib and dexamethasone",
+      "comparator": "Carfilzomib and dexamethasone",
+      "safety": "Grade3–4 TEAEs83.7% vs56.5%; neutropenia61.1% vs9.1%; infections34.0% vs15.6%; grade5 infections2.4% vs1.1%.",
+      "candidate_name": "SUCCESSOR-2",
+      "candidate_id": "successor-2",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "MajesTEC-9",
+      "doi": "10.1200/JCO.2026.44.16_suppl.7507",
+      "pmid": null,
+      "registry_id": "NCT05572515",
+      "primary_title": "MajesTEC-9: A phase 3 randomized study of teclistamab monotherapy vs investigator’s choice of pomalidomide, bortezomib, and dexamethasone or carfilzomib and dexamethasone in relapsed/refractory multiple myeloma",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.7507",
+        "https://clinicaltrials.gov/study/NCT05572515"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "RRMM after 1–3 prior lines including anti-CD38 and lenalidomide",
+      "phase": "III",
+      "design": "Randomised phase III; primary ASCO 2026 abstract",
+      "sample_size": 593,
+      "denominators": {
+        "teclistamab": 296,
+        "PVd_or_Kd": 297
+      },
+      "primary_endpoint": "PFS by IRC",
+      "results": "Median follow-up17.3 months; PFS HR0.29 (95%CI0.23–0.38), p<0.0001; median PFS NR vs8.2 months; 18-month PFS69.8% vs26.9%; OS HR0.60 (95%CI0.43–0.83), p=0.002.",
+      "treatment": "Teclistamab step-up then 1.5 mg/kg weekly cycles1–2, 3 mg/kg every2 weeks or4 weeks cycles3–6 depending on response, then3 mg/kg every4 weeks",
+      "comparator": "Investigator choice PVd or Kd",
+      "safety": "Grade3/4 TEAEs84.9% vs76.3%; grade5 TEAEs6.5% vs3.5%; grade3/4 infections41.6% vs29.0%; CRS66.0% (grade1/2), ICANS4.1%.",
+      "candidate_name": "MajesTEC-9",
+      "candidate_id": "majestec-9",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "PERSPECTIVE",
+      "doi": "10.1002/hem3.70400",
+      "pmid": "42317205",
+      "registry_id": "NCT02947347",
+      "primary_title": "Phase 3 PERSPECTIVE study: Ibrutinib with rituximab for initial treatment of patients with follicular lymphoma",
+      "source_url": [
+        "https://doi.org/10.1002/hem3.70400",
+        "https://pubmed.ncbi.nlm.nih.gov/42317205/",
+        "https://clinicaltrials.gov/study/NCT02947347"
+      ],
+      "site": "Follicular lymphoma",
+      "setting": "Previously untreated, treatment-requiring FL in patients unsuitable for chemoimmunotherapy due to age/comorbidity",
+      "phase": "III",
+      "design": "Randomised phase III, 3:1",
+      "sample_size": 445,
+      "denominators": {
+        "ibrutinib_rituximab": 334,
+        "placebo_rituximab": 111
+      },
+      "primary_endpoint": "Investigator-assessed PFS",
+      "results": "Median follow-up53.7 months; median PFS42.0 vs32.8 months; HR0.713 (95%CI0.532–0.955), p=0.0231; ORR81% vs68%; OS immature and not different (HR1.121, p=0.5485).",
+      "treatment": "Ibrutinib560 mg orally daily plus rituximab375 mg/m² weekly for4 weeks then every8 weeks for12 cycles",
+      "comparator": "Placebo plus the same rituximab schedule",
+      "safety": "Grade≥3 AEs78% vs57%; neutropenia16% vs7%, pneumonia9% vs5%, hypertension8% vs5%.",
+      "candidate_name": "PERSPECTIVE",
+      "candidate_id": "perspective",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "Orelabrutinib phase III CLL/SLL",
+      "doi": "10.1038/s41392-026-02818-x",
+      "pmid": "42402625",
+      "registry_id": "NCT04578613",
+      "primary_title": "Orelabrutinib versus chemoimmunotherapy in treatment-naïve chronic lymphocytic leukemia/small lymphocytic lymphoma: a randomized, phase 3 trial",
+      "source_url": [
+        "https://doi.org/10.1038/s41392-026-02818-x",
+        "https://pubmed.ncbi.nlm.nih.gov/42402625/",
+        "https://clinicaltrials.gov/study/NCT04578613"
+      ],
+      "site": "CLL/SLL",
+      "setting": "Previously untreated",
+      "phase": "III",
+      "design": "Open-label randomised phase III",
+      "sample_size": 192,
+      "denominators": {
+        "orelabrutinib": 91,
+        "chlorambucil_rituximab": 101
+      },
+      "primary_endpoint": "PFS by IRC",
+      "results": "Median follow-up21.4 months; PFS NR vs19.4 months; HR0.32 (95%CI0.18–0.58), p<0.001.",
+      "treatment": "Orelabrutinib150 mg orally once daily continuously",
+      "comparator": "Chlorambucil plus rituximab",
+      "safety": "Full grade3–5 toxicity extraction pending from primary paper; do not infer from discussion.",
+      "candidate_name": "Orelabrutinib phase III CLL/SLL",
+      "candidate_id": "orelabrutinib-phase-iii-cll-sll",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "frontMIND",
+      "doi": "10.1200/JCO.2026.44.17_suppl.LBA7000",
+      "pmid": null,
+      "registry_id": "NCT04824092",
+      "primary_title": "frontMIND: Phase 3 study of tafasitamab plus lenalidomide and R-CHOP for patients with newly diagnosed diffuse large B-cell lymphoma",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.17_suppl.LBA7000",
+        "https://clinicaltrials.gov/study/NCT04824092"
+      ],
+      "site": "DLBCL / high-risk aggressive B-cell lymphoma",
+      "setting": "First-line high-intermediate/high-risk DLBCL or HGBL",
+      "phase": "III",
+      "design": "Double-blind, placebo-controlled phase III; primary ASCO 2026 abstract",
+      "sample_size": 899,
+      "denominators": {
+        "tafasitamab_len_RCHOP": 448,
+        "RCHOP": 451
+      },
+      "primary_endpoint": "Investigator-assessed PFS",
+      "results": "Median follow-up35.2 months; PFS HR0.75 (95%CI0.59–0.96), p=0.019; 24-month PFS71.1% vs62.9%; 36-month PFS67.3% vs60.7%; OS HR0.85 (95%CI0.63–1.14), p=0.270.",
+      "treatment": "Tafasitamab plus lenalidomide and R-CHOP",
+      "comparator": "Placebo plus R-CHOP",
+      "safety": "Grade≥3 TEAEs86.7% vs76.1%; discontinuation due to TEAEs25.7% vs17.9%; deaths due to TEAEs5.9% vs3.8%.",
+      "candidate_name": "frontMIND",
+      "candidate_id": "frontmind",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "Blinatumomab pediatric high-risk B-ALL",
+      "doi": "10.1056/NEJMoa2604166",
+      "pmid": "42748428",
+      "registry_id": "NCT03643276",
+      "primary_title": "Blinatumomab for Replacing Chemotherapy in Pediatric Acute Lymphoblastic Leukemia",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2604166",
+        "https://pubmed.ncbi.nlm.nih.gov/42748428/",
+        "https://clinicaltrials.gov/study/NCT03643276"
+      ],
+      "site": "Paediatric B-cell acute lymphoblastic leukaemia",
+      "setting": "Newly diagnosed high-risk B-ALL after consolidation",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 709,
+      "denominators": {
+        "blinatumomab": 358,
+        "chemotherapy": 351
+      },
+      "primary_endpoint": "Event-free survival",
+      "results": "Planned interim analysis; median follow-up2.9 years; estimated4-year EFS83.0% vs70.3%; HR0.51 (95%CI0.35–0.73), p=0.0002.",
+      "treatment": "Two cycles of blinatumomab replacing two cycles of conventional chemotherapy after consolidation",
+      "comparator": "Two cycles of conventional chemotherapy",
+      "safety": "Treatment-related infections23.9% vs69.4%; life-threatening AEs0.5% vs4.7%; neurotoxic events12.0% vs3.2%; grade≥2 CRS1.1% in blinatumomab arm.",
+      "candidate_name": "Blinatumomab pediatric high-risk B-ALL",
+      "candidate_id": "blinatumomab-pediatric-high-risk-b-all",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "PSMAddition",
+      "doi": "10.1016/S0140-6736(26)01092-5",
+      "pmid": "42561994",
+      "registry_id": "NCT04720157",
+      "primary_title": "[177Lu]Lu-PSMA-617 in patients with PSMA-positive metastatic androgen pathway modulator-naive/sensitive prostate cancer (PSMAddition): a phase 3 randomised, controlled trial",
+      "source_url": [
+        "https://doi.org/10.1016/S0140-6736(26)01092-5",
+        "https://pubmed.ncbi.nlm.nih.gov/42561994/",
+        "https://clinicaltrials.gov/study/NCT04720157"
+      ],
+      "site": "Prostate / PSMA-positive mHSPC",
+      "setting": "Treatment-naive or minimally treated metastatic androgen-pathway-modulator-naive/sensitive disease",
+      "phase": "III",
+      "design": "Open-label randomised phase III, 169 sites/20 countries",
+      "sample_size": 1144,
+      "denominators": {
+        "LuPSMA_ADT_ARPI": 572,
+        "ADT_ARPI": 572
+      },
+      "primary_endpoint": "Centrally assessed rPFS per PCWG3-modified RECIST 1.1 or death",
+      "results": "Second interim rPFS analysis; median follow-up19.6 months; 139/572 (24%) vs172/572 (30%) progression/death; HR0.72 (95%CI0.58–0.90), p=0.0021; median rPFS NR in both arms. OS HR0.84 (95%CI0.63–1.13), p=0.125.",
+      "treatment": "177Lu-PSMA-617 7.4 GBq ±10% IV every6 weeks for up to6 cycles plus ADT and investigator-selected ARPI",
+      "comparator": "ADT plus investigator-selected ARPI",
+      "safety": "Grade≥3 AEs51% vs43%; dry mouth46% vs43%, mostly grade1–2.",
+      "follow_up_publication": null,
+      "candidate_name": "PSMAddition",
+      "candidate_id": "psmaddition",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
+    },
+    {
+      "trial": "CAPItello-281",
+      "doi": "10.1016/j.annonc.2025.10.004",
+      "pmid": "41120017",
+      "registry_id": "NCT04493853",
+      "primary_title": "Capivasertib plus abiraterone in PTEN-deficient metastatic hormone-sensitive prostate cancer: CAPItello-281 phase III study",
+      "source_url": [
+        "https://doi.org/10.1016/j.annonc.2025.10.004",
+        "https://pubmed.ncbi.nlm.nih.gov/41120017/",
+        "https://clinicaltrials.gov/study/NCT04493853",
+        "https://doi.org/10.1016/j.annonc.2026.10.097",
+        "https://pubmed.ncbi.nlm.nih.gov/42918424/"
+      ],
+      "secondary_publications": [
+        {
+          "doi": "10.1016/j.annonc.2026.10.097",
+          "pmid": "42918424",
+          "title": "Capivasertib plus abiraterone in PTEN-deficient de novo metastatic hormone-sensitive prostate cancer: updated survival analysis from CAPItello-281",
+          "publication_date": "2026-10-23"
+        }
+      ],
+      "site": "Prostate / PTEN-deficient de novo mHSPC",
+      "setting": "First-line de novo mHSPC with PTEN loss by IHC",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 1012,
+      "denominators": {
+        "capivasertib_abi_ADT": 507,
+        "placebo_abi_ADT": 505
+      },
+      "primary_endpoint": "Investigator-assessed rPFS",
+      "results": "Primary rPFS median33.2 vs25.7 months; HR0.81 (95%CI0.66–0.98), p=0.034. Initial OS at26% maturity HR0.90 (95%CI0.71–1.15), p=0.401. Updated ad hoc descriptive analysis at42% OS maturity: OS HR0.82 (95%CI0.68–0.99), p=0.044; median OS57.4 vs46.5 months; not a prespecified alpha-controlled OS analysis.",
+      "treatment": "Capivasertib400 mg orally twice daily 4 days on/3 days off plus abiraterone1000 mg daily, prednisone/prednisolone and ADT",
+      "comparator": "Placebo plus abiraterone1000 mg daily, prednisone/prednisolone and ADT",
+      "safety": "Diarrhoea51.9% vs8.0%, hyperglycaemia38.0% vs12.9%, rash35.4% vs7.0%; AE-associated deaths7.2% vs5.2%.",
+      "status": "identity_verified_page_data_pending",
+      "candidate_name": "CAPItello-281",
+      "candidate_id": "capitello-281",
+      "run_cycle": "evening",
+      "disposition": "primary_source_identity_verified_new_unique",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true
     }
   ],
   "duplicate_check": [
@@ -3956,6 +4222,239 @@
       "phase": "II",
       "setting": "Neoadjuvant/perioperative",
       "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "SUCCESSOR-2",
+      "doi": "10.1016/S0140-6736(26)01088-3",
+      "pmid": "42289183",
+      "registry_id": "NCT05552976",
+      "primary_title": "Mezigdomide plus carfilzomib and dexamethasone in relapsed or refractory multiple myeloma: a randomised, phase 3 trial",
+      "source_url": [
+        "https://doi.org/10.1016/S0140-6736(26)01088-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42289183/",
+        "https://clinicaltrials.gov/study/NCT05552976"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory after prior lines",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 479,
+      "denominators": {
+        "mezigdomide_Kd": 288,
+        "Kd": 191
+      },
+      "primary_endpoint": "PFS",
+      "results": "Median PFS18.0 vs8.3 months; HR0.48 (95%CI0.36–0.63), p<0.0001; ORR80.2% vs53.4%; CR26.7% vs8.9%; median follow-up10.6 months.",
+      "treatment": "Mezigdomide plus carfilzomib and dexamethasone",
+      "comparator": "Carfilzomib and dexamethasone",
+      "safety": "Grade3–4 TEAEs83.7% vs56.5%; neutropenia61.1% vs9.1%; infections34.0% vs15.6%; grade5 infections2.4% vs1.1%.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "MajesTEC-9",
+      "doi": "10.1200/JCO.2026.44.16_suppl.7507",
+      "pmid": null,
+      "registry_id": "NCT05572515",
+      "primary_title": "MajesTEC-9: A phase 3 randomized study of teclistamab monotherapy vs investigator’s choice of pomalidomide, bortezomib, and dexamethasone or carfilzomib and dexamethasone in relapsed/refractory multiple myeloma",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.7507",
+        "https://clinicaltrials.gov/study/NCT05572515"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "RRMM after 1–3 prior lines including anti-CD38 and lenalidomide",
+      "phase": "III",
+      "design": "Randomised phase III; primary ASCO 2026 abstract",
+      "sample_size": 593,
+      "denominators": {
+        "teclistamab": 296,
+        "PVd_or_Kd": 297
+      },
+      "primary_endpoint": "PFS by IRC",
+      "results": "Median follow-up17.3 months; PFS HR0.29 (95%CI0.23–0.38), p<0.0001; median PFS NR vs8.2 months; 18-month PFS69.8% vs26.9%; OS HR0.60 (95%CI0.43–0.83), p=0.002.",
+      "treatment": "Teclistamab step-up then 1.5 mg/kg weekly cycles1–2, 3 mg/kg every2 weeks or4 weeks cycles3–6 depending on response, then3 mg/kg every4 weeks",
+      "comparator": "Investigator choice PVd or Kd",
+      "safety": "Grade3/4 TEAEs84.9% vs76.3%; grade5 TEAEs6.5% vs3.5%; grade3/4 infections41.6% vs29.0%; CRS66.0% (grade1/2), ICANS4.1%.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "PERSPECTIVE",
+      "doi": "10.1002/hem3.70400",
+      "pmid": "42317205",
+      "registry_id": "NCT02947347",
+      "primary_title": "Phase 3 PERSPECTIVE study: Ibrutinib with rituximab for initial treatment of patients with follicular lymphoma",
+      "source_url": [
+        "https://doi.org/10.1002/hem3.70400",
+        "https://pubmed.ncbi.nlm.nih.gov/42317205/",
+        "https://clinicaltrials.gov/study/NCT02947347"
+      ],
+      "site": "Follicular lymphoma",
+      "setting": "Previously untreated, treatment-requiring FL in patients unsuitable for chemoimmunotherapy due to age/comorbidity",
+      "phase": "III",
+      "design": "Randomised phase III, 3:1",
+      "sample_size": 445,
+      "denominators": {
+        "ibrutinib_rituximab": 334,
+        "placebo_rituximab": 111
+      },
+      "primary_endpoint": "Investigator-assessed PFS",
+      "results": "Median follow-up53.7 months; median PFS42.0 vs32.8 months; HR0.713 (95%CI0.532–0.955), p=0.0231; ORR81% vs68%; OS immature and not different (HR1.121, p=0.5485).",
+      "treatment": "Ibrutinib560 mg orally daily plus rituximab375 mg/m² weekly for4 weeks then every8 weeks for12 cycles",
+      "comparator": "Placebo plus the same rituximab schedule",
+      "safety": "Grade≥3 AEs78% vs57%; neutropenia16% vs7%, pneumonia9% vs5%, hypertension8% vs5%.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "Orelabrutinib phase III CLL/SLL",
+      "doi": "10.1038/s41392-026-02818-x",
+      "pmid": "42402625",
+      "registry_id": "NCT04578613",
+      "primary_title": "Orelabrutinib versus chemoimmunotherapy in treatment-naïve chronic lymphocytic leukemia/small lymphocytic lymphoma: a randomized, phase 3 trial",
+      "source_url": [
+        "https://doi.org/10.1038/s41392-026-02818-x",
+        "https://pubmed.ncbi.nlm.nih.gov/42402625/",
+        "https://clinicaltrials.gov/study/NCT04578613"
+      ],
+      "site": "CLL/SLL",
+      "setting": "Previously untreated",
+      "phase": "III",
+      "design": "Open-label randomised phase III",
+      "sample_size": 192,
+      "denominators": {
+        "orelabrutinib": 91,
+        "chlorambucil_rituximab": 101
+      },
+      "primary_endpoint": "PFS by IRC",
+      "results": "Median follow-up21.4 months; PFS NR vs19.4 months; HR0.32 (95%CI0.18–0.58), p<0.001.",
+      "treatment": "Orelabrutinib150 mg orally once daily continuously",
+      "comparator": "Chlorambucil plus rituximab",
+      "safety": "Full grade3–5 toxicity extraction pending from primary paper; do not infer from discussion.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "frontMIND",
+      "doi": "10.1200/JCO.2026.44.17_suppl.LBA7000",
+      "pmid": null,
+      "registry_id": "NCT04824092",
+      "primary_title": "frontMIND: Phase 3 study of tafasitamab plus lenalidomide and R-CHOP for patients with newly diagnosed diffuse large B-cell lymphoma",
+      "source_url": [
+        "https://doi.org/10.1200/JCO.2026.44.17_suppl.LBA7000",
+        "https://clinicaltrials.gov/study/NCT04824092"
+      ],
+      "site": "DLBCL / high-risk aggressive B-cell lymphoma",
+      "setting": "First-line high-intermediate/high-risk DLBCL or HGBL",
+      "phase": "III",
+      "design": "Double-blind, placebo-controlled phase III; primary ASCO 2026 abstract",
+      "sample_size": 899,
+      "denominators": {
+        "tafasitamab_len_RCHOP": 448,
+        "RCHOP": 451
+      },
+      "primary_endpoint": "Investigator-assessed PFS",
+      "results": "Median follow-up35.2 months; PFS HR0.75 (95%CI0.59–0.96), p=0.019; 24-month PFS71.1% vs62.9%; 36-month PFS67.3% vs60.7%; OS HR0.85 (95%CI0.63–1.14), p=0.270.",
+      "treatment": "Tafasitamab plus lenalidomide and R-CHOP",
+      "comparator": "Placebo plus R-CHOP",
+      "safety": "Grade≥3 TEAEs86.7% vs76.1%; discontinuation due to TEAEs25.7% vs17.9%; deaths due to TEAEs5.9% vs3.8%.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "Blinatumomab pediatric high-risk B-ALL",
+      "doi": "10.1056/NEJMoa2604166",
+      "pmid": "42748428",
+      "registry_id": "NCT03643276",
+      "primary_title": "Blinatumomab for Replacing Chemotherapy in Pediatric Acute Lymphoblastic Leukemia",
+      "source_url": [
+        "https://doi.org/10.1056/NEJMoa2604166",
+        "https://pubmed.ncbi.nlm.nih.gov/42748428/",
+        "https://clinicaltrials.gov/study/NCT03643276"
+      ],
+      "site": "Paediatric B-cell acute lymphoblastic leukaemia",
+      "setting": "Newly diagnosed high-risk B-ALL after consolidation",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 709,
+      "denominators": {
+        "blinatumomab": 358,
+        "chemotherapy": 351
+      },
+      "primary_endpoint": "Event-free survival",
+      "results": "Planned interim analysis; median follow-up2.9 years; estimated4-year EFS83.0% vs70.3%; HR0.51 (95%CI0.35–0.73), p=0.0002.",
+      "treatment": "Two cycles of blinatumomab replacing two cycles of conventional chemotherapy after consolidation",
+      "comparator": "Two cycles of conventional chemotherapy",
+      "safety": "Treatment-related infections23.9% vs69.4%; life-threatening AEs0.5% vs4.7%; neurotoxic events12.0% vs3.2%; grade≥2 CRS1.1% in blinatumomab arm.",
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "PSMAddition",
+      "doi": "10.1016/S0140-6736(26)01092-5",
+      "pmid": "42561994",
+      "registry_id": "NCT04720157",
+      "primary_title": "[177Lu]Lu-PSMA-617 in patients with PSMA-positive metastatic androgen pathway modulator-naive/sensitive prostate cancer (PSMAddition): a phase 3 randomised, controlled trial",
+      "source_url": [
+        "https://doi.org/10.1016/S0140-6736(26)01092-5",
+        "https://pubmed.ncbi.nlm.nih.gov/42561994/",
+        "https://clinicaltrials.gov/study/NCT04720157"
+      ],
+      "site": "Prostate / PSMA-positive mHSPC",
+      "setting": "Treatment-naive or minimally treated metastatic androgen-pathway-modulator-naive/sensitive disease",
+      "phase": "III",
+      "design": "Open-label randomised phase III, 169 sites/20 countries",
+      "sample_size": 1144,
+      "denominators": {
+        "LuPSMA_ADT_ARPI": 572,
+        "ADT_ARPI": 572
+      },
+      "primary_endpoint": "Centrally assessed rPFS per PCWG3-modified RECIST 1.1 or death",
+      "results": "Second interim rPFS analysis; median follow-up19.6 months; 139/572 (24%) vs172/572 (30%) progression/death; HR0.72 (95%CI0.58–0.90), p=0.0021; median rPFS NR in both arms. OS HR0.84 (95%CI0.63–1.13), p=0.125.",
+      "treatment": "177Lu-PSMA-617 7.4 GBq ±10% IV every6 weeks for up to6 cycles plus ADT and investigator-selected ARPI",
+      "comparator": "ADT plus investigator-selected ARPI",
+      "safety": "Grade≥3 AEs51% vs43%; dry mouth46% vs43%, mostly grade1–2.",
+      "follow_up_publication": null,
+      "run_cycle": "evening",
+      "status": "identity_verified_page_data_pending"
+    },
+    {
+      "trial": "CAPItello-281",
+      "doi": "10.1016/j.annonc.2025.10.004",
+      "pmid": "41120017",
+      "registry_id": "NCT04493853",
+      "primary_title": "Capivasertib plus abiraterone in PTEN-deficient metastatic hormone-sensitive prostate cancer: CAPItello-281 phase III study",
+      "source_url": [
+        "https://doi.org/10.1016/j.annonc.2025.10.004",
+        "https://pubmed.ncbi.nlm.nih.gov/41120017/",
+        "https://clinicaltrials.gov/study/NCT04493853",
+        "https://doi.org/10.1016/j.annonc.2026.10.097",
+        "https://pubmed.ncbi.nlm.nih.gov/42918424/"
+      ],
+      "secondary_publications": [
+        {
+          "doi": "10.1016/j.annonc.2026.10.097",
+          "pmid": "42918424",
+          "title": "Capivasertib plus abiraterone in PTEN-deficient de novo metastatic hormone-sensitive prostate cancer: updated survival analysis from CAPItello-281",
+          "publication_date": "2026-10-23"
+        }
+      ],
+      "site": "Prostate / PTEN-deficient de novo mHSPC",
+      "setting": "First-line de novo mHSPC with PTEN loss by IHC",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "sample_size": 1012,
+      "denominators": {
+        "capivasertib_abi_ADT": 507,
+        "placebo_abi_ADT": 505
+      },
+      "primary_endpoint": "Investigator-assessed rPFS",
+      "results": "Primary rPFS median33.2 vs25.7 months; HR0.81 (95%CI0.66–0.98), p=0.034. Initial OS at26% maturity HR0.90 (95%CI0.71–1.15), p=0.401. Updated ad hoc descriptive analysis at42% OS maturity: OS HR0.82 (95%CI0.68–0.99), p=0.044; median OS57.4 vs46.5 months; not a prespecified alpha-controlled OS analysis.",
+      "treatment": "Capivasertib400 mg orally twice daily 4 days on/3 days off plus abiraterone1000 mg daily, prednisone/prednisolone and ADT",
+      "comparator": "Placebo plus abiraterone1000 mg daily, prednisone/prednisolone and ADT",
+      "safety": "Diarrhoea51.9% vs8.0%, hyperglycaemia38.0% vs12.9%, rash35.4% vs7.0%; AE-associated deaths7.2% vs5.2%.",
+      "status": "identity_verified_page_data_pending",
+      "run_cycle": "evening"
     }
   ],
   "held_candidates": [
@@ -5029,7 +5528,7 @@
     "Split the eight lung-SABR studies sharing one aggregate page into eight canonical pages.",
     "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 visualizations."
   ],
-  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy. CA017-078 was added to deferred-negative evidence after full phase III final-result review; OptiTROP-Lung06 was already in the duplicate ledger and its existing canonical page was repaired. Added six new identity-verified candidates (SAFFRON, TORCH, camrelizumab-rivoceranib-TACE, PATINA, MajesTEC-3, preoperative SOX phase II), held IKF-035 pending 66% interim analysis, and deferred negative iPRIME.",
+  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy. CA017-078 was added to deferred-negative evidence after full phase III final-result review; OptiTROP-Lung06 was already in the duplicate ledger and its existing canonical page was repaired. Added six new identity-verified candidates (SAFFRON, TORCH, camrelizumab-rivoceranib-TACE, PATINA, MajesTEC-3, preoperative SOX phase II), held IKF-035 pending 66% interim analysis, and deferred negative iPRIME. Evening cycle reached 30/30 identity-verified new unique underlying studies; none has yet completed full page extraction or release QA. Added SUCCESSOR-2, MajesTEC-9, PERSPECTIVE, orelabrutinib, frontMIND, pediatric blinatumomab, PSMAddition and CAPItello-281.",
   "toD_candidate_pending_release": {
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
@@ -5071,10 +5570,10 @@
       "not_uploaded": 30
     },
     "evening": {
-      "screening_records": 58,
-      "unique_candidate_ids": 50,
-      "new_unique_underlying_candidates": 34,
-      "primary_source_identity_verified_new_unique": 22,
+      "screening_records": 66,
+      "unique_candidate_ids": 58,
+      "new_unique_underlying_candidates": 42,
+      "primary_source_identity_verified_new_unique": 30,
       "full_page_data_verified_new_unique": 0,
       "held_unique": 8,
       "deferred_negative_unique": 4,
@@ -5085,15 +5584,15 @@
       "release_ready_pages": 0,
       "published": 0,
       "target_new_trials": 30,
-      "identity_verified_shortfall": 8,
+      "identity_verified_shortfall": 0,
       "uploaded": 0,
       "not_uploaded": 30
     },
     "daily_combined": {
-      "screening_records": 111,
-      "unique_candidate_ids": 103,
-      "new_unique_underlying_candidates": 72,
-      "primary_source_identity_verified_new_unique": 36,
+      "screening_records": 119,
+      "unique_candidate_ids": 111,
+      "new_unique_underlying_candidates": 80,
+      "primary_source_identity_verified_new_unique": 44,
       "full_page_data_verified_new_unique": 0,
       "held_unique": 26,
       "deferred_negative_unique": 10,
@@ -5104,7 +5603,7 @@
       "release_ready_pages": 0,
       "published": 0,
       "daily_target": 60,
-      "identity_verified_shortfall": 24,
+      "identity_verified_shortfall": 16,
       "uploaded": 0,
       "not_uploaded": 60
     }

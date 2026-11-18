@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T21:45:00+05:30",
+  "updated_at": "2026-11-18T22:12:00+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -998,15 +998,133 @@
       "verified_by": "publisher/PubMed/ASCO metadata",
       "verified_on": "2026-11-18",
       "source_url": "https://doi.org/10.1007/s00262-026-04589-4"
+    },
+    {
+      "trial_id": "successor-2",
+      "trial_name": "SUCCESSOR-2",
+      "doi": "10.1016/S0140-6736(26)01088-3",
+      "primary_title": "Mezigdomide plus carfilzomib and dexamethasone in relapsed or refractory multiple myeloma: a randomised, phase 3 trial",
+      "pmid": "42289183",
+      "registry_id": "NCT05552976",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)01088-3"
+    },
+    {
+      "trial_id": "majestec-9",
+      "trial_name": "MajesTEC-9",
+      "doi": "10.1200/JCO.2026.44.16_suppl.7507",
+      "primary_title": "MajesTEC-9: A phase 3 randomized study of teclistamab monotherapy vs investigator’s choice of pomalidomide, bortezomib, and dexamethasone or carfilzomib and dexamethasone in relapsed/refractory multiple myeloma",
+      "pmid": null,
+      "registry_id": "NCT05572515",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1200/JCO.2026.44.16_suppl.7507"
+    },
+    {
+      "trial_id": "perspective",
+      "trial_name": "PERSPECTIVE",
+      "doi": "10.1002/hem3.70400",
+      "primary_title": "Phase 3 PERSPECTIVE study: Ibrutinib with rituximab for initial treatment of patients with follicular lymphoma",
+      "pmid": "42317205",
+      "registry_id": "NCT02947347",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1002/hem3.70400"
+    },
+    {
+      "trial_id": "orelabrutinib-phase-iii-cll-sll",
+      "trial_name": "Orelabrutinib phase III CLL/SLL",
+      "doi": "10.1038/s41392-026-02818-x",
+      "primary_title": "Orelabrutinib versus chemoimmunotherapy in treatment-naïve chronic lymphocytic leukemia/small lymphocytic lymphoma: a randomized, phase 3 trial",
+      "pmid": "42402625",
+      "registry_id": "NCT04578613",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1038/s41392-026-02818-x"
+    },
+    {
+      "trial_id": "frontmind",
+      "trial_name": "frontMIND",
+      "doi": "10.1200/JCO.2026.44.17_suppl.LBA7000",
+      "primary_title": "frontMIND: Phase 3 study of tafasitamab plus lenalidomide and R-CHOP for patients with newly diagnosed diffuse large B-cell lymphoma",
+      "pmid": null,
+      "registry_id": "NCT04824092",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1200/JCO.2026.44.17_suppl.LBA7000"
+    },
+    {
+      "trial_id": "blinatumomab-pediatric-high-risk-b-all",
+      "trial_name": "Blinatumomab pediatric high-risk B-ALL",
+      "doi": "10.1056/NEJMoa2604166",
+      "primary_title": "Blinatumomab for Replacing Chemotherapy in Pediatric Acute Lymphoblastic Leukemia",
+      "pmid": "42748428",
+      "registry_id": "NCT03643276",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2604166"
+    },
+    {
+      "trial_id": "psmaddition",
+      "trial_name": "PSMAddition",
+      "doi": "10.1016/S0140-6736(26)01092-5",
+      "primary_title": "[177Lu]Lu-PSMA-617 in patients with PSMA-positive metastatic androgen pathway modulator-naive/sensitive prostate cancer (PSMAddition): a phase 3 randomised, controlled trial",
+      "pmid": "42561994",
+      "registry_id": "NCT04720157",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)01092-5"
+    },
+    {
+      "trial_id": "capitello-281",
+      "trial_name": "CAPItello-281",
+      "doi": "10.1016/j.annonc.2025.10.004",
+      "primary_title": "Capivasertib plus abiraterone in PTEN-deficient metastatic hormone-sensitive prostate cancer: CAPItello-281 phase III study",
+      "pmid": "41120017",
+      "registry_id": "NCT04493853",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "publisher/PubMed/ASCO primary record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/j.annonc.2025.10.004"
+    },
+    {
+      "trial_id": "capitello-281",
+      "trial_name": "CAPItello-281",
+      "doi": "10.1016/j.annonc.2026.10.097",
+      "primary_title": "Capivasertib plus abiraterone in PTEN-deficient de novo metastatic hormone-sensitive prostate cancer: updated survival analysis from CAPItello-281",
+      "pmid": "42918424",
+      "registry_id": "NCT04493853",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "PubMed primary follow-up record",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/j.annonc.2026.10.097",
+      "publication_type": "secondary_follow_up"
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "additional_title_checks": 8,
-    "total_entries": 80
+    "additional_title_checks": 9,
+    "total_entries": 89
   },
   "last_run_additions": 14,
   "last_run_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
-  "last_updated": "2026-11-18T21:45:00+05:30"
+  "last_updated": "2026-11-18T22:12:00+05:30"
 }
