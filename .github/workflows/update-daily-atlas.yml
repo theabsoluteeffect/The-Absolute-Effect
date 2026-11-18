@@ -9,7 +9,7 @@ on:
     branches: [main]
     paths:
       - 'data/daily-evidence-*.json'
-      - 'scripts/merge_all_daily_evidence.py'
+      - 'scripts/merge_all_daily_evidence.py'\n      - 'scripts/daily_evidence_reader.py'\n      - 'tests/**'\n      - '.github/workflows/update-daily-atlas.yml'
       - 'scripts/update_sitemap.py'
       - 'scripts/update_trial_page_seo.py'
       - 'scripts/validate-trial-release.js'
@@ -35,7 +35,7 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json, re
+          import json, re, sys
 
           # GBM is a disease entity within Neuro-Oncology, not a separate tumour-site level.
           p = Path('index.html')
@@ -91,7 +91,7 @@ jobs:
           assert '"site": "Glioblastoma"' not in text
 
           files = sorted(Path('data').glob('daily-evidence-*.json'))
-          total = sum(len(json.loads(p.read_text(encoding='utf-8'))) for p in files)
+          sys.path.insert(0, str(Path('scripts').resolve()))\n          from daily_evidence_reader import iter_trial_records\n          total = sum(1 for p in files for _ in iter_trial_records(json.loads(p.read_text(encoding='utf-8'))))
           roster = json.loads(Path('data/master-trial-roster.json').read_text(encoding='utf-8'))
           trials = roster.get('trials', [])
           assert trials, 'Master trial roster is empty'
