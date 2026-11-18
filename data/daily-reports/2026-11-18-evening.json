@@ -41,7 +41,7 @@
     "underlying_study_count_certification": "provisional until eight lung-SABR records have separate canonical page mapping"
   },
   "repairs": {
-    "existing_pages_manually_reviewed": 5,
+    "existing_pages_manually_reviewed": 7,
     "pages_repaired": 3,
     "repair_queue_open": 138,
     "repair_queue_resolved": 56,
@@ -71,7 +71,25 @@
       "IsKia MRD-surrogate evidence hold"
     ],
     "full_clinical_audit_complete": false,
-    "browser_rendered_qa_complete": false
+    "browser_rendered_qa_complete": false,
+    "manual_review_events": 8,
+    "morning_manual_pages_rechecked": 5,
+    "evening_manual_pages_reviewed": 3,
+    "unique_pages_manually_reviewed": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape",
+      "fight-302",
+      "gog-258",
+      "keynote-c93"
+    ],
+    "remaining_existing_pages_for_manual_audit": 453,
+    "morning_issues_closed_on_main": 8,
+    "queue_delta_since_morning": {
+      "open_items": "+5 (133→138)",
+      "resolved_items": "+3 (53→56)"
+    }
   },
   "nccn": {
     "total_guideline_metadata_records": 14,
