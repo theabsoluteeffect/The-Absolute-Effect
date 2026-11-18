@@ -60,13 +60,18 @@
         "trial_id": "keynote-c93",
         "page_path": "trial-pages/keynote-c93/index.html",
         "change": "Rebuilt full primary publication summary; fixed zero-width bars and comparator label; added 12-month PFS NNT4, 36-month PFS NNT5 and grade≥3 treatment-related AE avoided NNT4; updated source, registry, safety and limitation details."
+      },
+      {
+        "trial_id": "optitrop-lung06",
+        "page_path": "trial-pages/optitrop-lung06/index.html",
+        "change": "Rebuilt against NEJM primary publication; added PMID/NCT and ESMO LBA66 source; replaced zero-width median bars; added 12-month PFS 51.1% vs22.8% with 28.3 pp benefit and NNT4; removed invalid median-derived NNT."
       }
     ],
     "new_open_items": [
       "eight lung-SABR records sharing one aggregate page",
       "PR #5 pre-merge strict-validator gate gap",
       "18-Nov exact-30 release gate/page-build work",
-      "browser-rendered QA for GOG-258, KEYNOTE-A18 and KEYNOTE-C93",
+      "browser-rendered QA for GOG-258, KEYNOTE-A18, KEYNOTE-C93 and OptiTROP-Lung06",
       "EXCALIBER-RRMM evidence-maturity hold",
       "IsKia MRD-surrogate evidence hold"
     ],
@@ -89,7 +94,7 @@
     "morning_issues_closed_on_main": 8,
     "queue_delta_since_morning": {
       "open_items": "+3 (133→136)",
-      "resolved_items": "+5 (53→58)"
+      "resolved_items": "+6 (53→59)"
     }
   },
   "nccn": {
@@ -380,7 +385,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "a1278efd41ebfbcc526c7433d91dd9cdaa180d9e",
+  "content_commit_sha": "cfe95a1f0ea610897b5eda61a597279e1a0e0a65",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
