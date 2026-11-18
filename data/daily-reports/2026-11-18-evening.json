@@ -185,16 +185,21 @@
     "json_structural_checks": "passed before commit",
     "absolute_effect_attribute_checks": "passed before commit",
     "local_strict_release_validator": "not run; no new trial pages built",
-    "current_batch_PR_checks": "not applicable; no PR opened",
-    "current_batch_outcome_visualization_audit": "not run; no PR",
+    "current_batch_PR_checks": "not applicable; no PR opened because no new trial pages are built/release-ready.",
+    "current_batch_outcome_visualization_audit": "not run; no PR opened. HTML attribute checks passed, Cloudflare preview build succeeded; browser-rendered visualization QA pending.",
     "strict_validator_PR_gate": "not run for current batch",
     "main_post_merge_workflow_run": 44226050992,
     "main_post_merge_workflow_conclusion": "success"
   },
   "deployment": {
-    "PR5_cloudflare_preview_check": "success",
-    "production_live_pages": "not independently opened/verified",
-    "current_batch_preview": "not available; no PR"
+    "branch_preview_deployment": "success",
+    "branch_preview_commit": "59320298ec937d4e655e7f0a41cf12b5368016bd",
+    "branch_preview_url": "https://atlas-batch-2026-11-18-am.theabsoluteeffect.pages.dev",
+    "deployment_preview_url": "https://d19cbb1e.theabsoluteeffect.pages.dev",
+    "cloudflare_check_completed_at": "2026-11-18T14:48:24Z",
+    "browser_open_attempts": "Attempted to open KEYNOTE-C93, KEYNOTE-A18 and GOG-258 preview pages; the browser retrieval tool returned inaccessible/internal error, so visual rendering remains unverified.",
+    "production_live_pages": "not independently verified; no merge to main",
+    "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML"
   },
   "trial_of_the_day_candidate_pending_release": {
     "trial_id": "panova-3",
@@ -307,5 +312,6 @@
     "policy_excluded": 1,
     "screening_records": 102,
     "unique_candidate_ids": 96
-  }
+  },
+  "report_update_parent_sha": "a9878966b743922914939b43cb1c2a2ddace7c0f"
 }
