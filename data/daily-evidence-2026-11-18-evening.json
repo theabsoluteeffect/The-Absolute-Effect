@@ -11,24 +11,27 @@
   "morning_run_file": "data/daily-evidence-2026-11-18-morning.json",
   "screening_counts": {
     "screening_records": 102,
-    "unique_candidate_ids": 96,
-    "new_unique_underlying_candidates": 65,
+    "unique_candidate_ids": 94,
+    "new_unique_underlying_candidates": 63,
     "primary_source_verified_new_unique_page_build_candidates": 30,
     "source_verified_but_held_low_maturity": 4,
-    "primary_source_incomplete_or_not_verified_holds": 23,
-    "held_total": 27,
+    "primary_source_incomplete_or_not_verified_holds": 21,
+    "held_total": 25,
     "deferred_negative_unique": 8,
     "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
     "policy_exclusion_rechecks": 1,
     "deferred_negative_rechecks": 2,
-    "repeated_screening_records": 6,
+    "repeated_screening_records": 8,
     "pages_built": 0,
     "release_ready_pages": 0,
     "published_pages": 0,
     "target_new_trials": 30,
-    "eligible_candidate_shortfall": 0
+    "eligible_candidate_shortfall": 0,
+    "primary_source_identity_verified_new_unique": 30,
+    "full_page_data_verified_new_unique": 0,
+    "release_ready_page_shortfall": 30
   },
   "candidate_decisions": [
     {
@@ -793,7 +796,10 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "repeated_screening_record": true,
+      "repeated_screening_count": 1,
+      "canonical_hold_id": "harmonigi1"
     },
     {
       "run_date": "2026-11-18",
@@ -933,9 +939,12 @@
         "https://pubmed.ncbi.nlm.nih.gov/42790445/",
         "https://clinicaltrials.gov/study/NCT04975997"
       ],
-      "disposition": "held_primary_source_or_registry_unverified",
+      "disposition": "held_primary_source_verified_pfs_immature",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": true,
+      "repeated_screening_record": true,
+      "repeated_screening_count": 1,
+      "canonical_hold_id": "excaliberrrmm"
     },
     {
       "run_date": "2026-11-18",
@@ -1907,7 +1916,10 @@
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
       "release_ready": false,
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true,
+      "repeated_screening_count": 1,
+      "canonical_hold_id": "harmonigi1"
     },
     {
       "candidate_name": "DESTINY-Lung04",
@@ -2297,7 +2309,8 @@
       "recheck": true,
       "source": "live main roster and canonical page",
       "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "TAISHAN-302",
@@ -2318,7 +2331,8 @@
       "recheck": true,
       "source": "live main roster and canonical page",
       "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "HELEN-Trio 011",
@@ -2339,7 +2353,8 @@
       "recheck": true,
       "source": "live main roster and canonical page",
       "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "tobemstomig",
@@ -2347,7 +2362,8 @@
       "disposition": "existing_deferred_negative_rechecked",
       "matched_queue_entry": "tobemstomig",
       "recheck": true,
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "ATTRACTION-6",
@@ -2355,7 +2371,8 @@
       "disposition": "existing_deferred_negative_rechecked",
       "matched_queue_entry": "attraction-6",
       "recheck": true,
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "PIVOT-006",
@@ -2363,7 +2380,8 @@
       "disposition": "excluded_by_user_policy_rechecked",
       "recheck": true,
       "reason": "Explicit user policy excludes PIVOT.",
-      "run_cycle": "evening"
+      "run_cycle": "evening",
+      "repeated_screening_record": true
     },
     {
       "candidate_name": "LITESPARK-022",
@@ -2439,7 +2457,11 @@
       "design": "Randomised phase III; dual primary endpoints",
       "key_efficacy": "MRD-negative complete-response analysis published; co-primary PFS remains immature/ongoing.",
       "disposition": "held_primary_source_verified_pfs_immature",
-      "reason": "Do not present MRD surrogate response as mature survival benefit; await PFS maturity."
+      "reason": "Do not present MRD surrogate response as mature survival benefit; await PFS maturity.",
+      "repeated_screening_record": true,
+      "repeated_screening_count": 1,
+      "canonical_hold_id": "excaliberrrmm",
+      "primary_source_verified": true
     },
     {
       "candidate_name": "IsKia / EMN24",
@@ -3617,17 +3639,16 @@
       "candidate_name": "HARMONi-GI1",
       "site": "Gastrointestinal cancers",
       "setting": "Advanced disease",
-      "primary_doi": null,
-      "pmid": null,
       "registry_id": "NCT06591520",
-      "reason": "Conference-level result only; no DOI-resolving primary peer-reviewed publication or complete report verified.",
+      "reason": "Conference-level result only; no DOI-resolving primary peer-reviewed publication or complete report verified. | Sponsor press release only; no primary paper or official abstract DOI/title verified; do not conflate with HARMONi-A.",
       "next_action": "Retrieve the exact ESMO abstract identifier and full conference report; hold until primary-title/DOI requirement is met.",
       "source_urls": [
         "https://clinicaltrials.gov/study/NCT06591520"
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "repeated_screening_records": 1
     },
     {
       "run_date": "2026-11-18",
@@ -3760,7 +3781,7 @@
       "primary_doi": "10.1016/S1470-2045(26)00450-X",
       "pmid": "42790445",
       "registry_id": "NCT04975997",
-      "reason": "The publication reports the MRD-negative complete response co-primary endpoint; the PFS co-primary endpoint remains immature/ongoing. Do not present the interim MRD result as a mature PFS result.",
+      "reason": "The publication reports the MRD-negative complete response co-primary endpoint; the PFS co-primary endpoint remains immature/ongoing. Do not present the interim MRD result as a mature PFS result. | Do not present MRD surrogate response as mature survival benefit; await PFS maturity.",
       "next_action": "Hold until mature PFS analysis or explicitly authorized interim-page policy with complete protocol-defined endpoint hierarchy.",
       "source_urls": [
         "https://doi.org/10.1016/S1470-2045(26)00450-X",
@@ -3769,7 +3790,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "repeated_screening_records": 1
     },
     {
       "candidate_name": "NEOTERIC",
@@ -3812,15 +3834,6 @@
       "release_ready": false
     },
     {
-      "candidate_name": "HARMONi-GI1",
-      "candidate_id": "harmoni-gi1",
-      "disposition": "held_primary_source_not_verified",
-      "reason": "Sponsor press release only; no primary paper or official abstract DOI/title verified; do not conflate with HARMONi-A.",
-      "primary_source_verified": false,
-      "identity_resolution": "new_unique_candidate_pending_primary_source",
-      "release_ready": false
-    },
-    {
       "candidate_name": "DESTINY-Lung04",
       "candidate_id": "destiny-lung04",
       "disposition": "held_primary_source_not_verified",
@@ -3846,20 +3859,6 @@
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
       "release_ready": false
-    },
-    {
-      "candidate_name": "EXCALIBER-RRMM",
-      "candidate_id": "excaliber-rrmm",
-      "primary_doi": "10.1016/S1470-2045(26)00450-X",
-      "pmid": "42790445",
-      "registry_id": "NCT04975997",
-      "tumour_site": "Multiple myeloma",
-      "clinical_setting": "Relapsed/refractory multiple myeloma",
-      "phase": "III",
-      "design": "Randomised phase III; dual primary endpoints",
-      "key_efficacy": "MRD-negative complete-response analysis published; co-primary PFS remains immature/ongoing.",
-      "disposition": "held_primary_source_verified_pfs_immature",
-      "reason": "Do not present MRD surrogate response as mature survival benefit; await PFS maturity."
     },
     {
       "candidate_name": "IsKia / EMN24",
@@ -4377,13 +4376,13 @@
     "Split the eight lung-SABR studies sharing one aggregate page into eight canonical pages.",
     "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 visualizations."
   ],
-  "notes": "Full morning and evening candidate dispositions are now normalized in candidate_decisions; duplicate_check includes all 30 unique duplicate exclusions plus three duplicate rechecks; held_candidates includes 27; deferred_negative_additions includes all eight. Thirty new unique candidates have primary publication/registry identity for page construction, but no new trial page has been built or uploaded.",
+  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy.",
   "toD_candidate_pending_release": {
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
   },
   "duplicate_check_count": 30,
-  "held_candidate_count": 27,
+  "held_candidate_count": 25,
   "deferred_negative_candidate_count": 8,
   "morning_screening_summary": {
     "screened": 53,

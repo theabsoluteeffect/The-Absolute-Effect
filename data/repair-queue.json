@@ -861,9 +861,16 @@
         "https://clinicaltrials.gov/study/NCT04975997"
       ],
       "evidence": "The published first analysis reports MRD-negative complete response; the PFS co-primary endpoint remains pending. Do not present this as mature PFS evidence.",
-      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "next_action": "Retain one canonical review item; await mature co-primary PFS and complete denominators/safety before page release.",
       "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
-      "issue_id": "candidate-review-excaliber-rrmm"
+      "issue_id": "candidate-review-excaliber-rrmm",
+      "issue": "EXCALIBER-RRMM phase III: primary publication reports MRD-negative complete response, but the co-primary PFS result remains immature/ongoing. Do not present MRD response as mature survival benefit.",
+      "last_reviewed_on": "2026-11-18",
+      "verified": false,
+      "merged_duplicate_issue_ids": [
+        "candidate-excaliber-rrmm-maturity-2026-11-17",
+        "excaliber-rrmm-evidence-maturity-hold-2026-11-18"
+      ]
     },
     {
       "trial_id": "trastuzumab-botidotin-versus-t-dm1",
@@ -1585,20 +1592,6 @@
       "last_reviewed_on": "2026-11-17"
     },
     {
-      "issue_id": "candidate-excaliber-rrmm-maturity-2026-11-17",
-      "trial_id": "excaliber-rrmm",
-      "trial": "EXCALIBER-RRMM",
-      "category": "candidate_verification",
-      "severity": "high",
-      "source": "https://doi.org/10.1016/S1470-2045(26)00450-X",
-      "issue": "Co-primary PFS result remains immature/incomplete.",
-      "action": "Wait for mature co-primary PFS and complete denominators/safety.",
-      "status": "open",
-      "verified": false,
-      "created_on": "2026-11-17",
-      "last_reviewed_on": "2026-11-17"
-    },
-    {
       "issue_id": "candidate-jcog2510-results-2026-11-17",
       "trial_id": "jcog2510",
       "trial": "JCOG2510 / PRIME-CRT",
@@ -2006,21 +1999,6 @@
         "assets/absolute-effect.js"
       ],
       "next_action": "Verify all four pictograms in a browser preview and production, including labels, horizons, no overflow and correct 100-dot arithmetic."
-    },
-    {
-      "id": "excaliber-rrmm-evidence-maturity-hold-2026-11-18",
-      "trial_id": "excaliber-rrmm",
-      "trial": "EXCALIBER-RRMM",
-      "issue_type": "candidate_evidence_hold",
-      "severity": "medium",
-      "status": "open",
-      "created_on": "2026-11-18",
-      "primary_doi": "10.1016/S1470-2045(26)00450-X",
-      "pmid": "42790445",
-      "registry_id": "NCT04975997",
-      "source_url": "https://doi.org/10.1016/S1470-2045(26)00450-X",
-      "issue": "Phase III study has a published MRD-negative complete-response analysis, but the co-primary PFS result remains immature/ongoing. Do not promote the surrogate response result as mature survival benefit.",
-      "next_action": "Hold until full PFS analysis or an explicitly practice-relevant guideline recommendation; retain as an evidence-maturity review candidate."
     },
     {
       "id": "iskia-mrd-surrogate-evidence-hold-2026-11-18",
@@ -3916,6 +3894,41 @@
         "source_pmid": "42933458"
       },
       "next_action": "Verify browser rendering before closing on main."
+    },
+    {
+      "issue_id": "candidate-excaliber-rrmm-maturity-2026-11-17",
+      "trial_id": "excaliber-rrmm",
+      "trial": "EXCALIBER-RRMM",
+      "category": "candidate_verification",
+      "severity": "high",
+      "source": "https://doi.org/10.1016/S1470-2045(26)00450-X",
+      "issue": "Co-primary PFS result remains immature/incomplete.",
+      "action": "Wait for mature co-primary PFS and complete denominators/safety.",
+      "status": "merged_duplicate_queue_item",
+      "verified": false,
+      "created_on": "2026-11-17",
+      "last_reviewed_on": "2026-11-17",
+      "closed_on": "2026-11-18",
+      "canonical_issue_id": "candidate-review-excaliber-rrmm",
+      "resolution": "Consolidated into the pre-existing canonical EXCALIBER-RRMM review item; source and PFS maturity concern preserved."
+    },
+    {
+      "id": "excaliber-rrmm-evidence-maturity-hold-2026-11-18",
+      "trial_id": "excaliber-rrmm",
+      "trial": "EXCALIBER-RRMM",
+      "issue_type": "candidate_evidence_hold",
+      "severity": "medium",
+      "status": "merged_duplicate_queue_item",
+      "created_on": "2026-11-18",
+      "primary_doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00450-X",
+      "issue": "Phase III study has a published MRD-negative complete-response analysis, but the co-primary PFS result remains immature/ongoing. Do not promote the surrogate response result as mature survival benefit.",
+      "next_action": "Hold until full PFS analysis or an explicitly practice-relevant guideline recommendation; retain as an evidence-maturity review candidate.",
+      "closed_on": "2026-11-18",
+      "canonical_issue_id": "candidate-review-excaliber-rrmm",
+      "resolution": "Consolidated into the pre-existing canonical EXCALIBER-RRMM review item; source and PFS maturity concern preserved."
     }
   ],
   "run_audit_log": [
@@ -4043,6 +4056,15 @@
         "excluded": 1,
         "published": 0
       }
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "deduplicated held candidate records and queue items",
+      "held_unique": 25,
+      "repeat_screening_records": 8,
+      "canonicalized_queue_item": "candidate-review-excaliber-rrmm",
+      "merged_duplicate_queue_items": 2
     }
   ],
   "previous_partial_runs": [
@@ -4106,14 +4128,16 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 96,
+    "unique_candidate_ids": 94,
     "verified_new_unique": 30,
-    "held": 27,
+    "held": 25,
     "deferred_negative": 8,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE"
+    "status": "INCOMPLETE — identity verification complete for 30 candidates; page-level verification and release QA not done.",
+    "new_unique_underlying_candidates": 63,
+    "repeated_screening_records": 8
   },
   "last_updated": "2026-11-18T20:02:00+05:30",
   "last_run": {
@@ -4121,20 +4145,22 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 96,
+    "unique_candidate_ids": 94,
     "verified_new_unique": 30,
-    "held": 27,
+    "held": 25,
     "deferred_negative": 8,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE"
+    "status": "INCOMPLETE — identity verification complete for 30 candidates; page-level verification and release QA not done.",
+    "new_unique_underlying_candidates": 63,
+    "repeated_screening_records": 8
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
-    "open_items": 138,
-    "resolved_items": 56,
-    "note": "2026-11-18 evening: 30 new unique candidates have verified primary publication/registry identity for full page construction; 27 other new unique candidates are held (including two phase III surrogate-endpoint studies), eight are deferred-negative, 30 duplicates excluded, one PIVOT policy exclusion. No new trial pages built or uploaded. Three existing pages (GOG-258, KEYNOTE-A18, KEYNOTE-C93) repaired on branch; browser-rendered QA pending. NCCN full reference lists inaccessible.",
-    "release_holds_in_active_batch": 27
+    "open_items": 136,
+    "resolved_items": 58,
+    "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item.",
+    "release_holds_in_active_batch": 25
   }
 }
