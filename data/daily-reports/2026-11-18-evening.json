@@ -274,10 +274,20 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "826772340dc7eed7110c0bb019e7066bca1246ce",
+  "content_commit_sha": "457908bec93310aea70b0781fefa4a312eefe3d7",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
     "HELEN-Trio 011"
-  ]
+  ],
+  "candidate_disposition_counts": {
+    "primary_source_verified_new_unique": 30,
+    "held": 27,
+    "deferred_negative": 8,
+    "unique_duplicate_exclusions": 30,
+    "duplicate_rechecks": 3,
+    "policy_excluded": 1,
+    "screening_records": 102,
+    "unique_candidate_ids": 96
+  }
 }
