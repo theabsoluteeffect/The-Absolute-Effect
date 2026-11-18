@@ -8283,7 +8283,7 @@
         "DOI 10.1056/NEJMoa2611280"
       ],
       "freshness_review_status": "Primary NEJM publication rechecked 2026-11-18; NCCN full reference list inaccessible; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Replaced invalid zero-width median bars with scaled median-time bars and grade≥3 AE absolute-rate bars; no NNT/NNH; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Median PFS bars and grade≥3 AE rate bars verified; added 12-month PFS 51.1% vs22.8% and NNT4 panel (benefit attribute28.3 pp); browser-rendered QA pending.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-18",
       "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
@@ -8306,13 +8306,27 @@
       "safety": "Grade≥3 TEAEs47.6% vs60.6%; grade≥3 neutrophil decrease19.7% vs28.8%, WBC decrease9.6% vs16.4%, anaemia6.1% vs20.4%, platelet decrease3.9% vs14.6%; grade≥3 stomatitis2.2% in sac-TMT arm.",
       "quality_of_life": "Numerical QoL outcomes not stated in accessible primary abstract.",
       "limitations": "Prespecified interim analysis with median follow-up9.7 months and immature OS; open-label; conducted in China; full discontinuation/QoL data not in accessible abstract.",
-      "nnt_applicability": "Not applicable from median PFS/HR alone; no comparable fixed-time absolute PFS rates in accessible primary abstract. Do not calculate NNT/NNH from medians or HR.",
+      "nnt_applicability": "Valid approximate NNT4 for 12-month PFS using ESMO 2026 LBA66 landmark rates 51.1% vs22.8% (28.3 pp); no NNT from median PFS/HR; no NNT/NNH from cumulative AE rates.",
       "source_url": "https://doi.org/10.1056/NEJMoa2611280",
       "last_manual_reviewed_on": "2026-11-18",
       "absolute_effect": {
-        "applicability": "not_applicable_from_available_primary_abstract",
-        "reason": "Primary abstract reports median PFS and hazard ratio but no comparable fixed-time absolute PFS rates; NNT must not be derived from median PFS or HR. Grade≥3 AE proportions are cumulative over variable exposure and are displayed as absolute rates without NNT/NNH.",
-        "visualization": "Median PFS comparison (months) and grade≥3 TEAE rates (%)"
+        "endpoint": "12-month progression-free survival by BICR (RECIST 1.1)",
+        "horizon": "12 months",
+        "treatment_rate": "51.1%",
+        "control_rate": "22.8%",
+        "benefit_percentage_points": 28.3,
+        "nnt": 4,
+        "event_definition": "One additional patient alive without progression at 12 months",
+        "calculation": "ceil[100/(51.1−22.8)] = 4; approximate from ESMO 2026 LBA66 Kaplan–Meier landmark estimates",
+        "source_conference": "ESMO 2026 LBA66",
+        "source_url": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026",
+        "source_doi": "10.1056/NEJMoa2611280",
+        "source_pmid": "42929694",
+        "denominators": {
+          "sacituzumab_tirumotecan_pembrolizumab": 229,
+          "chemotherapy_pembrolizumab": 226
+        },
+        "additional_notes": "Do not derive NNT from median PFS or HR; no NNT/NNH for cumulative grade≥3 AE rates due variable treatment exposure."
       }
     },
     {

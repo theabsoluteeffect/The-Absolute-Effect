@@ -233,7 +233,26 @@
       "source_doi": "10.1016/S0140-6736(26)02095-7",
       "status": "HTML/roster checks passed; browser render pending"
     },
-    "new_candidate_pages": "No new pages built; candidate-page NNT/NNH and visualization QA not yet performed."
+    "new_candidate_pages": "No new pages built; candidate-page NNT/NNH and visualization QA not yet performed.",
+    "optitrop_lung06": {
+      "pfs_12m": {
+        "rates": "51.1% vs22.8%",
+        "benefit_pp": 28.3,
+        "nnt": 4,
+        "horizon": "12 months",
+        "source": "ESMO 2026 LBA66"
+      },
+      "median_pfs": {
+        "rates": "15.0 vs5.7 months",
+        "hr": "0.49 (95%CI0.36–0.65)",
+        "nnt": "not calculated from medians/HR"
+      },
+      "grade3plus_ae": {
+        "rates": "47.6% vs60.6%",
+        "nnt": "not calculated; cumulative exposure/time differs"
+      },
+      "status": "HTML attributes and finite widths checked; Cloudflare preview rebuild pending; browser rendering pending."
+    }
   },
   "roster_index_archive": {
     "new_roster_entries": 0,
@@ -359,7 +378,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "31e519af7687d0acf9faac1c8f37e5ddbfe2932d",
+  "content_commit_sha": "2388d1626a1d56ab6a1f7a696c60f983a47bdf50",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",

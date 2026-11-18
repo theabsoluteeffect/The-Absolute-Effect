@@ -3946,11 +3946,12 @@
         "https://pubmed.ncbi.nlm.nih.gov/42929694/",
         "https://clinicaltrials.gov/study/NCT06711900"
       ],
-      "resolution": "Rebuilt page with eligibility, treatment dose/schedule, endpoints, efficacy, safety, maturity and limitations; added PMID/NCT links; replaced zero-width bars with scaled median-time and grade≥3 AE bars; removed invalid NNT/NNH panel.",
+      "resolution": "Rebuilt page with eligibility, treatment dose/schedule, endpoints, efficacy, safety, maturity and limitations; added PMID/NCT links; replaced zero-width bars with scaled median-time and grade≥3 AE bars; removed invalid NNT/NNH panel. Added 12-month PFS landmark visualization from ESMO 2026 LBA66 and valid approximate NNT4 (28.3 percentage-point benefit).",
       "verification": {
         "pfs": "15.0 vs5.7 months; HR0.49 (95%CI0.36–0.65), p<0.001",
         "grade3plus_ae": "47.6% vs60.6%",
-        "nnt_nnh": "not calculated"
+        "nnt_nnh": "NNT4 for 12-month PFS; no NNT from median PFS/HR or variable-exposure AE rates.",
+        "pfs_12m": "51.1% vs22.8%; absolute benefit28.3 pp; NNT4; ESMO 2026 LBA66"
       },
       "next_action": "Browser-rendered QA before closing on main."
     }
