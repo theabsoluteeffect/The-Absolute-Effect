@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T19:43:00+05:30",
+  "updated_at": "2026-11-18T20:38:00+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -534,20 +534,44 @@
       "status": "open",
       "next_action": "Retain as contrary evidence; map exact HNSCC guideline reference when accessible.",
       "added_on": "2026-11-18"
+    },
+    {
+      "trial_id": "ca017-078",
+      "trial": "CA017-078 / ENERGIZE",
+      "status": "deferred_contrary_evidence",
+      "category": "deferred_negative",
+      "primary_title": "Neoadjuvant nivolumab plus gemcitabine-cisplatin followed by postsurgical adjuvant nivolumab versus neoadjuvant gemcitabine-cisplatin in patients with muscle-invasive bladder cancer: final results from the phase III CA017-078 trial",
+      "primary_doi": "10.1016/j.annonc.2026.10.096",
+      "pmid": "42918420",
+      "registry_id": "NCT03661320",
+      "publication_date": "2026-10-23",
+      "phase": "III",
+      "design": "Randomised phase III final analysis",
+      "setting": "Perioperative treatment of cisplatin-eligible resectable MIBC",
+      "population": "Previously untreated cT2–T4aN0M0 MIBC eligible for radical cystectomy and cisplatin; median follow-up54.5 months.",
+      "intervention": "Neoadjuvant nivolumab plus gemcitabine-cisplatin, radical cystectomy, then adjuvant nivolumab.",
+      "comparator": "Neoadjuvant gemcitabine-cisplatin followed by radical cystectomy alone.",
+      "primary_endpoint": "Co-primary pCR (ypT0N0) and EFS.",
+      "primary_result": "pCR39.1% vs29.6%; adjusted difference9.5% (99.91%CI−2.6 to21.6). EFS HR0.94 (95.74%CI0.71–1.25), p=0.6697. OS descriptive HR0.88 (95%CI0.64–1.21).",
+      "safety": "Grade3–4 TRAEs50.0% vs49.5%; one treatment-related death in nivolumab arm.",
+      "reason": "Negative phase III co-primary EFS result; pCR difference not statistically significant. Retain as contrary evidence for perioperative checkpoint inhibition in cisplatin-eligible MIBC; do not add as a positive new trial page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.096",
+        "https://pubmed.ncbi.nlm.nih.gov/42918420/",
+        "https://clinicaltrials.gov/study/NCT03661320"
+      ],
+      "next_action": "Revisit only if a guideline recommendation or mature subgroup analysis makes this evidence essential."
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "new_items_added": 2,
-    "existing_items_rechecked": [
-      "Tobemstomig",
-      "ATTRACTION-6"
-    ],
-    "total_items": 29
+    "added": [
+      "ca017-078"
+    ]
   },
-  "last_updated": "2026-11-18T19:43:00+05:30",
-  "last_run_date": "2026-11-17",
+  "last_updated": "2026-11-18T20:38:00+05:30",
+  "last_run_date": "2026-11-18",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026.",
   "last_run_additions": [
     "aspen-06",
@@ -555,11 +579,16 @@
     "amplify-7p",
     "tobemstomig",
     "danis-2",
-    "fulvestrant-ganetespib"
+    "fulvestrant-ganetespib",
+    {
+      "trial_id": "ca017-078",
+      "disposition": "deferred_contrary_evidence",
+      "reason": "Phase III EFS-negative final analysis"
+    }
   ],
-  "total_items": 27,
+  "total_items": 30,
   "summary": {
-    "total_items": 27,
+    "total_items": 30,
     "new_items_added_this_run": 6,
     "last_updated": "2026-11-18",
     "note": "Six newly screened negative/contrary-evidence studies added; existing PEMDA-HN and IROCAS entries retained without duplication."

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T20:14:00+05:30",
+  "updated_at": "2026-11-18T20:38:00+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -829,15 +829,67 @@
       "verified_by": "Lancet/PubMed metadata",
       "verified_on": "2026-11-18",
       "source_url": "https://doi.org/10.1016/S0140-6736(26)02095-7"
+    },
+    {
+      "trial_id": "optitrop-lung06",
+      "trial_name": "OptiTROP-Lung06",
+      "doi": "10.1056/NEJMoa2611280",
+      "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2611280"
+    },
+    {
+      "trial_id": "ca017-078",
+      "trial_name": "CA017-078 / ENERGIZE",
+      "doi": "10.1016/j.annonc.2026.10.096",
+      "primary_title": "Neoadjuvant nivolumab plus gemcitabine-cisplatin followed by postsurgical adjuvant nivolumab versus neoadjuvant gemcitabine-cisplatin in patients with muscle-invasive bladder cancer: final results from the phase III CA017-078 trial",
+      "pmid": "42918420",
+      "registry_id": "NCT03661320",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/j.annonc.2026.10.096"
+    },
+    {
+      "trial_id": "zeal-1l",
+      "trial_name": "ZEAL-1L",
+      "doi": "10.1016/j.jtho.2026.104087",
+      "primary_title": "Phase III Study of Niraparib Plus Pembrolizumab as Maintenance Therapy for Advanced or Metastatic NSCLC (ZEAL-1L)",
+      "pmid": "42431263",
+      "registry_id": "NCT04475939",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/j.jtho.2026.104087"
+    },
+    {
+      "trial_id": "pemda-hn",
+      "trial_name": "PEMDA-HN",
+      "doi": "10.1158/1078-0432.CCR-26-0819",
+      "primary_title": "Danvatirsen plus Pembrolizumab versus Pembrolizumab for Recurrent and/or Metastatic Head and Neck Squamous Cell Carcinoma (PEMDA-HN): A Randomized, Phase II Trial",
+      "pmid": "42615600",
+      "registry_id": "NCT05814666",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-0819"
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "morning_doi_title_entries_added": 0,
-    "total_entries": 67
+    "additional_title_checks": 4,
+    "total_entries": 71
   },
   "last_run_additions": 14,
   "last_run_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
-  "last_updated": "2026-11-18T20:14:00+05:30"
+  "last_updated": "2026-11-18T20:38:00+05:30"
 }

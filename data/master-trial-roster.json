@@ -8282,13 +8282,38 @@
         "NCT06711900",
         "DOI 10.1056/NEJMoa2611280"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "freshness_review_status": "Primary NEJM publication rechecked 2026-11-18; NCCN full reference list inaccessible; no NCCN citation claimed.",
+      "outcome_visual_review_status": "Replaced invalid zero-width median bars with scaled median-time bars and grade≥3 AE absolute-rate bars; no NNT/NNH; browser-rendered QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
+      "quality_check_date": "2026-11-18",
       "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
       "pmid": "42929694",
-      "registry_id": "NCT06711900"
+      "registry_id": "NCT06711900",
+      "primary_doi": "10.1056/NEJMoa2611280",
+      "phase": "III",
+      "design": "Open-label, multicentre, randomised 1:1 phase III trial",
+      "sample_size": 455,
+      "randomized_denominators": {
+        "sacituzumab_tirumotecan_pembrolizumab": 229,
+        "chemotherapy_pembrolizumab": 226
+      },
+      "population": "Previously untreated locally advanced stage IIIB/IIIC or metastatic stage IV nonsquamous NSCLC; PD-L1 TPS <1% by central 22C3; no targetable genomic alterations or sensitizing EGFR/ALK alterations; ECOG 0–1.",
+      "intervention": "Sacituzumab tirumotecan 4 mg/kg IV every 2 weeks plus pembrolizumab 400 mg IV every 6 weeks, up to 18 pembrolizumab cycles; treatment until progression or unacceptable toxicity.",
+      "comparator": "Pemetrexed 500 mg/m² plus carboplatin AUC5 or cisplatin 75 mg/m² every 3 weeks for up to four platinum doses, plus pembrolizumab 400 mg every 6 weeks; maintenance pemetrexed plus pembrolizumab.",
+      "primary_endpoint": "BICR-assessed PFS per RECIST 1.1.",
+      "follow_up": "Prespecified interim analysis; median follow-up 9.7 months; OS immature.",
+      "key_results": "Median PFS 15.0 vs5.7 months; HR0.49 (95% CI0.36–0.65), p<0.001. ORR50.2% vs47.3%; median DOR13.6 vs6.8 months. OS HR0.58 (95% CI0.38–0.88), immature.",
+      "safety": "Grade≥3 TEAEs47.6% vs60.6%; grade≥3 neutrophil decrease19.7% vs28.8%, WBC decrease9.6% vs16.4%, anaemia6.1% vs20.4%, platelet decrease3.9% vs14.6%; grade≥3 stomatitis2.2% in sac-TMT arm.",
+      "quality_of_life": "Numerical QoL outcomes not stated in accessible primary abstract.",
+      "limitations": "Prespecified interim analysis with median follow-up9.7 months and immature OS; open-label; conducted in China; full discontinuation/QoL data not in accessible abstract.",
+      "nnt_applicability": "Not applicable from median PFS/HR alone; no comparable fixed-time absolute PFS rates in accessible primary abstract. Do not calculate NNT/NNH from medians or HR.",
+      "source_url": "https://doi.org/10.1056/NEJMoa2611280",
+      "last_manual_reviewed_on": "2026-11-18",
+      "absolute_effect": {
+        "applicability": "not_applicable_from_available_primary_abstract",
+        "reason": "Primary abstract reports median PFS and hazard ratio but no comparable fixed-time absolute PFS rates; NNT must not be derived from median PFS or HR. Grade≥3 AE proportions are cumulative over variable exposure and are displayed as absolute rates without NNT/NNH.",
+        "visualization": "Median PFS comparison (months) and grade≥3 TEAE rates (%)"
+      }
     },
     {
       "id": "orient-16",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T20:14:00+05:30",
+  "updated_at": "2026-11-18T20:38:00+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -521,9 +521,10 @@
     "new_candidate_mapping_followups": 3,
     "full_reference_lists_accessible": 0,
     "exact_reference_numbers_inferred": 0,
-    "morning_candidate_mappings_added": 0
+    "morning_candidate_mappings_added": 0,
+    "additional_pending_mappings": 4
   },
-  "last_updated": "2026-11-18T20:14:00+05:30",
+  "last_updated": "2026-11-18T20:38:00+05:30",
   "last_run_date": "2026-11-18",
   "pending_trial_mappings": [
     {
@@ -1498,6 +1499,74 @@
       "status": "pending_exact_citation_mapping",
       "reason": "Full NCCN reference list inaccessible; no recommendation section or reference number inferred.",
       "next_action": "Map to exact current NCCN guideline/version/section/reference when source is accessible."
+    },
+    {
+      "trial_id": "optitrop-lung06",
+      "trial_name": "OptiTROP-Lung06",
+      "primary_doi": "10.1056/NEJMoa2611280",
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Exact current NCCN citation could not be checked because full guideline/reference list was inaccessible.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source becomes accessible."
+    },
+    {
+      "trial_id": "ca017-078",
+      "trial_name": "CA017-078 / ENERGIZE",
+      "primary_doi": "10.1016/j.annonc.2026.10.096",
+      "pmid": "42918420",
+      "registry_id": "NCT03661320",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Exact current NCCN citation could not be checked because full guideline/reference list was inaccessible.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source becomes accessible."
+    },
+    {
+      "trial_id": "zeal-1l",
+      "trial_name": "ZEAL-1L",
+      "primary_doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_id": "NCT04475939",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Exact current NCCN citation could not be checked because full guideline/reference list was inaccessible.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source becomes accessible."
+    },
+    {
+      "trial_id": "pemda-hn",
+      "trial_name": "PEMDA-HN",
+      "primary_doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_id": "NCT05814666",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Exact current NCCN citation could not be checked because full guideline/reference list was inaccessible.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source becomes accessible."
     }
   ],
   "alternative_guideline_sources": [

@@ -10,14 +10,14 @@
   "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
   "morning_run_file": "data/daily-evidence-2026-11-18-morning.json",
   "screening_counts": {
-    "screening_records": 102,
-    "unique_candidate_ids": 94,
-    "new_unique_underlying_candidates": 63,
+    "screening_records": 103,
+    "unique_candidate_ids": 95,
+    "new_unique_underlying_candidates": 64,
     "primary_source_verified_new_unique_page_build_candidates": 0,
     "source_verified_but_held_low_maturity": 4,
     "primary_source_incomplete_or_not_verified_holds": 21,
     "held_total": 25,
-    "deferred_negative_unique": 8,
+    "deferred_negative_unique": 9,
     "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
@@ -53,13 +53,13 @@
         "not_uploaded": 30
       },
       "evening": {
-        "screening_records": 49,
-        "unique_candidate_ids": 41,
-        "new_unique_underlying_candidates": 25,
+        "screening_records": 50,
+        "unique_candidate_ids": 42,
+        "new_unique_underlying_candidates": 26,
         "primary_source_identity_verified_new_unique": 16,
         "full_page_data_verified_new_unique": 0,
         "held_unique": 7,
-        "deferred_negative_unique": 2,
+        "deferred_negative_unique": 3,
         "unique_duplicate_exclusions": 16,
         "policy_excluded_unique": 0,
         "repeated_screening_records": 8,
@@ -72,13 +72,13 @@
         "not_uploaded": 30
       },
       "daily_combined": {
-        "screening_records": 102,
-        "unique_candidate_ids": 94,
-        "new_unique_underlying_candidates": 63,
+        "screening_records": 103,
+        "unique_candidate_ids": 95,
+        "new_unique_underlying_candidates": 64,
         "primary_source_identity_verified_new_unique": 30,
         "full_page_data_verified_new_unique": 0,
         "held_unique": 25,
-        "deferred_negative_unique": 8,
+        "deferred_negative_unique": 9,
         "unique_duplicate_exclusions": 30,
         "policy_excluded_unique": 1,
         "repeated_screening_records": 8,
@@ -2611,6 +2611,32 @@
       "disposition": "duplicate_excluded_from_new_additions_but_existing_page_updated",
       "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate.",
       "run_cycle": "evening"
+    },
+    {
+      "run_date": "2026-11-18",
+      "run_cycle": "evening",
+      "candidate_name": "CA017-078 / ENERGIZE",
+      "candidate_id": "ca017-078",
+      "primary_title": "Neoadjuvant nivolumab plus gemcitabine-cisplatin followed by postsurgical adjuvant nivolumab versus neoadjuvant gemcitabine-cisplatin in patients with muscle-invasive bladder cancer: final results from the phase III CA017-078 trial",
+      "primary_doi": "10.1016/j.annonc.2026.10.096",
+      "pmid": "42918420",
+      "registry_id": "NCT03661320",
+      "tumour_site": "Muscle-invasive bladder cancer",
+      "clinical_setting": "Perioperative/neoadjuvant cisplatin-eligible resectable MIBC",
+      "phase": "III",
+      "design": "Randomised phase III final analysis",
+      "primary_endpoint": "Co-primary pCR (ypT0N0) and EFS",
+      "key_efficacy": "pCR39.1% vs29.6%; adjusted difference9.5% (99.91%CI−2.6 to21.6). EFS HR0.94 (95.74%CI0.71–1.25), p=0.6697. OS descriptive HR0.88 (95%CI0.64–1.21).",
+      "grade3_5_toxicity": "Grade3–4 TRAEs50.0% vs49.5%; one treatment-related death in nivolumab arm.",
+      "disposition": "deferred_negative",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true,
+      "reason": "Negative phase III co-primary EFS result; pCR difference not statistically significant. Retain as contrary evidence for perioperative checkpoint inhibition in cisplatin-eligible MIBC; do not add as a positive new trial page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.096",
+        "https://pubmed.ncbi.nlm.nih.gov/42918420/",
+        "https://clinicaltrials.gov/study/NCT03661320"
+      ]
     }
   ],
   "duplicate_check": [
@@ -4262,6 +4288,32 @@
       "next_action": "Retain as contrary evidence; map exact HNSCC guideline reference when accessible.",
       "added_on": "2026-11-18",
       "run_cycle": "evening"
+    },
+    {
+      "run_date": "2026-11-18",
+      "run_cycle": "evening",
+      "candidate_name": "CA017-078 / ENERGIZE",
+      "candidate_id": "ca017-078",
+      "primary_title": "Neoadjuvant nivolumab plus gemcitabine-cisplatin followed by postsurgical adjuvant nivolumab versus neoadjuvant gemcitabine-cisplatin in patients with muscle-invasive bladder cancer: final results from the phase III CA017-078 trial",
+      "primary_doi": "10.1016/j.annonc.2026.10.096",
+      "pmid": "42918420",
+      "registry_id": "NCT03661320",
+      "tumour_site": "Muscle-invasive bladder cancer",
+      "clinical_setting": "Perioperative/neoadjuvant cisplatin-eligible resectable MIBC",
+      "phase": "III",
+      "design": "Randomised phase III final analysis",
+      "primary_endpoint": "Co-primary pCR (ypT0N0) and EFS",
+      "key_efficacy": "pCR39.1% vs29.6%; adjusted difference9.5% (99.91%CI−2.6 to21.6). EFS HR0.94 (95.74%CI0.71–1.25), p=0.6697. OS descriptive HR0.88 (95%CI0.64–1.21).",
+      "grade3_5_toxicity": "Grade3–4 TRAEs50.0% vs49.5%; one treatment-related death in nivolumab arm.",
+      "disposition": "deferred_negative",
+      "identity_resolution": "new_unique_underlying_study",
+      "primary_source_verified": true,
+      "reason": "Negative phase III co-primary EFS result; pCR difference not statistically significant. Retain as contrary evidence for perioperative checkpoint inhibition in cisplatin-eligible MIBC; do not add as a positive new trial page.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.annonc.2026.10.096",
+        "https://pubmed.ncbi.nlm.nih.gov/42918420/",
+        "https://clinicaltrials.gov/study/NCT03661320"
+      ]
     }
   ],
   "nccn": {
@@ -4586,14 +4638,14 @@
     "Split the eight lung-SABR studies sharing one aggregate page into eight canonical pages.",
     "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 visualizations."
   ],
-  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy.",
+  "notes": "102 screening records represent 94 unique candidate identities after eight repeat screens/rechecks. Thirty new unique studies have primary publication/registry identity confirmed for further page construction, but full page-level data extraction is not complete for any batch page; 0 release-ready and 0 uploaded. Twenty-five unique new candidates are held, eight unique candidates are deferred-negative, thirty unique candidates are duplicates, and one is excluded by policy. CA017-078 was added to deferred-negative evidence after full phase III final-result review; OptiTROP-Lung06 was already in the duplicate ledger and its existing canonical page was repaired.",
   "toD_candidate_pending_release": {
     "trial_id": "panova-3",
     "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
   },
   "duplicate_check_count": 30,
   "held_candidate_count": 25,
-  "deferred_negative_candidate_count": 8,
+  "deferred_negative_candidate_count": 9,
   "morning_screening_summary": {
     "screened": 53,
     "new_unique": 38,
@@ -4628,13 +4680,13 @@
       "not_uploaded": 30
     },
     "evening": {
-      "screening_records": 49,
-      "unique_candidate_ids": 41,
-      "new_unique_underlying_candidates": 25,
+      "screening_records": 50,
+      "unique_candidate_ids": 42,
+      "new_unique_underlying_candidates": 26,
       "primary_source_identity_verified_new_unique": 16,
       "full_page_data_verified_new_unique": 0,
       "held_unique": 7,
-      "deferred_negative_unique": 2,
+      "deferred_negative_unique": 3,
       "unique_duplicate_exclusions": 16,
       "policy_excluded_unique": 0,
       "repeated_screening_records": 8,
@@ -4647,13 +4699,13 @@
       "not_uploaded": 30
     },
     "daily_combined": {
-      "screening_records": 102,
-      "unique_candidate_ids": 94,
-      "new_unique_underlying_candidates": 63,
+      "screening_records": 103,
+      "unique_candidate_ids": 95,
+      "new_unique_underlying_candidates": 64,
       "primary_source_identity_verified_new_unique": 30,
       "full_page_data_verified_new_unique": 0,
       "held_unique": 25,
-      "deferred_negative_unique": 8,
+      "deferred_negative_unique": 9,
       "unique_duplicate_exclusions": 30,
       "policy_excluded_unique": 1,
       "repeated_screening_records": 8,

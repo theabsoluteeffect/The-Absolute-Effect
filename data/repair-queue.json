@@ -3929,6 +3929,30 @@
       "closed_on": "2026-11-18",
       "canonical_issue_id": "candidate-review-excaliber-rrmm",
       "resolution": "Consolidated into the pre-existing canonical EXCALIBER-RRMM review item; source and PFS maturity concern preserved."
+    },
+    {
+      "id": "optitrop-lung06-primary-publication-page-repair-2026-11-18",
+      "trial_id": "optitrop-lung06",
+      "trial": "OptiTROP-Lung06",
+      "canonical_page_path": "trial-pages/optitrop-lung06/index.html",
+      "issue_type": "clinical_content_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-18",
+      "closed_on": "2026-11-18",
+      "issue": "Existing page omitted registry/PMID links, had incorrect labels and zero-width median-PFS bars, and a misleading NNT panel derived from medians.",
+      "evidence": [
+        "https://doi.org/10.1056/NEJMoa2611280",
+        "https://pubmed.ncbi.nlm.nih.gov/42929694/",
+        "https://clinicaltrials.gov/study/NCT06711900"
+      ],
+      "resolution": "Rebuilt page with eligibility, treatment dose/schedule, endpoints, efficacy, safety, maturity and limitations; added PMID/NCT links; replaced zero-width bars with scaled median-time and grade≥3 AE bars; removed invalid NNT/NNH panel.",
+      "verification": {
+        "pfs": "15.0 vs5.7 months; HR0.49 (95%CI0.36–0.65), p<0.001",
+        "grade3plus_ae": "47.6% vs60.6%",
+        "nnt_nnh": "not calculated"
+      },
+      "next_action": "Browser-rendered QA before closing on main."
     }
   ],
   "run_audit_log": [
@@ -4065,6 +4089,13 @@
       "repeat_screening_records": 8,
       "canonicalized_queue_item": "candidate-review-excaliber-rrmm",
       "merged_duplicate_queue_items": 2
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "action": "repaired existing OptiTROP-Lung06 canonical page",
+      "page_path": "trial-pages/optitrop-lung06/index.html",
+      "status": "resolved_on_branch"
     }
   ],
   "previous_partial_runs": [
@@ -4128,16 +4159,17 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 94,
+    "unique_candidate_ids": 95,
     "verified_new_unique": 30,
     "held": 25,
     "deferred_negative": 8,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE — identity verification complete for 30 candidates; page-level verification and release QA not done.",
-    "new_unique_underlying_candidates": 63,
-    "repeated_screening_records": 8
+    "status": "INCOMPLETE — one additional negative study added to deferred queue; OptiTROP-Lung06 page repair staged.",
+    "new_unique_underlying_candidates": 64,
+    "repeated_screening_records": 8,
+    "deferred": 9
   },
   "last_updated": "2026-11-18T20:02:00+05:30",
   "last_run": {
@@ -4145,22 +4177,23 @@
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
     "screening_records": 102,
-    "unique_candidate_ids": 94,
+    "unique_candidate_ids": 95,
     "verified_new_unique": 30,
     "held": 25,
     "deferred_negative": 8,
     "duplicates": 30,
     "excluded": 1,
     "published": 0,
-    "status": "INCOMPLETE — identity verification complete for 30 candidates; page-level verification and release QA not done.",
-    "new_unique_underlying_candidates": 63,
-    "repeated_screening_records": 8
+    "status": "INCOMPLETE — one additional negative study added to deferred queue; OptiTROP-Lung06 page repair staged.",
+    "new_unique_underlying_candidates": 64,
+    "repeated_screening_records": 8,
+    "deferred": 9
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
     "open_items": 136,
-    "resolved_items": 58,
-    "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item.",
+    "resolved_items": 59,
+    "note": "2026-11-18 evening: 30 new unique studies have primary publication/registry identity confirmed, but 0 new pages are fully extracted, built or release-ready. Held list is deduplicated to 25 unique studies; repeated screens logged separately. Eight unique deferred-negative, 30 unique duplicate exclusions, one PIVOT policy exclusion. EXCALIBER-RRMM review records consolidated into one canonical queue item. OptiTROP-Lung06 canonical page repaired on 2026-11-18; zero-width bars and invalid median-derived NNT removed; browser QA pending.",
     "release_holds_in_active_batch": 25
   }
 }
