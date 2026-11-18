@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 DATA = ROOT / "data"
 
-html = INDEX.read_text(encoding="utf-8")
+sys.path.insert(0, str(ROOT / "scripts"))\nfrom daily_evidence_reader import iter_trial_records, record_id\n\nhtml = INDEX.read_text(encoding="utf-8")
 
 entries = []
 seen = set()
