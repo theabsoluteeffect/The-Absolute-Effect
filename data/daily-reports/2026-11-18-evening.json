@@ -251,7 +251,9 @@
         "rates": "47.6% vs60.6%",
         "nnt": "not calculated; cumulative exposure/time differs"
       },
-      "status": "HTML attributes and finite widths checked; Cloudflare preview rebuild pending; browser rendering pending."
+      "status": "HTML attributes and finite widths checked; Cloudflare preview rebuild pending; browser rendering pending.",
+      "source_url": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026",
+      "dose_schedule_source": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026"
     }
   },
   "roster_index_archive": {
@@ -378,7 +380,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "2388d1626a1d56ab6a1f7a696c60f983a47bdf50",
+  "content_commit_sha": "a1278efd41ebfbcc526c7433d91dd9cdaa180d9e",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",

@@ -8327,7 +8327,9 @@
           "chemotherapy_pembrolizumab": 226
         },
         "additional_notes": "Do not derive NNT from median PFS or HR; no NNT/NNH for cumulative grade≥3 AE rates due variable treatment exposure."
-      }
+      },
+      "dose_schedule_source": "ESMO 2026 LBA66 conference report",
+      "dose_schedule_source_url": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026"
     },
     {
       "id": "orient-16",
