@@ -31,7 +31,66 @@
     "eligible_candidate_shortfall": 0,
     "primary_source_identity_verified_new_unique": 30,
     "full_page_data_verified_new_unique": 0,
-    "release_ready_page_shortfall": 30
+    "release_ready_page_shortfall": 30,
+    "cycle_breakdown": {
+      "morning": {
+        "screening_records": 53,
+        "unique_candidate_ids": 53,
+        "new_unique_underlying_candidates": 38,
+        "primary_source_identity_verified_new_unique": 14,
+        "full_page_data_verified_new_unique": 0,
+        "held_unique": 18,
+        "deferred_negative_unique": 6,
+        "unique_duplicate_exclusions": 14,
+        "policy_excluded_unique": 1,
+        "repeated_screening_records": 0,
+        "pages_built": 0,
+        "release_ready_pages": 0,
+        "published": 0,
+        "target_new_trials": 30,
+        "identity_verified_shortfall": 16,
+        "uploaded": 0,
+        "not_uploaded": 30
+      },
+      "evening": {
+        "screening_records": 49,
+        "unique_candidate_ids": 41,
+        "new_unique_underlying_candidates": 25,
+        "primary_source_identity_verified_new_unique": 16,
+        "full_page_data_verified_new_unique": 0,
+        "held_unique": 7,
+        "deferred_negative_unique": 2,
+        "unique_duplicate_exclusions": 16,
+        "policy_excluded_unique": 0,
+        "repeated_screening_records": 8,
+        "pages_built": 0,
+        "release_ready_pages": 0,
+        "published": 0,
+        "target_new_trials": 30,
+        "identity_verified_shortfall": 14,
+        "uploaded": 0,
+        "not_uploaded": 30
+      },
+      "daily_combined": {
+        "screening_records": 102,
+        "unique_candidate_ids": 94,
+        "new_unique_underlying_candidates": 63,
+        "primary_source_identity_verified_new_unique": 30,
+        "full_page_data_verified_new_unique": 0,
+        "held_unique": 25,
+        "deferred_negative_unique": 8,
+        "unique_duplicate_exclusions": 30,
+        "policy_excluded_unique": 1,
+        "repeated_screening_records": 8,
+        "pages_built": 0,
+        "release_ready_pages": 0,
+        "published": 0,
+        "daily_target": 60,
+        "identity_verified_shortfall": 30,
+        "uploaded": 0,
+        "not_uploaded": 60
+      }
+    }
   },
   "candidate_decisions": [
     {
@@ -77,7 +136,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -113,7 +173,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -157,7 +218,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -201,7 +263,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -236,7 +299,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -271,7 +335,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -306,7 +371,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -341,7 +407,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -376,7 +443,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -411,7 +479,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -446,7 +515,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -481,7 +551,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -525,7 +596,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -560,7 +632,8 @@
       "disposition": "new_unique_primary_source_verified",
       "identity_resolution": "new_unique_underlying_study",
       "primary_source_verified": true,
-      "release_ready": false
+      "release_ready": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -583,7 +656,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -605,7 +679,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -627,7 +702,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -649,7 +725,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -671,7 +748,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -693,7 +771,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -715,7 +794,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -734,7 +814,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -753,7 +834,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -775,7 +857,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -799,7 +882,8 @@
       "primary_source_verified": false,
       "repeated_screening_record": true,
       "repeated_screening_count": 1,
-      "canonical_hold_id": "harmonigi1"
+      "canonical_hold_id": "harmonigi1",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -820,7 +904,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -841,7 +926,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -860,7 +946,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -879,7 +966,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -898,7 +986,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -917,7 +1006,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -944,7 +1034,8 @@
       "primary_source_verified": true,
       "repeated_screening_record": true,
       "repeated_screening_count": 1,
-      "canonical_hold_id": "excaliberrrmm"
+      "canonical_hold_id": "excaliberrrmm",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -968,7 +1059,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -991,7 +1083,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1013,7 +1106,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1036,7 +1130,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1059,7 +1154,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1081,7 +1177,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1111,7 +1208,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1140,7 +1238,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1170,7 +1269,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1199,7 +1299,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1229,7 +1330,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1258,7 +1360,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1288,7 +1391,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1317,7 +1421,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1344,7 +1449,8 @@
       "source_urls": [],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1374,7 +1480,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1404,7 +1511,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1434,7 +1542,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1464,7 +1573,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1494,7 +1604,8 @@
       ],
       "release_status": "not_applicable_existing_canonical_page",
       "disposition": "duplicate_excluded",
-      "identity_resolution": "same_underlying_study"
+      "identity_resolution": "same_underlying_study",
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -1513,7 +1624,8 @@
       "same_underlying_study": null,
       "source_urls": [],
       "disposition": "excluded_by_user_policy",
-      "identity_resolution": "excluded_by_user_policy"
+      "identity_resolution": "excluded_by_user_policy",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "CHALLENGE",
@@ -2412,7 +2524,8 @@
         "full grade 3–5 toxicity and QoL extraction pending",
         "local strict release validator not run"
       ],
-      "nccn_provenance": "not verified — source inaccessible"
+      "nccn_provenance": "not verified — source inaccessible",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "KEYNOTE-B96 / ENGOT-ov65",
@@ -2443,7 +2556,8 @@
         "full eligibility, subgroup, QoL and safety table extraction pending",
         "local strict release validator not run"
       ],
-      "nccn_provenance": "not verified — source inaccessible"
+      "nccn_provenance": "not verified — source inaccessible",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "EXCALIBER-RRMM",
@@ -2461,7 +2575,8 @@
       "repeated_screening_record": true,
       "repeated_screening_count": 1,
       "canonical_hold_id": "excaliberrrmm",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "IsKia / EMN24",
@@ -2475,7 +2590,8 @@
       "design": "Randomised phase III",
       "key_efficacy": "MRD primary endpoint reported; PFS remains immature.",
       "disposition": "held_primary_source_verified_surrogate_endpoint",
-      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction."
+      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
@@ -2493,7 +2609,8 @@
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded_from_new_additions_but_existing_page_updated",
-      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate."
+      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate.",
+      "run_cycle": "evening"
     }
   ],
   "duplicate_check": [
@@ -2515,7 +2632,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "LITESPARK-012",
@@ -2535,7 +2653,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "EMERALD-3",
@@ -2555,7 +2674,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "ATOMIC",
@@ -2575,7 +2695,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "ASCENT-04 / KEYNOTE-D19",
@@ -2595,7 +2716,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "SERENA-6",
@@ -2615,7 +2737,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "Fovinaciclib phase III",
@@ -2635,7 +2758,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "FIGHT-302",
@@ -2655,7 +2779,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "I-SPY2.2 RT-DXd",
@@ -2675,7 +2800,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "NEONIPIGA / GERCOR",
@@ -2695,7 +2821,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "BREAKWATER Cohort 3",
@@ -2715,7 +2842,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "PORTEC-4a",
@@ -2735,7 +2863,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "PORTEC-3",
@@ -2755,7 +2884,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "Toripalimab plus modified FOLFIRINOX",
@@ -2775,7 +2905,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "HARMONi-A",
@@ -2795,7 +2926,8 @@
       "disposition": "duplicate_excluded",
       "recheck": false,
       "source": "live main roster and canonical page",
-      "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+      "reason": "Exact canonical roster/page match; attach follow-up to existing study.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
@@ -2813,7 +2945,8 @@
       },
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded_from_new_additions_but_existing_page_updated",
-      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate."
+      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate.",
+      "run_cycle": "evening"
     },
     {
       "candidate_name": "OptiTROP-Lung06",
@@ -2830,7 +2963,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "RINGSIDE",
@@ -2847,7 +2981,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "ACT-GI",
@@ -2864,7 +2999,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "UNICORN",
@@ -2881,7 +3017,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "Dalmelitinib plus aumolertinib",
@@ -2898,7 +3035,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "INTerpath-001",
@@ -2915,7 +3053,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "NSABP B-59 / GeparDouze",
@@ -2932,7 +3071,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "evERA",
@@ -2949,7 +3089,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "Trastuzumab botidotin versus T-DM1",
@@ -2966,7 +3107,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "TroFuse-005",
@@ -2983,7 +3125,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "PANKU-Esophagus01",
@@ -3000,7 +3143,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "CAMORAL",
@@ -3017,7 +3161,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "TAISHAN-302",
@@ -3034,7 +3179,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     },
     {
       "candidate_name": "HELEN-Trio 011",
@@ -3051,7 +3197,8 @@
       "identity_resolution": "same_underlying_study",
       "disposition": "duplicate_excluded",
       "source": "18-Nov morning live roster/page reconciliation",
-      "reason": "Exact existing canonical roster/page match."
+      "reason": "Exact existing canonical roster/page match.",
+      "run_cycle": "morning"
     }
   ],
   "duplicate_rechecks": [
@@ -3150,7 +3297,8 @@
         "https://doi.org/10.1200/JCO-25-02974",
         "https://pubmed.ncbi.nlm.nih.gov/42691436/",
         "https://clinicaltrials.gov/study/NCT03498521"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "COMPANION-002",
@@ -3161,7 +3309,8 @@
         "https://doi.org/10.1200/JCO-26-02188",
         "https://pubmed.ncbi.nlm.nih.gov/42920414/",
         "https://clinicaltrials.gov/study/NCT05506943"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "ROSEWOOD",
@@ -3174,7 +3323,8 @@
         "https://doi.org/10.1007/s11523-026-01268-3",
         "https://pubmed.ncbi.nlm.nih.gov/42975620/",
         "https://clinicaltrials.gov/study/NCT03332017"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "SUNMO",
@@ -3187,7 +3337,8 @@
         "https://doi.org/10.1016/j.clml.2026.10.009",
         "https://pubmed.ncbi.nlm.nih.gov/42971868/",
         "https://clinicaltrials.gov/study/NCT05171647"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "GIMEMA ALL2820",
@@ -3198,7 +3349,8 @@
         "https://doi.org/10.1056/NEJMoa2606208",
         "https://pubmed.ncbi.nlm.nih.gov/42874102/",
         "https://clinicaltrials.gov/study/NCT04722848"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "FIND",
@@ -3209,7 +3361,8 @@
         "https://doi.org/10.1200/JCO-25-03009",
         "https://pubmed.ncbi.nlm.nih.gov/42525894/",
         "https://clinicaltrials.gov/study/NCT05904665"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "METIS",
@@ -3220,7 +3373,8 @@
         "https://doi.org/10.1038/s41392-026-02834-x",
         "https://pubmed.ncbi.nlm.nih.gov/42967914/",
         "https://clinicaltrials.gov/study/NCT04172259"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "MDT-BRIDGE",
@@ -3231,7 +3385,8 @@
         "https://doi.org/10.1038/s41591-026-04742-7",
         "https://pubmed.ncbi.nlm.nih.gov/42934326/",
         "https://clinicaltrials.gov/study/NCT05925530"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "PACK study",
@@ -3242,7 +3397,8 @@
         "https://doi.org/10.1016/j.radonc.2026.111836",
         "https://pubmed.ncbi.nlm.nih.gov/42913944/",
         "https://clinicaltrials.gov/study/NCT04194268"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "PECATI",
@@ -3253,7 +3409,8 @@
         "https://doi.org/10.1016/j.jtho.2026.106154",
         "https://pubmed.ncbi.nlm.nih.gov/43025701/",
         "https://clinicaltrials.gov/study/NCT04710628"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "Risovalisib phase II",
@@ -3264,7 +3421,8 @@
         "https://doi.org/10.1016/S1470-2045(26)00337-2",
         "https://pubmed.ncbi.nlm.nih.gov/43008753/",
         "https://clinicaltrials.gov/study/NCT05043922"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "NANT",
@@ -3275,7 +3433,8 @@
         "https://doi.org/10.1016/S1470-2045(26)00387-6",
         "https://pubmed.ncbi.nlm.nih.gov/42843394/",
         "https://clinicaltrials.gov/study/NCT04507841"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "eNRGy",
@@ -3288,7 +3447,8 @@
         "https://doi.org/10.1200/JCO-25-03128",
         "https://pubmed.ncbi.nlm.nih.gov/42385125/",
         "https://clinicaltrials.gov/study/NCT02912949"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "ImmunoPRISM",
@@ -3299,119 +3459,136 @@
         "https://doi.org/10.1038/s41591-026-04642-w",
         "https://www.nature.com/articles/s41591-026-04642-w",
         "https://clinicaltrials.gov/study/NCT05469893"
-      ]
+      ],
+      "run_cycle": "morning"
     },
     {
       "trial": "CHALLENGE",
       "doi": "10.1056/NEJMoa2502760",
       "pmid": "40450658",
       "registry_id": "NCT00819208",
-      "source_url": "https://doi.org/10.1056/NEJMoa2502760"
+      "source_url": "https://doi.org/10.1056/NEJMoa2502760",
+      "run_cycle": "evening"
     },
     {
       "trial": "ALASCCA",
       "doi": "10.1056/NEJMoa2504650",
       "pmid": null,
       "registry_id": "NCT02647099",
-      "source_url": "https://doi.org/10.1056/NEJMoa2504650"
+      "source_url": "https://doi.org/10.1056/NEJMoa2504650",
+      "run_cycle": "evening"
     },
     {
       "trial": "DESTINY-Breast09",
       "doi": "10.1056/NEJMoa2508668",
       "pmid": "41160818",
       "registry_id": "NCT04784715",
-      "source_url": "https://doi.org/10.1056/NEJMoa2508668"
+      "source_url": "https://doi.org/10.1056/NEJMoa2508668",
+      "run_cycle": "evening"
     },
     {
       "trial": "PANOVA-3",
       "doi": "10.1200/JCO-25-00746",
       "pmid": null,
       "registry_id": "NCT03377491",
-      "source_url": "https://doi.org/10.1200/JCO-25-00746"
+      "source_url": "https://doi.org/10.1200/JCO-25-00746",
+      "run_cycle": "evening"
     },
     {
       "trial": "TROPION-Breast02",
       "doi": "10.1016/j.annonc.2026.03.008",
       "pmid": "41937088",
       "registry_id": "NCT05374512",
-      "source_url": "https://doi.org/10.1016/j.annonc.2026.03.008"
+      "source_url": "https://doi.org/10.1016/j.annonc.2026.03.008",
+      "run_cycle": "evening"
     },
     {
       "trial": "PEARLY",
       "doi": "10.1016/j.annonc.2026.05.703",
       "pmid": "42218963",
       "registry_id": "NCT02581267",
-      "source_url": "https://doi.org/10.1016/j.annonc.2026.05.703"
+      "source_url": "https://doi.org/10.1016/j.annonc.2026.05.703",
+      "run_cycle": "evening"
     },
     {
       "trial": "ANDROMEDA",
       "doi": "10.1056/NEJMoa2028631",
       "pmid": "34192431",
       "registry_id": "NCT03201965",
-      "source_url": "https://doi.org/10.1056/NEJMoa2028631"
+      "source_url": "https://doi.org/10.1056/NEJMoa2028631",
+      "run_cycle": "evening"
     },
     {
       "trial": "OptiTROP-Lung05",
       "doi": "10.1016/S0140-6736(26)00968-2",
       "pmid": "42214392",
       "registry_id": "NCT06448312",
-      "source_url": "https://doi.org/10.1016/S0140-6736(26)00968-2"
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)00968-2",
+      "run_cycle": "evening"
     },
     {
       "trial": "LEAP-012",
       "doi": "10.1016/S0140-6736(24)02575-3",
       "pmid": "39798578",
       "registry_id": "NCT04246177",
-      "source_url": "https://doi.org/10.1016/S0140-6736(24)02575-3"
+      "source_url": "https://doi.org/10.1016/S0140-6736(24)02575-3",
+      "run_cycle": "evening"
     },
     {
       "trial": "TALAPRO-3",
       "doi": "10.1200/JCO.2026.44.17_suppl.LBA5007",
       "pmid": null,
       "registry_id": "NCT04821622",
-      "source_url": "https://doi.org/10.1200/JCO.2026.44.17_suppl.LBA5007"
+      "source_url": "https://doi.org/10.1200/JCO.2026.44.17_suppl.LBA5007",
+      "run_cycle": "evening"
     },
     {
       "trial": "AMPLITUDE",
       "doi": "10.1200/JCO.2025.43.17_suppl.LBA5006",
       "pmid": null,
       "registry_id": "NCT04497844",
-      "source_url": "https://doi.org/10.1200/JCO.2025.43.17_suppl.LBA5006"
+      "source_url": "https://doi.org/10.1200/JCO.2025.43.17_suppl.LBA5006",
+      "run_cycle": "evening"
     },
     {
       "trial": "TRAIN-3",
       "doi": "10.1016/S1470-2045(25)00707-7",
       "pmid": "41713473",
       "registry_id": "NCT03820063",
-      "source_url": "https://doi.org/10.1016/S1470-2045(25)00707-7"
+      "source_url": "https://doi.org/10.1016/S1470-2045(25)00707-7",
+      "run_cycle": "evening"
     },
     {
       "trial": "OPTIMUM/MUKnine",
       "doi": "10.1016/S1470-2045(26)00286-X",
       "pmid": "42705255",
       "registry_id": "NCT03188172",
-      "source_url": "https://doi.org/10.1016/S1470-2045(26)00286-X"
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00286-X",
+      "run_cycle": "evening"
     },
     {
       "trial": "CAMPASS",
       "doi": "10.1016/S1470-2045(26)00049-5",
       "pmid": "41825453",
       "registry_id": "NCT04964479",
-      "source_url": "https://doi.org/10.1016/S1470-2045(26)00049-5"
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00049-5",
+      "run_cycle": "evening"
     },
     {
       "trial": "LITESPARK-022",
       "doi": "10.1056/NEJMoa2518245",
       "pmid": "42384869",
       "registry_id": "NCT05239728",
-      "source_url": "https://doi.org/10.1056/NEJMoa2518245"
+      "source_url": "https://doi.org/10.1056/NEJMoa2518245",
+      "run_cycle": "evening"
     },
     {
       "trial": "KEYNOTE-B96 / ENGOT-ov65",
       "doi": "10.1016/S0140-6736(26)00602-1",
       "pmid": "41974150",
       "registry_id": "NCT05116189",
-      "source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1"
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1",
+      "run_cycle": "evening"
     }
   ],
   "held_candidates": [
@@ -3436,7 +3613,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3458,7 +3636,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3480,7 +3659,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3502,7 +3682,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3524,7 +3705,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3546,7 +3728,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3568,7 +3751,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3587,7 +3771,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3606,7 +3791,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3628,7 +3814,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3648,7 +3835,8 @@
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
       "primary_source_verified": false,
-      "repeated_screening_records": 1
+      "repeated_screening_records": 1,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3669,7 +3857,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3690,7 +3879,8 @@
       ],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3709,7 +3899,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3728,7 +3919,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3747,7 +3939,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3766,7 +3959,8 @@
       "source_urls": [],
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
-      "primary_source_verified": false
+      "primary_source_verified": false,
+      "first_seen_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3791,7 +3985,8 @@
       "disposition": "held_primary_source_or_registry_unverified",
       "identity_resolution": "new_unique_candidate_pending_verification",
       "primary_source_verified": false,
-      "repeated_screening_records": 1
+      "repeated_screening_records": 1,
+      "first_seen_cycle": "morning"
     },
     {
       "candidate_name": "NEOTERIC",
@@ -3806,7 +4001,8 @@
       "reason": "Small phase II sample and short follow-up; not a standard-practice-changing batch candidate.",
       "primary_source_verified": true,
       "identity_resolution": "new_unique_underlying_study",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "KROCUS",
@@ -3821,7 +4017,8 @@
       "reason": "Early-phase single-arm evidence; hold for later precision-oncology coverage.",
       "primary_source_verified": true,
       "identity_resolution": "new_unique_underlying_study",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "ASCENT-03",
@@ -3831,7 +4028,8 @@
       "reason": "Official conference abstract DOI/title and complete denominators not independently verified.",
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "DESTINY-Lung04",
@@ -3840,7 +4038,8 @@
       "reason": "WCLC summary only; exact abstract DOI/title and complete outcomes/safety not verified.",
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "LUCERNA",
@@ -3849,7 +4048,8 @@
       "reason": "Protocol/design source only; no outcome results.",
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "JCOG2510",
@@ -3858,7 +4058,8 @@
       "reason": "Protocol source only; no outcome results.",
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
-      "release_ready": false
+      "release_ready": false,
+      "first_seen_cycle": "evening"
     },
     {
       "candidate_name": "IsKia / EMN24",
@@ -3872,7 +4073,8 @@
       "design": "Randomised phase III",
       "key_efficacy": "MRD primary endpoint reported; PFS remains immature.",
       "disposition": "held_primary_source_verified_surrogate_endpoint",
-      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction."
+      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction.",
+      "first_seen_cycle": "evening"
     }
   ],
   "deferred_negative_additions": [
@@ -3898,7 +4100,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3921,7 +4124,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3943,7 +4147,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3966,7 +4171,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -3989,7 +4195,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "run_date": "2026-11-18",
@@ -4011,7 +4218,8 @@
       ],
       "disposition": "deferred_negative",
       "identity_resolution": "new_unique_underlying_study",
-      "primary_source_verified": true
+      "primary_source_verified": true,
+      "run_cycle": "morning"
     },
     {
       "id": "canova",
@@ -4031,7 +4239,8 @@
       "reason": "Negative phase III primary endpoint; retain as contrary evidence, not preferred regimen.",
       "status": "open",
       "next_action": "Map to exact current NCCN myeloma pathway when full reference list is accessible.",
-      "added_on": "2026-11-18"
+      "added_on": "2026-11-18",
+      "run_cycle": "evening"
     },
     {
       "id": "setanaxib",
@@ -4051,7 +4260,8 @@
       "reason": "Primary endpoint not met; exploratory signals are not confirmatory.",
       "status": "open",
       "next_action": "Retain as contrary evidence; map exact HNSCC guideline reference when accessible.",
-      "added_on": "2026-11-18"
+      "added_on": "2026-11-18",
+      "run_cycle": "evening"
     }
   ],
   "nccn": {
@@ -4396,5 +4606,64 @@
     "release_ready": 0,
     "not_uploaded": 30,
     "shortfall_to_30_verified": 16
+  },
+  "cycle_breakdown": {
+    "morning": {
+      "screening_records": 53,
+      "unique_candidate_ids": 53,
+      "new_unique_underlying_candidates": 38,
+      "primary_source_identity_verified_new_unique": 14,
+      "full_page_data_verified_new_unique": 0,
+      "held_unique": 18,
+      "deferred_negative_unique": 6,
+      "unique_duplicate_exclusions": 14,
+      "policy_excluded_unique": 1,
+      "repeated_screening_records": 0,
+      "pages_built": 0,
+      "release_ready_pages": 0,
+      "published": 0,
+      "target_new_trials": 30,
+      "identity_verified_shortfall": 16,
+      "uploaded": 0,
+      "not_uploaded": 30
+    },
+    "evening": {
+      "screening_records": 49,
+      "unique_candidate_ids": 41,
+      "new_unique_underlying_candidates": 25,
+      "primary_source_identity_verified_new_unique": 16,
+      "full_page_data_verified_new_unique": 0,
+      "held_unique": 7,
+      "deferred_negative_unique": 2,
+      "unique_duplicate_exclusions": 16,
+      "policy_excluded_unique": 0,
+      "repeated_screening_records": 8,
+      "pages_built": 0,
+      "release_ready_pages": 0,
+      "published": 0,
+      "target_new_trials": 30,
+      "identity_verified_shortfall": 14,
+      "uploaded": 0,
+      "not_uploaded": 30
+    },
+    "daily_combined": {
+      "screening_records": 102,
+      "unique_candidate_ids": 94,
+      "new_unique_underlying_candidates": 63,
+      "primary_source_identity_verified_new_unique": 30,
+      "full_page_data_verified_new_unique": 0,
+      "held_unique": 25,
+      "deferred_negative_unique": 8,
+      "unique_duplicate_exclusions": 30,
+      "policy_excluded_unique": 1,
+      "repeated_screening_records": 8,
+      "pages_built": 0,
+      "release_ready_pages": 0,
+      "published": 0,
+      "daily_target": 60,
+      "identity_verified_shortfall": 30,
+      "uploaded": 0,
+      "not_uploaded": 60
+    }
   }
 }
