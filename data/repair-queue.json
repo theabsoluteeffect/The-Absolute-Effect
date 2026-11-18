@@ -3842,7 +3842,8 @@
       "resolved_items_after_update": 53,
       "full_clinical_audit_complete": false,
       "browser_rendered_qa": false,
-      "notes": "Four existing pages and one release/index code path manually checked; KEYNOTE-A18 PFS effect remains open; 52 dated-context items remain."
+      "notes": "Four existing pages and one release/index code path manually checked; KEYNOTE-A18 PFS effect remains open; 52 dated-context items remain.",
+      "branch_data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
     }
   ],
   "previous_partial_runs": [

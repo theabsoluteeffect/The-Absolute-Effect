@@ -1245,7 +1245,8 @@
       "pr_opened": false,
       "merged": false,
       "status": "INCOMPLETE — 14 primary-source/registry identities verified; 16 more candidates needed to reach 30; full page construction and release QA not completed; no PR opened.",
-      "next_action": "Resume this branch; verify at least 16 additional new unique candidates, then build and QA exactly 30 complete pages before opening a PR."
+      "next_action": "Resume this branch; verify at least 16 additional new unique candidates, then build and QA exactly 30 complete pages before opening a PR.",
+      "data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
     },
     "main_branch_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-17-am",
@@ -1507,7 +1508,9 @@
       "current_tod": "PANKU-Esophagus01",
       "previous_tod": "GemX",
       "report_path": "data/daily-reports/2026-11-18-morning.json",
-      "evidence_path": "data/daily-evidence-2026-11-18-morning.json"
+      "evidence_path": "data/daily-evidence-2026-11-18-morning.json",
+      "data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
+      "branch_head_at_data_commit": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
     }
   },
   "trials": [
