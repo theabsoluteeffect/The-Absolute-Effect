@@ -3,7 +3,7 @@
   "run_date": "2026-11-18",
   "run_timestamp_local": "2026-11-18T20:14:00+05:30",
   "cycle": "evening continuation on the existing serialized AM branch",
-  "status": "INCOMPLETE",
+  "status": "INCOMPLETE — 30/30 evening candidates identity-verified; 0/30 complete pages built or uploaded; morning cycle 14/30 identity-verified; no PR/merge.",
   "repository": {
     "name": "theabsoluteeffect/The-Absolute-Effect",
     "base_branch": "main",
@@ -70,7 +70,7 @@
       "merge_commit_sha": "88e90e26cfc55a33420090d495de6ca83b06a4fb",
       "head": "56da9929bf3b256c8f3dc76ced4be4cb9524f203"
     },
-    "branch_head_before_report_update": "44d584a292bb6f7ff52573430a605b36dfefa1f4",
+    "branch_head_before_report_update": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
     "current_branch_pr": null
   },
   "repairs": {
@@ -394,10 +394,11 @@
     "main_post_merge_workflow_run": 44226050992,
     "main_post_merge_workflow_conclusion": "success",
     "branch_preview_build": "success",
-    "latest_preview_commit": "a2207defa9575590a85ff39b3a6638b65dd3cb35",
-    "strict_release_validator": "not run — no complete 30-page release batch; no PR opened",
+    "latest_preview_commit": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
+    "strict_release_validator": "not run — no complete 30-page batch; no PR opened",
     "outcome_visualization_audit": "HTML-level checks passed for 12 panels across five repaired pages; browser-rendered review remains open",
-    "production_build": "not triggered"
+    "production_build": "not triggered",
+    "cloudflare_deployment_id": "edd499d4-1953-4ee1-832d-0a3cdee7b322"
   },
   "deployment": {
     "branch_preview_deployment": "success",
@@ -408,8 +409,10 @@
     "browser_open_attempts": "Attempted to open KEYNOTE-C93, KEYNOTE-A18 and GOG-258 preview pages; the browser retrieval tool returned inaccessible/internal error, so visual rendering remains unverified.",
     "production_live_pages": "not independently verified; no merge to main",
     "current_branch_preview": "deployed successfully for page-repair commit; subsequent report-only commit did not alter page HTML",
-    "branch_preview": "Cloudflare Pages build successful on commit a2207def; representative page URL could not be opened through the available web viewer",
-    "production_deployment": "not deployed/verified; main unchanged"
+    "branch_preview": "success",
+    "production_deployment": "not deployed/verified; main unchanged",
+    "branch_preview_deployment_id": "edd499d4-1953-4ee1-832d-0a3cdee7b322",
+    "representative_page_open": "not independently verified; available web viewer returned an error"
   },
   "trial_of_the_day_candidate_pending_release": {
     "trial_id": "panova-3",
@@ -514,7 +517,7 @@
     "HELEN-Trio 011"
   ],
   "candidate_ledger_file": "data/daily-evidence-2026-11-18-evening.json",
-  "content_commit_sha": "44d584a292bb6f7ff52573430a605b36dfefa1f4",
+  "content_commit_sha": "b0249aaabb1a74c6c4b089e1e8edaf0b0a21e5d9",
   "duplicate_recheck_names": [
     "CAMORAL",
     "TAISHAN-302",
@@ -630,5 +633,7 @@
     "pmid": "42929693",
     "registry_id": "NCT05261399",
     "reason": "New primary NEJM publication within the preceding month and absent from the Atlas; actual ToD change waits for a complete page and release QA."
-  }
+  },
+  "uploaded_cases": [],
+  "published_pages": 0
 }
