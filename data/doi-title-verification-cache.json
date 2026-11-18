@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T19:43:00+05:30",
+  "updated_at": "2026-11-18T20:02:00+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -790,15 +790,54 @@
       "verified_by": "PubMed/Crossref/publisher metadata",
       "verified_on": "2026-11-18",
       "source_url": "https://doi.org/10.1158/2767-9764.CRC-26-0422"
+    },
+    {
+      "trial_id": "litespark-022",
+      "trial_name": "LITESPARK-022",
+      "doi": "10.1056/NEJMoa2518245",
+      "primary_title": "Adjuvant Pembrolizumab plus Belzutifan for Renal-Cell Carcinoma",
+      "pmid": "42384869",
+      "registry_id": "NCT05239728",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "NEJM/PubMed metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1056/NEJMoa2518245"
+    },
+    {
+      "trial_id": "keynote-b96",
+      "trial_name": "ENGOT-ov65 / KEYNOTE-B96",
+      "doi": "10.1016/S0140-6736(26)00602-1",
+      "primary_title": "Pembrolizumab plus weekly paclitaxel in platinum-resistant recurrent ovarian cancer (ENGOT-ov65/KEYNOTE-B96): a multicentre, randomised, double-blind, phase 3 study",
+      "pmid": "41974150",
+      "registry_id": "NCT05116189",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "Lancet/PubMed metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1"
+    },
+    {
+      "trial_id": "keynote-c93",
+      "trial_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "doi": "10.1016/S0140-6736(26)02095-7",
+      "primary_title": "First-line pembrolizumab versus carboplatin plus paclitaxel in participants with mismatch repair-deficient advanced or recurrent endometrial cancer (KEYNOTE-C93/GOG-3064/ENGOT-en15): interim analysis of a multicentre, open-label, randomised, active-comparator controlled, phase 3 trial",
+      "pmid": "42933458",
+      "registry_id": "NCT05173987",
+      "verified": true,
+      "title_match": true,
+      "verified_by": "Lancet/PubMed metadata",
+      "verified_on": "2026-11-18",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)02095-7"
     }
   ],
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "new_title_checks_added": 20,
-    "total_entries": 64
+    "new_title_checks_added": 3,
+    "total_entries": 67
   },
   "last_run_additions": 14,
   "last_run_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
-  "last_updated": "2026-11-18T19:43:00+05:30"
+  "last_updated": "2026-11-18T20:02:00+05:30"
 }

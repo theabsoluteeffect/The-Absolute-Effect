@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T19:43:00+05:30",
+  "updated_at": "2026-11-18T20:02:00+05:30",
   "source_audit": {
     "status": "PARTIAL",
     "audited_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
@@ -1983,11 +1983,11 @@
       "status": "open",
       "created_on": "2026-11-18",
       "trial": "18 November evening batch",
-      "issue": "28 new unique candidates passed primary-source verification for page build; NEOTERIC and KROCUS are held for low maturity. No pages built; zero release-ready and two short of target.",
+      "issue": "Thirty new unique studies now have a verified primary publication and registry, but none has a complete new page or release QA. Two additional phase III surrogate-endpoint studies (EXCALIBER-RRMM and IsKia) remain held for maturity; no padding is required for the candidate target.",
       "evidence": [
         "data/daily-evidence-2026-11-18-evening.json"
       ],
-      "next_action": "Build/QA 28 verified candidates, continue screening for two more eligible studies, and do not open PR until exactly 30 complete pages exist."
+      "next_action": "Build and fully source-extract the 30 verified candidates, inspect every page and visualization, run local strict validator, then open PR only when all 30 are release-ready."
     },
     {
       "id": "2026-11-18-browser-rendered-effect-qa",
@@ -2006,6 +2006,36 @@
         "assets/absolute-effect.js"
       ],
       "next_action": "Verify all four pictograms in a browser preview and production, including labels, horizons, no overflow and correct 100-dot arithmetic."
+    },
+    {
+      "id": "excaliber-rrmm-evidence-maturity-hold-2026-11-18",
+      "trial_id": "excaliber-rrmm",
+      "trial": "EXCALIBER-RRMM",
+      "issue_type": "candidate_evidence_hold",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "primary_doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00450-X",
+      "issue": "Phase III study has a published MRD-negative complete-response analysis, but the co-primary PFS result remains immature/ongoing. Do not promote the surrogate response result as mature survival benefit.",
+      "next_action": "Hold until full PFS analysis or an explicitly practice-relevant guideline recommendation; retain as an evidence-maturity review candidate."
+    },
+    {
+      "id": "iskia-mrd-surrogate-evidence-hold-2026-11-18",
+      "trial_id": "iskia",
+      "trial": "IsKia / EMN24",
+      "issue_type": "candidate_evidence_hold",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "primary_doi": "10.1038/s41591-026-04282-0",
+      "pmid": "41942646",
+      "registry_id": "NCT04483739",
+      "source_url": "https://doi.org/10.1038/s41591-026-04282-0",
+      "issue": "Randomised phase III newly diagnosed myeloma study reports an MRD primary endpoint while PFS remains immature. This is a valid surrogate-endpoint trial but is not being used to fill the batch until clinical maturity and exact regimen/outcome details are fully extracted.",
+      "next_action": "Retain in the review queue; extract full randomisation, MRD definition/timepoint, PFS maturity and grade 3–5 toxicity before considering release."
     }
   ],
   "resolved_items": [
@@ -3856,6 +3886,36 @@
         "received_assigned_treatment_n": 707
       },
       "next_action": "Verify branch/production rendering before closing on main."
+    },
+    {
+      "id": "keynote-c93-primary-publication-repair-2026-11-18",
+      "trial_id": "keynote-c93",
+      "trial": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "canonical_page_path": "trial-pages/keynote-c93/index.html",
+      "issue_type": "clinical_content_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-18",
+      "closed_on": "2026-11-18",
+      "issue": "Existing page had zero-width efficacy bars, a duplicated comparator label, blank registry, incomplete safety/source section, and only one 12-month PFS absolute-effect panel.",
+      "evidence": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+        "https://doi.org/10.1016/S0140-6736(26)02095-7",
+        "https://clinicaltrials.gov/study/NCT05173987"
+      ],
+      "resolution": "Rebuilt the page with exact eligibility, randomisation, dose/schedule, endpoints, PFS/OS, toxicity, discontinuation, deaths, limitations and source links. Repaired bar widths and labels; added 12-month PFS NNT4, 36-month PFS NNT5 and grade ≥3 TRAE-avoided NNT4 panels with source-grounded percentage-point attributes.",
+      "verification": {
+        "pfs_12m": "67% vs40%",
+        "pfs_36m": "53% vs30%",
+        "grade3plus_trae": "18% (27/149) vs51% (73/144)",
+        "nnt": [
+          4,
+          5,
+          4
+        ],
+        "source_pmid": "42933458"
+      },
+      "next_action": "Verify browser rendering before closing on main."
     }
   ],
   "run_audit_log": [
@@ -3963,6 +4023,26 @@
       ],
       "closed_or_resolved": 2,
       "full_clinical_audit_complete": false
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "branch": "atlas-batch/2026-11-18-am",
+      "repair_actions": [
+        "KEYNOTE-C93 complete primary publication and visualization repair"
+      ],
+      "new_open_items": [
+        "EXCALIBER-RRMM evidence maturity hold",
+        "IsKia MRD surrogate evidence hold"
+      ],
+      "candidate_counter": {
+        "verified_new_unique": 30,
+        "held": 27,
+        "duplicates": 30,
+        "deferred_negative": 8,
+        "excluded": 1,
+        "published": 0
+      }
     }
   ],
   "previous_partial_runs": [
@@ -4025,40 +4105,36 @@
     "date": "2026-11-18",
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
-    "screening_records": 97,
-    "unique_candidate_ids": 91,
-    "verified_new_unique": 28,
-    "held": 25,
+    "screening_records": 102,
+    "unique_candidate_ids": 96,
+    "verified_new_unique": 30,
+    "held": 27,
     "deferred_negative": 8,
-    "duplicates": 29,
+    "duplicates": 30,
     "excluded": 1,
     "published": 0,
     "status": "INCOMPLETE"
   },
-  "last_updated": "2026-11-18T19:43:00+05:30",
+  "last_updated": "2026-11-18T20:02:00+05:30",
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
     "branch": "atlas-batch/2026-11-18-am",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
-    "screening_records": 97,
-    "unique_candidate_ids": 91,
-    "verified_new_unique": 28,
-    "held": 25,
+    "screening_records": 102,
+    "unique_candidate_ids": 96,
+    "verified_new_unique": 30,
+    "held": 27,
     "deferred_negative": 8,
-    "duplicates": 29,
+    "duplicates": 30,
     "excluded": 1,
     "published": 0,
     "status": "INCOMPLETE"
   },
   "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
-    "open_items": 136,
-    "resolved_items": 55,
-    "note": "2026-11-18 evening: main has 467 roster entries, 460 unique canonical page paths and 16 archive records; current ToD PANKU-Esophagus01, previous GemX. No missing canonical roster paths in the evidence index. Eight lung-SABR trial IDs share one aggregate page. GOG-258 and KEYNOTE-A18 received source-grounded absolute-effect repairs on this branch. Screening: 28 new primary-source-verified page-build candidates, 25 held, 8 deferred-negative, 29 unique duplicates, 1 policy exclusion; 0 pages built/published. Full clinical/browser audit incomplete; NCCN full reference lists inaccessible.",
-    "release_holds_in_active_batch": 25
+    "open_items": 138,
+    "resolved_items": 56,
+    "note": "2026-11-18 evening: 30 new unique candidates have verified primary publication/registry identity for full page construction; 27 other new unique candidates are held (including two phase III surrogate-endpoint studies), eight are deferred-negative, 30 duplicates excluded, one PIVOT policy exclusion. No new trial pages built or uploaded. Three existing pages (GOG-258, KEYNOTE-A18, KEYNOTE-C93) repaired on branch; browser-rendered QA pending. NCCN full reference lists inaccessible.",
+    "release_holds_in_active_batch": 27
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T19:43:00+05:30",
+  "updated_at": "2026-11-18T20:02:00+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -518,12 +518,11 @@
   "last_run": {
     "date": "2026-11-18",
     "cycle": "evening",
-    "guideline_metadata_records_added": 6,
-    "pending_trial_mappings_added": 14,
+    "new_candidate_mapping_followups": 3,
     "full_reference_lists_accessible": 0,
-    "exact_references_inferred": 0
+    "exact_reference_numbers_inferred": 0
   },
-  "last_updated": "2026-11-18T19:43:00+05:30",
+  "last_updated": "2026-11-18T20:02:00+05:30",
   "last_run_date": "2026-11-18",
   "pending_trial_mappings": [
     {
@@ -1450,6 +1449,54 @@
       "status": "pending_exact_citation_mapping",
       "reason": "Complete official NCCN guideline/reference list inaccessible; no reference number or recommendation context inferred.",
       "next_action": "Map exact current guideline/version/section/reference when full source is accessible."
+    },
+    {
+      "trial_id": "litespark-022",
+      "trial_name": "LITESPARK-022",
+      "primary_doi": "10.1056/NEJMoa2518245",
+      "registry_id": "NCT05239728",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Full NCCN reference list inaccessible; no recommendation section or reference number inferred.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source is accessible."
+    },
+    {
+      "trial_id": "keynote-b96",
+      "trial_name": "ENGOT-ov65 / KEYNOTE-B96",
+      "primary_doi": "10.1016/S0140-6736(26)00602-1",
+      "registry_id": "NCT05116189",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Full NCCN reference list inaccessible; no recommendation section or reference number inferred.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source is accessible."
+    },
+    {
+      "trial_id": "keynote-c93",
+      "trial_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "primary_doi": "10.1016/S0140-6736(26)02095-7",
+      "registry_id": "NCT05173987",
+      "guideline_id": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "nccn_provenance": "not verified — source inaccessible",
+      "status": "pending_exact_citation_mapping",
+      "reason": "Full NCCN reference list inaccessible; no recommendation section or reference number inferred.",
+      "next_action": "Map to exact current NCCN guideline/version/section/reference when source is accessible."
     }
   ],
   "alternative_guideline_sources": [

@@ -10,15 +10,15 @@
   "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
   "morning_run_file": "data/daily-evidence-2026-11-18-morning.json",
   "screening_counts": {
-    "screening_records": 97,
-    "unique_candidate_ids": 91,
-    "new_unique_underlying_candidates": 61,
-    "primary_source_verified_new_unique_page_build_candidates": 28,
-    "source_verified_but_held_low_maturity": 2,
+    "screening_records": 102,
+    "unique_candidate_ids": 96,
+    "new_unique_underlying_candidates": 65,
+    "primary_source_verified_new_unique_page_build_candidates": 30,
+    "source_verified_but_held_low_maturity": 4,
     "primary_source_incomplete_or_not_verified_holds": 23,
-    "held_total": 25,
+    "held_total": 27,
     "deferred_negative_unique": 8,
-    "unique_duplicate_exclusions": 29,
+    "unique_duplicate_exclusions": 30,
     "duplicate_rechecks": 3,
     "policy_exclusions_unique": 1,
     "policy_exclusion_rechecks": 1,
@@ -28,7 +28,7 @@
     "release_ready_pages": 0,
     "published_pages": 0,
     "target_new_trials": 30,
-    "eligible_candidate_shortfall": 2
+    "eligible_candidate_shortfall": 0
   },
   "candidate_decisions": [
     {
@@ -2122,6 +2122,114 @@
       "recheck": true,
       "reason": "Explicit user policy excludes PIVOT.",
       "run_cycle": "evening"
+    },
+    {
+      "candidate_name": "LITESPARK-022",
+      "candidate_id": "litespark-022",
+      "primary_title": "Adjuvant Pembrolizumab plus Belzutifan for Renal-Cell Carcinoma",
+      "primary_doi": "10.1056/NEJMoa2518245",
+      "pmid": "42384869",
+      "registry_id": "NCT05239728",
+      "tumour_site": "Renal-cell carcinoma",
+      "clinical_setting": "Adjuvant after nephrectomy, increased recurrence risk, clear-cell RCC",
+      "phase": "III",
+      "design": "Double-blind randomised phase III",
+      "population": "Resected clear-cell RCC at increased recurrence risk",
+      "intervention": "Pembrolizumab 400 mg IV q6w (≤9 doses) plus belzutifan 120 mg orally daily for up to 1 year",
+      "comparator": "Pembrolizumab 400 mg IV q6w plus placebo for up to 1 year",
+      "primary_endpoint": "Investigator-assessed disease-free survival",
+      "key_efficacy": "n=921 vs920; median follow-up 28.4 months (range15.0–40.1); 24-month DFS 80.7% vs73.7%; HR0.72 (95%CI0.59–0.87), p<0.001. 24-month OS96.2% vs95.7%; HR0.78 (95%CI0.51–1.19), p=0.24; 29% of final OS events observed.",
+      "grade3_5_toxicity": "Grade≥3 adverse events 52.1% vs30.2%; detailed grade-specific events require full-text extraction.",
+      "quality_of_life": "Not reported in PubMed abstract; extract from full paper if available.",
+      "nnt_applicability": "24-month DFS absolute difference7.0 pp; approximate NNT15 = ceil(100/7). No OS NNT because OS difference not significant and immature.",
+      "primary_source_url": "https://doi.org/10.1056/NEJMoa2518245",
+      "registry_url": "https://clinicaltrials.gov/study/NCT05239728",
+      "disposition": "new_unique_primary_source_verified",
+      "primary_source_verified": true,
+      "release_ready": false,
+      "release_blockers": [
+        "full page not built",
+        "full grade 3–5 toxicity and QoL extraction pending",
+        "local strict release validator not run"
+      ],
+      "nccn_provenance": "not verified — source inaccessible"
+    },
+    {
+      "candidate_name": "KEYNOTE-B96 / ENGOT-ov65",
+      "candidate_id": "keynote-b96",
+      "primary_title": "Pembrolizumab plus weekly paclitaxel in platinum-resistant recurrent ovarian cancer (ENGOT-ov65/KEYNOTE-B96): a multicentre, randomised, double-blind, phase 3 study",
+      "primary_doi": "10.1016/S0140-6736(26)00602-1",
+      "pmid": "41974150",
+      "registry_id": "NCT05116189",
+      "tumour_site": "Ovarian/fallopian tube/primary peritoneal cancer",
+      "clinical_setting": "Platinum-resistant recurrent disease after 1–2 prior systemic regimens",
+      "phase": "III",
+      "design": "Multicentre double-blind randomised phase III; final OS analysis included",
+      "population": "643 participants; platinum-resistant recurrent ovarian cancer, one to two prior regimens",
+      "intervention": "Pembrolizumab 400 mg IV q6w up to18 cycles plus paclitaxel 80 mg/m² IV days1,8,15 every21 days; bevacizumab 10 mg/kg q2w permitted in either arm",
+      "comparator": "Placebo q6w plus weekly paclitaxel; bevacizumab permitted in either arm",
+      "primary_endpoint": "Investigator-assessed PFS per RECIST1.1; key secondary endpoint OS",
+      "key_efficacy": "PFS CPS≥1: 8.3 vs7.2 months, HR0.72 (95%CI0.58–0.89), p=0.0014; overall: 8.3 vs6.4 months, HR0.70 (95%CI0.58–0.84), p<0.0001. Final OS overall:17.7 vs14.0 months, HR0.82 (95%CI0.69–0.97), p=0.011; CPS≥1 second IA OS18.2 vs14.0 months, HR0.76 (95%CI0.61–0.94), p=0.0053.",
+      "grade3_5_toxicity": "Grade≥3 treatment-related AEs 217/320 (68%) vs176/318 (55%); treatment-related deaths4 vs5.",
+      "quality_of_life": "Full patient-reported outcome extraction required; do not infer from abstract.",
+      "nnt_applicability": "Not calculated from medians/HR alone; no comparable fixed-time absolute rates in the abstract.",
+      "primary_source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1",
+      "registry_url": "https://clinicaltrials.gov/study/NCT05116189",
+      "disposition": "new_unique_primary_source_verified",
+      "primary_source_verified": true,
+      "release_ready": false,
+      "release_blockers": [
+        "full page not built",
+        "full eligibility, subgroup, QoL and safety table extraction pending",
+        "local strict release validator not run"
+      ],
+      "nccn_provenance": "not verified — source inaccessible"
+    },
+    {
+      "candidate_name": "EXCALIBER-RRMM",
+      "candidate_id": "excaliber-rrmm",
+      "primary_doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "tumour_site": "Multiple myeloma",
+      "clinical_setting": "Relapsed/refractory multiple myeloma",
+      "phase": "III",
+      "design": "Randomised phase III; dual primary endpoints",
+      "key_efficacy": "MRD-negative complete-response analysis published; co-primary PFS remains immature/ongoing.",
+      "disposition": "held_primary_source_verified_pfs_immature",
+      "reason": "Do not present MRD surrogate response as mature survival benefit; await PFS maturity."
+    },
+    {
+      "candidate_name": "IsKia / EMN24",
+      "candidate_id": "iskia",
+      "primary_doi": "10.1038/s41591-026-04282-0",
+      "pmid": "41942646",
+      "registry_id": "NCT04483739",
+      "tumour_site": "Multiple myeloma",
+      "clinical_setting": "Newly diagnosed multiple myeloma",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "key_efficacy": "MRD primary endpoint reported; PFS remains immature.",
+      "disposition": "held_primary_source_verified_surrogate_endpoint",
+      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction."
+    },
+    {
+      "candidate_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "candidate_id": "keynote-c93",
+      "primary_doi": "10.1016/S0140-6736(26)02095-7",
+      "pmid": "42933458",
+      "registry_id": "NCT05173987",
+      "matched_existing_entry": {
+        "roster_id": "keynote-c93",
+        "trial_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+        "canonical_page_path": "trial-pages/keynote-c93/index.html",
+        "doi": "10.1016/S0140-6736(26)02095-7",
+        "pmid": "42933458",
+        "registry_id": "NCT05173987"
+      },
+      "identity_resolution": "same_underlying_study",
+      "disposition": "duplicate_excluded_from_new_additions_but_existing_page_updated",
+      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate."
     }
   ],
   "duplicate_check": [
@@ -2484,6 +2592,24 @@
       "recheck": true,
       "source": "live main roster and canonical page",
       "reason": "Exact canonical roster/page match; attach follow-up to existing study."
+    },
+    {
+      "candidate_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "candidate_id": "keynote-c93",
+      "primary_doi": "10.1016/S0140-6736(26)02095-7",
+      "pmid": "42933458",
+      "registry_id": "NCT05173987",
+      "matched_existing_entry": {
+        "roster_id": "keynote-c93",
+        "trial_name": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+        "canonical_page_path": "trial-pages/keynote-c93/index.html",
+        "doi": "10.1016/S0140-6736(26)02095-7",
+        "pmid": "42933458",
+        "registry_id": "NCT05173987"
+      },
+      "identity_resolution": "same_underlying_study",
+      "disposition": "duplicate_excluded_from_new_additions_but_existing_page_updated",
+      "reason": "Same underlying study already present in roster/page; new primary publication incorporated into canonical page rather than creating a duplicate."
     }
   ],
   "duplicate_rechecks": [
@@ -2668,6 +2794,20 @@
       "pmid": "41825453",
       "registry_id": "NCT04964479",
       "source_url": "https://doi.org/10.1016/S1470-2045(26)00049-5"
+    },
+    {
+      "trial": "LITESPARK-022",
+      "doi": "10.1056/NEJMoa2518245",
+      "pmid": "42384869",
+      "registry_id": "NCT05239728",
+      "source_url": "https://doi.org/10.1056/NEJMoa2518245"
+    },
+    {
+      "trial": "KEYNOTE-B96 / ENGOT-ov65",
+      "doi": "10.1016/S0140-6736(26)00602-1",
+      "pmid": "41974150",
+      "registry_id": "NCT05116189",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)00602-1"
     }
   ],
   "held_candidates": [
@@ -2746,6 +2886,34 @@
       "primary_source_verified": false,
       "identity_resolution": "new_unique_candidate_pending_primary_source",
       "release_ready": false
+    },
+    {
+      "candidate_name": "EXCALIBER-RRMM",
+      "candidate_id": "excaliber-rrmm",
+      "primary_doi": "10.1016/S1470-2045(26)00450-X",
+      "pmid": "42790445",
+      "registry_id": "NCT04975997",
+      "tumour_site": "Multiple myeloma",
+      "clinical_setting": "Relapsed/refractory multiple myeloma",
+      "phase": "III",
+      "design": "Randomised phase III; dual primary endpoints",
+      "key_efficacy": "MRD-negative complete-response analysis published; co-primary PFS remains immature/ongoing.",
+      "disposition": "held_primary_source_verified_pfs_immature",
+      "reason": "Do not present MRD surrogate response as mature survival benefit; await PFS maturity."
+    },
+    {
+      "candidate_name": "IsKia / EMN24",
+      "candidate_id": "iskia",
+      "primary_doi": "10.1038/s41591-026-04282-0",
+      "pmid": "41942646",
+      "registry_id": "NCT04483739",
+      "tumour_site": "Multiple myeloma",
+      "clinical_setting": "Newly diagnosed multiple myeloma",
+      "phase": "III",
+      "design": "Randomised phase III",
+      "key_efficacy": "MRD primary endpoint reported; PFS remains immature.",
+      "disposition": "held_primary_source_verified_surrogate_endpoint",
+      "reason": "Primary endpoint is a surrogate MRD measure and mature PFS/OS are not yet available; hold pending full clinical outcome extraction."
     }
   ],
   "deferred_negative_additions": [
@@ -2936,6 +3104,20 @@
         "primary_doi": "10.1016/S1470-2045(26)00049-5",
         "registry_id": "NCT04964479",
         "provenance": "not verified — source inaccessible"
+      },
+      {
+        "trial_id": "litespark-022",
+        "trial_name": "LITESPARK-022",
+        "primary_doi": "10.1056/NEJMoa2518245",
+        "registry_id": "NCT05239728",
+        "provenance": "not verified — source inaccessible"
+      },
+      {
+        "trial_id": "keynote-b96",
+        "trial_name": "KEYNOTE-B96",
+        "primary_doi": "10.1016/S0140-6736(26)00602-1",
+        "registry_id": "NCT05116189",
+        "provenance": "not verified — source inaccessible"
       }
     ]
   },
@@ -2973,6 +3155,13 @@
       "trial_id": "gog-258",
       "path": "trial-pages/gog-258/index.html",
       "change": "Secondary 5-year recurrence pictograms NNT20/NNT12/NNH17; primary RFS NNT not calculated."
+    },
+    {
+      "trial_id": "keynote-c93",
+      "path": "trial-pages/keynote-c93/index.html",
+      "repair": "Rebuilt full primary publication summary; corrected zero-width bars and comparator label; added 36-month PFS NNT5 and grade≥3 TRAE avoided NNT4 panels.",
+      "source_doi": "10.1016/S0140-6736(26)02095-7",
+      "status": "committed_to_branch_browser_qa_pending"
     }
   ],
   "publication": {
@@ -2985,11 +3174,15 @@
     "production_deployment_verified": false
   },
   "next_actions": [
-    "Build 28 verified candidate pages and continue screening for two more eligible unique studies.",
-    "Keep NEOTERIC/KROCUS held; do not pad.",
-    "Split eight lung-SABR studies into separate canonical pages.",
-    "Require strict validator and Outcome visualization audit as PR checks.",
-    "Browser-render new GOG-258/KEYNOTE-A18 pictograms and verify production."
+    "Build full pages for all 30 primary-source-verified new unique candidates and complete per-page source extraction/visual QA.",
+    "Keep NEOTERIC, KROCUS, EXCALIBER-RRMM and IsKia held; do not pad or promote immature surrogate endpoints.",
+    "Run local strict release validator and require it plus Outcome visualization audit as PR checks.",
+    "Split the eight lung-SABR studies sharing one aggregate page into eight canonical pages.",
+    "Browser-verify GOG-258, KEYNOTE-A18 and KEYNOTE-C93 visualizations."
   ],
-  "notes": "Incomplete cycle; source-verified candidates are not published pages. No new trial page, roster entry, index link, archive or ToD record added."
+  "notes": "30 new unique candidates now have verified primary publication/registry identity for full page construction. This does not mean 30 pages are release-ready or published. Two further phase III surrogate-endpoint studies are held. No new trial pages or roster entries were added; one existing KEYNOTE-C93 page was repaired.",
+  "toD_candidate_pending_release": {
+    "trial_id": "panova-3",
+    "reason": "Secondary QoL/pain analysis published 2026-11-13 (DOI 10.1001/jamanetworkopen.2026.41241; PMID 43024239); underlying trial is new to Atlas. Eligible for ToD only after canonical page is built, deduplicated and merged."
+  }
 }
