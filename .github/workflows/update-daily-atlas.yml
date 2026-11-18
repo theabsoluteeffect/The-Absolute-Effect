@@ -9,7 +9,10 @@ on:
     branches: [main]
     paths:
       - 'data/daily-evidence-*.json'
-      - 'scripts/merge_all_daily_evidence.py'\n      - 'scripts/daily_evidence_reader.py'\n      - 'tests/**'\n      - '.github/workflows/update-daily-atlas.yml'
+      - 'scripts/merge_all_daily_evidence.py'
+      - 'scripts/daily_evidence_reader.py'
+      - 'tests/**'
+      - '.github/workflows/update-daily-atlas.yml'
       - 'scripts/update_sitemap.py'
       - 'scripts/update_trial_page_seo.py'
       - 'scripts/validate-trial-release.js'
@@ -27,6 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Test daily evidence reader
+        run: python -m unittest discover -s tests -p 'test_*.py'
 
       - name: Merge all daily evidence into the atlas
         run: python scripts/merge_all_daily_evidence.py
@@ -80,6 +86,7 @@ jobs:
           from pathlib import Path
           import json
           import re
+          import sys
 
           text = Path('index.html').read_text(encoding='utf-8')
           assert "fetch('/data/master-trial-roster.json'" in text, 'Homepage must load the master roster dynamically'
@@ -91,7 +98,9 @@ jobs:
           assert '"site": "Glioblastoma"' not in text
 
           files = sorted(Path('data').glob('daily-evidence-*.json'))
-          sys.path.insert(0, str(Path('scripts').resolve()))\n          from daily_evidence_reader import iter_trial_records\n          total = sum(1 for p in files for _ in iter_trial_records(json.loads(p.read_text(encoding='utf-8'))))
+          sys.path.insert(0, str(Path('scripts').resolve()))
+          from daily_evidence_reader import iter_trial_records
+          total = sum(1 for p in files for _ in iter_trial_records(json.loads(p.read_text(encoding='utf-8'))))
           roster = json.loads(Path('data/master-trial-roster.json').read_text(encoding='utf-8'))
           trials = roster.get('trials', [])
           assert trials, 'Master trial roster is empty'
