@@ -1511,6 +1511,58 @@
       "evidence_path": "data/daily-evidence-2026-11-18-morning.json",
       "data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45",
       "branch_head_at_data_commit": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
+    },
+    "evidence_index_unique_page_paths": 460,
+    "evidence_index_missing_canonical_paths": 0,
+    "recursive_trial_page_index_files": 461,
+    "redirect_only_page_files": [
+      "trial-pages/rosel/index.html"
+    ],
+    "shared_page_path_anomalies": [
+      {
+        "path": "trial-pages/lung-sabr-definitions/index.html",
+        "trial_ids": [
+          "chisel",
+          "hilus",
+          "lustre",
+          "rosel",
+          "rtog-0813",
+          "space",
+          "stars-randomized",
+          "sunset"
+        ],
+        "status": "aggregate page; separate canonical trial pages required"
+      }
+    ],
+    "underlying_study_count_certification": "provisional: eight lung-SABR trial records map to one aggregate page; individual canonical page mapping incomplete.",
+    "full_clinical_page_audit_complete": false,
+    "browser_rendered_qa_complete": false,
+    "nccn_full_reference_list_access": "inaccessible; metadata only; no reference numbers inferred",
+    "last_run_date": "2026-11-18",
+    "last_run_cycle": "evening",
+    "last_run_status": "INCOMPLETE — 28 primary-source-verified new unique candidates; 25 held; 8 deferred-negative; 29 unique duplicates; 1 policy exclusion; 0 pages built/published.",
+    "last_run_branch": "atlas-batch/2026-11-18-am",
+    "last_run_report_path": "data/daily-reports/2026-11-18-evening.json",
+    "last_run_evidence_path": "data/daily-evidence-2026-11-18-evening.json",
+    "manual_page_repairs_staged": [
+      "keynote-a18",
+      "gog-258"
+    ],
+    "current_main_head_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "latest_run_2026_11_18_evening": {
+      "date": "2026-11-18",
+      "branch": "atlas-batch/2026-11-18-am",
+      "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "screening_records": 97,
+      "unique_candidate_ids": 91,
+      "primary_source_verified_new_unique": 28,
+      "held": 25,
+      "deferred_negative": 8,
+      "duplicates": 29,
+      "excluded": 1,
+      "pages_built": 0,
+      "published": 0,
+      "status": "INCOMPLETE"
     }
   },
   "trials": [
@@ -4942,7 +4994,68 @@
         "NCT00942357"
       ],
       "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
-      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+      "outcome_visual_review_status": "Primary NEJM values checked; three secondary 5-year recurrence pictograms and structured absolute_effect records added; browser-rendered QA pending",
+      "absolute_effect": {
+        "endpoint": "5-year recurrence-free survival (primary endpoint)",
+        "horizon": "5 years",
+        "treatment_rate": "59%",
+        "control_rate": "58%",
+        "denominators": {
+          "randomized_total": 736,
+          "chemoradiotherapy_randomized": 370,
+          "chemotherapy_randomized": 366,
+          "received_assigned_treatment_total": 707,
+          "chemoradiotherapy_received": 346,
+          "chemotherapy_received": 361
+        },
+        "benefit_percentage_points": 1,
+        "nnt": null,
+        "nnt_not_applicable_reason": "Primary 5-year RFS was not significantly different; an NNT would imply a clinically established benefit not demonstrated by the trial.",
+        "event_definition": "Recurrence or death by 5 years, per trial-defined RFS endpoint",
+        "source_doi": "10.1056/NEJMoa1813181",
+        "source_pmid": "31189035",
+        "source_title": "Adjuvant Chemotherapy plus Radiation for Locally Advanced Endometrial Cancer",
+        "additional_endpoints": [
+          {
+            "endpoint": "5-year vaginal recurrence",
+            "horizon": "5 years",
+            "treatment_rate": "2%",
+            "control_rate": "7%",
+            "benefit_percentage_points": 5,
+            "nnt": 20,
+            "event_definition": "One fewer vaginal recurrence by 5 years",
+            "calculation": "ceil[100/(7−2)] = 20; approximate from rounded incidence estimates",
+            "source_doi": "10.1056/NEJMoa1813181",
+            "source_pmid": "31189035"
+          },
+          {
+            "endpoint": "5-year pelvic/paraaortic nodal recurrence",
+            "horizon": "5 years",
+            "treatment_rate": "11%",
+            "control_rate": "20%",
+            "benefit_percentage_points": 9,
+            "nnt": 12,
+            "event_definition": "One fewer pelvic/paraaortic nodal recurrence by 5 years",
+            "calculation": "ceil[100/(20−11)] = 12; approximate from rounded incidence estimates",
+            "source_doi": "10.1056/NEJMoa1813181",
+            "source_pmid": "31189035"
+          },
+          {
+            "endpoint": "5-year distant recurrence",
+            "horizon": "5 years",
+            "treatment_rate": "27%",
+            "control_rate": "21%",
+            "harm_percentage_points": 6,
+            "nnh": 17,
+            "event_definition": "One additional distant recurrence by 5 years",
+            "calculation": "ceil[100/(27−21)] = 17; approximate from rounded incidence estimates",
+            "source_doi": "10.1056/NEJMoa1813181",
+            "source_pmid": "31189035"
+          }
+        ],
+        "evidence_note": "Three secondary site-specific recurrence outcomes only; do not conflate with primary RFS or OS."
+      },
+      "last_manual_reviewed_on": "2026-11-18"
     },
     {
       "id": "grouq-pcs-9",
@@ -6499,7 +6612,7 @@
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
       "freshness_review_status": "Primary PFS and OS Lancet reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Non-finite chart widths and malformed source link corrected; static source-rate bars and NNT markup verified 2026-11-15; browser QA pending.",
+      "outcome_visual_review_status": "Primary Lancet PFS/OS landmark values checked; PFS NNT10 pictogram and OS NNT13 record retained; browser-rendered QA pending",
       "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
       "primary": "10.1016/S0140-6736(24)00317-9",
       "primary_title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer (ENGOT-cx11/GOG-3047/KEYNOTE-A18): a randomised, double-blind, phase 3 clinical trial",
@@ -6512,15 +6625,39 @@
         }
       ],
       "absolute_effect": {
-        "endpoint": "Overall survival",
-        "horizon": "36 months",
-        "benefit_percentage_points": 7.8,
-        "nnt": 13,
-        "event_definition": "One additional patient alive at 36 months",
-        "calculation": "ceil(100 / 7.8) = 13",
-        "source_doi": "10.1016/S0140-6736(24)01808-7"
+        "endpoint": "24-month progression-free survival",
+        "horizon": "24 months",
+        "treatment_rate": "68%",
+        "control_rate": "57%",
+        "denominators": {
+          "treatment_randomized": 529,
+          "control_randomized": 531
+        },
+        "benefit_percentage_points": 11,
+        "nnt": 10,
+        "event_definition": "One additional patient alive without progression or death at 24 months",
+        "calculation": "ceil[100/(68−57)] = 10; approximate because published Kaplan–Meier rates are rounded",
+        "source_doi": "10.1016/S0140-6736(24)00317-9",
+        "source_pmid": "38521086",
+        "source_title": "Pembrolizumab or placebo with chemoradiotherapy for newly diagnosed, high-risk, locally advanced cervical cancer",
+        "evidence_note": "Primary PFS endpoint; NNT is a 24-month landmark estimate, not derived from the hazard ratio.",
+        "additional_endpoints": [
+          {
+            "endpoint": "36-month overall survival",
+            "horizon": "36 months",
+            "treatment_rate": "82.6%",
+            "control_rate": "74.8%",
+            "benefit_percentage_points": 7.8,
+            "nnt": 13,
+            "event_definition": "One additional patient alive at 36 months",
+            "calculation": "ceil[100/(82.6−74.8)] = 13; approximate from rounded Kaplan–Meier rates",
+            "source_doi": "10.1016/S0140-6736(24)01808-7",
+            "source_pmid": "39288779"
+          }
+        ]
       },
-      "quality_check_date": "2026-11-15"
+      "quality_check_date": "2026-11-15",
+      "last_manual_reviewed_on": "2026-11-18"
     },
     {
       "id": "keynote-b49",
@@ -11113,75 +11250,62 @@
       "release_qa_status": "corrected_primary_source_reviewed"
     }
   ],
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18T19:43:00+05:30",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {
+    "date": "2026-11-18",
+    "cycle": "evening continuation; serialized on AM branch",
+    "branch": "atlas-batch/2026-11-18-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
+    "target_new_unique_trials": 30,
+    "screening_records": 97,
+    "unique_candidate_ids": 91,
+    "new_unique_candidates": 61,
+    "primary_source_verified_new_unique": 28,
+    "source_verified_but_held_low_maturity": 2,
+    "held_candidates": 25,
+    "deferred_negative_candidates": 8,
+    "duplicate_exclusions": 29,
+    "excluded_by_policy": 1,
+    "duplicate_rechecks": 3,
+    "deferred_rechecks": 2,
+    "excluded_rechecks": 1,
+    "pages_built": 0,
+    "release_ready_pages": 0,
+    "published_this_run": 0,
+    "uploaded_to_main": 0,
+    "pr_opened": false,
+    "merged": false,
+    "target_shortfall": 2,
+    "status": "INCOMPLETE — 28 new unique candidates verified for page build; two additional source-verified candidates held; no pages built or uploaded.",
+    "next_action": "Build and QA 28 candidates, continue screening for two more eligible studies, split shared lung-SABR page, then strict validator and PR."
+  },
+  "total_trials": 467,
+  "last_completed_batch_2026_11_17": {
     "date": "2026-11-17",
     "branch": "atlas-batch/2026-11-17-am",
-    "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
-    "branch_head_before": "09ace1ae86fa5323beae685a631fbcb3e0ca03d7",
-    "expected_new_unique_pages": 30,
-    "staged_new_page_count": 30,
-    "staged_page_ids": [
-      "act-gi",
-      "artemis-011",
-      "bctop-h-n01",
-      "capital",
-      "dellphi-305",
-      "disitamab-tislelizumab",
-      "felzartamab-rd",
-      "fit4treat",
-      "harmoni-a",
-      "herizon-gea-01",
-      "i-spy2-2",
-      "ivonescimab-perioperative",
-      "keylynk-001",
-      "keynote-b49",
-      "litespark-011",
-      "monumental-3",
-      "neonipiga",
-      "panku-breast01",
-      "panku-esophagus01",
-      "panku-lung01",
-      "pds0101-pembrolizumab",
-      "pro-b",
-      "relight",
-      "ringside",
-      "toripalimab-mfolfirinox",
-      "transform-1",
-      "trastuzumab-botidotin",
-      "trofuse-005",
-      "union",
-      "zsab-neogolp"
-    ],
-    "new_pages_built_this_run": 28,
-    "carry_forward_pages": 2,
-    "uploaded_to_main": 0,
-    "publication_status": "INCOMPLETE — 30 staged; 24 release-ready; 6 held for primary-source supplement details; strict release validator and outcome visualization audit passed in branch CI; no PR/merge.",
-    "local_release_validator": "not run locally; GitHub Actions strict release validator passed",
-    "pr_status": "not opened",
-    "merge_status": "not merged",
-    "deployment_status": "Branch CI passed; preview browser inspection unavailable; production not deployed",
-    "nccn_provenance": "not verified — complete guideline/reference lists inaccessible",
-    "branch_head_after": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-    "last_cloudflare_check_run": 134140991439,
-    "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
-    "release_ready_pages": 30,
-    "release_hold_pages": 0,
-    "candidates_screened": 71,
-    "duplicates_excluded": 15,
-    "new_unique_candidates": 56,
-    "held_candidates": 17,
-    "deferred_negative_candidates": 11,
-    "rejected_candidates": 2,
-    "validator_patch": {
-      "primary_sources_and_registry_heading": true,
-      "nnt_nnh_regex_escaping": true,
-      "absolute_effect_markup_regex": true,
-      "current_batch_daily_evidence_self_match": false
+    "pr_number": 5,
+    "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+    "pr_head_sha": "1a4502c6dc7a06f59c451b63cbafb4d1ba6946a7",
+    "merge_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+    "merged": true,
+    "published": true,
+    "published_this_run": 30,
+    "uploaded_to_main": 30,
+    "pr_checks_before_merge": {
+      "audit": "success",
+      "cloudflare_pages": "success",
+      "strict_release_validator": "not independently found as PR check"
     },
-    "status": "30 unique new-to-main trial pages staged; all 30 release-ready pending strict validator and PR checks",
-    "updated_at": "2026-11-17T17:37:17.330Z"
+    "post_merge_validation": {
+      "workflow_run": 44226050992,
+      "strict_validator": "success",
+      "validate_atlas": "success",
+      "daily_evidence_merge": "success"
+    },
+    "production_deployment": "not independently verified",
+    "process_note": "Strict validator passed post-merge only; pre-merge PR check not independently verified."
   }
 }

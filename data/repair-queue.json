@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-18T19:43:00+05:30",
   "source_audit": {
     "status": "PARTIAL",
     "audited_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
@@ -820,7 +820,7 @@
       "status": "open",
       "created_on": "2026-11-15",
       "evidence": "Two existing open PRs were found after the AM branch was committed. PR #4 (atlas-batch/2026-11-14-pm) overlaps this branch in data/master-trial-roster.json, evidence/index.html, data/deferred-negative-evidence.json, data/nccn-coverage-ledger.json and data/repair-queue.json. PR #3 (feature/complete-outcome-visualizations-2026-11-08) also overlaps data/master-trial-roster.json. Both PRs report audit and Cloudflare Pages checks completed successfully, but GitHub reports mergeable=false.",
-      "next_action": "Resolve existing PRs serially and reconcile their file changes with atlas-batch/2026-11-15-am. Do not open or merge a new PR until overlapping changes are reconciled, exactly 30 new unique trial pages are complete, and strict release/outcome-visualization validators pass.",
+      "next_action": "PR #3 remains open draft; PR #4 closed unmerged; PR #5/#6 merged. Keep 18-Nov work serialized on atlas-batch/2026-11-18-am; no parallel PM branch/PR until exactly 30 complete pages and both required PR checks are green.",
       "issue_id": "open-pr-overlap-serialization-2026-11-15"
     },
     {
@@ -1202,35 +1202,6 @@
       "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
       "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
       "issue_id": "candidate-review-irimad"
-    },
-    {
-      "trial_id": "keynote-a18",
-      "page_path": "trial-pages/keynote-a18/index.html",
-      "issue_type": "clinical_content_visualization",
-      "severity": "high",
-      "status": "open",
-      "resolved_on": "2026-11-15",
-      "evidence": "Main page and roster re-read. OS absolute-effect record is present (7.8 percentage-point benefit; NNT 13), but the page also reports 24-month PFS 68% versus 57% (11-point difference) without a matching structured absolute_effect record/pictogram. The earlier broad NaN flag was a false positive from substring matching; no literal NaN value was found.",
-      "resolution": "Rebuilt the visible outcome charts and NNT pictograms. PFS difference 10.5 pp -> NNT 10; OS difference 7.8 pp -> NNT 13. data-benefit values equal the source-derived percentage-point differences; no 100/NNT substitution.",
-      "verification": {
-        "primary_doi_checked": true,
-        "registry_checked": true,
-        "visible_chart_markup": true,
-        "structured_absolute_effect": true,
-        "finite_values": true,
-        "browser_rendered_qa": false,
-        "branch_only": true,
-        "main_branch_page_rechecked": true,
-        "primary_source_rechecked": true,
-        "os_effect_record_verified": true,
-        "pfs_effect_record_missing": true,
-        "literal_nan_found": false,
-        "verified_on": "2026-11-18"
-      },
-      "issue_id": "keynote-a18-malformed-nnt-and-outcome-values-2026-11-15",
-      "next_action": "Verify the primary 24-month PFS landmark estimates/denominators, then update both roster absolute_effect and canonical page markup; do not close until source and visual structure are rechecked.",
-      "last_updated": "2026-11-18",
-      "action": "Add a source-grounded 24-month PFS absolute_effect/additional_endpoints record and matching visual NNT 10 (100/11 rounded up), after confirming exact landmark estimates and denominators in the primary KEYNOTE-A18 report; preserve the OS record."
     },
     {
       "trial_id": "neo-healer",
@@ -1759,7 +1730,8 @@
       "action": "Open the deployed branch preview and inspect every new outcome chart and NNT/NNH pictogram before PR.",
       "verification": "pending",
       "created_at": "2026-11-17T20:00:32+05:30",
-      "updated_at": "2026-11-17T20:00:32+05:30"
+      "updated_at": "2026-11-17T20:00:32+05:30",
+      "next_action": "Inspect 17-Nov pages and new GOG-258/KEYNOTE-A18 pictograms in browser; Cloudflare preview check passed but production browser verification remains incomplete."
     },
     {
       "issue_id": "release-hold-gimema-all2820",
@@ -1961,7 +1933,79 @@
         "index_link_present": true,
         "dated_context_missing": true,
         "full_clinical_review_pending": true
-      }
+      },
+      "canonical_page_path": "trial-pages/mrc-tip-phase2/index.html"
+    },
+    {
+      "id": "lung-sabr-shared-canonical-pages-2026-11-18",
+      "issue_type": "canonical_page_mapping",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "canonical_page_path": "trial-pages/lung-sabr-definitions/index.html",
+      "affected_trial_ids": [
+        "chisel",
+        "hilus",
+        "lustre",
+        "rosel",
+        "rtog-0813",
+        "space",
+        "stars-randomized",
+        "sunset"
+      ],
+      "issue": "Eight distinct lung-SABR trial IDs map to one aggregate overview page; the recursive tree has the overview and a ROSEL redirect stub, but seven individual canonical pages are missing.",
+      "evidence": [
+        "live master-trial-roster.json",
+        "recursive trial-pages tree",
+        "trial-pages/lung-sabr-definitions/index.html",
+        "trial-pages/rosel/index.html"
+      ],
+      "next_action": "Source-verify each study; create one canonical page per study; retain overview and redirect; reconcile roster/index/archive/ToD."
+    },
+    {
+      "id": "pr5-premerge-strict-validator-gap-2026-11-18",
+      "issue_type": "release_process",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "trial": "PR #5 pre-merge strict-validator gate",
+      "issue": "PR #5 merged after audit and Cloudflare Pages checks passed, but strict release validator was not independently found among pre-merge PR checks. It passed in the post-merge main workflow, which does not retroactively satisfy the required pre-merge gate.",
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44226050992"
+      ],
+      "next_action": "Make strict validator a required PR check and require it plus Outcome visualization audit before any future merge."
+    },
+    {
+      "id": "2026-11-18-evening-exact-30-release-gate",
+      "issue_type": "release_gate",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "trial": "18 November evening batch",
+      "issue": "28 new unique candidates passed primary-source verification for page build; NEOTERIC and KROCUS are held for low maturity. No pages built; zero release-ready and two short of target.",
+      "evidence": [
+        "data/daily-evidence-2026-11-18-evening.json"
+      ],
+      "next_action": "Build/QA 28 verified candidates, continue screening for two more eligible studies, and do not open PR until exactly 30 complete pages exist."
+    },
+    {
+      "id": "2026-11-18-browser-rendered-effect-qa",
+      "issue_type": "visualization_rendering",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-18",
+      "trial_ids": [
+        "gog-258",
+        "keynote-a18"
+      ],
+      "issue": "New GOG-258 and KEYNOTE-A18 absolute-effect markup is source-verified in HTML but not yet browser-rendered.",
+      "evidence": [
+        "trial-pages/gog-258/index.html",
+        "trial-pages/keynote-a18/index.html",
+        "assets/absolute-effect.js"
+      ],
+      "next_action": "Verify all four pictograms in a browser preview and production, including labels, horizons, no overflow and correct 100-dot arithmetic."
     }
   ],
   "resolved_items": [
@@ -3756,6 +3800,62 @@
       },
       "resolved_on": "2026-11-18",
       "last_updated": "2026-11-18"
+    },
+    {
+      "trial_id": "keynote-a18",
+      "page_path": "trial-pages/keynote-a18/index.html",
+      "issue_type": "clinical_content_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "resolved_on": "2026-11-15",
+      "evidence": "Main page and roster re-read. OS absolute-effect record is present (7.8 percentage-point benefit; NNT 13), but the page also reports 24-month PFS 68% versus 57% (11-point difference) without a matching structured absolute_effect record/pictogram. The earlier broad NaN flag was a false positive from substring matching; no literal NaN value was found.",
+      "resolution": "Verified 24-month PFS 68% vs57%, 11 pp benefit, approximate NNT10 against primary Lancet report; added structured primary absolute_effect and page pictogram. Browser render remains separately open.",
+      "verification": {
+        "doi": "10.1016/S0140-6736(24)00317-9",
+        "pmid": "38521086",
+        "benefit_pp": 11,
+        "nnt": 10,
+        "horizon": "24 months"
+      },
+      "issue_id": "keynote-a18-malformed-nnt-and-outcome-values-2026-11-15",
+      "next_action": "Verify the primary 24-month PFS landmark estimates/denominators, then update both roster absolute_effect and canonical page markup; do not close until source and visual structure are rechecked.",
+      "last_updated": "2026-11-18",
+      "action": "Add a source-grounded 24-month PFS absolute_effect/additional_endpoints record and matching visual NNT 10 (100/11 rounded up), after confirming exact landmark estimates and denominators in the primary KEYNOTE-A18 report; preserve the OS record.",
+      "closed_on": "2026-11-18",
+      "verified_on": "2026-11-18"
+    },
+    {
+      "id": "gog-258-absolute-effect-pictograms-2026-11-18",
+      "trial_id": "gog-258",
+      "trial": "GOG-258",
+      "canonical_page_path": "trial-pages/gog-258/index.html",
+      "issue_type": "clinical_content_visualization",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-18",
+      "closed_on": "2026-11-18",
+      "issue": "Text-only NNT/NNH for secondary 5-year recurrence lacked structured records/pictograms.",
+      "evidence": [
+        "https://doi.org/10.1056/NEJMoa1813181",
+        "https://pubmed.ncbi.nlm.nih.gov/31189035/"
+      ],
+      "resolution": "Added secondary recurrence pictograms: vaginal 2% vs7%, 5 pp benefit, NNT20; pelvic/paraaortic 11% vs20%, 9 pp benefit, NNT12; distant 27% vs21%, 6 pp harm, NNH17. Primary RFS NNT not calculated because not significantly different.",
+      "verification": {
+        "benefit_pp": [
+          5,
+          9
+        ],
+        "harm_pp": 6,
+        "nnt": [
+          20,
+          12
+        ],
+        "nnh": 17,
+        "horizon": "5 years",
+        "analysis_population_n": 736,
+        "received_assigned_treatment_n": 707
+      },
+      "next_action": "Verify branch/production rendering before closing on main."
     }
   ],
   "run_audit_log": [
@@ -3844,6 +3944,25 @@
       "browser_rendered_qa": false,
       "notes": "Five canonical pages manually rechecked; visual/source repair records for CheckMate 816, KEYNOTE-A18, LACC, SHAPE and FIGHT-302 plus index reconciliation were closed (eight issue records total). KEYNOTE-A18 PFS effect remains open; 52 dated-context items remain. The main strict validator passed, but browser-rendered QA and the full clinical audit remain incomplete.",
       "branch_data_commit_sha": "a049670cb9f3f7eeb3dd67813f7a1354e3c4ee45"
+    },
+    {
+      "date": "2026-11-18",
+      "cycle": "evening",
+      "branch": "atlas-batch/2026-11-18-am",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "repair_actions": [
+        "KEYNOTE-A18 PFS NNT pictogram",
+        "GOG-258 secondary recurrence pictograms",
+        "MRC TIP duplicate queue item consolidated"
+      ],
+      "new_open_items": [
+        "lung-SABR shared page",
+        "PR #5 pre-merge strict-validator gap",
+        "18-Nov exact-30 release gate",
+        "browser-rendered effect QA"
+      ],
+      "closed_or_resolved": 2,
+      "full_clinical_audit_complete": false
     }
   ],
   "previous_partial_runs": [
@@ -3903,50 +4022,43 @@
     }
   ],
   "last_partial_run": {
-    "date": "2026-11-17",
-    "cycle": "morning",
-    "branch": "atlas-batch/2026-11-17-am",
-    "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
-    "previous_branch_archived": "archive/atlas-batch-2026-11-16-am",
-    "pages_manually_inspected": 3,
-    "canonical_pages_total": 431,
-    "repairs_staged": 3,
-    "queue_items_closed": 9,
-    "queue_items_added": 2,
-    "open_items_after_run": 138,
-    "resolved_items_after_run": 42,
-    "candidates_screened": 4,
-    "duplicate_exclusions": 1,
-    "new_unique_candidates": 3,
-    "held": 1,
-    "deferred_negative": 1,
-    "rejected_by_user_policy": 1,
-    "verified_new_pages": 0,
-    "carried_forward_staged_pages": 2,
-    "pages_published": 0,
-    "publication_target": 30,
-    "remaining_to_target": 28,
-    "status": "30 pages staged; PR checks pending",
-    "source_audit_stale": true,
-    "next_action": "Complete held primary-source checks and continue multi-site discovery; do not open PR until 30 unique pages pass all checks.",
-    "report_commit_sha": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
-    "branch_head_at_report_creation": "e5cfb11ddfd502e80bb69bcef0068d9beb22ac41",
-    "index_links_added": 2,
-    "active_branch_missing_index_paths_after": 0,
-    "active_branch_index_unique_paths_after": 432,
-    "active_branch_raw_href_refs_after": 472,
-    "run_date": "2026-11-17",
-    "run_cycle": "evening recovery",
-    "active_batch_release_holds": 0,
-    "full_existing_page_audit_complete": false
+    "date": "2026-11-18",
+    "cycle": "evening",
+    "branch": "atlas-batch/2026-11-18-am",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
+    "screening_records": 97,
+    "unique_candidate_ids": 91,
+    "verified_new_unique": 28,
+    "held": 25,
+    "deferred_negative": 8,
+    "duplicates": 29,
+    "excluded": 1,
+    "published": 0,
+    "status": "INCOMPLETE"
   },
-  "last_updated": "2026-11-18T09:58:23.327+05:30",
-  "last_run": "2026-11-18-morning",
-  "generated_at": "2026-11-17T20:00:32+05:30",
+  "last_updated": "2026-11-18T19:43:00+05:30",
+  "last_run": {
+    "date": "2026-11-18",
+    "cycle": "evening",
+    "branch": "atlas-batch/2026-11-18-am",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_before": "1cc9d3c441e54a7c06901448890a939064cfc143",
+    "screening_records": 97,
+    "unique_candidate_ids": 91,
+    "verified_new_unique": 28,
+    "held": 25,
+    "deferred_negative": 8,
+    "duplicates": 29,
+    "excluded": 1,
+    "published": 0,
+    "status": "INCOMPLETE"
+  },
+  "generated_at": "2026-11-18T19:43:00+05:30",
   "summary": {
-    "open_items": 133,
-    "resolved_items": 53,
-    "note": "2026-11-18 structural reconciliation: 467 roster entries / 460 canonical trial pages; all 467 roster targets (including shared anchors) resolve in the evidence index; 16 archive entries; current ToD PANKU-Esophagus01, previous GemX. Eight issue records were verified and closed on main (five-page visual/source checks plus index reconciliation); KEYNOTE-A18 24-month PFS effect remains open; one missing MRC-TIP dated-context item added. 52 pages still lack dated current-practice context; full clinical and browser-rendered audit remains incomplete.",
-    "release_holds_in_active_batch": 0
+    "open_items": 136,
+    "resolved_items": 55,
+    "note": "2026-11-18 evening: main has 467 roster entries, 460 unique canonical page paths and 16 archive records; current ToD PANKU-Esophagus01, previous GemX. No missing canonical roster paths in the evidence index. Eight lung-SABR trial IDs share one aggregate page. GOG-258 and KEYNOTE-A18 received source-grounded absolute-effect repairs on this branch. Screening: 28 new primary-source-verified page-build candidates, 25 held, 8 deferred-negative, 29 unique duplicates, 1 policy exclusion; 0 pages built/published. Full clinical/browser audit incomplete; NCCN full reference lists inaccessible.",
+    "release_holds_in_active_batch": 25
   }
 }
