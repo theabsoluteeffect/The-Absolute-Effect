@@ -8,7 +8,9 @@
   "target": {
     "new_unique_trials": 30,
     "uploaded": 0,
-    "not_uploaded": 30
+    "not_uploaded": 30,
+    "discovery_target_met": true,
+    "release_ready_page_target_met": false
   },
   "repository": {
     "name": "theabsoluteeffect/The-Absolute-Effect",
@@ -17,8 +19,9 @@
     "main_commit_after": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-19-am",
     "branch_base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_sha": "5693703ffa1084946ec50827a1682e736ccf6c79",
-    "report_finalization_commit_sha": "pending"
+    "branch_commit_sha": "ccf8629a6f439a3a34702020fdb1d7cb7b635bc3",
+    "report_finalization_commit_sha": "pending",
+    "branch_head_before_finalization": "ccf8629a6f439a3a34702020fdb1d7cb7b635bc3"
   },
   "preflight": {
     "roster_unique_trials": 467,

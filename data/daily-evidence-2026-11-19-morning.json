@@ -1167,13 +1167,14 @@
   "uploaded_cases": [],
   "branch_progress": {
     "target_new_unique_trials": 30,
-    "new_unique_identity_resolved": 12,
-    "source_verified": 8,
-    "held_unique": 4,
-    "remaining_new_unique_needed": 18,
+    "new_unique_identity_resolved": 30,
+    "source_verified": 9,
+    "held_unique": 21,
+    "remaining_new_unique_needed": 0,
     "uploaded": 0,
     "not_uploaded": 30,
-    "branch_commit_sha": "5693703ffa1084946ec50827a1682e736ccf6c79"
+    "branch_commit_sha": "ccf8629a6f439a3a34702020fdb1d7cb7b635bc3",
+    "remaining_release_ready_pages": 30
   },
   "next_actions": [
     "Complete full primary dose/safety extraction for MASTERPLAN, NEOTORCH, SUNMO and ANDROMEDA.",
