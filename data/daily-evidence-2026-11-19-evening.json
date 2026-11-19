@@ -369,8 +369,13 @@
       "registry_id": "NCT04365374",
       "matched_existing_entry": null,
       "disposition": "source_verified_candidate",
-      "reason": "Primary phase III report and registry verified; 230 randomized, 204 mITT, median follow-up 12.9 months; 12-month SBR 1.3% vs 15.4%, HR 0.06 (95% CI 0.01-0.46), P=.0070; SB-RFS HR 0.48 (95% CI 0.30-0.76), P=.0021; grade ≥3 treatment-related AEs 20.0% vs 21.7%. NNT=8 for 12-month SBR.",
-      "source_url": "https://doi.org/10.1200/JCO-26-01894"
+      "reason": "Primary JCO phase III report and registry verified; 230 randomized, 204 mITT, median follow-up 12.9 months; time-to-SBR HR 0.06 (95% CI 0.01-0.46), P=.0070; SB-RFS HR 0.48 (95% CI 0.30-0.76), P=.0021. Overall AEs 79.0% vs 80.7%; grade 3-5 breakdown and fixed-time absolute event rates not available in the accessible primary abstract. NNT not calculated.",
+      "source_url": "https://doi.org/10.1200/JCO-26-01894",
+      "primary_title": "Surgery and Tile-Based Radiation Therapy Versus Surgery and Stereotactic Radiation for Newly Diagnosed Brain Metastases: A Randomized, Open-Label, Phase III Trial",
+      "nnt_nnh": {
+        "status": "not_calculated",
+        "reason": "Primary abstract reports time-to-event HRs and medians but no fixed-time absolute event rates; do not derive NNT from HR or median time."
+      }
     },
     {
       "candidate": "PRIME-CRT / JCOG2510",
@@ -556,11 +561,8 @@
     "source_verified_candidate_examples": [
       {
         "trial": "ROADS",
-        "endpoint": "12-month surgical-bed recurrence",
-        "rates": "1.3% vs 15.4%",
-        "absolute_risk_reduction_pp": 14.1,
-        "calculation": "1/(0.154-0.013)=7.09; round up",
-        "nnt": 8
+        "nnt": null,
+        "reason": "No fixed-time absolute event rates in the accessible primary abstract; only time-to-event HRs and medians are reported."
       },
       {
         "trial": "NANT",
