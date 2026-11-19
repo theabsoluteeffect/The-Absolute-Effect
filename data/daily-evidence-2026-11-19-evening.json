@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.0",
+  "run_id": "absolute-effect-2026-11-19-evening",
+  "run_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "cycle": "evening",
+  "status": "blocked_serialization_incomplete",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "active_branch": "atlas-batch/2026-11-19-am",
+    "active_branch_head_before_evening": "670c958b8b17e5880d4f82c5b6f2f06bca9cba8e",
+    "evening_branch_created": false,
+    "reason": "The 2026-11-19-am batch remains unmerged and incomplete; a second publication branch would violate the serialized batch gate."
+  },
+  "preflight": {
+    "main_roster_unique_studies": 467,
+    "permanent_trial_pages": 460,
+    "canonical_page_index_files": 461,
+    "archive_entries": 16,
+    "evidence_index_unique_destinations": 468,
+    "current_trial_of_day": "PANKU-Esophagus01 (2026-11-17)",
+    "previous_trial_of_day": "GemX (2026-11-08)",
+    "core_sources_retrieved": true,
+    "manual_pages_reviewed": 9,
+    "manual_pages_remaining": 451,
+    "full_manual_page_audit_complete": false
+  },
+  "candidate_screening": {
+    "screened": 43,
+    "confirmed_duplicates": 4,
+    "overlap_with_active_AM_batch": 2,
+    "previously_screened_carry_forward": 3,
+    "protocol_only": 6,
+    "new_unique_candidate_leads": 30,
+    "net_new_candidates_not_in_AM": 28,
+    "primary_source_verified": 6,
+    "primary_source_verified_not_in_AM": 4,
+    "held_for_verification_or_full_extraction": 21,
+    "deferred_negative": 3,
+    "page_ready": 0,
+    "uploaded": 0,
+    "not_uploaded": 30
+  },
+  "candidate_decisions": [
+    {
+      "candidate": "KEYNOTE-C93",
+      "doi": "10.1016/S0140-6736(26)02095-7",
+      "pmid": "42933458",
+      "registry_id": "NCT05173987",
+      "matched_existing_entry": "main roster keynote-c93; trial-pages/keynote-c93/",
+      "disposition": "duplicate_excluded",
+      "reason": "Same underlying phase III study already has a canonical page.",
+      "source_url": "https://doi.org/10.1016/S0140-6736(26)02095-7"
+    },
+    {
+      "candidate": "PANOVA-3",
+      "doi": "10.1200/JCO-25-00746",
+      "pmid": null,
+      "registry_id": "NCT03377491",
+      "matched_existing_entry": "active 2026-11-19-am candidate ledger",
+      "disposition": "overlap_with_active_AM_batch",
+      "reason": "Already screened and source-verified in the active morning batch; do not count again in PM.",
+      "source_url": "https://doi.org/10.1200/JCO-25-00746"
+    },
+    {
+      "candidate": "FIND",
+      "doi": "10.1200/JCO-25-03009",
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "matched_existing_entry": "active 2026-11-19-am candidate ledger",
+      "disposition": "overlap_with_active_AM_batch",
+      "reason": "Already screened and source-verified in the active morning batch; do not count again in PM.",
+      "source_url": "https://doi.org/10.1200/JCO-25-03009"
+    },
+    {
+      "candidate": "CUPISCO",
+      "doi": "10.1200/JCO-25-02974",
+      "pmid": "42691436",
+      "registry_id": "NCT03498521",
+      "matched_existing_entry": null,
+      "disposition": "held_primary_evidence",
+      "reason": "2026 report is an updated analysis; original primary randomized report and complete primary endpoints need linkage/extraction.",
+      "source_url": "https://doi.org/10.1200/JCO-25-02974"
+    },
+    {
+      "candidate": "METIS",
+      "doi": "10.1038/s41392-026-02834-x",
+      "pmid": "42967914",
+      "registry_id": "NCT04172259",
+      "matched_existing_entry": null,
+      "disposition": "source_verified_candidate",
+      "reason": "Primary phase II randomized report and registry identified; pCR is a surrogate and EFS was not improved; page not built.",
+      "source_url": "https://doi.org/10.1038/s41392-026-02834-x"
+    },
+    {
+      "candidate": "ROSEWOOD",
+      "doi": "10.1007/s11523-026-01268-3",
+      "pmid": "42975620",
+      "registry_id": "NCT03332017",
+      "matched_existing_entry": null,
+      "disposition": "held_follow_up_only",
+      "reason": "Final analysis is a follow-up to the same phase II study; retrieve original primary report before creating one canonical page.",
+      "source_url": "https://doi.org/10.1007/s11523-026-01268-3"
+    },
+    {
+      "candidate": "RAMIEL / OGSG1901",
+      "doi": "10.1007/s10120-026-01799-8",
+      "pmid": "42747649",
+      "registry_id": "jRCTs051190071",
+      "matched_existing_entry": null,
+      "disposition": "source_verified_candidate",
+      "reason": "Primary phase II single-arm report and registry identified; page-level applicability and safety review remains.",
+      "source_url": "https://doi.org/10.1007/s10120-026-01799-8"
+    },
+    {
+      "candidate": "FANTASTIC",
+      "doi": "10.1093/bjsopen/zrag144",
+      "pmid": "42981165",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_verification",
+      "reason": "Primary report identified; exact trial registry identifier and complete protocol crosswalk not verified.",
+      "source_url": "https://doi.org/10.1093/bjsopen/zrag144"
+    },
+    {
+      "candidate": "BilT-02",
+      "doi": "10.1158/1078-0432.CCR-25-1114",
+      "pmid": "42489677",
+      "registry_id": "NCT03639935",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "reason": "Prespecified 4-month PFS target not met; recorded in deferred-negative queue.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-25-1114"
+    },
+    {
+      "candidate": "Tobemstomig combinations in advanced ccRCC",
+      "doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "reason": "Randomized phase II stopped for futility; no convincing practice-changing efficacy signal.",
+      "source_url": "https://doi.org/10.1016/j.esmoop.2026.108587"
+    },
+    {
+      "candidate": "Axitinib plus nivolumab in mucosal melanoma",
+      "doi": "10.1158/1078-0432.CCR-26-1089",
+      "pmid": "42594052",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_safety",
+      "reason": "Primary phase II paper identified; registry and complete dose/safety extraction remain.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-1089"
+    },
+    {
+      "candidate": "Pembrolizumab plus GM-CSF in advanced biliary cancer",
+      "doi": "10.1158/1078-0432.CCR-25-3987",
+      "pmid": "42599167",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_outcomes",
+      "reason": "Primary phase II paper identified; exact registry and complete efficacy/safety tables not extracted.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-25-3987"
+    },
+    {
+      "candidate": "NANT",
+      "doi": "10.1016/S1470-2045(26)00387-6",
+      "pmid": "42843394",
+      "registry_id": "NCT04507841",
+      "matched_existing_entry": null,
+      "disposition": "source_verified_candidate",
+      "reason": "Primary report and registry verified; 67 enrolled, 48 response-evaluable, ORR 63%, R0 32/40 (80%), median follow-up 37.7 months; grade 3-4 thrombocytopenia 48%, leukopenia 19%, anaemia 18%, neutropenia 13%; single-arm, no NNT.",
+      "source_url": "https://doi.org/10.1016/S1470-2045(26)00387-6"
+    },
+    {
+      "candidate": "Lucitanib in advanced thymic carcinoma",
+      "doi": "10.1002/mco2.71105",
+      "pmid": "42928801",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_primary_source",
+      "reason": "Primary phase II publication identified but registry and complete primary source detail unresolved.",
+      "source_url": "https://doi.org/10.1002/mco2.71105"
+    },
+    {
+      "candidate": "PEMDA-HN",
+      "doi": "10.1158/1078-0432.CCR-26-0819",
+      "pmid": "42615600",
+      "registry_id": "NCT05814666",
+      "matched_existing_entry": "data/daily-evidence-2026-11-15-evening.json",
+      "disposition": "previously_screened_carry_forward_deferred",
+      "reason": "Previously screened; no ORR advantage; retain as contrary evidence, not a new PM candidate.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-0819"
+    },
+    {
+      "candidate": "ZEAL-1L",
+      "doi": "10.1016/j.jtho.2026.104087",
+      "pmid": "42431263",
+      "registry_id": "NCT04475939",
+      "matched_existing_entry": "data/daily-evidence-2026-11-17-morning.json",
+      "disposition": "previously_screened_carry_forward_deferred",
+      "reason": "Previously screened; phase III PFS HR 1.00 (95% CI 0.79-1.27), no benefit.",
+      "source_url": "https://doi.org/10.1016/j.jtho.2026.104087"
+    },
+    {
+      "candidate": "daNIS-2",
+      "doi": "10.1016/j.esmoop.2026.108621",
+      "pmid": "43002828",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_primary_outcome_extraction",
+      "reason": "Primary phase III report identified; registry, primary endpoint results and grade 3-5 safety require full extraction.",
+      "source_url": "https://doi.org/10.1016/j.esmoop.2026.108621"
+    },
+    {
+      "candidate": "Talazoparib plus enzalutamide in high-volume mHNPC",
+      "doi": "10.1038/s41591-026-04671-5",
+      "pmid": "42875559",
+      "registry_id": "NCT04332744",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "reason": "No clear added clinical benefit; grade ≥3 toxicity increased and two fatal therapy-emergent myeloid neoplasms reported.",
+      "source_url": "https://doi.org/10.1038/s41591-026-04671-5"
+    },
+    {
+      "candidate": "TOLERANT",
+      "doi": "10.1016/j.ejca.2026.117784",
+      "pmid": "42892237",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_surrogate_endpoint",
+      "reason": "Biomarker-only prevention signal; no validated clinical cancer-incidence endpoint.",
+      "source_url": "https://doi.org/10.1016/j.ejca.2026.117784"
+    },
+    {
+      "candidate": "SPORTSMEN",
+      "doi": "10.1097/COC.0000000000001396",
+      "pmid": "42975873",
+      "registry_id": "NCT05617716",
+      "matched_existing_entry": null,
+      "disposition": "held_primary_endpoint",
+      "reason": "Accessible report did not provide the complete primary efficacy result set.",
+      "source_url": "https://doi.org/10.1097/COC.0000000000001396"
+    },
+    {
+      "candidate": "SRAM",
+      "doi": "10.1016/j.radonc.2026.111870",
+      "pmid": "43014569",
+      "registry_id": "NCT03938649",
+      "matched_existing_entry": null,
+      "disposition": "held_secondary_analysis",
+      "reason": "Publication is a secondary QoL/toxicity analysis; original primary randomized report needs verification.",
+      "source_url": "https://doi.org/10.1016/j.radonc.2026.111870"
+    },
+    {
+      "candidate": "ImmunoPRISM",
+      "doi": "10.1038/s41591-026-04642-w",
+      "pmid": "42728379",
+      "registry_id": "NCT05469893",
+      "matched_existing_entry": "data/daily-evidence-2026-11-15-evening.json",
+      "disposition": "previously_screened_carry_forward",
+      "reason": "Previously screened; potentially eligible phase II randomized study, but no page created.",
+      "source_url": "https://doi.org/10.1038/s41591-026-04642-w"
+    },
+    {
+      "candidate": "SITGEM-CARE",
+      "doi": null,
+      "pmid": "42971953",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_missing_primary_metadata",
+      "reason": "PMID found but DOI-title and registry identity not verified; full primary results not extracted.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42971953/"
+    },
+    {
+      "candidate": "SCALET / TCOG T2221",
+      "doi": "10.1016/j.esmoop.2026.108618",
+      "pmid": "42976416",
+      "registry_id": "TCOG T2221 (registry mapping unverified)",
+      "matched_existing_entry": null,
+      "disposition": "held_early_phase_registry",
+      "reason": "Early-phase study; exact registry crosswalk and complete dose/safety data remain.",
+      "source_url": "https://doi.org/10.1016/j.esmoop.2026.108618"
+    },
+    {
+      "candidate": "Lurbinectedin plus irinotecan in GEP-NEN",
+      "doi": "10.1016/j.esmoop.2026.108534",
+      "pmid": "42735452",
+      "registry_id": "NCT02611024",
+      "matched_existing_entry": null,
+      "disposition": "held_expansion_cohort",
+      "reason": "Phase I/II expansion cohort; full parent-study protocol and cohort-specific outcomes/safety need extraction.",
+      "source_url": "https://doi.org/10.1016/j.esmoop.2026.108534"
+    },
+    {
+      "candidate": "eNRGy",
+      "doi": "10.1200/JCO-25-03128",
+      "pmid": "42385125",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_primary_outcomes",
+      "reason": "Primary JCO report identified; exact registry linkage and full efficacy/safety tables remain.",
+      "source_url": "https://doi.org/10.1200/JCO-25-03128"
+    },
+    {
+      "candidate": "Ontorpacept plus doxorubicin in leiomyosarcoma",
+      "doi": "10.1038/s41416-026-03574-z",
+      "pmid": "42552364",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_early_phase_registry",
+      "reason": "Early-phase report; registry and full dose-limiting toxicity/response extraction incomplete.",
+      "source_url": "https://doi.org/10.1038/s41416-026-03574-z"
+    },
+    {
+      "candidate": "Paxalisib plus trastuzumab for HER2-positive breast cancer brain metastases",
+      "doi": "10.1158/2767-9764.CRC-26-0571",
+      "pmid": "42895898",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_safety",
+      "reason": "Primary phase II report identified; exact registry and complete intracranial efficacy/safety data not extracted.",
+      "source_url": "https://doi.org/10.1158/2767-9764.CRC-26-0571"
+    },
+    {
+      "candidate": "Tinengotinib in advanced solid tumors",
+      "doi": "10.1158/1078-0432.CCR-26-1076",
+      "pmid": "42489683",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_early_phase_registry",
+      "reason": "Phase Ib/II report; registry and full dose/safety details remain.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-1076"
+    },
+    {
+      "candidate": "IBI110 plus sintilimab in alveolar soft part sarcoma",
+      "doi": "10.1158/1078-0432.CCR-26-1489",
+      "pmid": "42594032",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_registry_and_safety",
+      "reason": "Phase II report identified; registry, denominators and grade 3-5 safety require extraction.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-1489"
+    },
+    {
+      "candidate": "Rilvegostomig in metastatic NSCLC",
+      "doi": "10.1158/1078-0432.CCR-26-0333",
+      "pmid": "42574065",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_first_in_human",
+      "reason": "Early phase dose-escalation/expansion report; exact registry and recommended phase II dose/safety extraction required.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-26-0333"
+    },
+    {
+      "candidate": "Nelistotug first-in-human",
+      "doi": "10.1158/1078-0432.CCR-25-4374",
+      "pmid": "42658188",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_first_in_human",
+      "reason": "Phase I first-in-human report; registry and complete dose-limiting toxicity/response data not verified.",
+      "source_url": "https://doi.org/10.1158/1078-0432.CCR-25-4374"
+    },
+    {
+      "candidate": "ROADS",
+      "doi": "10.1200/JCO-26-01894",
+      "pmid": "42804720",
+      "registry_id": "NCT04365374",
+      "matched_existing_entry": null,
+      "disposition": "source_verified_candidate",
+      "reason": "Primary phase III report and registry verified; 230 randomized, 204 mITT, median follow-up 12.9 months; 12-month SBR 1.3% vs 15.4%, HR 0.06 (95% CI 0.01-0.46), P=.0070; SB-RFS HR 0.48 (95% CI 0.30-0.76), P=.0021; grade ≥3 treatment-related AEs 20.0% vs 21.7%. NNT=8 for 12-month SBR.",
+      "source_url": "https://doi.org/10.1200/JCO-26-01894"
+    },
+    {
+      "candidate": "PRIME-CRT / JCOG2510",
+      "doi": "10.1016/j.cllc.2026.09.007",
+      "pmid": "42887199",
+      "registry_id": "JCOG2510 (registry mapping unverified)",
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Protocol/design publication only; no outcome data.",
+      "source_url": "https://doi.org/10.1016/j.cllc.2026.09.007"
+    },
+    {
+      "candidate": "JALNECK / JCOG2407",
+      "doi": "10.1093/jjco/hyag121",
+      "pmid": "42525729",
+      "registry_id": "JCOG2407 (registry mapping unverified)",
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Protocol publication only; no primary outcome results.",
+      "source_url": "https://doi.org/10.1093/jjco/hyag121"
+    },
+    {
+      "candidate": "JCOG2504 less-surveillance early gastric cancer",
+      "doi": "10.1093/jjco/hyag123",
+      "pmid": "42545799",
+      "registry_id": "JCOG2504 (registry mapping unverified)",
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Protocol publication only; no outcome results.",
+      "source_url": "https://doi.org/10.1093/jjco/hyag123"
+    },
+    {
+      "candidate": "PADL1NK-005",
+      "doi": "10.1080/14796694.2026.2752788",
+      "pmid": "42992629",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Study design/protocol publication only; no results.",
+      "source_url": "https://doi.org/10.1080/14796694.2026.2752788"
+    },
+    {
+      "candidate": "ASPIRE-GCT",
+      "doi": "10.1080/14796694.2026.2759456",
+      "pmid": "43032915",
+      "registry_id": "NCT06866964",
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Protocol publication only; no results.",
+      "source_url": "https://doi.org/10.1080/14796694.2026.2759456"
+    },
+    {
+      "candidate": "ALICE / PRODIGE89",
+      "doi": "10.1016/j.dld.2026.08.030",
+      "pmid": "42736101",
+      "registry_id": null,
+      "matched_existing_entry": null,
+      "disposition": "held_protocol_only",
+      "reason": "Study protocol/design publication only; no outcome data.",
+      "source_url": "https://doi.org/10.1016/j.dld.2026.08.030"
+    },
+    {
+      "candidate": "KEYNOTE-671 five-year outcomes",
+      "doi": "10.1016/j.annonc.2026.08.005",
+      "pmid": "42628840",
+      "registry_id": "NCT03425643",
+      "matched_existing_entry": null,
+      "disposition": "held_follow_up_primary_linkage",
+      "reason": "Five-year follow-up report identified; retrieve and verify original primary report before creating one canonical study page.",
+      "source_url": "https://doi.org/10.1016/j.annonc.2026.08.005"
+    },
+    {
+      "candidate": "CAMORAL",
+      "doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": null,
+      "matched_existing_entry": "active Atlas canonical page trial-pages/camoral/index.html",
+      "disposition": "duplicate_excluded",
+      "reason": "Same underlying phase III study already has a canonical page; do not create another.",
+      "source_url": "https://doi.org/10.1001/jamaoncol.2026.4642"
+    },
+    {
+      "candidate": "RINGSIDE",
+      "doi": "10.1200/JCO-26-00725",
+      "pmid": "42848980",
+      "registry_id": "NCT04871282",
+      "matched_existing_entry": "main roster ringside; trial-pages/ringside/",
+      "disposition": "duplicate_excluded",
+      "reason": "Same underlying phase II study already has a canonical page.",
+      "source_url": "https://doi.org/10.1200/JCO-26-00725"
+    },
+    {
+      "candidate": "ACT-GI",
+      "doi": "10.1200/JCO-26-00568",
+      "pmid": "42441933",
+      "registry_id": "NCT05772546",
+      "matched_existing_entry": "main roster act-gi; trial-pages/act-gi/",
+      "disposition": "duplicate_excluded",
+      "reason": "Same underlying phase II study already has a canonical page.",
+      "source_url": "https://doi.org/10.1200/JCO-26-00568"
+    }
+  ],
+  "duplicate_check_summary": {
+    "screened": 43,
+    "duplicates": 4,
+    "duplicate_ids": [
+      "KEYNOTE-C93",
+      "CAMORAL",
+      "RINGSIDE",
+      "ACT-GI"
+    ],
+    "overlap_with_active_AM_batch": [
+      "PANOVA-3",
+      "FIND"
+    ],
+    "previously_screened": [
+      "PEMDA-HN",
+      "ImmunoPRISM",
+      "ZEAL-1L"
+    ],
+    "protocol_only": [
+      "PRIME-CRT/JCOG2510",
+      "JALNECK/JCOG2407",
+      "JCOG2504",
+      "PADL1NK-005",
+      "ASPIRE-GCT",
+      "ALICE/PRODIGE89"
+    ],
+    "new_unique_candidate_leads": 30,
+    "net_new_candidates_not_in_AM": 28
+  },
+  "nccn": {
+    "official_sources_identified": [
+      {
+        "title": "NCCN Guidelines Insights: Prostate Cancer, Version 5.2026",
+        "doi": "10.6004/jnccn.2026.0023",
+        "scope": "metadata only; complete reference list not retrieved"
+      },
+      {
+        "title": "Non-Small Cell Lung Cancer, Version 4.2026",
+        "doi": "10.6004/jnccn.2026.0017",
+        "scope": "metadata only; complete reference list not retrieved"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Acute Myeloid Leukemia, Version 3.2026",
+        "doi": "10.6004/jnccn.2026.0028",
+        "scope": "metadata only; complete reference list not retrieved"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Hepatocellular Carcinoma, Version 2.2026",
+        "doi": "10.6004/jnccn.2026.0047",
+        "scope": "focused Insights article; not the complete guideline"
+      },
+      {
+        "title": "Pancreatic Adenocarcinoma, Version 4.2026",
+        "doi": "10.6004/jnccn.2026.0046",
+        "scope": "metadata only; complete reference list not retrieved"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+        "doi": "10.6004/jnccn.2026.0051",
+        "scope": "metadata/abstract only"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+        "doi": "10.6004/jnccn.2026.0050",
+        "scope": "metadata only; complete reference list not retrieved"
+      }
+    ],
+    "exact_reference_numbers_mapped": 0,
+    "complete_full_guideline_access": false,
+    "action": "Keep exact NCCN mapping tasks open; no reference numbers or recommendation categories inferred."
+  },
+  "repairs": {
+    "open_on_active_AM_branch": 147,
+    "closed_on_active_AM_branch": 52,
+    "repairs_staged_on_AM_branch": 4,
+    "repairs_completed_this_evening": 0,
+    "release_state_holds_from_2026_11_17_batch": 8,
+    "manual_page_audit_remaining": 451
+  },
+  "nnt_nnh": {
+    "source_verified_candidate_examples": [
+      {
+        "trial": "ROADS",
+        "endpoint": "12-month surgical-bed recurrence",
+        "rates": "1.3% vs 15.4%",
+        "absolute_risk_reduction_pp": 14.1,
+        "calculation": "1/(0.154-0.013)=7.09; round up",
+        "nnt": 8
+      },
+      {
+        "trial": "NANT",
+        "nnt": null,
+        "reason": "Single-arm phase II; no comparator."
+      },
+      {
+        "trial": "PANOVA-3",
+        "nnt": null,
+        "reason": "Median OS/HR without common fixed-time absolute risk rates."
+      },
+      {
+        "trial": "FIND",
+        "nnt": null,
+        "reason": "Primary endpoint is curative-intent treatment uptake; no NNT used as a patient-benefit measure."
+      }
+    ]
+  },
+  "validation": {
+    "pages_created": 0,
+    "local_release_validator": "not run; no evening release branch",
+    "outcome_visualization_audit": "not run for evening batch",
+    "pr_checks": "not applicable",
+    "merge": "not attempted"
+  },
+  "deployment": {
+    "production": "not verified",
+    "preview": "not created"
+  },
+  "uploaded_cases": [],
+  "next_actions": [
+    "Finish the active 2026-11-19-am branch first; it remains below the 30-page release gate and is not merged.",
+    "Do not create a parallel evening publication branch until the AM branch is merged or formally closed.",
+    "Complete primary evidence and registry extraction for the 21 held PM candidates; retain the 3 negative studies in deferred evidence.",
+    "Build exactly 30 genuinely new canonical pages on a fresh PM branch only after the AM batch is resolved.",
+    "Run local strict release validation, inspect every page and visualisation, then PR checks; merge only after all pass."
+  ]
+}
