@@ -1781,7 +1781,7 @@
     {
       "trial": "ROADS",
       "primary_doi": "10.1200/JCO-26-01894",
-      "primary_title": "Surgery and tile-based radiation therapy versus surgery and stereotactic radiation for newly diagnosed brain metastases (ROADS): a randomized, open-label, phase 3 trial",
+      "primary_title": "Surgery and Tile-Based Radiation Therapy Versus Surgery and Stereotactic Radiation for Newly Diagnosed Brain Metastases: A Randomized, Open-Label, Phase III Trial",
       "primary_title_verified": true,
       "pmid": "42804720",
       "registry_id": "NCT04365374",
@@ -1795,7 +1795,8 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "primary source and registry verified; page build pending"
+      "status": "primary source and registry verified; page build pending",
+      "nnt_nnh_status": "not calculated — no fixed-time absolute event rates in accessible primary abstract"
     }
   ],
   "discovery_passes": [
