@@ -723,7 +723,7 @@
     },
     "permanent_trial_pages_count_definition": "399 unique page paths referenced by the master roster; includes the shared lung SABR reference page and excludes the standalone ROSEL redirect-only wrapper. There are 400 canonical index.html files in the repository, one of which is that redirect wrapper.",
     "daily_evidence_files_count": 24,
-    "daily_evidence_records_total": 388,
+    "daily_evidence_records_total": 443,
     "daily_evidence_records_uploaded": 144,
     "morning_run_2026_11_14": {
       "new_trials_added": [
@@ -1447,7 +1447,8 @@
       "trofuse-005",
       "optitrop-lung06"
     ],
-    "last_structural_reconciliation_branch_commit": "5693703ffa1084946ec50827a1682e736ccf6c79"
+    "last_structural_reconciliation_branch_commit": "5693703ffa1084946ec50827a1682e736ccf6c79",
+    "daily_evidence_files": 29
   },
   "trials": [
     {

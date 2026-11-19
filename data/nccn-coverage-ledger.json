@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T08:48:41+05:30",
+  "updated_at": "2026-11-19T03:28:40.099Z",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -355,7 +355,11 @@
     "scope": "metadata/abstract only",
     "exact_nccn_references_mapped": 0,
     "full_guideline_accessible": false,
-    "complete_reference_list_accessible": false
+    "complete_reference_list_accessible": false,
+    "new_unique_candidate_identities": 30,
+    "source_verified": 9,
+    "held_for_page_level_extraction": 21,
+    "disease_site_passes": 9
   },
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
@@ -983,6 +987,441 @@
       "reference_list_url": "https://uroweb.org/guidelines/testicular-cancer/chapter/references",
       "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
       "reviewed_on": "2026-11-17"
+    }
+  ],
+  "candidate_trial_provenance": [
+    {
+      "trial": "GOG-240",
+      "primary_doi": "10.1056/NEJMoa1309748",
+      "primary_title": "Improved Survival with Bevacizumab in Advanced Cervical Cancer",
+      "pmid": "24552320",
+      "registry_id": "NCT00803062",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "EMPOWER-Cervical1",
+      "primary_doi": "10.1056/NEJMoa2112187",
+      "primary_title": "Survival with Cemiplimab in Recurrent Cervical Cancer",
+      "pmid": "35139273",
+      "registry_id": "NCT03257267",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "innovaTV 301",
+      "primary_doi": "10.1056/NEJMoa2313811",
+      "primary_title": "Tisotumab Vedotin as Second- or Third-Line Therapy for Recurrent Cervical Cancer",
+      "pmid": "38959480",
+      "registry_id": "NCT04697628",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "IMpower010",
+      "primary_doi": "10.1016/S0140-6736(21)02098-5",
+      "primary_title": "Adjuvant atezolizumab after adjuvant chemotherapy in resected stage IB-IIIA non-small-cell lung cancer (IMpower010): a randomised, multicentre, open-label, phase 3 trial",
+      "pmid": "34555333",
+      "registry_id": "NCT02486718",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34555333/",
+        "https://clinicaltrials.gov/study/NCT02486718"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "IMpower150",
+      "primary_doi": "10.1056/NEJMoa1716948",
+      "primary_title": "Atezolizumab for First-Line Treatment of Metastatic Nonsquamous NSCLC",
+      "pmid": "29863955",
+      "registry_id": "NCT02366143",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29863955/",
+        "https://clinicaltrials.gov/study/NCT02366143"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "POSEIDON",
+      "primary_doi": "10.1056/EVIDoa2100058",
+      "primary_title": "Durvalumab, with or without tremelimumab, plus chemotherapy in first-line treatment of metastatic non-small-cell lung cancer: the phase III POSEIDON study",
+      "pmid": null,
+      "registry_id": "NCT03164616",
+      "source_urls": [
+        "https://doi.org/10.1056/EVIDoa2100058",
+        "https://clinicaltrials.gov/study/NCT03164616"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "ORIENT-11",
+      "primary_doi": "10.1016/j.jtho.2020.07.014",
+      "primary_title": "Sintilimab plus pemetrexed and platinum as first-line treatment for locally advanced or metastatic nonsquamous NSCLC: a randomized, double-blind, phase 3 trial",
+      "pmid": "32771405",
+      "registry_id": "NCT03607539",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32771405/",
+        "https://pubmed.ncbi.nlm.nih.gov/35917647/",
+        "https://clinicaltrials.gov/study/NCT03607539"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "RATIONALE-304",
+      "primary_doi": "10.1016/j.jtho.2021.04.001",
+      "primary_title": "Tislelizumab Plus Chemotherapy as First-Line Treatment for Locally Advanced or Metastatic Nonsquamous NSCLC (RATIONALE 304): A Randomized Phase 3 Trial",
+      "pmid": "34033975",
+      "registry_id": "NCT03663205",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34033975/",
+        "https://clinicaltrials.gov/study/NCT03663205"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "CHOICE-01",
+      "primary_doi": "10.1200/JCO.22.00727",
+      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial",
+      "pmid": null,
+      "registry_id": "NCT03856411",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/39715755/",
+        "https://clinicaltrials.gov/study/NCT03856411"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "DUO-O",
+      "primary_doi": "10.1200/JCO.23.02099",
+      "primary_title": "Durvalumab, bevacizumab and olaparib maintenance in newly diagnosed advanced ovarian cancer without tumour BRCA1/2 mutation (DUO-O)",
+      "pmid": "38055243",
+      "registry_id": "NCT03737643",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38055243/",
+        "https://clinicaltrials.gov/study/NCT03737643"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "PRIMA",
+      "primary_doi": "10.1056/NEJMoa1910962",
+      "primary_title": "Niraparib in Patients with Newly Diagnosed Advanced Ovarian Cancer",
+      "pmid": "31562799",
+      "registry_id": "NCT02655016",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31562799/",
+        "https://clinicaltrials.gov/study/NCT02655016"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "POLARIX",
+      "primary_doi": "10.1056/NEJMoa2115304",
+      "primary_title": "Polatuzumab Vedotin in Previously Untreated Diffuse Large B-Cell Lymphoma",
+      "pmid": "34904799",
+      "registry_id": "NCT03274492",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34904799/",
+        "https://clinicaltrials.gov/study/NCT03274492"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "MURANO",
+      "primary_doi": "10.1056/NEJMoa1713976",
+      "primary_title": "Venetoclax–Rituximab in Relapsed or Refractory Chronic Lymphocytic Leukemia",
+      "pmid": "29562156",
+      "registry_id": "NCT02005471",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29562156/",
+        "https://clinicaltrials.gov/study/NCT02005471"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "ELEVATE-TN",
+      "primary_doi": "10.1016/S0140-6736(19)33156-5",
+      "primary_title": "Acalabrutinib with or without obinutuzumab versus chlorambucil and obinutuzumab for treatment-naive chronic lymphocytic leukaemia (ELEVATE-TN): a randomised, controlled, phase 3 trial",
+      "pmid": "31882368",
+      "registry_id": "NCT02475681",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31882368/",
+        "https://clinicaltrials.gov/study/NCT02475681"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "KEYNOTE-590",
+      "primary_doi": "10.1056/NEJMoa2101534",
+      "primary_title": "Pembrolizumab plus chemotherapy versus chemotherapy alone for first-line treatment of advanced oesophageal cancer (KEYNOTE-590): a randomised, placebo-controlled, phase 3 study",
+      "pmid": "34454674",
+      "registry_id": "NCT03189719",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34454674/",
+        "https://clinicaltrials.gov/study/NCT03189719"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "NATALEE",
+      "primary_doi": "10.1056/NEJMoa2305488",
+      "primary_title": "Ribociclib plus Endocrine Therapy in Early Breast Cancer",
+      "pmid": "38507751",
+      "registry_id": "NCT03701334",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38507751/",
+        "https://clinicaltrials.gov/study/NCT03701334"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "DESTINY-Breast04",
+      "primary_doi": "10.1056/NEJMoa2203690",
+      "primary_title": "Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer",
+      "pmid": "35665782",
+      "registry_id": "NCT03734029",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35665782/",
+        "https://clinicaltrials.gov/study/NCT03734029"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    },
+    {
+      "trial": "ECHELON-2",
+      "primary_doi": "10.1016/S0140-6736(18)32984-2",
+      "primary_title": "Brentuximab vedotin with chemotherapy for CD30-positive peripheral T-cell lymphoma (ECHELON-2): a global, double-blind, randomised, phase 3 trial",
+      "pmid": "30522922",
+      "registry_id": "NCT01777152",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/30522922/",
+        "https://clinicaltrials.gov/study/NCT01777152"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "pending exact guideline citation mapping"
+    }
+  ],
+  "discovery_passes": [
+    {
+      "disease_site": "Pancreas/biliary",
+      "subsets": [
+        "Locally advanced pancreatic cancer",
+        "Previously treated advanced biliary tract cancer"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Colorectal",
+      "subsets": [
+        "RAS wild-type left-sided mCRC",
+        "Refractory mCRC",
+        "ctDNA-guided postoperative surveillance"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "NCCN Colon Cancer Insights v3.2026 abstract only",
+      "nccn_reference": null,
+      "status": "exact reference list inaccessible"
+    },
+    {
+      "disease_site": "Thoracic",
+      "subsets": [
+        "PD-L1-negative first-line NSCLC",
+        "First-line nonsquamous NSCLC",
+        "Adjuvant resected NSCLC",
+        "MET-amplified EGFR-mutant NSCLC"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Breast",
+      "subsets": [
+        "HER2-low metastatic",
+        "HR+/HER2− adjuvant",
+        "HER2-low ADC"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Cervix",
+      "subsets": [
+        "Recurrent/metastatic first-line",
+        "Second-line immunotherapy",
+        "Second/third-line ADC"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Ovary",
+      "subsets": [
+        "First-line maintenance",
+        "BRCA/HRD biomarker strata",
+        "PARP plus antiangiogenic/IO maintenance"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Haematologic malignancy",
+      "subsets": [
+        "DLBCL first-line",
+        "CLL first-line and relapsed",
+        "PTCL first-line",
+        "AL amyloidosis"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "Oesophagus/GEJ",
+      "subsets": [
+        "First-line advanced oesophageal/GEJ cancer"
+      ],
+      "source_type": "primary randomized trials",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "candidate discovery completed; exact NCCN mapping pending"
+    },
+    {
+      "disease_site": "CNS",
+      "subsets": [
+        "High-risk grade 2 glioma molecular subgroups"
+      ],
+      "source_type": "primary randomized trial follow-up",
+      "guideline_version": "not verified",
+      "nccn_reference": null,
+      "status": "contrary/neutral evidence deferred pending exact mapping"
     }
   ]
 }

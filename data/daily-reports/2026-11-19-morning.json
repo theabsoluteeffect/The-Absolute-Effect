@@ -4,7 +4,7 @@
   "run_timestamp": "2026-11-19T08:48:41+05:30",
   "cycle": "morning",
   "status": "INCOMPLETE",
-  "headline": "No new trial pages were uploaded. Twelve new-to-Atlas trial identities were identified, eight have primary-source evidence verified at candidate level, and four remain held for page-level protocol/safety extraction. The 30-study release gate was not met.",
+  "headline": "Thirty new-to-Atlas underlying study identities were identified across multiple disease-site passes. Nine have candidate-level primary-source verification sufficient to begin page construction; 21 remain held for complete protocol/safety/endpoint extraction. No pages were uploaded because the strict 30-page release gate was not met.",
   "target": {
     "new_unique_trials": 30,
     "uploaded": 0,
@@ -64,29 +64,141 @@
     "exact_references_mapped": 0,
     "full_guideline_accessible": false,
     "complete_reference_list_accessible": false,
-    "provenance_claimed": false
+    "provenance_claimed": false,
+    "discovery_passes": [
+      {
+        "disease_site": "Pancreas/biliary",
+        "subsets": [
+          "Locally advanced pancreatic cancer",
+          "Previously treated advanced biliary tract cancer"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Colorectal",
+        "subsets": [
+          "RAS wild-type left-sided mCRC",
+          "Refractory mCRC",
+          "ctDNA-guided postoperative surveillance"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "NCCN Colon Cancer Insights v3.2026 abstract only",
+        "nccn_reference": null,
+        "status": "exact reference list inaccessible"
+      },
+      {
+        "disease_site": "Thoracic",
+        "subsets": [
+          "PD-L1-negative first-line NSCLC",
+          "First-line nonsquamous NSCLC",
+          "Adjuvant resected NSCLC",
+          "MET-amplified EGFR-mutant NSCLC"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Breast",
+        "subsets": [
+          "HER2-low metastatic",
+          "HR+/HER2− adjuvant",
+          "HER2-low ADC"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Cervix",
+        "subsets": [
+          "Recurrent/metastatic first-line",
+          "Second-line immunotherapy",
+          "Second/third-line ADC"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Ovary",
+        "subsets": [
+          "First-line maintenance",
+          "BRCA/HRD biomarker strata",
+          "PARP plus antiangiogenic/IO maintenance"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Haematologic malignancy",
+        "subsets": [
+          "DLBCL first-line",
+          "CLL first-line and relapsed",
+          "PTCL first-line",
+          "AL amyloidosis"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "Oesophagus/GEJ",
+        "subsets": [
+          "First-line advanced oesophageal/GEJ cancer"
+        ],
+        "source_type": "primary randomized trials",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "candidate discovery completed; exact NCCN mapping pending"
+      },
+      {
+        "disease_site": "CNS",
+        "subsets": [
+          "High-risk grade 2 glioma molecular subgroups"
+        ],
+        "source_type": "primary randomized trial follow-up",
+        "guideline_version": "not verified",
+        "nccn_reference": null,
+        "status": "contrary/neutral evidence deferred pending exact mapping"
+      }
+    ],
+    "disease_site_passes": 9
   },
   "candidate_screening": {
-    "screened": 31,
-    "new_unique_identity_resolved": 12,
-    "source_verified": 8,
-    "held_unique_for_page_details": 4,
-    "duplicates": 10,
+    "screened": 55,
+    "new_unique_identity_resolved": 30,
+    "source_verified": 9,
+    "held_unique_for_page_details": 21,
+    "duplicates": 16,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
-    "published": 0
+    "published": 0,
+    "shortfall_to_30_unique": 0,
+    "shortfall_to_30_release_ready_pages": 30
   },
   "duplicate_check_summary": {
-    "screened": 31,
-    "duplicates": 10,
-    "new_unique_identity_resolved": 12,
-    "source_verified": 8,
-    "held_unique_for_page_details": 4,
+    "screened": 55,
+    "new_unique_identity_resolved": 30,
+    "source_verified": 9,
+    "held_unique_for_page_details": 21,
+    "duplicates": 16,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
-    "uploaded": 0
+    "published": 0,
+    "shortfall_to_30_unique": 0,
+    "shortfall_to_30_release_ready_pages": 30
   },
   "uploaded_cases": [],
   "nnt_nnh_visualization_qa": {
@@ -110,10 +222,10 @@
   "report_file": "data/daily-reports/2026-11-19-morning.json",
   "evidence_file": "data/daily-evidence-2026-11-19-morning.json",
   "next_actions": [
-    "Complete full primary dose/safety extraction for MASTERPLAN, NEOTORCH, SUNMO and ANDROMEDA.",
-    "Resolve PSMAgRT, DESTINY-Lung04, ASCENT-GYN-01 and JCOG2510 source identity/protocol holds.",
-    "Review remaining disease-site guideline subsets and continue screening until 30 genuinely new unique studies are independently verified.",
-    "Resolve eight release-state issues from the 17 Nov merged batch and run the patched validator before any PR.",
+    "Build complete pages for the nine source-verified candidates, including the valid MASTERPLAN 12-month LRR NNT=4 pictogram.",
+    "Complete primary protocol/safety extraction for the 21 held unique candidates; do not pad or merge incomplete pages.",
+    "Resolve four additional source-held leads and four deferred/contrary evidence mappings.",
+    "Resolve nine main-branch release-state holds, run the patched strict validator, and only then open a PR containing exactly 30 release-ready unique studies.",
     "Complete the manual clinical audit of the remaining 451 permanent trial pages."
   ]
 }
