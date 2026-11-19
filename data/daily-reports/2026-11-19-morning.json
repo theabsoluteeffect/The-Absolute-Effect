@@ -3,14 +3,17 @@
   "run_id": "2026-11-19-morning",
   "run_timestamp": "2026-11-19T08:48:41+05:30",
   "cycle": "morning",
-  "status": "INCOMPLETE",
-  "headline": "Thirty new-to-Atlas underlying study identities were identified across multiple disease-site passes. Nine have candidate-level primary-source verification sufficient to begin page construction; 21 remain held for complete protocol/safety/endpoint extraction. No pages were uploaded because the strict 30-page release gate was not met.",
+  "status": "incomplete",
+  "headline": "INCOMPLETE — 0/30 uploaded; duplicate reconciliation leaves 28 unique identities, two replacements and 30 release-ready pages still outstanding.",
   "target": {
     "new_unique_trials": 30,
     "uploaded": 0,
     "not_uploaded": 30,
     "discovery_target_met": true,
-    "release_ready_page_target_met": false
+    "release_ready_page_target_met": false,
+    "identity_resolved": 28,
+    "shortfall_unique": 2,
+    "shortfall_release_ready": 30
   },
   "repository": {
     "name": "theabsoluteeffect/The-Absolute-Effect",
@@ -181,29 +184,41 @@
   },
   "candidate_screening": {
     "screened": 55,
-    "new_unique_identity_resolved": 30,
-    "source_verified": 9,
-    "held_unique_for_page_details": 21,
-    "duplicates": 16,
+    "new_unique_identity_resolved": 28,
+    "source_verified": 8,
+    "held_unique_for_page_details": 20,
+    "duplicates": 18,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
-    "published": 0,
-    "shortfall_to_30_unique": 0,
+    "uploaded": 0,
+    "shortfall_to_30_unique": 2,
     "shortfall_to_30_release_ready_pages": 30
   },
   "duplicate_check_summary": {
     "screened": 55,
-    "new_unique_identity_resolved": 30,
+    "new_unique_identity_resolved": 28,
     "source_verified": 9,
     "held_unique_for_page_details": 21,
-    "duplicates": 16,
+    "duplicates": 18,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
     "published": 0,
     "shortfall_to_30_unique": 0,
-    "shortfall_to_30_release_ready_pages": 30
+    "shortfall_to_30_release_ready_pages": 30,
+    "duplicate_corrections": [
+      {
+        "candidate": "NATALEE",
+        "matched_existing_entry": "roster natalee; trial-pages/natalee/",
+        "disposition": "duplicate_excluded"
+      },
+      {
+        "candidate": "DESTINY-Breast04",
+        "matched_existing_entry": "roster destiny-breast04; trial-pages/destiny-breast04/",
+        "disposition": "duplicate_excluded"
+      }
+    ]
   },
   "uploaded_cases": [],
   "nnt_nnh_visualization_qa": {
@@ -227,11 +242,11 @@
   "report_file": "data/daily-reports/2026-11-19-morning.json",
   "evidence_file": "data/daily-evidence-2026-11-19-morning.json",
   "next_actions": [
-    "Build complete pages for the nine source-verified candidates, including the valid MASTERPLAN 12-month LRR NNT=4 pictogram.",
-    "Complete primary protocol/safety extraction for the 21 held unique candidates; do not pad or merge incomplete pages.",
-    "Resolve four additional source-held leads and four deferred/contrary evidence mappings.",
-    "Resolve nine main-branch release-state holds, run the patched strict validator, and only then open a PR containing exactly 30 release-ready unique studies.",
-    "Complete the manual clinical audit of the remaining 451 permanent trial pages."
+    "Complete primary dose/safety extraction for NEOTORCH and the 20 held unique candidates.",
+    "Replace the two duplicate false positives before treating the morning batch as 30 unique.",
+    "Build exactly 30 complete pages and run local release validator and outcome-visualization audit.",
+    "Resolve eight 17-Nov release-state holds before PR.",
+    "Do not open PR or merge until all 30 pages pass source, DOI-title, registry, visualisation, roster/index/archive and CI checks."
   ],
   "metadata_crosswalk_corrections": [
     {
@@ -304,5 +319,15 @@
     },
     "tod_records_match_roster": true,
     "index_links_explanation": "468 unique destinations include 460 permanent trial-page links and 8 intra-page anchors; the sole tree-only ROSEL item is a redirect/stub and is intentionally not linked as a canonical trial."
+  },
+  "reconciliation_update": {
+    "at": "2026-11-19T19:23:36.803+05:30",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "status": "incomplete",
+    "corrections": [
+      "NATALEE and DESTINY-Breast04 are existing canonical studies, not new unique candidates.",
+      "Morning batch corrected from 30 to 28 unique candidates; two replacements still needed.",
+      "No pages published."
+    ]
   }
 }
