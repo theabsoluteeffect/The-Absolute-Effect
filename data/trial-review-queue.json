@@ -39,14 +39,15 @@
       "next_action": "Retrieve full protocol/supplement and exact primary safety/dose tables before page build.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "companion-002",
       "trial": "COMPANION-002",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1200/JCO-26-02188",
-      "primary_title": null,
+      "primary_title": "COMPANION-002: A Randomized Phase 2/3 Trial of Tovecimig Plus Paclitaxel versus Paclitaxel Alone as a Second-line Therapy in Patients with Advanced Biliary Tract Cancer",
       "pmid": "42920414",
       "registry_id": "NCT05506943",
       "source_urls": [
@@ -58,7 +59,8 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "neotorch",
@@ -83,7 +85,7 @@
       "trial": "FIND",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1200/JCO-25-03009",
-      "primary_title": null,
+      "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial",
       "pmid": "42525894",
       "registry_id": "NCT05904665",
       "source_urls": [
@@ -95,14 +97,15 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "panova-3",
       "trial": "PANOVA-3",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1200/JCO-25-00746",
-      "primary_title": null,
+      "primary_title": "Tumor Treating Fields With Gemcitabine and Nab-Paclitaxel for Locally Advanced Pancreatic Adenocarcinoma: Randomized, Open-Label, Pivotal Phase III PANOVA-3 Study",
       "pmid": null,
       "registry_id": "NCT03377491",
       "source_urls": [
@@ -114,7 +117,8 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "sunmo",
@@ -158,7 +162,7 @@
       "trial": "NICHE-2",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1056/NEJMoa2400634",
-      "primary_title": null,
+      "primary_title": "Neoadjuvant Immunotherapy in Locally Advanced Mismatch Repair-Deficient Colon Cancer",
       "pmid": "38838311",
       "registry_id": "NCT03026140",
       "source_urls": [
@@ -170,14 +174,15 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "paradigm",
       "trial": "PARADIGM",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1001/jama.2023.4428",
-      "primary_title": null,
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-Type, Left-Sided Metastatic Colorectal Cancer: A Randomized Clinical Trial",
       "pmid": "37071094",
       "registry_id": "NCT02394795",
       "source_urls": [
@@ -189,14 +194,15 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "sunlight",
       "trial": "SUNLIGHT",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1056/NEJMoa2214963",
-      "primary_title": null,
+      "primary_title": "Trifluridine–Tipiracil and Bevacizumab in Refractory Metastatic Colorectal Cancer",
       "pmid": "37133585",
       "registry_id": "NCT04737187",
       "source_urls": [
@@ -208,14 +214,15 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "zuma-7",
       "trial": "ZUMA-7",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1056/NEJMoa2116133",
-      "primary_title": null,
+      "primary_title": "Axicabtagene Ciloleucel as Second-Line Therapy for Large B-Cell Lymphoma",
       "pmid": "34891224",
       "registry_id": "NCT03391466",
       "source_urls": [
@@ -227,14 +234,15 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "alpine",
       "trial": "ALPINE",
       "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1056/NEJMoa2211582",
-      "primary_title": null,
+      "primary_title": "Zanubrutinib or Ibrutinib in Relapsed or Refractory Chronic Lymphocytic Leukemia",
       "pmid": "36511784",
       "registry_id": "NCT03734016",
       "source_urls": [
@@ -246,7 +254,8 @@
       "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "psmagrt",

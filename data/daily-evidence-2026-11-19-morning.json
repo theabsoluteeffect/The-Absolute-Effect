@@ -55,7 +55,9 @@
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42914998/",
         "https://clinicaltrials.gov/study/NCT04089150"
-      ]
+      ],
+      "primary_title": "Perioperative chemotherapy and stereotactic body radiotherapy versus perioperative chemotherapy alone in patients with high-risk, localised pancreatic cancer (MASTERPLAN): an open-label, phase 2, multicentre, randomised trial of the Australasian Gastro-Intestinal Trials Group",
+      "primary_title_verified": true
     },
     {
       "candidate": "COMPANION-002",
@@ -70,7 +72,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/42920414/",
         "https://doi.org/10.1200/JCO-26-02188",
         "https://clinicaltrials.gov/study/NCT05506943"
-      ]
+      ],
+      "primary_title": "COMPANION-002: A Randomized Phase 2/3 Trial of Tovecimig Plus Paclitaxel versus Paclitaxel Alone as a Second-line Therapy in Patients with Advanced Biliary Tract Cancer",
+      "primary_title_verified": true
     },
     {
       "candidate": "NEOTORCH",
@@ -100,7 +104,9 @@
         "https://doi.org/10.1200/JCO-25-03009",
         "https://clinicaltrials.gov/study/NCT05904665"
       ],
-      "trial_of_day_candidate": true
+      "trial_of_day_candidate": true,
+      "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial",
+      "primary_title_verified": true
     },
     {
       "candidate": "PANOVA-3",
@@ -119,7 +125,9 @@
       "follow_up": {
         "doi": "10.1001/jamanetworkopen.2026.41241",
         "pmid": "43024239"
-      }
+      },
+      "primary_title": "Tumor Treating Fields With Gemcitabine and Nab-Paclitaxel for Locally Advanced Pancreatic Adenocarcinoma: Randomized, Open-Label, Pivotal Phase III PANOVA-3 Study",
+      "primary_title_verified": true
     },
     {
       "candidate": "SUNMO",
@@ -167,7 +175,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/38838311/",
         "https://doi.org/10.1056/NEJMoa2400634",
         "https://clinicaltrials.gov/study/NCT03026140"
-      ]
+      ],
+      "primary_title": "Neoadjuvant Immunotherapy in Locally Advanced Mismatch Repair-Deficient Colon Cancer",
+      "primary_title_verified": true
     },
     {
       "candidate": "PARADIGM",
@@ -182,7 +192,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/37071094/",
         "https://doi.org/10.1001/jama.2023.4428",
         "https://clinicaltrials.gov/study/NCT02394795"
-      ]
+      ],
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-Type, Left-Sided Metastatic Colorectal Cancer: A Randomized Clinical Trial",
+      "primary_title_verified": true
     },
     {
       "candidate": "SUNLIGHT",
@@ -197,7 +209,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/37133585/",
         "https://doi.org/10.1056/NEJMoa2214963",
         "https://clinicaltrials.gov/study/NCT04737187"
-      ]
+      ],
+      "primary_title": "Trifluridine–Tipiracil and Bevacizumab in Refractory Metastatic Colorectal Cancer",
+      "primary_title_verified": true
     },
     {
       "candidate": "ZUMA-7",
@@ -212,7 +226,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/34891224/",
         "https://doi.org/10.1056/NEJMoa2116133",
         "https://clinicaltrials.gov/study/NCT03391466"
-      ]
+      ],
+      "primary_title": "Axicabtagene Ciloleucel as Second-Line Therapy for Large B-Cell Lymphoma",
+      "primary_title_verified": true
     },
     {
       "candidate": "ALPINE",
@@ -227,7 +243,9 @@
         "https://pubmed.ncbi.nlm.nih.gov/36511784/",
         "https://doi.org/10.1056/NEJMoa2211582",
         "https://clinicaltrials.gov/study/NCT03734016"
-      ]
+      ],
+      "primary_title": "Zanubrutinib or Ibrutinib in Relapsed or Refractory Chronic Lymphocytic Leukemia",
+      "primary_title_verified": true
     },
     {
       "candidate": "CAMORAL",
