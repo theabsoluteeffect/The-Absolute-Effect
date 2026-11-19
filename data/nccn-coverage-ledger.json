@@ -991,6 +991,231 @@
   ],
   "candidate_trial_provenance": [
     {
+      "trial": "MASTERPLAN",
+      "primary_doi": "10.1016/S1470-2045(26)00532-2",
+      "primary_title": null,
+      "pmid": "42914998",
+      "registry_id": "NCT04089150",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42914998/",
+        "https://clinicaltrials.gov/study/NCT04089150"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "identity resolved; full page-level source extraction held"
+    },
+    {
+      "trial": "COMPANION-002",
+      "primary_doi": "10.1200/JCO-26-02188",
+      "primary_title": null,
+      "pmid": "42920414",
+      "registry_id": "NCT05506943",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42920414/",
+        "https://doi.org/10.1200/JCO-26-02188",
+        "https://clinicaltrials.gov/study/NCT05506943"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "NEOTORCH",
+      "primary_doi": "10.1016/j.annonc.2026.10.094",
+      "primary_title": null,
+      "pmid": "42933639",
+      "registry_id": "NCT04158440",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933639/",
+        "https://clinicaltrials.gov/study/NCT04158440"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "identity resolved; full page-level source extraction held"
+    },
+    {
+      "trial": "FIND",
+      "primary_doi": "10.1200/JCO-25-03009",
+      "primary_title": null,
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+        "https://doi.org/10.1200/JCO-25-03009",
+        "https://clinicaltrials.gov/study/NCT05904665"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "PANOVA-3",
+      "primary_doi": "10.1200/JCO-25-00746",
+      "primary_title": null,
+      "pmid": null,
+      "registry_id": "NCT03377491",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/",
+        "https://clinicaltrials.gov/study/NCT03377491"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "SUNMO",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "primary_title": null,
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41037766/",
+        "https://pubmed.ncbi.nlm.nih.gov/42971868/",
+        "https://clinicaltrials.gov/study/NCT05171647"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "identity resolved; full page-level source extraction held"
+    },
+    {
+      "trial": "ANDROMEDA",
+      "primary_doi": "10.1182/blood.2025032099",
+      "primary_title": null,
+      "pmid": "42118698",
+      "registry_id": "NCT03201965",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032099",
+        "https://clinicaltrials.gov/study/NCT03201965"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "identity resolved; full page-level source extraction held"
+    },
+    {
+      "trial": "NICHE-2",
+      "primary_doi": "10.1056/NEJMoa2400634",
+      "primary_title": null,
+      "pmid": "38838311",
+      "registry_id": "NCT03026140",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38838311/",
+        "https://doi.org/10.1056/NEJMoa2400634",
+        "https://clinicaltrials.gov/study/NCT03026140"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "PARADIGM",
+      "primary_doi": "10.1001/jama.2023.4428",
+      "primary_title": null,
+      "pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "SUNLIGHT",
+      "primary_doi": "10.1056/NEJMoa2214963",
+      "primary_title": null,
+      "pmid": "37133585",
+      "registry_id": "NCT04737187",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37133585/",
+        "https://doi.org/10.1056/NEJMoa2214963",
+        "https://clinicaltrials.gov/study/NCT04737187"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "ZUMA-7",
+      "primary_doi": "10.1056/NEJMoa2116133",
+      "primary_title": null,
+      "pmid": "34891224",
+      "registry_id": "NCT03391466",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34891224/",
+        "https://doi.org/10.1056/NEJMoa2116133",
+        "https://clinicaltrials.gov/study/NCT03391466"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
+      "trial": "ALPINE",
+      "primary_doi": "10.1056/NEJMoa2211582",
+      "primary_title": null,
+      "pmid": "36511784",
+      "registry_id": "NCT03734016",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36511784/",
+        "https://doi.org/10.1056/NEJMoa2211582",
+        "https://clinicaltrials.gov/study/NCT03734016"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "candidate primary evidence verified; page construction pending"
+    },
+    {
       "trial": "GOG-240",
       "primary_doi": "10.1056/NEJMoa1309748",
       "primary_title": "Improved Survival with Bevacizumab in Advanced Cervical Cancer",
@@ -1006,7 +1231,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "EMPOWER-Cervical1",
@@ -1024,7 +1249,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "innovaTV 301",
@@ -1042,7 +1267,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "IMpower010",
@@ -1060,7 +1285,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "IMpower150",
@@ -1078,7 +1303,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "POSEIDON",
@@ -1096,7 +1321,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "ORIENT-11",
@@ -1115,7 +1340,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "RATIONALE-304",
@@ -1133,7 +1358,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "CHOICE-01",
@@ -1152,7 +1377,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "DUO-O",
@@ -1170,7 +1395,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "PRIMA",
@@ -1188,7 +1413,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "POLARIX",
@@ -1206,7 +1431,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "MURANO",
@@ -1224,7 +1449,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "ELEVATE-TN",
@@ -1242,7 +1467,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "KEYNOTE-590",
@@ -1260,7 +1485,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "NATALEE",
@@ -1278,7 +1503,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "DESTINY-Breast04",
@@ -1296,7 +1521,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     },
     {
       "trial": "ECHELON-2",
@@ -1314,7 +1539,7 @@
       "nccn_reference_number": null,
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
-      "status": "pending exact guideline citation mapping"
+      "status": "identity resolved; full page-level source extraction held"
     }
   ],
   "discovery_passes": [

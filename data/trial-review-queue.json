@@ -16,7 +16,7 @@
     "published": 0,
     "branch": "atlas-batch/2026-11-19-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_sha": "5693703ffa1084946ec50827a1682e736ccf6c79",
+    "branch_commit_sha": "8f27c29eff701e6a78b1be9e9c32e263b13aa064",
     "shortfall_to_30_unique": 0,
     "disease_site_passes": 9,
     "nccn_reference_mappings": 0,
@@ -26,9 +26,9 @@
     {
       "trial_id": "masterplan",
       "trial": "MASTERPLAN",
-      "status": "held_for_primary_page_detail",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
       "primary_doi": "10.1016/S1470-2045(26)00532-2",
-      "primary_title": null,
+      "primary_title": "Perioperative chemotherapy and stereotactic body radiotherapy versus perioperative chemotherapy alone in patients with high-risk, localised pancreatic cancer (MASTERPLAN): an open-label, phase 2, multicentre, randomised trial of the Australasian Gastro-Intestinal Trials Group",
       "pmid": "42914998",
       "registry_id": "NCT04089150",
       "source_urls": [
