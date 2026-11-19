@@ -17,7 +17,8 @@
     "main_commit_after": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-19-am",
     "branch_base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_sha": "pending"
+    "branch_commit_sha": "5693703ffa1084946ec50827a1682e736ccf6c79",
+    "report_finalization_commit_sha": "pending"
   },
   "preflight": {
     "roster_unique_trials": 467,
@@ -96,10 +97,10 @@
     "pds0101_zero_response_status_card_repaired_on_branch": true
   },
   "release_validation": {
-    "local_release_validator": "not run; repository runtime/local clone unavailable",
-    "validator_patch": "staged on branch",
+    "local_release_validator": "custom static page/data checks passed; repository Node validator not run in a local checkout",
+    "validator_patch": "committed on branch; intentionally flags nine unresolved release states across main roster",
     "pr_opened": false,
-    "pr_checks": "not run",
+    "pr_checks": "not run; no PR opened because 30 unique page batch not complete",
     "merge": "not performed"
   },
   "deployment_status": "not verified — no production deployment triggered",

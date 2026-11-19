@@ -539,7 +539,7 @@
     "zero_response_pds0101_visualization_replaced_with_status_card_on_branch": true
   },
   "validation": {
-    "custom_static_checks": "pending after branch commit",
+    "custom_static_checks": "passed for four repaired page structures and roster/queue consistency; full Node validator not run",
     "release_validator_patch": "staged to reject release_ready=false, non-empty release_hold_reason and pending_release_validator states",
     "pr_checks": "not run; no PR opened",
     "merge": "not performed"
@@ -555,7 +555,8 @@
     "held_unique": 4,
     "remaining_new_unique_needed": 18,
     "uploaded": 0,
-    "not_uploaded": 30
+    "not_uploaded": 30,
+    "branch_commit_sha": "5693703ffa1084946ec50827a1682e736ccf6c79"
   },
   "next_actions": [
     "Complete full primary dose/safety extraction for MASTERPLAN, NEOTORCH, SUNMO and ANDROMEDA.",
