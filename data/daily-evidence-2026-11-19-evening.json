@@ -44,13 +44,13 @@
   "candidate_decisions": [
     {
       "candidate": "KEYNOTE-C93",
-      "doi": "10.1016/S0140-6736(26)02095-7",
+      "doi": null,
       "pmid": "42933458",
       "registry_id": "NCT05173987",
       "matched_existing_entry": "main roster keynote-c93; trial-pages/keynote-c93/",
       "disposition": "duplicate_excluded",
-      "reason": "Same underlying phase III study already has a canonical page.",
-      "source_url": "https://doi.org/10.1016/S0140-6736(26)02095-7"
+      "reason": "Same underlying phase III study already has a canonical page; PMID and registry match verified, but the DOI string was not independently confirmed in this run.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42933458/"
     },
     {
       "candidate": "PANOVA-3",
