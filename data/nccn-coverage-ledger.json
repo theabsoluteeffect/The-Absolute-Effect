@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T03:28:40.099Z",
+  "updated_at": "2026-11-19T19:24:07.172+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -224,6 +224,86 @@
         "Do not infer exact reference numbers or recommendation categories.",
         "Map only exact citations to underlying studies after source access is restored."
       ]
+    },
+    {
+      "guideline_id": "nccn-prostate-v5-2026",
+      "title": "NCCN Guidelines Insights: Prostate Cancer, Version 5.2026",
+      "version": "5.2026",
+      "publication_date": "2026",
+      "doi": "10.6004/jnccn.2026.0023",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0023",
+      "scope": "NCCN-authored Insights metadata identified; full article/reference list not retrieved in this run.",
+      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Retrieve complete Insights article/reference list and record exact reference numbers and active recommendation context; do not infer from secondary sources."
+      ]
+    },
+    {
+      "guideline_id": "nccn-nsclc-v4-2026",
+      "title": "Non-Small Cell Lung Cancer, Version 4.2026",
+      "version": "4.2026",
+      "publication_date": "2026",
+      "doi": "10.6004/jnccn.2026.0017",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0017",
+      "scope": "NCCN guideline article metadata identified; complete guideline reference list and recommendation pages not retrieved in this run.",
+      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Retrieve the complete authorised guideline/article reference list and map exact trial citations."
+      ]
+    },
+    {
+      "guideline_id": "nccn-aml-v3-2026",
+      "title": "NCCN Guidelines Insights: Acute Myeloid Leukemia, Version 3.2026",
+      "version": "3.2026",
+      "publication_date": "2026",
+      "doi": "10.6004/jnccn.2026.0028",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0028",
+      "scope": "NCCN-authored Insights metadata identified; complete article/reference list not retrieved in this run.",
+      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Retrieve full Insights reference list; mine AML/MRD and treatment subsets only after exact citations are available."
+      ]
+    },
+    {
+      "guideline_id": "nccn-pancreatic-v4-2026",
+      "title": "Pancreatic Adenocarcinoma, Version 4.2026",
+      "version": "4.2026",
+      "publication_date": "2026",
+      "doi": "10.6004/jnccn.2026.0046",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0046",
+      "scope": "NCCN guideline article metadata identified; complete authorised guideline and reference list not retrieved in this run.",
+      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Retrieve full guideline/reference list; map perioperative, locally advanced and metastatic pathways."
+      ]
+    },
+    {
+      "guideline_id": "nccn-older-adult-v2-2026",
+      "title": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+      "version": "2.2026",
+      "publication_date": "2026",
+      "doi": "10.6004/jnccn.2026.0050",
+      "source_url": "https://doi.org/10.6004/jnccn.2026.0050",
+      "scope": "NCCN-authored Insights metadata identified; complete article/reference list not retrieved in this run.",
+      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [],
+      "citation_map": [],
+      "next_actions": [
+        "Retrieve complete Insights reference list; map geriatric assessment, toxicity and treatment de-escalation evidence."
+      ]
     }
   ],
   "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
@@ -346,6 +426,51 @@
         "DPYD testing"
       ],
       "action": "No exact citation-to-trial mapping performed; retain mapping task and continue using primary sources and other authoritative guidelines."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-prostate-v5-2026",
+      "source": "NCCN Guidelines Insights: Prostate Cancer, Version 5.2026",
+      "url": "https://doi.org/10.6004/jnccn.2026.0023",
+      "status": "metadata_identified; full guideline/reference list not retrieved",
+      "subsets_reviewed": [],
+      "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-nsclc-v4-2026",
+      "source": "Non-Small Cell Lung Cancer, Version 4.2026",
+      "url": "https://doi.org/10.6004/jnccn.2026.0017",
+      "status": "metadata_identified; full guideline/reference list not retrieved",
+      "subsets_reviewed": [],
+      "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-aml-v3-2026",
+      "source": "NCCN Guidelines Insights: Acute Myeloid Leukemia, Version 3.2026",
+      "url": "https://doi.org/10.6004/jnccn.2026.0028",
+      "status": "metadata_identified; full guideline/reference list not retrieved",
+      "subsets_reviewed": [],
+      "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-pancreatic-v4-2026",
+      "source": "Pancreatic Adenocarcinoma, Version 4.2026",
+      "url": "https://doi.org/10.6004/jnccn.2026.0046",
+      "status": "metadata_identified; full guideline/reference list not retrieved",
+      "subsets_reviewed": [],
+      "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-older-adult-v2-2026",
+      "source": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+      "url": "https://doi.org/10.6004/jnccn.2026.0050",
+      "status": "metadata_identified; full guideline/reference list not retrieved",
+      "subsets_reviewed": [],
+      "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
     }
   ],
   "last_run": {
@@ -362,8 +487,8 @@
     "disease_site_passes": 9,
     "branch_commit_sha": "0c1957fa13ecf8e92d847e1d596acfa08b40664b"
   },
-  "last_updated": "2026-11-17",
-  "last_run_date": "2026-11-17",
+  "last_updated": "2026-11-19T19:24:07.172+05:30",
+  "last_run_date": "2026-11-19",
   "pending_trial_mappings": [
     {
       "trial_id": "trofuse-005",
@@ -1633,6 +1758,44 @@
       "nccn_recommendation_category": null,
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
       "status": "identity resolved; full page-level source extraction held"
+    },
+    {
+      "trial": "NANT",
+      "primary_doi": "10.1016/S1470-2045(26)00387-6",
+      "primary_title": "Neoadjuvant niraparib monotherapy for unresectable, homologous recombination deficiency-positive, high-grade serous ovarian cancer (NANT): a multicentre, single-arm, phase 2 trial",
+      "primary_title_verified": true,
+      "pmid": "42843394",
+      "registry_id": "NCT04507841",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42843394/",
+        "https://clinicaltrials.gov/study/NCT04507841"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "primary source and registry verified; page build pending"
+    },
+    {
+      "trial": "ROADS",
+      "primary_doi": "10.1200/JCO-26-01894",
+      "primary_title": "Surgery and tile-based radiation therapy versus surgery and stereotactic radiation for newly diagnosed brain metastases (ROADS): a randomized, open-label, phase 3 trial",
+      "primary_title_verified": true,
+      "pmid": "42804720",
+      "registry_id": "NCT04365374",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO-26-01894",
+        "https://clinicaltrials.gov/study/NCT04365374"
+      ],
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "status": "primary source and registry verified; page build pending"
     }
   ],
   "discovery_passes": [
@@ -1740,6 +1903,20 @@
       "guideline_version": "not verified",
       "nccn_reference": null,
       "status": "contrary/neutral evidence deferred pending exact mapping"
+    },
+    {
+      "date": "2026-11-19",
+      "pass_id": "2026-11-19-current-nccn-metadata-sweep",
+      "disease_sites": [
+        "prostate",
+        "thoracic/NSCLC",
+        "haematologic/AML",
+        "pancreatic",
+        "supportive/older-adult oncology"
+      ],
+      "source_scope": "official NCCN/JNCCN metadata and search-indexed article records only",
+      "status": "metadata_only; no exact citation-to-trial mapping",
+      "next_action": "Retrieve complete guideline or complete NCCN-authored Insights reference lists; continue primary-evidence discovery meanwhile."
     }
   ],
   "metadata_crosswalk_corrections": [
