@@ -18,6 +18,14 @@ const batch = trials.filter(t => t.batch_date === latestDate);
 const errors = [];
 const norm = s => String(s || '').replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 const fail = (id, issue) => errors.push({ id, issue });
+const unresolvedReleaseState = trials.filter(t =>
+  t.release_ready === false ||
+  String(t.release_hold_reason || "").trim().length > 0 ||
+  /pending_release_validator/i.test(String(t.release_qa_status || ""))
+);
+for (const trial of unresolvedReleaseState) {
+  fail(trial.id, `Release state is not clear: release_ready=${trial.release_ready}, release_hold_reason=${trial.release_hold_reason || "none"}, release_qa_status=${trial.release_qa_status || "unset"}`);
+}
 const rendererPath = path.join(root, 'assets/trial-page-layout.js');
 const rendererSource = fs.readFileSync(rendererPath, 'utf8');
 if (/\.card \[data-absolute-effect\]\s*\{\s*display\s*:\s*none/i.test(rendererSource)) {

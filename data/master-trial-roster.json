@@ -1295,7 +1295,51 @@
       "pr_head_sha": "ce986e9427248a52ed8587527b2d63f6535f2a77",
       "pr_checks_status": "passed on current head ce986e9",
       "merge_status": "held pending audit artifact inspection",
-      "published": false
+      "published": false,
+      "committed_trial_ids": [
+        "act-gi",
+        "artemis-011",
+        "bctop-h-n01",
+        "capital",
+        "dellphi-305",
+        "disitamab-tislelizumab",
+        "felzartamab-rd",
+        "fit4treat",
+        "harmoni-a",
+        "herizon-gea-01",
+        "i-spy2-2",
+        "ivonescimab-perioperative",
+        "keylynk-001",
+        "keynote-b49",
+        "litespark-011",
+        "monumental-3",
+        "neonipiga",
+        "panku-breast01",
+        "panku-esophagus01",
+        "panku-lung01",
+        "pds0101-pembrolizumab",
+        "pro-b",
+        "relight",
+        "ringside",
+        "toripalimab-mfolfirinox",
+        "transform-1",
+        "trastuzumab-botidotin",
+        "trofuse-005",
+        "union",
+        "zsab-neogolp"
+      ],
+      "release_hold_ids": [
+        "artemis-011",
+        "keynote-b49",
+        "panku-lung01",
+        "toripalimab-mfolfirinox",
+        "herizon-gea-01",
+        "keylynk-001",
+        "relight",
+        "trofuse-005"
+      ],
+      "release_ready_pages": 22,
+      "release_hold_pages": 8
     },
     "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "working_branch": "atlas-batch/2026-11-17-am",
@@ -1390,7 +1434,19 @@
     "canonical_page_files_including_redirect": 461,
     "sitemap_trial_urls": 461,
     "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
+    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+    "release_state_unresolved_count": 9,
+    "release_state_unresolved_ids": [
+      "artemis-011",
+      "keynote-b49",
+      "panku-lung01",
+      "toripalimab-mfolfirinox",
+      "herizon-gea-01",
+      "keylynk-001",
+      "relight",
+      "trofuse-005",
+      "optitrop-lung06"
+    ]
   },
   "trials": [
     {
@@ -3272,7 +3328,11 @@
       "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
       "pmid": "42928710",
       "disease_extent": "Advanced / metastatic",
-      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility",
+      "registry_id": "NCT06110663",
+      "registry": "NCT06110663",
+      "nct": "NCT06110663",
+      "registry_metadata_verified_on": "2026-11-19"
     },
     {
       "id": "daly-2-eu",
@@ -5161,15 +5221,10 @@
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "primary_title": "Trastuzumab Rezetecan in ERBB2-Low Advanced Breast Cancer",
-      "absolute_effect": {
-        "endpoint": "Grade ≥3 treatment-related adverse events",
-        "horizon": "During treatment",
-        "harm_percentage_points": 16.2,
-        "nnh": 7,
-        "notes": "Descriptive NNH from 84.1% versus 67.9%; chiefly neutrophil-count decrease."
-      },
       "pmid": "42925007",
-      "registry_id": "NCT05814354"
+      "registry_id": "NCT05814354",
+      "nnt_nnh_status": "not_applicable",
+      "nnt_nnh_reason": "No comparable fixed exposure horizon for grade ≥3 treatment-related AE incidence; median PFS/HR cannot support NNT/NNH."
     },
     {
       "id": "horrad",
@@ -7973,7 +8028,10 @@
       "quality_check_date": "2026-11-14",
       "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
       "pmid": "42929694",
-      "registry_id": "NCT06711900"
+      "registry_id": "NCT06711900",
+      "release_ready": false,
+      "release_hold_reason": "Primary protocol dose/schedule and full grade 3–5 safety supplement not independently re-extracted. Page visualisation and registry display repaired on atlas-batch/2026-11-19-am, but release remains held pending protocol verification.",
+      "release_qa_status": "primary_source_reviewed_pending_protocol_supplement"
     },
     {
       "id": "orient-16",

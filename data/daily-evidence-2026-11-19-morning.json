@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-19-morning",
+  "run_timestamp": "2026-11-19T08:48:41+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE — 12 new unique identities identified; 8 source-verified; 0 uploaded because the exact-30 PR gate was not met.",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-19-am",
+    "base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c"
+  },
+  "preflight": {
+    "recursive_tree_retrieved": true,
+    "roster_entries": 467,
+    "unique_trial_ids": 467,
+    "permanent_trial_pages": 460,
+    "canonical_page_directories": 461,
+    "shared_anchor_trial_entries": 8,
+    "redirect_only_stubs": [
+      "trial-pages/rosel/"
+    ],
+    "unrostered_canonical_pages": 0,
+    "missing_roster_targets": 0,
+    "evidence_index_unique_links": 502,
+    "missing_rostered_index_paths": 0,
+    "archive_entries": 16,
+    "current_tod": "PANKU-Esophagus01",
+    "previous_tod": "GemX",
+    "full_clinical_page_audit_complete": false
+  },
+  "candidate_screening": {
+    "screened": 31,
+    "new_unique_identity_resolved": 12,
+    "source_verified": 8,
+    "held_unique_for_page_details": 4,
+    "duplicates": 10,
+    "deferred_contrary": 4,
+    "additional_source_held": 4,
+    "excluded": 1,
+    "uploaded": 0,
+    "shortfall_to_30_unique": 18
+  },
+  "candidate_decisions": [
+    {
+      "candidate": "MASTERPLAN",
+      "doi": "10.1016/S1470-2045(26)00532-2",
+      "pmid": "42914998",
+      "registry_id": "NCT04089150",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held_primary_detail",
+      "reason": "Primary phase II report and registry identified; exact chemotherapy component doses/schedules and full grade 3–5 safety supplement were not independently extracted. Do not build a release page until protocol details are checked.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42914998/",
+        "https://clinicaltrials.gov/study/NCT04089150"
+      ]
+    },
+    {
+      "candidate": "COMPANION-002",
+      "doi": "10.1200/JCO-26-02188",
+      "pmid": "42920414",
+      "registry_id": "NCT05506943",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary JCO phase 2/3 report verified; 168 randomized 2:1; tovecimig 10 mg/kg days 1,15 plus paclitaxel 80 mg/m² days 1,8,15 versus paclitaxel; ORR 18.0% vs 5.3%; PFS 4.7 vs 2.6 months, HR 0.44, P<.0001; OS HR 1.05, P=.779; grade ≥3 TEAEs 93.5% vs 64.2%. No fixed-time NNT.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42920414/",
+        "https://doi.org/10.1200/JCO-26-02188",
+        "https://clinicaltrials.gov/study/NCT05506943"
+      ]
+    },
+    {
+      "candidate": "NEOTORCH",
+      "doi": "10.1016/j.annonc.2026.10.094",
+      "pmid": "42933639",
+      "registry_id": "NCT04158440",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held_primary_detail",
+      "reason": "Final phase III analysis and registry identified; full chemotherapy backbone/dose schedule and grade 3–5 safety table require extraction from the protocol and original primary report before page release.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933639/",
+        "https://clinicaltrials.gov/study/NCT04158440"
+      ]
+    },
+    {
+      "candidate": "FIND",
+      "doi": "10.1200/JCO-25-03009",
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary randomized phase III JCO report verified; 584 mITT (289 ctDNA-guided, 295 CT control); recurrence 18.0% vs 18.6%; curative-intent therapy among recurrences 48.1% vs 23.6%, RR 2.03, P=.008; median clinical recurrence 9.5 vs 13.4 months. Long-term survival benefit pending. No NNT because primary endpoint is conditional on recurrence and no common fixed-time risk.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+        "https://doi.org/10.1200/JCO-25-03009",
+        "https://clinicaltrials.gov/study/NCT05904665"
+      ],
+      "trial_of_day_candidate": true
+    },
+    {
+      "candidate": "PANOVA-3",
+      "doi": "10.1200/JCO-25-00746",
+      "pmid": null,
+      "registry_id": "NCT03377491",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary phase III JCO report and November 2026 QoL secondary analysis verified; 571 randomized; TTFields 150 kHz plus gemcitabine/nab-paclitaxel versus chemotherapy; primary OS 16.2 vs 14.2 months, HR 0.82, P=.039; pain-free survival 15.2 vs 9.1 months, HR 0.74, P=.027; QoL global health treatment effect not significant (P=.084), pain scale favored TTFields (P=.015). Attach secondary analysis to this one study.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/",
+        "https://clinicaltrials.gov/study/NCT03377491"
+      ],
+      "follow_up": {
+        "doi": "10.1001/jamanetworkopen.2026.41241",
+        "pmid": "43024239"
+      }
+    },
+    {
+      "candidate": "SUNMO",
+      "doi": "10.1200/JCO-25-01957",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held_primary_detail",
+      "reason": "Primary phase III JCO report and October 2026 HRQoL analysis identified; full protocol dose schedule and arm-specific grade 3–5 safety table still require independent extraction before page release.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41037766/",
+        "https://pubmed.ncbi.nlm.nih.gov/42971868/",
+        "https://clinicaltrials.gov/study/NCT05171647"
+      ],
+      "follow_up": {
+        "doi": "10.1016/j.clml.2026.10.009",
+        "pmid": "42971868"
+      }
+    },
+    {
+      "candidate": "ANDROMEDA",
+      "doi": "10.1182/blood.2025032099",
+      "pmid": "42118698",
+      "registry_id": "NCT03201965",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "held_primary_detail",
+      "reason": "Final phase III survival analysis identified; full original regimen dose schedule and grade 3–5 safety extraction required before page release.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032099",
+        "https://clinicaltrials.gov/study/NCT03201965"
+      ]
+    },
+    {
+      "candidate": "NICHE-2",
+      "doi": "10.1056/NEJMoa2400634",
+      "pmid": "38838311",
+      "registry_id": "NCT03026140",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary phase II NEJM report verified; 115 enrolled, 113 timely surgery, 111 efficacy; MPR 95%, pCR 68%; grade 3–4 immune-related AEs 4%; 3-year DFS primary endpoint not mature. Single-arm, so no NNT.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38838311/",
+        "https://doi.org/10.1056/NEJMoa2400634",
+        "https://clinicaltrials.gov/study/NCT03026140"
+      ]
+    },
+    {
+      "candidate": "PARADIGM",
+      "doi": "10.1001/jama.2023.4428",
+      "pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary randomized phase III JAMA report verified; 823 chemotherapy-naive RAS WT mCRC; left-sided OS 37.9 vs 34.3 months, HR 0.82, P=.03; overall OS 36.2 vs 31.3 months, HR 0.84, P=.03. No NNT from medians/HR.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ]
+    },
+    {
+      "candidate": "SUNLIGHT",
+      "doi": "10.1056/NEJMoa2214963",
+      "pmid": "37133585",
+      "registry_id": "NCT04737187",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary randomized phase III NEJM report verified; 492 refractory mCRC; trifluridine/tipiracil plus bevacizumab improved OS 10.8 vs 7.5 months, HR 0.61, P<.001, and PFS 5.6 vs 2.4 months, HR 0.44, P<.001. No NNT from median survival/HR.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37133585/",
+        "https://doi.org/10.1056/NEJMoa2214963",
+        "https://clinicaltrials.gov/study/NCT04737187"
+      ]
+    },
+    {
+      "candidate": "ZUMA-7",
+      "doi": "10.1056/NEJMoa2116133",
+      "pmid": "34891224",
+      "registry_id": "NCT03391466",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary randomized phase III NEJM report and long-term OS follow-up identified; second-line LBCL, axi-cel versus standard salvage chemotherapy/ASCT strategy. Complete arm-level toxicity and follow-up extraction required during page build.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34891224/",
+        "https://doi.org/10.1056/NEJMoa2116133",
+        "https://clinicaltrials.gov/study/NCT03391466"
+      ]
+    },
+    {
+      "candidate": "ALPINE",
+      "doi": "10.1056/NEJMoa2211582",
+      "pmid": "36511784",
+      "registry_id": "NCT03734016",
+      "matched_existing": null,
+      "identity": "new_unique",
+      "disposition": "source_verified_candidate",
+      "reason": "Primary randomized phase III NEJM report verified; zanubrutinib versus ibrutinib in relapsed/refractory CLL; PFS HR 0.65 and OS HR 0.76 in the primary publication. Full arm-level toxicity and subgroup extraction required during page build.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36511784/",
+        "https://doi.org/10.1056/NEJMoa2211582",
+        "https://clinicaltrials.gov/study/NCT03734016"
+      ]
+    },
+    {
+      "candidate": "CAMORAL",
+      "doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing": "trial-pages/camoral/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical CAMORAL page already exists; do not create a second page.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/43018983/"
+      ]
+    },
+    {
+      "candidate": "HELEN-Trio 011",
+      "doi": "10.1016/j.annonc.2026.10.102",
+      "pmid": "42887596",
+      "registry_id": null,
+      "matched_existing": "trial-pages/helen-trio-011/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical HELEN-Trio 011 page already exists; registry is not populated in the roster and remains a metadata repair, not a new trial.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42887596/"
+      ]
+    },
+    {
+      "candidate": "BCTOP-H-N01",
+      "doi": "10.1001/jamaoncol.2026.3329",
+      "pmid": "42690668",
+      "registry_id": "NCT06747338",
+      "matched_existing": "trial-pages/bctop-h-n01/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical BCTOP-H-N01 page already exists.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42690668/"
+      ]
+    },
+    {
+      "candidate": "KEYNOTE-B49",
+      "doi": "10.1016/j.annonc.2026.10.1285",
+      "pmid": "42926111",
+      "registry_id": "NCT04895358",
+      "matched_existing": "trial-pages/keynote-b49/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical KEYNOTE-B49 page already exists; current page is also in the post-merge release-hold queue.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42926111/"
+      ]
+    },
+    {
+      "candidate": "DeLLphi-305",
+      "doi": "10.1056/NEJMoa2609482",
+      "pmid": "42929702",
+      "registry_id": "NCT06211036",
+      "matched_existing": "trial-pages/dellphi-305/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical DeLLphi-305 page already exists.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42929702/"
+      ]
+    },
+    {
+      "candidate": "HARMONi-A",
+      "doi": "10.1001/jama.2024.10613",
+      "pmid": "38820549",
+      "registry_id": "NCT05184712",
+      "matched_existing": "trial-pages/harmoni-a/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical HARMONi-A page already exists.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38820549/"
+      ]
+    },
+    {
+      "candidate": "OptiTROP-Lung06",
+      "doi": "10.1056/NEJMoa2611280",
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "matched_existing": "trial-pages/optitrop-lung06/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical page already exists; page-level visualisation and registry display are being repaired on the current branch.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42929694/"
+      ]
+    },
+    {
+      "candidate": "HORIZON-Breast06",
+      "doi": "10.1001/jama.2026.21372",
+      "pmid": "42925007",
+      "registry_id": "NCT05814354",
+      "matched_existing": "trial-pages/horizon-breast06/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical page already exists; invalid NNH pictogram and missing registry display are being repaired on the current branch.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42925007/"
+      ]
+    },
+    {
+      "candidate": "Dalmelitinib plus aumolertinib",
+      "doi": "10.1200/JCO-26-02432",
+      "pmid": "42928710",
+      "registry_id": "NCT06110663",
+      "matched_existing": "trial-pages/dalmelitinib-aumolertinib/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical page already exists; registry and outcome visualisation are being repaired on the current branch.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42928710/"
+      ]
+    },
+    {
+      "candidate": "Toripalimab plus modified FOLFIRINOX",
+      "doi": "10.1200/JCO-26-01393",
+      "pmid": "42970668",
+      "registry_id": "NCT03983057",
+      "matched_existing": "trial-pages/toripalimab-mfolfirinox/index.html",
+      "identity": "same_underlying_study",
+      "disposition": "duplicate_excluded",
+      "reason": "Canonical page already exists; it is one of the four merged pages with release_ready=false pending protocol dose/safety verification.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42970668/"
+      ]
+    },
+    {
+      "candidate": "STELLAR",
+      "doi": "10.1200/JCO-25-01204",
+      "pmid": "41325560",
+      "registry_id": "NCT02796261",
+      "matched_existing": null,
+      "identity": "new_unique_contrary_evidence",
+      "disposition": "deferred_negative",
+      "reason": "Primary overall survival endpoint was not significantly improved in the overall population; a prespecified IDH-mutant grade 3 subgroup signal requires separate contextual review. Do not present the subgroup as a positive overall trial.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41325560/",
+        "https://clinicaltrials.gov/study/NCT02796261"
+      ]
+    },
+    {
+      "candidate": "NSABP B-59 / GeparDouze",
+      "doi": "10.1038/s41591-026-04565-6",
+      "pmid": null,
+      "registry_id": "NCT03281954",
+      "matched_existing": null,
+      "identity": "new_unique_contrary_evidence",
+      "disposition": "deferred_negative",
+      "reason": "Primary phase III EFS analysis did not meet statistical significance; exploratory subgroup signals do not justify a positive practice claim. PubMed PMID not independently verified in this run.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04565-6",
+        "https://clinicaltrials.gov/study/NCT03281954"
+      ]
+    },
+    {
+      "candidate": "BELINDA",
+      "doi": "10.1056/NEJMoa2116596",
+      "pmid": "34891223",
+      "registry_id": "NCT03570892",
+      "matched_existing": null,
+      "identity": "new_unique_contrary_evidence",
+      "disposition": "deferred_negative",
+      "reason": "Phase III second-line CAR-T strategy did not improve event-free survival versus standard care (median 3.0 vs 3.0 months; HR 1.07; P=.61); retain as contrary evidence alongside ZUMA-7 and TRANSFORM.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34891223/",
+        "https://clinicaltrials.gov/study/NCT03570892"
+      ]
+    },
+    {
+      "candidate": "EORTC 22033-26033",
+      "doi": "10.1200/JCO-25-02735",
+      "pmid": null,
+      "registry_id": "NCT00182819",
+      "matched_existing": null,
+      "identity": "new_unique_contrary_evidence",
+      "disposition": "deferred_negative",
+      "reason": "Mature phase III molecular analysis of RT versus dose-dense temozolomide in high-risk grade 2 glioma is neutral overall with molecular subgroup findings; defer pending exact CNS guideline mapping and full subgroup extraction.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-02735",
+        "https://clinicaltrials.gov/study/NCT00182819"
+      ]
+    },
+    {
+      "candidate": "PSMAgRT",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT03525288",
+      "matched_existing": null,
+      "identity": "unresolved",
+      "disposition": "held_source_verification",
+      "reason": "A five-year analysis was identified, but exact primary DOI/title and trial-registry linkage were not independently verified. Do not publish until primary bibliographic identity and protocol are reconciled.",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT03525288"
+      ]
+    },
+    {
+      "candidate": "DESTINY-Lung04",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": null,
+      "identity": "unresolved",
+      "disposition": "held_source_verification",
+      "reason": "WCLC 2026 conference report identified, but an exact primary DOI/title and registry record were not independently verified in this run.",
+      "source_urls": [
+        "https://www.iaslc.org/iaslc-news/press-release/phase-3-destiny-lung04-trial-shows-first-line-trastuzumab-deruxtecan-significantly-improves-progression-free-survival-in-her2-mutant-nsclc"
+      ]
+    },
+    {
+      "candidate": "ASCENT-GYN-01",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": null,
+      "identity": "unresolved",
+      "disposition": "held_protocol_only",
+      "reason": "Protocol/design source only; no primary outcome report verified. Do not create a results page.",
+      "source_urls": []
+    },
+    {
+      "candidate": "JCOG2510 / PRIME-CRT",
+      "doi": "10.1016/j.cllc.2026.09.007",
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": null,
+      "identity": "unresolved",
+      "disposition": "held_protocol_only",
+      "reason": "Protocol/design report only; no primary outcome report verified. Exact registry and DOI-title metadata remain to be checked.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.cllc.2026.09.007"
+      ]
+    },
+    {
+      "candidate": "PIVOT-006",
+      "doi": null,
+      "pmid": null,
+      "registry_id": "NCT06111235",
+      "matched_existing": null,
+      "identity": "excluded_by_user_rule",
+      "disposition": "excluded",
+      "reason": "Explicit PIVOT exclusion. No page or roster entry created.",
+      "source_urls": []
+    }
+  ],
+  "duplicate_check_summary": {
+    "screened": 31,
+    "duplicates": 10,
+    "new_unique_identity_resolved": 12,
+    "source_verified": 8,
+    "held_unique_for_page_details": 4,
+    "deferred_contrary": 4,
+    "additional_source_held": 4,
+    "excluded": 1,
+    "uploaded": 0
+  },
+  "nccn": {
+    "reviewed": [
+      {
+        "guideline": "NCCN Guidelines Insights: Colon Cancer",
+        "version": "3.2026",
+        "doi": "10.6004/jnccn.2026.0051",
+        "pmid": "43019762",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+        "scope": "metadata/abstract only",
+        "subsets": [
+          "Adjuvant treatment of nonmetastatic colon cancer",
+          "Metastatic BRAF V600E disease",
+          "DPYD testing and fluoropyrimidine safety"
+        ],
+        "complete_reference_list_accessible": false,
+        "exact_reference_numbers_mapped": 0
+      }
+    ],
+    "full_nccn_guidelines_accessible": false,
+    "provenance_claimed": false,
+    "next_action": "Retrieve complete reference list or authorised guideline; no reference number or recommendation category inferred."
+  },
+  "repairs": {
+    "existing_pages_manually_reviewed": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape",
+      "fight-302",
+      "optitrop-lung06",
+      "horizon-breast06",
+      "dalmelitinib-aumolertinib",
+      "pds0101-pembrolizumab"
+    ],
+    "batch17_pages_structurally_rechecked": 30,
+    "branch_page_repairs_staged": [
+      "optitrop-lung06",
+      "horizon-breast06",
+      "dalmelitinib-aumolertinib",
+      "pds0101-pembrolizumab"
+    ],
+    "resolved_queue_items": 7,
+    "new_queue_items": 14,
+    "full_clinical_audit_complete": false
+  },
+  "nnt_nnh": {
+    "uploaded_pages": 0,
+    "invalid_horizon_breast06_nnh_removed_on_branch": true,
+    "median_pfs_hr_only_not_nnt": true,
+    "zero_response_pds0101_visualization_replaced_with_status_card_on_branch": true
+  },
+  "validation": {
+    "custom_static_checks": "pending after branch commit",
+    "release_validator_patch": "staged to reject release_ready=false, non-empty release_hold_reason and pending_release_validator states",
+    "pr_checks": "not run; no PR opened",
+    "merge": "not performed"
+  },
+  "deployment": {
+    "production": "not verified; no deployment triggered by this run"
+  },
+  "uploaded_cases": [],
+  "branch_progress": {
+    "target_new_unique_trials": 30,
+    "new_unique_identity_resolved": 12,
+    "source_verified": 8,
+    "held_unique": 4,
+    "remaining_new_unique_needed": 18,
+    "uploaded": 0,
+    "not_uploaded": 30
+  },
+  "next_actions": [
+    "Complete full primary dose/safety extraction for MASTERPLAN, NEOTORCH, SUNMO and ANDROMEDA.",
+    "Resolve PSMAgRT, DESTINY-Lung04, ASCENT-GYN-01 and JCOG2510 source identity/protocol holds.",
+    "Review remaining disease-site guideline subsets and continue screening until 30 genuinely new unique studies are independently verified.",
+    "Resolve eight release-state issues from the 17 Nov merged batch and run the patched validator before any PR.",
+    "Complete the manual clinical audit of the remaining 451 permanent trial pages."
+  ]
+}

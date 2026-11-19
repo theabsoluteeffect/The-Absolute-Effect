@@ -2146,5 +2146,50 @@
   "pr_checks_status": "passed on current PR head ce986e9 (17 Nov 2026); strict validator, all-page audit and Cloudflare preview completed successfully.",
   "cloudflare_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
   "uploaded_count": 0,
-  "cloudflare_preview_deployment_id": "58403e55-9a47-4ddd-ace7-40df1a03b05e"
+  "cloudflare_preview_deployment_id": "58403e55-9a47-4ddd-ace7-40df1a03b05e",
+  "post_merge_reconciliation": {
+    "committed_page_ids": [
+      "act-gi",
+      "artemis-011",
+      "bctop-h-n01",
+      "capital",
+      "dellphi-305",
+      "disitamab-tislelizumab",
+      "felzartamab-rd",
+      "fit4treat",
+      "harmoni-a",
+      "herizon-gea-01",
+      "i-spy2-2",
+      "ivonescimab-perioperative",
+      "keylynk-001",
+      "keynote-b49",
+      "litespark-011",
+      "monumental-3",
+      "neonipiga",
+      "panku-breast01",
+      "panku-esophagus01",
+      "panku-lung01",
+      "pds0101-pembrolizumab",
+      "pro-b",
+      "relight",
+      "ringside",
+      "toripalimab-mfolfirinox",
+      "transform-1",
+      "trastuzumab-botidotin",
+      "trofuse-005",
+      "union",
+      "zsab-neogolp"
+    ],
+    "release_state_unresolved_ids": [
+      "artemis-011",
+      "keynote-b49",
+      "panku-lung01",
+      "toripalimab-mfolfirinox",
+      "herizon-gea-01",
+      "keylynk-001",
+      "relight",
+      "trofuse-005",
+      "optitrop-lung06"
+    ]
+  }
 }

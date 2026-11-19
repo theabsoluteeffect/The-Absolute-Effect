@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-19T08:48:41+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -210,15 +210,19 @@
       "pmid": "43019762",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
       "source_scope": "NCCN Guidelines Insights article metadata/abstract only; this is a focused Insights article, not the complete Colon Cancer guideline. Full reference list not retrieved.",
-      "review_status": "metadata_verified; insights_reference_list_inaccessible; no trial citation mapping",
-      "reviewed_on": "2026-11-17",
-      "subsets_reviewed": [],
+      "review_status": "metadata_abstract_verified; complete Insights reference list inaccessible; no trial citation mapping",
+      "reviewed_on": "2026-11-19",
+      "subsets_reviewed": [
+        "Adjuvant treatment of nonmetastatic colon cancer",
+        "Metastatic BRAF V600E disease",
+        "DPYD testing and fluoropyrimidine safety"
+      ],
       "citation_map": [],
       "recommendation_context_verified": false,
       "next_actions": [
-        "Retrieve complete publicly accessible Insights reference list or authorised full guideline.",
+        "Retrieve the complete publicly accessible Insights reference list or authorised full guideline.",
         "Do not infer exact reference numbers or recommendation categories.",
-        "Continue colon cancer discovery through accessible ESMO/ASCO and primary trial reports."
+        "Map only exact citations to underlying studies after source access is restored."
       ]
     }
   ],
@@ -329,9 +333,30 @@
         "6.3.5"
       ],
       "finding": "Alternative guideline review completed. EAU reference-list mismatch identified for section 6.3.4 inline refs [245,246] and IPFSG numbering; mismatched citations were not used."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "source": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "status": "metadata_abstract_accessible; full article and complete reference list inaccessible",
+      "subsets_reviewed": [
+        "adjuvant nonmetastatic colon cancer",
+        "metastatic BRAF V600E disease",
+        "DPYD testing"
+      ],
+      "action": "No exact citation-to-trial mapping performed; retain mapping task and continue using primary sources and other authoritative guidelines."
     }
   ],
-  "last_run": "2026-11-17",
+  "last_run": {
+    "date": "2026-11-19",
+    "cycle": "morning",
+    "guideline_reviewed": "NCCN Colon Cancer Insights v3.2026",
+    "scope": "metadata/abstract only",
+    "exact_nccn_references_mapped": 0,
+    "full_guideline_accessible": false,
+    "complete_reference_list_accessible": false
+  },
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
   "pending_trial_mappings": [
@@ -814,6 +839,19 @@
       "status": "not verified — source inaccessible",
       "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
       "updated_on": "2026-11-17"
+    },
+    {
+      "guideline_id": "nccn-colon-cancer-v3-2026",
+      "subset": "Adjuvant colon cancer / metastatic BRAF V600E / DPYD testing",
+      "status": "pending_exact_reference_list",
+      "guideline_title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "version": "3.2026",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "reference_number": null,
+      "recommendation_category": null,
+      "next_action": "Retrieve complete Insights reference list or authorised guideline and map exact references; do not infer reference numbers."
     }
   ],
   "alternative_guideline_sources": [

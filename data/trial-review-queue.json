@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-19T08:48:41+05:30",
+  "last_run": {
+    "date": "2026-11-19",
+    "cycle": "morning",
+    "status": "INCOMPLETE",
+    "screened_candidates": 31,
+    "new_unique_identity_resolved": 12,
+    "source_verified": 8,
+    "held_unique_for_page_details": 4,
+    "duplicates": 10,
+    "deferred_contrary": 4,
+    "additional_source_held": 4,
+    "excluded": 1,
+    "published": 0,
+    "branch": "atlas-batch/2026-11-19-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c"
+  },
+  "items": [
+    {
+      "trial_id": "masterplan",
+      "trial": "MASTERPLAN",
+      "status": "held_for_primary_page_detail",
+      "primary_doi": "10.1016/S1470-2045(26)00532-2",
+      "primary_title": null,
+      "pmid": "42914998",
+      "registry_id": "NCT04089150",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42914998/",
+        "https://clinicaltrials.gov/study/NCT04089150"
+      ],
+      "reason": "Primary phase II report and registry identified; exact chemotherapy component doses/schedules and full grade 3–5 safety supplement were not independently extracted. Do not build a release page until protocol details are checked.",
+      "next_action": "Retrieve full protocol/supplement and exact primary safety/dose tables before page build.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "companion-002",
+      "trial": "COMPANION-002",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1200/JCO-26-02188",
+      "primary_title": null,
+      "pmid": "42920414",
+      "registry_id": "NCT05506943",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42920414/",
+        "https://doi.org/10.1200/JCO-26-02188",
+        "https://clinicaltrials.gov/study/NCT05506943"
+      ],
+      "reason": "Primary JCO phase 2/3 report verified; 168 randomized 2:1; tovecimig 10 mg/kg days 1,15 plus paclitaxel 80 mg/m² days 1,8,15 versus paclitaxel; ORR 18.0% vs 5.3%; PFS 4.7 vs 2.6 months, HR 0.44, P<.0001; OS HR 1.05, P=.779; grade ≥3 TEAEs 93.5% vs 64.2%. No fixed-time NNT.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "neotorch",
+      "trial": "NEOTORCH",
+      "status": "held_for_primary_page_detail",
+      "primary_doi": "10.1016/j.annonc.2026.10.094",
+      "primary_title": null,
+      "pmid": "42933639",
+      "registry_id": "NCT04158440",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933639/",
+        "https://clinicaltrials.gov/study/NCT04158440"
+      ],
+      "reason": "Final phase III analysis and registry identified; full chemotherapy backbone/dose schedule and grade 3–5 safety table require extraction from the protocol and original primary report before page release.",
+      "next_action": "Retrieve full protocol/supplement and exact primary safety/dose tables before page build.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "find",
+      "trial": "FIND",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1200/JCO-25-03009",
+      "primary_title": null,
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+        "https://doi.org/10.1200/JCO-25-03009",
+        "https://clinicaltrials.gov/study/NCT05904665"
+      ],
+      "reason": "Primary randomized phase III JCO report verified; 584 mITT (289 ctDNA-guided, 295 CT control); recurrence 18.0% vs 18.6%; curative-intent therapy among recurrences 48.1% vs 23.6%, RR 2.03, P=.008; median clinical recurrence 9.5 vs 13.4 months. Long-term survival benefit pending. No NNT because primary endpoint is conditional on recurrence and no common fixed-time risk.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "panova-3",
+      "trial": "PANOVA-3",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1200/JCO-25-00746",
+      "primary_title": null,
+      "pmid": null,
+      "registry_id": "NCT03377491",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/",
+        "https://clinicaltrials.gov/study/NCT03377491"
+      ],
+      "reason": "Primary phase III JCO report and November 2026 QoL secondary analysis verified; 571 randomized; TTFields 150 kHz plus gemcitabine/nab-paclitaxel versus chemotherapy; primary OS 16.2 vs 14.2 months, HR 0.82, P=.039; pain-free survival 15.2 vs 9.1 months, HR 0.74, P=.027; QoL global health treatment effect not significant (P=.084), pain scale favored TTFields (P=.015). Attach secondary analysis to this one study.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "sunmo",
+      "trial": "SUNMO",
+      "status": "held_for_primary_page_detail",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "primary_title": null,
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41037766/",
+        "https://pubmed.ncbi.nlm.nih.gov/42971868/",
+        "https://clinicaltrials.gov/study/NCT05171647"
+      ],
+      "reason": "Primary phase III JCO report and October 2026 HRQoL analysis identified; full protocol dose schedule and arm-specific grade 3–5 safety table still require independent extraction before page release.",
+      "next_action": "Retrieve full protocol/supplement and exact primary safety/dose tables before page build.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "andromeda",
+      "trial": "ANDROMEDA",
+      "status": "held_for_primary_page_detail",
+      "primary_doi": "10.1182/blood.2025032099",
+      "primary_title": null,
+      "pmid": "42118698",
+      "registry_id": "NCT03201965",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032099",
+        "https://clinicaltrials.gov/study/NCT03201965"
+      ],
+      "reason": "Final phase III survival analysis identified; full original regimen dose schedule and grade 3–5 safety extraction required before page release.",
+      "next_action": "Retrieve full protocol/supplement and exact primary safety/dose tables before page build.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "niche-2",
+      "trial": "NICHE-2",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1056/NEJMoa2400634",
+      "primary_title": null,
+      "pmid": "38838311",
+      "registry_id": "NCT03026140",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38838311/",
+        "https://doi.org/10.1056/NEJMoa2400634",
+        "https://clinicaltrials.gov/study/NCT03026140"
+      ],
+      "reason": "Primary phase II NEJM report verified; 115 enrolled, 113 timely surgery, 111 efficacy; MPR 95%, pCR 68%; grade 3–4 immune-related AEs 4%; 3-year DFS primary endpoint not mature. Single-arm, so no NNT.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "paradigm",
+      "trial": "PARADIGM",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1001/jama.2023.4428",
+      "primary_title": null,
+      "pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ],
+      "reason": "Primary randomized phase III JAMA report verified; 823 chemotherapy-naive RAS WT mCRC; left-sided OS 37.9 vs 34.3 months, HR 0.82, P=.03; overall OS 36.2 vs 31.3 months, HR 0.84, P=.03. No NNT from medians/HR.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "sunlight",
+      "trial": "SUNLIGHT",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1056/NEJMoa2214963",
+      "primary_title": null,
+      "pmid": "37133585",
+      "registry_id": "NCT04737187",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37133585/",
+        "https://doi.org/10.1056/NEJMoa2214963",
+        "https://clinicaltrials.gov/study/NCT04737187"
+      ],
+      "reason": "Primary randomized phase III NEJM report verified; 492 refractory mCRC; trifluridine/tipiracil plus bevacizumab improved OS 10.8 vs 7.5 months, HR 0.61, P<.001, and PFS 5.6 vs 2.4 months, HR 0.44, P<.001. No NNT from median survival/HR.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "zuma-7",
+      "trial": "ZUMA-7",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1056/NEJMoa2116133",
+      "primary_title": null,
+      "pmid": "34891224",
+      "registry_id": "NCT03391466",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34891224/",
+        "https://doi.org/10.1056/NEJMoa2116133",
+        "https://clinicaltrials.gov/study/NCT03391466"
+      ],
+      "reason": "Primary randomized phase III NEJM report and long-term OS follow-up identified; second-line LBCL, axi-cel versus standard salvage chemotherapy/ASCT strategy. Complete arm-level toxicity and follow-up extraction required during page build.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "alpine",
+      "trial": "ALPINE",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1056/NEJMoa2211582",
+      "primary_title": null,
+      "pmid": "36511784",
+      "registry_id": "NCT03734016",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36511784/",
+        "https://doi.org/10.1056/NEJMoa2211582",
+        "https://clinicaltrials.gov/study/NCT03734016"
+      ],
+      "reason": "Primary randomized phase III NEJM report verified; zanubrutinib versus ibrutinib in relapsed/refractory CLL; PFS HR 0.65 and OS HR 0.76 in the primary publication. Full arm-level toxicity and subgroup extraction required during page build.",
+      "next_action": "Build complete page with exact arm-level dosing, endpoint definitions, follow-up, safety, QoL and source-checked visualisation; keep NCCN provenance explicitly unverified.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "psmagrt",
+      "trial": "PSMAgRT",
+      "status": "held_source_identity_or_primary_report",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": "NCT03525288",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT03525288"
+      ],
+      "reason": "A five-year analysis was identified, but exact primary DOI/title and trial-registry linkage were not independently verified. Do not publish until primary bibliographic identity and protocol are reconciled.",
+      "next_action": "Retrieve exact primary DOI/title and registry/protocol; do not create a page until scientific identity is reconciled.",
+      "nccn_provenance": "not verified — source inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "destiny-lung04",
+      "trial": "DESTINY-Lung04",
+      "status": "held_source_identity_or_primary_report",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "source_urls": [
+        "https://www.iaslc.org/iaslc-news/press-release/phase-3-destiny-lung04-trial-shows-first-line-trastuzumab-deruxtecan-significantly-improves-progression-free-survival-in-her2-mutant-nsclc"
+      ],
+      "reason": "WCLC 2026 conference report identified, but an exact primary DOI/title and registry record were not independently verified in this run.",
+      "next_action": "Retrieve exact primary DOI/title and registry/protocol; do not create a page until scientific identity is reconciled.",
+      "nccn_provenance": "not verified — source inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "ascent-gyn-01",
+      "trial": "ASCENT-GYN-01",
+      "status": "held_source_identity_or_primary_report",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "source_urls": [],
+      "reason": "Protocol/design source only; no primary outcome report verified. Do not create a results page.",
+      "next_action": "Retrieve exact primary DOI/title and registry/protocol; do not create a page until scientific identity is reconciled.",
+      "nccn_provenance": "not verified — source inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "jcog2510-prime-crt",
+      "trial": "JCOG2510 / PRIME-CRT",
+      "status": "held_source_identity_or_primary_report",
+      "primary_doi": "10.1016/j.cllc.2026.09.007",
+      "pmid": null,
+      "registry_id": null,
+      "source_urls": [
+        "https://doi.org/10.1016/j.cllc.2026.09.007"
+      ],
+      "reason": "Protocol/design report only; no primary outcome report verified. Exact registry and DOI-title metadata remain to be checked.",
+      "next_action": "Retrieve exact primary DOI/title and registry/protocol; do not create a page until scientific identity is reconciled.",
+      "nccn_provenance": "not verified — source inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    }
+  ]
+}

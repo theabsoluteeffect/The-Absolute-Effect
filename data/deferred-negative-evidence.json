@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-19T08:48:41+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -370,10 +370,83 @@
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "next_action": "Retain as contrary evidence against routine 12-week ICI de-escalation; do not create a new page unless future guideline recommendations make it essential.",
       "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "stellar",
+      "trial": "STELLAR",
+      "status": "deferred_contrary_evidence",
+      "reason": "Primary overall-survival endpoint was not significantly improved in the overall randomized population. A prespecified IDH-mutant grade 3 subgroup showed a signal, but this must not be represented as a positive overall trial; map to current CNS guideline context before any page release.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/41325560/",
+        "https://clinicaltrials.gov/study/NCT02796261"
+      ],
+      "doi": "10.1200/JCO-25-01204",
+      "pmid": "41325560",
+      "registry_id": "NCT02796261",
+      "action": "Retain as contrary/mixed evidence; verify prespecified subgroup definitions and exact guideline citation before reconsidering.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary literature search; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "nsabp-b59-gepardouze",
+      "trial": "NSABP B-59 / GeparDouze",
+      "status": "deferred_contrary_evidence",
+      "reason": "Phase III primary EFS analysis did not meet statistical significance; exploratory subgroup signals do not support a positive overall practice claim. PMID not independently verified in this run.",
+      "primary_sources": [
+        "https://doi.org/10.1038/s41591-026-04565-6",
+        "https://clinicaltrials.gov/study/NCT03281954"
+      ],
+      "doi": "10.1038/s41591-026-04565-6",
+      "pmid": null,
+      "registry_id": "NCT03281954",
+      "action": "Retain as negative/contrary evidence; retrieve exact PubMed metadata and map only if cited in an active recommendation.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary literature search; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "belinda",
+      "trial": "BELINDA",
+      "status": "deferred_contrary_evidence",
+      "reason": "Phase III second-line CAR-T strategy did not improve event-free survival versus standard care (median 3.0 vs 3.0 months; HR 1.07; P=.61); retain as contrary evidence alongside positive ZUMA-7/TRANSFORM results.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/34891223/",
+        "https://clinicaltrials.gov/study/NCT03570892"
+      ],
+      "doi": "10.1056/NEJMoa2116596",
+      "pmid": "34891223",
+      "registry_id": "NCT03570892",
+      "action": "Keep separate from positive CAR-T trials; map exact current lymphoma guideline context before any new page.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary literature search; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "eortc-22033-26033",
+      "trial": "EORTC 22033-26033",
+      "status": "deferred_contrary_evidence",
+      "reason": "Mature phase III molecular analysis of radiotherapy versus dose-dense temozolomide in high-risk grade 2 glioma is neutral overall with molecular subgroup findings; defer pending exact CNS guideline mapping and complete subgroup extraction.",
+      "primary_sources": [
+        "https://doi.org/10.1200/JCO-25-02735",
+        "https://clinicaltrials.gov/study/NCT00182819"
+      ],
+      "doi": "10.1200/JCO-25-02735",
+      "pmid": null,
+      "registry_id": "NCT00182819",
+      "action": "Retrieve exact PMID and full molecular subgroup tables; map current CNS guideline context before deciding whether essential to interpret an active recommendation.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary literature search; exact NCCN reference not verified"
     }
   ],
-  "last_run": "2026-11-17-evening",
+  "last_run": {
+    "date": "2026-11-19",
+    "cycle": "morning",
+    "added": [
+      "stellar",
+      "nsabp-b59-gepardouze",
+      "belinda",
+      "eortc-22033-26033"
+    ]
+  },
   "last_updated": "2026-11-17",
   "last_run_date": "2026-11-17",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026."
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. Updated 2026-11-19: added STELLAR, NSABP B-59/GeparDouze, BELINDA and EORTC 22033-26033 as contrary/neutral evidence; exact NCCN reference mapping remains open."
 }
