@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T19:23:36.803+05:30",
-  "last_run": "2026-11-19-am-reconciliation",
+  "updated_at": "2026-11-19T19:24:07.172+05:30",
+  "last_run": "2026-11-19-evening-screen",
   "items": [
     {
       "trial_id": "masterplan",
@@ -636,6 +636,42 @@
       "reason": "Phase III primary Lancet report and registry verified; 452 randomized; median PFS 48.2 vs 20.8 months, HR 0.71 (95% CI 0.54–0.93), P=.011. Full OS, subtype and grade 3–5 safety extraction remains.",
       "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "nant",
+      "trial": "NANT",
+      "status": "held_for_page_creation",
+      "primary_doi": "10.1016/S1470-2045(26)00387-6",
+      "primary_title": "Neoadjuvant niraparib monotherapy for unresectable, homologous recombination deficiency-positive, high-grade serous ovarian cancer (NANT): a multicentre, single-arm, phase 2 trial",
+      "pmid": "42843394",
+      "registry_id": "NCT04507841",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42843394/",
+        "https://clinicaltrials.gov/study/NCT04507841"
+      ],
+      "reason": "Primary report and registry verified; single-arm phase II, 67 enrolled, 48 response-evaluable, ORR 63%, R0 32/40 (80%), median follow-up 37.7 months; grade 3-4 thrombocytopenia 48%, leukopenia 19%, anaemia 18%, neutropenia 13%. No NNT.",
+      "next_action": "Build a canonical page with exact denominators, single-arm limitations, toxicity and explicit investigational status.",
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "roads",
+      "trial": "ROADS",
+      "status": "held_for_page_creation",
+      "primary_doi": "10.1200/JCO-26-01894",
+      "primary_title": "Surgery and tile-based radiation therapy versus surgery and stereotactic radiation for newly diagnosed brain metastases (ROADS): a randomized, open-label, phase 3 trial",
+      "pmid": "42804720",
+      "registry_id": "NCT04365374",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO-26-01894",
+        "https://clinicaltrials.gov/study/NCT04365374"
+      ],
+      "reason": "Primary JCO report and registry verified; phase III, 230 randomized, 204 mITT, median follow-up 12.9 months; 12-month surgical-bed recurrence 1.3% vs 15.4%, HR 0.06 (95% CI 0.01-0.46), P=.0070; grade ≥3 treatment-related AEs 20.0% vs 21.7%.",
+      "next_action": "Build a canonical page; NNT=8 for 12-month surgical-bed recurrence (1/(0.154-0.013)=7.09, rounded up); include open-label and treatment-delivery limitations.",
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
       "last_reviewed": "2026-11-19"
     }
