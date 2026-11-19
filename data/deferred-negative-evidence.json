@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T08:48:41+05:30",
+  "updated_at": "2026-11-19T19:24:07.172+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -434,6 +434,53 @@
       "action": "Retrieve exact PMID and full molecular subgroup tables; map current CNS guideline context before deciding whether essential to interpret an active recommendation.",
       "added_on": "2026-11-19",
       "source_provenance": "primary literature search; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "bilt-02",
+      "trial": "BilT-02",
+      "status": "deferred_contrary_evidence",
+      "reason": "Phase II maintenance rucaparib plus nivolumab in advanced biliary tract cancer did not meet its prespecified 4-month PFS target; retain as negative/contrary evidence rather than implying practice benefit.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42489677/",
+        "https://clinicaltrials.gov/study/NCT03639935"
+      ],
+      "doi": "10.1158/1078-0432.CCR-25-1114",
+      "pmid": "42489677",
+      "registry_id": "NCT03639935",
+      "action": "Keep in deferred-negative queue; map to an active NCCN biliary tract recommendation only if an exact guideline citation is retrieved.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary publication and registry metadata; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "tobemstomig-ccrcc-phase2",
+      "trial": "Tobemstomig combinations in advanced clear-cell renal cell carcinoma",
+      "status": "deferred_contrary_evidence",
+      "reason": "Randomized phase II study was stopped for futility; available results did not demonstrate a meaningful efficacy advantage sufficient to support a positive practice claim, while grade 3-4 toxicity remained substantial.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42849355/"
+      ],
+      "doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "action": "Retain as contrary evidence; do not create a positive trial page unless needed to interpret a current recommendation.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary publication metadata; exact NCCN reference not verified"
+    },
+    {
+      "trial_id": "talazoparib-enzalutamide-high-volume-mhnpc",
+      "trial": "Talazoparib plus enzalutamide in high-volume metastatic hormone-naive prostate cancer",
+      "status": "deferred_contrary_evidence",
+      "reason": "Randomized phase II study did not show a clear additional clinical benefit on its prespecified PSA-response endpoint; grade 3 or higher adverse events were increased and two fatal therapy-emergent myeloid neoplasms were reported.",
+      "primary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42875559/",
+        "https://clinicaltrials.gov/study/NCT04332744"
+      ],
+      "doi": "10.1038/s41591-026-04671-5",
+      "pmid": "42875559",
+      "registry_id": "NCT04332744",
+      "action": "Retain as contrary evidence; do not imply PARP-ARPI combination benefit in unselected high-volume mHNPC.",
+      "added_on": "2026-11-19",
+      "source_provenance": "primary publication and registry metadata; exact NCCN reference not verified"
     }
   ],
   "last_run": {
@@ -446,7 +493,7 @@
       "eortc-22033-26033"
     ]
   },
-  "last_updated": "2026-11-17",
-  "last_run_date": "2026-11-17",
+  "last_updated": "2026-11-19T19:24:07.172+05:30",
+  "last_run_date": "2026-11-19",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. Updated 2026-11-19: added STELLAR, NSABP B-59/GeparDouze, BELINDA and EORTC 22033-26033 as contrary/neutral evidence; exact NCCN reference mapping remains open."
 }
