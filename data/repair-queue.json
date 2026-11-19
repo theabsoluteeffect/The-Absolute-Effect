@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T08:48:41+05:30",
+  "updated_at": "2026-11-19T20:18:18+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-16T07:59:04+05:30",
@@ -89,6 +89,111 @@
       },
       "tod_records_match_roster": true,
       "index_links_explanation": "468 unique destinations include 460 permanent trial-page links and 8 intra-page anchors; the sole tree-only ROSEL item is a redirect/stub and is intentionally not linked as a canonical trial."
+    },
+    "follow_up_review_2026_11_19": {
+      "checked_at": "2026-11-19T20:18:18+05:30",
+      "reviewed_branch": "atlas-batch/2026-11-19-am",
+      "reviewed_head": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "structural_reconciliation": {
+        "roster_unique_studies": 467,
+        "permanent_trial_pages": 460,
+        "canonical_page_directories": 461,
+        "shared_anchor_trial_entries": 8,
+        "redirect_only_stubs": 1,
+        "unrostered_canonical_content_pages": 0,
+        "missing_roster_page_targets": 0,
+        "evidence_index_unique_destinations": 468,
+        "archive_entries": 16,
+        "current_tod": "PANKU-Esophagus01",
+        "previous_tod": "GemX"
+      },
+      "additional_manual_review": {
+        "source_and_visual_markup_crosschecked": 4,
+        "page_content_inspected_release_holds": 8,
+        "browser_rendered": 0,
+        "full_page_audit_complete": false
+      },
+      "visual_repair_pages": [
+        {
+          "trial_id": "horizon-breast06",
+          "status": "verified_on_branch_pending_merge",
+          "sources": [
+            "https://doi.org/10.1001/jama.2026.21372"
+          ],
+          "values": "Median PFS 16.4 vs 6.8 months; grade ≥3 TRAEs 84.1% vs 67.9%. Invalid NNH claim removed; retain absolute rates without deriving NNH from medians."
+        },
+        {
+          "trial_id": "optitrop-lung06",
+          "status": "verified_on_branch_pending_merge",
+          "sources": [
+            "https://doi.org/10.1056/NEJMoa2611280",
+            "https://pubmed.ncbi.nlm.nih.gov/42929694/"
+          ],
+          "values": "Median PFS 15.0 vs 5.7 months; grade ≥3 adverse events 47.6% vs 60.6%. Time-to-event median/HR visualization retained; no NNT from medians/HR."
+        },
+        {
+          "trial_id": "dalmelitinib-aumolertinib",
+          "status": "verified_on_branch_pending_merge",
+          "sources": [
+            "https://doi.org/10.1200/JCO-26-02432",
+            "https://pubmed.ncbi.nlm.nih.gov/42928710/"
+          ],
+          "values": "Median PFS 6.2 vs 4.4 months; HR 0.60 (95% CI 0.45–0.81; P<.001); grade ≥3 TEAEs 50% vs 51%. Median/HR visualization; no NNT."
+        },
+        {
+          "trial_id": "pds0101-pembrolizumab",
+          "status": "verified_on_branch_pending_merge",
+          "sources": [
+            "https://doi.org/10.1001/jamaoncol.2026.3492",
+            "https://pubmed.ncbi.nlm.nih.gov/42752531/"
+          ],
+          "values": "ICI-resistant cohort objective response 0/22; zero-response status graphic retained. Single-arm cohort; NNT not applicable."
+        }
+      ],
+      "release_state_holds": [
+        {
+          "trial_id": "artemis-011",
+          "reason": "Exact gemcitabine/docetaxel doses and full grade 3–5 supplement missing",
+          "status": "open"
+        },
+        {
+          "trial_id": "keynote-b49",
+          "reason": "Chemotherapy backbone/dose distribution and full grade 3–5 safety supplement missing",
+          "status": "open"
+        },
+        {
+          "trial_id": "panku-lung01",
+          "reason": "Control chemotherapy options/doses and full grade 3–5 safety supplement unchecked",
+          "status": "open"
+        },
+        {
+          "trial_id": "toripalimab-mfolfirinox",
+          "reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require protocol supplement",
+          "status": "open"
+        },
+        {
+          "trial_id": "herizon-gea-01",
+          "reason": "Patched strict release validator not run; NCCN exact citation provenance remains unavailable",
+          "status": "open"
+        },
+        {
+          "trial_id": "keylynk-001",
+          "reason": "Patched strict validator and three maintenance arms/endpoints/safety require manual verification",
+          "status": "open"
+        },
+        {
+          "trial_id": "relight",
+          "reason": "Patched strict validator and current NCCN mapping remain open",
+          "status": "open"
+        },
+        {
+          "trial_id": "trofuse-005",
+          "reason": "Patched strict validator and dose/comparator/endpoint/safety require manual verification",
+          "status": "open"
+        }
+      ],
+      "note": "The 4 visualization repairs were source-value and markup checked but not browser-rendered; they remain open pending merge and post-merge readback. Eight release-state hold pages were inspected for page content; their primary-source/protocol or validator tasks remain open. The full 460-page manual clinical audit remains incomplete."
     }
   },
   "open_items": [
@@ -2119,9 +2224,24 @@
       "severity": "high",
       "evidence": "Canonical page displays blank registry and zero-width median-PFS bars despite primary values 15.0 versus 5.7 months; the main roster contains NCT06711900.",
       "action": "Add NCT06711900 to page, render scaled median-PFS and grade ≥3 AE bars, state that widths are normalized, and explain why NNT is not applicable. Exact dose supplement extraction remains open.",
-      "status": "in_progress_on_branch",
+      "status": "verified_on_branch_pending_merge",
       "created_on": "2026-11-19",
-      "updated_on": "2026-11-19"
+      "updated_on": "2026-11-19",
+      "verification": {
+        "checked_at": "2026-11-19T20:18:18+05:30",
+        "branch": "atlas-batch/2026-11-19-am",
+        "reviewed_head": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+        "page_content_readback": true,
+        "visual_markup_inspected": true,
+        "primary_source_values_crosschecked": true,
+        "browser_rendered_qa": false,
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2611280",
+          "https://pubmed.ncbi.nlm.nih.gov/42929694/"
+        ],
+        "verified_values": "Median PFS 15.0 vs 5.7 months; grade ≥3 adverse events 47.6% vs 60.6%. Time-to-event median/HR visualization retained; no NNT from medians/HR.",
+        "closure_status": "remain open until branch merge and post-merge readback"
+      }
     },
     {
       "issue_id": "horizon-breast06-nnh-visualization-2026-11-19",
@@ -2132,9 +2252,23 @@
       "severity": "high",
       "evidence": "Canonical page omits NCT05814354 and displays NNH 7 for grade ≥3 TRAEs without a comparable fixed exposure horizon; median-PFS bars are zero width.",
       "action": "Remove NNH pictogram and invalid absolute_effect record; add NCT05814354 and source-based median-PFS and toxicity bars. No NNT/NNH unless a comparable fixed-time risk is available.",
-      "status": "in_progress_on_branch",
+      "status": "verified_on_branch_pending_merge",
       "created_on": "2026-11-19",
-      "updated_on": "2026-11-19"
+      "updated_on": "2026-11-19",
+      "verification": {
+        "checked_at": "2026-11-19T20:18:18+05:30",
+        "branch": "atlas-batch/2026-11-19-am",
+        "reviewed_head": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+        "page_content_readback": true,
+        "visual_markup_inspected": true,
+        "primary_source_values_crosschecked": true,
+        "browser_rendered_qa": false,
+        "sources": [
+          "https://doi.org/10.1001/jama.2026.21372"
+        ],
+        "verified_values": "Median PFS 16.4 vs 6.8 months; grade ≥3 TRAEs 84.1% vs 67.9%. Invalid NNH claim removed; retain absolute rates without deriving NNH from medians.",
+        "closure_status": "remain open until branch merge and post-merge readback"
+      }
     },
     {
       "issue_id": "dalmelitinib-aumolertinib-visualization-registry-2026-11-19",
@@ -2145,9 +2279,24 @@
       "severity": "high",
       "evidence": "Canonical page lacks registry display and has no visible median-PFS/grade ≥3 toxicity chart; roster lacks registry_id despite primary record NCT06110663.",
       "action": "Add NCT06110663 to roster/page; add median-PFS and grade ≥3 TEAE bars with correct denominators; do not derive NNT from medians/HR.",
-      "status": "in_progress_on_branch",
+      "status": "verified_on_branch_pending_merge",
       "created_on": "2026-11-19",
-      "updated_on": "2026-11-19"
+      "updated_on": "2026-11-19",
+      "verification": {
+        "checked_at": "2026-11-19T20:18:18+05:30",
+        "branch": "atlas-batch/2026-11-19-am",
+        "reviewed_head": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+        "page_content_readback": true,
+        "visual_markup_inspected": true,
+        "primary_source_values_crosschecked": true,
+        "browser_rendered_qa": false,
+        "sources": [
+          "https://doi.org/10.1200/JCO-26-02432",
+          "https://pubmed.ncbi.nlm.nih.gov/42928710/"
+        ],
+        "verified_values": "Median PFS 6.2 vs 4.4 months; HR 0.60 (95% CI 0.45–0.81; P<.001); grade ≥3 TEAEs 50% vs 51%. Median/HR visualization; no NNT.",
+        "closure_status": "remain open until branch merge and post-merge readback"
+      }
     },
     {
       "issue_id": "pds0101-zero-response-status-2026-11-19",
@@ -2158,9 +2307,24 @@
       "severity": "medium",
       "evidence": "The ICI-resistant cohort ORR is 0% (0/22), represented by an invisible width:0% bar.",
       "action": "Replace zero-width bar with an explicit accessible status graphic showing 0% (0/22); preserve the sourced zero value.",
-      "status": "in_progress_on_branch",
+      "status": "verified_on_branch_pending_merge",
       "created_on": "2026-11-19",
-      "updated_on": "2026-11-19"
+      "updated_on": "2026-11-19",
+      "verification": {
+        "checked_at": "2026-11-19T20:18:18+05:30",
+        "branch": "atlas-batch/2026-11-19-am",
+        "reviewed_head": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+        "page_content_readback": true,
+        "visual_markup_inspected": true,
+        "primary_source_values_crosschecked": true,
+        "browser_rendered_qa": false,
+        "sources": [
+          "https://doi.org/10.1001/jamaoncol.2026.3492",
+          "https://pubmed.ncbi.nlm.nih.gov/42752531/"
+        ],
+        "verified_values": "ICI-resistant cohort objective response 0/22; zero-response status graphic retained. Single-arm cohort; NNT not applicable.",
+        "closure_status": "remain open until branch merge and post-merge readback"
+      }
     },
     {
       "issue_id": "lung-sabr-shared-anchor-granularity-2026-11-19",
@@ -3898,8 +4062,8 @@
     "active_batch_release_holds": 0,
     "full_existing_page_audit_complete": false
   },
-  "last_updated": "2026-11-17",
-  "last_run": "2026-11-17-evening",
+  "last_updated": "2026-11-19T20:18:18+05:30",
+  "last_run": "2026-11-19-evening-followup",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
     "open_items": 147,

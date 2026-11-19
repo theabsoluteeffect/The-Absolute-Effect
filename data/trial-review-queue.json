@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T19:24:07.172+05:30",
-  "last_run": "2026-11-19-evening-screen",
+  "updated_at": "2026-11-19T20:18:18+05:30",
+  "last_run": "2026-11-19-evening",
   "items": [
     {
       "trial_id": "masterplan",
@@ -674,6 +674,85 @@
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
       "last_reviewed": "2026-11-19"
+    },
+    {
+      "trial_id": "metis",
+      "trial": "METIS",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1038/s41392-026-02834-x",
+      "primary_title": "Neoadjuvant concurrent or sequential anthracycline-containing chemotherapy and HER2-targeted agents for HER2-positive breast cancer: a randomized phase 2 study",
+      "pmid": "42967914",
+      "registry_id": "NCT04172259",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42967914/",
+        "https://doi.org/10.1038/s41392-026-02834-x",
+        "https://clinicaltrials.gov/study/NCT04172259"
+      ],
+      "reason": "Primary randomized phase II report and registry verified. Stage II–III HER2-positive breast cancer; 156 randomized (80 vs 76). Concurrent PLD/cyclophosphamide with trastuzumab/pertuzumab followed by taxane plus dual HER2 blockade versus sequential epirubicin/cyclophosphamide then taxane plus dual HER2 blockade. pCR 67.5% (54/80) vs 48.7% (37/76), absolute difference 18.8 percentage points (95% CI 3.6–34.0; P=.033); pCR NNT=6 (1/0.188=5.32, rounded up; surrogate endpoint only). At median follow-up 37.5 months, 3-year EFS 96.0% vs 90.7%, HR 0.35 (95% CI 0.09–1.32; P=.105); no symptomatic cardiac dysfunction and one grade ≥3 cardiotoxicity in the EC arm. Full grade 3–5 toxicity table and QoL extraction still required before page release.",
+      "next_action": "Extract full primary safety table, dose modifications/discontinuation and QoL; build one canonical page only after the complete 30-page release batch is ready.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
+    },
+    {
+      "trial_id": "ramiel",
+      "trial": "RAMIEL / OGSG1901",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1007/s10120-026-01799-8",
+      "primary_title": "A multicenter phase II trial of ramucirumab plus irinotecan for early recurrence of gastric cancer during or after adjuvant chemotherapy with docetaxel plus S-1 therapy: the RAMIEL trial (OGSG1901)",
+      "pmid": "42747649",
+      "registry_id": "jRCTs051190071",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42747649/",
+        "https://doi.org/10.1007/s10120-026-01799-8"
+      ],
+      "reason": "Primary multicentre open-label phase II report and Japanese registry identifier verified. Early recurrent gastric/GEJ adenocarcinoma during or within 6 months after adjuvant docetaxel/S-1; 43 enrolled, 39 in primary analysis. Ramucirumab 8 mg/kg plus irinotecan 150 mg/m² IV day 1 every 2 weeks (irinotecan 120 mg/m² for UGT1A1 double heterozygous/homozygous patients). Primary endpoint OS: median 15.9 months (95% CI 8.2–42.0), 1-year OS 59.0%; median PFS 5.5 months (95% CI 3.9–8.1); ORR 38.5% among 26 measurable patients. Grade 3–4 neutropenia 25.6%, hypertension 25.6%, leukopenia 10.3%, febrile neutropenia 7.7%; no treatment-related deaths. Single-arm; NNT not applicable.",
+      "next_action": "Complete page-level extraction of eligibility, treatment exposure, discontinuation, QoL (if reported) and limitations; do not derive comparative NNT.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
+    },
+    {
+      "trial_id": "astrum-006",
+      "trial": "ASTRUM-006",
+      "status": "verified_unique_waiting_for_complete_30_trial_batch",
+      "primary_doi": "10.1016/S0140-6736(26)00974-8",
+      "primary_title": "Perioperative serplulimab with neoadjuvant chemotherapy versus perioperative chemotherapy in PD-L1-positive gastric cancer (ASTRUM-006): a randomised, double-blind, multicentre, phase 3 study",
+      "pmid": "42225112",
+      "registry_id": "NCT04139135",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42225112/",
+        "https://doi.org/10.1016/S0140-6736(26)00974-8",
+        "https://clinicaltrials.gov/study/NCT04139135"
+      ],
+      "reason": "Primary Lancet phase III report and registry verified. 588 randomized (serplulimab 292; placebo 296), age 18–70, resectable gastric/GEJ adenocarcinoma, PD-L1 CPS ≥5. Serplulimab 4.5 mg/kg IV plus SOX (oxaliplatin 130 mg/m² day 1; S-1 40–60 mg twice daily days 1–14) for 3 neoadjuvant 21-day cycles, followed by adjuvant serplulimab up to 17 cycles; control received placebo plus SOX followed by 5 adjuvant SOX cycles. Primary investigator-assessed EFS: CPS ≥10 median NR vs 42.0 months, HR 0.65 (95% CI 0.47–0.90), P=.0082; ITT CPS ≥5 median NR vs 35.9 months, HR 0.73 (95% CI 0.56–0.94), P=.015. Grade ≥3 TRAEs 47% (136/292) vs 59% (172/296); discontinuation due to TRAEs 7% (19/292) vs 11% (31/296). OS immature. Full AE breakdown, subgroup and QoL extraction remains; no NNT from medians/HR.",
+      "next_action": "Extract full primary tables and supplementary safety/PRO details; preserve hierarchical CPS ≥10 then CPS ≥5 testing; build one page only in a complete release batch.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
+    },
+    {
+      "trial_id": "fovinaciclib-2l",
+      "trial": "Fovinaciclib plus fulvestrant (second-line phase III; NCT05438810)",
+      "status": "held_for_primary_outcome_extraction",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.1101",
+      "primary_title": "Fovinaciclib versus placebo combined with fulvestrant for advanced breast cancer after endocrine therapy: A randomized, double-blind phase 3 trial",
+      "pmid": null,
+      "registry_id": "NCT05438810",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.1101",
+        "https://clinicaltrials.gov/study/NCT05438810"
+      ],
+      "reason": "Distinct from the already-rostered first-line fovinaciclib study (NCT05439499). The ASCO 2026 conference abstract identifies a phase III randomized trial and regimen (fovinaciclib 200 mg orally days 1–21 every 28 days plus fulvestrant 500 mg IM on cycle 1 days 1 and 15 then day 1; goserelin 3.6 mg day 1 if pre/perimenopausal), but complete primary efficacy effect estimates, denominators, follow-up and full grade 3–5 safety are not available in the retrieved abstract excerpt.",
+      "next_action": "Retrieve the complete ASCO abstract and protocol/supplement; verify BICR PFS, OS, PROs, toxicity and exact registry before page creation.",
+      "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
+      "first_seen": "2026-11-19",
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     }
-  ]
+  ],
+  "follow_up_note": "Four additional candidate records were added after a second cross-disease discovery pass; the two primary-source verified METIS/RAMIEL candidates and ASTRUM-006 remain page-build pending, while the distinct second-line fovinaciclib study remains held for full outcome extraction."
 }

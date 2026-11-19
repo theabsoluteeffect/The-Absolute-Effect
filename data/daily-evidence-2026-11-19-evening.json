@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "run_id": "absolute-effect-2026-11-19-evening",
-  "run_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "run_timestamp": "2026-11-19T20:18:18+05:30",
   "cycle": "evening",
   "status": "blocked_serialization_incomplete",
   "repository": {
@@ -26,20 +26,26 @@
     "full_manual_page_audit_complete": false
   },
   "candidate_screening": {
-    "screened": 43,
-    "confirmed_duplicates": 4,
+    "screened": 50,
+    "confirmed_duplicates": 6,
     "overlap_with_active_AM_batch": 2,
     "previously_screened_carry_forward": 3,
     "protocol_only": 6,
-    "new_unique_candidate_leads": 30,
-    "net_new_candidates_not_in_AM": 28,
-    "primary_source_verified": 6,
-    "primary_source_verified_not_in_AM": 4,
-    "held_for_verification_or_full_extraction": 21,
-    "deferred_negative": 3,
+    "new_unique_candidate_leads": 35,
+    "net_new_candidates_not_in_AM": 33,
+    "primary_source_verified": 7,
+    "primary_source_verified_not_in_AM": 5,
+    "held_for_verification_or_full_extraction": 22,
+    "deferred_negative": 6,
     "page_ready": 0,
     "uploaded": 0,
-    "not_uploaded": 30
+    "not_uploaded": 35,
+    "follow_up_screened": 7,
+    "follow_up_duplicates": 2,
+    "follow_up_new_unique": 5,
+    "follow_up_primary_source_verified": 1,
+    "follow_up_held": 1,
+    "follow_up_deferred_negative": 3
   },
   "candidate_decisions": [
     {
@@ -476,16 +482,105 @@
       "disposition": "duplicate_excluded",
       "reason": "Same underlying phase II study already has a canonical page.",
       "source_url": "https://doi.org/10.1200/JCO-26-00568"
+    },
+    {
+      "candidate": "KRASCENDO 1",
+      "doi": "10.1056/NEJMoa2605703",
+      "pmid": "42929675",
+      "registry_id": "NCT06497556",
+      "matched_existing_entry": "main roster krascendo-1; trial-pages/krascendo-1/",
+      "disposition": "duplicate_excluded",
+      "identity": "same_underlying_study",
+      "reason": "Same underlying phase III study already has a canonical page in live main; primary NEJM title/DOI, PMID and registry match. No second page.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42929675/"
+    },
+    {
+      "candidate": "Fovinaciclib first-line (FCN-437c-III201)",
+      "doi": "10.1200/JCO.2026.44.16_suppl.1090",
+      "pmid": null,
+      "registry_id": "NCT05439499",
+      "matched_existing_entry": "main roster fovinaciclib; trial-pages/fovinaciclib/",
+      "disposition": "duplicate_excluded",
+      "identity": "same_underlying_study",
+      "reason": "Same first-line phase III trial already has a canonical page (roster id fovinaciclib) with matching registry NCT05439499 and ASCO abstract DOI. Do not create a duplicate.",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.1090"
+    },
+    {
+      "candidate": "ASTRUM-006",
+      "doi": "10.1016/S0140-6736(26)00974-8",
+      "pmid": "42225112",
+      "registry_id": "NCT04139135",
+      "matched_existing_entry": null,
+      "disposition": "source_verified_candidate",
+      "identity": "new_unique",
+      "reason": "Primary Lancet phase III report and registry verified; 588 randomized, PD-L1 CPS≥5 resectable gastric/GEJ adenocarcinoma. Serplulimab 4.5 mg/kg plus SOX neoadjuvant x3 then adjuvant serplulimab up to 17 cycles versus placebo+SOX then 5 adjuvant SOX cycles. EFS HR 0.65 (95% CI 0.47–0.90; P=.0082) in CPS≥10 and HR 0.73 (0.56–0.94; P=.015) in ITT; grade ≥3 TRAEs 47% vs59%, discontinuation 7% vs11%; OS immature. Full AE/PRO extraction still required; no NNT from medians/HR.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42225112/",
+      "trial_of_day_candidate": false,
+      "page_readiness": "held_for_full_safety_and_PRO_extraction"
+    },
+    {
+      "candidate": "Fovinaciclib plus fulvestrant second-line phase III",
+      "doi": "10.1200/JCO.2026.44.16_suppl.1101",
+      "pmid": null,
+      "registry_id": "NCT05438810",
+      "matched_existing_entry": null,
+      "disposition": "held_primary_outcome_extraction",
+      "identity": "new_unique",
+      "reason": "Distinct from the rostered first-line fovinaciclib trial (NCT05439499). ASCO 2026 abstract identifies a randomized phase III regimen but the complete primary efficacy effect estimates, follow-up and full safety data were not retrieved.",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.1101",
+      "trial_of_day_candidate": false
+    },
+    {
+      "candidate": "ATTRACTION-6",
+      "doi": "10.1200/JCO.2026.44.16_suppl.4006",
+      "pmid": null,
+      "registry_id": "NCT05144854",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "identity": "new_unique_contrary_evidence",
+      "reason": "Phase III ASCO 2026 report; primary OS endpoint not met (HR 0.90, 95.8% CI 0.74–1.09; P=.267; median OS 15.7 vs15.8 months); grade ≥3 AEs 80.0% vs62.4%, grade ≥3 TRAEs 64.8% vs42.9%. Added to deferred-negative queue; no new page.",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4006",
+      "trial_of_day_candidate": false
+    },
+    {
+      "candidate": "EPCOG",
+      "doi": "10.1093/neuonc/noaf230",
+      "pmid": "41071052",
+      "registry_id": "DRKS00016066",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "identity": "new_unique_contrary_evidence",
+      "reason": "Primary phase III RCT full article verified; primary FACT-Br TOI endpoint not significant (difference 4.1, 95% CI −4.4 to12.6; P=.34); median OS 14 vs21 months, HR 1.56 (95% CI 1.07–2.27; P=.018) favouring control. Secondary palliative symptom/mood/QoL signals coexist with the survival imbalance; deferred for contrary evidence.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41071052/",
+      "trial_of_day_candidate": false
+    },
+    {
+      "candidate": "KEYNOTE-585",
+      "doi": "10.1200/JCO-25-00486",
+      "pmid": "40829093",
+      "registry_id": "NCT03221426",
+      "matched_existing_entry": null,
+      "disposition": "deferred_negative",
+      "identity": "new_unique_contrary_evidence",
+      "reason": "Underlying phase III trial not present in Atlas; final analysis and 2026 FLOT cohort follow-up verified. Main-cohort OS HR 0.86 (95% CI 0.71–1.06), EFS HR 0.81 (0.67–0.98); FLOT cohort exploratory, not powered for efficacy (EFS HR 0.75 [0.50–1.13], OS HR 0.81 [0.53–1.25]). Retain as one study with FLOT analysis attached; defer pending current guideline context.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40829093/",
+      "secondary_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42976418/",
+        "https://doi.org/10.1016/j.esmoop.2026.108603"
+      ],
+      "trial_of_day_candidate": false
     }
   ],
   "duplicate_check_summary": {
-    "screened": 43,
-    "duplicates": 4,
+    "screened": 50,
+    "duplicates": 6,
     "duplicate_ids": [
       "KEYNOTE-C93",
       "CAMORAL",
       "RINGSIDE",
-      "ACT-GI"
+      "ACT-GI",
+      "KRASCENDO 1",
+      "Fovinaciclib first-line (FCN-437c-III201)"
     ],
     "overlap_with_active_AM_batch": [
       "PANOVA-3",
@@ -504,8 +599,8 @@
       "ASPIRE-GCT",
       "ALICE/PRODIGE89"
     ],
-    "new_unique_candidate_leads": 30,
-    "net_new_candidates_not_in_AM": 28
+    "new_unique_candidate_leads": 35,
+    "net_new_candidates_not_in_AM": 33
   },
   "nccn": {
     "official_sources_identified": [
@@ -579,6 +674,33 @@
         "nnt": null,
         "reason": "Primary endpoint is curative-intent treatment uptake; no NNT used as a patient-benefit measure."
       }
+    ],
+    "follow_up_assessments": [
+      {
+        "trial": "ASTRUM-006",
+        "status": "not calculated",
+        "reason": "Primary EFS is time-to-event; no fixed-time absolute EFS risk was extracted from the primary report. Do not derive NNT from medians/HR."
+      },
+      {
+        "trial": "ATTRACTION-6",
+        "status": "not calculated",
+        "reason": "Primary OS is time-to-event; no comparable fixed-time absolute survival risk was extracted. Do not derive NNT from medians/HR."
+      },
+      {
+        "trial": "EPCOG",
+        "status": "not applicable",
+        "reason": "Primary endpoint is continuous FACT-Br TOI; survival is time-to-event and no fixed-time absolute event risks were used."
+      },
+      {
+        "trial": "KEYNOTE-585",
+        "status": "not calculated",
+        "reason": "Main cohort survival estimates are median/HR; FLOT-cohort pCR is exploratory in a safety cohort not powered for efficacy."
+      },
+      {
+        "trial": "Fovinaciclib second-line",
+        "status": "not calculated",
+        "reason": "Complete primary efficacy report not retrieved."
+      }
     ]
   },
   "validation": {
@@ -598,6 +720,45 @@
     "Do not create a parallel evening publication branch until the AM branch is merged or formally closed.",
     "Complete primary evidence and registry extraction for the 21 held PM candidates; retain the 3 negative studies in deferred evidence.",
     "Build exactly 30 genuinely new canonical pages on a fresh PM branch only after the AM batch is resolved.",
-    "Run local strict release validation, inspect every page and visualisation, then PR checks; merge only after all pass."
-  ]
+    "Run local strict release validation, inspect every page and visualisation, then PR checks; merge only after all pass.",
+    "Retrieve full ASTRUM-006 safety/PRO tables and the Fovinaciclib second-line efficacy supplement.",
+    "Build pages for the five net-new source-verified candidates only when a complete 30-page batch is release-ready.",
+    "Do not open a parallel PM branch until atlas-batch/2026-11-19-am is resolved."
+  ],
+  "initial_screening_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "follow_up_discovery_pass": {
+    "timestamp": "2026-11-19T20:18:18+05:30",
+    "source_passes": [
+      "thoracic/KRAS G12C",
+      "upper GI/resectable gastric and GEJ",
+      "breast/CDK4/6",
+      "neuro-oncology/supportive-palliative care"
+    ],
+    "screened": 7,
+    "duplicate_exclusions": [
+      "KRASCENDO 1 — matched roster krascendo-1 / trial-pages/krascendo-1/",
+      "Fovinaciclib first-line FCN-437c-III201 — matched roster fovinaciclib / trial-pages/fovinaciclib/"
+    ],
+    "new_unique_candidates": [
+      "ASTRUM-006",
+      "Fovinaciclib plus fulvestrant second-line phase III (NCT05438810)",
+      "ATTRACTION-6",
+      "EPCOG",
+      "KEYNOTE-585"
+    ],
+    "source_verified_new_unique": [
+      "ASTRUM-006"
+    ],
+    "held_new_unique": [
+      "Fovinaciclib plus fulvestrant second-line phase III (NCT05438810)"
+    ],
+    "deferred_negative_new_unique": [
+      "ATTRACTION-6",
+      "EPCOG",
+      "KEYNOTE-585"
+    ],
+    "page_ready": 0,
+    "uploaded": 0,
+    "note": "KRASCENDO 1 and first-line fovinaciclib were excluded as duplicates after direct live-roster/page checks. KEYNOTE-585's November 2026 FLOT paper is a secondary analysis and is attached to the underlying phase III trial; the trial is deferred because OS was not significantly improved and the FLOT cohort was not powered for efficacy."
+  }
 }

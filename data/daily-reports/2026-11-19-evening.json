@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
   "run_id": "absolute-effect-2026-11-19-evening",
-  "run_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "run_timestamp": "2026-11-19T20:18:18+05:30",
   "cycle": "evening",
-  "status": "BLOCKED — active morning branch incomplete; no evening publication branch opened",
-  "headline": "0/30 uploaded. Forty-three candidate leads were screened; 28 are additional new-to-Atlas leads beyond the active morning batch, but the evening batch was not started because the 19-Nov morning branch remains unmerged and below the release gate.",
+  "status": "INCOMPLETE — 0/30 uploaded; evening publication branch blocked by the unmerged active morning branch",
+  "headline": "50 candidate records screened across multiple disease-site passes; 33 net-new leads, 5 primary-source-verified new candidates, 22 held, 6 deferred; no page was release-ready and no trial was uploaded.",
   "target": {
     "new_unique_trials": 30,
     "uploaded": 0,
     "not_uploaded": 30,
-    "screened_candidate_leads": 43,
-    "unique_candidate_leads": 30,
-    "net_new_candidates_not_in_AM": 28,
+    "screened_candidate_leads": 50,
+    "unique_candidate_leads": 35,
+    "net_new_candidates_not_in_AM": 33,
     "page_ready": 0
   },
   "repository": {
@@ -22,7 +22,8 @@
     "working_branch_head_before_evening": "670c958b8b17e5880d4f82c5b6f2f06bca9cba8e",
     "evening_branch_created": false,
     "pr_opened": false,
-    "merge": "not attempted"
+    "merge": "not attempted",
+    "working_branch_head_at_followup": "63f8a6f10421637cd93e6131976bd2566e4c545c"
   },
   "existing_page_audit": {
     "main_roster_unique_studies": 467,
@@ -32,7 +33,9 @@
     "evidence_index_unique_destinations": 468,
     "manual_pages_reviewed": 9,
     "manual_pages_remaining": 451,
-    "full_audit_complete": false
+    "full_audit_complete": false,
+    "additional_page_content_inspections": 8,
+    "additional_source_and_visual_markup_crosschecks": 4
   },
   "repair_queue": {
     "open_on_active_AM_branch": 147,
@@ -59,29 +62,37 @@
     "scope": "NCCN/JNCCN metadata and focused Insights records only; no full reference list or recommendation category inferred"
   },
   "candidate_screening": {
-    "screened": 43,
-    "confirmed_duplicates": 4,
+    "screened": 50,
+    "confirmed_duplicates": 6,
     "overlap_with_active_AM_batch": 2,
     "previously_screened_carry_forward": 3,
     "protocol_only": 6,
-    "new_unique_candidate_leads": 30,
-    "net_new_candidates_not_in_AM": 28,
-    "primary_source_verified": 6,
-    "primary_source_verified_not_in_AM": 4,
-    "held_for_verification_or_full_extraction": 21,
-    "deferred_negative": 3,
+    "new_unique_candidate_leads": 35,
+    "net_new_candidates_not_in_AM": 33,
+    "primary_source_verified": 7,
+    "primary_source_verified_not_in_AM": 5,
+    "held_for_verification_or_full_extraction": 22,
+    "deferred_negative": 6,
     "page_ready": 0,
     "uploaded": 0,
-    "not_uploaded": 30
+    "not_uploaded": 35,
+    "follow_up_screened": 7,
+    "follow_up_duplicates": 2,
+    "follow_up_new_unique": 5,
+    "follow_up_primary_source_verified": 1,
+    "follow_up_held": 1,
+    "follow_up_deferred_negative": 3
   },
   "duplicate_check_summary": {
-    "screened": 43,
-    "duplicates": 4,
+    "screened": 50,
+    "duplicates": 6,
     "duplicate_ids": [
       "KEYNOTE-C93",
       "CAMORAL",
       "RINGSIDE",
-      "ACT-GI"
+      "ACT-GI",
+      "KRASCENDO 1",
+      "Fovinaciclib first-line (FCN-437c-III201)"
     ],
     "overlap_with_active_AM_batch": [
       "PANOVA-3",
@@ -100,21 +111,41 @@
       "ASPIRE-GCT",
       "ALICE/PRODIGE89"
     ],
-    "new_unique_candidate_leads": 30,
-    "net_new_candidates_not_in_AM": 28
+    "new_unique_candidate_leads": 35,
+    "net_new_candidates_not_in_AM": 33
   },
   "uploaded_cases": [],
   "nnt_nnh_visualization_qa": {
     "new_pages": 0,
     "valid_nnt_nnh_pictograms": 0,
-    "calculations_recorded": "MASTERPLAN NNT=4 for 12-month locoregional recurrence (20.2% vs 52.0%; ARR 31.8 pp; 1/0.318=3.14, rounded up). ROADS NNT not calculated: primary abstract reports time-to-event HRs/medians but no fixed-time absolute event rates. NANT NNT not applicable (single-arm). No PM page visualisations were created."
+    "calculations_recorded": "MASTERPLAN NNT=4 for 12-month locoregional recurrence (20.2% vs 52.0%; ARR 31.8 pp; 1/0.318=3.14, rounded up). ROADS NNT not calculated: primary abstract reports time-to-event HRs/medians but no fixed-time absolute event rates. NANT NNT not applicable (single-arm). No PM page visualisations were created.",
+    "additional_manual_review": {
+      "source_and_visual_markup_crosschecked_pages": [
+        "horizon-breast06",
+        "optitrop-lung06",
+        "dalmelitinib-aumolertinib",
+        "pds0101-pembrolizumab"
+      ],
+      "page_content_inspected_release_hold_pages": [
+        "artemis-011",
+        "keynote-b49",
+        "panku-lung01",
+        "toripalimab-mfolfirinox",
+        "herizon-gea-01",
+        "keylynk-001",
+        "relight",
+        "trofuse-005"
+      ],
+      "browser_rendered_pages": 0,
+      "status": "partial; all four visualization repairs remain branch-only; eight release-state holds remain open"
+    }
   },
   "release_validation": {
-    "local_validator": "not run because no PM branch was created",
-    "strict_validator": "not run",
-    "outcome_visualization_audit": "not run",
-    "pr_checks": "not applicable",
-    "commit": "no PM publication commit"
+    "local_validator": "not run; no separate PM branch and active AM branch remains serialized",
+    "strict_validator": "not run on current follow-up head",
+    "outcome_visualization_audit": "not run on current follow-up head",
+    "pr_checks": "not applicable; no PM PR",
+    "commit": "no trial-page publication commit"
   },
   "deployment_status": {
     "production": "not verified",
@@ -125,11 +156,76 @@
   "target_progress_percent": 46.7,
   "report_file": "data/daily-reports/2026-11-19-evening.json",
   "evidence_file": "data/daily-evidence-2026-11-19-evening.json",
-  "serialization_blocker": "The existing atlas-batch/2026-11-19-am branch is still unmerged and contains no release-ready 30-page batch. Creating a parallel evening publication branch would violate the serialized branch/PR gate.",
+  "serialization_blocker": "The existing atlas-batch/2026-11-19-am branch remains unmerged and contains no release-ready 30-page batch. The evening cycle was screened and persisted on that active branch; no parallel PM publication branch or PR was created.",
   "validation": {
-    "local_validator": "not run; no PM branch",
+    "local_validator": "not run; no separate PM branch",
     "outcome_visualization_audit": "not run",
     "pr_checks": "not applicable",
     "merge": "not attempted"
-  }
+  },
+  "initial_screening_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "last_updated_at": "2026-11-19T20:18:18+05:30",
+  "follow_up_discovery_pass": {
+    "timestamp": "2026-11-19T20:18:18+05:30",
+    "source_passes": [
+      "thoracic/KRAS G12C",
+      "upper GI/resectable gastric and GEJ",
+      "breast/CDK4/6",
+      "neuro-oncology/supportive-palliative care"
+    ],
+    "screened": 7,
+    "duplicate_exclusions": [
+      "KRASCENDO 1 — matched roster krascendo-1 / trial-pages/krascendo-1/",
+      "Fovinaciclib first-line FCN-437c-III201 — matched roster fovinaciclib / trial-pages/fovinaciclib/"
+    ],
+    "new_unique_candidates": [
+      "ASTRUM-006",
+      "Fovinaciclib plus fulvestrant second-line phase III (NCT05438810)",
+      "ATTRACTION-6",
+      "EPCOG",
+      "KEYNOTE-585"
+    ],
+    "source_verified_new_unique": [
+      "ASTRUM-006"
+    ],
+    "held_new_unique": [
+      "Fovinaciclib plus fulvestrant second-line phase III (NCT05438810)"
+    ],
+    "deferred_negative_new_unique": [
+      "ATTRACTION-6",
+      "EPCOG",
+      "KEYNOTE-585"
+    ],
+    "page_ready": 0,
+    "uploaded": 0,
+    "note": "KRASCENDO 1 and first-line fovinaciclib were excluded as duplicates after direct live-roster/page checks. KEYNOTE-585's November 2026 FLOT paper is a secondary analysis and is attached to the underlying phase III trial; the trial is deferred because OS was not significantly improved and the FLOT cohort was not powered for efficacy."
+  },
+  "follow_up_verification": {
+    "timestamp": "2026-11-19T20:18:18+05:30",
+    "new_candidates_screened": 7,
+    "duplicate_exclusions": 2,
+    "new_unique_candidates": 5,
+    "primary_source_verified_new_unique": 1,
+    "held_new_unique": 1,
+    "deferred_negative_new_unique": 3,
+    "pages_built": 0,
+    "pages_uploaded": 0,
+    "primary_sources_reviewed": [
+      "ASTRUM-006 — PMID 42225112; DOI 10.1016/S0140-6736(26)00974-8; NCT04139135",
+      "ATTRACTION-6 — ASCO 2026 abstract DOI 10.1200/JCO.2026.44.16_suppl.4006; NCT05144854",
+      "EPCOG — PMID 41071052; DOI 10.1093/neuonc/noaf230; DRKS00016066",
+      "KEYNOTE-585 — PMID 40829093; DOI 10.1200/JCO-25-00486; NCT03221426; secondary FLOT cohort PMID 42976418 / DOI 10.1016/j.esmoop.2026.108603",
+      "Fovinaciclib second-line — ASCO 2026 abstract DOI 10.1200/JCO.2026.44.16_suppl.1101; NCT05438810"
+    ],
+    "duplicate_checks": [
+      "KRASCENDO 1 — existing canonical roster/page; duplicate excluded",
+      "Fovinaciclib first-line FCN-437c-III201 — existing canonical roster/page; duplicate excluded"
+    ],
+    "next_action": "Keep the current branch unmerged; complete the 30-page batch only after primary extraction, page creation and local release validation."
+  },
+  "next_actions": [
+    "Add ASTRUM-006, METIS and RAMIEL to the persistent page-build queue; hold Fovinaciclib second-line pending complete primary outcomes.",
+    "Retain ATTRACTION-6, EPCOG and KEYNOTE-585 in the deferred-negative/contrary-evidence queue.",
+    "Continue page-by-page audit; 8 release-state holds and the remaining 451-page manual clinical audit are still open."
+  ]
 }
