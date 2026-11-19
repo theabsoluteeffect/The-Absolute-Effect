@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "run_id": "absolute-effect-2026-11-19-evening",
+  "run_timestamp": "2026-11-19T19:24:57.106+05:30",
+  "cycle": "evening",
+  "status": "BLOCKED — active morning branch incomplete; no evening publication branch opened",
+  "headline": "0/30 uploaded. Forty-three candidate leads were screened; 28 are additional new-to-Atlas leads beyond the active morning batch, but the evening batch was not started because the 19-Nov morning branch remains unmerged and below the release gate.",
+  "target": {
+    "new_unique_trials": 30,
+    "uploaded": 0,
+    "not_uploaded": 30,
+    "screened_candidate_leads": 43,
+    "unique_candidate_leads": 30,
+    "net_new_candidates_not_in_AM": 28,
+    "page_ready": 0
+  },
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-19-am",
+    "working_branch_head_before_evening": "670c958b8b17e5880d4f82c5b6f2f06bca9cba8e",
+    "evening_branch_created": false,
+    "pr_opened": false,
+    "merge": "not attempted"
+  },
+  "existing_page_audit": {
+    "main_roster_unique_studies": 467,
+    "permanent_trial_pages": 460,
+    "canonical_index_files": 461,
+    "archive_entries": 16,
+    "evidence_index_unique_destinations": 468,
+    "manual_pages_reviewed": 9,
+    "manual_pages_remaining": 451,
+    "full_audit_complete": false
+  },
+  "repair_queue": {
+    "open_on_active_AM_branch": 147,
+    "closed_on_active_AM_branch": 52,
+    "repairs_staged_on_AM_branch": 4,
+    "repairs_completed_this_evening": 0,
+    "release_state_holds": 8,
+    "release_state_hold_pages": [
+      "ARTEMIS-011",
+      "KEYNOTE-B49",
+      "PANKU-Lung01",
+      "Toripalimab plus modified FOLFIRINOX",
+      "HERIZON-GEA-01",
+      "KEYLYNK-001",
+      "RELIGHT",
+      "TroFuse-005"
+    ]
+  },
+  "nccn": {
+    "guideline_metadata_identified": 7,
+    "new_metadata_only_sources": 5,
+    "exact_reference_numbers_mapped": 0,
+    "full_guideline_access": "not available in this run",
+    "scope": "NCCN/JNCCN metadata and focused Insights records only; no full reference list or recommendation category inferred"
+  },
+  "candidate_screening": {
+    "screened": 43,
+    "confirmed_duplicates": 4,
+    "overlap_with_active_AM_batch": 2,
+    "previously_screened_carry_forward": 3,
+    "protocol_only": 6,
+    "new_unique_candidate_leads": 30,
+    "net_new_candidates_not_in_AM": 28,
+    "primary_source_verified": 6,
+    "primary_source_verified_not_in_AM": 4,
+    "held_for_verification_or_full_extraction": 21,
+    "deferred_negative": 3,
+    "page_ready": 0,
+    "uploaded": 0,
+    "not_uploaded": 30
+  },
+  "duplicate_check_summary": {
+    "screened": 43,
+    "duplicates": 4,
+    "duplicate_ids": [
+      "KEYNOTE-C93",
+      "CAMORAL",
+      "RINGSIDE",
+      "ACT-GI"
+    ],
+    "overlap_with_active_AM_batch": [
+      "PANOVA-3",
+      "FIND"
+    ],
+    "previously_screened": [
+      "PEMDA-HN",
+      "ImmunoPRISM",
+      "ZEAL-1L"
+    ],
+    "protocol_only": [
+      "PRIME-CRT/JCOG2510",
+      "JALNECK/JCOG2407",
+      "JCOG2504",
+      "PADL1NK-005",
+      "ASPIRE-GCT",
+      "ALICE/PRODIGE89"
+    ],
+    "new_unique_candidate_leads": 30,
+    "net_new_candidates_not_in_AM": 28
+  },
+  "uploaded_cases": [],
+  "nnt_nnh_visualization_qa": {
+    "new_pages": 0,
+    "valid_nnt_nnh_pictograms": 0,
+    "calculations_recorded": "ROADS NNT=8 for 12-month surgical-bed recurrence; NANT NNT not applicable (single-arm). No PM page visualisations were created."
+  },
+  "release_validation": {
+    "local_validator": "not run because no PM branch was created",
+    "strict_validator": "not run",
+    "outcome_visualization_audit": "not run",
+    "pr_checks": "not applicable",
+    "commit": "no PM publication commit"
+  },
+  "deployment_status": {
+    "production": "not verified",
+    "preview": "not created"
+  },
+  "cumulative_main_unique_studies": 467,
+  "remaining_to_1000": 533,
+  "target_progress_percent": 46.7,
+  "report_file": "data/daily-reports/2026-11-19-evening.json",
+  "evidence_file": "data/daily-evidence-2026-11-19-evening.json",
+  "serialization_blocker": "The existing atlas-batch/2026-11-19-am branch is still unmerged and contains no release-ready 30-page batch. Creating a parallel evening publication branch would violate the serialized branch/PR gate."
+}
