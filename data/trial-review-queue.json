@@ -1,27 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T08:48:41+05:30",
-  "last_run": {
-    "date": "2026-11-19",
-    "cycle": "morning",
-    "status": "INCOMPLETE",
-    "screened_candidates": 55,
-    "new_unique_identity_resolved": 30,
-    "source_verified": 9,
-    "held_unique_for_page_details": 21,
-    "duplicates": 16,
-    "deferred_contrary": 4,
-    "additional_source_held": 4,
-    "excluded": 1,
-    "published": 0,
-    "branch": "atlas-batch/2026-11-19-am",
-    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_sha": "0c1957fa13ecf8e92d847e1d596acfa08b40664b",
-    "shortfall_to_30_unique": 0,
-    "disease_site_passes": 9,
-    "nccn_reference_mappings": 0,
-    "discovery_unique_candidates": 30
-  },
+  "updated_at": "2026-11-19T19:23:36.803+05:30",
+  "last_run": "2026-11-19-am-reconciliation",
   "items": [
     {
       "trial_id": "masterplan",
@@ -600,7 +580,7 @@
     {
       "trial_id": "natalee",
       "trial": "NATALEE",
-      "status": "held_for_complete_page_extraction",
+      "status": "duplicate_existing_canonical_page",
       "primary_doi": "10.1056/NEJMoa2305488",
       "primary_title": "Ribociclib plus Endocrine Therapy in Early Breast Cancer",
       "pmid": "38507751",
@@ -609,16 +589,20 @@
         "https://pubmed.ncbi.nlm.nih.gov/38507751/",
         "https://clinicaltrials.gov/study/NCT03701334"
       ],
-      "reason": "Phase III primary NEJM report and registry verified; 3-year iDFS 90.4% vs 87.1%, HR 0.75 (95% CI 0.62–0.91), P=.003; ribociclib 400 mg 3-weeks-on/1-week-off for 3 years plus NSAI; OS immature. Full safety/discontinuation extraction remains.",
-      "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
+      "reason": "Existing canonical roster entry and permanent page verified in live main; do not create a second page.",
+      "next_action": "Attach follow-up publications to the existing canonical page; audit completeness through repair queue only.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "duplicate_of": {
+        "roster_id": "natalee",
+        "page_path": "trial-pages/natalee/"
+      }
     },
     {
       "trial_id": "destiny-breast04",
       "trial": "DESTINY-Breast04",
-      "status": "held_for_complete_page_extraction",
+      "status": "duplicate_existing_canonical_page",
       "primary_doi": "10.1056/NEJMoa2203690",
       "primary_title": "Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer",
       "pmid": "35665782",
@@ -627,11 +611,15 @@
         "https://pubmed.ncbi.nlm.nih.gov/35665782/",
         "https://clinicaltrials.gov/study/NCT03734029"
       ],
-      "reason": "Phase III primary NEJM report and registry verified; 557 randomized; overall PFS 9.9 vs 5.1 months, HR 0.50, P<.001; OS 23.4 vs 16.8 months, HR 0.64, P=.001; grade ≥3 AEs 52.6% vs 67.4%; drug-related ILD/pneumonitis 12.1%, grade 5 0.8%. Full subgroup and dose-modification extraction remains.",
-      "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
+      "reason": "Existing canonical roster entry and permanent page verified in live main; do not create a second page.",
+      "next_action": "Attach follow-up publications to the existing canonical page; audit completeness through repair queue only.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "duplicate_of": {
+        "roster_id": "destiny-breast04",
+        "page_path": "trial-pages/destiny-breast04/"
+      }
     },
     {
       "trial_id": "echelon-2",
