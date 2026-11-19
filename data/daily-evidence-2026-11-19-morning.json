@@ -31,15 +31,15 @@
   },
   "candidate_screening": {
     "screened": 55,
-    "new_unique_identity_resolved": 30,
-    "source_verified": 9,
-    "held_unique_for_page_details": 21,
-    "duplicates": 16,
+    "new_unique_identity_resolved": 28,
+    "source_verified": 8,
+    "held_unique_for_page_details": 20,
+    "duplicates": 18,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
     "uploaded": 0,
-    "shortfall_to_30_unique": 0,
+    "shortfall_to_30_unique": 2,
     "shortfall_to_30_release_ready_pages": 30
   },
   "candidate_decisions": [
@@ -784,10 +784,14 @@
         "https://pubmed.ncbi.nlm.nih.gov/38507751/",
         "https://clinicaltrials.gov/study/NCT03701334"
       ],
-      "reason": "Phase III primary NEJM report and registry verified; 3-year iDFS 90.4% vs 87.1%, HR 0.75 (95% CI 0.62–0.91), P=.003; ribociclib 400 mg 3-weeks-on/1-week-off for 3 years plus NSAI; OS immature. Full safety/discontinuation extraction remains.",
-      "matched_existing": null,
+      "reason": "Existing canonical roster entry and permanent page verified in live main; do not create a second page.",
+      "matched_existing": {
+        "roster_id": "natalee",
+        "page_path": "trial-pages/natalee/",
+        "source": "main roster and recursive trial-pages tree"
+      },
       "identity": "new_unique",
-      "disposition": "held_page_level_extraction",
+      "disposition": "duplicate_excluded",
       "nccn_provenance": "not verified — full guideline/reference list inaccessible"
     },
     {
@@ -802,10 +806,14 @@
         "https://pubmed.ncbi.nlm.nih.gov/35665782/",
         "https://clinicaltrials.gov/study/NCT03734029"
       ],
-      "reason": "Phase III primary NEJM report and registry verified; 557 randomized; overall PFS 9.9 vs 5.1 months, HR 0.50, P<.001; OS 23.4 vs 16.8 months, HR 0.64, P=.001; grade ≥3 AEs 52.6% vs 67.4%; drug-related ILD/pneumonitis 12.1%, grade 5 0.8%. Full subgroup and dose-modification extraction remains.",
-      "matched_existing": null,
+      "reason": "Existing canonical roster entry and permanent page verified in live main; do not create a second page.",
+      "matched_existing": {
+        "roster_id": "destiny-breast04",
+        "page_path": "trial-pages/destiny-breast04/",
+        "source": "main roster and recursive trial-pages tree"
+      },
       "identity": "new_unique",
-      "disposition": "held_page_level_extraction",
+      "disposition": "duplicate_excluded",
       "nccn_provenance": "not verified — full guideline/reference list inaccessible"
     },
     {
@@ -907,14 +915,28 @@
   ],
   "duplicate_check_summary": {
     "screened": 55,
-    "duplicates": 16,
-    "new_unique_identity_resolved": 30,
+    "duplicates": 18,
+    "new_unique_identity_resolved": 28,
     "source_verified": 9,
     "held_unique_for_page_details": 21,
     "deferred_contrary": 4,
     "additional_source_held": 4,
     "excluded": 1,
-    "uploaded": 0
+    "uploaded": 0,
+    "duplicate_corrections": [
+      {
+        "candidate": "NATALEE",
+        "roster_id": "natalee",
+        "page_path": "trial-pages/natalee/",
+        "disposition": "duplicate_excluded"
+      },
+      {
+        "candidate": "DESTINY-Breast04",
+        "roster_id": "destiny-breast04",
+        "page_path": "trial-pages/destiny-breast04/",
+        "disposition": "duplicate_excluded"
+      }
+    ]
   },
   "nccn": {
     "reviewed": [
@@ -1191,21 +1213,23 @@
   "uploaded_cases": [],
   "branch_progress": {
     "target_new_unique_trials": 30,
-    "new_unique_identity_resolved": 30,
-    "source_verified": 9,
-    "held_unique": 21,
-    "remaining_new_unique_needed": 0,
+    "new_unique_identity_resolved": 28,
+    "source_verified": 8,
+    "held_unique": 20,
+    "remaining_new_unique_needed": 2,
     "uploaded": 0,
     "not_uploaded": 30,
     "branch_commit_sha": "0c1957fa13ecf8e92d847e1d596acfa08b40664b",
-    "remaining_release_ready_pages": 30
+    "remaining_release_ready_pages": 30,
+    "reconciliation_update_at": "2026-11-19T19:23:36.803+05:30",
+    "reconciliation_note": "NATALEE and DESTINY-Breast04 were misclassified as held candidates; both already have canonical pages in main. Corrected unique count is 28, not 30."
   },
   "next_actions": [
-    "Complete full primary dose/safety extraction for MASTERPLAN, NEOTORCH, SUNMO and ANDROMEDA.",
-    "Resolve PSMAgRT, DESTINY-Lung04, ASCENT-GYN-01 and JCOG2510 source identity/protocol holds.",
-    "Review remaining disease-site guideline subsets and continue screening until 30 genuinely new unique studies are independently verified.",
-    "Resolve eight release-state issues from the 17 Nov merged batch and run the patched validator before any PR.",
-    "Complete the manual clinical audit of the remaining 451 permanent trial pages."
+    "Complete primary dose/safety extraction for NEOTORCH and the 20 held unique candidates.",
+    "Replace the two duplicate false positives before treating the morning batch as 30 unique.",
+    "Build exactly 30 complete pages and run local release validator and outcome-visualization audit.",
+    "Resolve eight 17-Nov release-state holds before PR.",
+    "Do not open PR or merge until all 30 pages pass source, DOI-title, registry, visualisation, roster/index/archive and CI checks."
   ],
   "metadata_crosswalk_corrections": [
     {
@@ -1254,6 +1278,22 @@
       "status": "not_yet_screened",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/29091577/",
       "note": "Roster/archive exact-ID search negative; reserve for next run after full primary-source and page-tree duplicate check."
+    },
+    {
+      "trial": "NANT",
+      "doi": "10.1016/S1470-2045(26)00387-6",
+      "pmid": "42843394",
+      "registry_id": "NCT04507841",
+      "status": "source_verified_candidate; potential replacement",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42843394/"
+    },
+    {
+      "trial": "ROADS",
+      "doi": "10.1200/JCO-26-01894",
+      "pmid": "42804720",
+      "registry_id": "NCT04365374",
+      "status": "source_verified_candidate; potential replacement",
+      "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-01894"
     }
   ],
   "main_reconciliation": {
@@ -1278,5 +1318,15 @@
     },
     "tod_records_match_roster": true,
     "index_links_explanation": "468 unique destinations include 460 permanent trial-page links and 8 intra-page anchors; the sole tree-only ROSEL item is a redirect/stub and is intentionally not linked as a canonical trial."
+  },
+  "reconciliation_update": {
+    "at": "2026-11-19T19:23:36.803+05:30",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "status": "incomplete",
+    "corrections": [
+      "NATALEE and DESTINY-Breast04 are existing canonical studies, not new unique candidates.",
+      "Morning batch corrected from 30 to 28 unique candidates; two replacements still needed.",
+      "No pages published."
+    ]
   }
 }
