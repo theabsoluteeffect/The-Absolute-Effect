@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T19:24:07.172+05:30",
+  "updated_at": "2026-11-19T20:18:18+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -306,7 +306,7 @@
       ]
     }
   ],
-  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.\n2026-11-19 evening: 13 guideline records are retained in the ledger; 41 exact trial-to-guideline mappings remain pending. Seven guideline metadata sources were identified in this run (five metadata-only new sources), but no exact NCCN reference numbers or recommendation categories were verified. Five net-new candidates have primary-source/registry identity verified; their NCCN provenance remains explicitly unverified.",
   "source_access_log": [
     {
       "date": "2026-11-15",
@@ -471,23 +471,47 @@
       "status": "metadata_identified; full guideline/reference list not retrieved",
       "subsets_reviewed": [],
       "action": "Keep exact citation mapping pending; do not infer reference numbers or categories."
+    },
+    {
+      "date": "2026-11-19",
+      "guideline_id": null,
+      "source": "official NCCN Clinical Practice Guidelines portal / current guideline reference lists",
+      "url": null,
+      "status": "full guideline and complete reference-list access not available in evening cycle",
+      "subsets_reviewed": [
+        "thoracic/KRAS G12C",
+        "upper GI/gastric and GEJ",
+        "breast/CDK4/6",
+        "CNS/brain metastases",
+        "supportive and palliative care"
+      ],
+      "action": "Do not infer reference numbers, recommendation categories or section context. Keep exact NCCN mapping pending and continue primary-source discovery."
     }
   ],
   "last_run": {
     "date": "2026-11-19",
-    "cycle": "morning",
-    "guideline_reviewed": "NCCN Colon Cancer Insights v3.2026",
-    "scope": "metadata/abstract only",
+    "cycle": "evening",
+    "guideline_reviewed": "NCCN/JNCCN metadata sweep only; full guideline/reference lists inaccessible",
+    "scope": "metadata and focused Insights records only; primary publication discovery continued across thoracic, upper GI, breast, CNS and supportive/palliative oncology",
+    "guideline_metadata_identified": 7,
+    "new_metadata_only_sources": 5,
     "exact_nccn_references_mapped": 0,
     "full_guideline_accessible": false,
     "complete_reference_list_accessible": false,
-    "new_unique_candidate_identities": 30,
-    "source_verified": 9,
-    "held_for_page_level_extraction": 21,
-    "disease_site_passes": 9,
-    "branch_commit_sha": "0c1957fa13ecf8e92d847e1d596acfa08b40664b"
+    "new_unique_candidate_identities": 35,
+    "net_new_candidates_not_in_AM": 33,
+    "source_verified": 5,
+    "held_for_page_level_extraction": 22,
+    "deferred_negative": 6,
+    "duplicate_exclusions": 6,
+    "disease_site_passes": 4,
+    "page_ready": 0,
+    "uploaded": 0,
+    "pending_trial_mappings": 41,
+    "branch_commit_sha": "96ea6b0e4ff8149619dec4ddd9bba97517c809c4",
+    "status": "INCOMPLETE — NCCN exact provenance unavailable; discovery continued using primary publications and authoritative conference reports; no pages release-ready"
   },
-  "last_updated": "2026-11-19T19:24:07.172+05:30",
+  "last_updated": "2026-11-19T20:18:18+05:30",
   "last_run_date": "2026-11-19",
   "pending_trial_mappings": [
     {
@@ -1797,6 +1821,157 @@
       "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
       "status": "primary source and registry verified; page build pending",
       "nnt_nnh_status": "not calculated — no fixed-time absolute event rates in accessible primary abstract"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "metis",
+      "trial": "METIS",
+      "primary_doi": "10.1038/s41392-026-02834-x",
+      "primary_title": "Neoadjuvant concurrent or sequential anthracycline-containing chemotherapy and HER2-targeted agents for HER2-positive breast cancer: a randomized phase 2 study",
+      "primary_title_verified": true,
+      "pmid": "42967914",
+      "registry_id": "NCT04172259",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42967914/",
+        "https://doi.org/10.1038/s41392-026-02834-x",
+        "https://clinicaltrials.gov/study/NCT04172259"
+      ],
+      "status": "primary source and registry verified; page build pending",
+      "nnt_nnh_status": "pCR NNT=6 at surgery (ARR 18.8 pp; surrogate endpoint); no EFS NNT"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "ramiel",
+      "trial": "RAMIEL / OGSG1901",
+      "primary_doi": "10.1007/s10120-026-01799-8",
+      "primary_title": "A multicenter phase II trial of ramucirumab plus irinotecan for early recurrence of gastric cancer during or after adjuvant chemotherapy with docetaxel plus S-1 therapy: the RAMIEL trial (OGSG1901)",
+      "primary_title_verified": true,
+      "pmid": "42747649",
+      "registry_id": "jRCTs051190071",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42747649/",
+        "https://doi.org/10.1007/s10120-026-01799-8"
+      ],
+      "status": "primary source and registry verified; page build pending",
+      "nnt_nnh_status": "not applicable — single-arm phase II"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "astrum-006",
+      "trial": "ASTRUM-006",
+      "primary_doi": "10.1016/S0140-6736(26)00974-8",
+      "primary_title": "Perioperative serplulimab with neoadjuvant chemotherapy versus perioperative chemotherapy in PD-L1-positive gastric cancer (ASTRUM-006): a randomised, double-blind, multicentre, phase 3 study",
+      "primary_title_verified": true,
+      "pmid": "42225112",
+      "registry_id": "NCT04139135",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42225112/",
+        "https://doi.org/10.1016/S0140-6736(26)00974-8",
+        "https://clinicaltrials.gov/study/NCT04139135"
+      ],
+      "status": "primary source and registry verified; full safety/PRO extraction and page build pending",
+      "nnt_nnh_status": "not calculated — EFS medians/HR only; no NNT from time-to-event estimates"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "fovinaciclib-2l",
+      "trial": "Fovinaciclib plus fulvestrant second-line phase III",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.1101",
+      "primary_title": null,
+      "primary_title_verified": false,
+      "pmid": null,
+      "registry_id": "NCT05438810",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.1101",
+        "https://clinicaltrials.gov/study/NCT05438810"
+      ],
+      "status": "held — complete primary efficacy outcomes and DOI-title verification pending",
+      "nnt_nnh_status": "not calculated — outcome extraction incomplete"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "attraction-6",
+      "trial": "ATTRACTION-6",
+      "primary_doi": "10.1200/JCO.2026.44.16_suppl.4006",
+      "primary_title": null,
+      "primary_title_verified": false,
+      "pmid": null,
+      "registry_id": "NCT05144854",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.4006",
+        "https://clinicaltrials.gov/study/NCT05144854"
+      ],
+      "status": "deferred negative/contrary evidence; primary OS endpoint not met",
+      "nnt_nnh_status": "not calculated — median OS/HR only; no fixed-time absolute survival risks"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "epcog",
+      "trial": "EPCOG",
+      "primary_doi": "10.1093/neuonc/noaf230",
+      "primary_title": null,
+      "primary_title_verified": false,
+      "pmid": "41071052",
+      "registry_id": "DRKS00016066",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41071052/",
+        "https://doi.org/10.1093/neuonc/noaf230"
+      ],
+      "status": "deferred negative/contrary evidence; primary QoL endpoint null and OS signal favoured control",
+      "nnt_nnh_status": "not applicable — continuous QoL endpoint and time-to-event OS"
+    },
+    {
+      "nccn_guideline": null,
+      "nccn_version": null,
+      "nccn_section": null,
+      "nccn_reference_number": null,
+      "nccn_recommendation_category": null,
+      "nccn_provenance": "not verified — exact current NCCN guideline/reference list inaccessible",
+      "trial_id": "keynote-585",
+      "trial": "KEYNOTE-585",
+      "primary_doi": "10.1200/JCO-25-00486",
+      "primary_title": null,
+      "primary_title_verified": false,
+      "pmid": "40829093",
+      "registry_id": "NCT03221426",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40829093/",
+        "https://doi.org/10.1200/JCO-25-00486",
+        "https://pubmed.ncbi.nlm.nih.gov/42976418/",
+        "https://doi.org/10.1016/j.esmoop.2026.108603"
+      ],
+      "status": "deferred contrary evidence; OS not significantly improved; FLOT cohort follow-up is secondary and not a separate trial",
+      "nnt_nnh_status": "not calculated — median/HR and exploratory FLOT-cohort outcomes"
     }
   ],
   "discovery_passes": [
@@ -1918,6 +2093,20 @@
       "source_scope": "official NCCN/JNCCN metadata and search-indexed article records only",
       "status": "metadata_only; no exact citation-to-trial mapping",
       "next_action": "Retrieve complete guideline or complete NCCN-authored Insights reference lists; continue primary-evidence discovery meanwhile."
+    },
+    {
+      "date": "2026-11-19",
+      "pass_id": "2026-11-19-evening-cross-disease-discovery",
+      "disease_sites": [
+        "thoracic/KRAS G12C",
+        "upper GI/gastric and GEJ",
+        "breast/CDK4/6",
+        "CNS/brain metastases",
+        "supportive and palliative care"
+      ],
+      "source_scope": "primary peer-reviewed publications, PubMed, NEJM, Lancet, JCO/ASCO conference reports and trial registries; NCCN full reference lists unavailable",
+      "status": "50 candidates screened; 35 unique candidate leads including 33 net-new to the active AM batch; 5 net-new primary-source verified; 22 held; 6 deferred; 0 page-ready",
+      "next_action": "Retrieve complete current NCCN guideline or complete NCCN-authored Insights reference lists before assigning exact guideline citations; do not infer references."
     }
   ],
   "metadata_crosswalk_corrections": [
@@ -1957,5 +2146,19 @@
         "https://pubmed.ncbi.nlm.nih.gov/36206498/"
       ]
     }
-  ]
+  ],
+  "previous_run": {
+    "date": "2026-11-19",
+    "cycle": "morning",
+    "guideline_reviewed": "NCCN Colon Cancer Insights v3.2026",
+    "scope": "metadata/abstract only",
+    "exact_nccn_references_mapped": 0,
+    "full_guideline_accessible": false,
+    "complete_reference_list_accessible": false,
+    "new_unique_candidate_identities": 30,
+    "source_verified": 9,
+    "held_for_page_level_extraction": 21,
+    "disease_site_passes": 9,
+    "branch_commit_sha": "0c1957fa13ecf8e92d847e1d596acfa08b40664b"
+  }
 }

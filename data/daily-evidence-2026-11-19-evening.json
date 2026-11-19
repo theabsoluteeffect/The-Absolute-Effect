@@ -642,7 +642,10 @@
     ],
     "exact_reference_numbers_mapped": 0,
     "complete_full_guideline_access": false,
-    "action": "Keep exact NCCN mapping tasks open; no reference numbers or recommendation categories inferred."
+    "action": "Keep exact NCCN mapping tasks open; no reference numbers or recommendation categories inferred.",
+    "ledger_guideline_records": 13,
+    "pending_trial_mappings": 41,
+    "full_guideline_access": "not available; metadata-only and focused Insights sources only"
   },
   "repairs": {
     "open_on_active_AM_branch": 147,
@@ -700,6 +703,15 @@
         "trial": "Fovinaciclib second-line",
         "status": "not calculated",
         "reason": "Complete primary efficacy report not retrieved."
+      },
+      {
+        "trial": "METIS",
+        "status": "calculated for pCR only",
+        "endpoint": "pathological complete response at surgery",
+        "arm_rates": "67.5% (54/80) vs 48.7% (37/76)",
+        "absolute_difference_pp": 18.8,
+        "calculation": "1/0.188=5.32; NNT=6",
+        "qualification": "Surrogate endpoint; not an NNT for survival or patient benefit. EFS NNT not calculated."
       }
     ]
   },

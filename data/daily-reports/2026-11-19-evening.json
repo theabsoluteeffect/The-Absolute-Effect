@@ -60,8 +60,12 @@
     "guideline_metadata_identified": 7,
     "new_metadata_only_sources": 5,
     "exact_reference_numbers_mapped": 0,
-    "full_guideline_access": "not available in this run",
-    "scope": "NCCN/JNCCN metadata and focused Insights records only; no full reference list or recommendation category inferred"
+    "full_guideline_access": "not available; metadata-only sources and focused Insights records; no complete reference list",
+    "scope": "NCCN/JNCCN metadata and focused Insights records only; no full reference list or recommendation category inferred",
+    "ledger_guideline_records": 13,
+    "pending_trial_mappings": 41,
+    "candidate_trial_provenance_entries": 39,
+    "new_candidate_provenance_records": 7
   },
   "candidate_screening": {
     "screened": 50,
@@ -140,7 +144,65 @@
       ],
       "browser_rendered_pages": 0,
       "status": "partial; all four visualization repairs remain branch-only; eight release-state holds remain open"
-    }
+    },
+    "candidate_calculations": [
+      {
+        "trial": "METIS",
+        "endpoint": "pathological complete response at surgery",
+        "arm_rates": "67.5% (54/80) vs 48.7% (37/76)",
+        "absolute_difference": "18.8 percentage points",
+        "calculation": "1/0.188=5.32; NNT=6",
+        "qualification": "Surrogate pCR endpoint only; do not describe as NNT for survival or patient benefit. EFS NNT not calculated from HR/medians."
+      },
+      {
+        "trial": "MASTERPLAN",
+        "endpoint": "12-month locoregional recurrence",
+        "arm_rates": "20.2% vs 52.0%",
+        "absolute_difference": "31.8 percentage points",
+        "calculation": "1/0.318=3.14; NNT=4",
+        "qualification": "Candidate-level calculation only; page not built and primary-source denominator/timepoint readback remains open."
+      },
+      {
+        "trial": "ASTRUM-006",
+        "status": "not calculated",
+        "reason": "Primary EFS is time-to-event; no fixed-time absolute EFS risk extracted for NNT."
+      },
+      {
+        "trial": "RAMIEL",
+        "status": "not applicable",
+        "reason": "Single-arm phase II; no comparative absolute risk."
+      },
+      {
+        "trial": "NANT",
+        "status": "not applicable",
+        "reason": "Single-arm phase II; no comparative absolute risk."
+      },
+      {
+        "trial": "ROADS",
+        "status": "not calculated",
+        "reason": "Accessible primary abstract reports HR/medians without fixed-time absolute event rates."
+      },
+      {
+        "trial": "ATTRACTION-6",
+        "status": "not calculated",
+        "reason": "Median OS/HR only; no comparable fixed-time absolute survival risks extracted."
+      },
+      {
+        "trial": "EPCOG",
+        "status": "not applicable",
+        "reason": "Primary endpoint is continuous QoL; OS is time-to-event."
+      },
+      {
+        "trial": "KEYNOTE-585",
+        "status": "not calculated",
+        "reason": "Main survival results are median/HR; FLOT-cohort pCR is exploratory in a safety cohort not powered for efficacy."
+      },
+      {
+        "trial": "Fovinaciclib second-line",
+        "status": "not calculated",
+        "reason": "Complete primary efficacy data not retrieved."
+      }
+    ]
   },
   "release_validation": {
     "local_validator": "not run; no separate PM branch and active AM branch remains serialized",
@@ -230,5 +292,13 @@
     "Add ASTRUM-006, METIS and RAMIEL to the persistent page-build queue; hold Fovinaciclib second-line pending complete primary outcomes.",
     "Retain ATTRACTION-6, EPCOG and KEYNOTE-585 in the deferred-negative/contrary-evidence queue.",
     "Continue page-by-page audit; 8 release-state holds and the remaining 451-page manual clinical audit are still open."
-  ]
+  ],
+  "coverage_ledger": {
+    "guideline_records": 13,
+    "pending_trial_mappings": 41,
+    "provenance_entries": 39,
+    "new_provenance_records": 7,
+    "exact_nccn_mappings_added": 0,
+    "last_run_cycle": "2026-11-19-evening"
+  }
 }
