@@ -23,7 +23,9 @@
     "evening_branch_created": false,
     "pr_opened": false,
     "merge": "not attempted",
-    "working_branch_head_at_followup": "63f8a6f10421637cd93e6131976bd2566e4c545c"
+    "working_branch_head_at_followup": "63f8a6f10421637cd93e6131976bd2566e4c545c",
+    "followup_commit_sha": "0877174e0aa6f0839dfa5d712c3153609faaa81e",
+    "branch_head_after_followup_commit": "0877174e0aa6f0839dfa5d712c3153609faaa81e"
   },
   "existing_page_audit": {
     "main_roster_unique_studies": 467,
@@ -145,7 +147,7 @@
     "strict_validator": "not run on current follow-up head",
     "outcome_visualization_audit": "not run on current follow-up head",
     "pr_checks": "not applicable; no PM PR",
-    "commit": "no trial-page publication commit"
+    "commit": "follow-up evidence/queue commit only; no trial-page publication commit"
   },
   "deployment_status": {
     "production": "not verified",
@@ -221,7 +223,8 @@
       "KRASCENDO 1 — existing canonical roster/page; duplicate excluded",
       "Fovinaciclib first-line FCN-437c-III201 — existing canonical roster/page; duplicate excluded"
     ],
-    "next_action": "Keep the current branch unmerged; complete the 30-page batch only after primary extraction, page creation and local release validation."
+    "next_action": "Keep the current branch unmerged; complete the 30-page batch only after primary extraction, page creation and local release validation.",
+    "commit_sha": "0877174e0aa6f0839dfa5d712c3153609faaa81e"
   },
   "next_actions": [
     "Add ASTRUM-006, METIS and RAMIEL to the persistent page-build queue; hold Fovinaciclib second-line pending complete primary outcomes.",
