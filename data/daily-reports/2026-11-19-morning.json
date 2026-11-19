@@ -230,5 +230,54 @@
     "Resolve four additional source-held leads and four deferred/contrary evidence mappings.",
     "Resolve nine main-branch release-state holds, run the patched strict validator, and only then open a PR containing exactly 30 release-ready unique studies.",
     "Complete the manual clinical audit of the remaining 451 permanent trial pages."
+  ],
+  "metadata_crosswalk_corrections": [
+    {
+      "trial": "POSEIDON",
+      "old_doi": "10.1056/EVIDoa2100058",
+      "correct_doi": "10.1200/JCO.22.00975",
+      "pmid": "36327426",
+      "registry_id": "NCT03164616",
+      "reason": "Old DOI resolves to an unrelated ultrasound-AI paper; corrected DOI/title/PMID verified against JCO primary report and OpenAlex metadata.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/"
+      ]
+    },
+    {
+      "trial": "RATIONALE-304",
+      "old_doi": "10.1016/j.jtho.2021.04.001",
+      "correct_doi": "10.1016/j.jtho.2021.05.005",
+      "pmid": "34033975",
+      "registry_id": "NCT03663205",
+      "reason": "Old DOI resolves to an unrelated article; corrected DOI/title/PMID verified against the Journal of Thoracic Oncology primary report.",
+      "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/34033975/"
+      ]
+    },
+    {
+      "trial": "CHOICE-01",
+      "old_pmid": "39715755",
+      "correct_primary_pmid": "36206498",
+      "followup_pmid": "39715755",
+      "registry_id": "NCT03856411",
+      "reason": "Primary JCO publication PMID corrected; 39715755 retained as later follow-up.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/"
+      ]
+    }
+  ],
+  "next_run_candidates": [
+    {
+      "candidate": "GALLIUM",
+      "doi": "10.1056/NEJMoa1614598",
+      "pmid": "29091577",
+      "registry_id": "NCT01332968",
+      "status": "not_yet_screened",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29091577/",
+      "note": "Roster/archive exact-ID search negative; reserve for next run after full primary-source and page-tree duplicate check."
+    }
   ]
 }

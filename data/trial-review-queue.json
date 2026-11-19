@@ -413,19 +413,21 @@
       "trial_id": "poseidon",
       "trial": "POSEIDON",
       "status": "held_for_complete_page_extraction",
-      "primary_doi": "10.1056/EVIDoa2100058",
-      "primary_title": "Durvalumab, with or without tremelimumab, plus chemotherapy in first-line treatment of metastatic non-small-cell lung cancer: the phase III POSEIDON study",
-      "pmid": null,
+      "primary_doi": "10.1200/JCO.22.00975",
+      "primary_title": "Durvalumab With or Without Tremelimumab in Combination With Chemotherapy as First-Line Therapy for Metastatic Non–Small-Cell Lung Cancer: The Phase III POSEIDON Study",
+      "pmid": "36327426",
       "registry_id": "NCT03164616",
       "source_urls": [
-        "https://doi.org/10.1056/EVIDoa2100058",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/",
         "https://clinicaltrials.gov/study/NCT03164616"
       ],
-      "reason": "Phase III primary publication DOI and registry identity located; PubMed identifier and full arm-level outcomes/safety tables not independently reconciled. Hold until DOI-to-title metadata and exact primary publication record are confirmed.",
+      "reason": "Corrected DOI/PMID/title verified against the JCO primary report; complete three-arm efficacy, safety, dose and subgroup extraction remains.",
       "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "orient-11",
@@ -450,38 +452,42 @@
       "trial_id": "rationale-304",
       "trial": "RATIONALE-304",
       "status": "held_for_complete_page_extraction",
-      "primary_doi": "10.1016/j.jtho.2021.04.001",
-      "primary_title": "Tislelizumab Plus Chemotherapy as First-Line Treatment for Locally Advanced or Metastatic Nonsquamous NSCLC (RATIONALE 304): A Randomized Phase 3 Trial",
+      "primary_doi": "10.1016/j.jtho.2021.05.005",
+      "primary_title": "Tislelizumab Plus Chemotherapy as First-line Treatment for Locally Advanced or Metastatic Nonsquamous Non-Small Cell Lung Cancer (RATIONALE 304): A Randomized Phase 3 Trial",
       "pmid": "34033975",
       "registry_id": "NCT03663205",
       "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
         "https://pubmed.ncbi.nlm.nih.gov/34033975/",
         "https://clinicaltrials.gov/study/NCT03663205"
       ],
-      "reason": "Phase III primary report and registry verified; full endpoint hierarchy, exact platinum choice/dose, maintenance and grade 3–5 safety require extraction.",
+      "reason": "Corrected DOI/PMID/title verified against the Journal of Thoracic Oncology primary report; complete endpoint, dosing, maintenance and safety extraction remains.",
       "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true
     },
     {
       "trial_id": "choice-01",
       "trial": "CHOICE-01",
       "status": "held_for_complete_page_extraction",
       "primary_doi": "10.1200/JCO.22.00727",
-      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial",
-      "pmid": null,
+      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial (CHOICE-01)",
+      "pmid": "36206498",
       "registry_id": "NCT03856411",
       "source_urls": [
-        "https://doi.org/10.1200/JCO.22.00727",
-        "https://pubmed.ncbi.nlm.nih.gov/39715755/",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/",
         "https://clinicaltrials.gov/study/NCT03856411"
       ],
-      "reason": "Primary JCO phase III publication DOI and final OS follow-up verified; primary PMID and complete chemotherapy backbone/dose extraction remain. Final OS follow-up reported 23.8 vs 17.0 months (HR 0.69; 95% CI 0.57–0.93; nominal P=.01).",
+      "reason": "Primary JCO publication DOI/title/PMID verified; later OS follow-up retained separately (PMID 39715755); full arm-level dose and safety extraction remains.",
       "next_action": "Extract full protocol/primary publication: design, eligibility, exact intervention/comparator doses and schedules, primary endpoint definition, follow-up, absolute outcomes, HR/CIs/p values, grade 3–5 toxicity, QoL, discontinuation and limitations; validate DOI-title and registry identity before page creation.",
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "first_seen": "2026-11-19",
-      "last_reviewed": "2026-11-19"
+      "last_reviewed": "2026-11-19",
+      "primary_title_verified": true,
+      "followup_pmid": "39715755"
     },
     {
       "trial_id": "duo-o",

@@ -586,21 +586,23 @@
     },
     {
       "candidate": "POSEIDON",
-      "doi": "10.1056/EVIDoa2100058",
-      "pmid": null,
+      "doi": "10.1200/JCO.22.00975",
+      "pmid": "36327426",
       "registry_id": "NCT03164616",
-      "primary_title": "Durvalumab, with or without tremelimumab, plus chemotherapy in first-line treatment of metastatic non-small-cell lung cancer: the phase III POSEIDON study",
+      "primary_title": "Durvalumab With or Without Tremelimumab in Combination With Chemotherapy as First-Line Therapy for Metastatic Non–Small-Cell Lung Cancer: The Phase III POSEIDON Study",
       "site": "NSCLC",
       "setting": "First-line metastatic",
       "source_urls": [
-        "https://doi.org/10.1056/EVIDoa2100058",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/",
         "https://clinicaltrials.gov/study/NCT03164616"
       ],
-      "reason": "Phase III primary publication DOI and registry identity located; PubMed identifier and full arm-level outcomes/safety tables not independently reconciled. Hold until DOI-to-title metadata and exact primary publication record are confirmed.",
+      "reason": "Corrected DOI/PMID/title verified against the JCO primary report; complete three-arm efficacy, safety, dose and subgroup extraction remains.",
       "matched_existing": null,
       "identity": "new_unique",
       "disposition": "held_page_level_extraction",
-      "nccn_provenance": "not verified — full guideline/reference list inaccessible"
+      "nccn_provenance": "not verified — full guideline/reference list inaccessible",
+      "primary_title_verified": true
     },
     {
       "candidate": "ORIENT-11",
@@ -623,40 +625,44 @@
     },
     {
       "candidate": "RATIONALE-304",
-      "doi": "10.1016/j.jtho.2021.04.001",
+      "doi": "10.1016/j.jtho.2021.05.005",
       "pmid": "34033975",
       "registry_id": "NCT03663205",
-      "primary_title": "Tislelizumab Plus Chemotherapy as First-Line Treatment for Locally Advanced or Metastatic Nonsquamous NSCLC (RATIONALE 304): A Randomized Phase 3 Trial",
+      "primary_title": "Tislelizumab Plus Chemotherapy as First-line Treatment for Locally Advanced or Metastatic Nonsquamous Non-Small Cell Lung Cancer (RATIONALE 304): A Randomized Phase 3 Trial",
       "site": "NSCLC",
       "setting": "First-line advanced/metastatic nonsquamous",
       "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
         "https://pubmed.ncbi.nlm.nih.gov/34033975/",
         "https://clinicaltrials.gov/study/NCT03663205"
       ],
-      "reason": "Phase III primary report and registry verified; full endpoint hierarchy, exact platinum choice/dose, maintenance and grade 3–5 safety require extraction.",
+      "reason": "Corrected DOI/PMID/title verified against the Journal of Thoracic Oncology primary report; complete endpoint, dosing, maintenance and safety extraction remains.",
       "matched_existing": null,
       "identity": "new_unique",
       "disposition": "held_page_level_extraction",
-      "nccn_provenance": "not verified — full guideline/reference list inaccessible"
+      "nccn_provenance": "not verified — full guideline/reference list inaccessible",
+      "primary_title_verified": true
     },
     {
       "candidate": "CHOICE-01",
       "doi": "10.1200/JCO.22.00727",
-      "pmid": null,
+      "pmid": "36206498",
       "registry_id": "NCT03856411",
-      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial",
+      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial (CHOICE-01)",
       "site": "NSCLC",
       "setting": "First-line advanced/metastatic",
       "source_urls": [
-        "https://doi.org/10.1200/JCO.22.00727",
-        "https://pubmed.ncbi.nlm.nih.gov/39715755/",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/",
         "https://clinicaltrials.gov/study/NCT03856411"
       ],
-      "reason": "Primary JCO phase III publication DOI and final OS follow-up verified; primary PMID and complete chemotherapy backbone/dose extraction remain. Final OS follow-up reported 23.8 vs 17.0 months (HR 0.69; 95% CI 0.57–0.93; nominal P=.01).",
+      "reason": "Primary JCO publication DOI/title/PMID verified; later OS follow-up retained separately (PMID 39715755); full arm-level dose and safety extraction remains.",
       "matched_existing": null,
       "identity": "new_unique",
       "disposition": "held_page_level_extraction",
-      "nccn_provenance": "not verified — full guideline/reference list inaccessible"
+      "nccn_provenance": "not verified — full guideline/reference list inaccessible",
+      "followup_pmid": "39715755",
+      "primary_title_verified": true
     },
     {
       "candidate": "DUO-O",
@@ -1200,5 +1206,54 @@
     "Review remaining disease-site guideline subsets and continue screening until 30 genuinely new unique studies are independently verified.",
     "Resolve eight release-state issues from the 17 Nov merged batch and run the patched validator before any PR.",
     "Complete the manual clinical audit of the remaining 451 permanent trial pages."
+  ],
+  "metadata_crosswalk_corrections": [
+    {
+      "trial": "POSEIDON",
+      "old_doi": "10.1056/EVIDoa2100058",
+      "correct_doi": "10.1200/JCO.22.00975",
+      "pmid": "36327426",
+      "registry_id": "NCT03164616",
+      "reason": "Old DOI resolves to an unrelated ultrasound-AI paper; corrected DOI/title/PMID verified against JCO primary report and OpenAlex metadata.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/"
+      ]
+    },
+    {
+      "trial": "RATIONALE-304",
+      "old_doi": "10.1016/j.jtho.2021.04.001",
+      "correct_doi": "10.1016/j.jtho.2021.05.005",
+      "pmid": "34033975",
+      "registry_id": "NCT03663205",
+      "reason": "Old DOI resolves to an unrelated article; corrected DOI/title/PMID verified against the Journal of Thoracic Oncology primary report.",
+      "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/34033975/"
+      ]
+    },
+    {
+      "trial": "CHOICE-01",
+      "old_pmid": "39715755",
+      "correct_primary_pmid": "36206498",
+      "followup_pmid": "39715755",
+      "registry_id": "NCT03856411",
+      "reason": "Primary JCO publication PMID corrected; 39715755 retained as later follow-up.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/"
+      ]
+    }
+  ],
+  "next_run_candidates": [
+    {
+      "candidate": "GALLIUM",
+      "doi": "10.1056/NEJMoa1614598",
+      "pmid": "29091577",
+      "registry_id": "NCT01332968",
+      "status": "not_yet_screened",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29091577/",
+      "note": "Roster/archive exact-ID search negative; reserve for next run after full primary-source and page-tree duplicate check."
+    }
   ]
 }

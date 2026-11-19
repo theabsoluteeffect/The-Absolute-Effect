@@ -3884,5 +3884,43 @@
     "note": "PR #5 merged to main on 2026-11-18 (merge commit 8c521b631056b3eca7f01b613cf54e6db336bee6). Main now contains all 30 pages from the 17 Nov batch. Post-merge manual reconciliation found four release_ready=false pages (ARTEMIS-011, KEYNOTE-B49, PANKU-Lung01, Toripalimab+mFOLFIRINOX) and four pages still marked pending release validator (HERIZON-GEA-01, KEYLYNK-001, RELIGHT, TroFuse-005). The previous CI pass did not enforce these roster release states. Full clinical audit and guideline freshness review remain incomplete.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_merged_batch": 8
-  }
+  },
+  "metadata_crosswalk_corrections": [
+    {
+      "trial": "POSEIDON",
+      "old_doi": "10.1056/EVIDoa2100058",
+      "correct_doi": "10.1200/JCO.22.00975",
+      "pmid": "36327426",
+      "registry_id": "NCT03164616",
+      "reason": "Old DOI resolves to an unrelated ultrasound-AI paper; corrected DOI/title/PMID verified against JCO primary report and OpenAlex metadata.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/"
+      ]
+    },
+    {
+      "trial": "RATIONALE-304",
+      "old_doi": "10.1016/j.jtho.2021.04.001",
+      "correct_doi": "10.1016/j.jtho.2021.05.005",
+      "pmid": "34033975",
+      "registry_id": "NCT03663205",
+      "reason": "Old DOI resolves to an unrelated article; corrected DOI/title/PMID verified against the Journal of Thoracic Oncology primary report.",
+      "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/34033975/"
+      ]
+    },
+    {
+      "trial": "CHOICE-01",
+      "old_pmid": "39715755",
+      "correct_primary_pmid": "36206498",
+      "followup_pmid": "39715755",
+      "registry_id": "NCT03856411",
+      "reason": "Primary JCO publication PMID corrected; 39715755 retained as later follow-up.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/"
+      ]
+    }
+  ]
 }

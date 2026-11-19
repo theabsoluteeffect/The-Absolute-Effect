@@ -998,6 +998,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "42914998",
+      "followup_pmid": null,
       "registry_id": "NCT04089150",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42914998/",
@@ -1018,6 +1019,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "42920414",
+      "followup_pmid": null,
       "registry_id": "NCT05506943",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42920414/",
@@ -1039,6 +1041,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "42933639",
+      "followup_pmid": null,
       "registry_id": "NCT04158440",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42933639/",
@@ -1059,6 +1062,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "42525894",
+      "followup_pmid": null,
       "registry_id": "NCT05904665",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42525894/",
@@ -1080,6 +1084,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": null,
+      "followup_pmid": null,
       "registry_id": "NCT03377491",
       "source_urls": [
         "https://doi.org/10.1200/JCO-25-00746",
@@ -1101,6 +1106,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "41037766",
+      "followup_pmid": null,
       "registry_id": "NCT05171647",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/41037766/",
@@ -1122,6 +1128,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "42118698",
+      "followup_pmid": null,
       "registry_id": "NCT03201965",
       "source_urls": [
         "https://doi.org/10.1182/blood.2025032099",
@@ -1142,6 +1149,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "38838311",
+      "followup_pmid": null,
       "registry_id": "NCT03026140",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/38838311/",
@@ -1163,6 +1171,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "37071094",
+      "followup_pmid": null,
       "registry_id": "NCT02394795",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/37071094/",
@@ -1184,6 +1193,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "37133585",
+      "followup_pmid": null,
       "registry_id": "NCT04737187",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/37133585/",
@@ -1205,6 +1215,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "34891224",
+      "followup_pmid": null,
       "registry_id": "NCT03391466",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/34891224/",
@@ -1226,6 +1237,7 @@
       "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "36511784",
+      "followup_pmid": null,
       "registry_id": "NCT03734016",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/36511784/",
@@ -1247,6 +1259,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "24552320",
+      "followup_pmid": null,
       "registry_id": "NCT00803062",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/24552320/",
@@ -1267,6 +1280,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "35139273",
+      "followup_pmid": null,
       "registry_id": "NCT03257267",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/35139273/",
@@ -1287,6 +1301,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "38959480",
+      "followup_pmid": null,
       "registry_id": "NCT04697628",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/38959480/",
@@ -1307,6 +1322,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "34555333",
+      "followup_pmid": null,
       "registry_id": "NCT02486718",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/34555333/",
@@ -1327,6 +1343,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "29863955",
+      "followup_pmid": null,
       "registry_id": "NCT02366143",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/29863955/",
@@ -1342,14 +1359,16 @@
     },
     {
       "trial": "POSEIDON",
-      "primary_doi": "10.1056/EVIDoa2100058",
-      "primary_title": "Durvalumab, with or without tremelimumab, plus chemotherapy in first-line treatment of metastatic non-small-cell lung cancer: the phase III POSEIDON study",
-      "primary_title_verified": false,
+      "primary_doi": "10.1200/JCO.22.00975",
+      "primary_title": "Durvalumab With or Without Tremelimumab in Combination With Chemotherapy as First-Line Therapy for Metastatic Non–Small-Cell Lung Cancer: The Phase III POSEIDON Study",
+      "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
-      "pmid": null,
+      "pmid": "36327426",
+      "followup_pmid": null,
       "registry_id": "NCT03164616",
       "source_urls": [
-        "https://doi.org/10.1056/EVIDoa2100058",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/",
         "https://clinicaltrials.gov/study/NCT03164616"
       ],
       "nccn_guideline": null,
@@ -1367,6 +1386,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "32771405",
+      "followup_pmid": null,
       "registry_id": "NCT03607539",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/32771405/",
@@ -1383,13 +1403,15 @@
     },
     {
       "trial": "RATIONALE-304",
-      "primary_doi": "10.1016/j.jtho.2021.04.001",
-      "primary_title": "Tislelizumab Plus Chemotherapy as First-Line Treatment for Locally Advanced or Metastatic Nonsquamous NSCLC (RATIONALE 304): A Randomized Phase 3 Trial",
-      "primary_title_verified": false,
+      "primary_doi": "10.1016/j.jtho.2021.05.005",
+      "primary_title": "Tislelizumab Plus Chemotherapy as First-line Treatment for Locally Advanced or Metastatic Nonsquamous Non-Small Cell Lung Cancer (RATIONALE 304): A Randomized Phase 3 Trial",
+      "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "34033975",
+      "followup_pmid": null,
       "registry_id": "NCT03663205",
       "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
         "https://pubmed.ncbi.nlm.nih.gov/34033975/",
         "https://clinicaltrials.gov/study/NCT03663205"
       ],
@@ -1404,14 +1426,15 @@
     {
       "trial": "CHOICE-01",
       "primary_doi": "10.1200/JCO.22.00727",
-      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial",
-      "primary_title_verified": false,
+      "primary_title": "Toripalimab Plus Chemotherapy for Patients With Treatment-Naive Advanced Non–Small-Cell Lung Cancer: A Multicenter Randomized Phase III Trial (CHOICE-01)",
+      "primary_title_verified": true,
       "primary_title_verification": "verified against primary publication metadata",
-      "pmid": null,
+      "pmid": "36206498",
+      "followup_pmid": "39715755",
       "registry_id": "NCT03856411",
       "source_urls": [
-        "https://doi.org/10.1200/JCO.22.00727",
-        "https://pubmed.ncbi.nlm.nih.gov/39715755/",
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/",
         "https://clinicaltrials.gov/study/NCT03856411"
       ],
       "nccn_guideline": null,
@@ -1429,6 +1452,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "38055243",
+      "followup_pmid": null,
       "registry_id": "NCT03737643",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/38055243/",
@@ -1449,6 +1473,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "31562799",
+      "followup_pmid": null,
       "registry_id": "NCT02655016",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/31562799/",
@@ -1469,6 +1494,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "34904799",
+      "followup_pmid": null,
       "registry_id": "NCT03274492",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/34904799/",
@@ -1489,6 +1515,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "29562156",
+      "followup_pmid": null,
       "registry_id": "NCT02005471",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/29562156/",
@@ -1509,6 +1536,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "31882368",
+      "followup_pmid": null,
       "registry_id": "NCT02475681",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/31882368/",
@@ -1529,6 +1557,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "34454674",
+      "followup_pmid": null,
       "registry_id": "NCT03189719",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/34454674/",
@@ -1549,6 +1578,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "38507751",
+      "followup_pmid": null,
       "registry_id": "NCT03701334",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/38507751/",
@@ -1569,6 +1599,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "35665782",
+      "followup_pmid": null,
       "registry_id": "NCT03734029",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/35665782/",
@@ -1589,6 +1620,7 @@
       "primary_title_verified": false,
       "primary_title_verification": "verified against primary publication metadata",
       "pmid": "30522922",
+      "followup_pmid": null,
       "registry_id": "NCT01777152",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/30522922/",
@@ -1708,6 +1740,44 @@
       "guideline_version": "not verified",
       "nccn_reference": null,
       "status": "contrary/neutral evidence deferred pending exact mapping"
+    }
+  ],
+  "metadata_crosswalk_corrections": [
+    {
+      "trial": "POSEIDON",
+      "old_doi": "10.1056/EVIDoa2100058",
+      "correct_doi": "10.1200/JCO.22.00975",
+      "pmid": "36327426",
+      "registry_id": "NCT03164616",
+      "reason": "Old DOI resolves to an unrelated ultrasound-AI paper; corrected DOI/title/PMID verified against JCO primary report and OpenAlex metadata.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00975",
+        "https://pubmed.ncbi.nlm.nih.gov/36327426/"
+      ]
+    },
+    {
+      "trial": "RATIONALE-304",
+      "old_doi": "10.1016/j.jtho.2021.04.001",
+      "correct_doi": "10.1016/j.jtho.2021.05.005",
+      "pmid": "34033975",
+      "registry_id": "NCT03663205",
+      "reason": "Old DOI resolves to an unrelated article; corrected DOI/title/PMID verified against the Journal of Thoracic Oncology primary report.",
+      "source_urls": [
+        "https://www.jto.org/article/S1556086421021766/pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/34033975/"
+      ]
+    },
+    {
+      "trial": "CHOICE-01",
+      "old_pmid": "39715755",
+      "correct_primary_pmid": "36206498",
+      "followup_pmid": "39715755",
+      "registry_id": "NCT03856411",
+      "reason": "Primary JCO publication PMID corrected; 39715755 retained as later follow-up.",
+      "source_urls": [
+        "https://ascopubs.org/doi/10.1200/JCO.22.00727",
+        "https://pubmed.ncbi.nlm.nih.gov/36206498/"
+      ]
     }
   ]
 }
