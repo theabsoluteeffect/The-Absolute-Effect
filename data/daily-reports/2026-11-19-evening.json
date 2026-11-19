@@ -107,7 +107,7 @@
   "nnt_nnh_visualization_qa": {
     "new_pages": 0,
     "valid_nnt_nnh_pictograms": 0,
-    "calculations_recorded": "ROADS NNT=8 for 12-month surgical-bed recurrence; NANT NNT not applicable (single-arm). No PM page visualisations were created."
+    "calculations_recorded": "MASTERPLAN NNT=4 for 12-month locoregional recurrence (20.2% vs 52.0%; ARR 31.8 pp; 1/0.318=3.14, rounded up). ROADS NNT not calculated: primary abstract reports time-to-event HRs/medians but no fixed-time absolute event rates. NANT NNT not applicable (single-arm). No PM page visualisations were created."
   },
   "release_validation": {
     "local_validator": "not run because no PM branch was created",
@@ -125,5 +125,11 @@
   "target_progress_percent": 46.7,
   "report_file": "data/daily-reports/2026-11-19-evening.json",
   "evidence_file": "data/daily-evidence-2026-11-19-evening.json",
-  "serialization_blocker": "The existing atlas-batch/2026-11-19-am branch is still unmerged and contains no release-ready 30-page batch. Creating a parallel evening publication branch would violate the serialized branch/PR gate."
+  "serialization_blocker": "The existing atlas-batch/2026-11-19-am branch is still unmerged and contains no release-ready 30-page batch. Creating a parallel evening publication branch would violate the serialized branch/PR gate.",
+  "validation": {
+    "local_validator": "not run; no PM branch",
+    "outcome_visualization_audit": "not run",
+    "pr_checks": "not applicable",
+    "merge": "not attempted"
+  }
 }
