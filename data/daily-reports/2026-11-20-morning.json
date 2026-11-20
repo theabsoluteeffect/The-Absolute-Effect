@@ -11,7 +11,9 @@
     "branch_head_before": "968b0cac2d19f5e9ccb1a98b1d109429e95c270f",
     "pull_request": null,
     "merge_status": "not merged",
-    "production_deployment": "not verified"
+    "production_deployment": "not verified",
+    "content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
+    "branch_head_after_content_commit": "9ae03700bc6dae078a93982d1a6964be7a9afaea"
   },
   "preflight": {
     "roster_unique_studies": 467,
@@ -288,12 +290,12 @@
     "previous_tod": "GemX"
   },
   "validation": {
-    "strict_release_validator": "pending after commit",
-    "outcome_visualization_audit": "pending after commit",
+    "strict_release_validator": "not yet run after content commit",
+    "outcome_visualization_audit": "not yet run after content commit",
     "pr_opened": false,
     "production_deployment": "not verified; branch unmerged"
   },
-  "branch_commit_sha": "pending",
+  "branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
   "next_actions": [
     "Run branch strict release validator and outcome-visualization audit after commit.",
     "Inspect the Cloudflare branch preview if one is created; do not claim production deployment.",

@@ -4114,7 +4114,8 @@
     "release_state_open_count": 1,
     "release_state_open_ids": [
       "optitrop-lung06"
-    ]
+    ],
+    "last_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea"
   },
   "metadata_crosswalk_corrections": [
     {
@@ -4153,5 +4154,6 @@
         "https://pubmed.ncbi.nlm.nih.gov/36206498/"
       ]
     }
-  ]
+  ],
+  "last_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea"
 }
