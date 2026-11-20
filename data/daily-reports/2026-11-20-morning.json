@@ -11,9 +11,24 @@
     "branch_head_before": "968b0cac2d19f5e9ccb1a98b1d109429e95c270f",
     "pull_request": null,
     "merge_status": "not merged",
-    "production_deployment": "not verified",
+    "production_deployment": "not verified; branch preview URL inaccessible and no production page could be independently opened",
     "content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
-    "branch_head_after_content_commit": "9ae03700bc6dae078a93982d1a6964be7a9afaea"
+    "branch_head_after_content_commit": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
+    "metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
+    "branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
+    "previous_batch_pr5": {
+      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+      "state": "merged",
+      "merged_at": "2026-11-18T02:41:48Z",
+      "merge_commit": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+    },
+    "preexisting_draft_pr3": {
+      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/3",
+      "state": "open draft",
+      "head_branch": "feature/complete-outcome-visualizations-2026-11-08",
+      "not_part_of_this_run": true
+    },
+    "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am."
   },
   "preflight": {
     "roster_unique_studies": 467,
@@ -278,7 +293,8 @@
     "static_chart_css_fix": "staged",
     "daly_2_eu_median_efs_chart": "repaired",
     "panku_lung01_nnt_pictogram": "added with structured absolute_effect",
-    "rendered_preview": "pending"
+    "rendered_preview": "not verified; branch preview URL inaccessible",
+    "targeted_static_checks": "PASS on changed pages; full workflow audit not run"
   },
   "roster_index_archive": {
     "roster_unique_studies": 467,
@@ -290,17 +306,22 @@
     "previous_tod": "GemX"
   },
   "validation": {
-    "strict_release_validator": "not yet run after content commit",
-    "outcome_visualization_audit": "not yet run after content commit",
+    "strict_release_validator": "not run — PR-gated workflow not triggered for branch-only push; one unresolved OptiTROP-Lung06 protocol-dose hold remains",
+    "outcome_visualization_audit": "not run as PR workflow; targeted static checks on changed pages passed",
+    "targeted_static_checks": "PASS for changed pages and metadata: page identity/source links, PANKU absolute-effect arithmetic/attributes, DALY chart and registry, TroFuse dose, ARTEMIS title/cache, CSS visibility, roster/queue consistency",
+    "local_validator": "not run; no local repository clone was available in this runtime",
+    "build": "not run",
     "pr_opened": false,
-    "production_deployment": "not verified; branch unmerged"
+    "production_deployment": "not verified; branch preview URL was inaccessible"
   },
   "branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
   "next_actions": [
     "Run branch strict release validator and outcome-visualization audit after commit.",
-    "Inspect the Cloudflare branch preview if one is created; do not claim production deployment.",
     "Complete protocol-level dose/schedule verification for OptiTROP-Lung06 before clearing its remaining release hold.",
     "Continue the full manual source/visualization audit of the remaining 450 permanent pages.",
-    "Continue candidate screening toward 30; do not create or merge a partial 30-study batch."
-  ]
+    "Continue candidate screening toward 30; do not create or merge a partial 30-study batch.",
+    "Recheck OptiTROP-Lung06 protocol/registry dose and schedule before clearing the remaining release hold.",
+    "Create no PR until a complete 30-study eligible batch exists; PR #3 remains an unrelated old draft."
+  ],
+  "metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3"
 }
