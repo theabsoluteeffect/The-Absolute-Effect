@@ -161,32 +161,73 @@
     "release_holds_remaining": [
       "OptiTROP-Lung06"
     ],
-    "manual_clinical_audit_remaining_pages": 450
-  },
-  "nnt_qa": {
-    "added_or_corrected": [
+    "manual_clinical_audit_remaining_pages": 450,
+    "primary_title_corrections": [
+      {
+        "trial_id": "artemis-011",
+        "primary_title": "Efficacy and safety of risvutatug rezetecan versus gemcitabine-docetaxel in relapsed or refractory osteosarcoma: primary results from the ARTEMIS-011 phase III trial",
+        "doi": "10.1016/j.annonc.2026.10.1284",
+        "pmid": "42933637"
+      },
+      {
+        "trial_id": "herizon-gea-01",
+        "primary_title": "Zanidatamab with and without Tislelizumab in HER2-Positive Gastroesophageal Cancer",
+        "doi": "10.1056/NEJMoa2517729",
+        "pmid": "42202319"
+      },
+      {
+        "trial_id": "keylynk-001",
+        "primary_title": "Chemotherapy with or without pembrolizumab followed by maintenance pembrolizumab with or without olaparib as first-line treatment of patients with advanced BRCA non-mutated epithelial ovarian cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): a randomised, double-blind, placebo-controlled, phase 3 trial",
+        "doi": "10.1016/S1470-2045(26)00223-8",
+        "pmid": "42705254"
+      },
+      {
+        "trial_id": "keynote-b49",
+        "primary_title": "Pembrolizumab Plus Chemotherapy for HR+/HER2- PD-L1‒Positive Advanced Breast Cancer: Final Analysis of the Phase 3 KEYNOTE-B49 Study",
+        "doi": "10.1016/j.annonc.2026.10.1285",
+        "pmid": "42926111"
+      },
       {
         "trial_id": "panku-lung01",
-        "endpoint": "12-month PFS",
-        "treatment_rate_pct": 46.5,
-        "control_rate_pct": 14.4,
-        "benefit_percentage_points": 32.1,
-        "nnt": 4,
-        "calculation": "ceil(100/(46.5-14.4))=4",
-        "source": "ESMO 2026 LBA71; ASCO Post conference report"
+        "primary_title": "Izalontamab brengitecan versus platinum-based chemotherapy in EGFR-mutated advanced non-squamous non-small-cell lung cancer after progression on third-generation EGFR tyrosine kinase inhibitors (PANKU-Lung01): a multicentre, randomised, open-label, phase 3 trial in China",
+        "doi": "10.1016/S0140-6736(26)02026-X",
+        "pmid": "42933461"
+      },
+      {
+        "trial_id": "relight",
+        "primary_title": "First-Line Retlirafusp Alfa Plus Chemotherapy for Human Epidermal Growth Factor Receptor 2-Negative Gastric or Gastroesophageal Junction Adenocarcinoma: A Randomized, Double-Blind, Phase III Study (RELIGHT)",
+        "doi": "10.1200/JCO-25-02933",
+        "pmid": "42784781"
+      },
+      {
+        "trial_id": "toripalimab-mfolfirinox",
+        "primary_title": "Immunochemotherapy for Borderline Resectable or Locally Advanced Pancreatic Cancer: A Randomized Controlled Trial",
+        "doi": "10.1200/JCO-26-01393",
+        "pmid": "42970668"
+      },
+      {
+        "trial_id": "trofuse-005",
+        "primary_title": "Sacituzumab tirumotecan versus treatment of physician's choice in previously treated endometrial cancer (TroFuse-005/ENGOT-en23/GOG-3095): a randomised, open-label, phase 3 trial",
+        "doi": "10.1016/S0140-6736(26)02099-4",
+        "pmid": "42933460"
       }
     ],
+    "panku_nnt_correction": "Removed provisional NNT=4 and absolute_effect record; primary Lancet and official ESMO LBA71 abstract do not provide fixed-time absolute PFS rates."
+  },
+  "nnt_qa": {
+    "added_or_corrected": [],
     "not_applicable": [
       "ARTEMIS-011",
       "HERIZON-GEA-01",
       "KEYLYNK-001",
       "KEYNOTE-B49",
+      "PANKU-Lung01",
       "RELIGHT",
-      "Toripalimab-mFOLFIRINOX",
+      "Toripalimab plus mFOLFIRINOX",
       "TroFuse-005",
       "DALY 2-EU"
     ],
-    "reason": "No comparable fixed-time absolute event rates in the primary source; no NNT derived from medians or hazard ratios."
+    "reason": "The accessible primary publications/official abstracts did not provide comparable fixed-time absolute event rates for these endpoints; no NNT is derived from medians, hazard ratios or secondary-summary landmark rates. PANKU-Lung01's provisional NNT=4 was removed because 12-month rates were not present in the primary Lancet report or official ESMO LBA71 abstract."
   },
   "nccn": {
     "full_guideline_access": false,

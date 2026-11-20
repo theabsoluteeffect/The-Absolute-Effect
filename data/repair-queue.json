@@ -3958,6 +3958,19 @@
       "status": "resolved",
       "closed_on": "2026-11-20",
       "verification": "Current ToD PANKU-Esophagus01; previous ToD GemX; 17 Nov batch PR #5 merged on 18 Nov at commit 8c521b631056b3eca7f01b613cf54e6db336bee6; main head 8315e5e5dda454ab83d62911a1c22e0dac5f732c."
+    },
+    {
+      "issue_id": "panku-nnt-secondary-rate-correction-2026-11-20",
+      "trial_id": "panku-lung01",
+      "trial": "PANKU-Lung01",
+      "path": "trial-pages/panku-lung01/index.html",
+      "category": "absolute_effect_nnt_correction",
+      "severity": "high",
+      "evidence": "The official ESMO Congress 2026 LBA71 abstract (PDF) and primary Lancet publication report median PFS and HR but not a fixed-time absolute PFS rate. Twelve-month rates appeared in secondary summaries only.",
+      "action": "Remove the NNT and structured absolute_effect record; retain median PFS visualisation and state why NNT is not calculable from primary sources.",
+      "status": "resolved",
+      "closed_on": "2026-11-20",
+      "verification": "Removed data-absolute-effect and NNT=4; page now links the official ESMO LBA71 abstract and primary Lancet paper; no NNT from medians/HR or secondary-summary rates."
     }
   ],
   "run_audit_log": [
@@ -4118,7 +4131,7 @@
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
     "open_items": 137,
-    "resolved_items": 65,
+    "resolved_items": 66,
     "note": "PR #5 merged to main on 2026-11-18 (merge commit 8c521b631056b3eca7f01b613cf54e6db336bee6). Main now contains all 30 pages from the 17 Nov batch. Post-merge manual reconciliation found four release_ready=false pages (ARTEMIS-011, KEYNOTE-B49, PANKU-Lung01, Toripalimab+mFOLFIRINOX) and four pages still marked pending release validator (HERIZON-GEA-01, KEYLYNK-001, RELIGHT, TroFuse-005). The previous CI pass did not enforce these roster release states. Full clinical audit and guideline freshness review remain incomplete.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_merged_batch": 8,

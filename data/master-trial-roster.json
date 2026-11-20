@@ -1483,8 +1483,8 @@
     "latest_run_timestamp": "2026-11-20T09:41:18+05:30",
     "last_branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
     "latest_run_branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
-    "latest_run_content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
-    "latest_run_metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
+    "latest_run_content_commit_sha": "pending-title-correction-commit",
+    "latest_run_metadata_commit_sha": "87476edfb2a6785c65a70b5ef4dea34082fd3ed6",
     "latest_run_branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
     "daily_batch_upload_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
     "latest_structural_reconciliation_2026_11_20": {
@@ -1516,7 +1516,9 @@
       "scope_note": "Structural reconciliation only; manual clinical freshness and browser-rendered QA remain incomplete."
     },
     "latest_run_final_metadata_commit_sha": "87476edfb2a6785c65a70b5ef4dea34082fd3ed6",
-    "latest_run_final_metadata_checked_on": "2026-11-20"
+    "latest_run_final_metadata_checked_on": "2026-11-20",
+    "panku_lung01_nnt_status": "not calculated — fixed-time absolute PFS rates not present in primary Lancet paper or official ESMO LBA71 abstract; secondary-summary rates not used",
+    "latest_primary_title_corrections_on": "2026-11-20"
   },
   "trials": [
     {
@@ -1929,7 +1931,7 @@
       "phase": "III",
       "design": "Randomized phase III trial",
       "primary": "10.1016/j.annonc.2026.10.1284",
-      "primary_title": "Efficacy and safety of risvutatug rezetecan versus gemcitabine plus docetaxel in relapsed/refractory advanced osteosarcoma: Primary results from the ARTEMIS-011 phase 3 trial",
+      "primary_title": "Efficacy and safety of risvutatug rezetecan versus gemcitabine-docetaxel in relapsed or refractory osteosarcoma: primary results from the ARTEMIS-011 phase III trial",
       "pmid": "42933637",
       "registry_id": "NCT06935409",
       "publication_date": "2026-10-20",
@@ -1971,7 +1973,8 @@
       "qol_summary": "QoL not reported in accessible primary abstract.",
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
-      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "primary_doi": "10.1016/j.annonc.2026.10.1284"
     },
     {
       "id": "arto",
@@ -5967,7 +5970,7 @@
       "phase": "III",
       "design": "Double-blind randomized phase III trial",
       "primary": "10.1016/S1470-2045(26)00223-8",
-      "primary_title": "Chemotherapy With or Without Pembrolizumab Followed by Maintenance Pembrolizumab With or Without Olaparib as First-Line Treatment of Patients With Advanced BRCA Non-Mutated Epithelial Ovarian Cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): A Randomised, Double-Blind, Placebo-Controlled, Phase 3 Trial",
+      "primary_title": "Chemotherapy with or without pembrolizumab followed by maintenance pembrolizumab with or without olaparib as first-line treatment of patients with advanced BRCA non-mutated epithelial ovarian cancer (ENGOT-OV43/GOG-3036/KEYLYNK-001): a randomised, double-blind, placebo-controlled, phase 3 trial",
       "pmid": "42705254",
       "registry_id": "NCT03740165",
       "publication_date": "2026-10-01",
@@ -6010,7 +6013,8 @@
       "release_hold_reason": null,
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
-      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "primary_doi": "10.1016/S1470-2045(26)00223-8"
     },
     {
       "id": "keynote-024",
@@ -6550,7 +6554,7 @@
       "phase": "III",
       "design": "Double-blind randomized phase III trial",
       "primary": "10.1016/j.annonc.2026.10.1285",
-      "primary_title": "Pembrolizumab Plus Chemotherapy for HR+/HER2- PD-L1-Positive Advanced Breast Cancer: Final Analysis of the Phase 3 KEYNOTE-B49 Study",
+      "primary_title": "Pembrolizumab Plus Chemotherapy for HR+/HER2- PD-L1‒Positive Advanced Breast Cancer: Final Analysis of the Phase 3 KEYNOTE-B49 Study",
       "pmid": "42926111",
       "registry_id": "NCT04895358",
       "publication_date": "2026-10-20",
@@ -6592,7 +6596,8 @@
       "qol_summary": "No definitive QoL result reported in accessible primary abstract.",
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
-      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "primary_doi": "10.1016/j.annonc.2026.10.1285"
     },
     {
       "id": "keynote-c93",
@@ -8324,7 +8329,7 @@
       "phase": "III",
       "design": "Open-label randomized phase III trial",
       "primary": "10.1016/S0140-6736(26)02026-X",
-      "primary_title": "Izalontamab Brengitecan Versus Platinum-Based Chemotherapy in EGFR-Mutated Advanced Non-Small-Cell Lung Cancer After Progression on Third-Generation EGFR Tyrosine Kinase Inhibitors (PANKU-Lung01): A Multicentre, Randomised, Open-Label, Phase 3 Trial in China",
+      "primary_title": "Izalontamab brengitecan versus platinum-based chemotherapy in EGFR-mutated advanced non-squamous non-small-cell lung cancer after progression on third-generation EGFR tyrosine kinase inhibitors (PANKU-Lung01): a multicentre, randomised, open-label, phase 3 trial in China",
       "pmid": "42933461",
       "registry_id": "NCT06382116",
       "publication_date": "2026-11-15",
@@ -8350,7 +8355,7 @@
       "quality_of_life": "No definitive QoL advantage reported in the primary abstract.",
       "limitations": "China-based trial; OS is interim and did not cross the prespecified efficacy boundary. Platinum choice/dose and full safety supplement remain to be extracted.",
       "clinical_interpretation": "PANKU-Lung01 demonstrates a major PFS improvement with izalontamab brengitecan after third-generation EGFR-TKI progression. The earlier staged page's PFS 6.7 vs3.8 and HR0.65 were incorrect and are replaced with the primary Lancet results.",
-      "nnt_not_calculated_reason": null,
+      "nnt_not_calculated_reason": "The primary Lancet paper and official ESMO 2026 LBA71 abstract report median PFS and a hazard ratio but do not report fixed-time absolute PFS rates. No NNT is derived from medians, hazard ratios or secondary-summary landmark estimates.",
       "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open",
       "primary_title_verified_via": "PubMed primary abstract checked 17 November 2026",
       "source_verified": true,
@@ -8361,25 +8366,13 @@
       "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
       "release_hold_reason": null,
       "release_ready": true,
-      "outcome_summary": "Median PFS 11.1 vs 5.7 months (HR 0.40, 95% CI 0.31–0.51; one-sided p<0.0001); 12-month PFS 46.5% vs 14.4% (absolute difference 32.1 percentage points; landmark NNT 4).",
+      "outcome_summary": "Median BICR PFS 11.1 vs 5.7 months (HR 0.40, 95% CI 0.31–0.51; one-sided p<0.0001); median PFS follow-up 14.6 vs 15.2 months. OS immature; no NNT calculated.",
       "safety_summary": "Grade ≥3 TRAEs 78.7% vs 62.1%; dose reductions 60.2% vs 23.3%.",
       "qol_summary": "QoL not reported in accessible primary abstract.",
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
       "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
-      "absolute_effect": {
-        "endpoint": "12-month progression-free survival",
-        "horizon": "12 months",
-        "event_definition": "Alive and progression-free at 12 months by BICR/RECIST 1.1; landmark rates from ESMO 2026 LBA71",
-        "treatment_rate_pct": 46.5,
-        "control_rate_pct": 14.4,
-        "benefit_percentage_points": 32.1,
-        "nnt": 4,
-        "calculation": "ceil(100 / (46.5 - 14.4)) = ceil(3.12) = 4",
-        "source_doi": "10.1016/S0140-6736(26)02026-X",
-        "source_type": "ESMO 2026 LBA71 conference landmark rates reported alongside the primary Lancet publication",
-        "source_url": "https://ascopost.com/articles/2026/11-november/izalontamab-brengitecan-improves-progression-free-survival-in-egfr-mutated-advanced-nonsquamous-nsclc/"
-      }
+      "primary_doi": "10.1016/S0140-6736(26)02026-X"
     },
     {
       "id": "paola-1",
@@ -10580,7 +10573,8 @@
       "qol_summary": "QoL not reported in accessible primary abstract.",
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
-      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "primary_doi": "10.1200/JCO-26-01393"
     },
     {
       "id": "tpg-multiply-relapsed-gct-2014",
@@ -10796,7 +10790,7 @@
       "phase": "III",
       "design": "Open-label, randomized, phase III trial",
       "primary": "10.1016/S0140-6736(26)02099-4",
-      "primary_title": "Sacituzumab Tirumotecan Versus Treatment of Physician's Choice in Previously Treated Endometrial Cancer (TroFuse-005/ENGOT-en23/GOG-3095): A Randomised, Open-Label, Phase 3 Trial",
+      "primary_title": "Sacituzumab tirumotecan versus treatment of physician's choice in previously treated endometrial cancer (TroFuse-005/ENGOT-en23/GOG-3095): a randomised, open-label, phase 3 trial",
       "pmid": "42933460",
       "registry_id": "NCT06132958",
       "publication_date": "2026-11-12",
@@ -10839,7 +10833,8 @@
       "release_hold_reason": null,
       "release_verified_on": "2026-11-20",
       "release_verified_by": "primary publication/registry review and page re-read",
-      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "primary_doi": "10.1016/S0140-6736(26)02099-4"
     },
     {
       "id": "trog-03-04-radar",

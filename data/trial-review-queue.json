@@ -812,7 +812,7 @@
       "clinical_setting": "First-line locally advanced/metastatic NSCLC with EGFR exon 19 deletion or L858R",
       "phase_design": "Phase III, open-label, multicentre, randomised, controlled",
       "primary_doi": "10.1016/S1470-2045(26)00090-2",
-      "primary_title": "Aumolertinib plus chemotherapy in patients with advanced EGFR-mutated non-small-cell lung cancer (AENEAS2): a randomised, open-label, phase 3 trial",
+      "primary_title": "Aumolertinib with or without chemotherapy in EGFR-mutated advanced non-small-cell lung cancer (AENEAS2): an open-label, multicentre, randomised, controlled, phase 3 trial",
       "pmid": "42296979",
       "registry_id": "NCT04923906",
       "source_urls": [
@@ -822,16 +822,16 @@
       ],
       "source_verified_on": "2026-11-20",
       "screen_type": "fresh candidate",
-      "sample_size": "624 randomised (310 combination; 314 monotherapy); median follow-up 23.4 months",
-      "intervention": "Aumolertinib 110 mg orally daily plus pemetrexed 500 mg/m² and platinum (cisplatin or carboplatin) every 3 weeks for 4 cycles, followed by aumolertinib plus pemetrexed maintenance",
+      "sample_size": "624 randomised (310 combination; 314 monotherapy); safety population 304 vs 316; median follow-up 23.4 months.",
+      "intervention": "Aumolertinib 110 mg orally once daily plus pemetrexed 500 mg/m² IV with cisplatin 75 mg/m² or carboplatin AUC 5 IV on day 1 of 21-day cycles for 4–6 cycles, followed by aumolertinib 110 mg daily plus pemetrexed 500 mg/m² IV every 3 weeks maintenance.",
       "comparator": "Aumolertinib 110 mg orally daily",
       "primary_endpoint": "BICR PFS by RECIST 1.1",
-      "key_results": "Median PFS 28.9 vs 18.9 months; HR 0.47 (95% CI 0.37–0.60), p<0.0001; OS follow-up required.",
-      "safety": "Grade 3–4 neutrophil count decrease 55% vs 1%, WBC decrease 34% vs <1%, platelet decrease 20% vs 1%; serious AEs 36% vs 17%; treatment-related deaths 1 vs 2.",
+      "key_results": "Median BICR PFS 28.9 vs 18.9 months; HR 0.47 (95% CI 0.37–0.60), log-rank p<0.0001. OS follow-up required.",
+      "safety": "Grade 3–4 neutrophil count decreased 168/304 (55%) vs 4/316 (1%); WBC decreased 103/304 (34%) vs 1/316 (<1%); platelet count decreased 62/304 (20%) vs 2/316 (1%); serious AEs 109/304 (36%) vs 53/316 (17%); treatment-related deaths 1 vs 2.",
       "nnt_status": "Not calculated: no fixed-time absolute PFS rates in the primary abstract; no NNT from medians/HR.",
       "status": "verified_unique_held_for_page_extraction",
       "hold_reason": "Primary identity, publication and registry verified, but full page-level synthesis, current-practice review, limitations and visualization QA not completed in this run. No page created; the 30-study batch gate was not reached.",
-      "next_action": "Complete page-level source extraction and QA; map to exact NCCN biomarker/first-line EGFR recommendation only when full guideline reference list is accessible."
+      "next_action": "Complete full page-level synthesis, limitations, current-practice review and visual QA; map to exact NCCN biomarker/first-line EGFR recommendation only when full guideline reference list is accessible."
     }
   ],
   "follow_up_note": "CAMPASS was screened as a unique candidate on 2026-11-15 and is carried forward; AENEAS2 is newly screened on 2026-11-20. Neither was page-built because no complete 30-study batch was ready."
