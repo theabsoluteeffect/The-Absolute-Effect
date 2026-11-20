@@ -1521,7 +1521,24 @@
     "latest_primary_title_corrections_on": "2026-11-20",
     "latest_run_title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
     "latest_run_primary_title_corrections": 8,
-    "latest_run_panku_nnt_removed": true
+    "latest_run_panku_nnt_removed": true,
+    "latest_partial_audit": {
+      "date": "2026-11-20",
+      "scope": "Targeted source-level review of 9 flagged pages, including OptiTROP-Lung06; full clinical freshness audit of all canonical pages remains incomplete.",
+      "pages_reviewed": [
+        "artemis-011",
+        "keynote-b49",
+        "panku-lung01",
+        "toripalimab-mfolfirinox",
+        "herizon-gea-01",
+        "keylynk-001",
+        "relight",
+        "trofuse-005",
+        "optitrop-lung06"
+      ],
+      "optitrop_lung06_release_hold_resolved": true,
+      "full_clinical_freshness_audit_completed": false
+    }
   },
   "trials": [
     {
@@ -8116,16 +8133,55 @@
         "NCT06711900",
         "DOI 10.1056/NEJMoa2611280"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "freshness_review_status": "Primary NEJM publication and ESMO Congress 2026 LBA66 conference presentation reviewed 2026-11-20; exact NCCN guideline citation mapping remains open.",
+      "outcome_visual_review_status": "Static median-PFS, 12-month PFS, grade ≥3 TEAE and NNT visual structures inspected against source values 2026-11-20; browser-rendered production QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
-      "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1–Negative Advanced NSCLC",
+      "quality_check_date": "2026-11-20",
+      "primary_title": "Sacituzumab Tirumotecan plus Pembrolizumab in PD-L1-Negative Advanced NSCLC",
       "pmid": "42929694",
       "registry_id": "NCT06711900",
-      "release_ready": false,
-      "release_hold_reason": "Exact investigational and comparator dose/schedule not independently verified from the accessible primary report/protocol supplement; hold until primary protocol or registry details are checked.",
-      "release_qa_status": "held_protocol_dose_schedule_not_independently_verified"
+      "release_ready": true,
+      "release_hold_reason": "",
+      "release_qa_status": "manual_primary_source_and_conference_presentation_review_passed_2026-11-20",
+      "phase": "III",
+      "design": "Open-label, multicentre, randomized phase III trial",
+      "publication_date": "2026-10-25",
+      "population": "455 patients with previously untreated locally advanced or metastatic nonsquamous NSCLC, PD-L1 TPS <1%, no targetable genomic alterations and ECOG PS 0–1; 229 assigned to sac-TMT plus pembrolizumab and 226 to platinum-pemetrexed plus pembrolizumab.",
+      "intervention": "Sacituzumab tirumotecan 4 mg/kg IV every 2 weeks plus pembrolizumab 400 mg IV every 6 weeks for up to 18 six-week cycles.",
+      "comparator": "Pemetrexed 500 mg/m² plus cisplatin 75 mg/m² or carboplatin AUC 5 every 3 weeks for up to four cycles, followed by pemetrexed maintenance, plus pembrolizumab 400 mg IV every 6 weeks for up to 18 cycles; platinum component selection was not uniform.",
+      "primary_endpoint": "Progression-free survival by blinded independent central review (BICR; RECIST 1.1). Overall survival was a secondary endpoint.",
+      "follow_up": "Median follow-up 9.7 months at prespecified interim analysis; OS immature.",
+      "efficacy": "Median BICR PFS 15.0 months (95% CI 9.9–not evaluable) versus 5.7 months (95% CI 5.5–7.4); HR 0.49 (95% CI 0.36–0.65), P<0.0001. Twelve-month PFS 51.1% versus 22.8%. ORR 50.2% versus 47.3%; median DOR 13.6 versus 6.8 months, HR 0.47 (95% CI 0.29–0.77). OS immature; HR 0.58 (95% CI 0.38–0.88).",
+      "safety": "Grade ≥3 TEAEs 47.6% versus 60.6%; serious TEAEs 35.8% versus 36.3%; TEAE-related dose reductions 4.8% versus 19.9%; fatal TEAEs 2.2% versus 6.2%. Stomatitis 51.1% versus 8.4% (grade 3 2.2% with sac-TMT); ocular-surface toxicity 13.5% versus 2.7%; pneumonitis 10.5% versus 13.7% (grade ≥3 1.7% vs 3.1%).",
+      "quality_of_life": "A definitive patient-reported quality-of-life advantage was not reported in the accessible primary abstract or conference summary; no QoL benefit is inferred.",
+      "absolute_effect": {
+        "endpoint": "12-month PFS by BICR",
+        "horizon": "12 months",
+        "benefit_percentage_points": 28.3,
+        "nnt": 4,
+        "calculation": "1/(0.511-0.228)=3.53; rounded up to 4",
+        "event_definition": "Progression or death by 12 months; benefit is one additional patient alive and progression-free at 12 months.",
+        "source_url": "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026",
+        "source_note": "12-month landmark rates presented at ESMO Congress 2026 LBA66; primary NEJM paper confirms median PFS and HR."
+      },
+      "nnt_not_calculated_reason": "NNT is calculated only for 12-month PFS using the reported 51.1% versus 22.8% landmark rates. No NNT is derived from median PFS or HR. No NNH is calculated from cumulative TEAE proportions because exposure duration differs and a common fixed toxicity horizon was not reported.",
+      "clinical_interpretation": "Interim phase III evidence shows a large PFS improvement for sac-TMT plus pembrolizumab in first-line PD-L1 TPS-negative, driver-negative nonsquamous NSCLC. Twelve-month PFS rates yield NNT 4. OS remains immature; the result is not generalized to PD-L1-positive disease or actionable-driver populations.",
+      "limitations": "Median follow-up 9.7 months and OS immature; open-label trial in a China-based population; restricted to PD-L1 TPS <1% and no targetable genomic alterations; no definitive QoL analysis in the accessible report; platinum choice in the control arm was heterogeneous.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2611280",
+        "https://pubmed.ncbi.nlm.nih.gov/42929694/",
+        "https://clinicaltrials.gov/study/NCT06711900",
+        "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026",
+        "https://www.onclive.com/view/sacituzumab-tirumotecan-plus-pembrolizumab-improves-pfs-in-pd-l1-negative-nonsquamous-nsclc"
+      ],
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "primary_title_verified_via": "PubMed PMID 42929694 exact DOI/title match; primary NEJM article checked 20 November 2026.",
+      "dose_schedule_verified_via": "ESMO Congress 2026 LBA66 presentation (official ESMO webinar page identifies the presentation; accessible OncLive report transcribes the presenter slide). Primary NEJM abstract does not list component doses.",
+      "nccn_provenance": "not verified — current full NCCN NSCLC guideline/reference list inaccessible; mapping task remains open",
+      "last_source_reviewed_on": "2026-11-20",
+      "page_path": "trial-pages/optitrop-lung06/index.html"
     },
     {
       "id": "orient-16",
@@ -11162,7 +11218,7 @@
       "release_qa_status": "corrected_primary_source_reviewed"
     }
   ],
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-20T13:41:59.094Z",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {

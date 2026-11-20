@@ -405,5 +405,22 @@
     }
   ],
   "nnt_policy_note": "No NNT calculated from medians/HRs or secondary-only fixed-time estimates.",
-  "title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2"
+  "title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
+  "recovery_update": {
+    "date": "2026-11-20",
+    "branch": "atlas-batch/2026-11-20-am",
+    "prior_head": "e97df9de8d6275af733a0703f0dc3a8e82d124c6",
+    "repairs_reviewed": 1,
+    "repairs_closed": 1,
+    "repair_id": "optitrop-lung06-visualization-registry-2026-11-19",
+    "canonical_page": "trial-pages/optitrop-lung06/index.html",
+    "source_review": [
+      "NEJM DOI 10.1056/NEJMoa2611280 / PMID 42929694",
+      "ESMO Congress 2026 LBA66 official webinar listing and presentation transcript"
+    ],
+    "verification": "Exact regimen and 12-month PFS landmark added; structured absolute_effect records 28.3 percentage-point benefit and NNT 4; primary DOI/title and registry crosschecked.",
+    "limitations": "Official ESMO webinar is access-controlled; accessible secondary transcription was used only to transcribe the conference slide's dose schedule and landmark values. Browser-rendered production QA remains pending.",
+    "release_state_open_count": 0,
+    "strict_validator": "pending rerun on updated branch head"
+  }
 }

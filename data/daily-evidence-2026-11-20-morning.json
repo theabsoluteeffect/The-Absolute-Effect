@@ -285,5 +285,44 @@
     "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am."
   },
   "title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
-  "branch_head_after_title_corrections": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2"
+  "branch_head_after_title_corrections": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
+  "repair_review": {
+    "date": "2026-11-20",
+    "reviewed": 1,
+    "closed": 1,
+    "open": 0,
+    "issues": [
+      {
+        "issue_id": "optitrop-lung06-visualization-registry-2026-11-19",
+        "trial_id": "optitrop-lung06",
+        "disposition": "closed",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2611280",
+          "https://pubmed.ncbi.nlm.nih.gov/42929694/",
+          "https://oncologypro.esmo.org/webinars/esmo-congress-highlights-webinar-thoracic-cancers-2026"
+        ],
+        "values_verified": {
+          "pfs_median_months": [
+            15,
+            5.7
+          ],
+          "pfs_hr": 0.49,
+          "pfs_hr_ci": [
+            0.36,
+            0.65
+          ],
+          "pfs_12_month_rates": [
+            51.1,
+            22.8
+          ],
+          "grade_ge3_teaes": [
+            47.6,
+            60.6
+          ],
+          "nnt_12_month_pfs": 4
+        },
+        "remaining": "Browser-rendered production QA and full guideline freshness mapping remain pending."
+      }
+    ]
+  }
 }
