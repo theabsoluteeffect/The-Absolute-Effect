@@ -266,7 +266,7 @@
     "Continue the full manual source/visualization audit of the remaining 450 permanent pages.",
     "Continue candidate screening toward 30; do not create or merge a partial 30-study batch."
   ],
-  "content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
+  "content_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
   "branch_head_after_content_commit": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
   "metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
   "repository_state": {
@@ -283,5 +283,7 @@
       "not_part_of_this_run": true
     },
     "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am."
-  }
+  },
+  "title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
+  "branch_head_after_title_corrections": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2"
 }

@@ -12,7 +12,7 @@
     "pull_request": null,
     "merge_status": "not merged",
     "production_deployment": "not verified; branch preview URL inaccessible and no production page could be independently opened",
-    "content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
+    "content_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
     "branch_head_after_content_commit": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
     "metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
     "branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
@@ -29,7 +29,8 @@
       "not_part_of_this_run": true
     },
     "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am.",
-    "final_branch_head_before_audit_metadata_commit": "5e0f40e7c511d277ae07be37f37bacaba72614ee"
+    "final_branch_head_before_audit_metadata_commit": "5e0f40e7c511d277ae07be37f37bacaba72614ee",
+    "last_verified_content_commit": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2"
   },
   "preflight": {
     "roster_unique_studies": 467,
@@ -343,7 +344,7 @@
     "pr_opened": false,
     "production_deployment": "not verified; branch preview URL was inaccessible"
   },
-  "branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
+  "branch_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
   "next_actions": [
     "Run branch strict release validator and outcome-visualization audit after commit.",
     "Complete protocol-level dose/schedule verification for OptiTROP-Lung06 before clearing its remaining release hold.",
@@ -403,5 +404,6 @@
       "pmid": "42933460"
     }
   ],
-  "nnt_policy_note": "No NNT calculated from medians/HRs or secondary-only fixed-time estimates."
+  "nnt_policy_note": "No NNT calculated from medians/HRs or secondary-only fixed-time estimates.",
+  "title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2"
 }

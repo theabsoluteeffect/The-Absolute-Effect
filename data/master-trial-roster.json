@@ -1483,7 +1483,7 @@
     "latest_run_timestamp": "2026-11-20T09:41:18+05:30",
     "last_branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
     "latest_run_branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
-    "latest_run_content_commit_sha": "pending-title-correction-commit",
+    "latest_run_content_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
     "latest_run_metadata_commit_sha": "87476edfb2a6785c65a70b5ef4dea34082fd3ed6",
     "latest_run_branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
     "daily_batch_upload_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
@@ -1518,7 +1518,10 @@
     "latest_run_final_metadata_commit_sha": "87476edfb2a6785c65a70b5ef4dea34082fd3ed6",
     "latest_run_final_metadata_checked_on": "2026-11-20",
     "panku_lung01_nnt_status": "not calculated — fixed-time absolute PFS rates not present in primary Lancet paper or official ESMO LBA71 abstract; secondary-summary rates not used",
-    "latest_primary_title_corrections_on": "2026-11-20"
+    "latest_primary_title_corrections_on": "2026-11-20",
+    "latest_run_title_correction_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
+    "latest_run_primary_title_corrections": 8,
+    "latest_run_panku_nnt_removed": true
   },
   "trials": [
     {
