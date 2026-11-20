@@ -1471,7 +1471,7 @@
     "current_tod_id": "panku-esophagus01",
     "previous_tod_id": "gemx",
     "latest_targeted_manual_review_on": "2026-11-20",
-    "manual_pages_reviewed_this_run": 10,
+    "manual_pages_reviewed_this_run": 11,
     "manual_page_review_complete": false,
     "latest_run_new_unique_candidates": 2,
     "latest_run_published_count": 0,
@@ -1514,7 +1514,9 @@
       "previous_trial_of_day": "GemX",
       "tod_records_match_roster": true,
       "scope_note": "Structural reconciliation only; manual clinical freshness and browser-rendered QA remain incomplete."
-    }
+    },
+    "latest_run_final_metadata_commit_sha": "87476edfb2a6785c65a70b5ef4dea34082fd3ed6",
+    "latest_run_final_metadata_checked_on": "2026-11-20"
   },
   "trials": [
     {
