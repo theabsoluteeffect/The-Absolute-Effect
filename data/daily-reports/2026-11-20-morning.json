@@ -2,7 +2,7 @@
   "run_id": "absolute-effect-2026-11-20-morning",
   "timestamp": "2026-11-20T09:41:18+05:30",
   "cycle": "morning",
-  "status": "INCOMPLETE — 0/30 uploaded; 30 not uploaded",
+  "status": "incomplete_superseded",
   "repository": {
     "name": "theabsoluteeffect/The-Absolute-Effect",
     "main_branch": "main",
@@ -346,12 +346,10 @@
   },
   "branch_commit_sha": "4ba18045dccc80fdaa92c3540806c38f9fe64cc2",
   "next_actions": [
-    "Run branch strict release validator and outcome-visualization audit after commit.",
-    "Complete protocol-level dose/schedule verification for OptiTROP-Lung06 before clearing its remaining release hold.",
-    "Continue the full manual source/visualization audit of the remaining 450 permanent pages.",
-    "Continue candidate screening toward 30; do not create or merge a partial 30-study batch.",
-    "Recheck OptiTROP-Lung06 protocol/registry dose and schedule before clearing the remaining release hold.",
-    "Create no PR until a complete 30-study eligible batch exists; PR #3 remains an unrelated old draft."
+    "Carry forward the 42-item candidate review queue without counting it as newly published work",
+    "Reconcile the live main branch and current Trial-of-the-Day metadata",
+    "Continue primary-source verification across disease sites",
+    "Do not open a PR until exactly 30 new unique trial pages pass local release validation"
   ],
   "metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
   "primary_title_corrections": [
@@ -422,5 +420,16 @@
     "limitations": "Official ESMO webinar is access-controlled; accessible secondary transcription was used only to transcribe the conference slide's dose schedule and landmark values. Browser-rendered production QA remains pending.",
     "release_state_open_count": 0,
     "strict_validator": "pending rerun on updated branch head"
+  },
+  "branch_status": "abandoned_unmerged",
+  "superseded_by": "atlas-batch/2026-11-20-pm",
+  "abandonment": {
+    "timestamp": "2026-11-20T20:20:00+05:30",
+    "reason": "The morning branch did not contain a complete 30-study release batch. It has no PR and no pages were published. Its repair and queue changes remain unmerged; the evening recovery is restarting from the latest verified main commit and will carry forward only audited queue/evidence items.",
+    "uploaded_count": 0,
+    "pr_opened": false,
+    "merged": false,
+    "deployment_verified": false,
+    "carry_forward_review_queue_items": 42
   }
 }
