@@ -28,7 +28,8 @@
       "head_branch": "feature/complete-outcome-visualizations-2026-11-08",
       "not_part_of_this_run": true
     },
-    "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am."
+    "branch_alias_note": "atlas-batch/2026-11-19-am was not modified; it shared the pre-run head with atlas-batch/2026-11-20-am.",
+    "final_branch_head_before_audit_metadata_commit": "5e0f40e7c511d277ae07be37f37bacaba72614ee"
   },
   "preflight": {
     "roster_unique_studies": 467,
@@ -44,15 +45,38 @@
     "previous_tod": "GemX",
     "daily_evidence_files_reviewed": 32,
     "manual_page_reviews_this_run": 10,
-    "full_manual_clinical_audit_complete": false
+    "full_manual_clinical_audit_complete": false,
+    "shared_anchor_trial_entries": 8,
+    "shared_anchor_trial_ids": [
+      "chisel",
+      "hilus",
+      "lustre",
+      "rosel",
+      "rtog-0813",
+      "space",
+      "stars-randomized",
+      "sunset"
+    ],
+    "tree_trial_index_files": 461,
+    "permanent_canonical_trial_pages": 460,
+    "unrostered_redirect_stub": "trial-pages/rosel/index.html",
+    "rechecked_rostered_pages": [
+      "CheckMate 816",
+      "KEYNOTE-A18",
+      "LACC",
+      "SHAPE"
+    ],
+    "rechecked_rostered_pages_status": "all four are rostered and have canonical page files; no duplicate pages created",
+    "shared_anchor_page_status": "eight distinct studies are anchor sections on one shared lung-sabr-definitions dossier; an existing medium-severity granularity review remains open."
   },
   "page_audit": {
-    "manual_pages_reviewed": 10,
+    "manual_pages_reviewed": 11,
     "structural_pages_reconciled": 460,
     "repairs_made": 9,
     "shared_asset_repair": "legacy .barrow static charts were hidden by global CSS; hide rule removed",
     "full_manual_clinical_audit_complete": false,
-    "remaining_manual_pages": 450
+    "remaining_manual_pages": 449,
+    "shared_page_granularity_issue": "open; eight distinct trial records currently use anchors on one shared dossier page"
   },
   "repair_queue": {
     "open_before": 147,
@@ -63,7 +87,12 @@
       "optitrop-lung06"
     ],
     "open_after": 137,
-    "resolved_after": 64
+    "resolved_after": 65,
+    "new_resolved_metadata_items": 1,
+    "open_follow_up_items": [
+      "lung-sabr-shared-anchor-granularity-2026-11-19",
+      "OptiTROP-Lung06 protocol dose/schedule hold"
+    ]
   },
   "nccn_guidelines_reviewed": [
     {
@@ -303,7 +332,14 @@
     "index_missing_links": 0,
     "archive_entries_added": 0,
     "current_tod": "PANKU-Esophagus01",
-    "previous_tod": "GemX"
+    "previous_tod": "GemX",
+    "permanent_canonical_trial_pages": 460,
+    "tree_trial_index_files": 461,
+    "shared_anchor_trial_entries": 8,
+    "unrostered_redirect_only_stub": "trial-pages/rosel/index.html",
+    "unrostered_canonical_pages": 0,
+    "index_unique_destinations": 468,
+    "archive_entries": 16
   },
   "validation": {
     "strict_release_validator": "not run — PR-gated workflow not triggered for branch-only push; one unresolved OptiTROP-Lung06 protocol-dose hold remains",

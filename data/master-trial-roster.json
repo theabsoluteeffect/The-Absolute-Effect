@@ -37,7 +37,7 @@
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": 32,
-    "daily_batch_uploaded": "2026-11-14",
+    "daily_batch_uploaded": "2026-11-17",
     "new_trials_added_today": 30,
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -197,8 +197,8 @@
     },
     "previous_trial_of_the_day": "GemX",
     "trial_of_day_records_reconciled_on": "2026-11-20",
-    "trial_of_day_current_id": "gemx",
-    "trial_of_day_previous_id": "acosog-z11102",
+    "trial_of_day_current_id": "panku-esophagus01",
+    "trial_of_day_previous_id": "gemx",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -221,7 +221,7 @@
     "legacy_flat_route_redirect_count": 135,
     "batch_date": "2026-11-17",
     "quality_check_date": "2026-11-03",
-    "daily_batch_upload_verified_on": "2026-10-23",
+    "daily_batch_upload_verified_on": "2026-11-20",
     "live_main_branch_verification": {
       "date": "2026-11-01",
       "verified_main_head_before_audit_metadata": "e82a3153e5ff495068b4ce7efdae92a8932c2d68",
@@ -1129,7 +1129,7 @@
     ],
     "full_release_validation": "not run — exact-30 gate not met",
     "deployment_status": "not deployed — no PR/merge",
-    "last_structural_reconciliation": "2026-11-17",
+    "last_structural_reconciliation": "2026-11-20",
     "roster_entries": 467,
     "evidence_index_unique_links": 460,
     "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
@@ -1454,7 +1454,19 @@
         "trial": "GemX"
       },
       "tod_records_match_roster": true,
-      "index_links_explanation": "468 unique destinations include 460 permanent trial-page links and 8 intra-page anchors; the sole tree-only ROSEL item is a redirect/stub and is intentionally not linked as a canonical trial."
+      "index_links_explanation": "468 unique destinations comprise 460 permanent trial-page links plus 8 intra-page anchors on the lung-sabr-definitions dossier; the sole tree-only ROSEL file is a redirect/stub to #rosel and is intentionally not a separate canonical trial page.",
+      "checked_on": "2026-11-20",
+      "shared_anchor_trial_entries": 8,
+      "shared_anchor_trial_ids": [
+        "chisel",
+        "hilus",
+        "lustre",
+        "rosel",
+        "rtog-0813",
+        "space",
+        "stars-randomized",
+        "sunset"
+      ]
     },
     "current_tod_id": "panku-esophagus01",
     "previous_tod_id": "gemx",
@@ -1473,7 +1485,36 @@
     "latest_run_branch_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
     "latest_run_content_commit_sha": "9ae03700bc6dae078a93982d1a6964be7a9afaea",
     "latest_run_metadata_commit_sha": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
-    "latest_run_branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3"
+    "latest_run_branch_head_before_report_update": "18d724fa53172bb3d050b8e1b1f7efa92700b1c3",
+    "daily_batch_upload_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+    "latest_structural_reconciliation_2026_11_20": {
+      "checked_on": "2026-11-20",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "recursive_trial_pages_tree_files": 461,
+      "permanent_canonical_trial_pages": 460,
+      "roster_entries": 467,
+      "shared_anchor_trial_entries": 8,
+      "shared_anchor_trial_ids": [
+        "chisel",
+        "hilus",
+        "lustre",
+        "rosel",
+        "rtog-0813",
+        "space",
+        "stars-randomized",
+        "sunset"
+      ],
+      "redirect_only_stub": "trial-pages/rosel/index.html",
+      "unrostered_canonical_pages": 0,
+      "evidence_index_unique_destinations": 468,
+      "permanent_page_links_missing": 0,
+      "archive_records": 16,
+      "archive_unmatched_to_roster": 0,
+      "current_trial_of_day": "PANKU-Esophagus01",
+      "previous_trial_of_day": "GemX",
+      "tod_records_match_roster": true,
+      "scope_note": "Structural reconciliation only; manual clinical freshness and browser-rendered QA remain incomplete."
+    }
   },
   "trials": [
     {

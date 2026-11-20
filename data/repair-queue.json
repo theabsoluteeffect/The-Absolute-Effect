@@ -3945,6 +3945,19 @@
       "status": "resolved",
       "closed_on": "2026-11-20",
       "verification": "Global display:none rule removed; static outcome charts remain visible when data-outcome-static prevents auto-render replacement."
+    },
+    {
+      "issue_id": "stale-trial-of-day-and-upload-audit-metadata-2026-11-20",
+      "trial_id": null,
+      "trial": "Trial-of-the-Day and last-batch audit metadata",
+      "path": "data/master-trial-roster.json",
+      "category": "stale_audit_metadata",
+      "severity": "medium",
+      "evidence": "The current/previous ToD records and merged PR #5 were correct, but audit ID fields and daily-batch verification date still reflected older values.",
+      "action": "Synchronise current/previous ToD IDs, last uploaded batch date and verified merge commit with live main records.",
+      "status": "resolved",
+      "closed_on": "2026-11-20",
+      "verification": "Current ToD PANKU-Esophagus01; previous ToD GemX; 17 Nov batch PR #5 merged on 18 Nov at commit 8c521b631056b3eca7f01b613cf54e6db336bee6; main head 8315e5e5dda454ab83d62911a1c22e0dac5f732c."
     }
   ],
   "run_audit_log": [
@@ -4105,7 +4118,7 @@
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
     "open_items": 137,
-    "resolved_items": 64,
+    "resolved_items": 65,
     "note": "PR #5 merged to main on 2026-11-18 (merge commit 8c521b631056b3eca7f01b613cf54e6db336bee6). Main now contains all 30 pages from the 17 Nov batch. Post-merge manual reconciliation found four release_ready=false pages (ARTEMIS-011, KEYNOTE-B49, PANKU-Lung01, Toripalimab+mFOLFIRINOX) and four pages still marked pending release validator (HERIZON-GEA-01, KEYLYNK-001, RELIGHT, TroFuse-005). The previous CI pass did not enforce these roster release states. Full clinical audit and guideline freshness review remain incomplete.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_merged_batch": 8,

@@ -24,7 +24,29 @@
     "previous_tod": "GemX",
     "daily_evidence_files_reviewed": 32,
     "manual_page_reviews_this_run": 10,
-    "full_manual_clinical_audit_complete": false
+    "full_manual_clinical_audit_complete": false,
+    "shared_anchor_trial_entries": 8,
+    "shared_anchor_trial_ids": [
+      "chisel",
+      "hilus",
+      "lustre",
+      "rosel",
+      "rtog-0813",
+      "space",
+      "stars-randomized",
+      "sunset"
+    ],
+    "tree_trial_index_files": 461,
+    "permanent_canonical_trial_pages": 460,
+    "unrostered_redirect_stub": "trial-pages/rosel/index.html",
+    "rechecked_rostered_pages": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape"
+    ],
+    "rechecked_rostered_pages_status": "all four have roster entries and canonical trial-page index files; no duplicate pages created",
+    "shared_anchor_page_status": "eight distinct study sections are represented by intra-page anchors in trial-pages/lung-sabr-definitions/index.html; canonical-page granularity review remains open in repair queue"
   },
   "screening": {
     "fresh_candidates_screened": 6,
