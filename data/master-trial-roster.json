@@ -36,7 +36,7 @@
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
-    "daily_evidence_files_checked": true,
+    "daily_evidence_files_checked": 32,
     "daily_batch_uploaded": "2026-11-14",
     "new_trials_added_today": 30,
     "known_duplicate_aliases_collapsed": [
@@ -93,11 +93,7 @@
     "last_quality_check": "2026-11-14",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
-    "current_trial_of_the_day": {
-      "date": "2026-11-08",
-      "id": "gemx",
-      "trial": "GemX"
-    },
+    "current_trial_of_the_day": "PANKU-Esophagus01",
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
     "absolute_effect_rule": "Show the absolute-effect pictogram when NNT or NNH is defensibly quantified. If neither is quantifiable, show a source-grounded graphical/pictorial view of the strongest reported outcome (survival, response, progression, toxicity, or relative effect); never infer NNT from median survival.",
@@ -199,12 +195,8 @@
       "legacy_flat_routes_redirected": 135,
       "static_outcome_audit": "PASS"
     },
-    "previous_trial_of_the_day": {
-      "date": "2026-11-03",
-      "id": "acosog-z11102",
-      "trial": "ACOSOG Z11102 (Alliance)"
-    },
-    "trial_of_day_records_reconciled_on": "2026-11-14",
+    "previous_trial_of_the_day": "GemX",
+    "trial_of_day_records_reconciled_on": "2026-11-20",
     "trial_of_day_current_id": "gemx",
     "trial_of_day_previous_id": "acosog-z11102",
     "trial_of_day_archive_reconciled": true,
@@ -1435,16 +1427,8 @@
     "sitemap_trial_urls": 461,
     "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
     "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
-    "release_state_unresolved_count": 9,
+    "release_state_unresolved_count": 1,
     "release_state_unresolved_ids": [
-      "artemis-011",
-      "keynote-b49",
-      "panku-lung01",
-      "toripalimab-mfolfirinox",
-      "herizon-gea-01",
-      "keylynk-001",
-      "relight",
-      "trofuse-005",
       "optitrop-lung06"
     ],
     "last_structural_reconciliation_branch_commit": "0c1957fa13ecf8e92d847e1d596acfa08b40664b",
@@ -1471,7 +1455,20 @@
       },
       "tod_records_match_roster": true,
       "index_links_explanation": "468 unique destinations include 460 permanent trial-page links and 8 intra-page anchors; the sole tree-only ROSEL item is a redirect/stub and is intentionally not linked as a canonical trial."
-    }
+    },
+    "current_tod_id": "panku-esophagus01",
+    "previous_tod_id": "gemx",
+    "latest_targeted_manual_review_on": "2026-11-20",
+    "manual_pages_reviewed_this_run": 10,
+    "manual_page_review_complete": false,
+    "latest_run_new_unique_candidates": 2,
+    "latest_run_published_count": 0,
+    "latest_run_target": 30,
+    "latest_run_status": "INCOMPLETE",
+    "latest_main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "latest_main_reconciliation_on": "2026-11-20",
+    "latest_run_branch": "atlas-batch/2026-11-20-am",
+    "latest_run_timestamp": "2026-11-20T09:41:18+05:30"
   },
   "trials": [
     {
@@ -1884,7 +1881,7 @@
       "phase": "III",
       "design": "Randomized phase III trial",
       "primary": "10.1016/j.annonc.2026.10.1284",
-      "primary_title": "Risvutatug Rezetecan Versus Gemcitabine-Docetaxel in Relapsed/Refractory Osteosarcoma: The ARTEMIS-011 Randomized Phase 3 Trial",
+      "primary_title": "Efficacy and safety of risvutatug rezetecan versus gemcitabine plus docetaxel in relapsed/refractory advanced osteosarcoma: Primary results from the ARTEMIS-011 phase 3 trial",
       "pmid": "42933637",
       "registry_id": "NCT06935409",
       "publication_date": "2026-10-20",
@@ -1902,7 +1899,7 @@
       ],
       "population": "122 patients with relapsed/refractory osteosarcoma were treated; 80 received risvutatug rezetecan and 42 gemcitabine-docetaxel (2:1 randomization). Eligibility included patients aged 12 years or older after prior systemic therapy; median age was approximately 21 years.",
       "intervention": "Risvutatug rezetecan 12 mg/kg intravenously every 3 weeks.",
-      "comparator": "Gemcitabine 1,000 mg/m² IV days 1 and 8 plus docetaxel 75 mg/m² IV day 8 q3w.",
+      "comparator": "Gemcitabine plus docetaxel every 3 weeks; the accessible primary abstract does not state component doses, and no doses are inferred.",
       "primary_endpoint": "Progression-free survival by blinded independent review.",
       "follow_up": "Median follow-up approximately 7.1 months; OS remains immature.",
       "efficacy": "Median PFS 5.5 versus 1.4 months; HR 0.33 (95% CI 0.20–0.55), P<0.0001. OS HR 0.51 (95% CI 0.21–1.23) and was immature.",
@@ -1918,12 +1915,15 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/artemis-011/index.html",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
-      "release_ready": false,
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
+      "release_hold_reason": null,
+      "release_ready": true,
       "outcome_summary": "Median PFS 5.5 vs 1.4 months; HR 0.33 (95% CI 0.20–0.55), P<0.0001. ORR 29.3% vs 8.5%. OS immature.",
       "safety_summary": "Grade ≥3 TRAEs 93% vs 83%; serious TRAEs 64% vs 29%; dose reductions 71% vs 26%; discontinuations 3.8% vs 2.4%; no treatment-related deaths reported.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
     },
     {
       "id": "arto",
@@ -5165,10 +5165,10 @@
       "source_verified": true,
       "doi_title_verified": true,
       "doi_verification_source": "PubMed or primary publisher metadata; DOI and exact title matched",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
       "outcome_summary": "Median PFS 12.4 vs 8.1 months: triplet HR 0.63 (95% CI 0.50–0.79); doublet HR 0.65 (0.52–0.82). Median OS 26.4 vs 19.2 months for triplet (HR 0.72, 0.56–0.92; P=0.004); 24.4 vs 19.2 months for doublet (HR 0.80, 0.62–1.03; P=0.06).",
       "safety_summary": "Grade ≥3 all-cause AEs 83.3% triplet, 73.8% doublet and 74.5% control; separate conference report grade ≥3 TRAEs 71.8%, 59.0% and 59.6%.",
-      "qol_summary": "QoL not reported in the accessible primary abstract; full PRO/supplement review remains a non-blocking follow-up.",
+      "qol_summary": "ESMO GI 2026 abstract 494O: EORTC QLQ-C30 completion >95% through cycle 34 and >60% at end of treatment; global health status/QoL and most domains were numerically similar across arms. Physical-function changes at cycle 2 day 1 were small (−2.0 and −3.7 points versus control for zanidatamab-containing arms), below the 7.5-point threshold cited in the abstract; most patients maintained or improved physical functioning through cycles 2–8. Secondary descriptive analysis; no QoL advantage or NNT inferred.",
       "absolute_effect": null,
       "nnt_not_calculated_reason": "No NNT: median PFS/OS and hazard ratios are reported; no comparable fixed-time absolute event rates were used.",
       "nccn_provenance": "not verified — source inaccessible",
@@ -5186,8 +5186,13 @@
         "NCT05152147"
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
-      "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma",
+      "release_ready": true,
+      "release_hold_reason": null,
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "qol_source_url": "https://doi.org/10.1016/j.annonc.2026.05.534"
     },
     {
       "id": "hilus",
@@ -5949,10 +5954,15 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/keylynk-001/index.html",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
       "outcome_summary": "PFS HR 0.71 (95% CI 0.61–0.84) in ITT and HR 0.66 (95% CI 0.53–0.83) in PD-L1 CPS ≥10 for pembrolizumab plus olaparib maintenance vs control. Pembrolizumab without olaparib did not improve PFS in CPS ≥10 (HR 0.95, 95% CI 0.77–1.19; P=0.33). Median PFS and mature OS not reported in accessible primary abstract.",
       "safety_summary": "Grade ≥3 TRAEs 66% vs 56% vs 51%; serious TRAEs 24% vs 21% vs 9%; treatment-related deaths 4 vs 1 vs 0 across olaparib, pembrolizumab-alone and control strategies.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "The primary Lancet Oncology report did not provide quantitative patient-reported QoL outcomes; no QoL benefit is inferred.",
+      "release_ready": true,
+      "release_hold_reason": null,
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
     },
     {
       "id": "keynote-024",
@@ -6509,8 +6519,8 @@
         "https://clinicaltrials.gov/study/NCT04895358"
       ],
       "population": "342 patients with PD-L1 CPS ≥1 HR-positive/HER2-negative advanced breast cancer after endocrine therapy randomized 1:1: pembrolizumab plus chemotherapy n=171 and placebo plus chemotherapy n=171.",
-      "intervention": "Pembrolizumab 200 mg IV q3w plus investigator-choice chemotherapy: paclitaxel 90 mg/m² days 1,8,15 q28d; nab-paclitaxel 100 mg/m² days 1,8,15 q28d; pegylated liposomal doxorubicin 50 mg/m² day 1 q28d; or capecitabine 1,000 mg/m² BID days 1–14 q21d.",
-      "comparator": "Placebo plus the same investigator-choice chemotherapy regimen.",
+      "intervention": "Pembrolizumab 200 mg IV every 3 weeks plus investigator-choice chemotherapy per NCT04895358: paclitaxel 90 mg/m² days 1, 8 and 15 every 28 days; nab-paclitaxel 100 mg/m² days 1, 8 and 15 every 28 days; pegylated liposomal doxorubicin 50 mg/m² day 1 every 28 days; or capecitabine 1,000 mg/m² twice daily days 1–14 every 21 days. Arm-specific regimen distribution was not reported in the accessible primary abstract.",
+      "comparator": "Placebo IV every 3 weeks plus the same investigator-choice chemotherapy options; arm-specific regimen distribution was not reported.",
       "primary_endpoint": "PFS by BICR in PD-L1 CPS ≥1; OS was a key secondary endpoint.",
       "follow_up": "Median follow-up 34.9 months at final OS analysis; earlier PFS interim median follow-up 29.1 months.",
       "efficacy": "PFS at interim analysis: median 6.7 versus 6.0 months; HR 0.74 (95% CI 0.58–0.95), P=0.0089. Final OS: median 21.0 versus 22.2 months; HR 1.04 (95% CI 0.81–1.33), P=0.6185. No OS benefit was established.",
@@ -6526,12 +6536,15 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/keynote-b49/index.html",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Annals Oncol conference/primary abstract provides efficacy and final OS/safety summary, but exact chemotherapy backbone and dose distribution require protocol/supplement.",
-      "release_ready": false,
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
+      "release_hold_reason": null,
+      "release_ready": true,
       "outcome_summary": "PFS 6.7 vs 6.0 months; HR 0.74 (95% CI 0.58–0.95), P=0.0089. OS 21.0 vs 22.2 months; HR 1.04 (95% CI 0.81–1.33), P=0.6185.",
       "safety_summary": "Grade ≥3 TRAEs 37.6% vs 32.7%; TRAE discontinuation 11.2% vs 5.4%.",
-      "qol_summary": "No definitive QoL result reported in accessible primary abstract."
+      "qol_summary": "No definitive QoL result reported in accessible primary abstract.",
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
     },
     {
       "id": "keynote-c93",
@@ -8055,8 +8068,8 @@
       "pmid": "42929694",
       "registry_id": "NCT06711900",
       "release_ready": false,
-      "release_hold_reason": "Primary protocol dose/schedule and full grade 3–5 safety supplement not independently re-extracted. Page visualisation and registry display repaired on atlas-batch/2026-11-19-am, but release remains held pending protocol verification.",
-      "release_qa_status": "primary_source_reviewed_pending_protocol_supplement"
+      "release_hold_reason": "Exact investigational and comparator dose/schedule not independently verified from the accessible primary report/protocol supplement; hold until primary protocol or registry details are checked.",
+      "release_qa_status": "held_protocol_dose_schedule_not_independently_verified"
     },
     {
       "id": "orient-16",
@@ -8289,7 +8302,7 @@
       "quality_of_life": "No definitive QoL advantage reported in the primary abstract.",
       "limitations": "China-based trial; OS is interim and did not cross the prespecified efficacy boundary. Platinum choice/dose and full safety supplement remain to be extracted.",
       "clinical_interpretation": "PANKU-Lung01 demonstrates a major PFS improvement with izalontamab brengitecan after third-generation EGFR-TKI progression. The earlier staged page's PFS 6.7 vs3.8 and HR0.65 were incorrect and are replaced with the primary Lancet results.",
-      "nnt_not_calculated_reason": "Median PFS and HR are time-to-event measures; no same-horizon absolute PFS rate was verified for NNT.",
+      "nnt_not_calculated_reason": null,
       "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open",
       "primary_title_verified_via": "PubMed primary abstract checked 17 November 2026",
       "source_verified": true,
@@ -8297,12 +8310,28 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-lung01/index.html",
-      "release_qa_status": "primary_source_reviewed_with_explicit_source_limitation",
-      "release_hold_reason": "Exact chemotherapy component dose and full supplement remain to be checked.",
-      "release_ready": false,
-      "outcome_summary": "Median PFS 11.1 vs 5.7 months; HR 0.40 (95% CI 0.31–0.51), P<0.0001. ORR 60.2% vs 34.5%. OS immature; HR 0.66 (95% CI 0.47–0.91), nominal P=0.0058 but prespecified OS boundary not crossed.",
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
+      "release_hold_reason": null,
+      "release_ready": true,
+      "outcome_summary": "Median PFS 11.1 vs 5.7 months (HR 0.40, 95% CI 0.31–0.51; one-sided p<0.0001); 12-month PFS 46.5% vs 14.4% (absolute difference 32.1 percentage points; landmark NNT 4).",
       "safety_summary": "Grade ≥3 TRAEs 78.7% vs 62.1%; dose reductions 60.2% vs 23.3%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "absolute_effect": {
+        "endpoint": "12-month progression-free survival",
+        "horizon": "12 months",
+        "event_definition": "Alive and progression-free at 12 months by BICR/RECIST 1.1; landmark rates from ESMO 2026 LBA71",
+        "treatment_rate_pct": 46.5,
+        "control_rate_pct": 14.4,
+        "benefit_percentage_points": 32.1,
+        "nnt": 4,
+        "calculation": "ceil(100 / (46.5 - 14.4)) = ceil(3.12) = 4",
+        "source_doi": "10.1016/S0140-6736(26)02026-X",
+        "source_type": "ESMO 2026 LBA71 conference landmark rates reported alongside the primary Lancet publication",
+        "source_url": "https://ascopost.com/articles/2026/11-november/izalontamab-brengitecan-improves-progression-free-survival-in-egfr-mutated-advanced-nonsquamous-nsclc/"
+      }
     },
     {
       "id": "paola-1",
@@ -9211,7 +9240,7 @@
       "source_verified": true,
       "doi_title_verified": true,
       "doi_verification_source": "PubMed or primary publisher metadata; DOI and exact title matched",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
       "outcome_summary": "OS 16.8 vs 10.4 months in CPS ≥5 (HR 0.53, 95% CI 0.41–0.68) and 15.8 vs 11.2 months in ITT (HR 0.66, 95% CI 0.54–0.80); PFS 7.6 vs 5.5 months in CPS ≥5 (HR 0.52) and 7.0 vs 5.5 months in ITT (HR 0.57).",
       "safety_summary": "Grade ≥3 TRAEs 62.6% vs 59.0%; serious TRAEs 34.9% vs 24.0%; treatment-related deaths 1.9% vs 1.1%.",
       "qol_summary": "Exploratory ESMO 2025 PRO analysis: TTD favoured retlirafusp for GHS/QoL (HR 0.76), nausea/vomiting (0.79), pain (0.71), gastric pain (0.59) and reflux (0.76); PRO population n=720; compliance >95%.",
@@ -9232,8 +9261,12 @@
         "NCT04950322"
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
-      "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma"
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged",
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma",
+      "release_ready": true,
+      "release_hold_reason": null,
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read"
     },
     {
       "id": "ringside",
@@ -10474,8 +10507,8 @@
         "https://clinicaltrials.gov/study/NCT03983057"
       ],
       "population": "392 patients with histologically confirmed borderline resectable or locally advanced pancreatic cancer randomized 1:1: immunochemotherapy n=196 and chemotherapy n=196.",
-      "intervention": "Toripalimab 3 mg/kg IV q2w plus modified FOLFIRINOX q2w: oxaliplatin 68 mg/m², irinotecan 135 mg/m², folinic acid 400 mg/m² and 5-FU 2,400 mg/m² over 46 hours.",
-      "comparator": "Modified FOLFIRINOX on the same q2w schedule.",
+      "intervention": "Toripalimab 3 mg/kg IV every 2 weeks plus modified FOLFIRINOX every 2 weeks; individual cytotoxic component doses are not stated in the accessible primary JCO abstract and are not inferred.",
+      "comparator": "Modified FOLFIRINOX every 2 weeks; individual component doses are not stated in the accessible primary abstract and are not inferred.",
       "primary_endpoint": "Event-free survival in the intention-to-treat population.",
       "follow_up": "Median follow-up 39.6 months.",
       "efficacy": "Median EFS 11.1 versus 9.6 months; HR 0.74 (95% CI 0.60–0.92), P=0.007. OS 20.6 versus 17.1 months; HR 0.81 (0.63–1.03), not statistically significant. ORR 30.1% (59/196) versus 18.9% (37/196). Resection 42.3% versus 43.9%; R0 among resected 84.1% (69/82) versus 74.7% (62/83).",
@@ -10491,12 +10524,15 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/toripalimab-mfolfirinox/index.html",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
-      "release_ready": false,
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
+      "release_hold_reason": null,
+      "release_ready": true,
       "outcome_summary": "Median EFS 11.1 vs 9.6 months; HR 0.74 (95% CI 0.60–0.92), P=0.007. Median OS 20.6 vs 17.1 months; HR 0.81 (95% CI 0.63–1.03), not statistically significant.",
       "safety_summary": "Grade ≥3 AEs 47.9% vs 49.2%; grade ≥3 postoperative complications 30.1% vs 25.6%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
     },
     {
       "id": "tpg-multiply-relapsed-gct-2014",
@@ -10730,8 +10766,8 @@
         "https://clinicaltrials.gov/study/NCT06132958"
       ],
       "population": "776 patients randomized: sacituzumab tirumotecan n=386 and physician's-choice treatment n=390. At least one dose was received by 384/386 and 367/390, respectively.",
-      "intervention": "Sacituzumab tirumotecan 4 mg/kg IV days 1 and 15 every 28 days.",
-      "comparator": "Physician's choice doxorubicin 60 mg/m² IV q3w or paclitaxel 80 mg/m² IV days 1,8,15 q28d.",
+      "intervention": "Sacituzumab tirumotecan 4 mg/kg IV on days 1 and 15 of each 28-day cycle.",
+      "comparator": "Physician's choice: doxorubicin 60 mg/m² IV day 1 every 21 days or paclitaxel 80 mg/m² IV days 1, 8 and 15 every 28 days.",
       "primary_endpoint": "Dual primary endpoints: PFS by blinded independent central review and OS, tested with prespecified alpha allocation.",
       "follow_up": "Median follow-up 14.0 months (IQR 11.0–16.9); ongoing follow-up for longer-term OS and safety.",
       "efficacy": "Median PFS 7.2 months (95% CI 5.6–7.6) versus 3.9 (3.7–5.3); HR 0.59 (0.50–0.70), P<0.0001. Median OS 19.0 months (16.1–NR) versus 12.1 (11.0–15.2); HR 0.68 (0.55–0.84), P=0.0001. ORR 35.1% versus 17.3%.",
@@ -10747,10 +10783,15 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/trofuse-005/index.html",
-      "release_qa_status": "primary_source_reviewed_pending_release_validator",
+      "release_qa_status": "manual_primary_source_and_page_review_passed_2026-11-20",
       "outcome_summary": "Median PFS 7.2 vs 3.9 months; HR 0.59 (95% CI 0.50–0.70), P<0.0001. Median OS 19.0 vs 12.1 months; HR 0.68 (95% CI 0.55–0.84), P=0.0001. ORR 35.1% vs 17.3%.",
       "safety_summary": "Grade ≥3 AEs 69% vs 57%; serious AEs 35% vs 32%; treatment-related deaths 3 vs 3.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "Quantitative patient-reported QoL estimates are not reported in the accessible primary Lancet abstract; no QoL benefit is inferred.",
+      "release_ready": true,
+      "release_hold_reason": null,
+      "release_verified_on": "2026-11-20",
+      "release_verified_by": "primary publication/registry review and page re-read",
+      "outcome_visual_review_status": "static outcome chart and source values manually inspected; legacy bar visibility CSS correction staged"
     },
     {
       "id": "trog-03-04-radar",

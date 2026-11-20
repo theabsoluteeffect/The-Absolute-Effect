@@ -1,0 +1,203 @@
+{
+  "run_id": "absolute-effect-2026-11-20-morning",
+  "timestamp": "2026-11-20T09:41:18+05:30",
+  "cycle": "morning",
+  "repository": "theabsoluteeffect/The-Absolute-Effect",
+  "working_branch": "atlas-batch/2026-11-20-am",
+  "main_commit_before": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+  "branch_head_before": "968b0cac2d19f5e9ccb1a98b1d109429e95c270f",
+  "status": "INCOMPLETE",
+  "target_new_unique_trials": 30,
+  "uploaded_count": 0,
+  "not_uploaded": 30,
+  "preflight": {
+    "roster_unique_studies": 467,
+    "permanent_trial_pages": 460,
+    "canonical_index_files": 461,
+    "shared_anchor_page": "lung-sabr-definitions",
+    "unrostered_redirect_only_page": "rosel",
+    "index_unique_links": 468,
+    "missing_index_links": 0,
+    "unrostered_canonical_pages": 0,
+    "archive_entries": 16,
+    "current_tod": "PANKU-Esophagus01",
+    "previous_tod": "GemX",
+    "daily_evidence_files_reviewed": 32,
+    "manual_page_reviews_this_run": 10,
+    "full_manual_clinical_audit_complete": false
+  },
+  "screening": {
+    "fresh_candidates_screened": 6,
+    "duplicates": 4,
+    "new_unique": 2,
+    "primary_sources_verified_for_new_unique": 2,
+    "held": 1,
+    "deferred_negative": 1,
+    "carry_forward_revalidated": 1,
+    "uploaded": 0,
+    "candidate_decisions": [
+      {
+        "candidate": "DALY 2-EU",
+        "doi": "10.1016/S1470-2045(26)00290-1",
+        "pmid": "42933440",
+        "registry_id": "NCT04844866",
+        "matched_existing": {
+          "roster_id": "daly-2-eu",
+          "page": "trial-pages/daly-2-eu/index.html",
+          "archive": false,
+          "tod": false
+        },
+        "identity": "same underlying study",
+        "disposition": "duplicate excluded; existing page repaired"
+      },
+      {
+        "candidate": "DeLLphi-305",
+        "doi": "10.1056/NEJMoa2609482",
+        "pmid": "42929702",
+        "registry_id": "NCT06211036",
+        "matched_existing": {
+          "roster_id": "dellphi-305",
+          "page": "trial-pages/dellphi-305/index.html",
+          "archive": false,
+          "tod": false
+        },
+        "identity": "same underlying study",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "candidate": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+        "doi": "10.1016/S0140-6736(26)02095-7",
+        "pmid": "42933458",
+        "registry_id": "NCT05173987",
+        "matched_existing": {
+          "roster_id": "keynote-c93",
+          "page": "trial-pages/keynote-c93/index.html",
+          "archive": false,
+          "tod": false
+        },
+        "identity": "same underlying study",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "candidate": "SUBITO",
+        "doi": "10.1016/S1470-2045(26)00131-2",
+        "pmid": "42372741",
+        "registry_id": "NCT02810743",
+        "matched_existing": {
+          "roster_id": "subito",
+          "page": "trial-pages/subito/index.html",
+          "archive": false,
+          "tod": false
+        },
+        "identity": "same underlying study",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "candidate": "AENEAS2",
+        "doi": "10.1016/S1470-2045(26)00090-2",
+        "pmid": "42296979",
+        "registry_id": "NCT04923906",
+        "matched_existing": null,
+        "identity": "genuinely distinct new underlying study",
+        "disposition": "new unique; held for full page extraction"
+      },
+      {
+        "candidate": "CheckMate 7DX",
+        "doi": "10.1016/S1470-2045(25)00566-2",
+        "pmid": "41449150",
+        "registry_id": "NCT04100018",
+        "matched_existing": null,
+        "identity": "genuinely distinct new underlying study",
+        "disposition": "deferred negative/contrary evidence"
+      },
+      {
+        "candidate": "CAMPASS",
+        "doi": "10.1016/S1470-2045(26)00049-5",
+        "pmid": "41825453",
+        "registry_id": "NCT04964479",
+        "matched_existing": null,
+        "identity": "genuinely distinct new underlying study",
+        "disposition": "carry-forward from 2026-11-15; revalidated, held; not counted as fresh screening"
+      }
+    ]
+  },
+  "repair": {
+    "pages_repaired": [
+      "ARTEMIS-011",
+      "HERIZON-GEA-01",
+      "KEYLYNK-001",
+      "KEYNOTE-B49",
+      "PANKU-Lung01",
+      "RELIGHT",
+      "Toripalimab plus mFOLFIRINOX",
+      "TroFuse-005",
+      "DALY 2-EU"
+    ],
+    "shared_asset_repaired": "assets/trial-page-layout.js",
+    "release_holds_closed": 8,
+    "repair_queue_entries_closed": 10,
+    "release_holds_remaining": [
+      "OptiTROP-Lung06"
+    ],
+    "manual_clinical_audit_remaining_pages": 450
+  },
+  "nnt_qa": {
+    "added_or_corrected": [
+      {
+        "trial_id": "panku-lung01",
+        "endpoint": "12-month PFS",
+        "treatment_rate_pct": 46.5,
+        "control_rate_pct": 14.4,
+        "benefit_percentage_points": 32.1,
+        "nnt": 4,
+        "calculation": "ceil(100/(46.5-14.4))=4",
+        "source": "ESMO 2026 LBA71; ASCO Post conference report"
+      }
+    ],
+    "not_applicable": [
+      "ARTEMIS-011",
+      "HERIZON-GEA-01",
+      "KEYLYNK-001",
+      "KEYNOTE-B49",
+      "RELIGHT",
+      "Toripalimab-mFOLFIRINOX",
+      "TroFuse-005",
+      "DALY 2-EU"
+    ],
+    "reason": "No comparable fixed-time absolute event rates in the primary source; no NNT derived from medians or hazard ratios."
+  },
+  "nccn": {
+    "full_guideline_access": false,
+    "metadata_sources_reviewed": [
+      {
+        "title": "Non-Small Cell Lung Cancer, Version 4.2026, NCCN Clinical Practice Guidelines in Oncology (JNCCN selection)",
+        "doi": "10.6004/jnccn.2026.0017",
+        "pmid": "41956107",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/41956107/",
+        "scope": "Advanced/metastatic NSCLC with actionable biomarkers; not the complete guideline."
+      },
+      {
+        "title": "Small Cell Lung Cancer, Version 2.2026, NCCN Guidelines Insights",
+        "doi": "10.6004/jnccn.2026.0002",
+        "pmid": "41671459",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671459/",
+        "scope": "Selected systemic therapy/radiation updates; not the complete guideline."
+      }
+    ],
+    "exact_reference_numbers_mapped": 0,
+    "pending_trial_mappings": 43
+  },
+  "validation": {
+    "strict_release_validator": "pending after commit",
+    "outcome_visualization_audit": "pending after commit",
+    "pr_opened": false,
+    "production_deployment": "not verified; branch unmerged"
+  },
+  "next_actions": [
+    "Run branch strict release validator and outcome-visualization audit after commit.",
+    "Inspect the Cloudflare branch preview if one is created; do not claim production deployment.",
+    "Complete protocol-level dose/schedule verification for OptiTROP-Lung06 before clearing its remaining release hold.",
+    "Continue the full manual source/visualization audit of the remaining 450 permanent pages.",
+    "Continue candidate screening toward 30; do not create or merge a partial 30-study batch."
+  ]
+}

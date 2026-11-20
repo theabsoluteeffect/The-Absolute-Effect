@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T20:18:18+05:30",
+  "updated_at": "2026-11-20",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -139,11 +139,11 @@
       "next_action": "Retrieve the current official NCCN Gastric Cancer version and reference list; map the cited recommendation only if the exact section/category is visible."
     },
     {
-      "guideline_id": "nccn-nsclc-4-2026",
+      "guideline_id": "nccn-nsclc-v4-2026",
       "guideline": "Non-Small Cell Lung Cancer",
       "version": "4.2026",
       "source_title": "NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer, Version 4.2026",
-      "source_type": "NCCN-authored JNCCN guideline selection; not the complete guideline",
+      "source_type": "NCCN guideline selection in JNCCN; not the complete NCCN guideline or full reference list",
       "publication_date": "2026-04",
       "doi": "10.6004/jnccn.2026.0017",
       "pmid": "41956107",
@@ -157,7 +157,16 @@
       "recommendation_context_verified": false,
       "full_guideline_access": "not retrieved",
       "limitations": "Publicly accessible NCCN-authored guideline selection only; full NCCN PDF and complete reference list unavailable. No reference number or category inferred.",
-      "last_reviewed": "2026-11-16"
+      "last_reviewed": "2026-11-20",
+      "title": "Non-Small Cell Lung Cancer, Version 4.2026, NCCN Clinical Practice Guidelines in Oncology (JNCCN selection; not the complete guideline)",
+      "source_documents": [
+        {
+          "title": "Non-Small Cell Lung Cancer, Version 4.2026",
+          "doi": "10.6004/jnccn.2026.0017",
+          "source_url": "https://doi.org/10.6004/jnccn.2026.0017",
+          "scope": "duplicate metadata record merged"
+        }
+      ]
     },
     {
       "guideline_id": "nccn-breast-4-2026",
@@ -199,7 +208,16 @@
         "Retrieve complete authorised guideline/reference list.",
         "Do not infer exact reference numbers or recommendation categories.",
         "Continue geriatric-oncology discovery through accessible ASCO/ESMO/peer-reviewed sources."
-      ]
+      ],
+      "source_documents": [
+        {
+          "title": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+          "doi": "10.6004/jnccn.2026.0050",
+          "source_url": "https://doi.org/10.6004/jnccn.2026.0050",
+          "source_type": "NCCN Guidelines Insights article for same guideline/version"
+        }
+      ],
+      "last_reviewed": "2026-11-20"
     },
     {
       "guideline_id": "nccn-colon-cancer-v3-2026",
@@ -242,22 +260,6 @@
       ]
     },
     {
-      "guideline_id": "nccn-nsclc-v4-2026",
-      "title": "Non-Small Cell Lung Cancer, Version 4.2026",
-      "version": "4.2026",
-      "publication_date": "2026",
-      "doi": "10.6004/jnccn.2026.0017",
-      "source_url": "https://doi.org/10.6004/jnccn.2026.0017",
-      "scope": "NCCN guideline article metadata identified; complete guideline reference list and recommendation pages not retrieved in this run.",
-      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
-      "reviewed_on": "2026-11-19",
-      "subsets_reviewed": [],
-      "citation_map": [],
-      "next_actions": [
-        "Retrieve the complete authorised guideline/article reference list and map exact trial citations."
-      ]
-    },
-    {
       "guideline_id": "nccn-aml-v3-2026",
       "title": "NCCN Guidelines Insights: Acute Myeloid Leukemia, Version 3.2026",
       "version": "3.2026",
@@ -290,20 +292,23 @@
       ]
     },
     {
-      "guideline_id": "nccn-older-adult-v2-2026",
-      "title": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+      "guideline_id": "nccn-sclc-v2-2026",
+      "title": "Small Cell Lung Cancer, Version 2.2026, NCCN Guidelines Insights",
       "version": "2.2026",
-      "publication_date": "2026",
-      "doi": "10.6004/jnccn.2026.0050",
-      "source_url": "https://doi.org/10.6004/jnccn.2026.0050",
-      "scope": "NCCN-authored Insights metadata identified; complete article/reference list not retrieved in this run.",
-      "review_status": "metadata_only; exact citation-to-trial mapping not performed",
-      "reviewed_on": "2026-11-19",
-      "subsets_reviewed": [],
-      "citation_map": [],
-      "next_actions": [
-        "Retrieve complete Insights reference list; map geriatric assessment, toxicity and treatment de-escalation evidence."
-      ]
+      "publication_date": "2026-01",
+      "doi": "10.6004/jnccn.2026.0002",
+      "pmid": "41671459",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671459/",
+      "source_type": "NCCN Guidelines Insights article; selected updates, not the complete guideline or full reference list",
+      "scope": "Systemic therapy and radiation therapy updates in SCLC",
+      "subsets_reviewed": [
+        "systemic therapy updates",
+        "radiation therapy updates"
+      ],
+      "exact_recommendation_references_mapped": 0,
+      "recommendation_category_verified": false,
+      "limitation": "Full NCCN SCLC guideline and complete reference list were not accessible; no reference numbers or recommendation categories inferred.",
+      "last_reviewed": "2026-11-20"
     }
   ],
   "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.\n2026-11-19 evening: 13 guideline records are retained in the ledger; 41 exact trial-to-guideline mappings remain pending. Seven guideline metadata sources were identified in this run (five metadata-only new sources), but no exact NCCN reference numbers or recommendation categories were verified. Five net-new candidates have primary-source/registry identity verified; their NCCN provenance remains explicitly unverified.",
@@ -465,7 +470,7 @@
     },
     {
       "date": "2026-11-19",
-      "guideline_id": "nccn-older-adult-v2-2026",
+      "guideline_id": "nccn-older-adult-oncology-v2-2026",
       "source": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
       "url": "https://doi.org/10.6004/jnccn.2026.0050",
       "status": "metadata_identified; full guideline/reference list not retrieved",
@@ -486,30 +491,33 @@
         "supportive and palliative care"
       ],
       "action": "Do not infer reference numbers, recommendation categories or section context. Keep exact NCCN mapping pending and continue primary-source discovery."
+    },
+    {
+      "date": "2026-11-20",
+      "source": "Official NCCN guideline portal / full guideline PDFs and reference lists",
+      "status": "inaccessible in this run",
+      "scope_attempted": [
+        "NSCLC",
+        "SCLC"
+      ],
+      "action": "Continued with accessible NCCN-authored JNCCN selections/Insights metadata and primary trial publications; no exact NCCN reference numbers or recommendation categories inferred."
     }
   ],
   "last_run": {
-    "date": "2026-11-19",
-    "cycle": "evening",
-    "guideline_reviewed": "NCCN/JNCCN metadata sweep only; full guideline/reference lists inaccessible",
-    "scope": "metadata and focused Insights records only; primary publication discovery continued across thoracic, upper GI, breast, CNS and supportive/palliative oncology",
-    "guideline_metadata_identified": 7,
-    "new_metadata_only_sources": 5,
-    "exact_nccn_references_mapped": 0,
-    "full_guideline_accessible": false,
-    "complete_reference_list_accessible": false,
-    "new_unique_candidate_identities": 35,
-    "net_new_candidates_not_in_AM": 33,
-    "source_verified": 5,
-    "held_for_page_level_extraction": 22,
-    "deferred_negative": 6,
-    "duplicate_exclusions": 6,
-    "disease_site_passes": 4,
-    "page_ready": 0,
-    "uploaded": 0,
-    "pending_trial_mappings": 41,
-    "branch_commit_sha": "96ea6b0e4ff8149619dec4ddd9bba97517c809c4",
-    "status": "INCOMPLETE — NCCN exact provenance unavailable; discovery continued using primary publications and authoritative conference reports; no pages release-ready"
+    "date": "2026-11-20",
+    "cycle": "morning",
+    "timestamp": "2026-11-20T09:41:18+05:30",
+    "branch": "atlas-batch/2026-11-20-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "fresh_candidates_screened": 6,
+    "duplicates": 4,
+    "new_unique": 2,
+    "held": 1,
+    "deferred_negative": 1,
+    "carry_forward_revalidated": 1,
+    "published": 0,
+    "full_guideline_access": false,
+    "exact_nccn_references_mapped": 0
   },
   "last_updated": "2026-11-19T20:18:18+05:30",
   "last_run_date": "2026-11-19",
@@ -1006,6 +1014,26 @@
       "reference_number": null,
       "recommendation_category": null,
       "next_action": "Retrieve complete Insights reference list or authorised guideline and map exact references; do not infer reference numbers."
+    },
+    {
+      "trial_id": "campass",
+      "trial": "CAMPASS",
+      "guideline_id": "nccn-nsclc-v4-2026",
+      "status": "pending_exact_reference_mapping",
+      "provenance": "not verified — full NCCN guideline/reference list inaccessible",
+      "reason": "Primary trial verified, but exact NCCN section/reference/recommendation context cannot be mapped without the complete guideline reference list.",
+      "next_action": "Revisit when full NCCN NSCLC guideline/reference list is accessible; do not infer recommendation category or reference number.",
+      "created_on": "2026-11-20"
+    },
+    {
+      "trial_id": "aeneas2",
+      "trial": "AENEAS2",
+      "guideline_id": "nccn-nsclc-v4-2026",
+      "status": "pending_exact_reference_mapping",
+      "provenance": "not verified — full NCCN guideline/reference list inaccessible",
+      "reason": "Primary trial verified, but exact NCCN section/reference/recommendation context cannot be mapped without the complete guideline reference list.",
+      "next_action": "Revisit when full NCCN NSCLC guideline/reference list is accessible; do not infer recommendation category or reference number.",
+      "created_on": "2026-11-20"
     }
   ],
   "alternative_guideline_sources": [
@@ -1972,6 +2000,36 @@
       ],
       "status": "deferred contrary evidence; OS not significantly improved; FLOT cohort follow-up is secondary and not a separate trial",
       "nnt_nnh_status": "not calculated — median/HR and exploratory FLOT-cohort outcomes"
+    },
+    {
+      "trial_id": "campass",
+      "trial": "CAMPASS",
+      "primary_doi": "10.1016/S1470-2045(26)00049-5",
+      "pmid": "41825453",
+      "registry_id": "NCT04964479",
+      "discovery_source": "Primary Lancet Oncology phase III publication; prior screen 2026-11-15 revalidated",
+      "nccn_mapping_status": "not verified — full guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-20"
+    },
+    {
+      "trial_id": "aeneas2",
+      "trial": "AENEAS2",
+      "primary_doi": "10.1016/S1470-2045(26)00090-2",
+      "pmid": "42296979",
+      "registry_id": "NCT04923906",
+      "discovery_source": "Primary Lancet Oncology phase III publication",
+      "nccn_mapping_status": "not verified — full guideline/reference list inaccessible",
+      "reviewed_on": "2026-11-20"
+    },
+    {
+      "trial_id": "checkmate-7dx",
+      "trial": "CheckMate 7DX",
+      "primary_doi": "10.1016/S1470-2045(25)00566-2",
+      "pmid": "41449150",
+      "registry_id": "NCT04100018",
+      "discovery_source": "Primary Lancet Oncology phase III negative trial report",
+      "nccn_mapping_status": "not mapped; deferred negative/contrary evidence",
+      "reviewed_on": "2026-11-20"
     }
   ],
   "discovery_passes": [
@@ -2107,6 +2165,25 @@
       "source_scope": "primary peer-reviewed publications, PubMed, NEJM, Lancet, JCO/ASCO conference reports and trial registries; NCCN full reference lists unavailable",
       "status": "50 candidates screened; 35 unique candidate leads including 33 net-new to the active AM batch; 5 net-new primary-source verified; 22 held; 6 deferred; 0 page-ready",
       "next_action": "Retrieve complete current NCCN guideline or complete NCCN-authored Insights reference lists before assigning exact guideline citations; do not infer references."
+    },
+    {
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "branch": "atlas-batch/2026-11-20-am",
+      "disease_site_passes": [
+        "thoracic — PD-L1-positive driver-negative NSCLC",
+        "thoracic — EGFR-mutated first-line NSCLC",
+        "genitourinary — ARPI-pretreated chemotherapy-naive mCRPC",
+        "haematologic — large B-cell lymphoma",
+        "gynaecologic — dMMR endometrial cancer",
+        "breast — adjuvant HRD-directed therapy"
+      ],
+      "guideline_metadata_reviewed": [
+        "NCCN NSCLC v4.2026 JNCCN selection (not full guideline)",
+        "NCCN SCLC v2.2026 Guidelines Insights (not full guideline)"
+      ],
+      "exact_nccn_citations_mapped": 0,
+      "notes": "Complete NCCN reference lists inaccessible; primary trial discovery continued; no NCCN provenance assigned without exact source verification."
     }
   ],
   "metadata_crosswalk_corrections": [

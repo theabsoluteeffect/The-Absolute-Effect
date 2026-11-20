@@ -210,14 +210,16 @@
     {
       "trial_id": "artemis-011",
       "doi": "10.1016/j.annonc.2026.10.1284",
-      "primary_title": "Risvutatug Rezetecan Versus Gemcitabine-Docetaxel in Relapsed/Refractory Osteosarcoma: The ARTEMIS-011 Randomized Phase 3 Trial",
+      "primary_title": "Efficacy and safety of risvutatug rezetecan versus gemcitabine plus docetaxel in relapsed/refractory advanced osteosarcoma: Primary results from the ARTEMIS-011 phase 3 trial",
       "pmid": "42933637",
       "registry_id": "NCT06935409",
-      "verified_by": "PubMed/publisher metadata",
-      "verified_on": "2026-11-17",
+      "verified_by": "PubMed primary record",
+      "verified_on": "2026-11-20",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42933637/",
       "title_match": true,
-      "verification_note": "PubMed primary record checked 17 November 2026"
+      "verification_note": "PubMed primary record checked 17 November 2026",
+      "verified": true,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42933637/"
     },
     {
       "trial_id": "ringside",
@@ -363,5 +365,6 @@
       "title_match": true,
       "verification_note": "Primary PubMed/publisher record checked 17 November 2026; DOI and exact title matched."
     }
-  ]
+  ],
+  "last_updated": "2026-11-20"
 }
