@@ -38,12 +38,12 @@
   },
   "candidate_screening": {
     "screened": 47,
-    "new_unique": 33,
-    "primary_identity_metadata_verified": 33,
+    "new_unique": 30,
+    "primary_identity_metadata_verified": 30,
     "full_primary_page_verified": 0,
     "duplicates": 9,
-    "held": 37,
-    "deferred_negative_or_mixed": 0,
+    "held": 34,
+    "deferred_negative_or_mixed": 3,
     "excluded": 1,
     "published": 0,
     "target": 30,
@@ -51,12 +51,12 @@
     "remaining_to_publish": 30,
     "upload_shortfall": 30,
     "trial_of_day_candidates": [
-      "FIND (primary publication 2026-11-10)",
+      "FIND (primary 2026-11-10)",
       "PANOVA-3 (prespecified QoL secondary analysis 2026-11-02)",
-      "COMPANION-002 (primary publication 2026-10-24)"
+      "COMPANION-002 (primary 2026-10-24)"
     ],
     "trial_of_day_selected": null,
-    "trial_of_day_reason": "All three candidates are within the preceding month and new to the Atlas, but none has passed full page extraction and release QA; current PANKU-Esophagus01 remains the ToD."
+    "trial_of_day_reason": "All recent candidates remain held pending full page extraction and release QA; current PANKU-Esophagus01 remains ToD."
   },
   "candidate_decisions": [
     {
@@ -647,7 +647,7 @@
       "registry_id": "NCT03570892",
       "primary_title": "Tisagenlecleucel in adult patients with relapsed or refractory aggressive B-cell non-Hodgkin lymphoma",
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_negative",
       "reason": "Phase III comparison did not show an event-free survival advantage over standard salvage therapy; retain as contrary evidence, not a positive practice-changing page.",
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2116596",
@@ -656,8 +656,8 @@
       ],
       "same_underlying_study": false,
       "matched_existing": null,
-      "review_status": "primary_identity_metadata_verified; full_page_extraction_pending",
-      "hold_reason": "Phase III comparison did not show an event-free survival advantage over standard salvage therapy; retain as contrary evidence, not a positive practice-changing page."
+      "review_status": "deferred_negative_or_mixed_evidence",
+      "hold_reason": null
     },
     {
       "candidate": "daNIS-2",
@@ -667,7 +667,7 @@
       "registry_id": "NCT04935359",
       "primary_title": "daNIS-2 phase III study of nivolumab-based treatment in advanced gastric/oesophagogastric adenocarcinoma",
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_negative",
       "reason": "Phase III study stopped early after interim review for an unfavourable benefit-risk profile; retain as negative/contrary evidence.",
       "source_urls": [
         "https://doi.org/10.1016/j.esmoop.2026.108621",
@@ -676,8 +676,8 @@
       ],
       "same_underlying_study": false,
       "matched_existing": null,
-      "review_status": "primary_identity_metadata_verified; full_page_extraction_pending",
-      "hold_reason": "Phase III study stopped early after interim review for an unfavourable benefit-risk profile; retain as negative/contrary evidence."
+      "review_status": "deferred_negative_or_mixed_evidence",
+      "hold_reason": null
     },
     {
       "candidate": "ASPEN-06",
@@ -687,7 +687,7 @@
       "registry_id": "NCT05002127",
       "primary_title": "ASPEN-06 randomized phase II study",
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_contrary_evidence",
       "reason": "Mixed phase II evidence: one comparative response objective was met, but the prespecified historical benchmark was not; not a clean practice-changing positive signal.",
       "source_urls": [
         "https://doi.org/10.1038/s41591-026-04700-3",
@@ -696,8 +696,8 @@
       ],
       "same_underlying_study": false,
       "matched_existing": null,
-      "review_status": "primary_identity_metadata_verified; full_page_extraction_pending",
-      "hold_reason": "Mixed phase II evidence: one comparative response objective was met, but the prespecified historical benchmark was not; not a clean practice-changing positive signal."
+      "review_status": "deferred_negative_or_mixed_evidence",
+      "hold_reason": null
     },
     {
       "candidate": "DESTINY-Lung04",
@@ -1191,10 +1191,10 @@
   "duplicate_check_summary": {
     "screened": 47,
     "duplicate_exclusions": 9,
-    "new_unique_identity_candidates": 33,
+    "new_unique_identity_candidates": 30,
     "new_unique_page_ready": 0,
-    "held_candidates": 37,
-    "deferred_negative_or_mixed": 0,
+    "held_candidates": 34,
+    "deferred_negative_or_mixed": 3,
     "policy_exclusions": 1,
     "uploaded": 0,
     "matched_against": [
@@ -1205,7 +1205,7 @@
       "current/previous Trial-of-the-Day",
       "prior daily-evidence and alias/publication metadata"
     ],
-    "note": "A new-unique identity match is not a publication; all 30 new unique candidates remain held until complete primary-source extraction and page QA."
+    "note": "30 identity-new studies were found; all 30 remain held until full primary-source extraction and page QA. The 4 other held cases remain identity/source unresolved."
   },
   "nccn": {
     "full_guideline_access": false,
@@ -1337,7 +1337,7 @@
   "uploaded_cases": [],
   "branch_progress": {
     "candidate_screened": 47,
-    "identity_new_unique": 33,
+    "identity_new_unique": 30,
     "fully_verified_page_candidates": 0,
     "pages_built": 0,
     "uploaded": 0,
@@ -1853,5 +1853,5 @@
       "correction": "Corrected PubMed identifier to PMID 38828933; DOI and NCT unchanged."
     }
   ],
-  "recovery_update": "2026-11-21 19:14 IST: resumed the incomplete morning branch; added a second discovery pass across gynaecologic, thoracic and myeloma trials; corrected several primary metadata errors; no page was built or uploaded."
+  "recovery_update": "2026-11-21 19:14 IST: resumed the incomplete morning branch; 30 new unique identities identified across six disease-site passes, but all remain held pending complete page extraction. BELINDA, daNIS-2 and ASPEN-06 remain in the separate deferred-negative/mixed queue, not the page-review queue."
 }
