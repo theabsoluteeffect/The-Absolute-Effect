@@ -69,12 +69,13 @@
       "candidate-harmoni-a-release-qa-2026-11-16",
       "post-merge-daily-evidence-merger-root-schema-2026-11-18"
     ],
-    "open_after": 162,
+    "open_after": 163,
     "resolved_after": 57,
     "dated_context_items_open": 52,
     "release_holds_open": 4,
     "full_manual_audit_remaining": 455,
-    "new_candidate_review_items_added": 26
+    "new_candidate_review_items_added": 27,
+    "post_merge_reconciliation_items_open": 1
   },
   "nccn_guidelines_reviewed": [
     {
@@ -308,7 +309,7 @@
     "production_deployment_verified": false,
     "new_batch_outcome_visualization_audit": "not run — no new pages"
   },
-  "branch_commit_sha": "cb2bc668dd051036c4b98c6ff9c8e859f01940f5",
+  "branch_commit_sha": "df9f34758bc4db64135d92f6e88805c452f7ba53",
   "metadata_commit_sha": "cb2bc668dd051036c4b98c6ff9c8e859f01940f5",
   "next_actions": [
     "Complete primary-source extraction for the 30 identity-new candidates, including exact dose/schedule, eligibility, denominators, endpoint definitions, follow-up, grade 3–5 safety, discontinuation and QoL.",
@@ -349,7 +350,7 @@
     }
   ],
   "nnt_policy_note": "No NNT/NNH calculated from medians, HRs or conditional percentages without comparable denominators/time horizon.",
-  "recovery_update": "Correction: BELINDA and daNIS-2 remain deferred-negative; ASPEN-06 remains deferred mixed/contrary evidence. They are excluded from the page-review hold count. The candidate ledger now contains 30 identity-new held studies, 9 duplicates, 4 other unresolved holds, 3 deferred-negative/mixed cases and 1 policy exclusion.",
+  "recovery_update": "Correction: BELINDA and daNIS-2 remain deferred-negative; ASPEN-06 remains deferred mixed/contrary evidence. They are excluded from the page-review hold count. The candidate ledger now contains 30 identity-new held studies, 9 duplicates, 4 other unresolved holds, 3 deferred-negative/mixed cases and 1 policy exclusion. Additional structural issue: the 30 pages merged in PR #5 are marked published on this branch but remain staged in main's roster; this is queued for a future coherent repair PR.",
   "branch_status": "unmerged_incomplete; no PR opened because 0/30 new pages passed the complete release gate.",
   "candidate_disposition_ledger": [
     {
@@ -1186,5 +1187,14 @@
     "status": "not_verified",
     "production_url": "https://theabsoluteeffect.pages.dev",
     "reason": "No production browser check completed; no deployment claim."
+  },
+  "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+  "post_merge_reconciliation": {
+    "status": "open",
+    "affected_previous_batch_trials": 30,
+    "main_roster_status": "staged (stale)",
+    "branch_roster_status": "published (evidence-backed correction)",
+    "merge_commit": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+    "next_action": "Include the correction in a coherent PR after the new 30-trial release gate is met."
   }
 }
