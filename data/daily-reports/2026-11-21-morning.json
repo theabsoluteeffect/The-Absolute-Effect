@@ -296,8 +296,8 @@
     "merged": false,
     "production_deployment_verified": false
   },
-  "branch_commit_sha": "pending",
-  "metadata_commit_sha": "pending",
+  "branch_commit_sha": "cb2bc668dd051036c4b98c6ff9c8e859f01940f5",
+  "metadata_commit_sha": "cb2bc668dd051036c4b98c6ff9c8e859f01940f5",
   "next_actions": [
     "Complete page-level primary-source extraction for the 16 new unique candidates; prioritize FIND, COMPANION-002, PANOVA-3 and GIMEMA ALL2820. Extract exact interventions, denominators, endpoint definitions, follow-up, grade 3–5 toxicity and QoL.",
     "Resolve the four merged-page release holds (ARTEMIS-011, KEYNOTE-B49, PANKU-Lung01, Toripalimab plus modified FOLFIRINOX) from primary supplements/protocols; keep release_ready=false until verified.",
