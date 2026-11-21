@@ -1347,7 +1347,9 @@
     "branch_unmerged": true,
     "branch": "atlas-batch/2026-11-21-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "next_action": "Complete the full primary-source extraction for each held unique candidate; do not build a release batch until 30 pass all page-level gates."
+    "next_action": "Complete the full primary-source extraction for each held unique candidate; do not build a release batch until 30 pass all page-level gates.",
+    "post_merge_reconciliation_items_open": 1,
+    "main_roster_status_stale_for_previous_batch": 30
   },
   "next_actions": [
     "Complete primary-source extraction for the 30 identity-new candidates, including exact dose/schedule, eligibility, denominators, endpoint definitions, follow-up, grade 3–5 safety, discontinuation and QoL.",
@@ -1853,5 +1855,50 @@
       "correction": "Corrected PubMed identifier to PMID 38828933; DOI and NCT unchanged."
     }
   ],
-  "recovery_update": "2026-11-21 19:14 IST: resumed the incomplete morning branch; 30 new unique identities identified across six disease-site passes, but all remain held pending complete page extraction. BELINDA, daNIS-2 and ASPEN-06 remain in the separate deferred-negative/mixed queue, not the page-review queue."
+  "recovery_update": "2026-11-21 19:14 IST: resumed the incomplete morning branch; 30 new unique identities identified across six disease-site passes, but all remain held pending complete page extraction. BELINDA, daNIS-2 and ASPEN-06 remain in the separate deferred-negative/mixed queue, not the page-review queue.",
+  "reconciliation_findings": [
+    {
+      "id": "post-merge-publication-status-and-daily-evidence-2026-11-21",
+      "severity": "high",
+      "status": "open",
+      "detail": "The 30 PR #5 pages are present on main, but main roster records still show publication_status=staged. The 21-Nov AM branch has the evidence-backed published status and merge metadata. Do not count them as today's uploads.",
+      "affected_trial_ids": [
+        "act-gi",
+        "artemis-011",
+        "bctop-h-n01",
+        "capital",
+        "dellphi-305",
+        "disitamab-tislelizumab",
+        "felzartamab-rd",
+        "fit4treat",
+        "harmoni-a",
+        "herizon-gea-01",
+        "i-spy2-2",
+        "ivonescimab-perioperative",
+        "keylynk-001",
+        "keynote-b49",
+        "litespark-011",
+        "monumental-3",
+        "neonipiga",
+        "panku-breast01",
+        "panku-esophagus01",
+        "panku-lung01",
+        "pds0101-pembrolizumab",
+        "pro-b",
+        "relight",
+        "ringside",
+        "toripalimab-mfolfirinox",
+        "transform-1",
+        "trastuzumab-botidotin",
+        "trofuse-005",
+        "union",
+        "zsab-neogolp"
+      ],
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/8c521b631056b3eca7f01b613cf54e6db336bee6"
+      ],
+      "action": "Include the correction in a later coherent PR after the 30-new-trial release gate is met."
+    }
+  ]
 }
