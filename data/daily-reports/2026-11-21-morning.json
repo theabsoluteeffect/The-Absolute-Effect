@@ -69,12 +69,12 @@
       "candidate-harmoni-a-release-qa-2026-11-16",
       "post-merge-daily-evidence-merger-root-schema-2026-11-18"
     ],
-    "open_after": 165,
+    "open_after": 162,
     "resolved_after": 57,
     "dated_context_items_open": 52,
     "release_holds_open": 4,
     "full_manual_audit_remaining": 455,
-    "new_candidate_review_items_added": 29
+    "new_candidate_review_items_added": 26
   },
   "nccn_guidelines_reviewed": [
     {
@@ -96,13 +96,13 @@
   "nccn_full_guideline_access": false,
   "candidate_screening": {
     "screened": 47,
-    "new_unique_identity": 33,
-    "primary_identity_metadata_verified": 33,
+    "new_unique_identity": 30,
+    "primary_identity_metadata_verified": 30,
     "full_primary_page_verified": 0,
     "page_ready": 0,
     "duplicates": 9,
-    "held": 37,
-    "deferred_negative_or_mixed": 0,
+    "held": 34,
+    "deferred_negative_or_mixed": 3,
     "excluded": 1,
     "published": 0,
     "target": 30,
@@ -113,15 +113,15 @@
       "COMPANION-002"
     ],
     "trial_of_day_selected": null,
-    "note": "All 30 identity-new candidates remain held pending full primary-source extraction; no ToD change."
+    "note": "All 30 new unique candidates are held pending full primary-source page extraction."
   },
   "uploaded_cases": [],
   "duplicate_check": {
     "screened": 47,
     "duplicates": 9,
-    "identity_new_unique": 33,
-    "held": 37,
-    "deferred_negative_or_mixed": 0,
+    "identity_new_unique": 30,
+    "held": 34,
+    "deferred_negative_or_mixed": 3,
     "excluded": 1,
     "published": 0,
     "duplicate_cases": [
@@ -349,7 +349,7 @@
     }
   ],
   "nnt_policy_note": "No NNT/NNH calculated from medians, HRs or conditional percentages without comparable denominators/time horizon.",
-  "recovery_update": "The AM branch was resumed at 2026-11-21 19:14 IST. Fourteen additional unique candidates were screened across gynaecologic, thoracic and myeloma sites. Primary metadata errors in CUPISCO, SUNMO, GIMEMA ALL2820, AENEAS2, PANOVA-3, ALINA and DREAMM-7 were corrected in the candidate ledger. No new page passed full extraction/QA, so no trial page was built or uploaded.",
+  "recovery_update": "Correction: BELINDA and daNIS-2 remain deferred-negative; ASPEN-06 remains deferred mixed/contrary evidence. They are excluded from the page-review hold count. The candidate ledger now contains 30 identity-new held studies, 9 duplicates, 4 other unresolved holds, 3 deferred-negative/mixed cases and 1 policy exclusion.",
   "branch_status": "unmerged_incomplete; no PR opened because 0/30 new pages passed the complete release gate.",
   "candidate_disposition_ledger": [
     {
@@ -823,7 +823,7 @@
       "matched_existing": null,
       "same_underlying_study": false,
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_negative",
       "reason": "Phase III comparison did not show an event-free survival advantage over standard salvage therapy; retain as contrary evidence, not a positive practice-changing page.",
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2116596",
@@ -840,7 +840,7 @@
       "matched_existing": null,
       "same_underlying_study": false,
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_negative",
       "reason": "Phase III study stopped early after interim review for an unfavourable benefit-risk profile; retain as negative/contrary evidence.",
       "source_urls": [
         "https://doi.org/10.1016/j.esmoop.2026.108621",
@@ -857,7 +857,7 @@
       "matched_existing": null,
       "same_underlying_study": false,
       "identity": "new_unique",
-      "disposition": "held",
+      "disposition": "deferred_contrary_evidence",
       "reason": "Mixed phase II evidence: one comparative response objective was met, but the prespecified historical benchmark was not; not a clean practice-changing positive signal.",
       "source_urls": [
         "https://doi.org/10.1038/s41591-026-04700-3",
