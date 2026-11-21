@@ -190,7 +190,7 @@
       "pmid": "43019760",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
       "source_scope": "NCCN-authored guideline article metadata/abstract only; complete guideline PDF and full reference list were not retrieved. Not represented as a complete guideline review.",
-      "review_status": "metadata_verified; full_text_and_reference_list_inaccessible; no trial citation mapping",
+      "review_status": "metadata_abstract_only_full_text_reference_list_inaccessible",
       "reviewed_on": "2026-11-17",
       "subsets_reviewed": [],
       "citation_map": [],
@@ -199,7 +199,12 @@
         "Retrieve complete authorised guideline/reference list.",
         "Do not infer exact reference numbers or recommendation categories.",
         "Continue geriatric-oncology discovery through accessible ASCO/ESMO/peer-reviewed sources."
-      ]
+      ],
+      "last_checked_on": "2026-11-21",
+      "full_text_accessible": false,
+      "reference_list_accessible": false,
+      "reference_mappings_extracted": 0,
+      "access_note": "PubMed metadata/abstract reviewed; JNCCN full-text link returned 403; not a complete NCCN guideline."
     },
     {
       "guideline_id": "nccn-colon-cancer-v3-2026",
@@ -210,7 +215,7 @@
       "pmid": "43019762",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
       "source_scope": "NCCN Guidelines Insights article metadata/abstract only; this is a focused Insights article, not the complete Colon Cancer guideline. Full reference list not retrieved.",
-      "review_status": "metadata_verified; insights_reference_list_inaccessible; no trial citation mapping",
+      "review_status": "metadata_abstract_only_full_text_reference_list_inaccessible",
       "reviewed_on": "2026-11-17",
       "subsets_reviewed": [],
       "citation_map": [],
@@ -219,10 +224,15 @@
         "Retrieve complete publicly accessible Insights reference list or authorised full guideline.",
         "Do not infer exact reference numbers or recommendation categories.",
         "Continue colon cancer discovery through accessible ESMO/ASCO and primary trial reports."
-      ]
+      ],
+      "last_checked_on": "2026-11-21",
+      "full_text_accessible": false,
+      "reference_list_accessible": false,
+      "reference_mappings_extracted": 0,
+      "access_note": "PubMed metadata/abstract reviewed; JNCCN full-text link returned 403; not a complete NCCN guideline."
     }
   ],
-  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible.",
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible. 2026-11-21: official NCCN portal and JNCCN full-text reference lists inaccessible (403/login). Colon Cancer Insights v3.2026 and Older Adult Oncology Insights v2.2026 reviewed at PubMed metadata/abstract level only; not complete guidelines; no reference numbers/categories inferred. NCCN provenance is not a publication blocker.",
   "source_access_log": [
     {
       "date": "2026-11-15",
@@ -329,10 +339,34 @@
         "6.3.5"
       ],
       "finding": "Alternative guideline review completed. EAU reference-list mismatch identified for section 6.3.4 inline refs [245,246] and IPFSG numbering; mismatched citations were not used."
+    },
+    {
+      "date": "2026-11-21",
+      "source": "NCCN official guideline portal",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "result": "access_denied_or_login_required",
+      "scope": "No complete guideline PDF/reference list retrieved; not a repository blocker.",
+      "action": "Continue discovery through primary publications, registries and alternative authoritative guidelines."
+    },
+    {
+      "date": "2026-11-21",
+      "source": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "doi": "10.6004/jnccn.2026.0051",
+      "result": "PubMed metadata/abstract accessible; JNCCN full-text reference list returned 403.",
+      "scope": "Metadata/abstract only; not a complete guideline; zero exact reference mappings."
+    },
+    {
+      "date": "2026-11-21",
+      "source": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019760/",
+      "doi": "10.6004/jnccn.2026.0050",
+      "result": "PubMed metadata/abstract accessible; JNCCN full-text reference list returned 403.",
+      "scope": "Metadata/abstract only; not a complete guideline; zero exact reference mappings."
     }
   ],
-  "last_run": "2026-11-17",
-  "last_updated": "2026-11-17",
+  "last_run": "2026-11-21",
+  "last_updated": "2026-11-21",
   "last_run_date": "2026-11-17",
   "pending_trial_mappings": [
     {
@@ -814,6 +848,216 @@
       "status": "not verified — source inaccessible",
       "next_action": "Retrieve complete current NCCN guideline/reference list and map only exact verified citations.",
       "updated_on": "2026-11-17"
+    },
+    {
+      "trial_id": "companion-002",
+      "trial": "COMPANION-002",
+      "site": "biliary tract",
+      "setting": "second-line advanced",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "cupisco",
+      "trial": "CUPISCO",
+      "site": "cancer of unknown primary",
+      "setting": "post-induction molecularly guided treatment",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "rosewood",
+      "trial": "ROSEWOOD",
+      "site": "follicular lymphoma",
+      "setting": "relapsed/refractory",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "sunmo",
+      "trial": "SUNMO",
+      "site": "diffuse large B-cell lymphoma",
+      "setting": "relapsed/refractory",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "panova-3",
+      "trial": "PANOVA-3",
+      "site": "locally advanced pancreatic adenocarcinoma",
+      "setting": "first-line unresectable locally advanced",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "niche-2",
+      "trial": "NICHE-2",
+      "site": "colon cancer dMMR/MSI-H",
+      "setting": "neoadjuvant",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "paradigm",
+      "trial": "PARADIGM",
+      "site": "metastatic colorectal cancer RAS wild-type",
+      "setting": "first-line",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "sunlight",
+      "trial": "SUNLIGHT",
+      "site": "metastatic colorectal cancer",
+      "setting": "refractory later-line",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "zuma-7",
+      "trial": "ZUMA-7",
+      "site": "large B-cell lymphoma",
+      "setting": "second-line early relapse/primary refractory",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "alpine",
+      "trial": "ALPINE",
+      "site": "chronic lymphocytic leukemia",
+      "setting": "relapsed/refractory",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "aeneas2",
+      "trial": "AENEAS2",
+      "site": "EGFR-mutated advanced NSCLC",
+      "setting": "first-line",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "gog-240",
+      "trial": "GOG-240",
+      "site": "cervical cancer",
+      "setting": "persistent/recurrent/metastatic first-line",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "empower-cervical1",
+      "trial": "EMPOWER-Cervical1",
+      "site": "cervical cancer",
+      "setting": "recurrent/metastatic after platinum",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "innovatv-301",
+      "trial": "innovaTV 301",
+      "site": "cervical cancer",
+      "setting": "second/third-line recurrent/metastatic",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
+    },
+    {
+      "trial_id": "find",
+      "trial": "FIND",
+      "site": "nonmetastatic colorectal cancer",
+      "setting": "postoperative ctDNA-guided surveillance",
+      "status": "pending_exact_nccn_reference_mapping",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
+      "next_action": "Map exact current NCCN guideline title/version/section/reference/category only when authorized full text or complete Insights reference list is accessible; do not infer. This mapping is not a publication blocker once scientific page verification is complete."
     }
   ],
   "alternative_guideline_sources": [
@@ -946,5 +1190,16 @@
       "nccn_mapping_status": "pending — current full NCCN guideline/reference list inaccessible",
       "reviewed_on": "2026-11-17"
     }
+  ],
+  "updated_on": "2026-11-21",
+  "next_rotation": [
+    "Acute Lymphoblastic Leukemia",
+    "Biliary Tract Cancer",
+    "CNS Cancers",
+    "Cutaneous Melanoma",
+    "Cancer-Associated Venous Thromboembolic Disease",
+    "Prevention and Treatment of Cancer-Related Infections",
+    "Genetic/Familial High-Risk Assessment",
+    "Supportive/Palliative Care"
   ]
 }

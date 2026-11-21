@@ -37,7 +37,7 @@
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-11-14",
+    "daily_batch_uploaded": "2026-11-18",
     "new_trials_added_today": 30,
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -59,7 +59,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-14",
+    "last_full_reconciliation": "2026-11-21",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -90,13 +90,13 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-14",
+    "last_quality_check": "2026-11-21",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-11-08",
-      "id": "gemx",
-      "trial": "GemX"
+      "date": "2026-11-17",
+      "id": "panku-esophagus01",
+      "trial": "PANKU-Esophagus01"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -200,11 +200,11 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-11-03",
-      "id": "acosog-z11102",
-      "trial": "ACOSOG Z11102 (Alliance)"
+      "date": "2026-11-08",
+      "id": "gemx",
+      "trial": "GemX"
     },
-    "trial_of_day_records_reconciled_on": "2026-11-14",
+    "trial_of_day_records_reconciled_on": "2026-11-21",
     "trial_of_day_current_id": "gemx",
     "trial_of_day_previous_id": "acosog-z11102",
     "trial_of_day_archive_reconciled": true,
@@ -1390,7 +1390,65 @@
     "canonical_page_files_including_redirect": 461,
     "sitemap_trial_urls": 461,
     "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
+    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+    "structural_audit_complete": true,
+    "full_clinical_audit_complete": false,
+    "pages_structurally_audited": 460,
+    "pages_missing_dated_context": 52,
+    "pages_primary_source_manually_reviewed": 5,
+    "pages_manually_inspected": 10,
+    "release_hold_pages_in_last_merged_batch": 4,
+    "production_deployment_verified": false,
+    "current_run_new_trials_uploaded": 0,
+    "last_run_date": "2026-11-21",
+    "last_run_cycle": "morning",
+    "last_run_branch": "atlas-batch/2026-11-21-am",
+    "last_run_status": "INCOMPLETE — no new page met the full release gate; 0/30 uploaded.",
+    "last_merged_batch": {
+      "date": "2026-11-17",
+      "merged_on": "2026-11-18",
+      "pr_number": 5,
+      "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+      "pr_head_sha": "1a4502c6dc7a06f59c451b63cbafb4d1ba6946a7",
+      "merge_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "canonical_pages_added": 30,
+      "roster_entries_after_merge": 467,
+      "permanent_trial_pages_after_merge": 460,
+      "release_ready_flag_distribution": {
+        "undefined": 19,
+        "false": 4,
+        "true": 7
+      },
+      "release_holds": [
+        "artemis-011",
+        "keynote-b49",
+        "panku-lung01",
+        "toripalimab-mfolfirinox"
+      ],
+      "production_deployment": "not independently verified"
+    },
+    "latest_main_reconciliation": {
+      "verified_on": "2026-11-21T08:00+05:30",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "recursive_tree_entries": 1179,
+      "roster_entries": 467,
+      "unique_roster_page_destinations": 467,
+      "canonical_trial_page_directories": 460,
+      "redirect_stub_files": [
+        "trial-pages/rosel/index.html"
+      ],
+      "index_unique_destinations": 468,
+      "missing_index_links": 0,
+      "archive_entries": 16,
+      "current_trial_of_the_day": "PANKU-Esophagus01",
+      "previous_trial_of_the_day": "GemX",
+      "daily_evidence_files": 30,
+      "daily_report_files": 8,
+      "canonical_pages_with_missing_dated_context": 52,
+      "full_clinical_audit_complete": false,
+      "production_deployment_verified": false
+    }
   },
   "trials": [
     {
@@ -1543,7 +1601,7 @@
       "registry_id": "NCT05772546",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Avatrombopag persistent CIT",
         "ACT-GI trial"
@@ -1585,7 +1643,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/act-gi/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "adaura",
@@ -1808,7 +1868,7 @@
       "registry_id": "NCT06935409",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "ARTEMIS 011",
         "cabozantinib osteosarcoma"
@@ -1838,11 +1898,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/artemis-011/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
+      "release_hold_reason": "Accessible primary abstract does not provide the full gemcitabine/docetaxel comparator schedule and complete grade 3–5 safety/QoL denominators. Retrieve primary supplement/protocol; do not infer comparator dosing.",
       "release_ready": false,
       "outcome_summary": "Median PFS 5.5 vs 1.4 months; HR 0.33 (95% CI 0.20–0.55), P<0.0001. ORR 29.3% vs 8.5%. OS immature.",
       "safety_summary": "Grade ≥3 TRAEs 93% vs 83%; serious TRAEs 64% vs 29%; dose reductions 71% vs 26%; discontinuations 3.8% vs 2.4%; no treatment-related deaths reported.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "arto",
@@ -2121,7 +2184,7 @@
       "registry_id": "NCT06747338",
       "publication_date": "2026-09-03",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "BCTOP-H-N01",
         "anbenitamab HB1801 HER2-positive breast"
@@ -2163,7 +2226,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/bctop-h-n01/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "big-1-98",
@@ -2420,7 +2485,7 @@
       "registry_id": "NCT01795027",
       "publication_date": "2026-09-11",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "CAPITAL gastric cancer",
         "NCT01795027"
@@ -2462,7 +2527,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/capital/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "capitello-291",
@@ -3424,7 +3491,7 @@
       "registry_id": "NCT06211036",
       "publication_date": "2026-10-24",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "DeLLphi 305",
         "Tarlatamab–durvalumab maintenance",
@@ -3453,7 +3520,9 @@
       "doi_title_verified": true,
       "release_qa_status": "corrected_primary_source_reviewed",
       "nnt_not_calculated_reason": null,
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "destiny-breast-03",
@@ -3529,7 +3598,7 @@
       "registry_id": "NCT05495724",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "DV plus tislelizumab NMIBC",
         "NCT05495724"
@@ -3560,7 +3629,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/disitamab-tislelizumab/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "dissrm",
@@ -4285,7 +4356,7 @@
       "registry_id": "NCT03952091",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Felzartamab-Rd",
         "NCT03952091"
@@ -4314,7 +4385,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/felzartamab-rd/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "feng-2012-hcc",
@@ -4449,7 +4522,7 @@
       "registry_id": "NCT05418842",
       "publication_date": "2026-09-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "FIT4TREAT HNSCC",
         "NCT05418842"
@@ -4478,7 +4551,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/fit4treat/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "flaura",
@@ -4878,7 +4953,7 @@
       "registry_id": "NCT05184712",
       "publication_date": "2024-08-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "HARMONi-A",
         "AK112 plus pemetrexed/carboplatin",
@@ -4933,7 +5008,9 @@
           "doi": "10.1001/jama.2026.7745",
           "pmid": "42307937"
         }
-      ]
+      ],
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "healer",
@@ -5102,7 +5179,10 @@
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
       "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma"
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma",
+      "publication_status": "published",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "hilus",
@@ -5199,7 +5279,7 @@
       "registry_id": "NCT01042379",
       "publication_date": "2026-11-10",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "I-SPY2.2",
         "RT-DXd",
@@ -5230,7 +5310,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/i-spy2-2/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "ibcsg-23-01",
@@ -5664,7 +5746,7 @@
       "registry_id": "NCT05247684",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Ivonescimab perioperative NSCLC",
         "AK112 perioperative"
@@ -5695,7 +5777,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/ivonescimab-perioperative/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "javelin-bladder-100",
@@ -5839,7 +5923,7 @@
       "registry_id": "NCT03740165",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "KEYLYNK-001",
         "ENGOT-OV43",
@@ -5872,7 +5956,9 @@
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "outcome_summary": "PFS HR 0.71 (95% CI 0.61–0.84) in ITT and HR 0.66 (95% CI 0.53–0.83) in PD-L1 CPS ≥10 for pembrolizumab plus olaparib maintenance vs control. Pembrolizumab without olaparib did not improve PFS in CPS ≥10 (HR 0.95, 95% CI 0.77–1.19; P=0.33). Median PFS and mature OS not reported in accessible primary abstract.",
       "safety_summary": "Grade ≥3 TRAEs 66% vs 56% vs 51%; serious TRAEs 24% vs 21% vs 9%; treatment-related deaths 4 vs 1 vs 0 across olaparib, pembrolizumab-alone and control strategies.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "keynote-024",
@@ -6417,7 +6503,7 @@
       "registry_id": "NCT04895358",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "KEYNOTE B49",
         "NCT04895358"
@@ -6447,11 +6533,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/keynote-b49/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Annals Oncol conference/primary abstract provides efficacy and final OS/safety summary, but exact chemotherapy backbone and dose distribution require protocol/supplement.",
+      "release_hold_reason": "Exact investigator-choice chemotherapy dose/schedule and complete arm-level grade 3–5 safety/QoL denominators are not independently verified. Retrieve full article/supplement and protocol.",
       "release_ready": false,
       "outcome_summary": "PFS 6.7 vs 6.0 months; HR 0.74 (95% CI 0.58–0.95), P=0.0089. OS 21.0 vs 22.2 months; HR 1.04 (95% CI 0.81–1.33), P=0.6185.",
       "safety_summary": "Grade ≥3 TRAEs 37.6% vs 32.7%; TRAE discontinuation 11.2% vs 5.4%.",
-      "qol_summary": "No definitive QoL result reported in accessible primary abstract."
+      "qol_summary": "No definitive QoL result reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "keynote-c93",
@@ -6659,7 +6748,7 @@
       "registry_id": "NCT04586231",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "LITESPARK-011",
         "belzutifan lenvatinib post-ICI RCC"
@@ -6689,7 +6778,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/litespark-011/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "litespark-012",
@@ -7142,7 +7233,7 @@
       "registry_id": "NCT05455320",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "MonumenTAL 3",
         "NCT05455320"
@@ -7197,7 +7288,9 @@
             "source_type": "Primary randomized phase III interim analysis"
           }
         ]
-      }
+      },
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "mosaic",
@@ -7500,7 +7593,7 @@
       "registry_id": "NCT04006262",
       "publication_date": "2022-09-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "GERCOR NEONIPIGA",
         "NCT04006262"
@@ -7530,7 +7623,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/neonipiga/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "neosphere",
@@ -8090,7 +8185,7 @@
       "registry_id": "NCT06343948",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Breast 01",
         "izalontamab brengitecan HR-positive breast"
@@ -8119,7 +8214,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-breast01/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "panku-esophagus01",
@@ -8137,7 +8234,7 @@
       "registry_id": "NCT06304974",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Esophagus 01",
         "izalontamab brengitecan ESCC"
@@ -8167,7 +8264,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-esophagus01/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "panku-lung01",
@@ -8185,7 +8284,7 @@
       "registry_id": "NCT06382116",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Lung 01",
         "izalontamab brengitecan EGFR-mutant NSCLC"
@@ -8215,11 +8314,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-lung01/index.html",
       "release_qa_status": "primary_source_reviewed_with_explicit_source_limitation",
-      "release_hold_reason": "Exact chemotherapy component dose and full supplement remain to be checked.",
+      "release_hold_reason": "The page flags incomplete comparator platinum-doublet selection/dose/schedule and incomplete arm-level safety/discontinuation details. Reconcile primary article and registry before changing release readiness.",
       "release_ready": false,
       "outcome_summary": "Median PFS 11.1 vs 5.7 months; HR 0.40 (95% CI 0.31–0.51), P<0.0001. ORR 60.2% vs 34.5%. OS immature; HR 0.66 (95% CI 0.47–0.91), nominal P=0.0058 but prespecified OS boundary not crossed.",
       "safety_summary": "Grade ≥3 TRAEs 78.7% vs 62.1%; dose reductions 60.2% vs 23.3%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "paola-1",
@@ -8270,7 +8372,7 @@
       "registry_id": "NCT04260126",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PDS0101",
         "Versamune HPV",
@@ -8302,7 +8404,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/pds0101-pembrolizumab/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "peace-1",
@@ -8627,7 +8731,7 @@
       "registry_id": "DRKS00024015",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PRO-B electronic patient-reported outcomes",
         "DRKS00024015"
@@ -8656,7 +8760,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/pro-b/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "prodige-23",
@@ -9150,7 +9256,10 @@
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
       "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma"
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma",
+      "publication_status": "published",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "ringside",
@@ -9168,7 +9277,7 @@
       "registry_id": "NCT04871282",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Varegacestat desmoid trial",
         "NCT04871282"
@@ -9198,7 +9307,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/ringside/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "roar-btc",
@@ -10379,7 +10490,7 @@
       "registry_id": "NCT03983057",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Toripalimab pancreatic cancer",
         "NCT03983057"
@@ -10409,11 +10520,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/toripalimab-mfolfirinox/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
+      "release_hold_reason": "Exact modified-FOLFIRINOX component doses/schedule and safety denominators remain incompletely verified. Retrieve primary supplement/protocol; do not infer from other FOLFIRINOX trials.",
       "release_ready": false,
       "outcome_summary": "Median EFS 11.1 vs 9.6 months; HR 0.74 (95% CI 0.60–0.92), P=0.007. Median OS 20.6 vs 17.1 months; HR 0.81 (95% CI 0.63–1.03), not statistically significant.",
       "safety_summary": "Grade ≥3 AEs 47.9% vs 49.2%; grade ≥3 postoperative complications 30.1% vs 25.6%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "tpg-multiply-relapsed-gct-2014",
@@ -10483,7 +10597,7 @@
       "registry_id": "NCT04472598",
       "publication_date": "2026-10-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Navitoclax-ruxolitinib myelofibrosis",
         "NCT04472598"
@@ -10524,7 +10638,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/transform-1/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "trap",
@@ -10554,7 +10670,7 @@
       "registry_id": "NCT06968585",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "T-BD",
         "trastuzumab botidotin",
@@ -10585,7 +10701,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/trastuzumab-botidotin/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "triangle",
@@ -10634,7 +10752,7 @@
       "registry_id": "NCT06132958",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "ENGOT-en23",
         "GOG-3095",
@@ -10667,7 +10785,9 @@
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "outcome_summary": "Median PFS 7.2 vs 3.9 months; HR 0.59 (95% CI 0.50–0.70), P<0.0001. Median OS 19.0 vs 12.1 months; HR 0.68 (95% CI 0.55–0.84), P=0.0001. ORR 35.1% vs 17.3%.",
       "safety_summary": "Grade ≥3 AEs 69% vs 57%; serious AEs 35% vs 32%; treatment-related deaths 3 vs 3.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "trog-03-04-radar",
@@ -10760,7 +10880,7 @@
       "registry_id": "NCT04928807",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "UNION rectal cancer",
         "NCT04928807"
@@ -10815,7 +10935,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/union/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "veip-recurrent-seminoma-miller-1997",
@@ -10959,7 +11081,7 @@
       "registry_id": "NCT04669496",
       "publication_date": "2026-01-08",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "GOLP",
         "ZSAB-neoGOLP",
@@ -10989,7 +11111,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/zsab-neogolp/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     }
   ],
   "last_updated": "2026-11-17",

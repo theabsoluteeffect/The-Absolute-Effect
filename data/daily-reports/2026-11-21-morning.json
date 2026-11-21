@@ -1,0 +1,314 @@
+{
+  "run_id": "absolute-effect-2026-11-21-morning",
+  "timestamp": "2026-11-21T08:00+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE",
+  "repository": {
+    "owner": "theabsoluteeffect",
+    "name": "The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-21-am",
+    "base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c"
+  },
+  "preflight": {
+    "core_sources_retrieved": true,
+    "recursive_tree_entries": 1179,
+    "roster_entries": 467,
+    "unique_underlying_studies": 467,
+    "permanent_trial_page_directories": 460,
+    "roster_path_destinations": 467,
+    "evidence_index_unique_destinations": 468,
+    "missing_index_links": 0,
+    "archive_entries": 16,
+    "current_trial_of_the_day": "PANKU-Esophagus01",
+    "current_trial_of_the_day_date": "2026-11-17",
+    "previous_trial_of_the_day": "GemX",
+    "daily_evidence_files": 30,
+    "daily_report_files": 8,
+    "repair_queue_open_before": 140,
+    "repair_queue_resolved_before": 45,
+    "deferred_negative_items_before": 21,
+    "nccn_guidelines_in_ledger": 8,
+    "nccn_pending_mappings_before": 39,
+    "open_pr3": true,
+    "active_atlas_batch_prs": 0
+  },
+  "page_audit": {
+    "structural_audit_source": "PR #5 final-head Outcome visualization audit artifact 14392546273",
+    "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44224461382",
+    "canonical_pages_structurally_audited": 460,
+    "missing_page_files": 0,
+    "missing_primary_source_links": 0,
+    "missing_renderers": 0,
+    "missing_static_visualizations": 0,
+    "short_pages": 0,
+    "dated_current_practice_context_missing": 52,
+    "outcome_visualization_candidates": 292,
+    "absolute_effect_markup_pages": 168,
+    "actual_pages_inspected": 10,
+    "primary_source_page_reviews_completed": 5,
+    "full_manual_clinical_audit_complete": false,
+    "redirect_stub": "ROSEL (redirect/stub; not a separate canonical study)",
+    "release_detail_holds_in_last_merged_batch": 4
+  },
+  "repair_queue": {
+    "open_before": 140,
+    "resolved_before": 45,
+    "resolved_items_this_run": 11,
+    "closed_issue_ids": [
+      "visual-nnt-checkmate-816-2026-11-15",
+      "keynote-a18-malformed-nnt-and-outcome-values-2026-11-15",
+      "source-link-and-completeness-shape-2026-11-15",
+      "fight-302-primary-metadata-visual-2026-11-15",
+      "multi-endpoint-release-validator-2026-11-16",
+      "index-roster-link-reconciliation-2026-11-16",
+      "batch-30-page-construction-2026-11-17",
+      "release-audit-artifact-inspection-2026-11-17",
+      "candidate-dellphi-305-release-qa-2026-11-16",
+      "candidate-harmoni-a-release-qa-2026-11-16",
+      "post-merge-daily-evidence-merger-root-schema-2026-11-18"
+    ],
+    "open_after": 136,
+    "resolved_after": 57,
+    "dated_context_items_open": 52,
+    "release_holds_open": 4,
+    "full_manual_audit_remaining": 455
+  },
+  "nccn_guidelines_reviewed": [
+    {
+      "title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "doi": "10.6004/jnccn.2026.0051",
+      "pmid": "43019762",
+      "scope": "DPYD testing, adjuvant therapy and metastatic biomarker-specific treatment updates",
+      "access": "PubMed metadata/abstract only; full JNCCN article/reference list 403; not a complete guideline",
+      "exact_reference_mappings": 0
+    },
+    {
+      "title": "NCCN Guidelines Insights: Older Adult Oncology, Version 2.2026",
+      "doi": "10.6004/jnccn.2026.0050",
+      "pmid": "43019760",
+      "scope": "geriatric assessment, shared decision-making, supportive interventions and caregiver needs",
+      "access": "PubMed metadata/abstract only; full JNCCN article/reference list 403; not a complete guideline",
+      "exact_reference_mappings": 0
+    }
+  ],
+  "nccn_exact_reference_mappings": 0,
+  "nccn_full_guideline_access": false,
+  "candidate_screening": {
+    "screened": 33,
+    "new_unique": 16,
+    "primary_identity_metadata_verified": 16,
+    "full_primary_page_verified": 0,
+    "duplicates": 9,
+    "held": 20,
+    "deferred_negative_or_mixed": 3,
+    "excluded": 1,
+    "published": 0,
+    "target": 30,
+    "new_unique_target_gap": 14,
+    "upload_shortfall": 30,
+    "trial_of_day_candidates": [
+      "FIND",
+      "COMPANION-002",
+      "PANOVA-3 follow-up"
+    ],
+    "trial_of_day_selected": null,
+    "trial_of_day_reason": "No new canonical page passed full release QA; current PANKU-Esophagus01 ToD remains within the one-month window."
+  },
+  "uploaded_cases": [],
+  "duplicate_check": [
+    {
+      "candidate": "CAMORAL",
+      "doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing": {
+        "id": "camoral",
+        "trial": "CAMORAL",
+        "path": "trial-pages/camoral/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "HELEN-Trio 011",
+      "doi": "10.1016/j.annonc.2026.10.102",
+      "pmid": "42887596",
+      "registry_id": null,
+      "matched_existing": {
+        "id": "helen-trio-011",
+        "trial": "HELEN-Trio 011",
+        "path": "trial-pages/helen-trio-011/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "DeLLphi-305",
+      "doi": "10.1056/NEJMoa2609482",
+      "pmid": "42929702",
+      "registry_id": "NCT06211036",
+      "matched_existing": {
+        "id": "dellphi-305",
+        "trial": "DeLLphi-305",
+        "path": "trial-pages/dellphi-305/index.html"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "HARMONi-A",
+      "doi": "10.1001/jama.2024.10613",
+      "pmid": "38820549",
+      "registry_id": "NCT05184712",
+      "matched_existing": {
+        "id": "harmoni-a",
+        "trial": "HARMONi-A",
+        "path": "trial-pages/harmoni-a/index.html"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "evERA",
+      "doi": "10.1056/NEJMoa2602457",
+      "pmid": "42814929",
+      "registry_id": "NCT05306340",
+      "matched_existing": {
+        "id": "evera",
+        "trial": "evERA Breast Cancer",
+        "path": "trial-pages/evera/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "Trastuzumab botidotin",
+      "doi": "10.1200/JCO-26-00602",
+      "pmid": "42727044",
+      "registry_id": "NCT06968585",
+      "matched_existing": {
+        "id": "trastuzumab-botidotin",
+        "trial": "Trastuzumab botidotin vs T-DM1",
+        "path": "trial-pages/trastuzumab-botidotin/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "PANKU-Esophagus01",
+      "doi": "10.1001/jama.2026.20250",
+      "pmid": "43018949",
+      "registry_id": "NCT06304974",
+      "matched_existing": {
+        "id": "panku-esophagus01",
+        "trial": "PANKU-Esophagus01",
+        "path": "trial-pages/panku-esophagus01/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "KEYNOTE-B49",
+      "doi": "10.1016/j.annonc.2026.10.1285",
+      "pmid": "42926111",
+      "registry_id": "NCT04895358",
+      "matched_existing": {
+        "id": "keynote-b49",
+        "trial": "KEYNOTE-B49",
+        "path": "trial-pages/keynote-b49/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    },
+    {
+      "candidate": "RINGSIDE",
+      "doi": "10.1200/JCO-26-00725",
+      "pmid": "42848980",
+      "registry_id": "NCT04871282",
+      "matched_existing": {
+        "id": "ringside",
+        "trial": "RINGSIDE",
+        "path": "trial-pages/ringside/"
+      },
+      "same_underlying_study": true,
+      "disposition": "duplicate_excluded"
+    }
+  ],
+  "nnt_qa": {
+    "new_trial_nnt_nnh_calculations": 0,
+    "policy": "No NNT/NNH derived from medians or hazard ratios. Fixed-time absolute effects only.",
+    "existing_pages_reviewed": [
+      "CheckMate 816",
+      "KEYNOTE-A18",
+      "LACC",
+      "SHAPE",
+      "FIGHT-302"
+    ],
+    "findings": {
+      "LACC": "NNH 10 is correctly based on original primary 4.5-year DFS estimates 86.0% vs 96.5% (10.6pp); final analysis 85.0% vs 96.0% (11.1pp) is separately reported.",
+      "FIGHT_302": "NNT 5 at 12 months and 9 at 24 months are based on fixed-time Kaplan–Meier PFS estimates, not medians/HR.",
+      "SHAPE": "No NNT is assigned to the non-inferiority recurrence endpoint; absolute rates are visualized.",
+      "CheckMate816": "pCR/EFS/OS NNTs are tied to stated fixed-time absolute rates.",
+      "KEYNOTE_A18": "NNT is tied to fixed-time OS rates, not HR/median."
+    }
+  },
+  "visualization_qa": {
+    "source_artifact": "14392546273",
+    "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44224461382",
+    "strict_release_validator": "success on final PR #5 head",
+    "outcome_visualization_audit": "success on final PR #5 head",
+    "all_460_canonical_pages_have_static_visualization": true,
+    "missing_renderer_pages": 0,
+    "missing_visual_pages": 0,
+    "manual_visual_value_reviewed_pages": 5,
+    "dated_context_gaps": 52,
+    "release_hold_pages": 4
+  },
+  "roster_index_archive": {
+    "roster_entries": 467,
+    "permanent_trial_pages": 460,
+    "normalized_index_destinations": 468,
+    "roster_destinations": 467,
+    "missing_index_links": 0,
+    "archive_entries": 16,
+    "current_tod": "PANKU-Esophagus01",
+    "previous_tod": "GemX",
+    "daily_evidence_files": 30,
+    "daily_report_files": 8,
+    "roster_batch_status_updated_for": 30,
+    "release_ready_flags": {
+      "undefined": 19,
+      "false": 4,
+      "true": 7
+    },
+    "index_changed": false,
+    "archive_changed": false,
+    "tod_changed": false
+  },
+  "validation": {
+    "local_release_validator": "not run for a new batch because no new page files were built and exact-30 gate was not met",
+    "existing_latest_batch_strict_validator": "success on PR #5 final head",
+    "existing_latest_batch_outcome_audit": "success on PR #5 final head",
+    "branch_push_audit": "pending",
+    "pull_request_opened": false,
+    "merged": false,
+    "production_deployment_verified": false
+  },
+  "branch_commit_sha": "pending",
+  "metadata_commit_sha": "pending",
+  "next_actions": [
+    "Complete page-level primary-source extraction for the 16 new unique candidates; prioritize FIND, COMPANION-002, PANOVA-3 and GIMEMA ALL2820. Extract exact interventions, denominators, endpoint definitions, follow-up, grade 3–5 toxicity and QoL.",
+    "Resolve the four merged-page release holds (ARTEMIS-011, KEYNOTE-B49, PANKU-Lung01, Toripalimab plus modified FOLFIRINOX) from primary supplements/protocols; keep release_ready=false until verified.",
+    "Review the 52 dated current-practice context tasks; map exact NCCN versions/sections/references only when an authorized full guideline or complete Insights reference list is accessible.",
+    "Continue manual primary-source review of the remaining 455 canonical pages; automated structural audit does not close clinical review.",
+    "Verify the production Cloudflare Pages deployment by opening representative live pages; current production deployment remains unverified.",
+    "PR #3 is a stale open maintenance PR based on an older main commit; inspect/rebase or close it before any overlapping merge.",
+    "Resume this incomplete 2026-11-21-am branch on the next run; do not create an overlapping PM publication branch until this branch is completed or explicitly abandoned with its queue preserved."
+  ],
+  "primary_title_corrections": [],
+  "nnt_policy_note": "No NNT/NNH calculated from medians, HRs or conditional percentages without comparable denominators/time horizon.",
+  "recovery_update": "PR #5 was merged on 2026-11-18 and PR #6 repaired the daily evidence merger. The 2026-11-17 pre-merge report is preserved and now has an explicit post-merge reconciliation section.",
+  "branch_status": "unmerged_incomplete; no PR opened because 0/30 new pages passed the complete release gate."
+}

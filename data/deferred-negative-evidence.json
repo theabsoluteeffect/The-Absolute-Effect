@@ -370,10 +370,79 @@
       "nccn_provenance": "not verified — complete NCCN guideline/reference list inaccessible",
       "next_action": "Retain as contrary evidence against routine 12-week ICI de-escalation; do not create a new page unless future guideline recommendations make it essential.",
       "last_reviewed_on": "2026-11-17"
+    },
+    {
+      "trial_id": "belinda",
+      "trial": "BELINDA",
+      "status": "deferred_negative",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Phase III trial did not show an event-free survival advantage for tisagenlecleucel over standard salvage therapy in relapsed/refractory aggressive B-cell lymphoma.",
+      "action": "Retain as contrary evidence; map only to an exact NCCN reference if authorized full guideline/reference list becomes accessible.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1056/NEJMoa2116596",
+          "pmid": "34891223",
+          "url": "https://doi.org/10.1056/NEJMoa2116596"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03570892",
+          "url": "https://clinicaltrials.gov/study/NCT03570892"
+        }
+      ],
+      "status_note": "Added 2026-11-21; no canonical page."
+    },
+    {
+      "trial_id": "danis-2",
+      "trial": "daNIS-2",
+      "status": "deferred_negative",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Phase III study stopped early after interim review for an unfavourable benefit-risk profile.",
+      "action": "Retain as deferred negative; do not create a positive practice page unless a full report changes interpretation.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/j.esmoop.2026.108621",
+          "pmid": "43002828",
+          "url": "https://doi.org/10.1016/j.esmoop.2026.108621"
+        },
+        {
+          "type": "registry",
+          "id": "NCT04935359",
+          "url": "https://clinicaltrials.gov/study/NCT04935359"
+        }
+      ],
+      "status_note": "Added 2026-11-21; early termination."
+    },
+    {
+      "trial_id": "aspen-06",
+      "trial": "ASPEN-06",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Mixed phase II signal: one comparative response objective was met, but the prespecified historical benchmark was not; not a clean practice-changing positive result.",
+      "action": "Retain as mixed/contrary evidence pending full endpoint hierarchy, denominators, safety and confirmatory data; do not classify as a definitive negative.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1038/s41591-026-04700-3",
+          "pmid": "42786305",
+          "url": "https://doi.org/10.1038/s41591-026-04700-3"
+        },
+        {
+          "type": "registry",
+          "id": "NCT05002127",
+          "url": "https://clinicaltrials.gov/study/NCT05002127"
+        }
+      ],
+      "status_note": "Added 2026-11-21; mixed evidence."
     }
   ],
-  "last_run": "2026-11-17-evening",
-  "last_updated": "2026-11-17",
+  "last_run": "absolute-effect-2026-11-21-morning",
+  "last_updated": "2026-11-21",
   "last_run_date": "2026-11-17",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026."
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative."
 }
