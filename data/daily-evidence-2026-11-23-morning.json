@@ -555,7 +555,7 @@
       "page": "trial-pages/checkmate-816/index.html",
       "sources": [
         "https://pubmed.ncbi.nlm.nih.gov/35403841/",
-        "https://pubmed.ncbi.nlm.nih.gov/40349252/"
+        "https://pubmed.ncbi.nlm.nih.gov/40454642/"
       ],
       "visual": "Visible CSS bars checked; absolute differences 21.8, 18.5, 10.4 pp match pCR/EFS/OS.",
       "effect": "NNT 5, 6, 10 respectively."
@@ -622,5 +622,20 @@
     "Verify current NCCN versions and exact citations; do not infer provenance.",
     "Build exactly 30 complete pages, run local release validator, open PR, wait all checks, then merge only if every gate passes."
   ],
-  "metadata_commit_sha": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
+  "metadata_commit_sha": "c0712c1119e2603d6720d66c7379dc36ee9b108c",
+  "post_run_source_corrections": [
+    {
+      "date": "2026-11-23",
+      "trial_id": "checkmate-816",
+      "issue": "Incorrect PubMed identifier in manual review provenance",
+      "incorrect_pmid": "40349252",
+      "verified_pmid": "40454642",
+      "primary_doi": "10.1056/NEJMoa2502931",
+      "verification": "PubMed PMID 40454642 resolves to the exact 2025 NEJM CheckMate 816 overall-survival report; PMID 40349252 resolves to an unrelated ApoE/post-stroke cohort. The canonical trial page was re-read and contains the correct DOI link; no page content change was required.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/40454642/",
+        "https://doi.org/10.1056/NEJMoa2502931"
+      ]
+    }
+  ]
 }
