@@ -424,5 +424,6 @@
     "qualifier": "Provisional underlying-study count based on roster; 6 shared-anchor entries and full alias reconciliation remain open."
   },
   "evidence_file": "data/daily-evidence-2026-11-23-evening.json",
-  "report_commit_sha": null
+  "report_commit_sha": "90641859efc58bc2877e79d9c2504af7025eac07",
+  "report_commit_sha_note": "SHA of the commit that first created this report file; current branch head is reported separately in the ChatGPT completion message."
 }
