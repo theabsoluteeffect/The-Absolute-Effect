@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T19:28:00+05:30",
+  "updated_at": "2026-11-23",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -3603,6 +3603,25 @@
       ],
       "action": "Retrieve official ESMO abstract/slides or peer-reviewed final-analysis report; independently verify 7-year DFS/OS, subgroup denominators, CIs, safety and maturity before updating page.",
       "next_action": "Obtain full ESMO abstract 3589RO or final peer-reviewed publication; do not import seven-year outcomes from secondary summaries."
+    },
+    {
+      "issue_id": "repair-litespark-005-browser-render-qa-2026-11-23",
+      "trial_id": "litespark-005",
+      "trial": "LITESPARK-005",
+      "page_path": "trial-pages/litespark-005/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-23",
+      "evidence": "New page is staged on atlas-batch/2026-11-23-am. Static 18-month PFS/OS/ORR charts and the structured PFS absolute-effect record were source-checked, but the branch preview has not yet been independently rendered in a browser.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39167807/",
+        "https://pubmed.ncbi.nlm.nih.gov/40112850/",
+        "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev/trial-pages/litespark-005/"
+      ],
+      "action": "Verify the actual branch-preview rendering, chart widths/labels, accessible static visualization and NNT widget before the batch PR.",
+      "next_action": "Open the branch preview after Cloudflare deployment; confirm 18-month PFS NNT7 and no OS/ORR NNT; keep open if preview cannot be accessed."
     }
   ],
   "resolved_items": [
@@ -4639,6 +4658,24 @@
       "verification": "Visible HTML charts have finite non-zero inline widths and accessible group labels; source values checked. Browser-rendered/live deployment QA is not claimed and remains open in parent item.",
       "action": "Replace zero-width/misaligned markup with source-grounded static charts.",
       "next_action": "Parent item remains open for browser-rendered QA and outstanding source detail."
+    },
+    {
+      "issue_id": "keynote-564-registry-link-2026-11-23",
+      "trial_id": "keynote-564",
+      "trial": "KEYNOTE-564",
+      "page_path": "trial-pages/keynote-564/index.html",
+      "category": "missing_registry_link",
+      "severity": "low",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence": "The canonical page's primary-source list lacked the ClinicalTrials.gov registry link although the master roster already recorded NCT03142334. The registry identifier was checked against the existing roster record and the official study URL.",
+      "evidence_source": [
+        "https://clinicaltrials.gov/study/NCT03142334",
+        "https://pubmed.ncbi.nlm.nih.gov/34407342/"
+      ],
+      "verification": "Re-read the updated canonical HTML; the NCT03142334 link is present in the Primary sources list and matches the roster registry_id. This does not close the separate KEYNOTE-564 seven-year conference-source task.",
+      "action": "Add the verified ClinicalTrials.gov registry link to the canonical page.",
+      "next_action": "None for this registry-link subtask; retain the separate final-analysis and browser-rendered QA items."
     }
   ],
   "run_audit_log": [
@@ -4735,6 +4772,24 @@
       "outcome_visual_audit_run_id": 45192486550,
       "strict_release_validator_errors": 0,
       "preview_deployment_success": true
+    },
+    {
+      "run_date": "2026-11-23",
+      "cycle": "evening",
+      "run_id": "absolute-effect-2026-11-23-evening-run-11",
+      "branch": "atlas-batch/2026-11-23-am",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "distinct_existing_pages_manually_inspected_this_run": 0,
+      "existing_page_subtasks_rechecked": 1,
+      "primary_source_reviews": 1,
+      "page_html_repairs": 1,
+      "static_visual_repairs": 0,
+      "queue_items_closed": 1,
+      "queue_items_opened": 1,
+      "staged_new_trial_pages": 1,
+      "uploaded_pages": 0,
+      "status": "INCOMPLETE — 0/30 uploaded",
+      "notes": "KEYNOTE-564 registry link added after checking the existing roster NCT03142334 and official registry; separate final-analysis task remains open. LITESPARK-005 staged with verified primary DOI/title, registry, 18-month PFS absolute effect/NNT7 and PRO analysis; browser-rendered preview QA open. Three negative/contrary trials added to deferred queue. No PR or merge."
     }
   ],
   "previous_partial_runs": [
@@ -4831,12 +4886,12 @@
     "branch_preview_deployed": true
   },
   "last_updated": "2026-11-23",
-  "last_run": "absolute-effect-2026-11-23-evening",
+  "last_run": "absolute-effect-2026-11-23-evening-run-11",
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 193,
-    "resolved_items": 66,
-    "note": "2026-11-23 evening: 14 existing pages manually inspected; four canonical pages updated (R-ALPS, HEALER, KEYNOTE-C93, KEYNOTE-564). Three static chart defects repaired; KEYNOTE-564 five-year peer-reviewed follow-up attached. GitHub Actions strict release validator and outcome visual audit passed (460 canonical pages found, zero missing, zero missing renderer, 52 missing dated-context flags). Branch preview deployment succeeded; representative page fetch was not independently verified. Browser-rendered QA and full clinical audit remain incomplete. Seven new unique candidates held; two deferred; 14 duplicates/follow-ups excluded. Main unchanged.",
+    "open_items": 194,
+    "resolved_items": 67,
+    "note": "2026-11-23 evening continuation: prior 14-page manual review and four page repairs retained. One KEYNOTE-564 registry-link subtask independently verified and closed; the separate seven-year abstract and browser QA items remain open. One LITESPARK-005 page and roster entry are staged on the active branch (not uploaded to main); 23 additional candidate decisions appended. Branch preview/browser-rendered QA pending; no PR or merge; main unchanged.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52
