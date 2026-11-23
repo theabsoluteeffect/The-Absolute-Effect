@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-23T19:26:14+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
-    "generated_at": "2026-11-16T07:59:04+05:30",
-    "audited_head": "896d844244f70af8e9dfe3989e677f90f8fa6942",
+    "generated_at": "2026-11-23T19:26:14+05:30",
+    "audited_head": "4e8ff24c96404572e064d67c469bd7eeb72b605b",
     "status": "PARTIAL",
     "counts": {
       "roster_pages_found": 407,
@@ -17,7 +17,7 @@
       "short_pages": 0,
       "missing_primary_source": 0
     },
-    "note": "Manual source/page review of all nine outcome-visual flags confirmed existing accessible CSS bar charts or status graphics; they were false positives from a data-outcome-hook-only heuristic. CheckMate 76K and POUT short pages were expanded from primary sources. Dated current-practice flags remain open pending full guideline freshness checks.",
+    "note": "Four additional canonical pages manually re-read against primary publications/protocols. Three static chart defects repaired; KEYNOTE-564 five-year follow-up attached. Browser-rendered QA and full clinical audit remain incomplete.",
     "audited_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "roster_entries_before": 437,
     "canonical_trial_page_directories_before": 431,
@@ -44,8 +44,8 @@
     "branch_daily_evidence_files": 28,
     "branch_daily_evidence_records": 388,
     "manual_existing_pages_rechecked": 5,
-    "remaining_existing_pages_for_manual_audit": 426,
-    "audited_on": "2026-11-21",
+    "remaining_existing_pages_for_manual_audit": 442,
+    "audited_on": "2026-11-23",
     "recursive_tree_entries": 1179,
     "roster_entries": 467,
     "canonical_trial_page_directories": 460,
@@ -65,13 +65,15 @@
     "pages_missing_dated_context": 52,
     "outcome_visualization_candidates": 292,
     "absolute_effect_markup_pages": 168,
-    "manual_pages_inspected": 10,
-    "primary_source_manually_verified_pages": 5,
+    "manual_pages_inspected": 18,
+    "primary_source_manually_verified_pages": 9,
     "release_hold_pages_in_last_merged_batch": 4,
     "redirect_stub_files": [
       "trial-pages/rosel/index.html"
     ],
-    "production_deployment_verified": false
+    "production_deployment_verified": false,
+    "manual_pages_inspected_this_run": 4,
+    "primary_source_manually_verified_this_run": 4
   },
   "open_items": [
     {
@@ -3507,14 +3509,15 @@
       "severity": "high",
       "status": "open",
       "created_on": "2026-11-23",
-      "evidence": "Canonical HTML contains two zero-width outcome bars (width:0%) and misaligned labels/values; both intervention and comparator labels repeat 15.1 while the first displayed value is 4.2. Page omits exact arm doses/schedules and the 3-arm stage-1/2 design details. Primary paper DOI 10.1001/jamaoncol.2026.3918, PMID 42955021, registry NCT04325763. Median PFS/HRs alone do not justify NNT.",
+      "evidence": "Static charts show stage-1 median PFS 15.1/9.7/4.2 months, pooled PFS 17.4/11.2 months and grade 3–5 TRAEs 48.8/29.4/19.7%. JAMA primary DOI 10.1001/jamaoncol.2026.3918 (PMID 42955021) and protocol DOI 10.21037/tlcr-24-362 checked. Protocol verifies TQB2450 1,200 mg IV Q3W and anlotinib 8 mg PO days 1–14 Q3W for up to 36 cycles. No NNT from medians/HRs. Browser rendering and remaining subgroup/follow-up/QoL supplement review pending.",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42955021/",
         "https://doi.org/10.1001/jamaoncol.2026.3918",
+        "https://tlcr.amegroups.org/article/view/92195/html",
         "https://clinicaltrials.gov/study/NCT04325763"
       ],
-      "action": "Replace malformed bars with a source-grounded 3-arm median-PFS visual (15.1, 9.7, 4.2 months) and complete exact interventions, doses, schedules, randomization stages, follow-up, grade 3–5 toxicity, QoL and current-practice context. Do not invent NNT from medians or HRs.",
-      "next_action": "Retrieve full JAMA article/supplement and registry; implement visual repair on a release branch and run browser-rendered QA."
+      "action": "Retain corrected static charts and protocol-derived regimen; finish full-text/supplement extraction and verify browser rendering.",
+      "next_action": "Check JAMA full text/supplement and registry for stratification, follow-up and detailed safety/subgroup data; verify live browser rendering."
     },
     {
       "issue_id": "repair-healer-visual-and-absolute-effect-2026-11-23",
@@ -3526,14 +3529,14 @@
       "severity": "high",
       "status": "open",
       "created_on": "2026-11-23",
-      "evidence": "Canonical HTML has zero-width bars and misaligned labels/values despite valid source-reported effects. The page's absolute-effect element gives 24.1 pp/NNT 5 and 11.5 pp/NNH 9 but lacks explicit endpoint/time-horizon metadata. Primary NEJM DOI 10.1056/NEJMoa2610345, PMID 42929681, registry NCT05838066; 24-month PFS 58.5% vs 34.4% and grade ≥3 AEs 45.9% vs 34.4%. NNT 5 and NNH 9 arithmetic is correct when labelled with those endpoints and the appropriate follow-up window.",
+      "evidence": "Static PFS/ORR/grade ≥3 AE charts added from primary NEJM abstract. 24-month PFS58.5% vs34.4% (HR0.46, 95% CI0.37–0.56; P<.001); NNT5. Grade ≥3 AEs204/444 (45.9%) vs151/439 (34.4%); 11.5-point excess shown descriptively. Unsupported NNH9 removed because the abstract does not specify a common fixed-time toxicity horizon. Exact dose/schedule and supplement remain unavailable; no regimen inferred.",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42929681/",
         "https://doi.org/10.1056/NEJMoa2610345",
         "https://clinicaltrials.gov/study/NCT05838066"
       ],
-      "action": "Repair the bars and labels; add structured endpoint/time horizon to the absolute-effect record (24-month PFS; grade ≥3 treatment-emergent AEs over the reported safety follow-up); complete exact dosing, stratification, follow-up, safety and QoL.",
-      "next_action": "Retrieve NEJM supplement/protocol and registry; implement the structured effect and visible bars, then rerun outcome visualization audit."
+      "action": "Keep corrected PFS NNT and separate toxicity chart; retrieve NEJM protocol/supplement or authoritative registry arm details.",
+      "next_action": "Obtain NEJM supplement or registry arm details for exact doses, stratification, full safety/QoL; browser-rendered QA remains open."
     },
     {
       "issue_id": "repair-keynote-c93-visual-and-absolute-effect-2026-11-23",
@@ -3545,33 +3548,15 @@
       "severity": "high",
       "status": "open",
       "created_on": "2026-11-23",
-      "evidence": "Canonical HTML has zero-width PFS bars. The page's 27.0 pp benefit/NNT 4 is consistent with the 12-month PFS difference (67% vs 40%) but the data-effect element lacks explicit endpoint/time-horizon fields. Primary DOI 10.1016/S0140-6736(26)02095-7, PMID 42933458, registry NCT05173987.",
+      "evidence": "Static 12-/36-month PFS, median PFS and grade ≥3 TRAE charts added. Full primary abstract checked via University of Helsinki Research Portal and PubMed: 12-month PFS67% vs40%, NNT4; median PFS38.2 vs8.4 months, HR0.57 (95% CI0.42–0.79; P=.0002); 36-month PFS53% vs30%; grade ≥3 TRAEs27/149 (18%) vs73/144 (51%). OS boundary not met. Doses and stratification added; QoL results absent from accessible abstract. Browser rendering and supplement review pending.",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/42933458/",
         "https://doi.org/10.1016/S0140-6736(26)02095-7",
+        "https://researchportal.helsinki.fi/en/publications/first-line-pembrolizumab-versus-carboplatin-plus-paclitaxel-in-pa/",
         "https://clinicaltrials.gov/study/NCT05173987"
       ],
-      "action": "Repair visible 12-month PFS bars and labels; add endpoint/time horizon and source-grounded rates to the structured absolute-effect record; complete full safety, discontinuation, QoL, follow-up and subgroup extraction.",
-      "next_action": "Retrieve the full Lancet article/supplement and implement the visual/metadata repair before release."
-    },
-    {
-      "issue_id": "repair-keynote-564-five-year-followup-2026-11-23",
-      "trial_id": "keynote-564",
-      "trial": "KEYNOTE-564",
-      "page_path": "trial-pages/keynote-564/index.html",
-      "issue_type": "missing_followup_publication_and_outcome_update",
-      "category": "primary_followup_update",
-      "severity": "high",
-      "status": "open",
-      "created_on": "2026-11-23",
-      "evidence": "The canonical page does not include the 2026 five-year follow-up publication (DOI 10.1016/j.annonc.2026.08.006, PMID 42648402; same underlying NCT03142334 study). Five-year DFS 60.9% vs 52.2% (8.7 pp; approximate NNT 12) and OS 87.7% vs 82.3% (5.4 pp; approximate NNT 19); HR DFS 0.71 (95% CI 0.59–0.86), HR OS 0.66 (95% CI 0.48–0.90). These NNTs use same-horizon absolute KM rates, not HRs. The page's existing four-year benefit/harm values must remain separately labelled rather than overwritten.",
-      "source_urls": [
-        "https://pubmed.ncbi.nlm.nih.gov/42648402/",
-        "https://doi.org/10.1016/j.annonc.2026.08.006",
-        "https://clinicaltrials.gov/study/NCT03142334"
-      ],
-      "action": "Attach the five-year follow-up to the existing KEYNOTE-564 page; add separate five-year DFS and OS visuals/effect records; preserve earlier endpoint/time-horizon data and verify safety remains unchanged rather than inventing new NNH.",
-      "next_action": "Retrieve full Annals of Oncology article and supplement; add related publication metadata and verify all five-year KM rates and subgroup/safety data."
+      "action": "Keep corrected charts and 12-month PFS NNT; retrieve supplementary QoL/subgroup data if available and verify browser-rendered output.",
+      "next_action": "Retrieve full Lancet supplement for QoL/subgroups; verify live browser rendering."
     },
     {
       "issue_id": "audit-manual-review-count-reconciliation-2026-11-23",
@@ -3590,6 +3575,24 @@
       ],
       "action": "Keep aggregate counts unchanged until the historical manual-review log can be reconciled from source commits; append dated per-run review addenda and distinguish static markup inspection from browser-rendered QA.",
       "next_action": "Reconstruct manual review counts from dated reports/commits; do not bulk-close visual or clinical audit items based on static checks."
+    },
+    {
+      "issue_id": "repair-keynote-564-esmo-final-7y-abstract-2026-11-23",
+      "trial_id": "keynote-564",
+      "trial": "KEYNOTE-564",
+      "page_path": "trial-pages/keynote-564/index.html",
+      "issue_type": "conference_followup_source_access",
+      "category": "followup_evidence_verification",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-23",
+      "evidence": "Official Merck ESMO 2026 programme announcement lists final protocol-prespecified KEYNOTE-564 analysis (presentation 3589RO, 25 October 2026). Full abstract text was not retrieved; secondary summaries report seven-year rates but those values are not imported.",
+      "source_urls": [
+        "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/",
+        "https://oncodaily.com/genitourinary-oncology/keynote-564-esmo"
+      ],
+      "action": "Retrieve official ESMO abstract/slides or peer-reviewed final-analysis report; independently verify 7-year DFS/OS, subgroup denominators, CIs, safety and maturity before updating page.",
+      "next_action": "Obtain full ESMO abstract 3589RO or final peer-reviewed publication; do not import seven-year outcomes from secondary summaries."
     }
   ],
   "resolved_items": [
@@ -4546,6 +4549,86 @@
         "https://doi.org/10.1056/NEJMoa2502931"
       ],
       "verification": "PubMed title/DOI/PMID cross-check completed; old PMID verified unrelated. CheckMate 816 canonical page re-read; visible pCR/EFS/OS bars and NNTs 5/6/10 match cited trial values."
+    },
+    {
+      "issue_id": "repair-keynote-564-five-year-followup-2026-11-23",
+      "trial_id": "keynote-564",
+      "trial": "KEYNOTE-564",
+      "page_path": "trial-pages/keynote-564/index.html",
+      "issue_type": "missing_followup_publication_and_outcome_update",
+      "category": "primary_followup_update",
+      "severity": "high",
+      "status": "resolved",
+      "created_on": "2026-11-23",
+      "evidence": "Canonical page updated with peer-reviewed five-year follow-up DOI 10.1016/j.annonc.2026.08.006, PMID 42648402. Fourth prespecified interim analysis; 994 patients (496 vs498), median follow-up70 months; 5-year DFS60.9% vs52.2% (HR0.71, 95% CI0.59–0.86; approximate NNT12) and 5-year OS87.7% vs82.3% (HR0.66, 95% CI0.48–0.90; approximate NNT19). 24-month DFS NNT11 preserved. Unsupported NNH7 removed. ESMO final-analysis listing linked, but seven-year data not imported.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+        "https://doi.org/10.1016/j.annonc.2026.08.006",
+        "https://clinicaltrials.gov/study/NCT03142334"
+      ],
+      "action": "Attach five-year follow-up and endpoint/horizon-specific absolute effects; remove unsupported NNH.",
+      "next_action": "Closed for five-year peer-reviewed update; separate open task tracks ESMO 2026 final-analysis abstract retrieval.",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+        "https://doi.org/10.1016/j.annonc.2026.08.006",
+        "https://doi.org/10.1056/NEJMoa2106391",
+        "https://doi.org/10.1056/NEJMoa2312695"
+      ],
+      "verification": "PubMed/publisher title, DOI, registry and endpoint values checked; five-year data added to canonical page and structured absolute_effect. Browser-rendered QA remains a separate open task."
+    },
+    {
+      "issue_id": "static-visual-r-alps-2026-11-23",
+      "trial_id": "r-alps",
+      "trial": "R-ALPS",
+      "page_path": "trial-pages/r-alps/index.html",
+      "category": "static_visual_markup_repair",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence": "Zero-width/misaligned bars replaced with visible accessible static HTML charts for stage-1 median PFS, pooled active comparison and grade 3–5 TRAEs; finite widths/source values checked against JAMA abstract and protocol.",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+        "https://tlcr.amegroups.org/article/view/92195/html"
+      ],
+      "verification": "Visible HTML charts have finite non-zero inline widths and accessible group labels; source values checked. Browser-rendered/live deployment QA is not claimed and remains open in parent item.",
+      "action": "Replace zero-width/misaligned markup with source-grounded static charts.",
+      "next_action": "Parent item remains open for browser-rendered QA and outstanding source detail."
+    },
+    {
+      "issue_id": "static-visual-healer-2026-11-23",
+      "trial_id": "healer",
+      "trial": "HEALER",
+      "page_path": "trial-pages/healer/index.html",
+      "category": "static_visual_markup_repair",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence": "Static accessible charts added for 24-month PFS, ORR and grade ≥3 AEs; NNT5 retained; unsupported NNH9 removed.",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/42929681/"
+      ],
+      "verification": "Visible HTML charts have finite non-zero inline widths and accessible group labels; source values checked. Browser-rendered/live deployment QA is not claimed and remains open in parent item.",
+      "action": "Replace zero-width/misaligned markup with source-grounded static charts.",
+      "next_action": "Parent item remains open for browser-rendered QA and outstanding source detail."
+    },
+    {
+      "issue_id": "static-visual-keynote-c93-2026-11-23",
+      "trial_id": "keynote-c93",
+      "trial": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+      "page_path": "trial-pages/keynote-c93/index.html",
+      "category": "static_visual_markup_repair",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence": "Static accessible charts added for 12-/36-month PFS, median PFS and grade ≥3 TRAEs; NNT4 explicitly tied to 12-month PFS.",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+        "https://researchportal.helsinki.fi/en/publications/first-line-pembrolizumab-versus-carboplatin-plus-paclitaxel-in-pa/"
+      ],
+      "verification": "Visible HTML charts have finite non-zero inline widths and accessible group labels; source values checked. Browser-rendered/live deployment QA is not claimed and remains open in parent item.",
+      "action": "Replace zero-width/misaligned markup with source-grounded static charts.",
+      "next_action": "Parent item remains open for browser-rendered QA and outstanding source detail."
     }
   ],
   "run_audit_log": [
@@ -4620,6 +4703,24 @@
       },
       "manual_page_reviews": 4,
       "status": "INCOMPLETE — no publication gate opened"
+    },
+    {
+      "run_date": "2026-11-23",
+      "cycle": "evening",
+      "branch": "atlas-batch/2026-11-23-am",
+      "branch_head_before_repairs": "4e8ff24c96404572e064d67c469bd7eeb72b605b",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "manual_page_reviews": 4,
+      "manual_pages_inspected_today": 18,
+      "primary_source_reviews": 4,
+      "page_html_repairs": 4,
+      "static_visual_repairs": 3,
+      "followup_updates": 1,
+      "queue_items_closed": 4,
+      "queue_items_opened": 1,
+      "uploaded_pages": 0,
+      "status": "INCOMPLETE — 0/30 uploaded",
+      "notes": "Existing-page repairs only; no new trial page added to main. Browser-rendered QA pending."
     }
   ],
   "previous_partial_runs": [
@@ -4694,29 +4795,35 @@
   ],
   "last_partial_run": {
     "date": "2026-11-23",
-    "cycle": "morning",
+    "cycle": "evening",
     "branch": "atlas-batch/2026-11-23-am",
     "status": "INCOMPLETE — 0/30 uploaded",
-    "carried_forward_new_unique_candidates": 30,
-    "new_unique_candidates": 15,
-    "held": 15,
-    "contrary_deferred": 1,
-    "duplicates": 0,
+    "screened": 23,
+    "new_unique_candidates": 9,
+    "fully_verified_for_publication": 0,
+    "held": 7,
+    "deferred_contrary_evidence": 2,
+    "duplicates_or_followups": 14,
     "uploaded": 0,
-    "manual_page_reviews": 4,
-    "next_action": "Complete primary-source extraction and page build; fix candidate-decision ingestion safety before PR."
+    "manual_page_reviews_this_run": 4,
+    "manual_pages_inspected_today": 18,
+    "repairs": 4,
+    "queue_open_after": 193,
+    "queue_resolved_after": 66,
+    "next_action": "Complete primary-source extraction for seven held candidates; verify browser rendering; do not open PR until an exact-30 batch passes all checks."
   },
   "last_updated": "2026-11-23",
-  "last_run": "absolute-effect-2026-11-23-morning",
-  "generated_at": "2026-11-17T20:00:32+05:30",
+  "last_run": "absolute-effect-2026-11-23-evening",
+  "generated_at": "2026-11-23T19:26:14+05:30",
   "summary": {
     "open_items": 193,
-    "resolved_items": 62,
-    "note": "2026-11-23: 467 roster entries, 460 canonical content directories, one redirect-only stub, 468 normalized evidence-index destinations and zero missing roster links. Four additional page/source/visual checks completed; 52 dated-context tasks remain open. Fifteen new unique candidates held; OpACIN deferred as contrary evidence; candidate-decision ingestion safety issue opened. 2026-11-23 evening continuation: 14 canonical pages manually inspected (4 flagged reconciliation pages plus 10 recent/high-priority pages); 3 zero-width/misaligned outcome visualizations (R-ALPS, HEALER, KEYNOTE-C93) and 1 missing five-year follow-up (KEYNOTE-564) queued. Seven new unique candidates held for full primary extraction; CAPTAIN-1st and CONTINUUM deferred as positive but not currently preferred/available; 14 duplicates/follow-ups excluded. CheckMate 816 PMID corrected to 40454642. Aggregate audit counters retained pending reconciliation.",
+    "resolved_items": 66,
+    "note": "2026-11-23: 467 roster entries, 460 canonical content directories, one redirect-only stub, 468 normalized evidence-index destinations and zero missing roster links. Evening continuation: 18 pages manually inspected across morning/evening cycles; four page HTML updates applied (R-ALPS, HEALER, KEYNOTE-C93, KEYNOTE-564). Three static chart defects repaired; KEYNOTE-564 five-year peer-reviewed follow-up attached and separate ESMO 2026 final-analysis source-access task opened. Browser-rendered QA and full clinical audit remain incomplete. Seven new unique candidates held; two contrary/non-preferred candidates deferred; 14 duplicates/follow-ups excluded. Main unchanged.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52
   },
-  "updated_on": "2026-11-21",
-  "last_run_date": "2026-11-23"
+  "updated_on": "2026-11-23T19:26:14+05:30",
+  "last_run_date": "2026-11-23",
+  "last_run_cycle": "evening"
 }

@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 17,
-  "last_quality_check": "2026-11-14",
+  "last_quality_check": "2026-11-23 evening — 18-page partial manual source/visual audit; four canonical pages updated; full clinical audit and browser-rendered QA incomplete.",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-23 evening — 14-page partial manual visual/source audit; 3 visual defects and 1 missing follow-up queued; full clinical audit incomplete.",
+    "last_quality_check": "2026-11-23 evening — 18-page partial manual source/visual audit; four canonical pages updated; full clinical audit and browser-rendered QA incomplete.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -1762,7 +1762,18 @@
     "manual_review_count_reconciliation_required": true,
     "manual_review_count_reconciliation_note": "Aggregate manual review counters (manual_page_reviews_total=8; pages_manually_inspected=14) do not reconcile with the 4-entry manual_review_log. Evening manual reviews are preserved separately; do not claim full audit completion.",
     "last_evening_review_date": "2026-11-23",
-    "last_evening_review_status": "INCOMPLETE — 14 pages inspected; 3 visualization repairs and 1 follow-up update queued; no full audit completion."
+    "last_evening_review_status": "INCOMPLETE — 14 pages inspected; 3 visualization repairs and 1 follow-up update queued; no full audit completion.",
+    "manual_pages_inspected_this_run": 4,
+    "manual_pages_inspected_on_2026_11_23": 18,
+    "primary_source_reviews_this_run": 4,
+    "browser_rendered_qa_complete": false,
+    "pages_updated_this_run": [
+      "r-alps",
+      "healer",
+      "keynote-c93",
+      "keynote-564"
+    ],
+    "keynote564_five_year_followup_attached": true
   },
   "trials": [
     {
@@ -5333,7 +5344,7 @@
       "site": "Breast Cancer",
       "discipline": "Medical Oncology",
       "setting": "Advanced / Metastatic",
-      "setting_detail": "24-month PFS 58.5% vs 34.4%; HR 0.46 (95% CI 0.37–0.56; P<0.001); absolute gain 24.1 points; NNT 5. ORR 87.6% vs 73.4%.",
+      "setting_detail": "24-month PFS: 58.5% with anbenitamab plus HB1801 and 34.4% with THP; HR 0.46 (95% CI 0.37–0.56; P<.001); absolute benefit 24.1 points; NNT 5. ORR: 87.6% and 73.4%. Grade ≥3 AEs: 45.9% and 34.4%; no NNH without a fixed-time safety horizon.",
       "question": "What is the clinical effect of HEALER in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/healer/",
       "path": "trial-pages/healer/",
@@ -5345,19 +5356,16 @@
         "NCT05838066",
         "DOI 10.1056/NEJMoa2610345"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
+      "freshness_review_status": "Primary NEJM report and PubMed record reviewed 2026-11-23; exact dose schedule/supplement and current full NCCN Breast guideline not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded PFS, ORR and grade ≥3 AE charts added; 24-month PFS NNT5 structured; unsupported NNH9 removed. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
+      "quality_check_date": "2026-11-23",
       "absolute_effect": {
         "endpoint": "Progression-free survival",
         "horizon": "24 months",
         "benefit_percentage_points": 24.1,
         "nnt": 5,
-        "harm_endpoint": "Grade ≥3 adverse events",
-        "harm_percentage_points": 11.5,
-        "nnh": 9,
-        "notes": "Descriptive NNH based on the between-arm difference in grade ≥3 AEs."
+        "notes": "24-month PFS 58.5% vs 34.4%; 1/0.241=4.15, rounded up to 5. Grade ≥3 AEs 45.9% vs 34.4% are shown separately; no NNH is calculated because the accessible abstract does not report a common fixed-time toxicity horizon."
       },
       "primary_title": "Anbenitamab plus HB1801 for HER2-Positive Advanced Breast Cancer",
       "pmid": "42929681",
@@ -6637,9 +6645,9 @@
       "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
       "path": "trial-pages/keynote-564/",
-      "freshness_review_status": "2026-11-23: five-year follow-up identified; page update pending; see repair-queue item repair-keynote-564-five-year-followup-2026-11-23",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Adjuvant",
+      "freshness_review_status": "2026-11-23: five-year peer-reviewed follow-up verified and attached; official ESMO 2026 final-analysis presentation listing identified but full abstract text not retrieved, so seven-year numeric outcomes are not integrated. Current full NCCN Kidney Cancer guideline/reference list not verified; no category claimed.",
+      "outcome_visual_review_status": "Static source-grounded 24-month and five-year DFS/OS and toxicity charts added; NNT11/12/19 structured by endpoint/horizon; prior NNH7 removed. Browser-rendered/live QA pending.",
+      "setting_detail": "24-month DFS 77.3% with pembrolizumab and 68.1% with placebo (NNT 11); 5-year DFS 60.9% and 52.2% (NNT 12); 5-year OS 87.7% and 82.3% (NNT 19). Five-year analysis: median follow-up 70 months; DFS HR 0.71 (95% CI 0.59–0.86), OS HR 0.66 (95% CI 0.48–0.90).",
       "primary": "10.1056/NEJMoa2106391",
       "primary_title": "Adjuvant Pembrolizumab after Nephrectomy in Renal-Cell Carcinoma",
       "pmid": "34407342",
@@ -6656,8 +6664,38 @@
           "doi": "10.1016/j.annonc.2026.08.006",
           "pmid": "42648402",
           "date": "2026-08-26"
+        },
+        {
+          "title": "Final protocol-prespecified analysis of the phase 3 KEYNOTE-564 trial of adjuvant pembrolizumab versus placebo in clear cell renal cell carcinoma",
+          "date": "2026-10-25",
+          "type": "Official ESMO presentation listing only; full abstract text not retrieved; no seven-year outcomes integrated",
+          "url": "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/"
         }
-      ]
+      ],
+      "absolute_effect": {
+        "endpoint": "Disease-free survival",
+        "horizon": "5 years",
+        "benefit_percentage_points": 8.7,
+        "nnt": 12,
+        "notes": "5-year KM DFS 60.9% vs 52.2%; 1/0.087=11.49, rounded up to 12. Fourth prespecified interim analysis; median follow-up 70 months.",
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "5 years",
+            "benefit_percentage_points": 5.4,
+            "nnt": 19,
+            "notes": "5-year KM OS 87.7% vs 82.3%; 1/0.054=18.52, rounded up to 19."
+          },
+          {
+            "endpoint": "Disease-free survival",
+            "horizon": "24 months",
+            "benefit_percentage_points": 9.2,
+            "nnt": 11,
+            "notes": "Original interim analysis: 24-month DFS 77.3% vs 68.1%; 1/0.092=10.87, rounded up to 11."
+          }
+        ]
+      },
+      "quality_check_date": "2026-11-23"
     },
     {
       "id": "keynote-671",
@@ -6881,7 +6919,7 @@
       "site": "Endometrial Cancer",
       "discipline": "Medical Oncology",
       "setting": "Advanced / Metastatic",
-      "setting_detail": "Median PFS 38.2 vs 8.4 months; HR 0.57 (95% CI 0.42–0.79; P=0.0002). 12-month PFS 67% vs 40% (NNT 4). OS boundary not met (HR 0.77; P=0.10).",
+      "setting_detail": "Median PFS: 38.2 months with pembrolizumab and 8.4 months with carboplatin-paclitaxel; HR 0.57 (95% CI 0.42–0.79; P=.0002). 12-month PFS 67% and 40% (NNT 4); 36-month PFS 53% and 30%. OS boundary not met (HR 0.77; 95% CI 0.52–1.15; P=.10).",
       "question": "What is the clinical effect of KEYNOTE-C93 / GOG-3064 / ENGOT-en15 in Endometrial Cancer (advanced / metastatic)?",
       "source": "trial-pages/keynote-c93/",
       "path": "trial-pages/keynote-c93/",
@@ -6893,16 +6931,16 @@
         "NCT05173987",
         "DOI 10.1016/S0140-6736(26)02095-7"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
+      "freshness_review_status": "Primary Lancet article and full abstract record reviewed 2026-11-23; current full NCCN Endometrial Cancer guideline/reference list not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded 12-/36-month PFS, median PFS and grade ≥3 TRAE charts added; 12-month PFS NNT4 structured. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
+      "quality_check_date": "2026-11-23",
       "absolute_effect": {
         "endpoint": "Progression-free survival",
         "horizon": "12 months",
         "benefit_percentage_points": 27,
         "nnt": 4,
-        "notes": "OS statistical boundary was not met at interim analysis; this NNT applies only to 12-month PFS."
+        "notes": "12-month BICR PFS 67% vs 40%; 1/0.27=3.70, rounded up to 4. Grade ≥3 TRAEs were less frequent with pembrolizumab (18% vs 51%); no NNH is assigned."
       },
       "primary_title": "First-line pembrolizumab versus carboplatin plus paclitaxel in participants with mismatch repair-deficient advanced or recurrent endometrial cancer (KEYNOTE-C93/GOG-3064/ENGOT-en15): interim analysis of a multicentre, open-label, randomised, active-comparator controlled, phase 3 trial",
       "pmid": "42933458",
@@ -9262,7 +9300,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
       "setting": "Consolidation",
-      "setting_detail": "Stage 1 median PFS 15.1, 9.7 and 4.2 months, respectively; HR vs placebo 0.49 and 0.53. Pooled combo vs benmelstobart alone 17.4 vs 11.2 months; HR 0.82 (95% CI 0.63–1.08; P=0.12), not significant.",
+      "setting_detail": "Stage 1 median PFS: 15.1 months with benmelstobart plus anlotinib, 9.7 months with benmelstobart alone and 4.2 months with placebo. Pooled stage 1+2 median PFS: 17.4 months with combination and 11.2 months with monotherapy; HR 0.82 (95% CI 0.63–1.08; P=.12), not significant. No NNT from medians/HRs.",
       "question": "What is the clinical effect of R-ALPS in Non-Small Cell Lung Cancer (consolidation)?",
       "source": "trial-pages/r-alps/",
       "path": "trial-pages/r-alps/",
@@ -9274,13 +9312,22 @@
         "NCT04325763",
         "DOI 10.1001/jamaoncol.2026.3918"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
+      "freshness_review_status": "Primary JAMA report and R-ALPS protocol reviewed 2026-11-23; current full NCCN guideline version/reference list not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded three-arm median-PFS, pooled comparison and toxicity charts added; primary JAMA values and protocol doses checked. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
-      "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer",
+      "quality_check_date": "2026-11-23",
+      "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer: The R-ALPS Randomized Clinical Trial",
       "pmid": "42955021",
-      "registry_id": "NCT04325763"
+      "registry_id": "NCT04325763",
+      "secondary_publications": [
+        {
+          "title": "TQB2450 with or without anlotinib as maintenance treatment in subjects with locally advanced/unresectable non-small cell lung cancer that have not progressed after prior concurrent/sequential chemoradiotherapy (R-ALPS): study protocol for a randomized, double-blind, placebo-controlled, multicenter phase III trial",
+          "doi": "10.21037/tlcr-24-362",
+          "date": "2024-10-28",
+          "type": "Study protocol",
+          "url": "https://tlcr.amegroups.org/article/view/92195/html"
+        }
+      ]
     },
     {
       "id": "radical",
@@ -11450,7 +11497,7 @@
       "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     }
   ],
-  "last_updated": "2026-11-23T08:50:38+05:30",
+  "last_updated": "2026-11-23T19:26:14+05:30",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {
