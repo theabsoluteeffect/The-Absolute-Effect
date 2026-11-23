@@ -1252,7 +1252,8 @@
       "merge_status": "not merged",
       "deployment_status": "not verified — no merge",
       "status": "INCOMPLETE",
-      "next_action": "Complete primary-source extraction, fix candidate-decision ingestion safety, build exactly 30 canonical pages and run release/PR gates."
+      "next_action": "Complete primary-source extraction, fix candidate-decision ingestion safety, build exactly 30 canonical pages and run release/PR gates.",
+      "branch_head_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
     },
     "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "working_branch": "atlas-batch/2026-11-17-am",
@@ -1411,7 +1412,8 @@
       ],
       "full_clinical_audit_complete": false,
       "production_deployment_verified": false,
-      "note": "Normalized roster paths and shared anchors were used, not slug-to-id matching; all roster destinations resolve and appear in evidence/index.html."
+      "note": "Normalized roster paths and shared anchors were used, not slug-to-id matching; all roster destinations resolve and appear in evidence/index.html.",
+      "latest_branch_commit_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
     },
     "last_manual_review_date": "2026-11-23",
     "manual_review_log": [

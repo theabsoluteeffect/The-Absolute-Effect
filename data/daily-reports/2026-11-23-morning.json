@@ -796,5 +796,6 @@
     "Verify current NCCN versions and exact citations; do not infer provenance.",
     "Build exactly 30 complete pages, run local release validator, open PR, wait all checks, then merge only if every gate passes."
   ],
-  "metadata_commit_sha": "pending"
+  "metadata_commit_sha": "c0712c1119e2603d6720d66c7379dc36ee9b108c",
+  "branch_head_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
 }

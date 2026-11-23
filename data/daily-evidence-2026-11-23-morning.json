@@ -8,7 +8,8 @@
     "full_name": "theabsoluteeffect/The-Absolute-Effect",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch": "atlas-batch/2026-11-23-am",
-    "branch_head_before": "8c95d279ee650bc68baa9d9b5072aa6c0bc0ec83"
+    "branch_head_before": "8c95d279ee650bc68baa9d9b5072aa6c0bc0ec83",
+    "branch_head_after_metadata_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
   },
   "ingestion_safety_note": "candidate_dispositions and duplicate_checks are review-only; no candidate record is publishable or uploaded.",
   "counts": {
@@ -620,5 +621,6 @@
     "Continue manual audit of remaining 446 canonical pages; keep 52 dated-context tasks open.",
     "Verify current NCCN versions and exact citations; do not infer provenance.",
     "Build exactly 30 complete pages, run local release validator, open PR, wait all checks, then merge only if every gate passes."
-  ]
+  ],
+  "metadata_commit_sha": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
 }
