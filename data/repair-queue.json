@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T19:14:41+05:30",
+  "updated_at": "2026-11-23T08:50:38+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-16T07:59:04+05:30",
@@ -2885,6 +2885,410 @@
       "verification": "All 30 IDs are present in the main roster and their canonical page files are present. Main status fields remain staged; branch status fields are published with the merge commit and date. This is a metadata/history reconciliation, not 30 new additions.",
       "opened_on": "2026-11-21",
       "last_reviewed_on": "2026-11-21"
+    },
+    {
+      "issue_id": "candidate-nadina-2026-11-23",
+      "trial_id": "nadina",
+      "trial": "NADINA",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "2",
+        "context": "Neoadjuvant nivo/ipi evidence cited in overview; no category explicitly tied to ref 2.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-swog-s1801-2026-11-23",
+      "trial_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "29",
+        "context": "Neoadjuvant pembrolizumab; preferred category 2A.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-opacin-neo-2026-11-23",
+      "trial_id": "opacin-neo",
+      "trial": "OpACIN-neo",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1016/S1470-2045(19)30151-2",
+        "https://pubmed.ncbi.nlm.nih.gov/31160251/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "35–38",
+        "context": "Flip-dose nivo 3 mg/kg + ipi 1 mg/kg; preferred category 2A. PRADO is an extension, not a separate trial.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-nct02519322-neoadjuvant-melanoma-2026-11-23",
+      "trial_id": "nct02519322-neoadjuvant-melanoma",
+      "trial": "NCT02519322 neoadjuvant checkpoint-blockade study",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1038/s41591-018-0197-1",
+        "https://pubmed.ncbi.nlm.nih.gov/30297909/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "39–40",
+        "context": "Nivolumab and nivo/relatlimab cohorts share one registry; other recommended category 2A.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-neoadjuvant-dabrafenib-trametinib-randomized-phase2-2026-11-23",
+      "trial_id": "neoadjuvant-dabrafenib-trametinib-randomized-phase2",
+      "trial": "Neoadjuvant dabrafenib/trametinib vs upfront surgery",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary identity incomplete",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "41",
+        "context": "Useful in certain circumstances category 2A; primary identity/registry unresolved.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-neocombi-2026-11-23",
+      "trial_id": "neocombi",
+      "trial": "NeoCombi",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1016/S1470-2045(19)30331-6",
+        "https://pubmed.ncbi.nlm.nih.gov/31171444/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "42",
+        "context": "Useful in certain circumstances category 2A; registry pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-neoadjuvant-tvec-resectable-melanoma-2026-11-23",
+      "trial_id": "neoadjuvant-tvec-resectable-melanoma",
+      "trial": "Neoadjuvant T-VEC plus surgery",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1038/s41591-021-01510-7",
+        "https://pubmed.ncbi.nlm.nih.gov/34608333/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "43",
+        "context": "Useful in certain circumstances category 2A for selected in-transit disease; registry pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-adam-vte-2026-11-23",
+      "trial_id": "adam-vte",
+      "trial": "ADAM VTE",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1111/jth.14662",
+        "https://pubmed.ncbi.nlm.nih.gov/31630479/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "216",
+        "context": "Apixaban vs dalteparin; cited in VTE guideline article; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-caravaggio-2026-11-23",
+      "trial_id": "caravaggio",
+      "trial": "Caravaggio",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "217",
+        "context": "Apixaban vs dalteparin; cited in VTE guideline article; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-hokusai-vte-cancer-2026-11-23",
+      "trial_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "221",
+        "context": "Edoxaban vs dalteparin; GI bleeding caveat; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-select-d-2026-11-23",
+      "trial_id": "select-d",
+      "trial": "SELECT-D",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1200/JCO.2018.78.8034",
+        "https://pubmed.ncbi.nlm.nih.gov/29746227/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "229",
+        "context": "Rivaroxaban vs dalteparin; registry pending; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-api-cat-2026-11-23",
+      "trial_id": "api-cat",
+      "trial": "API-CAT",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      }
+    },
+    {
+      "issue_id": "candidate-pivotal-daromun-melanoma-2026-11-23",
+      "trial_id": "pivotal-daromun-melanoma",
+      "trial": "PIVOTAL (intralesional daromun)",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1016/j.annonc.2025.06.014",
+        "https://pubmed.ncbi.nlm.nih.gov/40633690/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "not cited",
+        "context": "Phase III; median RFS 16.7 vs6.8 mo, HR0.59, p=.005; grade≥3 TRAE 27.1% vs6.7%; full extraction pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    },
+    {
+      "issue_id": "candidate-dexamethasone-free-cinv-phase3-2026-11-23",
+      "trial_id": "dexamethasone-free-cinv-phase3",
+      "trial": "Dexamethasone-free antiemetic prophylaxis phase III",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.1002/ijc.70069",
+        "https://pubmed.ncbi.nlm.nih.gov/40735921/"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      }
+    },
+    {
+      "issue_id": "candidate-cancer-pain-ipca-hm-phase3-2026-11-23",
+      "trial_id": "cancer-pain-ipca-hm-phase3",
+      "trial": "IPCA-HM cancer-pain phase III trial",
+      "category": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://doi.org/10.6004/jnccn.2025.7476",
+        "https://pubmed.ncbi.nlm.nih.gov/42119607/"
+      ],
+      "verification": "primary DOI/PMID identified",
+      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "publication_status": "not_published",
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      }
+    },
+    {
+      "issue_id": "daily-evidence-reader-candidate-ingestion-2026-11-23",
+      "trial": "Daily evidence reader candidate-decision ingestion safety",
+      "category": "workflow_safety",
+      "severity": "critical",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "scripts/daily_evidence_reader.py",
+        "scripts/merge_all_daily_evidence.py",
+        "data/daily-evidence-2026-11-21-morning.json"
+      ],
+      "verification": "Reader includes candidate_decisions as a record collection; merger can treat held/duplicate/deferred candidates as homepage trial records. This run renames the prior collection to candidate_dispositions, which is not ingested.",
+      "action": "Before merging candidate evidence, filter publishable records to approved uploaded/published cases and add tests for held, duplicate, deferred and uploaded decisions.",
+      "reason": "Potential public homepage contamination by non-published candidate decisions."
+    },
+    {
+      "issue_id": "nccn-guideline-freshness-rotation-2026-11-23",
+      "trial": "Current NCCN guideline/version freshness across ALL, biliary, CNS, melanoma, VTE, infections, genetics and supportive care",
+      "category": "guideline_freshness",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "https://www.nccn.org/guidelines/category_1"
+      ],
+      "verification": "Melanoma Insights v2.2024 and VTE article v2.2024 accessible; other areas metadata/abstract-only or unavailable. None is claimed as the latest full guideline.",
+      "action": "Retrieve current official NCCN version/date and exact full references; record section/reference/category only when directly checked.",
+      "reason": "Latest full guideline access incomplete; freshness remains open."
+    },
+    {
+      "issue_id": "full-canonical-page-clinical-audit-remaining-2026-11-23",
+      "trial": "Remaining canonical page-by-page clinical/source/visual audit",
+      "category": "manual_page_audit",
+      "severity": "high",
+      "status": "open",
+      "created_at": "2026-11-23",
+      "evidence_source": [
+        "data/master-trial-roster.json",
+        "evidence/index.html",
+        "trial-pages/"
+      ],
+      "verification": "Four additional pages source/visual reviewed; cumulative manually inspected 14/460; 52 dated-context tasks remain.",
+      "action": "Continue page-by-page primary-source, visual, link, NNT/NNH and dated-guideline review; do not bulk-close by static audit.",
+      "reason": "446 canonical content pages remain outside documented manual review; clinical freshness audit incomplete."
     }
   ],
   "resolved_items": [
@@ -3764,6 +4168,66 @@
       "branch": "atlas-batch/2026-11-17-am",
       "resolved_on": "2026-11-21",
       "verification": "No canonical GIMEMA ALL2820 page exists on main; this was a duplicate queue record for candidate-review-ponatinib-blinatumomab-all2820, which remains open."
+    },
+    {
+      "issue_id": "manual-visual-source-review-checkmate-816-2026-11-23",
+      "trial_id": "checkmate-816",
+      "trial": "CHECKMATE-816",
+      "category": "manual_visualization_and_primary_value_review",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+        "https://pubmed.ncbi.nlm.nih.gov/40349252/"
+      ],
+      "verification": "Visible CSS bars checked; absolute differences 21.8, 18.5, 10.4 pp match pCR/EFS/OS. NNT 5, 6, 10 respectively. Dated current-practice task remains open.",
+      "action": "Record manual source-value and visual structure review; no page edit."
+    },
+    {
+      "issue_id": "manual-visual-source-review-keynote-a18-2026-11-23",
+      "trial_id": "keynote-a18",
+      "trial": "KEYNOTE-A18",
+      "category": "manual_visualization_and_primary_value_review",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+        "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+      ],
+      "verification": "Visible OS bar checked; 7.8 pp difference matches 36-month OS. NNT 13 at 36 months. Dated current-practice task remains open.",
+      "action": "Record manual source-value and visual structure review; no page edit."
+    },
+    {
+      "issue_id": "manual-visual-source-review-lacc-2026-11-23",
+      "trial_id": "lacc",
+      "trial": "LACC",
+      "category": "manual_visualization_and_primary_value_review",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+        "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+        "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+      ],
+      "verification": "Visible DFS harm bar checked; 10.6 pp difference matches source value. NNH 10 for DFS harm at 4.5 years. Dated current-practice task remains open.",
+      "action": "Record manual source-value and visual structure review; no page edit."
+    },
+    {
+      "issue_id": "manual-visual-source-review-shape-2026-11-23",
+      "trial_id": "shape",
+      "trial": "SHAPE",
+      "category": "manual_visualization_and_primary_value_review",
+      "severity": "medium",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+      ],
+      "verification": "Visible noninferiority and functional graphics checked; finite widths. No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence. Dated current-practice task remains open.",
+      "action": "Record manual source-value and visual structure review; no page edit."
     }
   ],
   "run_audit_log": [
@@ -3823,6 +4287,21 @@
       "uploaded_to_main": 0,
       "local_validator": "not run",
       "pr": "not opened"
+    },
+    {
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "branch": "atlas-batch/2026-11-23-am",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "counts": {
+        "new_unique": 15,
+        "held": 15,
+        "contrary_deferred": 1,
+        "duplicates": 0,
+        "uploaded": 0
+      },
+      "manual_page_reviews": 4,
+      "status": "INCOMPLETE — no publication gate opened"
     }
   ],
   "previous_partial_runs": [
@@ -3896,36 +4375,30 @@
     }
   ],
   "last_partial_run": {
-    "run_id": "absolute-effect-2026-11-21-morning",
-    "date": "2026-11-21",
+    "date": "2026-11-23",
     "cycle": "morning",
-    "status": "INCOMPLETE",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch": "atlas-batch/2026-11-21-am",
-    "branch_commit_sha": "cb2bc668dd051036c4b98c6ff9c8e859f01940f5",
-    "candidates_screened": 33,
-    "new_unique_candidates": 16,
-    "identity_metadata_verified": 16,
-    "fully_page_verified": 0,
-    "duplicates": 9,
-    "held": 20,
-    "deferred_negative_or_mixed": 3,
-    "excluded": 1,
-    "published": 0,
-    "target": 30,
-    "next_action": "Resume the 16 new unique candidates and four unresolved leads; complete full primary-source extraction; no PR or overlapping PM branch until 30 pages pass the release gate."
+    "branch": "atlas-batch/2026-11-23-am",
+    "status": "INCOMPLETE — 0/30 uploaded",
+    "carried_forward_new_unique_candidates": 30,
+    "new_unique_candidates": 15,
+    "held": 15,
+    "contrary_deferred": 1,
+    "duplicates": 0,
+    "uploaded": 0,
+    "manual_page_reviews": 4,
+    "next_action": "Complete primary-source extraction and page build; fix candidate-decision ingestion safety before PR."
   },
-  "last_updated": "2026-11-21",
-  "last_run": "absolute-effect-2026-11-21-morning-recovery",
+  "last_updated": "2026-11-23T08:50:38+05:30",
+  "last_run": "absolute-effect-2026-11-23-morning",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
-    "open_items": 136,
-    "resolved_items": 57,
-    "note": "2026-11-21: live main has 467 roster entries, 460 canonical page directories, 468 normalized index destinations and zero missing links; archive 16; current ToD PANKU-Esophagus01, previous GemX. PR #5 merged 30 pages; four pages retain release-detail holds. Structural audit passed; full manual clinical audit incomplete; 52 dated-context tasks remain. NCCN full guideline/reference access failed; exact mapping remains open.",
+    "open_items": 181,
+    "resolved_items": 61,
+    "note": "2026-11-23: 467 roster entries, 460 canonical content directories, one redirect-only stub, 468 normalized evidence-index destinations and zero missing roster links. Four additional page/source/visual checks completed; 52 dated-context tasks remain open. Fifteen new unique candidates held; OpACIN deferred as contrary evidence; candidate-decision ingestion safety issue opened.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52
   },
   "updated_on": "2026-11-21",
-  "last_run_date": "2026-11-21"
+  "last_run_date": "2026-11-23"
 }

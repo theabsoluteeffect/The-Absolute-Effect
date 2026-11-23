@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T19:14:41+05:30",
+  "updated_at": "2026-11-23T08:50:38+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -439,10 +439,30 @@
         }
       ],
       "status_note": "Added 2026-11-21; mixed evidence."
+    },
+    {
+      "trial_id": "opacin",
+      "trial": "OpACIN",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-melanoma-cutaneous-v2-2024",
+      "references": [
+        "33"
+      ],
+      "reason": "NCCN Melanoma: Cutaneous Version 2.2024 Insights reports 90% grade 3–4 AEs in both arms and states this high-dose schedule was unsuitable for the neoadjuvant setting.",
+      "action": "Retain as contrary/toxicity evidence explaining the move to the lower-toxicity flip-dose OpACIN-neo regimen; do not present the high-dose schedule as current preferred treatment.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1038/s41591-018-0198-0",
+          "pmid": "30297911",
+          "url": "https://doi.org/10.1038/s41591-018-0198-0"
+        }
+      ],
+      "status_note": "Primary publication identity checked; registry pending; no new page."
     }
   ],
-  "last_run": "absolute-effect-2026-11-21-morning-recovery",
+  "last_run": "absolute-effect-2026-11-23-morning",
   "last_updated": "2026-11-21",
-  "last_run_date": "2026-11-21",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction."
+  "last_run_date": "2026-11-23",
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study."
 }

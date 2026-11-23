@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "run_id": "absolute-effect-2026-11-23-morning",
+  "run_timestamp": "2026-11-23T08:50:38+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch": "atlas-batch/2026-11-23-am",
+    "branch_head_before": "8c95d279ee650bc68baa9d9b5072aa6c0bc0ec83"
+  },
+  "ingestion_safety_note": "candidate_dispositions and duplicate_checks are review-only; no candidate record is publishable or uploaded.",
+  "counts": {
+    "carry_forward": {
+      "screened": 47,
+      "new_unique": 30,
+      "duplicates": 9,
+      "source_holds": 4,
+      "deferred": 3,
+      "excluded_by_policy": 1
+    },
+    "new_candidates_screened": 15,
+    "new_unique": 15,
+    "duplicates": 0,
+    "held": 15,
+    "contrary_deferred": 1,
+    "uploaded": 0,
+    "target": 30,
+    "deficit": 30
+  },
+  "carry_forward": {
+    "source_file": "data/daily-evidence-2026-11-21-morning.json",
+    "candidate_dispositions_preserved": 47,
+    "status": "30 unique candidates remain held; nine duplicates matched to existing canonical pages; four source holds, three deferred and one PIVOT policy exclusion retained."
+  },
+  "candidate_dispositions": [
+    {
+      "trial_id": "nadina",
+      "trial": "NADINA",
+      "site": "Melanoma",
+      "doi": "10.1056/NEJMoa2402604",
+      "pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "2",
+        "context": "Neoadjuvant nivo/ipi evidence cited in overview; no category explicitly tied to ref 2.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1056/NEJMoa2402604",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/38828984/"
+    },
+    {
+      "trial_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "site": "Melanoma",
+      "doi": "10.1056/NEJMoa2211437",
+      "pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "29",
+        "context": "Neoadjuvant pembrolizumab; preferred category 2A.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1056/NEJMoa2211437",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/36856617/"
+    },
+    {
+      "trial_id": "opacin-neo",
+      "trial": "OpACIN-neo",
+      "site": "Melanoma",
+      "doi": "10.1016/S1470-2045(19)30151-2",
+      "pmid": "31160251",
+      "registry_id": "NCT02977052",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "35–38",
+        "context": "Flip-dose nivo 3 mg/kg + ipi 1 mg/kg; preferred category 2A. PRADO is an extension, not a separate trial.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1016/S1470-2045(19)30151-2",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/31160251/"
+    },
+    {
+      "trial_id": "nct02519322-neoadjuvant-melanoma",
+      "trial": "NCT02519322 neoadjuvant checkpoint-blockade study",
+      "site": "Melanoma",
+      "doi": "10.1038/s41591-018-0197-1",
+      "pmid": "30297909",
+      "registry_id": "NCT02519322",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "39–40",
+        "context": "Nivolumab and nivo/relatlimab cohorts share one registry; other recommended category 2A.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1038/s41591-018-0197-1",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/30297909/"
+    },
+    {
+      "trial_id": "neoadjuvant-dabrafenib-trametinib-randomized-phase2",
+      "trial": "Neoadjuvant dabrafenib/trametinib vs upfront surgery",
+      "site": "Melanoma",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "41",
+        "context": "Useful in certain circumstances category 2A; primary identity/registry unresolved.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary identity incomplete",
+      "registry_status": "registry not verified",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": null,
+      "pmid_url": null
+    },
+    {
+      "trial_id": "neocombi",
+      "trial": "NeoCombi",
+      "site": "Melanoma",
+      "doi": "10.1016/S1470-2045(19)30331-6",
+      "pmid": "31171444",
+      "registry_id": null,
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "42",
+        "context": "Useful in certain circumstances category 2A; registry pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry not verified",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1016/S1470-2045(19)30331-6",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/31171444/"
+    },
+    {
+      "trial_id": "neoadjuvant-tvec-resectable-melanoma",
+      "trial": "Neoadjuvant T-VEC plus surgery",
+      "site": "Melanoma",
+      "doi": "10.1038/s41591-021-01510-7",
+      "pmid": "34608333",
+      "registry_id": null,
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "43",
+        "context": "Useful in certain circumstances category 2A for selected in-transit disease; registry pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry not verified",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1038/s41591-021-01510-7",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/34608333/"
+    },
+    {
+      "trial_id": "adam-vte",
+      "trial": "ADAM VTE",
+      "site": "Cancer-associated VTE",
+      "doi": "10.1111/jth.14662",
+      "pmid": "31630479",
+      "registry_id": "NCT02585713",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "216",
+        "context": "Apixaban vs dalteparin; cited in VTE guideline article; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1111/jth.14662",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/31630479/"
+    },
+    {
+      "trial_id": "caravaggio",
+      "trial": "Caravaggio",
+      "site": "Cancer-associated VTE",
+      "doi": "10.1056/NEJMoa1915103",
+      "pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "217",
+        "context": "Apixaban vs dalteparin; cited in VTE guideline article; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1056/NEJMoa1915103",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/32223112/"
+    },
+    {
+      "trial_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "site": "Cancer-associated VTE",
+      "doi": "10.1056/NEJMoa1711948",
+      "pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "221",
+        "context": "Edoxaban vs dalteparin; GI bleeding caveat; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1056/NEJMoa1711948",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/29231094/"
+    },
+    {
+      "trial_id": "select-d",
+      "trial": "SELECT-D",
+      "site": "Cancer-associated VTE",
+      "doi": "10.1200/JCO.2018.78.8034",
+      "pmid": "29746227",
+      "registry_id": null,
+      "nccn_provenance": {
+        "guideline": "NCCN Cancer-Associated VTE Version 2.2024",
+        "section": "Treatment of acute DVT/PE",
+        "reference": "229",
+        "context": "Rivaroxaban vs dalteparin; registry pending; no trial-specific category assigned.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry not verified",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1200/JCO.2018.78.8034",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/29746227/"
+    },
+    {
+      "trial_id": "api-cat",
+      "trial": "API-CAT",
+      "site": "Cancer-associated VTE",
+      "doi": "10.1056/NEJMoa2416112",
+      "pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1056/NEJMoa2416112",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/40162636/"
+    },
+    {
+      "trial_id": "pivotal-daromun-melanoma",
+      "trial": "PIVOTAL (intralesional daromun)",
+      "site": "Melanoma",
+      "doi": "10.1016/j.annonc.2025.06.014",
+      "pmid": "40633690",
+      "registry_id": "NCT02938299",
+      "nccn_provenance": {
+        "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+        "section": "Neoadjuvant systemic therapy options",
+        "reference": "not cited",
+        "context": "Phase III; median RFS 16.7 vs6.8 mo, HR0.59, p=.005; grade≥3 TRAE 27.1% vs6.7%; full extraction pending.",
+        "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1016/j.annonc.2025.06.014",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/40633690/"
+    },
+    {
+      "trial_id": "dexamethasone-free-cinv-phase3",
+      "trial": "Dexamethasone-free antiemetic prophylaxis phase III",
+      "site": "Supportive care/antiemesis",
+      "doi": "10.1002/ijc.70069",
+      "pmid": "40735921",
+      "registry_id": "NCT05805800",
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry supplied; independent recheck pending for this run",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.1002/ijc.70069",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/40735921/"
+    },
+    {
+      "trial_id": "cancer-pain-ipca-hm-phase3",
+      "trial": "IPCA-HM cancer-pain phase III trial",
+      "site": "Supportive/palliative care",
+      "doi": "10.6004/jnccn.2025.7476",
+      "pmid": "42119607",
+      "registry_id": null,
+      "nccn_provenance": {
+        "status": "not verified — no exact NCCN citation checked"
+      },
+      "identity_status": "primary DOI/PMID identified",
+      "registry_status": "registry not verified",
+      "disposition": "new_unique_held",
+      "hold_reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
+      "primary_url": "https://doi.org/10.6004/jnccn.2025.7476",
+      "pmid_url": "https://pubmed.ncbi.nlm.nih.gov/42119607/"
+    }
+  ],
+  "duplicate_checks": [
+    {
+      "candidate": "NADINA",
+      "doi": "10.1056/NEJMoa2402604",
+      "pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "SWOG S1801",
+      "doi": "10.1056/NEJMoa2211437",
+      "pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "OpACIN-neo",
+      "doi": "10.1016/S1470-2045(19)30151-2",
+      "pmid": "31160251",
+      "registry_id": "NCT02977052",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "NCT02519322 neoadjuvant checkpoint-blockade study",
+      "doi": "10.1038/s41591-018-0197-1",
+      "pmid": "30297909",
+      "registry_id": "NCT02519322",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "Neoadjuvant dabrafenib/trametinib vs upfront surgery",
+      "doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "NeoCombi",
+      "doi": "10.1016/S1470-2045(19)30331-6",
+      "pmid": "31171444",
+      "registry_id": null,
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "Neoadjuvant T-VEC plus surgery",
+      "doi": "10.1038/s41591-021-01510-7",
+      "pmid": "34608333",
+      "registry_id": null,
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "ADAM VTE",
+      "doi": "10.1111/jth.14662",
+      "pmid": "31630479",
+      "registry_id": "NCT02585713",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "Caravaggio",
+      "doi": "10.1056/NEJMoa1915103",
+      "pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "Hokusai VTE Cancer",
+      "doi": "10.1056/NEJMoa1711948",
+      "pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "SELECT-D",
+      "doi": "10.1200/JCO.2018.78.8034",
+      "pmid": "29746227",
+      "registry_id": null,
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "API-CAT",
+      "doi": "10.1056/NEJMoa2416112",
+      "pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "PIVOTAL (intralesional daromun)",
+      "doi": "10.1016/j.annonc.2025.06.014",
+      "pmid": "40633690",
+      "registry_id": "NCT02938299",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "Dexamethasone-free antiemetic prophylaxis phase III",
+      "doi": "10.1002/ijc.70069",
+      "pmid": "40735921",
+      "registry_id": "NCT05805800",
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    },
+    {
+      "candidate": "IPCA-HM cancer-pain phase III trial",
+      "doi": "10.6004/jnccn.2025.7476",
+      "pmid": "42119607",
+      "registry_id": null,
+      "matched_existing_roster_page_archive_tod": null,
+      "identity": "new unique by DOI/PMID/registry and live roster/page/archive/ToD check",
+      "final_disposition": "new unique; held from publication"
+    }
+  ],
+  "contrary_evidence": [
+    {
+      "trial_id": "opacin",
+      "trial": "OpACIN",
+      "doi": "10.1038/s41591-018-0198-0",
+      "pmid": "30297911",
+      "guideline": "NCCN Melanoma: Cutaneous Version 2.2024",
+      "reference": "33",
+      "disposition": "deferred_contrary_evidence",
+      "reason": "90% grade 3–4 AEs in each arm; NCCN Insights says the high-dose schedule was unsuitable."
+    }
+  ],
+  "secondary_analyses_attached": [
+    {
+      "analysis": "PRADO",
+      "underlying_trial": "OpACIN-neo",
+      "reason": "Extension/response-guided surgical analysis; not a separate underlying study."
+    },
+    {
+      "analysis": "2022 nivolumab/relatlimab cohort",
+      "underlying_trial": "NCT02519322",
+      "reason": "Same registry as the 2018 nivolumab/ipi study; one canonical page."
+    }
+  ],
+  "source_passes": [
+    {
+      "area": "Melanoma",
+      "source": "NCCN Insights Version 2.2024",
+      "scope": "complete Insights reference list, not full guideline",
+      "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf",
+      "references": "2,29,33–43"
+    },
+    {
+      "area": "Cancer-associated VTE",
+      "source": "NCCN-authored guideline article Version 2.2024",
+      "scope": "article/reference list, not full guideline",
+      "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
+      "references": "216,217,221,229"
+    },
+    {
+      "area": "Biliary",
+      "source": "NCCN Insights Version 2.2023",
+      "scope": "PubMed abstract only; full reference list inaccessible",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37433432/",
+      "alternative": "ASCO Living Guideline 2026.1.0 https://pubmed.ncbi.nlm.nih.gov/42874012/"
+    },
+    {
+      "area": "Adult ALL",
+      "source": "NCCN adult full guideline inaccessible; Pediatric ALL v2.2025 is not applicable to adult Ph+ ALL"
+    },
+    {
+      "area": "CNS",
+      "source": "NCCN Insights Version 2.2022",
+      "scope": "abstract only",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36634606/"
+    },
+    {
+      "area": "Infections",
+      "source": "NCCN Version 3.2024",
+      "scope": "abstract only",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39536464/"
+    },
+    {
+      "area": "Genetics",
+      "source": "Current NCCN full guideline/reference list not accessed"
+    },
+    {
+      "area": "Supportive/palliative",
+      "source": "NCCN Distress Management Insights v1.2026 abstract only; Palliative Care/Antiemesis full references not verified",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41956112/"
+    }
+  ],
+  "manual_page_reviews": [
+    {
+      "trial_id": "checkmate-816",
+      "page": "trial-pages/checkmate-816/index.html",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+        "https://pubmed.ncbi.nlm.nih.gov/40349252/"
+      ],
+      "visual": "Visible CSS bars checked; absolute differences 21.8, 18.5, 10.4 pp match pCR/EFS/OS.",
+      "effect": "NNT 5, 6, 10 respectively."
+    },
+    {
+      "trial_id": "keynote-a18",
+      "page": "trial-pages/keynote-a18/index.html",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+        "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+      ],
+      "visual": "Visible OS bar checked; 7.8 pp difference matches 36-month OS.",
+      "effect": "NNT 13 at 36 months."
+    },
+    {
+      "trial_id": "lacc",
+      "page": "trial-pages/lacc/index.html",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+        "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+        "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+      ],
+      "visual": "Visible DFS harm bar checked; 10.6 pp difference matches source value.",
+      "effect": "NNH 10 for DFS harm at 4.5 years."
+    },
+    {
+      "trial_id": "shape",
+      "page": "trial-pages/shape/index.html",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+      ],
+      "visual": "Visible noninferiority and functional graphics checked; finite widths.",
+      "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+    }
+  ],
+  "trial_of_the_day": {
+    "current": "PANKU-Esophagus01",
+    "previous": "GemX",
+    "candidate": "COMPANION-002 (2026-10-24; within preceding month)",
+    "status": "unchanged; no page passed release gate"
+  },
+  "nnt_nnh_qa": {
+    "checkmate_816": "21.8/18.5/10.4 pp; NNT 5/6/10",
+    "keynote_a18": "7.8 pp at 36 months; NNT 13",
+    "lacc": "10.6 pp DFS harm at 4.5 years; NNH 10",
+    "shape": "no NNT for primary noninferiority; secondary NNT 11 and 16",
+    "api_cat": "secondary 12-month CRNMB difference 3.5 pp; NNT 29; full page QA pending"
+  },
+  "publication_gate": {
+    "uploaded": 0,
+    "target": 30,
+    "deficit": 30,
+    "local_validator": "not run; exact-30 batch not ready and local clone unavailable",
+    "visualization_audit": "not run on this head; no PR",
+    "pr": "not opened",
+    "merge": "not merged",
+    "production_deployment": "not verified"
+  },
+  "next_actions": [
+    "Complete primary/protocol extraction for 30 carried-forward candidates and 15 new candidates.",
+    "Resolve registry IDs for OpACIN, NeoCombi, T-VEC, SELECT-D, randomized dabrafenib/trametinib and cancer-pain trial.",
+    "Fix candidate-decision ingestion safety and add tests before merging candidate review JSON.",
+    "Continue manual audit of remaining 446 canonical pages; keep 52 dated-context tasks open.",
+    "Verify current NCCN versions and exact citations; do not infer provenance.",
+    "Build exactly 30 complete pages, run local release validator, open PR, wait all checks, then merge only if every gate passes."
+  ]
+}
