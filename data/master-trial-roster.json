@@ -11517,6 +11517,58 @@
       "release_qa_status": "corrected_primary_source_reviewed",
       "published_on": "2026-11-18",
       "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+    },
+    {
+      "id": "litespark-005",
+      "trial": "LITESPARK-005",
+      "site": "Renal Cell Carcinoma",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "18-month PFS 24.0% with belzutifan versus 8.3% with everolimus (HR 0.75, 95% CI 0.63–0.90; P=0.002; NNT 7 at 18 months). 18-month OS 55.2% versus 50.6% (HR 0.88, 95% CI 0.73–1.07; P=0.20; no NNT). ORR 21.9% versus 3.5%. Grade ≥3 all-cause AEs 61.8% versus 62.5%; grade 5 AEs 3.5% versus 5.3%; AE-related discontinuation 5.9% versus 14.7%.",
+      "question": "After prior immune-checkpoint and VEGF-targeted therapy for advanced clear-cell RCC, does belzutifan improve outcomes compared with everolimus?",
+      "source": "trial-pages/litespark-005/",
+      "path": "trial-pages/litespark-005/",
+      "primary": "10.1056/NEJMoa2313906",
+      "primary_title": "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma",
+      "pmid": "39167807",
+      "registry_id": "NCT04195750",
+      "aliases": [
+        "LITESPARK-005",
+        "NCT04195750",
+        "PMID 39167807",
+        "DOI 10.1056/NEJMoa2313906",
+        "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma"
+      ],
+      "related_publications": [
+        {
+          "title": "Health-related quality of life with belzutifan versus everolimus for advanced renal cell carcinoma (LITESPARK-005): patient-reported outcomes from a randomised, open-label, phase 3 trial",
+          "doi": "10.1016/S1470-2045(25)00032-4",
+          "pmid": "40112850",
+          "date": "2025-03-17"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "18 months",
+        "benefit_percentage_points": 15.7,
+        "nnt": 7,
+        "notes": "18-month Kaplan–Meier PFS 24.0% versus 8.3%; 1/(0.240−0.083)=6.37, rounded up to 7. Median PFS and HR alone were not used for NNT. OS difference was not statistically significant; no OS NNT assigned. Cumulative safety rates are not a common fixed-time toxicity horizon; no NNH assigned.",
+        "source_doi": "10.1056/NEJMoa2313906",
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "18 months",
+            "benefit_percentage_points": 4.6,
+            "notes": "18-month OS 55.2% versus 50.6%; HR 0.88 (95% CI 0.73–1.07), P=0.20; no NNT because the interim OS comparison was not statistically significant."
+          }
+        ]
+      },
+      "freshness_review_status": "Primary NEJM report and prespecified Lancet Oncology PRO analysis reviewed 2026-11-23. Current official NCCN Kidney Cancer full guideline/reference list was inaccessible; no NCCN section, reference or recommendation category claimed.",
+      "outcome_visual_review_status": "Static 18-month PFS, OS and ORR charts source-checked; structured PFS absolute effect 15.7 percentage points and NNT 7 at 18 months. Browser-rendered/live QA pending.",
+      "quality_check_date": "2026-11-23",
+      "staged_batch_date": "2026-11-23",
+      "release_qa_status": "staged_pending_30_trial_batch",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published"
     }
   ],
   "last_updated": "2026-11-23T19:28:00+05:30",
