@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T08:50:38+05:30",
+  "updated_at": "2026-11-23",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-16T07:59:04+05:30",
@@ -4179,7 +4179,7 @@
       "resolved_on": "2026-11-23",
       "evidence_source": [
         "https://pubmed.ncbi.nlm.nih.gov/35403841/",
-        "https://pubmed.ncbi.nlm.nih.gov/40349252/"
+        "https://pubmed.ncbi.nlm.nih.gov/40454642/"
       ],
       "verification": "Visible CSS bars checked; absolute differences 21.8, 18.5, 10.4 pp match pCR/EFS/OS. NNT 5, 6, 10 respectively. Dated current-practice task remains open.",
       "action": "Record manual source-value and visual structure review; no page edit."
@@ -4228,6 +4228,23 @@
       ],
       "verification": "Visible noninferiority and functional graphics checked; finite widths. No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence. Dated current-practice task remains open.",
       "action": "Record manual source-value and visual structure review; no page edit."
+    },
+    {
+      "issue_id": "source-pmid-correction-checkmate-816-2026-11-23",
+      "trial_id": "checkmate-816",
+      "trial": "CheckMate 816",
+      "path": "trial-pages/checkmate-816/index.html",
+      "category": "source_identifier_correction",
+      "severity": "high",
+      "evidence": "The previous manual review cited PubMed PMID 40349252, which resolves to an unrelated ApoE/post-stroke cohort. The 2025 CheckMate 816 overall-survival report is DOI 10.1056/NEJMoa2502931, PMID 40454642.",
+      "action": "Corrected the PMID in all branch-side manual-review logs and source lists. The canonical page already linked to the correct DOI and did not require an HTML edit.",
+      "status": "resolved",
+      "resolved_on": "2026-11-23",
+      "evidence_source": [
+        "https://pubmed.ncbi.nlm.nih.gov/40454642/",
+        "https://doi.org/10.1056/NEJMoa2502931"
+      ],
+      "verification": "PubMed title/DOI/PMID cross-check completed; old PMID verified unrelated. CheckMate 816 canonical page re-read; visible pCR/EFS/OS bars and NNTs 5/6/10 match cited trial values."
     }
   ],
   "run_audit_log": [
@@ -4388,7 +4405,7 @@
     "manual_page_reviews": 4,
     "next_action": "Complete primary-source extraction and page build; fix candidate-decision ingestion safety before PR."
   },
-  "last_updated": "2026-11-23T08:50:38+05:30",
+  "last_updated": "2026-11-23",
   "last_run": "absolute-effect-2026-11-23-morning",
   "generated_at": "2026-11-17T20:00:32+05:30",
   "summary": {
