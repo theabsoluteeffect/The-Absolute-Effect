@@ -1,7 +1,7 @@
 {
-  "run_timestamp": "2026-11-23T18:58:33+05:30",
+  "run_timestamp": "2026-11-23T19:28:00+05:30",
   "cycle": "evening",
-  "status": "INCOMPLETE — 0/30 uploaded; active morning branch remains unmerged, serial publication gate prevents a separate PM publication branch; no partial publication.",
+  "status": "INCOMPLETE — 0/30 uploaded; 30 not uploaded; repairs remain on active unmerged AM branch.",
   "main_branch_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
   "working_branch": "atlas-batch/2026-11-23-am",
   "working_branch_head_before_report": "e2a6325997d2f2dad4f5bcfbcb2f631913197459",
@@ -349,22 +349,41 @@
     {
       "trial": "R-ALPS",
       "page": "trial-pages/r-alps/index.html",
-      "result": "Visual QA failed: 0%-width bars and misaligned labels; no NNT from medians/HR."
+      "result": "Static three-arm stage-1 median-PFS, pooled active comparison and grade 3–5 toxicity charts repaired. Primary JAMA abstract and protocol reviewed; exact protocol doses verified. No NNT from medians/HRs. Browser-rendered QA pending.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+        "https://doi.org/10.1001/jamaoncol.2026.3918",
+        "https://tlcr.amegroups.org/article/view/92195/html"
+      ]
     },
     {
       "trial": "HEALER",
       "page": "trial-pages/healer/index.html",
-      "result": "Visual QA failed: 0%-width bars; NNT5 for 24-month PFS and NNH9 for grade≥3 AEs arithmetically correct but endpoint/horizon metadata absent."
+      "result": "Static 24-month PFS, ORR and grade ≥3 AE charts repaired. NNT5 tied to 24-month PFS; unsupported NNH9 removed because no fixed-time toxicity horizon is reported. Exact doses remain unverified; browser-rendered QA pending.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+        "https://doi.org/10.1056/NEJMoa2610345"
+      ]
     },
     {
       "trial": "KEYNOTE-C93",
       "page": "trial-pages/keynote-c93/index.html",
-      "result": "Visual QA failed: 0%-width 12-month PFS bars; NNT4 from 67% vs40% is arithmetically correct but structured endpoint/horizon missing."
+      "result": "Static 12-/36-month PFS, median PFS and grade ≥3 TRAE charts repaired. Full primary abstract checked; doses, stratification, safety/discontinuation and NNT4 at 12 months added. OS boundary not met; QoL results absent from accessible abstract. Browser QA pending.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+        "https://doi.org/10.1016/S0140-6736(26)02095-7",
+        "https://researchportal.helsinki.fi/en/publications/first-line-pembrolizumab-versus-carboplatin-plus-paclitaxel-in-pa/"
+      ]
     },
     {
       "trial": "KEYNOTE-564",
       "page": "trial-pages/keynote-564/index.html",
-      "result": "2026 five-year follow-up absent; 5-year DFS60.9% vs52.2% gives approximate NNT12; OS87.7% vs82.3% gives approximate NNT19."
+      "result": "Five-year peer-reviewed follow-up attached to existing canonical page. 5-year DFS/OS and approximate NNT12/19 added; 24-month DFS NNT11 retained; unsupported NNH7 removed. ESMO 2026 final-analysis listing identified but full abstract text not retrieved; seven-year outcomes not imported. Browser QA pending.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+        "https://doi.org/10.1016/j.annonc.2026.08.006",
+        "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/"
+      ]
     },
     {
       "trial": "TroFuse-005",
@@ -398,18 +417,18 @@
     }
   ],
   "repair_queue": {
-    "items_opened": 12,
-    "items_closed": 1,
+    "items_opened": 1,
+    "items_closed": 4,
     "open_after": 193,
-    "resolved_after": 62,
+    "resolved_after": 66,
     "dated_context_tasks_still_open": 52,
     "open_issues": [
-      "R-ALPS visual/page completeness",
-      "HEALER visual and absolute-effect metadata",
-      "KEYNOTE-C93 visual and absolute-effect metadata",
-      "KEYNOTE-564 five-year follow-up update",
-      "manual-review counter reconciliation",
-      "seven new unique candidate primary extraction holds"
+      "R-ALPS full-text/supplement and browser-rendered QA",
+      "HEALER exact dose/schedule and supplement; browser-rendered QA",
+      "KEYNOTE-C93 full QoL/subgroup supplement and browser-rendered QA",
+      "KEYNOTE-564 ESMO 2026 final-analysis abstract retrieval",
+      "seven held new unique candidate primary extractions",
+      "full canonical-tree clinical audit and 52 dated-context tasks"
     ]
   },
   "nccn": {
@@ -453,44 +472,43 @@
   "nnt_nnh_qa": {
     "existing_pages": [
       {
+        "trial": "R-ALPS",
+        "status": "No NNT from median PFS/HR. Static stage-1 three-arm median-PFS, pooled active-comparison and grade 3–5 TRAE charts repaired."
+      },
+      {
         "trial": "HEALER",
         "nnt": 5,
         "endpoint": "24-month PFS",
         "difference_pp": 24.1,
-        "calculation": "100/24.1=4.15, rounded up to 5",
-        "nnh": 9,
-        "harm_endpoint": "grade≥3 AEs over reported safety follow-up",
+        "calculation": "1/0.241=4.15, rounded up to 5",
+        "nnh": "not calculated",
+        "harm_endpoint": "Grade ≥3 AEs",
         "harm_difference_pp": 11.5,
-        "calculation_nnh": "100/11.5=8.70, rounded up to 9",
-        "status": "arithmetic correct; visual bars/structured metadata defective"
+        "status": "NNH9 removed: accessible abstract does not state a common fixed-time toxicity horizon; separate toxicity chart retained."
       },
       {
         "trial": "KEYNOTE-C93",
         "nnt": 4,
         "endpoint": "12-month PFS",
         "difference_pp": 27,
-        "calculation": "100/27=3.70, rounded up to 4",
-        "status": "arithmetic correct; visual bars/structured metadata defective"
+        "calculation": "1/0.27=3.70, rounded up to 4",
+        "nnh": "not applicable",
+        "status": "Static PFS and grade ≥3 TRAE charts repaired; no NNH because grade ≥3 TRAEs were lower with pembrolizumab."
       },
       {
         "trial": "KEYNOTE-564",
+        "nnt_dfs_24m": 11,
+        "difference_pp_dfs_24m": 9.2,
         "nnt_dfs_5y": 12,
-        "endpoint_dfs": "5-year DFS",
-        "difference_pp_dfs": 8.7,
-        "calculation_dfs": "100/8.7=11.49, rounded up to 12",
+        "difference_pp_dfs_5y": 8.7,
         "nnt_os_5y": 19,
-        "endpoint_os": "5-year OS",
-        "difference_pp_os": 5.4,
-        "calculation_os": "100/5.4=18.52, rounded up to 19",
-        "status": "new follow-up not yet attached to page"
-      },
-      {
-        "trial": "R-ALPS",
-        "status": "no NNT; median PFS/HR only; use median PFS visual"
+        "difference_pp_os_5y": 5.4,
+        "nnh": "not calculated",
+        "status": "Five-year peer-reviewed follow-up attached; NNH7 removed because cumulative toxicity rate is not fixed-time. ESMO 7-year full abstract not retrieved; no 7-year outcomes imported."
       },
       {
         "trial": "LACC",
-        "status": "original 4.5-year DFS harm 10.6 pp; NNH10; final analysis 11 pp must be separately labelled"
+        "status": "Original 4.5-year DFS harm 10.6 pp; NNH10; final analysis 11 pp remains separately labelled."
       }
     ],
     "new_candidates": [
@@ -527,35 +545,38 @@
     "general_rule": "No NNT calculated from medians or hazard ratios alone; single-arm studies have no NNT; absolute rates must share endpoint and horizon."
   },
   "repository_changes": {
-    "repair_queue": "12 new open issues; 1 source-identifier correction resolved; no trial page HTML changed.",
-    "roster": "No new trial entries; KEYNOTE-564 primary metadata and related follow-ups added; Dalmelitinib registry ID confirmed; visual-review statuses updated for three pages; manual audit addendum added.",
+    "repair_queue": "3 static-visual subtasks and KEYNOTE-564 five-year update closed; 1 separate ESMO 2026 final-analysis source-access task opened; parent content/browser QA items remain open.",
+    "roster": "Four existing roster entries updated; R-ALPS primary title/PMID and protocol added; HEALER and KEYNOTE-C93 absolute-effect metadata corrected; KEYNOTE-564 five-year follow-up and endpoint-specific NNT records added.",
     "evidence_index": "0 changes",
     "trial_archive": "0 changes",
-    "trial_of_the_day": "0 changes",
-    "nccn_coverage_ledger": "1 complete public Insights article entry + 3 current-version freshness tasks; 8 citation-to-trial mappings; 7 pending candidate mappings; 3 access logs.",
-    "deferred_negative_evidence": "3 items added (LITESPARK-012, CAPTAIN-1st, CONTINUUM); total 28.",
-    "daily_files": "This evidence file and a per-run report are being added to the active date branch."
+    "trial_of_the_day": "0 changes; PANKU-Esophagus01 current, GemX previous.",
+    "nccn_coverage_ledger": "0 changes this continuation; 24 guidelines, 27 citation mappings, 91 pending trial mappings, 29 access-log entries; 3 freshness tasks remain open.",
+    "deferred_negative_evidence": "0 changes this continuation; 28 items retained.",
+    "daily_files": "Evening evidence and report updated with repairs, candidate dispositions, validation and preview status.",
+    "trial_page_html": "4 existing canonical pages updated (R-ALPS, HEALER, KEYNOTE-C93, KEYNOTE-564); no new trial pages."
   },
   "validation": {
     "json_readback": "passed for repair queue, roster, NCCN ledger and deferred queue after writes",
-    "local_release_validator": "not run; no local checkout and no complete 30-page batch",
-    "build_tests": "not run; no PR",
-    "pr_checks": "not run; no PR opened",
-    "commit_merge": "no PR, no merge; all work remains on unmerged branch",
+    "local_release_validator": "Not run locally; GitHub Actions strict trial release validator passed (latest batch 2026-11-17; 30 pages; error_count 0).",
+    "build_tests": "Shared renderer JavaScript syntax check passed; Outcome visualization audit run 45192486550 completed successfully; 460 canonical pages found, 0 missing, 0 missing renderer, 52 missing dated-context flags, 0 manual-review flags.",
+    "pr_checks": "Not run; no PR opened because no exact-30 new-page batch.",
+    "commit_merge": "Repair commit fe176bed on active atlas-batch/2026-11-23-am; no PR and no merge.",
     "main_unchanged": true
   },
   "deployment": {
-    "main_cloudflare_pages_check": "GitHub check run for main commit completed successfully on 2026-11-22T03:18:53Z",
-    "representative_live_page_access": "not independently verified; Cloudflare Pages URLs could not be fetched in this session",
-    "new_deployment": "none"
+    "main_cloudflare_pages_check": "Main production branch unchanged; prior main check success 2026-11-22T03:18:53Z remains latest verified production status.",
+    "representative_live_page_access": "Preview URLs were not accessible through the web fetcher; browser-rendered page content not independently verified.",
+    "new_deployment": "Branch preview only; no production deployment.",
+    "branch_preview_deployment": "Cloudflare Pages check succeeded for fe176bed; preview URL https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev."
   },
   "next_actions": [
-    "Resolve the active 2026-11-23 AM branch before starting another publication branch; do not open overlapping publication PRs.",
-    "Complete full primary extraction and DOI-title verification for the seven held unique candidates.",
-    "Continue the NCCN H&N Insights reference mining beyond the eight mapped references; retrieve the latest full H&N, Endometrial and Kidney guidelines when accessible.",
-    "Repair R-ALPS, HEALER and KEYNOTE-C93 visible outcome bars and structured absolute-effect records; attach KEYNOTE-564 five-year follow-up.",
-    "Reconcile audit metadata counters from commit/report history.",
-    "Continue disease-site rotation across GU, hematology, sarcoma, GI, breast, thoracic and supportive care; do not pad to 30."
+    "Inspect/verify the branch preview in a browser capable of loading the Cloudflare preview; web fetch was inaccessible.",
+    "Retrieve HEALER NEJM protocol/supplement or authoritative registry arm details; do not infer doses.",
+    "Retrieve KEYNOTE-C93 supplement for QoL/subgroups if available; verify browser-rendered output.",
+    "Retrieve ESMO 2026 KEYNOTE-564 abstract 3589RO full text or final peer-reviewed report before adding seven-year outcomes.",
+    "Complete primary extraction and DOI-title verification for seven held new unique candidates.",
+    "Continue NCCN H&N Insights reference mining and current full guideline retrieval; retain freshness tasks for inaccessible full guidelines.",
+    "Do not open a second publication branch or PR until the active batch is completed with exactly 30 unique pages."
   ],
   "explicit_exclusions": [
     "PIVOT"
@@ -566,5 +587,30 @@
     "reason": "held pending exact ONS composition/dose/schedule and full primary safety extraction",
     "current": "PANKU-Esophagus01",
     "previous": "GemX"
-  }
+  },
+  "repair_commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
+  "workflow_audit": {
+    "run_id": 45192486550,
+    "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/45192486550",
+    "commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
+    "conclusion": "success",
+    "strict_release_validator": {
+      "latest_batch_date": "2026-11-17",
+      "latest_batch_count": 30,
+      "error_count": 0
+    },
+    "outcome_visual_audit": {
+      "roster_entries": 467,
+      "canonical_pages_found": 460,
+      "missing_pages": 0,
+      "redirect_stubs": 1,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "missing_dated_context": 52,
+      "absolute_effect_markup": 168,
+      "outcome_visual_candidates": 292
+    },
+    "artifact_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/45192486550/artifacts/14825454570"
+  },
+  "working_branch_head_after_repairs": "fe176bedf05cc43a047028e10e8828370b652886"
 }

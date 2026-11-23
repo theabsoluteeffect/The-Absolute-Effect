@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 17,
-  "last_quality_check": "2026-11-23 evening — 18-page partial manual source/visual audit; four canonical pages updated; full clinical audit and browser-rendered QA incomplete.",
+  "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-23 evening — 18-page partial manual source/visual audit; four canonical pages updated; full clinical audit and browser-rendered QA incomplete.",
+    "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -1763,8 +1763,8 @@
     "manual_review_count_reconciliation_note": "Aggregate manual review counters (manual_page_reviews_total=8; pages_manually_inspected=14) do not reconcile with the 4-entry manual_review_log. Evening manual reviews are preserved separately; do not claim full audit completion.",
     "last_evening_review_date": "2026-11-23",
     "last_evening_review_status": "INCOMPLETE — 14 pages inspected; 3 visualization repairs and 1 follow-up update queued; no full audit completion.",
-    "manual_pages_inspected_this_run": 4,
-    "manual_pages_inspected_on_2026_11_23": 18,
+    "manual_pages_inspected_this_run": 14,
+    "manual_pages_inspected_on_2026_11_23": 14,
     "primary_source_reviews_this_run": 4,
     "browser_rendered_qa_complete": false,
     "pages_updated_this_run": [
@@ -1773,7 +1773,29 @@
       "keynote-c93",
       "keynote-564"
     ],
-    "keynote564_five_year_followup_attached": true
+    "keynote564_five_year_followup_attached": true,
+    "strict_release_validator": {
+      "run_id": 45192486550,
+      "latest_batch_date": "2026-11-17",
+      "latest_batch_count": 30,
+      "error_count": 0,
+      "conclusion": "success"
+    },
+    "outcome_visual_audit": {
+      "run_id": 45192486550,
+      "roster_pages_found": 460,
+      "roster_pages_missing": 0,
+      "renderer_missing": 0,
+      "missing_dated_context": 52,
+      "manual_review_flags": 0,
+      "conclusion": "success"
+    },
+    "branch_preview_deployment": {
+      "commit": "fe176bedf05cc43a047028e10e8828370b652886",
+      "status": "success",
+      "url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev",
+      "production": false
+    }
   },
   "trials": [
     {
@@ -11497,7 +11519,7 @@
       "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     }
   ],
-  "last_updated": "2026-11-23T19:26:14+05:30",
+  "last_updated": "2026-11-23T19:28:00+05:30",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {

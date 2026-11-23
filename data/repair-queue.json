@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T19:26:14+05:30",
+  "updated_at": "2026-11-23T19:28:00+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
-    "generated_at": "2026-11-23T19:26:14+05:30",
-    "audited_head": "4e8ff24c96404572e064d67c469bd7eeb72b605b",
+    "generated_at": "2026-11-23T19:28:00+05:30",
+    "audited_head": "fe176bedf05cc43a047028e10e8828370b652886",
     "status": "PARTIAL",
     "counts": {
       "roster_pages_found": 407,
@@ -17,7 +17,7 @@
       "short_pages": 0,
       "missing_primary_source": 0
     },
-    "note": "Four additional canonical pages manually re-read against primary publications/protocols. Three static chart defects repaired; KEYNOTE-564 five-year follow-up attached. Browser-rendered QA and full clinical audit remain incomplete.",
+    "note": "Four existing canonical pages were updated after manual review. GitHub Actions strict release validator and outcome audit passed on fe176bed; 460 canonical pages found, 0 missing, 0 missing renderers, 52 missing dated-context flags. Browser-rendered/live page content could not be fetched independently; full clinical audit remains incomplete.",
     "audited_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "roster_entries_before": 437,
     "canonical_trial_page_directories_before": 431,
@@ -44,7 +44,7 @@
     "branch_daily_evidence_files": 28,
     "branch_daily_evidence_records": 388,
     "manual_existing_pages_rechecked": 5,
-    "remaining_existing_pages_for_manual_audit": 442,
+    "remaining_existing_pages_for_manual_audit": 446,
     "audited_on": "2026-11-23",
     "recursive_tree_entries": 1179,
     "roster_entries": 467,
@@ -65,15 +65,25 @@
     "pages_missing_dated_context": 52,
     "outcome_visualization_candidates": 292,
     "absolute_effect_markup_pages": 168,
-    "manual_pages_inspected": 18,
+    "manual_pages_inspected": 14,
     "primary_source_manually_verified_pages": 9,
     "release_hold_pages_in_last_merged_batch": 4,
     "redirect_stub_files": [
       "trial-pages/rosel/index.html"
     ],
     "production_deployment_verified": false,
-    "manual_pages_inspected_this_run": 4,
-    "primary_source_manually_verified_this_run": 4
+    "manual_pages_inspected_this_run": 14,
+    "primary_source_manually_verified_this_run": 4,
+    "canonical_pages_missing": 0,
+    "renderer_missing": 0,
+    "missing_dated_context": 52,
+    "manual_review_flags": 0,
+    "browser_rendered_qa_complete": false,
+    "strict_release_validator_error_count": 0,
+    "outcome_visual_audit_run_id": 45192486550,
+    "outcome_visual_audit_conclusion": "success",
+    "branch_preview_deployment_status": "success",
+    "branch_preview_url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev"
   },
   "open_items": [
     {
@@ -4710,8 +4720,8 @@
       "branch": "atlas-batch/2026-11-23-am",
       "branch_head_before_repairs": "4e8ff24c96404572e064d67c469bd7eeb72b605b",
       "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-      "manual_page_reviews": 4,
-      "manual_pages_inspected_today": 18,
+      "manual_page_reviews": 14,
+      "manual_pages_inspected_today": 14,
       "primary_source_reviews": 4,
       "page_html_repairs": 4,
       "static_visual_repairs": 3,
@@ -4720,7 +4730,11 @@
       "queue_items_opened": 1,
       "uploaded_pages": 0,
       "status": "INCOMPLETE — 0/30 uploaded",
-      "notes": "Existing-page repairs only; no new trial page added to main. Browser-rendered QA pending."
+      "notes": "Existing-page repairs only; no new trial page added to main. Browser-rendered QA pending.",
+      "branch_head_after_repairs": "fe176bedf05cc43a047028e10e8828370b652886",
+      "outcome_visual_audit_run_id": 45192486550,
+      "strict_release_validator_errors": 0,
+      "preview_deployment_success": true
     }
   ],
   "previous_partial_runs": [
@@ -4805,25 +4819,29 @@
     "deferred_contrary_evidence": 2,
     "duplicates_or_followups": 14,
     "uploaded": 0,
-    "manual_page_reviews_this_run": 4,
-    "manual_pages_inspected_today": 18,
+    "manual_page_reviews_this_run": 14,
+    "manual_pages_inspected_today": 14,
     "repairs": 4,
     "queue_open_after": 193,
     "queue_resolved_after": 66,
-    "next_action": "Complete primary-source extraction for seven held candidates; verify browser rendering; do not open PR until an exact-30 batch passes all checks."
+    "next_action": "Complete primary-source extraction for seven held candidates; verify browser rendering; do not open PR until an exact-30 batch passes all checks.",
+    "repair_commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
+    "outcome_visual_audit_run_id": 45192486550,
+    "strict_release_validator_passed": true,
+    "branch_preview_deployed": true
   },
   "last_updated": "2026-11-23",
   "last_run": "absolute-effect-2026-11-23-evening",
-  "generated_at": "2026-11-23T19:26:14+05:30",
+  "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
     "open_items": 193,
     "resolved_items": 66,
-    "note": "2026-11-23: 467 roster entries, 460 canonical content directories, one redirect-only stub, 468 normalized evidence-index destinations and zero missing roster links. Evening continuation: 18 pages manually inspected across morning/evening cycles; four page HTML updates applied (R-ALPS, HEALER, KEYNOTE-C93, KEYNOTE-564). Three static chart defects repaired; KEYNOTE-564 five-year peer-reviewed follow-up attached and separate ESMO 2026 final-analysis source-access task opened. Browser-rendered QA and full clinical audit remain incomplete. Seven new unique candidates held; two contrary/non-preferred candidates deferred; 14 duplicates/follow-ups excluded. Main unchanged.",
+    "note": "2026-11-23 evening: 14 existing pages manually inspected; four canonical pages updated (R-ALPS, HEALER, KEYNOTE-C93, KEYNOTE-564). Three static chart defects repaired; KEYNOTE-564 five-year peer-reviewed follow-up attached. GitHub Actions strict release validator and outcome visual audit passed (460 canonical pages found, zero missing, zero missing renderer, 52 missing dated-context flags). Branch preview deployment succeeded; representative page fetch was not independently verified. Browser-rendered QA and full clinical audit remain incomplete. Seven new unique candidates held; two deferred; 14 duplicates/follow-ups excluded. Main unchanged.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52
   },
-  "updated_on": "2026-11-23T19:26:14+05:30",
+  "updated_on": "2026-11-23T19:28:00+05:30",
   "last_run_date": "2026-11-23",
   "last_run_cycle": "evening"
 }

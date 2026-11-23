@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-11-23T18:58:33+05:30",
+  "run_timestamp": "2026-11-23T19:28:00+05:30",
   "cycle": "evening",
   "status": "INCOMPLETE — 0/30 uploaded; 30 not uploaded",
   "repository": {
@@ -10,7 +10,11 @@
     "evidence_file_commit_sha": "ea263587dbe7681b6a4078677df6edee8de41e3d",
     "pr": null,
     "merge": null,
-    "main_unchanged": true
+    "main_unchanged": true,
+    "repair_base_head": "4e8ff24c96404572e064d67c469bd7eeb72b605b",
+    "repair_commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
+    "working_branch_head_after_repairs": "fe176bedf05cc43a047028e10e8828370b652886",
+    "branch_preview_url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev"
   },
   "counts": {
     "screened": 23,
@@ -241,14 +245,16 @@
   },
   "existing_page_audit": {
     "pages_manually_inspected": 14,
-    "visual_defects": 3,
-    "follow_up_updates_missing": 1,
+    "pages_manually_inspected_this_evening_cycle": 14,
+    "static_visual_defects_after_repair": 0,
+    "browser_rendered_visual_checks_pending": 3,
+    "follow_up_updates_missing": 0,
     "full_canonical_tree_audit_complete": false,
-    "repairs_applied_to_page_html": 0,
-    "repair_queue_items_opened": 12,
-    "repair_queue_items_closed": 1,
+    "repairs_applied_to_page_html": 4,
+    "repair_queue_items_opened": 1,
+    "repair_queue_items_closed": 4,
     "queue_open_after": 193,
-    "queue_resolved_after": 62
+    "queue_resolved_after": 66
   },
   "nccn_guideline_review": {
     "insights_article": {
@@ -291,44 +297,41 @@
   "nnt_nnh_visualization_qa": {
     "existing_pages": [
       {
+        "trial": "R-ALPS",
+        "status": "No NNT from medians/HRs; three-arm stage-1 median PFS, pooled comparison and grade 3–5 TRAE static charts source-checked."
+      },
+      {
         "trial": "HEALER",
         "nnt": 5,
         "endpoint": "24-month PFS",
         "difference_pp": 24.1,
-        "calculation": "100/24.1=4.15, rounded up to 5",
-        "nnh": 9,
-        "harm_endpoint": "grade≥3 AEs over reported safety follow-up",
-        "harm_difference_pp": 11.5,
-        "calculation_nnh": "100/11.5=8.70, rounded up to 9",
-        "status": "arithmetic correct; visual bars/structured metadata defective"
+        "calculation": "1/0.241=4.15, rounded up to 5",
+        "nnh": "not calculated",
+        "reason": "No common fixed-time toxicity horizon in accessible abstract; grade ≥3 AE excess 11.5 pp displayed separately."
       },
       {
         "trial": "KEYNOTE-C93",
         "nnt": 4,
         "endpoint": "12-month PFS",
         "difference_pp": 27,
-        "calculation": "100/27=3.70, rounded up to 4",
-        "status": "arithmetic correct; visual bars/structured metadata defective"
+        "calculation": "1/0.27=3.70, rounded up to 4",
+        "nnh": "not applicable",
+        "reason": "Grade ≥3 TRAEs lower with pembrolizumab; no NNH assigned."
       },
       {
         "trial": "KEYNOTE-564",
+        "nnt_dfs_24m": 11,
+        "difference_pp_dfs_24m": 9.2,
         "nnt_dfs_5y": 12,
-        "endpoint_dfs": "5-year DFS",
-        "difference_pp_dfs": 8.7,
-        "calculation_dfs": "100/8.7=11.49, rounded up to 12",
+        "difference_pp_dfs_5y": 8.7,
         "nnt_os_5y": 19,
-        "endpoint_os": "5-year OS",
-        "difference_pp_os": 5.4,
-        "calculation_os": "100/5.4=18.52, rounded up to 19",
-        "status": "new follow-up not yet attached to page"
-      },
-      {
-        "trial": "R-ALPS",
-        "status": "no NNT; median PFS/HR only; use median PFS visual"
+        "difference_pp_os_5y": 5.4,
+        "nnh": "not calculated",
+        "reason": "Cumulative grade ≥3 AE rate is not a fixed-time endpoint."
       },
       {
         "trial": "LACC",
-        "status": "original 4.5-year DFS harm 10.6 pp; NNH10; final analysis 11 pp must be separately labelled"
+        "status": "Original 4.5-year DFS harm 10.6 pp; NNH10; final analysis 11 pp remains separately labelled."
       }
     ],
     "new_candidates": [
@@ -362,7 +365,7 @@
         "status": "deferred; not an active recommendation in the Insights article"
       }
     ],
-    "general_rule": "No NNT calculated from medians or hazard ratios alone; single-arm studies have no NNT; absolute rates must share endpoint and horizon."
+    "general_rule": "No NNT from medians or HRs; absolute differences only at comparable endpoint/time horizon; no NNH without a common fixed-time toxicity horizon."
   },
   "repository_reconciliation": {
     "roster_entries": 467,
@@ -379,43 +382,51 @@
     "previous_trial_of_day": "GemX",
     "open_prs": 0,
     "active_am_branch_has_new_trial_pages": 0,
-    "active_am_branch_ahead_by_commits_as_last_reported": 20
+    "active_am_branch_ahead_by_commits_as_last_reported": 29,
+    "active_am_branch_head": "fe176bedf05cc43a047028e10e8828370b652886",
+    "main_unchanged": true
   },
   "repository_changes": {
-    "repair_queue": "12 new open issues; 1 source-identifier correction resolved; no trial page HTML changed.",
-    "roster": "No new trial entries; KEYNOTE-564 primary metadata and related follow-ups added; Dalmelitinib registry ID confirmed; visual-review statuses updated for three pages; manual audit addendum added.",
-    "evidence_index": "0 changes",
-    "trial_archive": "0 changes",
-    "trial_of_the_day": "0 changes",
-    "nccn_coverage_ledger": "1 complete public Insights article entry + 3 current-version freshness tasks; 8 citation-to-trial mappings; 7 pending candidate mappings; 3 access logs.",
-    "deferred_negative_evidence": "3 items added (LITESPARK-012, CAPTAIN-1st, CONTINUUM); total 28.",
-    "daily_files": "This evidence file and a per-run report are being added to the active date branch."
+    "trial_pages_modified": 4,
+    "existing_roster_entries_updated": 4,
+    "new_trial_pages": 0,
+    "new_roster_entries": 0,
+    "evidence_index_changes": 0,
+    "archive_changes": 0,
+    "trial_of_the_day_changes": 0,
+    "nccn_coverage_ledger_changes": 0,
+    "deferred_negative_queue_changes": 0,
+    "repair_queue_opened": 1,
+    "repair_queue_closed": 4,
+    "daily_evidence_and_report_files_updated": 2
   },
   "validation_and_deployment": {
-    "json_readback": "passed for repair queue, roster, NCCN ledger and deferred queue after writes",
-    "local_release_validator": "not run; no local checkout and no complete 30-page batch",
-    "build_tests": "not run; no PR",
-    "pr_checks": "not run; no PR opened",
-    "commit_merge": "no PR, no merge; all work remains on unmerged branch",
-    "main_unchanged": true,
-    "main_cloudflare_pages_check": "GitHub check run for main commit completed successfully on 2026-11-22T03:18:53Z",
-    "representative_live_page_access": "not independently verified; Cloudflare Pages URLs could not be fetched in this session",
-    "new_deployment": "none"
+    "json_readback": "passed for roster, repair queue, daily evidence and report",
+    "local_release_validator": "Not run locally; GitHub Actions strict trial release validator passed (latest batch 2026-11-17, 30 pages, 0 errors).",
+    "build_tests": "Shared renderer syntax check passed; outcome audit run 45192486550 passed (460 pages, 0 missing, 0 renderer missing, 52 missing dated-context flags, 0 static manual-review flags).",
+    "pr_checks": "Not run; no PR opened because 0/30 new trial pages are ready.",
+    "commit_merge": "Repair commit fe176bed on active branch; no PR, no merge; main unchanged.",
+    "branch_preview": "Cloudflare Pages branch preview deployed successfully; representative page fetch not independently verified.",
+    "production_deployment": "No production deployment; main unchanged.",
+    "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/45192486550",
+    "artifact_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/45192486550/artifacts/14825454570"
   },
   "blockers": [
-    "Active morning branch remains unmerged with no PR; serialization rule prevents a second publication branch while it is unresolved.",
-    "No 30 fully verified new unique studies are ready; strict release gate requires exactly 30 before PR.",
-    "NCCN full guideline/reference lists for current Head & Neck, Endometrial and Kidney versions were inaccessible; freshness tasks remain open.",
-    "Three existing pages have zero-width/misaligned outcome bars; KEYNOTE-564 five-year update is not yet attached.",
-    "No local validator/build or PR checks can be run without a release-ready 30-page batch."
+    "No 30 fully verified new unique studies are ready; 0/30 uploaded and 30 not uploaded. Seven unique candidates remain held for missing primary-source extraction; two contrary/non-preferred candidates deferred.",
+    "The active atlas-batch/2026-11-23-am branch remains unmerged; no PR opened and no separate PM branch created to avoid overlapping publication work.",
+    "Three parent repair items remain open for browser-rendered QA; HEALER exact dose/schedule and full supplement remain unverified.",
+    "The full ESMO 2026 KEYNOTE-564 final-analysis abstract 3589RO was not retrieved; seven-year numeric outcomes were not imported.",
+    "NCCN full guideline/reference lists for current Head & Neck, Endometrial and Kidney versions remain inaccessible; three freshness tasks remain open.",
+    "The automated audit is structural only; 52 canonical pages still lack dated current-practice context, and the full clinical audit remains incomplete."
   ],
   "next_actions": [
-    "Resolve the active 2026-11-23 AM branch before starting another publication branch; do not open overlapping publication PRs.",
-    "Complete full primary extraction and DOI-title verification for the seven held unique candidates.",
-    "Continue the NCCN H&N Insights reference mining beyond the eight mapped references; retrieve the latest full H&N, Endometrial and Kidney guidelines when accessible.",
-    "Repair R-ALPS, HEALER and KEYNOTE-C93 visible outcome bars and structured absolute-effect records; attach KEYNOTE-564 five-year follow-up.",
-    "Reconcile audit metadata counters from commit/report history.",
-    "Continue disease-site rotation across GU, hematology, sarcoma, GI, breast, thoracic and supportive care; do not pad to 30."
+    "Inspect/verify the branch preview in a browser capable of loading the Cloudflare preview; web fetch was inaccessible.",
+    "Retrieve HEALER NEJM protocol/supplement or authoritative registry arm details; do not infer doses.",
+    "Retrieve KEYNOTE-C93 supplement for QoL/subgroups if available; verify browser-rendered output.",
+    "Retrieve ESMO 2026 KEYNOTE-564 abstract 3589RO full text or final peer-reviewed report before adding seven-year outcomes.",
+    "Complete primary extraction and DOI-title verification for seven held new unique candidates.",
+    "Continue NCCN H&N Insights reference mining and current full guideline retrieval; retain freshness tasks for inaccessible full guidelines.",
+    "Do not open a second publication branch or PR until the active batch is completed with exactly 30 unique pages."
   ],
   "cumulative_progress": {
     "roster_entries": 467,
@@ -425,5 +436,8 @@
   },
   "evidence_file": "data/daily-evidence-2026-11-23-evening.json",
   "report_commit_sha": "90641859efc58bc2877e79d9c2504af7025eac07",
-  "report_commit_sha_note": "SHA of the commit that first created this report file; current branch head is reported separately in the ChatGPT completion message."
+  "report_commit_sha_note": "Original report creation commit retained; repair commit and validation run recorded in this update.",
+  "repair_commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
+  "outcome_visual_audit_run_id": 45192486550,
+  "preview_deployment_url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev"
 }
