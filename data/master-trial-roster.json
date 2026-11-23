@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-23 — structural reconciliation and four manual source/visual checks; not a full clinical audit.",
+    "last_quality_check": "2026-11-23 evening — 14-page partial manual visual/source audit; 3 visual defects and 1 missing follow-up queued; full clinical audit incomplete.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -1472,7 +1472,297 @@
           "https://doi.org/10.1056/NEJMoa2502931"
         ]
       }
-    ]
+    ],
+    "evening_manual_review_addendum": {
+      "date": "2026-11-23",
+      "pages_inspected": 14,
+      "visual_defects": 3,
+      "follow_up_updates": 1,
+      "manual_reviews": [
+        {
+          "trial_id": "checkmate-816",
+          "page": "trial-pages/checkmate-816/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+            "https://pubmed.ncbi.nlm.nih.gov/40454642/"
+          ],
+          "visual": "Visible pCR/EFS/OS bars inspected; 21.8, 18.5 and 10.4 pp differences match source values.",
+          "effect": "NNT 5, 6 and 10 respectively; prior erroneous PMID 40349252 corrected to 40454642."
+        },
+        {
+          "trial_id": "keynote-a18",
+          "page": "trial-pages/keynote-a18/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+            "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+          ],
+          "visual": "Visible OS bar inspected; 7.8 pp difference matches 36-month OS.",
+          "effect": "NNT 13 at 36 months."
+        },
+        {
+          "trial_id": "lacc",
+          "page": "trial-pages/lacc/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+            "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+            "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+          ],
+          "visual": "Visible DFS harm bar inspected; 10.6 pp difference matches original primary 4.5-year analysis.",
+          "effect": "NNH 10 for DFS harm at 4.5 years; final analysis 85% vs96% is a distinct 11 pp estimate and should remain labelled separately."
+        },
+        {
+          "trial_id": "shape",
+          "page": "trial-pages/shape/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+          ],
+          "visual": "Visible noninferiority and functional graphics inspected; widths finite.",
+          "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+        },
+        {
+          "trial_id": "r-alps",
+          "page": "trial-pages/r-alps/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+            "https://clinicaltrials.gov/study/NCT04325763"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "No NNT from median PFS/HR; median PFS bars required."
+        },
+        {
+          "trial_id": "healer",
+          "page": "trial-pages/healer/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+            "https://clinicaltrials.gov/study/NCT05838066"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "NNT 5 for 24-month PFS (58.5% vs34.4%); NNH 9 for grade≥3 AEs (45.9% vs34.4%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-c93",
+          "page": "trial-pages/keynote-c93/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+            "https://clinicaltrials.gov/study/NCT05173987"
+          ],
+          "visual": "12-month PFS bars are 0% width; visual QA failed.",
+          "effect": "NNT 4 for 12-month PFS (67% vs40%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-564",
+          "page": "trial-pages/keynote-564/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+            "https://clinicaltrials.gov/study/NCT03142334"
+          ],
+          "visual": "Existing outcome visuals are present, but 2026 five-year follow-up not attached.",
+          "effect": "Five-year DFS 60.9% vs52.2% → NNT12; OS 87.7% vs82.3% → NNT19; based on same-horizon absolute KM rates."
+        },
+        {
+          "trial_id": "trofuse-005",
+          "page": "trial-pages/trofuse-005/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933460/"
+          ],
+          "visual": "Non-zero source-linked median PFS/OS bars inspected; no broken width detected.",
+          "effect": "No NNT from medians alone."
+        },
+        {
+          "trial_id": "toripalimab-mfolfirinox",
+          "page": "trial-pages/toripalimab-mfolfirinox/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42970668/"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "bctop-h-n01",
+          "page": "trial-pages/bctop-h-n01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+            "https://clinicaltrials.gov/study/NCT06747338"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "relight",
+          "page": "trial-pages/relight/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+            "https://clinicaltrials.gov/study/NCT04950322"
+          ],
+          "visual": "Visible non-zero PFS/OS outcome bars inspected.",
+          "effect": "No NNT from median PFS/OS alone."
+        },
+        {
+          "trial_id": "panku-esophagus01",
+          "page": "trial-pages/panku-esophagus01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+            "https://clinicaltrials.gov/study/NCT06304974"
+          ],
+          "visual": "Visible non-zero source-linked outcome bars inspected; current ToD page.",
+          "effect": "No new NNT claim added in this audit."
+        },
+        {
+          "trial_id": "litespark-012",
+          "page": "trial-pages/litespark-012/index.html",
+          "sources": [
+            "https://clinicaltrials.gov/study/NCT04736706"
+          ],
+          "visual": "Qualitative negative-result/status graphic present; no unsupported numeric NNT.",
+          "effect": "No NNT/NNH; negative interim evidence belongs in deferred/contrary queue."
+        }
+      ],
+      "scope_note": "Static HTML structure and source links inspected; live browser-rendered visual QA could not be completed. Full clinical freshness audit remains incomplete.",
+      "pages": [
+        {
+          "trial_id": "checkmate-816",
+          "page": "trial-pages/checkmate-816/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+            "https://pubmed.ncbi.nlm.nih.gov/40454642/"
+          ],
+          "visual": "Visible pCR/EFS/OS bars inspected; 21.8, 18.5 and 10.4 pp differences match source values.",
+          "effect": "NNT 5, 6 and 10 respectively; prior erroneous PMID 40349252 corrected to 40454642."
+        },
+        {
+          "trial_id": "keynote-a18",
+          "page": "trial-pages/keynote-a18/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+            "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+          ],
+          "visual": "Visible OS bar inspected; 7.8 pp difference matches 36-month OS.",
+          "effect": "NNT 13 at 36 months."
+        },
+        {
+          "trial_id": "lacc",
+          "page": "trial-pages/lacc/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+            "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+            "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+          ],
+          "visual": "Visible DFS harm bar inspected; 10.6 pp difference matches original primary 4.5-year analysis.",
+          "effect": "NNH 10 for DFS harm at 4.5 years; final analysis 85% vs96% is a distinct 11 pp estimate and should remain labelled separately."
+        },
+        {
+          "trial_id": "shape",
+          "page": "trial-pages/shape/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+          ],
+          "visual": "Visible noninferiority and functional graphics inspected; widths finite.",
+          "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+        },
+        {
+          "trial_id": "r-alps",
+          "page": "trial-pages/r-alps/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+            "https://clinicaltrials.gov/study/NCT04325763"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "No NNT from median PFS/HR; median PFS bars required."
+        },
+        {
+          "trial_id": "healer",
+          "page": "trial-pages/healer/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+            "https://clinicaltrials.gov/study/NCT05838066"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "NNT 5 for 24-month PFS (58.5% vs34.4%); NNH 9 for grade≥3 AEs (45.9% vs34.4%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-c93",
+          "page": "trial-pages/keynote-c93/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+            "https://clinicaltrials.gov/study/NCT05173987"
+          ],
+          "visual": "12-month PFS bars are 0% width; visual QA failed.",
+          "effect": "NNT 4 for 12-month PFS (67% vs40%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-564",
+          "page": "trial-pages/keynote-564/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+            "https://clinicaltrials.gov/study/NCT03142334"
+          ],
+          "visual": "Existing outcome visuals are present, but 2026 five-year follow-up not attached.",
+          "effect": "Five-year DFS 60.9% vs52.2% → NNT12; OS 87.7% vs82.3% → NNT19; based on same-horizon absolute KM rates."
+        },
+        {
+          "trial_id": "trofuse-005",
+          "page": "trial-pages/trofuse-005/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933460/"
+          ],
+          "visual": "Non-zero source-linked median PFS/OS bars inspected; no broken width detected.",
+          "effect": "No NNT from medians alone."
+        },
+        {
+          "trial_id": "toripalimab-mfolfirinox",
+          "page": "trial-pages/toripalimab-mfolfirinox/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42970668/"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "bctop-h-n01",
+          "page": "trial-pages/bctop-h-n01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+            "https://clinicaltrials.gov/study/NCT06747338"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "relight",
+          "page": "trial-pages/relight/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+            "https://clinicaltrials.gov/study/NCT04950322"
+          ],
+          "visual": "Visible non-zero PFS/OS outcome bars inspected.",
+          "effect": "No NNT from median PFS/OS alone."
+        },
+        {
+          "trial_id": "panku-esophagus01",
+          "page": "trial-pages/panku-esophagus01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+            "https://clinicaltrials.gov/study/NCT06304974"
+          ],
+          "visual": "Visible non-zero source-linked outcome bars inspected; current ToD page.",
+          "effect": "No new NNT claim added in this audit."
+        },
+        {
+          "trial_id": "litespark-012",
+          "page": "trial-pages/litespark-012/index.html",
+          "sources": [
+            "https://clinicaltrials.gov/study/NCT04736706"
+          ],
+          "visual": "Qualitative negative-result/status graphic present; no unsupported numeric NNT.",
+          "effect": "No NNT/NNH; negative interim evidence belongs in deferred/contrary queue."
+        }
+      ],
+      "reviewed_on": "2026-11-23"
+    },
+    "manual_review_count_reconciliation_required": true,
+    "manual_review_count_reconciliation_note": "Aggregate manual review counters (manual_page_reviews_total=8; pages_manually_inspected=14) do not reconcile with the 4-entry manual_review_log. Evening manual reviews are preserved separately; do not claim full audit completion.",
+    "last_evening_review_date": "2026-11-23",
+    "last_evening_review_status": "INCOMPLETE — 14 pages inspected; 3 visualization repairs and 1 follow-up update queued; no full audit completion."
   },
   "trials": [
     {
@@ -3363,7 +3653,8 @@
       "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
       "pmid": "42928710",
       "disease_extent": "Advanced / metastatic",
-      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility",
+      "registry_id": "NCT06110663"
     },
     {
       "id": "daly-2-eu",
@@ -5055,7 +5346,7 @@
         "DOI 10.1056/NEJMoa2610345"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "absolute_effect": {
@@ -6346,9 +6637,27 @@
       "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
       "path": "trial-pages/keynote-564/",
-      "freshness_review_status": "pending",
+      "freshness_review_status": "2026-11-23: five-year follow-up identified; page update pending; see repair-queue item repair-keynote-564-five-year-followup-2026-11-23",
       "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Adjuvant"
+      "setting_detail": "Adjuvant",
+      "primary": "10.1056/NEJMoa2106391",
+      "primary_title": "Adjuvant Pembrolizumab after Nephrectomy in Renal-Cell Carcinoma",
+      "pmid": "34407342",
+      "registry_id": "NCT03142334",
+      "related_publications": [
+        {
+          "title": "Overall Survival with Adjuvant Pembrolizumab in Renal-Cell Carcinoma",
+          "doi": "10.1056/NEJMoa2312695",
+          "pmid": "38631003",
+          "date": "2024-04-18"
+        },
+        {
+          "title": "Adjuvant pembrolizumab for the treatment of clear cell renal cell carcinoma: five-year results from the phase III KEYNOTE-564 study",
+          "doi": "10.1016/j.annonc.2026.08.006",
+          "pmid": "42648402",
+          "date": "2026-08-26"
+        }
+      ]
     },
     {
       "id": "keynote-671",
@@ -6585,7 +6894,7 @@
         "DOI 10.1016/S0140-6736(26)02095-7"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "absolute_effect": {
@@ -6822,7 +7131,8 @@
       "path": "trial-pages/litespark-012/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "qualitative negative primary-endpoint summary; numerical effect sizes not publicly disclosed in sponsor release",
-      "setting_detail": "First-line advanced ccRCC"
+      "setting_detail": "First-line advanced ccRCC",
+      "evidence_disposition_status": "Negative interim primary-endpoint result; deferred/contrary-evidence queue entry added 2026-11-23; primary peer-reviewed publication not located."
     },
     {
       "id": "loehrer-veip-mixed-gct-1998",
@@ -8965,7 +9275,7 @@
         "DOI 10.1001/jamaoncol.2026.3918"
       ],
       "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "outcome_visual_review_status": "Manual HTML inspection 2026-11-23: zero-width/misaligned outcome bars; repair queued; browser-rendered QA not completed.",
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer",
