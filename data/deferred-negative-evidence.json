@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T08:50:38+05:30",
+  "updated_at": "2026-11-23",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -459,10 +459,94 @@
         }
       ],
       "status_note": "Primary publication identity checked; registry pending; no new page."
+    },
+    {
+      "trial_id": "litespark-012",
+      "trial": "LITESPARK-012",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": null,
+      "references": [],
+      "reason": "Phase III randomized first-line advanced RCC trial; sponsor-reported interim analysis found neither experimental combination (belzutifan or quavonlimab added to pembrolizumab/lenvatinib) met the primary PFS endpoint versus pembrolizumab/lenvatinib alone. Peer-reviewed primary publication not located during this run; do not treat sponsor announcement as a full publication.",
+      "action": "Retain as negative/contrary evidence; preserve sponsor announcement and registry; attach a full primary paper/meeting abstract if published. Do not create a duplicate page.",
+      "primary_sources": [
+        {
+          "type": "registry",
+          "id": "NCT04736706",
+          "url": "https://clinicaltrials.gov/study/NCT04736706"
+        },
+        {
+          "type": "sponsor announcement",
+          "url": "https://www.merck.com/news/merck-provides-update-on-phase-3-litespark-012-trial/"
+        }
+      ],
+      "status_note": "Already rostered/page exists; queue entry added 2026-11-23."
+    },
+    {
+      "trial_id": "captain-1st",
+      "trial": "CAPTAIN-1st",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-head-neck-insights-v2-2025",
+      "references": [
+        "69"
+      ],
+      "reason": "Positive phase III camrelizumab plus gemcitabine/cisplatin study, but NCCN Insights Version 2.2025 explicitly states camrelizumab is not currently available in the United States and does not place this regimen in the preferred first-line recommendation table.",
+      "action": "Retain as positive but regionally unavailable/implementation-discordant evidence; do not present as a current US preferred regimen. Reassess if regulatory availability or guideline status changes.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/S1470-2045(21)00302-8",
+          "pmid": "34174189",
+          "url": "https://doi.org/10.1016/S1470-2045(21)00302-8"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03707509",
+          "url": "https://clinicaltrials.gov/study/NCT03707509"
+        },
+        {
+          "type": "NCCN Insights",
+          "doi": "10.6004/jnccn.2025.0007",
+          "pmid": "39938471",
+          "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/23/2/article-p2.pdf"
+        }
+      ],
+      "status_note": "New unique underlying study; deferred rather than published in this batch."
+    },
+    {
+      "trial_id": "continuum",
+      "trial": "CONTINUUM",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-head-neck-insights-v2-2025",
+      "references": [
+        "35"
+      ],
+      "reason": "Positive phase III trial of sintilimab added to induction/concurrent chemoradiotherapy in locoregionally advanced NPC, cited in NCCN Insights Version 2.2025, but no active preferred-regimen recommendation/category for this strategy is stated in the article.",
+      "action": "Retain as positive but recommendation-discordant/implementation-pending evidence; do not imply NCCN endorsement. Reassess against the latest full NCCN guideline and other authoritative guidance.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/S0140-6736(24)00594-4",
+          "pmid": "38824941",
+          "url": "https://doi.org/10.1016/S0140-6736(24)00594-4"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03700476",
+          "url": "https://clinicaltrials.gov/study/NCT03700476"
+        },
+        {
+          "type": "NCCN Insights",
+          "doi": "10.6004/jnccn.2025.0007",
+          "pmid": "39938471",
+          "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/23/2/article-p2.pdf"
+        }
+      ],
+      "status_note": "New unique underlying study; deferred rather than published in this batch."
     }
   ],
   "last_run": "absolute-effect-2026-11-23-morning",
-  "last_updated": "2026-11-21",
+  "last_updated": "2026-11-23",
   "last_run_date": "2026-11-23",
-  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study."
+  "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
+  "last_run_note": "2026-11-23 evening: added LITESPARK-012 negative interim evidence, CAPTAIN-1st regional availability caveat, and CONTINUUM positive but not explicitly recommended strategy; no new pages created."
 }
