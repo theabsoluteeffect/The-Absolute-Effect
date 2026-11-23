@@ -1,0 +1,428 @@
+{
+  "run_timestamp": "2026-11-23T18:58:33+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE — 0/30 uploaded; 30 not uploaded",
+  "repository": {
+    "main_branch": "main",
+    "main_commit_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-23-am",
+    "working_branch_head_before_report": "e2a6325997d2f2dad4f5bcfbcb2f631913197459",
+    "evidence_file_commit_sha": "ea263587dbe7681b6a4078677df6edee8de41e3d",
+    "pr": null,
+    "merge": null,
+    "main_unchanged": true
+  },
+  "counts": {
+    "screened": 23,
+    "new_unique": 9,
+    "identity_and_primary_source_citation_identified": 9,
+    "fully_verified_for_publication": 0,
+    "held": 7,
+    "deferred_contrary_evidence": 2,
+    "duplicates_or_followups": 14,
+    "published": 0,
+    "uploaded": 0,
+    "target": 30,
+    "not_uploaded": 30
+  },
+  "uploaded_cases": [],
+  "uploaded_case_table": [],
+  "candidate_disposition_report": {
+    "new_unique_candidates": [
+      {
+        "trial": "JUPITER-02",
+        "trial_id": "jupiter-02",
+        "doi": "10.1001/jama.2023.20181",
+        "pmid": "38015220",
+        "registry": "NCT02630095",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref66; category 1 preferred first-line R/M NPC",
+        "disposition": "held — full primary extraction not complete",
+        "nnt": "not applicable from median PFS/OS and HR alone"
+      },
+      {
+        "trial": "RATIONALE-309",
+        "trial_id": "rationale-309",
+        "doi": "10.1016/j.ccell.2023.05.005",
+        "pmid": "37207654",
+        "registry": "NCT03924986",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref34; category 2B",
+        "disposition": "held — full primary extraction and mature follow-up not complete",
+        "nnt": "not applicable from median PFS/HR alone"
+      },
+      {
+        "trial": "POLARIS-02",
+        "trial_id": "polaris-02",
+        "doi": "10.1200/JCO.20.02712",
+        "pmid": "33492986",
+        "registry": "NCT02915432",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref67; post-platinum preferred option; category not explicitly stated",
+        "disposition": "held — single-arm phase II full safety/QoL extraction incomplete",
+        "nnt": "not applicable; single-arm"
+      },
+      {
+        "trial": "GEM20110714",
+        "trial_id": "gem20110714",
+        "doi": "10.1016/S1470-2045(16)30237-6",
+        "pmid": "27693983",
+        "registry": "NCT01528618",
+        "related_doi": "10.1200/JCO.21.00396",
+        "related_pmid": "34379443",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref47 (final OS report ref48); GP regimen category 1",
+        "disposition": "held — original and final OS reports require full reconciliation",
+        "nnt": "not calculated; median PFS/OS and HRs alone insufficient"
+      },
+      {
+        "trial": "Metronomic capecitabine adjuvant NPC",
+        "trial_id": "metronomic-capecitabine-npc",
+        "doi": "10.1016/S0140-6736(21)01123-5",
+        "pmid": "34111416",
+        "registry": "NCT02958111",
+        "related_doi": "10.1038/s43018-026-01193-4",
+        "related_pmid": "42380630",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref33; maintenance option discussed, category not stated",
+        "disposition": "held — 2026 long-term follow-up and absolute rates require extraction",
+        "nnt": "not calculated until same-horizon absolute rates verified"
+      },
+      {
+        "trial": "Intergroup 0099",
+        "trial_id": "intergroup-0099",
+        "doi": "10.1200/JCO.1998.16.4.1310",
+        "pmid": "9552031",
+        "registry": "none — pre-ClinicalTrials.gov",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref8; historical CRT evidence, category not stated",
+        "disposition": "held — full historical primary extraction and analysis-set reconciliation pending",
+        "nnt": "3-year PFS: 69% vs24%, ARR45pp → NNT3; 3-year OS:78% vs47%, ARR31pp → NNT4"
+      },
+      {
+        "trial": "Early vs Routine ONS in NPC",
+        "trial_id": "early-routine-ons-npc",
+        "doi": "10.1001/jamaoncol.2026.4535",
+        "pmid": "43018988",
+        "registry": "NCT04823468",
+        "nccn_reference": "not verified — no exact NCCN citation checked",
+        "disposition": "held — exact ONS formula, dose, schedule and full safety tables not verified",
+        "nnt": ">5% weight loss at end CCRT: 80.7% vs65.4%, ARR15.3pp → NNT7; grade≥3 mucositis 26.6% vs14.0%, ARR12.6pp → NNT8 (secondary)"
+      },
+      {
+        "trial": "CAPTAIN-1st",
+        "trial_id": "captain-1st",
+        "doi": "10.1016/S1470-2045(21)00302-8",
+        "pmid": "34174189",
+        "registry": "NCT03707509",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref69; article states camrelizumab not currently available in US",
+        "disposition": "deferred — positive but regionally unavailable/not in active preferred regimen table",
+        "nnt": "not calculated from median PFS/HR alone"
+      },
+      {
+        "trial": "CONTINUUM",
+        "trial_id": "continuum",
+        "doi": "10.1016/S0140-6736(24)00594-4",
+        "pmid": "38824941",
+        "registry": "NCT03700476",
+        "nccn_reference": "NCCN H&N Insights v2.2025 ref35; no active recommendation category stated",
+        "disposition": "deferred — positive phase III evidence but not mapped to an active preferred recommendation in the Insights article",
+        "nnt": "36-month EFS 86% vs76%, ARR10pp → NNT10 (KM estimate; approximate)"
+      }
+    ],
+    "duplicates_or_followups": [
+      {
+        "trial": "R-ALPS",
+        "doi": "10.1001/jamaoncol.2026.3918",
+        "pmid": "42955021",
+        "registry": "NCT04325763",
+        "matched": "roster r-alps; trial-pages/r-alps/",
+        "disposition": "duplicate excluded; page repair queued"
+      },
+      {
+        "trial": "Dalmelitinib plus aumolertinib",
+        "doi": "10.1200/JCO-26-02432",
+        "pmid": "42928710",
+        "registry": "NCT06110663",
+        "matched": "roster dalmelitinib-aumolertinib; trial-pages/dalmelitinib-aumolertinib/",
+        "disposition": "duplicate excluded; registry metadata corrected on working branch"
+      },
+      {
+        "trial": "Toripalimab + modified FOLFIRINOX in BRPC/LAPC",
+        "doi": "10.1200/JCO-26-01393",
+        "pmid": "42970668",
+        "registry": "NCT03983057",
+        "matched": "roster toripalimab-mfolfirinox; trial-pages/toripalimab-mfolfirinox/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "HEALER",
+        "doi": "10.1056/NEJMoa2610345",
+        "pmid": "42929681",
+        "registry": "NCT05838066",
+        "matched": "roster healer; trial-pages/healer/",
+        "disposition": "duplicate excluded; page repair queued"
+      },
+      {
+        "trial": "BCTOP-H-N01",
+        "doi": "10.1001/jamaoncol.2026.3329",
+        "pmid": "42690668",
+        "registry": "NCT06747338",
+        "matched": "roster bctop-h-n01; trial-pages/bctop-h-n01/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "RELIGHT",
+        "doi": "10.1200/JCO-25-02933",
+        "pmid": "42784781",
+        "registry": "NCT04950322",
+        "matched": "roster relight; trial-pages/relight/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "TroFuse-005 / ENGOT-en23 / GOG-3095",
+        "doi": "10.1016/S0140-6736(26)02099-4",
+        "pmid": "42933460",
+        "registry": "NCT06132958",
+        "matched": "roster trofuse-005; trial-pages/trofuse-005/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "KEYNOTE-C93 / GOG-3064 / ENGOT-en15",
+        "doi": "10.1016/S0140-6736(26)02095-7",
+        "pmid": "42933458",
+        "registry": "NCT05173987",
+        "matched": "roster keynote-c93; trial-pages/keynote-c93/",
+        "disposition": "duplicate excluded; page repair queued"
+      },
+      {
+        "trial": "LITESPARK-012",
+        "doi": null,
+        "pmid": null,
+        "registry": "NCT04736706",
+        "matched": "roster litespark-012; trial-pages/litespark-012/",
+        "disposition": "duplicate excluded; negative evidence added to deferred queue"
+      },
+      {
+        "trial": "KEYNOTE-564 five-year follow-up",
+        "doi": "10.1016/j.annonc.2026.08.006",
+        "pmid": "42648402",
+        "registry": "NCT03142334",
+        "matched": "roster keynote-564; trial-pages/keynote-564/",
+        "disposition": "same underlying trial; follow-up attached, not a new page; page update queued"
+      },
+      {
+        "trial": "A166 / trastuzumab botidotin versus T-DM1",
+        "doi": "10.1200/JCO-26-00602",
+        "pmid": "42727044",
+        "registry": "NCT06968585",
+        "matched": "roster trastuzumab-botidotin; trial-pages/trastuzumab-botidotin/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "PANKU-Esophagus01",
+        "doi": "10.1001/jama.2026.20250",
+        "pmid": "43018949",
+        "registry": "NCT06304974",
+        "matched": "roster panku-esophagus01; current Trial-of-the-Day",
+        "disposition": "duplicate excluded; current ToD unchanged"
+      },
+      {
+        "trial": "CAMORAL",
+        "doi": "10.1001/jamaoncol.2026.4642",
+        "pmid": null,
+        "registry": "ChiCTR2000037980",
+        "matched": "roster camoral; trial-pages/camoral/",
+        "disposition": "duplicate excluded"
+      },
+      {
+        "trial": "Fovinaciclib phase III",
+        "doi": "10.1001/jamaoncol.2026.1938",
+        "pmid": null,
+        "registry": "NCT05439499",
+        "matched": "roster fovinaciclib; trial-pages/fovinaciclib/",
+        "disposition": "duplicate excluded"
+      }
+    ]
+  },
+  "existing_page_audit": {
+    "pages_manually_inspected": 14,
+    "visual_defects": 3,
+    "follow_up_updates_missing": 1,
+    "full_canonical_tree_audit_complete": false,
+    "repairs_applied_to_page_html": 0,
+    "repair_queue_items_opened": 12,
+    "repair_queue_items_closed": 1,
+    "queue_open_after": 193,
+    "queue_resolved_after": 62
+  },
+  "nccn_guideline_review": {
+    "insights_article": {
+      "title": "NCCN Guidelines Insights: Head and Neck Cancers, Version 2.2025",
+      "version": "2.2025",
+      "doi": "10.6004/jnccn.2025.0007",
+      "pmid": "39938471",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/23/2/article-p2.pdf",
+      "scope": "complete public NCCN-authored Insights article/reference list; not the full guideline"
+    },
+    "exact_article_references_mapped": [
+      8,
+      33,
+      34,
+      35,
+      47,
+      66,
+      67,
+      69
+    ],
+    "recommendation_contexts": [
+      "JUPITER-02 ref66 category 1 preferred first-line R/M NPC",
+      "RATIONALE-309 ref34 category 2B first-line R/M NPC",
+      "POLARIS-02 ref67 post-platinum preferred option; category not explicit",
+      "GEM20110714 ref47; GP category 1; final OS report ref48",
+      "Metronomic capecitabine ref33; maintenance option discussed; category not explicit",
+      "Intergroup 0099 ref8 historical CRT evidence; category not explicit",
+      "CAPTAIN-1st ref69; camrelizumab not currently available in US",
+      "CONTINUUM ref35; cited phase III trial, no active category stated"
+    ],
+    "full_guideline_access": "NCCN official category_1/guideline pages inaccessible; latest full versions for Head & Neck, Endometrial and Kidney not verified. No full-guideline reference numbers or categories inferred.",
+    "ledger_after": {
+      "guidelines": 24,
+      "mappings": 27,
+      "pending_trial_mappings": 91,
+      "source_access_log": 29,
+      "guideline_freshness_tasks_added": 3
+    }
+  },
+  "nnt_nnh_visualization_qa": {
+    "existing_pages": [
+      {
+        "trial": "HEALER",
+        "nnt": 5,
+        "endpoint": "24-month PFS",
+        "difference_pp": 24.1,
+        "calculation": "100/24.1=4.15, rounded up to 5",
+        "nnh": 9,
+        "harm_endpoint": "grade≥3 AEs over reported safety follow-up",
+        "harm_difference_pp": 11.5,
+        "calculation_nnh": "100/11.5=8.70, rounded up to 9",
+        "status": "arithmetic correct; visual bars/structured metadata defective"
+      },
+      {
+        "trial": "KEYNOTE-C93",
+        "nnt": 4,
+        "endpoint": "12-month PFS",
+        "difference_pp": 27,
+        "calculation": "100/27=3.70, rounded up to 4",
+        "status": "arithmetic correct; visual bars/structured metadata defective"
+      },
+      {
+        "trial": "KEYNOTE-564",
+        "nnt_dfs_5y": 12,
+        "endpoint_dfs": "5-year DFS",
+        "difference_pp_dfs": 8.7,
+        "calculation_dfs": "100/8.7=11.49, rounded up to 12",
+        "nnt_os_5y": 19,
+        "endpoint_os": "5-year OS",
+        "difference_pp_os": 5.4,
+        "calculation_os": "100/5.4=18.52, rounded up to 19",
+        "status": "new follow-up not yet attached to page"
+      },
+      {
+        "trial": "R-ALPS",
+        "status": "no NNT; median PFS/HR only; use median PFS visual"
+      },
+      {
+        "trial": "LACC",
+        "status": "original 4.5-year DFS harm 10.6 pp; NNH10; final analysis 11 pp must be separately labelled"
+      }
+    ],
+    "new_candidates": [
+      {
+        "trial": "Early vs Routine ONS in NPC",
+        "nnt": 7,
+        "endpoint": "greater than 5% weight loss at end of CCRT",
+        "difference_pp": 15.3,
+        "calculation": "100/15.3=6.54, rounded up to 7",
+        "secondary_nnt": 8,
+        "secondary_endpoint": "grade≥3 mucositis",
+        "secondary_difference_pp": 12.6
+      },
+      {
+        "trial": "Intergroup 0099",
+        "nnt_pfs_3y": 3,
+        "endpoint_pfs": "3-year PFS",
+        "difference_pp_pfs": 45,
+        "calculation_pfs": "100/45=2.22, rounded up to 3",
+        "nnt_os_3y": 4,
+        "endpoint_os": "3-year OS",
+        "difference_pp_os": 31,
+        "calculation_os": "100/31=3.23, rounded up to 4"
+      },
+      {
+        "trial": "CONTINUUM",
+        "nnt_efs_36m": 10,
+        "endpoint": "36-month EFS",
+        "difference_pp": 10,
+        "calculation": "100/10=10",
+        "status": "deferred; not an active recommendation in the Insights article"
+      }
+    ],
+    "general_rule": "No NNT calculated from medians or hazard ratios alone; single-arm studies have no NNT; absolute rates must share endpoint and horizon."
+  },
+  "repository_reconciliation": {
+    "roster_entries": 467,
+    "canonical_trial_page_paths": 461,
+    "canonical_content_directories": 460,
+    "redirect_only_stub_count": 1,
+    "shared_anchor_entries": 6,
+    "legacy_redirects": 135,
+    "evidence_index_destinations": 468,
+    "missing_roster_links": 0,
+    "archive_records": 16,
+    "daily_evidence_files_scanned": 32,
+    "current_trial_of_day": "PANKU-Esophagus01",
+    "previous_trial_of_day": "GemX",
+    "open_prs": 0,
+    "active_am_branch_has_new_trial_pages": 0,
+    "active_am_branch_ahead_by_commits_as_last_reported": 20
+  },
+  "repository_changes": {
+    "repair_queue": "12 new open issues; 1 source-identifier correction resolved; no trial page HTML changed.",
+    "roster": "No new trial entries; KEYNOTE-564 primary metadata and related follow-ups added; Dalmelitinib registry ID confirmed; visual-review statuses updated for three pages; manual audit addendum added.",
+    "evidence_index": "0 changes",
+    "trial_archive": "0 changes",
+    "trial_of_the_day": "0 changes",
+    "nccn_coverage_ledger": "1 complete public Insights article entry + 3 current-version freshness tasks; 8 citation-to-trial mappings; 7 pending candidate mappings; 3 access logs.",
+    "deferred_negative_evidence": "3 items added (LITESPARK-012, CAPTAIN-1st, CONTINUUM); total 28.",
+    "daily_files": "This evidence file and a per-run report are being added to the active date branch."
+  },
+  "validation_and_deployment": {
+    "json_readback": "passed for repair queue, roster, NCCN ledger and deferred queue after writes",
+    "local_release_validator": "not run; no local checkout and no complete 30-page batch",
+    "build_tests": "not run; no PR",
+    "pr_checks": "not run; no PR opened",
+    "commit_merge": "no PR, no merge; all work remains on unmerged branch",
+    "main_unchanged": true,
+    "main_cloudflare_pages_check": "GitHub check run for main commit completed successfully on 2026-11-22T03:18:53Z",
+    "representative_live_page_access": "not independently verified; Cloudflare Pages URLs could not be fetched in this session",
+    "new_deployment": "none"
+  },
+  "blockers": [
+    "Active morning branch remains unmerged with no PR; serialization rule prevents a second publication branch while it is unresolved.",
+    "No 30 fully verified new unique studies are ready; strict release gate requires exactly 30 before PR.",
+    "NCCN full guideline/reference lists for current Head & Neck, Endometrial and Kidney versions were inaccessible; freshness tasks remain open.",
+    "Three existing pages have zero-width/misaligned outcome bars; KEYNOTE-564 five-year update is not yet attached.",
+    "No local validator/build or PR checks can be run without a release-ready 30-page batch."
+  ],
+  "next_actions": [
+    "Resolve the active 2026-11-23 AM branch before starting another publication branch; do not open overlapping publication PRs.",
+    "Complete full primary extraction and DOI-title verification for the seven held unique candidates.",
+    "Continue the NCCN H&N Insights reference mining beyond the eight mapped references; retrieve the latest full H&N, Endometrial and Kidney guidelines when accessible.",
+    "Repair R-ALPS, HEALER and KEYNOTE-C93 visible outcome bars and structured absolute-effect records; attach KEYNOTE-564 five-year follow-up.",
+    "Reconcile audit metadata counters from commit/report history.",
+    "Continue disease-site rotation across GU, hematology, sarcoma, GI, breast, thoracic and supportive care; do not pad to 30."
+  ],
+  "cumulative_progress": {
+    "roster_entries": 467,
+    "canonical_page_paths": 461,
+    "remaining_to_1000": 533,
+    "qualifier": "Provisional underlying-study count based on roster; 6 shared-anchor entries and full alias reconciliation remain open."
+  },
+  "evidence_file": "data/daily-evidence-2026-11-23-evening.json",
+  "report_commit_sha": null
+}
