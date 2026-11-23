@@ -542,11 +542,80 @@
         }
       ],
       "status_note": "New unique underlying study; deferred rather than published in this batch."
+    },
+    {
+      "trial_id": "prosper-rcc",
+      "trial": "PROSPER (ECOG-ACRIN EA8143; perioperative nivolumab in resectable RCC)",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-kidney-current-access-limited",
+      "references": [],
+      "reason": "Randomized phase III perioperative nivolumab-versus-observation study in resectable RCC; the primary report did not demonstrate a recurrence-free survival benefit. It is relevant contrary evidence for perioperative/adjuvant IO but is not a current preferred regimen in the accessible guideline material.",
+      "action": "Retain as negative/contrary evidence; reconcile the primary Lancet Oncology report and registry outcomes with KEYNOTE-564 and other adjuvant RCC studies before any future standalone page.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/S1470-2045(24)00211-0",
+          "pmid": "38942046",
+          "url": "https://doi.org/10.1016/S1470-2045(24)00211-0"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03055013",
+          "url": "https://clinicaltrials.gov/study/NCT03055013"
+        }
+      ],
+      "status_note": "New underlying study identified 2026-11-23; deferred, not published."
+    },
+    {
+      "trial_id": "immotion010",
+      "trial": "IMmotion010",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-kidney-current-access-limited",
+      "references": [],
+      "reason": "Randomized phase III adjuvant atezolizumab-versus-placebo trial after nephrectomy/metastasectomy did not improve investigator-assessed DFS (HR 0.93, 95% CI 0.75–1.15; P=0.50; median follow-up 44.7 months). The primary authors concluded the findings do not support adjuvant atezolizumab in RCC.",
+      "action": "Retain as negative/contrary evidence; use to contextualize the positive KEYNOTE-564 result and avoid class-wide extrapolation. Do not create a new page in this batch.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/S0140-6736(22)01658-0",
+          "pmid": "36099926",
+          "url": "https://doi.org/10.1016/S0140-6736(22)01658-0"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03024996",
+          "url": "https://clinicaltrials.gov/study/NCT03024996"
+        }
+      ],
+      "status_note": "New underlying study identified 2026-11-23; deferred, not published."
+    },
+    {
+      "trial_id": "ca017-078",
+      "trial": "CA017-078 / ENERGIZE",
+      "status": "deferred_contrary_evidence",
+      "guideline_id": "nccn-bladder-v1-2026-metadata-only",
+      "references": [],
+      "reason": "Final phase III results published 2026-10-23 showed no EFS improvement with perioperative nivolumab plus neoadjuvant gemcitabine-cisplatin versus gemcitabine-cisplatin alone (104 EFS events in each arm; HR 0.94, 95.74% CI 0.71–1.25; P=0.6697). The coprimary pCR difference was not statistically significant at the prespecified 99.91% CI; OS was descriptive because the EFS testing criterion was not met.",
+      "action": "Retain as negative/contrary perioperative MIBC evidence; compare with NIAGARA and other perioperative studies before considering a standalone page. Do not infer NCCN endorsement from the Version 1.2026 manuscript, whose selected scope is NMIBC.",
+      "primary_sources": [
+        {
+          "type": "primary_publication",
+          "doi": "10.1016/j.annonc.2026.10.096",
+          "pmid": "42918420",
+          "url": "https://doi.org/10.1016/j.annonc.2026.10.096"
+        },
+        {
+          "type": "registry",
+          "id": "NCT03661320",
+          "url": "https://clinicaltrials.gov/study/NCT03661320"
+        }
+      ],
+      "status_note": "New underlying study; primary report dated 2026-10-23; deferred, not a Trial-of-the-Day candidate on 2026-11-23."
     }
   ],
-  "last_run": "absolute-effect-2026-11-23-morning",
+  "last_run": "absolute-effect-2026-11-23-evening-run-11",
   "last_updated": "2026-11-23",
   "last_run_date": "2026-11-23",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
-  "last_run_note": "2026-11-23 evening: added LITESPARK-012 negative interim evidence, CAPTAIN-1st regional availability caveat, and CONTINUUM positive but not explicitly recommended strategy; no new pages created."
+  "last_run_note": "Added PROSPER RCC, IMmotion010 and CA017-078 as new unique negative/contrary studies; retained in the deferred queue, not published."
 }
