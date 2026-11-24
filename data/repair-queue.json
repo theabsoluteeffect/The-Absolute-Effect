@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -1272,12 +1272,16 @@
       "candidate_disposition": "new_unique_primary_identity_verified",
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2609482",
-        "https://clinicaltrials.gov/study/NCT06211036"
+        "https://clinicaltrials.gov/study/NCT06211036",
+        "https://pubmed.ncbi.nlm.nih.gov/42929702/",
+        "https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imdelltra-reduced-the-risk-of-death-by-58-pct-in-1st-line-extensive-stage-small-cell-lung-cancer-in-the-dellphi-305-phase-iii-trial.html",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761344s002lbl.pdf"
       ],
-      "evidence": "New NEJM phase 3 publication and registry match; efficacy and grade ≥3 safety outcomes identified, but exact trial-specific step-up/maintenance dosing requires protocol confirmation before release.",
-      "next_action": "Complete full primary-data extraction (design, eligibility, exact regimen, denominators, follow-up, endpoints, CIs/p values, absolute rates, grade 3–5 toxicity, QoL, figures and NNT/NNH); then complete page-level QA before release.",
+      "evidence": "Primary NEJM report/PubMed metadata and the official AstraZeneca ESMO 2026 LBA3 table independently confirm the randomized population (282 vs 281), primary OS HR 0.42 (95% CI 0.32–0.54; P<0.001), key-secondary PFS HR 0.34 (95% CI 0.28–0.42; P<0.001), 12-month OS 79% vs 53%, 12-month PFS 38% vs 10%, and reported grade ≥3 AE rates. FDA 2026 prescribing information confirms the tarlatamab step-up schedule, but is not the DeLLphi-305 protocol. Full protocol/supplement and browser-rendered QA remain outstanding.",
+      "next_action": "Retrieve the DeLLphi-305 protocol/supplement to verify trial-specific tarlatamab/durvalumab schedule and concomitant medications; inspect the live rendered branch preview; then rerun strict release validator and visual audit.",
       "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
-      "issue_id": "candidate-review-dellphi-305"
+      "issue_id": "candidate-review-dellphi-305",
+      "last_reviewed_on": "2026-11-24"
     },
     {
       "trial_id": "harmoni-a",
@@ -4886,7 +4890,7 @@
     "branch_preview_deployed": true
   },
   "last_updated": "2026-11-23",
-  "last_run": "absolute-effect-2026-11-23-evening-run-11",
+  "last_run": "absolute-effect-2026-11-24-evening-run-11",
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
     "open_items": 194,
@@ -4894,7 +4898,8 @@
     "note": "2026-11-23 evening continuation: prior 14-page manual review and four page repairs retained. One KEYNOTE-564 registry-link subtask independently verified and closed; the separate seven-year abstract and browser QA items remain open. One LITESPARK-005 page and roster entry are staged on the active branch (not uploaded to main); 23 additional candidate decisions appended. Branch preview/browser-rendered QA pending; no PR or merge; main unchanged.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
-    "dated_context_items_open": 52
+    "dated_context_items_open": 52,
+    "last_run_note": "DeLLphi-305 page/structured absolute-effect schema corrected on active branch; source review remains open for protocol supplement and browser-rendered QA. No main-branch publication claimed."
   },
   "updated_on": "2026-11-23T19:28:00+05:30",
   "last_run_date": "2026-11-23",

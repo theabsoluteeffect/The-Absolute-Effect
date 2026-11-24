@@ -4021,10 +4021,10 @@
       "quality_of_life": "No QoL outcome reported in the primary NEJM abstract or ESMO 2026 LBA3 summary.",
       "limitations": "Interim analysis with relatively short follow-up; only patients without progression after induction were randomized. The trial is a maintenance strategy and does not compare tarlatamab with first-line induction therapy.",
       "clinical_interpretation": "Maintenance tarlatamab plus durvalumab significantly improved OS and PFS over durvalumab alone after first-line chemoimmunotherapy in ES-SCLC. The exact tarlatamab step-up schedule is supported by the FDA label; no unsupported 12-month NNT is presented.",
-      "primary_title_verified_via": "Primary journal/conference abstract and authoritative dosing source checked 17 November 2026",
+      "primary_title_verified_via": "NEJM primary publication/PubMed metadata; official AstraZeneca ESMO 2026 LBA3 results table; FDA 2026 prescribing information for the tarlatamab step-up schedule. Full DeLLphi-305 protocol supplement remains unverified.",
       "source_verified": true,
       "doi_title_verified": true,
-      "release_qa_status": "repair_source_verified_on_branch_pending_browser_render_and_merge",
+      "release_qa_status": "structural_repair_on_branch_pending_CI_and_protocol_supplement",
       "nnt_not_calculated_reason": null,
       "release_ready": true,
       "published_on": "2026-11-18",
@@ -4036,8 +4036,24 @@
         "control_rate": "53%",
         "absolute_benefit_percentage_points": 26,
         "nnt": 4,
-        "calculation": "ceil[1/0.26]=4",
-        "source": "ESMO 2026 LBA3 conference report/official sponsor data summary; primary NEJM paper for median OS/HR."
+        "calculation": "ceil[1/(0.79−0.53)]=4; approximate because the published landmark rates are rounded Kaplan–Meier estimates",
+        "source": "Official AstraZeneca ESMO 2026 LBA3 results table; 12-month OS 79% vs 53%.",
+        "horizon": "12 months",
+        "benefit_percentage_points": 26,
+        "additional_endpoints": [
+          {
+            "endpoint": "Progression-free survival",
+            "horizon": "12 months",
+            "time_horizon": "12 months",
+            "treatment_rate": "38%",
+            "control_rate": "10%",
+            "benefit_percentage_points": 28,
+            "absolute_benefit_percentage_points": 28,
+            "nnt": 4,
+            "calculation": "ceil[1/(0.38−0.10)]=4; approximate because the published landmark rates are rounded Kaplan–Meier estimates",
+            "source": "Official AstraZeneca ESMO 2026 LBA3 results table; 12-month PFS 38% vs 10%."
+          }
+        ]
       },
       "additional_endpoints": [
         {
