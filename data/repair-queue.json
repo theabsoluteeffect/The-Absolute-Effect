@@ -88,7 +88,7 @@
       "date": "2026-11-26",
       "branch": "atlas-batch/2026-11-26-am",
       "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-      "pages_inspected": 11,
+      "pages_inspected": 13,
       "primary_source_verified_new_pages": 2,
       "repairs": [
         "CAMORAL absolute-effect and chart repair",
@@ -97,7 +97,11 @@
       "roster_reconciliations": 6,
       "browser_rendered_qa_complete": false,
       "full_clinical_audit_complete": false,
-      "notes": "Rechecked page/roster/index links for CheckMate 816, KEYNOTE-A18, LACC and SHAPE; all are rostered and index-linked on the branch. This was a partial structural review, not a full primary-source audit."
+      "notes": "Structural recheck now includes CheckMate 816, KEYNOTE-A18, LACC, SHAPE, CAMORAL, six staged pages, GIMEMA ALL2820 and FIND. GIMEMA remains held for full primary safety/QoL; FIND is source verified but browser QA pending. Full recursive clinical audit remains incomplete.",
+      "reviewed_pages": [
+        "gimema-all2820",
+        "find-ctdna-surveillance"
+      ]
     }
   },
   "open_items": [
@@ -3817,6 +3821,59 @@
       ],
       "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
       "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-gimema-all2820-2026-11-26",
+      "trial_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "page_path": "trial-pages/gimema-all2820/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "HTML structure and source values inspected; browser-rendered branch preview not yet independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/gimema-all2820/index.html"
+      ],
+      "next_action": "Open the branch preview in a real browser and verify chart labels, finite widths, mobile layout, source values and NNT pictogram where applicable."
+    },
+    {
+      "issue_id": "browser-qa-find-ctdna-surveillance-2026-11-26",
+      "trial_id": "find-ctdna-surveillance",
+      "trial": "FIND",
+      "page_path": "trial-pages/find-ctdna-surveillance/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "HTML structure and source values inspected; browser-rendered branch preview not yet independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/find-ctdna-surveillance/index.html"
+      ],
+      "next_action": "Open the branch preview in a real browser and verify chart labels, finite widths, mobile layout, source values and NNT pictogram where applicable."
+    },
+    {
+      "issue_id": "candidate-gimema-all2820-primary-safety-review-2026-11-26",
+      "trial_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "page_path": "trial-pages/gimema-all2820/index.html",
+      "issue_type": "candidate_primary_evidence_review",
+      "category": "clinical_data_completeness",
+      "severity": "high",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary NEJM efficacy, DOI/title and registry metadata checked. The staged page reports grade ≥3 AE and discontinuation figures, but the complete primary safety table and patient-reported outcome details were not independently reconciled in this run.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2606208",
+        "https://pubmed.ncbi.nlm.nih.gov/42874102/",
+        "https://doi.org/10.1182/blood-2025-439"
+      ],
+      "next_action": "Retrieve and verify the full primary safety table and any QoL report; reconcile grade 3–5 denominators, treatment discontinuation and toxicity definitions before release."
     }
   ],
   "resolved_items": [
@@ -4909,6 +4966,42 @@
       ],
       "verification": "Absolute-effect arithmetic and primary conference-report values rechecked; browser-render QA remains separate and open.",
       "next_action": "Verify actual branch-preview rendering; do not close browser QA until visually inspected."
+    },
+    {
+      "issue_id": "candidate-find-ctdna-surveillance-reconciliation-2026-11-26",
+      "trial_id": "find-ctdna-surveillance",
+      "trial": "FIND",
+      "page_path": "trial-pages/find-ctdna-surveillance/index.html",
+      "issue_type": "unrostered_page_reconciliation",
+      "severity": "medium",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Existing canonical page was unrostered and absent from evidence/index.html. Added exact primary DOI/title/PMID/registry and roster entry, added index link, corrected og:url to the canonical page. Primary abstract and endpoint-conditional NNT rationale verified.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-03009",
+        "https://pubmed.ncbi.nlm.nih.gov/42525894/",
+        "https://clinicaltrials.gov/study/NCT05904665"
+      ],
+      "next_action": "Complete browser-render QA; keep page staged until full batch PR gate."
+    },
+    {
+      "issue_id": "candidate-gimema-all2820-reconciliation-2026-11-26",
+      "trial_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "page_path": "trial-pages/gimema-all2820/index.html",
+      "issue_type": "unrostered_page_reconciliation",
+      "severity": "medium",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Existing canonical page was unrostered. Added exact primary DOI/title/PMID/registry to the roster, added index link, corrected og:url and standardized the 24-month EFS absolute-effect horizon. Clinical safety completeness remains held in a separate open item.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2606208",
+        "https://pubmed.ncbi.nlm.nih.gov/42874102/",
+        "https://clinicaltrials.gov/study/NCT04722848"
+      ],
+      "next_action": "Complete primary safety/QoL verification and browser-render QA before release."
     }
   ],
   "run_audit_log": [
@@ -5124,14 +5217,14 @@
     "cycle": "morning",
     "branch": "atlas-batch/2026-11-26-am",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_before_report": "5e10f2820c8e78d5ed2238f54a3ad16a2463926f",
-    "status": "INCOMPLETE — 0/30 uploaded; 2 source-verified new pages staged; no PR or merge."
+    "branch_commit_before_report": "3c41344fe967772d63a798798a1b61713e9f674b",
+    "status": "INCOMPLETE — 0/30 uploaded; 3 new unique trials source-verified and staged; 15 held; 15 duplicates; 1 deferred."
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 203,
-    "resolved_items": 69,
-    "note": "2026-11-26 morning: branch migrated from main to atlas-batch/2026-11-26-am. Two new unique pages (Early ONS NPC and CUPISCO) source-verified and staged; six previously staged pages remain held for full primary extraction; CAMORAL NNH/chart repair and NICHE-2 single-arm visualization added. Nine browser-render QA tasks remain open; no PR, merge, upload or production deployment.",
+    "open_items": 206,
+    "resolved_items": 71,
+    "note": "2026-11-26 morning: three new unique trials source-verified and staged (Early ONS NPC, CUPISCO, FIND); GIMEMA ALL2820 roster/index reconciliation completed but held for primary safety/QoL verification. Ten page drafts are staged; 15 unique candidates held; 15 duplicates; one contrary-evidence candidate remains deferred. Browser-render QA tasks remain open; no PR or production deployment.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,

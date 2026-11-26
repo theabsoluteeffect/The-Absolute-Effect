@@ -1010,6 +1010,16 @@
         "PubMed/publisher metadata"
       ],
       "notes": "No trial was held solely for missing NCCN provenance. Exact guideline-to-trial citations remain open mapping tasks."
+    },
+    {
+      "date": "2026-11-26",
+      "source": "NCCN Acute Lymphoblastic Leukemia guideline access attempt",
+      "status": "official_full_guideline_and_reference_list_inaccessible",
+      "guideline_title": "NCCN Acute Lymphoblastic Leukemia",
+      "version": "not verified",
+      "scope": "No complete public NCCN-authored Insights reference list retrieved; no recommendation or reference mapping inferred.",
+      "source_url": null,
+      "notes": "GIMEMA ALL2820 page was reconciled to the roster and index, but NCCN provenance remains open."
     }
   ],
   "last_run": {
@@ -1017,8 +1027,8 @@
     "cycle": "morning",
     "branch": "atlas-batch/2026-11-26-am",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "status": "partial; NCCN full guideline access failures logged; primary trial work continued",
-    "pending_trial_mappings_added": 9
+    "status": "partial; two additional unrostered pages reconciled; NCCN ALL full guideline unavailable",
+    "pending_trial_mappings_added": 11
   },
   "last_updated": "2026-11-26",
   "last_run_date": "2026-11-24",
@@ -2446,6 +2456,42 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/41671464/",
       "added_on": "2026-11-26",
       "next_action": "Retrieve the complete current official NCCN guideline/reference list or a complete accessible NCCN-authored Insights reference list; verify exact citation, section, recommendation context and category. Do not infer."
+    },
+    {
+      "trial_id": "find-ctdna-surveillance",
+      "trial": "FIND",
+      "site": "Colon Cancer / postoperative surveillance",
+      "setting": "ctDNA-guided surveillance after resection",
+      "status": "open",
+      "guideline_id": "nccn-colon-cancer-v3-2026-metadata-only",
+      "guideline_title": "NCCN Colon Cancer, Version 3.2026",
+      "version": "3.2026",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": null,
+      "reason": "NCCN Insights metadata/abstract only; complete reference list inaccessible; exact FIND citation not verified.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019762/",
+      "added_on": "2026-11-26",
+      "next_action": "Retrieve complete current NCCN Colon Cancer guideline/reference list and verify whether FIND is cited for active postoperative surveillance recommendations."
+    },
+    {
+      "trial_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "site": "Acute Lymphoblastic Leukemia",
+      "setting": "Frontline adult Ph-positive ALL",
+      "status": "open",
+      "guideline_id": "nccn-all-current-access-limited",
+      "guideline_title": "Current NCCN Acute Lymphoblastic Leukemia guideline",
+      "version": "not verified",
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "recommendation_context": null,
+      "reason": "Current official full guideline/reference list inaccessible; no exact GIMEMA ALL2820 citation can be assigned.",
+      "source_url": null,
+      "added_on": "2026-11-26",
+      "next_action": "Retrieve current official NCCN ALL guideline or complete NCCN-authored Insights reference list; record exact version/section/reference only if directly verified."
     }
   ],
   "alternative_guideline_sources": [
@@ -2953,6 +2999,14 @@
       "last_checked": "2026-11-26",
       "reason": "Current full guideline/reference list inaccessible.",
       "next_action": "Retrieve current official NCCN full guideline/reference list or complete accessible NCCN-authored Insights reference list; record exact version, section, citation and category only if directly verified."
+    },
+    {
+      "id": "nccn-all-current-freshness",
+      "site": "Acute Lymphoblastic Leukemia",
+      "status": "open",
+      "last_checked": "2026-11-26",
+      "reason": "Current official NCCN ALL full guideline/reference list inaccessible.",
+      "next_action": "Retrieve current official guideline or complete accessible NCCN-authored Insights reference list; verify exact citations."
     }
   ],
   "complete_insights_articles_reviewed": [

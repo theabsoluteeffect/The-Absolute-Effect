@@ -1845,7 +1845,7 @@
       {
         "date": "2026-11-26",
         "branch": "atlas-batch/2026-11-26-am",
-        "reviewed_page_count": 11,
+        "reviewed_page_count": 13,
         "reviewed_pages": [
           "camoral",
           "aeneas2",
@@ -1857,7 +1857,9 @@
           "checkmate-816",
           "keynote-a18",
           "lacc",
-          "shape"
+          "shape",
+          "gimema-all2820",
+          "find-ctdna-surveillance"
         ],
         "repairs": [
           "CAMORAL NNH removed; static outcome chart and source provenance corrected",
@@ -1867,7 +1869,11 @@
           "early-ons-npc",
           "cupisco"
         ],
-        "limitations": "This is a partial source/structure review; not a complete recursive audit and not browser-rendered QA."
+        "limitations": "This is a partial source/structure review; not a complete recursive audit and not browser-rendered QA.",
+        "new_pages_reconciled": [
+          "gimema-all2820",
+          "find-ctdna-surveillance"
+        ]
       }
     ]
   },
@@ -12285,10 +12291,11 @@
       "data_verification_status": "Primary efficacy and DOI/registry identity verified; grade 3–5 safety and discontinuation figures require full primary-table reconciliation; held.",
       "publication_status": "staged_hold",
       "release_ready": false,
-      "release_qa_status": "held pending primary safety/QoL reconciliation and browser-render QA",
-      "hold_reason": "Full primary safety table and patient-reported outcome data not independently reconciled; do not publish until resolved.",
+      "release_qa_status": "held pending complete primary safety/QoL verification and browser-render QA",
+      "hold_reason": "Full primary safety table and QoL details are not independently reconciled; grade ≥3 AE figures in the staged draft need primary-source confirmation.",
       "batch_date": "2026-11-26",
-      "batch_branch": "atlas-batch/2026-11-26-am"
+      "batch_branch": "atlas-batch/2026-11-26-am",
+      "source_verification_status": "partial — primary efficacy/identity verified; full safety table not verified"
     },
     {
       "id": "find-ctdna-surveillance",
@@ -12333,7 +12340,9 @@
       "release_ready": false,
       "release_qa_status": "source verified; browser-render QA pending; 30-page PR gate incomplete",
       "batch_date": "2026-11-26",
-      "batch_branch": "atlas-batch/2026-11-26-am"
+      "batch_branch": "atlas-batch/2026-11-26-am",
+      "source_verification_status": "primary abstract, DOI/title and registry verified",
+      "hold_reason": null
     }
   ],
   "last_updated": "2026-11-26",
@@ -12343,7 +12352,7 @@
     "branch": "atlas-batch/2026-11-26-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "last_activity": "2026-11-24T08:03:33+05:30",
-    "cycle_status": "INCOMPLETE — 0/30 uploaded; 3 new unique candidates source-verified and staged; 15 held; 15 duplicates; 1 deferred; 27 further verified trials required.",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; 3 source-verified new unique studies staged; 15 held; 15 duplicates; 1 deferred; 27 further verified trials required.",
     "expected_new_unique_trials": 30,
     "carry_forward_new_unique_candidates": 25,
     "additional_new_unique_candidates": 15,
