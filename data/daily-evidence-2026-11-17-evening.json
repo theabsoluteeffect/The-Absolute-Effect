@@ -4306,5 +4306,346 @@
     "cloudflare_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
     "production_deployment": "not verified",
     "cloudflare_preview_deployment_id": "58403e55-9a47-4ddd-ace7-40df1a03b05e"
+  },
+  "post_merge_reconciliation": {
+    "reconciled_on": "2026-11-21",
+    "original_premerge_report_preserved": true,
+    "pr_number": 5,
+    "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+    "pr_head_sha": "1a4502c6dc7a06f59c451b63cbafb4d1ba6946a7",
+    "merged": true,
+    "merged_at": "2026-11-18T02:41:48Z",
+    "merge_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+    "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "uploaded_count": 30,
+    "canonical_pages_added": 30,
+    "roster_entries_after_merge": 467,
+    "permanent_trial_pages_after_merge": 460,
+    "pr_checks": {
+      "strict_release_validator": "success",
+      "outcome_visualization_audit": "success",
+      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44224461382"
+    },
+    "post_merge_consistency_workflow": {
+      "pr_number": 6,
+      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/6",
+      "status": "merged",
+      "workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/44226050992",
+      "conclusion": "success"
+    },
+    "release_ready_flag_distribution": {
+      "undefined": 19,
+      "false": 4,
+      "true": 7
+    },
+    "release_hold_pages": [
+      "ARTEMIS-011",
+      "KEYNOTE-B49",
+      "PANKU-Lung01",
+      "Toripalimab plus modified FOLFIRINOX"
+    ],
+    "production_deployment": "not independently verified; production URLs could not be opened; only preview check verified.",
+    "uploaded_cases": [
+      {
+        "trial_id": "act-gi",
+        "trial": "ACT-GI",
+        "path": "trial-pages/act-gi/",
+        "primary_doi": "10.1200/JCO-26-00568",
+        "pmid": "42441933",
+        "registry_id": "NCT05772546",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/act-gi/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "artemis-011",
+        "trial": "ARTEMIS-011",
+        "path": "trial-pages/artemis-011/",
+        "primary_doi": "10.1016/j.annonc.2026.10.1284",
+        "pmid": "42933637",
+        "registry_id": "NCT06935409",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/artemis-011/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "bctop-h-n01",
+        "trial": "BCTOP-H-N01",
+        "path": "trial-pages/bctop-h-n01/",
+        "primary_doi": "10.1001/jamaoncol.2026.3329",
+        "pmid": "42690668",
+        "registry_id": "NCT06747338",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/bctop-h-n01/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "capital",
+        "trial": "CAPITAL",
+        "path": "trial-pages/capital/",
+        "primary_doi": "10.1016/j.medj.2026.101258",
+        "pmid": "42600610",
+        "registry_id": "NCT01795027",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/capital/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "dellphi-305",
+        "trial": "DeLLphi-305",
+        "path": "trial-pages/dellphi-305/index.html",
+        "primary_doi": "10.1056/NEJMoa2609482",
+        "pmid": "42929702",
+        "registry_id": "NCT06211036",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/dellphi-305/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "disitamab-tislelizumab",
+        "trial": "Disitamab vedotin plus tislelizumab (TRUCE-04)",
+        "path": "trial-pages/disitamab-tislelizumab/",
+        "primary_doi": "10.1001/jamaoncol.2026.3909",
+        "pmid": "42848391",
+        "registry_id": "NCT05495724",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/disitamab-tislelizumab/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "felzartamab-rd",
+        "trial": "Felzartamab plus lenalidomide-dexamethasone",
+        "path": "trial-pages/felzartamab-rd/",
+        "primary_doi": "10.1016/S2352-3026(26)00223-1",
+        "pmid": "42822478",
+        "registry_id": "NCT03952091",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/felzartamab-rd/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "fit4treat",
+        "trial": "FIT4TREAT",
+        "path": "trial-pages/fit4treat/",
+        "primary_doi": "10.1016/j.oraloncology.2026.108119",
+        "pmid": "42673774",
+        "registry_id": "NCT05418842",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/fit4treat/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "harmoni-a",
+        "trial": "HARMONi-A",
+        "path": "trial-pages/harmoni-a/index.html",
+        "primary_doi": "10.1001/jama.2024.10613",
+        "pmid": "38820549",
+        "registry_id": "NCT05184712",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/harmoni-a/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "herizon-gea-01",
+        "trial": "HERIZON-GEA-01",
+        "path": "trial-pages/herizon-gea-01/",
+        "primary_doi": "10.1056/NEJMoa2517729",
+        "pmid": "42202319",
+        "registry_id": "NCT05152147",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/herizon-gea-01/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "i-spy2-2",
+        "trial": "I-SPY2.2 RT-DXd",
+        "path": "trial-pages/i-spy2-2/",
+        "primary_doi": "10.1001/jamaoncol.2026.4258",
+        "pmid": "42911610",
+        "registry_id": "NCT01042379",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/i-spy2-2/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "ivonescimab-perioperative",
+        "trial": "Perioperative ivonescimab in resectable NSCLC",
+        "path": "trial-pages/ivonescimab-perioperative/",
+        "primary_doi": "10.1038/s41591-026-04745-4",
+        "pmid": "42982996",
+        "registry_id": "NCT05247684",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/ivonescimab-perioperative/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "keylynk-001",
+        "trial": "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+        "path": "trial-pages/keylynk-001/",
+        "primary_doi": "10.1016/S1470-2045(26)00223-8",
+        "pmid": "42705254",
+        "registry_id": "NCT03740165",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/keylynk-001/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "keynote-b49",
+        "trial": "KEYNOTE-B49",
+        "path": "trial-pages/keynote-b49/",
+        "primary_doi": "10.1016/j.annonc.2026.10.1285",
+        "pmid": "42926111",
+        "registry_id": "NCT04895358",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/keynote-b49/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "litespark-011",
+        "trial": "LITESPARK-011",
+        "path": "trial-pages/litespark-011/",
+        "primary_doi": "10.1016/j.annonc.2026.10.109",
+        "pmid": "42927855",
+        "registry_id": "NCT04586231",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/litespark-011/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "monumental-3",
+        "trial": "MonumenTAL-3",
+        "path": "trial-pages/monumental-3/",
+        "primary_doi": "10.1056/NEJMoa2604657",
+        "pmid": "42294841",
+        "registry_id": "NCT05455320",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/monumental-3/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "neonipiga",
+        "trial": "NEONIPIGA / GERCOR",
+        "path": "trial-pages/neonipiga/",
+        "primary_doi": "10.1200/JCO.22.00686",
+        "pmid": "35969830",
+        "registry_id": "NCT04006262",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/neonipiga/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "panku-breast01",
+        "trial": "PANKU-Breast01",
+        "path": "trial-pages/panku-breast01/",
+        "primary_doi": "10.1016/S0140-6736(26)02096-9",
+        "pmid": "42933459",
+        "registry_id": "NCT06343948",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/panku-breast01/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "panku-esophagus01",
+        "trial": "PANKU-Esophagus01",
+        "path": "trial-pages/panku-esophagus01/",
+        "primary_doi": "10.1001/jama.2026.20250",
+        "pmid": "43018949",
+        "registry_id": "NCT06304974",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/panku-esophagus01/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "panku-lung01",
+        "trial": "PANKU-Lung01",
+        "path": "trial-pages/panku-lung01/",
+        "primary_doi": "10.1016/S0140-6736(26)02026-X",
+        "pmid": "42933461",
+        "registry_id": "NCT06382116",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/panku-lung01/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "pds0101-pembrolizumab",
+        "trial": "PDS0101 plus pembrolizumab (VERSATILE-002)",
+        "path": "trial-pages/pds0101-pembrolizumab/",
+        "primary_doi": "10.1001/jamaoncol.2026.3492",
+        "pmid": "42752531",
+        "registry_id": "NCT04260126",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/pds0101-pembrolizumab/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "pro-b",
+        "trial": "PRO-B",
+        "path": "trial-pages/pro-b/",
+        "primary_doi": "10.1001/jamaoncol.2026.2661",
+        "pmid": "42560727",
+        "registry_id": "DRKS00024015",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/pro-b/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "relight",
+        "trial": "RELIGHT",
+        "path": "trial-pages/relight/",
+        "primary_doi": "10.1200/JCO-25-02933",
+        "pmid": "42784781",
+        "registry_id": "NCT04950322",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/relight/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "ringside",
+        "trial": "RINGSIDE",
+        "path": "trial-pages/ringside/",
+        "primary_doi": "10.1200/JCO-26-00725",
+        "pmid": "42848980",
+        "registry_id": "NCT04871282",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/ringside/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "toripalimab-mfolfirinox",
+        "trial": "Toripalimab plus modified FOLFIRINOX",
+        "path": "trial-pages/toripalimab-mfolfirinox/",
+        "primary_doi": "10.1200/JCO-26-01393",
+        "pmid": "42970668",
+        "registry_id": "NCT03983057",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/toripalimab-mfolfirinox/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "transform-1",
+        "trial": "TRANSFORM-1",
+        "path": "trial-pages/transform-1/",
+        "primary_doi": "10.1182/blood.2025032360",
+        "pmid": "42378247",
+        "registry_id": "NCT04472598",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/transform-1/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "trastuzumab-botidotin",
+        "trial": "Trastuzumab botidotin vs T-DM1",
+        "path": "trial-pages/trastuzumab-botidotin/",
+        "primary_doi": "10.1200/JCO-26-00602",
+        "pmid": "42727044",
+        "registry_id": "NCT06968585",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/trastuzumab-botidotin/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "trofuse-005",
+        "trial": "TroFuse-005 / ENGOT-en23 / GOG-3095",
+        "path": "trial-pages/trofuse-005/",
+        "primary_doi": "10.1016/S0140-6736(26)02099-4",
+        "pmid": "42933460",
+        "registry_id": "NCT06132958",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/trofuse-005/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "union",
+        "trial": "UNION",
+        "path": "trial-pages/union/",
+        "primary_doi": "10.1016/S1470-2045(26)00446-8",
+        "pmid": "42927765",
+        "registry_id": "NCT04928807",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/union/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      },
+      {
+        "trial_id": "zsab-neogolp",
+        "trial": "ZSAB-neoGOLP",
+        "path": "trial-pages/zsab-neogolp/",
+        "primary_doi": "10.1056/NEJMoa2513918",
+        "pmid": "41780001",
+        "registry_id": "NCT04669496",
+        "page_url": "https://theabsoluteeffect.pages.dev/trial-pages/zsab-neogolp/",
+        "commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+      }
+    ]
   }
 }

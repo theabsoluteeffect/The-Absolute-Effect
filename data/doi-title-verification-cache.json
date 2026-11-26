@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-17T20:00:32+05:30",
+  "updated_at": "2026-11-23",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -362,6 +362,18 @@
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42202319/",
       "title_match": true,
       "verification_note": "Primary PubMed/publisher record checked 17 November 2026; DOI and exact title matched."
+    },
+    {
+      "trial_id": "litespark-005",
+      "doi": "10.1056/NEJMoa2313906",
+      "primary_title": "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma",
+      "pmid": "39167807",
+      "registry_id": "NCT04195750",
+      "verified_by": "PubMed/publisher metadata",
+      "verified_on": "2026-11-23",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/39167807/",
+      "title_match": true,
+      "verification_note": "PubMed primary record and NEJM publisher metadata checked; exact DOI/title match confirmed."
     }
   ]
 }

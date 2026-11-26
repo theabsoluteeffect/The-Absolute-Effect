@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 17,
-  "last_quality_check": "2026-11-14",
+  "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -30,14 +30,14 @@
     "permanent_trial_pages": 460,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 467,
+    "total_unique_trials": 473,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
     "current_trial_of_the_day_checked": true,
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
-    "daily_batch_uploaded": "2026-11-14",
+    "daily_batch_uploaded": "2026-11-18",
     "new_trials_added_today": 30,
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
@@ -59,7 +59,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-14",
+    "last_full_reconciliation": "2026-11-24",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -90,13 +90,13 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-14",
+    "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
-      "date": "2026-11-08",
-      "id": "gemx",
-      "trial": "GemX"
+      "date": "2026-11-17",
+      "id": "panku-esophagus01",
+      "trial": "PANKU-Esophagus01"
     },
     "absolute_effect_renderer_reconciled": "2026-09-26",
     "absolute_effect_pages_checked": 145,
@@ -200,13 +200,13 @@
       "static_outcome_audit": "PASS"
     },
     "previous_trial_of_the_day": {
-      "date": "2026-11-03",
-      "id": "acosog-z11102",
-      "trial": "ACOSOG Z11102 (Alliance)"
+      "date": "2026-11-08",
+      "id": "gemx",
+      "trial": "GemX"
     },
-    "trial_of_day_records_reconciled_on": "2026-11-14",
-    "trial_of_day_current_id": "gemx",
-    "trial_of_day_previous_id": "acosog-z11102",
+    "trial_of_day_records_reconciled_on": "2026-11-23",
+    "trial_of_day_current_id": "panku-esophagus01",
+    "trial_of_day_previous_id": "gemx",
     "trial_of_day_archive_reconciled": true,
     "automated_outcome_audit": {
       "date": "2026-10-20",
@@ -677,7 +677,7 @@
       "duplicate_route_policy": "Legacy flat .html routes and canonical /index.html routes were grouped by common trial slug and counted once."
     },
     "evidence_index_rostered_paths_missing": 0,
-    "canonical_trial_page_index_files": 433,
+    "canonical_trial_page_index_files": 461,
     "roster_unique_page_paths": 399,
     "redirect_only_trial_page_stubs": 1,
     "shared_anchor_trial_entries": 8,
@@ -1096,13 +1096,13 @@
         "to": "Adjuvant"
       }
     ],
-    "last_updated": "2026-11-17T19:30:04+05:30",
+    "last_updated": "2026-11-23T08:50:38+05:30",
     "total_trials": 439,
     "last_batch_date": "2026-11-17",
     "last_batch_expected_page_count": 30,
     "last_batch_actual_page_count": 30,
     "last_batch_missing": 0,
-    "last_batch_status": "PR #5 open; strict release validator and outcome visualization audit passed on head 3697bef2; audit artifact inspection pending; not published",
+    "last_batch_status": "PR #5 merged 2026-11-18; 30 canonical pages on main; four historical release-detail holds remain; production deployment not independently verified.",
     "last_batch_ids": [
       "act-gi",
       "artemis-011",
@@ -1137,9 +1137,9 @@
     ],
     "full_release_validation": "not run — exact-30 gate not met",
     "deployment_status": "not deployed — no PR/merge",
-    "last_structural_reconciliation": "2026-11-17",
+    "last_structural_reconciliation": "2026-11-23",
     "roster_entries": 467,
-    "evidence_index_unique_links": 460,
+    "evidence_index_unique_links": 468,
     "evidence_index_rostered_page_paths_missing_before_reconciliation": 30,
     "evidence_index_rostered_page_paths_added": 32,
     "evidence_index_rostered_page_paths_missing_after_reconciliation": 0,
@@ -1232,70 +1232,28 @@
     ],
     "new_trials_added_today_count": 30,
     "active_batch": {
-      "branch": "atlas-batch/2026-11-17-am",
-      "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
-      "last_activity": "2026-11-17T20:00:32+05:30",
-      "cycle_status": "INCOMPLETE — 30 unique new-to-main pages staged; awaiting strict release validation and PR checks",
+      "branch": "atlas-batch/2026-11-23-am",
+      "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "last_activity": "2026-11-23T08:50:38+05:30",
+      "cycle_status": "INCOMPLETE — 0/30 uploaded; 30 carried-forward candidates and 15 additional unique candidates held",
       "expected_new_unique_trials": 30,
-      "staged_new_unique_count": 30,
-      "staged_new_unique_trials": [
-        "act-gi",
-        "artemis-011",
-        "bctop-h-n01",
-        "capital",
-        "dellphi-305",
-        "disitamab-tislelizumab",
-        "felzartamab-rd",
-        "fit4treat",
-        "harmoni-a",
-        "herizon-gea-01",
-        "i-spy2-2",
-        "ivonescimab-perioperative",
-        "keylynk-001",
-        "keynote-b49",
-        "litespark-011",
-        "monumental-3",
-        "neonipiga",
-        "panku-breast01",
-        "panku-esophagus01",
-        "panku-lung01",
-        "pds0101-pembrolizumab",
-        "pro-b",
-        "relight",
-        "ringside",
-        "toripalimab-mfolfirinox",
-        "transform-1",
-        "trastuzumab-botidotin",
-        "trofuse-005",
-        "union",
-        "zsab-neogolp"
-      ],
-      "page_ready_candidates": 28,
-      "pages_to_build": 0,
-      "candidates_screened": 72,
-      "duplicates_excluded": 15,
-      "new_unique_candidates": 57,
-      "held_candidates": 19,
-      "deferred_negative_candidates": 10,
-      "rejected_candidates": 2,
+      "carry_forward_new_unique_candidates": 30,
+      "additional_new_unique_candidates": 15,
+      "staged_new_page_count": 0,
+      "page_ready_candidates": 0,
+      "pages_to_build": 30,
+      "uploaded_to_main": 0,
       "published_this_run": 0,
-      "pr_opened": false,
-      "merged": false,
-      "status": "30 unique new-to-main pages staged; all release-ready; 0 uploaded pending PR checks",
-      "next_action": "Build 28 canonical pages; verify DOI/title via Crossref; run release validator and visualization audit; PR only after all 30 pages pass.",
-      "additional_unique_studies_needed": 0,
-      "evening_target_met": true,
-      "carry_forward_not_counted_as_new_this_evening": true,
-      "pages_read_back": 30,
-      "current_cycle_new_candidates": 28,
-      "carry_forward_pages": 2,
-      "branch_head": "ce986e9427248a52ed8587527b2d63f6535f2a77",
-      "pr_number": 5,
-      "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
-      "pr_head_sha": "ce986e9427248a52ed8587527b2d63f6535f2a77",
-      "pr_checks_status": "passed on current head ce986e9",
-      "merge_status": "held pending audit artifact inspection",
-      "published": false
+      "candidates_screened_this_run": 15,
+      "duplicates_excluded_this_run": 0,
+      "held_candidates_this_run": 15,
+      "deferred_contrary_this_run": 1,
+      "pr_status": "not opened",
+      "merge_status": "not merged",
+      "deployment_status": "not verified — no merge",
+      "status": "INCOMPLETE",
+      "next_action": "Complete primary-source extraction, fix candidate-decision ingestion safety, build exactly 30 canonical pages and run release/PR gates.",
+      "branch_head_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
     },
     "main_branch_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
     "working_branch": "atlas-batch/2026-11-17-am",
@@ -1311,7 +1269,7 @@
     "evidence_index_canonical_links_branch": 432,
     "roster_to_index_missing_main": 30,
     "roster_to_index_missing_branch": 0,
-    "archive_records": 15,
+    "archive_records": 16,
     "last_batch_missing_page_count": 28,
     "last_batch_trial_names": [
       "DeLLphi-305",
@@ -1384,13 +1342,489 @@
     "last_batch_page_count": 30,
     "last_batch_unique_count": 30,
     "last_batch_branch": "atlas-batch/2026-11-17-am",
-    "audit_note": "Structural reconciliation refreshed for the 17 November batch; full 431-page clinical/freshness audit remains incomplete.",
+    "audit_note": "Structural reconciliation complete; clinical freshness and browser-rendered QA remain incomplete.",
     "unique_page_paths": 460,
     "canonical_page_index_files": 461,
     "canonical_page_files_including_redirect": 461,
     "sitemap_trial_urls": 461,
     "last_batch_commit": "2989131abdf85395efba2c1c5bb13a6fb4a8e07d",
-    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972"
+    "last_batch_metadata_commit": "25c43365d9cdc2d89e5adde7f6af2fdda2499972",
+    "structural_audit_complete": true,
+    "full_clinical_audit_complete": false,
+    "pages_structurally_audited": 460,
+    "pages_missing_dated_context": 52,
+    "pages_primary_source_manually_reviewed": 9,
+    "pages_manually_inspected": 14,
+    "release_hold_pages_in_last_merged_batch": 4,
+    "production_deployment_verified": false,
+    "current_run_new_trials_uploaded": 0,
+    "last_run_date": "2026-11-23",
+    "last_run_cycle": "morning",
+    "last_run_branch": "atlas-batch/2026-11-23-am",
+    "last_run_status": "INCOMPLETE — 0/30 uploaded; 15 new unique candidates held; one contrary-evidence study deferred; no PR/merge.",
+    "last_merged_batch": {
+      "date": "2026-11-17",
+      "merged_on": "2026-11-18",
+      "pr_number": 5,
+      "pr_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/pull/5",
+      "pr_head_sha": "1a4502c6dc7a06f59c451b63cbafb4d1ba6946a7",
+      "merge_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "canonical_pages_added": 30,
+      "roster_entries_after_merge": 467,
+      "permanent_trial_pages_after_merge": 460,
+      "release_ready_flag_distribution": {
+        "undefined": 19,
+        "false": 4,
+        "true": 7
+      },
+      "release_holds": [
+        "artemis-011",
+        "keynote-b49",
+        "panku-lung01",
+        "toripalimab-mfolfirinox"
+      ],
+      "production_deployment": "not independently verified"
+    },
+    "latest_main_reconciliation": {
+      "verified_on": "2026-11-23T08:50:38+05:30",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "recursive_tree_entries": 1179,
+      "roster_entries": 467,
+      "unique_roster_page_destinations": 467,
+      "canonical_trial_page_directories": 460,
+      "canonical_page_index_files": 461,
+      "redirect_stub_files": [
+        "trial-pages/rosel/index.html"
+      ],
+      "legacy_flat_redirect_files": 135,
+      "index_unique_destinations": 468,
+      "missing_index_links": 0,
+      "archive_entries": 16,
+      "current_trial_of_the_day": "PANKU-Esophagus01",
+      "previous_trial_of_the_day": "GemX",
+      "daily_evidence_files": 31,
+      "daily_report_files": 9,
+      "canonical_pages_with_missing_dated_context": 52,
+      "unrostered_canonical_content_pages": 0,
+      "unrostered_redirect_only_pages": [
+        "trial-pages/rosel/index.html"
+      ],
+      "full_clinical_audit_complete": false,
+      "production_deployment_verified": false,
+      "note": "Normalized roster paths and shared anchors were used, not slug-to-id matching; all roster destinations resolve and appear in evidence/index.html.",
+      "latest_branch_commit_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
+    },
+    "last_manual_review_date": "2026-11-23",
+    "manual_review_log": [
+      {
+        "trial_id": "checkmate-816",
+        "page": "trial-pages/checkmate-816/index.html",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+          "https://pubmed.ncbi.nlm.nih.gov/40454642/"
+        ],
+        "visual": "Visible CSS bars checked; absolute differences 21.8, 18.5, 10.4 pp match pCR/EFS/OS.",
+        "effect": "NNT 5, 6, 10 respectively."
+      },
+      {
+        "trial_id": "keynote-a18",
+        "page": "trial-pages/keynote-a18/index.html",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+          "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+        ],
+        "visual": "Visible OS bar checked; 7.8 pp difference matches 36-month OS.",
+        "effect": "NNT 13 at 36 months."
+      },
+      {
+        "trial_id": "lacc",
+        "page": "trial-pages/lacc/index.html",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+          "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+          "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+        ],
+        "visual": "Visible DFS harm bar checked; 10.6 pp difference matches source value.",
+        "effect": "NNH 10 for DFS harm at 4.5 years."
+      },
+      {
+        "trial_id": "shape",
+        "page": "trial-pages/shape/index.html",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+        ],
+        "visual": "Visible noninferiority and functional graphics checked; finite widths.",
+        "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+      }
+    ],
+    "source_identifier_corrections": [
+      {
+        "date": "2026-11-23",
+        "trial_id": "checkmate-816",
+        "issue": "Incorrect PubMed identifier in manual review provenance",
+        "incorrect_pmid": "40349252",
+        "verified_pmid": "40454642",
+        "primary_doi": "10.1056/NEJMoa2502931",
+        "verification": "PubMed PMID 40454642 resolves to the exact 2025 NEJM CheckMate 816 overall-survival report; PMID 40349252 resolves to an unrelated ApoE/post-stroke cohort. The canonical trial page was re-read and contains the correct DOI link; no page content change was required.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/40454642/",
+          "https://doi.org/10.1056/NEJMoa2502931"
+        ]
+      }
+    ],
+    "evening_manual_review_addendum": {
+      "date": "2026-11-23",
+      "pages_inspected": 14,
+      "visual_defects": 3,
+      "follow_up_updates": 1,
+      "manual_reviews": [
+        {
+          "trial_id": "checkmate-816",
+          "page": "trial-pages/checkmate-816/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+            "https://pubmed.ncbi.nlm.nih.gov/40454642/"
+          ],
+          "visual": "Visible pCR/EFS/OS bars inspected; 21.8, 18.5 and 10.4 pp differences match source values.",
+          "effect": "NNT 5, 6 and 10 respectively; prior erroneous PMID 40349252 corrected to 40454642."
+        },
+        {
+          "trial_id": "keynote-a18",
+          "page": "trial-pages/keynote-a18/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+            "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+          ],
+          "visual": "Visible OS bar inspected; 7.8 pp difference matches 36-month OS.",
+          "effect": "NNT 13 at 36 months."
+        },
+        {
+          "trial_id": "lacc",
+          "page": "trial-pages/lacc/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+            "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+            "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+          ],
+          "visual": "Visible DFS harm bar inspected; 10.6 pp difference matches original primary 4.5-year analysis.",
+          "effect": "NNH 10 for DFS harm at 4.5 years; final analysis 85% vs96% is a distinct 11 pp estimate and should remain labelled separately."
+        },
+        {
+          "trial_id": "shape",
+          "page": "trial-pages/shape/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+          ],
+          "visual": "Visible noninferiority and functional graphics inspected; widths finite.",
+          "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+        },
+        {
+          "trial_id": "r-alps",
+          "page": "trial-pages/r-alps/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+            "https://clinicaltrials.gov/study/NCT04325763"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "No NNT from median PFS/HR; median PFS bars required."
+        },
+        {
+          "trial_id": "healer",
+          "page": "trial-pages/healer/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+            "https://clinicaltrials.gov/study/NCT05838066"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "NNT 5 for 24-month PFS (58.5% vs34.4%); NNH 9 for grade≥3 AEs (45.9% vs34.4%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-c93",
+          "page": "trial-pages/keynote-c93/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+            "https://clinicaltrials.gov/study/NCT05173987"
+          ],
+          "visual": "12-month PFS bars are 0% width; visual QA failed.",
+          "effect": "NNT 4 for 12-month PFS (67% vs40%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-564",
+          "page": "trial-pages/keynote-564/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+            "https://clinicaltrials.gov/study/NCT03142334"
+          ],
+          "visual": "Existing outcome visuals are present, but 2026 five-year follow-up not attached.",
+          "effect": "Five-year DFS 60.9% vs52.2% → NNT12; OS 87.7% vs82.3% → NNT19; based on same-horizon absolute KM rates."
+        },
+        {
+          "trial_id": "trofuse-005",
+          "page": "trial-pages/trofuse-005/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933460/"
+          ],
+          "visual": "Non-zero source-linked median PFS/OS bars inspected; no broken width detected.",
+          "effect": "No NNT from medians alone."
+        },
+        {
+          "trial_id": "toripalimab-mfolfirinox",
+          "page": "trial-pages/toripalimab-mfolfirinox/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42970668/"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "bctop-h-n01",
+          "page": "trial-pages/bctop-h-n01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+            "https://clinicaltrials.gov/study/NCT06747338"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "relight",
+          "page": "trial-pages/relight/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+            "https://clinicaltrials.gov/study/NCT04950322"
+          ],
+          "visual": "Visible non-zero PFS/OS outcome bars inspected.",
+          "effect": "No NNT from median PFS/OS alone."
+        },
+        {
+          "trial_id": "panku-esophagus01",
+          "page": "trial-pages/panku-esophagus01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+            "https://clinicaltrials.gov/study/NCT06304974"
+          ],
+          "visual": "Visible non-zero source-linked outcome bars inspected; current ToD page.",
+          "effect": "No new NNT claim added in this audit."
+        },
+        {
+          "trial_id": "litespark-012",
+          "page": "trial-pages/litespark-012/index.html",
+          "sources": [
+            "https://clinicaltrials.gov/study/NCT04736706"
+          ],
+          "visual": "Qualitative negative-result/status graphic present; no unsupported numeric NNT.",
+          "effect": "No NNT/NNH; negative interim evidence belongs in deferred/contrary queue."
+        }
+      ],
+      "scope_note": "Static HTML structure and source links inspected; live browser-rendered visual QA could not be completed. Full clinical freshness audit remains incomplete.",
+      "pages": [
+        {
+          "trial_id": "checkmate-816",
+          "page": "trial-pages/checkmate-816/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+            "https://pubmed.ncbi.nlm.nih.gov/40454642/"
+          ],
+          "visual": "Visible pCR/EFS/OS bars inspected; 21.8, 18.5 and 10.4 pp differences match source values.",
+          "effect": "NNT 5, 6 and 10 respectively; prior erroneous PMID 40349252 corrected to 40454642."
+        },
+        {
+          "trial_id": "keynote-a18",
+          "page": "trial-pages/keynote-a18/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+            "https://pubmed.ncbi.nlm.nih.gov/42010940/"
+          ],
+          "visual": "Visible OS bar inspected; 7.8 pp difference matches 36-month OS.",
+          "effect": "NNT 13 at 36 months."
+        },
+        {
+          "trial_id": "lacc",
+          "page": "trial-pages/lacc/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+            "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+            "https://pubmed.ncbi.nlm.nih.gov/32502445/"
+          ],
+          "visual": "Visible DFS harm bar inspected; 10.6 pp difference matches original primary 4.5-year analysis.",
+          "effect": "NNH 10 for DFS harm at 4.5 years; final analysis 85% vs96% is a distinct 11 pp estimate and should remain labelled separately."
+        },
+        {
+          "trial_id": "shape",
+          "page": "trial-pages/shape/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+          ],
+          "visual": "Visible noninferiority and functional graphics inspected; widths finite.",
+          "effect": "No NNT for primary 3-year pelvic recurrence noninferiority; secondary NNT 11 for retention and 16 for incontinence."
+        },
+        {
+          "trial_id": "r-alps",
+          "page": "trial-pages/r-alps/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42955021/",
+            "https://clinicaltrials.gov/study/NCT04325763"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "No NNT from median PFS/HR; median PFS bars required."
+        },
+        {
+          "trial_id": "healer",
+          "page": "trial-pages/healer/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42929681/",
+            "https://clinicaltrials.gov/study/NCT05838066"
+          ],
+          "visual": "Outcome bars are 0% width and labels/values misaligned; visual QA failed.",
+          "effect": "NNT 5 for 24-month PFS (58.5% vs34.4%); NNH 9 for grade≥3 AEs (45.9% vs34.4%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-c93",
+          "page": "trial-pages/keynote-c93/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933458/",
+            "https://clinicaltrials.gov/study/NCT05173987"
+          ],
+          "visual": "12-month PFS bars are 0% width; visual QA failed.",
+          "effect": "NNT 4 for 12-month PFS (67% vs40%); endpoint/horizon metadata absent."
+        },
+        {
+          "trial_id": "keynote-564",
+          "page": "trial-pages/keynote-564/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42648402/",
+            "https://clinicaltrials.gov/study/NCT03142334"
+          ],
+          "visual": "Existing outcome visuals are present, but 2026 five-year follow-up not attached.",
+          "effect": "Five-year DFS 60.9% vs52.2% → NNT12; OS 87.7% vs82.3% → NNT19; based on same-horizon absolute KM rates."
+        },
+        {
+          "trial_id": "trofuse-005",
+          "page": "trial-pages/trofuse-005/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42933460/"
+          ],
+          "visual": "Non-zero source-linked median PFS/OS bars inspected; no broken width detected.",
+          "effect": "No NNT from medians alone."
+        },
+        {
+          "trial_id": "toripalimab-mfolfirinox",
+          "page": "trial-pages/toripalimab-mfolfirinox/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42970668/"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "bctop-h-n01",
+          "page": "trial-pages/bctop-h-n01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+            "https://clinicaltrials.gov/study/NCT06747338"
+          ],
+          "visual": "Non-zero source-linked outcome bars inspected; no obvious visual defect.",
+          "effect": "No NNT assigned in this quick audit; full clinical source review remains open."
+        },
+        {
+          "trial_id": "relight",
+          "page": "trial-pages/relight/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42784781/",
+            "https://clinicaltrials.gov/study/NCT04950322"
+          ],
+          "visual": "Visible non-zero PFS/OS outcome bars inspected.",
+          "effect": "No NNT from median PFS/OS alone."
+        },
+        {
+          "trial_id": "panku-esophagus01",
+          "page": "trial-pages/panku-esophagus01/index.html",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/43018949/",
+            "https://clinicaltrials.gov/study/NCT06304974"
+          ],
+          "visual": "Visible non-zero source-linked outcome bars inspected; current ToD page.",
+          "effect": "No new NNT claim added in this audit."
+        },
+        {
+          "trial_id": "litespark-012",
+          "page": "trial-pages/litespark-012/index.html",
+          "sources": [
+            "https://clinicaltrials.gov/study/NCT04736706"
+          ],
+          "visual": "Qualitative negative-result/status graphic present; no unsupported numeric NNT.",
+          "effect": "No NNT/NNH; negative interim evidence belongs in deferred/contrary queue."
+        }
+      ],
+      "reviewed_on": "2026-11-23"
+    },
+    "manual_review_count_reconciliation_required": true,
+    "manual_review_count_reconciliation_note": "Aggregate manual review counters (manual_page_reviews_total=8; pages_manually_inspected=14) do not reconcile with the 4-entry manual_review_log. Evening manual reviews are preserved separately; do not claim full audit completion.",
+    "last_evening_review_date": "2026-11-23",
+    "last_evening_review_status": "INCOMPLETE — 14 pages inspected; 3 visualization repairs and 1 follow-up update queued; no full audit completion.",
+    "manual_pages_inspected_this_run": 14,
+    "manual_pages_inspected_on_2026_11_23": 14,
+    "primary_source_reviews_this_run": 4,
+    "browser_rendered_qa_complete": false,
+    "pages_updated_this_run": [
+      "r-alps",
+      "healer",
+      "keynote-c93",
+      "keynote-564"
+    ],
+    "keynote564_five_year_followup_attached": true,
+    "strict_release_validator": {
+      "run_id": 45192486550,
+      "latest_batch_date": "2026-11-17",
+      "latest_batch_count": 30,
+      "error_count": 0,
+      "conclusion": "success"
+    },
+    "outcome_visual_audit": {
+      "run_id": 45192486550,
+      "roster_pages_found": 460,
+      "roster_pages_missing": 0,
+      "renderer_missing": 0,
+      "missing_dated_context": 52,
+      "manual_review_flags": 0,
+      "conclusion": "success"
+    },
+    "branch_preview_deployment": {
+      "commit": "fe176bedf05cc43a047028e10e8828370b652886",
+      "status": "success",
+      "url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev",
+      "production": false
+    },
+    "main_unique_trials_verified": 467,
+    "branch_unique_trials": 473,
+    "branch_permanent_trial_pages": 466,
+    "full_recursive_tree_retrieved_this_run": true,
+    "main_recursive_tree_files": 1179,
+    "branch_recursive_tree_files": 1197,
+    "main_trial_page_files": 596,
+    "branch_trial_page_files": 602,
+    "main_canonical_index_pages": 461,
+    "branch_canonical_index_pages": 467,
+    "branch_index_unique_slugs_after_reconciliation": 466,
+    "unrostered_trial_page_files_before_reconciliation": [
+      "trial-pages/aeneas2/index.html",
+      "trial-pages/alina/index.html",
+      "trial-pages/niche-2/index.html",
+      "trial-pages/sunlight/index.html",
+      "trial-pages/zuma-7/index.html"
+    ],
+    "unrostered_nontrial_reference_page": [
+      "trial-pages/lung-sabr-definitions/index.html"
+    ],
+    "redirect_stub_not_counted": [
+      "trial-pages/rosel/index.html"
+    ],
+    "shared_anchor_trial_records": 8,
+    "pages_manually_reviewed_this_run": 5,
+    "new_pages_source_reviewed_this_run": 5,
+    "last_partial_content_audit_date": "2026-11-24",
+    "full_content_audit_status": "incomplete — 5 existing pages and 5 new page drafts reviewed; remaining canonical pages require sequential primary-source review"
   },
   "trials": [
     {
@@ -1543,7 +1977,7 @@
       "registry_id": "NCT05772546",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Avatrombopag persistent CIT",
         "ACT-GI trial"
@@ -1585,7 +2019,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/act-gi/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "adaura",
@@ -1620,6 +2056,134 @@
       ],
       "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
       "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+    },
+    {
+      "id": "aeneas2",
+      "trial": "AENEAS2",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "First-line / advanced",
+      "setting_detail": "Untreated locally advanced or metastatic EGFR exon 19 deletion/L858R NSCLC",
+      "question": "Does adding platinum–pemetrexed to aumolertinib improve PFS over aumolertinib alone?",
+      "source": "Lancet Oncology 2026",
+      "path": "trial-pages/aeneas2/index.html",
+      "primary": "10.1016/S1470-2045(26)00090-2",
+      "primary_title": "Aumolertinib with or without chemotherapy in EGFR-mutated advanced non-small-cell lung cancer (AENEAS2): an open-label, multicentre, randomised, controlled, phase 3 trial",
+      "pmid": "42296979",
+      "registry_id": "NCT04923906",
+      "publication_date": "2026-06-15",
+      "aliases": [
+        "AENEAS2",
+        "NCT04923906",
+        "aumolertinib plus chemotherapy versus aumolertinib"
+      ],
+      "phase": "III",
+      "design": "Multicentre, open-label, randomized, controlled phase III trial; 1:1 allocation.",
+      "population": "624 adults with untreated locally advanced or metastatic NSCLC with EGFR exon 19 deletion or L858R; ECOG 0–1. Randomized n=310 combination and n=314 monotherapy; safety population n=304 and n=316.",
+      "intervention": "Aumolertinib 110 mg orally once daily plus pemetrexed 500 mg/m² and cisplatin 75 mg/m² or carboplatin AUC 5 IV day 1 every 21 days for 4–6 cycles, followed by aumolertinib plus pemetrexed maintenance.",
+      "comparator": "Aumolertinib 110 mg orally once daily.",
+      "randomization": "1:1 block randomization; stratified by EGFR mutation type and baseline brain-metastasis status.",
+      "primary_endpoint": "PFS by blinded independent review per RECIST 1.1.",
+      "follow_up": "Median follow-up 23.4 months; OS immature at primary analysis.",
+      "efficacy": "Median PFS 28.9 vs 18.9 months; HR 0.47 (95% CI 0.37–0.60; P<0.0001). No common fixed-time PFS/OS rates in the accessible primary abstract.",
+      "safety": "Grade 3–4 neutropenia 55% (168/304) vs 1% (4/316); leukopenia 34% (103/304) vs <1% (1/316); thrombocytopenia 20% (62/304) vs 1% (2/316). Serious AEs 36% vs 17%; treatment-related deaths 1 (<1%) vs 2 (1%).",
+      "quality_of_life": "No validated QoL result reported in the primary publication.",
+      "limitations": "Open-label China-based trial; OS immature; comparator was aumolertinib monotherapy, not osimertinib-based therapy; substantially greater myelosuppression with combination.",
+      "clinical_interpretation": "Phase III evidence that adding platinum–pemetrexed to aumolertinib improves PFS in untreated EGFR exon 19 deletion/L858R advanced NSCLC. Direct extrapolation to other EGFR TKIs or jurisdictions is not established.",
+      "nnt_not_calculated_reason": "No comparable fixed-time absolute PFS/OS rates are reported in the primary publication; NNT is not derived from medians or HR.",
+      "absolute_effect": null,
+      "additional_endpoints": [],
+      "related_publications": [],
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00090-2",
+        "https://pubmed.ncbi.nlm.nih.gov/42296979/",
+        "https://clinicaltrials.gov/study/NCT04923906"
+      ],
+      "nccn_provenance": "Not verified — current full NCCN NSCLC guideline/reference list inaccessible; no exact version, section, reference or category claimed.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-24",
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/aeneas2/"
+    },
+    {
+      "id": "alina",
+      "trial": "ALINA",
+      "site": "Non-Small Cell Lung Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Adjuvant / resected",
+      "setting_detail": "Completely resected ALK-positive stage IB (tumour ≥4 cm), II or IIIA NSCLC",
+      "question": "Does 2 years of adjuvant alectinib improve DFS over four cycles of platinum-based chemotherapy after resection of ALK-positive NSCLC?",
+      "source": "New England Journal of Medicine 2024",
+      "path": "trial-pages/alina/index.html",
+      "primary": "10.1056/NEJMoa2310532",
+      "primary_title": "Alectinib in Resected ALK-Positive Non–Small-Cell Lung Cancer",
+      "pmid": "38598794",
+      "registry_id": "NCT03456076",
+      "publication_date": "2024-04-10",
+      "aliases": [
+        "ALINA",
+        "NCT03456076",
+        "adjuvant alectinib in resected ALK-positive NSCLC"
+      ],
+      "phase": "III",
+      "design": "Global, open-label, randomized phase III trial; 1:1 allocation.",
+      "population": "257 patients with completely resected stage IB (tumour ≥4 cm), II or IIIA ALK-positive NSCLC; 130 alectinib and 127 chemotherapy. Stage II–IIIA subgroup n=231 (116 vs 115).",
+      "intervention": "Alectinib 600 mg orally twice daily for 24 months or until recurrence/unacceptable toxicity.",
+      "comparator": "Four 21-day cycles of platinum-based chemotherapy: cisplatin 75 mg/m² day 1 plus vinorelbine 25 mg/m² days 1 and 8, gemcitabine 1,250 mg/m² days 1 and 8, or pemetrexed 500 mg/m² day 1; carboplatin AUC 5–6 permitted for cisplatin intolerance.",
+      "randomization": "1:1 randomization; stratified by disease stage (IB ≥4 cm vs II vs IIIA) and race (Asian vs non-Asian).",
+      "primary_endpoint": "DFS, tested hierarchically in stage II–IIIA and then the ITT population.",
+      "follow_up": "Primary DFS analysis median follow-up 27.8 months; OS immature. The 2026 HRQoL/safety analysis had median safety follow-up 24.8 months with alectinib and 3.7 months with chemotherapy.",
+      "efficacy": "Stage II–IIIA 2-year DFS 93.8% vs 63.0%; HR 0.24 (95% CI 0.13–0.45; P<0.001). ITT 2-year DFS 93.6% vs 63.7%; HR 0.24 (95% CI 0.13–0.43; P<0.001). CNS-DFS HR 0.22 (95% CI 0.08–0.58). OS immature.",
+      "safety": "In the 2026 safety/HRQoL analysis, grade 3–4 AEs 38/128 (29.7%) vs 37/120 (30.8%); no grade 5 AEs or AE-related deaths. Serious treatment-related AEs 1.6% vs 6.7%; treatment discontinuation due to AEs 5.5% vs 12.5%.",
+      "quality_of_life": "SF-36v2 HRQoL improved at week 12 in several domains with alectinib and was maintained through week 96; comparisons after week 12 are limited because chemotherapy ended.",
+      "limitations": "Open-label adjuvant study; OS immature; biomarker-specific to ALK-positive disease; different treatment durations limit long-term safety/HRQoL comparisons.",
+      "clinical_interpretation": "Adjuvant alectinib substantially improves DFS over platinum chemotherapy in resected ALK-positive stage IB (≥4 cm)–IIIA NSCLC; do not extrapolate to ALK-negative disease.",
+      "nnt_not_calculated_reason": null,
+      "absolute_effect": {
+        "endpoint": "Disease-free survival",
+        "time_horizon": "24 months",
+        "treatment_rate": "93.8%",
+        "control_rate": "63.0%",
+        "absolute_benefit_percentage_points": 30.8,
+        "nnt": 4,
+        "calculation": "ceil[1/0.308]=4",
+        "source": "Primary NEJM publication; stage II–IIIA primary DFS population."
+      },
+      "additional_endpoints": [],
+      "related_publications": [
+        {
+          "title": "ALINA HRQoL and safety analysis",
+          "doi": "10.1016/S1470-2045(26)00283-4",
+          "pmid": "42636834",
+          "publication_date": "2026-09-14"
+        }
+      ],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2310532",
+        "https://pubmed.ncbi.nlm.nih.gov/38598794/",
+        "https://clinicaltrials.gov/study/NCT03456076",
+        "https://doi.org/10.1016/S1470-2045(26)00283-4",
+        "https://pubmed.ncbi.nlm.nih.gov/42636834/"
+      ],
+      "nccn_provenance": "Not verified — current full NCCN NSCLC guideline/reference list inaccessible; no exact version, section, reference or category claimed.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-24",
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/alina/"
     },
     {
       "id": "alliance-a051701",
@@ -1808,7 +2372,7 @@
       "registry_id": "NCT06935409",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "ARTEMIS 011",
         "cabozantinib osteosarcoma"
@@ -1838,11 +2402,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/artemis-011/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact gemcitabine/docetaxel component doses and full grade 3–5 safety supplement are not available in the accessible primary abstract.",
+      "release_hold_reason": "Accessible primary abstract does not provide the full gemcitabine/docetaxel comparator schedule and complete grade 3–5 safety/QoL denominators. Retrieve primary supplement/protocol; do not infer comparator dosing.",
       "release_ready": false,
       "outcome_summary": "Median PFS 5.5 vs 1.4 months; HR 0.33 (95% CI 0.20–0.55), P<0.0001. ORR 29.3% vs 8.5%. OS immature.",
       "safety_summary": "Grade ≥3 TRAEs 93% vs 83%; serious TRAEs 64% vs 29%; dose reductions 71% vs 26%; discontinuations 3.8% vs 2.4%; no treatment-related deaths reported.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "arto",
@@ -2121,7 +2688,7 @@
       "registry_id": "NCT06747338",
       "publication_date": "2026-09-03",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "BCTOP-H-N01",
         "anbenitamab HB1801 HER2-positive breast"
@@ -2163,7 +2730,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/bctop-h-n01/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "big-1-98",
@@ -2420,7 +2989,7 @@
       "registry_id": "NCT01795027",
       "publication_date": "2026-09-11",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "CAPITAL gastric cancer",
         "NCT01795027"
@@ -2462,7 +3031,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/capital/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "capitello-291",
@@ -3272,7 +3843,8 @@
       "primary_title": "Dalmelitinib Plus Aumolertinib in Advanced NSCLC Patients With EGFR-TKI Resistance and MET Amplification: A Randomized Phase 3 Trial",
       "pmid": "42928710",
       "disease_extent": "Advanced / metastatic",
-      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility"
+      "treatment_status": "Relapsed / refractory or previously treated population; see trial-specific eligibility",
+      "registry_id": "NCT06110663"
     },
     {
       "id": "daly-2-eu",
@@ -3419,12 +3991,12 @@
       "setting_detail": "Maintenance after first-line durvalumab plus platinum–etoposide induction in extensive-stage SCLC without progression",
       "phase": "III",
       "primary": "10.1056/NEJMoa2609482",
-      "primary_title": "Tarlatamab-Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer",
+      "primary_title": "Tarlatamab–Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer",
       "pmid": "42929702",
       "registry_id": "NCT06211036",
       "publication_date": "2026-10-24",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "DeLLphi 305",
         "Tarlatamab–durvalumab maintenance",
@@ -3434,7 +4006,8 @@
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2609482",
         "https://pubmed.ncbi.nlm.nih.gov/42929702/",
-        "https://clinicaltrials.gov/study/NCT06211036"
+        "https://clinicaltrials.gov/study/NCT06211036",
+        "https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imdelltra-reduced-risk-of-death-by-58-pct-in-1st-line-extensive-stage-small-cell-lung-cancer-in-the-dellphi-305-phase-iii-trial.html"
       ],
       "nccn_provenance": "not verified — full guideline/reference list inaccessible; mapping task open",
       "last_source_reviewed_on": "2026-11-17",
@@ -3443,17 +4016,61 @@
       "comparator": "Durvalumab 1500 mg IV every 4 weeks alone.",
       "primary_endpoint": "Overall survival; PFS was a key secondary endpoint.",
       "follow_up": "Prespecified interim analysis; median follow-up approximately 16 months.",
-      "efficacy": "Median OS 21.1 versus 12.7 months; HR 0.42 (95% CI 0.32–0.54), P<0.001. Median PFS 7.4 versus 1.9 months; HR 0.34 (95% CI 0.28–0.42), P<0.001. No NNT is calculated because the primary report's median/HR results are not converted to a fixed-horizon risk difference.",
-      "safety": "Grade ≥3 AEs occurred in 46.8% versus 40.6%. CRS occurred in 49.6% with the combination, predominantly grade 1–2. The accessible primary abstract does not separately quantify ICANS; no rate is inferred. Monitor for CRS and neurologic toxicity including ICANS.",
-      "quality_of_life": "No definitive QoL advantage reported in the interim primary report.",
+      "efficacy": "Median OS 21.1 vs 12.7 months; HR 0.42 (95% CI 0.32–0.54; P<0.001); median follow-up 15.9 vs 16.1 months. Median PFS 7.4 vs 1.9 months; HR 0.34 (95% CI 0.28–0.42; P<0.001); PFS follow-up 13.9 months each. ESMO 2026 LBA3 landmark rates: 12-month OS 79% vs 53%; 12-month PFS 38% vs 10%. ORR 26.4% vs 4.1%; median duration of response 12.7 vs 5.6 months.",
+      "safety": "Grade ≥3 AEs 46.8% vs 40.6%; grade 3–4 treatment-related AEs 20.9% vs 10.8%; CRS 49.6%, predominantly grade 1–2, with grade 3 in 0.4% and no grade 4; ICANS 1.1%; AE discontinuation 5.7% vs 5.8%; no treatment-related deaths with combination vs two with durvalumab.",
+      "quality_of_life": "No QoL outcome reported in the primary NEJM abstract or ESMO 2026 LBA3 summary.",
       "limitations": "Interim analysis with relatively short follow-up; only patients without progression after induction were randomized. The trial is a maintenance strategy and does not compare tarlatamab with first-line induction therapy.",
       "clinical_interpretation": "Maintenance tarlatamab plus durvalumab significantly improved OS and PFS over durvalumab alone after first-line chemoimmunotherapy in ES-SCLC. The exact tarlatamab step-up schedule is supported by the FDA label; no unsupported 12-month NNT is presented.",
-      "primary_title_verified_via": "Primary journal/conference abstract and authoritative dosing source checked 17 November 2026",
+      "primary_title_verified_via": "NEJM primary publication/PubMed metadata; official AstraZeneca ESMO 2026 LBA3 results table; FDA 2026 prescribing information for the tarlatamab step-up schedule. Full DeLLphi-305 protocol supplement remains unverified.",
       "source_verified": true,
       "doi_title_verified": true,
-      "release_qa_status": "corrected_primary_source_reviewed",
+      "release_qa_status": "structural_repair_on_branch_pending_CI_and_protocol_supplement",
       "nnt_not_calculated_reason": null,
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "absolute_effect": {
+        "endpoint": "Overall survival",
+        "time_horizon": "12 months",
+        "treatment_rate": "79%",
+        "control_rate": "53%",
+        "absolute_benefit_percentage_points": 26,
+        "nnt": 4,
+        "calculation": "ceil[1/(0.79−0.53)]=4; approximate because the published landmark rates are rounded Kaplan–Meier estimates",
+        "source": "Official AstraZeneca ESMO 2026 LBA3 results table; 12-month OS 79% vs 53%.",
+        "horizon": "12 months",
+        "benefit_percentage_points": 26,
+        "additional_endpoints": [
+          {
+            "endpoint": "Progression-free survival",
+            "horizon": "12 months",
+            "time_horizon": "12 months",
+            "treatment_rate": "38%",
+            "control_rate": "10%",
+            "benefit_percentage_points": 28,
+            "absolute_benefit_percentage_points": 28,
+            "nnt": 4,
+            "calculation": "ceil[1/(0.38−0.10)]=4; approximate because the published landmark rates are rounded Kaplan–Meier estimates",
+            "source": "Official AstraZeneca ESMO 2026 LBA3 results table; 12-month PFS 38% vs 10%."
+          }
+        ]
+      },
+      "additional_endpoints": [
+        {
+          "endpoint": "Progression-free survival",
+          "time_horizon": "12 months",
+          "treatment_rate": "38%",
+          "control_rate": "10%",
+          "absolute_benefit_percentage_points": 28,
+          "nnt": 4,
+          "calculation": "ceil[1/0.28]=4",
+          "source": "ESMO 2026 LBA3 conference report/official sponsor data summary."
+        }
+      ],
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "Static median and 12-month OS/PFS bars and both NNT records independently checked against NEJM primary report and ESMO 2026 LBA3; updated branch browser-render QA pending.",
+      "registry_verified": true
     },
     {
       "id": "destiny-breast-03",
@@ -3529,7 +4146,7 @@
       "registry_id": "NCT05495724",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "DV plus tislelizumab NMIBC",
         "NCT05495724"
@@ -3560,7 +4177,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/disitamab-tislelizumab/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "dissrm",
@@ -4285,7 +4904,7 @@
       "registry_id": "NCT03952091",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Felzartamab-Rd",
         "NCT03952091"
@@ -4314,7 +4933,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/felzartamab-rd/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "feng-2012-hcc",
@@ -4449,7 +5070,7 @@
       "registry_id": "NCT05418842",
       "publication_date": "2026-09-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "FIT4TREAT HNSCC",
         "NCT05418842"
@@ -4478,7 +5099,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/fit4treat/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "flaura",
@@ -4878,7 +5501,7 @@
       "registry_id": "NCT05184712",
       "publication_date": "2024-08-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "HARMONi-A",
         "AK112 plus pemetrexed/carboplatin",
@@ -4933,7 +5556,9 @@
           "doi": "10.1001/jama.2026.7745",
           "pmid": "42307937"
         }
-      ]
+      ],
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "healer",
@@ -4941,7 +5566,7 @@
       "site": "Breast Cancer",
       "discipline": "Medical Oncology",
       "setting": "Advanced / Metastatic",
-      "setting_detail": "24-month PFS 58.5% vs 34.4%; HR 0.46 (95% CI 0.37–0.56; P<0.001); absolute gain 24.1 points; NNT 5. ORR 87.6% vs 73.4%.",
+      "setting_detail": "24-month PFS: 58.5% with anbenitamab plus HB1801 and 34.4% with THP; HR 0.46 (95% CI 0.37–0.56; P<.001); absolute benefit 24.1 points; NNT 5. ORR: 87.6% and 73.4%. Grade ≥3 AEs: 45.9% and 34.4%; no NNH without a fixed-time safety horizon.",
       "question": "What is the clinical effect of HEALER in Breast Cancer (advanced / metastatic)?",
       "source": "trial-pages/healer/",
       "path": "trial-pages/healer/",
@@ -4953,19 +5578,16 @@
         "NCT05838066",
         "DOI 10.1056/NEJMoa2610345"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "freshness_review_status": "Primary NEJM report and PubMed record reviewed 2026-11-23; exact dose schedule/supplement and current full NCCN Breast guideline not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded PFS, ORR and grade ≥3 AE charts added; 24-month PFS NNT5 structured; unsupported NNH9 removed. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
+      "quality_check_date": "2026-11-23",
       "absolute_effect": {
         "endpoint": "Progression-free survival",
         "horizon": "24 months",
         "benefit_percentage_points": 24.1,
         "nnt": 5,
-        "harm_endpoint": "Grade ≥3 adverse events",
-        "harm_percentage_points": 11.5,
-        "nnh": 9,
-        "notes": "Descriptive NNH based on the between-arm difference in grade ≥3 AEs."
+        "notes": "24-month PFS 58.5% vs 34.4%; 1/0.241=4.15, rounded up to 5. Grade ≥3 AEs 45.9% vs 34.4% are shown separately; no NNH is calculated because the accessible abstract does not report a common fixed-time toxicity horizon."
       },
       "primary_title": "Anbenitamab plus HB1801 for HER2-Positive Advanced Breast Cancer",
       "pmid": "42929681",
@@ -5102,7 +5724,10 @@
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
       "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma"
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-positive gastroesophageal adenocarcinoma",
+      "publication_status": "published",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "hilus",
@@ -5199,7 +5824,7 @@
       "registry_id": "NCT01042379",
       "publication_date": "2026-11-10",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "I-SPY2.2",
         "RT-DXd",
@@ -5230,7 +5855,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/i-spy2-2/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "ibcsg-23-01",
@@ -5664,7 +6291,7 @@
       "registry_id": "NCT05247684",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Ivonescimab perioperative NSCLC",
         "AK112 perioperative"
@@ -5695,7 +6322,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/ivonescimab-perioperative/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "javelin-bladder-100",
@@ -5839,7 +6468,7 @@
       "registry_id": "NCT03740165",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "KEYLYNK-001",
         "ENGOT-OV43",
@@ -5872,7 +6501,9 @@
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "outcome_summary": "PFS HR 0.71 (95% CI 0.61–0.84) in ITT and HR 0.66 (95% CI 0.53–0.83) in PD-L1 CPS ≥10 for pembrolizumab plus olaparib maintenance vs control. Pembrolizumab without olaparib did not improve PFS in CPS ≥10 (HR 0.95, 95% CI 0.77–1.19; P=0.33). Median PFS and mature OS not reported in accessible primary abstract.",
       "safety_summary": "Grade ≥3 TRAEs 66% vs 56% vs 51%; serious TRAEs 24% vs 21% vs 9%; treatment-related deaths 4 vs 1 vs 0 across olaparib, pembrolizumab-alone and control strategies.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "keynote-024",
@@ -6236,9 +6867,57 @@
       "setting": "Adjuvant / Postoperative",
       "question": "Does adjuvant pembrolizumab improve disease-free and overall survival after nephrectomy for high-risk clear-cell RCC?",
       "path": "trial-pages/keynote-564/",
-      "freshness_review_status": "pending",
-      "outcome_visual_review_status": "pending_automated_and_source_review",
-      "setting_detail": "Adjuvant"
+      "freshness_review_status": "2026-11-23: five-year peer-reviewed follow-up verified and attached; official ESMO 2026 final-analysis presentation listing identified but full abstract text not retrieved, so seven-year numeric outcomes are not integrated. Current full NCCN Kidney Cancer guideline/reference list not verified; no category claimed.",
+      "outcome_visual_review_status": "Static source-grounded 24-month and five-year DFS/OS and toxicity charts added; NNT11/12/19 structured by endpoint/horizon; prior NNH7 removed. Browser-rendered/live QA pending.",
+      "setting_detail": "24-month DFS 77.3% with pembrolizumab and 68.1% with placebo (NNT 11); 5-year DFS 60.9% and 52.2% (NNT 12); 5-year OS 87.7% and 82.3% (NNT 19). Five-year analysis: median follow-up 70 months; DFS HR 0.71 (95% CI 0.59–0.86), OS HR 0.66 (95% CI 0.48–0.90).",
+      "primary": "10.1056/NEJMoa2106391",
+      "primary_title": "Adjuvant Pembrolizumab after Nephrectomy in Renal-Cell Carcinoma",
+      "pmid": "34407342",
+      "registry_id": "NCT03142334",
+      "related_publications": [
+        {
+          "title": "Overall Survival with Adjuvant Pembrolizumab in Renal-Cell Carcinoma",
+          "doi": "10.1056/NEJMoa2312695",
+          "pmid": "38631003",
+          "date": "2024-04-18"
+        },
+        {
+          "title": "Adjuvant pembrolizumab for the treatment of clear cell renal cell carcinoma: five-year results from the phase III KEYNOTE-564 study",
+          "doi": "10.1016/j.annonc.2026.08.006",
+          "pmid": "42648402",
+          "date": "2026-08-26"
+        },
+        {
+          "title": "Final protocol-prespecified analysis of the phase 3 KEYNOTE-564 trial of adjuvant pembrolizumab versus placebo in clear cell renal cell carcinoma",
+          "date": "2026-10-25",
+          "type": "Official ESMO presentation listing only; full abstract text not retrieved; no seven-year outcomes integrated",
+          "url": "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Disease-free survival",
+        "horizon": "5 years",
+        "benefit_percentage_points": 8.7,
+        "nnt": 12,
+        "notes": "5-year KM DFS 60.9% vs 52.2%; 1/0.087=11.49, rounded up to 12. Fourth prespecified interim analysis; median follow-up 70 months.",
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "5 years",
+            "benefit_percentage_points": 5.4,
+            "nnt": 19,
+            "notes": "5-year KM OS 87.7% vs 82.3%; 1/0.054=18.52, rounded up to 19."
+          },
+          {
+            "endpoint": "Disease-free survival",
+            "horizon": "24 months",
+            "benefit_percentage_points": 9.2,
+            "nnt": 11,
+            "notes": "Original interim analysis: 24-month DFS 77.3% vs 68.1%; 1/0.092=10.87, rounded up to 11."
+          }
+        ]
+      },
+      "quality_check_date": "2026-11-23"
     },
     {
       "id": "keynote-671",
@@ -6417,7 +7096,7 @@
       "registry_id": "NCT04895358",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "KEYNOTE B49",
         "NCT04895358"
@@ -6447,11 +7126,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/keynote-b49/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Annals Oncol conference/primary abstract provides efficacy and final OS/safety summary, but exact chemotherapy backbone and dose distribution require protocol/supplement.",
+      "release_hold_reason": "Exact investigator-choice chemotherapy dose/schedule and complete arm-level grade 3–5 safety/QoL denominators are not independently verified. Retrieve full article/supplement and protocol.",
       "release_ready": false,
       "outcome_summary": "PFS 6.7 vs 6.0 months; HR 0.74 (95% CI 0.58–0.95), P=0.0089. OS 21.0 vs 22.2 months; HR 1.04 (95% CI 0.81–1.33), P=0.6185.",
       "safety_summary": "Grade ≥3 TRAEs 37.6% vs 32.7%; TRAE discontinuation 11.2% vs 5.4%.",
-      "qol_summary": "No definitive QoL result reported in accessible primary abstract."
+      "qol_summary": "No definitive QoL result reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "keynote-c93",
@@ -6459,7 +7141,7 @@
       "site": "Endometrial Cancer",
       "discipline": "Medical Oncology",
       "setting": "Advanced / Metastatic",
-      "setting_detail": "Median PFS 38.2 vs 8.4 months; HR 0.57 (95% CI 0.42–0.79; P=0.0002). 12-month PFS 67% vs 40% (NNT 4). OS boundary not met (HR 0.77; P=0.10).",
+      "setting_detail": "Median PFS: 38.2 months with pembrolizumab and 8.4 months with carboplatin-paclitaxel; HR 0.57 (95% CI 0.42–0.79; P=.0002). 12-month PFS 67% and 40% (NNT 4); 36-month PFS 53% and 30%. OS boundary not met (HR 0.77; 95% CI 0.52–1.15; P=.10).",
       "question": "What is the clinical effect of KEYNOTE-C93 / GOG-3064 / ENGOT-en15 in Endometrial Cancer (advanced / metastatic)?",
       "source": "trial-pages/keynote-c93/",
       "path": "trial-pages/keynote-c93/",
@@ -6471,16 +7153,16 @@
         "NCT05173987",
         "DOI 10.1016/S0140-6736(26)02095-7"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "freshness_review_status": "Primary Lancet article and full abstract record reviewed 2026-11-23; current full NCCN Endometrial Cancer guideline/reference list not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded 12-/36-month PFS, median PFS and grade ≥3 TRAE charts added; 12-month PFS NNT4 structured. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
+      "quality_check_date": "2026-11-23",
       "absolute_effect": {
         "endpoint": "Progression-free survival",
         "horizon": "12 months",
         "benefit_percentage_points": 27,
         "nnt": 4,
-        "notes": "OS statistical boundary was not met at interim analysis; this NNT applies only to 12-month PFS."
+        "notes": "12-month BICR PFS 67% vs 40%; 1/0.27=3.70, rounded up to 4. Grade ≥3 TRAEs were less frequent with pembrolizumab (18% vs 51%); no NNH is assigned."
       },
       "primary_title": "First-line pembrolizumab versus carboplatin plus paclitaxel in participants with mismatch repair-deficient advanced or recurrent endometrial cancer (KEYNOTE-C93/GOG-3064/ENGOT-en15): interim analysis of a multicentre, open-label, randomised, active-comparator controlled, phase 3 trial",
       "pmid": "42933458",
@@ -6644,6 +7326,64 @@
       "outcome_visual_review_status": "numeric outcome visualization added; browser-rendered QA pending"
     },
     {
+      "id": "litespark-005",
+      "trial": "LITESPARK-005",
+      "site": "Renal Cell Carcinoma",
+      "discipline": "Medical Oncology",
+      "setting": "Advanced / Metastatic",
+      "setting_detail": "18-month PFS 24.0% with belzutifan versus 8.3% with everolimus (HR 0.75, 95% CI 0.63–0.90; P=0.002; NNT 7 at 18 months). 18-month OS 55.2% versus 50.6% (HR 0.88, 95% CI 0.73–1.07; P=0.20; no NNT). ORR 21.9% versus 3.5%. Grade ≥3 all-cause AEs 61.8% versus 62.5%; grade 5 AEs 3.5% versus 5.3%; AE-related discontinuation 5.9% versus 14.7%.",
+      "question": "After prior immune-checkpoint and VEGF-targeted therapy for advanced clear-cell RCC, does belzutifan improve outcomes compared with everolimus?",
+      "source": "trial-pages/litespark-005/",
+      "path": "trial-pages/litespark-005/",
+      "primary": "10.1056/NEJMoa2313906",
+      "primary_title": "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma",
+      "pmid": "39167807",
+      "registry_id": "NCT04195750",
+      "aliases": [
+        "LITESPARK-005",
+        "NCT04195750",
+        "PMID 39167807",
+        "DOI 10.1056/NEJMoa2313906",
+        "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma"
+      ],
+      "related_publications": [
+        {
+          "title": "Health-related quality of life with belzutifan versus everolimus for advanced renal cell carcinoma (LITESPARK-005): patient-reported outcomes from a randomised, open-label, phase 3 trial",
+          "doi": "10.1016/S1470-2045(25)00032-4",
+          "pmid": "40112850",
+          "date": "2025-03-17"
+        }
+      ],
+      "absolute_effect": {
+        "endpoint": "Progression-free survival",
+        "horizon": "18 months",
+        "benefit_percentage_points": 15.7,
+        "nnt": 7,
+        "notes": "18-month Kaplan–Meier PFS 24.0% versus 8.3%; 1/(0.240−0.083)=6.37, rounded up to 7. Median PFS and HR alone were not used for NNT. OS difference was not statistically significant; no OS NNT assigned. Cumulative safety rates are not a common fixed-time toxicity horizon; no NNH assigned.",
+        "source_doi": "10.1056/NEJMoa2313906",
+        "additional_endpoints": [
+          {
+            "endpoint": "Overall survival",
+            "horizon": "18 months",
+            "benefit_percentage_points": 4.6,
+            "notes": "18-month OS 55.2% versus 50.6%; HR 0.88 (95% CI 0.73–1.07), P=0.20; no NNT because the interim OS comparison was not statistically significant."
+          }
+        ]
+      },
+      "freshness_review_status": "Primary NEJM report and prespecified Lancet Oncology PRO analysis reviewed 2026-11-23. Current official NCCN Kidney Cancer full guideline/reference list was inaccessible; no NCCN section, reference or recommendation category claimed.",
+      "outcome_visual_review_status": "Static chart, source values and NNT7 at 18 months independently rechecked 2026-11-24; branch browser-render QA pending.",
+      "quality_check_date": "2026-11-24",
+      "staged_batch_date": "2026-11-23",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "source_reviewed_on": "2026-11-24",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-23"
+    },
+    {
       "id": "litespark-011",
       "trial": "LITESPARK-011",
       "path": "trial-pages/litespark-011/",
@@ -6659,7 +7399,7 @@
       "registry_id": "NCT04586231",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "LITESPARK-011",
         "belzutifan lenvatinib post-ICI RCC"
@@ -6689,7 +7429,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/litespark-011/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "litespark-012",
@@ -6707,7 +7449,8 @@
       "path": "trial-pages/litespark-012/",
       "freshness_review_status": "targeted_context_added_2026-10-14_full_guideline_review_pending",
       "outcome_visual_review_status": "qualitative negative primary-endpoint summary; numerical effect sizes not publicly disclosed in sponsor release",
-      "setting_detail": "First-line advanced ccRCC"
+      "setting_detail": "First-line advanced ccRCC",
+      "evidence_disposition_status": "Negative interim primary-endpoint result; deferred/contrary-evidence queue entry added 2026-11-23; primary peer-reviewed publication not located."
     },
     {
       "id": "loehrer-veip-mixed-gct-1998",
@@ -7142,7 +7885,7 @@
       "registry_id": "NCT05455320",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "MonumenTAL 3",
         "NCT05455320"
@@ -7197,7 +7940,9 @@
             "source_type": "Primary randomized phase III interim analysis"
           }
         ]
-      }
+      },
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "mosaic",
@@ -7500,7 +8245,7 @@
       "registry_id": "NCT04006262",
       "publication_date": "2022-09-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "GERCOR NEONIPIGA",
         "NCT04006262"
@@ -7530,7 +8275,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/neonipiga/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "neosphere",
@@ -7572,6 +8319,61 @@
       "freshness_review_status": "pending",
       "outcome_visual_review_status": "pending_automated_and_source_review",
       "setting_detail": "Neoadjuvant/Adjuvant MIBC"
+    },
+    {
+      "id": "niche-2",
+      "trial": "NICHE-2",
+      "site": "Colon Cancer",
+      "discipline": "Medical Oncology / Surgical Oncology",
+      "setting": "Neoadjuvant / locally advanced",
+      "setting_detail": "Previously untreated, nonmetastatic mismatch-repair-deficient colon adenocarcinoma",
+      "question": "Can short-course neoadjuvant nivolumab plus ipilimumab produce major pathological responses without delaying planned surgery in dMMR colon cancer?",
+      "source": "New England Journal of Medicine 2024",
+      "path": "trial-pages/niche-2/index.html",
+      "primary": "10.1056/NEJMoa2400634",
+      "primary_title": "Neoadjuvant Immunotherapy in Locally Advanced Mismatch Repair–Deficient Colon Cancer",
+      "pmid": "38838311",
+      "registry_id": "NCT03026140",
+      "publication_date": "2024-06-06",
+      "aliases": [
+        "NICHE-2",
+        "NCT03026140",
+        "neoadjuvant nivolumab ipilimumab dMMR colon"
+      ],
+      "phase": "II",
+      "design": "Prospective, multicentre, open-label, single-arm phase II study.",
+      "population": "115 patients with previously untreated, nonmetastatic locally advanced dMMR colon cancer; 113 underwent timely surgery and 111 were evaluable for pathological response.",
+      "intervention": "One dose of ipilimumab 1 mg/kg plus two doses of nivolumab 3 mg/kg (days 1 and 15), followed by planned surgery within 6 weeks.",
+      "comparator": "None; single-arm study.",
+      "randomization": "No randomization or stratification; single-arm phase II design.",
+      "primary_endpoint": "Primary endpoints included safety/timely surgery and 3-year DFS; pathological response was a key secondary endpoint.",
+      "follow_up": "Median follow-up 26 months in the primary report; no recurrence observed, but the prespecified 3-year DFS endpoint was not mature.",
+      "efficacy": "Timely surgery 113/115 (98%; 97.5% CI 93–100). Pathological response 109/111 (98%), major pathological response 105/111 (95%), pathological complete response 75/111 (68%).",
+      "safety": "Grade 3–4 immune-related AEs occurred in 5/115 patients (4%). Two patients had surgery delayed by >2 weeks. The study was not powered for a randomized perioperative safety comparison.",
+      "quality_of_life": "Validated QoL outcomes not reported in the primary publication.",
+      "limitations": "Single-arm phase II; 3-year DFS immature; cannot establish surgery omission or adjuvant-therapy omission based on pathological response.",
+      "clinical_interpretation": "High pathological response and timely-surgery rates support further study of neoadjuvant checkpoint blockade in dMMR colon cancer, but do not replace surgery or establish a randomized survival benefit.",
+      "nnt_not_calculated_reason": "Not applicable: single-arm study with no concurrent comparator; 3-year DFS was immature.",
+      "absolute_effect": null,
+      "additional_endpoints": [],
+      "related_publications": [],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2400634",
+        "https://pubmed.ncbi.nlm.nih.gov/38838311/",
+        "https://clinicaltrials.gov/study/NCT03026140"
+      ],
+      "nccn_provenance": "Not verified — current full NCCN Colon Cancer guideline/reference list inaccessible; no exact version, section, reference or category claimed.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-24",
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/niche-2/"
     },
     {
       "id": "nsabp-b-39-rtog-0413",
@@ -8090,7 +8892,7 @@
       "registry_id": "NCT06343948",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Breast 01",
         "izalontamab brengitecan HR-positive breast"
@@ -8119,7 +8921,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-breast01/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "panku-esophagus01",
@@ -8137,7 +8941,7 @@
       "registry_id": "NCT06304974",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Esophagus 01",
         "izalontamab brengitecan ESCC"
@@ -8167,7 +8971,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-esophagus01/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "panku-lung01",
@@ -8185,7 +8991,7 @@
       "registry_id": "NCT06382116",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PANKU Lung 01",
         "izalontamab brengitecan EGFR-mutant NSCLC"
@@ -8215,11 +9021,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/panku-lung01/index.html",
       "release_qa_status": "primary_source_reviewed_with_explicit_source_limitation",
-      "release_hold_reason": "Exact chemotherapy component dose and full supplement remain to be checked.",
+      "release_hold_reason": "The page flags incomplete comparator platinum-doublet selection/dose/schedule and incomplete arm-level safety/discontinuation details. Reconcile primary article and registry before changing release readiness.",
       "release_ready": false,
       "outcome_summary": "Median PFS 11.1 vs 5.7 months; HR 0.40 (95% CI 0.31–0.51), P<0.0001. ORR 60.2% vs 34.5%. OS immature; HR 0.66 (95% CI 0.47–0.91), nominal P=0.0058 but prespecified OS boundary not crossed.",
       "safety_summary": "Grade ≥3 TRAEs 78.7% vs 62.1%; dose reductions 60.2% vs 23.3%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "paola-1",
@@ -8270,7 +9079,7 @@
       "registry_id": "NCT04260126",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PDS0101",
         "Versamune HPV",
@@ -8302,7 +9111,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/pds0101-pembrolizumab/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "peace-1",
@@ -8627,7 +9438,7 @@
       "registry_id": "DRKS00024015",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "PRO-B electronic patient-reported outcomes",
         "DRKS00024015"
@@ -8656,7 +9467,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/pro-b/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "prodige-23",
@@ -8822,7 +9635,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
       "setting": "Consolidation",
-      "setting_detail": "Stage 1 median PFS 15.1, 9.7 and 4.2 months, respectively; HR vs placebo 0.49 and 0.53. Pooled combo vs benmelstobart alone 17.4 vs 11.2 months; HR 0.82 (95% CI 0.63–1.08; P=0.12), not significant.",
+      "setting_detail": "Stage 1 median PFS: 15.1 months with benmelstobart plus anlotinib, 9.7 months with benmelstobart alone and 4.2 months with placebo. Pooled stage 1+2 median PFS: 17.4 months with combination and 11.2 months with monotherapy; HR 0.82 (95% CI 0.63–1.08; P=.12), not significant. No NNT from medians/HRs.",
       "question": "What is the clinical effect of R-ALPS in Non-Small Cell Lung Cancer (consolidation)?",
       "source": "trial-pages/r-alps/",
       "path": "trial-pages/r-alps/",
@@ -8834,13 +9647,22 @@
         "NCT04325763",
         "DOI 10.1001/jamaoncol.2026.3918"
       ],
-      "freshness_review_status": "Primary publication reviewed 2026-11-14; current guideline freshness review pending; no NCCN citation claimed.",
-      "outcome_visual_review_status": "Source-reported outcome visual present; browser-rendered QA pending.",
+      "freshness_review_status": "Primary JAMA report and R-ALPS protocol reviewed 2026-11-23; current full NCCN guideline version/reference list not verified; no NCCN category claimed.",
+      "outcome_visual_review_status": "Static source-grounded three-arm median-PFS, pooled comparison and toxicity charts added; primary JAMA values and protocol doses checked. Browser-rendered/live QA pending.",
       "batch_date": "2026-11-14",
-      "quality_check_date": "2026-11-14",
-      "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer",
+      "quality_check_date": "2026-11-23",
+      "primary_title": "Benmelstobart With or Without Anlotinib After Chemoradiotherapy for Unresectable Non−Small Cell Lung Cancer: The R-ALPS Randomized Clinical Trial",
       "pmid": "42955021",
-      "registry_id": "NCT04325763"
+      "registry_id": "NCT04325763",
+      "secondary_publications": [
+        {
+          "title": "TQB2450 with or without anlotinib as maintenance treatment in subjects with locally advanced/unresectable non-small cell lung cancer that have not progressed after prior concurrent/sequential chemoradiotherapy (R-ALPS): study protocol for a randomized, double-blind, placebo-controlled, multicenter phase III trial",
+          "doi": "10.21037/tlcr-24-362",
+          "date": "2024-10-28",
+          "type": "Study protocol",
+          "url": "https://tlcr.amegroups.org/article/view/92195/html"
+        }
+      ]
     },
     {
       "id": "radical",
@@ -9150,7 +9972,10 @@
       ],
       "freshness_review_status": "pending_current_guideline_mapping",
       "outcome_visual_review_status": "pending_browser_qa",
-      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma"
+      "setting_detail": "First-line · unresectable locally advanced/metastatic HER2-negative gastric/GEJ adenocarcinoma",
+      "publication_status": "published",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "ringside",
@@ -9168,7 +9993,7 @@
       "registry_id": "NCT04871282",
       "publication_date": "2026-11-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Varegacestat desmoid trial",
         "NCT04871282"
@@ -9198,7 +10023,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/ringside/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "roar-btc",
@@ -9987,6 +10814,80 @@
       "setting_detail": "First-line Metastatic"
     },
     {
+      "id": "sunlight",
+      "trial": "SUNLIGHT",
+      "site": "Colorectal Cancer",
+      "discipline": "Medical Oncology",
+      "setting": "Later-line / refractory metastatic",
+      "setting_detail": "Refractory metastatic colorectal cancer after no more than two prior regimens for advanced disease",
+      "question": "Does adding bevacizumab to trifluridine/tipiracil improve OS compared with trifluridine/tipiracil alone in refractory mCRC?",
+      "source": "New England Journal of Medicine 2023",
+      "path": "trial-pages/sunlight/index.html",
+      "primary": "10.1056/NEJMoa2214963",
+      "primary_title": "Trifluridine–Tipiracil and Bevacizumab in Refractory Metastatic Colorectal Cancer",
+      "pmid": "37133585",
+      "registry_id": "NCT04737187",
+      "publication_date": "2023-05-04",
+      "aliases": [
+        "SUNLIGHT",
+        "NCT04737187",
+        "FTD/TPI plus bevacizumab in refractory mCRC"
+      ],
+      "phase": "III",
+      "design": "International, open-label, randomized phase III trial; 1:1 allocation.",
+      "population": "492 adults with refractory mCRC after no more than two previous chemotherapy regimens for advanced disease; 246 randomized per arm.",
+      "intervention": "Trifluridine/tipiracil 35 mg/m² per dose orally twice daily on days 1–5 and 8–12 of each 28-day cycle plus bevacizumab 5 mg/kg IV on days 1 and 15.",
+      "comparator": "Trifluridine/tipiracil 35 mg/m² per dose orally twice daily on days 1–5 and 8–12 of each 28-day cycle.",
+      "randomization": "1:1 randomization; stratification factors not specified in the accessible primary abstract and not inferred.",
+      "primary_endpoint": "Overall survival.",
+      "follow_up": "Primary OS/PFS analysis published 2023; median follow-up duration not stated in the accessible primary abstract. HRQoL/performance-status analysis published 2025.",
+      "efficacy": "Median OS 10.8 vs 7.5 months; HR 0.61 (95% CI 0.49–0.77; P<0.001). Median PFS 5.6 vs 2.4 months; HR 0.44 (95% CI 0.36–0.54; P<0.001). ASCO GI 2023 conference abstract reported 12-month OS 43% vs 30%.",
+      "safety": "Grade ≥3 AEs 72.4% vs 69.5%; grade 3/4 neutrophil decrease 52% vs 39%, haemoglobin decrease 5% vs 11%, platelet decrease 4% vs <1%. No treatment-related deaths reported in the primary trial.",
+      "quality_of_life": "The 2025 HRQoL analysis reported broadly similar EORTC QLQ-C30 and EQ-5D-5L scores through cycle 6, without clinically relevant deterioration; time to definitive deterioration and ECOG worsening favoured the combination.",
+      "limitations": "Open-label trial; comparator was FTD/TPI alone, not all active later-line options. NNT uses a conference-reported 12-month OS landmark, not median survival or HR.",
+      "clinical_interpretation": "The combination improves OS and PFS over FTD/TPI alone in appropriately pretreated refractory mCRC; treatment choice should account for prior biologics, marrow reserve and alternative later-line options.",
+      "nnt_not_calculated_reason": null,
+      "absolute_effect": {
+        "endpoint": "Overall survival",
+        "time_horizon": "12 months",
+        "treatment_rate": "43%",
+        "control_rate": "30%",
+        "absolute_benefit_percentage_points": 13,
+        "nnt": 8,
+        "calculation": "ceil[1/0.13]=8",
+        "source": "ASCO GI 2023 conference abstract DOI 10.1200/JCO.2023.41.4_suppl.4; primary NEJM paper for median OS/HR."
+      },
+      "additional_endpoints": [],
+      "related_publications": [
+        {
+          "title": "Patient-reported outcomes/performance status analysis from SUNLIGHT",
+          "doi": "10.1016/j.clcc.2024.12.002",
+          "pmid": "39818468",
+          "publication_date": "2025-02-06"
+        }
+      ],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2214963",
+        "https://pubmed.ncbi.nlm.nih.gov/37133585/",
+        "https://clinicaltrials.gov/study/NCT04737187",
+        "https://doi.org/10.1200/JCO.2023.41.4_suppl.4",
+        "https://doi.org/10.1016/j.clcc.2024.12.002",
+        "https://pubmed.ncbi.nlm.nih.gov/39818468/"
+      ],
+      "nccn_provenance": "Not verified — current full NCCN Colon Cancer guideline/reference list inaccessible; no exact version, section, reference or category claimed.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-24",
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/sunlight/"
+    },
+    {
       "id": "sunset",
       "trial": "SUNSET",
       "site": "Non-Small Cell Lung Cancer",
@@ -10379,7 +11280,7 @@
       "registry_id": "NCT03983057",
       "publication_date": "2026-11-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Toripalimab pancreatic cancer",
         "NCT03983057"
@@ -10409,11 +11310,14 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/toripalimab-mfolfirinox/index.html",
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
-      "release_hold_reason": "Exact toripalimab/mFOLFIRINOX doses and schedule require JCO protocol supplement; primary publisher access was incomplete.",
+      "release_hold_reason": "Exact modified-FOLFIRINOX component doses/schedule and safety denominators remain incompletely verified. Retrieve primary supplement/protocol; do not infer from other FOLFIRINOX trials.",
       "release_ready": false,
       "outcome_summary": "Median EFS 11.1 vs 9.6 months; HR 0.74 (95% CI 0.60–0.92), P=0.007. Median OS 20.6 vs 17.1 months; HR 0.81 (95% CI 0.63–1.03), not statistically significant.",
       "safety_summary": "Grade ≥3 AEs 47.9% vs 49.2%; grade ≥3 postoperative complications 30.1% vs 25.6%.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6",
+      "release_hold_open": true
     },
     {
       "id": "tpg-multiply-relapsed-gct-2014",
@@ -10483,7 +11387,7 @@
       "registry_id": "NCT04472598",
       "publication_date": "2026-10-15",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "Navitoclax-ruxolitinib myelofibrosis",
         "NCT04472598"
@@ -10524,7 +11428,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/transform-1/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "trap",
@@ -10554,7 +11460,7 @@
       "registry_id": "NCT06968585",
       "publication_date": "2026-10-01",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "T-BD",
         "trastuzumab botidotin",
@@ -10585,7 +11491,9 @@
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/trastuzumab-botidotin/index.html",
       "release_qa_status": "corrected_primary_source_reviewed",
-      "release_ready": true
+      "release_ready": true,
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "triangle",
@@ -10634,7 +11542,7 @@
       "registry_id": "NCT06132958",
       "publication_date": "2026-11-12",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "ENGOT-en23",
         "GOG-3095",
@@ -10667,7 +11575,9 @@
       "release_qa_status": "primary_source_reviewed_pending_release_validator",
       "outcome_summary": "Median PFS 7.2 vs 3.9 months; HR 0.59 (95% CI 0.50–0.70), P<0.0001. Median OS 19.0 vs 12.1 months; HR 0.68 (95% CI 0.55–0.84), P=0.0001. ORR 35.1% vs 17.3%.",
       "safety_summary": "Grade ≥3 AEs 69% vs 57%; serious AEs 35% vs 32%; treatment-related deaths 3 vs 3.",
-      "qol_summary": "QoL not reported in accessible primary abstract."
+      "qol_summary": "QoL not reported in accessible primary abstract.",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "trog-03-04-radar",
@@ -10760,7 +11670,7 @@
       "registry_id": "NCT04928807",
       "publication_date": "2026-10-20",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "UNION rectal cancer",
         "NCT04928807"
@@ -10815,7 +11725,9 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/union/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
     },
     {
       "id": "veip-recurrent-seminoma-miller-1997",
@@ -10959,7 +11871,7 @@
       "registry_id": "NCT04669496",
       "publication_date": "2026-01-08",
       "batch_date": "2026-11-17",
-      "publication_status": "staged",
+      "publication_status": "published",
       "aliases": [
         "GOLP",
         "ZSAB-neoGOLP",
@@ -10989,78 +11901,172 @@
       "registry_verified": true,
       "last_source_reviewed_on": "2026-11-17",
       "page_path": "trial-pages/zsab-neogolp/index.html",
-      "release_qa_status": "corrected_primary_source_reviewed"
+      "release_qa_status": "corrected_primary_source_reviewed",
+      "published_on": "2026-11-18",
+      "published_commit_sha": "8c521b631056b3eca7f01b613cf54e6db336bee6"
+    },
+    {
+      "id": "zuma-7",
+      "trial": "ZUMA-7",
+      "site": "Large B-Cell Lymphoma",
+      "discipline": "Haemato-oncology / Cellular Therapy",
+      "setting": "Second-line / early relapse or primary refractory",
+      "setting_detail": "LBCL refractory to first-line chemoimmunotherapy or relapsing within 12 months",
+      "question": "Does second-line axi-cel improve EFS and OS over salvage chemoimmunotherapy followed by ASCT when responsive?",
+      "source": "New England Journal of Medicine 2022; OS follow-up 2023; PRO analysis 2022",
+      "path": "trial-pages/zuma-7/index.html",
+      "primary": "10.1056/NEJMoa2116133",
+      "primary_title": "Axicabtagene Ciloleucel as Second-Line Therapy for Large B-Cell Lymphoma",
+      "pmid": "34891224",
+      "registry_id": "NCT03391466",
+      "publication_date": "2022-01-27",
+      "aliases": [
+        "ZUMA-7",
+        "NCT03391466",
+        "axi-cel second-line LBCL"
+      ],
+      "phase": "III",
+      "design": "International, open-label, randomized phase III trial; 1:1 allocation.",
+      "population": "359 adults with LBCL refractory to first-line therapy or relapsing within 12 months; 180 axi-cel and 179 standard care.",
+      "intervention": "Axi-cel single infusion target 2×10⁶ CAR-T cells/kg after fludarabine 30 mg/m²/day plus cyclophosphamide 500 mg/m²/day on days −5 to −3; steroid bridging permitted, bridging chemotherapy not.",
+      "comparator": "Two or three cycles of investigator-selected salvage chemoimmunotherapy (R-ICE, R-DHAP/R-DHAX, R-ESHAP or R-GDP); patients with CR/PR proceeded to high-dose chemotherapy and ASCT.",
+      "randomization": "1:1 randomization; stratified by response to first-line therapy and second-line age-adjusted IPI.",
+      "primary_endpoint": "Event-free survival by blinded central review.",
+      "follow_up": "Primary EFS analysis median follow-up 24.9 months; prespecified OS follow-up median 47.2 months.",
+      "efficacy": "Median EFS 8.3 vs 2.0 months; HR 0.40 (95% CI 0.31–0.51; P<0.001). 24-month EFS 41% vs 16%. Four-year OS 54.6% vs 46.0%; HR 0.73 (95% CI 0.54–0.98; P=0.03). Four-year PFS 41.8% vs 24.4%; HR 0.51 (95% CI 0.38–0.67).",
+      "safety": "Grade ≥3 AEs 91% vs 83%; grade ≥3 CRS 6% and grade ≥3 neurologic events 21% in the axi-cel arm. No new treatment-related deaths in the prespecified OS follow-up.",
+      "quality_of_life": "PRO analysis (n=296; 165 axi-cel, 131 standard care) showed day-100 between-group differences favouring axi-cel in EORTC QLQ-C30 global health status/QoL 18.1 points (95% CI 12.3–23.9), physical functioning 13.1 (8.0–18.2), and EQ-5D-5L VAS 13.7 (8.5–18.8); later comparisons limited by attrition.",
+      "limitations": "Applies to primary refractory/relapse ≤12 months, not later relapse; open-label; many standard-care patients did not reach ASCT; subsequent cellular therapy in control arm may attenuate OS contrast.",
+      "clinical_interpretation": "Second-line axi-cel improves EFS and OS in early-relapsed or primary refractory LBCL; distinguish this population from late relapse where salvage/ASCT remains a separate pathway.",
+      "nnt_not_calculated_reason": null,
+      "absolute_effect": {
+        "endpoint": "Event-free survival",
+        "time_horizon": "24 months",
+        "treatment_rate": "41%",
+        "control_rate": "16%",
+        "absolute_benefit_percentage_points": 25,
+        "nnt": 4,
+        "calculation": "ceil[1/0.25]=4",
+        "source": "Primary NEJM publication."
+      },
+      "additional_endpoints": [
+        {
+          "endpoint": "Overall survival",
+          "time_horizon": "4 years",
+          "treatment_rate": "54.6%",
+          "control_rate": "46.0%",
+          "absolute_benefit_percentage_points": 8.6,
+          "nnt": 12,
+          "calculation": "ceil[1/0.086]=12",
+          "source": "Prespecified NEJM OS follow-up."
+        },
+        {
+          "endpoint": "Progression-free survival",
+          "time_horizon": "4 years",
+          "treatment_rate": "41.8%",
+          "control_rate": "24.4%",
+          "absolute_benefit_percentage_points": 17.4,
+          "nnt": 6,
+          "calculation": "ceil[1/0.174]=6",
+          "source": "Prespecified NEJM OS/PFS follow-up."
+        }
+      ],
+      "related_publications": [
+        {
+          "title": "Prespecified overall-survival follow-up",
+          "doi": "10.1056/NEJMoa2301665",
+          "pmid": "37272527",
+          "publication_date": "2023-06-08"
+        },
+        {
+          "title": "Patient-reported outcomes analysis",
+          "doi": "10.1182/blood.2022015478",
+          "pmid": "35839452",
+          "publication_date": "2022-07-21"
+        }
+      ],
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2116133",
+        "https://pubmed.ncbi.nlm.nih.gov/34891224/",
+        "https://clinicaltrials.gov/study/NCT03391466",
+        "https://doi.org/10.1056/NEJMoa2301665",
+        "https://pubmed.ncbi.nlm.nih.gov/37272527/",
+        "https://doi.org/10.1182/blood.2022015478",
+        "https://pubmed.ncbi.nlm.nih.gov/35839452/"
+      ],
+      "nccn_provenance": "Not verified — current full NCCN B-cell lymphoma guideline/reference list inaccessible; no exact version, section, reference or category claimed.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "source_reviewed_on": "2026-11-24",
+      "quality_check_date": "2026-11-24",
+      "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
+      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
+      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "branch": "atlas-batch/2026-11-23-am",
+      "staged_on": "2026-11-24",
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/zuma-7/"
     }
   ],
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-24T08:03:33+05:30",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {
-    "date": "2026-11-17",
-    "branch": "atlas-batch/2026-11-17-am",
-    "base_main_commit": "608076f608609d0483f63cee7084ff431c21c2fe",
-    "branch_head_before": "09ace1ae86fa5323beae685a631fbcb3e0ca03d7",
-    "expected_new_unique_pages": 30,
-    "staged_new_page_count": 30,
-    "staged_page_ids": [
-      "act-gi",
-      "artemis-011",
-      "bctop-h-n01",
-      "capital",
-      "dellphi-305",
-      "disitamab-tislelizumab",
-      "felzartamab-rd",
-      "fit4treat",
-      "harmoni-a",
-      "herizon-gea-01",
-      "i-spy2-2",
-      "ivonescimab-perioperative",
-      "keylynk-001",
-      "keynote-b49",
-      "litespark-011",
-      "monumental-3",
-      "neonipiga",
-      "panku-breast01",
-      "panku-esophagus01",
-      "panku-lung01",
-      "pds0101-pembrolizumab",
-      "pro-b",
-      "relight",
-      "ringside",
-      "toripalimab-mfolfirinox",
-      "transform-1",
-      "trastuzumab-botidotin",
-      "trofuse-005",
-      "union",
-      "zsab-neogolp"
-    ],
-    "new_pages_built_this_run": 28,
-    "carry_forward_pages": 2,
+    "branch": "atlas-batch/2026-11-23-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "last_activity": "2026-11-24T08:03:33+05:30",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; 30 carried-forward candidates and 15 additional unique candidates held",
+    "expected_new_unique_trials": 30,
+    "carry_forward_new_unique_candidates": 25,
+    "additional_new_unique_candidates": 15,
+    "staged_new_page_count": 6,
+    "page_ready_candidates": 0,
+    "pages_to_build": 24,
     "uploaded_to_main": 0,
-    "publication_status": "INCOMPLETE — 30 staged; 24 release-ready; 6 held for primary-source supplement details; strict release validator and outcome visualization audit passed in branch CI; no PR/merge.",
-    "local_release_validator": "not run locally; GitHub Actions strict release validator passed",
-    "pr_status": "not opened",
-    "merge_status": "not merged",
-    "deployment_status": "Branch CI passed; preview browser inspection unavailable; production not deployed",
-    "nccn_provenance": "not verified — complete guideline/reference lists inaccessible",
-    "branch_head_after": "67f3ee4bbe0c714aff86265a3250194b17ac5981",
-    "last_cloudflare_check_run": 134140991439,
-    "branch_preview_url": "https://atlas-batch-2026-11-17-am.theabsoluteeffect.pages.dev",
-    "release_ready_pages": 30,
-    "release_hold_pages": 0,
-    "candidates_screened": 71,
-    "duplicates_excluded": 15,
-    "new_unique_candidates": 56,
-    "held_candidates": 17,
-    "deferred_negative_candidates": 11,
-    "rejected_candidates": 2,
-    "validator_patch": {
-      "primary_sources_and_registry_heading": true,
-      "nnt_nnh_regex_escaping": true,
-      "absolute_effect_markup_regex": true,
-      "current_batch_daily_evidence_self_match": false
-    },
-    "status": "30 unique new-to-main trial pages staged; all 30 release-ready pending strict validator and PR checks",
-    "updated_at": "2026-11-17T17:37:17.330Z"
-  }
+    "published_this_run": 0,
+    "candidates_screened_this_run": 15,
+    "duplicates_excluded_this_run": 0,
+    "held_candidates_this_run": 4,
+    "deferred_contrary_this_run": 1,
+    "pr_status": "not_opened",
+    "merge_status": "not_merged",
+    "deployment_status": "not verified — no PR/merge",
+    "status": "INCOMPLETE — 6/30 new unique trial pages staged on branch; 24 additional unique pages required; no PR opened and no main merge",
+    "next_action": "Continue with CUPISCO, then ROSEWOOD/SUNMO/GIMEMA/PANOVA/PARADIGM; complete all remaining 25 carry-forward candidates, browser-render all 6 staged pages, and open a PR only after exactly 30 new unique pages are source-verified and release-validated.",
+    "batch_target_unique_trials": 30,
+    "selected_from_carry_forward": 5,
+    "source_verified_staged_page_count": 6,
+    "browser_render_pending_page_count": 6,
+    "new_candidates_screened_this_run": 11,
+    "new_unique_candidates_this_run": 10,
+    "duplicate_exclusions_this_run": 1,
+    "verified_candidates_this_run": 6,
+    "uploaded_to_main_this_run": 0,
+    "remaining_to_target": 24,
+    "selected_trial_ids": [
+      "litespark-005",
+      "aeneas2",
+      "niche-2",
+      "sunlight",
+      "alina",
+      "zuma-7"
+    ],
+    "held_candidate_ids": [
+      "companion-002",
+      "gimema-all2820",
+      "early-ons-npc",
+      "nrg-gy018"
+    ],
+    "duplicate_or_repair_ids": [
+      "dellphi-305"
+    ],
+    "next_candidate_id": "cupisco",
+    "release_gate_status": "not_opened — exact 30-page batch required; 6 staged, 24 remaining"
+  },
+  "last_run_date": "2026-11-23",
+  "last_run_cycle": "morning",
+  "last_run_branch": "atlas-batch/2026-11-23-am",
+  "last_run_status": "INCOMPLETE — 0/30 uploaded; 15 new unique candidates held; one contrary-evidence study deferred; no PR/merge.",
+  "quality_check_date": "2026-11-24",
+  "quality_check_scope": "Partial content audit: 5 existing pages and 5 newly drafted pages manually inspected; full recursive tree and roster/index/archive reconciliation completed; full content audit of all canonical pages remains incomplete."
 }
