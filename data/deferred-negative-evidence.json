@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-26T19:24:56+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -617,12 +617,11 @@
   ],
   "last_run": {
     "date": "2026-11-26",
-    "cycle": "morning",
-    "reconfirmed_existing_deferred": [
-      "SACI-IO HR+"
-    ],
+    "cycle": "evening continuation",
+    "timestamp": "2026-11-26T19:24:56+05:30",
     "new_items_added": 0,
-    "note": "No duplicate deferred item created; SACI-IO remains in the existing contrary-evidence queue."
+    "negative_or_contrary_candidates_added": 0,
+    "note": "No newly screened candidate met the deferred-negative/contrary-evidence rule. PIVOT remains explicitly excluded from new additions."
   },
   "last_updated": "2026-11-26",
   "last_run_date": "2026-11-23",

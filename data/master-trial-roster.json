@@ -59,7 +59,7 @@
       "PIVOT prostate cancer trial"
     ],
     "full_dropdown_reconciliation_checked": true,
-    "last_full_reconciliation": "2026-11-24",
+    "last_full_reconciliation": "2026-11-26",
     "missing_pages_added": [
       "NSABP B-59/GeparDouze",
       "NRG/RTOG 9601",
@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
+    "last_quality_check": "2026-11-26T19:24:56+05:30",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -1415,7 +1415,7 @@
       "note": "Normalized roster paths and shared anchors were used, not slug-to-id matching; all roster destinations resolve and appear in evidence/index.html.",
       "latest_branch_commit_before_report_commit": "c0712c1119e2603d6720d66c7379dc36ee9b108c"
     },
-    "last_manual_review_date": "2026-11-23",
+    "last_manual_review_date": "2026-11-26",
     "manual_review_log": [
       {
         "trial_id": "checkmate-816",
@@ -1874,8 +1874,46 @@
           "gimema-all2820",
           "find-ctdna-surveillance"
         ]
+      },
+      {
+        "date": "2026-11-26",
+        "scope": [
+          "checkmate-816",
+          "keynote-a18",
+          "lacc",
+          "shape"
+        ],
+        "review": "Re-read canonical HTML, source links and visible static chart/bar structures; compared source values and NNT/NNH semantics with primary reports.",
+        "findings": {
+          "checkmate-816": "5-year OS 65.4% vs 55.0%; 10.4 pp; NNT 10; consistent.",
+          "keynote-a18": "36-month OS 82.6% vs 74.8%; 7.8 pp; NNT 13; consistent.",
+          "lacc": "Primary 4.5-year DFS display 86.0% vs 96.5%; ~10.6 pp harm; NNH 10; final analysis 85.0% vs 96.0% separately labelled.",
+          "shape": "Primary pelvic-recurrence noninferiority endpoint has no NNT; secondary urinary retention NNT 11 and incontinence NNT 16."
+        },
+        "status": "content checks completed; browser rendering and current-guideline freshness remain open"
       }
-    ]
+    ],
+    "full_clinical_audit_completed": false,
+    "latest_branch_reconciliation": {
+      "date": "2026-11-26",
+      "cycle": "evening continuation",
+      "branch": "atlas-batch/2026-11-26-am",
+      "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "branch_head_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
+      "roster_entries": 477,
+      "branch_unique_trials": 473,
+      "canonical_index_files": 471,
+      "index_links": 510,
+      "missing_index_links": 0,
+      "shared_anchor_trial_records": 8,
+      "roster_paths_repaired": 4,
+      "unresolved_canonical_page_paths": 0,
+      "nontrial_reference_page_not_counted": "trial-pages/lung-sabr-definitions/index.html",
+      "redirect_or_alias_stub_not_counted": "trial-pages/rosel/index.html",
+      "full_recursive_clinical_audit_completed": false,
+      "browser_rendered_visualization_audit_completed": false,
+      "note": "Four new roster records now carry canonical page paths; eight lung-SABR trial records resolve to verified anchors; ROSEL directory is a redirect/alias stub."
+    }
   },
   "trials": [
     {
@@ -12182,7 +12220,8 @@
       "release_ready": false,
       "release_qa_status": "source verified; browser-render QA pending; 30-page PR gate incomplete",
       "batch_date": "2026-11-26",
-      "batch_branch": "atlas-batch/2026-11-26-am"
+      "batch_branch": "atlas-batch/2026-11-26-am",
+      "path": "trial-pages/early-ons-npc/index.html"
     },
     {
       "id": "cupisco",
@@ -12237,7 +12276,8 @@
       "release_ready": false,
       "release_qa_status": "source verified; browser-render QA pending; 30-page PR gate incomplete",
       "batch_date": "2026-11-26",
-      "batch_branch": "atlas-batch/2026-11-26-am"
+      "batch_branch": "atlas-batch/2026-11-26-am",
+      "path": "trial-pages/cupisco/index.html"
     },
     {
       "id": "gimema-all2820",
@@ -12295,7 +12335,8 @@
       "hold_reason": "Full primary safety table and QoL details are not independently reconciled; grade ≥3 AE figures in the staged draft need primary-source confirmation.",
       "batch_date": "2026-11-26",
       "batch_branch": "atlas-batch/2026-11-26-am",
-      "source_verification_status": "partial — primary efficacy/identity verified; full safety table not verified"
+      "source_verification_status": "partial — primary efficacy/identity verified; full safety table not verified",
+      "path": "trial-pages/gimema-all2820/index.html"
     },
     {
       "id": "find-ctdna-surveillance",
@@ -12342,7 +12383,8 @@
       "batch_date": "2026-11-26",
       "batch_branch": "atlas-batch/2026-11-26-am",
       "source_verification_status": "primary abstract, DOI/title and registry verified",
-      "hold_reason": null
+      "hold_reason": null,
+      "path": "trial-pages/find-ctdna-surveillance/index.html"
     }
   ],
   "last_updated": "2026-11-26",
@@ -12351,35 +12393,35 @@
   "active_batch": {
     "branch": "atlas-batch/2026-11-26-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "last_activity": "2026-11-24T08:03:33+05:30",
-    "cycle_status": "INCOMPLETE — 0/30 uploaded; 3 source-verified new unique studies staged; 15 held; 15 duplicates; 1 deferred; 27 further verified trials required.",
+    "last_activity": "2026-11-26T19:24:56+05:30",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; 3 source-verified page drafts staged; 15 additional unique candidates screened and held; 27 further verified unique pages required.",
     "expected_new_unique_trials": 30,
     "carry_forward_new_unique_candidates": 25,
     "additional_new_unique_candidates": 15,
     "staged_new_page_count": 6,
     "page_ready_candidates": 0,
-    "pages_to_build": 24,
+    "pages_to_build": 27,
     "uploaded_to_main": 0,
     "published_this_run": 0,
     "candidates_screened_this_run": 15,
     "duplicates_excluded_this_run": 0,
-    "held_candidates_this_run": 4,
+    "held_candidates_this_run": 15,
     "deferred_contrary_this_run": 1,
-    "pr_status": "not_opened — fewer than 30 verified unique studies; browser-render QA pending",
-    "merge_status": "not_merged",
-    "deployment_status": "not_verified",
-    "status": "INCOMPLETE — 6/30 new unique trial pages staged on branch; 24 additional unique pages required; no PR opened and no main merge",
-    "next_action": "Continue with CUPISCO, then ROSEWOOD/SUNMO/GIMEMA/PANOVA/PARADIGM; complete all remaining 25 carry-forward candidates, browser-render all 6 staged pages, and open a PR only after exactly 30 new unique pages are source-verified and release-validated.",
+    "pr_status": "not opened — exact 30-page batch not met; local release validator and browser-render QA not completed",
+    "merge_status": "not merged",
+    "deployment_status": "not verified",
+    "status": "INCOMPLETE — 0/30 uploaded; 3 source-verified page drafts staged; 15 additional unique candidates screened and held; 27 further verified unique pages required.",
+    "next_action": "Continue with OVHIPEC-1, PRIMA, ALPINE, MAIA, PERSEUS, CARTITUDE-4, DREAMM-7, AEGEAN and IMpower010; complete all required extraction; run validator and browser preview; open PR only at exactly 30.",
     "batch_target_unique_trials": 30,
     "selected_from_carry_forward": 5,
-    "source_verified_staged_page_count": 6,
-    "browser_render_pending_page_count": 6,
+    "source_verified_staged_page_count": 3,
+    "browser_render_pending_page_count": 10,
     "new_candidates_screened_this_run": 11,
-    "new_unique_candidates_this_run": 10,
+    "new_unique_candidates_this_run": 15,
     "duplicate_exclusions_this_run": 1,
-    "verified_candidates_this_run": 6,
+    "verified_candidates_this_run": 0,
     "uploaded_to_main_this_run": 0,
-    "remaining_to_target": 24,
+    "remaining_to_target": 27,
     "selected_trial_ids": [
       "aeneas2",
       "alina",
@@ -12390,7 +12432,22 @@
       "early-ons-npc",
       "cupisco",
       "find-ctdna-surveillance",
-      "gimema-all2820"
+      "gimema-all2820",
+      "rosewood",
+      "panova-3",
+      "paradigm",
+      "gog-240",
+      "empower-cervical1",
+      "innovatv-301",
+      "nrg-gy018",
+      "checkmate-77t",
+      "caravaggio",
+      "api-cat",
+      "hokusai-vte-cancer",
+      "nadina",
+      "swog-s1801",
+      "aurelia",
+      "desktop-iii"
     ],
     "held_candidate_ids": [
       "aeneas2",
@@ -12407,20 +12464,33 @@
       "clarity-gastric01",
       "dasl-hicap",
       "companion-002",
-      "sunmo"
+      "sunmo",
+      "rosewood",
+      "gog-240",
+      "empower-cervical1",
+      "innovatv-301",
+      "nrg-gy018",
+      "checkmate-77t",
+      "caravaggio",
+      "api-cat",
+      "hokusai-vte-cancer",
+      "nadina",
+      "swog-s1801",
+      "aurelia",
+      "desktop-iii"
     ],
     "duplicate_or_repair_ids": [
       "dellphi-305"
     ],
-    "next_candidate_id": "rosewood",
+    "next_candidate_id": "ovhipec-1",
     "release_gate_status": "not_opened — exact 30-page batch required; 6 staged, 24 remaining",
     "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "target_new_unique_trials": 30,
-    "screened_candidates": 34,
+    "screened_candidates": 49,
     "duplicate_exclusions": 15,
-    "new_unique_candidates": 19,
+    "new_unique_candidates": 34,
     "verified_new_unique_candidates": 3,
-    "held_unique_candidates": 15,
+    "held_unique_candidates": 30,
     "deferred_contrary_candidates": 1,
     "staged_page_drafts": 10,
     "source_verified_staged_pages": 3,
@@ -12434,7 +12504,13 @@
       "early-ons-npc",
       "cupisco",
       "find-ctdna-surveillance"
-    ]
+    ],
+    "screened_candidates_this_run": 15,
+    "evening_recovery_new_unique_candidates": 15,
+    "total_screened_in_batch": 49,
+    "total_duplicates_in_batch": 15,
+    "total_new_unique_in_batch": 34,
+    "total_held_in_batch": 30
   },
   "last_run_date": "2026-11-23",
   "last_run_cycle": "morning",

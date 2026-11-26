@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24T08:03:33+05:30",
+  "updated_at": "2026-11-26T19:24:56+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -1020,15 +1020,51 @@
       "scope": "No complete public NCCN-authored Insights reference list retrieved; no recommendation or reference mapping inferred.",
       "source_url": null,
       "notes": "GIMEMA ALL2820 page was reconciled to the roster and index, but NCCN provenance remains open."
+    },
+    {
+      "date": "2026-11-26",
+      "cycle": "evening continuation",
+      "source": "official NCCN Clinical Practice Guidelines portal and JNCCN Insights",
+      "status": "current full guideline/reference lists inaccessible; metadata-only or prior-version Insights information is not treated as current complete guideline evidence",
+      "guidelines_attempted": [
+        "B-Cell Lymphomas",
+        "Pancreatic Adenocarcinoma",
+        "Colon Cancer",
+        "Cervical Cancer",
+        "Endometrial Carcinoma",
+        "Non-Small Cell Lung Cancer",
+        "Cancer-Associated Venous Thromboembolic Disease",
+        "Melanoma: Cutaneous",
+        "Ovarian Cancer",
+        "CLL/SLL"
+      ],
+      "accessible_historical_context": [
+        {
+          "title": "NCCN Guidelines Insights: Melanoma: Cutaneous",
+          "version": "2.2024",
+          "scope": "Insights article/reference list only; not complete guideline; prior repository review, not re-verified current."
+        },
+        {
+          "title": "NCCN Guidelines Insights: Cancer-Associated Venous Thromboembolic Disease",
+          "version": "2.2024",
+          "scope": "Insights article/reference list only; not complete guideline; prior repository review, not re-verified current."
+        }
+      ],
+      "source_url": "https://www.nccn.org/guidelines/category_1",
+      "action": "Keep freshness and exact citation mapping tasks open; use primary publications and registries for identity; do not claim NCCN provenance."
     }
   ],
   "last_run": {
     "date": "2026-11-26",
-    "cycle": "morning",
+    "cycle": "evening continuation",
+    "timestamp": "2026-11-26T19:24:56+05:30",
     "branch": "atlas-batch/2026-11-26-am",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "status": "partial; two additional unrostered pages reconciled; NCCN ALL full guideline unavailable",
-    "pending_trial_mappings_added": 11
+    "branch_commit_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
+    "nccn_full_guidelines_accessible": false,
+    "trial_candidates_mapped": 0,
+    "pending_trial_mappings_added": 15,
+    "current_guideline_freshness_tasks_added": 1,
+    "status": "partial — NCCN provenance not verified; primary sources used for identity only"
   },
   "last_updated": "2026-11-26",
   "last_run_date": "2026-11-24",
@@ -2858,14 +2894,11 @@
   ],
   "updated_on": "2026-11-23",
   "next_rotation": [
-    "Renal Cell Carcinoma",
-    "Bladder Cancer",
-    "Prostate Cancer",
-    "Ovarian Cancer",
-    "Endometrial Cancer",
-    "Head and Neck Cancer",
-    "Soft Tissue Sarcoma",
-    "Lymphoma and Multiple Myeloma"
+    "Ovarian cancer (OVHIPEC-1, PRIMA, DESKTOP III)",
+    "CLL/SLL (ALPINE)",
+    "Multiple myeloma (MAIA, PERSEUS, CARTITUDE-4, DREAMM-7)",
+    "Resectable NSCLC (AEGEAN, IMpower010)",
+    "B-cell lymphoma (ROSEWOOD, SUNMO)"
   ],
   "guideline_freshness_tasks": [
     {
@@ -3007,6 +3040,26 @@
       "last_checked": "2026-11-26",
       "reason": "Current official NCCN ALL full guideline/reference list inaccessible.",
       "next_action": "Retrieve current official guideline or complete accessible NCCN-authored Insights reference list; verify exact citations."
+    },
+    {
+      "task_id": "nccn-full-guideline-freshness-2026-11-26-evening",
+      "date": "2026-11-26",
+      "status": "open",
+      "severity": "medium",
+      "guidelines": [
+        "B-Cell Lymphomas",
+        "Pancreatic Adenocarcinoma",
+        "Colon Cancer",
+        "Cervical Cancer",
+        "Endometrial Carcinoma",
+        "NSCLC",
+        "Cancer-Associated VTE",
+        "Melanoma: Cutaneous",
+        "Ovarian Cancer",
+        "CLL/SLL"
+      ],
+      "evidence": "Official full guideline/reference lists could not be accessed; prior 2024 Insights articles are historical and not complete current guidelines.",
+      "next_action": "Re-attempt official NCCN access; record exact title/version/date/section/reference/category only when directly visible."
     }
   ],
   "complete_insights_articles_reviewed": [

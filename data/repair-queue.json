@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-26T19:24:56+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -3874,6 +3874,426 @@
         "https://doi.org/10.1182/blood-2025-439"
       ],
       "next_action": "Retrieve and verify the full primary safety table and any QoL report; reconcile grade 3–5 denominators, treatment discontinuation and toxicity definitions before release."
+    },
+    {
+      "issue_id": "candidate-rosewood-page-completion-2026-11-26-evening",
+      "trial_id": "rosewood",
+      "trial": "ROSEWOOD",
+      "canonical_trial_id": "rosewood",
+      "planned_page_path": "trial-pages/rosewood/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://ascopubs.org/doi/full/10.1200/JCO.23.00775",
+        "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+        "https://clinicaltrials.gov/study/NCT03332017"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "full dose/schedule",
+        "complete grade 3–5 toxicity and discontinuation tables",
+        "QoL/PRO status",
+        "full follow-up and subgroup extraction"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-panova-3-page-completion-2026-11-26-evening",
+      "trial_id": "panova-3",
+      "trial": "PANOVA-3",
+      "canonical_trial_id": "panova-3",
+      "planned_page_path": "trial-pages/panova-3/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://ascopubs.org/doi/full/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/40448572/",
+        "https://clinicaltrials.gov/study/NCT03377491"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "full randomized denominators and analysis populations",
+        "complete grade 3–5 toxicity and treatment burden",
+        "QoL/PRO table-level extraction",
+        "stratification and follow-up maturity"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-paradigm-page-completion-2026-11-26-evening",
+      "trial_id": "paradigm",
+      "trial": "PARADIGM",
+      "canonical_trial_id": "paradigm",
+      "planned_page_path": "trial-pages/paradigm/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10114040/",
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "complete safety/grade 3–5 table",
+        "treatment exposure and discontinuation",
+        "QoL/PRO status",
+        "stratification and subgroup details"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-gog-240-page-completion-2026-11-26-evening",
+      "trial_id": "gog-240",
+      "trial": "GOG-240",
+      "canonical_trial_id": "gog-240",
+      "planned_page_path": "trial-pages/gog-240/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1309748",
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "four-arm factorial dose/contrast extraction",
+        "complete grade 3–5 safety denominators",
+        "PRO/QoL table extraction",
+        "long-term fistula and thromboembolic follow-up"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-empower-cervical1-page-completion-2026-11-26-evening",
+      "trial_id": "empower-cervical1",
+      "trial": "EMPOWER-Cervical1",
+      "canonical_trial_id": "empower-cervical1",
+      "planned_page_path": "trial-pages/empower-cervical1/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2112187",
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "investigator-choice chemotherapy distribution/dose",
+        "grade 3–5 immune-related and treatment-related AE denominators",
+        "QoL/PRO data",
+        "mature follow-up and subgroup table reconciliation"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-innovatv-301-page-completion-2026-11-26-evening",
+      "trial_id": "innovatv-301",
+      "trial": "innovaTV 301",
+      "canonical_trial_id": "innovatv-301",
+      "planned_page_path": "trial-pages/innovatv-301/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2313811",
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "ocular/neuropathy/bleeding grade 3–5 AE table",
+        "dose modification and discontinuation denominators",
+        "QoL/PRO status",
+        "mature follow-up and subgroup extraction"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-nrg-gy018-page-completion-2026-11-26-evening",
+      "trial_id": "nrg-gy018",
+      "trial": "NRG-GY018",
+      "canonical_trial_id": "nrg-gy018",
+      "planned_page_path": "trial-pages/nrg-gy018/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2302312",
+        "https://pubmed.ncbi.nlm.nih.gov/36972022/",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "exact MMR-cohort denominators and stratification",
+        "grade 3–5 AE denominators by cohort",
+        "dose intensity/discontinuation and PRO/QoL",
+        "mature follow-up and updated OS status"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-checkmate-77t-page-completion-2026-11-26-evening",
+      "trial_id": "checkmate-77t",
+      "trial": "CheckMate 77T",
+      "canonical_trial_id": "checkmate-77t",
+      "planned_page_path": "trial-pages/checkmate-77t/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/",
+        "https://clinicaltrials.gov/study/NCT04025879"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "full chemotherapy backbone and dose table",
+        "grade 3–5 AE and surgical complication denominators",
+        "QoL/PRO status",
+        "mature OS and subgroup follow-up"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-caravaggio-page-completion-2026-11-26-evening",
+      "trial_id": "caravaggio",
+      "trial": "Caravaggio",
+      "canonical_trial_id": "caravaggio",
+      "planned_page_path": "trial-pages/caravaggio/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://clinicaltrials.gov/study/NCT03045406"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "full safety and clinically relevant nonmajor bleeding table",
+        "treatment discontinuation and cancer-site subgroup extraction",
+        "QoL/PRO status",
+        "final follow-up and event adjudication details"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-api-cat-page-completion-2026-11-26-evening",
+      "trial_id": "api-cat",
+      "trial": "API-CAT",
+      "canonical_trial_id": "api-cat",
+      "planned_page_path": "trial-pages/api-cat/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/abs/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=10.1056%2FNEJMoa2416112",
+        "https://clinicaltrials.gov/study/NCT03692065"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "full bleeding severity/adjudication table",
+        "subgroup and treatment discontinuation details",
+        "QoL/PRO status",
+        "noninferiority margin and analysis population reconciliation"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-hokusai-vte-cancer-page-completion-2026-11-26-evening",
+      "trial_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "canonical_trial_id": "hokusai-vte-cancer",
+      "planned_page_path": "trial-pages/hokusai-vte-cancer/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://clinicaltrials.gov/study/NCT02073682"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "complete bleeding and cancer-site subgroup tables",
+        "treatment discontinuation and exposure",
+        "QoL/PRO status",
+        "full noninferiority analysis and event timing extraction"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-nadina-page-completion-2026-11-26-evening",
+      "trial_id": "nadina",
+      "trial": "NADINA",
+      "canonical_trial_id": "nadina",
+      "planned_page_path": "trial-pages/nadina/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://clinicaltrials.gov/study/NCT04949113"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "exact dose/schedule and response-adapted adjuvant algorithm",
+        "grade 3–5 AE and surgery timing denominators",
+        "QoL/PRO status",
+        "longer-term EFS/OS follow-up"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-swog-s1801-page-completion-2026-11-26-evening",
+      "trial_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "canonical_trial_id": "swog-s1801",
+      "planned_page_path": "trial-pages/swog-s1801/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://clinicaltrials.gov/study/NCT03698019"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "treatment exposure and surgery timing",
+        "grade 3–5 AE denominators and discontinuation",
+        "QoL/PRO status",
+        "mature long-term EFS/OS follow-up"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-aurelia-page-completion-2026-11-26-evening",
+      "trial_id": "aurelia",
+      "trial": "AURELIA",
+      "canonical_trial_id": "aurelia",
+      "planned_page_path": "trial-pages/aurelia/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://ascopubs.org/doi/full/10.1200/JCO.2013.51.4489",
+        "https://pubmed.ncbi.nlm.nih.gov/24637997/",
+        "https://clinicaltrials.gov/study/NCT00976911"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "arm-specific chemotherapy distribution and grade 3–5 safety",
+        "bowel obstruction/fistula risk and discontinuation tables",
+        "full PRO/QoL results",
+        "long-term OS and crossover interpretation"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+    },
+    {
+      "issue_id": "candidate-desktop-iii-page-completion-2026-11-26-evening",
+      "trial_id": "desktop-iii",
+      "trial": "DESKTOP III",
+      "canonical_trial_id": "desktop-iii",
+      "planned_page_path": "trial-pages/desktop-iii/index.html",
+      "issue_type": "new_candidate_primary_source_and_page_completion",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
+      "source_urls": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2103294",
+        "https://pubmed.ncbi.nlm.nih.gov/34874631/",
+        "https://clinicaltrials.gov/study/NCT01166737"
+      ],
+      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "missing_fields": [
+        "perioperative grade 3–5 complication denominators",
+        "surgical morbidity and subsequent chemotherapy delivery",
+        "QoL instrument/timepoint table",
+        "full subgroup and follow-up extraction"
+      ],
+      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
     }
   ],
   "resolved_items": [
@@ -5002,6 +5422,38 @@
         "https://clinicaltrials.gov/study/NCT04722848"
       ],
       "next_action": "Complete primary safety/QoL verification and browser-render QA before release."
+    },
+    {
+      "issue_id": "repair-cupisco-roster-page-path-2026-11-26-evening",
+      "trial_id": "cupisco",
+      "trial": "CUPISCO",
+      "canonical_trial_id": "cupisco",
+      "page_path": "trial-pages/cupisco/index.html",
+      "issue_type": "roster_page_path_reconciliation",
+      "severity": "low",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Canonical page exists and is linked in evidence/index.html; roster record existed but lacked canonical path.",
+      "action": "Add exact path property to existing master roster entry.",
+      "verification": "Re-read roster JSON and canonical page; path resolves to exact index.html. No duplicate trial entry created.",
+      "next_action": "Retain as resolved after branch merge."
+    },
+    {
+      "issue_id": "repair-early-ons-npc-roster-page-path-2026-11-26-evening",
+      "trial_id": "early-ons-npc",
+      "trial": "Early ONS NPC",
+      "canonical_trial_id": "early-ons-npc",
+      "page_path": "trial-pages/early-ons-npc/index.html",
+      "issue_type": "roster_page_path_reconciliation",
+      "severity": "low",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Canonical page exists and is linked in evidence/index.html; roster record existed but lacked canonical path.",
+      "action": "Add exact path property to existing master roster entry.",
+      "verification": "Re-read roster JSON and canonical page; path resolves to exact index.html. No duplicate trial entry created.",
+      "next_action": "Retain as resolved after branch merge."
     }
   ],
   "run_audit_log": [
@@ -5116,6 +5568,28 @@
       "uploaded_pages": 0,
       "status": "INCOMPLETE — 0/30 uploaded",
       "notes": "KEYNOTE-564 registry link added after checking the existing roster NCT03142334 and official registry; separate final-analysis task remains open. LITESPARK-005 staged with verified primary DOI/title, registry, 18-month PFS absolute effect/NNT7 and PRO analysis; browser-rendered preview QA open. Three negative/contrary trials added to deferred queue. No PR or merge."
+    },
+    {
+      "date": "2026-11-26",
+      "cycle": "evening continuation",
+      "branch": "atlas-batch/2026-11-26-am",
+      "branch_commit_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
+      "pages_manually_rechecked": 4,
+      "source_identity_reviews": 15,
+      "candidates_screened": 15,
+      "new_unique_candidates": 15,
+      "duplicates": 0,
+      "held": 15,
+      "verified_page_drafts": 0,
+      "uploaded_to_main": 0,
+      "roster_path_repairs": 4,
+      "archive_entries_added": 1,
+      "doi_title_cache_entries_added": 15,
+      "queue_items_opened": 15,
+      "queue_items_resolved": 2,
+      "nnt_qa": "4 legacy pages rechecked; no inconsistency found.",
+      "release_gate": "not opened; exact 30-page batch and browser/local validation gates unmet",
+      "deployment": "not verified"
     }
   ],
   "previous_partial_runs": [
@@ -5189,46 +5663,52 @@
     }
   ],
   "last_partial_run": {
-    "date": "2026-11-23",
-    "cycle": "evening",
-    "branch": "atlas-batch/2026-11-23-am",
-    "status": "INCOMPLETE — 0/30 uploaded",
-    "screened": 23,
-    "new_unique_candidates": 9,
-    "fully_verified_for_publication": 0,
-    "held": 7,
-    "deferred_contrary_evidence": 2,
-    "duplicates_or_followups": 14,
-    "uploaded": 0,
-    "manual_page_reviews_this_run": 14,
-    "manual_pages_inspected_today": 14,
-    "repairs": 4,
-    "queue_open_after": 193,
-    "queue_resolved_after": 66,
-    "next_action": "Complete primary-source extraction for seven held candidates; verify browser rendering; do not open PR until an exact-30 batch passes all checks.",
-    "repair_commit_sha": "fe176bedf05cc43a047028e10e8828370b652886",
-    "outcome_visual_audit_run_id": 45192486550,
-    "strict_release_validator_passed": true,
-    "branch_preview_deployed": true
+    "date": "2026-11-26",
+    "cycle": "evening continuation",
+    "timestamp": "2026-11-26T19:24:56+05:30",
+    "branch": "atlas-batch/2026-11-26-am",
+    "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_commit_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
+    "screened_candidates": 15,
+    "new_unique_candidates": 15,
+    "duplicates": 0,
+    "held_candidates": 15,
+    "verified_candidates": 0,
+    "uploaded_pages": 0,
+    "roster_path_repairs": 4,
+    "queue_items_opened": 15,
+    "queue_items_resolved": 2,
+    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published."
   },
-  "last_updated": "2026-11-23",
+  "last_updated": "2026-11-26",
   "last_run": {
     "date": "2026-11-26",
-    "cycle": "morning",
+    "cycle": "evening continuation",
+    "timestamp": "2026-11-26T19:24:56+05:30",
     "branch": "atlas-batch/2026-11-26-am",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_before_report": "3c41344fe967772d63a798798a1b61713e9f674b",
-    "status": "INCOMPLETE — 0/30 uploaded; 3 new unique trials source-verified and staged; 15 held; 15 duplicates; 1 deferred."
+    "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_commit_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
+    "screened_candidates": 15,
+    "new_unique_candidates": 15,
+    "duplicates": 0,
+    "held_candidates": 15,
+    "verified_candidates": 0,
+    "uploaded_pages": 0,
+    "roster_path_repairs": 4,
+    "queue_items_opened": 15,
+    "queue_items_resolved": 2,
+    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published."
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 206,
-    "resolved_items": 71,
-    "note": "2026-11-26 morning: three new unique trials source-verified and staged (Early ONS NPC, CUPISCO, FIND); GIMEMA ALL2820 roster/index reconciliation completed but held for primary safety/QoL verification. Ten page drafts are staged; 15 unique candidates held; 15 duplicates; one contrary-evidence candidate remains deferred. Browser-render QA tasks remain open; no PR or production deployment.",
+    "open_items": 221,
+    "resolved_items": 73,
+    "note": "Open items include 15 new candidate page-completion holds; four roster path gaps repaired on the active branch; browser-rendered visualization and current-guideline freshness tasks remain open.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
-    "last_run_note": "DeLLphi-305 page/structured absolute-effect schema corrected on active branch; source review remains open for protocol supplement and browser-rendered QA. No main-branch publication claimed."
+    "last_run_note": "DeLLphi-305 page/structured absolute-effect schema corrected on active branch; source review remains open for protocol supplement and browser-rendered QA. No main-branch publication claimed.",
+    "last_updated": "2026-11-26"
   },
   "updated_on": "2026-11-23T19:28:00+05:30",
   "last_run_date": "2026-11-23",
