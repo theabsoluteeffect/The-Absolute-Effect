@@ -9,8 +9,9 @@
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-26-am",
     "branch_commit_before": "9968bb87d139ed35be9ba62d080fa8ccd6c5fc30",
-    "commit_sha": null,
-    "branch_head_after_run": null
+    "commit_sha": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c",
+    "branch_head_after_run": null,
+    "branch_commit_after_content_update": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
   },
   "preflight": {
     "main_unique_studies_verified": 467,
@@ -534,5 +535,6 @@
     "Resolve current NCCN guideline freshness and exact citation mapping only from accessible official reference lists; do not infer references.",
     "Complete browser-rendered outcome visualization review for all staged pages and run the local strict release validator.",
     "Open a PR only when exactly 30 genuinely new unique pages are complete and all checks can be verified; then merge and verify main and Cloudflare deployment."
-  ]
+  ],
+  "commit_sha": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
 }

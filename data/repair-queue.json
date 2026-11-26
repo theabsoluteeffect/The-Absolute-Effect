@@ -5589,7 +5589,8 @@
       "queue_items_resolved": 2,
       "nnt_qa": "4 legacy pages rechecked; no inconsistency found.",
       "release_gate": "not opened; exact 30-page batch and browser/local validation gates unmet",
-      "deployment": "not verified"
+      "deployment": "not verified",
+      "commit_sha": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
     }
   ],
   "previous_partial_runs": [
@@ -5678,7 +5679,8 @@
     "roster_path_repairs": 4,
     "queue_items_opened": 15,
     "queue_items_resolved": 2,
-    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published."
+    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published.",
+    "branch_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
   },
   "last_updated": "2026-11-26",
   "last_run": {
@@ -5697,7 +5699,8 @@
     "roster_path_repairs": 4,
     "queue_items_opened": 15,
     "queue_items_resolved": 2,
-    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published."
+    "status": "INCOMPLETE — active morning branch continued; no PR/merge; 0/30 published.",
+    "branch_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {

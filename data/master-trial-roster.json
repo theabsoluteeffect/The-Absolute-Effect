@@ -1912,7 +1912,8 @@
       "redirect_or_alias_stub_not_counted": "trial-pages/rosel/index.html",
       "full_recursive_clinical_audit_completed": false,
       "browser_rendered_visualization_audit_completed": false,
-      "note": "Four new roster records now carry canonical page paths; eight lung-SABR trial records resolve to verified anchors; ROSEL directory is a redirect/alias stub."
+      "note": "Four new roster records now carry canonical page paths; eight lung-SABR trial records resolve to verified anchors; ROSEL directory is a redirect/alias stub.",
+      "branch_head_after_content_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
     }
   },
   "trials": [
@@ -12510,7 +12511,9 @@
     "total_screened_in_batch": 49,
     "total_duplicates_in_batch": 15,
     "total_new_unique_in_batch": 34,
-    "total_held_in_batch": 30
+    "total_held_in_batch": 30,
+    "last_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c",
+    "last_content_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
   },
   "last_run_date": "2026-11-23",
   "last_run_cycle": "morning",
