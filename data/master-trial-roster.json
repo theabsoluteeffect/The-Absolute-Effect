@@ -1824,7 +1824,52 @@
     "pages_manually_reviewed_this_run": 5,
     "new_pages_source_reviewed_this_run": 5,
     "last_partial_content_audit_date": "2026-11-24",
-    "full_content_audit_status": "incomplete — 5 existing pages and 5 new page drafts reviewed; remaining canonical pages require sequential primary-source review"
+    "full_content_audit_status": "incomplete — 5 existing pages and 5 new page drafts reviewed; remaining canonical pages require sequential primary-source review",
+    "last_partial_review_date": "2026-11-26",
+    "partial_review_scope": [
+      "CAMORAL primary conference-report values and absolute-effect arithmetic",
+      "AENEAS2",
+      "ALINA",
+      "LITESPARK-005",
+      "NICHE-2",
+      "SUNLIGHT",
+      "ZUMA-7",
+      "CheckMate 816",
+      "KEYNOTE-A18",
+      "LACC",
+      "SHAPE"
+    ],
+    "full_recursive_trial_page_audit_completed": false,
+    "browser_rendered_visualization_audit_completed": false,
+    "manual_review_addenda": [
+      {
+        "date": "2026-11-26",
+        "branch": "atlas-batch/2026-11-26-am",
+        "reviewed_page_count": 11,
+        "reviewed_pages": [
+          "camoral",
+          "aeneas2",
+          "alina",
+          "litespark-005",
+          "niche-2",
+          "sunlight",
+          "zuma-7",
+          "checkmate-816",
+          "keynote-a18",
+          "lacc",
+          "shape"
+        ],
+        "repairs": [
+          "CAMORAL NNH removed; static outcome chart and source provenance corrected",
+          "NICHE-2 single-arm response visualization added"
+        ],
+        "new_pages_staged": [
+          "early-ons-npc",
+          "cupisco"
+        ],
+        "limitations": "This is a partial source/structure review; not a complete recursive audit and not browser-rendered QA."
+      }
+    ]
   },
   "trials": [
     {
@@ -2063,7 +2108,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
       "setting": "First-line / advanced",
-      "setting_detail": "Untreated locally advanced or metastatic EGFR exon 19 deletion/L858R NSCLC",
+      "setting_detail": "Median blinded-independent-review PFS favoured aumolertinib plus platinum chemotherapy; OS remains immature. Full dose-level and safety-table reconciliation is still required.",
       "question": "Does adding platinum–pemetrexed to aumolertinib improve PFS over aumolertinib alone?",
       "source": "Lancet Oncology 2026",
       "path": "trial-pages/aeneas2/index.html",
@@ -2106,11 +2151,16 @@
       "source_reviewed_on": "2026-11-24",
       "quality_check_date": "2026-11-24",
       "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "branch": "atlas-batch/2026-11-23-am",
       "staged_on": "2026-11-24",
-      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/aeneas2/"
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/aeneas2/",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Full primary publication tables, exact regimen schedule, grade 3–5 event denominators, discontinuation and QoL not independently reconciled against the primary source.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     },
     {
       "id": "alina",
@@ -2118,7 +2168,7 @@
       "site": "Non-Small Cell Lung Cancer",
       "discipline": "Medical Oncology",
       "setting": "Adjuvant / resected",
-      "setting_detail": "Completely resected ALK-positive stage IB (tumour ≥4 cm), II or IIIA NSCLC",
+      "setting_detail": "24-month DFS favoured adjuvant alectinib in stage II–IIIA ALK-positive disease; full subgroup and follow-up reconciliation remains open.",
       "question": "Does 2 years of adjuvant alectinib improve DFS over four cycles of platinum-based chemotherapy after resection of ALK-positive NSCLC?",
       "source": "New England Journal of Medicine 2024",
       "path": "trial-pages/alina/index.html",
@@ -2147,14 +2197,15 @@
       "clinical_interpretation": "Adjuvant alectinib substantially improves DFS over platinum chemotherapy in resected ALK-positive stage IB (≥4 cm)–IIIA NSCLC; do not extrapolate to ALK-negative disease.",
       "nnt_not_calculated_reason": null,
       "absolute_effect": {
-        "endpoint": "Disease-free survival",
-        "time_horizon": "24 months",
-        "treatment_rate": "93.8%",
-        "control_rate": "63.0%",
-        "absolute_benefit_percentage_points": 30.8,
+        "endpoint": "24-month DFS, stage II–IIIA",
+        "horizon": "24 months",
+        "benefit_percentage_points": 30.8,
         "nnt": 4,
-        "calculation": "ceil[1/0.308]=4",
-        "source": "Primary NEJM publication; stage II–IIIA primary DFS population."
+        "source_doi": "10.1056/NEJMoa2310532",
+        "calculation": "93.8% − 63.0% = 30.8 percentage points; 1/0.308 = 3.25, rounded up to NNT 4.",
+        "event_definition": "DFS event by 24 months",
+        "population": "Stage II–IIIA ALK-positive resected NSCLC",
+        "notes": "Use only the stage II–IIIA subgroup estimate; do not generalise this NNT to the full ITT population."
       },
       "additional_endpoints": [],
       "related_publications": [
@@ -2179,11 +2230,16 @@
       "source_reviewed_on": "2026-11-24",
       "quality_check_date": "2026-11-24",
       "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "branch": "atlas-batch/2026-11-23-am",
       "staged_on": "2026-11-24",
-      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/alina/"
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/alina/",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Primary and follow-up source tables, grade 3–5 toxicity, treatment discontinuation, QoL denominators and subgroup applicability require independent recheck.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     },
     {
       "id": "alliance-a051701",
@@ -7331,7 +7387,7 @@
       "site": "Renal Cell Carcinoma",
       "discipline": "Medical Oncology",
       "setting": "Advanced / Metastatic",
-      "setting_detail": "18-month PFS 24.0% with belzutifan versus 8.3% with everolimus (HR 0.75, 95% CI 0.63–0.90; P=0.002; NNT 7 at 18 months). 18-month OS 55.2% versus 50.6% (HR 0.88, 95% CI 0.73–1.07; P=0.20; no NNT). ORR 21.9% versus 3.5%. Grade ≥3 all-cause AEs 61.8% versus 62.5%; grade 5 AEs 3.5% versus 5.3%; AE-related discontinuation 5.9% versus 14.7%.",
+      "setting_detail": "Belzutifan improved 18-month PFS in previously treated clear-cell RCC; OS was not significantly different at the reported analysis.",
       "question": "After prior immune-checkpoint and VEGF-targeted therapy for advanced clear-cell RCC, does belzutifan improve outcomes compared with everolimus?",
       "source": "trial-pages/litespark-005/",
       "path": "trial-pages/litespark-005/",
@@ -7355,33 +7411,33 @@
         }
       ],
       "absolute_effect": {
-        "endpoint": "Progression-free survival",
+        "endpoint": "18-month PFS",
         "horizon": "18 months",
         "benefit_percentage_points": 15.7,
         "nnt": 7,
-        "notes": "18-month Kaplan–Meier PFS 24.0% versus 8.3%; 1/(0.240−0.083)=6.37, rounded up to 7. Median PFS and HR alone were not used for NNT. OS difference was not statistically significant; no OS NNT assigned. Cumulative safety rates are not a common fixed-time toxicity horizon; no NNH assigned.",
         "source_doi": "10.1056/NEJMoa2313906",
-        "additional_endpoints": [
-          {
-            "endpoint": "Overall survival",
-            "horizon": "18 months",
-            "benefit_percentage_points": 4.6,
-            "notes": "18-month OS 55.2% versus 50.6%; HR 0.88 (95% CI 0.73–1.07), P=0.20; no NNT because the interim OS comparison was not statistically significant."
-          }
-        ]
+        "calculation": "24.0% − 8.3% = 15.7 percentage points; 1/0.157 = 6.37, rounded up to NNT 7.",
+        "event_definition": "Progression or death by 18 months",
+        "population": "Previously treated advanced clear-cell RCC",
+        "notes": "Landmark estimate; do not infer NNT from median PFS or hazard ratio."
       },
       "freshness_review_status": "Primary NEJM report and prespecified Lancet Oncology PRO analysis reviewed 2026-11-23. Current official NCCN Kidney Cancer full guideline/reference list was inaccessible; no NCCN section, reference or recommendation category claimed.",
       "outcome_visual_review_status": "Static chart, source values and NNT7 at 18 months independently rechecked 2026-11-24; branch browser-render QA pending.",
       "quality_check_date": "2026-11-24",
       "staged_batch_date": "2026-11-23",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "source_reviewed_on": "2026-11-24",
       "source_verified": true,
       "doi_title_verified": true,
       "registry_verified": true,
       "branch": "atlas-batch/2026-11-23-am",
-      "staged_on": "2026-11-23"
+      "staged_on": "2026-11-23",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Full primary/follow-up safety tables, exact denominators, dose intensity, discontinuation and browser rendering remain unverified.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     },
     {
       "id": "litespark-011",
@@ -8326,7 +8382,7 @@
       "site": "Colon Cancer",
       "discipline": "Medical Oncology / Surgical Oncology",
       "setting": "Neoadjuvant / locally advanced",
-      "setting_detail": "Previously untreated, nonmetastatic mismatch-repair-deficient colon adenocarcinoma",
+      "setting_detail": "Single-arm neoadjuvant nivolumab plus ipilimumab produced high pathological response rates before surgery; long-term DFS remains immature.",
       "question": "Can short-course neoadjuvant nivolumab plus ipilimumab produce major pathological responses without delaying planned surgery in dMMR colon cancer?",
       "source": "New England Journal of Medicine 2024",
       "path": "trial-pages/niche-2/index.html",
@@ -8369,11 +8425,16 @@
       "source_reviewed_on": "2026-11-24",
       "quality_check_date": "2026-11-24",
       "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "branch": "atlas-batch/2026-11-23-am",
       "staged_on": "2026-11-24",
-      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/niche-2/"
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/niche-2/",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Primary source and safety denominators, immune-related grade 3–5 toxicity, surgical timing, recurrence follow-up and QoL require full table-level verification.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     },
     {
       "id": "nsabp-b-39-rtog-0413",
@@ -10819,7 +10880,7 @@
       "site": "Colorectal Cancer",
       "discipline": "Medical Oncology",
       "setting": "Later-line / refractory metastatic",
-      "setting_detail": "Refractory metastatic colorectal cancer after no more than two prior regimens for advanced disease",
+      "setting_detail": "Trifluridine/tipiracil plus bevacizumab improved overall survival in refractory metastatic colorectal cancer; fixed-time OS estimate requires source-level reconciliation.",
       "question": "Does adding bevacizumab to trifluridine/tipiracil improve OS compared with trifluridine/tipiracil alone in refractory mCRC?",
       "source": "New England Journal of Medicine 2023",
       "path": "trial-pages/sunlight/index.html",
@@ -10848,14 +10909,15 @@
       "clinical_interpretation": "The combination improves OS and PFS over FTD/TPI alone in appropriately pretreated refractory mCRC; treatment choice should account for prior biologics, marrow reserve and alternative later-line options.",
       "nnt_not_calculated_reason": null,
       "absolute_effect": {
-        "endpoint": "Overall survival",
-        "time_horizon": "12 months",
-        "treatment_rate": "43%",
-        "control_rate": "30%",
-        "absolute_benefit_percentage_points": 13,
+        "endpoint": "12-month overall survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 13,
         "nnt": 8,
-        "calculation": "ceil[1/0.13]=8",
-        "source": "ASCO GI 2023 conference abstract DOI 10.1200/JCO.2023.41.4_suppl.4; primary NEJM paper for median OS/HR."
+        "source_doi": "10.1200/JCO.2023.41.4_suppl.4",
+        "calculation": "43% − 30% = 13 percentage points; 1/0.13 = 7.69, rounded up to NNT 8.",
+        "event_definition": "Death by 12 months",
+        "population": "Refractory metastatic colorectal cancer",
+        "notes": "12-month estimate is from the ASCO GI conference report; median OS and HR are from the NEJM primary report."
       },
       "additional_endpoints": [],
       "related_publications": [
@@ -10881,11 +10943,16 @@
       "source_reviewed_on": "2026-11-24",
       "quality_check_date": "2026-11-24",
       "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "branch": "atlas-batch/2026-11-23-am",
       "staged_on": "2026-11-24",
-      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/sunlight/"
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/sunlight/",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Primary and conference-source denominators, dose schedule, grade 3–5 toxicity, discontinuation and QoL require independent recheck.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     },
     {
       "id": "sunset",
@@ -11911,7 +11978,7 @@
       "site": "Large B-Cell Lymphoma",
       "discipline": "Haemato-oncology / Cellular Therapy",
       "setting": "Second-line / early relapse or primary refractory",
-      "setting_detail": "LBCL refractory to first-line chemoimmunotherapy or relapsing within 12 months",
+      "setting_detail": "Second-line axi-cel improved event-free survival and longer-term OS/PFS in primary refractory or early-relapsing large B-cell lymphoma.",
       "question": "Does second-line axi-cel improve EFS and OS over salvage chemoimmunotherapy followed by ASCT when responsive?",
       "source": "New England Journal of Medicine 2022; OS follow-up 2023; PRO analysis 2022",
       "path": "trial-pages/zuma-7/index.html",
@@ -11940,14 +12007,32 @@
       "clinical_interpretation": "Second-line axi-cel improves EFS and OS in early-relapsed or primary refractory LBCL; distinguish this population from late relapse where salvage/ASCT remains a separate pathway.",
       "nnt_not_calculated_reason": null,
       "absolute_effect": {
-        "endpoint": "Event-free survival",
-        "time_horizon": "24 months",
-        "treatment_rate": "41%",
-        "control_rate": "16%",
-        "absolute_benefit_percentage_points": 25,
+        "endpoint": "24-month event-free survival",
+        "horizon": "24 months",
+        "benefit_percentage_points": 25,
         "nnt": 4,
-        "calculation": "ceil[1/0.25]=4",
-        "source": "Primary NEJM publication."
+        "source_doi": "10.1056/NEJMoa2116133",
+        "calculation": "41% − 16% = 25 percentage points; 1/0.25 = NNT 4.",
+        "event_definition": "EFS event by 24 months",
+        "population": "Primary refractory or relapse within 12 months of first-line chemoimmunotherapy",
+        "additional_endpoints": [
+          {
+            "endpoint": "4-year overall survival",
+            "horizon": "4 years",
+            "benefit_percentage_points": 8.6,
+            "nnt": 12,
+            "source_doi": "10.1056/NEJMoa2116133",
+            "calculation": "54.6% − 46.0% = 8.6 percentage points; 1/0.086 = 11.63, rounded up to 12."
+          },
+          {
+            "endpoint": "4-year progression-free survival",
+            "horizon": "4 years",
+            "benefit_percentage_points": 17.4,
+            "nnt": 6,
+            "source_doi": "10.1056/NEJMoa2116133",
+            "calculation": "41.8% − 24.4% = 17.4 percentage points; 1/0.174 = 5.75, rounded up to 6."
+          }
+        ]
       },
       "additional_endpoints": [
         {
@@ -12001,21 +12086,147 @@
       "source_reviewed_on": "2026-11-24",
       "quality_check_date": "2026-11-24",
       "outcome_visual_review_status": "static visualization and source values reviewed; branch browser-render QA pending",
-      "release_qa_status": "staged_source_verified_pending_browser_render_and_30_page_PR_gate",
-      "publication_status": "staged_on_branch_not_uploaded_or_production_published",
+      "release_qa_status": "held — full primary-source extraction and browser-render QA incomplete",
+      "publication_status": "staged_hold",
       "branch": "atlas-batch/2026-11-23-am",
       "staged_on": "2026-11-24",
-      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/zuma-7/"
+      "permanent_page_url": "https://theabsoluteeffect.pages.dev/trial-pages/zuma-7/",
+      "release_ready": false,
+      "source_verification_status": "partial; not release verified",
+      "hold_reason": "Long-term follow-up tables, grade 3–5 toxicity, patient-reported outcomes, treatment burden and landmark estimates need full source-level reconciliation.",
+      "last_source_reviewed_on": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
+    },
+    {
+      "id": "early-ons-npc",
+      "trial": "Early vs routine oral nutritional supplementation during CCRT in nasopharyngeal carcinoma",
+      "aliases": [
+        "Early ONS NPC",
+        "NCT04823468",
+        "10.1001/jamaoncol.2026.4535",
+        "10.1016/j.annonc.2025.09.120"
+      ],
+      "site": "Nasopharyngeal carcinoma",
+      "discipline": "Supportive Care / Clinical Nutrition",
+      "setting": "Nutrition support during definitive concurrent chemoradiotherapy",
+      "setting_detail": "Proactive oral nutritional supplementation at CCRT start reduced >5% weight loss and grade ≥3 radiation-induced oral mucositis in the ESMO 2025 full analysis set; see fixed-horizon visualizations.",
+      "phase": "Randomized clinical trial; drug-development phase not applicable / not stated",
+      "design": "Multicentre, open-label, 1:1 randomized trial across six Chinese tertiary hospitals",
+      "population": "Adults 18–70 years with newly diagnosed stage II–IVA NPC, planned CCRT, baseline PG-SGA 0–8; patients with intake <60% of estimated requirements for ≥3 days were excluded. FAS n=216 (107 vs 109).",
+      "intervention": "Ensure oral nutritional supplement 55.8 g three times daily from the start of CCRT plus individualized nutrition counselling (dose/timing from ESMO 2025 LBA103).",
+      "comparator": "Standard nutrition counselling; ONS introduced only after oral intake fell below 60% of estimated requirements for three consecutive days.",
+      "primary_endpoint": ">5% body-weight loss from baseline to completion of CCRT",
+      "primary": "10.1001/jamaoncol.2026.4535",
+      "primary_doi": "10.1001/jamaoncol.2026.4535",
+      "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+      "pmid": "43018988",
+      "primary_pmid": "43018988",
+      "registry_id": "NCT04823468",
+      "publication_date": "2026-11-12",
+      "efficacy": "ESMO 2025 LBA103 FAS: >5% weight loss 69.8% vs 88.8% (p=0.008); PPS 40.0% vs 64.8% (p=0.03). Grade ≥3 RIOM 10.9% vs 28.0% (p=0.011).",
+      "safety": "Grade ≥3 radiation-induced oral mucositis 10.9% vs 28.0%; other grade 3–5 AE categories and exact counts were not reported in the accessible conference abstract.",
+      "quality_of_life": "EORTC QLQ-C30 and radiotherapy interruptions did not differ significantly in the accessible conference report; detailed domain scores were not provided.",
+      "absolute_effect": {
+        "endpoint": ">5% weight loss by CCRT completion",
+        "horizon": "CCRT completion",
+        "benefit_percentage_points": 19,
+        "nnt": 6,
+        "source_doi": "10.1016/j.annonc.2025.09.120",
+        "calculation": "88.8% − 69.8% = 19.0 percentage points; 1/0.19 = 5.26, rounded up to NNT 6.",
+        "event_definition": "More than 5% body-weight loss",
+        "population": "FAS n=107 vs 109",
+        "additional_endpoints": [
+          {
+            "endpoint": "Grade ≥3 radiation-induced oral mucositis",
+            "horizon": "CCRT completion",
+            "benefit_percentage_points": 17.1,
+            "nnt": 6,
+            "source_doi": "10.1016/j.annonc.2025.09.120",
+            "calculation": "28.0% − 10.9% = 17.1 percentage points; 1/0.171 = 5.85, rounded up to NNT 6."
+          }
+        ]
+      },
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4535",
+        "https://doi.org/10.1016/j.annonc.2025.09.120",
+        "https://clinicaltrials.gov/study/NCT04823468"
+      ],
+      "source_note": "Numerical results and ONS dose are sourced to ESMO 2025 LBA103. JAMA Oncology primary-publication metadata are verified, but its full text was not mined because the publisher notice explicitly restricts AI text/data mining.",
+      "nccn_provenance": "not verified — current full NCCN Head and Neck guideline/reference list inaccessible; NCCN Insights v2.2025 is not a complete guideline and no recommendation reference/category was inferred.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "data_verification_status": "Verified from authoritative ESMO conference report; peer-reviewed primary-publication metadata independently verified; full JAMA text not mined due publisher restriction.",
+      "publication_status": "staged",
+      "release_ready": false,
+      "release_qa_status": "source verified; browser-render QA pending; 30-page PR gate incomplete",
+      "batch_date": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
+    },
+    {
+      "id": "cupisco",
+      "trial": "CUPISCO",
+      "aliases": [
+        "Cancer of Unknown Primary Study",
+        "NCT03498521",
+        "10.1016/S0140-6736(24)00814-6"
+      ],
+      "site": "Cancer of unknown primary — unfavourable non-squamous",
+      "discipline": "Medical Oncology / Precision Oncology",
+      "setting": "First-line after disease control with three cycles of platinum-based induction chemotherapy",
+      "setting_detail": "Molecularly guided therapy improved investigator-assessed PFS versus continued chemotherapy; median PFS and hazard ratios are shown in the page visualization.",
+      "phase": "II",
+      "design": "Open-label, randomized, active-controlled, 3:1, multicentre international phase II trial at 159 sites in 34 countries",
+      "population": "Previously untreated unfavourable non-squamous CUP, ECOG 0–1, central confirmation, disease control after three induction cycles. 636 enrolled; 436 randomized (326 MGT, 110 chemotherapy). Extended safety set 312 vs 102.",
+      "intervention": "Comprehensive genomic profiling with molecular tumour board selection of matched targeted/immunotherapy; most patients without an actionable alteration received atezolizumab plus chemotherapy. Regimens and doses varied by molecular target and protocol; no single uniform dose.",
+      "comparator": "Continue the same investigator-selected platinum-based induction regimen for at least three additional cycles.",
+      "primary_endpoint": "Investigator-assessed progression-free survival from randomization",
+      "primary": "10.1016/S0140-6736(24)00814-6",
+      "primary_doi": "10.1016/S0140-6736(24)00814-6",
+      "primary_title": "Molecularly guided therapy versus chemotherapy after disease control in unfavourable cancer of unknown primary (CUPISCO): an open-label, randomised, phase 2, multicentre, international trial",
+      "pmid": "39096924",
+      "primary_pmid": "39096924",
+      "registry_id": "NCT03498521",
+      "publication_date": "2024-08-10",
+      "secondary_publications": [
+        {
+          "title": "Molecularly guided therapy in patients with cancer of unknown primary: extended follow-up of the CUPISCO trial",
+          "doi": "10.1200/JCO-25-02974",
+          "pmid": "42691436",
+          "publication_date": "2026-09-03"
+        }
+      ],
+      "efficacy": "Primary analysis: median PFS 6.1 vs 4.4 months; HR 0.72 (95% CI 0.56–0.92), p=0.0079. Extended follow-up (median 37 months): HR 0.75 (95% CI 0.59–0.95), p=0.0177; medians remained 6.1 vs 4.4 months. Updated median OS 15.2 vs 12.8 months; HR 0.79 (95% CI 0.61–1.02), p=0.0689 (not statistically significant).",
+      "safety": "Extended safety population 312 vs 102: grade 3–5 AEs 205/312 (65.7%) vs 44/102 (43.1%); exposure-adjusted grade 3–5 AE rates 188.9 vs 318.6 per 100 patient-years; treatment-related grade 3–5 rates 55.3 vs 51.5 per 100 patient-years. Serious AEs 119/312 (38.1%) vs 15/102 (14.7%); AEs leading to withdrawal 84/312 (26.9%) vs 17/102 (16.7%).",
+      "quality_of_life": "No clear overall time-to-deterioration advantage in global quality of life; exploratory subgroup differences are not definitive.",
+      "nnt_not_applicable_reason": "No comparable fixed-time absolute PFS/OS event rates were reported. NNT is not derived from median survival or hazard ratios.",
+      "source_urls": [
+        "https://doi.org/10.1016/S0140-6736(24)00814-6",
+        "https://pubmed.ncbi.nlm.nih.gov/39096924/",
+        "https://doi.org/10.1200/JCO-25-02974",
+        "https://pubmed.ncbi.nlm.nih.gov/42691436/",
+        "https://clinicaltrials.gov/study/NCT03498521"
+      ],
+      "nccn_provenance": "not verified — current NCCN Cancer of Unknown Primary full guideline/reference list inaccessible; no section, reference number or category inferred.",
+      "source_verified": true,
+      "doi_title_verified": true,
+      "registry_verified": true,
+      "data_verification_status": "Primary Lancet publication and 2026 extended follow-up reviewed; regimen heterogeneity and non-significant OS explicitly represented.",
+      "publication_status": "staged",
+      "release_ready": false,
+      "release_qa_status": "source verified; browser-render QA pending; 30-page PR gate incomplete",
+      "batch_date": "2026-11-26",
+      "batch_branch": "atlas-batch/2026-11-26-am"
     }
   ],
-  "last_updated": "2026-11-24T08:03:33+05:30",
+  "last_updated": "2026-11-26",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {
-    "branch": "atlas-batch/2026-11-23-am",
+    "branch": "atlas-batch/2026-11-26-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "last_activity": "2026-11-24T08:03:33+05:30",
-    "cycle_status": "INCOMPLETE — 0/30 uploaded; 30 carried-forward candidates and 15 additional unique candidates held",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; 2 new unique candidates source-verified and staged; 14 held; 15 duplicates; 1 deferred; 28 further verified trials required.",
     "expected_new_unique_trials": 30,
     "carry_forward_new_unique_candidates": 25,
     "additional_new_unique_candidates": 15,
@@ -12028,9 +12239,9 @@
     "duplicates_excluded_this_run": 0,
     "held_candidates_this_run": 4,
     "deferred_contrary_this_run": 1,
-    "pr_status": "not_opened",
+    "pr_status": "not_opened — batch has fewer than 30 verified unique studies and browser-render QA remains pending",
     "merge_status": "not_merged",
-    "deployment_status": "not verified — no PR/merge",
+    "deployment_status": "not_verified",
     "status": "INCOMPLETE — 6/30 new unique trial pages staged on branch; 24 additional unique pages required; no PR opened and no main merge",
     "next_action": "Continue with CUPISCO, then ROSEWOOD/SUNMO/GIMEMA/PANOVA/PARADIGM; complete all remaining 25 carry-forward candidates, browser-render all 6 staged pages, and open a PR only after exactly 30 new unique pages are source-verified and release-validated.",
     "batch_target_unique_trials": 30,
@@ -12044,24 +12255,51 @@
     "uploaded_to_main_this_run": 0,
     "remaining_to_target": 24,
     "selected_trial_ids": [
-      "litespark-005",
       "aeneas2",
+      "alina",
+      "litespark-005",
       "niche-2",
       "sunlight",
-      "alina",
-      "zuma-7"
+      "zuma-7",
+      "early-ons-npc",
+      "cupisco"
     ],
     "held_candidate_ids": [
+      "aeneas2",
+      "alina",
+      "litespark-005",
+      "niche-2",
+      "sunlight",
+      "zuma-7",
+      "excaliber-rrmm",
+      "panova-3",
+      "paradigm",
+      "destiny-lung04",
+      "clarity-gastric01",
+      "dasl-hicap",
       "companion-002",
-      "gimema-all2820",
-      "early-ons-npc",
-      "nrg-gy018"
+      "sunmo"
     ],
     "duplicate_or_repair_ids": [
       "dellphi-305"
     ],
-    "next_candidate_id": "cupisco",
-    "release_gate_status": "not_opened — exact 30-page batch required; 6 staged, 24 remaining"
+    "next_candidate_id": "rosewood",
+    "release_gate_status": "not_opened — exact 30-page batch required; 6 staged, 24 remaining",
+    "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "target_new_unique_trials": 30,
+    "screened_candidates": 32,
+    "duplicate_exclusions": 15,
+    "new_unique_candidates": 17,
+    "verified_new_unique_candidates": 2,
+    "held_unique_candidates": 14,
+    "deferred_contrary_candidates": 1,
+    "staged_page_drafts": 8,
+    "source_verified_staged_pages": 2,
+    "published_to_main": 0,
+    "remaining_verified_candidates_to_target": 28,
+    "deferred_candidate_ids": [
+      "saci-io-hr-plus"
+    ]
   },
   "last_run_date": "2026-11-23",
   "last_run_cycle": "morning",
