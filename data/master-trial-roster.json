@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-26T19:24:56+05:30",
+    "last_quality_check": "2026-11-26T19:54:35+05:30 — 10 staged page HTML structures re-read; finite CSS widths and static outcome visual structures present; browser-rendered QA not run. Nine carry-forward trial candidates re-reviewed; no page marked complete.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -204,7 +204,7 @@
       "id": "gemx",
       "trial": "GemX"
     },
-    "trial_of_day_records_reconciled_on": "2026-11-23",
+    "trial_of_day_records_reconciled_on": "2026-11-26",
     "trial_of_day_current_id": "panku-esophagus01",
     "trial_of_day_previous_id": "gemx",
     "trial_of_day_archive_reconciled": true,
@@ -1914,7 +1914,48 @@
       "browser_rendered_visualization_audit_completed": false,
       "note": "Four new roster records now carry canonical page paths; eight lung-SABR trial records resolve to verified anchors; ROSEL directory is a redirect/alias stub.",
       "branch_head_after_content_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
-    }
+    },
+    "current_tod": {
+      "date": "2026-11-26",
+      "id": "early-ons-npc",
+      "trial": "Early ONS NPC"
+    },
+    "previous_tod": {
+      "date": "2026-11-17",
+      "id": "panku-esophagus01",
+      "trial": "PANKU-Esophagus01"
+    },
+    "full_audit": false,
+    "partial_visualization_audit": {
+      "date": "2026-11-26",
+      "branch": "atlas-batch/2026-11-26-am",
+      "pages": [
+        "aeneas2",
+        "alina",
+        "cupisco",
+        "early-ons-npc",
+        "find-ctdna-surveillance",
+        "gimema-all2820",
+        "litespark-005",
+        "niche-2",
+        "sunlight",
+        "zuma-7"
+      ],
+      "result": "Static HTML inspection: all 10 expose data-outcome-static=true; finite CSS width values; no NaN/Infinity width/data-effect values detected. Structured absolute_effect records are present on pages with NNT pictograms. This is not browser-rendered QA and does not close source-level clinical review items.",
+      "browser_rendered": false
+    },
+    "partial_review_addenda": [
+      {
+        "date": "2026-11-26",
+        "cycle": "evening continuation — carry-forward queue review",
+        "scope": "10 staged branch-only page HTML structures and 9 carry-forward trial candidate identities/outcomes",
+        "pages_structurally_rechecked": 10,
+        "candidate_records_reaudited": 9,
+        "full_clinical_audit_completed": false,
+        "browser_rendered_qa_completed": false,
+        "notes": "No existing main-branch canonical page was clinically re-audited in this continuation. Full recursive audit remains open."
+      }
+    ]
   },
   "trials": [
     {
@@ -12394,12 +12435,12 @@
   "active_batch": {
     "branch": "atlas-batch/2026-11-26-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "last_activity": "2026-11-26T19:24:56+05:30",
-    "cycle_status": "INCOMPLETE — 0/30 uploaded; 3 source-verified page drafts staged; 15 additional unique candidates screened and held; 27 further verified unique pages required.",
+    "last_activity": "2026-11-26T19:54:35+05:30",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; 10 new unique pages staged on branch, 3 source-verified drafts and 7 incomplete drafts; 9 carry-forward candidates re-reviewed and held; 27 additional fully verified unique pages required.",
     "expected_new_unique_trials": 30,
     "carry_forward_new_unique_candidates": 25,
     "additional_new_unique_candidates": 15,
-    "staged_new_page_count": 6,
+    "staged_new_page_count": 10,
     "page_ready_candidates": 0,
     "pages_to_build": 27,
     "uploaded_to_main": 0,
@@ -12411,13 +12452,13 @@
     "pr_status": "not opened — exact 30-page batch not met; local release validator and browser-render QA not completed",
     "merge_status": "not merged",
     "deployment_status": "not verified",
-    "status": "INCOMPLETE — 0/30 uploaded; 3 source-verified page drafts staged; 15 additional unique candidates screened and held; 27 further verified unique pages required.",
-    "next_action": "Continue with OVHIPEC-1, PRIMA, ALPINE, MAIA, PERSEUS, CARTITUDE-4, DREAMM-7, AEGEAN and IMpower010; complete all required extraction; run validator and browser preview; open PR only at exactly 30.",
+    "status": "INCOMPLETE — 0/30 uploaded; 10 new unique pages staged on branch, 3 source-verified drafts and 7 incomplete drafts; 9 carry-forward candidates re-reviewed and held; 27 additional fully verified unique pages required.",
+    "next_action": "Complete missing primary-source extraction for the nine held carry-forward candidates; continue new disease-site discovery; finish browser-rendered QA and local release validator; open PR only when exactly 30 unique pages are fully verified.",
     "batch_target_unique_trials": 30,
     "selected_from_carry_forward": 5,
     "source_verified_staged_page_count": 3,
     "browser_render_pending_page_count": 10,
-    "new_candidates_screened_this_run": 11,
+    "new_candidates_screened_this_run": 0,
     "new_unique_candidates_this_run": 15,
     "duplicate_exclusions_this_run": 1,
     "verified_candidates_this_run": 0,
@@ -12483,8 +12524,8 @@
     "duplicate_or_repair_ids": [
       "dellphi-305"
     ],
-    "next_candidate_id": "ovhipec-1",
-    "release_gate_status": "not_opened — exact 30-page batch required; 6 staged, 24 remaining",
+    "next_candidate_id": "next-guideline-derived-candidate",
+    "release_gate_status": "not opened — 10 new page files/roster entries staged; 3 source-verified drafts; 0 page-ready; 27 additional fully verified unique pages required; exact 30-page gate not met.",
     "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "target_new_unique_trials": 30,
     "screened_candidates": 49,
@@ -12512,8 +12553,29 @@
     "total_duplicates_in_batch": 15,
     "total_new_unique_in_batch": 34,
     "total_held_in_batch": 30,
-    "last_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c",
-    "last_content_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c"
+    "last_commit": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
+    "last_content_commit": "75569875aa94f2fcfcd18e5d4dbd828ba0443c0c",
+    "carry_forward_candidates_reaudited_this_run": 9,
+    "unique_identities_reconfirmed_this_run": 9,
+    "held_candidates_reaudited_this_run": 9,
+    "next_candidate_status": "not yet screened — next discovery pass must select a new disease-site/subset candidate after the nine carry-forward reviews.",
+    "continuation_runs": [
+      {
+        "timestamp": "2026-11-26T19:54:35+05:30",
+        "cycle": "evening continuation — carry-forward queue review",
+        "branch_head_before": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
+        "candidates_reaudited": 9,
+        "new_candidates_screened": 0,
+        "unique_identities_reconfirmed": 9,
+        "duplicates": 0,
+        "held": 9,
+        "fully_page_verified": 0,
+        "uploaded": 0,
+        "queue_integrity_repair": true,
+        "staged_pages_structurally_rechecked": 10,
+        "note": "No pages added in this continuation; 10 existing branch-only page files structurally re-read."
+      }
+    ]
   },
   "last_run_date": "2026-11-23",
   "last_run_cycle": "morning",

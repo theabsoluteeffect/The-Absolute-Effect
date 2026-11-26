@@ -1,0 +1,829 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-11-26",
+  "run_timestamp": "2026-11-26T19:54:35+05:30",
+  "cycle": "evening continuation — carry-forward queue review",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "branch": "atlas-batch/2026-11-26-am",
+    "main_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_before": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
+    "branch_head_after": null,
+    "branch_status": "unmerged active serialized batch"
+  },
+  "run_status": "INCOMPLETE",
+  "target": {
+    "new_unique_underlying_trials": 30,
+    "uploaded": 0,
+    "not_uploaded": 30
+  },
+  "candidate_summary": {
+    "new_candidates_screened_this_run": 0,
+    "carry_forward_candidates_reaudited": 9,
+    "unique_identities_reconfirmed": 9,
+    "duplicates_found": 0,
+    "fully_page_verified": 0,
+    "held": 9,
+    "uploaded": 0
+  },
+  "candidates": [
+    {
+      "id": "ovhipec-1",
+      "name": "OVHIPEC-1",
+      "aliases": [
+        "OVHIPEC",
+        "OVHIPEC-1",
+        "NCT00426257"
+      ],
+      "site": "Epithelial ovarian cancer",
+      "setting": "FIGO stage III; interval cytoreductive surgery after neoadjuvant platinum-taxane chemotherapy",
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "primary_pmid": "29342393",
+      "primary_title": "Hyperthermic Intraperitoneal Chemotherapy in Ovarian Cancer",
+      "registry_id": "NCT00426257",
+      "followups": [
+        {
+          "doi": "10.1016/S1470-2045(23)00396-0",
+          "pmid": "37708912",
+          "title": "Cytoreductive surgery with or without hyperthermic intraperitoneal chemotherapy in patients with advanced ovarian cancer (OVHIPEC-1): final survival analysis of a randomised, controlled, phase 3 trial"
+        }
+      ],
+      "evidence": {
+        "design": "Multicentre, open-label, phase III randomized trial; 245 randomized (surgery n=123; surgery+HIPEC n=122).",
+        "population": "Stage III epithelial ovarian cancer with at least stable disease after three cycles of carboplatin (AUC 5–6) plus paclitaxel 175 mg/m²; interval surgery feasible for complete or optimal cytoreduction.",
+        "intervention": "Interval cytoreductive surgery plus cisplatin HIPEC 100 mg/m²; postoperative carboplatin/paclitaxel for three further cycles.",
+        "comparator": "Interval cytoreductive surgery without HIPEC; same postoperative chemotherapy.",
+        "primary_endpoint": "Recurrence-free survival.",
+        "followup": "Final survival analysis; median follow-up approximately 10.1 years.",
+        "efficacy": "Final analysis: median recurrence-free survival 14.3 vs 10.7 months (HR 0.63, 95% CI 0.48–0.83); median OS 44.9 vs 33.3 months (HR 0.70, 95% CI 0.53–0.92). Original primary report: grade 3–4 adverse events 27% with HIPEC vs 25% without.",
+        "nnt": "Not applicable: median RFS/OS and HRs alone are not valid NNT inputs; no verified common fixed-time absolute survival rates used."
+      },
+      "missing_evidence": [
+        "Final analysis table-level denominators and exact p values rechecked against full paper/supplement",
+        "HIPEC perfusion temperature, duration and sodium-thiosulfate protocol verified from protocol/supplement",
+        "Complete grade 3–5 toxicity and perioperative morbidity tables",
+        "Patient-reported QoL and treatment-burden data",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29342393/",
+        "https://doi.org/10.1056/NEJMoa1708618",
+        "https://pubmed.ncbi.nlm.nih.gov/37708912/",
+        "https://doi.org/10.1016/S1470-2045(23)00396-0",
+        "https://clinicaltrials.gov/study/NCT00426257"
+      ]
+    },
+    {
+      "id": "prima",
+      "name": "PRIMA/ENGOT-OV26/GOG-3012",
+      "aliases": [
+        "PRIMA",
+        "ENGOT-OV26",
+        "GOG-3012",
+        "NCT02655016"
+      ],
+      "site": "Advanced epithelial ovarian/fallopian tube/primary peritoneal cancer",
+      "setting": "Newly diagnosed stage III–IV; maintenance after response to first-line platinum chemotherapy",
+      "primary_doi": "10.1056/NEJMoa1910962",
+      "primary_pmid": "31562799",
+      "primary_title": "Niraparib in Patients with Newly Diagnosed Advanced Ovarian Cancer",
+      "registry_id": "NCT02655016",
+      "followups": [
+        {
+          "doi": "10.1016/j.annonc.2024.08.2241",
+          "pmid": "39284381",
+          "title": "Final overall survival and long-term safety results from the PRIMA/ENGOT-OV26/GOG-3012 trial"
+        }
+      ],
+      "evidence": {
+        "design": "Randomized, double-blind, phase III, placebo-controlled; 733 randomized 2:1 (niraparib n=487; placebo n=246).",
+        "population": "Newly diagnosed stage III–IV high-grade serous/endometrioid ovarian, fallopian tube or primary peritoneal carcinoma; complete/partial response after 6–9 cycles of first-line platinum chemotherapy; HRD defined by deleterious BRCA mutation and/or myChoice GIS ≥42.",
+        "intervention": "Oral niraparib once daily for up to 36 months or progression; initial 300 mg daily, amended individualized starting dose 200 mg if baseline weight <77 kg and/or platelets <150,000/mm³.",
+        "comparator": "Matched placebo once daily.",
+        "primary_endpoint": "Progression-free survival hierarchically tested in HRD and overall populations.",
+        "efficacy": "HRD median PFS 21.9 vs 10.4 months (HR 0.43, 95% CI 0.31–0.59; p<0.001); overall median PFS 13.8 vs 8.2 months (HR 0.62, 95% CI 0.50–0.76; p<0.001). Final OS analysis: HR 1.01 (95% CI 0.84–1.23; p=0.8834); 5-year PFS 22% vs 12% overall and 35% vs 16% in HRD.",
+        "safety": "Grade ≥3 anemia 31.0%, thrombocytopenia 28.7%, neutropenia 12.8%; thrombocytopenia led to discontinuation in 4.3%; primary publication reports no decrement in patient-reported quality of life. Long-term MDS/AML approximately 2.3% vs 1.6%.",
+        "nnt": "Landmark PFS: 5-year overall-population difference 10 percentage points (22−12), NNT 10; HRD difference 19 points (35−16), NNT 6. These are Kaplan–Meier landmark estimates, not crude event-count NNTs."
+      },
+      "missing_evidence": [
+        "Full grade 4–5 and serious adverse-event table extraction",
+        "Dose intensity, dose reductions/interruptions and treatment exposure by arm",
+        "Complete PRO/QoL domain scores and missing-data handling",
+        "Final OS subgroup/stratification table-level verification",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31562799/",
+        "https://doi.org/10.1056/NEJMoa1910962",
+        "https://pubmed.ncbi.nlm.nih.gov/39284381/",
+        "https://doi.org/10.1016/j.annonc.2024.08.2241",
+        "https://clinicaltrials.gov/study/NCT02655016"
+      ]
+    },
+    {
+      "id": "alpine",
+      "name": "ALPINE",
+      "aliases": [
+        "ALPINE",
+        "NCT03734016"
+      ],
+      "site": "Chronic lymphocytic leukemia/small lymphocytic lymphoma",
+      "setting": "Relapsed/refractory after at least one prior therapy",
+      "primary_doi": "10.1056/NEJMoa2211582",
+      "primary_pmid": "36511784",
+      "primary_title": "Zanubrutinib or Ibrutinib in Relapsed or Refractory Chronic Lymphocytic Leukemia",
+      "registry_id": "NCT03734016",
+      "followups": [
+        {
+          "doi": "10.1182/blood.2024024667",
+          "pmid": "39316666",
+          "title": "Final comparative analysis of zanubrutinib versus ibrutinib in patients with relapsed or refractory chronic lymphocytic leukemia"
+        }
+      ],
+      "evidence": {
+        "design": "Open-label, randomized phase III; 652 patients randomized 1:1.",
+        "population": "Relapsed/refractory CLL/SLL after at least one prior systemic therapy.",
+        "intervention": "Zanubrutinib 160 mg orally twice daily, continuous until progression or unacceptable toxicity.",
+        "comparator": "Ibrutinib 420 mg orally once daily, continuous until progression or unacceptable toxicity.",
+        "primary_endpoint": "Overall response rate; PFS a key secondary endpoint.",
+        "efficacy": "At the primary analysis, 24-month PFS 78.4% vs 65.9%; PFS HR 0.65 (95% CI 0.49–0.86; p=0.002). Final comparative analysis at approximately 42.5 months retained a PFS advantage (HR approximately 0.68).",
+        "nnt": "24-month PFS landmark difference 12.5 percentage points; NNT 8 (ceil[1/0.125])."
+      },
+      "missing_evidence": [
+        "Exact final-analysis denominators, confidence interval and p value re-extraction from full Blood article/supplement",
+        "Grade 3–5 adverse-event table and cardiac/bleeding/infection breakdown",
+        "Treatment discontinuation and exposure by arm",
+        "Patient-reported outcomes/QoL",
+        "Current NCCN citation mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36511784/",
+        "https://doi.org/10.1056/NEJMoa2211582",
+        "https://pubmed.ncbi.nlm.nih.gov/39316666/",
+        "https://doi.org/10.1182/blood.2024024667",
+        "https://clinicaltrials.gov/study/NCT03734016"
+      ]
+    },
+    {
+      "id": "maia",
+      "name": "MAIA",
+      "aliases": [
+        "MAIA",
+        "NCT02252172"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Newly diagnosed; transplant-ineligible",
+      "primary_doi": "10.1056/NEJMoa1817249",
+      "primary_pmid": "31141632",
+      "primary_title": "Daratumumab plus Lenalidomide and Dexamethasone for Untreated Myeloma",
+      "registry_id": "NCT02252172",
+      "followups": [
+        {
+          "doi": "10.1038/s41375-026-03097-9",
+          "pmid": "42637879",
+          "title": "Final overall survival analysis of the MAIA study"
+        }
+      ],
+      "evidence": {
+        "design": "Open-label randomized phase III; 737 transplant-ineligible patients.",
+        "population": "Newly diagnosed multiple myeloma not eligible for autologous stem-cell transplantation.",
+        "intervention": "Daratumumab plus lenalidomide and dexamethasone (D-Rd); daratumumab IV 16 mg/kg weekly cycles 1–2, every 2 weeks cycles 3–6, then every 4 weeks; lenalidomide 25 mg days 1–21 of 28-day cycles; dexamethasone weekly.",
+        "comparator": "Lenalidomide plus dexamethasone (Rd) on the same 28-day cycle.",
+        "primary_endpoint": "Progression-free survival.",
+        "efficacy": "Final OS analysis at median follow-up 89.3 months: median OS 90.3 vs 64.1 months (HR 0.67, 95% CI 0.55–0.82); 7-year OS 53.1% vs 39.3%.",
+        "safety": "The 2026 final OS report did not collect updated nonfatal AE data; original primary publication safety must be used and explicitly labelled as earlier follow-up.",
+        "nnt": "7-year OS landmark difference 13.8 percentage points; NNT 8 (ceil[1/0.138])."
+      },
+      "missing_evidence": [
+        "Re-extract original primary publication grade 3–5 AE, infections, cytopenias and discontinuations",
+        "Complete patient-reported QoL and treatment-burden data",
+        "Verify final OS analysis publication date versus issue date; it was electronically published 2026-08-24 and is not within the preceding month for ToD",
+        "Dose modifications/exposure and stratification details",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31141632/",
+        "https://doi.org/10.1056/NEJMoa1817249",
+        "https://pubmed.ncbi.nlm.nih.gov/42637879/",
+        "https://doi.org/10.1038/s41375-026-03097-9",
+        "https://clinicaltrials.gov/study/NCT02252172"
+      ]
+    },
+    {
+      "id": "perseus",
+      "name": "PERSEUS",
+      "aliases": [
+        "PERSEUS",
+        "NCT03710603"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Newly diagnosed; transplant-eligible",
+      "primary_doi": "10.1056/NEJMoa2312054",
+      "primary_pmid": "38084760",
+      "primary_title": "Daratumumab, Bortezomib, Lenalidomide, and Dexamethasone for Multiple Myeloma",
+      "registry_id": "NCT03710603",
+      "evidence": {
+        "design": "Open-label randomized phase III; 709 transplant-eligible patients.",
+        "population": "Newly diagnosed multiple myeloma eligible for autologous stem-cell transplantation.",
+        "intervention": "Daratumumab plus bortezomib, lenalidomide and dexamethasone (D-VRd), followed by autologous transplantation, consolidation and daratumumab/lenalidomide maintenance.",
+        "comparator": "VRd induction, autologous transplantation, consolidation and lenalidomide maintenance.",
+        "primary_endpoint": "Progression-free survival.",
+        "efficacy": "At median follow-up 47.5 months, 48-month PFS 84.3% vs 67.7%; HR 0.42 (95% CI 0.30–0.59; p<0.001).",
+        "safety": "Grade 3–4 neutropenia 62.1% vs 51.0%; thrombocytopenia 29.1% vs 17.3%; serious adverse events 57.0% vs 49.3%.",
+        "nnt": "48-month PFS landmark difference 16.6 percentage points; NNT 7 (ceil[1/0.166])."
+      },
+      "missing_evidence": [
+        "Exact full dose/schedule and transplant/maintenance algorithm from protocol",
+        "Grade 5 and treatment-related mortality details",
+        "QoL/PRO and treatment discontinuation/exposure",
+        "Subgroup and MRD timepoint/denominator extraction",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38084760/",
+        "https://doi.org/10.1056/NEJMoa2312054",
+        "https://clinicaltrials.gov/study/NCT03710603"
+      ]
+    },
+    {
+      "id": "cartitude-4",
+      "name": "CARTITUDE-4",
+      "aliases": [
+        "CARTITUDE-4",
+        "Cilta-cel or Standard Care",
+        "NCT04181827"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Lenalidomide-refractory relapsed/refractory disease after 1–3 prior lines",
+      "primary_doi": "10.1056/NEJMoa2303379",
+      "primary_pmid": "37272512",
+      "primary_title": "Cilta-cel or Standard Care in Lenalidomide-Refractory Multiple Myeloma",
+      "registry_id": "NCT04181827",
+      "evidence": {
+        "design": "Open-label randomized phase III; 419 patients (cilta-cel n=208; standard care n=211).",
+        "population": "Lenalidomide-refractory myeloma after 1–3 prior lines including a proteasome inhibitor and an immunomodulatory drug.",
+        "intervention": "Leukapheresis followed by ciltacabtagene autoleucel after lymphodepletion; bridging therapy permitted while product manufactured.",
+        "comparator": "Physician-choice standard care: pomalidomide/bortezomib/dexamethasone or daratumumab/pomalidomide/dexamethasone.",
+        "primary_endpoint": "Progression-free survival.",
+        "efficacy": "At median follow-up 15.9 months, median PFS not reached vs 11.8 months; HR 0.26 (95% CI 0.18–0.38; p<0.001). 12-month PFS 75.9% vs 48.6%.",
+        "safety": "Cytokine-release syndrome 76.1% (grade 3–4 1.1%); ICANS 4.5% (grade 1–2); cranial nerve palsy 9.1%; peripheral neuropathy 2.8%.",
+        "nnt": "12-month PFS landmark difference 27.3 percentage points; NNT 4 (ceil[1/0.273])."
+      },
+      "missing_evidence": [
+        "Exact cilta-cel target dose, lymphodepletion and bridging regimens from protocol",
+        "Updated grade 3–5 AE and treatment-related mortality from mature follow-up",
+        "Full patient-reported outcomes and QoL",
+        "Treatment burden/time-to-infusion and discontinuation details",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37272512/",
+        "https://doi.org/10.1056/NEJMoa2303379",
+        "https://pubmed.ncbi.nlm.nih.gov/41519141/",
+        "https://clinicaltrials.gov/study/NCT04181827"
+      ]
+    },
+    {
+      "id": "dreamm-7",
+      "name": "DREAMM-7",
+      "aliases": [
+        "DREAMM-7",
+        "BVd",
+        "NCT04246047"
+      ],
+      "site": "Multiple myeloma",
+      "setting": "Relapsed/refractory after at least one prior line",
+      "primary_doi": "10.1056/NEJMoa2405090",
+      "primary_pmid": "38828933",
+      "primary_title": "Belantamab Mafodotin, Bortezomib, and Dexamethasone for Multiple Myeloma",
+      "registry_id": "NCT04246047",
+      "evidence": {
+        "design": "Open-label randomized phase III; 494 patients (BVd n=243; DVd n=251).",
+        "population": "Relapsed/refractory multiple myeloma after at least one prior line.",
+        "intervention": "Belantamab mafodotin plus bortezomib and dexamethasone (BVd).",
+        "comparator": "Daratumumab plus bortezomib and dexamethasone (DVd).",
+        "primary_endpoint": "Progression-free survival.",
+        "efficacy": "At median follow-up 28.2 months, median PFS 36.6 vs 13.4 months (HR 0.41, 95% CI 0.31–0.53; p<0.001); 18-month OS 84% vs 73%; complete response or better plus MRD-negative 25% vs 10%.",
+        "safety": "Grade ≥3 adverse events 95% vs 78%; ocular events 79% vs 29%, usually managed with dose modifications; worsening visual acuity mostly resolved.",
+        "nnt": "18-month OS landmark difference 11 percentage points; NNT 10 (ceil[1/0.11])."
+      },
+      "missing_evidence": [
+        "Exact belantamab/bortezomib/dexamethasone dose and schedule from protocol",
+        "Detailed grade 3–5 ocular event breakdown and ophthalmic mitigation schedule",
+        "Patient-reported visual function/QoL",
+        "Discontinuation and dose-modification tables",
+        "Current guideline mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38828933/",
+        "https://doi.org/10.1056/NEJMoa2405090",
+        "https://clinicaltrials.gov/study/NCT04246047"
+      ]
+    },
+    {
+      "id": "aegean",
+      "name": "AEGEAN",
+      "aliases": [
+        "AEGEAN",
+        "NCT03800134"
+      ],
+      "site": "Resectable non-small-cell lung cancer",
+      "setting": "Perioperative; neoadjuvant chemo-immunotherapy followed by adjuvant immunotherapy",
+      "primary_doi": "10.1056/NEJMoa2304875",
+      "primary_pmid": "37870974",
+      "primary_title": "Perioperative Durvalumab for Resectable Non–Small-Cell Lung Cancer",
+      "registry_id": "NCT03800134",
+      "followups": [
+        {
+          "doi": "10.1200/JCO-25-02659",
+          "pmid": "42664473",
+          "title": "Long-term follow-up of perioperative durvalumab in resectable NSCLC (AEGEAN)"
+        }
+      ],
+      "evidence": {
+        "design": "Double-blind randomized phase III; 802 patients (durvalumab n=400; placebo n=402).",
+        "population": "Previously untreated resectable stage II–IIIB (N2) NSCLC; EGFR/ALK-altered patients excluded from the primary efficacy population by protocol amendment.",
+        "intervention": "Durvalumab 1500 mg IV every 3 weeks with four cycles of platinum-based neoadjuvant chemotherapy, surgery, then durvalumab 1500 mg every 4 weeks for 12 cycles.",
+        "comparator": "Placebo with the same neoadjuvant platinum chemotherapy, surgery and adjuvant placebo schedule.",
+        "primary_endpoint": "Event-free survival and pathological complete response.",
+        "efficacy": "Primary analysis EFS HR 0.68 (95% CI 0.53–0.88; p=0.004); pCR 17.2% vs 4.3%. 2026 follow-up at median 25.9 months: EFS HR 0.69 (95% CI 0.55–0.88); DFS HR 0.66 (95% CI 0.47–0.92); OS HR 0.89 (95% CI 0.70–1.14).",
+        "safety": "Grade 3–4 adverse events during neoadjuvant treatment approximately 42.4% vs 43.2%; adjuvant grade 3–4 AEs 15.4% vs 10.6% in the follow-up report.",
+        "nnt": "pCR absolute difference 12.9 percentage points (17.2−4.3); NNT 8 for one additional pCR."
+      },
+      "missing_evidence": [
+        "Exact chemotherapy backbone by histology and renal/neuropathy eligibility",
+        "Detailed surgical completion and postoperative treatment exposure",
+        "Full grade 3–5 AE table and treatment discontinuations",
+        "QoL/PRO and patient-reported symptoms",
+        "Current NCCN perioperative recommendation mapping"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37870974/",
+        "https://doi.org/10.1056/NEJMoa2304875",
+        "https://pubmed.ncbi.nlm.nih.gov/42664473/",
+        "https://doi.org/10.1200/JCO-25-02659",
+        "https://clinicaltrials.gov/study/NCT03800134"
+      ]
+    },
+    {
+      "id": "impower010",
+      "name": "IMpower010",
+      "aliases": [
+        "IMpower010",
+        "NCT02486718"
+      ],
+      "site": "Resected non-small-cell lung cancer",
+      "setting": "Adjuvant after platinum-based chemotherapy",
+      "primary_doi": "10.1016/S0140-6736(21)02098-5",
+      "primary_pmid": "34555333",
+      "primary_title": "Adjuvant atezolizumab after adjuvant chemotherapy in resected stage IB–IIIA non-small-cell lung cancer (IMpower010): a randomised, multicentre, open-label, phase 3 trial",
+      "registry_id": "NCT02486718",
+      "followups": [
+        {
+          "doi": "10.1200/JCO-24-01681",
+          "pmid": "40446184",
+          "title": "Five-year follow-up of adjuvant atezolizumab in resected NSCLC (IMpower010)"
+        }
+      ],
+      "evidence": {
+        "design": "Open-label randomized phase III; 1005 patients in the intention-to-treat population.",
+        "population": "Completely resected stage IB (tumour ≥4 cm)–IIIA NSCLC after cisplatin-based adjuvant chemotherapy.",
+        "intervention": "Atezolizumab 1200 mg IV every 3 weeks for 16 cycles (approximately one year).",
+        "comparator": "Best supportive care/observation after adjuvant cisplatin-based chemotherapy.",
+        "primary_endpoint": "Investigator-assessed disease-free survival in stage II–IIIA tumours with PD-L1 expression ≥1%.",
+        "efficacy": "At median follow-up 32 months, DFS HR 0.66 (95% CI 0.50–0.88; p=0.0039) in stage II–IIIA PD-L1 ≥1%; stage II–IIIA overall HR 0.79 (95% CI 0.64–0.96; p=0.020). Five-year follow-up: ITT DFS HR 0.85 (95% CI 0.71–1.01; p=0.07); stage II–IIIA PD-L1 ≥1% HR 0.70 (95% CI 0.55–0.91); ITT OS HR 0.97 (95% CI 0.78–1.22).",
+        "safety": "Full grade 3–5 safety table not extracted in this review.",
+        "nnt": "Not applicable from HR-only long-term results; no verified common fixed-time absolute DFS/OS rates used."
+      },
+      "missing_evidence": [
+        "Full primary and 5-year subgroup denominators and hierarchical testing sequence",
+        "Grade 3–5 AE, immune-mediated toxicity and discontinuation tables",
+        "Patient-reported QoL",
+        "Current guideline mapping beyond the verified ASCO 2022 rapid update"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34555333/",
+        "https://doi.org/10.1016/S0140-6736(21)02098-5",
+        "https://doi.org/10.1200/JCO-24-01681",
+        "https://clinicaltrials.gov/study/NCT02486718"
+      ]
+    }
+  ],
+  "duplicate_check_table": [
+    {
+      "candidate": "OVHIPEC-1",
+      "aliases": [
+        "OVHIPEC",
+        "OVHIPEC-1",
+        "NCT00426257"
+      ],
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "primary_pmid": "29342393",
+      "registry_id": "NCT00426257",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "PRIMA/ENGOT-OV26/GOG-3012",
+      "aliases": [
+        "PRIMA",
+        "ENGOT-OV26",
+        "GOG-3012",
+        "NCT02655016"
+      ],
+      "primary_doi": "10.1056/NEJMoa1910962",
+      "primary_pmid": "31562799",
+      "registry_id": "NCT02655016",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "ALPINE",
+      "aliases": [
+        "ALPINE",
+        "NCT03734016"
+      ],
+      "primary_doi": "10.1056/NEJMoa2211582",
+      "primary_pmid": "36511784",
+      "registry_id": "NCT03734016",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "MAIA",
+      "aliases": [
+        "MAIA",
+        "NCT02252172"
+      ],
+      "primary_doi": "10.1056/NEJMoa1817249",
+      "primary_pmid": "31141632",
+      "registry_id": "NCT02252172",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "PERSEUS",
+      "aliases": [
+        "PERSEUS",
+        "NCT03710603"
+      ],
+      "primary_doi": "10.1056/NEJMoa2312054",
+      "primary_pmid": "38084760",
+      "registry_id": "NCT03710603",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "CARTITUDE-4",
+      "aliases": [
+        "CARTITUDE-4",
+        "Cilta-cel or Standard Care",
+        "NCT04181827"
+      ],
+      "primary_doi": "10.1056/NEJMoa2303379",
+      "primary_pmid": "37272512",
+      "registry_id": "NCT04181827",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "DREAMM-7",
+      "aliases": [
+        "DREAMM-7",
+        "BVd",
+        "NCT04246047"
+      ],
+      "primary_doi": "10.1056/NEJMoa2405090",
+      "primary_pmid": "38828933",
+      "registry_id": "NCT04246047",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "AEGEAN",
+      "aliases": [
+        "AEGEAN",
+        "NCT03800134"
+      ],
+      "primary_doi": "10.1056/NEJMoa2304875",
+      "primary_pmid": "37870974",
+      "registry_id": "NCT03800134",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    },
+    {
+      "candidate": "IMpower010",
+      "aliases": [
+        "IMpower010",
+        "NCT02486718"
+      ],
+      "primary_doi": "10.1016/S0140-6736(21)02098-5",
+      "primary_pmid": "34555333",
+      "registry_id": "NCT02486718",
+      "matched_roster_entry": null,
+      "matched_trial_page": null,
+      "matched_archive_entry": null,
+      "matched_current_or_previous_tod": null,
+      "prior_daily_evidence": "data/daily-evidence-2026-11-21-morning.json",
+      "identity_assessment": "one distinct underlying randomized study; primary/follow-up publications are aliases/analyses of the same study, not separate trials",
+      "final_disposition": "held — carry-forward unique candidate; complete page extraction and QA not met"
+    }
+  ],
+  "nnt_nnh_qa": {
+    "calculations": [
+      {
+        "trial": "PRIMA",
+        "endpoint": "5-year PFS, overall population",
+        "horizon": "5 years",
+        "rates": "22% vs 12%",
+        "absolute_difference_pp": 10,
+        "nnt": 10,
+        "calculation": "ceil(1/0.10)=10",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "PRIMA",
+        "endpoint": "5-year PFS, HRD subgroup",
+        "horizon": "5 years",
+        "rates": "35% vs 16%",
+        "absolute_difference_pp": 19,
+        "nnt": 6,
+        "calculation": "ceil(1/0.19)=6",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "ALPINE",
+        "endpoint": "PFS",
+        "horizon": "24 months",
+        "rates": "78.4% vs 65.9%",
+        "absolute_difference_pp": 12.5,
+        "nnt": 8,
+        "calculation": "ceil(1/0.125)=8",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "MAIA",
+        "endpoint": "OS",
+        "horizon": "7 years",
+        "rates": "53.1% vs 39.3%",
+        "absolute_difference_pp": 13.8,
+        "nnt": 8,
+        "calculation": "ceil(1/0.138)=8",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "PERSEUS",
+        "endpoint": "PFS",
+        "horizon": "48 months",
+        "rates": "84.3% vs 67.7%",
+        "absolute_difference_pp": 16.6,
+        "nnt": 7,
+        "calculation": "ceil(1/0.166)=7",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "CARTITUDE-4",
+        "endpoint": "PFS",
+        "horizon": "12 months",
+        "rates": "75.9% vs 48.6%",
+        "absolute_difference_pp": 27.3,
+        "nnt": 4,
+        "calculation": "ceil(1/0.273)=4",
+        "status": "landmark KM-rate calculation; source values verified"
+      },
+      {
+        "trial": "DREAMM-7",
+        "endpoint": "OS",
+        "horizon": "18 months",
+        "rates": "84% vs 73%",
+        "absolute_difference_pp": 11,
+        "nnt": 10,
+        "calculation": "ceil(1/0.11)=10",
+        "status": "landmark OS-rate calculation; source values verified"
+      },
+      {
+        "trial": "AEGEAN",
+        "endpoint": "pathological complete response",
+        "horizon": "at surgery",
+        "rates": "17.2% vs 4.3%",
+        "absolute_difference_pp": 12.9,
+        "nnt": 8,
+        "calculation": "ceil(1/0.129)=8",
+        "status": "binary endpoint difference; source values verified"
+      },
+      {
+        "trial": "OVHIPEC-1",
+        "endpoint": "RFS/OS",
+        "horizon": "median survival",
+        "status": "NNT not applicable: do not derive from median survival or HR alone"
+      },
+      {
+        "trial": "IMpower010",
+        "endpoint": "DFS/OS",
+        "horizon": "time-to-event HRs",
+        "status": "NNT not applicable: no same-horizon absolute rates verified in this review"
+      }
+    ],
+    "nnH_calculated": 0,
+    "nnH_reason": "No same-horizon, comparable harm estimates were extracted; cumulative grade ≥3 adverse-event percentages are not converted to NNH without matched time horizon and event definition."
+  },
+  "guideline_review": {
+    "nccn_full_guideline_accessible": false,
+    "official_portal": "https://www.nccn.org/guidelines/category_1",
+    "cll_insights": {
+      "title": "NCCN Guidelines® Insights: Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma, Version 2.2026",
+      "version": "2.2026",
+      "date": "2026-03-01",
+      "doi": "10.6004/jnccn.2026.0012",
+      "pmid": "41825137",
+      "scope": "NCCN-authored Insights metadata/abstract only; full reference list inaccessible; not the complete guideline."
+    },
+    "subsets_reviewed": [
+      "Ovarian cancer: first-line maintenance and interval cytoreduction/HIPEC",
+      "CLL/SLL: relapsed BTK-inhibitor pathway",
+      "Multiple myeloma: transplant-ineligible NDMM, transplant-eligible NDMM, lenalidomide-refractory and relapsed disease",
+      "NSCLC: perioperative resectable and adjuvant post-platinum settings"
+    ],
+    "alternatives_reviewed": [
+      {
+        "guideline_title": "ESMO Clinical Practice Guideline Express Update on the management of epithelial ovarian cancer",
+        "version": "2026-02 (electronic publication 2026-01-28)",
+        "source_type": "Official ESMO Clinical Practice Guideline Express Update; alternative source, not NCCN and not the complete underlying ESMO guideline",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/41741111/",
+        "doi": "10.1016/j.esmoop.2025.106032",
+        "pmid": "41741111",
+        "pmcid": "PMC12947637",
+        "reviewed_on": "2026-11-26",
+        "scope": "New rucaparib first-line maintenance and mirvetuximab for selected platinum-resistant high-FRα disease; update to the underlying ESMO epithelial ovarian cancer guideline.",
+        "scope_limitations": "Express update only; no exact PRIMA or OVHIPEC reference number was extracted in this run."
+      },
+      {
+        "guideline_title": "EHA–EMN Evidence-Based Guidelines for diagnosis, treatment and follow-up of patients with multiple myeloma",
+        "version": "2025-09",
+        "source_type": "Full peer-reviewed EHA–EMN evidence-based guideline; alternative source, not NCCN",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/40624367/",
+        "doi": "10.1038/s41571-025-01041-x",
+        "pmid": "40624367",
+        "reviewed_on": "2026-11-26",
+        "scope": "Newly diagnosed and relapsed/refractory MM treatment pathways, transplant-eligible/ineligible and follow-up.",
+        "scope_limitations": "Trial-specific reference numbers for MAIA, PERSEUS, CARTITUDE-4 and DREAMM-7 not extracted in this run."
+      },
+      {
+        "guideline_title": "Treatment of Multiple Myeloma: ASCO Living Guideline",
+        "version": "2026.1.2",
+        "source_type": "Official ASCO living guideline; alternative source, not NCCN",
+        "source_url": "https://ascopubs.org/guidelines/treatment-multiple-myeloma-asco-living-guideline",
+        "publication_date": "2026-06-26",
+        "reviewed_on": "2026-11-26",
+        "scope": "Evidence-based recommendations based on randomized trials through 2026-04-30.",
+        "scope_limitations": "No exact trial citation/reference mapping for the four MM candidates was extracted in this run."
+      },
+      {
+        "guideline_title": "ESMO Clinical Practice Guideline interim update on new targeted therapies in the first line and at relapse of chronic lymphocytic leukaemia",
+        "version": "2024-09",
+        "source_type": "Official ESMO Clinical Practice Guideline interim update; alternative source, not NCCN",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/38969011/",
+        "doi": "10.1016/j.annonc.2024.06.016",
+        "pmid": "38969011",
+        "reviewed_on": "2026-11-26",
+        "scope": "Targeted therapies in first-line and relapsed CLL.",
+        "scope_limitations": "Interim update, not a complete current CLL guideline; no exact ALPINE reference number extracted."
+      },
+      {
+        "guideline_title": "2025 British Society for Haematology Guideline for the treatment of chronic lymphocytic leukaemia",
+        "version": "2025-10-09",
+        "source_type": "Official BSH guideline; alternative source, not NCCN",
+        "source_url": "https://b-s-h.org.uk/guidelines/guidelines/2025-british-society-for-haematology-guideline-for-the-treatment-of-chronic-lymphocytic-leukaemia",
+        "doi": "10.1111/bjh.70100",
+        "pmid": "41069109",
+        "reviewed_on": "2026-11-26",
+        "scope": "CLL treatment recommendations using GRADE methodology; current licensed BTK/BCL2 options.",
+        "scope_limitations": "No exact ALPINE reference number extracted in this run."
+      },
+      {
+        "guideline_title": "Adjuvant Systemic Therapy and Adjuvant Radiation Therapy for Stage I-IIIA Completely Resected Non–Small-Cell Lung Cancer: ASCO Guideline Rapid Recommendation Update",
+        "version": "2022-02-15",
+        "source_type": "Official ASCO rapid recommendation update; alternative source, not NCCN",
+        "source_url": "https://ascopubs.org/doi/10.1200/JCO.22.00051",
+        "doi": "10.1200/JCO.22.00051",
+        "reviewed_on": "2026-11-26",
+        "scope": "Adjuvant atezolizumab after cisplatin-based chemotherapy for PD-L1 ≥1% stage II–IIIA NSCLC, except sensitizing EGFR mutations; recommendation type evidence-based/panel consensus, evidence quality high, strength strong.",
+        "scope_limitations": "Focused rapid update for completely resected stage I–IIIA disease; does not address perioperative AEGEAN regimen."
+      }
+    ],
+    "exact_nccn_citations_verified": 0,
+    "alternative_mapping_verified": [
+      {
+        "trial_id": "impower010",
+        "source": "ASCO Rapid Recommendation Update 2022",
+        "reference_number": "3",
+        "recommendation_strength": "strong",
+        "evidence_quality": "high",
+        "nccn_provenance": false
+      }
+    ],
+    "freshness_tasks_open": true
+  },
+  "repair_queue": {
+    "open_before": 221,
+    "resolved_before": 73,
+    "open_after": 222,
+    "resolved_after": 74,
+    "queue_integrity_repair": "PRIMA identifiers separated from oral-paclitaxel registry item",
+    "clinical_page_repairs": 0,
+    "items_closed": 1,
+    "items_opened": 1
+  },
+  "page_structure_audit": {
+    "pages_rechecked": 10,
+    "ids": [
+      "aeneas2",
+      "alina",
+      "cupisco",
+      "early-ons-npc",
+      "find-ctdna-surveillance",
+      "gimema-all2820",
+      "litespark-005",
+      "niche-2",
+      "sunlight",
+      "zuma-7"
+    ],
+    "static_visuals_present": 10,
+    "finite_widths": 10,
+    "nonfinite_widths": 0,
+    "browser_rendered": false,
+    "clinical_source_audit_of_existing_main_pages": 0
+  },
+  "trial_of_the_day": {
+    "current": "early-ons-npc",
+    "publication_date": "2026-11-12",
+    "eligible_within_previous_month": true,
+    "previous": "panku-esophagus01",
+    "archive_consistent": {
+      "current_in_archive": true,
+      "previous_in_archive": true
+    }
+  },
+  "cumulative": {
+    "main_unique_studies": 467,
+    "main_remaining_to_1000": 533,
+    "active_branch_unique_studies": 477,
+    "branch_only_roster_additions": 10,
+    "merged_additions": 0
+  },
+  "release_gate": {
+    "exact_30_unique_pages_ready": false,
+    "local_release_validator": "not run — repository clone unavailable in local runtime",
+    "browser_rendered_outcome_audit": "not run",
+    "pull_request": "not opened; exact 30-page batch and pre-PR gate not met",
+    "merge": "not merged",
+    "main_branch_unchanged": true,
+    "deployment": "not verified"
+  },
+  "next_actions": [
+    "Complete full primary-source extraction and page build for the nine held carry-forward candidates.",
+    "Continue discovery from additional disease-site guideline subsets; do not count these nine as newly screened this run.",
+    "Complete browser-rendered visual QA and the local strict release validator once the complete 30-page batch is ready.",
+    "Only then open a PR and wait for all required checks before merge."
+  ]
+}
