@@ -123,7 +123,9 @@
         "https://doi.org/10.1016/j.annonc.2026.06.012",
         "https://clinicaltrials.gov/study/NCT04448886"
       ],
-      "next_action": "Revisit if guideline context or mature subgroup data warrants a dedicated page."
+      "next_action": "Revisit if guideline context or mature subgroup data warrants a dedicated page.",
+      "last_reviewed_on": "2026-11-26",
+      "last_review_note": "Rechecked in the current source pass; negative/contrary phase II evidence remains deferred and is not a new page candidate."
     },
     {
       "trial_id": "irocas",
@@ -613,8 +615,16 @@
       "status_note": "New underlying study; primary report dated 2026-10-23; deferred, not a Trial-of-the-Day candidate on 2026-11-23."
     }
   ],
-  "last_run": "absolute-effect-2026-11-23-evening-run-11",
-  "last_updated": "2026-11-23",
+  "last_run": {
+    "date": "2026-11-26",
+    "cycle": "morning",
+    "reconfirmed_existing_deferred": [
+      "SACI-IO HR+"
+    ],
+    "new_items_added": 0,
+    "note": "No duplicate deferred item created; SACI-IO remains in the existing contrary-evidence queue."
+  },
+  "last_updated": "2026-11-26",
   "last_run_date": "2026-11-23",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
   "last_run_note": "Added PROSPER RCC, IMmotion010 and CA017-078 as new unique negative/contrary studies; retained in the deferred queue, not published."

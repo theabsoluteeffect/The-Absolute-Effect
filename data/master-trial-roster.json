@@ -1361,7 +1361,7 @@
     "last_run_date": "2026-11-23",
     "last_run_cycle": "morning",
     "last_run_branch": "atlas-batch/2026-11-23-am",
-    "last_run_status": "INCOMPLETE — 0/30 uploaded; 15 new unique candidates held; one contrary-evidence study deferred; no PR/merge.",
+    "last_run_status": "INCOMPLETE — branch-only work; no PR, merge or production deployment",
     "last_merged_batch": {
       "date": "2026-11-17",
       "merged_on": "2026-11-18",
@@ -2984,7 +2984,7 @@
       "site": "Head and Neck Squamous Cell Carcinoma",
       "discipline": "Medical Oncology",
       "setting": "Neoadjuvant / Perioperative",
-      "setting_detail": "2-year EFS 77.8% vs 46.1%; HR 0.34 (95% CI 0.17–0.68; P=0.001); absolute gain 31.7 points; NNT 4.",
+      "setting_detail": "Two-year event-free survival was 77.8% versus 46.1% (HR 0.34, 95% CI 0.17–0.68; p=0.0020); two-year overall survival was 92.0% versus 69.1% (HR 0.253, 95% CI 0.101–0.636; p=0.0035). Grade ≥3 treatment-related adverse events were 58.7% versus 21.0% in the ESMO conference report. NNT 4 for two-year EFS; no NNH assigned.",
       "question": "What is the clinical effect of CAMORAL in Head and Neck Squamous Cell Carcinoma (neoadjuvant / perioperative)?",
       "source": "trial-pages/camoral/",
       "path": "trial-pages/camoral/",
@@ -2999,17 +2999,32 @@
       "batch_date": "2026-11-14",
       "quality_check_date": "2026-11-14",
       "absolute_effect": {
-        "endpoint": "Event-free survival",
+        "endpoint": "2-year event-free survival",
         "horizon": "2 years",
         "benefit_percentage_points": 31.7,
         "nnt": 4,
-        "harm_endpoint": "Grade ≥3 treatment-emergent adverse events",
-        "harm_percentage_points": 22.9,
-        "nnh": 5,
-        "notes": "NNH is descriptive and based on all-cause grade ≥3 TEAEs."
+        "source_url": "https://www.annalsofoncology.org/article/S0923-7534(25)02871-6/fulltext",
+        "calculation": "77.8% − 46.1% = 31.7 percentage points; 1/0.317 = 3.15, rounded up to NNT 4.",
+        "event_definition": "EFS event by 2 years",
+        "population": "Randomized phase II CAMORAL population",
+        "notes": "Numerical results are from the ESMO 2025 conference report. Grade ≥3 treatment-related AE incidence is cumulative over variable follow-up and has no valid fixed-time NNH."
       },
-      "primary_title": "Perioperative Camrelizumab Plus Chemotherapy in Locally Advanced Head and Neck Squamous Cell Carcinoma",
-      "registry_id": "ChiCTR2000037980"
+      "primary_title": "Perioperative Camrelizumab Plus Chemotherapy in Locally Advanced Head and Neck Squamous Cell Carcinoma: A Randomized Clinical Trial",
+      "registry_id": "ChiCTR2000037980",
+      "primary_doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "primary_pmid": "43018983",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4642",
+        "https://pubmed.ncbi.nlm.nih.gov/43018983/",
+        "https://www.annalsofoncology.org/article/S0923-7534(25)02871-6/fulltext",
+        "https://clinicaltrials.gov/study/ChiCTR2000037980"
+      ],
+      "source_verification_status": "ESMO 2025 primary conference report numerically verified; JAMA Oncology title/DOI/PMID metadata verified; full JAMA text not mined due publisher AI text/data-mining restriction.",
+      "nccn_provenance": "not verified — current NCCN Head and Neck full guideline/reference list inaccessible; NCCN Insights v2.2025 is limited in scope and not treated as a complete guideline.",
+      "release_ready": false,
+      "release_qa_status": "static source values and NNT verified; browser-render QA pending; batch PR gate incomplete",
+      "last_source_reviewed_on": "2026-11-26"
     },
     {
       "id": "cao-aro-aio-94",
@@ -12239,7 +12254,7 @@
     "duplicates_excluded_this_run": 0,
     "held_candidates_this_run": 4,
     "deferred_contrary_this_run": 1,
-    "pr_status": "not_opened — batch has fewer than 30 verified unique studies and browser-render QA remains pending",
+    "pr_status": "not_opened — fewer than 30 verified unique studies; browser-render QA pending",
     "merge_status": "not_merged",
     "deployment_status": "not_verified",
     "status": "INCOMPLETE — 6/30 new unique trial pages staged on branch; 24 additional unique pages required; no PR opened and no main merge",
@@ -12299,7 +12314,8 @@
     "remaining_verified_candidates_to_target": 28,
     "deferred_candidate_ids": [
       "saci-io-hr-plus"
-    ]
+    ],
+    "last_updated": "2026-11-26"
   },
   "last_run_date": "2026-11-23",
   "last_run_cycle": "morning",

@@ -83,7 +83,22 @@
     "outcome_visual_audit_run_id": 45192486550,
     "outcome_visual_audit_conclusion": "success",
     "branch_preview_deployment_status": "success",
-    "branch_preview_url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev"
+    "branch_preview_url": "https://atlas-batch-2026-11-23-am.theabsoluteeffect.pages.dev",
+    "last_partial_review": {
+      "date": "2026-11-26",
+      "branch": "atlas-batch/2026-11-26-am",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "pages_inspected": 11,
+      "primary_source_verified_new_pages": 2,
+      "repairs": [
+        "CAMORAL absolute-effect and chart repair",
+        "NICHE-2 single-arm response visualization"
+      ],
+      "roster_reconciliations": 6,
+      "browser_rendered_qa_complete": false,
+      "full_clinical_audit_complete": false,
+      "notes": "Rechecked page/roster/index links for CheckMate 816, KEYNOTE-A18, LACC and SHAPE; all are rostered and index-linked on the branch. This was a partial structural review, not a full primary-source audit."
+    }
   },
   "open_items": [
     {
@@ -968,7 +983,7 @@
       "page_path": null,
       "issue_type": "candidate_primary_evidence_review",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_on": "2026-11-15",
       "candidate_name": "EXCALIBER-RRMM",
       "primary_doi": "10.1016/S1470-2045(26)00450-X",
@@ -979,10 +994,11 @@
         "https://doi.org/10.1016/S1470-2045(26)00450-X",
         "https://clinicaltrials.gov/study/NCT04975997"
       ],
-      "evidence": "The published first analysis reports MRD-negative complete response; the PFS co-primary endpoint remains pending. Do not present this as mature PFS evidence.",
-      "next_action": "Resolve the exact missing primary-source/protocol/registry item recorded above; do not draft or publish until identity and required data are independently verified.",
+      "evidence": "The published first analysis reports MRD-negative complete response; the PFS co-primary endpoint remains pending. Do not present this as mature PFS evidence. Publisher record contains an explicit restriction on AI text/data mining; the primary article's numeric data were not mined. No independent FDA review/label dataset sufficient for full efficacy and grade 3–5 safety extraction was obtained.",
+      "next_action": "Retrieve an authoritative FDA multidisciplinary review/approval package or an author-provided source that permits independent extraction; verify PFS maturity and all grade 3–5 safety before page drafting.",
       "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
-      "issue_id": "candidate-review-excaliber-rrmm"
+      "issue_id": "candidate-review-excaliber-rrmm",
+      "last_reviewed_on": "2026-11-26"
     },
     {
       "trial_id": "trastuzumab-botidotin-versus-t-dm1",
@@ -1553,7 +1569,7 @@
       "issue_type": "candidate_primary_publication_metadata",
       "category": "candidate_primary_evidence_review",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_on": "2026-11-17",
       "primary_title": "First-Line Trastuzumab Deruxtecan (T-DXd) in Patients With HER2-mutant NSCLC: DESTINY-Lung04 Primary Results",
       "registry_id": "NCT05048797",
@@ -1567,7 +1583,9 @@
       ],
       "action": "Hold from publication until the exact 2026 WCLC primary abstract/publication metadata is retrieved and DOI-to-title is verified; complete grade 3–5 toxicity, discontinuation, QoL and OS maturity extraction.",
       "next_action": "Retrieve WCLC abstract #PL03.08/JTO supplement DOI or PMID and full primary presentation; verify exact primary title, safety and patient-reported outcomes.",
-      "nccn_provenance": "not verified — source inaccessible; do not infer NCCN citation"
+      "nccn_provenance": "not verified — source inaccessible; do not infer NCCN citation",
+      "last_reviewed_on": "2026-11-26",
+      "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved."
     },
     {
       "issue_id": "nccn-reference-list-access-older-adult-colon-2026-11-17",
@@ -1707,10 +1725,12 @@
       "source": "https://clinicaltrials.gov/study/NCT04136353",
       "issue": "Primary conference DOI/PMID and complete efficacy/safety report not retrieved.",
       "action": "Obtain official conference abstract and full denominators/effect estimates/toxicity.",
-      "status": "open",
+      "status": "held",
       "verified": false,
       "created_on": "2026-11-17",
-      "last_reviewed_on": "2026-11-17"
+      "last_reviewed_on": "2026-11-26",
+      "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved.",
+      "next_action": "Obtain official conference abstract and full denominators/effect estimates/toxicity."
     },
     {
       "issue_id": "candidate-magnetismm32-primary-report-2026-11-17",
@@ -1924,10 +1944,13 @@
       "severity": "high",
       "evidence": "ESMO 2026 LBA7; Primary ESMO abstract DOI/PMID and exact title not retrieved; full safety table and comparator regimen distribution remain incomplete.",
       "action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified.",
-      "status": "open",
+      "status": "held",
       "created_on": "2026-11-17",
       "last_verified_on": "2026-11-17",
-      "branch": "atlas-batch/2026-11-17-am"
+      "branch": "atlas-batch/2026-11-17-am",
+      "last_reviewed_on": "2026-11-26",
+      "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved.",
+      "next_action": "Retrieve official ESMO abstract with exact title/DOI/PMID, protocol/registry dosing and full grade3–5 safety; do not create a page until verified."
     },
     {
       "issue_id": "candidate-review-harmoni-gi1",
@@ -2157,7 +2180,7 @@
       "candidate_name": "COMPANION-002",
       "canonical_page_path": "trial-pages/companion-002/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1200/JCO-26-02188",
       "primary_pmid": "42920414",
@@ -2171,10 +2194,11 @@
         "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
       ],
       "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-26",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "next_action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass."
     },
     {
       "id": "candidate-cupisco-primary-extraction-2026-11-21",
@@ -2236,7 +2260,7 @@
       "candidate_name": "SUNMO",
       "canonical_page_path": "trial-pages/sunmo/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1200/JCO-25-01957",
       "primary_pmid": "41037766",
@@ -2250,10 +2274,11 @@
         "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
       ],
       "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-26",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "next_action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass."
     },
     {
       "id": "candidate-panova-3-primary-extraction-2026-11-21",
@@ -2262,7 +2287,7 @@
       "candidate_name": "PANOVA-3",
       "canonical_page_path": "trial-pages/panova-3/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1200/JCO-25-00746",
       "primary_pmid": "40448572",
@@ -2279,8 +2304,10 @@
       "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
       "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-26",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "evidence": " The 2026 QoL secondary analysis publisher page explicitly restricts AI text/data mining; QoL results cannot yet be independently extracted from a permitted source.",
+      "next_action": "Seek author-provided or repository-hosted QoL tables under terms permitting analysis; complete the full primary safety and QoL extraction before page drafting."
     },
     {
       "id": "candidate-niche-2-primary-extraction-2026-11-21",
@@ -2315,7 +2342,7 @@
       "candidate_name": "PARADIGM",
       "canonical_page_path": "trial-pages/paradigm/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1001/jama.2023.4428",
       "primary_pmid": "37071094",
@@ -2331,8 +2358,10 @@
       "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
       "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-26",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "evidence": " JAMA publisher terms explicitly restrict AI text/data mining; no permitted full primary dataset or author manuscript was obtained in this run.",
+      "next_action": "Obtain a permitted author manuscript or registry/official guideline source sufficient to verify full efficacy, grade 3–5 toxicity, treatment burden and QoL; do not mine the restricted article."
     },
     {
       "id": "candidate-sunlight-primary-extraction-2026-11-21",
@@ -3626,6 +3655,168 @@
       ],
       "action": "Verify the actual branch-preview rendering, chart widths/labels, accessible static visualization and NNT widget before the batch PR.",
       "next_action": "Open the branch preview after Cloudflare deployment; confirm 18-month PFS NNT7 and no OS/ORR NNT; keep open if preview cannot be accessed."
+    },
+    {
+      "issue_id": "browser-qa-camoral-2026-11-26",
+      "trial_id": "camoral",
+      "trial": "CAMORAL",
+      "page_path": "trial-pages/camoral/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/camoral/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-aeneas2-2026-11-26",
+      "trial_id": "aeneas2",
+      "trial": "AENEAS2",
+      "page_path": "trial-pages/aeneas2/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/aeneas2/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-alina-2026-11-26",
+      "trial_id": "alina",
+      "trial": "ALINA",
+      "page_path": "trial-pages/alina/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/alina/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-litespark-005-2026-11-26",
+      "trial_id": "litespark-005",
+      "trial": "LITESPARK-005",
+      "page_path": "trial-pages/litespark-005/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/litespark-005/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-niche-2-2026-11-26",
+      "trial_id": "niche-2",
+      "trial": "NICHE-2",
+      "page_path": "trial-pages/niche-2/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/niche-2/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-sunlight-2026-11-26",
+      "trial_id": "sunlight",
+      "trial": "SUNLIGHT",
+      "page_path": "trial-pages/sunlight/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/sunlight/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-zuma-7-2026-11-26",
+      "trial_id": "zuma-7",
+      "trial": "ZUMA-7",
+      "page_path": "trial-pages/zuma-7/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/zuma-7/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-early-ons-npc-2026-11-26",
+      "trial_id": "early-ons-npc",
+      "trial": "Early ONS NPC",
+      "page_path": "trial-pages/early-ons-npc/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/early-ons-npc/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+    },
+    {
+      "issue_id": "browser-qa-cupisco-2026-11-26",
+      "trial_id": "cupisco",
+      "trial": "CUPISCO",
+      "page_path": "trial-pages/cupisco/index.html",
+      "issue_type": "browser_rendered_visual_review",
+      "category": "manual_visualization_review",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-26",
+      "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
+      "source_urls": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/cupisco/index.html"
+      ],
+      "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
     }
   ],
   "resolved_items": [
@@ -4680,6 +4871,44 @@
       "verification": "Re-read the updated canonical HTML; the NCT03142334 link is present in the Primary sources list and matches the roster registry_id. This does not close the separate KEYNOTE-564 seven-year conference-source task.",
       "action": "Add the verified ClinicalTrials.gov registry link to the canonical page.",
       "next_action": "None for this registry-link subtask; retain the separate final-analysis and browser-rendered QA items."
+    },
+    {
+      "issue_id": "candidate-early-ons-npc-primary-evidence-2026-11-26",
+      "trial_id": "early-ons-npc",
+      "trial": "Early vs routine ONS during CCRT in NPC",
+      "page_path": "trial-pages/early-ons-npc/index.html",
+      "issue_type": "candidate_primary_evidence_review",
+      "severity": "medium",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Primary JAMA Oncology title/DOI/PMID metadata verified; numerical efficacy, dose and safety data taken from ESMO 2025 LBA103 (DOI 10.1016/j.annonc.2025.09.120), with explicit note that the JAMA full text was not mined due publisher AI text/data-mining restriction. NNT arithmetic verified from same FAS endpoint/time horizon.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4535",
+        "https://doi.org/10.1016/j.annonc.2025.09.120",
+        "https://clinicaltrials.gov/study/NCT04823468"
+      ],
+      "verification": "Source-level evidence and DOI/registry identity checked; browser rendering remains open in a separate task.",
+      "next_action": "Complete browser-render QA before any PR."
+    },
+    {
+      "issue_id": "repair-camoral-invalid-nnh-and-visualization-2026-11-26",
+      "trial_id": "camoral",
+      "trial": "CAMORAL",
+      "page_path": "trial-pages/camoral/index.html",
+      "issue_type": "clinical_effect_and_visualization_repair",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "created_on": "2026-11-26",
+      "resolved_on": "2026-11-26",
+      "evidence": "Replaced unsupported NNH 5 for cumulative grade ≥3 TEAEs with no NNH; retained NNT 4 only for 2-year EFS (77.8% vs 46.1%; 31.7 pp; 1/0.317=3.15, round up 4). Replaced the toxicity values with ESMO 2025 conference-report grade ≥3 treatment-related AE rates 58.7% vs 21.0%. Corrected comparator chart label and finite widths; added source note and static outcome chart.",
+      "source_urls": [
+        "https://www.annalsofoncology.org/article/S0923-7534(25)02871-6/fulltext",
+        "https://doi.org/10.1001/jamaoncol.2026.4642",
+        "https://clinicaltrials.gov/study/ChiCTR2000037980"
+      ],
+      "verification": "Absolute-effect arithmetic and primary conference-report values rechecked; browser-render QA remains separate and open.",
+      "next_action": "Verify actual branch-preview rendering; do not close browser QA until visually inspected."
     }
   ],
   "run_audit_log": [
@@ -4890,12 +5119,19 @@
     "branch_preview_deployed": true
   },
   "last_updated": "2026-11-23",
-  "last_run": "absolute-effect-2026-11-24-evening-run-11",
+  "last_run": {
+    "date": "2026-11-26",
+    "cycle": "morning",
+    "branch": "atlas-batch/2026-11-26-am",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_commit_before_report": "5e10f2820c8e78d5ed2238f54a3ad16a2463926f",
+    "status": "INCOMPLETE — 0/30 uploaded; 2 source-verified new pages staged; no PR or merge."
+  },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 194,
-    "resolved_items": 67,
-    "note": "2026-11-23 evening continuation: prior 14-page manual review and four page repairs retained. One KEYNOTE-564 registry-link subtask independently verified and closed; the separate seven-year abstract and browser QA items remain open. One LITESPARK-005 page and roster entry are staged on the active branch (not uploaded to main); 23 additional candidate decisions appended. Branch preview/browser-rendered QA pending; no PR or merge; main unchanged.",
+    "open_items": 203,
+    "resolved_items": 69,
+    "note": "2026-11-26 morning: branch migrated from main to atlas-batch/2026-11-26-am. Two new unique pages (Early ONS NPC and CUPISCO) source-verified and staged; six previously staged pages remain held for full primary extraction; CAMORAL NNH/chart repair and NICHE-2 single-arm visualization added. Nine browser-render QA tasks remain open; no PR, merge, upload or production deployment.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
