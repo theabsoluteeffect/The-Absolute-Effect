@@ -1,30 +1,70 @@
 {
-  "date": "2026-11-17",
-  "publicationDate": "2026-11-12",
-  "id": "panku-esophagus01",
-  "trial": "PANKU-Esophagus01",
-  "title": "Izalontamab brengitecan in recurrent or metastatic esophageal squamous cell carcinoma: the PANKU-Esophagus01 randomized clinical trial",
-  "journal": "JAMA",
-  "url": "https://doi.org/10.1001/jama.2026.20250",
-  "site": "Esophageal squamous cell carcinoma",
-  "discipline": "Medical Oncology",
-  "setting": "Post-first-line immunochemotherapy",
-  "population": "497 patients with recurrent/metastatic ESCC after first-line PD-1/platinum-based therapy.",
-  "treatment": "Izalontamab brengitecan 2.5 mg/kg IV on days 1 and 8 every 21 days.",
-  "comparator": "Physician-choice chemotherapy.",
-  "summary": "Phase III randomized evidence in post-immunochemotherapy ESCC: median OS 9.79 versus 7.20 months (HR 0.63) and median PFS 4.17 versus 1.97 months (HR 0.50). Grade ≥3 treatment-related adverse events were 85.1% versus 59.3%.",
-  "absoluteEffect": "NNT is not calculated from median OS/PFS or hazard ratios; no verified common fixed-time absolute survival rate is used.",
-  "clinicalInterpretation": "A recent positive phase III result relevant to sequencing after first-line immunochemotherapy. The high grade ≥3 toxicity rate, regional access and longer-term survival maturity remain important.",
-  "criticalReview": "The randomized design and dual time-to-event benefit are strengths. Interpret the large toxicity burden and do not convert median survival differences into NNT. NCCN reference/category not verified for this run.",
+  "date": "2026-11-26",
+  "trial_id": "early-ons-npc",
+  "trial": "Early ONS NPC",
+  "title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+  "journal": "JAMA Oncology",
+  "publication_date": "2026-11-12",
+  "doi": "10.1001/jamaoncol.2026.4535",
+  "pmid": "43018988",
+  "registry_id": "NCT04823468",
+  "url": "https://doi.org/10.1001/jamaoncol.2026.4535",
+  "page_path": "trial-pages/early-ons-npc/index.html",
+  "site": "Nasopharyngeal carcinoma",
+  "discipline": "Supportive Care / Clinical Nutrition",
+  "setting": "Nutrition support during definitive concurrent chemoradiotherapy",
+  "design": "Multicentre, open-label, randomized 1:1 clinical trial; six Chinese tertiary centres",
+  "population": "Adults 18–70 years with stage II–IVA NPC, planned CCRT and baseline PG-SGA 0–8; FAS n=216 (107 vs 109).",
+  "intervention": "Ensure 55.8 g three times daily from CCRT start plus nutrition counselling.",
+  "comparator": "Routine ONS only after oral intake <60% of estimated requirements for three consecutive days, plus counselling.",
+  "primary_endpoint": ">5% body-weight loss from baseline to CCRT completion",
+  "key_results": {
+    "weight_loss_fas": "69.8% vs 88.8%; p=0.008",
+    "weight_loss_pps": "40.0% vs 64.8%; p=0.03",
+    "grade3plus_riom": "10.9% vs 28.0%; p=0.011",
+    "qol": "No significant between-group difference in EORTC QLQ-C30 or RT interruptions in the accessible conference report."
+  },
+  "absolute_effect": [
+    {
+      "endpoint": ">5% weight loss by CCRT completion",
+      "horizon": "CCRT completion",
+      "benefit_percentage_points": 19,
+      "nnt": 6,
+      "calculation": "1/(0.888−0.698)=5.26, rounded up to 6."
+    },
+    {
+      "endpoint": "Grade ≥3 radiation-induced oral mucositis",
+      "horizon": "CCRT completion",
+      "benefit_percentage_points": 17.1,
+      "nnt": 6,
+      "calculation": "1/(0.280−0.109)=5.85, rounded up to 6."
+    }
+  ],
+  "data_provenance": "Numerical results and ONS dose from ESMO 2025 LBA103 (DOI 10.1016/j.annonc.2025.09.120). JAMA Oncology title/DOI/PMID metadata verified; full JAMA text not mined due explicit publisher restriction on AI text/data mining.",
+  "summary": "Proactive ONS from the start of CCRT reduced >5% weight loss and grade ≥3 RIOM in the conference-report FAS; NNT 6 at CCRT completion for each endpoint.",
+  "clinical_interpretation": "Supports early dietitian-led nutrition support in selected well-nourished NPC patients starting CCRT; does not establish a survival benefit or replace individualized escalation to enteral feeding.",
+  "limitations": [
+    "Short-term outcomes only; no mature survival endpoint.",
+    "Six Chinese centres; generalizability needs confirmation.",
+    "Conference-report numerical data used because the peer-reviewed article full text restricts AI text/data mining.",
+    "QoL domain scores and detailed grade 3–5 AE tables were not available in the accessible conference abstract."
+  ],
   "sources": [
-    "https://doi.org/10.1001/jama.2026.20250",
-    "https://pubmed.ncbi.nlm.nih.gov/43018949/",
-    "https://clinicaltrials.gov/study/NCT06304974"
+    {
+      "type": "primary_publication_metadata",
+      "url": "https://doi.org/10.1001/jamaoncol.2026.4535",
+      "pmid": "43018988"
+    },
+    {
+      "type": "primary_conference_report",
+      "url": "https://doi.org/10.1016/j.annonc.2025.09.120"
+    },
+    {
+      "type": "registry",
+      "url": "https://clinicaltrials.gov/study/NCT04823468"
+    }
   ],
-  "registry": "NCT06304974",
-  "aliases": [
-    "PANKU-Esophagus01",
-    "izalontamab brengitecan ESCC"
-  ],
-  "archiveNote": "Eligible Trial of the Day: primary publication within the preceding month and absent from the Atlas roster/page/archive/previous ToD."
+  "nccn_provenance": "not verified — current full NCCN Head and Neck guideline/reference list inaccessible; NCCN Insights v2.2025 is limited scope and not a complete guideline.",
+  "status": "staged_on_branch_not_production",
+  "branch": "atlas-batch/2026-11-26-am"
 }
