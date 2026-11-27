@@ -27,10 +27,10 @@
     "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
-    "permanent_trial_pages": 469,
+    "permanent_trial_pages": 473,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
-    "total_unique_trials": 471,
+    "total_unique_trials": 475,
     "trial_pages_checked_from_recursive_git_tree": true,
     "evidence_index_checked": true,
     "trial_archive_checked": true,
@@ -38,7 +38,7 @@
     "previous_trial_of_the_day_checked": true,
     "daily_evidence_files_checked": true,
     "daily_batch_uploaded": "2026-11-18",
-    "new_trials_added_today": 10,
+    "new_trials_added_today": 14,
     "known_duplicate_aliases_collapsed": [
       "EORTC 30941 / MRC TE20",
       "MRC TE19 / EORTC 30982",
@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-26T19:54:35+05:30 — 10 staged page HTML structures re-read; finite CSS widths and static outcome visual structures present; browser-rendered QA not run. Nine carry-forward trial candidates re-reviewed; no page marked complete.",
+    "last_quality_check": "2026-11-27: 10 staged pages structurally re-read; Early ONS numerical chart corrected to primary JAMA abstract; four new pages source-verified; browser render QA and full 461-page clinical audit remain open.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -227,7 +227,7 @@
     },
     "legacy_flat_route_redirects_added_on": "2026-10-14",
     "legacy_flat_route_redirect_count": 135,
-    "batch_date": "2026-11-17",
+    "batch_date": "2026-11-27",
     "quality_check_date": "2026-11-03",
     "daily_batch_upload_verified_on": "2026-10-23",
     "live_main_branch_verification": {
@@ -1965,7 +1965,7 @@
     "branch_roster_entries": 477,
     "branch_canonical_trial_pages": 469,
     "branch_archive_only_unique_studies": 2,
-    "branch_unique_underlying_studies": 471,
+    "branch_unique_underlying_studies": 475,
     "new_trial_ids_added_today": [
       "aeneas2",
       "alina",
@@ -1976,11 +1976,46 @@
       "early-ons-npc",
       "cupisco",
       "find-ctdna-surveillance",
-      "gimema-all2820"
+      "gimema-all2820",
+      "chlorophyllin-tnt",
+      "immunoprism",
+      "nivolumab-btmb-basket",
+      "sunmo"
     ],
-    "batch_status": "INCOMPLETE — 10/30 staged; 20 short; no PR or merge.",
+    "batch_status": "INCOMPLETE — 14/30 selected page drafts staged; 16 remain to build/verify; 0 uploaded; no PR or merge.",
     "full_clinical_audit_status": "PARTIAL — flagged pages manually inspected; complete 459-page clinical audit remains open.",
-    "unique_count_method": "Canonical trial-page directories plus archive-only/current-ToD records, deduplicated by registry/DOI/trial identity; 8 roster anchor records excluded."
+    "unique_count_method": "Canonical trial-page directories plus archive-only/current-ToD records, deduplicated by registry/DOI/trial identity; 8 roster anchor records excluded.",
+    "main_branch_unique_underlying_studies": 461,
+    "master_roster_entries": 481,
+    "batch_target": 30,
+    "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_after_content_commit": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+    "branch_base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "evidence_index_links": 519,
+    "missing_index_links": 0,
+    "trial_archive_entries": 18,
+    "doi_title_verification_entries": 45,
+    "repair_queue_open_items": 228,
+    "repair_queue_resolved_items": 77,
+    "deferred_negative_queue_items": 33,
+    "nccn_pending_trial_mappings": 118,
+    "nccn_source_access_logs": 43,
+    "nccn_guideline_freshness_tasks": 21,
+    "current_trial_of_the_day_id": "chlorophyllin-tnt",
+    "previous_trial_of_the_day_id": "early-ons-npc",
+    "source_verified_staged_pages": 7,
+    "release_ready_staged_pages": 0,
+    "staged_page_drafts": 14,
+    "remaining_pages_to_batch_target": 16,
+    "uploaded_this_run": 0,
+    "main_branch_unchanged": true,
+    "pr_opened": false,
+    "merged": false,
+    "deployment_verified": false,
+    "run_report_path": "data/daily-reports/2026-11-27-morning.json",
+    "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
+    "full_clinical_audit_scope": "Not completed: one primary numerical repair and ten structural page re-reads only; complete page-by-page clinical audit remains open."
   },
   "trials": [
     {
@@ -12997,12 +13032,17 @@
     "last_run_status": "INCOMPLETE",
     "last_progress_note": "14/30 selected unique page drafts staged; 7 source-verified; 0 release-ready pending browser render; 16 selected pages remain to build. No PR/merge.",
     "run_report_path": "data/daily-reports/2026-11-27-morning.json",
-    "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json"
+    "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
+    "metadata_commit_sha": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+    "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2"
   },
-  "last_run_date": "2026-11-23",
+  "last_run_date": "2026-11-27",
   "last_run_cycle": "morning",
-  "last_run_branch": "atlas-batch/2026-11-23-am",
-  "last_run_status": "INCOMPLETE — 0/30 uploaded; 15 new unique candidates held; one contrary-evidence study deferred; no PR/merge.",
-  "quality_check_date": "2026-11-24",
-  "quality_check_scope": "Partial content audit: 5 existing pages and 5 newly drafted pages manually inspected; full recursive tree and roster/index/archive reconciliation completed; full content audit of all canonical pages remains incomplete."
+  "last_run_branch": "atlas-batch/2026-11-27-am",
+  "last_run_status": "INCOMPLETE",
+  "quality_check_date": "2026-11-27",
+  "quality_check_scope": "10 staged pages structurally re-read; one primary numerical correction; four new source-verified page drafts; browser QA pending; full clinical audit incomplete.",
+  "last_run_report": "data/daily-reports/2026-11-27-morning.json",
+  "last_daily_evidence": "data/daily-evidence-2026-11-27-morning.json"
 }

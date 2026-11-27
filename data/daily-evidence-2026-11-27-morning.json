@@ -750,5 +750,7 @@
     "next_action": "Build and fully source-verify OVHIPEC-1; 16 selected page builds remain."
   },
   "report_path": "data/daily-reports/2026-11-27-morning.json",
-  "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92"
+  "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+  "metadata_commit_sha": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+  "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c"
 }
