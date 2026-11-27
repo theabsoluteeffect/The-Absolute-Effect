@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27",
+  "updated_at": "2026-11-27T19:25:30+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -5646,12 +5646,301 @@
       "status": "open",
       "created_on": "2026-11-27",
       "last_reviewed_on": "2026-11-27",
-      "issue": "Thirty unique trial drafts are staged on atlas-batch/2026-11-27-am, but no local strict release validator or browser-rendered visualization audit has been run; no PR has been opened and no pages are uploaded.",
+      "issue": "Thirty unique trial drafts remain staged on atlas-batch/2026-11-27-am, but the GitHub strict release validator failed with 136 errors; the outcome visualization audit was skipped; the local validator and browser-rendered QA remain unrun; no PR or pages have been uploaded.",
       "evidence": [
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
-        "Container-side Git clone failed due network/DNS; no local working tree is available."
+        "Container-side Git clone failed due network/DNS; no local working tree is available.",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46010938069",
+        "Audited branch commit d4a5ed2e09d24feef1d9b19bd25c24431d815719; main remains 8315e5e5dda454ab83d62911a1c22e0dac5f732c.",
+        "CI error summary stored in data/daily-reports/2026-11-27-evening.json; 136 errors grouped by trial and exact message."
       ],
-      "action": "Obtain a local clone, run scripts/validate-trial-release.js and all visual audits, inspect every page and DOI cache entry, fix all failures on this branch, then open PR and wait for all required checks before merge."
+      "action": "Resolve all listed validator failures on this same branch; obtain a local working clone and run the local strict validator; complete browser-rendered visualization QA; re-read all changed pages and metadata; open a PR only after all 30 trials are fully source-verified and all required checks pass.",
+      "validation_findings": {
+        "workflow_run_id": 46010938069,
+        "strict_validator_errors": 136,
+        "errors_by_trial": {
+          "early-ons-npc": {
+            "count": 4,
+            "issues": [
+              "Duplicate DOI in trial-archive.json: 10.1001/jamaoncol.2026.4535",
+              "Duplicate PMID/registry identifier in trial-archive.json: NCT04823468",
+              "Duplicate PMID/registry identifier in trial-archive.json: 43018988",
+              "NNT mismatch: roster 7, page 7, 7, 8, 8"
+            ]
+          },
+          "chlorophyllin-tnt": {
+            "count": 12,
+            "issues": [
+              "Missing or malformed primary DOI",
+              "HTML title mismatch: \"Chlorophyllin for Toxic Effect Prevention During Total Neoadjuvant Therapy in Rectal Cancer: A Randomized Clinical Trial\"",
+              "H1 mismatch: \"Chlorophyllin for Toxic Effect Prevention During Total Neoadjuvant Therapy in Rectal Cancer: A Randomized Clinical Trial\"",
+              "Primary source section missing",
+              "Required section missing: design, population and treatment OR study identity and design",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: interpretation and limitations",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "Shared trial-page renderer missing"
+            ]
+          },
+          "immunoprism": {
+            "count": 10,
+            "issues": [
+              "Missing or malformed primary DOI",
+              "HTML title mismatch: \"Teclistamab versus Lenalidomide–Dexamethasone in High-Risk Smoldering Multiple Myeloma: A Randomized Phase 2 Trial\"",
+              "H1 mismatch: \"Teclistamab versus Lenalidomide–Dexamethasone in High-Risk Smoldering Multiple Myeloma: A Randomized Phase 2 Trial\"",
+              "Primary source section missing",
+              "Required section missing: design, population and treatment OR study identity and design",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: interpretation and limitations",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Shared trial-page renderer missing"
+            ]
+          },
+          "nivolumab-btmb-basket": {
+            "count": 10,
+            "issues": [
+              "Missing or malformed primary DOI",
+              "HTML title mismatch: \"Nivolumab in Patients with Advanced Solid Tumors with ctDNA-Defined High Blood Tumor Mutational Burden: A Phase II Trial\"",
+              "H1 mismatch: \"Nivolumab in Patients with Advanced Solid Tumors with ctDNA-Defined High Blood Tumor Mutational Burden: A Phase II Trial\"",
+              "Primary source section missing",
+              "Required section missing: design, population and treatment OR study identity and design",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: interpretation and limitations",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Shared trial-page renderer missing"
+            ]
+          },
+          "sunmo": {
+            "count": 10,
+            "issues": [
+              "Missing or malformed primary DOI",
+              "HTML title mismatch: \"Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial\"",
+              "H1 mismatch: \"Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial\"",
+              "Primary source section missing",
+              "Required section missing: design, population and treatment OR study identity and design",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: interpretation and limitations",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Shared trial-page renderer missing"
+            ]
+          },
+          "paradigm": {
+            "count": 5,
+            "issues": [
+              "Primary DOI/title mismatch: Crossref=\"Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With\n                    <i>RAS</i>\n                    Wild-type, Left-Sided Metastatic Colorectal Cancer\" roster=\"Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided, Metastatic Colorectal Cancer: A Randomized Clinical Trial\"",
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "nadina": {
+            "count": 8,
+            "issues": [
+              "Primary DOI/title mismatch: Crossref=\"Neoadjuvant Nivolumab and Ipilimumab in Resectable Stage III Melanoma\" roster=\"Neoadjuvant Ipilimumab and Nivolumab in Resectable Stage III Melanoma\"",
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "NNT mismatch: setting detail 4 is not present in structured endpoints"
+            ]
+          },
+          "roster": {
+            "count": 1,
+            "issues": [
+              "new_trials_added_today_names does not exactly match the latest batch trial names"
+            ]
+          },
+          "aeneas2": {
+            "count": 2,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "niche-2": {
+            "count": 3,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "sunlight": {
+            "count": 1,
+            "issues": [
+              "Required section missing: safety and absolute effect"
+            ]
+          },
+          "rosewood": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "panova-3": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "gog-240": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "empower-cervical1": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "innovatv-301": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "nrg-gy018": {
+            "count": 7,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "NNT mismatch: setting detail 3 is not present in structured endpoints"
+            ]
+          },
+          "checkmate-77t": {
+            "count": 7,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "NNT mismatch: setting detail 5 is not present in structured endpoints"
+            ]
+          },
+          "caravaggio": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "api-cat": {
+            "count": 7,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "NNT mismatch: setting detail 29 is not present in structured endpoints"
+            ]
+          },
+          "hokusai-vte-cancer": {
+            "count": 6,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNH text does not match any structured primary/additional endpoint"
+            ]
+          },
+          "swog-s1801": {
+            "count": 7,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources",
+              "Numeric NNT/NNH claim exists without structured absolute_effect metadata",
+              "NNT text does not match any structured primary/additional endpoint",
+              "NNT mismatch: setting detail 5 is not present in structured endpoints"
+            ]
+          },
+          "aurelia": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "desktop-iii": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          },
+          "ovhipec-1": {
+            "count": 4,
+            "issues": [
+              "Primary source section missing",
+              "Required section missing: key efficacy outcome",
+              "Required section missing: safety and absolute effect",
+              "Required section missing: primary source OR primary sources OR primary sources and registry OR primary publications and authoritative sources"
+            ]
+          }
+        },
+        "errors_by_type": {
+          "Duplicate DOI in trial-archive.json": 1,
+          "Duplicate PMID/registry identifier in trial-archive.json": 2,
+          "Missing or malformed primary DOI": 4,
+          "Primary DOI/title mismatch": 2,
+          "new_trials_added_today_names does not exactly match the latest batch trial names": 1,
+          "Primary source section missing": 22,
+          "Required section missing": 72,
+          "NNT mismatch": 6,
+          "HTML title mismatch": 4,
+          "H1 mismatch": 4,
+          "Numeric NNT/NNH claim exists without structured absolute_effect metadata": 7,
+          "NNT text does not match any structured primary/additional endpoint": 6,
+          "Shared trial-page renderer missing": 4,
+          "NNH text does not match any structured primary/additional endpoint": 1
+        },
+        "outcome_visualization_audit": "skipped",
+        "local_validator": "not run — DNS/network clone failure",
+        "browser_rendered_qa": "not run"
+      }
     }
   ],
   "resolved_items": [
@@ -7080,6 +7369,34 @@
       "local_validator": "not run",
       "pr_opened": false,
       "merged": false
+    },
+    {
+      "run_date": "2026-11-27",
+      "cycle": "evening",
+      "timestamp": "2026-11-27T19:25:30+05:30",
+      "branch": "atlas-batch/2026-11-27-am",
+      "branch_commit_before": "d4a5ed2e09d24feef1d9b19bd25c24431d815719",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "existing_main_pages_manually_audited": 0,
+      "flagged_legacy_pages_re_read": 4,
+      "staged_candidate_pages_re_read": 16,
+      "candidates_reaudited": 16,
+      "new_candidates_screened": 0,
+      "new_unique_candidates_reconfirmed": 16,
+      "duplicates": 0,
+      "held": 16,
+      "fully_source_verified": 0,
+      "uploaded": 0,
+      "repair_items_reviewed": 17,
+      "repair_items_closed": 0,
+      "strict_release_validator_errors": 136,
+      "workflow_run_id": 46010938069,
+      "outcome_visualization_audit": "skipped",
+      "local_validator": "not run",
+      "pr_opened": false,
+      "merged": false,
+      "deployment_verified": false,
+      "report_path": "data/daily-reports/2026-11-27-evening.json"
     }
   ],
   "previous_partial_runs": [
@@ -7173,8 +7490,9 @@
   ],
   "last_partial_run": {
     "date": "2026-11-27",
-    "cycle": "evening-continuation",
+    "cycle": "evening",
     "status": "INCOMPLETE",
+    "branch": "atlas-batch/2026-11-27-am",
     "reviewed_trial_ids": [
       "rosewood",
       "panova-3",
@@ -7193,22 +7511,37 @@
       "desktop-iii",
       "ovhipec-1"
     ],
-    "items_reviewed": 31,
-    "items_closed": 0,
-    "items_open": 229,
-    "reason": "Full source-table extraction and local release validation remain incomplete."
+    "candidates_reaudited": 16,
+    "newly_screened": 0,
+    "full_primary_source_verified": 0,
+    "held": 16,
+    "uploaded": 0,
+    "validator_errors": 136,
+    "reason": "The batch remains blocked by incomplete primary-source extraction and a failed strict release validator; no PR/merge."
   },
-  "last_updated": "2026-11-27",
+  "last_updated": "2026-11-27T19:25:30+05:30",
   "last_run": {
     "date": "2026-11-27",
-    "cycle": "evening-continuation",
+    "cycle": "evening",
     "branch": "atlas-batch/2026-11-27-am",
-    "branch_head_before": "37e2955d93469215dd491a6954c2580f69546150",
-    "page_content_commit": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
-    "items_reviewed": 31,
-    "items_closed": 0,
+    "branch_head_before": "d4a5ed2e09d24feef1d9b19bd25c24431d815719",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "existing_main_pages_manually_audited": 0,
+    "flagged_legacy_pages_re_read": 4,
+    "staged_candidate_pages_re_read": 16,
+    "repair_items_reviewed": 17,
+    "repair_items_closed": 0,
     "items_held": 16,
-    "release_gate_open": true
+    "open_items": 229,
+    "resolved_items": 77,
+    "strict_release_validator": "failed",
+    "strict_release_validator_errors": 136,
+    "workflow_run_id": 46010938069,
+    "outcome_visualization_audit": "skipped",
+    "local_release_validator": "not run — DNS/network failure",
+    "pr_opened": false,
+    "merged": false,
+    "deployment_verified": false
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
@@ -7225,5 +7558,5 @@
   },
   "updated_on": "2026-11-27",
   "last_run_date": "2026-11-27",
-  "last_run_cycle": "evening-continuation"
+  "last_run_cycle": "evening"
 }
