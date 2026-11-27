@@ -1,0 +1,1324 @@
+{
+  "run_date": "2026-11-27",
+  "run_timestamp": "2026-11-27T18:58:17+05:30",
+  "cycle": "evening continuation",
+  "status": "INCOMPLETE",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-27-am",
+    "branch_head_before": "37e2955d93469215dd491a6954c2580f69546150",
+    "page_content_commit": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d"
+  },
+  "serialization": {
+    "active_unmerged_batch": "atlas-batch/2026-11-27-am",
+    "separate_pm_branch_created": false,
+    "reason": "The AM branch remained unmerged and had no PR; no overlapping PM publication branch was created."
+  },
+  "preflight": {
+    "master_roster_retrieved": true,
+    "recursive_trial_pages_tree_retrieved": true,
+    "evidence_index_retrieved": true,
+    "trial_archive_retrieved": true,
+    "current_and_previous_tod_retrieved": true,
+    "daily_evidence_files_reviewed": 36,
+    "repair_queue_retrieved": true,
+    "nccn_coverage_ledger_retrieved": true,
+    "deferred_negative_queue_retrieved": true,
+    "doi_title_cache_retrieved": true,
+    "main_branch_unchanged": true
+  },
+  "reconciliation": {
+    "main_unique_underlying_studies": 461,
+    "branch_unique_underlying_studies_after_staging": 491,
+    "branch_page_drafts_since_main": 30,
+    "selected_unique_trial_ids": [
+      "aeneas2",
+      "alina",
+      "litespark-005",
+      "niche-2",
+      "sunlight",
+      "zuma-7",
+      "early-ons-npc",
+      "cupisco",
+      "find-ctdna-surveillance",
+      "gimema-all2820",
+      "rosewood",
+      "panova-3",
+      "paradigm",
+      "gog-240",
+      "empower-cervical1",
+      "innovatv-301",
+      "nrg-gy018",
+      "checkmate-77t",
+      "caravaggio",
+      "api-cat",
+      "hokusai-vte-cancer",
+      "nadina",
+      "swog-s1801",
+      "aurelia",
+      "desktop-iii",
+      "ovhipec-1",
+      "chlorophyllin-tnt",
+      "immunoprism",
+      "nivolumab-btmb-basket",
+      "sunmo",
+      "ovhipec-1"
+    ],
+    "checkmate_816_keynote_a18_lacc_shape_reconciliation": "Previously flagged pages were present in the roster/index reconciliation audit; full clinical audit remains open.",
+    "index_omissions_before_new_entries": 0,
+    "archive_only_entries": 18,
+    "current_tod": "chlorophyllin-tnt",
+    "previous_tod": "early-ons-npc",
+    "pivot_excluded": true
+  },
+  "candidate_disposition_summary": {
+    "screened": 16,
+    "duplicates": 0,
+    "new_unique": 16,
+    "primary_identity_verified": 16,
+    "full_primary_source_verified": 0,
+    "held": 16,
+    "published": 0,
+    "uploaded": 0
+  },
+  "candidate_level_duplicate_decisions": [
+    {
+      "candidate_name": "ROSEWOOD",
+      "canonical_trial_id": "rosewood",
+      "aliases": [
+        "ROSEWOOD",
+        "rosewood",
+        "NCT03332017",
+        "10.1200/JCO.23.00775",
+        "PMID 37506346"
+      ],
+      "primary_doi": "10.1200/JCO.23.00775",
+      "primary_title": "ROSEWOOD: A Phase II Randomized Study of Zanubrutinib Plus Obinutuzumab Versus Obinutuzumab Monotherapy in Patients With Relapsed or Refractory Follicular Lymphoma",
+      "pmid": "37506346",
+      "registry_id": "NCT03332017",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.23.00775",
+        "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+        "https://clinicaltrials.gov/study/NCT03332017"
+      ]
+    },
+    {
+      "candidate_name": "PANOVA-3",
+      "canonical_trial_id": "panova-3",
+      "aliases": [
+        "PANOVA-3",
+        "panova-3",
+        "NCT03377491",
+        "10.1200/JCO-25-00746",
+        "PMID 40448572"
+      ],
+      "primary_doi": "10.1200/JCO-25-00746",
+      "primary_title": "Tumor Treating Fields With Gemcitabine and Nab-Paclitaxel for Locally Advanced Pancreatic Adenocarcinoma: Randomized, Open-Label, Pivotal Phase III PANOVA-3 Study",
+      "pmid": "40448572",
+      "registry_id": "NCT03377491",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/40448572/",
+        "https://clinicaltrials.gov/study/NCT03377491",
+        "https://doi.org/10.1001/jamanetworkopen.2026.41241",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/"
+      ]
+    },
+    {
+      "candidate_name": "PARADIGM",
+      "canonical_trial_id": "paradigm",
+      "aliases": [
+        "PARADIGM",
+        "paradigm",
+        "NCT02394795",
+        "10.1001/jama.2023.4428",
+        "PMID 37071094"
+      ],
+      "primary_doi": "10.1001/jama.2023.4428",
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided, Metastatic Colorectal Cancer: A Randomized Clinical Trial",
+      "pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ]
+    },
+    {
+      "candidate_name": "GOG-240",
+      "canonical_trial_id": "gog-240",
+      "aliases": [
+        "GOG-240",
+        "gog-240",
+        "NCT00803062",
+        "10.1056/NEJMoa1309748",
+        "PMID 24552320"
+      ],
+      "primary_doi": "10.1056/NEJMoa1309748",
+      "primary_title": "Improved Survival with Bevacizumab in Advanced Cervical Cancer",
+      "pmid": "24552320",
+      "registry_id": "NCT00803062",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1309748",
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062",
+        "https://doi.org/10.1016/S0140-6736(17)31607-0",
+        "https://pubmed.ncbi.nlm.nih.gov/28756902/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "candidate_name": "EMPOWER-Cervical 1",
+      "canonical_trial_id": "empower-cervical1",
+      "aliases": [
+        "EMPOWER-Cervical 1",
+        "empower-cervical1",
+        "NCT03257267",
+        "10.1056/NEJMoa2112187",
+        "PMID 35139273"
+      ],
+      "primary_doi": "10.1056/NEJMoa2112187",
+      "primary_title": "Survival with Cemiplimab in Recurrent Cervical Cancer",
+      "pmid": "35139273",
+      "registry_id": "NCT03257267",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2112187",
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "candidate_name": "innovaTV 301",
+      "canonical_trial_id": "innovatv-301",
+      "aliases": [
+        "innovaTV 301",
+        "innovatv-301",
+        "NCT04697628",
+        "10.1056/NEJMoa2313811",
+        "PMID 38959480"
+      ],
+      "primary_doi": "10.1056/NEJMoa2313811",
+      "primary_title": "Tisotumab Vedotin as Second- or Third-Line Therapy for Recurrent Cervical Cancer",
+      "pmid": "38959480",
+      "registry_id": "NCT04697628",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2313811",
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "candidate_name": "NRG-GY018",
+      "canonical_trial_id": "nrg-gy018",
+      "aliases": [
+        "NRG-GY018",
+        "nrg-gy018",
+        "NCT03914612",
+        "10.1056/NEJMoa2302312",
+        "PMID 36972022"
+      ],
+      "primary_doi": "10.1056/NEJMoa2302312",
+      "primary_title": "Pembrolizumab plus Chemotherapy in Advanced Endometrial Cancer",
+      "pmid": "36972022",
+      "registry_id": "NCT03914612",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "12-month PFS in the dMMR cohort",
+        "horizon": "12 months",
+        "benefit_percentage_points": 36,
+        "harm_percentage_points": null,
+        "nnt": 3,
+        "nnh": null,
+        "calculation": "ceil(1 / 0.36) = 3"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2302312",
+        "https://pubmed.ncbi.nlm.nih.gov/36972022/",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ]
+    },
+    {
+      "candidate_name": "CheckMate 77T",
+      "canonical_trial_id": "checkmate-77t",
+      "aliases": [
+        "CheckMate 77T",
+        "checkmate-77t",
+        "NCT04025879",
+        "10.1056/NEJMoa2311926",
+        "PMID 38749033"
+      ],
+      "primary_doi": "10.1056/NEJMoa2311926",
+      "primary_title": "Perioperative Nivolumab in Resectable Lung Cancer",
+      "pmid": "38749033",
+      "registry_id": "NCT04025879",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "18-month event-free survival",
+        "horizon": "18 months",
+        "benefit_percentage_points": 20.2,
+        "harm_percentage_points": null,
+        "nnt": 5,
+        "nnh": null,
+        "calculation": "ceil(1 / 0.202) = 5"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/",
+        "https://clinicaltrials.gov/study/NCT04025879"
+      ]
+    },
+    {
+      "candidate_name": "CARAVAGGIO",
+      "canonical_trial_id": "caravaggio",
+      "aliases": [
+        "CARAVAGGIO",
+        "caravaggio",
+        "NCT03045406",
+        "10.1056/NEJMoa1915103",
+        "PMID 32223112"
+      ],
+      "primary_doi": "10.1056/NEJMoa1915103",
+      "primary_title": "Apixaban for the Treatment of Venous Thromboembolism Associated with Cancer",
+      "pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://clinicaltrials.gov/study/NCT03045406",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ]
+    },
+    {
+      "candidate_name": "API-CAT",
+      "canonical_trial_id": "api-cat",
+      "aliases": [
+        "API-CAT",
+        "api-cat",
+        "NCT03692065",
+        "10.1056/NEJMoa2416112",
+        "PMID 40162636"
+      ],
+      "primary_doi": "10.1056/NEJMoa2416112",
+      "primary_title": "Extended Reduced-Dose Apixaban for Cancer-Associated Venous Thromboembolism",
+      "pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "Clinically relevant bleeding (secondary safety endpoint)",
+        "horizon": "12 months",
+        "benefit_percentage_points": 3.5,
+        "harm_percentage_points": null,
+        "nnt": 29,
+        "nnh": null,
+        "calculation": "ceil(1 / 0.035) = 29"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/",
+        "https://clinicaltrials.gov/study/NCT03692065"
+      ]
+    },
+    {
+      "candidate_name": "Hokusai VTE Cancer",
+      "canonical_trial_id": "hokusai-vte-cancer",
+      "aliases": [
+        "Hokusai VTE Cancer",
+        "hokusai-vte-cancer",
+        "NCT02073682",
+        "10.1056/NEJMoa1711948",
+        "PMID 29231094"
+      ],
+      "primary_doi": "10.1056/NEJMoa1711948",
+      "primary_title": "Edoxaban for the Treatment of Cancer-Associated Venous Thromboembolism",
+      "pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "Major bleeding (safety endpoint)",
+        "horizon": "6–12 months of treatment",
+        "benefit_percentage_points": null,
+        "harm_percentage_points": 2.9,
+        "nnt": null,
+        "nnh": 35,
+        "calculation": "ceil(1 / 0.029) = 35"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://clinicaltrials.gov/study/NCT02073682",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ]
+    },
+    {
+      "candidate_name": "NADINA",
+      "canonical_trial_id": "nadina",
+      "aliases": [
+        "NADINA",
+        "nadina",
+        "NCT04949113",
+        "10.1056/NEJMoa2402604",
+        "PMID 38828984"
+      ],
+      "primary_doi": "10.1056/NEJMoa2402604",
+      "primary_title": "Neoadjuvant Ipilimumab and Nivolumab in Resectable Stage III Melanoma",
+      "pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "12-month event-free survival",
+        "horizon": "12 months",
+        "benefit_percentage_points": 26.5,
+        "harm_percentage_points": null,
+        "nnt": 4,
+        "nnh": null,
+        "calculation": "ceil(1 / 0.265) = 4"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://clinicaltrials.gov/study/NCT04949113",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ]
+    },
+    {
+      "candidate_name": "SWOG S1801",
+      "canonical_trial_id": "swog-s1801",
+      "aliases": [
+        "SWOG S1801",
+        "swog-s1801",
+        "NCT03698019",
+        "10.1056/NEJMoa2211437",
+        "PMID 36856617"
+      ],
+      "primary_doi": "10.1056/NEJMoa2211437",
+      "primary_title": "Neoadjuvant–Adjuvant or Adjuvant-Only Pembrolizumab in Advanced Melanoma",
+      "pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": {
+        "endpoint": "Two-year event-free survival",
+        "horizon": "24 months",
+        "benefit_percentage_points": 23,
+        "harm_percentage_points": null,
+        "nnt": 5,
+        "nnh": null,
+        "calculation": "ceil(1 / 0.23) = 5"
+      },
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://clinicaltrials.gov/study/NCT03698019",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ]
+    },
+    {
+      "candidate_name": "AURELIA",
+      "canonical_trial_id": "aurelia",
+      "aliases": [
+        "AURELIA",
+        "aurelia",
+        "NCT00976911",
+        "10.1200/JCO.2013.51.4489",
+        "PMID 24637997"
+      ],
+      "primary_doi": "10.1200/JCO.2013.51.4489",
+      "primary_title": "Bevacizumab Combined With Chemotherapy for Platinum-Resistant Recurrent Ovarian Cancer: The AURELIA Open-Label Randomized Phase III Trial",
+      "pmid": "24637997",
+      "registry_id": "NCT00976911",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.2013.51.4489",
+        "https://pubmed.ncbi.nlm.nih.gov/24637997/",
+        "https://clinicaltrials.gov/study/NCT00976911"
+      ]
+    },
+    {
+      "candidate_name": "DESKTOP III",
+      "canonical_trial_id": "desktop-iii",
+      "aliases": [
+        "DESKTOP III",
+        "desktop-iii",
+        "NCT01166737",
+        "10.1056/NEJMoa2103294",
+        "PMID 34874631"
+      ],
+      "primary_doi": "10.1056/NEJMoa2103294",
+      "primary_title": "Randomized Trial of Cytoreductive Surgery for Relapsed Ovarian Cancer",
+      "pmid": "34874631",
+      "registry_id": "NCT01166737",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2103294",
+        "https://pubmed.ncbi.nlm.nih.gov/34874631/",
+        "https://clinicaltrials.gov/study/NCT01166737"
+      ]
+    },
+    {
+      "candidate_name": "OVHIPEC-1",
+      "canonical_trial_id": "ovhipec-1",
+      "aliases": [
+        "OVHIPEC-1",
+        "ovhipec-1",
+        "NCT00426257",
+        "10.1056/NEJMoa1708618",
+        "PMID 29342393"
+      ],
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "primary_title": "Hyperthermic Intraperitoneal Chemotherapy in Ovarian Cancer",
+      "pmid": "29342393",
+      "registry_id": "NCT00426257",
+      "matched_existing": {
+        "main_roster": false,
+        "main_page": false,
+        "branch_roster_before_continuation": false,
+        "branch_page_before_continuation": false,
+        "archive": false,
+        "current_tod": false,
+        "previous_tod": false
+      },
+      "identity_decision": "new unique underlying study; no matching canonical page or archive entry found",
+      "prior_daily_evidence_status": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26"
+      ],
+      "final_disposition": "new unique — page draft staged on review branch; held from publication pending complete source-table extraction and release QA",
+      "duplicate_excluded": false,
+      "held": true,
+      "published": false,
+      "source_verification": {
+        "doi_title_match": true,
+        "registry_id_checked": true,
+        "key_primary_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported"
+      },
+      "nnt_nnh": null,
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1708618",
+        "https://pubmed.ncbi.nlm.nih.gov/29342393/",
+        "https://clinicaltrials.gov/study/NCT00426257",
+        "https://doi.org/10.1016/S1470-2045(23)00396-0",
+        "https://pubmed.ncbi.nlm.nih.gov/37708912/"
+      ]
+    }
+  ],
+  "nnt_nnh_review": [
+    {
+      "trial_id": "nrg-gy018",
+      "trial": "NRG-GY018",
+      "endpoint": "12-month PFS in the dMMR cohort",
+      "time_horizon": "12 months",
+      "absolute_benefit_percentage_points": 36,
+      "absolute_harm_percentage_points": null,
+      "nnt": 3,
+      "nnh": null,
+      "calculation": "ceil(1 / 0.36) = 3",
+      "source_doi": "10.1056/NEJMoa2302312",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    },
+    {
+      "trial_id": "checkmate-77t",
+      "trial": "CheckMate 77T",
+      "endpoint": "18-month event-free survival",
+      "time_horizon": "18 months",
+      "absolute_benefit_percentage_points": 20.2,
+      "absolute_harm_percentage_points": null,
+      "nnt": 5,
+      "nnh": null,
+      "calculation": "ceil(1 / 0.202) = 5",
+      "source_doi": "10.1056/NEJMoa2311926",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    },
+    {
+      "trial_id": "api-cat",
+      "trial": "API-CAT",
+      "endpoint": "Clinically relevant bleeding (secondary safety endpoint)",
+      "time_horizon": "12 months",
+      "absolute_benefit_percentage_points": 3.5,
+      "absolute_harm_percentage_points": null,
+      "nnt": 29,
+      "nnh": null,
+      "calculation": "ceil(1 / 0.035) = 29",
+      "source_doi": "10.1056/NEJMoa2416112",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    },
+    {
+      "trial_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "endpoint": "Major bleeding (safety endpoint)",
+      "time_horizon": "6–12 months of treatment",
+      "absolute_benefit_percentage_points": null,
+      "absolute_harm_percentage_points": 2.9,
+      "nnt": null,
+      "nnh": 35,
+      "calculation": "ceil(1 / 0.029) = 35",
+      "source_doi": "10.1056/NEJMoa1711948",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    },
+    {
+      "trial_id": "nadina",
+      "trial": "NADINA",
+      "endpoint": "12-month event-free survival",
+      "time_horizon": "12 months",
+      "absolute_benefit_percentage_points": 26.5,
+      "absolute_harm_percentage_points": null,
+      "nnt": 4,
+      "nnh": null,
+      "calculation": "ceil(1 / 0.265) = 4",
+      "source_doi": "10.1056/NEJMoa2402604",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    },
+    {
+      "trial_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "endpoint": "Two-year event-free survival",
+      "time_horizon": "24 months",
+      "absolute_benefit_percentage_points": 23,
+      "absolute_harm_percentage_points": null,
+      "nnt": 5,
+      "nnh": null,
+      "calculation": "ceil(1 / 0.23) = 5",
+      "source_doi": "10.1056/NEJMoa2211437",
+      "qa": "Arithmetic checked; landmark KM NNTs explicitly labeled; API-CAT NNT is a secondary bleeding endpoint; Hokusai NNH is major bleeding safety endpoint."
+    }
+  ],
+  "guideline_mining": {
+    "guidelines_reviewed": 3,
+    "sources": [
+      {
+        "title": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+        "scope": "Complete publicly accessible NCCN-authored Insights article and reference list; not the complete NCCN guideline",
+        "references": [
+          "50",
+          "63",
+          "65"
+        ],
+        "trials": [
+          "GOG-240",
+          "innovaTV 301",
+          "EMPOWER-Cervical 1"
+        ],
+        "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      },
+      {
+        "title": "NCCN Clinical Practice Guidelines in Oncology: Cancer-Associated Venous Thromboembolic Disease, Version 2.2024",
+        "scope": "Publicly accessible official NCCN Clinical Practice Guideline PDF hosted by JNCCN; full guideline/reference list checked for this version",
+        "references": [
+          "217",
+          "221"
+        ],
+        "trials": [
+          "CARAVAGGIO",
+          "Hokusai VTE Cancer"
+        ],
+        "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Melanoma: Cutaneous, Version 2.2024",
+        "scope": "Complete publicly accessible NCCN-authored Insights article and reference list; not the complete NCCN guideline",
+        "references": [
+          "29"
+        ],
+        "trials": [
+          "SWOG S1801"
+        ],
+        "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      }
+    ],
+    "current_2026_full_guidelines": "not verified — NCCN portal access denied/403; freshness tasks left open",
+    "false_positive_corrected": "Removed prior NADINA → melanoma reference 2 mapping after checking that accessible Version 2.2024 Insights does not cite NADINA."
+  },
+  "repair_audit": {
+    "canonical_pages_audited_this_run": 0,
+    "source_candidates_reviewed": 16,
+    "repair_items_reviewed": 31,
+    "repair_items_closed": 0,
+    "repair_items_open_after": 229,
+    "full_recursive_page_audit_completed": false,
+    "full_clinical_audit_completed": false,
+    "browser_rendered_visualization_audit_completed": false
+  },
+  "metadata_changes": {
+    "roster_entries_added": 16,
+    "index_links_added": 16,
+    "archive_entries_added": 0,
+    "trial_of_the_day_changes": 0,
+    "deferred_negative_queue_changes": 0,
+    "doi_title_cache_entries_added_or_updated": 16,
+    "repair_queue_items_updated": 31,
+    "release_gate_items_added": 1,
+    "nccn_guideline_records_added_or_updated": 3,
+    "nccn_trial_mappings_added": 3,
+    "nccn_false_positive_mappings_removed": 1
+  },
+  "staged_page_drafts": {
+    "new_this_continuation": 16,
+    "total_batch_since_main": 30,
+    "release_ready": 0,
+    "publication_status": "branch-only; held; not uploaded"
+  },
+  "validation": {
+    "local_release_validator": "not run — no local working clone; container-side Git clone failed due network/DNS",
+    "static_draft_checks": "page length, source links, finite chart widths and NNT/NNH arithmetic manually checked; full strict validator not run",
+    "browser_visualization_audit": "not run",
+    "pr_opened": false,
+    "pr_checks": "not run",
+    "merged": false,
+    "production_deployment_verified": false
+  },
+  "blockers": [
+    "Local repository clone/working tree unavailable due network/DNS failure, so the mandatory local strict release validator could not be run.",
+    "Full source-table/supplement/PRO extraction remains open for all 16 carry-forward candidates; 0 pages are release-ready.",
+    "The active AM branch is unmerged; a separate PM branch would violate serialization."
+  ],
+  "next_actions": [
+    "Complete full primary protocol/supplement tables and QoL/PRO extraction for the 16 held candidates and re-audit the 14 previously staged pages.",
+    "Obtain a local working clone and run scripts/validate-trial-release.js plus the browser-rendered outcome visualization audit.",
+    "Fix every failure on the active branch; only then open PR, wait for all required checks, merge if all pass, and verify Cloudflare Pages deployment."
+  ],
+  "target": {
+    "batch_target": 30,
+    "uploaded": 0,
+    "not_uploaded": 30,
+    "cumulative_main": 461,
+    "cumulative_branch_staged": 491,
+    "target_total": 1000,
+    "remaining_on_main": 539,
+    "remaining_on_branch": 509
+  },
+  "page_sources": [
+    {
+      "trial_id": "rosewood",
+      "trial": "ROSEWOOD",
+      "doi": "10.1200/JCO.23.00775",
+      "pmid": "37506346",
+      "registry": "NCT03332017",
+      "primary_title": "ROSEWOOD: A Phase II Randomized Study of Zanubrutinib Plus Obinutuzumab Versus Obinutuzumab Monotherapy in Patients With Relapsed or Refractory Follicular Lymphoma",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.23.00775",
+        "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+        "https://clinicaltrials.gov/study/NCT03332017"
+      ]
+    },
+    {
+      "trial_id": "panova-3",
+      "trial": "PANOVA-3",
+      "doi": "10.1200/JCO-25-00746",
+      "pmid": "40448572",
+      "registry": "NCT03377491",
+      "primary_title": "Tumor Treating Fields With Gemcitabine and Nab-Paclitaxel for Locally Advanced Pancreatic Adenocarcinoma: Randomized, Open-Label, Pivotal Phase III PANOVA-3 Study",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/40448572/",
+        "https://clinicaltrials.gov/study/NCT03377491",
+        "https://doi.org/10.1001/jamanetworkopen.2026.41241",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/"
+      ]
+    },
+    {
+      "trial_id": "paradigm",
+      "trial": "PARADIGM",
+      "doi": "10.1001/jama.2023.4428",
+      "pmid": "37071094",
+      "registry": "NCT02394795",
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided, Metastatic Colorectal Cancer: A Randomized Clinical Trial",
+      "source_urls": [
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ]
+    },
+    {
+      "trial_id": "gog-240",
+      "trial": "GOG-240",
+      "doi": "10.1056/NEJMoa1309748",
+      "pmid": "24552320",
+      "registry": "NCT00803062",
+      "primary_title": "Improved Survival with Bevacizumab in Advanced Cervical Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1309748",
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062",
+        "https://doi.org/10.1016/S0140-6736(17)31607-0",
+        "https://pubmed.ncbi.nlm.nih.gov/28756902/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "trial_id": "empower-cervical1",
+      "trial": "EMPOWER-Cervical 1",
+      "doi": "10.1056/NEJMoa2112187",
+      "pmid": "35139273",
+      "registry": "NCT03257267",
+      "primary_title": "Survival with Cemiplimab in Recurrent Cervical Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2112187",
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "trial_id": "innovatv-301",
+      "trial": "innovaTV 301",
+      "doi": "10.1056/NEJMoa2313811",
+      "pmid": "38959480",
+      "registry": "NCT04697628",
+      "primary_title": "Tisotumab Vedotin as Second- or Third-Line Therapy for Recurrent Cervical Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2313811",
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ]
+    },
+    {
+      "trial_id": "nrg-gy018",
+      "trial": "NRG-GY018",
+      "doi": "10.1056/NEJMoa2302312",
+      "pmid": "36972022",
+      "registry": "NCT03914612",
+      "primary_title": "Pembrolizumab plus Chemotherapy in Advanced Endometrial Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2302312",
+        "https://pubmed.ncbi.nlm.nih.gov/36972022/",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ]
+    },
+    {
+      "trial_id": "checkmate-77t",
+      "trial": "CheckMate 77T",
+      "doi": "10.1056/NEJMoa2311926",
+      "pmid": "38749033",
+      "registry": "NCT04025879",
+      "primary_title": "Perioperative Nivolumab in Resectable Lung Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/",
+        "https://clinicaltrials.gov/study/NCT04025879"
+      ]
+    },
+    {
+      "trial_id": "caravaggio",
+      "trial": "CARAVAGGIO",
+      "doi": "10.1056/NEJMoa1915103",
+      "pmid": "32223112",
+      "registry": "NCT03045406",
+      "primary_title": "Apixaban for the Treatment of Venous Thromboembolism Associated with Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://clinicaltrials.gov/study/NCT03045406",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ]
+    },
+    {
+      "trial_id": "api-cat",
+      "trial": "API-CAT",
+      "doi": "10.1056/NEJMoa2416112",
+      "pmid": "40162636",
+      "registry": "NCT03692065",
+      "primary_title": "Extended Reduced-Dose Apixaban for Cancer-Associated Venous Thromboembolism",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/",
+        "https://clinicaltrials.gov/study/NCT03692065"
+      ]
+    },
+    {
+      "trial_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "doi": "10.1056/NEJMoa1711948",
+      "pmid": "29231094",
+      "registry": "NCT02073682",
+      "primary_title": "Edoxaban for the Treatment of Cancer-Associated Venous Thromboembolism",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://clinicaltrials.gov/study/NCT02073682",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ]
+    },
+    {
+      "trial_id": "nadina",
+      "trial": "NADINA",
+      "doi": "10.1056/NEJMoa2402604",
+      "pmid": "38828984",
+      "registry": "NCT04949113",
+      "primary_title": "Neoadjuvant Ipilimumab and Nivolumab in Resectable Stage III Melanoma",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://clinicaltrials.gov/study/NCT04949113",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ]
+    },
+    {
+      "trial_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "doi": "10.1056/NEJMoa2211437",
+      "pmid": "36856617",
+      "registry": "NCT03698019",
+      "primary_title": "Neoadjuvant–Adjuvant or Adjuvant-Only Pembrolizumab in Advanced Melanoma",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://clinicaltrials.gov/study/NCT03698019",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ]
+    },
+    {
+      "trial_id": "aurelia",
+      "trial": "AURELIA",
+      "doi": "10.1200/JCO.2013.51.4489",
+      "pmid": "24637997",
+      "registry": "NCT00976911",
+      "primary_title": "Bevacizumab Combined With Chemotherapy for Platinum-Resistant Recurrent Ovarian Cancer: The AURELIA Open-Label Randomized Phase III Trial",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO.2013.51.4489",
+        "https://pubmed.ncbi.nlm.nih.gov/24637997/",
+        "https://clinicaltrials.gov/study/NCT00976911"
+      ]
+    },
+    {
+      "trial_id": "desktop-iii",
+      "trial": "DESKTOP III",
+      "doi": "10.1056/NEJMoa2103294",
+      "pmid": "34874631",
+      "registry": "NCT01166737",
+      "primary_title": "Randomized Trial of Cytoreductive Surgery for Relapsed Ovarian Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2103294",
+        "https://pubmed.ncbi.nlm.nih.gov/34874631/",
+        "https://clinicaltrials.gov/study/NCT01166737"
+      ]
+    },
+    {
+      "trial_id": "ovhipec-1",
+      "trial": "OVHIPEC-1",
+      "doi": "10.1056/NEJMoa1708618",
+      "pmid": "29342393",
+      "registry": "NCT00426257",
+      "primary_title": "Hyperthermic Intraperitoneal Chemotherapy in Ovarian Cancer",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1708618",
+        "https://pubmed.ncbi.nlm.nih.gov/29342393/",
+        "https://clinicaltrials.gov/study/NCT00426257",
+        "https://doi.org/10.1016/S1470-2045(23)00396-0",
+        "https://pubmed.ncbi.nlm.nih.gov/37708912/"
+      ]
+    }
+  ]
+}

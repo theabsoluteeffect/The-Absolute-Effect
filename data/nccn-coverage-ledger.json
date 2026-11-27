@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:24:56+05:30",
+  "updated_at": "2026-11-27",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -634,9 +634,111 @@
       "next_actions": [
         "Re-attempt official NCCN access; retrieve complete current guideline or complete public Insights references."
       ]
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v1-2024",
+      "title": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "version": "1.2024",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf",
+      "source_type": "Complete publicly accessible NCCN-authored Insights article and reference list; not the complete NCCN guideline",
+      "reviewed_on": "2026-11-27",
+      "review_status": "complete article/reference list checked; older version only; 2026 freshness pending",
+      "full_guideline": false,
+      "complete_reference_list": true,
+      "subsets_reviewed": [
+        "first-line systemic therapy for recurrent/metastatic disease",
+        "second-line/subsequent systemic therapy",
+        "bevacizumab-containing platinum doublets",
+        "cemiplimab and tisotumab vedotin"
+      ],
+      "citation_map": [
+        {
+          "reference_number": "50",
+          "trial_id": "gog-240",
+          "trial": "GOG-240",
+          "primary_doi": "10.1056/NEJMoa1309748",
+          "registry_id": "NCT00803062",
+          "recommendation_context": "Bevacizumab-containing platinum/taxane first-line options; Category 1 applies to the regimen, not the trial citation."
+        },
+        {
+          "reference_number": "63",
+          "trial_id": "innovatv-301",
+          "trial": "innovaTV 301",
+          "primary_doi": "10.1056/NEJMoa2313811",
+          "registry_id": "NCT04697628",
+          "recommendation_context": "Preferred second-line/subsequent option; NCCN citation is the 2023 Ann Oncol abstract LBA9."
+        },
+        {
+          "reference_number": "65",
+          "trial_id": "empower-cervical1",
+          "trial": "EMPOWER-Cervical 1",
+          "primary_doi": "10.1056/NEJMoa2112187",
+          "registry_id": "NCT03257267",
+          "recommendation_context": "Preferred second-line/subsequent cemiplimab option; no trial-specific category stated."
+        }
+      ]
+    },
+    {
+      "guideline_id": "nccn-vte-v2-2024",
+      "title": "NCCN Clinical Practice Guidelines in Oncology: Cancer-Associated Venous Thromboembolic Disease, Version 2.2024",
+      "version": "2.2024",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
+      "source_type": "Publicly accessible official NCCN Clinical Practice Guideline PDF hosted by JNCCN; full guideline/reference list checked for this version",
+      "reviewed_on": "2026-11-27",
+      "review_status": "Version 2.2024 checked; latest 2026 full guideline not verified",
+      "full_guideline": true,
+      "complete_reference_list": true,
+      "subsets_reviewed": [
+        "acute DVT/PE treatment",
+        "DOAC versus LMWH",
+        "gastrointestinal malignancy and bleeding risk"
+      ],
+      "citation_map": [
+        {
+          "reference_number": "217",
+          "trial_id": "caravaggio",
+          "trial": "CARAVAGGIO",
+          "primary_doi": "10.1056/NEJMoa1915103",
+          "registry_id": "NCT03045406",
+          "recommendation_context": "Apixaban versus dalteparin in acute cancer-associated VTE; DOAC selection and GI lesion bleeding risk; Category 2B applies to apixaban in gastric/GE lesions."
+        },
+        {
+          "reference_number": "221",
+          "trial_id": "hokusai-vte-cancer",
+          "trial": "Hokusai VTE Cancer",
+          "primary_doi": "10.1056/NEJMoa1711948",
+          "registry_id": "NCT02073682",
+          "recommendation_context": "Edoxaban versus dalteparin; GI cancer bleeding caveat."
+        }
+      ]
+    },
+    {
+      "guideline_id": "nccn-melanoma-cutaneous-v2-2024",
+      "title": "NCCN Guidelines Insights: Melanoma: Cutaneous, Version 2.2024",
+      "version": "2.2024",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf",
+      "source_type": "Complete publicly accessible NCCN-authored Insights article and reference list; not the complete NCCN guideline",
+      "reviewed_on": "2026-11-27",
+      "review_status": "complete article/reference list checked; older version only; 2026 freshness pending",
+      "full_guideline": false,
+      "complete_reference_list": true,
+      "subsets_reviewed": [
+        "neoadjuvant systemic therapy for resectable stage III melanoma",
+        "neoadjuvant pembrolizumab"
+      ],
+      "citation_map": [
+        {
+          "reference_number": "29",
+          "trial_id": "swog-s1801",
+          "trial": "SWOG S1801",
+          "primary_doi": "10.1056/NEJMoa2211437",
+          "registry_id": "NCT03698019",
+          "recommendation_context": "Neoadjuvant pembrolizumab; Category 2A preferred in stated resectable stage III settings."
+        }
+      ]
     }
   ],
-  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible. 2026-11-21: official NCCN portal and JNCCN full-text reference lists inaccessible (403/login). Colon Cancer Insights v3.2026 and Older Adult Oncology Insights v2.2026 reviewed at PubMed metadata/abstract level only; not complete guidelines; no reference numbers/categories inferred. NCCN provenance is not a publication blocker. 2026-11-21 recovery: added gynaecologic, thoracic and myeloma candidates to pending NCCN mapping; no exact NCCN citation/reference or category was assigned because full guideline/reference lists remained inaccessible. 2026-11-23: partial source pass across ALL, biliary, CNS, melanoma, VTE, infections, genetics and supportive care. Exact accessible NCCN scope is limited to Melanoma Insights v2.2024 and VTE guideline article v2.2024; neither is the complete current guideline. Other NCCN sources were metadata/abstract-only or unavailable. ASCO Biliary Living Guideline v2026.1.0 added as an alternative, not NCCN. Latest full NCCN versions remain unverified. 2026-11-23 evening: complete public NCCN Guidelines Insights Head and Neck Cancers Version 2.2025 article/reference list partially mined for nasopharynx subset only (refs 8,33,34,35,47,66,67,69). It is not the full guideline; latest full NCCN version remains unverified. Seven active/possible unique candidates added to pending mapping; CAPTAIN-1st and CONTINUUM deferred as positive but not in an active preferred recommendation in the article; full NCCN Endometrial and Kidney guidelines remain access-limited. 2026-11-23 evening continuation: reviewed PubMed/JNCCN metadata/abstracts for Bladder Cancer Version 1.2026 (selected NMIBC scope), Prostate Cancer Version 3.2026 and Insights Version 5.2026 (selected nonmetastatic updates), Multiple Myeloma Version 5.2026 (NDMM-focused abstract), Ovarian Cancer Insights Version 3.2024 and Uterine Neoplasms Insights Version 3.2025. These are not treated as complete current guidelines; full reference lists inaccessible; no citation numbers/categories inferred. Current Kidney full guideline remains inaccessible. Added 14 new candidate-to-guideline follow-ups without exact NCCN reference provenance; LITESPARK-005 is independently primary-source verified and staged, while PROSPER RCC, IMmotion010 and CA017-078 are deferred contrary evidence. 2026-11-24: current NCCN full guideline/reference lists were inaccessible for NSCLC, colon, SCLC, B-cell lymphoma and other selected sites; exact provenance not inferred. Complete public Insights article/reference lists for melanoma v2.2024 and cancer-associated VTE v2.2024 were rechecked with their scope explicitly limited to Insights, not full guidelines.",
+  "coverage_note": "Eight additional trial-to-guideline mapping follow-ups were added 17 November 2026. No exact NCCN reference number, version, section or category is claimed for these items because the full current guideline/reference lists were inaccessible. 2026-11-21: official NCCN portal and JNCCN full-text reference lists inaccessible (403/login). Colon Cancer Insights v3.2026 and Older Adult Oncology Insights v2.2026 reviewed at PubMed metadata/abstract level only; not complete guidelines; no reference numbers/categories inferred. NCCN provenance is not a publication blocker. 2026-11-21 recovery: added gynaecologic, thoracic and myeloma candidates to pending NCCN mapping; no exact NCCN citation/reference or category was assigned because full guideline/reference lists remained inaccessible. 2026-11-23: partial source pass across ALL, biliary, CNS, melanoma, VTE, infections, genetics and supportive care. Exact accessible NCCN scope is limited to Melanoma Insights v2.2024 and VTE guideline article v2.2024; neither is the complete current guideline. Other NCCN sources were metadata/abstract-only or unavailable. ASCO Biliary Living Guideline v2026.1.0 added as an alternative, not NCCN. Latest full NCCN versions remain unverified. 2026-11-23 evening: complete public NCCN Guidelines Insights Head and Neck Cancers Version 2.2025 article/reference list partially mined for nasopharynx subset only (refs 8,33,34,35,47,66,67,69). It is not the full guideline; latest full NCCN version remains unverified. Seven active/possible unique candidates added to pending mapping; CAPTAIN-1st and CONTINUUM deferred as positive but not in an active preferred recommendation in the article; full NCCN Endometrial and Kidney guidelines remain access-limited. 2026-11-23 evening continuation: reviewed PubMed/JNCCN metadata/abstracts for Bladder Cancer Version 1.2026 (selected NMIBC scope), Prostate Cancer Version 3.2026 and Insights Version 5.2026 (selected nonmetastatic updates), Multiple Myeloma Version 5.2026 (NDMM-focused abstract), Ovarian Cancer Insights Version 3.2024 and Uterine Neoplasms Insights Version 3.2025. These are not treated as complete current guidelines; full reference lists inaccessible; no citation numbers/categories inferred. Current Kidney full guideline remains inaccessible. Added 14 new candidate-to-guideline follow-ups without exact NCCN reference provenance; LITESPARK-005 is independently primary-source verified and staged, while PROSPER RCC, IMmotion010 and CA017-078 are deferred contrary evidence. 2026-11-24: current NCCN full guideline/reference lists were inaccessible for NSCLC, colon, SCLC, B-cell lymphoma and other selected sites; exact provenance not inferred. Complete public Insights article/reference lists for melanoma v2.2024 and cancer-associated VTE v2.2024 were rechecked with their scope explicitly limited to Insights, not full guidelines. 2026-11-27 evening continuation: reviewed cervical cancer, cancer-associated VTE and cutaneous melanoma accessible NCCN sources; current 2026 full-guideline freshness remains open. Exact citations mapped only where verified; NADINA reference-2 false positive removed.",
   "source_access_log": [
     {
       "date": "2026-11-15",
@@ -1172,32 +1274,55 @@
       "status": "metadata_abstract_only",
       "scope": "Metadata/abstract only; not complete guideline/reference list",
       "note": "No exact citation, section or recommendation category extracted."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN official guideline portal",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "access denied / 403 for current full 2026 guideline PDFs and reference lists",
+      "impact": "Not a repository blocker; continue with accessible complete NCCN-authored Insights/public guideline PDFs and primary sources.",
+      "action": "Keep current-version freshness tasks open; do not infer current recommendation categories."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf",
+      "status": "complete public Insights article/reference list reviewed; not full guideline",
+      "impact": "Exact references 50 (GOG-240), 63 (innovaTV 301 abstract), 65 (EMPOWER-Cervical 1) mapped.",
+      "action": "Recheck current 2026 full guideline before asserting current recommendation status."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Clinical Practice Guidelines — Cancer-Associated VTE, Version 2.2024",
+      "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
+      "status": "public full guideline and reference list reviewed; not confirmed latest 2026",
+      "impact": "Exact references 217 (CARAVAGGIO) and 221 (Hokusai VTE Cancer) mapped.",
+      "action": "Recheck current 2026 version and recommendation categories."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Guidelines Insights — Melanoma: Cutaneous, Version 2.2024",
+      "url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf",
+      "status": "complete public Insights article/reference list reviewed; not full guideline",
+      "impact": "Exact reference 29 (SWOG S1801) mapped; NADINA not cited and prior ref2 mapping withdrawn.",
+      "action": "Recheck current 2026 full guideline; do not map NADINA without exact citation."
     }
   ],
   "last_run": {
     "date": "2026-11-27",
-    "cycle": "morning",
-    "timestamp": "2026-11-27T08:59:09+05:30",
-    "branch": "atlas-batch/2026-11-27-am",
-    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "cycle": "evening-continuation",
     "guidelines_reviewed": [
-      "NCCN Guidelines Insights: Colon Cancer v3.2026 (metadata/abstract only)",
-      "NCCN Guidelines Insights: Multiple Myeloma v5.2026 (metadata/abstract only)",
-      "Official NCCN portal access attempt (403/login)"
+      "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "NCCN Clinical Practice Guidelines in Oncology: Cancer-Associated Venous Thromboembolic Disease, Version 2.2024",
+      "NCCN Guidelines Insights: Melanoma: Cutaneous, Version 2.2024"
     ],
-    "full_guidelines_accessible": false,
-    "exact_reference_mappings_verified": 0,
-    "pending_mappings_added": 3,
-    "pending_mappings_total": 118,
-    "source_access_logs_added": 3,
-    "source_access_logs_total": 43,
-    "guideline_freshness_tasks_total": 21,
-    "report_path": "data/daily-reports/2026-11-27-morning.json",
-    "status": "INCOMPLETE — guideline mapping follow-up open"
+    "exact_mappings_added": 3,
+    "existing_mappings_refined": 3,
+    "false_positive_mappings_removed": 1,
+    "current_2026_freshness": "open"
   },
   "last_updated": "2026-11-27",
-  "last_run_date": "2026-11-26",
+  "last_run_date": "2026-11-27",
   "pending_trial_mappings": [
     {
       "trial_id": "trofuse-005",
@@ -1851,42 +1976,45 @@
       "trial": "GOG-240",
       "site": "cervical cancer",
       "setting": "persistent/recurrent/metastatic first-line",
-      "status": "not verified — official full NCCN guideline/reference list inaccessible",
-      "guideline_title": null,
-      "version": null,
-      "section": null,
-      "reference_number": null,
-      "recommendation_category": null,
+      "status": "exact citation mapped in accessible 2024 NCCN source; current 2026 guideline freshness pending",
+      "guideline_title": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "version": "1.2024",
+      "section": "First-line recurrent/metastatic systemic therapy; bevacizumab-containing platinum/taxane option. Reference 50 is the final GOG-240 OS/adverse-event analysis.",
+      "reference_number": "50",
+      "recommendation_category": "Category 1 applies to the regimen on the algorithm; not trial-specific",
       "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
-      "next_action": "Retrieve the current official NCCN guideline or a complete NCCN-authored Insights reference list; map only an exact cited reference and recommendation context. Do not infer provenance."
+      "next_action": "Recheck the latest 2026 full NCCN guideline/reference list; preserve this exact older-version citation.",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
     },
     {
       "trial_id": "empower-cervical1",
       "trial": "EMPOWER-Cervical1",
       "site": "cervical cancer",
       "setting": "recurrent/metastatic after platinum",
-      "status": "not verified — official full NCCN guideline/reference list inaccessible",
-      "guideline_title": null,
-      "version": null,
-      "section": null,
-      "reference_number": null,
-      "recommendation_category": null,
+      "status": "exact citation mapped in accessible 2024 NCCN source; current 2026 guideline freshness pending",
+      "guideline_title": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "version": "1.2024",
+      "section": "Cemiplimab after progression on prior systemic therapy; reference 65 is the primary survival report.",
+      "reference_number": "65",
+      "recommendation_category": "Preferred second-line/subsequent option; no category explicitly stated in cited passage",
       "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
-      "next_action": "Retrieve the current official NCCN guideline or a complete NCCN-authored Insights reference list; map only an exact cited reference and recommendation context. Do not infer provenance."
+      "next_action": "Recheck the latest 2026 full NCCN guideline/reference list; preserve this exact older-version citation.",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
     },
     {
       "trial_id": "innovatv-301",
       "trial": "innovaTV 301",
       "site": "cervical cancer",
       "setting": "second/third-line recurrent/metastatic",
-      "status": "not verified — official full NCCN guideline/reference list inaccessible",
-      "guideline_title": null,
-      "version": null,
-      "section": null,
-      "reference_number": null,
-      "recommendation_category": null,
+      "status": "exact citation mapped in accessible 2024 NCCN source; current 2026 guideline freshness pending",
+      "guideline_title": "NCCN Guidelines Insights — Cervical Cancer, Version 1.2024",
+      "version": "1.2024",
+      "section": "Tisotumab vedotin after chemotherapy; reference 63 is the 2023 Ann Oncol abstract LBA9; NEJM primary report linked separately.",
+      "reference_number": "63",
+      "recommendation_category": "Preferred second-line/subsequent option; no category explicitly stated in cited passage",
       "provenance": "Primary publication/registry identity metadata recorded; NCCN full guideline/reference list inaccessible on 2026-11-21.",
-      "next_action": "Retrieve the current official NCCN guideline or a complete NCCN-authored Insights reference list; map only an exact cited reference and recommendation context. Do not infer provenance."
+      "next_action": "Recheck the latest 2026 full NCCN guideline/reference list; preserve this exact older-version citation.",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
     },
     {
       "trial_id": "find",
@@ -2172,17 +2300,28 @@
       "trial_id": "nadina",
       "trial": "NADINA",
       "reason": "New unique candidate; full current NCCN citation mapping/current-version check pending.",
-      "next_action": "Check current official NCCN version and exact reference/section/category; do not infer provenance.",
-      "status": "open",
-      "added_on": "2026-11-23"
+      "next_action": "Retrieve the current full NCCN Cutaneous Melanoma guideline and map only an exact NADINA citation if present.",
+      "status": "not cited in accessible Melanoma Insights Version 2.2024; prior reference-2 mapping withdrawn; 2026 full guideline inaccessible",
+      "added_on": "2026-11-23",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_category": null,
+      "provenance": "The accessible Version 2.2024 Insights article does not contain a NADINA citation; reference 2 is not NADINA. No recommendation provenance inferred."
     },
     {
       "trial_id": "swog-s1801",
       "trial": "SWOG S1801",
       "reason": "New unique candidate; full current NCCN citation mapping/current-version check pending.",
-      "next_action": "Check current official NCCN version and exact reference/section/category; do not infer provenance.",
-      "status": "open",
-      "added_on": "2026-11-23"
+      "next_action": "Recheck the latest 2026 full NCCN guideline/reference list; preserve this exact older-version citation.",
+      "status": "exact citation mapped in accessible 2024 NCCN source; current 2026 guideline freshness pending",
+      "added_on": "2026-11-23",
+      "guideline_title": "NCCN Guidelines Insights: Melanoma: Cutaneous, Version 2.2024",
+      "version": "2.2024",
+      "reference_number": "29",
+      "recommendation_category": "Category 2A preferred",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
     },
     {
       "trial_id": "opacin-neo",
@@ -3024,22 +3163,12 @@
     },
     {
       "guideline_id": "nccn-melanoma-cutaneous-v2-2024",
-      "reference_number": "2",
-      "trial_id": "nadina",
-      "trial": "NADINA",
-      "recommendation_category": "2",
-      "recommendation_context": "Neoadjuvant nivo/ipi evidence cited in overview; category not attached to this reference.",
-      "mapping_status": "citation checked in accessible NCCN-authored article; full current guideline freshness pending",
-      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
-    },
-    {
-      "guideline_id": "nccn-melanoma-cutaneous-v2-2024",
       "reference_number": "29",
       "trial_id": "swog-s1801",
       "trial": "SWOG S1801",
-      "recommendation_category": "2A preferred",
-      "recommendation_context": "Neoadjuvant pembrolizumab.",
-      "mapping_status": "citation checked in accessible NCCN-authored article; full current guideline freshness pending",
+      "recommendation_category": "Category 2A preferred",
+      "recommendation_context": "Neoadjuvant pembrolizumab for resectable stage III clinically positive nodes/nodal recurrence; exact reference 29.",
+      "mapping_status": "exact citation verified in complete public NCCN-authored Insights article; latest 2026 freshness pending",
       "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
     },
     {
@@ -3107,8 +3236,8 @@
       "reference_number": "217",
       "trial_id": "caravaggio",
       "trial": "Caravaggio",
-      "recommendation_category": null,
-      "recommendation_context": "Apixaban versus dalteparin; cited in DVT/PE treatment evidence.",
+      "recommendation_category": "Category 2B for apixaban in gastric/gastroesophageal lesions; not trial-specific",
+      "recommendation_context": "Reference 217 in the acute DVT/PE treatment section; DOAC selection and GI bleeding risk.",
       "mapping_status": "citation checked in accessible NCCN-authored article; full current guideline freshness pending",
       "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
     },
@@ -3118,7 +3247,7 @@
       "trial_id": "hokusai-vte-cancer",
       "trial": "Hokusai VTE Cancer",
       "recommendation_category": null,
-      "recommendation_context": "Edoxaban versus dalteparin; GI bleeding caveat.",
+      "recommendation_context": "Reference 221 in the acute DVT/PE treatment section; edoxaban efficacy and increased GI bleeding risk.",
       "mapping_status": "citation checked in accessible NCCN-authored article; full current guideline freshness pending",
       "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
     },
@@ -3258,9 +3387,47 @@
       "registry_id": "NCT02486718",
       "reference_type": "ASCO rapid recommendation update reference; not NCCN reference",
       "last_reviewed_on": "2026-11-26"
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v1-2024",
+      "reference_number": "50",
+      "trial_id": "gog-240",
+      "trial": "GOG-240",
+      "recommendation_category": "Category 1 applies to the regimen on the algorithm; not trial-specific",
+      "recommendation_context": "First-line recurrent/metastatic systemic therapy; bevacizumab-containing platinum/taxane option. Reference 50 is the final GOG-240 OS/adverse-event analysis.",
+      "mapping_status": "exact citation verified in complete public NCCN-authored Insights reference list; latest 2026 freshness pending",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf",
+      "primary_doi": "10.1056/NEJMoa1309748",
+      "guideline_citation_doi": "10.1016/S0140-6736(17)31607-0",
+      "registry_id": "NCT00803062"
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v1-2024",
+      "reference_number": "65",
+      "trial_id": "empower-cervical1",
+      "trial": "EMPOWER-Cervical 1",
+      "recommendation_category": "Preferred second-line/subsequent option; no category explicitly stated in cited passage",
+      "recommendation_context": "Cemiplimab after progression on prior systemic therapy; reference 65 is the primary survival report.",
+      "mapping_status": "exact citation verified in complete public NCCN-authored Insights reference list; latest 2026 freshness pending",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf",
+      "primary_doi": "10.1056/NEJMoa2112187",
+      "registry_id": "NCT03257267"
+    },
+    {
+      "guideline_id": "nccn-cervical-cancer-v1-2024",
+      "reference_number": "63",
+      "trial_id": "innovatv-301",
+      "trial": "innovaTV 301",
+      "recommendation_category": "Preferred second-line/subsequent option; no category explicitly stated in cited passage",
+      "recommendation_context": "Tisotumab vedotin after chemotherapy; reference 63 is the 2023 Ann Oncol abstract LBA9; NEJM primary report linked separately.",
+      "mapping_status": "exact conference citation verified in complete public NCCN-authored Insights reference list; latest 2026 freshness pending",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf",
+      "primary_doi": "10.1056/NEJMoa2313811",
+      "guideline_citation": "Ann Oncol 2023; abstract LBA9",
+      "registry_id": "NCT04697628"
     }
   ],
-  "updated_on": "2026-11-26",
+  "updated_on": "2026-11-27",
   "next_rotation": [
     "Ovarian cancer (OVHIPEC-1, PRIMA, DESKTOP III)",
     "CLL/SLL (ALPINE)",
@@ -3438,6 +3605,36 @@
       "severity": "medium",
       "reason": "Current complete guideline and exact reference list inaccessible.",
       "next_action": "Reattempt official NCCN full guideline retrieval; do not infer version, section, citation or category."
+    },
+    {
+      "task_id": "nccn-cervical-2026-full-guideline-freshness",
+      "guideline": "Cervical Cancer",
+      "latest_version_target": "2026 current version (metadata-only Version 2.2026 identified)",
+      "status": "open",
+      "reason": "Full current guideline and exact reference list inaccessible; Version 1.2024 Insights is older and not the complete guideline.",
+      "next_action": "Retrieve current NCCN full guideline/reference list and reconcile GOG-240, EMPOWER-Cervical 1 and innovaTV 301 recommendations.",
+      "created_on": "2026-11-27",
+      "last_reviewed_on": "2026-11-27"
+    },
+    {
+      "task_id": "nccn-vte-2026-full-guideline-freshness",
+      "guideline": "Cancer-Associated Venous Thromboembolic Disease",
+      "latest_version_target": "2026 current version",
+      "status": "open",
+      "reason": "Version 2.2024 full guideline was accessible, but current 2026 full guideline/version was not verified.",
+      "next_action": "Retrieve current 2026 guideline and determine whether API-CAT is cited; do not infer.",
+      "created_on": "2026-11-27",
+      "last_reviewed_on": "2026-11-27"
+    },
+    {
+      "task_id": "nccn-melanoma-2026-full-guideline-freshness",
+      "guideline": "Melanoma: Cutaneous",
+      "latest_version_target": "2026 current version",
+      "status": "open",
+      "reason": "Version 2.2024 Insights article is accessible but is not the complete guideline and predates NADINA.",
+      "next_action": "Retrieve current 2026 full guideline/reference list; verify neoadjuvant recommendations and NADINA citation if present.",
+      "created_on": "2026-11-27",
+      "last_reviewed_on": "2026-11-27"
     }
   ],
   "complete_insights_articles_reviewed": [
@@ -3477,6 +3674,24 @@
       "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
       "reviewed_on": "2026-11-24",
       "freshness": "Not the latest full 2026 guideline; freshness task remains open."
+    },
+    {
+      "date": "2026-11-27",
+      "guideline_id": "nccn-cervical-cancer-v1-2024",
+      "scope": "complete Insights article/reference list; not full guideline",
+      "references_mapped": [
+        50,
+        63,
+        65
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "guideline_id": "nccn-melanoma-cutaneous-v2-2024",
+      "scope": "complete Insights article/reference list; not full guideline",
+      "references_mapped": [
+        29
+      ]
     }
   ]
 }

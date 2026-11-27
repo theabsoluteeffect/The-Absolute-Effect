@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:24:56+05:30",
+  "updated_at": "2026-11-27",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -2264,7 +2264,7 @@
       "candidate_name": "ROSEWOOD",
       "canonical_page_path": "trial-pages/rosewood/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1200/JCO.23.00775",
       "primary_pmid": "37506346",
@@ -2275,13 +2275,41 @@
         "https://clinicaltrials.gov/study/NCT03332017"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Full obinutuzumab schedule/maintenance and protocol amendments",
+        "Complete grade 3–5 safety, serious AE, dose interruption and discontinuation tables",
+        "Longer-term follow-up and QoL status"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO.23.00775",
+        "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+        "https://clinicaltrials.gov/study/NCT03332017"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full obinutuzumab schedule/maintenance and protocol amendments",
+        "Complete grade 3–5 safety, serious AE, dose interruption and discontinuation tables",
+        "Longer-term follow-up and QoL status"
+      ]
     },
     {
       "id": "candidate-sunmo-primary-extraction-2026-11-21",
@@ -2330,15 +2358,45 @@
         "https://pubmed.ncbi.nlm.nih.gov/43024239/"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Exact median follow-up, device adherence/exposure and treatment discontinuation tables",
+        "Full grade 3–5 event-specific safety tables",
+        "Domain-level estimates from the 2026 QoL secondary analysis"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
       "evidence": " The 2026 QoL secondary analysis publisher page explicitly restricts AI text/data mining; QoL results cannot yet be independently extracted from a permitted source.",
-      "next_action": "Seek author-provided or repository-hosted QoL tables under terms permitting analysis; complete the full primary safety and QoL extraction before page drafting."
+      "next_action": "Seek author-provided or repository-hosted QoL tables under terms permitting analysis; complete the full primary safety and QoL extraction before page drafting.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/40448572/",
+        "https://clinicaltrials.gov/study/NCT03377491",
+        "https://doi.org/10.1001/jamanetworkopen.2026.41241",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Exact median follow-up, device adherence/exposure and treatment discontinuation tables",
+        "Full grade 3–5 event-specific safety tables",
+        "Domain-level estimates from the 2026 QoL secondary analysis"
+      ]
     },
     {
       "id": "candidate-niche-2-primary-extraction-2026-11-21",
@@ -2384,15 +2442,43 @@
         "https://clinicaltrials.gov/study/NCT02394795"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Full arm-specific safety and discontinuation tables",
+        "Stratification factors and full subgroup tables",
+        "QoL/PRO status"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
       "evidence": " JAMA publisher terms explicitly restrict AI text/data mining; no permitted full primary dataset or author manuscript was obtained in this run.",
-      "next_action": "Obtain a permitted author manuscript or registry/official guideline source sufficient to verify full efficacy, grade 3–5 toxicity, treatment burden and QoL; do not mine the restricted article."
+      "next_action": "Obtain a permitted author manuscript or registry/official guideline source sufficient to verify full efficacy, grade 3–5 toxicity, treatment burden and QoL; do not mine the restricted article.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full arm-specific safety and discontinuation tables",
+        "Stratification factors and full subgroup tables",
+        "QoL/PRO status"
+      ]
     },
     {
       "id": "candidate-sunlight-primary-extraction-2026-11-21",
@@ -2532,7 +2618,7 @@
       "candidate_name": "GOG-240",
       "canonical_page_path": "trial-pages/gog-240/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa1309748",
       "primary_pmid": "24552320",
@@ -2543,13 +2629,44 @@
         "https://clinicaltrials.gov/study/NCT00803062"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Complete final-analysis grade 3–5 toxicity and discontinuation tables",
+        "Longitudinal QoL domain estimates and denominators",
+        "Protocol-level chemotherapy backbone denominators and final follow-up table"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1309748",
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062",
+        "https://doi.org/10.1016/S0140-6736(17)31607-0",
+        "https://pubmed.ncbi.nlm.nih.gov/28756902/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete final-analysis grade 3–5 toxicity and discontinuation tables",
+        "Longitudinal QoL domain estimates and denominators",
+        "Protocol-level chemotherapy backbone denominators and final follow-up table"
+      ]
     },
     {
       "id": "candidate-empower-cervical1-primary-extraction-2026-11-21",
@@ -2558,7 +2675,7 @@
       "candidate_name": "EMPOWER-Cervical1",
       "canonical_page_path": "trial-pages/empower-cervical1/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa2112187",
       "primary_pmid": "35139273",
@@ -2569,13 +2686,42 @@
         "https://clinicaltrials.gov/study/NCT03257267"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Exact investigator-choice chemotherapy dose/schedule distribution",
+        "Full grade 3–5 AE and discontinuation tables by histology",
+        "Exact domain-level estimates from the separate PRO analysis"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2112187",
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Exact investigator-choice chemotherapy dose/schedule distribution",
+        "Full grade 3–5 AE and discontinuation tables by histology",
+        "Exact domain-level estimates from the separate PRO analysis"
+      ]
     },
     {
       "id": "candidate-innovatv-301-primary-extraction-2026-11-21",
@@ -2584,7 +2730,7 @@
       "candidate_name": "innovaTV 301",
       "canonical_page_path": "trial-pages/innovatv-301/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa2313811",
       "primary_pmid": "38959480",
@@ -2595,13 +2741,42 @@
         "https://clinicaltrials.gov/study/NCT04697628"
       ],
       "missing_evidence": [
-        "Complete primary tables, intervention details, follow-up, grade 3–5 safety, discontinuation and QoL."
+        "Complete grade 3–5 AE, ocular toxicity, neuropathy and discontinuation tables",
+        "Detailed dose intensity and treatment exposure",
+        "QoL/PRO status"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2313811",
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete grade 3–5 AE, ocular toxicity, neuropathy and discontinuation tables",
+        "Detailed dose intensity and treatment exposure",
+        "QoL/PRO status"
+      ]
     },
     {
       "id": "candidate-nrg-gy018-primary-extraction-2026-11-21",
@@ -2610,7 +2785,7 @@
       "candidate_name": "NRG-GY018",
       "canonical_page_path": "trial-pages/nrg-gy018/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa2302312",
       "primary_pmid": "36972022",
@@ -2621,15 +2796,41 @@
         "https://clinicaltrials.gov/study/NCT03914612"
       ],
       "missing_evidence": [
-        "full dose/schedule and maintenance exposure by MMR cohort",
-        "complete grade 3–5 treatment-related toxicity and discontinuation denominators",
-        "updated OS maturity and patient-reported outcomes"
+        "Complete stratification factors and maintenance exposure",
+        "Full grade 3–5 safety tables by MMR cohort and attribution",
+        "Updated OS maturity and patient-reported outcomes"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2302312",
+        "https://pubmed.ncbi.nlm.nih.gov/36972022/",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete stratification factors and maintenance exposure",
+        "Full grade 3–5 safety tables by MMR cohort and attribution",
+        "Updated OS maturity and patient-reported outcomes"
+      ]
     },
     {
       "id": "candidate-ovhipec-1-primary-extraction-2026-11-21",
@@ -2638,7 +2839,7 @@
       "candidate_name": "OVHIPEC-1",
       "canonical_page_path": "trial-pages/ovhipec-1/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa1708618",
       "primary_pmid": "29342393",
@@ -2651,19 +2852,15 @@
         "https://doi.org/10.1016/S1470-2045(23)00396-0"
       ],
       "missing_evidence": [
-        "full perioperative complication and grade 3–5 toxicity tables",
-        "protocol-level perfusion temperature/duration and eligibility detail",
-        "long-term follow-up and QoL extraction",
-        "Final analysis table-level denominators and exact p values rechecked against full paper/supplement",
-        "HIPEC perfusion temperature, duration and sodium-thiosulfate protocol verified from protocol/supplement",
+        "Protocol-level perfusion temperature, duration and sodium-thiosulfate nephroprotection details",
         "Complete grade 3–5 toxicity and perioperative morbidity tables",
-        "Patient-reported QoL and treatment-burden data",
+        "Long-term follow-up table-level denominators/p values and QoL",
         "Current guideline mapping"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Primary publication identity and selected efficacy/safety values rechecked on 2026-11-26. This is not page-ready: listed fields remain incomplete and no trial page was published.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
       "reviewed_evidence": {
         "design": "Multicentre, open-label, phase III randomized trial; 245 randomized (surgery n=123; surgery+HIPEC n=122).",
@@ -2685,7 +2882,36 @@
       ],
       "absolute_effect": "Not applicable: median RFS/OS and HRs alone are not valid NNT inputs; no verified common fixed-time absolute survival rates used.",
       "verified": false,
-      "disposition": "held — primary identity and selected outcomes re-reviewed; page-level extraction/QA incomplete"
+      "disposition": "held — primary identity and selected outcomes re-reviewed; page-level extraction/QA incomplete",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1708618",
+        "https://pubmed.ncbi.nlm.nih.gov/29342393/",
+        "https://clinicaltrials.gov/study/NCT00426257",
+        "https://doi.org/10.1016/S1470-2045(23)00396-0",
+        "https://pubmed.ncbi.nlm.nih.gov/37708912/"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Protocol-level perfusion temperature, duration and sodium-thiosulfate nephroprotection details",
+        "Complete grade 3–5 toxicity and perioperative morbidity tables",
+        "Long-term follow-up table-level denominators/p values and QoL",
+        "Current guideline mapping"
+      ]
     },
     {
       "id": "candidate-desktop-iii-primary-extraction-2026-11-21",
@@ -2694,7 +2920,7 @@
       "candidate_name": "DESKTOP III",
       "canonical_page_path": "trial-pages/desktop-iii/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa2103294",
       "primary_pmid": "34874631",
@@ -2705,15 +2931,41 @@
         "https://clinicaltrials.gov/study/NCT01166737"
       ],
       "missing_evidence": [
-        "complete eligibility/AGO-score definitions and chemotherapy exposure",
-        "grade 3–5 surgical morbidity and systemic toxicity tables",
-        "longitudinal QoL and follow-up extraction"
+        "Full AGO score eligibility and chemotherapy exposure detail",
+        "Grade 3–5 surgical morbidity and systemic toxicity tables",
+        "Longitudinal QoL and subgroup follow-up"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2103294",
+        "https://pubmed.ncbi.nlm.nih.gov/34874631/",
+        "https://clinicaltrials.gov/study/NCT01166737"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full AGO score eligibility and chemotherapy exposure detail",
+        "Grade 3–5 surgical morbidity and systemic toxicity tables",
+        "Longitudinal QoL and subgroup follow-up"
+      ]
     },
     {
       "id": "candidate-soc-1-primary-extraction-2026-11-21",
@@ -2778,7 +3030,7 @@
       "candidate_name": "CheckMate 77T",
       "canonical_page_path": "trial-pages/checkmate-77t/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1056/NEJMoa2311926",
       "primary_pmid": "38749033",
@@ -2789,15 +3041,41 @@
         "https://clinicaltrials.gov/study/NCT04025879"
       ],
       "missing_evidence": [
-        "complete neoadjuvant/adjuvant dosing and chemotherapy backbone",
-        "grade 3–5 treatment-related AEs, surgical delay and discontinuation tables",
-        "mature OS and QoL"
+        "Full platinum-doublet distribution and surgical timing",
+        "Complete grade 3–5 AE, surgical delay and discontinuation tables",
+        "Mature OS and QoL/PRO tables"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/",
+        "https://clinicaltrials.gov/study/NCT04025879"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full platinum-doublet distribution and surgical timing",
+        "Complete grade 3–5 AE, surgical delay and discontinuation tables",
+        "Mature OS and QoL/PRO tables"
+      ]
     },
     {
       "id": "candidate-impower010-primary-extraction-2026-11-21",
@@ -3061,7 +3339,7 @@
       "candidate_name": "AURELIA",
       "canonical_page_path": "trial-pages/aurelia/index.html",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "issue": "New unique underlying study identified but not release-ready; full primary-source page extraction incomplete.",
       "primary_doi": "10.1200/JCO.2013.51.4489",
       "primary_pmid": "24637997",
@@ -3072,15 +3350,41 @@
         "https://clinicaltrials.gov/study/NCT00976911"
       ],
       "missing_evidence": [
-        "chemotherapy-partner selection and exact dose schedules",
-        "grade 3–5 hypertension/proteinuria/GI perforation and discontinuation tables",
-        "PRO/QoL domain-specific results and subgroup outcomes"
+        "Chemotherapy partner-specific doses and full exposure",
+        "Grade 3–5 hypertension, proteinuria, GI perforation and discontinuation tables",
+        "PRO/QoL domain-level estimates and subgroup outcomes"
       ],
-      "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
-      "verification": "Identity/DOI/PMID/registry metadata checked against PubMed and/or the primary journal record; full page-level efficacy/safety/QoL extraction is incomplete. No page or roster entry created.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-21",
-      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation."
+      "last_reviewed_on": "2026-11-27",
+      "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
+      "last_source_review_date": "2026-11-27",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO.2013.51.4489",
+        "https://pubmed.ncbi.nlm.nih.gov/24637997/",
+        "https://clinicaltrials.gov/study/NCT00976911"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Chemotherapy partner-specific doses and full exposure",
+        "Grade 3–5 hypertension, proteinuria, GI perforation and discontinuation tables",
+        "PRO/QoL domain-level estimates and subgroup outcomes"
+      ]
     },
     {
       "id": "post-merge-publication-status-and-daily-evidence-2026-11-21",
@@ -3138,15 +3442,15 @@
       "trial": "NADINA",
       "category": "new_candidate_primary_source_and_page_completion",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_at": "2026-11-23",
       "evidence_source": [
         "https://doi.org/10.1056/NEJMoa2402604",
         "https://pubmed.ncbi.nlm.nih.gov/38828984/",
         "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
       ],
-      "verification": "primary DOI/PMID identified",
-      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
       "publication_status": "not_published",
       "nccn_provenance": {
@@ -3155,7 +3459,45 @@
         "reference": "2",
         "context": "Neoadjuvant nivo/ipi evidence cited in overview; no category explicitly tied to ref 2.",
         "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
-      }
+      },
+      "last_reviewed_on": "2026-11-27",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2402604",
+      "primary_pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://clinicaltrials.gov/study/NCT04949113",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Protocol-level response-adapted adjuvant treatment and BRAF pathway details",
+        "Full surgery/perioperative and grade 3–5 toxicity tables",
+        "Long-term EFS/OS follow-up and QoL status",
+        "Current NCCN citation mapping; accessible 2024 Insights does not cite NADINA"
+      ],
+      "missing_evidence": [
+        "Protocol-level response-adapted adjuvant treatment and BRAF pathway details",
+        "Full surgery/perioperative and grade 3–5 toxicity tables",
+        "Long-term EFS/OS follow-up and QoL status",
+        "Current NCCN citation mapping; accessible 2024 Insights does not cite NADINA"
+      ]
     },
     {
       "issue_id": "candidate-swog-s1801-2026-11-23",
@@ -3163,15 +3505,15 @@
       "trial": "SWOG S1801",
       "category": "new_candidate_primary_source_and_page_completion",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_at": "2026-11-23",
       "evidence_source": [
         "https://doi.org/10.1056/NEJMoa2211437",
         "https://pubmed.ncbi.nlm.nih.gov/36856617/",
         "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
       ],
-      "verification": "primary DOI/PMID identified",
-      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
       "publication_status": "not_published",
       "nccn_provenance": {
@@ -3180,7 +3522,43 @@
         "reference": "29",
         "context": "Neoadjuvant pembrolizumab; preferred category 2A.",
         "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
-      }
+      },
+      "last_reviewed_on": "2026-11-27",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2211437",
+      "primary_pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://clinicaltrials.gov/study/NCT03698019",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete surgery timing, treatment exposure and grade 3–5 safety tables",
+        "Longer-term EFS/OS maturity and PRO/QoL",
+        "Full subgroup estimates"
+      ],
+      "missing_evidence": [
+        "Complete surgery timing, treatment exposure and grade 3–5 safety tables",
+        "Longer-term EFS/OS maturity and PRO/QoL",
+        "Full subgroup estimates"
+      ]
     },
     {
       "issue_id": "candidate-opacin-neo-2026-11-23",
@@ -3336,15 +3714,15 @@
       "trial": "Caravaggio",
       "category": "new_candidate_primary_source_and_page_completion",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_at": "2026-11-23",
       "evidence_source": [
         "https://doi.org/10.1056/NEJMoa1915103",
         "https://pubmed.ncbi.nlm.nih.gov/32223112/",
         "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
       ],
-      "verification": "primary DOI/PMID identified",
-      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
       "publication_status": "not_published",
       "nccn_provenance": {
@@ -3353,7 +3731,43 @@
         "reference": "217",
         "context": "Apixaban vs dalteparin; cited in VTE guideline article; no trial-specific category assigned.",
         "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
-      }
+      },
+      "last_reviewed_on": "2026-11-27",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa1915103",
+      "primary_pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://clinicaltrials.gov/study/NCT03045406",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full recurrent VTE/CRNMB subgroup and discontinuation tables",
+        "Grade 3–5 safety details and cancer-site-specific bleeding",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Full recurrent VTE/CRNMB subgroup and discontinuation tables",
+        "Grade 3–5 safety details and cancer-site-specific bleeding",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-hokusai-vte-cancer-2026-11-23",
@@ -3361,15 +3775,15 @@
       "trial": "Hokusai VTE Cancer",
       "category": "new_candidate_primary_source_and_page_completion",
       "severity": "medium",
-      "status": "open",
+      "status": "held",
       "created_at": "2026-11-23",
       "evidence_source": [
         "https://doi.org/10.1056/NEJMoa1711948",
         "https://pubmed.ncbi.nlm.nih.gov/29231094/",
         "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
       ],
-      "verification": "primary DOI/PMID identified",
-      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
       "publication_status": "not_published",
       "nccn_provenance": {
@@ -3378,7 +3792,43 @@
         "reference": "221",
         "context": "Edoxaban vs dalteparin; GI bleeding caveat; no trial-specific category assigned.",
         "source": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
-      }
+      },
+      "last_reviewed_on": "2026-11-27",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa1711948",
+      "primary_pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://clinicaltrials.gov/study/NCT02073682",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete subgroup and GI-cancer bleeding tables",
+        "Treatment discontinuation and grade 3–5 safety details",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Complete subgroup and GI-cancer bleeding tables",
+        "Treatment discontinuation and grade 3–5 safety details",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-select-d-2026-11-23",
@@ -3411,19 +3861,54 @@
       "trial": "API-CAT",
       "category": "new_candidate_primary_source_and_page_completion",
       "severity": "high",
-      "status": "open",
+      "status": "held",
       "created_at": "2026-11-23",
       "evidence_source": [
         "https://doi.org/10.1056/NEJMoa2416112",
         "https://pubmed.ncbi.nlm.nih.gov/40162636/"
       ],
-      "verification": "primary DOI/PMID identified",
-      "action": "Complete primary publication/protocol extraction, denominators, endpoint definitions, follow-up, grade 3–5 toxicity, QoL, discontinuation and subgroup data; build one canonical page and run DOI/title, NNT/NNH, visualization and release QA.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "reason": "Complete primary/protocol extraction, endpoints/denominators, follow-up, grade 3–5 toxicity, QoL/discontinuation and page-level QA are not complete.",
       "publication_status": "not_published",
       "nccn_provenance": {
         "status": "not verified — no exact NCCN citation checked"
-      }
+      },
+      "last_reviewed_on": "2026-11-27",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2416112",
+      "primary_pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/",
+        "https://clinicaltrials.gov/study/NCT03692065"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full major bleeding and grade 3–5 safety tables",
+        "Discontinuation, adherence and subgroup estimates",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Full major bleeding and grade 3–5 safety tables",
+        "Discontinuation, adherence and subgroup estimates",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-pivotal-daromun-melanoma-2026-11-23",
@@ -4083,23 +4568,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://ascopubs.org/doi/full/10.1200/JCO.23.00775",
         "https://pubmed.ncbi.nlm.nih.gov/37506346/",
         "https://clinicaltrials.gov/study/NCT03332017"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "full dose/schedule",
         "complete grade 3–5 toxicity and discontinuation tables",
         "QoL/PRO status",
         "full follow-up and subgroup extraction"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1200/JCO.23.00775",
+      "primary_pmid": "37506346",
+      "registry_id": "NCT03332017",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO.23.00775",
+        "https://pubmed.ncbi.nlm.nih.gov/37506346/",
+        "https://clinicaltrials.gov/study/NCT03332017"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full obinutuzumab schedule/maintenance and protocol amendments",
+        "Complete grade 3–5 safety, serious AE, dose interruption and discontinuation tables",
+        "Longer-term follow-up and QoL status"
+      ],
+      "missing_evidence": [
+        "Full obinutuzumab schedule/maintenance and protocol amendments",
+        "Complete grade 3–5 safety, serious AE, dose interruption and discontinuation tables",
+        "Longer-term follow-up and QoL status"
+      ]
     },
     {
       "issue_id": "candidate-panova-3-page-completion-2026-11-26-evening",
@@ -4111,23 +4630,59 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://ascopubs.org/doi/full/10.1200/JCO-25-00746",
         "https://pubmed.ncbi.nlm.nih.gov/40448572/",
         "https://clinicaltrials.gov/study/NCT03377491"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "full randomized denominators and analysis populations",
         "complete grade 3–5 toxicity and treatment burden",
         "QoL/PRO table-level extraction",
         "stratification and follow-up maturity"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1200/JCO-25-00746",
+      "primary_pmid": "40448572",
+      "registry_id": "NCT03377491",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO-25-00746",
+        "https://pubmed.ncbi.nlm.nih.gov/40448572/",
+        "https://clinicaltrials.gov/study/NCT03377491",
+        "https://doi.org/10.1001/jamanetworkopen.2026.41241",
+        "https://pubmed.ncbi.nlm.nih.gov/43024239/"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Exact median follow-up, device adherence/exposure and treatment discontinuation tables",
+        "Full grade 3–5 event-specific safety tables",
+        "Domain-level estimates from the 2026 QoL secondary analysis"
+      ],
+      "missing_evidence": [
+        "Exact median follow-up, device adherence/exposure and treatment discontinuation tables",
+        "Full grade 3–5 event-specific safety tables",
+        "Domain-level estimates from the 2026 QoL secondary analysis"
+      ]
     },
     {
       "issue_id": "candidate-paradigm-page-completion-2026-11-26-evening",
@@ -4139,23 +4694,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC10114040/",
         "https://pubmed.ncbi.nlm.nih.gov/37071094/",
         "https://clinicaltrials.gov/study/NCT02394795"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "complete safety/grade 3–5 table",
         "treatment exposure and discontinuation",
         "QoL/PRO status",
         "stratification and subgroup details"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1001/jama.2023.4428",
+      "primary_pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "evidence_sources": [
+        "https://doi.org/10.1001/jama.2023.4428",
+        "https://pubmed.ncbi.nlm.nih.gov/37071094/",
+        "https://clinicaltrials.gov/study/NCT02394795"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full arm-specific safety and discontinuation tables",
+        "Stratification factors and full subgroup tables",
+        "QoL/PRO status"
+      ],
+      "missing_evidence": [
+        "Full arm-specific safety and discontinuation tables",
+        "Stratification factors and full subgroup tables",
+        "QoL/PRO status"
+      ]
     },
     {
       "issue_id": "candidate-gog-240-page-completion-2026-11-26-evening",
@@ -4167,23 +4756,60 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa1309748",
         "https://pubmed.ncbi.nlm.nih.gov/24552320/",
         "https://clinicaltrials.gov/study/NCT00803062"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "four-arm factorial dose/contrast extraction",
         "complete grade 3–5 safety denominators",
         "PRO/QoL table extraction",
         "long-term fistula and thromboembolic follow-up"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa1309748",
+      "primary_pmid": "24552320",
+      "registry_id": "NCT00803062",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1309748",
+        "https://pubmed.ncbi.nlm.nih.gov/24552320/",
+        "https://clinicaltrials.gov/study/NCT00803062",
+        "https://doi.org/10.1016/S0140-6736(17)31607-0",
+        "https://pubmed.ncbi.nlm.nih.gov/28756902/",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete final-analysis grade 3–5 toxicity and discontinuation tables",
+        "Longitudinal QoL domain estimates and denominators",
+        "Protocol-level chemotherapy backbone denominators and final follow-up table"
+      ],
+      "missing_evidence": [
+        "Complete final-analysis grade 3–5 toxicity and discontinuation tables",
+        "Longitudinal QoL domain estimates and denominators",
+        "Protocol-level chemotherapy backbone denominators and final follow-up table"
+      ]
     },
     {
       "issue_id": "candidate-empower-cervical1-page-completion-2026-11-26-evening",
@@ -4195,23 +4821,58 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2112187",
         "https://pubmed.ncbi.nlm.nih.gov/35139273/",
         "https://clinicaltrials.gov/study/NCT03257267"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "investigator-choice chemotherapy distribution/dose",
         "grade 3–5 immune-related and treatment-related AE denominators",
         "QoL/PRO data",
         "mature follow-up and subgroup table reconciliation"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2112187",
+      "primary_pmid": "35139273",
+      "registry_id": "NCT03257267",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2112187",
+        "https://pubmed.ncbi.nlm.nih.gov/35139273/",
+        "https://clinicaltrials.gov/study/NCT03257267",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Exact investigator-choice chemotherapy dose/schedule distribution",
+        "Full grade 3–5 AE and discontinuation tables by histology",
+        "Exact domain-level estimates from the separate PRO analysis"
+      ],
+      "missing_evidence": [
+        "Exact investigator-choice chemotherapy dose/schedule distribution",
+        "Full grade 3–5 AE and discontinuation tables by histology",
+        "Exact domain-level estimates from the separate PRO analysis"
+      ]
     },
     {
       "issue_id": "candidate-innovatv-301-page-completion-2026-11-26-evening",
@@ -4223,23 +4884,58 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2313811",
         "https://pubmed.ncbi.nlm.nih.gov/38959480/",
         "https://clinicaltrials.gov/study/NCT04697628"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "ocular/neuropathy/bleeding grade 3–5 AE table",
         "dose modification and discontinuation denominators",
         "QoL/PRO status",
         "mature follow-up and subgroup extraction"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2313811",
+      "primary_pmid": "38959480",
+      "registry_id": "NCT04697628",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2313811",
+        "https://pubmed.ncbi.nlm.nih.gov/38959480/",
+        "https://clinicaltrials.gov/study/NCT04697628",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/21/12/article-p1224.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete grade 3–5 AE, ocular toxicity, neuropathy and discontinuation tables",
+        "Detailed dose intensity and treatment exposure",
+        "QoL/PRO status"
+      ],
+      "missing_evidence": [
+        "Complete grade 3–5 AE, ocular toxicity, neuropathy and discontinuation tables",
+        "Detailed dose intensity and treatment exposure",
+        "QoL/PRO status"
+      ]
     },
     {
       "issue_id": "candidate-nrg-gy018-page-completion-2026-11-26-evening",
@@ -4251,23 +4947,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2302312",
         "https://pubmed.ncbi.nlm.nih.gov/36972022/",
         "https://clinicaltrials.gov/study/NCT03914612"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "exact MMR-cohort denominators and stratification",
         "grade 3–5 AE denominators by cohort",
         "dose intensity/discontinuation and PRO/QoL",
         "mature follow-up and updated OS status"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2302312",
+      "primary_pmid": "36972022",
+      "registry_id": "NCT03914612",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2302312",
+        "https://pubmed.ncbi.nlm.nih.gov/36972022/",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete stratification factors and maintenance exposure",
+        "Full grade 3–5 safety tables by MMR cohort and attribution",
+        "Updated OS maturity and patient-reported outcomes"
+      ],
+      "missing_evidence": [
+        "Complete stratification factors and maintenance exposure",
+        "Full grade 3–5 safety tables by MMR cohort and attribution",
+        "Updated OS maturity and patient-reported outcomes"
+      ]
     },
     {
       "issue_id": "candidate-checkmate-77t-page-completion-2026-11-26-evening",
@@ -4279,23 +5009,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2311926",
         "https://pubmed.ncbi.nlm.nih.gov/38749033/",
         "https://clinicaltrials.gov/study/NCT04025879"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "full chemotherapy backbone and dose table",
         "grade 3–5 AE and surgical complication denominators",
         "QoL/PRO status",
         "mature OS and subgroup follow-up"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2311926",
+      "primary_pmid": "38749033",
+      "registry_id": "NCT04025879",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/",
+        "https://clinicaltrials.gov/study/NCT04025879"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full platinum-doublet distribution and surgical timing",
+        "Complete grade 3–5 AE, surgical delay and discontinuation tables",
+        "Mature OS and QoL/PRO tables"
+      ],
+      "missing_evidence": [
+        "Full platinum-doublet distribution and surgical timing",
+        "Complete grade 3–5 AE, surgical delay and discontinuation tables",
+        "Mature OS and QoL/PRO tables"
+      ]
     },
     {
       "issue_id": "candidate-caravaggio-page-completion-2026-11-26-evening",
@@ -4307,23 +5071,58 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa1915103",
         "https://pubmed.ncbi.nlm.nih.gov/32223112/",
         "https://clinicaltrials.gov/study/NCT03045406"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "full safety and clinically relevant nonmajor bleeding table",
         "treatment discontinuation and cancer-site subgroup extraction",
         "QoL/PRO status",
         "final follow-up and event adjudication details"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa1915103",
+      "primary_pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/",
+        "https://clinicaltrials.gov/study/NCT03045406",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full recurrent VTE/CRNMB subgroup and discontinuation tables",
+        "Grade 3–5 safety details and cancer-site-specific bleeding",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Full recurrent VTE/CRNMB subgroup and discontinuation tables",
+        "Grade 3–5 safety details and cancer-site-specific bleeding",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-api-cat-page-completion-2026-11-26-evening",
@@ -4335,23 +5134,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/abs/10.1056/NEJMoa2416112",
         "https://pubmed.ncbi.nlm.nih.gov/?term=10.1056%2FNEJMoa2416112",
         "https://clinicaltrials.gov/study/NCT03692065"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "full bleeding severity/adjudication table",
         "subgroup and treatment discontinuation details",
         "QoL/PRO status",
         "noninferiority margin and analysis population reconciliation"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2416112",
+      "primary_pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/",
+        "https://clinicaltrials.gov/study/NCT03692065"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full major bleeding and grade 3–5 safety tables",
+        "Discontinuation, adherence and subgroup estimates",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Full major bleeding and grade 3–5 safety tables",
+        "Discontinuation, adherence and subgroup estimates",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-hokusai-vte-cancer-page-completion-2026-11-26-evening",
@@ -4363,23 +5196,58 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa1711948",
         "https://pubmed.ncbi.nlm.nih.gov/29231094/",
         "https://clinicaltrials.gov/study/NCT02073682"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "complete bleeding and cancer-site subgroup tables",
         "treatment discontinuation and exposure",
         "QoL/PRO status",
         "full noninferiority analysis and event timing extraction"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa1711948",
+      "primary_pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa1711948",
+        "https://pubmed.ncbi.nlm.nih.gov/29231094/",
+        "https://clinicaltrials.gov/study/NCT02073682",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete subgroup and GI-cancer bleeding tables",
+        "Treatment discontinuation and grade 3–5 safety details",
+        "QoL status"
+      ],
+      "missing_evidence": [
+        "Complete subgroup and GI-cancer bleeding tables",
+        "Treatment discontinuation and grade 3–5 safety details",
+        "QoL status"
+      ]
     },
     {
       "issue_id": "candidate-nadina-page-completion-2026-11-26-evening",
@@ -4391,23 +5259,60 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2402604",
         "https://pubmed.ncbi.nlm.nih.gov/38828984/",
         "https://clinicaltrials.gov/study/NCT04949113"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "exact dose/schedule and response-adapted adjuvant algorithm",
         "grade 3–5 AE and surgery timing denominators",
         "QoL/PRO status",
         "longer-term EFS/OS follow-up"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2402604",
+      "primary_pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/",
+        "https://clinicaltrials.gov/study/NCT04949113",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Protocol-level response-adapted adjuvant treatment and BRAF pathway details",
+        "Full surgery/perioperative and grade 3–5 toxicity tables",
+        "Long-term EFS/OS follow-up and QoL status",
+        "Current NCCN citation mapping; accessible 2024 Insights does not cite NADINA"
+      ],
+      "missing_evidence": [
+        "Protocol-level response-adapted adjuvant treatment and BRAF pathway details",
+        "Full surgery/perioperative and grade 3–5 toxicity tables",
+        "Long-term EFS/OS follow-up and QoL status",
+        "Current NCCN citation mapping; accessible 2024 Insights does not cite NADINA"
+      ]
     },
     {
       "issue_id": "candidate-swog-s1801-page-completion-2026-11-26-evening",
@@ -4419,23 +5324,58 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2211437",
         "https://pubmed.ncbi.nlm.nih.gov/36856617/",
         "https://clinicaltrials.gov/study/NCT03698019"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "treatment exposure and surgery timing",
         "grade 3–5 AE denominators and discontinuation",
         "QoL/PRO status",
         "mature long-term EFS/OS follow-up"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2211437",
+      "primary_pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/",
+        "https://clinicaltrials.gov/study/NCT03698019",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/5/article-p290.pdf"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Complete surgery timing, treatment exposure and grade 3–5 safety tables",
+        "Longer-term EFS/OS maturity and PRO/QoL",
+        "Full subgroup estimates"
+      ],
+      "missing_evidence": [
+        "Complete surgery timing, treatment exposure and grade 3–5 safety tables",
+        "Longer-term EFS/OS maturity and PRO/QoL",
+        "Full subgroup estimates"
+      ]
     },
     {
       "issue_id": "candidate-aurelia-page-completion-2026-11-26-evening",
@@ -4447,23 +5387,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://ascopubs.org/doi/full/10.1200/JCO.2013.51.4489",
         "https://pubmed.ncbi.nlm.nih.gov/24637997/",
         "https://clinicaltrials.gov/study/NCT00976911"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "arm-specific chemotherapy distribution and grade 3–5 safety",
         "bowel obstruction/fistula risk and discontinuation tables",
         "full PRO/QoL results",
         "long-term OS and crossover interpretation"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1200/JCO.2013.51.4489",
+      "primary_pmid": "24637997",
+      "registry_id": "NCT00976911",
+      "evidence_sources": [
+        "https://doi.org/10.1200/JCO.2013.51.4489",
+        "https://pubmed.ncbi.nlm.nih.gov/24637997/",
+        "https://clinicaltrials.gov/study/NCT00976911"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Chemotherapy partner-specific doses and full exposure",
+        "Grade 3–5 hypertension, proteinuria, GI perforation and discontinuation tables",
+        "PRO/QoL domain-level estimates and subgroup outcomes"
+      ],
+      "missing_evidence": [
+        "Chemotherapy partner-specific doses and full exposure",
+        "Grade 3–5 hypertension, proteinuria, GI perforation and discontinuation tables",
+        "PRO/QoL domain-level estimates and subgroup outcomes"
+      ]
     },
     {
       "issue_id": "candidate-desktop-iii-page-completion-2026-11-26-evening",
@@ -4475,23 +5449,57 @@
       "severity": "medium",
       "status": "held",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Primary publication DOI/title and ClinicalTrials.gov registry identity located and cross-checked. Candidate is absent from existing roster, canonical page tree, archive and Trial-of-the-Day history. Full clinical extraction and canonical page construction are incomplete.",
       "source_urls": [
         "https://www.nejm.org/doi/full/10.1056/NEJMoa2103294",
         "https://pubmed.ncbi.nlm.nih.gov/34874631/",
         "https://clinicaltrials.gov/study/NCT01166737"
       ],
-      "verification": "Bibliographic identity and registry verified; this does not certify complete endpoint, denominator, dose, safety, QoL or follow-up extraction.",
+      "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
       "missing_fields": [
         "perioperative grade 3–5 complication denominators",
         "surgical morbidity and subsequent chemotherapy delivery",
         "QoL instrument/timepoint table",
         "full subgroup and follow-up extraction"
       ],
-      "action": "Complete full primary publication/protocol/supplement extraction and build one canonical page only after all required fields are reconciled.",
+      "action": "Finish the listed primary publication/protocol/supplement extraction, re-read the canonical draft, run browser-rendered outcome visualization QA and the local strict release validator. Keep held and do not open/merge a PR until all 30 batch pages pass.",
       "next_action": "Extract population/eligibility, randomization/stratification, dose/schedule, endpoint definitions, denominators, follow-up, grade 3–5 toxicity, QoL/PRO, treatment burden and subgroup results; calculate NNT/NNH only from comparable fixed-time absolute risks; then run page and visualization QA.",
-      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred."
+      "nccn_provenance": "not verified — current full guideline/reference list inaccessible; no reference number, section or recommendation category inferred.",
+      "last_source_review_date": "2026-11-27",
+      "primary_doi": "10.1056/NEJMoa2103294",
+      "primary_pmid": "34874631",
+      "registry_id": "NCT01166737",
+      "evidence_sources": [
+        "https://doi.org/10.1056/NEJMoa2103294",
+        "https://pubmed.ncbi.nlm.nih.gov/34874631/",
+        "https://clinicaltrials.gov/study/NCT01166737"
+      ],
+      "source_review": {
+        "bibliographic_identity_verified": true,
+        "doi_title_match": true,
+        "registry_identity_checked": true,
+        "key_primary_endpoint_and_outcomes_checked": true,
+        "full_supplement_tables_reconciled": false,
+        "grade3plus_safety_extraction": "partial",
+        "qol_pro_extraction": "partial_or_not_reported",
+        "protocol_schedule_reconciled": false,
+        "page_draft_staged": true,
+        "release_ready": false,
+        "browser_rendered_visualization_qa": false,
+        "local_release_validator": false,
+        "reviewed_on": "2026-11-27"
+      },
+      "missing": [
+        "Full AGO score eligibility and chemotherapy exposure detail",
+        "Grade 3–5 surgical morbidity and systemic toxicity tables",
+        "Longitudinal QoL and subgroup follow-up"
+      ],
+      "missing_evidence": [
+        "Full AGO score eligibility and chemotherapy exposure detail",
+        "Grade 3–5 surgical morbidity and systemic toxicity tables",
+        "Longitudinal QoL and subgroup follow-up"
+      ]
     },
     {
       "issue_id": "candidate-review-prima-2026-11-26",
@@ -4627,6 +5635,23 @@
       "source_urls": [
         "https://clinicaltrials.gov/study/NCT04428151"
       ]
+    },
+    {
+      "issue_id": "atlas-batch-2026-11-27-release-gate",
+      "trial_id": null,
+      "canonical_trial_id": null,
+      "canonical_page_path": null,
+      "category": "batch_release_gate",
+      "severity": "critical",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "last_reviewed_on": "2026-11-27",
+      "issue": "Thirty unique trial drafts are staged on atlas-batch/2026-11-27-am, but no local strict release validator or browser-rendered visualization audit has been run; no PR has been opened and no pages are uploaded.",
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
+        "Container-side Git clone failed due network/DNS; no local working tree is available."
+      ],
+      "action": "Obtain a local clone, run scripts/validate-trial-release.js and all visual audits, inspect every page and DOI cache entry, fix all failures on this branch, then open PR and wait for all required checks before merge."
     }
   ],
   "resolved_items": [
@@ -6026,6 +7051,35 @@
       "resolved_items": 77,
       "uploaded": 0,
       "report_path": "data/daily-reports/2026-11-27-morning.json"
+    },
+    {
+      "date": "2026-11-27",
+      "cycle": "evening-continuation",
+      "branch": "atlas-batch/2026-11-27-am",
+      "reviewed_trial_ids": [
+        "rosewood",
+        "panova-3",
+        "paradigm",
+        "gog-240",
+        "empower-cervical1",
+        "innovatv-301",
+        "nrg-gy018",
+        "checkmate-77t",
+        "caravaggio",
+        "api-cat",
+        "hokusai-vte-cancer",
+        "nadina",
+        "swog-s1801",
+        "aurelia",
+        "desktop-iii",
+        "ovhipec-1"
+      ],
+      "items_reviewed": 31,
+      "items_closed": 0,
+      "items_added": 1,
+      "local_validator": "not run",
+      "pr_opened": false,
+      "merged": false
     }
   ],
   "previous_partial_runs": [
@@ -6118,58 +7172,58 @@
     }
   ],
   "last_partial_run": {
-    "date": "2026-11-26",
-    "cycle": "evening continuation — carry-forward queue review",
-    "timestamp": "2026-11-26T19:54:35+05:30",
-    "branch": "atlas-batch/2026-11-26-am",
-    "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_before": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
-    "screened_candidates_new": 0,
-    "carry_forward_candidates_reaudited": 9,
-    "unique_identities_reconfirmed": 9,
-    "duplicates": 0,
-    "held_candidates": 9,
-    "fully_page_verified_candidates": 0,
-    "uploaded_pages": 0,
-    "queue_items_opened": 1,
-    "queue_integrity_repairs": 1,
-    "queue_items_resolved": 1,
-    "staged_pages_structurally_rechecked": 10,
-    "clinical_page_repairs": 0,
-    "nccn_full_guidelines_accessible": false,
-    "status": "INCOMPLETE — 0/30 uploaded; nine carry-forward unique candidates re-reviewed and remain held; no PR/merge.",
-    "branch_commit": "213413518c13dc128868ebd37444e9d00039c220"
+    "date": "2026-11-27",
+    "cycle": "evening-continuation",
+    "status": "INCOMPLETE",
+    "reviewed_trial_ids": [
+      "rosewood",
+      "panova-3",
+      "paradigm",
+      "gog-240",
+      "empower-cervical1",
+      "innovatv-301",
+      "nrg-gy018",
+      "checkmate-77t",
+      "caravaggio",
+      "api-cat",
+      "hokusai-vte-cancer",
+      "nadina",
+      "swog-s1801",
+      "aurelia",
+      "desktop-iii",
+      "ovhipec-1"
+    ],
+    "items_reviewed": 31,
+    "items_closed": 0,
+    "items_open": 229,
+    "reason": "Full source-table extraction and local release validation remain incomplete."
   },
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "last_run": {
     "date": "2026-11-27",
-    "cycle": "morning",
-    "timestamp": "2026-11-27T08:59:09+05:30",
+    "cycle": "evening-continuation",
     "branch": "atlas-batch/2026-11-27-am",
-    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
-    "existing_pages_audited": 1,
-    "staged_pages_structurally_rechecked": 10,
-    "clinical_page_repairs": 1,
-    "source_review_items_closed": 2,
-    "queue_items_opened": 6,
-    "queue_items_resolved": 3,
-    "uploaded_pages": 0,
-    "status": "INCOMPLETE",
-    "run_report_path": "data/daily-reports/2026-11-27-morning.json"
+    "branch_head_before": "37e2955d93469215dd491a6954c2580f69546150",
+    "page_content_commit": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
+    "items_reviewed": 31,
+    "items_closed": 0,
+    "items_held": 16,
+    "release_gate_open": true
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 228,
+    "open_items": 229,
     "resolved_items": 77,
     "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
     "last_run_note": "27 Nov AM: Early ONS numerical chart repair closed; ImmunoPRISM and nivolumab primary-source extraction closed; four new browser QA items and two primary-source verification holds opened. Full clinical audit remains open.",
-    "last_updated": "2026-11-27"
+    "last_updated": "2026-11-27",
+    "last_reviewed_on": "2026-11-27",
+    "release_gate_status": "open"
   },
-  "updated_on": "2026-11-23T19:28:00+05:30",
-  "last_run_date": "2026-11-23",
-  "last_run_cycle": "evening"
+  "updated_on": "2026-11-27",
+  "last_run_date": "2026-11-27",
+  "last_run_cycle": "evening-continuation"
 }
