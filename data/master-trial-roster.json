@@ -27,7 +27,7 @@
     "NSCLC-specific primary-setting taxonomy: use only Early, Metastatic, Adjuvant, Neoadjuvant, or Consolidation. Do not use Relapsed / Refractory, Advanced / Metastatic, Locally Advanced, Perioperative, or other primary-setting labels for NSCLC. Classify previously treated/progressed advanced NSCLC as Metastatic and retain relapse/progression/prior-line context in separate metadata or setting_detail. Use Neoadjuvant for perioperative trials whose treatment begins preoperatively; use Consolidation for post-definitive CRT systemic therapy; use Early for localized/locally advanced non-metastatic definitive-treatment trials."
   ],
   "audit": {
-    "permanent_trial_pages": 473,
+    "permanent_trial_pages": 474,
     "unique_archive_additions": 4,
     "unique_trial_of_day_records_already_in_trial_pages": 4,
     "total_unique_trials": 475,
@@ -90,7 +90,7 @@
       "LACC trial",
       "SHAPE"
     ],
-    "last_quality_check": "2026-11-27: 10 staged pages structurally re-read; Early ONS numerical chart corrected to primary JAMA abstract; four new pages source-verified; browser render QA and full 461-page clinical audit remain open.",
+    "last_quality_check": "2026-11-27: Early ONS charts now use primary JAMA values and corrected NNT arithmetic; 10 staged pages structurally re-read; four new pages source-verified; browser QA/full clinical audit remain open.",
     "dropdown_questions_rewritten": "2026-09-23",
     "dropdown_questions_rewritten_count": 66,
     "current_trial_of_the_day": {
@@ -1990,7 +1990,7 @@
     "batch_target": 30,
     "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch_head_after_content_commit": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
-    "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+    "branch_head_after_metadata_commit": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
     "branch_base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "evidence_index_links": 519,
     "missing_index_links": 0,
@@ -2015,7 +2015,15 @@
     "deployment_verified": false,
     "run_report_path": "data/daily-reports/2026-11-27-morning.json",
     "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
-    "full_clinical_audit_scope": "Not completed: one primary numerical repair and ten structural page re-reads only; complete page-by-page clinical audit remains open."
+    "full_clinical_audit_scope": "Not completed: one primary numerical repair and ten structural page re-reads only; complete page-by-page clinical audit remains open.",
+    "canonical_page_directories": 474,
+    "trial_page_files_in_tree": 475,
+    "redirect_stub_pages": 1,
+    "index_unique_trial_slugs": 474,
+    "known_redirect_or_stub_excluded": [
+      "trial-pages/rosel/index.html → trial-pages/lung-sabr-definitions/#rosel"
+    ],
+    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
   },
   "trials": [
     {
@@ -13033,9 +13041,10 @@
     "last_progress_note": "14/30 selected unique page drafts staged; 7 source-verified; 0 release-ready pending browser render; 16 selected pages remain to build. No PR/merge.",
     "run_report_path": "data/daily-reports/2026-11-27-morning.json",
     "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
-    "metadata_commit_sha": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+    "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
     "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2"
+    "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
   },
   "last_run_date": "2026-11-27",
   "last_run_cycle": "morning",

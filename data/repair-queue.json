@@ -5817,7 +5817,7 @@
       "action": "Corrected chart values, confidence interval, source note and NNT arithmetic to 15.3pp→7 and12.6pp→8.",
       "status": "resolved",
       "resolved_on": "2026-11-27",
-      "verification": "Page re-read; static values matched primary abstract; browser-render QA remains open.",
+      "verification": "Re-read page after correction: primary chart 65.4% vs80.7%, width81.0%; secondary chart14.0% vs26.6%, width52.6%; data-benefit15.3pp/NNT7 and12.6pp/NNT8; arithmetic 1/0.153=6.54 and1/0.126=7.94, both rounded up. Browser-render QA remains separately open.",
       "source_urls": [
         "https://pubmed.ncbi.nlm.nih.gov/43018988/",
         "https://doi.org/10.1001/jamaoncol.2026.4535"

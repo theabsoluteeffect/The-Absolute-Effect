@@ -1117,7 +1117,8 @@
         "rates": "65.4% vs80.7%",
         "absolute_benefit_pp": 15.3,
         "nnt": 7,
-        "calculation": "ceil(1/0.153)=7"
+        "calculation": "ceil(1/0.153)=7; chart width81.0%",
+        "chart_corrected": true
       },
       {
         "trial_id": "early-ons-npc",
@@ -1125,7 +1126,8 @@
         "rates": "14.0% vs26.6%",
         "absolute_benefit_pp": 12.6,
         "nnt": 8,
-        "calculation": "ceil(1/0.126)=8"
+        "calculation": "ceil(1/0.126)=8; chart width52.6%",
+        "chart_corrected": true
       },
       {
         "trial_id": "chlorophyllin-tnt",
@@ -1198,7 +1200,7 @@
   "roster_index_archive": {
     "roster_entries": 481,
     "branch_unique_studies": 475,
-    "canonical_page_directories": 473,
+    "canonical_page_directories": 474,
     "index_links": 519,
     "missing_index_links": 0,
     "archive_entries": 18,
@@ -1207,7 +1209,10 @@
     "repair_queue_open": 228,
     "repair_queue_resolved": 77,
     "deferred_negative_items": 33,
-    "checkmate816_keynoteA18_lacc_shape": "All four remain rostered/indexed in path-level reconciliation; full clinical audit remains open."
+    "checkmate816_keynoteA18_lacc_shape": "All four remain rostered/indexed in path-level reconciliation; full clinical audit remains open.",
+    "trial_page_files_in_tree": 475,
+    "redirect_stub_pages": 1,
+    "index_unique_trial_slugs": 474
   },
   "validation": {
     "local_clone": "Failed DNS resolution for github.com; no local checkout.",
@@ -1248,7 +1253,8 @@
   "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
   "report_path": "data/daily-reports/2026-11-27-morning.json",
   "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
-  "metadata_commit_sha": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
+  "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
   "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
-  "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c"
+  "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+  "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
 }
