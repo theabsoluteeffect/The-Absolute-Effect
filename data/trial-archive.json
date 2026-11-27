@@ -449,17 +449,17 @@
   {
     "date": "2026-11-26",
     "id": "early-ons-npc",
-    "trial": "Early ONS NPC",
+    "trial": "Early versus routine oral nutritional supplementation during chemoradiotherapy for nasopharyngeal carcinoma",
     "title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
     "journal": "JAMA Oncology",
     "url": "https://doi.org/10.1001/jamaoncol.2026.4535",
     "site": "Nasopharyngeal carcinoma",
     "discipline": "Supportive Care / Clinical Nutrition",
-    "setting": "Nutrition support during definitive concurrent chemoradiotherapy",
+    "setting": "Supportive care during concurrent chemoradiotherapy",
     "population": "Adults 18–70 years with stage II–IVA NPC, planned CCRT and baseline PG-SGA 0–8; FAS n=216 (107 vs 109).",
-    "summary": "Proactive ONS from the start of CCRT reduced >5% weight loss and grade ≥3 RIOM in the conference-report FAS; NNT 6 at CCRT completion for each endpoint.",
+    "summary": "Primary JAMA Oncology abstract values supersede the earlier ESMO conference analysis for numerical efficacy and safety. The ESMO report is retained for supplement dose and historical conference context.",
     "criticalReview": "Supports early dietitian-led nutrition support in selected well-nourished NPC patients starting CCRT; does not establish a survival benefit or replace individualized escalation to enteral feeding.",
-    "primary_endpoint": ">5% body-weight loss from baseline to CCRT completion",
+    "primary_endpoint": "Weight loss >5% during concurrent chemoradiotherapy",
     "effect_summary": ">5% weight loss at CCRT completion: 69.8% vs 88.8% (p=0.008), 19.0 pp benefit, NNT 6; grade ≥3 RIOM: 10.9% vs 28.0% (p=0.011), 17.1 pp benefit, NNT 6.",
     "source_type": "JAMA Oncology publication metadata plus ESMO 2025 LBA103 primary conference results; full JAMA text not mined",
     "publication_date": "2026-11-12",
@@ -467,6 +467,32 @@
     "pmid": "43018988",
     "registry_id": "NCT04823468",
     "page_path": "trial-pages/early-ons-npc/index.html",
-    "nccn_provenance": "not verified — current full NCCN Head and Neck guideline/reference list inaccessible; NCCN Insights v2.2025 is limited scope and not a complete guideline."
+    "nccn_provenance": "not verified — current full NCCN Head and Neck guideline/reference list inaccessible; NCCN Insights v2.2025 is limited scope and not a complete guideline.",
+    "primary_title": "Early versus routine oral nutritional supplementation during chemoradiotherapy for nasopharyngeal carcinoma: a randomized clinical trial",
+    "primary_doi": "10.1001/jamaoncol.2026.4535",
+    "primary_results": "70/107 (65.4%) versus 88/109 (80.7%); RR 0.81 (95% CI 0.68–0.96), p=0.01; absolute reduction 15.3 percentage points; NNT 7.",
+    "secondary_results": "Grade ≥3 radiation-induced oral mucositis 14.0% versus 26.6%; RR 0.53 (95% CI 0.30–0.93); p value not reported; absolute reduction 12.6 percentage points; NNT 8.",
+    "absolute_effects": [
+      {
+        "endpoint": "Weight loss >5% during CCRT",
+        "horizon": "During CCRT to treatment completion",
+        "benefit_percentage_points": 15.3,
+        "nnt": 7,
+        "calculation": "ceil(1/0.153)=7"
+      },
+      {
+        "endpoint": "Grade ≥3 radiation-induced oral mucositis",
+        "horizon": "During CCRT",
+        "benefit_percentage_points": 12.6,
+        "nnt": 8,
+        "calculation": "ceil(1/0.126)=8"
+      }
+    ],
+    "source_note": "Primary JAMA Oncology abstract (PMID 43018988) used for numerical outcomes; full article text not mined. Earlier ESMO LBA103 abstract retained only for supplement-dose and conference context.",
+    "branch": "atlas-batch/2026-11-27-am",
+    "production_status": "staged_on_branch_not_production",
+    "archive_date": "2026-11-27",
+    "archived_on": "2026-11-27",
+    "archive_note": "Moved to previous Trial of the Day when Chlorophyllin TNT was selected on 27 November 2026; numerical outcomes reconciled to the primary JAMA Oncology abstract."
   }
 ]

@@ -496,7 +496,60 @@
       "verified_on": "2026-11-27",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42874102/",
       "status": "verified"
+    },
+    {
+      "doi": "10.1001/jamaoncol.2026.4843",
+      "primary_title": "Chlorophyllin for Toxic Effect Prevention During Total Neoadjuvant Therapy in Rectal Cancer: A Randomized Clinical Trial",
+      "pmid": "43084277",
+      "registry_id": "NCT05856305",
+      "trial_id": "chlorophyllin-tnt",
+      "verified_on": "2026-11-27",
+      "verification_source": "PubMed and JAMA Oncology publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/43084277/",
+      "title_match": true,
+      "status": "verified",
+      "verification_note": "Exact DOI/title match; CTRI/2023/04/051458 also listed in primary abstract."
+    },
+    {
+      "doi": "10.1038/s41591-026-04642-w",
+      "primary_title": "Teclistamab versus lenalidomide-dexamethasone in high-risk smoldering multiple myeloma: a randomized phase 2 trial",
+      "pmid": "42728379",
+      "registry_id": "NCT05469893",
+      "trial_id": "immunoprism",
+      "verified_on": "2026-11-27",
+      "verification_source": "PubMed and Nature Medicine/PMC metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42728379/",
+      "title_match": true,
+      "status": "verified",
+      "verification_note": "Exact DOI/title match; full primary article reviewed."
+    },
+    {
+      "doi": "10.1016/j.esmoop.2026.108578",
+      "primary_title": "Nivolumab in patients with advanced solid tumors with ctDNA-defined high blood tumor mutational burden: a phase II trial",
+      "pmid": "42854587",
+      "registry_id": "UMIN000033182",
+      "trial_id": "nivolumab-btmb-basket",
+      "verified_on": "2026-11-27",
+      "verification_source": "PubMed and Elsevier/ESMO Open metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42854587/",
+      "title_match": true,
+      "status": "verified",
+      "verification_note": "Exact DOI/title match; full primary article reviewed via publisher/PMC text."
+    },
+    {
+      "doi": "10.1200/JCO-25-01957",
+      "primary_title": "Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "trial_id": "sunmo",
+      "verified_on": "2026-11-27",
+      "verification_source": "PubMed and JCO publisher metadata",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/41037766/",
+      "title_match": true,
+      "status": "verified",
+      "verification_note": "Exact DOI/title match; primary JCO abstract, protocol and conference safety report reviewed."
     }
   ],
-  "last_verified_on": "2026-11-26"
+  "last_verified_on": "2026-11-26",
+  "last_updated": "2026-11-27"
 }
