@@ -9,7 +9,9 @@
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-27-am",
     "branch_head_before": "37e2955d93469215dd491a6954c2580f69546150",
-    "content_commit_sha": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d"
+    "content_commit_sha": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
+    "metadata_commit_sha": "27b5e90c74e65474f51f7fab1068a6a7f471af13",
+    "branch_head_before_final_followup_link_commit": "27b5e90c74e65474f51f7fab1068a6a7f471af13"
   },
   "uploaded_count": 0,
   "uploaded_cases": [],
@@ -872,7 +874,12 @@
     "release_ready": 0,
     "production_uploaded": 0,
     "pr_opened": false,
-    "merge_status": "not merged"
+    "merge_status": "not merged",
+    "followup_publications_attached_to_canonical_pages": [
+      "gog-240",
+      "panova-3",
+      "ovhipec-1"
+    ]
   },
   "existing_pages_audited_this_run": 0,
   "repairs_made": 0,
@@ -1033,7 +1040,8 @@
   "doi_title_verification": {
     "entries_added_or_updated": 16,
     "source": "PubMed/publisher metadata",
-    "exact_title_match": true
+    "exact_title_match": true,
+    "cache_entry_count": 60
   },
   "validation": {
     "local_release_validator": "not run — no local clone",
