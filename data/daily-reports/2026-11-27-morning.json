@@ -1118,7 +1118,10 @@
         "absolute_benefit_pp": 15.3,
         "nnt": 7,
         "calculation": "ceil(1/0.153)=7; chart width81.0%",
-        "chart_corrected": true
+        "chart_corrected": true,
+        "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+        "primary_doi": "10.1001/jamaoncol.2026.4535",
+        "pmid": "43018988"
       },
       {
         "trial_id": "early-ons-npc",
@@ -1127,7 +1130,10 @@
         "absolute_benefit_pp": 12.6,
         "nnt": 8,
         "calculation": "ceil(1/0.126)=8; chart width52.6%",
-        "chart_corrected": true
+        "chart_corrected": true,
+        "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+        "primary_doi": "10.1001/jamaoncol.2026.4535",
+        "pmid": "43018988"
       },
       {
         "trial_id": "chlorophyllin-tnt",
@@ -1247,14 +1253,25 @@
     "https://doi.org/10.1016/j.esmoop.2026.108578",
     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/",
     "https://doi.org/10.1200/JCO-25-01957",
-    "https://clinicaltrials.gov/study/NCT05171647"
+    "https://clinicaltrials.gov/study/NCT05171647",
+    "https://pubmed.ncbi.nlm.nih.gov/43018988/"
   ],
   "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
   "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
   "report_path": "data/daily-reports/2026-11-27-morning.json",
   "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
-  "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
+  "metadata_commit_sha": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e",
   "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
   "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-  "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
+  "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
+  "primary_title_verification": {
+    "trial_id": "early-ons-npc",
+    "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+    "doi": "10.1001/jamaoncol.2026.4535",
+    "pmid": "43018988",
+    "registry_id": "NCT04823468",
+    "verification_source": "PubMed record and DOI verification cache",
+    "title_match": true
+  },
+  "branch_head_before_title_metadata_patch": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e"
 }

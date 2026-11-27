@@ -2023,7 +2023,8 @@
     "known_redirect_or_stub_excluded": [
       "trial-pages/rosel/index.html → trial-pages/lung-sabr-definitions/#rosel"
     ],
-    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
+    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
+    "branch_head_after_audit_patch": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e"
   },
   "trials": [
     {
@@ -13044,7 +13045,8 @@
     "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
     "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
-    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a"
+    "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
+    "last_verified_branch_head": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e"
   },
   "last_run_date": "2026-11-27",
   "last_run_cycle": "morning",

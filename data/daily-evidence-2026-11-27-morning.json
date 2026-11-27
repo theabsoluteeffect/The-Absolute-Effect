@@ -753,7 +753,7 @@
   },
   "report_path": "data/daily-reports/2026-11-27-morning.json",
   "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
-  "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
+  "metadata_commit_sha": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e",
   "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
   "reconciliation": {
     "trial_page_files_in_tree": 475,
@@ -762,5 +762,15 @@
     "redirect_stub_excluded": "ROSEL page redirects to lung-sabr-definitions/#rosel; no duplicate page or index entry required.",
     "index_unique_trial_slugs": 474,
     "missing_canonical_index_links": 0
-  }
+  },
+  "primary_title_verification": {
+    "trial_id": "early-ons-npc",
+    "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+    "doi": "10.1001/jamaoncol.2026.4535",
+    "pmid": "43018988",
+    "registry_id": "NCT04823468",
+    "verification_source": "PubMed record and DOI verification cache",
+    "title_match": true
+  },
+  "branch_head_before_title_metadata_patch": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e"
 }
