@@ -613,17 +613,48 @@
         }
       ],
       "status_note": "New underlying study; primary report dated 2026-10-23; deferred, not a Trial-of-the-Day candidate on 2026-11-23."
+    },
+    {
+      "trial_id": "setanaxib-pembrolizumab-hnscc",
+      "trial": "Setanaxib plus pembrolizumab in recurrent/metastatic HNSCC",
+      "status": "deferred_contrary_evidence",
+      "date_added": "2026-11-27",
+      "primary_doi": "10.1158/2767-9764.CRC-26-0422",
+      "pmid": null,
+      "registry_id": "NCT05323656",
+      "reason": "Primary endpoint not met; exploratory signals are not statistically definitive or practice-changing.",
+      "action": "Retain in contrary-evidence queue; revisit only if mature peer-reviewed follow-up changes interpretation.",
+      "source_urls": [
+        "https://doi.org/10.1158/2767-9764.CRC-26-0422",
+        "https://clinicaltrials.gov/study/NCT05323656"
+      ]
+    },
+    {
+      "trial_id": "tobemstomig-ccrcc",
+      "trial": "Tobemstomig combinations in clear-cell RCC",
+      "status": "deferred_contrary_evidence",
+      "date_added": "2026-11-27",
+      "primary_doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "reason": "Primary endpoint not met/no convincing PFS benefit; not suitable as a positive practice-supporting page.",
+      "action": "Retain as negative/contrary evidence.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108587",
+        "https://pubmed.ncbi.nlm.nih.gov/42849355/",
+        "https://clinicaltrials.gov/study/NCT05805501"
+      ]
     }
   ],
   "last_run": {
-    "date": "2026-11-26",
-    "cycle": "evening continuation",
-    "timestamp": "2026-11-26T19:24:56+05:30",
-    "new_items_added": 0,
-    "negative_or_contrary_candidates_added": 0,
-    "note": "No newly screened candidate met the deferred-negative/contrary-evidence rule. PIVOT remains explicitly excluded from new additions."
+    "date": "2026-11-27",
+    "cycle": "morning",
+    "branch": "atlas-batch/2026-11-27-am",
+    "items_added": 2,
+    "total_items": 33,
+    "report_path": "data/daily-reports/2026-11-27-morning.json"
   },
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "last_run_date": "2026-11-23",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
   "last_run_note": "Added PROSPER RCC, IMmotion010 and CA017-078 as new unique negative/contrary studies; retained in the deferred queue, not published."

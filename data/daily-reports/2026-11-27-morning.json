@@ -1,0 +1,1251 @@
+{
+  "run_timestamp": "2026-11-27T08:59:09+05:30",
+  "cycle": "morning",
+  "status": "INCOMPLETE",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "branch": "atlas-batch/2026-11-27-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "branch_head_before_metadata_commit": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "main_branch_unchanged": true
+  },
+  "summary": {
+    "existing_canonical_pages_fully_clinically_audited_this_run": 1,
+    "staged_pages_structurally_rechecked": 10,
+    "clinical_repairs_made": 1,
+    "repair_queue_open": 228,
+    "repair_queue_resolved": 77,
+    "screened_candidates": 30,
+    "duplicates_excluded": 15,
+    "new_unique_this_run": 9,
+    "carry_forward_reaudited": 6,
+    "source_verified_new_unique": 3,
+    "carry_forward_promoted": 1,
+    "held": 4,
+    "deferred_contrary": 4,
+    "rejected_protocol_only": 2,
+    "uploaded": 0,
+    "not_uploaded": 30,
+    "selected_unique_batch_count": 30,
+    "staged_page_drafts_total": 14,
+    "source_verified_staged_pages_total": 7,
+    "release_ready_pages": 0,
+    "remaining_pages_to_target": 16,
+    "main_unique_underlying_studies": 461,
+    "main_target": 1000,
+    "main_gap": 539,
+    "branch_unique_underlying_studies": 475,
+    "branch_gap_if_merged": 525
+  },
+  "uploaded_cases": [],
+  "staged_cases": [
+    {
+      "serial": 1,
+      "id": "chlorophyllin-tnt",
+      "trial": "Chlorophyllin TNT",
+      "site": "Rectal adenocarcinoma",
+      "setting": "Supportive care during TNT",
+      "phase_design": "Phase II double-blind placebo-controlled 1:1 RCT",
+      "population": "73 nonmetastatic mid/low rectal adenocarcinoma; 37 vs36",
+      "intervention": "Sodium copper chlorophyllin750mg/day orally from 10–14 days before TNT to 3 months after",
+      "comparator": "Placebo plus same TNT",
+      "primary_endpoint": "Grade≥2 combined acute GI/hematologic/GU toxicity through 3 months after TNT",
+      "efficacy": "24/37 (65%) vs34/36 (94%); RR0.69 (90%CI0.56–0.86), p=0.003; reduction29.6pp. Grade≥3 10/37 (27%) vs19/36 (53%); RR0.51 (90%CI0.30–0.86), p=0.03.",
+      "safety": "Grade3 GI3% vs22%, p=0.01; all completed RT; dose reductions11% vs28%, p=0.07.",
+      "qol": "Not reported.",
+      "nnt": "NNT4 for grade≥2: ceil(1/0.296)=4; NNT4 for grade≥3: ceil(1/0.258)=4.",
+      "doi": "10.1001/jamaoncol.2026.4843",
+      "pmid": "43084277",
+      "registry": "NCT05856305; CTRI/2023/04/051458",
+      "nccn": "Not verified — source inaccessible; mapping open.",
+      "page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-27-am/trial-pages/chlorophyllin-tnt/index.html",
+      "status": "Source-verified; browser QA pending; not uploaded.",
+      "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92"
+    },
+    {
+      "serial": 2,
+      "id": "immunoprism",
+      "trial": "ImmunoPRISM",
+      "site": "High-risk smouldering multiple myeloma",
+      "setting": "Early intervention",
+      "phase_design": "Phase II randomized 2:1 after six-patient safety run-in",
+      "population": "64 enrolled; 59 treated; randomized39 vs14; IMWG20/2/20 and/or additional risk features",
+      "intervention": "SC teclistamab step-up then weekly/q2w; protocol capped12 cycles/15 months",
+      "comparator": "Lenalidomide25mg days1–21+dexamethasone40mg days1,8,15 cycles1–12; lenalidomide15mg cycles13–24",
+      "primary_endpoint": "CR or better in randomized population",
+      "efficacy": "29/39 (74%) vs0/14 at median follow-up24.5mo; p not reported. PFS HR0.15 (95%CI0.04–0.59), p=0.007; all-treated 2y PFS92% vs49%.",
+      "safety": "Grade3/4 neutropenia35.6% vs28.6%; grade3 infections20% vs21.4%; CRS grade1–2; no ICANS or deaths.",
+      "qol": "Not reported.",
+      "nnt": "Not applicable: variable-time CR and all-treated PFS includes nonrandomized run-in.",
+      "doi": "10.1038/s41591-026-04642-w",
+      "pmid": "42728379",
+      "registry": "NCT05469893",
+      "nccn": "NCCN MM v5.2026 metadata only; exact reference not verified.",
+      "page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-27-am/trial-pages/immunoprism/index.html",
+      "status": "Source-verified; browser QA pending; not uploaded.",
+      "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92"
+    },
+    {
+      "serial": 3,
+      "id": "nivolumab-btmb-basket",
+      "trial": "Nivolumab ctDNA-bTMB basket phase II",
+      "site": "Multiple advanced solid tumours",
+      "setting": "Biomarker-selected immunotherapy",
+      "phase_design": "Phase II nonrandomized basket",
+      "population": "70 treated across four cohorts; primary inferential cohort n19",
+      "intervention": "Nivolumab360mg IV q3w until progression/toxicity",
+      "comparator": "None",
+      "primary_endpoint": "ORR in bTMB-High cohort",
+      "efficacy": "4/19 (21.1%),90%CI7.5–41.9%; threshold5% met. Other cohorts14.3%,0%,21.1%. Week3 ctDNA decline PFS HR0.51 (95%CI0.29–0.87), p=0.013 exploratory.",
+      "safety": "Grade≥3 treatment-related AEs6/70 (8.6%) overall; cohort rates7%,25%,16%,0%.",
+      "qol": "Not reported.",
+      "nnt": "Not applicable: single-arm.",
+      "doi": "10.1016/j.esmoop.2026.108578",
+      "pmid": "42854587",
+      "registry": "UMIN000033182",
+      "nccn": "Not verified — source inaccessible; mapping open.",
+      "page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-27-am/trial-pages/nivolumab-btmb-basket/index.html",
+      "status": "Source-verified; browser QA pending; not uploaded.",
+      "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92"
+    },
+    {
+      "serial": 4,
+      "id": "sunmo",
+      "trial": "SUNMO",
+      "site": "R/R large B-cell lymphoma",
+      "setting": "Transplant-ineligible after≥1 prior line",
+      "phase_design": "Phase III open-label randomized2:1",
+      "population": "208 randomized;138 vs70; transplant-ineligible R/R LBCL",
+      "intervention": "Mosunetuzumab SC step-up+polatuzumab vedotin1.8mg/kg IV; 8 cycles q21d",
+      "comparator": "R-GemOx q14d up to8 cycles",
+      "primary_endpoint": "Independent-review PFS and ORR",
+      "efficacy": "Median PFS11.5 vs3.8mo; HR0.41 (95%CI0.28–0.61), p<0.0001; ORR70.3% vs40.0%, p<0.0001; CR51.4% vs24.3%; interim OS HR0.80 (95%CI0.54–1.20).",
+      "safety": "Grade3–4 AEs58.5% vs57.9%; grade5 5.2% vs6.3%; CRS25.9%, grade3 0.7%; no ICANS.",
+      "qol": "PROs improved; instrument/timepoint not in accessible abstract.",
+      "nnt": "Not applicable: no fixed-time absolute PFS/OS risk; no NNT from medians/HR.",
+      "doi": "10.1200/JCO-25-01957",
+      "pmid": "41037766",
+      "registry": "NCT05171647",
+      "nccn": "Not verified — source inaccessible; mapping open.",
+      "page_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-27-am/trial-pages/sunmo/index.html",
+      "status": "Carry-forward source-verified; browser QA pending; not uploaded.",
+      "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92"
+    }
+  ],
+  "candidate_level_duplicate_decisions": [
+    {
+      "candidate_name": "Chlorophyllin TNT toxicity prevention",
+      "candidate_id": "chlorophyllin-tnt",
+      "primary_doi": "10.1001/jamaoncol.2026.4843",
+      "pmid": "43084277",
+      "registry_id": "NCT05856305; CTRI/2023/04/051458",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Primary JAMA abstract, exact DOI/title, registry, toxicity endpoints and NNT verified; current ToD; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4843",
+        "https://pubmed.ncbi.nlm.nih.gov/43084277/"
+      ]
+    },
+    {
+      "candidate_name": "ImmunoPRISM",
+      "candidate_id": "immunoprism",
+      "primary_doi": "10.1038/s41591-026-04642-w",
+      "pmid": "42728379",
+      "registry_id": "NCT05469893",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Full primary Nature Medicine article, randomized CR, PFS, safety and discontinuation reviewed; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04642-w",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13668702/"
+      ]
+    },
+    {
+      "candidate_name": "Nivolumab ctDNA-bTMB basket phase II",
+      "candidate_id": "nivolumab-btmb-basket",
+      "primary_doi": "10.1016/j.esmoop.2026.108578",
+      "pmid": "42854587",
+      "registry_id": "UMIN000033182",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Full primary ESMO Open article, cohort definitions, ORR, grade≥3 toxicity and ctDNA analysis reviewed; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108578",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/"
+      ]
+    },
+    {
+      "candidate_name": "Setanaxib plus pembrolizumab in R/M HNSCC",
+      "candidate_id": "setanaxib-pembrolizumab-hnscc",
+      "primary_doi": "10.1158/2767-9764.CRC-26-0422",
+      "pmid": null,
+      "registry_id": "NCT05323656",
+      "identity": "new_unique",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Primary endpoint not met; exploratory signals not practice-changing.",
+      "source_urls": [
+        "https://doi.org/10.1158/2767-9764.CRC-26-0422"
+      ]
+    },
+    {
+      "candidate_name": "Tobemstomig combinations in clear-cell RCC",
+      "candidate_id": "tobemstomig-ccrcc",
+      "primary_doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "identity": "new_unique",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Primary endpoint not met/no convincing PFS benefit; retained in contrary-evidence queue.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108587"
+      ]
+    },
+    {
+      "candidate_name": "AXINET",
+      "candidate_id": "axinet",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": "NCT01744249",
+      "identity": "new_unique",
+      "final_disposition": "held",
+      "reason": "Registry surfaced but exact primary publication DOI/title and full outcome data not resolved.",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT01744249"
+      ]
+    },
+    {
+      "candidate_name": "LEAP-009",
+      "candidate_id": "leap-009",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": "NCT04428151",
+      "identity": "new_unique",
+      "final_disposition": "held",
+      "reason": "Exact primary publication title/DOI and registry-to-paper identity not independently verified.",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT04428151"
+      ]
+    },
+    {
+      "candidate_name": "LUCERNA",
+      "candidate_id": "lucerna",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "identity": "new_unique",
+      "final_disposition": "rejected_protocol_only",
+      "reason": "Protocol/registration-level evidence only; no primary efficacy results verified.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "EXCALIBER-RRMM",
+      "candidate_id": "excaliber-rrmm",
+      "primary_doi": "10.1080/14796694.2025.2501920",
+      "pmid": "40346992",
+      "registry_id": "NCT04975997",
+      "identity": "new_unique",
+      "final_disposition": "rejected_protocol_only",
+      "reason": "Protocol paper only; no primary clinical outcome results verified.",
+      "source_urls": [
+        "https://doi.org/10.1080/14796694.2025.2501920",
+        "https://pubmed.ncbi.nlm.nih.gov/40346992/"
+      ]
+    },
+    {
+      "candidate_name": "SUNMO",
+      "candidate_id": "sunmo",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "identity": "carry_forward",
+      "final_disposition": "promoted_to_source_verified_staged_page",
+      "reason": "Primary JCO efficacy, official protocol regimen and conference safety report rechecked; page drafted; QoL detail/browser QA remains open.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-01957"
+      ]
+    },
+    {
+      "candidate_name": "OVHIPEC-1",
+      "candidate_id": "ovhipec-1",
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "pmid": "29342393",
+      "registry_id": "NCT00426257",
+      "identity": "carry_forward",
+      "final_disposition": "selected_not_yet_built",
+      "reason": "Selected to complete the 30-study batch; full primary extraction/page build is next.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1708618"
+      ]
+    },
+    {
+      "candidate_name": "Toripalimab plus mFOLFIRINOX in pancreatic cancer",
+      "candidate_id": "toripalimab-mfolfirinox",
+      "primary_doi": "10.1200/JCO-26-01393",
+      "pmid": "42970668",
+      "registry_id": "NCT03983057",
+      "identity": "carry_forward",
+      "final_disposition": "held",
+      "reason": "Exact backbone doses and complete primary safety/QoL tables remain unresolved.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-01393"
+      ]
+    },
+    {
+      "candidate_name": "OPTICAL-2",
+      "candidate_id": "optical-2",
+      "primary_doi": "10.1016/j.medj.2026.101141",
+      "pmid": "42134324",
+      "registry_id": "NCT05571644",
+      "identity": "carry_forward",
+      "final_disposition": "held",
+      "reason": "Complete primary toxicity table and full source extraction still required.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.medj.2026.101141"
+      ]
+    },
+    {
+      "candidate_name": "NHS-Galleri",
+      "candidate_id": "nhs-galleri",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "identity": "carry_forward",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Already present in persistent deferred queue; no new page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "OPTIM",
+      "candidate_id": "optim",
+      "primary_doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "registry_id": "EudraCT 2017-003349-14",
+      "identity": "carry_forward",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Already present in persistent deferred queue; no new page created.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41416-026-03558-z"
+      ]
+    },
+    {
+      "candidate_name": "Dalmelitinib plus aumolertinib",
+      "candidate_id": "dalmelitinib-aumolertinib",
+      "primary_doi": null,
+      "pmid": "42928710",
+      "registry_id": "NCT06110663",
+      "matched_existing": {
+        "roster_id": "dalmelitinib-aumolertinib",
+        "page_path": "trial-pages/dalmelitinib-aumolertinib/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1200/JCO-26-02432"
+      ]
+    },
+    {
+      "candidate_name": "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+      "candidate_id": "keylynk-001",
+      "primary_doi": null,
+      "pmid": "42705254",
+      "registry_id": "NCT03740165",
+      "matched_existing": {
+        "roster_id": "keylynk-001",
+        "page_path": "trial-pages/keylynk-001/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00223-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42705254/",
+        "https://clinicaltrials.gov/study/NCT03740165"
+      ]
+    },
+    {
+      "candidate_name": "HELEN-Trio 011",
+      "candidate_id": "helen-trio-011",
+      "primary_doi": null,
+      "pmid": "42887596",
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "helen-trio-011",
+        "page_path": "trial-pages/helen-trio-011/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/j.annonc.2026.10.102"
+      ]
+    },
+    {
+      "candidate_name": "LITESPARK-012",
+      "candidate_id": "litespark-012",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "litespark-012",
+        "page_path": "trial-pages/litespark-012/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "DALY 2-EU",
+      "candidate_id": "daly-2-eu",
+      "primary_doi": null,
+      "pmid": "42933440",
+      "registry_id": "NCT04844866",
+      "matched_existing": {
+        "roster_id": "daly-2-eu",
+        "page_path": "trial-pages/daly-2-eu/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/S1470-2045(26)00290-1"
+      ]
+    },
+    {
+      "candidate_name": "UNICORN",
+      "candidate_id": "unicorn",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "unicorn",
+        "page_path": "trial-pages/unicorn/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1038/s41591-026-04710-1"
+      ]
+    },
+    {
+      "candidate_name": "CAMORAL",
+      "candidate_id": "camoral",
+      "primary_doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing": {
+        "roster_id": "camoral",
+        "page_path": "trial-pages/camoral/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4642",
+        "https://pubmed.ncbi.nlm.nih.gov/43018983/",
+        "https://www.annalsofoncology.org/article/S0923-7534(25)02871-6/fulltext",
+        "https://clinicaltrials.gov/study/ChiCTR2000037980"
+      ]
+    },
+    {
+      "candidate_name": "BCTOP-H-N01",
+      "candidate_id": "bctop-h-n01",
+      "primary_doi": null,
+      "pmid": "42690668",
+      "registry_id": "NCT06747338",
+      "matched_existing": {
+        "roster_id": "bctop-h-n01",
+        "page_path": "trial-pages/bctop-h-n01/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.3329",
+        "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+        "https://clinicaltrials.gov/study/NCT06747338"
+      ]
+    },
+    {
+      "candidate_name": "PICC-2",
+      "candidate_id": "picc-2",
+      "primary_doi": null,
+      "pmid": "42385761",
+      "registry_id": "NCT03926338",
+      "matched_existing": {
+        "roster_id": "picc-2",
+        "page_path": "trial-pages/picc-2/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/S1470-2045(26)00220-2"
+      ]
+    },
+    {
+      "candidate_name": "I-SPY2.2 RT-DXd",
+      "candidate_id": "i-spy2-2",
+      "primary_doi": null,
+      "pmid": "42911610",
+      "registry_id": "NCT01042379",
+      "matched_existing": {
+        "roster_id": "i-spy2-2",
+        "page_path": "trial-pages/i-spy2-2/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4258",
+        "https://pubmed.ncbi.nlm.nih.gov/42911610/",
+        "https://clinicaltrials.gov/study/NCT01042379"
+      ]
+    },
+    {
+      "candidate_name": "R-ALPS",
+      "candidate_id": "r-alps",
+      "primary_doi": null,
+      "pmid": "42955021",
+      "registry_id": "NCT04325763",
+      "matched_existing": {
+        "roster_id": "r-alps",
+        "page_path": "trial-pages/r-alps/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1001/jamaoncol.2026.3918"
+      ]
+    },
+    {
+      "candidate_name": "INTerpath-001 (intismeran autogene / V940 / mRNA-4157)",
+      "candidate_id": "interpath-001",
+      "primary_doi": null,
+      "pmid": "43013837",
+      "registry_id": "NCT05933577",
+      "matched_existing": {
+        "roster_id": "interpath-001",
+        "page_path": "trial-pages/interpath-001/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609762",
+        "https://pubmed.ncbi.nlm.nih.gov/43013837/",
+        "https://clinicaltrials.gov/study/NCT05933577"
+      ]
+    },
+    {
+      "candidate_name": "KRASCENDO 1",
+      "candidate_id": "krascendo-1",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "krascendo-1",
+        "page_path": "trial-pages/krascendo-1/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "TRANSFORM-1",
+      "candidate_id": "transform-1",
+      "primary_doi": null,
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "matched_existing": {
+        "roster_id": "transform-1",
+        "page_path": "trial-pages/transform-1/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://pubmed.ncbi.nlm.nih.gov/42378247/",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ]
+    },
+    {
+      "candidate_name": "OptiTROP-Lung06",
+      "candidate_id": "optitrop-lung06",
+      "primary_doi": null,
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "matched_existing": {
+        "roster_id": "optitrop-lung06",
+        "page_path": "trial-pages/optitrop-lung06/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1056/NEJMoa2611280"
+      ]
+    }
+  ],
+  "duplicate_check_table": [
+    {
+      "candidate_name": "Chlorophyllin TNT toxicity prevention",
+      "candidate_id": "chlorophyllin-tnt",
+      "primary_doi": "10.1001/jamaoncol.2026.4843",
+      "pmid": "43084277",
+      "registry_id": "NCT05856305; CTRI/2023/04/051458",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Primary JAMA abstract, exact DOI/title, registry, toxicity endpoints and NNT verified; current ToD; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4843",
+        "https://pubmed.ncbi.nlm.nih.gov/43084277/"
+      ]
+    },
+    {
+      "candidate_name": "ImmunoPRISM",
+      "candidate_id": "immunoprism",
+      "primary_doi": "10.1038/s41591-026-04642-w",
+      "pmid": "42728379",
+      "registry_id": "NCT05469893",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Full primary Nature Medicine article, randomized CR, PFS, safety and discontinuation reviewed; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04642-w",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13668702/"
+      ]
+    },
+    {
+      "candidate_name": "Nivolumab ctDNA-bTMB basket phase II",
+      "candidate_id": "nivolumab-btmb-basket",
+      "primary_doi": "10.1016/j.esmoop.2026.108578",
+      "pmid": "42854587",
+      "registry_id": "UMIN000033182",
+      "identity": "new_unique",
+      "final_disposition": "verified_and_staged",
+      "reason": "Full primary ESMO Open article, cohort definitions, ORR, grade≥3 toxicity and ctDNA analysis reviewed; browser QA pending.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108578",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/"
+      ]
+    },
+    {
+      "candidate_name": "Setanaxib plus pembrolizumab in R/M HNSCC",
+      "candidate_id": "setanaxib-pembrolizumab-hnscc",
+      "primary_doi": "10.1158/2767-9764.CRC-26-0422",
+      "pmid": null,
+      "registry_id": "NCT05323656",
+      "identity": "new_unique",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Primary endpoint not met; exploratory signals not practice-changing.",
+      "source_urls": [
+        "https://doi.org/10.1158/2767-9764.CRC-26-0422"
+      ]
+    },
+    {
+      "candidate_name": "Tobemstomig combinations in clear-cell RCC",
+      "candidate_id": "tobemstomig-ccrcc",
+      "primary_doi": "10.1016/j.esmoop.2026.108587",
+      "pmid": "42849355",
+      "registry_id": "NCT05805501",
+      "identity": "new_unique",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Primary endpoint not met/no convincing PFS benefit; retained in contrary-evidence queue.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108587"
+      ]
+    },
+    {
+      "candidate_name": "AXINET",
+      "candidate_id": "axinet",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": "NCT01744249",
+      "identity": "new_unique",
+      "final_disposition": "held",
+      "reason": "Registry surfaced but exact primary publication DOI/title and full outcome data not resolved.",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT01744249"
+      ]
+    },
+    {
+      "candidate_name": "LEAP-009",
+      "candidate_id": "leap-009",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": "NCT04428151",
+      "identity": "new_unique",
+      "final_disposition": "held",
+      "reason": "Exact primary publication title/DOI and registry-to-paper identity not independently verified.",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT04428151"
+      ]
+    },
+    {
+      "candidate_name": "LUCERNA",
+      "candidate_id": "lucerna",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "identity": "new_unique",
+      "final_disposition": "rejected_protocol_only",
+      "reason": "Protocol/registration-level evidence only; no primary efficacy results verified.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "EXCALIBER-RRMM",
+      "candidate_id": "excaliber-rrmm",
+      "primary_doi": "10.1080/14796694.2025.2501920",
+      "pmid": "40346992",
+      "registry_id": "NCT04975997",
+      "identity": "new_unique",
+      "final_disposition": "rejected_protocol_only",
+      "reason": "Protocol paper only; no primary clinical outcome results verified.",
+      "source_urls": [
+        "https://doi.org/10.1080/14796694.2025.2501920",
+        "https://pubmed.ncbi.nlm.nih.gov/40346992/"
+      ]
+    },
+    {
+      "candidate_name": "SUNMO",
+      "candidate_id": "sunmo",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "identity": "carry_forward",
+      "final_disposition": "promoted_to_source_verified_staged_page",
+      "reason": "Primary JCO efficacy, official protocol regimen and conference safety report rechecked; page drafted; QoL detail/browser QA remains open.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-25-01957"
+      ]
+    },
+    {
+      "candidate_name": "OVHIPEC-1",
+      "candidate_id": "ovhipec-1",
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "pmid": "29342393",
+      "registry_id": "NCT00426257",
+      "identity": "carry_forward",
+      "final_disposition": "selected_not_yet_built",
+      "reason": "Selected to complete the 30-study batch; full primary extraction/page build is next.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa1708618"
+      ]
+    },
+    {
+      "candidate_name": "Toripalimab plus mFOLFIRINOX in pancreatic cancer",
+      "candidate_id": "toripalimab-mfolfirinox",
+      "primary_doi": "10.1200/JCO-26-01393",
+      "pmid": "42970668",
+      "registry_id": "NCT03983057",
+      "identity": "carry_forward",
+      "final_disposition": "held",
+      "reason": "Exact backbone doses and complete primary safety/QoL tables remain unresolved.",
+      "source_urls": [
+        "https://doi.org/10.1200/JCO-26-01393"
+      ]
+    },
+    {
+      "candidate_name": "OPTICAL-2",
+      "candidate_id": "optical-2",
+      "primary_doi": "10.1016/j.medj.2026.101141",
+      "pmid": "42134324",
+      "registry_id": "NCT05571644",
+      "identity": "carry_forward",
+      "final_disposition": "held",
+      "reason": "Complete primary toxicity table and full source extraction still required.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.medj.2026.101141"
+      ]
+    },
+    {
+      "candidate_name": "NHS-Galleri",
+      "candidate_id": "nhs-galleri",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "identity": "carry_forward",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Already present in persistent deferred queue; no new page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "OPTIM",
+      "candidate_id": "optim",
+      "primary_doi": "10.1038/s41416-026-03558-z",
+      "pmid": "42471483",
+      "registry_id": "EudraCT 2017-003349-14",
+      "identity": "carry_forward",
+      "final_disposition": "deferred_contrary_evidence",
+      "reason": "Already present in persistent deferred queue; no new page created.",
+      "source_urls": [
+        "https://doi.org/10.1038/s41416-026-03558-z"
+      ]
+    },
+    {
+      "candidate_name": "Dalmelitinib plus aumolertinib",
+      "candidate_id": "dalmelitinib-aumolertinib",
+      "primary_doi": null,
+      "pmid": "42928710",
+      "registry_id": "NCT06110663",
+      "matched_existing": {
+        "roster_id": "dalmelitinib-aumolertinib",
+        "page_path": "trial-pages/dalmelitinib-aumolertinib/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1200/JCO-26-02432"
+      ]
+    },
+    {
+      "candidate_name": "KEYLYNK-001 / ENGOT-OV43 / GOG-3036",
+      "candidate_id": "keylynk-001",
+      "primary_doi": null,
+      "pmid": "42705254",
+      "registry_id": "NCT03740165",
+      "matched_existing": {
+        "roster_id": "keylynk-001",
+        "page_path": "trial-pages/keylynk-001/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1016/S1470-2045(26)00223-8",
+        "https://pubmed.ncbi.nlm.nih.gov/42705254/",
+        "https://clinicaltrials.gov/study/NCT03740165"
+      ]
+    },
+    {
+      "candidate_name": "HELEN-Trio 011",
+      "candidate_id": "helen-trio-011",
+      "primary_doi": null,
+      "pmid": "42887596",
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "helen-trio-011",
+        "page_path": "trial-pages/helen-trio-011/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/j.annonc.2026.10.102"
+      ]
+    },
+    {
+      "candidate_name": "LITESPARK-012",
+      "candidate_id": "litespark-012",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "litespark-012",
+        "page_path": "trial-pages/litespark-012/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "DALY 2-EU",
+      "candidate_id": "daly-2-eu",
+      "primary_doi": null,
+      "pmid": "42933440",
+      "registry_id": "NCT04844866",
+      "matched_existing": {
+        "roster_id": "daly-2-eu",
+        "page_path": "trial-pages/daly-2-eu/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/S1470-2045(26)00290-1"
+      ]
+    },
+    {
+      "candidate_name": "UNICORN",
+      "candidate_id": "unicorn",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "unicorn",
+        "page_path": "trial-pages/unicorn/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1038/s41591-026-04710-1"
+      ]
+    },
+    {
+      "candidate_name": "CAMORAL",
+      "candidate_id": "camoral",
+      "primary_doi": "10.1001/jamaoncol.2026.4642",
+      "pmid": "43018983",
+      "registry_id": "ChiCTR2000037980",
+      "matched_existing": {
+        "roster_id": "camoral",
+        "page_path": "trial-pages/camoral/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4642",
+        "https://pubmed.ncbi.nlm.nih.gov/43018983/",
+        "https://www.annalsofoncology.org/article/S0923-7534(25)02871-6/fulltext",
+        "https://clinicaltrials.gov/study/ChiCTR2000037980"
+      ]
+    },
+    {
+      "candidate_name": "BCTOP-H-N01",
+      "candidate_id": "bctop-h-n01",
+      "primary_doi": null,
+      "pmid": "42690668",
+      "registry_id": "NCT06747338",
+      "matched_existing": {
+        "roster_id": "bctop-h-n01",
+        "page_path": "trial-pages/bctop-h-n01/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.3329",
+        "https://pubmed.ncbi.nlm.nih.gov/42690668/",
+        "https://clinicaltrials.gov/study/NCT06747338"
+      ]
+    },
+    {
+      "candidate_name": "PICC-2",
+      "candidate_id": "picc-2",
+      "primary_doi": null,
+      "pmid": "42385761",
+      "registry_id": "NCT03926338",
+      "matched_existing": {
+        "roster_id": "picc-2",
+        "page_path": "trial-pages/picc-2/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1016/S1470-2045(26)00220-2"
+      ]
+    },
+    {
+      "candidate_name": "I-SPY2.2 RT-DXd",
+      "candidate_id": "i-spy2-2",
+      "primary_doi": null,
+      "pmid": "42911610",
+      "registry_id": "NCT01042379",
+      "matched_existing": {
+        "roster_id": "i-spy2-2",
+        "page_path": "trial-pages/i-spy2-2/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4258",
+        "https://pubmed.ncbi.nlm.nih.gov/42911610/",
+        "https://clinicaltrials.gov/study/NCT01042379"
+      ]
+    },
+    {
+      "candidate_name": "R-ALPS",
+      "candidate_id": "r-alps",
+      "primary_doi": null,
+      "pmid": "42955021",
+      "registry_id": "NCT04325763",
+      "matched_existing": {
+        "roster_id": "r-alps",
+        "page_path": "trial-pages/r-alps/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1001/jamaoncol.2026.3918"
+      ]
+    },
+    {
+      "candidate_name": "INTerpath-001 (intismeran autogene / V940 / mRNA-4157)",
+      "candidate_id": "interpath-001",
+      "primary_doi": null,
+      "pmid": "43013837",
+      "registry_id": "NCT05933577",
+      "matched_existing": {
+        "roster_id": "interpath-001",
+        "page_path": "trial-pages/interpath-001/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1056/NEJMoa2609762",
+        "https://pubmed.ncbi.nlm.nih.gov/43013837/",
+        "https://clinicaltrials.gov/study/NCT05933577"
+      ]
+    },
+    {
+      "candidate_name": "KRASCENDO 1",
+      "candidate_id": "krascendo-1",
+      "primary_doi": null,
+      "pmid": null,
+      "registry_id": null,
+      "matched_existing": {
+        "roster_id": "krascendo-1",
+        "page_path": "trial-pages/krascendo-1/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": []
+    },
+    {
+      "candidate_name": "TRANSFORM-1",
+      "candidate_id": "transform-1",
+      "primary_doi": null,
+      "pmid": "42378247",
+      "registry_id": "NCT04472598",
+      "matched_existing": {
+        "roster_id": "transform-1",
+        "page_path": "trial-pages/transform-1/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "https://doi.org/10.1182/blood.2025032360",
+        "https://pubmed.ncbi.nlm.nih.gov/42378247/",
+        "https://clinicaltrials.gov/study/NCT04472598"
+      ]
+    },
+    {
+      "candidate_name": "OptiTROP-Lung06",
+      "candidate_id": "optitrop-lung06",
+      "primary_doi": null,
+      "pmid": "42929694",
+      "registry_id": "NCT06711900",
+      "matched_existing": {
+        "roster_id": "optitrop-lung06",
+        "page_path": "trial-pages/optitrop-lung06/"
+      },
+      "same_underlying_study": true,
+      "identity_resolution": "Matched existing canonical roster/page; same underlying study.",
+      "final_disposition": "duplicate_excluded",
+      "reason": "Existing canonical page/roster record; no second page created.",
+      "source_urls": [
+        "10.1056/NEJMoa2611280"
+      ]
+    }
+  ],
+  "repair_items": {
+    "reviewed": [
+      "Early ONS numerical chart and NNT correction",
+      "10 carry-forward staged page structures",
+      "existing SUNMO/toripalimab/OPTICAL-2/OVHIPEC-1 queue records"
+    ],
+    "opened": [
+      "browser-qa-chlorophyllin-tnt-2026-11-27",
+      "browser-qa-immunoprism-2026-11-27",
+      "browser-qa-nivolumab-btmb-2026-11-27",
+      "browser-qa-sunmo-2026-11-27",
+      "primary-source-axinet-2026-11-27",
+      "primary-source-leap-009-2026-11-27"
+    ],
+    "closed": [
+      "repair-early-ons-npc-numeric-chart-2026-11-27",
+      "source-review-immunoprism-2026-11-27",
+      "source-review-nivolumab-btmb-2026-11-27"
+    ],
+    "open_total": 228,
+    "closed_total": 77,
+    "full_clinical_audit_status": "OPEN — full 461-page main-branch clinical audit not completed."
+  },
+  "nnt_nnh_visualization_qa": {
+    "status": "Static chart markup and arithmetic checked; browser render pending",
+    "checks": [
+      {
+        "trial_id": "early-ons-npc",
+        "endpoint": ">5% weight loss during CCRT",
+        "rates": "65.4% vs80.7%",
+        "absolute_benefit_pp": 15.3,
+        "nnt": 7,
+        "calculation": "ceil(1/0.153)=7"
+      },
+      {
+        "trial_id": "early-ons-npc",
+        "endpoint": "Grade≥3 RIOM",
+        "rates": "14.0% vs26.6%",
+        "absolute_benefit_pp": 12.6,
+        "nnt": 8,
+        "calculation": "ceil(1/0.126)=8"
+      },
+      {
+        "trial_id": "chlorophyllin-tnt",
+        "endpoint": "Grade≥2 toxicity through 3 months after TNT",
+        "rates": "64.9% vs94.4%",
+        "absolute_benefit_pp": 29.6,
+        "nnt": 4,
+        "calculation": "ceil(1/0.296)=4"
+      },
+      {
+        "trial_id": "chlorophyllin-tnt",
+        "endpoint": "Grade≥3 toxicity through 3 months after TNT",
+        "rates": "27.0% vs52.8%",
+        "absolute_benefit_pp": 25.8,
+        "nnt": 4,
+        "calculation": "ceil(1/0.258)=4"
+      },
+      {
+        "trial_id": "immunoprism",
+        "nnt": "not applicable",
+        "reason": "Variable-time CR; all-treated PFS includes safety run-in."
+      },
+      {
+        "trial_id": "nivolumab-btmb-basket",
+        "nnt": "not applicable",
+        "reason": "Single-arm, no comparator."
+      },
+      {
+        "trial_id": "sunmo",
+        "nnt": "not applicable",
+        "reason": "No fixed-time absolute PFS/OS risk in primary paper."
+      }
+    ],
+    "no_nnt_from_medians_or_hazard_ratios": true,
+    "data_benefit_values_are_absolute_percentage_points": true
+  },
+  "nccn_review": {
+    "guidelines_reviewed": [
+      {
+        "title": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+        "scope": "Metadata/abstract only; not complete guideline/reference list",
+        "version": "3.2026",
+        "section": null,
+        "reference_number": null,
+        "recommendation_category": null,
+        "source_url": "https://jnccn.org/"
+      },
+      {
+        "title": "NCCN Guidelines Insights: Multiple Myeloma, Version 5.2026",
+        "scope": "Metadata/abstract only; not complete guideline/reference list",
+        "version": "5.2026",
+        "section": null,
+        "reference_number": null,
+        "recommendation_category": null,
+        "source_url": "https://jnccn.org/"
+      },
+      {
+        "title": "Official NCCN Clinical Practice Guidelines portal",
+        "scope": "Access attempted; 403/login prevented full guideline/reference list",
+        "source_url": "https://www.nccn.org/guidelines/category_1"
+      }
+    ],
+    "exact_nccn_reference_mappings_verified": 0,
+    "pending_mappings_added": 3,
+    "pending_mappings_total": 118,
+    "source_access_logs_total": 43,
+    "guideline_freshness_tasks_total": 21,
+    "note": "No NCCN reference, section or category inferred; access failure did not block primary evidence."
+  },
+  "roster_index_archive": {
+    "roster_entries": 481,
+    "branch_unique_studies": 475,
+    "canonical_page_directories": 473,
+    "index_links": 519,
+    "missing_index_links": 0,
+    "archive_entries": 18,
+    "archive_records_updated": 1,
+    "doi_title_cache_entries": 45,
+    "repair_queue_open": 228,
+    "repair_queue_resolved": 77,
+    "deferred_negative_items": 33,
+    "checkmate816_keynoteA18_lacc_shape": "All four remain rostered/indexed in path-level reconciliation; full clinical audit remains open."
+  },
+  "validation": {
+    "local_clone": "Failed DNS resolution for github.com; no local checkout.",
+    "local_release_validator": "Not run — local checkout unavailable and only14/30 drafts staged.",
+    "outcome_visualization_audit": "Not run — no PR; static charts/arithmetic inspected.",
+    "pr": "Not opened — 30-page gate not met.",
+    "pr_checks": "Not run.",
+    "merge": "None.",
+    "cloudflare_deployment": "Not verified; no merge.",
+    "branch_commit_verified": true,
+    "main_commit_verified": true
+  },
+  "blockers": [
+    "16 selected page builds remain before the 30-page release gate.",
+    "Browser-render QA pending for all14 staged pages.",
+    "Full clinical audit of all461 existing main-branch studies remains incomplete.",
+    "Local validator could not run because clone DNS failed; PR checks unavailable until a PR exists.",
+    "Current full NCCN guideline/reference lists remain inaccessible."
+  ],
+  "next_actions": [
+    "Build OVHIPEC-1 next; 16 selected page builds remain.",
+    "Complete browser-render QA and strict release validator after 30 pages are ready.",
+    "Open a PR only when exactly30 unique studies pass all release gates; wait for required checks before merge.",
+    "Continue page-by-page clinical audit and primary-source review of flagged pages.",
+    "Reattempt NCCN full guideline/reference-list access and map exact references only when directly verified."
+  ],
+  "sources": [
+    "https://doi.org/10.1001/jamaoncol.2026.4843",
+    "https://pubmed.ncbi.nlm.nih.gov/43084277/",
+    "https://doi.org/10.1038/s41591-026-04642-w",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13668702/",
+    "https://doi.org/10.1016/j.esmoop.2026.108578",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/",
+    "https://doi.org/10.1200/JCO-25-01957",
+    "https://clinicaltrials.gov/study/NCT05171647"
+  ],
+  "commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+  "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+  "report_path": "data/daily-reports/2026-11-27-morning.json",
+  "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json"
+}

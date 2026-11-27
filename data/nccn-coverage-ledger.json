@@ -1148,31 +1148,55 @@
         }
       ],
       "notes": "Ovarian, CLL, MM and resected/perioperative NSCLC candidates were reviewed. Exact NCCN provenance remains unverified. ASCO 2022 reference 3 explicitly corresponds to Felip et al./IMpower010; this is an ASCO alternative mapping, not NCCN provenance."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Clinical Practice Guidelines portal",
+      "url": "https://www.nccn.org/guidelines/category_1",
+      "status": "access_failed_403_login",
+      "scope": "Full guideline/reference list",
+      "note": "Official portal access/login restriction; logged and continued with primary evidence."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Guidelines Insights: Colon Cancer, Version 3.2026",
+      "url": "https://jnccn.org/",
+      "status": "metadata_abstract_only",
+      "scope": "Metadata/abstract only; not complete guideline/reference list",
+      "note": "No exact citation, section or recommendation category extracted."
+    },
+    {
+      "date": "2026-11-27",
+      "source": "NCCN Guidelines Insights: Multiple Myeloma, Version 5.2026",
+      "url": "https://jnccn.org/",
+      "status": "metadata_abstract_only",
+      "scope": "Metadata/abstract only; not complete guideline/reference list",
+      "note": "No exact citation, section or recommendation category extracted."
     }
   ],
   "last_run": {
-    "date": "2026-11-26",
-    "cycle": "evening continuation — carry-forward queue review",
-    "timestamp": "2026-11-26T19:54:35+05:30",
-    "branch": "atlas-batch/2026-11-26-am",
-    "branch_commit_before": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
-    "nccn_full_guidelines_accessible": false,
-    "nccn_cll_insights_metadata_only": "Version 2.2026; PMID 41825137; DOI 10.6004/jnccn.2026.0012",
-    "alternative_guideline_sources_reviewed": [
-      "ESMO Clinical Practice Guideline Express Update on the management of epithelial ovarian cancer",
-      "EHA–EMN Evidence-Based Guidelines for diagnosis, treatment and follow-up of patients with multiple myeloma",
-      "Treatment of Multiple Myeloma: ASCO Living Guideline",
-      "ESMO Clinical Practice Guideline interim update on new targeted therapies in the first line and at relapse of chronic lymphocytic leukaemia",
-      "2025 British Society for Haematology Guideline for the treatment of chronic lymphocytic leukaemia",
-      "Adjuvant Systemic Therapy and Adjuvant Radiation Therapy for Stage I-IIIA Completely Resected Non–Small-Cell Lung Cancer: ASCO Guideline Rapid Recommendation Update"
+    "date": "2026-11-27",
+    "cycle": "morning",
+    "timestamp": "2026-11-27T08:59:09+05:30",
+    "branch": "atlas-batch/2026-11-27-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "guidelines_reviewed": [
+      "NCCN Guidelines Insights: Colon Cancer v3.2026 (metadata/abstract only)",
+      "NCCN Guidelines Insights: Multiple Myeloma v5.2026 (metadata/abstract only)",
+      "Official NCCN portal access attempt (403/login)"
     ],
-    "trial_candidates_reaudited": 9,
-    "trial_primary_results_partially_reverified": 9,
-    "exact_alternative_guideline_mappings_added": 1,
-    "pending_nccn_trial_mappings_updated": 9,
-    "status": "partial — no exact NCCN provenance assigned; candidate page extraction remains incomplete"
+    "full_guidelines_accessible": false,
+    "exact_reference_mappings_verified": 0,
+    "pending_mappings_added": 3,
+    "pending_mappings_total": 118,
+    "source_access_logs_added": 3,
+    "source_access_logs_total": 43,
+    "guideline_freshness_tasks_total": 21,
+    "report_path": "data/daily-reports/2026-11-27-morning.json",
+    "status": "INCOMPLETE — guideline mapping follow-up open"
   },
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "last_run_date": "2026-11-26",
   "pending_trial_mappings": [
     {
@@ -2745,6 +2769,63 @@
       "source_url": null,
       "added_on": "2026-11-26",
       "next_action": "Retrieve current official NCCN ALL guideline or complete NCCN-authored Insights reference list; record exact version/section/reference only if directly verified."
+    },
+    {
+      "trial_id": "chlorophyllin-tnt",
+      "trial_name": "Chlorophyllin TNT toxicity prevention",
+      "site": "Rectal adenocarcinoma / supportive care",
+      "guideline_title": "NCCN Rectal Cancer / supportive care",
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "provenance_status": "not verified — source inaccessible",
+      "status": "pending",
+      "reason": "Primary trial verified; exact current NCCN reference list inaccessible.",
+      "next_action": "Retrieve full current NCCN rectal-cancer/supportive-care guideline and map only explicit citations.",
+      "added_on": "2026-11-27",
+      "source_urls": [
+        "https://doi.org/10.1001/jamaoncol.2026.4843"
+      ]
+    },
+    {
+      "trial_id": "immunoprism",
+      "trial_name": "ImmunoPRISM",
+      "site": "Multiple myeloma / high-risk smouldering myeloma",
+      "guideline_title": "NCCN Multiple Myeloma",
+      "version": "5.2026 metadata only",
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "provenance_status": "not verified — source inaccessible",
+      "status": "pending",
+      "reason": "Insights metadata/abstract accessible; complete guideline/reference list unavailable.",
+      "next_action": "Retrieve full NCCN MM guideline and map explicit HR-SMM references.",
+      "added_on": "2026-11-27",
+      "source_urls": [
+        "https://doi.org/10.1038/s41591-026-04642-w"
+      ]
+    },
+    {
+      "trial_id": "nivolumab-btmb-basket",
+      "trial_name": "Nivolumab ctDNA-bTMB basket phase II",
+      "site": "Tumour-agnostic biomarker-selected solid tumours",
+      "guideline_title": null,
+      "version": null,
+      "section": null,
+      "reference_number": null,
+      "recommendation_context": null,
+      "recommendation_category": null,
+      "provenance_status": "not verified — source inaccessible",
+      "status": "pending",
+      "reason": "No exact NCCN tumour-agnostic biomarker citation verified.",
+      "next_action": "Review current NCCN biomarker/tumour-agnostic pathways; map exact reference only if explicitly cited.",
+      "added_on": "2026-11-27",
+      "source_urls": [
+        "https://doi.org/10.1016/j.esmoop.2026.108578"
+      ]
     }
   ],
   "alternative_guideline_sources": [
@@ -3348,6 +3429,15 @@
       "evidence": "Full current NCCN guideline/reference lists remain inaccessible. CLL/SLL Insights v2.2026 metadata/abstract is accessible (PMID 41825137; DOI 10.6004/jnccn.2026.0012), but the complete reference list is not. Alternative sources reviewed: ESMO CLL 2024 and BSH CLL 2025.",
       "next_action": "Re-attempt official NCCN full guideline/reference list; if inaccessible, retrieve complete public NCCN-authored Insights references. Record exact citation/section/category only when directly visible.",
       "last_checked": "2026-11-26"
+    },
+    {
+      "task_id": "nccn-rectal-cancer-current-version-2026-11-27",
+      "guideline_title": "NCCN Rectal Cancer",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "severity": "medium",
+      "reason": "Current complete guideline and exact reference list inaccessible.",
+      "next_action": "Reattempt official NCCN full guideline retrieval; do not infer version, section, citation or category."
     }
   ],
   "complete_insights_articles_reviewed": [

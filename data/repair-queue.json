@@ -2306,9 +2306,10 @@
       "action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
       "verification": "Primary identity is known or suspected, but the exact missing DOI/title/full safety data described above remain unresolved.",
       "opened_on": "2026-11-21",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "nccn_mapping_status": "not verified — full NCCN guideline/reference list inaccessible; do not infer a citation.",
-      "next_action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass."
+      "next_action": "Complete and independently verify the primary publication/protocol/registry extraction; then build the canonical page, outcome visualisation and metadata integration. Do not publish until all release gates pass.",
+      "last_review_note": "Primary JCO efficacy, official protocol regimen and primary conference safety data extracted; exact PRO instrument/timepoint remains open."
     },
     {
       "id": "candidate-panova-3-primary-extraction-2026-11-21",
@@ -3992,13 +3993,14 @@
       "severity": "medium",
       "status": "open",
       "created_on": "2026-11-26",
-      "last_reviewed_on": "2026-11-26",
+      "last_reviewed_on": "2026-11-27",
       "evidence": "Static chart structure, finite widths and source values were inspected in the HTML; no browser-rendered branch preview has yet been independently opened.",
       "source_urls": [
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/blob/atlas-batch/2026-11-26-am/trial-pages/early-ons-npc/index.html"
       ],
       "action": "Open the deployed branch preview in a real browser; verify chart labels, widths, mobile layout, NNT pictogram and source values.",
-      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending."
+      "next_action": "Keep open until browser rendering is confirmed; no release-ready status while pending.",
+      "last_review_note": "Numerical chart correction completed; browser-render verification remains open."
     },
     {
       "issue_id": "browser-qa-cupisco-2026-11-26",
@@ -4543,6 +4545,88 @@
       "last_reviewed_on": "2026-11-26",
       "disposition": "held — unique identity and selected outcomes verified; page completeness not yet met",
       "nccn_provenance": "not verified — current full NCCN ovarian guideline/reference list inaccessible; ESMO 2026 Express Update is alternative context only; no NCCN citation inferred."
+    },
+    {
+      "issue_id": "browser-qa-chlorophyllin-tnt-2026-11-27",
+      "trial_id": "chlorophyllin-tnt",
+      "trial": "Chlorophyllin TNT",
+      "path": "trial-pages/chlorophyllin-tnt/index.html",
+      "category": "visualization_render_qa",
+      "severity": "medium",
+      "evidence": "Static charts and two structured absolute-effect records checked; NNT 29.6pp→4 and25.8pp→4.",
+      "action": "Render in browser and run Outcome visualization audit before PR.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": []
+    },
+    {
+      "issue_id": "browser-qa-immunoprism-2026-11-27",
+      "trial_id": "immunoprism",
+      "trial": "ImmunoPRISM",
+      "path": "trial-pages/immunoprism/index.html",
+      "category": "visualization_render_qa",
+      "severity": "medium",
+      "evidence": "Primary article and static CR/PFS charts reviewed; no NNT claimed.",
+      "action": "Browser-render and confirm chart denominators before PR.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": []
+    },
+    {
+      "issue_id": "browser-qa-nivolumab-btmb-2026-11-27",
+      "trial_id": "nivolumab-btmb-basket",
+      "trial": "Nivolumab ctDNA-bTMB basket",
+      "path": "trial-pages/nivolumab-btmb-basket/index.html",
+      "category": "visualization_render_qa",
+      "severity": "medium",
+      "evidence": "Primary article and four-cohort static ORR chart reviewed; no NNT claimed.",
+      "action": "Browser-render and verify cohort labels/denominators before PR.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": []
+    },
+    {
+      "issue_id": "browser-qa-sunmo-2026-11-27",
+      "trial_id": "sunmo",
+      "trial": "SUNMO",
+      "path": "trial-pages/sunmo/index.html",
+      "category": "visualization_render_qa",
+      "severity": "medium",
+      "evidence": "Primary efficacy, protocol regimen and conference safety checked; static median PFS/ORR charts; no NNT claimed.",
+      "action": "Browser-render and complete PRO instrument/timepoint review if accessible.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": []
+    },
+    {
+      "issue_id": "primary-source-axinet-2026-11-27",
+      "trial_id": "axinet",
+      "trial": "AXINET",
+      "path": null,
+      "category": "primary_source_verification",
+      "severity": "high",
+      "evidence": "Registry NCT01744249 surfaced, but exact primary DOI/title and full outcome data not independently resolved.",
+      "action": "Identify primary publication; verify DOI/title, registry linkage, endpoints and grade 3–5 safety.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT01744249"
+      ]
+    },
+    {
+      "issue_id": "primary-source-leap-009-2026-11-27",
+      "trial_id": "leap-009",
+      "trial": "LEAP-009",
+      "path": null,
+      "category": "primary_source_verification",
+      "severity": "high",
+      "evidence": "Registry NCT04428151 surfaced, but exact primary publication title/DOI and registry-to-paper identity not independently verified.",
+      "action": "Resolve exact primary publication and verify DOI/title, registry linkage and outcomes.",
+      "status": "open",
+      "created_on": "2026-11-27",
+      "source_urls": [
+        "https://clinicaltrials.gov/study/NCT04428151"
+      ]
     }
   ],
   "resolved_items": [
@@ -5721,6 +5805,57 @@
       "verified": true,
       "verified_on": "2026-11-26",
       "resolved_on": "2026-11-26"
+    },
+    {
+      "issue_id": "repair-early-ons-npc-numeric-chart-2026-11-27",
+      "trial_id": "early-ons-npc",
+      "trial": "Early ONS NPC",
+      "path": "trial-pages/early-ons-npc/index.html",
+      "category": "clinical_numerical_accuracy",
+      "severity": "high",
+      "evidence": "Primary JAMA Oncology abstract PMID43018988: weight loss >5% 70/107 (65.4%) vs88/109 (80.7%), RR0.81 (95%CI0.68–0.96), p=0.01; grade≥3 RIOM14.0% vs26.6%, RR0.53 (95%CI0.30–0.93).",
+      "action": "Corrected chart values, confidence interval, source note and NNT arithmetic to 15.3pp→7 and12.6pp→8.",
+      "status": "resolved",
+      "resolved_on": "2026-11-27",
+      "verification": "Page re-read; static values matched primary abstract; browser-render QA remains open.",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/43018988/",
+        "https://doi.org/10.1001/jamaoncol.2026.4535"
+      ]
+    },
+    {
+      "issue_id": "source-review-immunoprism-2026-11-27",
+      "trial_id": "immunoprism",
+      "trial": "ImmunoPRISM",
+      "path": "trial-pages/immunoprism/index.html",
+      "category": "primary_source_verification",
+      "severity": "high",
+      "evidence": "Full Nature Medicine primary article reviewed: randomized CR29/39 vs0/14; PFS HR0.15; grade3/4 safety, CRS/ICANS and discontinuation extracted.",
+      "action": "Completed primary-source extraction; browser-render QA remains separate.",
+      "status": "resolved",
+      "resolved_on": "2026-11-27",
+      "verification": "DOI/title matched PubMed and NCT05469893; primary text rechecked.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13668702/",
+        "https://pubmed.ncbi.nlm.nih.gov/42728379/"
+      ]
+    },
+    {
+      "issue_id": "source-review-nivolumab-btmb-2026-11-27",
+      "trial_id": "nivolumab-btmb-basket",
+      "trial": "Nivolumab ctDNA-bTMB basket",
+      "path": "trial-pages/nivolumab-btmb-basket/index.html",
+      "category": "primary_source_verification",
+      "severity": "high",
+      "evidence": "Full ESMO Open primary article reviewed: cohort definitions, inferential bTMB-High ORR/CI, cohort-specific grade≥3 toxicity and exploratory ctDNA-PFS association extracted.",
+      "action": "Completed primary-source extraction; browser-render QA remains separate.",
+      "status": "resolved",
+      "resolved_on": "2026-11-27",
+      "verification": "DOI/title matched PubMed; UMIN000033182 reported in primary study.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/",
+        "https://pubmed.ncbi.nlm.nih.gov/42854587/"
+      ]
     }
   ],
   "run_audit_log": [
@@ -5881,6 +6016,16 @@
       "nccn_full_guidelines_accessible": false,
       "status": "INCOMPLETE — 0/30 uploaded; nine carry-forward unique candidates re-reviewed and remain held; no PR/merge.",
       "branch_commit": "213413518c13dc128868ebd37444e9d00039c220"
+    },
+    {
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "branch": "atlas-batch/2026-11-27-am",
+      "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+      "open_items": 228,
+      "resolved_items": 77,
+      "uploaded": 0,
+      "report_path": "data/daily-reports/2026-11-27-morning.json"
     }
   ],
   "previous_partial_runs": [
@@ -5997,38 +6142,32 @@
   },
   "last_updated": "2026-11-26",
   "last_run": {
-    "date": "2026-11-26",
-    "cycle": "evening continuation — carry-forward queue review",
-    "timestamp": "2026-11-26T19:54:35+05:30",
-    "branch": "atlas-batch/2026-11-26-am",
-    "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "branch_commit_before": "96ca8b5c7c6519174c7b9cfeadec70f98a2c66fc",
-    "screened_candidates_new": 0,
-    "carry_forward_candidates_reaudited": 9,
-    "unique_identities_reconfirmed": 9,
-    "duplicates": 0,
-    "held_candidates": 9,
-    "fully_page_verified_candidates": 0,
-    "uploaded_pages": 0,
-    "queue_items_opened": 1,
-    "queue_integrity_repairs": 1,
-    "queue_items_resolved": 1,
+    "date": "2026-11-27",
+    "cycle": "morning",
+    "timestamp": "2026-11-27T08:59:09+05:30",
+    "branch": "atlas-batch/2026-11-27-am",
+    "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "content_commit_sha": "5da647d9b22e022f63cdabb25cc8de7c44545e92",
+    "existing_pages_audited": 1,
     "staged_pages_structurally_rechecked": 10,
-    "clinical_page_repairs": 0,
-    "nccn_full_guidelines_accessible": false,
-    "status": "INCOMPLETE — 0/30 uploaded; nine carry-forward unique candidates re-reviewed and remain held; no PR/merge.",
-    "branch_commit": "213413518c13dc128868ebd37444e9d00039c220"
+    "clinical_page_repairs": 1,
+    "source_review_items_closed": 2,
+    "queue_items_opened": 6,
+    "queue_items_resolved": 3,
+    "uploaded_pages": 0,
+    "status": "INCOMPLETE",
+    "run_report_path": "data/daily-reports/2026-11-27-morning.json"
   },
   "generated_at": "2026-11-23T19:28:00+05:30",
   "summary": {
-    "open_items": 222,
-    "resolved_items": 74,
+    "open_items": 228,
+    "resolved_items": 77,
     "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
     "release_holds_in_active_batch": 0,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
-    "last_run_note": "Evening continuation review: 0/30 uploaded; 9 carry-forward candidates re-audited and held; one queue-integrity repair resolved; PRIMA metadata separated from oral-paclitaxel; no PR/merge.",
-    "last_updated": "2026-11-26"
+    "last_run_note": "27 Nov AM: Early ONS numerical chart repair closed; ImmunoPRISM and nivolumab primary-source extraction closed; four new browser QA items and two primary-source verification holds opened. Full clinical audit remains open.",
+    "last_updated": "2026-11-27"
   },
   "updated_on": "2026-11-23T19:28:00+05:30",
   "last_run_date": "2026-11-23",
