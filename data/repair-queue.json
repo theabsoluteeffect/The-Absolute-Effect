@@ -147,7 +147,22 @@
         },
         "status": "partial content and source review completed; current guideline freshness and browser-rendered QA remain open."
       }
-    ]
+    ],
+    "latest_outcome_visual_audit": {
+      "run_id": 46100227820,
+      "commit": "265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+      "status": "passed_static_structural",
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "missing_primary_source_sections": 0,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "missing_dated_current_practice_context": 53,
+      "short_pages": 0,
+      "redirect_stub_count": 1,
+      "artifact_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100227820/artifacts/15245465087",
+      "manual_browser_review_completed": false
+    }
   },
   "open_items": [
     {
@@ -7792,10 +7807,12 @@
     "uploaded": 0,
     "blocker": "Active 2026-11-27 batch remains unreleased; local clone/validator unavailable; new GitHub workflow queued.",
     "next_action": "Obtain local clone; inspect all primary sources and 53 dated-context tasks; browser-rendered QA; PR only after local validator and full source verification.",
-    "strict_release_validator": "passed on 265902 (0 errors)",
-    "outcome_visualization_audit": "passed static audit; 53 dated-context gaps",
-    "local_validator": "not run — DNS resolution failure",
-    "browser_rendered_qa": false
+    "strict_release_validator": "passed — 0 errors",
+    "outcome_visualization_audit": "passed static structural audit; 53 dated-context gaps",
+    "local_validator": "not run — DNS failure",
+    "browser_rendered_qa": false,
+    "strict_release_validator_run_id": 46100227820,
+    "outcome_visualization_audit_run_id": 46100227820
   },
   "last_updated": "2026-11-28",
   "last_run": {
@@ -7818,9 +7835,9 @@
     "deferred_contrary": 1,
     "existing_queue_candidates_rechecked": 2,
     "strict_release_validator": "passed",
-    "strict_release_validator_errors_last_completed": 136,
-    "latest_workflow_run_id": 46099549382,
-    "latest_workflow_status": "queued",
+    "strict_release_validator_errors_last_completed": 0,
+    "latest_workflow_run_id": 46100227820,
+    "latest_workflow_status": "success",
     "outcome_visualization_audit": "passed — static structural audit",
     "local_release_validator": "not run — Git clone failed DNS resolution",
     "browser_rendered_qa": "not run",
