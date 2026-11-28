@@ -2886,8 +2886,44 @@
         "ATOMIC trial",
         "NCT02912559"
       ],
-      "freshness_review_status": "primary source linked; complete clinical freshness audit pending",
-      "outcome_visual_review_status": "outcome visualization added; browser QA pending"
+      "freshness_review_status": "FDA approval and label verified 2026-11-28 (approval date 2026-10-08); current NCCN Colon Cancer 2026 guideline/reference mapping remains open.",
+      "outcome_visual_review_status": "outcome visualization added; browser QA pending",
+      "primary": "10.1056/NEJMoa2507874",
+      "primary_title": "Atezolizumab Plus FOLFOX for Stage III Mismatch Repair Deficient Colon Cancer",
+      "pmid": "41880612",
+      "registry_id": "NCT02912559",
+      "setting_detail": "Adjuvant after complete resection of stage III dMMR colon cancer",
+      "absolute_effect": {
+        "endpoint": "3-year disease-free survival (DFS; recurrence or death from any cause)",
+        "time_horizon": "3 years",
+        "treatment_rate_percent": 86.3,
+        "control_rate_percent": 76.2,
+        "absolute_benefit_percentage_points": 10.1,
+        "nnt": 10,
+        "calculation": "ceil(100 / 10.1) = 10",
+        "source_doi": "10.1056/NEJMoa2507874",
+        "harm_endpoint": "All-cause grade 3–4 adverse events",
+        "harm_time_horizon": "Assigned treatment period; median atezolizumab exposure 10.8 months versus 5.4 months for control mFOLFOX6",
+        "harm_treatment_rate_percent": 84.1,
+        "harm_control_rate_percent": 71.9,
+        "absolute_harm_percentage_points": 12.2,
+        "nnh": null,
+        "nnh_not_applicable_reason": "Cumulative adverse-event risk was observed over unequal treatment exposure; no common fixed exposure horizon, so a reciprocal NNH would be misleading.",
+        "source_denominators": {
+          "treatment": "291/346",
+          "control": "240/334"
+        }
+      },
+      "regulatory_updates": [
+        {
+          "date": "2026-10-08",
+          "authority": "FDA",
+          "source": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer",
+          "indication": "Adjuvant atezolizumab with fluoropyrimidine/oxaliplatin for stage III dMMR colon cancer; adult and pediatric patients aged ≥2 years; SC atezolizumab/hyaluronidase for eligible patients aged ≥12 years and ≥40 kg.",
+          "note": "Regulatory update based on ATOMIC; current NCCN guideline version not verified."
+        }
+      ],
+      "quality_check_date": "2026-11-28"
     },
     {
       "id": "attraction-4",
