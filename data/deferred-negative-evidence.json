@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T08:04:24+05:30",
+  "updated_at": "2026-11-28T19:03:57+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -665,18 +665,52 @@
         "https://pubmed.ncbi.nlm.nih.gov/42401837/",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC13613783/"
       ]
+    },
+    {
+      "trial_id": "fowarc",
+      "trial": "FOWARC",
+      "status": "deferred_contrary_evidence",
+      "discovery_source": "NCCN Guidelines Insights: Rectal Cancer, Version 3.2024, references 56 and 57 (complete public Insights reference list; not full guideline)",
+      "guideline_id": "nccn-rectal-cancer-insights-v3-2024",
+      "references": [
+        "56",
+        "57"
+      ],
+      "primary_title": "Neoadjuvant Modified FOLFOX6 With or Without Radiation Versus Fluorouracil Plus Radiation for Locally Advanced Rectal Cancer: Final Results of the Chinese FOWARC Trial",
+      "primary_doi": "10.1200/JCO.18.02309",
+      "pmid": "31557064",
+      "registry_id": "NCT01211210",
+      "additional_publications": [
+        {
+          "title": "Modified FOLFOX6 With or Without Radiation Versus Fluorouracil and Leucovorin With Radiation in Neoadjuvant Treatment of Locally Advanced Rectal Cancer: Initial Results of the Chinese FOWARC Multicenter, Open-Label, Randomized Three-Arm Phase III Trial",
+          "doi": "10.1200/JCO.2016.66.6198",
+          "pmid": "27480145"
+        }
+      ],
+      "reason": "The randomized phase III FOWARC program did not establish a statistically significant DFS or local-control advantage for the RT-omission FOLFOX strategy over fluoropyrimidine-based chemoradiotherapy in unselected locally advanced rectal cancer. It is contrary/negative evidence relevant to interpreting selective RT omission; it is not a current preferred pathway and should not be promoted as a positive new trial page.",
+      "action": "Retain initial and final reports together as one underlying study in the deferred-negative queue. Revisit only if the full current guideline or a new high-quality update changes the interpretation.",
+      "primary_sources": [
+        "https://doi.org/10.1200/JCO.2016.66.6198",
+        "https://doi.org/10.1200/JCO.18.02309",
+        "https://clinicaltrials.gov/study/NCT01211210",
+        "https://jnccn.org/downloadpdf/view/journals/jnccn/22/6/article-p366.pdf"
+      ],
+      "reviewed_on": "2026-11-28",
+      "status_note": "No canonical trial page created; no duplicate page."
     }
   ],
   "last_run": {
-    "date": "2026-11-27",
-    "cycle": "morning",
-    "branch": "atlas-batch/2026-11-27-am",
-    "items_added": 2,
-    "total_items": 33,
-    "report_path": "data/daily-reports/2026-11-27-morning.json"
+    "date": "2026-11-28",
+    "cycle": "evening",
+    "added": [
+      "fowarc"
+    ],
+    "added_count": 1,
+    "duplicate_exclusions": 4,
+    "positive_new_candidates_held": 5
   },
   "last_updated": "2026-11-28",
   "last_run_date": "2026-11-28",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
-  "last_run_note": "Morning run: SYS-SM nurse-led mHealth trial added as contrary supportive-care evidence; existing ZEAL-1L deferred record rechecked and retained; no negative trial page published."
+  "last_run_note": "28 Nov evening: FOWARC added as deferred contrary evidence from NCCN Rectal Cancer Insights v3.2024 refs 56–57; no page created."
 }
