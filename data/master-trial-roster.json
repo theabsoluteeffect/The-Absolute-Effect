@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 18,
-  "last_quality_check": "2026-11-28",
+  "last_quality_check": "2026-11-14",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -13569,7 +13569,7 @@
       "follow_up": "Initial primary PFS analysis: median follow-up approximately 12 months in dMMR and 7.9 months in pMMR; OS immature. The 2025 Nature Medicine secondary analysis also reported immature OS. A 2026 ASCO abstract and NRG release describe later OS follow-up; their accessible summaries differ slightly and remain under source-level reconciliation.",
       "efficacy": "At 12 months, dMMR PFS was 74% versus 38% (HR 0.30, 95% CI 0.19–0.48; p<0.001). In pMMR disease, median PFS was 13.1 versus 8.7 months (HR 0.54, 95% CI 0.41–0.71; p<0.001). The dMMR 12-month landmark difference is 36 percentage points; landmark NNT 3 (ceil[1/0.36]).",
       "safety": "Grade ≥3 adverse events: dMMR 63.3% (69/109) versus 47.2% (50/106); pMMR 55.1% (152/276) versus 45.3% (124/274). Grade 5 adverse events occurred in 1 versus 2 dMMR patients and 6 versus 2 pMMR patients; attribution differs from all-cause grade ≥3 rates.",
-      "qol": "A mature patient-reported outcome analysis was not verified in the primary publication used here.",
+      "qol": "HRQoL was a key secondary endpoint assessed only in the pMMR cohort using FACT-En-TOI, FACT–GOG Neurotoxicity, PROMIS-Fatigue, PROMIS-Physical Function and a distress item. The primary report describes instruments but provides no numerical domain results in the main article; no dMMR PRO assessment was performed. Secondary PRO publication search remains open.",
       "burden": "Six 3-weekly chemotherapy cycles followed by up to 14 six-weekly maintenance infusions; immune-mediated toxicity and prolonged treatment duration require consideration.",
       "limitations": "PFS was tested separately in dMMR and pMMR cohorts; follow-up at initial analysis was short and OS immature. The 2025 peer-reviewed secondary analysis also reported immature OS. Later 2026 meeting material reports more mature OS, but exact estimates are not integrated until the full abstract and subsequent release are reconciled. NNT applies only to 12-month dMMR PFS, not the overall trial.",
       "absolute_effects": [
@@ -13591,7 +13591,11 @@
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2302312",
         "https://pubmed.ncbi.nlm.nih.gov/36972022/",
-        "https://clinicaltrials.gov/study/NCT03914612"
+        "https://clinicaltrials.gov/study/NCT03914612",
+        "https://doi.org/10.1038/s41591-025-03566-1",
+        "https://pubmed.ncbi.nlm.nih.gov/40044930/",
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.5502",
+        "https://sciencesources.eurekalert.org/news-releases/1130158"
       ],
       "nccn_provenance": {
         "status": "not verified — current full NCCN endometrial guideline/reference list inaccessible",
@@ -13653,7 +13657,7 @@
       "pending_follow_up_sources": [
         {
           "doi": "10.1200/JCO.2026.44.16_suppl.5502",
-          "title": "Updated overall survival analysis of NRG-GY018",
+          "title": null,
           "abstract_number": "5502",
           "publication_type": "ASCO 2026 conference abstract",
           "status": "full abstract inaccessible; reconcile with NRG 29-May-2026 release before integrating numeric estimates",

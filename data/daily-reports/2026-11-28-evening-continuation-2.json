@@ -12,7 +12,9 @@
     "branch_commit_sha": "7a91cf5d314015770cb3dda284d6b40522d9208a",
     "pull_request": null,
     "merged": false,
-    "production_deployment": "not claimed; no merge"
+    "production_deployment": "not claimed; no merge",
+    "report_metadata_commit_sha": "94d801534ef213c177ac92616636b75b7c88a3bb",
+    "branch_head_after_report": "94d801534ef213c177ac92616636b75b7c88a3bb"
   },
   "batch": {
     "target": 30,
@@ -589,5 +591,6 @@
     "Continue the full 461-page production audit; do not advance global last_quality_check until complete.",
     "Continue current NCCN full guideline retrieval; keep exact NCCN citation mapping tasks open while using explicitly labelled alternative guideline sources."
   ],
-  "page_change_commit_sha": "7a91cf5d314015770cb3dda284d6b40522d9208a"
+  "page_change_commit_sha": "7a91cf5d314015770cb3dda284d6b40522d9208a",
+  "roster_metadata_correction": "Branch last_quality_check reset to the last full-roster audit date (2026-11-14); 2026-11-28 is recorded only as a targeted partial audit."
 }
