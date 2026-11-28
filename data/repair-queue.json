@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T19:25:30+05:30",
+  "updated_at": "2026-11-28T08:04:24+05:30",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -102,7 +102,52 @@
         "gimema-all2820",
         "find-ctdna-surveillance"
       ]
-    }
+    },
+    "last_partial_review_date": "2026-11-28",
+    "full_clinical_audit_completed": false,
+    "browser_rendered_visualization_audit_completed": false,
+    "last_partial_review_scope": [
+      "CheckMate 816",
+      "KEYNOTE-A18",
+      "LACC",
+      "SHAPE",
+      "Chlorophyllin TNT"
+    ],
+    "last_partial_review_note": "Four flagged legacy canonical pages were re-read against their primary source links and visible outcome structures; one staged Chlorophyllin page was re-read against the primary JAMA Oncology article and repaired. This is not a complete recursive clinical audit or browser-rendered QA.",
+    "manual_review_addenda": [
+      {
+        "date": "2026-11-28",
+        "cycle": "morning",
+        "branch": "atlas-batch/2026-11-27-am",
+        "reviewed_page_count": 5,
+        "reviewed_pages": [
+          "checkmate-816",
+          "keynote-a18",
+          "lacc",
+          "shape",
+          "chlorophyllin-tnt"
+        ],
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/35403841/",
+          "https://pubmed.ncbi.nlm.nih.gov/40454642/",
+          "https://pubmed.ncbi.nlm.nih.gov/39288779/",
+          "https://pubmed.ncbi.nlm.nih.gov/42010940/",
+          "https://pubmed.ncbi.nlm.nih.gov/30380365/",
+          "https://pubmed.ncbi.nlm.nih.gov/38810208/",
+          "https://pubmed.ncbi.nlm.nih.gov/38416430/",
+          "https://pubmed.ncbi.nlm.nih.gov/43084277/"
+        ],
+        "visualization_review": "Static outcome chart markup and shared absolute-effect renderer logic inspected; browser-rendered QA remains open.",
+        "findings": {
+          "checkmate-816": "5-year OS 65.4% vs55.0%, 10.4 pp; NNT10. Original pCR/EFS visuals retained; 2-year EFS 63.8% vs45.3%, NNT6; pCR 24.0% vs2.2%, NNT5.",
+          "keynote-a18": "36-month OS 82.6% vs74.8%, 7.8 pp; NNT13.",
+          "lacc": "Original 4.5-year DFS display 86.0% vs96.5%, ~10.6 pp harm; NNH10. Final analysis 85% vs96% retained separately, not conflated.",
+          "shape": "No NNT for primary 3-year pelvic-recurrence noninferiority; secondary urinary retention NNT11 and incontinence NNT16.",
+          "chlorophyllin-tnt": "Grade≥2 combined acute toxicity 24/37 vs34/36; 29.6 pp reduction, NNT4. Grade≥3 10/37 vs19/36; 25.8 pp reduction, NNT4. Page headings/DOI/structured absolute_effect/shared renderer repaired."
+        },
+        "status": "partial content and source review completed; current guideline freshness and browser-rendered QA remain open."
+      }
+    ]
   },
   "open_items": [
     {
@@ -187,7 +232,9 @@
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
       "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
       "status": "open",
-      "created_on": "2026-11-14"
+      "created_on": "2026-11-14",
+      "last_reviewed_on": "2026-11-28",
+      "verification": "2026-11-28 targeted re-read of canonical page, source links and source-grounded outcomes; visible static outcome markup and shared absolute-effect renderer logic inspected. Current NCCN full guideline/reference list remains inaccessible; keep this freshness task open and do not close."
     },
     {
       "issue_id": "dated-context-checkmate-8hw",
@@ -466,8 +513,9 @@
       "created_on": "2026-11-14",
       "resolved_on": "2026-11-15",
       "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
-      "verification": "Primary page/source review completed; current guideline freshness remains unverified. NCCN full text/reference list inaccessible on 2026-11-21.",
-      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+      "verification": "2026-11-28 targeted re-read of canonical page, source links and source-grounded outcomes; visible static outcome markup and shared absolute-effect renderer logic inspected. Current NCCN full guideline/reference list remains inaccessible; keep this freshness task open and do not close.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main",
+      "last_reviewed_on": "2026-11-28"
     },
     {
       "issue_id": "dated-context-krascendo-1",
@@ -494,8 +542,9 @@
       "created_on": "2026-11-14",
       "resolved_on": "2026-11-15",
       "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
-      "verification": "Primary page/source review completed; current guideline freshness remains unverified. NCCN full text/reference list inaccessible on 2026-11-21.",
-      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+      "verification": "2026-11-28 targeted re-read of canonical page, source links and source-grounded outcomes; visible static outcome markup and shared absolute-effect renderer logic inspected. Current NCCN full guideline/reference list remains inaccessible; keep this freshness task open and do not close.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main",
+      "last_reviewed_on": "2026-11-28"
     },
     {
       "issue_id": "dated-context-lorch-cdct-hdct-2011",
@@ -702,8 +751,9 @@
       "created_on": "2026-11-14",
       "resolved_on": "2026-11-15",
       "resolution": "Added a dated current-practice section and source links. Full NCCN version/reference freshness remains tracked by separate open guideline-freshness items.",
-      "verification": "Primary page/source review completed; current guideline freshness remains unverified. NCCN full text/reference list inaccessible on 2026-11-21.",
-      "next_action": "Await the exact-30 PR gate and merge before closing on main"
+      "verification": "2026-11-28 targeted re-read of canonical page, source links and source-grounded outcomes; visible static outcome markup and shared absolute-effect renderer logic inspected. Current NCCN full guideline/reference list remains inaccessible; keep this freshness task open and do not close.",
+      "next_action": "Await the exact-30 PR gate and merge before closing on main",
+      "last_reviewed_on": "2026-11-28"
     },
     {
       "issue_id": "dated-context-space",
@@ -1002,7 +1052,8 @@
       "next_action": "Retrieve an authoritative FDA multidisciplinary review/approval package or an author-provided source that permits independent extraction; verify PFS maturity and all grade 3–5 safety before page drafting.",
       "nccn_provenance": "not verified — source inaccessible; do not infer recommendation category or reference number.",
       "issue_id": "candidate-review-excaliber-rrmm",
-      "last_reviewed_on": "2026-11-26"
+      "last_reviewed_on": "2026-11-28",
+      "review_note": "Rechecked primary PubMed/publisher metadata and registry on 2026-11-28. The published report remains an MRD-negative CR analysis; co-primary PFS maturity/full numeric extraction and complete grade 3–5 safety remain unresolved. Publisher AI text/data-mining restriction persists; retain held status."
     },
     {
       "trial_id": "trastuzumab-botidotin-versus-t-dm1",
@@ -5561,11 +5612,12 @@
       "path": "trial-pages/chlorophyllin-tnt/index.html",
       "category": "visualization_render_qa",
       "severity": "medium",
-      "evidence": "Static charts and two structured absolute-effect records checked; NNT 29.6pp→4 and25.8pp→4.",
-      "action": "Render in browser and run Outcome visualization audit before PR.",
+      "evidence": "Re-read canonical page and primary JAMA Oncology article (DOI 10.1001/jamaoncol.2026.4843; PMID 43084277) and registry NCT05856305. Grade ≥2 toxicity 24/37 (64.9%) vs34/36 (94.4%), absolute reduction 29.6 pp, NNT4; grade ≥3 10/37 (27.0%) vs19/36 (52.8%), reduction25.8 pp, NNT4. Primary article title/DOI matched; source page repaired and structured effects added. Browser-rendered QA remains pending.",
+      "action": "Run browser-rendered QA and current outcome visualization workflow; verify both structured endpoint pictograms and static bars, then close only after successful visual check.",
       "status": "open",
       "created_on": "2026-11-27",
-      "source_urls": []
+      "source_urls": [],
+      "last_reviewed_on": "2026-11-28"
     },
     {
       "issue_id": "browser-qa-immunoprism-2026-11-27",
@@ -5645,16 +5697,21 @@
       "severity": "critical",
       "status": "open",
       "created_on": "2026-11-27",
-      "last_reviewed_on": "2026-11-27",
-      "issue": "Thirty unique trial drafts remain staged on atlas-batch/2026-11-27-am, but the GitHub strict release validator failed with 136 errors; the outcome visualization audit was skipped; the local validator and browser-rendered QA remain unrun; no PR or pages have been uploaded.",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "Thirty unique page drafts remain staged on atlas-batch/2026-11-27-am. The last completed strict validator reported 136 errors. One Chlorophyllin page/roster repair and one validator correction for exact canonical-ID self-matches in the Trial-of-the-Day archive were pushed; the new Outcome visualization audit is queued. Local validator and browser-rendered QA remain unavailable; no PR, merge or production upload.",
       "evidence": [
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
         "Container-side Git clone failed due network/DNS; no local working tree is available.",
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46010938069",
         "Audited branch commit d4a5ed2e09d24feef1d9b19bd25c24431d815719; main remains 8315e5e5dda454ab83d62911a1c22e0dac5f732c.",
-        "CI error summary stored in data/daily-reports/2026-11-27-evening.json; 136 errors grouped by trial and exact message."
+        "CI error summary stored in data/daily-reports/2026-11-27-evening.json; 136 errors grouped by trial and exact message.",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/091fb4edbd66e167765ad30af91a123877472978",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/2c4b8e4982f69b9d928bc897806e270558ac4191",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/a524d653c2dc3b26b35e00f6ee416b214f508190",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46099549382",
+        "Container-side Git clone retried on 2026-11-28; DNS resolution for github.com still fails."
       ],
-      "action": "Resolve all listed validator failures on this same branch; obtain a local working clone and run the local strict validator; complete browser-rendered visualization QA; re-read all changed pages and metadata; open a PR only after all 30 trials are fully source-verified and all required checks pass.",
+      "action": "Wait for the queued GitHub outcome/strict release audit and inspect its report. Resolve all remaining page/source/absolute-effect errors on this same branch; obtain a local clone and run the local release validator; complete browser-rendered QA; re-read every changed page/data file; open a PR only when exactly 30 unique studies are fully source-verified and all checks pass.",
       "validation_findings": {
         "workflow_run_id": 46010938069,
         "strict_validator_errors": 136,
@@ -5938,8 +5995,125 @@
           "NNH text does not match any structured primary/additional endpoint": 1
         },
         "outcome_visualization_audit": "skipped",
-        "local_validator": "not run — DNS/network clone failure",
-        "browser_rendered_qa": "not run"
+        "local_validator": "not run — clone failed because github.com DNS resolution is unavailable",
+        "browser_rendered_qa": "not run",
+        "last_completed_strict_validator_errors": 136,
+        "last_completed_validator_run_id": 46010938069,
+        "latest_workflow_run_id": 46099549382,
+        "latest_workflow_status": "queued",
+        "latest_workflow_head_sha": "a524d653c2dc3b26b35e00f6ee416b214f508190",
+        "known_repairs": [
+          "Chlorophyllin page title/H1 and required section headings normalized; raw DOI and structured absolute_effect added; shared renderer included.",
+          "Archive duplicate audit now skips an archive record with the same canonical trial ID; cross-ID DOI/registry/PMID duplicate checks remain active."
+        ]
+      }
+    },
+    {
+      "issue_id": "candidate-heron-lung01-2026-11-28",
+      "trial_id": "heron-lung01",
+      "trial": "HERON-Lung01",
+      "canonical_trial_id": "heron-lung01",
+      "canonical_page_path": null,
+      "category": "candidate_primary_source_completeness",
+      "severity": "high",
+      "status": "held",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "New unique phase III EGFR-mutated NSCLC study with verified primary DOI/title, PMID and NCT registry. The PubMed abstract provides randomization, primary PFS, dose schedule, follow-up and grade ≥3 TRAEs, but the full paper/supplement has not been reconciled for subgroup detail, complete safety/discontinuation and any PRO/QoL reporting.",
+      "evidence": [
+        "https://pubmed.ncbi.nlm.nih.gov/42933457/",
+        "https://doi.org/10.1016/S0140-6736(26)01899-4",
+        "https://clinicaltrials.gov/study/NCT06671379",
+        "https://www.esmo.org/guidelines/living-guidelines/esmo-living-guideline-oncogene-addicted-metastatic-nsclc",
+        "https://ascopubs.org/doi/10.1200/JCO-26-01479"
+      ],
+      "action": "Obtain and inspect the full Lancet Oncology article and supplement; reconcile all subgroup, safety, treatment-discontinuation and PRO/QoL data; then create a canonical page only after full page-level QA. Publication date 2026-11-07 makes it a potential Trial-of-the-Day candidate, but it is not uploaded.",
+      "verification": {
+        "primary_doi_title_match": true,
+        "registry_id_verified": true,
+        "identity_unique_against_main_roster_pages_archive_and_tod": true,
+        "primary_abstract_reviewed": true,
+        "full_text_supplement_reviewed": false,
+        "nnt": "Not appropriate from median PFS/HR alone; no same-horizon absolute PFS rates in accessible abstract.",
+        "nccn_provenance": "not verified — official source inaccessible; do not hold solely for this reason."
+      }
+    },
+    {
+      "issue_id": "candidate-sympro-lung-2026-11-28",
+      "trial_id": "sympro-lung",
+      "trial": "SYMPRO-Lung",
+      "canonical_trial_id": "sympro-lung",
+      "canonical_page_path": null,
+      "category": "candidate_primary_source_reconciliation",
+      "severity": "medium",
+      "status": "held",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "New unique supportive-care cluster-randomized stepped-wedge study with a 2023 primary HRQoL publication and a 2026 post-hoc survival analysis. The survival analysis included 446/515 enrolled patients; its OS result is post-hoc and must not be presented as a primary endpoint.",
+      "evidence": [
+        "https://doi.org/10.1093/jnci/djad159",
+        "https://pubmed.ncbi.nlm.nih.gov/37603720/",
+        "https://doi.org/10.1016/S1470-2045(26)00305-0",
+        "https://pubmed.ncbi.nlm.nih.gov/42727592/"
+      ],
+      "action": "Reconcile the original protocol and primary HRQoL paper with the 2024 HRQoL follow-up and 2026 post-hoc survival report; preserve cluster/stepped-wedge design and denominators (515 enrolled vs 446 in survival analysis); extract exact intervention exposure, HRQoL timepoints, missingness and survival analysis limitations before page drafting.",
+      "verification": {
+        "identity_unique_against_main_roster_pages_archive_and_tod": true,
+        "primary_and_followup_publications_identified": true,
+        "registry_id": "NL7897",
+        "latest_followup_publication_date": "2026-09-11",
+        "trial_of_the_day_eligible": false,
+        "nnt": "Not appropriate from medians/HR alone; no fixed-horizon absolute survival risk difference extracted."
+      }
+    },
+    {
+      "issue_id": "candidate-jcog2407-jalneck-protocol-only-2026-11-28",
+      "trial_id": "jcog2407-jalneck",
+      "trial": "JCOG2407 (JALNECK)",
+      "canonical_trial_id": "jcog2407-jalneck",
+      "canonical_page_path": null,
+      "category": "protocol_only_no_outcomes",
+      "severity": "low",
+      "status": "held",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "New unique multicentre randomized phase III protocol for T3–T4aN0 laryngeal SCC; no efficacy outcomes are available. Primary endpoint is OS; 280 patients planned across 39 institutions.",
+      "evidence": [
+        "https://doi.org/10.1093/jjco/hyag121",
+        "https://pubmed.ncbi.nlm.nih.gov/42525729/",
+        "https://jrct.mhlw.go.jp/en-latest-detail/jRCT1030250729"
+      ],
+      "action": "Do not publish an outcomes page from a protocol-only report. Track the jRCT registry and revisit when primary results are published.",
+      "verification": {
+        "identity_unique_against_main_roster_pages_archive_and_tod": true,
+        "publication_first_online": "2026-07-29",
+        "registry_id": "jRCT1030250729",
+        "nnt": "Not applicable — no outcome results."
+      }
+    },
+    {
+      "issue_id": "candidate-jcog2504-surveillance-protocol-only-2026-11-28",
+      "trial_id": "jcog2504",
+      "trial": "JCOG2504 (Less-surveillance EGC)",
+      "canonical_trial_id": "jcog2504",
+      "canonical_page_path": null,
+      "category": "protocol_only_no_outcomes",
+      "severity": "low",
+      "status": "held",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "New unique single-arm phase III protocol evaluating less-intensive surveillance after curative resection for pStage I gastric cancer; no efficacy outcomes are available. Primary endpoint OS; 605 patients planned across 66 institutions.",
+      "evidence": [
+        "https://doi.org/10.1093/jjco/hyag123",
+        "https://pubmed.ncbi.nlm.nih.gov/42545799/",
+        "https://jrct.mhlw.go.jp/en-latest-detail/jRCT1030250844"
+      ],
+      "action": "Do not publish an outcomes page from a protocol-only report. Track the jRCT registry and revisit when primary results are published.",
+      "verification": {
+        "identity_unique_against_main_roster_pages_archive_and_tod": true,
+        "publication_first_online": "2026-08-03",
+        "registry_id": "jRCT1030250844",
+        "nnt": "Not applicable — no outcome results."
       }
     }
   ],
@@ -7397,6 +7571,36 @@
       "merged": false,
       "deployment_verified": false,
       "report_path": "data/daily-reports/2026-11-27-evening.json"
+    },
+    {
+      "run_date": "2026-11-28",
+      "cycle": "morning",
+      "timestamp": "2026-11-28T08:04:24+05:30",
+      "branch": "atlas-batch/2026-11-27-am",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "branch_head_before": "01cfebed7bf0b33c3643b5df7520761f32aa53fd",
+      "existing_main_pages_manually_audited": 4,
+      "staged_pages_repaired": 1,
+      "validator_logic_fixes": 1,
+      "candidates_screened": 13,
+      "new_unique": 5,
+      "duplicates": 5,
+      "held": 4,
+      "deferred_contrary": 1,
+      "existing_queue_candidates_rechecked": 2,
+      "repair_items_reviewed": 8,
+      "repair_items_closed": 0,
+      "nnt_nnh_claims_rechecked": 7,
+      "uploaded": 0,
+      "latest_workflow_run_id": 46099549382,
+      "latest_workflow_status": "queued",
+      "local_validator": "not run — DNS failure",
+      "browser_rendered_qa": false,
+      "pr_opened": false,
+      "merged": false,
+      "deployment_verified": false,
+      "report_path": "data/daily-reports/2026-11-28-morning.json",
+      "daily_evidence_path": "data/daily-evidence-2026-11-28-morning.json"
     }
   ],
   "previous_partial_runs": [
@@ -7489,74 +7693,78 @@
     }
   ],
   "last_partial_run": {
-    "date": "2026-11-27",
-    "cycle": "evening",
+    "date": "2026-11-28",
+    "cycle": "morning",
     "status": "INCOMPLETE",
     "branch": "atlas-batch/2026-11-27-am",
     "reviewed_trial_ids": [
-      "rosewood",
-      "panova-3",
-      "paradigm",
-      "gog-240",
-      "empower-cervical1",
-      "innovatv-301",
-      "nrg-gy018",
-      "checkmate-77t",
-      "caravaggio",
-      "api-cat",
-      "hokusai-vte-cancer",
-      "nadina",
-      "swog-s1801",
-      "aurelia",
-      "desktop-iii",
-      "ovhipec-1"
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape",
+      "chlorophyllin-tnt"
     ],
-    "candidates_reaudited": 16,
-    "newly_screened": 0,
-    "full_primary_source_verified": 0,
-    "held": 16,
+    "candidates_screened": 13,
+    "new_unique_candidates": 5,
+    "duplicates": 5,
+    "held": 4,
+    "deferred_contrary": 1,
+    "existing_queue_rechecks": [
+      "excaliber-rrmm",
+      "zeal-1l"
+    ],
+    "page_repairs": 1,
+    "validator_fixes": 1,
     "uploaded": 0,
-    "validator_errors": 136,
-    "reason": "The batch remains blocked by incomplete primary-source extraction and a failed strict release validator; no PR/merge."
+    "blocker": "Active 2026-11-27 batch remains unreleased; local clone/validator unavailable; new GitHub workflow queued.",
+    "next_action": "Inspect workflow report, resolve remaining strict validator errors, run local release validator and browser-rendered QA; no PR until exact 30-page gate passes."
   },
-  "last_updated": "2026-11-27T19:25:30+05:30",
+  "last_updated": "2026-11-28",
   "last_run": {
-    "date": "2026-11-27",
-    "cycle": "evening",
+    "date": "2026-11-28",
+    "cycle": "morning",
     "branch": "atlas-batch/2026-11-27-am",
-    "branch_head_before": "d4a5ed2e09d24feef1d9b19bd25c24431d815719",
+    "branch_head_before": "01cfebed7bf0b33c3643b5df7520761f32aa53fd",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "existing_main_pages_manually_audited": 0,
+    "existing_main_pages_manually_audited": 4,
     "flagged_legacy_pages_re_read": 4,
-    "staged_candidate_pages_re_read": 16,
-    "repair_items_reviewed": 17,
+    "staged_candidate_pages_re_read": 1,
+    "repair_items_reviewed": 8,
     "repair_items_closed": 0,
-    "items_held": 16,
-    "open_items": 229,
-    "resolved_items": 77,
-    "strict_release_validator": "failed",
-    "strict_release_validator_errors": 136,
-    "workflow_run_id": 46010938069,
-    "outcome_visualization_audit": "skipped",
-    "local_release_validator": "not run — DNS/network failure",
+    "page_repairs_made": 1,
+    "validator_fixes_made": 1,
+    "new_candidates_screened": 13,
+    "new_unique_candidates": 5,
+    "duplicates": 5,
+    "held": 4,
+    "deferred_contrary": 1,
+    "existing_queue_candidates_rechecked": 2,
+    "strict_release_validator": "pending after latest push",
+    "strict_release_validator_errors_last_completed": 136,
+    "latest_workflow_run_id": 46099549382,
+    "latest_workflow_status": "queued",
+    "outcome_visualization_audit": "pending",
+    "local_release_validator": "not run — clone DNS resolution failure",
+    "browser_rendered_qa": "not run",
     "pr_opened": false,
     "merged": false,
-    "deployment_verified": false
+    "deployment_verified": false,
+    "uploaded": 0
   },
-  "generated_at": "2026-11-23T19:28:00+05:30",
+  "generated_at": "2026-11-28T08:04:24+05:30",
   "summary": {
-    "open_items": 229,
+    "open_items": 233,
     "resolved_items": 77,
     "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
-    "release_holds_in_active_batch": 0,
+    "release_holds_in_active_batch": 1,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
-    "last_run_note": "27 Nov AM: Early ONS numerical chart repair closed; ImmunoPRISM and nivolumab primary-source extraction closed; four new browser QA items and two primary-source verification holds opened. Full clinical audit remains open.",
-    "last_updated": "2026-11-27",
-    "last_reviewed_on": "2026-11-27",
+    "last_run_note": "28 Nov morning: four existing flagged pages re-read; one staged Chlorophyllin page/roster repair and one strict-validator self-match correction committed to the active review branch; four new unique candidates held (two results candidates, two protocol-only); one supportive-care RCT deferred to contrary evidence; five duplicates excluded; no pages uploaded.",
+    "last_updated": "2026-11-28",
+    "last_reviewed_on": "2026-11-28",
     "release_gate_status": "open"
   },
-  "updated_on": "2026-11-27",
-  "last_run_date": "2026-11-27",
-  "last_run_cycle": "evening"
+  "updated_on": "2026-11-28",
+  "last_run_date": "2026-11-28",
+  "last_run_cycle": "morning"
 }
