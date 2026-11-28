@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 17,
-  "last_quality_check": "2026-11-23 evening — 14 existing pages manually inspected; four canonical pages updated; static outcome audit and strict release validator passed; full clinical audit and browser-rendered QA remain incomplete.",
+  "last_quality_check": "2026-11-28 partial review: four flagged legacy pages re-read; one staged Chlorophyllin page/roster repair and one validator self-match correction committed on the active review branch. Full recursive clinical audit, browser-rendered QA and local release validation remain incomplete.",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -1892,6 +1892,22 @@
           "shape": "Primary pelvic-recurrence noninferiority endpoint has no NNT; secondary urinary retention NNT 11 and incontinence NNT 16."
         },
         "status": "content checks completed; browser rendering and current-guideline freshness remain open"
+      },
+      {
+        "date": "2026-11-28",
+        "cycle": "morning",
+        "branch": "atlas-batch/2026-11-27-am",
+        "reviewed_existing_pages": [
+          "checkmate-816",
+          "keynote-a18",
+          "lacc",
+          "shape"
+        ],
+        "staged_page_repaired": [
+          "chlorophyllin-tnt"
+        ],
+        "findings": "Re-read primary-source links and source-grounded outcome values; seven NNT/NNH claims checked across the four legacy pages. Static chart markup and shared absolute-effect renderer logic inspected; browser rendering remains pending. Chlorophyllin primary DOI/title and two absolute-effect endpoints were verified and its release-page structure repaired.",
+        "limitations": "This is a partial targeted review, not a complete recursive clinical audit; NCCN current guideline freshness and browser-rendered QA remain open."
       }
     ],
     "full_clinical_audit_completed": false,
@@ -2084,7 +2100,37 @@
     "latest_batch_uploaded_count": 0,
     "latest_batch_status": "INCOMPLETE — 30/30 unique trial page drafts staged on review branch; 0 release-ready; 0 uploaded; no PR or merge.",
     "branch_head_before_evening_continuation": "37e2955d93469215dd491a6954c2580f69546150",
-    "branch_page_content_commit": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d"
+    "branch_page_content_commit": "bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
+    "latest_reconciliation": {
+      "date": "2026-11-28",
+      "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+      "recursive_tree_entries": 1179,
+      "trial_page_index_directories_including_stub_and_reference": 461,
+      "canonical_trial_page_directories_excluding_rosel_stub": 460,
+      "canonical_trial_page_directories_excluding_rosel_stub_and_lung_sabr_reference": 459,
+      "roster_entries": 467,
+      "unique_roster_ids": 467,
+      "unique_roster_page_targets": 460,
+      "evidence_index_unique_trial_page_links": 460,
+      "missing_canonical_index_links": 0,
+      "archive_entries": 16,
+      "current_trial_of_the_day": "PANKU-Esophagus01",
+      "previous_trial_of_the_day": "GemX",
+      "daily_evidence_files_inspected": 30,
+      "daily_report_files_inspected": 8,
+      "unrostered_canonical_trial_pages": 0,
+      "alias_or_redirect_stub_excluded": [
+        "trial-pages/rosel/index.html → trial-pages/lung-sabr-definitions/#rosel"
+      ],
+      "nontrial_reference_page_excluded": [
+        "trial-pages/lung-sabr-definitions/index.html"
+      ],
+      "manual_pages_reaudited_this_run": 4,
+      "staged_pages_repaired_this_run": 1,
+      "full_recursive_clinical_audit_completed": false,
+      "browser_rendered_visualization_audit_completed": false,
+      "cumulative_unique_underlying_study_count": "not reported — existing audit metadata disagrees (461 source-audit count vs 467 roster IDs); reconcile shared-anchor and archive-only identities before asserting a single total."
+    }
   },
   "trials": [
     {
@@ -14165,14 +14211,14 @@
       "batch_branch": "atlas-batch/2026-11-27-am"
     }
   ],
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-28",
   "batch_date": "2026-11-17",
   "permanent_trial_pages_count_definition": "Unique roster page paths after stripping anchor fragments; shared-anchor studies count as separate underlying trials but share one canonical page. Redirect-only ROSEL wrapper is excluded.",
   "active_batch": {
     "branch": "atlas-batch/2026-11-27-am",
     "base_main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "last_activity": "2026-11-26T19:54:35+05:30",
-    "cycle_status": "INCOMPLETE — 0/30 uploaded; 10 new unique pages staged on branch, 3 source-verified drafts and 7 incomplete drafts; 9 carry-forward candidates re-reviewed and held; 27 additional fully verified unique pages required.",
+    "last_activity": "2026-11-28T08:04:24+05:30",
+    "cycle_status": "INCOMPLETE — 0/30 uploaded; active 2026-11-27 batch retained to avoid overlapping publication branches; release gate remains open.",
     "expected_new_unique_trials": 30,
     "carry_forward_new_unique_candidates": 25,
     "additional_new_unique_candidates": 15,
@@ -14185,18 +14231,18 @@
     "duplicates_excluded_this_run": 15,
     "held_candidates_this_run": 4,
     "deferred_contrary_this_run": 1,
-    "pr_status": "not opened — exact 30 unique studies required",
+    "pr_status": "not opened — local release validator and browser-rendered QA incomplete; exact-30 PR gate not met",
     "merge_status": "not merged",
     "deployment_status": "not verified",
-    "status": "INCOMPLETE — 0/30 uploaded; 10 new unique pages staged on branch, 3 source-verified drafts and 7 incomplete drafts; 9 carry-forward candidates re-reviewed and held; 27 additional fully verified unique pages required.",
-    "next_action": "Complete missing primary-source extraction for the nine held carry-forward candidates; continue new disease-site discovery; finish browser-rendered QA and local release validator; open PR only when exactly 30 unique pages are fully verified.",
+    "status": "INCOMPLETE — 0/30 uploaded; active 2026-11-27 batch retained to avoid overlapping publication branches; release gate remains open.",
+    "next_action": "Inspect the latest Outcome visualization audit/strict release report, resolve remaining failures across all 30 staged pages, obtain a local working clone and run the local release validator, complete browser-rendered QA, then open a PR only when all 30 unique pages are fully verified and all checks pass. Do not open a new batch branch while this batch remains active.",
     "batch_target_unique_trials": 30,
     "selected_from_carry_forward": 5,
     "source_verified_staged_page_count": 5,
     "browser_render_pending_page_count": 10,
-    "new_candidates_screened_this_run": 0,
-    "new_unique_candidates_this_run": 9,
-    "duplicate_exclusions_this_run": 1,
+    "new_candidates_screened_this_run": 13,
+    "new_unique_candidates_this_run": 5,
+    "duplicate_exclusions_this_run": 5,
     "verified_candidates_this_run": 0,
     "uploaded_to_main_this_run": 0,
     "remaining_to_target": 16,
@@ -14263,13 +14309,17 @@
       "axinet",
       "leap-009",
       "toripalimab-mfolfirinox",
-      "optical-2"
+      "optical-2",
+      "heron-lung01",
+      "sympro-lung",
+      "jcog2407-jalneck",
+      "jcog2504"
     ],
     "duplicate_or_repair_ids": [
       "dellphi-305"
     ],
     "next_candidate_id": "ovhipec-1",
-    "release_gate_status": "not opened — 10 new page files/roster entries staged; 3 source-verified drafts; 0 page-ready; 27 additional fully verified unique pages required; exact 30-page gate not met.",
+    "release_gate_status": "open — previous strict validator failed with 136 errors; new GitHub audit run queued after targeted repairs",
     "base_main_sha": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "target_new_unique_trials": 30,
     "screened_candidates": 79,
@@ -14287,7 +14337,8 @@
       "nhs-galleri",
       "optim",
       "setanaxib",
-      "tobemstomig"
+      "tobemstomig",
+      "sys-sm-hnc-mhealth"
     ],
     "last_updated": "2026-11-27T08:02:00+05:30",
     "verified_candidate_ids": [
@@ -14301,7 +14352,7 @@
     "total_duplicates_in_batch": 15,
     "total_new_unique_in_batch": 34,
     "total_held_in_batch": 30,
-    "last_commit": "213413518c13dc128868ebd37444e9d00039c220",
+    "last_commit": "4f2d720bed71ed4b04728441781b00a130d4217c",
     "last_content_commit": "213413518c13dc128868ebd37444e9d00039c220",
     "carry_forward_candidates_reaudited_this_run": 6,
     "unique_identities_reconfirmed_this_run": 9,
@@ -14322,6 +14373,29 @@
         "queue_integrity_repair": true,
         "staged_pages_structurally_rechecked": 10,
         "note": "No pages added in this continuation; 10 existing branch-only page files structurally re-read."
+      },
+      {
+        "timestamp": "2026-11-28T08:04:24+05:30",
+        "cycle": "morning — serialized continuation of active 2026-11-27 batch",
+        "branch": "atlas-batch/2026-11-27-am",
+        "branch_head_before": "01cfebed7bf0b33c3643b5df7520761f32aa53fd",
+        "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+        "candidates_screened": 13,
+        "new_unique": 5,
+        "duplicates": 5,
+        "held": 4,
+        "deferred_contrary": 1,
+        "existing_queue_candidates_rechecked": 2,
+        "existing_main_pages_manually_audited": 4,
+        "staged_pages_repaired": 1,
+        "validator_logic_fixes": 1,
+        "uploaded": 0,
+        "local_validator": "not run — DNS failure",
+        "latest_workflow_run_id": 46099549382,
+        "workflow_status": "queued",
+        "pr_opened": false,
+        "merged": false,
+        "deployment_verified": false
       }
     ],
     "batch_date": "2026-11-27",
@@ -14354,7 +14428,7 @@
     "release_ready_pages": 0,
     "uploaded_this_run": 0,
     "verified_new_unique_candidates_this_run": 3,
-    "deferred_contrary_candidates_this_run": 4,
+    "deferred_contrary_candidates_this_run": 1,
     "rejected_protocol_only_this_run": 2,
     "carry_forward_promotions_this_run": 1,
     "new_page_drafts_this_run": 4,
@@ -14366,15 +14440,11 @@
       "excaliber-rrmm"
     ],
     "new_candidate_ids_this_run": [
-      "chlorophyllin-tnt",
-      "immunoprism",
-      "nivolumab-btmb-basket",
-      "setanaxib",
-      "tobemstomig",
-      "axinet",
-      "leap-009",
-      "lucerna",
-      "excaliber-rrmm"
+      "heron-lung01",
+      "sympro-lung",
+      "jcog2407-jalneck",
+      "jcog2504",
+      "sys-sm-hnc-mhealth"
     ],
     "carry_forward_candidate_ids_this_run": [
       "sunmo",
@@ -14384,25 +14454,40 @@
       "nhs-galleri",
       "optim"
     ],
-    "last_run_timestamp": "2026-11-27T08:59:09+05:30",
+    "last_run_timestamp": "2026-11-28T08:04:24+05:30",
     "last_run_cycle": "morning",
-    "last_run_status": "INCOMPLETE",
+    "last_run_status": "INCOMPLETE — 0/30 uploaded; active 2026-11-27 batch retained to avoid overlapping publication branches; release gate remains open.",
     "last_progress_note": "14/30 selected unique page drafts staged; 7 source-verified; 0 release-ready pending browser render; 16 selected pages remain to build. No PR/merge.",
     "run_report_path": "data/daily-reports/2026-11-27-morning.json",
-    "daily_evidence_path": "data/daily-evidence-2026-11-27-morning.json",
+    "daily_evidence_path": "data/daily-evidence-2026-11-28-morning.json",
     "metadata_commit_sha": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
     "main_branch_head": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "branch_head_after_metadata_commit": "a3d51a7e114c1b8a7d0368a8c94ee932295ae0e2",
     "branch_head_before_audit_patch": "d4700ee9c8a9cc954062d72d6d3d032f947de06a",
-    "last_verified_branch_head": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e"
+    "last_verified_branch_head": "d21a5c0262bc7a904ee0f93a911b946e8f2ae96e",
+    "last_run_report_path": "data/daily-reports/2026-11-28-morning.json",
+    "existing_queue_candidates_rechecked_this_run": 2,
+    "primary_abstract_verified_candidates_this_run": 2,
+    "latest_workflow_run_id": 46099549382,
+    "latest_workflow_status": "queued",
+    "local_release_validator_status": "not run — Git clone failed because github.com DNS resolution is unavailable",
+    "browser_rendered_qa_status": "not run",
+    "last_branch_commit_before_metadata": "4f2d720bed71ed4b04728441781b00a130d4217c",
+    "duplicate_ids_this_run": [
+      "optitrop-lung06",
+      "panku-lung01",
+      "fovinaciclib",
+      "toripalimab-mfolfirinox",
+      "healer"
+    ]
   },
-  "last_run_date": "2026-11-27",
+  "last_run_date": "2026-11-28",
   "last_run_cycle": "morning",
   "last_run_branch": "atlas-batch/2026-11-27-am",
-  "last_run_status": "INCOMPLETE",
-  "quality_check_date": "2026-11-27",
-  "quality_check_scope": "10 staged pages structurally re-read; one primary numerical correction; four new source-verified page drafts; browser QA pending; full clinical audit incomplete.",
-  "last_run_report": "data/daily-reports/2026-11-27-morning.json",
-  "last_daily_evidence": "data/daily-evidence-2026-11-27-morning.json",
-  "updated_at": "2026-11-27"
+  "last_run_status": "INCOMPLETE — 0/30 uploaded; active 2026-11-27 batch retained to avoid overlapping publication branches; release gate remains open.",
+  "quality_check_date": "2026-11-28",
+  "quality_check_scope": "Partial: four existing canonical pages manually re-read and one staged page repaired; not a full audit of all 459 canonical trial pages.",
+  "last_run_report": "data/daily-reports/2026-11-28-morning.json",
+  "last_daily_evidence": "data/daily-evidence-2026-11-28-morning.json",
+  "updated_at": "2026-11-28T08:04:24+05:30"
 }
