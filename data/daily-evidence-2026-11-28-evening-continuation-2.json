@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0",
+  "run_timestamp": "2026-11-28T20:01:32+05:30",
+  "cycle": "evening continuation",
+  "status": "INCOMPLETE — active 30-study batch remains unmerged",
+  "repository": {
+    "name": "theabsoluteeffect/The-Absolute-Effect",
+    "base_branch": "main",
+    "base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-27-am",
+    "branch_head_before": "3172853dba0751fc7186285881cf3f3018ba5453",
+    "branch_commit_sha": "PENDING_AFTER_COMMIT",
+    "pull_request": null,
+    "merged": false,
+    "production_deployment": "not claimed; no merge"
+  },
+  "preflight": {
+    "main_roster_records": 467,
+    "main_canonical_page_directories": 461,
+    "active_branch_staged_unique": 30,
+    "duplicate_check": "30/30 new unique by exact DOI/registry/alias match against production roster, archive and prior production ToD; no exact duplicates",
+    "redirect_alias_review": "ROSEL path is a meta-refresh stub to the shared lung SABR canonical page; canonical metadata corrected."
+  },
+  "repair_audit": {
+    "production_pages_re_read": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape"
+    ],
+    "redirect_stubs_re_read": [
+      "rosel"
+    ],
+    "active_batch_pages_re_read": 30,
+    "files_changed": 8,
+    "repairs_applied": [
+      "NRG-GY018 efficacy versus safety denominator correction; randomization strata and PRO instruments clarified; 2025 secondary analysis attached",
+      "Current ESMO 2026 cervical guideline references added to KEYNOTE-A18, LACC, SHAPE, GOG-240, EMPOWER-Cervical 1 and innovaTV 301",
+      "ROSEL redirect stub canonical/og/JSON-LD target corrected; no duplicate page created"
+    ],
+    "full_production_audit_complete": false,
+    "production_canonical_page_directories": 461,
+    "production_roster_records": 467,
+    "global_last_quality_check": "2026-11-14 (intentionally not advanced; full audit incomplete)"
+  },
+  "nccn_mining": {
+    "nccn_metadata_versions_checked": [
+      "NCCN Colon Cancer Insights v3.2026 — metadata/abstract only",
+      "NCCN NSCLC v4.2026 — metadata/abstract only",
+      "NCCN Melanoma: Cutaneous v2.2026 — metadata/abstract only",
+      "NCCN Uterine Neoplasms Insights v3.2025 — metadata/abstract only",
+      "NCCN Cervical Cancer v2.2026 — metadata/abstract only",
+      "NCCN Vaginal Cancer v2.2026 — metadata/abstract only",
+      "NCCN Cancer-Associated VTE — current 2026 version not verified; v2.2024 previously checked"
+    ],
+    "nccn_full_guideline_access": "not verified — source inaccessible; no exact current NCCN citation/category inferred",
+    "alternative_guideline": {
+      "title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+      "version": "Updated July 2026; published 24 September 2026",
+      "doi": "10.1016/j.esmoop.2026.108364",
+      "pmid": "42914498",
+      "full_article_and_references_accessible": true,
+      "exact_reference_mappings": 6,
+      "trial_ids": [
+        "shape",
+        "lacc",
+        "keynote-a18",
+        "gog-240",
+        "empower-cervical1",
+        "innovatv-301"
+      ]
+    }
+  },
+  "source_search_passes": [
+    "Current NCCN metadata pass: colon, NSCLC, melanoma, uterine, cervical, vaginal and cancer-associated VTE",
+    "Alternative full-guideline pass: ESMO Cervical Cancer CPG 2026; local/locoregional/recurrent-metastatic subsets; exact refs 25,26,54,68,72,73"
+  ],
+  "candidate_screening": {
+    "target": 30,
+    "staged_unique": 30,
+    "release_ready": 0,
+    "uploaded": 0,
+    "not_uploaded": 30,
+    "source_verified_core_outcomes": 7,
+    "held_for_full_extraction": 16,
+    "partially_reviewed": 7,
+    "new_candidates_screened_this_continuation": 0,
+    "carried_forward_candidates_reaudited": 30,
+    "fully_verified_for_publication": 0
+  },
+  "candidate_disposition_ledger": [
+    {
+      "canonical_id": "aeneas2",
+      "trial": "AENEAS2",
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "First-line / advanced",
+      "primary_doi": "10.1016/S1470-2045(26)00090-2",
+      "primary_title": "Aumolertinib with or without chemotherapy in EGFR-mutated advanced non-small-cell lung cancer (AENEAS2): an open-label, multicentre, randomised, controlled, phase 3 trial",
+      "pmid": "42296979",
+      "registry_id": "NCT04923906",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/aeneas2/index.html"
+    },
+    {
+      "canonical_id": "alina",
+      "trial": "ALINA",
+      "site": "Non-Small Cell Lung Cancer",
+      "setting": "Adjuvant / resected",
+      "primary_doi": "10.1056/NEJMoa2310532",
+      "primary_title": "Alectinib in Resected ALK-Positive Non–Small-Cell Lung Cancer",
+      "pmid": "38598794",
+      "registry_id": "NCT03456076",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/alina/index.html"
+    },
+    {
+      "canonical_id": "litespark-005",
+      "trial": "LITESPARK-005",
+      "site": "Renal Cell Carcinoma",
+      "setting": "Advanced / Metastatic",
+      "primary_doi": "10.1056/NEJMoa2313906",
+      "primary_title": "Belzutifan versus Everolimus for Advanced Renal-Cell Carcinoma",
+      "pmid": "39167807",
+      "registry_id": "NCT04195750",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/litespark-005/"
+    },
+    {
+      "canonical_id": "niche-2",
+      "trial": "NICHE-2",
+      "site": "Colon Cancer",
+      "setting": "Neoadjuvant / locally advanced",
+      "primary_doi": "10.1056/NEJMoa2400634",
+      "primary_title": "Neoadjuvant Immunotherapy in Locally Advanced Mismatch Repair–Deficient Colon Cancer",
+      "pmid": "38838311",
+      "registry_id": "NCT03026140",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/niche-2/index.html"
+    },
+    {
+      "canonical_id": "sunlight",
+      "trial": "SUNLIGHT",
+      "site": "Colorectal Cancer",
+      "setting": "Later-line / refractory metastatic",
+      "primary_doi": "10.1056/NEJMoa2214963",
+      "primary_title": "Trifluridine–Tipiracil and Bevacizumab in Refractory Metastatic Colorectal Cancer",
+      "pmid": "37133585",
+      "registry_id": "NCT04737187",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/sunlight/index.html"
+    },
+    {
+      "canonical_id": "zuma-7",
+      "trial": "ZUMA-7",
+      "site": "Large B-Cell Lymphoma",
+      "setting": "Second-line / early relapse or primary refractory",
+      "primary_doi": "10.1056/NEJMoa2116133",
+      "primary_title": "Axicabtagene Ciloleucel as Second-Line Therapy for Large B-Cell Lymphoma",
+      "pmid": "34891224",
+      "registry_id": "NCT03391466",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/zuma-7/index.html"
+    },
+    {
+      "canonical_id": "early-ons-npc",
+      "trial": "Early vs routine oral nutritional supplementation during CCRT in nasopharyngeal carcinoma",
+      "site": "Nasopharyngeal carcinoma",
+      "setting": "Nutrition support during definitive concurrent chemoradiotherapy",
+      "primary_doi": "10.1001/jamaoncol.2026.4535",
+      "primary_title": "Early vs Routine Oral Nutritional Supplementation During Concurrent Chemoradiotherapy for Nasopharyngeal Carcinoma: A Randomized Clinical Trial",
+      "pmid": "43018988",
+      "registry_id": "NCT04823468",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/early-ons-npc/index.html"
+    },
+    {
+      "canonical_id": "cupisco",
+      "trial": "CUPISCO",
+      "site": "Cancer of unknown primary — unfavourable non-squamous",
+      "setting": "First-line after disease control with three cycles of platinum-based induction chemotherapy",
+      "primary_doi": "10.1016/S0140-6736(24)00814-6",
+      "primary_title": "Molecularly guided therapy versus chemotherapy after disease control in unfavourable cancer of unknown primary (CUPISCO): an open-label, randomised, phase 2, multicentre, international trial",
+      "pmid": "39096924",
+      "registry_id": "NCT03498521",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/cupisco/index.html"
+    },
+    {
+      "canonical_id": "gimema-all2820",
+      "trial": "GIMEMA ALL2820",
+      "site": "Philadelphia chromosome-positive acute lymphoblastic leukemia",
+      "setting": "Frontline treatment of newly diagnosed adult Ph-positive ALL",
+      "primary_doi": "10.1056/NEJMoa2606208",
+      "primary_title": "Ponatinib–Blinatumomab or Imatinib–Chemotherapy for Adult Ph-Positive ALL",
+      "pmid": "42874102",
+      "registry_id": "NCT04722848",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/gimema-all2820/index.html"
+    },
+    {
+      "canonical_id": "find-ctdna-surveillance",
+      "trial": "FIND",
+      "site": "Nonmetastatic colorectal cancer, stage I–III",
+      "setting": "Postoperative surveillance after curative-intent resection",
+      "primary_doi": "10.1200/JCO-25-03009",
+      "primary_title": "Dynamic Circulating Tumor DNA Methylation Monitoring Guiding Postoperative Surveillance in Nonmetastatic Colorectal Cancer: A Prospective, Randomized, Phase III FIND Trial",
+      "pmid": "42525894",
+      "registry_id": "NCT05904665",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/find-ctdna-surveillance/index.html"
+    },
+    {
+      "canonical_id": "chlorophyllin-tnt",
+      "trial": "Chlorophyllin TNT toxicity prevention",
+      "site": "Rectal adenocarcinoma",
+      "setting": "Supportive care during total neoadjuvant therapy",
+      "primary_doi": "10.1001/jamaoncol.2026.4843",
+      "primary_title": "Chlorophyllin for Toxic Effect Prevention During Total Neoadjuvant Therapy in Rectal Cancer: A Randomized Clinical Trial",
+      "pmid": "43084277",
+      "registry_id": "NCT05856305",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/chlorophyllin-tnt/index.html"
+    },
+    {
+      "canonical_id": "immunoprism",
+      "trial": "ImmunoPRISM",
+      "site": "High-risk smouldering multiple myeloma",
+      "setting": "Early intervention / immune interception",
+      "primary_doi": "10.1038/s41591-026-04642-w",
+      "primary_title": "Teclistamab versus lenalidomide-dexamethasone in high-risk smoldering multiple myeloma: a randomized phase 2 trial",
+      "pmid": "42728379",
+      "registry_id": "NCT05469893",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/immunoprism/index.html"
+    },
+    {
+      "canonical_id": "nivolumab-btmb-basket",
+      "trial": "Nivolumab ctDNA-bTMB basket phase II",
+      "site": "Multiple advanced solid tumours",
+      "setting": "Biomarker-selected immunotherapy",
+      "primary_doi": "10.1016/j.esmoop.2026.108578",
+      "primary_title": "Nivolumab in patients with advanced solid tumors with ctDNA-defined high blood tumor mutational burden: a phase II trial",
+      "pmid": "42854587",
+      "registry_id": "UMIN000033182",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/nivolumab-btmb-basket/index.html"
+    },
+    {
+      "canonical_id": "sunmo",
+      "trial": "SUNMO",
+      "site": "Relapsed/refractory large B-cell lymphoma",
+      "setting": "Transplant-ineligible after ≥1 prior systemic line",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "primary_title": "Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial",
+      "pmid": "41037766",
+      "registry_id": "NCT05171647",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/sunmo/index.html"
+    },
+    {
+      "canonical_id": "rosewood",
+      "trial": "ROSEWOOD",
+      "site": "Follicular lymphoma",
+      "setting": "Relapsed/refractory; after ≥2 prior systemic lines",
+      "primary_doi": "10.1200/JCO.23.00775",
+      "primary_title": "ROSEWOOD: A Phase II Randomized Study of Zanubrutinib Plus Obinutuzumab Versus Obinutuzumab Monotherapy in Patients With Relapsed or Refractory Follicular Lymphoma",
+      "pmid": "37506346",
+      "registry_id": "NCT03332017",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/rosewood/"
+    },
+    {
+      "canonical_id": "panova-3",
+      "trial": "PANOVA-3",
+      "site": "Locally advanced pancreatic adenocarcinoma",
+      "setting": "First-line unresectable locally advanced disease",
+      "primary_doi": "10.1200/JCO-25-00746",
+      "primary_title": "Tumor Treating Fields With Gemcitabine and Nab-Paclitaxel for Locally Advanced Pancreatic Adenocarcinoma: Randomized, Open-Label, Pivotal Phase III PANOVA-3 Study",
+      "pmid": "40448572",
+      "registry_id": "NCT03377491",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/panova-3/"
+    },
+    {
+      "canonical_id": "paradigm",
+      "trial": "PARADIGM",
+      "site": "Metastatic colorectal adenocarcinoma; RAS wild-type",
+      "setting": "First-line; left-sided primary subgroup",
+      "primary_doi": "10.1001/jama.2023.4428",
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided Metastatic Colorectal Cancer",
+      "pmid": "37071094",
+      "registry_id": "NCT02394795",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/paradigm/"
+    },
+    {
+      "canonical_id": "gog-240",
+      "trial": "GOG-240",
+      "site": "Cervical carcinoma",
+      "setting": "Persistent, recurrent or metastatic; first-line systemic therapy",
+      "primary_doi": "10.1056/NEJMoa1309748",
+      "primary_title": "Improved Survival with Bevacizumab in Advanced Cervical Cancer",
+      "pmid": "24552320",
+      "registry_id": "NCT00803062",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/gog-240/"
+    },
+    {
+      "canonical_id": "empower-cervical1",
+      "trial": "EMPOWER-Cervical 1",
+      "site": "Cervical carcinoma",
+      "setting": "Recurrent/metastatic after ≥1 prior systemic line",
+      "primary_doi": "10.1056/NEJMoa2112187",
+      "primary_title": "Survival with Cemiplimab in Recurrent Cervical Cancer",
+      "pmid": "35139273",
+      "registry_id": "NCT03257267",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/empower-cervical1/"
+    },
+    {
+      "canonical_id": "innovatv-301",
+      "trial": "innovaTV 301",
+      "site": "Cervical carcinoma",
+      "setting": "Second/third-line recurrent/metastatic after 1–2 prior systemic lines",
+      "primary_doi": "10.1056/NEJMoa2313811",
+      "primary_title": "Tisotumab Vedotin as Second- or Third-Line Therapy for Recurrent Cervical Cancer",
+      "pmid": "38959480",
+      "registry_id": "NCT04697628",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/innovatv-301/"
+    },
+    {
+      "canonical_id": "nrg-gy018",
+      "trial": "NRG-GY018",
+      "site": "Endometrial carcinoma",
+      "setting": "Primary advanced or recurrent; first-line systemic therapy",
+      "primary_doi": "10.1056/NEJMoa2302312",
+      "primary_title": "Pembrolizumab plus Chemotherapy in Advanced Endometrial Cancer",
+      "pmid": "36972022",
+      "registry_id": "NCT03914612",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/nrg-gy018/"
+    },
+    {
+      "canonical_id": "checkmate-77t",
+      "trial": "CheckMate 77T",
+      "site": "Resectable non-small-cell lung cancer",
+      "setting": "Perioperative; neoadjuvant chemoimmunotherapy and adjuvant nivolumab",
+      "primary_doi": "10.1056/NEJMoa2311926",
+      "primary_title": "Perioperative Nivolumab in Resectable Lung Cancer",
+      "pmid": "38749033",
+      "registry_id": "NCT04025879",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/checkmate-77t/"
+    },
+    {
+      "canonical_id": "caravaggio",
+      "trial": "CARAVAGGIO",
+      "site": "Cancer-associated venous thromboembolism",
+      "setting": "Acute symptomatic or incidental proximal DVT/PE in patients with active cancer",
+      "primary_doi": "10.1056/NEJMoa1915103",
+      "primary_title": "Apixaban for the Treatment of Venous Thromboembolism Associated with Cancer",
+      "pmid": "32223112",
+      "registry_id": "NCT03045406",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/caravaggio/"
+    },
+    {
+      "canonical_id": "api-cat",
+      "trial": "API-CAT",
+      "site": "Cancer-associated venous thromboembolism",
+      "setting": "Extended anticoagulation after ≥6 months of initial treatment",
+      "primary_doi": "10.1056/NEJMoa2416112",
+      "primary_title": "Extended Reduced-Dose Apixaban for Cancer-Associated Venous Thromboembolism",
+      "pmid": "40162636",
+      "registry_id": "NCT03692065",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/api-cat/"
+    },
+    {
+      "canonical_id": "hokusai-vte-cancer",
+      "trial": "Hokusai VTE Cancer",
+      "site": "Cancer-associated venous thromboembolism",
+      "setting": "Acute cancer-associated VTE; 6–12 months of anticoagulation",
+      "primary_doi": "10.1056/NEJMoa1711948",
+      "primary_title": "Edoxaban for the Treatment of Cancer-Associated Venous Thromboembolism",
+      "pmid": "29231094",
+      "registry_id": "NCT02073682",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/hokusai-vte-cancer/"
+    },
+    {
+      "canonical_id": "nadina",
+      "trial": "NADINA",
+      "site": "Cutaneous melanoma",
+      "setting": "Resectable macroscopic stage III; neoadjuvant response-adapted strategy",
+      "primary_doi": "10.1056/NEJMoa2402604",
+      "primary_title": "Neoadjuvant Nivolumab and Ipilimumab in Resectable Stage III Melanoma",
+      "pmid": "38828984",
+      "registry_id": "NCT04949113",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/nadina/"
+    },
+    {
+      "canonical_id": "swog-s1801",
+      "trial": "SWOG S1801",
+      "site": "Cutaneous melanoma",
+      "setting": "Resectable stage IIIB–IVC; neoadjuvant-adjuvant versus adjuvant-only pembrolizumab",
+      "primary_doi": "10.1056/NEJMoa2211437",
+      "primary_title": "Neoadjuvant–Adjuvant or Adjuvant-Only Pembrolizumab in Advanced Melanoma",
+      "pmid": "36856617",
+      "registry_id": "NCT03698019",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/swog-s1801/"
+    },
+    {
+      "canonical_id": "aurelia",
+      "trial": "AURELIA",
+      "site": "Platinum-resistant recurrent ovarian carcinoma",
+      "setting": "Progression within 6 months of platinum; second-line or later",
+      "primary_doi": "10.1200/JCO.2013.51.4489",
+      "primary_title": "Bevacizumab Combined With Chemotherapy for Platinum-Resistant Recurrent Ovarian Cancer: The AURELIA Open-Label Randomized Phase III Trial",
+      "pmid": "24637997",
+      "registry_id": "NCT00976911",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/aurelia/"
+    },
+    {
+      "canonical_id": "desktop-iii",
+      "trial": "DESKTOP III",
+      "site": "Epithelial ovarian carcinoma",
+      "setting": "First platinum-sensitive relapse; secondary cytoreductive surgery",
+      "primary_doi": "10.1056/NEJMoa2103294",
+      "primary_title": "Randomized Trial of Cytoreductive Surgery for Relapsed Ovarian Cancer",
+      "pmid": "34874631",
+      "registry_id": "NCT01166737",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/desktop-iii/"
+    },
+    {
+      "canonical_id": "ovhipec-1",
+      "trial": "OVHIPEC-1",
+      "site": "Stage III epithelial ovarian carcinoma",
+      "setting": "Interval cytoreductive surgery after neoadjuvant chemotherapy",
+      "primary_doi": "10.1056/NEJMoa1708618",
+      "primary_title": "Hyperthermic Intraperitoneal Chemotherapy in Ovarian Cancer",
+      "pmid": "29342393",
+      "registry_id": "NCT00426257",
+      "matched_existing_main_roster_page_archive_or_prior_tod": null,
+      "underlying_study": "genuinely distinct; no exact primary DOI or registry match in main roster/archive/current or previous production ToD; DOI-title cache match verified",
+      "final_disposition": "new unique — staged on active branch; held from publication pending full primary-source extraction and release QA",
+      "page_path": "trial-pages/ovhipec-1/"
+    }
+  ],
+  "duplicate_check": {
+    "screened_this_continuation": 0,
+    "carried_forward_audited": 30,
+    "exact_duplicate_exclusions": 0,
+    "new_unique_underlying_studies_in_active_batch": 30,
+    "held_or_partial": 30,
+    "archive_substring_false_positive": "PARADIGM text match was not an exact DOI/registry match and was cleared; no duplicate.",
+    "redirect_alias": "trial-pages/rosel/index.html is a redirect stub to trial-pages/lung-sabr-definitions/#rosel; existing roster mapping retained."
+  },
+  "staged_trial_primary_source_reviews": [
+    {
+      "trial_id": "nrg-gy018",
+      "status": "primary denominator/stratification correction applied; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa2302312",
+        "https://doi.org/10.1038/s41591-025-03566-1",
+        "https://clinicaltrials.gov/study/NCT03914612"
+      ],
+      "findings": "816 enrolled; 225 dMMR/591 pMMR; efficacy analysis 225 dMMR (112/113), 588 pMMR (293/295); safety populations 215 dMMR (109/106), 550 pMMR (276/274); stratified by MMR, ECOG PS and prior adjuvant chemotherapy. 2025 secondary analysis reports immature OS. 2026 abstract/release discrepancy remains open."
+    },
+    {
+      "trial_id": "caravaggio",
+      "status": "primary efficacy and principal safety verified; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa1915103",
+        "https://pubmed.ncbi.nlm.nih.gov/32223112/"
+      ],
+      "remaining": "Full supplement cancer-site bleeding, discontinuation and subgroup tables; QoL status."
+    },
+    {
+      "trial_id": "api-cat",
+      "status": "primary efficacy and key bleeding outcomes verified; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa2416112",
+        "https://pubmed.ncbi.nlm.nih.gov/40162636/"
+      ],
+      "remaining": "Full grade3–5 safety, adherence/discontinuation, subgroup and supplement tables; QoL status."
+    },
+    {
+      "trial_id": "checkmate-77t",
+      "status": "primary design, efficacy and key safety verified; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa2311926",
+        "https://pubmed.ncbi.nlm.nih.gov/38749033/"
+      ],
+      "remaining": "Platinum-doublet distribution, full AE/discontinuation appendix, PRO domain estimates and mature OS."
+    },
+    {
+      "trial_id": "nadina",
+      "status": "primary efficacy and grade≥3 safety verified; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa2402604",
+        "https://pubmed.ncbi.nlm.nih.gov/38828984/"
+      ],
+      "remaining": "Response-adapted adjuvant/BRAF details, surgery/perioperative complications, long-term EFS/OS and QoL."
+    },
+    {
+      "trial_id": "swog-s1801",
+      "status": "primary efficacy and grade≥3 safety verified; still held",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa2211437",
+        "https://pubmed.ncbi.nlm.nih.gov/36856617/"
+      ],
+      "remaining": "Full surgery timing/exposure, subgroup and longer-term OS/PRO."
+    }
+  ],
+  "nnt_nnh_visualization_review": {
+    "structured_absolute_effect_records": 16,
+    "pages_with_absolute_effect_records": 12,
+    "static_outcome_visual_markup_present_in_all_30_staged_pages": true,
+    "arithmetic_review": "All 16 displayed NNT calculations are arithmetically consistent with the encoded absolute percentage-point benefit; no data-benefit/data-harm field was intentionally populated as 100/NNT. Source-level endpoint-rate verification remains incomplete for held candidates.",
+    "no_nnt_examples": [
+      "NICHE-2 single-arm; no comparator",
+      "CUPISCO survival medians/HR without a common fixed-time absolute rate",
+      "CARAVAGGIO primary noninferiority; superiority not established",
+      "Hokusai VTE Cancer treatment exposure/follow-up window requires further safety review"
+    ],
+    "browser_rendered_qa": false,
+    "reason": "No browser-rendering tool was available in this execution; static visible chart/graph markup was inspected."
+  },
+  "publication": {
+    "uploaded_cases": [],
+    "uploaded_count": 0,
+    "statement": "0/30 uploaded; 30 not uploaded. No trial page is production-published in this run."
+  },
+  "validation": {
+    "local_release_validator": "NOT RUN — repository clone/network DNS access failed in execution container; cannot claim local validation.",
+    "remote_pr_checks": "NOT RUN — no PR opened because 0/30 pages are release-ready and local validator/browser QA remain incomplete.",
+    "branch_commit": "pending",
+    "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "merged": false,
+    "cloudflare_production_deployment": "not checked; no merge; no production publication claim",
+    "branch_preview": "previously reported deployed; current post-commit preview recheck pending"
+  },
+  "next_actions": [
+    "Complete the 16 held and 7 partially reviewed active-batch pages against full primary publications/protocols/supplements, including grade 3–5 toxicity, discontinuation and QoL/PRO.",
+    "Reconcile NRG-GY018 2026 ASCO abstract 5502 with the NRG 29-May-2026 release; do not use a 48-month NNT until the exact source/cut-off is verified.",
+    "Run the local strict release validator and browser-rendered QA after network access is restored.",
+    "Only when exactly 30 pages are release-ready, open a PR, wait for all required checks, then merge and verify main/Cloudflare production deployment.",
+    "Continue the full 461-page production audit; do not advance global last_quality_check until complete.",
+    "Continue current NCCN full guideline retrieval; keep exact NCCN citation mapping tasks open while using explicitly labelled alternative guideline sources."
+  ],
+  "report_path": "data/daily-reports/2026-11-28-evening-continuation-2.json",
+  "evidence_path": "data/daily-evidence-2026-11-28-evening-continuation-2.json",
+  "page_change_commit_sha": "PENDING_AFTER_COMMIT"
+}

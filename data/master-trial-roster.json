@@ -1,6 +1,6 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
-  "version": 17,
+  "version": 18,
   "last_quality_check": "2026-11-28",
   "source_of_truth": "GitHub repository state",
   "rules": [
@@ -7432,7 +7432,7 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
-      "freshness_review_status": "Primary 2024 PFS/OS reports and 2026 five-year follow-up abstract bibliographically checked 2026-11-28; exact 5-year efficacy estimates not available in accessible abstract record; current NCCN guideline freshness remains pending.",
+      "freshness_review_status": "ESMO 2026 cervical CPG alternative source and exact reference reviewed 2026-11-28; current NCCN full guideline/reference list remains inaccessible and its freshness task stays open.",
       "outcome_visual_review_status": "Non-finite chart widths and malformed source link corrected; static source-rate bars and NNT markup verified 2026-11-15; browser QA pending.",
       "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
       "primary": "10.1016/S0140-6736(24)00317-9",
@@ -7463,7 +7463,22 @@
         "calculation": "ceil(100 / 7.8) = 13",
         "source_doi": "10.1016/S0140-6736(24)01808-7"
       },
-      "quality_check_date": "2026-11-28"
+      "quality_check_date": "2026-11-28",
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "54",
+        "section": "Management of locoregional disease — FIGO 2018 stage IIIA–IVA",
+        "recommendation_context": "Pembrolizumab with concurrent chemoradiotherapy, brachytherapy and subsequent maintenance for the stated high-risk locally advanced subgroup.",
+        "recommendation_grade": "ESMO [I,A]; ESMO-MCBS A(AT) applies to the guideline recommendation, not to the trial citation.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      },
+      "current_practice_review_date": "2026-11-28"
     },
     {
       "id": "keynote-b49",
@@ -7648,7 +7663,7 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In early-stage cervical cancer requiring radical hysterectomy, does minimally invasive radical hysterectomy preserve disease-free and overall survival compared with open abdominal radical hysterectomy? [LACC]",
-      "freshness_review_status": "Primary NEJM, JCO final analysis and Lancet Oncology QoL reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "freshness_review_status": "ESMO 2026 cervical CPG alternative source and exact reference reviewed 2026-11-28; current NCCN full guideline/reference list remains inaccessible and its freshness task stays open.",
       "outcome_visual_review_status": "Non-finite chart widths, malformed registry/source links and NNT identifier error corrected; source-rate bars and NNH markup verified 2026-11-15; browser QA pending.",
       "setting_detail": "Early-stage cervical cancer · minimally invasive versus open radical hysterectomy",
       "primary": "10.1056/NEJMoa1806395",
@@ -7675,7 +7690,22 @@
         "calculation": "ceil(100 / 10.6) = 10",
         "source_doi": "10.1056/NEJMoa1806395"
       },
-      "quality_check_date": "2026-11-15"
+      "quality_check_date": "2026-11-15",
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "26",
+        "section": "Management of local disease — stage IA2–IB2/IIA1",
+        "recommendation_context": "Open radical hysterectomy remains standard when radical hysterectomy is indicated; reference 26 is the LACC randomized comparison supporting avoidance of minimally invasive radical hysterectomy.",
+        "recommendation_grade": "No trial-specific ESMO grade assigned.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      },
+      "current_practice_review_date": "2026-11-28"
     },
     {
       "id": "laura",
@@ -10786,7 +10816,7 @@
       "discipline": "Surgical",
       "setting": "Localized / Early-stage",
       "question": "In carefully selected patients with low-risk early-stage cervical cancer, is simple hysterectomy non-inferior to radical hysterectomy for pelvic recurrence while reducing surgical morbidity? [SHAPE]",
-      "freshness_review_status": "Primary NEJM report verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "freshness_review_status": "ESMO 2026 cervical CPG alternative source and exact reference reviewed 2026-11-28; current NCCN full guideline/reference list remains inaccessible and its freshness task stays open.",
       "outcome_visual_review_status": "Generic PubMed query replaced with DOI/PMID links; 3-year recurrence chart and source values checked 2026-11-15; browser QA pending.",
       "setting_detail": "Low-risk early-stage cervical cancer · simple versus radical hysterectomy",
       "primary": "10.1056/NEJMoa2308900",
@@ -10818,7 +10848,22 @@
             "source_type": "Primary SHAPE randomized trial report"
           }
         ]
-      }
+      },
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "25",
+        "section": "Management of local disease — low-risk FIGO 2018 IA2–IB1",
+        "recommendation_context": "Simple hysterectomy with nodal assessment for carefully selected low-risk tumours with small size, limited stromal invasion and negative imaging; reference 25 is SHAPE.",
+        "recommendation_grade": "ESMO [I,A] applies to the guideline recommendation, not the trial citation.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      },
+      "current_practice_review_date": "2026-11-28"
     },
     {
       "id": "sharp",
@@ -13293,13 +13338,27 @@
         "verified_on": "2026-11-27",
         "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry"
       },
-      "current_practice_review_date": "2026-11-27",
+      "current_practice_review_date": "2026-11-28",
       "source_extraction_status": "partial — key outcomes and bibliographic identity checked; full safety/protocol/PRO tables remain open",
       "publication_status": "staged_on_branch_not_production",
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "68",
+        "section": "Treatment of distant recurrence and metastatic disease — first-line systemic therapy",
+        "recommendation_context": "GOG-240 is cited in support of bevacizumab-containing platinum/taxane first-line options.",
+        "recommendation_grade": "No trial-specific grade assigned; do not transfer regimen category to the trial citation.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      }
     },
     {
       "id": "empower-cervical1",
@@ -13368,13 +13427,27 @@
         "verified_on": "2026-11-27",
         "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry"
       },
-      "current_practice_review_date": "2026-11-27",
+      "current_practice_review_date": "2026-11-28",
       "source_extraction_status": "partial — key outcomes and bibliographic identity checked; full safety/protocol/PRO tables remain open",
       "publication_status": "staged_on_branch_not_production",
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "72",
+        "section": "Second-line therapy after platinum",
+        "recommendation_context": "Cemiplimab for ICI-naïve patients progressing after platinum-based chemotherapy.",
+        "recommendation_grade": "ESMO [I,A]; ESMO-MCBS 5.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      }
     },
     {
       "id": "innovatv-301",
@@ -13443,13 +13516,27 @@
         "verified_on": "2026-11-27",
         "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry"
       },
-      "current_practice_review_date": "2026-11-27",
+      "current_practice_review_date": "2026-11-28",
       "source_extraction_status": "partial — key outcomes and bibliographic identity checked; full safety/protocol/PRO tables remain open",
       "publication_status": "staged_on_branch_not_production",
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "alternative_guideline_provenance": {
+        "guideline_title": "Cervical cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up",
+        "version": "Updated July 2026; published 24 September 2026",
+        "source_type": "Official ESMO CPG, alternative source—not NCCN",
+        "doi": "10.1016/j.esmoop.2026.108364",
+        "pmid": "42914498",
+        "source_url": "https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-cervical-cancer",
+        "reviewed_on": "2026-11-28",
+        "reference_number": "73",
+        "section": "Second-line therapy after platinum",
+        "recommendation_context": "Tisotumab vedotin after platinum progression.",
+        "recommendation_grade": "ESMO [I,B]; ESMO-MCBS 3.",
+        "scope_limitations": "Full ESMO article and reference list reviewed. ESMO grades are not NCCN categories. Current NCCN full guideline/reference list remains inaccessible; no 2026 NCCN reference is inferred."
+      }
     },
     {
       "id": "nrg-gy018",
@@ -13475,16 +13562,16 @@
       "discipline": "Medical oncology / biomarker-stratified immunotherapy",
       "phase": "III",
       "design": "Double-blind, placebo-controlled, 1:1 randomized phase III trial with independent dMMR and pMMR cohorts",
-      "population": "816 patients with measurable stage III/IVA, stage IVB or recurrent endometrial cancer. Primary efficacy cohorts included 215 dMMR patients (109 pembrolizumab, 106 placebo) and 550 pMMR patients (276, 274); prior adjuvant chemotherapy was permitted after a treatment-free interval of at least 12 months.",
+      "population": "816 enrolled: 225 dMMR and 591 pMMR. Primary efficacy analysis: 225 dMMR (112 pembrolizumab, 113 placebo) and 588 pMMR (293, 295). Safety populations: 215 dMMR (109, 106) and 550 pMMR (276, 274); grade ≥3 AE percentages use these safety denominators.",
       "intervention": "Pembrolizumab 200 mg IV every 3 weeks with paclitaxel 175 mg/m² and carboplatin AUC 5 for 6 cycles, followed by pembrolizumab 400 mg IV every 6 weeks for up to 14 maintenance cycles.",
       "comparator": "Matched placebo with the same paclitaxel/carboplatin chemotherapy and maintenance schedule.",
       "primary_endpoint": "Progression-free survival in the dMMR and pMMR cohorts, analyzed separately.",
-      "follow_up": "Primary interim PFS analysis; OS and longer-term safety follow-up were immature at publication.",
+      "follow_up": "Initial primary PFS analysis: median follow-up approximately 12 months in dMMR and 7.9 months in pMMR; OS immature. The 2025 Nature Medicine secondary analysis also reported immature OS. A 2026 ASCO abstract and NRG release describe later OS follow-up; their accessible summaries differ slightly and remain under source-level reconciliation.",
       "efficacy": "At 12 months, dMMR PFS was 74% versus 38% (HR 0.30, 95% CI 0.19–0.48; p<0.001). In pMMR disease, median PFS was 13.1 versus 8.7 months (HR 0.54, 95% CI 0.41–0.71; p<0.001). The dMMR 12-month landmark difference is 36 percentage points; landmark NNT 3 (ceil[1/0.36]).",
       "safety": "Grade ≥3 adverse events: dMMR 63.3% (69/109) versus 47.2% (50/106); pMMR 55.1% (152/276) versus 45.3% (124/274). Grade 5 adverse events occurred in 1 versus 2 dMMR patients and 6 versus 2 pMMR patients; attribution differs from all-cause grade ≥3 rates.",
       "qol": "A mature patient-reported outcome analysis was not verified in the primary publication used here.",
       "burden": "Six 3-weekly chemotherapy cycles followed by up to 14 six-weekly maintenance infusions; immune-mediated toxicity and prolonged treatment duration require consideration.",
-      "limitations": "Primary endpoint is cohort-specific PFS; OS maturity was limited. NNT is a 12-month Kaplan–Meier landmark estimate for dMMR only, not an overall-trial NNT. Histology and molecular subgroup interpretation remain important.",
+      "limitations": "PFS was tested separately in dMMR and pMMR cohorts; follow-up at initial analysis was short and OS immature. The 2025 peer-reviewed secondary analysis also reported immature OS. Later 2026 meeting material reports more mature OS, but exact estimates are not integrated until the full abstract and subsequent release are reconciled. NNT applies only to 12-month dMMR PFS, not the overall trial.",
       "absolute_effects": [
         {
           "endpoint": "12-month PFS in the dMMR cohort",
@@ -13521,15 +13608,21 @@
         "registry_id_checked": true,
         "primary_endpoint_checked": true,
         "key_primary_outcomes_checked": true,
-        "grade3plus_safety_extraction": "partial",
+        "grade3plus_safety_extraction": "key cohort-specific rates and safety denominators checked; full event-level supplement pending",
         "full_supplement_tables_reconciled": false,
-        "qol_pro_extraction": "partial_or_not_reported",
-        "protocol_schedule_reconciled": false,
-        "verified_on": "2026-11-27",
-        "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry"
+        "qol_pro_extraction": "instruments and pMMR-only assessment checked; numeric outcomes not in primary main report; secondary PRO search pending",
+        "protocol_schedule_reconciled": true,
+        "verified_on": "2026-11-28",
+        "verification_source": "NEJM primary report, Nature Medicine 2025 secondary analysis, NRG protocol page and ClinicalTrials.gov; ASCO 2026 full abstract access failed",
+        "primary_denominators_reconciled": true,
+        "safety_denominators_reconciled": true,
+        "randomization_stratification_checked": true,
+        "secondary_publication_checked": true,
+        "updated_os_2026_reconciled": false,
+        "release_ready": false
       },
-      "current_practice_review_date": "2026-11-27",
-      "source_extraction_status": "partial — key outcomes and bibliographic identity checked; full safety/protocol/PRO tables remain open",
+      "current_practice_review_date": "2026-11-28",
+      "source_extraction_status": "Primary efficacy/safety denominator distinction, stratification and schedule corrected; 2025 peer-reviewed secondary analysis attached. Full event-level safety/PRO extraction and 2026 OS source reconciliation remain open; browser and strict release QA pending.",
       "publication_status": "staged_on_branch_not_production",
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
@@ -13545,7 +13638,36 @@
         "source_doi": "10.1056/NEJMoa2302312",
         "note": "Landmark NNT derived from 12-month Kaplan–Meier estimates; cohort-specific.",
         "additional_endpoints": []
-      }
+      },
+      "quality_of_life": "HRQoL was a key secondary endpoint assessed only in the pMMR cohort using FACT-En-TOI, FACT–GOG Neurotoxicity, PROMIS-Fatigue, PROMIS-Physical Function and a distress item. The primary report describes instruments but provides no numerical domain results in the main article; no dMMR PRO assessment was performed. Secondary PRO publication search remains open.",
+      "follow_up_publications": [
+        {
+          "doi": "10.1038/s41591-025-03566-1",
+          "title": "Pembrolizumab plus chemotherapy in advanced or recurrent endometrial cancer: overall survival and exploratory analyses of the NRG GY018 phase 3 randomized trial",
+          "pmid": "40044930",
+          "publication_date": "2025-03-05",
+          "publication_type": "peer-reviewed secondary analysis",
+          "same_underlying_trial": true
+        }
+      ],
+      "pending_follow_up_sources": [
+        {
+          "doi": "10.1200/JCO.2026.44.16_suppl.5502",
+          "title": "Updated overall survival analysis of NRG-GY018",
+          "abstract_number": "5502",
+          "publication_type": "ASCO 2026 conference abstract",
+          "status": "full abstract inaccessible; reconcile with NRG 29-May-2026 release before integrating numeric estimates",
+          "source_url": "https://doi.org/10.1200/JCO.2026.44.16_suppl.5502"
+        },
+        {
+          "title": "Addition of immunotherapy continues to show survival benefit in prolonged follow-up in NRG Oncology trial for primary advanced stage or recurrent endometrial cancer",
+          "publication_date": "2026-05-29",
+          "publication_type": "NRG Oncology news release",
+          "status": "secondary source; estimates require reconciliation with full ASCO abstract",
+          "source_url": "https://sciencesources.eurekalert.org/news-releases/1130158"
+        }
+      ],
+      "quality_check_date": "2026-11-28"
     },
     {
       "id": "checkmate-77t",
@@ -14704,5 +14826,12 @@
   "quality_check_scope": "Partial: four existing canonical pages manually re-read and one staged page repaired; not a full audit of all 459 canonical trial pages.",
   "last_run_report": "data/daily-reports/2026-11-28-morning.json",
   "last_daily_evidence": "data/daily-evidence-2026-11-28-morning.json",
-  "updated_at": "2026-11-28T08:04:24+05:30"
+  "updated_at": "2026-11-28T08:04:24+05:30",
+  "last_partial_audit": {
+    "date": "2026-11-28",
+    "scope": "Targeted re-read of CheckMate 816, KEYNOTE-A18, LACC, SHAPE, ROSEL redirect stub and 30 active-batch canonical pages; 8 page files updated. This is not a full-roster quality check.",
+    "full_roster_audit_complete": false,
+    "canonical_page_dirs": 461,
+    "roster_records": 467
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T19:31:51+05:30",
+  "updated_at": "2026-11-28",
   "source_audit": {
     "workflow_run": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/43566920330",
     "generated_at": "2026-11-23T19:28:00+05:30",
@@ -561,7 +561,7 @@
       "path": "trial-pages/keynote-a18/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing. ESMO Cervical Cancer CPG updated July 2026 (ESMO Open 2026;11(10):108364; PMID 42914498) and exact reference 54 checked 2026-11-28. NCCN Cervical Cancer v2.2026 metadata only; full current NCCN reference list remains inaccessible, so keep this task open.",
       "action": "Keep open until a current authorized guideline version and exact section/reference/category are checked; do not infer.",
       "status": "open",
       "created_on": "2026-11-14",
@@ -590,7 +590,7 @@
       "path": "trial-pages/lacc/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing. ESMO Cervical Cancer CPG updated July 2026 (ESMO Open 2026;11(10):108364; PMID 42914498) and exact reference 26 checked 2026-11-28. NCCN Cervical Cancer v2.2026 metadata only; full current NCCN reference list remains inaccessible, so keep this task open.",
       "action": "Keep open until a current authorized guideline version and exact section/reference/category are checked; do not infer.",
       "status": "open",
       "created_on": "2026-11-14",
@@ -799,7 +799,7 @@
       "path": "trial-pages/shape/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing. ESMO Cervical Cancer CPG updated July 2026 (ESMO Open 2026;11(10):108364; PMID 42914498) and exact reference 25 checked 2026-11-28. NCCN Cervical Cancer v2.2026 metadata only; full current NCCN reference list remains inaccessible, so keep this task open.",
       "action": "Keep open until a current authorized guideline version and exact section/reference/category are checked; do not infer.",
       "status": "open",
       "created_on": "2026-11-14",
@@ -2901,9 +2901,9 @@
         "https://clinicaltrials.gov/study/NCT03914612"
       ],
       "missing_evidence": [
-        "Complete stratification factors and maintenance exposure",
-        "Full grade 3–5 safety tables by MMR cohort and attribution",
-        "Updated OS maturity and patient-reported outcomes"
+        "Full event-level grade 3–5 AE and attribution tables from the supplement",
+        "Numerical HRQoL/PRO results or confirmation that no separate numerical PRO report exists",
+        "Reconcile the full ASCO 2026 abstract 5502 with the NRG 29-May-2026 release; publisher full abstract access failed"
       ],
       "action": "Continue the specific remaining protocol/supplement/PRO extraction; re-read page, then browser-render and run local strict validator. Keep held; do not open/merge PR until all 30 pages pass.",
       "verification": "DOI/title and registry identity checked against PubMed/publisher and ClinicalTrials.gov; key primary endpoint and headline estimates checked. Full source-table extraction and release QA remain incomplete.",
@@ -2936,7 +2936,8 @@
         "Full grade 3–5 safety tables by MMR cohort and attribution",
         "Updated OS maturity and patient-reported outcomes"
       ],
-      "evidence": "2026-11-28 primary-source review: Phase III double-blind; advanced/recurrent endometrial cancer, dMMR n215 (109 vs106), pMMR n550 (276 vs274). Pembrolizumab200mg q3w+paclitaxel175mg/m²+carboplatin AUC5 x6 then pembrolizumab400mg q6w up to14 maintenance vs placebo. dMMR 12m PFS74% vs38%, HR0.30 (95%CI0.19–0.48); pMMR median PFS13.1 vs8.7m, HR0.54 (0.41–0.71); both P<.001. Grade≥3 AEs dMMR63.3% vs47.2%, pMMR55.1% vs45.3%; grade5 1 vs2 dMMR,6 vs2 pMMR. NNT/NNH: NNT3 only for 12m dMMR PFS: 36pp; ceil(100/36)=3. No pooled NNT. Remaining: Full stratification factors, updated OS maturity and supplementary maintenance/safety tables. No QoL endpoint identified in primary paper; current NCCN Endometrial guideline/reference list inaccessible. Sources: https://doi.org/10.1056/NEJMoa2302312; https://pubmed.ncbi.nlm.nih.gov/36972022/"
+      "evidence": "2026-11-28 recheck against the NEJM primary report: 816 enrolled (225 dMMR, 591 pMMR); primary efficacy analysis 225 dMMR (112 vs113) and 588 pMMR (293 vs295); safety populations 215 dMMR (109 vs106) and 550 pMMR (276 vs274). Randomization stratified by MMR status, ECOG PS (0/1 vs2), and prior adjuvant chemotherapy. HRQoL was assessed only in pMMR; the primary main report lists instruments but no numerical domain results. The 2025 Nature Medicine secondary analysis (PMID 40044930; DOI 10.1038/s41591-025-03566-1) reports immature OS and exploratory BICR PFS. The 2026 ASCO abstract and NRG release are not numerically reconciled.",
+      "next_action": "Complete supplementary safety/PRO extraction and retrieve the full ASCO abstract/presentation. Do not use conflicting 2026 OS estimates or calculate a 48-month NNT until reconciled; keep release_ready=false."
     },
     {
       "id": "candidate-ovhipec-1-primary-extraction-2026-11-21",
@@ -6482,6 +6483,35 @@
       "issue": "Current 2026 NCCN Colon Cancer full guideline/reference list remains inaccessible; the FDA approval does not establish an NCCN recommendation category or reference.",
       "action": "Keep the FDA regulatory update in the page, but retrieve the current NCCN guideline and add exact section/reference only if explicitly visible.",
       "next_action": "Reattempt official NCCN Colon Cancer full guideline/reference list or a complete current NCCN-authored Insights article."
+    },
+    {
+      "id": "nrg-gy018-2026-os-followup-reconciliation-2026-11-28",
+      "trial_id": "nrg-gy018",
+      "canonical_trial_path": "trial-pages/nrg-gy018/index.html",
+      "issue": "conflicting_2026_conference_OS_followup",
+      "severity": "medium",
+      "status": "open",
+      "evidence": "ASCO 2026 abstract 5502 (DOI 10.1200/JCO.2026.44.16_suppl.5502) and NRG Oncology release dated 2026-05-29 both describe prolonged OS follow-up. The full publisher abstract returned access error; accessible abstract and NRG/ASCO Post summaries differ slightly in data cut-off/point estimates. The 2025 Nature Medicine secondary analysis (PMID 40044930) still reported immature OS.",
+      "action": "Keep the 2026 OS update separate from the primary 2023 PFS analysis; do not infer or calculate NNT from conflicting summaries.",
+      "next_action": "Obtain the full ASCO abstract/presentation and reconcile exact data cut-off, analysis population, 48-month dMMR OS, pMMR OS HR/median and post-protocol immunotherapy before updating the canonical page.",
+      "sources": [
+        "https://doi.org/10.1200/JCO.2026.44.16_suppl.5502",
+        "https://sciencesources.eurekalert.org/news-releases/1130158",
+        "https://ascopost.com/articles/2026/06-june/addition-of-pembrolizumab-to-chemotherapy-continues-to-demonstrate-overall-survival-benefit-in-advanced-or-recurrent-endometrial-cancer/"
+      ],
+      "last_reviewed_on": "2026-11-28"
+    },
+    {
+      "id": "global-canonical-page-audit-and-roster-audit-metadata-2026-11-28",
+      "trial_id": null,
+      "canonical_trial_path": null,
+      "issue": "incomplete_global_canonical_page_audit_and_stale_audit_metadata",
+      "severity": "medium",
+      "status": "open",
+      "evidence": "Production master roster contains 467 records and 461 canonical trial-page directories; last_quality_check remains 2026-11-14. This continuation inspected 4 flagged production pages, 1 ROSEL redirect stub and 30 active-batch pages, not all 461 canonical page directories. The 30 active-batch candidates are not production-published.",
+      "action": "Do not advance global last_quality_check until the recursive audit of all canonical pages, primary publications, references, visualizations, NNT/NNH and cross-file links is complete.",
+      "next_action": "Continue page-by-page primary-source and rendered-visual audits across remaining canonical pages; reconcile legacy aliases/stubs; update global audit metadata only after complete coverage.",
+      "last_reviewed_on": "2026-11-28"
     }
   ],
   "resolved_items": [
@@ -7770,6 +7800,28 @@
       ],
       "verified_on": "2026-11-28",
       "publication_status": "staged_on_unmerged_branch_not_production"
+    },
+    {
+      "id": "nrg-gy018-primary-denominator-correction-2026-11-28",
+      "trial_id": "nrg-gy018",
+      "canonical_trial_path": "trial-pages/nrg-gy018/index.html",
+      "issue": "incorrect_efficacy_vs_safety_denominator_label",
+      "severity": "high",
+      "status": "resolved_on_branch",
+      "action": "Corrected the primary efficacy and safety populations separately; retained NNT3 only for 12-month dMMR PFS.",
+      "verification": "NEJM primary report and NRG protocol checked: 816 enrolled (225 dMMR,591 pMMR); efficacy 225 dMMR (112/113) and 588 pMMR (293/295); safety 215 dMMR (109/106) and 550 pMMR (276/274). Stratification by MMR status, ECOG PS and prior adjuvant chemotherapy confirmed. Page and roster reread after edit; full supplement and 2026 OS follow-up remain open.",
+      "verified_on": "2026-11-28"
+    },
+    {
+      "id": "rosel-stub-canonical-url-2026-11-28",
+      "trial_id": "rosel",
+      "canonical_trial_path": "trial-pages/lung-sabr-definitions/#rosel",
+      "issue": "redirect_stub_self_canonical",
+      "severity": "low",
+      "status": "resolved_on_branch",
+      "action": "Corrected ROSEL redirect stub canonical/og/JSON-LD URL to the shared lung SABR reference target and set noindex,follow; no duplicate canonical trial page or roster entry created.",
+      "verification": "Inspected trial-pages/rosel/index.html: zero-second meta refresh to ../lung-sabr-definitions/#rosel; roster ID rosel already maps to trial-pages/lung-sabr-definitions/#rosel; shared page contains the ROSEL trial section.",
+      "verified_on": "2026-11-28"
     }
   ],
   "run_audit_log": [
@@ -8181,62 +8233,20 @@
   "last_updated": "2026-11-28",
   "last_run": {
     "date": "2026-11-28",
-    "cycle": "evening",
+    "cycle": "evening continuation",
     "branch": "atlas-batch/2026-11-27-am",
-    "branch_head_before": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
-    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "existing_main_pages_manually_audited": 5,
-    "flagged_legacy_pages_re_read": 4,
-    "staged_candidate_pages_re_read": 1,
-    "repair_items_reviewed": 10,
-    "repair_items_closed": 2,
-    "page_repairs_made": 2,
-    "validator_fixes_made": 0,
-    "new_candidates_screened": 11,
-    "new_unique_candidates": 6,
-    "duplicates": 5,
-    "held": 5,
-    "deferred_contrary": 1,
-    "existing_queue_candidates_rechecked": 5,
-    "uploaded": 0,
-    "strict_release_validator": "passed on prior commit 265902; no run on current branch head yet",
-    "outcome_visualization_audit": "passed static structural audit on prior commit 2bfa; browser-rendered QA not run",
-    "local_release_validator": "not run — Git clone failed DNS resolution for github.com",
-    "browser_rendered_qa": "not run",
-    "pr_opened": false,
-    "merged": false,
-    "deployment_verified": false,
-    "audit_summary": {
-      "main_roster_entries": 467,
-      "main_canonical_trial_page_directories": 459,
-      "shared_anchor_entries": 8,
-      "unrostered_redirect_stub": "trial-pages/rosel/index.html",
-      "nontrial_reference_page": "trial-pages/lung-sabr-definitions/index.html",
-      "main_index_missing_roster_links": 0,
-      "archive_entries": 16,
-      "archive_only_entries": 0,
-      "current_tod": "PANKU-Esophagus01",
-      "previous_tod": "GemX",
-      "active_branch_roster_entries": 497,
-      "active_branch_canonical_trial_page_directories": 489,
-      "active_branch_new_pages_staged": 30
-    },
-    "candidate_disposition": {
-      "screened": 10,
-      "new_unique": 6,
-      "duplicates": 4,
-      "held": 5,
-      "deferred_contrary": 1,
-      "fully_verified_for_publication": 0,
-      "uploaded": 0
-    },
-    "additional_existing_pages_reaudited": 1,
-    "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd"
+    "scope": "Targeted re-read of 4 production reconciliation pages, ROSEL redirect stub, 30 active-batch pages; corrected NRG-GY018 population labels and attached peer-reviewed secondary analysis; mapped current ESMO cervical guideline references.",
+    "items_reviewed": 35,
+    "items_closed": 2,
+    "items_opened": 2,
+    "open_items": 242,
+    "resolved_items": 82,
+    "full_roster_audit_complete": false
   },
   "generated_at": "2026-11-28T19:31:51+05:30",
   "summary": {
-    "open_items": 240,
-    "resolved_items": 80,
+    "open_items": 242,
+    "resolved_items": 82,
     "note": "240 open and 80 resolved items after the 28 Nov evening review. Eleven candidates screened: six new unique underlying studies (five held for full extraction/next batch, one deferred as contrary evidence), five duplicates/follow-ups excluded. Three evidence-backed page repairs completed on the active branch. Eight staged pages have been re-read; six additional primary-source checks recorded. The 30-page batch remains unreleased: 0/30 uploaded; remote strict validator passed on commit 8986db5, but local validator and browser-rendered QA remain pending.",
     "release_holds_in_active_batch": 16,
     "release_holds_in_last_merged_batch": 4,
@@ -8245,7 +8255,8 @@
     "last_updated": "2026-11-28",
     "last_reviewed_on": "2026-11-28",
     "release_gate_status": "INCOMPLETE: remote strict validator passed on 8986db5260f8b6923499f0008abdb999407378e3; 16 source-extraction holds and 7 partially reviewed pages remain; 53 dated-context gaps; local validator and browser-rendered QA incomplete; no PR.",
-    "missing_dated_context_count": 53
+    "missing_dated_context_count": 53,
+    "global_audit_complete": false
   },
   "updated_on": "2026-11-28",
   "last_run_date": "2026-11-28",
