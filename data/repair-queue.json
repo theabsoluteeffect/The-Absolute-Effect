@@ -8202,13 +8202,14 @@
       "fully_verified_for_publication": 0,
       "uploaded": 0
     },
-    "additional_existing_pages_reaudited": 1
+    "additional_existing_pages_reaudited": 1,
+    "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd"
   },
   "generated_at": "2026-11-28T08:04:24+05:30",
   "summary": {
     "open_items": 240,
     "resolved_items": 79,
-    "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
+    "note": "240 open and 79 resolved items after the 28 Nov evening review. Eleven candidates screened; six new unique studies identified (five held for full extraction/next batch, one deferred as contrary evidence), five duplicates/follow-ups excluded. Two evidence-backed page repairs completed on the active branch. The 30-page batch remains unreleased: 0/30 uploaded; local validator and browser-rendered QA remain pending.",
     "release_holds_in_active_batch": 16,
     "release_holds_in_last_merged_batch": 4,
     "dated_context_items_open": 52,
