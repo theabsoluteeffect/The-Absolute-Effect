@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0",
+  "run_timestamp": "2026-11-28T08:04:24+05:30",
+  "cycle": "morning",
+  "run_status": "INCOMPLETE",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-27-am",
+    "branch_head_before_report": "2bfa83ad0043fc381842e911ab6d78dac2f642b0",
+    "active_batch_started": "2026-11-27",
+    "new_branch_opened": false,
+    "reason_no_new_branch": "An unmerged active 2026-11-27 batch already exists; no overlapping publication branch was opened."
+  },
+  "source_reconciliation": {
+    "main_recursive_tree_entries": 1179,
+    "main_page_index_directories_including_stub_and_reference": 461,
+    "main_canonical_page_directories_excluding_rosel_stub": 460,
+    "main_trial_pages_excluding_lung_sabr_reference": 459,
+    "main_roster_entries": 467,
+    "main_unique_roster_ids": 467,
+    "main_unique_roster_targets": 460,
+    "main_evidence_index_unique_links": 460,
+    "missing_index_links": 0,
+    "main_archive_entries": 16,
+    "main_current_tod": "PANKU-Esophagus01",
+    "main_previous_tod": "GemX",
+    "main_daily_evidence_files_inspected": 30,
+    "main_daily_report_files_inspected": 8,
+    "unrostered_canonical_trial_pages": 0,
+    "redirect_or_alias_excluded": [
+      "trial-pages/rosel/index.html → trial-pages/lung-sabr-definitions/#rosel"
+    ],
+    "nontrial_reference_page": [
+      "trial-pages/lung-sabr-definitions/index.html"
+    ],
+    "cumulative_unique_study_count": "not verified — 467 unique roster IDs conflict with an existing 461-study audit total; shared-anchor and archive-only identity reconciliation is required."
+  },
+  "search_passes": [
+    {
+      "site": "Thoracic oncology",
+      "subsets": [
+        "EGFR-mutated NSCLC after TKI progression",
+        "advanced lung cancer supportive-care symptom monitoring"
+      ],
+      "candidates": [
+        "HERON-Lung01",
+        "SYMPRO-Lung",
+        "OptiTROP-Lung06",
+        "PANKU-Lung01",
+        "ZEAL-1L"
+      ]
+    },
+    {
+      "site": "Haemato-oncology",
+      "subsets": [
+        "relapsed/refractory multiple myeloma"
+      ],
+      "candidates": [
+        "EXCALIBER-RRMM"
+      ]
+    },
+    {
+      "site": "Head and neck oncology",
+      "subsets": [
+        "laryngeal SCC postoperative/adjuvant pathway",
+        "supportive care and symptom management"
+      ],
+      "candidates": [
+        "JCOG2407 (JALNECK)",
+        "SYS-SM mHealth"
+      ]
+    },
+    {
+      "site": "Gastrointestinal oncology",
+      "subsets": [
+        "early gastric cancer surveillance after curative resection",
+        "pancreatic borderline-resectable/locally advanced disease"
+      ],
+      "candidates": [
+        "JCOG2504",
+        "Toripalimab plus mFOLFIRINOX"
+      ]
+    },
+    {
+      "site": "Breast oncology",
+      "subsets": [
+        "HER2-positive advanced breast cancer",
+        "advanced hormone-receptor-positive disease"
+      ],
+      "candidates": [
+        "HEALER",
+        "Fovinaciclib"
+      ]
+    }
+  ],
+  "candidate_screening": {
+    "new_candidates_screened": 10,
+    "existing_queue_or_staged_rechecks": 3,
+    "total_candidate_records": 13,
+    "new_unique_underlying_studies": 5,
+    "duplicates_excluded": 5,
+    "held_new_unique": 4,
+    "deferred_contrary_evidence": 1,
+    "existing_held_rechecked": 1,
+    "existing_deferred_rechecked": 1,
+    "staged_page_rechecked": 1,
+    "fully_verified_for_publication": 0,
+    "uploaded": 0,
+    "duplicate_check": [
+      {
+        "candidate": "HERON-Lung01",
+        "primary_doi": "10.1016/S0140-6736(26)01899-4",
+        "pmid": "42933457",
+        "registry_id": "NCT06671379",
+        "matched_existing": null,
+        "same_underlying_study_as_existing": false,
+        "disposition": "new_unique_held",
+        "reason": "Primary PubMed record and registry verified; full article/supplement not reconciled. First online 2026-10-26, so outside the strict 30-day Trial-of-the-Day window."
+      },
+      {
+        "candidate": "SYMPRO-Lung",
+        "primary_doi": "10.1093/jnci/djad159",
+        "pmid": "37603720",
+        "followup_doi": "10.1016/S1470-2045(26)00305-0",
+        "followup_pmid": "42727592",
+        "registry_id": "NL7897",
+        "matched_existing": null,
+        "same_underlying_study_as_existing": false,
+        "disposition": "new_unique_held",
+        "reason": "Primary HRQoL paper and 2026 post-hoc survival analysis identified; reconcile stepped-wedge design, 515 enrolled vs 446 survival analysis and missingness before page drafting."
+      },
+      {
+        "candidate": "JCOG2407 (JALNECK)",
+        "primary_doi": "10.1093/jjco/hyag121",
+        "pmid": "42525729",
+        "registry_id": "jRCT1030250729",
+        "matched_existing": null,
+        "same_underlying_study_as_existing": false,
+        "disposition": "new_unique_held_protocol_only",
+        "reason": "Randomized phase III protocol only; no efficacy outcomes. First online 2026-07-29."
+      },
+      {
+        "candidate": "JCOG2504",
+        "primary_doi": "10.1093/jjco/hyag123",
+        "pmid": "42545799",
+        "registry_id": "jRCT1030250844",
+        "matched_existing": null,
+        "same_underlying_study_as_existing": false,
+        "disposition": "new_unique_held_protocol_only",
+        "reason": "Single-arm phase III surveillance protocol only; no efficacy outcomes. First online 2026-08-03."
+      },
+      {
+        "candidate": "SYS-SM nurse-led mHealth symptom management RCT",
+        "primary_doi": "10.1186/s12912-026-04871-x",
+        "pmid": "42401837",
+        "registry_id": "ChiCTR2300072314",
+        "matched_existing": null,
+        "same_underlying_study_as_existing": false,
+        "disposition": "new_unique_deferred_contrary_evidence",
+        "reason": "Primary overall HRQoL summary score not significant (P=0.108; 3-month MD 4.61, 95% CI −1.02 to 10.24); secondary domain signals do not establish a primary HRQoL benefit."
+      },
+      {
+        "candidate": "OptiTROP-Lung06",
+        "primary_doi": "10.1056/NEJMoa2611280",
+        "pmid": "42929694",
+        "registry_id": "NCT06711900",
+        "matched_existing": {
+          "roster_id": "optitrop-lung06",
+          "page_path": "trial-pages/optitrop-lung06/index.html"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "duplicate_excluded",
+        "reason": "Exact registry/DOI/PMID match in live main roster and canonical page."
+      },
+      {
+        "candidate": "PANKU-Lung01",
+        "primary_doi": "10.1016/S0140-6736(26)02026-X",
+        "pmid": "42933461",
+        "registry_id": "NCT06382116",
+        "matched_existing": {
+          "roster_id": "panku-lung01",
+          "page_path": "trial-pages/panku-lung01/index.html"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "duplicate_excluded",
+        "reason": "Exact registry/DOI/PMID match in live main roster and canonical page."
+      },
+      {
+        "candidate": "Fovinaciclib phase III advanced breast cancer study",
+        "primary_doi": "10.1001/jamaoncol.2026.1938",
+        "pmid": "42224659",
+        "registry_id": "NCT05439499",
+        "matched_existing": {
+          "roster_id": "fovinaciclib",
+          "page_path": "trial-pages/fovinaciclib/index.html"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "duplicate_excluded",
+        "reason": "Exact registry/DOI/PMID match in live main roster and canonical page."
+      },
+      {
+        "candidate": "Toripalimab plus modified FOLFIRINOX",
+        "primary_doi": "10.1200/JCO-26-01393",
+        "pmid": "42970668",
+        "registry_id": "NCT03983057",
+        "matched_existing": {
+          "roster_id": "toripalimab-mfolfirinox",
+          "page_path": "trial-pages/toripalimab-mfolfirinox/index.html"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "duplicate_excluded",
+        "reason": "Exact registry/DOI/PMID match in live main roster and canonical page."
+      },
+      {
+        "candidate": "HEALER",
+        "primary_doi": "10.1056/NEJMoa2610345",
+        "pmid": "42929681",
+        "registry_id": "NCT05838066",
+        "matched_existing": {
+          "roster_id": "healer",
+          "page_path": "trial-pages/healer/index.html"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "duplicate_excluded",
+        "reason": "Exact registry/DOI/PMID match in live main roster and canonical page."
+      },
+      {
+        "candidate": "EXCALIBER-RRMM",
+        "primary_doi": "10.1016/S1470-2045(26)00450-X",
+        "pmid": "42790445",
+        "registry_id": "NCT04975997",
+        "matched_existing": {
+          "review_queue_id": "candidate-review-excaliber-rrmm"
+        },
+        "same_underlying_study_as_existing": false,
+        "disposition": "existing_held_candidate_rechecked",
+        "reason": "Existing persistent review-queue item; PFS co-primary extraction and complete safety remain unresolved."
+      },
+      {
+        "candidate": "ZEAL-1L",
+        "primary_doi": "10.1016/j.jtho.2026.104087",
+        "pmid": "42431263",
+        "registry_id": "NCT04475939",
+        "matched_existing": {
+          "deferred_queue_record": "ZEAL-1L"
+        },
+        "same_underlying_study_as_existing": false,
+        "disposition": "existing_deferred_negative_rechecked",
+        "reason": "Existing deferred-negative evidence record; remains deferred, no page created."
+      },
+      {
+        "candidate": "Chlorophyllin TNT toxicity prevention",
+        "primary_doi": "10.1001/jamaoncol.2026.4843",
+        "pmid": "43084277",
+        "registry_id": "NCT05856305",
+        "matched_existing": {
+          "active_branch_roster_id": "chlorophyllin-tnt",
+          "page_path": "trial-pages/chlorophyllin-tnt/index.html",
+          "branch": "atlas-batch/2026-11-27-am"
+        },
+        "same_underlying_study_as_existing": true,
+        "disposition": "carry_forward_staged_page_rechecked_and_repaired",
+        "reason": "Already staged in the active branch and selected as branch Trial-of-the-Day; page/DOI/structured NNTs repaired, but not uploaded to main."
+      }
+    ]
+  },
+  "current_trial_of_day": {
+    "main_current": "PANKU-Esophagus01",
+    "main_previous": "GemX",
+    "active_branch_current": "Chlorophyllin TNT",
+    "active_branch_previous": "Early ONS NPC",
+    "selected_this_run": false,
+    "reason": "Chlorophyllin was already staged in the active branch on the prior run and was re-reviewed, not newly selected. HERON-Lung01 first appeared online 2026-10-26 (33 days before this run), so it does not meet the strict 30-day window."
+  },
+  "repair_and_qa": {
+    "existing_pages_manual_primary_source_spotcheck": 4,
+    "existing_pages": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape"
+    ],
+    "staged_page_primary_source_rechecked": [
+      "chlorophyllin-tnt"
+    ],
+    "staged_pages_structurally_reread_after_edits": 24,
+    "automated_static_pages_audited": 490,
+    "repair_items_reviewed": 8,
+    "repair_items_closed": 0,
+    "repair_items_open": 234,
+    "resolved_items": 77,
+    "repairs": {
+      "page_content_repaired": 1,
+      "staged_pages_with_standardized_required_sections": 22,
+      "duplicate_absolute_effect_script_includes_removed": 9,
+      "structured_absolute_effects_normalized": 6,
+      "primary_doi_fields_normalized": 4,
+      "primary_title_metadata_corrected": 2,
+      "setting_detail_nnt_claim_removed_for_multi_endpoint_case": 1,
+      "validator_self_archive_match_logic_fixed": 1,
+      "batch_announcement_duplicate_removed": 1
+    },
+    "nnt_nnh": {
+      "legacy_claims_rechecked": 7,
+      "chlorophyllin_grade2_nnt": 4,
+      "chlorophyllin_grade3_nnt": 4,
+      "no_new_nnt_for_heron_sympro_or_protocols": true,
+      "rationale": "No NNT derived from median survival/PFS or hazard ratios alone; SYMPRO-Lung has no extracted fixed-horizon absolute survival risk difference; mHealth uses continuous HRQoL."
+    },
+    "static_visual_audit": {
+      "run_id": 46100227820,
+      "status": "success",
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "absolute_effect_markup": 182,
+      "outcome_visual_candidates": 308,
+      "missing_primary_source_sections": 0,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "missing_dated_current_practice_context": 53,
+      "short_pages": 0,
+      "redirect_stub_count": 1
+    },
+    "browser_rendered_visual_qa": "not run; static structural audit is not browser-rendered visual inspection",
+    "full_recursive_clinical_audit_completed": false
+  },
+  "nccn_guideline_mining": {
+    "official_nccn_full_guideline_access": "not verified — official NCCN portal unavailable in this run",
+    "nccn_metadata_only": [
+      {
+        "title": "NCCN Guidelines Insights: Small Cell Lung Cancer",
+        "version": "2.2026",
+        "doi": "10.6004/jnccn.2026.0002",
+        "pmid": "41671459",
+        "scope": "PubMed/JNCCN metadata and abstract only; complete reference list not retrieved"
+      },
+      {
+        "title": "NCCN Multiple Myeloma",
+        "version": "5.2026",
+        "doi": "10.6004/jnccn.2026.0001",
+        "pmid": "41671464",
+        "scope": "Metadata/abstract only; newly diagnosed MM emphasis, not full guideline or RRMM reference list"
+      },
+      {
+        "title": "NCCN Non-Small Cell Lung Cancer",
+        "version": "4.2026",
+        "scope": "Existing ledger metadata only; current full guideline/reference list not retrieved"
+      }
+    ],
+    "alternative_guidelines": [
+      {
+        "title": "ESMO Living Guideline: Oncogene-addicted Metastatic NSCLC",
+        "version": "1.4 (November 2026)",
+        "section": "EGFR-mutated NSCLC — systemic progression or TKI resistance",
+        "recommendations": [
+          "Amivantamab plus platinum/pemetrexed (I,A) after progression on osimertinib",
+          "Platinum doublet (III,A) after progression on osimertinib"
+        ],
+        "source_url": "https://www.esmo.org/guidelines/living-guidelines/esmo-living-guideline-oncogene-addicted-metastatic-nsclc",
+        "heron_citation": "not explicitly cited in accessible section summary"
+      },
+      {
+        "title": "ASCO Living Guideline: Therapy for Stage IV NSCLC With Driver Alterations",
+        "version": "2026.3.2",
+        "section": "Second-line and subsequent therapy — EGFR exon 19 deletion/L858R after osimertinib",
+        "recommendation": "2.1 — platinum-based chemotherapy with amivantamab may be offered; moderate evidence, strong recommendation",
+        "doi": "10.1200/JCO-26-01479",
+        "heron_citation": "not explicitly identified in accessible recommendation summary"
+      }
+    ],
+    "exact_nccn_citation_mappings_added": 0,
+    "nccn_provenance_for_new_candidates": "not verified — source inaccessible; no reference number/category inferred"
+  },
+  "publication_gate": {
+    "target_new_unique_trials": 30,
+    "staged_batch_records": 30,
+    "staged_batch_unique_ids": 30,
+    "latest_strict_release_validator": {
+      "run_id": 46100227820,
+      "validated_commit": "265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+      "status": "passed",
+      "errors": 0
+    },
+    "latest_branch_head_at_report_creation": "2bfa83ad0043fc381842e911ab6d78dac2f642b0",
+    "local_release_validator": "not run — container git clone repeatedly failed DNS resolution for github.com",
+    "pr_status": "not opened — local validator and full manual primary-source verification incomplete",
+    "merge_status": "not merged",
+    "production_deployment": "not verified",
+    "uploaded": 0,
+    "not_uploaded": 30
+  },
+  "next_actions": [
+    "Obtain a working local clone and run the local release validator against the latest branch head.",
+    "Complete full primary-source/supplement review for the 16 held staged pages; verify denominators, endpoint maturity, safety and QoL.",
+    "Review the 53 dated-current-practice context gaps page by page against current guideline versions; keep inaccessible NCCN freshness tasks open.",
+    "Complete browser-rendered outcome-visualization QA, not just static markup checks.",
+    "Open a PR only after all 30 underlying studies are fully source-verified and local validation passes; wait for all PR checks before merge.",
+    "After merge, verify main-branch commit, roster/index/archive reconciliation and live Cloudflare Pages deployment."
+  ]
+}
