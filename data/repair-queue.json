@@ -6074,7 +6074,35 @@
         "publication_first_online": "2026-10-26",
         "issue_date": "2026-11-07",
         "trial_of_the_day_eligible": false,
-        "trial_of_the_day_reason": "First online publication 2026-10-26 is 33 days before the 2026-11-28 run; the later issue date is 2026-11-07. Conservatively not selected for Trial-of-the-Day under the 30-day rule."
+        "trial_of_the_day_reason": "First online publication 2026-10-26 is 33 days before the run; conservative 30-day rule not met."
+      },
+      "primary_results": {
+        "randomized_n": 498,
+        "arms": {
+          "investigational": 250,
+          "control": 248
+        },
+        "primary_endpoint": "BICR-assessed PFS",
+        "median_pfs_months": {
+          "investigational": 8.3,
+          "control": 5.4
+        },
+        "hazard_ratio": 0.47,
+        "ci95": [
+          0.36,
+          0.6
+        ],
+        "p_value": "<0.0001",
+        "median_followup_months": 7.7,
+        "grade3_or_higher_treatment_related_adverse_events": {
+          "investigational": "101/248 (41%)",
+          "control": "93/239 (39%)"
+        },
+        "treatment_related_adverse_event_discontinuation": {
+          "investigational": "3/248 (1%)",
+          "control": "3/239 (1%)"
+        },
+        "nnt_not_applicable_reason": "No same-timepoint absolute PFS risk estimates in the accessible abstract; do not derive NNT from median PFS or HR."
       }
     },
     {
@@ -6088,14 +6116,14 @@
       "status": "held",
       "created_on": "2026-11-28",
       "last_reviewed_on": "2026-11-28",
-      "issue": "New unique supportive-care cluster-randomized stepped-wedge study with a 2023 primary HRQoL publication and a 2026 post-hoc survival analysis. The survival analysis included 446/515 enrolled patients; its OS result is post-hoc and must not be presented as a primary endpoint.",
+      "issue": "New unique supportive-care stepped-wedge cluster-randomized study. Primary HRQoL publication reports 515 patients (160 active provider-alert, 89 reactive patient-alert, 266 control); combined intervention vs control at 15 weeks: EORTC QLQ-C30 summary score B=4.85 (95% CI 1.96–7.73), ES=0.57. The 2026 survival analysis is post-hoc (446 patients): median OS 26 vs 21 months, HR 0.80 (95% CI 0.63–1.00), p=0.049; PFS HR 0.86 (95% CI 0.69–1.07), p=0.18. Full trial-level safety, exposure and missing-data reconciliation remains open.",
       "evidence": [
         "https://doi.org/10.1093/jnci/djad159",
         "https://pubmed.ncbi.nlm.nih.gov/37603720/",
         "https://doi.org/10.1016/S1470-2045(26)00305-0",
         "https://pubmed.ncbi.nlm.nih.gov/42727592/"
       ],
-      "action": "Reconcile the original protocol and primary HRQoL paper with the 2024 HRQoL follow-up and 2026 post-hoc survival report; preserve cluster/stepped-wedge design and denominators (515 enrolled vs 446 in survival analysis); extract exact intervention exposure, HRQoL timepoints, missingness and survival analysis limitations before page drafting.",
+      "action": "Inspect the complete primary article/protocol and 2026 Lancet Oncology follow-up; reconcile stepped-wedge cluster unit, exposure, missingness, treatment burden and safety reporting. Preserve the survival result as post-hoc and do not infer NNT from medians/HR.",
       "verification": {
         "identity_unique_against_main_roster_pages_archive_and_tod": true,
         "primary_and_followup_publications_identified": true,
@@ -6103,6 +6131,58 @@
         "latest_followup_publication_date": "2026-09-11",
         "trial_of_the_day_eligible": false,
         "nnt": "Not appropriate from medians/HR alone; no fixed-horizon absolute survival risk difference extracted."
+      },
+      "primary_results": {
+        "design": "Multicentre randomized controlled trial using a stepped-wedge cluster design",
+        "enrolled_n": 515,
+        "groups": {
+          "active_provider_alert": 160,
+          "reactive_patient_alert": 89,
+          "control": 266
+        },
+        "primary_endpoint": "EORTC QLQ-C30 HRQoL at 15 weeks",
+        "primary_result": {
+          "comparison": "Combined intervention groups vs control",
+          "unstandardized_beta": 4.85,
+          "ci95": [
+            1.96,
+            7.73
+          ],
+          "effect_size": 0.57
+        },
+        "active_vs_reactive": {
+          "unstandardized_beta": 0.51,
+          "ci95": [
+            -3.22,
+            4.24
+          ],
+          "effect_size": 0.06
+        },
+        "posthoc_survival_analysis": {
+          "analysis_n": 446,
+          "arms": {
+            "intervention": 235,
+            "control": 211
+          },
+          "median_os_months": {
+            "intervention": 26,
+            "control": 21
+          },
+          "os_hazard_ratio": 0.8,
+          "os_ci95": [
+            0.63,
+            1
+          ],
+          "os_p_value": 0.049,
+          "pfs_hazard_ratio": 0.86,
+          "pfs_ci95": [
+            0.69,
+            1.07
+          ],
+          "pfs_p_value": 0.18,
+          "interpretation": "Post-hoc survival analysis; not the primary endpoint."
+        },
+        "nnt_not_applicable_reason": "Continuous HRQoL primary endpoint and post-hoc median/HR survival results; no same-horizon absolute survival risk difference extracted."
       }
     },
     {
@@ -7858,6 +7938,10 @@
       "missing_dated_current_practice_context": 53,
       "short_pages": 0,
       "redirect_stub_count": 1
+    },
+    "candidate_primary_results": {
+      "heron": "498 randomized; BICR PFS 8.3 vs 5.4 months, HR 0.47 (95% CI 0.36–0.60), p<0.0001; grade ≥3 TRAE 41% vs 39%; discontinuation 1% vs 1%; no NNT from median PFS/HR.",
+      "sympro": "515 enrolled; 15-week HRQoL B=4.85 (95% CI 1.96–7.73), ES 0.57; post-hoc survival analysis n=446, OS 26 vs 21 months, HR 0.80 (95% CI 0.63–1.00), p=0.049; PFS HR 0.86 (95% CI 0.69–1.07), p=0.18; no NNT from medians/HR."
     }
   },
   "generated_at": "2026-11-28T08:04:24+05:30",
