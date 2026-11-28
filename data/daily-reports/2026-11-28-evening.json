@@ -11,9 +11,9 @@
     "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
     "branch_head_after_data_updates": "8986db5260f8b6923499f0008abdb999407378e3",
     "last_validated_page_roster_cache_commit": "8986db5260f8b6923499f0008abdb999407378e3",
-    "final_branch_head_before_report_update": "8986db5260f8b6923499f0008abdb999407378e3",
+    "final_branch_head_before_report_update": "f2318a47de1dd71c080bbd5a3ab2b0404a0e2db0",
     "latest_validated_commit": "8986db5260f8b6923499f0008abdb999407378e3",
-    "report_metadata_parent_commit": "6fb4f7cf397f89f65b75728728483beae89d6dd5"
+    "report_metadata_parent_commit": "f2318a47de1dd71c080bbd5a3ab2b0404a0e2db0"
   },
   "summary": {
     "target": 30,
@@ -26,7 +26,7 @@
     "uploaded": 0,
     "unuploaded": 30,
     "existing_main_pages_manually_reaudited": 5,
-    "staged_pages_reaudited": 2,
+    "staged_pages_reaudited": 8,
     "page_repairs": 3,
     "repair_queue_open": 240,
     "repair_queue_closed": 80
@@ -220,7 +220,13 @@
       "active 30-page release gate",
       "hokusai-vte-cancer",
       "Hokusai VTE Cancer fixed-horizon NNH review",
-      "FOWARC 10-year follow-up"
+      "FOWARC 10-year follow-up",
+      "caravaggio",
+      "api-cat",
+      "checkmate-77t",
+      "nadina",
+      "swog-s1801",
+      "nrg-gy018"
     ],
     "closed": [
       "dated-context-atomic",
@@ -235,7 +241,13 @@
       "local release validator",
       "NCCN Rectal Cancer current 2026 guideline freshness",
       "NCCN Colon Cancer current 2026 guideline freshness",
-      "KEYNOTE-A18 5-year abstract numeric extraction"
+      "KEYNOTE-A18 5-year abstract numeric extraction",
+      "caravaggio: full protocol/supplement/PRO extraction remains open",
+      "api-cat: full protocol/supplement/PRO extraction remains open",
+      "checkmate-77t: full protocol/supplement/PRO extraction remains open",
+      "nadina: full protocol/supplement/PRO extraction remains open",
+      "swog-s1801: full protocol/supplement/PRO extraction remains open",
+      "nrg-gy018: full protocol/supplement/PRO extraction remains open"
     ],
     "queue_open": 240,
     "queue_closed": 80
@@ -340,6 +352,140 @@
       "renderer_missing": 0,
       "missing_primary_source": 0,
       "missing_dated_context": 53
+    },
+    "caravaggio": {
+      "status": "no NNT/NNH assigned",
+      "reason": "Primary 6-month recurrent VTE analysis met noninferiority but not superiority (P=.09); major bleeding similar; event rates retained."
+    },
+    "api_cat": {
+      "status": "NNT validated",
+      "endpoint": "12-month clinically relevant bleeding (secondary safety endpoint)",
+      "absolute_benefit_pp": 3.5,
+      "nnt": 29,
+      "calculation": "ceil(100/3.5)=29",
+      "primary_VTE_endpoint": "noninferiority; no NNT"
+    },
+    "checkmate_77t": {
+      "status": "NNT validated",
+      "endpoint": "18-month EFS",
+      "absolute_benefit_pp": 20.2,
+      "nnt": 5,
+      "calculation": "ceil(100/20.2)=5"
+    },
+    "nadina": {
+      "status": "NNT validated",
+      "endpoint": "12-month EFS",
+      "absolute_benefit_pp": 26.5,
+      "nnt": 4,
+      "calculation": "ceil(100/26.5)=4"
+    },
+    "swog_s1801": {
+      "status": "NNT validated",
+      "endpoint": "24-month EFS",
+      "absolute_benefit_pp": 23,
+      "nnt": 5,
+      "calculation": "ceil(100/23)=5"
+    },
+    "nrg_gy018": {
+      "status": "NNT validated",
+      "endpoint": "12-month PFS in dMMR cohort only",
+      "absolute_benefit_pp": 36,
+      "nnt": 3,
+      "calculation": "ceil(100/36)=3"
     }
+  },
+  "source_review_continuation": {
+    "staged_trial_primary_source_reviews": [
+      {
+        "trial_id": "caravaggio",
+        "trial": "CARAVAGGIO",
+        "doi": "10.1056/NEJMoa1915103",
+        "pmid": "32223112",
+        "registry": "NCT03045406",
+        "primary": "Phase III open-label randomized noninferiority; active cancer with acute proximal DVT/PE; 1,170 randomized, efficacy population 576 vs579. Apixaban 10 mg BID 7d then5 mg BID for6m vs dalteparin 200 IU/kg daily month1 then150 IU/kg months2–6. Recurrent VTE 5.6% vs7.9%, HR0.63 (95%CI0.37–1.07), P<.001 NI, P=.09 superiority. Major bleeding 3.8% vs4.0%, HR0.82 (0.40–1.69), P=.60; CRNMB9.0% vs6.0%.",
+        "nnt": "No NNT/NNH: noninferiority met, superiority not established; fixed 6-month event rates shown.",
+        "remaining": "Full supplement cancer-site bleeding, discontinuation and subgroup tables; QoL not reported in primary paper.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa1915103",
+          "https://pubmed.ncbi.nlm.nih.gov/32223112/"
+        ],
+        "status": "primary efficacy and principal safety outcomes verified; still held"
+      },
+      {
+        "trial_id": "api-cat",
+        "trial": "API-CAT",
+        "doi": "10.1056/NEJMoa2416112",
+        "pmid": "40162636",
+        "registry": "NCT03692065",
+        "primary": "Phase III double-blind noninferiority; 1,766 active-cancer patients with proximal DVT/PE after ≥6m anticoagulation; apixaban2.5mg BID vs5mg BID for12m. Recurrent VTE 2.1% vs2.8%, adjusted sub-HR0.76 (95%CI0.41–1.41), P=.001 NI; clinically relevant bleeding12.1% vs15.6%, sub-HR0.75 (0.58–0.97), P=.03; median treatment11.8m.",
+        "nnt": "NNT29 only for 12m secondary clinically relevant bleeding: 15.6−12.1=3.5pp; ceil(100/3.5)=29. No NNT for primary VTE noninferiority.",
+        "remaining": "Full grade3–5 safety, adherence/discontinuation, subgroup and supplementary tables; QoL not reported in primary paper.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2416112",
+          "https://pubmed.ncbi.nlm.nih.gov/40162636/"
+        ],
+        "status": "primary efficacy and key bleeding outcomes verified; still held"
+      },
+      {
+        "trial_id": "checkmate-77t",
+        "trial": "CheckMate 77T",
+        "doi": "10.1056/NEJMoa2311926",
+        "pmid": "38749033",
+        "registry": "NCT04025879",
+        "primary": "Phase III double-blind; 461 resectable stage IIA–IIIB NSCLC, ECOG0–1, EGFR/ALK-negative. Nivolumab360mg q3w+platinum doublet x4, surgery within6w, nivolumab480mg q4w for1y vs placebo+same chemo/surgery/placebo. Median follow-up25.4m; 18m EFS70.2% vs50.0%, HR0.58 (97.36%CI0.42–0.81), P<.001; pCR25.3% vs4.7%; MPR35.4% vs12.1%; grade3–4 TRAE32.5% vs25.2%.",
+        "nnt": "NNT5 for 18m EFS: 20.2pp; ceil(100/20.2)=5.",
+        "remaining": "Platinum-doublet distribution, full AE/discontinuation appendix, PRO domain estimates and mature OS; disease-related symptom outcomes favor perioperative nivolumab.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2311926",
+          "https://pubmed.ncbi.nlm.nih.gov/38749033/"
+        ],
+        "status": "primary design, efficacy and key safety outcomes verified; still held"
+      },
+      {
+        "trial_id": "nadina",
+        "trial": "NADINA",
+        "doi": "10.1056/NEJMoa2402604",
+        "pmid": "38828984",
+        "registry": "NCT04949113",
+        "primary": "Phase III open-label; 423 resectable macroscopic stage III melanoma. Two neoadjuvant cycles ipilimumab1mg/kg+nivolumab3mg/kg q3w, surgery, response-adapted adjuvant vs surgery then nivolumab480mg q4w up to12 cycles. Median follow-up9.9m; 12m EFS83.7% vs57.2%, HR0.32 (99.9%CI0.15–0.66); RMST difference8.0m (99.9%CI4.94–11.05), P<.001; grade≥3 systemic-treatment AEs29.7% vs14.7%.",
+        "nnt": "NNT4 for 12m EFS: 26.5pp; ceil(100/26.5)=4.",
+        "remaining": "Response-adapted adjuvant/BRAF details, surgery/perioperative complications, full safety tables and long-term EFS/OS. No QoL endpoint identified in primary paper. Accessible NCCN Melanoma Insights v2.2024 predates report and does not cite NADINA.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2402604",
+          "https://pubmed.ncbi.nlm.nih.gov/38828984/"
+        ],
+        "status": "primary efficacy and grade≥3 safety verified; still held"
+      },
+      {
+        "trial_id": "swog-s1801",
+        "trial": "SWOG S1801",
+        "doi": "10.1056/NEJMoa2211437",
+        "pmid": "36856617",
+        "registry": "NCT03698019",
+        "primary": "Phase II open-label; 313 resectable stage IIIB–IVC melanoma (154 vs159). Pembrolizumab200mg q3w x3 neoadjuvant, surgery, then15 adjuvant vs surgery then18 doses. Median follow-up14.7m; 2y EFS72% (95%CI64–80) vs49% (41–59), P=.004; grade≥3 TRAE12% vs14%.",
+        "nnt": "NNT5 for 24m EFS: 23pp; ceil(100/23)=5.",
+        "remaining": "Full surgery timing/exposure, subgroup estimates and longer-term EFS/OS. No QoL endpoint identified in primary paper. NCCN Melanoma Insights v2.2024 ref29 exact; 2026 freshness open.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2211437",
+          "https://pubmed.ncbi.nlm.nih.gov/36856617/"
+        ],
+        "status": "primary efficacy and grade≥3 safety verified; still held"
+      },
+      {
+        "trial_id": "nrg-gy018",
+        "trial": "NRG-GY018",
+        "doi": "10.1056/NEJMoa2302312",
+        "pmid": "36972022",
+        "registry": "NCT03914612",
+        "primary": "Phase III double-blind; advanced/recurrent endometrial cancer, dMMR n215 (109 vs106), pMMR n550 (276 vs274). Pembrolizumab200mg q3w+paclitaxel175mg/m²+carboplatin AUC5 x6 then pembrolizumab400mg q6w up to14 maintenance vs placebo. dMMR 12m PFS74% vs38%, HR0.30 (95%CI0.19–0.48); pMMR median PFS13.1 vs8.7m, HR0.54 (0.41–0.71); both P<.001. Grade≥3 AEs dMMR63.3% vs47.2%, pMMR55.1% vs45.3%; grade5 1 vs2 dMMR,6 vs2 pMMR.",
+        "nnt": "NNT3 only for 12m dMMR PFS: 36pp; ceil(100/36)=3. No pooled NNT.",
+        "remaining": "Full stratification factors, updated OS maturity and supplementary maintenance/safety tables. No QoL endpoint identified in primary paper; current NCCN Endometrial guideline/reference list inaccessible.",
+        "sources": [
+          "https://doi.org/10.1056/NEJMoa2302312",
+          "https://pubmed.ncbi.nlm.nih.gov/36972022/"
+        ],
+        "status": "primary efficacy and grade≥3/grade5 safety verified; still held"
+      }
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T19:03:57+05:30",
+  "updated_at": "2026-11-28T19:31:51+05:30",
   "selection_policy": "Systematic NCCN disease-site and subset mining; exact citation provenance required. One underlying study per record; never pad batches or infer citations.",
   "guidelines": [
     {
@@ -1597,7 +1597,45 @@
       "keynote-a18"
     ],
     "uploaded": 0,
-    "status": "INCOMPLETE"
+    "status": "INCOMPLETE",
+    "staged_trial_source_reviews": [
+      {
+        "trial_id": "caravaggio",
+        "status": "primary efficacy and principal safety outcomes verified; still held",
+        "primary_doi": "10.1056/NEJMoa1915103",
+        "registry": "NCT03045406"
+      },
+      {
+        "trial_id": "api-cat",
+        "status": "primary efficacy and key bleeding outcomes verified; still held",
+        "primary_doi": "10.1056/NEJMoa2416112",
+        "registry": "NCT03692065"
+      },
+      {
+        "trial_id": "checkmate-77t",
+        "status": "primary design, efficacy and key safety outcomes verified; still held",
+        "primary_doi": "10.1056/NEJMoa2311926",
+        "registry": "NCT04025879"
+      },
+      {
+        "trial_id": "nadina",
+        "status": "primary efficacy and grade≥3 safety verified; still held",
+        "primary_doi": "10.1056/NEJMoa2402604",
+        "registry": "NCT04949113"
+      },
+      {
+        "trial_id": "swog-s1801",
+        "status": "primary efficacy and grade≥3 safety verified; still held",
+        "primary_doi": "10.1056/NEJMoa2211437",
+        "registry": "NCT03698019"
+      },
+      {
+        "trial_id": "nrg-gy018",
+        "status": "primary efficacy and grade≥3/grade5 safety verified; still held",
+        "primary_doi": "10.1056/NEJMoa2302312",
+        "registry": "NCT03914612"
+      }
+    ]
   },
   "last_updated": "2026-11-28",
   "last_run_date": "2026-11-28",
@@ -2654,16 +2692,30 @@
       "trial": "Caravaggio",
       "reason": "New unique candidate; full current NCCN citation mapping/current-version check pending.",
       "next_action": "Check current official NCCN version and exact reference/section/category; do not infer provenance.",
-      "status": "open",
-      "added_on": "2026-11-23"
+      "status": "exact citation mapped in accessible NCCN-authored Insights v2.2024; current 2026 guideline freshness pending",
+      "added_on": "2026-11-23",
+      "guideline_title": "NCCN Guidelines Insights: Cancer-Associated Venous Thromboembolic Disease, Version 2.2024",
+      "version": "2.2024",
+      "section": "Acute DVT/PE treatment",
+      "reference_number": "217",
+      "recommendation_category": "Category 2B for apixaban in gastric/gastroesophageal lesions; not trial-specific",
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
+      "provenance": "Exact reference 217 checked in the complete public NCCN-authored Insights article; this is not the complete current guideline."
     },
     {
       "trial_id": "hokusai-vte-cancer",
       "trial": "Hokusai VTE Cancer",
       "reason": "New unique candidate; full current NCCN citation mapping/current-version check pending.",
       "next_action": "Check current official NCCN version and exact reference/section/category; do not infer provenance.",
-      "status": "open",
-      "added_on": "2026-11-23"
+      "status": "exact citation mapped in accessible NCCN-authored Insights v2.2024; current 2026 guideline freshness pending",
+      "added_on": "2026-11-23",
+      "guideline_title": "NCCN Guidelines Insights: Cancer-Associated Venous Thromboembolic Disease, Version 2.2024",
+      "version": "2.2024",
+      "section": "Acute DVT/PE treatment",
+      "reference_number": "221",
+      "recommendation_category": null,
+      "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/7/article-p483.pdf",
+      "provenance": "Exact reference 221 checked in the complete public NCCN-authored Insights article; this is not the complete current guideline."
     },
     {
       "trial_id": "select-d",
