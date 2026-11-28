@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:24:56+05:30",
+  "updated_at": "2026-11-28T08:04:24+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -644,6 +644,25 @@
         "https://pubmed.ncbi.nlm.nih.gov/42849355/",
         "https://clinicaltrials.gov/study/NCT05805501"
       ]
+    },
+    {
+      "trial_id": "sys-sm-hnc-mhealth",
+      "trial": "SYS-SM nurse-led mHealth symptom management RCT in head and neck cancer",
+      "status": "deferred_contrary_evidence",
+      "date_added": "2026-11-28",
+      "publication_date": "2026-07-04",
+      "primary_doi": "10.1186/s12912-026-04871-x",
+      "pmid": "42401837",
+      "registry_id": "ChiCTR2300072314",
+      "reason": "The primary overall HRQoL summary score did not improve significantly (group×time P=0.108; 3-month mean difference 4.61, 95% CI −1.02 to 10.24; effect size 0.23). Secondary signals for appetite loss and global health status were reported, but the single-centre 136-patient study does not establish a clinically meaningful primary HRQoL benefit.",
+      "key_result": "136 patients (67 intervention, 69 control); primary overall HRQoL summary score not significant. Physical-function difference at 3 months 8.25 (95% CI 1.15–15.35), effect size 0.35 below the prespecified clinical threshold; appetite-loss and global-health secondary domains improved.",
+      "action": "Retain as supportive-care contrary evidence; do not promote as a positive practice-changing trial. Revisit if replicated in a larger multicentre study or if longer-term outcomes materially change interpretation.",
+      "nnt_not_applicable_reason": "Continuous HRQoL and symptom-domain outcomes; no comparable binary event risk difference from which to calculate NNT/NNH.",
+      "source_urls": [
+        "https://doi.org/10.1186/s12912-026-04871-x",
+        "https://pubmed.ncbi.nlm.nih.gov/42401837/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13613783/"
+      ]
     }
   ],
   "last_run": {
@@ -654,8 +673,8 @@
     "total_items": 33,
     "report_path": "data/daily-reports/2026-11-27-morning.json"
   },
-  "last_updated": "2026-11-27",
-  "last_run_date": "2026-11-23",
+  "last_updated": "2026-11-28",
+  "last_run_date": "2026-11-28",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
-  "last_run_note": "Added PROSPER RCC, IMmotion010 and CA017-078 as new unique negative/contrary studies; retained in the deferred queue, not published."
+  "last_run_note": "Morning evidence screen: one new supportive-care RCT was deferred to contrary evidence because the primary overall HRQoL endpoint was not significant; no new negative trial page was created."
 }
