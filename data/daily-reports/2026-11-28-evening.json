@@ -10,7 +10,9 @@
     "working_branch": "atlas-batch/2026-11-27-am",
     "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
     "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd",
-    "branch_head_after_report_metadata": "27fb560eb00e8eba14a18d89df25d36e931e8d25"
+    "branch_head_after_report_metadata": "b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d",
+    "last_validated_page_roster_cache_commit": "8ef056c33bb5ca463e544053cd0c7a71bf013083",
+    "final_branch_head_before_report_update": "b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d"
   },
   "summary": {
     "target": 30,
@@ -260,11 +262,12 @@
     "merged": false
   },
   "validation": {
-    "strict_release_validator": "passed on previous commit 265902; current head validation pending",
-    "outcome_visualization_audit": "passed static structural audit on previous commit 2bfa; browser QA incomplete",
-    "local_validator": "not run — DNS resolution failure",
-    "pr_checks": "not run — no PR",
-    "deployment": "not verified"
+    "strict_release_validator": "passed on 2026-11-28 workflow 46152071343 at commit 8ef056c; the ATOMIC page, roster and DOI-cache file SHAs are identical at final branch head b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d. Later commits changed only queue/ledger/report/evidence metadata.",
+    "outcome_visualization_audit": "passed on workflow 46152071343 at commit 8ef056c; automated HTML/outcome audit only; browser-rendered QA remains incomplete.",
+    "local_validator": "not run — repeated git ls-remote/clone failed DNS resolution for github.com",
+    "pr_checks": "not run — no PR opened",
+    "deployment": "not verified — no merge or production deployment",
+    "latest_workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46152071343"
   },
   "next_actions": [
     "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
