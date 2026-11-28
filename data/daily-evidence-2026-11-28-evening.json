@@ -389,7 +389,7 @@
   "validation": {
     "strict_release_validator_previous_commit": "passed — 0 errors on 265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
     "outcome_visualization_audit_previous_commit": "passed static audit on 2bfa83ad0043fc381842e911ab6d78dac2f642b0",
-    "current_branch_head_validation": "pending after 28 Nov evening metadata updates",
+    "current_branch_head_validation": "passed on page/roster commit 8986db5260f8b6923499f0008abdb999407378e3; the subsequent 6fb4f7cf397f89f65b75728728483beae89d6dd5 commit changed only report/evidence/queue metadata.",
     "local_release_validator": "not run — execution environment git clone/ls-remote DNS resolution failure; remote CI ran the same script successfully",
     "browser_rendered_qa": "not completed; branch preview deployment exists but the page could not be opened in an interactive browser here",
     "pr_checks": "not run; no PR opened",
@@ -402,8 +402,8 @@
       "strict_trial_release_validator": "success — 0 errors",
       "audit_all_roster_and_trial_html_pages": "success"
     },
-    "current_branch_page_roster_cache_identity": "The ATOMIC page, master roster and DOI-title cache file SHAs at the final branch head b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d are identical to those validated on 8ef056c33bb5ca463e544053cd0c7a71bf013083; later commits changed only queue/ledger/report/evidence metadata.",
-    "deployment": "not verified — no merge or production deployment",
+    "current_branch_page_roster_cache_identity": "The Hokusai VTE Cancer page and master-roster correction (NNH removed; no fixed-horizon NNH assigned) were validated on 8986db5260f8b6923499f0008abdb999407378e3. The subsequent 6fb4f7cf397f89f65b75728728483beae89d6dd5 commit changed only report/evidence/queue metadata.",
+    "deployment": "Cloudflare branch preview deployment succeeded for commit 8986db5260f8b6923499f0008abdb999407378e3; production deployment remains unverified because no PR was merged.",
     "strict_release_validator_current": "passed — 0 errors; latest batch count 30 on commit 8986db5260f8b6923499f0008abdb999407378e3; workflow 46153213166",
     "outcome_visualization_audit_current": {
       "status": "passed static audit",
@@ -425,7 +425,8 @@
       "url": "https://atlas-batch-2026-11-27-am.theabsoluteeffect.pages.dev",
       "unique_preview_url": "https://448f66e5.theabsoluteeffect.pages.dev",
       "production": false
-    }
+    },
+    "report_metadata_parent_commit": "6fb4f7cf397f89f65b75728728483beae89d6dd5"
   },
   "next_actions": [
     "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
