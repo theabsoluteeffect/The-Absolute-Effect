@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-28T08:04:24+05:30",
+  "updated_at": "2026-11-28T19:03:57+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -753,6 +753,32 @@
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/29342393/",
       "title_match": true,
       "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open."
+    },
+    {
+      "trial_id": "atomic",
+      "doi": "10.1056/NEJMoa2507874",
+      "title": "Atezolizumab Plus FOLFOX for Stage III Mismatch Repair Deficient Colon Cancer",
+      "verified": true,
+      "source": "PubMed/PMC full primary article and NEJM metadata",
+      "verified_at": "2026-11-28",
+      "pmid": "41880612",
+      "registry_id": "NCT02912559",
+      "verification_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13020640/",
+      "title_match": true,
+      "publication_type": "primary peer-reviewed publication"
+    },
+    {
+      "trial_id": "keynote-a18",
+      "doi": "10.1016/j.ijgc.2026.105141",
+      "title": "Pembrolizumab plus concurrent chemoradiotherapy for high-risk locally advanced cervical cancer: 5-year follow-up results from KEYNOTE-A18",
+      "verified": true,
+      "source": "International Journal of Gynecological Cancer abstract metadata",
+      "verified_at": "2026-11-28",
+      "pmid": null,
+      "registry_id": "NCT04221945",
+      "verification_url": "https://doi.org/10.1016/j.ijgc.2026.105141",
+      "title_match": true,
+      "publication_type": "follow-up conference abstract"
     }
   ],
   "last_verified_on": "2026-11-28",
