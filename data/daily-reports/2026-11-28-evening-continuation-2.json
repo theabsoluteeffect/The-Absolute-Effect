@@ -9,7 +9,7 @@
     "base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-27-am",
     "branch_head_before": "3172853dba0751fc7186285881cf3f3018ba5453",
-    "branch_commit_sha": "PENDING_AFTER_COMMIT",
+    "branch_commit_sha": "7a91cf5d314015770cb3dda284d6b40522d9208a",
     "pull_request": null,
     "merged": false,
     "production_deployment": "not claimed; no merge"
@@ -566,11 +566,12 @@
   "validation": {
     "local_release_validator": "NOT RUN — repository clone/network DNS access failed in execution container; cannot claim local validation.",
     "remote_pr_checks": "NOT RUN — no PR opened because 0/30 pages are release-ready and local validator/browser QA remain incomplete.",
-    "branch_commit": "pending",
+    "branch_commit": "7a91cf5d314015770cb3dda284d6b40522d9208a",
     "main_commit_verified": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "merged": false,
     "cloudflare_production_deployment": "not checked; no merge; no production publication claim",
-    "branch_preview": "previously reported deployed; current post-commit preview recheck pending"
+    "branch_preview": "previously reported deployed; current post-commit preview recheck pending",
+    "branch_commit_verified": true
   },
   "cumulative": {
     "main_roster_records": 467,
@@ -587,5 +588,6 @@
     "Only when exactly 30 pages are release-ready, open a PR, wait for all required checks, then merge and verify main/Cloudflare production deployment.",
     "Continue the full 461-page production audit; do not advance global last_quality_check until complete.",
     "Continue current NCCN full guideline retrieval; keep exact NCCN citation mapping tasks open while using explicitly labelled alternative guideline sources."
-  ]
+  ],
+  "page_change_commit_sha": "7a91cf5d314015770cb3dda284d6b40522d9208a"
 }
