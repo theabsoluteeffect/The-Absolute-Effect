@@ -231,7 +231,9 @@
         "https://doi.org/10.1016/j.jtho.2026.104087",
         "https://clinicaltrials.gov/study/NCT04475939"
       ],
-      "reviewed_on": "2026-11-17"
+      "reviewed_on": "2026-11-17",
+      "last_reviewed_on": "2026-11-28",
+      "review_note": "Rechecked on 2026-11-28; remains in deferred-negative/contrary-evidence queue. No new page or ToD record created."
     },
     {
       "id": "neo-checkray-2026-11-17",
@@ -676,5 +678,5 @@
   "last_updated": "2026-11-28",
   "last_run_date": "2026-11-28",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
-  "last_run_note": "Morning evidence screen: one new supportive-care RCT was deferred to contrary evidence because the primary overall HRQoL endpoint was not significant; no new negative trial page was created."
+  "last_run_note": "Morning run: SYS-SM nurse-led mHealth trial added as contrary supportive-care evidence; existing ZEAL-1L deferred record rechecked and retained; no negative trial page published."
 }
