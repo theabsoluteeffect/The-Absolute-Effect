@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "run_timestamp": "2026-11-28T19:03:57+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-27-am",
+    "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
+    "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd",
+    "branch_head_after_report_metadata": "27fb560eb00e8eba14a18d89df25d36e931e8d25"
+  },
+  "summary": {
+    "target": 30,
+    "screened_candidates": 11,
+    "new_unique_candidates": 6,
+    "duplicates": 5,
+    "held": 5,
+    "deferred_contrary": 1,
+    "fully_verified_for_publication": 0,
+    "uploaded": 0,
+    "unuploaded": 30,
+    "existing_main_pages_manually_reaudited": 5,
+    "staged_pages_reaudited": 1,
+    "page_repairs": 2,
+    "repair_queue_open": 240,
+    "repair_queue_closed": 79
+  },
+  "uploaded_cases": [],
+  "candidate_disposition_ledger": [
+    {
+      "candidate": "STELLAR",
+      "aliases": [
+        "STELLAR",
+        "Jin et al 2022 phase III"
+      ],
+      "primary_doi": "10.1200/JCO.21.01667",
+      "pmid": "35263150",
+      "registry_id": "NCT02533271",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+      "disposition": "new unique — held for next batch; full page extraction pending",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, ref 47",
+      "follow_up": "10.1200/JCO-25-02387 / PMID 42507974, same underlying study"
+    },
+    {
+      "candidate": "CAO/ARO/AIO-12",
+      "aliases": [
+        "CAO/ARO/AIO-12",
+        "Fokas et al 2019"
+      ],
+      "primary_doi": "10.1200/JCO.19.00308",
+      "pmid": "31150315",
+      "registry_id": "NCT02363374",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+      "disposition": "new unique — held for next batch; full primary/long-term extraction pending",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 51–52",
+      "follow_up": "10.1001/jamaoncol.2021.5445 / PMID 34792531, same underlying study"
+    },
+    {
+      "candidate": "PROSPECT / Alliance N1048",
+      "aliases": [
+        "PROSPECT",
+        "Alliance N1048"
+      ],
+      "primary_doi": "10.1056/NEJMoa2303269",
+      "pmid": "37272534",
+      "registry_id": "NCT01515787",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+      "disposition": "new unique — held for next batch; full noninferiority/PRO extraction pending",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 58–59",
+      "follow_up": "10.1200/JCO.23.00903 / PMID 37270691, same underlying study"
+    },
+    {
+      "candidate": "Investigator-led dostarlimab dMMR rectal study",
+      "aliases": [
+        "NCT04165772",
+        "Cercek phase II",
+        "dostarlimab rectal pilot"
+      ],
+      "primary_doi": "10.1056/NEJMoa2201445",
+      "pmid": "35660797",
+      "registry_id": "NCT04165772",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+      "disposition": "new unique — held for next batch; reconcile 12-patient NEJM, 2024 abstract and FDA-reviewed 50-patient cohort",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 75–76",
+      "follow_up": "10.1200/JCO.2024.42.3_suppl.LBA3512 and FDA 2026 cohort; same underlying study"
+    },
+    {
+      "candidate": "AZUR-1",
+      "aliases": [
+        "NCT05723562",
+        "global dostarlimab phase II"
+      ],
+      "primary_doi": "10.1016/j.annonc.2026.10.1280",
+      "pmid": "42927858",
+      "registry_id": "NCT05723562",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+      "disposition": "new unique — held for next batch; full article/supplement extraction pending",
+      "nccn_reference": "No exact NCCN citation verified; provenance not verified",
+      "publication_date": "2026-10-25",
+      "trial_of_day_eligible": false,
+      "reason_not_tod": "34 days before run; outside rolling 30-day window"
+    },
+    {
+      "candidate": "FOWARC",
+      "aliases": [
+        "Chinese FOWARC phase III"
+      ],
+      "primary_doi": "10.1200/JCO.18.02309",
+      "pmid": "31557064",
+      "registry_id": "NCT01211210",
+      "matched_existing": null,
+      "underlying_study": "genuinely distinct underlying study, but negative/contrary evidence",
+      "disposition": "deferred-negative/contrary evidence; no new page",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 56–57",
+      "additional_primary": "10.1200/JCO.2016.66.6198 / PMID 27480145"
+    },
+    {
+      "candidate": "RAPIDO 5-year follow-up",
+      "aliases": [
+        "RAPIDO",
+        "5-year locoregional failure analysis"
+      ],
+      "primary_doi": "10.1016/S1470-2045(20)30555-6",
+      "pmid": "33301740",
+      "registry_id": "NCT01558921",
+      "matched_existing": "roster/page RAPIDO (trial-pages/rapido/)",
+      "underlying_study": "same underlying study; follow-up publication attaches to canonical RAPIDO page",
+      "disposition": "duplicate/follow-up excluded from new additions",
+      "follow_up_doi": "10.1097/SLA.0000000000005799",
+      "follow_up_pmid": "36661037",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 40 and 48"
+    },
+    {
+      "candidate": "PRODIGE 23",
+      "aliases": [
+        "UNICANCER-PRODIGE 23"
+      ],
+      "primary_doi": "10.1016/S1470-2045(21)00079-6",
+      "pmid": "33862000",
+      "registry_id": "NCT01804790",
+      "matched_existing": "roster/page prodige-23",
+      "underlying_study": "same underlying study already rostered",
+      "disposition": "duplicate excluded",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, ref 41"
+    },
+    {
+      "candidate": "OPRA",
+      "aliases": [
+        "Organ Preservation in Rectal Adenocarcinoma"
+      ],
+      "primary_doi": "10.1200/JCO.22.00032",
+      "pmid": "35483010",
+      "registry_id": "NCT02008656",
+      "matched_existing": "roster/page opra",
+      "underlying_study": "same underlying study already rostered; refs 49/50/71 are protocol, primary results and long-term follow-up",
+      "disposition": "duplicate/follow-up excluded from new additions",
+      "follow_up_doi": "10.1200/JCO.23.01208",
+      "follow_up_pmid": "37883738",
+      "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 49–50 and 71"
+    },
+    {
+      "candidate": "KEYNOTE-A18 5-year follow-up abstract",
+      "aliases": [
+        "KEYNOTE-A18",
+        "ENGOT-cx11/GOG-3047"
+      ],
+      "primary_doi": "10.1016/S0140-6736(24)00317-9",
+      "pmid": "38521086",
+      "registry_id": "NCT04221945",
+      "matched_existing": "roster/page keynote-a18",
+      "underlying_study": "same underlying study; 2026 abstract attaches to existing page",
+      "disposition": "duplicate/follow-up attached; no new trial page",
+      "follow_up_doi": "10.1016/j.ijgc.2026.105141",
+      "follow_up_pmid": null
+    },
+    {
+      "candidate": "ATOMIC / Alliance A021502",
+      "aliases": [
+        "ATOMIC",
+        "A021502",
+        "ML39057"
+      ],
+      "primary_doi": "10.1056/NEJMoa2507874",
+      "pmid": "41880612",
+      "registry_id": "NCT02912559",
+      "matched_existing": "roster/page atomic",
+      "underlying_study": "same underlying study already rostered; FDA approval is a regulatory update, not a new trial",
+      "disposition": "duplicate excluded; existing page repaired for FDA approval and NNT/NNH accuracy",
+      "regulatory_source": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer"
+    }
+  ],
+  "repair_items": {
+    "reviewed": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape",
+      "atomic",
+      "chlorophyllin-tnt",
+      "NCCN Rectal Cancer Insights v3.2024",
+      "active 30-page release gate"
+    ],
+    "closed": [
+      "dated-context-atomic",
+      "nnt-nnh-atomic-grade3-4-ae"
+    ],
+    "open": [
+      "16 active-batch source-extraction holds",
+      "7 staged pages incomplete/partially reviewed",
+      "52 dated-current-practice context gaps",
+      "browser-rendered QA",
+      "local release validator",
+      "NCCN Rectal Cancer current 2026 guideline freshness",
+      "NCCN Colon Cancer current 2026 guideline freshness",
+      "KEYNOTE-A18 5-year abstract numeric extraction"
+    ]
+  },
+  "nccn_guideline_review": {
+    "title": "NCCN Guidelines Insights: Rectal Cancer, Version 3.2024",
+    "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/6/article-p366.pdf",
+    "scope": "Complete public Insights article/reference list only; not the full NCCN guideline",
+    "references": [
+      40,
+      41,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      56,
+      57,
+      58,
+      59,
+      71,
+      75,
+      76
+    ],
+    "current_2026_rectal_full_guideline": "not accessible; freshness task remains open",
+    "current_2026_colon_full_guideline": "not accessible; older 2018 Insights not used as current"
+  },
+  "active_batch_status": {
+    "branch": "atlas-batch/2026-11-27-am",
+    "target": 30,
+    "staged": 30,
+    "source_verified": 7,
+    "held": 16,
+    "partially_reviewed": 7,
+    "release_ready": 0,
+    "uploaded": 0,
+    "pr_opened": false,
+    "merged": false
+  },
+  "validation": {
+    "strict_release_validator": "passed on previous commit 265902; current head validation pending",
+    "outcome_visualization_audit": "passed static structural audit on previous commit 2bfa; browser QA incomplete",
+    "local_validator": "not run — DNS resolution failure",
+    "pr_checks": "not run — no PR",
+    "deployment": "not verified"
+  },
+  "next_actions": [
+    "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
+    "Reattempt local clone and run the local strict release validator.",
+    "Complete browser-rendered outcome visualization QA for every staged page.",
+    "Review the 52 remaining dated-current-practice context gaps using exact current guideline versions and sources.",
+    "Only after exactly 30 new unique studies pass source review and local validation, open a PR and wait for all checks; do not merge a partial batch."
+  ]
+}
