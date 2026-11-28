@@ -79,7 +79,8 @@ try {
   const archive = JSON.parse(fs.readFileSync(path.join(dataDir, 'trial-archive.json'), 'utf8'));
   for (const row of (Array.isArray(archive) ? archive : [archive])) {
     for (const t of batch) {
-      if (row.duplicate_of === t.id) continue;
+      // An archived Trial-of-the-Day record with the same canonical ID is the same study, not a duplicate.
+      if (row.id === t.id || row.duplicate_of === t.id) continue;
       const rowName = canonicalName(row.trial || row.title || row.name);
       if (rowName && rowName === canonicalName(t.trial)) fail(t.id, 'Duplicate trial reference in trial-archive.json');
       const rowDoi = extractDoi(row.primary) || extractDoi(row.doi) || extractDoi(row.url);
