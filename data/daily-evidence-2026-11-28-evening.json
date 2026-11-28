@@ -10,7 +10,7 @@
     "working_branch": "atlas-batch/2026-11-27-am",
     "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
     "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd",
-    "branch_head_after_report_metadata": "27fb560eb00e8eba14a18d89df25d36e931e8d25",
+    "branch_head_after_report_metadata": "b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d",
     "open_prs": 0
   },
   "preflight": {
@@ -385,9 +385,23 @@
     "strict_release_validator_previous_commit": "passed — 0 errors on 265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
     "outcome_visualization_audit_previous_commit": "passed static audit on 2bfa83ad0043fc381842e911ab6d78dac2f642b0",
     "current_branch_head_validation": "pending after 28 Nov evening metadata updates",
-    "local_release_validator": "not run — git clone failed DNS resolution",
-    "browser_rendered_qa": "not run",
-    "pr_checks": "not applicable — no PR opened"
+    "local_release_validator": "not run — retry git ls-remote/clone failed DNS resolution for github.com",
+    "browser_rendered_qa": "not run; the automated HTML/outcome audit is not a substitute for browser-rendered inspection",
+    "pr_checks": "not applicable — no PR opened",
+    "latest_workflow_run": {
+      "id": 46152071343,
+      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46152071343",
+      "name": "Outcome visualization audit",
+      "conclusion": "success",
+      "head_sha": "8ef056c33bb5ca463e544053cd0c7a71bf013083",
+      "steps": {
+        "strict_trial_release_validator": "success",
+        "audit_all_roster_and_trial_html_pages": "success",
+        "upload_visual_audit_report": "success"
+      }
+    },
+    "current_branch_page_roster_cache_identity": "The ATOMIC page, master roster and DOI-title cache file SHAs at the final branch head b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d are identical to those validated on 8ef056c33bb5ca463e544053cd0c7a71bf013083; later commits changed only queue/ledger/report/evidence metadata.",
+    "deployment": "not verified — no merge or production deployment"
   },
   "next_actions": [
     "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
