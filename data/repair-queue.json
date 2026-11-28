@@ -5698,7 +5698,7 @@
       "status": "open",
       "created_on": "2026-11-27",
       "last_reviewed_on": "2026-11-28",
-      "issue": "Thirty unique page drafts remain staged on atlas-batch/2026-11-27-am. The last completed strict validator reported 136 errors. One Chlorophyllin page/roster repair and one validator correction for exact canonical-ID self-matches in the Trial-of-the-Day archive were pushed; the new Outcome visualization audit is queued. Local validator and browser-rendered QA remain unavailable; no PR, merge or production upload.",
+      "issue": "The 30-study staged batch passes the strict GitHub release validator (30 records, 0 errors) and the static outcome-visualization audit on commit 265902e3c5dc6cd1417f3b0a9cec76e525e4d407. The static audit found 490/490 roster pages, no missing primary-source sections or renderers, but 53 pages still lack dated current-practice context. The latest branch head a6473ac contains only status metadata after the passing commit. Local release validator and browser-rendered QA remain unrun; 16 candidate pages remain held for full source extraction; no PR/merge/production upload.",
       "evidence": [
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/bc1018b72a4d4c7b1d6cecf031c1f39226082b3d",
         "Container-side Git clone failed due network/DNS; no local working tree is available.",
@@ -5709,9 +5709,14 @@
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/2c4b8e4982f69b9d928bc897806e270558ac4191",
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/a524d653c2dc3b26b35e00f6ee416b214f508190",
         "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46099549382",
-        "Container-side Git clone retried on 2026-11-28; DNS resolution for github.com still fails."
+        "Container-side Git clone retried on 2026-11-28; DNS resolution for github.com still fails.",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100135889",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100227820",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100227820/artifacts/15245465087",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/dc5d81dde88bcb8b24a81cac75d5903544f8b2e3",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/commit/265902e3c5dc6cd1417f3b0a9cec76e525e4d407"
       ],
-      "action": "Wait for the queued GitHub outcome/strict release audit and inspect its report. Resolve all remaining page/source/absolute-effect errors on this same branch; obtain a local clone and run the local release validator; complete browser-rendered QA; re-read every changed page/data file; open a PR only when exactly 30 unique studies are fully source-verified and all checks pass.",
+      "action": "Obtain a local working clone and run the local release validator; manually inspect all 30 primary publications and resolve the 16 held source-extraction items; review the 53 dated-current-practice context gaps with exact current guideline/version provenance; complete browser-rendered visual QA; then open a PR only after the exact-30 batch passes local validation and every PR check.",
       "validation_findings": {
         "workflow_run_id": 46010938069,
         "strict_validator_errors": 136,
@@ -5995,9 +6000,9 @@
           "NNH text does not match any structured primary/additional endpoint": 1
         },
         "outcome_visualization_audit": "skipped",
-        "local_validator": "not run — clone failed because github.com DNS resolution is unavailable",
+        "local_validator": "not run — Git clone failed due DNS resolution",
         "browser_rendered_qa": "not run",
-        "last_completed_strict_validator_errors": 136,
+        "last_completed_strict_validator_errors": 0,
         "last_completed_validator_run_id": 46010938069,
         "latest_workflow_run_id": 46099549382,
         "latest_workflow_status": "queued",
@@ -6005,7 +6010,22 @@
         "known_repairs": [
           "Chlorophyllin page title/H1 and required section headings normalized; raw DOI and structured absolute_effect added; shared renderer included.",
           "Archive duplicate audit now skips an archive record with the same canonical trial ID; cross-ID DOI/registry/PMID duplicate checks remain active."
-        ]
+        ],
+        "last_completed_strict_validator_run_id": 46100227820,
+        "last_completed_strict_validator_commit": "265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+        "strict_validator_status": "passed",
+        "latest_visual_audit_run_id": 46100227820,
+        "visual_audit_status": "passed_static_structural_audit",
+        "roster_pages_found": 490,
+        "roster_pages_missing": 0,
+        "missing_primary_source_sections": 0,
+        "renderer_missing": 0,
+        "manual_review_flags": 0,
+        "missing_dated_current_practice_context": 53,
+        "short_pages": 0,
+        "redirect_stub_count": 1,
+        "latest_branch_head": "a6473ac1ac7674ea8f5cdb9058673c23fffd4f74",
+        "latest_head_validation": "status-only roster metadata commit after passing page-validation commit"
       }
     },
     {
@@ -6019,7 +6039,7 @@
       "status": "held",
       "created_on": "2026-11-28",
       "last_reviewed_on": "2026-11-28",
-      "issue": "New unique phase III EGFR-mutated NSCLC study with verified primary DOI/title, PMID and NCT registry. The PubMed abstract provides randomization, primary PFS, dose schedule, follow-up and grade ≥3 TRAEs, but the full paper/supplement has not been reconciled for subgroup detail, complete safety/discontinuation and any PRO/QoL reporting.",
+      "issue": "New unique phase III EGFR-mutated NSCLC study with verified primary DOI/title, PMID and NCT registry. First online publication was 2026-10-26 (issue date 2026-11-07), so it is not within the strict preceding-30-day Trial-of-the-Day window. The PubMed abstract provides randomization, primary PFS, dose schedule, follow-up and grade ≥3 TRAEs, but the full paper/supplement has not been reconciled for subgroup detail, complete safety/discontinuation and any PRO/QoL reporting.",
       "evidence": [
         "https://pubmed.ncbi.nlm.nih.gov/42933457/",
         "https://doi.org/10.1016/S0140-6736(26)01899-4",
@@ -6035,7 +6055,11 @@
         "primary_abstract_reviewed": true,
         "full_text_supplement_reviewed": false,
         "nnt": "Not appropriate from median PFS/HR alone; no same-horizon absolute PFS rates in accessible abstract.",
-        "nccn_provenance": "not verified — official source inaccessible; do not hold solely for this reason."
+        "nccn_provenance": "not verified — official source inaccessible; do not hold solely for this reason.",
+        "publication_first_online": "2026-10-26",
+        "issue_date": "2026-11-07",
+        "trial_of_the_day_eligible": false,
+        "trial_of_the_day_reason": "First online publication 2026-10-26 is 33 days before the 2026-11-28 run; the later issue date is 2026-11-07. Conservatively not selected for Trial-of-the-Day under the 30-day rule."
       }
     },
     {
@@ -6114,6 +6138,29 @@
         "publication_first_online": "2026-08-03",
         "registry_id": "jRCT1030250844",
         "nnt": "Not applicable — no outcome results."
+      }
+    },
+    {
+      "issue_id": "global-dated-current-practice-context-audit-2026-11-28",
+      "trial_id": null,
+      "canonical_trial_id": null,
+      "canonical_page_path": "trial-pages/",
+      "category": "guideline_freshness_and_dated_context",
+      "severity": "high",
+      "status": "open",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "The latest static outcome audit on 2026-11-28 found 53 roster pages without dated current-practice context. The audit report artifact contains the page-level list; the complete list has not yet been manually reviewed against current official guidelines.",
+      "evidence": [
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100227820",
+        "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46100227820/artifacts/15245465087",
+        "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1459"
+      ],
+      "action": "Retrieve the artifact's page-level findings, inspect each canonical page and its primary publication, verify current guideline title/version/date/section/reference where accessible, and keep each inaccessible NCCN mapping task open. Do not bulk-close based on static audit alone.",
+      "verification": {
+        "static_audit_count": 53,
+        "manual_page_review_completed": false,
+        "nccn_full_guideline_access": "not verified — source inaccessible"
       }
     }
   ],
@@ -7601,6 +7648,33 @@
       "deployment_verified": false,
       "report_path": "data/daily-reports/2026-11-28-morning.json",
       "daily_evidence_path": "data/daily-evidence-2026-11-28-morning.json"
+    },
+    {
+      "run_date": "2026-11-28",
+      "cycle": "morning",
+      "timestamp": "2026-11-28T08:04:24+05:30",
+      "branch": "atlas-batch/2026-11-27-am",
+      "strict_release_validator_run_id": 46100227820,
+      "strict_release_validator_commit": "265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+      "strict_release_validator_errors": 0,
+      "outcome_visualization_audit_run_id": 46100227820,
+      "outcome_visualization_audit_status": "passed_static_structural",
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "missing_primary_source_sections": 0,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "missing_dated_current_practice_context": 53,
+      "short_pages": 0,
+      "redirect_stub_count": 1,
+      "local_validator": "not run — DNS failure",
+      "browser_rendered_qa": false,
+      "pr_opened": false,
+      "merged": false,
+      "deployment_verified": false,
+      "uploaded": 0,
+      "report_path": "data/daily-reports/2026-11-28-morning.json",
+      "daily_evidence_path": "data/daily-evidence-2026-11-28-morning.json"
     }
   ],
   "previous_partial_runs": [
@@ -7717,7 +7791,11 @@
     "validator_fixes": 1,
     "uploaded": 0,
     "blocker": "Active 2026-11-27 batch remains unreleased; local clone/validator unavailable; new GitHub workflow queued.",
-    "next_action": "Inspect workflow report, resolve remaining strict validator errors, run local release validator and browser-rendered QA; no PR until exact 30-page gate passes."
+    "next_action": "Obtain local clone; inspect all primary sources and 53 dated-context tasks; browser-rendered QA; PR only after local validator and full source verification.",
+    "strict_release_validator": "passed on 265902 (0 errors)",
+    "outcome_visualization_audit": "passed static audit; 53 dated-context gaps",
+    "local_validator": "not run — DNS resolution failure",
+    "browser_rendered_qa": false
   },
   "last_updated": "2026-11-28",
   "last_run": {
@@ -7739,21 +7817,35 @@
     "held": 4,
     "deferred_contrary": 1,
     "existing_queue_candidates_rechecked": 2,
-    "strict_release_validator": "pending after latest push",
+    "strict_release_validator": "passed",
     "strict_release_validator_errors_last_completed": 136,
     "latest_workflow_run_id": 46099549382,
     "latest_workflow_status": "queued",
-    "outcome_visualization_audit": "pending",
-    "local_release_validator": "not run — clone DNS resolution failure",
+    "outcome_visualization_audit": "passed — static structural audit",
+    "local_release_validator": "not run — Git clone failed DNS resolution",
     "browser_rendered_qa": "not run",
     "pr_opened": false,
     "merged": false,
     "deployment_verified": false,
-    "uploaded": 0
+    "uploaded": 0,
+    "branch_head_after_page_repairs": "265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+    "strict_release_validator_errors": 0,
+    "strict_release_validator_run_id": 46100227820,
+    "outcome_visualization_audit_run_id": 46100227820,
+    "audit_summary": {
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "missing_primary_source_sections": 0,
+      "renderer_missing": 0,
+      "manual_review_flags": 0,
+      "missing_dated_current_practice_context": 53,
+      "short_pages": 0,
+      "redirect_stub_count": 1
+    }
   },
   "generated_at": "2026-11-28T08:04:24+05:30",
   "summary": {
-    "open_items": 233,
+    "open_items": 234,
     "resolved_items": 77,
     "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
     "release_holds_in_active_batch": 1,
@@ -7762,7 +7854,8 @@
     "last_run_note": "28 Nov morning: four existing flagged pages re-read; one staged Chlorophyllin page/roster repair and one strict-validator self-match correction committed to the active review branch; four new unique candidates held (two results candidates, two protocol-only); one supportive-care RCT deferred to contrary evidence; five duplicates excluded; no pages uploaded.",
     "last_updated": "2026-11-28",
     "last_reviewed_on": "2026-11-28",
-    "release_gate_status": "open"
+    "release_gate_status": "strict validator passed on 265902; local validator/browser QA and clinical source review remain open",
+    "missing_dated_context_count": 53
   },
   "updated_on": "2026-11-28",
   "last_run_date": "2026-11-28",
