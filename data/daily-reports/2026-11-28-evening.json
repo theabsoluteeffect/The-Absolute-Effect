@@ -9,10 +9,11 @@
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
     "working_branch": "atlas-batch/2026-11-27-am",
     "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
-    "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd",
+    "branch_head_after_data_updates": "8986db5260f8b6923499f0008abdb999407378e3",
     "branch_head_after_report_metadata": "b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d",
-    "last_validated_page_roster_cache_commit": "8ef056c33bb5ca463e544053cd0c7a71bf013083",
-    "final_branch_head_before_report_update": "b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d"
+    "last_validated_page_roster_cache_commit": "8986db5260f8b6923499f0008abdb999407378e3",
+    "final_branch_head_before_report_update": "8986db5260f8b6923499f0008abdb999407378e3",
+    "latest_validated_commit": "8986db5260f8b6923499f0008abdb999407378e3"
   },
   "summary": {
     "target": 30,
@@ -25,10 +26,10 @@
     "uploaded": 0,
     "unuploaded": 30,
     "existing_main_pages_manually_reaudited": 5,
-    "staged_pages_reaudited": 1,
-    "page_repairs": 2,
+    "staged_pages_reaudited": 2,
+    "page_repairs": 3,
     "repair_queue_open": 240,
-    "repair_queue_closed": 79
+    "repair_queue_closed": 80
   },
   "uploaded_cases": [],
   "candidate_disposition_ledger": [
@@ -43,9 +44,10 @@
       "registry_id": "NCT02533271",
       "matched_existing": null,
       "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
-      "disposition": "new unique — held for next batch; full page extraction pending",
+      "disposition": "new unique — primary 2022 report and 2026 5-year follow-up checked; held for full page extraction",
       "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, ref 47",
-      "follow_up": "10.1200/JCO-25-02387 / PMID 42507974, same underlying study"
+      "follow_up": "10.1200/JCO-25-02387 / PMID 42507974, same underlying study",
+      "primary_source_review": "599 randomized; 3-year DFS 64.5% vs 62.3%, HR 0.883, P<.001 for noninferiority; 3-year OS 86.5% vs 75.1%, P=.033; grade III–V acute toxicity 26.5% vs 12.6%. 5-year follow-up: DFS 62.0% vs 58.7%, HR 0.849 (95% CI 0.662–1.089); OS 78.1% vs 69.7%, HR 0.739 (95% CI 0.550–0.993)."
     },
     {
       "candidate": "CAO/ARO/AIO-12",
@@ -58,9 +60,10 @@
       "registry_id": "NCT02363374",
       "matched_existing": null,
       "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
-      "disposition": "new unique — held for next batch; full primary/long-term extraction pending",
+      "disposition": "new unique — primary report and long-term JAMA Oncology follow-up checked; held for full page extraction",
       "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 51–52",
-      "follow_up": "10.1001/jamaoncol.2021.5445 / PMID 34792531, same underlying study"
+      "follow_up": "10.1001/jamaoncol.2021.5445 / PMID 34792531, same underlying study",
+      "primary_source_review": "311 enrolled, 306 evaluable; pCR 17% vs 25%; 3-year DFS 73% in both arms, HR 0.95 (95% CI 0.63–1.45), P=.82; long-term follow-up includes QoL and chronic toxicity; no NNT from DFS."
     },
     {
       "candidate": "PROSPECT / Alliance N1048",
@@ -73,9 +76,10 @@
       "registry_id": "NCT01515787",
       "matched_existing": null,
       "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
-      "disposition": "new unique — held for next batch; full noninferiority/PRO extraction pending",
+      "disposition": "new unique — primary NEJM report and PRO follow-up checked; held for full page extraction",
       "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 58–59",
-      "follow_up": "10.1200/JCO.23.00903 / PMID 37270691, same underlying study"
+      "follow_up": "10.1200/JCO.23.00903 / PMID 37270691, same underlying study",
+      "primary_source_review": "1,194 randomized, 1,128 treated; FOLFOX with selective CRT noninferior to 5FUCRT; 5-year DFS 80.8% vs 78.6%, HR 0.92 (90.2% CI 0.74–1.14), P=.005 for noninferiority; PRO cohort n=940, bowel symptoms and function differed by treatment phase."
     },
     {
       "candidate": "Investigator-led dostarlimab dMMR rectal study",
@@ -89,9 +93,10 @@
       "registry_id": "NCT04165772",
       "matched_existing": null,
       "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
-      "disposition": "new unique — held for next batch; reconcile 12-patient NEJM, 2024 abstract and FDA-reviewed 50-patient cohort",
+      "disposition": "new unique — initial NEJM report and 2025 NEJM cohort follow-up checked; held for cohort-level reconciliation",
       "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 75–76",
-      "follow_up": "10.1200/JCO.2024.42.3_suppl.LBA3512 and FDA 2026 cohort; same underlying study"
+      "follow_up": "10.1200/JCO.2024.42.3_suppl.LBA3512 and FDA 2026 cohort; same underlying study",
+      "primary_source_review": "Initial report 12/12 cCR after 6 months dostarlimab; 2025 cohort 1 rectal-cancer analysis: 49/49 completers cCR and elected nonoperative management; 37 sustained cCR at 12 months. Nonrectal cohort denominators kept separate."
     },
     {
       "candidate": "AZUR-1",
@@ -104,11 +109,12 @@
       "registry_id": "NCT05723562",
       "matched_existing": null,
       "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
-      "disposition": "new unique — held for next batch; full article/supplement extraction pending",
+      "disposition": "new unique — primary abstract checked; held for full article/supplement extraction",
       "nccn_reference": "No exact NCCN citation verified; provenance not verified",
       "publication_date": "2026-10-25",
       "trial_of_day_eligible": false,
-      "reason_not_tod": "34 days before run; outside rolling 30-day window"
+      "reason_not_tod": "34 days before run; outside rolling 30-day window",
+      "primary_source_review": "154 enrolled; among 144 with ≥12 months follow-up, investigator cCR12 68%, ICR cCR12 47% among 116 evaluable; 12/15 surgical patients pCR; grade ≥3 immune-mediated AEs 3%; full tables pending."
     },
     {
       "candidate": "FOWARC",
@@ -122,7 +128,10 @@
       "underlying_study": "genuinely distinct underlying study, but negative/contrary evidence",
       "disposition": "deferred-negative/contrary evidence; no new page",
       "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 56–57",
-      "additional_primary": "10.1200/JCO.2016.66.6198 / PMID 27480145"
+      "additional_primary": "10.1200/JCO.2016.66.6198 / PMID 27480145",
+      "follow_up_doi": "10.1200/JCO-24-01676",
+      "follow_up_pmid": "39671537",
+      "follow_up_results": "10-year DFS 52.5%, 62.6%, 60.5% (P=.56); locoregional recurrence 10.8%, 8.0%, 9.6% (P=.57); OS 65.9%, 72.3%, 73.4% (P=.90). Same underlying FOWARC study; deferred contrary evidence."
     },
     {
       "candidate": "RAPIDO 5-year follow-up",
@@ -208,22 +217,28 @@
       "atomic",
       "chlorophyllin-tnt",
       "NCCN Rectal Cancer Insights v3.2024",
-      "active 30-page release gate"
+      "active 30-page release gate",
+      "hokusai-vte-cancer",
+      "Hokusai VTE Cancer fixed-horizon NNH review",
+      "FOWARC 10-year follow-up"
     ],
     "closed": [
       "dated-context-atomic",
-      "nnt-nnh-atomic-grade3-4-ae"
+      "nnt-nnh-atomic-grade3-4-ae",
+      "hokusai-vte-cancer-nnh-fixed-horizon"
     ],
     "open": [
       "16 active-batch source-extraction holds",
       "7 staged pages incomplete/partially reviewed",
-      "52 dated-current-practice context gaps",
+      "53 dated-current-practice context gaps",
       "browser-rendered QA",
       "local release validator",
       "NCCN Rectal Cancer current 2026 guideline freshness",
       "NCCN Colon Cancer current 2026 guideline freshness",
       "KEYNOTE-A18 5-year abstract numeric extraction"
-    ]
+    ],
+    "queue_open": 240,
+    "queue_closed": 80
   },
   "nccn_guideline_review": {
     "title": "NCCN Guidelines Insights: Rectal Cancer, Version 3.2024",
@@ -259,21 +274,72 @@
     "release_ready": 0,
     "uploaded": 0,
     "pr_opened": false,
-    "merged": false
+    "merged": false,
+    "latest_validated_commit": "8986db5260f8b6923499f0008abdb999407378e3",
+    "preview_deployed": true,
+    "preview_url": "https://atlas-batch-2026-11-27-am.theabsoluteeffect.pages.dev"
   },
   "validation": {
-    "strict_release_validator": "passed on 2026-11-28 workflow 46152071343 at commit 8ef056c; the ATOMIC page, roster and DOI-cache file SHAs are identical at final branch head b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d. Later commits changed only queue/ledger/report/evidence metadata.",
-    "outcome_visualization_audit": "passed on workflow 46152071343 at commit 8ef056c; automated HTML/outcome audit only; browser-rendered QA remains incomplete.",
-    "local_validator": "not run — repeated git ls-remote/clone failed DNS resolution for github.com",
-    "pr_checks": "not run — no PR opened",
-    "deployment": "not verified — no merge or production deployment",
-    "latest_workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46152071343"
+    "strict_release_validator": "passed on GitHub Actions workflow 46153213166 at commit 8986db5260f8b6923499f0008abdb999407378e3; latest_batch_date 2026-11-27, latest_batch_count 30, error_count 0.",
+    "outcome_visualization_audit": "passed static audit on workflow 46153213166 at commit 8986db5260f8b6923499f0008abdb999407378e3; 490 roster pages found, 0 missing, 490 canonical HTML pages, 0 manual-review flags, 0 renderer-missing, 0 missing primary-source flags, 53 missing dated-context flags. This is not browser-rendered QA.",
+    "local_validator": "not run — git ls-remote/clone from the execution environment failed DNS resolution for github.com; the identical strict validator script ran successfully in GitHub Actions.",
+    "browser_rendered_qa": "not completed — branch preview deployment succeeded, but this execution environment could not open/render the pages in an interactive browser; keep manual visual QA items open.",
+    "pr_checks": "not run — no PR opened because 16 full-source extraction holds and 7 partially reviewed pages remain; local validator and browser-rendered QA gates are not complete.",
+    "deployment": "Cloudflare branch preview deployment succeeded for the unmerged branch; production deployment not verified because no PR merge occurred.",
+    "latest_workflow_run_id": 46153213166,
+    "latest_workflow_run_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46153213166",
+    "outcome_audit_artifact_id": 15266731213,
+    "outcome_audit_artifact_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46153213166/artifacts/15266731213",
+    "branch_preview_url": "https://atlas-batch-2026-11-27-am.theabsoluteeffect.pages.dev",
+    "unique_preview_url": "https://448f66e5.theabsoluteeffect.pages.dev"
   },
   "next_actions": [
-    "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
-    "Reattempt local clone and run the local strict release validator.",
-    "Complete browser-rendered outcome visualization QA for every staged page.",
-    "Review the 52 remaining dated-current-practice context gaps using exact current guideline versions and sources.",
-    "Only after exactly 30 new unique studies pass source review and local validation, open a PR and wait for all checks; do not merge a partial batch."
-  ]
+    "Resolve the 16 full-source extraction holds and 7 partially reviewed staged pages; keep every uncertain case held.",
+    "Complete browser-rendered visual QA for all 30 staged pages; the static audit does not replace it.",
+    "Run the local release validator when repository DNS/clone access is restored; remote CI passed on the current page/roster commit.",
+    "Review the 53 dated-current-practice context gaps against exact current guideline versions and primary sources; preserve freshness tasks where NCCN is inaccessible.",
+    "Open a PR only after all 30 unique pages are fully source-verified and all local/browser QA gates pass; do not merge a partial batch."
+  ],
+  "last_continued_at": "2026-11-28T19:31:51+05:30",
+  "nnt_nnh_visualization_qa": {
+    "hokusai_vte_cancer": {
+      "status": "corrected on branch",
+      "original": "NNH 35 for major bleeding over variable 6–12-month treatment duration",
+      "corrected": "No fixed-horizon NNH; retain descriptive 6.9% vs 4.0% major bleeding and 2.9 percentage-point difference",
+      "reason": "Median treatment exposure differed between arms (211 vs 184 days; PMID 30060256); no common fixed-time risk estimate.",
+      "page_path": "trial-pages/hokusai-vte-cancer/index.html"
+    },
+    "atomic": {
+      "status": "prior repair retained",
+      "endpoint": "3-year DFS",
+      "absolute_benefit_pp": 10.1,
+      "nnt": 10,
+      "calculation": "ceil(100/10.1)=10",
+      "nnh": "not applicable because median exposure differed 10.8 vs 5.4 months"
+    },
+    "chlorophyllin_tnt": {
+      "status": "static arithmetic checked",
+      "nnt_values": [
+        4,
+        4
+      ],
+      "note": "Full regimen/supplement extraction and browser QA remain open."
+    },
+    "strict_release_validator": {
+      "status": "passed",
+      "commit": "8986db5260f8b6923499f0008abdb999407378e3",
+      "error_count": 0,
+      "batch_count": 30
+    },
+    "visual_audit": {
+      "status": "static audit passed",
+      "commit": "8986db5260f8b6923499f0008abdb999407378e3",
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "manual_review": 0,
+      "renderer_missing": 0,
+      "missing_primary_source": 0,
+      "missing_dated_context": 53
+    }
+  }
 }

@@ -8231,15 +8231,15 @@
   "summary": {
     "open_items": 240,
     "resolved_items": 80,
-    "note": "240 open and 79 resolved items after the 28 Nov evening review. Eleven candidates screened; six new unique studies identified (five held for full extraction/next batch, one deferred as contrary evidence), five duplicates/follow-ups excluded. Two evidence-backed page repairs completed on the active branch. The 30-page batch remains unreleased: 0/30 uploaded; local validator and browser-rendered QA remain pending.",
+    "note": "240 open and 80 resolved items after the 28 Nov evening review. Eleven candidates screened: six new unique underlying studies (five held for full extraction/next batch, one deferred as contrary evidence), five duplicates/follow-ups excluded. Three evidence-backed page repairs completed on the active branch. The 30-page batch remains unreleased: 0/30 uploaded; remote strict validator passed on commit 8986db5, but local validator and browser-rendered QA remain pending.",
     "release_holds_in_active_batch": 16,
     "release_holds_in_last_merged_batch": 4,
-    "dated_context_items_open": 52,
-    "last_run_note": "28 Nov evening: 11 candidates screened; 6 new unique (5 held, FOWARC deferred), 5 duplicates/follow-ups; re-audited 5 existing pages and 1 staged page; KEYNOTE-A18 follow-up attached; ATOMIC NNH corrected and FDA context added; 0 uploads. Hokusai VTE Cancer: NNH 35 removed after fixed-horizon review; full source-extraction hold remains open.",
+    "dated_context_items_open": 53,
+    "last_run_note": "28 Nov evening: 11 candidates screened; six new unique (five held, FOWARC deferred), five duplicates/follow-ups; re-audited five existing main pages and two staged pages; KEYNOTE-A18 follow-up attached; ATOMIC and Hokusai NNH claims corrected; 0 uploads.",
     "last_updated": "2026-11-28",
     "last_reviewed_on": "2026-11-28",
-    "release_gate_status": "INCOMPLETE: remote strict validator passed on prior commit; current head validation pending; local validator and browser-rendered QA not run; 16 source-extraction holds remain; no PR.",
-    "missing_dated_context_count": 52
+    "release_gate_status": "INCOMPLETE: remote strict validator passed on 8986db5260f8b6923499f0008abdb999407378e3; 16 source-extraction holds and 7 partially reviewed pages remain; 53 dated-context gaps; local validator and browser-rendered QA incomplete; no PR.",
+    "missing_dated_context_count": 53
   },
   "updated_on": "2026-11-28",
   "last_run_date": "2026-11-28",

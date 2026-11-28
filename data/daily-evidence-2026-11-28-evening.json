@@ -51,7 +51,7 @@
     "page_repairs": 3,
     "manual_full_recursive_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false,
-    "dated_current_practice_context_gaps": 52,
+    "dated_current_practice_context_gaps": 53,
     "closed_item_ids": [
       "hokusai-vte-cancer-nnh-fixed-horizon"
     ],
@@ -390,23 +390,42 @@
     "strict_release_validator_previous_commit": "passed — 0 errors on 265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
     "outcome_visualization_audit_previous_commit": "passed static audit on 2bfa83ad0043fc381842e911ab6d78dac2f642b0",
     "current_branch_head_validation": "pending after 28 Nov evening metadata updates",
-    "local_release_validator": "not run — retry git ls-remote/clone failed DNS resolution for github.com",
-    "browser_rendered_qa": "not run; the automated HTML/outcome audit is not a substitute for browser-rendered inspection",
-    "pr_checks": "not applicable — no PR opened",
+    "local_release_validator": "not run — execution environment git clone/ls-remote DNS resolution failure; remote CI ran the same script successfully",
+    "browser_rendered_qa": "not completed; branch preview deployment exists but the page could not be opened in an interactive browser here",
+    "pr_checks": "not run; no PR opened",
     "latest_workflow_run": {
-      "id": 46152071343,
-      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46152071343",
+      "id": 46153213166,
+      "url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46153213166",
       "name": "Outcome visualization audit",
       "conclusion": "success",
-      "head_sha": "8ef056c33bb5ca463e544053cd0c7a71bf013083",
-      "steps": {
-        "strict_trial_release_validator": "success",
-        "audit_all_roster_and_trial_html_pages": "success",
-        "upload_visual_audit_report": "success"
-      }
+      "head_sha": "8986db5260f8b6923499f0008abdb999407378e3",
+      "strict_trial_release_validator": "success — 0 errors",
+      "audit_all_roster_and_trial_html_pages": "success"
     },
     "current_branch_page_roster_cache_identity": "The ATOMIC page, master roster and DOI-title cache file SHAs at the final branch head b2db175c1f7d8ff07aa0c9ca62d657e76c4f4e7d are identical to those validated on 8ef056c33bb5ca463e544053cd0c7a71bf013083; later commits changed only queue/ledger/report/evidence metadata.",
-    "deployment": "not verified — no merge or production deployment"
+    "deployment": "not verified — no merge or production deployment",
+    "strict_release_validator_current": "passed — 0 errors; latest batch count 30 on commit 8986db5260f8b6923499f0008abdb999407378e3; workflow 46153213166",
+    "outcome_visualization_audit_current": {
+      "status": "passed static audit",
+      "workflow_run_id": 46153213166,
+      "commit": "8986db5260f8b6923499f0008abdb999407378e3",
+      "roster_pages_found": 490,
+      "roster_pages_missing": 0,
+      "all_trial_html_pages": 490,
+      "manual_review": 0,
+      "renderer_missing": 0,
+      "missing_primary_source": 0,
+      "missing_dated_context": 53,
+      "artifact_id": 15266731213,
+      "artifact_url": "https://github.com/theabsoluteeffect/The-Absolute-Effect/actions/runs/46153213166/artifacts/15266731213"
+    },
+    "branch_preview_deployment": {
+      "status": "success",
+      "commit": "8986db5260f8b6923499f0008abdb999407378e3",
+      "url": "https://atlas-batch-2026-11-27-am.theabsoluteeffect.pages.dev",
+      "unique_preview_url": "https://448f66e5.theabsoluteeffect.pages.dev",
+      "production": false
+    }
   },
   "next_actions": [
     "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
