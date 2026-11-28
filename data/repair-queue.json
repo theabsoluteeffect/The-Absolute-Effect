@@ -179,6 +179,24 @@
           "chlorophyllin-tnt": "Grade≥2 combined acute toxicity reduction 29.6 pp (NNT4); grade≥3 reduction 25.8 pp (NNT4). Primary JAMA Oncology article abstract and page values checked; full regimen/supplement extraction remains open."
         },
         "status": "partial source and static visualization review completed; full recursive manual audit, browser-rendered QA and current guideline freshness remain open."
+      },
+      {
+        "date": "2026-11-28",
+        "cycle": "evening",
+        "branch": "atlas-batch/2026-11-27-am",
+        "reviewed_pages": [
+          "atomic"
+        ],
+        "sources": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13020640/",
+          "https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer",
+          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761034s065lbl.pdf"
+        ],
+        "visualization_review": "Inspected absolute-effect component source code and page data attributes; removed invalid NNH pictogram and corrected absolute percentage-point attributes.",
+        "findings": {
+          "atomic": "3-year DFS 86.3% vs76.2%, absolute benefit10.1pp, NNT10; grade3–4 all-cause AEs 84.1% (291/346) vs71.9% (240/334), absolute harm12.2pp; no NNH because median atezolizumab exposure10.8mo vs5.4mo control mFOLFOX6. FDA approval 2026-10-08 verified."
+        },
+        "status": "evidence-backed page and roster repair completed on branch; current NCCN freshness remains open."
       }
     ],
     "latest_outcome_visual_audit": {
@@ -227,18 +245,6 @@
       "trial_id": "atempt",
       "trial": "ATEMPT",
       "path": "trial-pages/atempt/index.html",
-      "category": "dated_current_practice_context",
-      "severity": "low",
-      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
-      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
-      "status": "open",
-      "created_on": "2026-11-14"
-    },
-    {
-      "issue_id": "dated-context-atomic",
-      "trial_id": "atomic",
-      "trial": "ATOMIC",
-      "path": "trial-pages/atomic/index.html",
       "category": "dated_current_practice_context",
       "severity": "low",
       "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
@@ -6397,12 +6403,12 @@
       "source_urls": [
         "https://doi.org/10.1056/NEJMoa2201445",
         "https://pubmed.ncbi.nlm.nih.gov/35660797/",
-        "https://doi.org/10.1200/JCO.2024.42.3_suppl.LBA5",
-        "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+        "https://doi.org/10.1200/JCO.2024.42.3_suppl.LBA3512",
+        "https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
         "https://clinicaltrials.gov/study/NCT04165772"
       ],
       "nccn_provenance": "NCCN Rectal Cancer Insights v3.2024, references 75–76; complete public Insights reference list checked; current 2026 full guideline freshness pending.",
-      "evidence": "New unique phase II study; primary NEJM report (12 patients) and 2024 follow-up abstract are cited by NCCN refs 75–76. FDA 2026 review reports a 50-patient dataset for the same NCT04165772 study (cCR12 93%, ORR 100%); do not conflate the 12-patient NEJM denominator with the 50-patient FDA dataset.",
+      "evidence": "NCCN Insights refs 75–76 cite the 12-patient NEJM report and 2024 follow-up abstract. FDA review of NCT04165772 reports a separate 50-patient investigator-led cohort: cCR12 93% (95% CI 82–99), ORR 100% (95% CI 93–100); among 27 followed ≥3 years, 1 local recurrence, 1 withdrawal and 1 unrelated death. No chemoradiation or rectal surgery was used in this cohort. Keep these data separate from AZUR-1 (NCT05723562).",
       "action": "Reconcile the 12-patient NEJM cohort, 48-enrolled 2024 abstract and FDA-reviewed 50-patient cohort as follow-ups of one study; build one canonical page only after full source extraction.",
       "next_action": "Extract sustained cCR, recurrence, safety, dose/duration and follow-up from protocol, primary article, abstract and FDA review."
     },
@@ -6429,7 +6435,7 @@
         "https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer"
       ],
       "nccn_provenance": "not verified — no exact NCCN citation in the accessible Version 3.2024 Insights article; current full 2026 NCCN guideline inaccessible.",
-      "evidence": "New unique phase II single-arm trial; primary Annals of Oncology DOI/title/PMID/registry verified. Published 34 days before this run, outside the rolling 30-day Trial-of-the-Day window. FDA review describes 154 treated patients and ICR cCR12 47% among 116 evaluable patients; full primary safety and follow-up extraction remains pending.",
+      "evidence": "FDA review of AZUR-1 (NCT05723562) confirms 154 treated patients; 110/154 (71%) received no additional treatment and had no progression, 26/154 underwent surgery, 13/154 received additional systemic therapy/radiation, 1/154 progressed without further treatment, and 4/154 withdrew/were lost. cCR12 by ICR was 47% (95% CI 27–56) among 116 evaluable; ORR by ICR 79% (95% CI 71–85); median follow-up 26.3 months. Primary Annals of Oncology article DOI/title/PMID verified; full safety extraction remains pending.",
       "action": "Build one canonical page only after full primary article and FDA review are reconciled; distinguish ICR-evaluable and investigator-evaluable denominators.",
       "next_action": "Extract cCR12/ORR, subsequent treatment, recurrence, immune-mediated and grade 3–5 toxicity, QoL and follow-up."
     },
@@ -6455,6 +6461,19 @@
       "evidence": "2026 IJGC five-year follow-up abstract reports median follow-up 54.5 months, grade ≥3 AEs 79.4% vs 70.4%, deaths 1.1% vs 1.3%, and similar discontinuation. The accessible abstract record does not expose numerical 5-year PFS/OS estimates; the 36-month OS NNT13 remains tied to the 2024 OS analysis.",
       "action": "Keep follow-up attached to the existing KEYNOTE-A18 page; extract full 5-year efficacy table if publisher access becomes available.",
       "next_action": "Do not create a separate trial page or calculate a 5-year NNT without explicit fixed-time rates."
+    },
+    {
+      "issue_id": "nccn-guideline-freshness-atomic-2026",
+      "trial_id": "atomic",
+      "page_path": "trial-pages/atomic/index.html",
+      "issue_type": "guideline_freshness",
+      "severity": "medium",
+      "status": "open",
+      "created_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "issue": "Current 2026 NCCN Colon Cancer full guideline/reference list remains inaccessible; the FDA approval does not establish an NCCN recommendation category or reference.",
+      "action": "Keep the FDA regulatory update in the page, but retrieve the current NCCN guideline and add exact section/reference only if explicitly visible.",
+      "next_action": "Reattempt official NCCN Colon Cancer full guideline/reference list or a complete current NCCN-authored Insights article."
     }
   ],
   "resolved_items": [
@@ -7684,6 +7703,45 @@
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC13677574/",
         "https://pubmed.ncbi.nlm.nih.gov/42854587/"
       ]
+    },
+    {
+      "issue_id": "dated-context-atomic",
+      "trial_id": "atomic",
+      "trial": "ATOMIC",
+      "path": "trial-pages/atomic/index.html",
+      "category": "dated_current_practice_context",
+      "severity": "low",
+      "evidence": "GitHub Actions static audit generated 2026-11-14 flagged absence of an explicitly dated current-practice/guideline context section. This is a structural flag; current clinical status must be checked before editing.",
+      "action": "Review current authoritative guideline/regulatory context and add a concise dated section with source links; do not infer staleness from publication year alone.",
+      "status": "resolved",
+      "created_on": "2026-11-14",
+      "resolved_on": "2026-11-28",
+      "last_reviewed_on": "2026-11-28",
+      "resolution": "Added dated FDA approval context (2026-10-08), approved stage III dMMR colon indication, trial and label dosing options, primary DOI/PMID/registry links, and updated the roster. Current NCCN Colon Cancer 2026 guideline freshness is tracked separately and remains open.",
+      "verification": "FDA approval notice and 2026 label verified; primary NEJM/PMC article inspected.",
+      "verification_sources": [
+        "https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761034s065lbl.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13020640/"
+      ]
+    },
+    {
+      "issue_id": "nnt-nnh-atomic-grade3-4-ae",
+      "trial_id": "atomic",
+      "page_path": "trial-pages/atomic/index.html",
+      "issue_type": "absolute_effect_nnh_invalid_due_unequal_exposure",
+      "severity": "high",
+      "status": "resolved",
+      "created_on": "2026-11-28",
+      "resolved_on": "2026-11-28",
+      "issue": "The page displayed NNH 9 and data-harm 11.11, which was 100/NNH rather than the observed 12.2 percentage-point difference. More importantly, grade 3–4 AE risks accrued over unequal treatment exposure.",
+      "action_taken": "Removed the NNH pictogram; corrected data-benefit to 10.1 and data-harm to 12.2; retained NNT 10 for 3-year DFS; added a structured absolute_effect record with nnh=null and explicit non-applicability reason.",
+      "verification": "Primary article reports median atezolizumab exposure 10.8 months versus 5.4 months for control mFOLFOX6; grade 3–4 AEs 84.1% (291/346) vs71.9% (240/334). A cumulative NNH across unequal exposure is not valid.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13020640/",
+        "https://doi.org/10.1056/NEJMoa2507874"
+      ],
+      "verified_on": "2026-11-28"
     }
   ],
   "run_audit_log": [
@@ -8099,16 +8157,16 @@
     "branch": "atlas-batch/2026-11-27-am",
     "branch_head_before": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "existing_main_pages_manually_audited": 4,
+    "existing_main_pages_manually_audited": 5,
     "flagged_legacy_pages_re_read": 4,
     "staged_candidate_pages_re_read": 1,
-    "repair_items_reviewed": 7,
-    "repair_items_closed": 0,
-    "page_repairs_made": 1,
+    "repair_items_reviewed": 10,
+    "repair_items_closed": 2,
+    "page_repairs_made": 2,
     "validator_fixes_made": 0,
-    "new_candidates_screened": 10,
+    "new_candidates_screened": 11,
     "new_unique_candidates": 6,
-    "duplicates": 4,
+    "duplicates": 5,
     "held": 5,
     "deferred_contrary": 1,
     "existing_queue_candidates_rechecked": 5,
@@ -8143,21 +8201,22 @@
       "deferred_contrary": 1,
       "fully_verified_for_publication": 0,
       "uploaded": 0
-    }
+    },
+    "additional_existing_pages_reaudited": 1
   },
   "generated_at": "2026-11-28T08:04:24+05:30",
   "summary": {
     "open_items": 240,
-    "resolved_items": 77,
+    "resolved_items": 79,
     "note": "Nine previously screened unique trial candidates were re-reviewed across ovarian, CLL, multiple myeloma and NSCLC. One queue cross-assignment (PRIMA identifiers on oral-paclitaxel item) was repaired; PRIMA received a dedicated open review item. No page was made release-ready; browser-rendered QA and current-guideline freshness remain open.",
     "release_holds_in_active_batch": 16,
     "release_holds_in_last_merged_batch": 4,
-    "dated_context_items_open": 53,
-    "last_run_note": "28 Nov evening: 10 candidates screened across rectal TNT and dMMR/MSI-H pathways plus cross-site search passes; 5 new unique candidates held for next batch, 4 follow-up/alias duplicates excluded, FOWARC deferred as contrary evidence; one KEYNOTE-A18 follow-up attached to existing page; zero pages uploaded.",
+    "dated_context_items_open": 52,
+    "last_run_note": "28 Nov evening: 11 candidates screened; 6 new unique (5 held, FOWARC deferred), 5 duplicates/follow-ups; re-audited 5 existing pages and 1 staged page; KEYNOTE-A18 follow-up attached; ATOMIC NNH corrected and FDA context added; 0 uploads.",
     "last_updated": "2026-11-28",
     "last_reviewed_on": "2026-11-28",
     "release_gate_status": "INCOMPLETE: remote strict validator passed on prior commit; current head validation pending; local validator and browser-rendered QA not run; 16 source-extraction holds remain; no PR.",
-    "missing_dated_context_count": 53
+    "missing_dated_context_count": 52
   },
   "updated_on": "2026-11-28",
   "last_run_date": "2026-11-28",
@@ -8166,21 +8225,23 @@
     "date": "2026-11-28",
     "branch": "atlas-batch/2026-11-27-am",
     "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
-    "pages_inspected": 5,
-    "primary_source_verified": 4,
+    "pages_inspected": 6,
+    "primary_source_verified": 5,
     "partial_primary_source_review": 1,
     "repairs": [
-      "KEYNOTE-A18 2026 five-year follow-up abstract attached to canonical page and roster"
+      "KEYNOTE-A18 2026 five-year follow-up abstract attached to canonical page and roster",
+      "ATOMIC: corrected invalid NNH and data-harm arithmetic; added FDA approval 2026-10-08 and primary regimen/denominators"
     ],
     "browser_rendered_qa_complete": false,
     "full_clinical_audit_complete": false,
-    "notes": "Four flagged existing pages were re-read against primary reports and their static outcome visualizations; one staged Chlorophyllin page was re-read against the primary JAMA Oncology abstract. Current 2026 NCCN freshness and browser-rendered QA remain open.",
+    "notes": "Four flagged existing pages were re-read against primary reports and their static outcome visualizations; one staged Chlorophyllin page was re-read against the primary JAMA Oncology abstract. Current 2026 NCCN freshness and browser-rendered QA remain open. ATOMIC primary full text, FDA approval page and 2026 label inspected; NNH9 removed because exposure durations differ; FDA dated context added.",
     "reviewed_pages": [
       "checkmate-816",
       "keynote-a18",
       "lacc",
       "shape",
-      "chlorophyllin-tnt"
+      "chlorophyllin-tnt",
+      "atomic"
     ]
   },
   "last_partial_review_date": "2026-11-28",
@@ -8190,7 +8251,8 @@
     "LACC",
     "SHAPE",
     "Chlorophyllin TNT",
-    "NCCN Rectal Cancer Insights v3.2024"
+    "NCCN Rectal Cancer Insights v3.2024",
+    "ATOMIC / FDA 2026 approval"
   ],
   "last_partial_review_note": "28 Nov evening: 4 flagged legacy pages and 1 staged page re-read; KEYNOTE-A18 5-year follow-up abstract added to existing page and roster; full clinical audit and browser QA remain incomplete."
 }
