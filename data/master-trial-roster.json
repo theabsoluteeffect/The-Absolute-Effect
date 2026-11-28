@@ -1,7 +1,7 @@
 {
   "title": "The Absolute Effect - Master Trial Roster",
   "version": 17,
-  "last_quality_check": "2026-11-28: strict release validator passed (30 records, 0 errors) and static outcome audit passed (490/490 pages found; 53 dated-context gaps). Full primary-source audit, local validator and browser-rendered QA remain incomplete.",
+  "last_quality_check": "2026-11-28",
   "source_of_truth": "GitHub repository state",
   "rules": [
     "One entry represents one underlying trial/study, not one publication.",
@@ -7396,7 +7396,7 @@
       "discipline": "Medical",
       "setting": "Definitive / Local Treatment",
       "question": "In high-risk locally advanced cervical cancer treated with definitive chemoradiotherapy, does pembrolizumab given concurrently and as maintenance improve progression-free and overall survival compared with chemoradiotherapy alone? [KEYNOTE-A18]",
-      "freshness_review_status": "Primary PFS and OS Lancet reports verified 2026-11-15; current guideline freshness pending; no NCCN citation claimed.",
+      "freshness_review_status": "Primary 2024 PFS/OS reports and 2026 five-year follow-up abstract bibliographically checked 2026-11-28; exact 5-year efficacy estimates not available in accessible abstract record; current NCCN guideline freshness remains pending.",
       "outcome_visual_review_status": "Non-finite chart widths and malformed source link corrected; static source-rate bars and NNT markup verified 2026-11-15; browser QA pending.",
       "setting_detail": "High-risk locally advanced cervical cancer · definitive chemoradiotherapy plus pembrolizumab",
       "primary": "10.1016/S0140-6736(24)00317-9",
@@ -7407,6 +7407,15 @@
           "doi": "10.1016/S0140-6736(24)01808-7",
           "title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer: overall survival results",
           "pmid": "39288779"
+        },
+        {
+          "doi": "10.1016/j.ijgc.2026.105141",
+          "title": "Pembrolizumab plus concurrent chemoradiotherapy for high-risk locally advanced cervical cancer: 5-year follow-up results from KEYNOTE-A18",
+          "publication_date": "2026-10",
+          "publication_type": "conference abstract (FP115)",
+          "source_url": "https://doi.org/10.1016/j.ijgc.2026.105141",
+          "registry_id": "NCT04221945",
+          "note": "Median follow-up 54.5 months; grade ≥3 adverse events 79.4% vs 70.4%, deaths 1.1% vs 1.3%; detailed numeric 5-year PFS/OS estimates were not available in the accessible abstract record. No new 5-year NNT assigned."
         }
       ],
       "absolute_effect": {
@@ -7418,7 +7427,7 @@
         "calculation": "ceil(100 / 7.8) = 13",
         "source_doi": "10.1016/S0140-6736(24)01808-7"
       },
-      "quality_check_date": "2026-11-15"
+      "quality_check_date": "2026-11-28"
     },
     {
       "id": "keynote-b49",
