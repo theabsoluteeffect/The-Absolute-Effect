@@ -12626,7 +12626,7 @@
         "Chlorophyllin TNT",
         "Sodium copper chlorophyllin rectal TNT toxicity prevention"
       ],
-      "primary": "https://doi.org/10.1001/jamaoncol.2026.4843",
+      "primary": "10.1001/jamaoncol.2026.4843",
       "primary_title": "Chlorophyllin for Toxic Effect Prevention During Total Neoadjuvant Therapy in Rectal Cancer: A Randomized Clinical Trial",
       "pmid": "43084277",
       "registry_id": "NCT05856305",
@@ -12678,8 +12678,9 @@
         "registry_id_verified": true,
         "primary_outcomes_verified": true,
         "safety_verified": true,
-        "full_text_status": "Primary abstract reviewed; full text not mined",
-        "visualization_status": "Static charts and NNT arithmetic checked; browser render pending"
+        "full_text_status": "Primary JAMA Oncology full article inspected; full supplement not yet reconciled",
+        "visualization_status": "Static chart values and renderer structure checked; browser-rendered QA pending",
+        "absolute_effect_arithmetic_verified": true
       },
       "nccn_provenance": {
         "status": "not verified — source inaccessible",
@@ -12690,9 +12691,33 @@
         "recommendation_category": null,
         "mapping_follow_up_open": true
       },
-      "last_reviewed_on": "2026-11-27",
+      "last_reviewed_on": "2026-11-28",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "primary_doi": "10.1001/jamaoncol.2026.4843",
+      "primary_url": "https://doi.org/10.1001/jamaoncol.2026.4843",
+      "absolute_effect": {
+        "endpoint": "Grade ≥2 combined acute GI, hematologic or GU toxicity",
+        "horizon": "From TNT initiation through 3 months after TNT",
+        "event_definition": "Occurrence of CTCAE v5.0 grade ≥2 combined acute GI, hematologic or GU toxicity",
+        "treatment_rate": 64.9,
+        "control_rate": 94.4,
+        "benefit_percentage_points": 29.6,
+        "nnt": 4,
+        "calculation": "ceil(1 / 0.296) = 4",
+        "additional_endpoints": [
+          {
+            "endpoint": "Grade ≥3 combined acute GI, hematologic or GU toxicity",
+            "horizon": "From TNT initiation through 3 months after TNT",
+            "event_definition": "Occurrence of CTCAE v5.0 grade ≥3 combined acute GI, hematologic or GU toxicity",
+            "treatment_rate": 27,
+            "control_rate": 52.8,
+            "benefit_percentage_points": 25.8,
+            "nnt": 4,
+            "calculation": "ceil(1 / 0.258) = 4"
+          }
+        ]
+      }
     },
     {
       "id": "immunoprism",
