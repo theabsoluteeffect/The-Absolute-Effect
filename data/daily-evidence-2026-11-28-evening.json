@@ -34,7 +34,7 @@
   },
   "repair_audit": {
     "queue_open_after": 240,
-    "queue_resolved_after": 79,
+    "queue_resolved_after": 80,
     "existing_main_pages_re_read": [
       "checkmate-816",
       "keynote-a18",
@@ -43,14 +43,19 @@
       "atomic"
     ],
     "staged_pages_re_read": [
-      "chlorophyllin-tnt"
+      "chlorophyllin-tnt",
+      "hokusai-vte-cancer"
     ],
-    "items_reviewed": 10,
-    "items_closed": 2,
-    "page_repairs": 2,
+    "items_reviewed": 11,
+    "items_closed": 3,
+    "page_repairs": 3,
     "manual_full_recursive_clinical_audit_complete": false,
     "browser_rendered_qa_complete": false,
-    "dated_current_practice_context_gaps": 52
+    "dated_current_practice_context_gaps": 52,
+    "closed_item_ids": [
+      "hokusai-vte-cancer-nnh-fixed-horizon"
+    ],
+    "local_release_validator_complete": false
   },
   "nccn_mining": {
     "guideline_title": "NCCN Guidelines Insights: Rectal Cancer, Version 3.2024",
@@ -411,5 +416,91 @@
     "Only after exactly 30 new unique studies pass source review and local validation, open a PR and wait for all checks; do not merge a partial batch."
   ],
   "report_path": "data/daily-reports/2026-11-28-evening.json",
-  "evidence_path": "data/daily-evidence-2026-11-28-evening.json"
+  "evidence_path": "data/daily-evidence-2026-11-28-evening.json",
+  "source_review_continuation": {
+    "reviewed_at": "2026-11-28T19:31:51+05:30",
+    "candidates": [
+      {
+        "candidate": "STELLAR",
+        "primary_doi": "10.1200/JCO.21.01667",
+        "pmid": "35263150",
+        "registry_id": "NCT02533271",
+        "status": "primary and 5-year follow-up verified; held for canonical page extraction",
+        "findings": "599 randomized (302 vs 297); 3-year DFS 64.5% vs 62.3%, HR 0.883, P<.001 for noninferiority; 3-year OS 86.5% vs 75.1%, P=.033; grade III–V acute toxicity 26.5% vs 12.6%. At 68.7-month median follow-up, 5-year DFS 62.0% vs 58.7%, HR 0.849 (95% CI 0.662–1.089); 5-year OS 78.1% vs 69.7%, HR 0.739 (95% CI 0.550–0.993). NCCN Rectal Cancer Insights v3.2024 ref 47. No NNT derived from the primary noninferiority endpoint; any 5-year OS absolute-effect interpretation requires full article/secondary-endpoint review.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/35263150/",
+          "https://pubmed.ncbi.nlm.nih.gov/42507974/"
+        ]
+      },
+      {
+        "candidate": "CAO/ARO/AIO-12",
+        "primary_doi": "10.1200/JCO.19.00308",
+        "pmid": "31150315",
+        "registry_id": "NCT02363374",
+        "status": "primary and long-term follow-up verified; held for page extraction",
+        "findings": "311 enrolled, 306 evaluable; stage II/III rectal adenocarcinoma cT3–4 and/or node-positive. Three cycles FOLFOX before CRT versus CRT before three cycles FOLFOX; CRT 50.4 Gy. Primary pCR 17% vs 25%. At median 43 months, 3-year DFS 73% in both arms (HR 0.95, 95% CI 0.63–1.45; P=.82); locoregional recurrence 6% vs 5%; distant metastases 18% vs 16%. Grade 3–4 chronic toxicity at 3 years 11.8% vs 9.9%; global QoL returned to baseline at 1 year; stool incontinence remained below baseline at 3 years. NCCN Rectal Cancer Insights v3.2024 refs 51–52.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/31150315/",
+          "https://pubmed.ncbi.nlm.nih.gov/34792531/"
+        ]
+      },
+      {
+        "candidate": "PROSPECT / Alliance N1048",
+        "primary_doi": "10.1056/NEJMoa2303269",
+        "pmid": "37272534",
+        "registry_id": "NCT01515787",
+        "status": "primary and PRO follow-up verified; held for page extraction",
+        "findings": "1,194 randomized, 1,128 started treatment. Eligible cT2N+, cT3N0/N+ patients considered suitable for sphincter-sparing surgery. FOLFOX with selective CRT for <20% response or treatment discontinuation was noninferior to CRT; at 58 months, 5-year DFS 80.8% vs 78.6%, HR 0.92 (90.2% CI 0.74–1.14), P=.005 for noninferiority. OS HR 1.04 (95% CI 0.74–1.44); local recurrence HR 1.18 (95% CI 0.44–3.16). 53/585 (9.1%) received preoperative CRT and 8/585 (1.4%) postoperative CRT. PRO analysis (n=940) found fewer diarrhea symptoms and better bowel function during neoadjuvant therapy with FOLFOX, while several acute symptoms favored CRT; at 12 months post-surgery, FOLFOX favored fatigue, neuropathy and sexual function. NCCN Rectal Cancer Insights v3.2024 refs 58–59.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/37272534/",
+          "https://pubmed.ncbi.nlm.nih.gov/37270691/"
+        ]
+      },
+      {
+        "candidate": "Investigator-led dostarlimab dMMR rectal study",
+        "primary_doi": "10.1056/NEJMoa2201445",
+        "pmid": "35660797",
+        "registry_id": "NCT04165772",
+        "status": "primary/follow-up identity verified; held for cohort-level reconciliation",
+        "findings": "Initial NEJM report: 12/12 patients completing six months of dostarlimab 500 mg IV every 3 weeks achieved cCR; no grade ≥3 AEs reported; no CRT or surgery at initial report. The 2025 NEJM follow-up (DOI 10.1056/NEJMoa2404512; PMID 40293177) reports cohort 1 rectal cancer separately: 49 patients completed treatment, all 49 cCR and elected nonoperative management; 37 had sustained cCR at 12 months. The total 117-patient publication also includes 54 completers in a separate nonrectal cohort; those patients must not be mixed into rectal-cancer denominators. The 2024 ASCO abstract and 2025 paper are follow-ups of the same NCT04165772 study. NCCN Rectal Cancer Insights v3.2024 refs 75–76.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/35660797/",
+          "https://pubmed.ncbi.nlm.nih.gov/40293177/",
+          "https://ascopubs.org/doi/10.1200/JCO.2024.42.17_suppl.LBA3512"
+        ]
+      },
+      {
+        "candidate": "AZUR-1",
+        "primary_doi": "10.1016/j.annonc.2026.10.1280",
+        "pmid": "42927858",
+        "registry_id": "NCT05723562",
+        "status": "primary abstract verified; held for full article/supplement extraction",
+        "findings": "Phase II single-arm global study; 154 enrolled, median follow-up 26.3 months. Among 144 with ≥12 months follow-up, investigator-assessed cCR12 was 68%; ICR cCR12 was 47% among 116 evaluable. Twelve of 15 patients undergoing surgery after dostarlimab alone achieved pCR; composite cCR12+pCR 76%. Grade ≥3 immune-mediated AEs 3%; PRO improvements reported. Publication 2026-10-25, 34 days before run, so not eligible for the rolling 30-day Trial-of-the-Day window. NCCN provenance not verified.",
+        "sources": [
+          "https://pubmed.ncbi.nlm.nih.gov/42927858/",
+          "https://clinicaltrials.gov/study/NCT05723562"
+        ]
+      }
+    ],
+    "deferred_followup": {
+      "candidate": "FOWARC",
+      "primary_followup_doi": "10.1200/JCO-24-01676",
+      "pmid": "39671537",
+      "status": "same underlying study; attached to deferred-negative/contrary queue",
+      "findings": "10-year DFS 52.5%, 62.6%, 60.5% (P=.56); locoregional recurrence 10.8%, 8.0%, 9.6% (P=.57); OS 65.9%, 72.3%, 73.4% (P=.90)."
+    }
+  },
+  "nnt_nnh_review_continuation": {
+    "trial_id": "hokusai-vte-cancer",
+    "status": "corrected_on_branch",
+    "original_claim": "NNH 35 for major bleeding over 6–12 months",
+    "corrected_claim": "No fixed-horizon NNH; retain descriptive 6.9% versus 4.0% event rates and 2.9 percentage-point difference",
+    "reason": "The primary publication reports major bleeding over a variable 6–12-month treatment period, and median treatment exposure differed between arms (211 vs 184 days in the safety analysis). The 2.9-percentage-point cumulative difference is retained descriptively, but it is not a single common fixed-time risk estimate; no NNH is assigned.",
+    "sources": [
+      "https://doi.org/10.1056/NEJMoa1711948",
+      "https://pubmed.ncbi.nlm.nih.gov/30060256/"
+    ],
+    "page_path": "trial-pages/hokusai-vte-cancer/index.html"
+  },
+  "run_continuation_timestamp": "2026-11-28T19:31:51+05:30"
 }

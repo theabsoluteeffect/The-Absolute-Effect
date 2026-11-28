@@ -13834,7 +13834,7 @@
       "registry": "ClinicalTrials.gov NCT02073682",
       "site": "Cancer-associated venous thromboembolism",
       "setting": "Acute cancer-associated VTE; 6–12 months of anticoagulation",
-      "setting_detail": "Acute cancer-associated VTE; 6–12 months of anticoagulation; Major bleeding (safety endpoint): 2.9 percentage-point harm at 6–12 months of treatment; NNH 35.",
+      "setting_detail": "Acute cancer-associated VTE; 6–12 months of anticoagulation; major bleeding 6.9% versus 4.0% over the variable treatment period (absolute difference 2.9 percentage points); no fixed-horizon NNH assigned.",
       "discipline": "Supportive care / thrombosis",
       "phase": "III",
       "design": "Open-label, randomized, non-inferiority phase III trial",
@@ -13844,24 +13844,13 @@
       "primary_endpoint": "Composite of recurrent VTE or major bleeding over 6–12 months; recurrent VTE and major bleeding were separately assessed.",
       "follow_up": "Treatment duration 6–12 months; primary outcome assessed through the treatment period.",
       "efficacy": "The composite outcome occurred in 12.8% versus 13.5% (HR 0.97, 95% CI 0.70–1.36; non-inferiority p=0.006). Recurrent VTE was 7.9% versus 11.3%; superiority was not established for the composite.",
-      "safety": "Major bleeding occurred in 6.9% versus 4.0%, an absolute increase of 2.9 percentage points (95% CI for difference approximately 0.1–5.6). Point-estimate NNH 35 (ceil[1/0.029]); excess bleeding was concentrated in gastrointestinal cancer.",
+      "safety": "Major bleeding occurred in 6.9% versus 4.0%, an absolute increase of 2.9 percentage points (95% CI for difference approximately 0.1–5.6). Treatment duration varied from 6 to 12 months and median exposure differed between arms; the absolute difference is descriptive and no fixed-horizon NNH is assigned. Excess bleeding was concentrated in gastrointestinal cancer.",
       "qol": "No QoL result was verified in the primary report.",
       "burden": "Oral once-daily edoxaban follows an initial parenteral anticoagulant lead-in; dose reduction criteria and GI mucosal bleeding risk are clinically important.",
-      "limitations": "Non-inferiority design; recurrent VTE reduction should not be interpreted as proven superiority. The NNH is a point estimate for major bleeding over the trial treatment period; confidence limits are wide.",
-      "absolute_effects": [
-        {
-          "endpoint": "Major bleeding (safety endpoint)",
-          "time_horizon": "6–12 months of treatment",
-          "absolute_harm_percentage_points": 2.9,
-          "nnh": 35,
-          "event_definition": "Major bleeding during the randomized treatment period",
-          "calculation": "ceil(1 / 0.029) = 35",
-          "source_doi": "10.1056/NEJMoa1711948",
-          "note": "NNH point estimate; excess major bleeding was concentrated in GI cancer."
-        }
-      ],
+      "limitations": "Non-inferiority design; recurrent VTE reduction should not be interpreted as proven superiority. Major-bleeding risks were accumulated over variable 6–12-month treatment periods, with unequal median exposure; a fixed-horizon NNH is not assigned.",
+      "absolute_effects": [],
       "nnt": null,
-      "nnh": 35,
+      "nnh": null,
       "publication_date": "2018-02-15",
       "source_type": "peer-reviewed primary publication",
       "source_urls": [
@@ -13890,7 +13879,14 @@
         "qol_pro_extraction": "partial_or_not_reported",
         "protocol_schedule_reconciled": false,
         "verified_on": "2026-11-27",
-        "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry"
+        "verification_source": "PubMed/publisher primary publication and ClinicalTrials.gov registry",
+        "nnh_horizon_review": {
+          "status": "corrected — no fixed-horizon NNH assigned",
+          "verified_on": "2026-11-28",
+          "rationale": "The primary publication reports major bleeding over a variable 6–12-month treatment period, and median treatment exposure differed between arms (211 vs 184 days in the safety analysis). The 2.9-percentage-point cumulative difference is retained descriptively, but it is not a single common fixed-time risk estimate; no NNH is assigned.",
+          "primary_source": "https://doi.org/10.1056/NEJMoa1711948",
+          "exposure_source": "https://pubmed.ncbi.nlm.nih.gov/30060256/"
+        }
       },
       "current_practice_review_date": "2026-11-27",
       "source_extraction_status": "partial — key outcomes and bibliographic identity checked; full safety/protocol/PRO tables remain open",
@@ -13899,17 +13895,7 @@
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
       "batch_branch": "atlas-batch/2026-11-27-am",
-      "absolute_effect": {
-        "endpoint": "Major bleeding (safety endpoint)",
-        "horizon": "6–12 months of treatment",
-        "event_definition": "Major bleeding during the randomized treatment period",
-        "harm_percentage_points": 2.9,
-        "nnh": 35,
-        "calculation": "ceil(1 / 0.029) = 35",
-        "source_doi": "10.1056/NEJMoa1711948",
-        "note": "NNH point estimate; excess major bleeding was concentrated in GI cancer.",
-        "additional_endpoints": []
-      }
+      "absolute_effect": null
     },
     {
       "id": "nadina",

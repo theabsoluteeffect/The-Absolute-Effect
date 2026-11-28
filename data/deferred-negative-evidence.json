@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T19:03:57+05:30",
+  "updated_at": "2026-11-28T19:31:51+05:30",
   "items": [
     {
       "trial_id": "imbrave050",
@@ -685,9 +685,17 @@
           "title": "Modified FOLFOX6 With or Without Radiation Versus Fluorouracil and Leucovorin With Radiation in Neoadjuvant Treatment of Locally Advanced Rectal Cancer: Initial Results of the Chinese FOWARC Multicenter, Open-Label, Randomized Three-Arm Phase III Trial",
           "doi": "10.1200/JCO.2016.66.6198",
           "pmid": "27480145"
+        },
+        {
+          "title": "Neoadjuvant Modified Infusional Fluorouracil, Leucovorin, and Oxaliplatin With or Without Radiation Versus Fluorouracil Plus Radiation for Locally Advanced Rectal Cancer: Updated Results of the FOWARC Study After a Median Follow-Up of 10 Years",
+          "doi": "10.1200/JCO-24-01676",
+          "pmid": "39671537",
+          "publication_date": "2025-02-20",
+          "results": "At median follow-up 10 years, 10-year DFS was 52.5%, 62.6%, and 60.5% across fluorouracil-RT, mFOLFOX6-RT, and mFOLFOX6-alone arms (P=.56); 10-year locoregional recurrence 10.8%, 8.0%, and 9.6% (P=.57); 10-year OS 65.9%, 72.3%, and 73.4% (P=.90).",
+          "relation": "Long-term follow-up of the same FOWARC randomized phase III program; not a new underlying study."
         }
       ],
-      "reason": "The randomized phase III FOWARC program did not establish a statistically significant DFS or local-control advantage for the RT-omission FOLFOX strategy over fluoropyrimidine-based chemoradiotherapy in unselected locally advanced rectal cancer. It is contrary/negative evidence relevant to interpreting selective RT omission; it is not a current preferred pathway and should not be promoted as a positive new trial page.",
+      "reason": "The randomized phase III FOWARC program did not establish a statistically significant DFS or local-control advantage for the RT-omission FOLFOX strategy over fluoropyrimidine-based chemoradiotherapy in unselected locally advanced rectal cancer. It is contrary/negative evidence relevant to interpreting selective RT omission; it is not a current preferred pathway and should not be promoted as a positive new trial page. The 10-year follow-up (PMID 39671537; DOI 10.1200/JCO-24-01676) likewise found no significant between-arm differences in 10-year DFS (52.5%, 62.6%, 60.5%; P=.56), locoregional recurrence (10.8%, 8.0%, 9.6%; P=.57) or OS (65.9%, 72.3%, 73.4%; P=.90).",
       "action": "Retain initial and final reports together as one underlying study in the deferred-negative queue. Revisit only if the full current guideline or a new high-quality update changes the interpretation.",
       "primary_sources": [
         "https://doi.org/10.1200/JCO.2016.66.6198",
@@ -699,18 +707,9 @@
       "status_note": "No canonical trial page created; no duplicate page."
     }
   ],
-  "last_run": {
-    "date": "2026-11-28",
-    "cycle": "evening",
-    "added": [
-      "fowarc"
-    ],
-    "added_count": 1,
-    "duplicate_exclusions": 4,
-    "positive_new_candidates_held": 5
-  },
+  "last_run": "2026-11-28 evening",
   "last_updated": "2026-11-28",
   "last_run_date": "2026-11-28",
   "note": "Preserve contrary/negative evidence separately; do not use as padding for new positive-trial page targets. Duplicate NRG-BR002 queue records reconciled to one underlying study on 17 November 2026. 2026-11-21: added BELINDA and daNIS-2 as deferred negative evidence and ASPEN-06 as mixed/contrary evidence. FIND was not classified as negative. 2026-11-21 recovery: retained BELINDA and daNIS-2 as deferred negative and ASPEN-06 as mixed/contrary evidence. COMPANION-002 was not classified as a negative study because the primary ORR and PFS endpoints favored tovecimig plus paclitaxel despite neutral OS and greater grade ≥3 toxicity; it remains held pending full page extraction. 2026-11-23: OpACIN added as contrary/toxicity evidence (NCCN Melanoma Insights v2.2024 ref 33); PRADO is attached to OpACIN-neo, not a separate study.",
-  "last_run_note": "28 Nov evening: FOWARC added as deferred contrary evidence from NCCN Rectal Cancer Insights v3.2024 refs 56–57; no page created."
+  "last_run_note": "FOWARC 10-year follow-up (PMID 39671537; DOI 10.1200/JCO-24-01676) attached to the existing deferred record; same underlying study, no new page."
 }
