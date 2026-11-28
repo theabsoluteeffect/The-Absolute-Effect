@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "run_timestamp": "2026-11-28T19:03:57+05:30",
+  "cycle": "evening",
+  "status": "INCOMPLETE",
+  "repository": {
+    "full_name": "theabsoluteeffect/The-Absolute-Effect",
+    "main_branch": "main",
+    "main_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "working_branch": "atlas-batch/2026-11-27-am",
+    "branch_head_before_run": "a6266a2fab7a0762cacd2e4c3585887608d16c57",
+    "branch_head_after_data_updates": "9d40ed9334e586c7c1b80421c8eadaf006821ebd",
+    "branch_head_after_report_metadata": "27fb560eb00e8eba14a18d89df25d36e931e8d25",
+    "open_prs": 0
+  },
+  "preflight": {
+    "core_sources_retrieved": true,
+    "tree_reconciled": true,
+    "main_roster_entries": 467,
+    "main_canonical_trial_page_directories": 459,
+    "shared_anchor_entries": 8,
+    "unrostered_redirect_stub": "trial-pages/rosel/index.html",
+    "nontrial_reference_page": "trial-pages/lung-sabr-definitions/index.html",
+    "unrostered_canonical_trial_pages": 0,
+    "index_unique_destinations": 468,
+    "missing_roster_index_links": 0,
+    "archive_entries": 16,
+    "archive_only_entries": 0,
+    "current_tod": "PANKU-Esophagus01",
+    "previous_tod": "GemX",
+    "active_branch_roster_entries": 497,
+    "active_branch_canonical_trial_page_directories": 489,
+    "active_branch_new_pages_staged": 30
+  },
+  "repair_audit": {
+    "queue_open_after": 240,
+    "queue_resolved_after": 79,
+    "existing_main_pages_re_read": [
+      "checkmate-816",
+      "keynote-a18",
+      "lacc",
+      "shape",
+      "atomic"
+    ],
+    "staged_pages_re_read": [
+      "chlorophyllin-tnt"
+    ],
+    "items_reviewed": 10,
+    "items_closed": 2,
+    "page_repairs": 2,
+    "manual_full_recursive_clinical_audit_complete": false,
+    "browser_rendered_qa_complete": false,
+    "dated_current_practice_context_gaps": 52
+  },
+  "nccn_mining": {
+    "guideline_title": "NCCN Guidelines Insights: Rectal Cancer, Version 3.2024",
+    "version": "3.2024",
+    "publication_date": "2024-08",
+    "source_url": "https://jnccn.org/downloadpdf/view/journals/jnccn/22/6/article-p366.pdf",
+    "source_type": "complete public NCCN-authored Insights article/reference list; not the full guideline",
+    "sections_reviewed": [
+      "TNT approach for localized rectal cancer",
+      "Selective omission of RT in TNT",
+      "Nonoperative management/watch-and-wait",
+      "dMMR/MSI-H rectal cancer discussion"
+    ],
+    "references_mapped": [
+      40,
+      41,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      56,
+      57,
+      58,
+      59,
+      71,
+      75,
+      76
+    ],
+    "recommendation_category_note": "No trial-specific category inferred; article-wide note says recommendations are Category 2A unless otherwise noted.",
+    "current_2026_rectal_full_guideline": "not accessible; freshness task remains open",
+    "current_2026_colon_full_guideline": "not accessible; only older 2018 Insights material located and not used as current",
+    "colon_source_access": "No 2026 NCCN reference/category assigned to ATOMIC; FDA approval and primary evidence recorded separately."
+  },
+  "source_search_passes": [
+    "GI/rectal TNT and organ preservation",
+    "dMMR/MSI-H rectal immunotherapy",
+    "stage III dMMR colon adjuvant immunotherapy and FDA approval",
+    "lung cancer randomized trial search",
+    "breast cancer randomized trial search",
+    "GU/prostate/bladder randomized trial search",
+    "haemato-oncology randomized trial search",
+    "gynecologic oncology randomized trial search",
+    "supportive/palliative-care randomized trial search"
+  ],
+  "candidate_screening": {
+    "screened": 11,
+    "new_unique_underlying_studies": 6,
+    "duplicates_or_followups": 5,
+    "held_new_unique": 5,
+    "deferred_contrary": 1,
+    "fully_verified_for_publication": 0,
+    "uploaded": 0,
+    "candidates": [
+      {
+        "candidate": "STELLAR",
+        "aliases": [
+          "STELLAR",
+          "Jin et al 2022 phase III"
+        ],
+        "primary_doi": "10.1200/JCO.21.01667",
+        "pmid": "35263150",
+        "registry_id": "NCT02533271",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+        "disposition": "new unique — held for next batch; full page extraction pending",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, ref 47",
+        "follow_up": "10.1200/JCO-25-02387 / PMID 42507974, same underlying study"
+      },
+      {
+        "candidate": "CAO/ARO/AIO-12",
+        "aliases": [
+          "CAO/ARO/AIO-12",
+          "Fokas et al 2019"
+        ],
+        "primary_doi": "10.1200/JCO.19.00308",
+        "pmid": "31150315",
+        "registry_id": "NCT02363374",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+        "disposition": "new unique — held for next batch; full primary/long-term extraction pending",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 51–52",
+        "follow_up": "10.1001/jamaoncol.2021.5445 / PMID 34792531, same underlying study"
+      },
+      {
+        "candidate": "PROSPECT / Alliance N1048",
+        "aliases": [
+          "PROSPECT",
+          "Alliance N1048"
+        ],
+        "primary_doi": "10.1056/NEJMoa2303269",
+        "pmid": "37272534",
+        "registry_id": "NCT01515787",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+        "disposition": "new unique — held for next batch; full noninferiority/PRO extraction pending",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 58–59",
+        "follow_up": "10.1200/JCO.23.00903 / PMID 37270691, same underlying study"
+      },
+      {
+        "candidate": "Investigator-led dostarlimab dMMR rectal study",
+        "aliases": [
+          "NCT04165772",
+          "Cercek phase II",
+          "dostarlimab rectal pilot"
+        ],
+        "primary_doi": "10.1056/NEJMoa2201445",
+        "pmid": "35660797",
+        "registry_id": "NCT04165772",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+        "disposition": "new unique — held for next batch; reconcile 12-patient NEJM, 2024 abstract and FDA-reviewed 50-patient cohort",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 75–76",
+        "follow_up": "10.1200/JCO.2024.42.3_suppl.LBA3512 and FDA 2026 cohort; same underlying study"
+      },
+      {
+        "candidate": "AZUR-1",
+        "aliases": [
+          "NCT05723562",
+          "global dostarlimab phase II"
+        ],
+        "primary_doi": "10.1016/j.annonc.2026.10.1280",
+        "pmid": "42927858",
+        "registry_id": "NCT05723562",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct new study; no roster/page/archive/ToD match",
+        "disposition": "new unique — held for next batch; full article/supplement extraction pending",
+        "nccn_reference": "No exact NCCN citation verified; provenance not verified",
+        "publication_date": "2026-10-25",
+        "trial_of_day_eligible": false,
+        "reason_not_tod": "34 days before run; outside rolling 30-day window"
+      },
+      {
+        "candidate": "FOWARC",
+        "aliases": [
+          "Chinese FOWARC phase III"
+        ],
+        "primary_doi": "10.1200/JCO.18.02309",
+        "pmid": "31557064",
+        "registry_id": "NCT01211210",
+        "matched_existing": null,
+        "underlying_study": "genuinely distinct underlying study, but negative/contrary evidence",
+        "disposition": "deferred-negative/contrary evidence; no new page",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 56–57",
+        "additional_primary": "10.1200/JCO.2016.66.6198 / PMID 27480145"
+      },
+      {
+        "candidate": "RAPIDO 5-year follow-up",
+        "aliases": [
+          "RAPIDO",
+          "5-year locoregional failure analysis"
+        ],
+        "primary_doi": "10.1016/S1470-2045(20)30555-6",
+        "pmid": "33301740",
+        "registry_id": "NCT01558921",
+        "matched_existing": "roster/page RAPIDO (trial-pages/rapido/)",
+        "underlying_study": "same underlying study; follow-up publication attaches to canonical RAPIDO page",
+        "disposition": "duplicate/follow-up excluded from new additions",
+        "follow_up_doi": "10.1097/SLA.0000000000005799",
+        "follow_up_pmid": "36661037",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 40 and 48"
+      },
+      {
+        "candidate": "PRODIGE 23",
+        "aliases": [
+          "UNICANCER-PRODIGE 23"
+        ],
+        "primary_doi": "10.1016/S1470-2045(21)00079-6",
+        "pmid": "33862000",
+        "registry_id": "NCT01804790",
+        "matched_existing": "roster/page prodige-23",
+        "underlying_study": "same underlying study already rostered",
+        "disposition": "duplicate excluded",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, ref 41"
+      },
+      {
+        "candidate": "OPRA",
+        "aliases": [
+          "Organ Preservation in Rectal Adenocarcinoma"
+        ],
+        "primary_doi": "10.1200/JCO.22.00032",
+        "pmid": "35483010",
+        "registry_id": "NCT02008656",
+        "matched_existing": "roster/page opra",
+        "underlying_study": "same underlying study already rostered; refs 49/50/71 are protocol, primary results and long-term follow-up",
+        "disposition": "duplicate/follow-up excluded from new additions",
+        "follow_up_doi": "10.1200/JCO.23.01208",
+        "follow_up_pmid": "37883738",
+        "nccn_reference": "NCCN Rectal Cancer Insights v3.2024, refs 49–50 and 71"
+      },
+      {
+        "candidate": "KEYNOTE-A18 5-year follow-up abstract",
+        "aliases": [
+          "KEYNOTE-A18",
+          "ENGOT-cx11/GOG-3047"
+        ],
+        "primary_doi": "10.1016/S0140-6736(24)00317-9",
+        "pmid": "38521086",
+        "registry_id": "NCT04221945",
+        "matched_existing": "roster/page keynote-a18",
+        "underlying_study": "same underlying study; 2026 abstract attaches to existing page",
+        "disposition": "duplicate/follow-up attached; no new trial page",
+        "follow_up_doi": "10.1016/j.ijgc.2026.105141",
+        "follow_up_pmid": null
+      },
+      {
+        "candidate": "ATOMIC / Alliance A021502",
+        "aliases": [
+          "ATOMIC",
+          "A021502",
+          "ML39057"
+        ],
+        "primary_doi": "10.1056/NEJMoa2507874",
+        "pmid": "41880612",
+        "registry_id": "NCT02912559",
+        "matched_existing": "roster/page atomic",
+        "underlying_study": "same underlying study already rostered; FDA approval is a regulatory update, not a new trial",
+        "disposition": "duplicate excluded; existing page repaired for FDA approval and NNT/NNH accuracy",
+        "regulatory_source": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer"
+      }
+    ]
+  },
+  "active_batch": {
+    "target": 30,
+    "staged_new_unique_pages": 30,
+    "source_verified_pages_recorded": 7,
+    "held_for_full_source_extraction": 16,
+    "partially_reviewed_or_incomplete": 7,
+    "release_ready": 0,
+    "uploaded": 0,
+    "branch": "atlas-batch/2026-11-27-am",
+    "main_base_commit": "8315e5e5dda454ab83d62911a1c22e0dac5f732c",
+    "prior_candidate_evidence": [
+      "data/daily-evidence-2026-11-27-evening.json",
+      "data/daily-evidence-2026-11-27-evening-continuation.json"
+    ]
+  },
+  "nnt_nnh_visualization_review": {
+    "checkmate-816": {
+      "items": [
+        {
+          "endpoint": "5-year OS",
+          "rates": "65.4% vs55.0%",
+          "absolute_benefit_pp": 10.4,
+          "nnt": 10
+        },
+        {
+          "endpoint": "2-year EFS",
+          "rates": "63.8% vs45.3%",
+          "absolute_benefit_pp": 18.5,
+          "nnt": 6
+        },
+        {
+          "endpoint": "pCR at surgery",
+          "rates": "24.0% vs2.2%",
+          "absolute_benefit_pp": 21.8,
+          "nnt": 5
+        }
+      ],
+      "status": "source rates and static chart values consistent"
+    },
+    "keynote-a18": {
+      "endpoint": "36-month OS",
+      "rates": "82.6% vs74.8%",
+      "absolute_benefit_pp": 7.8,
+      "nnt": 13,
+      "status": "valid for 36-month OS only; 2026 follow-up abstract lacks accessible 5-year numeric rates"
+    },
+    "lacc": {
+      "endpoint": "4.5-year DFS",
+      "rates": "86.0% vs96.5%",
+      "absolute_harm_pp": 10.6,
+      "nnh": 10,
+      "status": "primary/final analyses kept distinct"
+    },
+    "shape": {
+      "primary_endpoint": "3-year pelvic recurrence noninferiority",
+      "nnt": "not applicable",
+      "secondary": [
+        {
+          "endpoint": "persistent urinary retention",
+          "absolute_benefit_pp": 9.3,
+          "nnt": 11
+        },
+        {
+          "endpoint": "incontinence",
+          "absolute_benefit_pp": 6.3,
+          "nnt": 16
+        }
+      ],
+      "status": "secondary functional endpoints use reported post-treatment horizon"
+    },
+    "atomic": {
+      "endpoint": "3-year DFS",
+      "rates": "86.3% vs76.2%",
+      "absolute_benefit_pp": 10.1,
+      "nnt": 10,
+      "calculation": "ceil(100/10.1)=10",
+      "toxicity_rates": "84.1% (291/346) vs71.9% (240/334)",
+      "absolute_harm_pp": 12.2,
+      "nnh": "not applicable",
+      "reason": "unequal median treatment exposure 10.8 vs5.4 months; cumulative risk not comparable over a common horizon",
+      "status": "invalid NNH9 removed; data-benefit and data-harm corrected"
+    },
+    "chlorophyllin-tnt": {
+      "items": [
+        {
+          "endpoint": "grade ≥2 combined acute toxicity",
+          "absolute_benefit_pp": 29.6,
+          "nnt": 4
+        },
+        {
+          "endpoint": "grade ≥3 combined acute toxicity",
+          "absolute_benefit_pp": 25.8,
+          "nnt": 4
+        }
+      ],
+      "status": "arithmetic and static page attributes consistent; full regimen/supplement extraction pending"
+    }
+  },
+  "publication": {
+    "uploaded": 0,
+    "uploaded_cases": [],
+    "unuploaded": 30,
+    "production_published": false,
+    "pr_opened": false,
+    "merged": false,
+    "deployment_verified": false
+  },
+  "validation": {
+    "strict_release_validator_previous_commit": "passed — 0 errors on 265902e3c5dc6cd1417f3b0a9cec76e525e4d407",
+    "outcome_visualization_audit_previous_commit": "passed static audit on 2bfa83ad0043fc381842e911ab6d78dac2f642b0",
+    "current_branch_head_validation": "pending after 28 Nov evening metadata updates",
+    "local_release_validator": "not run — git clone failed DNS resolution",
+    "browser_rendered_qa": "not run",
+    "pr_checks": "not applicable — no PR opened"
+  },
+  "next_actions": [
+    "Resolve all 16 staged full-source extraction holds and the remaining 7 partially reviewed pages.",
+    "Reattempt local clone and run the local strict release validator.",
+    "Complete browser-rendered outcome visualization QA for every staged page.",
+    "Review the 52 remaining dated-current-practice context gaps using exact current guideline versions and sources.",
+    "Only after exactly 30 new unique studies pass source review and local validation, open a PR and wait for all checks; do not merge a partial batch."
+  ],
+  "report_path": "data/daily-reports/2026-11-28-evening.json",
+  "evidence_path": "data/daily-evidence-2026-11-28-evening.json"
+}
