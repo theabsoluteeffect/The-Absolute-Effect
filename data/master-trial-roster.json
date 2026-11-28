@@ -1205,10 +1205,14 @@
       "NICHE-2",
       "SUNLIGHT",
       "ZUMA-7",
-      "Early ONS NPC",
+      "Early vs routine oral nutritional supplementation during CCRT in nasopharyngeal carcinoma",
       "CUPISCO",
-      "FIND-CTDNA surveillance",
       "GIMEMA ALL2820",
+      "FIND",
+      "Chlorophyllin TNT toxicity prevention",
+      "ImmunoPRISM",
+      "Nivolumab ctDNA-bTMB basket phase II",
+      "SUNMO",
       "ROSEWOOD",
       "PANOVA-3",
       "PARADIGM",
@@ -1224,11 +1228,6 @@
       "SWOG S1801",
       "AURELIA",
       "DESKTOP III",
-      "OVHIPEC-1",
-      "Chlorophyllin TNT",
-      "ImmunoPRISM",
-      "Nivolumab bTMB basket",
-      "SUNMO",
       "OVHIPEC-1"
     ],
     "new_trials_added_today_count": 30,
@@ -2052,8 +2051,12 @@
       "zuma-7",
       "early-ons-npc",
       "cupisco",
-      "find-ctdna-surveillance",
       "gimema-all2820",
+      "find-ctdna-surveillance",
+      "chlorophyllin-tnt",
+      "immunoprism",
+      "nivolumab-btmb-basket",
+      "sunmo",
       "rosewood",
       "panova-3",
       "paradigm",
@@ -2069,11 +2072,6 @@
       "swog-s1801",
       "aurelia",
       "desktop-iii",
-      "ovhipec-1",
-      "chlorophyllin-tnt",
-      "immunoprism",
-      "nivolumab-btmb-basket",
-      "sunmo",
       "ovhipec-1"
     ],
     "primary_identity_verified_candidates_this_run": 16,
@@ -2130,7 +2128,11 @@
       "full_recursive_clinical_audit_completed": false,
       "browser_rendered_visualization_audit_completed": false,
       "cumulative_unique_underlying_study_count": "not reported — existing audit metadata disagrees (461 source-audit count vs 467 roster IDs); reconcile shared-anchor and archive-only identities before asserting a single total."
-    }
+    },
+    "latest_batch_date": "2026-11-27",
+    "latest_batch_count": 30,
+    "latest_batch_unique_count": 30,
+    "latest_batch_unique_ids_verified": true
   },
   "trials": [
     {
@@ -12407,7 +12409,7 @@
       "site": "Nasopharyngeal carcinoma",
       "discipline": "Supportive Care / Clinical Nutrition",
       "setting": "Nutrition support during definitive concurrent chemoradiotherapy",
-      "setting_detail": "Peer-reviewed JAMA Oncology mITT: >5% weight loss 65.4% vs80.7% (NNT7); grade ≥3 oral mucositis 14.0% vs26.6% (NNT8).",
+      "setting_detail": "Peer-reviewed JAMA Oncology mITT: >5% weight loss 65.4% vs80.7%; grade ≥3 oral mucositis 14.0% vs26.6%.",
       "phase": "Randomized clinical trial; drug-development phase not applicable / not stated",
       "design": "Multicentre, open-label, 1:1 randomized trial across six Chinese tertiary hospitals",
       "population": "Adults 18–70 years with newly diagnosed stage II–IVA NPC, planned CCRT, baseline PG-SGA 0–8; patients with intake <60% of estimated requirements for ≥3 days were excluded. FAS n=216 (107 vs 109).",
@@ -12771,7 +12773,7 @@
       "aliases": [
         "Teclistamab versus Rd in high-risk smouldering myeloma"
       ],
-      "primary": "https://doi.org/10.1038/s41591-026-04642-w",
+      "primary": "10.1038/s41591-026-04642-w",
       "primary_title": "Teclistamab versus lenalidomide-dexamethasone in high-risk smoldering multiple myeloma: a randomized phase 2 trial",
       "pmid": "42728379",
       "registry_id": "NCT05469893",
@@ -12823,7 +12825,9 @@
       },
       "last_reviewed_on": "2026-11-27",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "primary_doi": "10.1038/s41591-026-04642-w",
+      "primary_url": "https://doi.org/10.1038/s41591-026-04642-w"
     },
     {
       "id": "nivolumab-btmb-basket",
@@ -12832,7 +12836,7 @@
         "Nivolumab bTMB-High cohort",
         "UMIN000033182"
       ],
-      "primary": "https://doi.org/10.1016/j.esmoop.2026.108578",
+      "primary": "10.1016/j.esmoop.2026.108578",
       "primary_title": "Nivolumab in patients with advanced solid tumors with ctDNA-defined high blood tumor mutational burden: a phase II trial",
       "pmid": "42854587",
       "registry_id": "UMIN000033182",
@@ -12884,7 +12888,9 @@
       },
       "last_reviewed_on": "2026-11-27",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "primary_doi": "10.1016/j.esmoop.2026.108578",
+      "primary_url": "https://doi.org/10.1016/j.esmoop.2026.108578"
     },
     {
       "id": "sunmo",
@@ -12893,7 +12899,7 @@
         "Mosunetuzumab plus polatuzumab vedotin in R/R LBCL",
         "NCT05171647"
       ],
-      "primary": "https://doi.org/10.1200/JCO-25-01957",
+      "primary": "10.1200/JCO-25-01957",
       "primary_title": "Mosunetuzumab Plus Polatuzumab Vedotin in Transplant-Ineligible Refractory/Relapsed Large B-Cell Lymphoma: Primary Results of the Phase III SUNMO Trial",
       "pmid": "41037766",
       "registry_id": "NCT05171647",
@@ -12945,7 +12951,9 @@
       },
       "last_reviewed_on": "2026-11-27",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "primary_doi": "10.1200/JCO-25-01957",
+      "primary_url": "https://doi.org/10.1200/JCO-25-01957"
     },
     {
       "id": "rosewood",
@@ -13111,7 +13119,7 @@
       "page_path": "trial-pages/paradigm/index.html",
       "canonical_page": true,
       "primary": "10.1001/jama.2023.4428",
-      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided, Metastatic Colorectal Cancer: A Randomized Clinical Trial",
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided Metastatic Colorectal Cancer",
       "pmid": "37071094",
       "registry_id": "NCT02394795",
       "registry": "ClinicalTrials.gov NCT02394795",
@@ -13481,7 +13489,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "12-month PFS in the dMMR cohort",
+        "horizon": "12 months",
+        "event_definition": "Progression or death by 12 months (complement of the published KM PFS estimate)",
+        "benefit_percentage_points": 36,
+        "nnt": 3,
+        "calculation": "ceil(1 / 0.36) = 3",
+        "source_doi": "10.1056/NEJMoa2302312",
+        "note": "Landmark NNT derived from 12-month Kaplan–Meier estimates; cohort-specific.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "checkmate-77t",
@@ -13566,7 +13585,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "18-month event-free survival",
+        "horizon": "18 months",
+        "event_definition": "Event or death by 18 months (complement of published KM EFS estimate)",
+        "benefit_percentage_points": 20.2,
+        "nnt": 5,
+        "calculation": "ceil(1 / 0.202) = 5",
+        "source_doi": "10.1056/NEJMoa2311926",
+        "note": "Landmark NNT based on 18-month Kaplan–Meier estimates.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "caravaggio",
@@ -13726,7 +13756,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "Clinically relevant bleeding (secondary safety endpoint)",
+        "horizon": "12 months",
+        "event_definition": "Clinically relevant bleeding during the 12-month extended-treatment period",
+        "benefit_percentage_points": 3.5,
+        "nnt": 29,
+        "calculation": "ceil(1 / 0.035) = 29",
+        "source_doi": "10.1056/NEJMoa2416112",
+        "note": "Secondary safety endpoint; primary VTE endpoint was non-inferiority and has no NNT.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "hokusai-vte-cancer",
@@ -13812,7 +13853,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "Major bleeding (safety endpoint)",
+        "horizon": "6–12 months of treatment",
+        "event_definition": "Major bleeding during the randomized treatment period",
+        "harm_percentage_points": 2.9,
+        "nnh": 35,
+        "calculation": "ceil(1 / 0.029) = 35",
+        "source_doi": "10.1056/NEJMoa1711948",
+        "note": "NNH point estimate; excess major bleeding was concentrated in GI cancer.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "nadina",
@@ -13828,7 +13880,7 @@
       "page_path": "trial-pages/nadina/index.html",
       "canonical_page": true,
       "primary": "10.1056/NEJMoa2402604",
-      "primary_title": "Neoadjuvant Ipilimumab and Nivolumab in Resectable Stage III Melanoma",
+      "primary_title": "Neoadjuvant Nivolumab and Ipilimumab in Resectable Stage III Melanoma",
       "pmid": "38828984",
       "registry_id": "NCT04949113",
       "registry": "ClinicalTrials.gov NCT04949113",
@@ -13898,7 +13950,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "12-month event-free survival",
+        "horizon": "12 months",
+        "event_definition": "Event or death by 12 months (complement of published KM EFS estimate)",
+        "benefit_percentage_points": 26.5,
+        "nnt": 4,
+        "calculation": "ceil(1 / 0.265) = 4",
+        "source_doi": "10.1056/NEJMoa2402604",
+        "note": "Landmark NNT; not a lifetime estimate.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "swog-s1801",
@@ -13984,7 +14047,18 @@
       "release_ready": false,
       "status": "held_for_full_source_extraction_and_release_gate",
       "batch_date": "2026-11-27",
-      "batch_branch": "atlas-batch/2026-11-27-am"
+      "batch_branch": "atlas-batch/2026-11-27-am",
+      "absolute_effect": {
+        "endpoint": "Two-year event-free survival",
+        "horizon": "24 months",
+        "event_definition": "Event or death by 24 months (complement of published KM EFS estimate)",
+        "benefit_percentage_points": 23,
+        "nnt": 5,
+        "calculation": "ceil(1 / 0.23) = 5",
+        "source_doi": "10.1056/NEJMoa2211437",
+        "note": "Landmark NNT from the published 2-year KM EFS rates.",
+        "additional_endpoints": []
+      }
     },
     {
       "id": "aurelia",
@@ -14255,8 +14329,12 @@
       "zuma-7",
       "early-ons-npc",
       "cupisco",
-      "find-ctdna-surveillance",
       "gimema-all2820",
+      "find-ctdna-surveillance",
+      "chlorophyllin-tnt",
+      "immunoprism",
+      "nivolumab-btmb-basket",
+      "sunmo",
       "rosewood",
       "panova-3",
       "paradigm",
@@ -14272,10 +14350,6 @@
       "swog-s1801",
       "aurelia",
       "desktop-iii",
-      "chlorophyllin-tnt",
-      "immunoprism",
-      "nivolumab-btmb-basket",
-      "sunmo",
       "ovhipec-1"
     ],
     "held_candidate_ids": [
@@ -14479,7 +14553,104 @@
       "fovinaciclib",
       "toripalimab-mfolfirinox",
       "healer"
-    ]
+    ],
+    "selected_trial_names": [
+      "AENEAS2",
+      "ALINA",
+      "LITESPARK-005",
+      "NICHE-2",
+      "SUNLIGHT",
+      "ZUMA-7",
+      "Early vs routine oral nutritional supplementation during CCRT in nasopharyngeal carcinoma",
+      "CUPISCO",
+      "GIMEMA ALL2820",
+      "FIND",
+      "Chlorophyllin TNT toxicity prevention",
+      "ImmunoPRISM",
+      "Nivolumab ctDNA-bTMB basket phase II",
+      "SUNMO",
+      "ROSEWOOD",
+      "PANOVA-3",
+      "PARADIGM",
+      "GOG-240",
+      "EMPOWER-Cervical 1",
+      "innovaTV 301",
+      "NRG-GY018",
+      "CheckMate 77T",
+      "CARAVAGGIO",
+      "API-CAT",
+      "Hokusai VTE Cancer",
+      "NADINA",
+      "SWOG S1801",
+      "AURELIA",
+      "DESKTOP III",
+      "OVHIPEC-1"
+    ],
+    "new_trials_added_today_names": [
+      "AENEAS2",
+      "ALINA",
+      "LITESPARK-005",
+      "NICHE-2",
+      "SUNLIGHT",
+      "ZUMA-7",
+      "Early vs routine oral nutritional supplementation during CCRT in nasopharyngeal carcinoma",
+      "CUPISCO",
+      "GIMEMA ALL2820",
+      "FIND",
+      "Chlorophyllin TNT toxicity prevention",
+      "ImmunoPRISM",
+      "Nivolumab ctDNA-bTMB basket phase II",
+      "SUNMO",
+      "ROSEWOOD",
+      "PANOVA-3",
+      "PARADIGM",
+      "GOG-240",
+      "EMPOWER-Cervical 1",
+      "innovaTV 301",
+      "NRG-GY018",
+      "CheckMate 77T",
+      "CARAVAGGIO",
+      "API-CAT",
+      "Hokusai VTE Cancer",
+      "NADINA",
+      "SWOG S1801",
+      "AURELIA",
+      "DESKTOP III",
+      "OVHIPEC-1"
+    ],
+    "new_trials_added_today_ids": [
+      "aeneas2",
+      "alina",
+      "litespark-005",
+      "niche-2",
+      "sunlight",
+      "zuma-7",
+      "early-ons-npc",
+      "cupisco",
+      "gimema-all2820",
+      "find-ctdna-surveillance",
+      "chlorophyllin-tnt",
+      "immunoprism",
+      "nivolumab-btmb-basket",
+      "sunmo",
+      "rosewood",
+      "panova-3",
+      "paradigm",
+      "gog-240",
+      "empower-cervical1",
+      "innovatv-301",
+      "nrg-gy018",
+      "checkmate-77t",
+      "caravaggio",
+      "api-cat",
+      "hokusai-vte-cancer",
+      "nadina",
+      "swog-s1801",
+      "aurelia",
+      "desktop-iii",
+      "ovhipec-1"
+    ],
+    "last_metadata_reconciliation": "2026-11-28: 30 batch roster rows and 30 unique IDs; duplicate OVHIPEC-1 was only in the audit announcement list and has been removed from that list, not from the canonical roster."
   },
   "last_run_date": "2026-11-28",
   "last_run_cycle": "morning",

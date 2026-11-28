@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27",
+  "updated_at": "2026-11-28T08:04:24+05:30",
   "verification_policy": "Each DOI was checked against exact PubMed or publisher metadata. Cache is a source-verification record, not an inferred title.",
   "entries": [
     {
@@ -503,12 +503,13 @@
       "pmid": "43084277",
       "registry_id": "NCT05856305",
       "trial_id": "chlorophyllin-tnt",
-      "verified_on": "2026-11-27",
+      "verified_on": "2026-11-28",
       "verification_source": "PubMed and JAMA Oncology publisher metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/43084277/",
       "title_match": true,
       "status": "verified",
-      "verification_note": "Exact DOI/title match; CTRI/2023/04/051458 also listed in primary abstract."
+      "verification_note": "Exact DOI/title match; CTRI/2023/04/051458 also listed in primary abstract.",
+      "verified_by": "PubMed"
     },
     {
       "doi": "10.1038/s41591-026-04642-w",
@@ -516,12 +517,13 @@
       "pmid": "42728379",
       "registry_id": "NCT05469893",
       "trial_id": "immunoprism",
-      "verified_on": "2026-11-27",
+      "verified_on": "2026-11-28",
       "verification_source": "PubMed and Nature Medicine/PMC metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42728379/",
       "title_match": true,
       "status": "verified",
-      "verification_note": "Exact DOI/title match; full primary article reviewed."
+      "verification_note": "Exact DOI/title match; full primary article reviewed.",
+      "verified_by": "PubMed"
     },
     {
       "doi": "10.1016/j.esmoop.2026.108578",
@@ -529,12 +531,13 @@
       "pmid": "42854587",
       "registry_id": "UMIN000033182",
       "trial_id": "nivolumab-btmb-basket",
-      "verified_on": "2026-11-27",
+      "verified_on": "2026-11-28",
       "verification_source": "PubMed and Elsevier/ESMO Open metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/42854587/",
       "title_match": true,
       "status": "verified",
-      "verification_note": "Exact DOI/title match; full primary article reviewed via publisher/PMC text."
+      "verification_note": "Exact DOI/title match; full primary article reviewed via publisher/PMC text.",
+      "verified_by": "PubMed"
     },
     {
       "doi": "10.1200/JCO-25-01957",
@@ -542,12 +545,13 @@
       "pmid": "41037766",
       "registry_id": "NCT05171647",
       "trial_id": "sunmo",
-      "verified_on": "2026-11-27",
+      "verified_on": "2026-11-28",
       "verification_source": "PubMed and JCO publisher metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/41037766/",
       "title_match": true,
       "status": "verified",
-      "verification_note": "Exact DOI/title match; primary JCO abstract, protocol and conference safety report reviewed."
+      "verification_note": "Exact DOI/title match; primary JCO abstract, protocol and conference safety report reviewed.",
+      "verified_by": "PubMed"
     },
     {
       "trial_id": "rosewood",
@@ -579,14 +583,17 @@
       "trial_id": "paradigm",
       "trial": "PARADIGM",
       "primary_doi": "10.1001/jama.2023.4428",
-      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided, Metastatic Colorectal Cancer: A Randomized Clinical Trial",
+      "primary_title": "Panitumumab vs Bevacizumab Added to Standard First-line Chemotherapy and Overall Survival Among Patients With RAS Wild-type, Left-Sided Metastatic Colorectal Cancer",
       "pmid": "37071094",
       "registry_id": "NCT02394795",
-      "verified_on": "2026-11-27",
-      "verification_source": "PubMed metadata and primary publisher page",
+      "verified_on": "2026-11-28",
+      "verification_source": "Crossref and PubMed metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/37071094/",
       "title_match": true,
-      "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open."
+      "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open.",
+      "verified_by": "Crossref and PubMed",
+      "doi": "10.1001/jama.2023.4428",
+      "status": "verified"
     },
     {
       "trial_id": "gog-240",
@@ -696,14 +703,17 @@
       "trial_id": "nadina",
       "trial": "NADINA",
       "primary_doi": "10.1056/NEJMoa2402604",
-      "primary_title": "Neoadjuvant Ipilimumab and Nivolumab in Resectable Stage III Melanoma",
+      "primary_title": "Neoadjuvant Nivolumab and Ipilimumab in Resectable Stage III Melanoma",
       "pmid": "38828984",
       "registry_id": "NCT04949113",
-      "verified_on": "2026-11-27",
-      "verification_source": "PubMed metadata and primary publisher page",
+      "verified_on": "2026-11-28",
+      "verification_source": "Crossref and PubMed metadata",
       "verification_url": "https://pubmed.ncbi.nlm.nih.gov/38828984/",
       "title_match": true,
-      "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open."
+      "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open.",
+      "verified_by": "Crossref and PubMed",
+      "doi": "10.1056/NEJMoa2402604",
+      "status": "verified"
     },
     {
       "trial_id": "swog-s1801",
@@ -745,7 +755,7 @@
       "verification_note": "Exact primary DOI/title pair and registry identifier checked against PubMed/publisher metadata; bibliographic identity only. Full clinical table extraction and release QA remain open."
     }
   ],
-  "last_verified_on": "2026-11-26",
-  "last_updated": "2026-11-27",
-  "updated_on": "2026-11-27"
+  "last_verified_on": "2026-11-28",
+  "last_updated": "2026-11-28",
+  "updated_on": "2026-11-28"
 }
